@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+scripts/api_probe_out/
+scripts/sportmonks_probe_out/
+.env
+.env.*
+node_modules/
+frontend/dist/
