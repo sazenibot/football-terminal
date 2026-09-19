@@ -1,0 +1,60 @@
+{
+  "data": {
+    "id": 262,
+    "sport_id": 1,
+    "country_id": 245,
+    "name": "Chance Liga",
+    "active": true,
+    "short_code": null,
+    "image_path": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png",
+    "type": "league",
+    "sub_type": "domestic",
+    "last_played_at": "2026-09-19 13:00:00",
+    "category": 2,
+    "has_jerseys": false,
+    "currentseason": {
+      "id": 27984,
+      "sport_id": 1,
+      "league_id": 262,
+      "tie_breaker_rule_id": 171,
+      "name": "2026/2027",
+      "finished": false,
+      "pending": false,
+      "is_current": true,
+      "starting_at": "2026-07-25",
+      "ending_at": "2027-04-24",
+      "standings_recalculated_at": "2026-09-19 17:44:04",
+      "games_in_current_week": false
+    }
+  },
+  "subscription": [
+    {
+      "meta": {
+        "current_timestamp": 1789840063,
+        "next_billing_cycle": "2026-10-18T00:18:34 UTC"
+      },
+      "plans": [
+        {
+          "plan": "Starter",
+          "sport": "Football",
+          "category": "Advanced"
+        }
+      ],
+      "add_ons": [
+        {
+          "add_on": "Odds",
+          "sport": "Football",
+          "category": "Odds"
+        }
+      ],
+      "widgets": [],
+      "bundles": []
+    }
+  ],
+  "rate_limit": {
+    "resets_in_seconds": 3531,
+    "remaining": 1998,
+    "requested_entity": "League"
+  },
+  "timezone": "UTC"
+}
