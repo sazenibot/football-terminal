@@ -3,7 +3,7 @@
   "league_id": 564,
   "league_name": "La Liga",
   "built_at": "2026-09-20T02:19:29.354264Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T16:30:00Z",
   "venue": "Estadio de la Cerámica",
   "home": {
@@ -6821,5 +6821,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:35:38.190983Z"
 }

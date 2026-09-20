@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T00:14:17Z",
+  "generated_at": "2026-09-20T00:35:05Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -75,8 +75,8 @@
     }
   ],
   "stats": {
-    "created": 4,
-    "refreshed": 0,
+    "created": 0,
+    "refreshed": 4,
     "errors": 0
   }
 }

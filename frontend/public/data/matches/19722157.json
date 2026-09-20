@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-09-20T02:11:38.954628Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T13:00:00Z",
   "venue": "Etihad Stadium",
   "home": {
@@ -6358,5 +6358,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:34:49.947055Z"
 }

@@ -3,7 +3,7 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "built_at": "2026-09-20T02:09:52.686054Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T12:30:00Z",
   "venue": "Městský stadion - Vítkovice Aréna",
   "home": {
@@ -5728,5 +5728,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:34:41.609373Z"
 }

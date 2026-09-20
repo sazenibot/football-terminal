@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-09-20T02:15:12.470900Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T13:30:00Z",
   "venue": "BayArena",
   "home": {
@@ -6948,5 +6948,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:35:11.196121Z"
 }

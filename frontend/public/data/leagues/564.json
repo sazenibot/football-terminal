@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T00:21:15Z",
+  "generated_at": "2026-09-20T00:35:45Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -91,8 +91,8 @@
     }
   ],
   "stats": {
-    "created": 5,
-    "refreshed": 0,
+    "created": 0,
+    "refreshed": 5,
     "errors": 0
   }
 }

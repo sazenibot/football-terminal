@@ -3,7 +3,7 @@
   "league_id": 564,
   "league_name": "La Liga",
   "built_at": "2026-09-20T02:18:38.606949Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T14:15:00Z",
   "venue": "Riyadh Air Metropolitano",
   "home": {
@@ -7256,5 +7256,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:35:33.567920Z"
 }

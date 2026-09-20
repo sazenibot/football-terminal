@@ -3,7 +3,7 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "built_at": "2026-09-20T02:09:04.811377Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T11:15:00Z",
   "venue": "Stadion Františka Kloze",
   "home": {
@@ -5188,5 +5188,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:34:38.506332Z"
 }

@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-09-20T02:12:31.381559Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T13:00:00Z",
   "venue": "Elland Road",
   "home": {
@@ -6677,5 +6677,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:34:55.880851Z"
 }

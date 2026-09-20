@@ -3,7 +3,7 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "built_at": "2026-09-20T02:10:43.712735Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T14:30:00Z",
   "venue": "Stadion Kollárova ulice",
   "home": {
@@ -5908,5 +5908,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:34:44.535799Z"
 }

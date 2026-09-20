@@ -3,7 +3,7 @@
   "league_id": 564,
   "league_name": "La Liga",
   "built_at": "2026-09-20T02:17:42.809818Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T12:00:00Z",
   "venue": "Coliseum Alfonso Pérez",
   "home": {
@@ -5946,5 +5946,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:35:28.863463Z"
 }

@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-09-20T02:13:25.908377Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T13:00:00Z",
   "venue": "Vitality Stadium",
   "home": {
@@ -6723,5 +6723,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:35:02.106606Z"
 }

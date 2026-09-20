@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-09-20T02:14:17.286927Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-09-20T15:30:00Z",
   "venue": "Craven Cottage",
   "home": {
@@ -6848,5 +6848,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-09-20T00:35:04.998916Z"
 }
