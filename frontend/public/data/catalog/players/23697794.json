@@ -1,0 +1,23 @@
+{
+  "id": 23697794,
+  "name": "Krisztián Hegyi",
+  "common_name": "K. Hegyi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/23697794.png",
+  "number": 47,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-09-24",
+  "age": 23,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Krisztián Hegyi (Brankář) nastupuje za Sparta Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:45Z",
+    "season": {}
+  }
+}

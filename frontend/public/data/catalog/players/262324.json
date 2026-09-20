@@ -1,0 +1,19 @@
+{
+  "id": 262324,
+  "name": "Tyler Adams",
+  "common_name": "T. Adams",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/262324.png",
+  "number": 12,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-02-14",
+  "age": 27,
+  "team_id": 52,
+  "team_name": "AFC Bournemouth",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Tyler Adams (Záložník) nastupuje za AFC Bournemouth. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

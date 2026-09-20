@@ -1,0 +1,28 @@
+{
+  "id": 19996755,
+  "name": "Jiri Spacil",
+  "common_name": "J. Spáčil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/19996755.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-02-11",
+  "age": 27,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jiri Spacil v této sezóně za Sigma Olomouc: 2 starty, 73 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:51Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 73,
+      "goals_conceded": 2
+    }
+  }
+}

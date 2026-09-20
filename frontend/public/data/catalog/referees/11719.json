@@ -1,0 +1,23 @@
+{
+  "id": 11719,
+  "name": "Florian Badstübner",
+  "common_name": "F. Badstübner",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Germany",
+  "country_id": 11,
+  "date_of_birth": null,
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "in_league": true,
+  "league_matches": 2,
+  "leagues": [
+    {
+      "id": 82,
+      "name": "Bundesliga",
+      "in_league": true,
+      "league_matches": 2
+    }
+  ],
+  "hook": "Florian Badstübner píská v soutěži Bundesliga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

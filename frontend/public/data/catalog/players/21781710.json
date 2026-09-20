@@ -1,0 +1,19 @@
+{
+  "id": 21781710,
+  "name": "Abdel Abqar",
+  "common_name": "A. Abqar",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/21781710.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-03-10",
+  "age": 27,
+  "team_id": 106,
+  "team_name": "Getafe",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Abdel Abqar (Obránce) nastupuje za Getafe. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 100580,
+  "name": "Robin Le Normand",
+  "common_name": "R. Le Normand",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/100580.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-11-11",
+  "age": 29,
+  "team_id": 7980,
+  "team_name": "Atlético de Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Robin Le Normand (Obránce) nastupuje za Atlético de Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

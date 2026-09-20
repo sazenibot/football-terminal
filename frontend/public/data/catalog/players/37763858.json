@@ -1,0 +1,23 @@
+{
+  "id": 37763858,
+  "name": "Jindrich Musil",
+  "common_name": "J. Musil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37763858.png",
+  "number": 47,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-07-13",
+  "age": 22,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jindrich Musil (Brankář) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:14Z",
+    "season": {}
+  }
+}

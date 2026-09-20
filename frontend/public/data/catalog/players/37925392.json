@@ -1,0 +1,19 @@
+{
+  "id": 37925392,
+  "name": "Adam Buchta",
+  "common_name": "A. Buchta",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-10-01",
+  "age": 21,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Adam Buchta (Obránce) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

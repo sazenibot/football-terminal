@@ -1,0 +1,19 @@
+{
+  "id": 37720620,
+  "name": "Ryan McAidoo",
+  "common_name": "R. McAidoo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/37720620.png",
+  "number": 56,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2008-06-24",
+  "age": 18,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ryan McAidoo (Útočník) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

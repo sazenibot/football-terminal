@@ -1,0 +1,31 @@
+{
+  "id": 37253472,
+  "name": "Michal Beran",
+  "common_name": "M. Beran",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/37253472.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-08-22",
+  "age": 26,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Michal Beran v této sezóně za Sigma Olomouc: 9 startů, 772 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:52Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 772,
+      "yellow": 1,
+      "shots": 10,
+      "sot": 1,
+      "goals_conceded": 13
+    }
+  }
+}

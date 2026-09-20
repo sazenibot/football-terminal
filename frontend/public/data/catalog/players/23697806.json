@@ -1,0 +1,33 @@
+{
+  "id": 23697806,
+  "name": "Péter Baráth",
+  "common_name": "P. Baráth",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 88,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-02-21",
+  "age": 24,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Péter Baráth v této sezóně za Sigma Olomouc: 7 startů, 630 min, 3 góly, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:53Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 7,
+      "minutes": 630,
+      "goals": 3,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 14,
+      "sot": 5,
+      "goals_conceded": 8
+    }
+  }
+}

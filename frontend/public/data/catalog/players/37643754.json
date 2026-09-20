@@ -1,0 +1,26 @@
+{
+  "id": 37643754,
+  "name": "Albert Labik",
+  "common_name": "A. Labik",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37643754.png",
+  "number": 9,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-05-13",
+  "age": 22,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Albert Labik v této sezóně za SK Artis Brno: 1 start, 44 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 44
+    }
+  }
+}

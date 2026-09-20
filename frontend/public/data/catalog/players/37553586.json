@@ -1,0 +1,32 @@
+{
+  "id": 37553586,
+  "name": "Jocelin Behiratche",
+  "common_name": "J. Behiratche",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37553586.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-05-08",
+  "age": 26,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jocelin Behiratche v této sezóně za Slovácko: 9 startů, 651 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:32Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 8,
+      "minutes": 651,
+      "yellow": 2,
+      "red": 1,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 9
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": 37573859,
+  "name": "Sampson Dweh",
+  "common_name": "S. Dweh",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37573859.png",
+  "number": 40,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-10-10",
+  "age": 24,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Sampson Dweh v této sezóně za Viktoria Plzeň: 9 startů, 810 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:19Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "goals": 1,
+      "yellow": 3,
+      "shots": 10,
+      "sot": 3,
+      "goals_conceded": 17
+    }
+  }
+}

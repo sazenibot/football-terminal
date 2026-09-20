@@ -1,0 +1,19 @@
+{
+  "id": 37915162,
+  "name": "Kauã Prates",
+  "common_name": "K. de Almeida",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/37915162.png",
+  "number": 36,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2008-08-12",
+  "age": 18,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Kauã Prates (Obránce) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

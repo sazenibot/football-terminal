@@ -1,0 +1,30 @@
+{
+  "id": 37342581,
+  "name": "Adam Gaži",
+  "common_name": "A. Gaži",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 11,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-03-01",
+  "age": 23,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Gaži v této sezóně za Zlín: 4 starty, 92 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:49Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 92,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 1
+    }
+  }
+}

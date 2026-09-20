@@ -1,0 +1,19 @@
+{
+  "id": 189296,
+  "name": "Sergio Herrera",
+  "common_name": "S. Herrera Pirón",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/189296.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1993-06-05",
+  "age": 33,
+  "team_id": 459,
+  "team_name": "Osasuna",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Sergio Herrera (Brankář) nastupuje za Osasuna. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

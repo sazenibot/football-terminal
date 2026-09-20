@@ -1,0 +1,31 @@
+{
+  "id": 24817160,
+  "name": "Oskars Vientiess",
+  "common_name": "O. Vientiess",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/24817160.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-10-08",
+  "age": 23,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Oskars Vientiess v této sezóně za Teplice: 9 startů, 810 min, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:05Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "assists": 2,
+      "yellow": 2,
+      "shots": 1,
+      "goals_conceded": 15
+    }
+  }
+}

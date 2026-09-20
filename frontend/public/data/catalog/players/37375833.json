@@ -1,0 +1,28 @@
+{
+  "id": 37375833,
+  "name": "Filip Prebsl",
+  "common_name": "F. Prebsl",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37375833.png",
+  "number": 98,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-03-04",
+  "age": 23,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Filip Prebsl v této sezóně za Viktoria Plzeň: 5 startů, 400 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:18Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 4,
+      "minutes": 400,
+      "goals_conceded": 9
+    }
+  }
+}

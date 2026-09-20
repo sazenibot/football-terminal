@@ -1,0 +1,19 @@
+{
+  "id": 37612045,
+  "name": "Jean-Mattéo Bahoya",
+  "common_name": "J. Bahoya",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/37612045.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-05-07",
+  "age": 21,
+  "team_id": 366,
+  "team_name": "Eintracht Frankfurt",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Jean-Mattéo Bahoya (Útočník) nastupuje za Eintracht Frankfurt. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

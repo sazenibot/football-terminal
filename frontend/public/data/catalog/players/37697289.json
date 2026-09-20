@@ -1,0 +1,29 @@
+{
+  "id": 37697289,
+  "name": "Salim Fago Lawal",
+  "common_name": "S. Lawal",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-01-15",
+  "age": 23,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Salim Fago Lawal v této sezóně za Viktoria Plzeň: 6 startů, 195 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:28Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 2,
+      "minutes": 195,
+      "shots": 2,
+      "goals_conceded": 7
+    }
+  }
+}

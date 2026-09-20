@@ -1,0 +1,19 @@
+{
+  "id": 37728388,
+  "name": "Luca Williams-Barnett",
+  "common_name": "L. Williams-Barnett",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/37728388.png",
+  "number": 68,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2008-10-01",
+  "age": 17,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Luca Williams-Barnett (Záložník) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

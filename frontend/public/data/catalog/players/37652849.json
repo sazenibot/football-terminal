@@ -1,0 +1,19 @@
+{
+  "id": 37652849,
+  "name": "Mick Schmetgens",
+  "common_name": "M. Schmetgens",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/37652849.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2007-09-09",
+  "age": 19,
+  "team_id": 82,
+  "team_name": "Werder Bremen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Mick Schmetgens (Obránce) nastupuje za Werder Bremen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

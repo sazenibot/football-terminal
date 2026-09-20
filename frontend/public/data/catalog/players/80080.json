@@ -1,0 +1,30 @@
+{
+  "id": 80080,
+  "name": "Daniel Holzer",
+  "common_name": "D. Holzer",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/80080.png",
+  "number": 95,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1995-08-18",
+  "age": 31,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Daniel Holzer v této sezóně za Baník Ostrava: 8 startů, 323 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:17Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 4,
+      "minutes": 323,
+      "shots": 8,
+      "sot": 1,
+      "goals_conceded": 8
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37633890,
+  "name": "Jannik Schuster",
+  "common_name": "J. Schuster",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/37633890.png",
+  "number": 44,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-05-16",
+  "age": 20,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jannik Schuster (Obránce) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

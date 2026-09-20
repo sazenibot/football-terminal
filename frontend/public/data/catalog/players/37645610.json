@@ -1,0 +1,30 @@
+{
+  "id": 37645610,
+  "name": "David Ludvicek",
+  "common_name": "D. Ludvíček",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37645610.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-08-24",
+  "age": 25,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Ludvicek v této sezóně za Hradec Králové: 6 startů, 328 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:41Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 4,
+      "minutes": 328,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 4
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37760456,
+  "name": "Martin Temel",
+  "common_name": "M. Temel",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 18,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-04-24",
+  "age": 23,
+  "team_id": 8477,
+  "team_name": "Banik Ostrava B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Martin Temel (Obránce) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

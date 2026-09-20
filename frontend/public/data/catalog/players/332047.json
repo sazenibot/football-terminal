@@ -1,0 +1,19 @@
+{
+  "id": 332047,
+  "name": "Elliot Anderson",
+  "common_name": "E. Anderson",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/332047.png",
+  "number": 5,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-11-06",
+  "age": 23,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Elliot Anderson (Záložník) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

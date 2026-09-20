@@ -1,0 +1,19 @@
+{
+  "id": 37297497,
+  "name": "Carlos Puga",
+  "common_name": "C. Puga Medina",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37297497.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-11-26",
+  "age": 25,
+  "team_id": 126,
+  "team_name": "Málaga",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Carlos Puga (Obránce) nastupuje za Málaga. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

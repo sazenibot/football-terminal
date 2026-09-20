@@ -1,0 +1,19 @@
+{
+  "id": 37766765,
+  "name": "Andrés Antañón",
+  "common_name": "A. Antañón Vieites",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 28,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-01-22",
+  "age": 19,
+  "team_id": 36,
+  "team_name": "Celta de Vigo",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Andrés Antañón (Útočník) nastupuje za Celta de Vigo. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 319282,
+  "name": "Daizen Maeda",
+  "common_name": "D. Maeda",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/319282.png",
+  "number": 38,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-10-20",
+  "age": 28,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Daizen Maeda (Útočník) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

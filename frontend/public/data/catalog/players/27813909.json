@@ -1,0 +1,19 @@
+{
+  "id": 27813909,
+  "name": "Konstantinos Tzolakis",
+  "common_name": "K. Tzolakis",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/27813909.png",
+  "number": 19,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-11-08",
+  "age": 23,
+  "team_id": 22,
+  "team_name": "Hull City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Konstantinos Tzolakis (Brankář) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

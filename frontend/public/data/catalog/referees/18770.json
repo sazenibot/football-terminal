@@ -1,0 +1,23 @@
+{
+  "id": 18770,
+  "name": "Manuel Jesús Orellana Cid",
+  "common_name": "M. Orellana Cid",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Spain",
+  "country_id": 32,
+  "date_of_birth": null,
+  "league_id": 564,
+  "league_name": "La Liga",
+  "in_league": true,
+  "league_matches": 2,
+  "leagues": [
+    {
+      "id": 564,
+      "name": "La Liga",
+      "in_league": true,
+      "league_matches": 2
+    }
+  ],
+  "hook": "Manuel Jesús Orellana Cid píská v soutěži La Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

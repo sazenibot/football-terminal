@@ -1,0 +1,32 @@
+{
+  "id": 81662,
+  "name": "Vojtech Smrz",
+  "common_name": "V. Smrž",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/81662.png",
+  "number": 42,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-01-20",
+  "age": 29,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vojtech Smrz v této sezóně za Bohemians 1905: 8 startů, 541 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:35Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 541,
+      "assists": 1,
+      "yellow": 2,
+      "shots": 10,
+      "sot": 2,
+      "goals_conceded": 9
+    }
+  }
+}

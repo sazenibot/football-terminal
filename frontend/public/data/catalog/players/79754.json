@@ -1,0 +1,29 @@
+{
+  "id": 79754,
+  "name": "Stanislav Dostal",
+  "common_name": "S. Dostál",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 17,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1991-06-20",
+  "age": 35,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Stanislav Dostal v této sezóně za Zlín: 9 startů, 810 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:44Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "saves": 25,
+      "goals_conceded": 20
+    }
+  }
+}

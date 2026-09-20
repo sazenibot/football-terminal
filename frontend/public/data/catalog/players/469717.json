@@ -1,0 +1,19 @@
+{
+  "id": 469717,
+  "name": "Ronald Araujo",
+  "common_name": "R. Araújo da Silva",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/469717.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-03-07",
+  "age": 27,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ronald Araujo (Obránce) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

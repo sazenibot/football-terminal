@@ -1,0 +1,19 @@
+{
+  "id": 10601,
+  "name": "Harvey Barnes",
+  "common_name": "H. Barnes",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/10601.png",
+  "number": 11,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-12-09",
+  "age": 28,
+  "team_id": 20,
+  "team_name": "Newcastle United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Harvey Barnes (Záložník) nastupuje za Newcastle United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": 37730010,
+  "name": "Simon Sloncik",
+  "common_name": "?. Slončík",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2007-05-15",
+  "age": 19,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Simon Sloncik v této sezóně za Slovácko: 8 startů, 720 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:34Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 720,
+      "yellow": 1,
+      "shots": 1,
+      "goals_conceded": 11
+    }
+  }
+}

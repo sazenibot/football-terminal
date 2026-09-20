@@ -1,0 +1,19 @@
+{
+  "id": 37332149,
+  "name": "Iván Azón",
+  "common_name": "I. Monzón",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/37332149.png",
+  "number": 20,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-12-24",
+  "age": 23,
+  "team_id": 106,
+  "team_name": "Getafe",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Iván Azón (Záložník) nastupuje za Getafe. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

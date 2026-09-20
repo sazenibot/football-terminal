@@ -1,0 +1,19 @@
+{
+  "id": 37296353,
+  "name": "Juanlu Sánchez",
+  "common_name": "J. Sánchez Velasco",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/37296353.png",
+  "number": 24,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-08-15",
+  "age": 23,
+  "team_id": 52,
+  "team_name": "AFC Bournemouth",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Juanlu Sánchez (Záložník) nastupuje za AFC Bournemouth. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

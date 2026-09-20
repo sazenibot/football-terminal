@@ -1,0 +1,19 @@
+{
+  "id": 240195,
+  "name": "Cucho Hernández",
+  "common_name": "J. Hernández Suárez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/240195.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-04-20",
+  "age": 27,
+  "team_id": 485,
+  "team_name": "Real Betis",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Cucho Hernández (Útočník) nastupuje za Real Betis. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

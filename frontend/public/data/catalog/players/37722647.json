@@ -1,0 +1,19 @@
+{
+  "id": 37722647,
+  "name": "Luca Reggiani",
+  "common_name": "L. Reggiani",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37722647.png",
+  "number": 49,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2008-01-09",
+  "age": 18,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Luca Reggiani (Obránce) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

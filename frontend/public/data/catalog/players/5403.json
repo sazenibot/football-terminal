@@ -1,0 +1,19 @@
+{
+  "id": 5403,
+  "name": "Harry Wilson",
+  "common_name": "H. Wilson",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/5403.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-03-22",
+  "age": 29,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Harry Wilson (Útočník) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

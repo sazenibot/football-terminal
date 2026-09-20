@@ -1,0 +1,19 @@
+{
+  "id": 258137,
+  "name": "Omar Alderete",
+  "common_name": "O. Alderete Fernández",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/258137.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-12-26",
+  "age": 29,
+  "team_id": 3,
+  "team_name": "Sunderland",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Omar Alderete (Obránce) nastupuje za Sunderland. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

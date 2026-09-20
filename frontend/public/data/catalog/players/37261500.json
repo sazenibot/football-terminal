@@ -1,0 +1,19 @@
+{
+  "id": 37261500,
+  "name": "Moisés Caicedo ",
+  "common_name": "M. Caicedo Corozo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37261500.png",
+  "number": 25,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-11-02",
+  "age": 24,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Moisés Caicedo  (Záložník) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

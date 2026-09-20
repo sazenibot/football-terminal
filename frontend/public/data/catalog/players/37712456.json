@@ -1,0 +1,19 @@
+{
+  "id": 37712456,
+  "name": "David Otorbi",
+  "common_name": "D. Otorbi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/37712456.png",
+  "number": 27,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-10-16",
+  "age": 18,
+  "team_id": 214,
+  "team_name": "Valencia",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "David Otorbi (Útočník) nastupuje za Valencia. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

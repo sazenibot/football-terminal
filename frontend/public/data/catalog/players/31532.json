@@ -1,0 +1,19 @@
+{
+  "id": 31532,
+  "name": "Niclas Füllkrug",
+  "common_name": "N. Füllkrug",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/31532.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1993-02-09",
+  "age": 33,
+  "team_id": 82,
+  "team_name": "Werder Bremen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Niclas Füllkrug (Útočník) nastupuje za Werder Bremen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

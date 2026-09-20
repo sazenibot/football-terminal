@@ -1,0 +1,19 @@
+{
+  "id": 12036864,
+  "name": "Sacha Boey",
+  "common_name": "S. Boey",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/12036864.png",
+  "number": 23,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-09-13",
+  "age": 26,
+  "team_id": 503,
+  "team_name": "FC Bayern München",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Sacha Boey (Obránce) nastupuje za FC Bayern München. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": 24816775,
+  "name": "Jakub Surovcik",
+  "common_name": "J. Surovčík",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/24816775.png",
+  "number": 44,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-06-28",
+  "age": 24,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jakub Surovcik v této sezóně za Sparta Praha: 9 startů, 810 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:44Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "saves": 21,
+      "goals_conceded": 12
+    }
+  }
+}

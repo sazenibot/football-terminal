@@ -1,0 +1,19 @@
+{
+  "id": 37656790,
+  "name": "Pau Cubarsí",
+  "common_name": "P. Cubarsí Paredes",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/37656790.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2007-01-22",
+  "age": 19,
+  "team_id": 83,
+  "team_name": "FC Barcelona",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Pau Cubarsí (Obránce) nastupuje za FC Barcelona. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

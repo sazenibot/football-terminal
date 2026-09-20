@@ -1,0 +1,19 @@
+{
+  "id": 2965,
+  "name": "Christian Walton",
+  "common_name": "C. Walton",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/2965.png",
+  "number": 28,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1995-11-09",
+  "age": 30,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Christian Walton (Brankář) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

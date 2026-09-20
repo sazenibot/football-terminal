@@ -1,0 +1,19 @@
+{
+  "id": 30851996,
+  "name": "Jofre Carreras ",
+  "common_name": "J. Carreras Pagès",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/30851996.png",
+  "number": 17,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-06-17",
+  "age": 25,
+  "team_id": 528,
+  "team_name": "Espanyol",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Jofre Carreras  (Útočník) nastupuje za Espanyol. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37769343,
+  "name": "Younes Ibrahim",
+  "common_name": "Y. Ibrahim",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 59,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2008-02-16",
+  "age": 18,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Younes Ibrahim (Záložník) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

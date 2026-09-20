@@ -1,0 +1,19 @@
+{
+  "id": 37597738,
+  "name": "Rodrigo Ribeiro",
+  "common_name": "R. Duarte Ribeiro",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37597738.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-04-28",
+  "age": 21,
+  "team_id": 90,
+  "team_name": "FC Augsburg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Rodrigo Ribeiro (Útočník) nastupuje za FC Augsburg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

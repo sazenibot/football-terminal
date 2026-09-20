@@ -1,0 +1,32 @@
+{
+  "id": 80691,
+  "name": "Jan Suchan",
+  "common_name": "J. Suchan",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/80691.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1996-01-18",
+  "age": 30,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Suchan v této sezóně za Jablonec: 6 startů, 356 min, 1 gól, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:06Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 5,
+      "minutes": 356,
+      "goals": 1,
+      "assists": 2,
+      "shots": 10,
+      "sot": 4,
+      "goals_conceded": 4
+    }
+  }
+}

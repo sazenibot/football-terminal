@@ -1,0 +1,19 @@
+{
+  "id": 37670216,
+  "name": "Viggo Gebel ",
+  "common_name": "V. Gebel",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/37670216.png",
+  "number": 47,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-11-22",
+  "age": 18,
+  "team_id": 277,
+  "team_name": "RB Leipzig",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Viggo Gebel  (Záložník) nastupuje za RB Leipzig. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

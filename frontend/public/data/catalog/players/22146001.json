@@ -1,0 +1,19 @@
+{
+  "id": 22146001,
+  "name": "Mario Vušković",
+  "common_name": "M. Vušković",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": null,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-11-16",
+  "age": 24,
+  "team_id": 2708,
+  "team_name": "Hamburger SV",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Mario Vušković (Obránce) nastupuje za Hamburger SV. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

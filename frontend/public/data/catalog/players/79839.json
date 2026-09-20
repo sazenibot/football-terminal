@@ -1,0 +1,32 @@
+{
+  "id": 79839,
+  "name": "Filip Novak",
+  "common_name": "F. Novák",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/79839.png",
+  "number": 57,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1990-06-26",
+  "age": 36,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Filip Novak v této sezóně za Jablonec: 6 startů, 447 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:57Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 5,
+      "minutes": 447,
+      "goals": 1,
+      "yellow": 1,
+      "shots": 4,
+      "sot": 1,
+      "goals_conceded": 4
+    }
+  }
+}

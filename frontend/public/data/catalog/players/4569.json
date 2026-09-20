@@ -1,0 +1,23 @@
+{
+  "id": 4569,
+  "name": "Jindrich Stanek",
+  "common_name": "J. Staněk",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/4569.png",
+  "number": 36,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1996-04-27",
+  "age": 30,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jindrich Stanek (Brankář) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {}
+  }
+}

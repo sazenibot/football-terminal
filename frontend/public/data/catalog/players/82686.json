@@ -1,0 +1,19 @@
+{
+  "id": 82686,
+  "name": "Jiri Katerinak",
+  "common_name": "J. Kateřiňák",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 22,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1995-08-25",
+  "age": 31,
+  "team_id": 3887,
+  "team_name": "Táborsko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jiri Katerinak (Záložník) nastupuje za Táborsko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

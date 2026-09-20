@@ -1,0 +1,19 @@
+{
+  "id": 37571856,
+  "name": "Facundo Bernal",
+  "common_name": "F. Bernal Cruz",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37571856.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-08-21",
+  "age": 23,
+  "team_id": 485,
+  "team_name": "Real Betis",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Facundo Bernal (Záložník) nastupuje za Real Betis. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

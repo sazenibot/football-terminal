@@ -1,0 +1,29 @@
+{
+  "id": 17129,
+  "name": "Ondřej Berka",
+  "common_name": "O. Berka",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Czech Republic",
+  "country_id": 245,
+  "date_of_birth": null,
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "in_league": true,
+  "league_matches": 1,
+  "leagues": [
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "in_league": true,
+      "league_matches": 5
+    },
+    {
+      "id": 265,
+      "name": "Chance Národní Liga",
+      "in_league": true,
+      "league_matches": 1
+    }
+  ],
+  "hook": "Ondřej Berka píská v soutěži Chance Národní Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

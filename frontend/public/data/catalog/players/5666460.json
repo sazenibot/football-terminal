@@ -1,0 +1,19 @@
+{
+  "id": 5666460,
+  "name": "Wilson Isidor",
+  "common_name": "W. Isidor",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/5666460.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-08-27",
+  "age": 26,
+  "team_id": 3,
+  "team_name": "Sunderland",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Wilson Isidor (Útočník) nastupuje za Sunderland. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

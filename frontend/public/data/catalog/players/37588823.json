@@ -1,0 +1,19 @@
+{
+  "id": 37588823,
+  "name": "Carlos Baleba",
+  "common_name": "C. Noom Quomah",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37588823.png",
+  "number": 20,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-01-03",
+  "age": 22,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Carlos Baleba (Záložník) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

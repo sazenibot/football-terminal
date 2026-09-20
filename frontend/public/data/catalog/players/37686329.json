@@ -1,0 +1,19 @@
+{
+  "id": 37686329,
+  "name": "Ryunosuke Sato",
+  "common_name": "R. Sato",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37686329.png",
+  "number": 39,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-10-16",
+  "age": 19,
+  "team_id": 214,
+  "team_name": "Valencia",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Ryunosuke Sato (Záložník) nastupuje za Valencia. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

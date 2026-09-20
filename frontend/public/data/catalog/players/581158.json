@@ -1,0 +1,19 @@
+{
+  "id": 581158,
+  "name": "Jayden Bogle",
+  "common_name": "J. Bogle",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/581158.png",
+  "number": 2,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-07-27",
+  "age": 26,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jayden Bogle (Záložník) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

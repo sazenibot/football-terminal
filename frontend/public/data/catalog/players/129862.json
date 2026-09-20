@@ -1,0 +1,19 @@
+{
+  "id": 129862,
+  "name": "Lucas Boyé",
+  "common_name": "L. Boyé",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/129862.png",
+  "number": 15,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1996-02-28",
+  "age": 30,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Lucas Boyé (Útočník) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

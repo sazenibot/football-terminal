@@ -1,0 +1,19 @@
+{
+  "id": 37581727,
+  "name": "Luc De Fougerolles",
+  "common_name": "L. De Fougerolles",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/37581727.png",
+  "number": 44,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-10-12",
+  "age": 20,
+  "team_id": 11,
+  "team_name": "Fulham",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Luc De Fougerolles (Obránce) nastupuje za Fulham. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

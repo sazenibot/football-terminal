@@ -1,0 +1,19 @@
+{
+  "id": 37693020,
+  "name": "Marek Naskos",
+  "common_name": "M. Naskos",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 28,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-06-29",
+  "age": 19,
+  "team_id": 8421,
+  "team_name": "Vlašim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Marek Naskos (Záložník) nastupuje za Vlašim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

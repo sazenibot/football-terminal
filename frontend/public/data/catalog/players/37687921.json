@@ -1,0 +1,30 @@
+{
+  "id": 37687921,
+  "name": "Dantaye Gilbert",
+  "common_name": "D. Gilbert",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-12-03",
+  "age": 21,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dantaye Gilbert v této sezóně za Baník Ostrava: 9 startů, 387 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:22Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 3,
+      "minutes": 387,
+      "shots": 14,
+      "sot": 5,
+      "goals_conceded": 8
+    }
+  }
+}

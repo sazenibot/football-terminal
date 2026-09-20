@@ -1,0 +1,19 @@
+{
+  "id": 1483350,
+  "name": "Jan Koudelka ",
+  "common_name": "J. Koudelka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/1483350.png",
+  "number": 70,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1992-03-12",
+  "age": 34,
+  "team_id": 6865,
+  "team_name": "Prostějov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jan Koudelka  (Záložník) nastupuje za Prostějov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

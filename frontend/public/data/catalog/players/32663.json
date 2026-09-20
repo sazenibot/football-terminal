@@ -1,0 +1,19 @@
+{
+  "id": 32663,
+  "name": "Felix Götze ",
+  "common_name": "F. Götze",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/32663.png",
+  "number": 20,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-02-11",
+  "age": 28,
+  "team_id": 2642,
+  "team_name": "Paderborn",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Felix Götze  (Obránce) nastupuje za Paderborn. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

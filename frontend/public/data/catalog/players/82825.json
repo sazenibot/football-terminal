@@ -1,0 +1,31 @@
+{
+  "id": 82825,
+  "name": "Patrik Čavoš",
+  "common_name": "P. Čavoš",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/82825.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1995-01-07",
+  "age": 31,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Patrik Čavoš v této sezóně za Zbrojovka Brno: 7 startů, 518 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:38Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 6,
+      "minutes": 518,
+      "yellow": 1,
+      "shots": 6,
+      "sot": 1,
+      "goals_conceded": 10
+    }
+  }
+}

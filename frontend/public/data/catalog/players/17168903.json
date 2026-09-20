@@ -1,0 +1,31 @@
+{
+  "id": 17168903,
+  "name": "Raimonds Krollis",
+  "common_name": "R. Krollis",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/17168903.png",
+  "number": 99,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-10-28",
+  "age": 24,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Raimonds Krollis v této sezóně za Slovan Liberec: 5 startů, 177 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:28Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 2,
+      "minutes": 177,
+      "yellow": 2,
+      "shots": 12,
+      "sot": 4,
+      "goals_conceded": 1
+    }
+  }
+}

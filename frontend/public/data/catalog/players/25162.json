@@ -1,0 +1,19 @@
+{
+  "id": 25162,
+  "name": "Sheraldo Becker",
+  "common_name": "S. Becker",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/25162.png",
+  "number": 23,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1995-02-09",
+  "age": 31,
+  "team_id": 794,
+  "team_name": "FSV Mainz 05",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/794.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Sheraldo Becker (Útočník) nastupuje za FSV Mainz 05. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

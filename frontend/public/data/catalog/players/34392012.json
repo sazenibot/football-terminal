@@ -1,0 +1,30 @@
+{
+  "id": 34392012,
+  "name": "Alan Marinelli",
+  "common_name": "A. Marinelli",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/34392012.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-04-07",
+  "age": 27,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Alan Marinelli v této sezóně za Slovácko: 4 starty, 111 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:40Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 111,
+      "shots": 2,
+      "sot": 2,
+      "goals_conceded": 4
+    }
+  }
+}

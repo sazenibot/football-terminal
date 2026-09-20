@@ -1,0 +1,19 @@
+{
+  "id": 22168912,
+  "name": "Lucien Agoumé",
+  "common_name": "L. Agoume",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/22168912.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-02-09",
+  "age": 24,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Lucien Agoumé (Záložník) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

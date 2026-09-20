@@ -1,0 +1,19 @@
+{
+  "id": 37601342,
+  "name": "Eliesse Ben Seghir ",
+  "common_name": "E. Ben Seghir",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/37601342.png",
+  "number": null,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-02-16",
+  "age": 21,
+  "team_id": 3321,
+  "team_name": "Bayer 04 Leverkusen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Eliesse Ben Seghir  (Útočník) nastupuje za Bayer 04 Leverkusen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

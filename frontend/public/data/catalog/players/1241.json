@@ -1,0 +1,19 @@
+{
+  "id": 1241,
+  "name": "Fraser Forster",
+  "common_name": "F. Forster",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/1241.png",
+  "number": 17,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1988-03-17",
+  "age": 38,
+  "team_id": 52,
+  "team_name": "AFC Bournemouth",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Fraser Forster (Brankář) nastupuje za AFC Bournemouth. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

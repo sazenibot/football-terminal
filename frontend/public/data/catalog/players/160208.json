@@ -1,0 +1,19 @@
+{
+  "id": 160208,
+  "name": "Alejandro Grimaldo",
+  "common_name": "A. Grimaldo García",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/160208.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1995-09-20",
+  "age": 31,
+  "team_id": 7980,
+  "team_name": "Atlético de Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Alejandro Grimaldo (Obránce) nastupuje za Atlético de Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

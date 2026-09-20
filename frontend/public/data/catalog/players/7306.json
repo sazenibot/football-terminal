@@ -1,0 +1,19 @@
+{
+  "id": 7306,
+  "name": "Ellery Balcombe",
+  "common_name": "E. Balcombe",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/7306.png",
+  "number": 31,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1999-10-15",
+  "age": 26,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ellery Balcombe (Brankář) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

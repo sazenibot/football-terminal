@@ -1,0 +1,19 @@
+{
+  "id": 537121,
+  "name": "Mason Mount ",
+  "common_name": "M. Mount",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/537121.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-01-10",
+  "age": 27,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Mason Mount  (Záložník) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

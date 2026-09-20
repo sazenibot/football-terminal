@@ -1,0 +1,31 @@
+{
+  "id": 79540,
+  "name": "Jaroslav Zelený",
+  "common_name": "J. Zelený",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/79540.png",
+  "number": 30,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1992-08-20",
+  "age": 34,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jaroslav Zelený v této sezóně za Sparta Praha: 7 startů, 365 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:47Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 4,
+      "minutes": 365,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 3,
+      "goals_conceded": 8
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 37685814,
+  "name": "Prince Mbatshi Mukuba",
+  "common_name": "P. Mbatshi Mukuba",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 45,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-01-11",
+  "age": 20,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Prince Mbatshi Mukuba v této sezóně za Zlín: 3 starty, 105 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:48Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 1,
+      "minutes": 105,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 3
+    }
+  }
+}

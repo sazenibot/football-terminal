@@ -1,0 +1,19 @@
+{
+  "id": 766659,
+  "name": "Edmond Tapsoba ",
+  "common_name": "E. Tapsoba",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/766659.png",
+  "number": 12,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-02-02",
+  "age": 27,
+  "team_id": 3321,
+  "team_name": "Bayer 04 Leverkusen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Edmond Tapsoba  (Obránce) nastupuje za Bayer 04 Leverkusen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

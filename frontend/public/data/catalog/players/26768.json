@@ -1,0 +1,19 @@
+{
+  "id": 26768,
+  "name": "Matthijs de Ligt ",
+  "common_name": "M. de Ligt",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/26768.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-08-12",
+  "age": 27,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Matthijs de Ligt  (Obránce) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

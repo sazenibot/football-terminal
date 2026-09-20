@@ -1,0 +1,23 @@
+{
+  "id": 37582778,
+  "name": "Dominik Kudelcik",
+  "common_name": "D. Kúdelčík",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/37582778.png",
+  "number": 31,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-11-16",
+  "age": 21,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dominik Kudelcik (Brankář) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {}
+  }
+}

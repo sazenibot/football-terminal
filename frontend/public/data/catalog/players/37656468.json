@@ -1,0 +1,19 @@
+{
+  "id": 37656468,
+  "name": "Andrés García",
+  "common_name": "A. García Robledo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/37656468.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-02-07",
+  "age": 23,
+  "team_id": 106,
+  "team_name": "Getafe",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Andrés García (Obránce) nastupuje za Getafe. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

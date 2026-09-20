@@ -1,0 +1,30 @@
+{
+  "id": 37577338,
+  "name": "Filip Horsky",
+  "common_name": "F. Horský",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/37577338.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-05-09",
+  "age": 23,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Filip Horsky v této sezóně za Slovácko: 6 startů, 312 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:41Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 4,
+      "minutes": 312,
+      "shots": 7,
+      "sot": 2,
+      "goals_conceded": 6
+    }
+  }
+}

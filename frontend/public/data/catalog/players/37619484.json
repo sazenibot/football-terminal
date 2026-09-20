@@ -1,0 +1,23 @@
+{
+  "id": 37619484,
+  "name": "Dominik Tapaj",
+  "common_name": "D. Ťapaj",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37619484.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-05-10",
+  "age": 22,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dominik Tapaj (Brankář) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:15Z",
+    "season": {}
+  }
+}

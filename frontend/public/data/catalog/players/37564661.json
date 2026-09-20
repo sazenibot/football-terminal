@@ -1,0 +1,29 @@
+{
+  "id": 37564661,
+  "name": "Adam Hrdina",
+  "common_name": "A. Hrdina",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/37564661.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-02-12",
+  "age": 22,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Hrdina v této sezóně za Zbrojovka Brno: 9 startů, 810 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:29Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "saves": 29,
+      "goals_conceded": 12
+    }
+  }
+}

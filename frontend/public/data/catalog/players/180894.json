@@ -1,0 +1,29 @@
+{
+  "id": 180894,
+  "name": "Denis Vavro",
+  "common_name": "D. Vavro",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/180894.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-04-10",
+  "age": 30,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Denis Vavro v této sezóně za Viktoria Plzeň: 2 starty, 150 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:17Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 2,
+      "minutes": 150,
+      "red": 1,
+      "shots": 1
+    }
+  }
+}

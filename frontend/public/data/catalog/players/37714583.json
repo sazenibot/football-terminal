@@ -1,0 +1,19 @@
+{
+  "id": 37714583,
+  "name": "Jonah Kusi-Asare",
+  "common_name": "J. Kusi-Asare",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37714583.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-07-04",
+  "age": 19,
+  "team_id": 11,
+  "team_name": "Fulham",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jonah Kusi-Asare (Útočník) nastupuje za Fulham. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

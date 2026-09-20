@@ -1,0 +1,19 @@
+{
+  "id": 21782390,
+  "name": "Georginio Rutter",
+  "common_name": "G. Rutter",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/21782390.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-04-20",
+  "age": 24,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Georginio Rutter (Útočník) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

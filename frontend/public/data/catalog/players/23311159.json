@@ -1,0 +1,19 @@
+{
+  "id": 23311159,
+  "name": "Ian Maatsen",
+  "common_name": "I. Maatsen",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/23311159.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-03-10",
+  "age": 24,
+  "team_id": 15,
+  "team_name": "Aston Villa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ian Maatsen (Obránce) nastupuje za Aston Villa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37591023,
+  "name": "Mikel Rodriguez",
+  "common_name": "M. Rodriguez Ulacia",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37591023.png",
+  "number": 18,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-04-03",
+  "age": 24,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Mikel Rodriguez (Záložník) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

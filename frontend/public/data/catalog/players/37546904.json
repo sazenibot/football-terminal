@@ -1,0 +1,19 @@
+{
+  "id": 37546904,
+  "name": "Rafael Romero Morilla",
+  "common_name": "R. Romero",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/37546904.png",
+  "number": 33,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2003-08-07",
+  "age": 23,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Rafael Romero Morilla (Brankář) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

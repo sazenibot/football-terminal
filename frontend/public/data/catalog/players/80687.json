@@ -1,0 +1,19 @@
+{
+  "id": 80687,
+  "name": "Matej Helesic",
+  "common_name": "M. Helešic",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/80687.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-11-12",
+  "age": 29,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Matej Helesic (Obránce) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

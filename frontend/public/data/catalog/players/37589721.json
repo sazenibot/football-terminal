@@ -1,0 +1,32 @@
+{
+  "id": 37589721,
+  "name": "Quadri Adediran",
+  "common_name": "Q. Adebayo Adediran",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37589721.png",
+  "number": 6,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-10-10",
+  "age": 25,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Quadri Adediran v této sezóně za SK Artis Brno: 5 startů, 363 min, 2 góly, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:12Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 4,
+      "minutes": 363,
+      "goals": 2,
+      "assists": 1,
+      "shots": 13,
+      "sot": 4,
+      "goals_conceded": 8
+    }
+  }
+}

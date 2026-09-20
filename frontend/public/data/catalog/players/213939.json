@@ -1,0 +1,19 @@
+{
+  "id": 213939,
+  "name": "Matías Dituro",
+  "common_name": "M. Dituro",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/213939.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1987-05-08",
+  "age": 39,
+  "team_id": 1099,
+  "team_name": "Elche",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/1099.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Matías Dituro (Brankář) nastupuje za Elche. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 32587,
+  "name": "Yussuf Poulsen ",
+  "common_name": "Y. Yurary Poulsen",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/32587.png",
+  "number": 15,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1994-06-15",
+  "age": 32,
+  "team_id": 2708,
+  "team_name": "Hamburger SV",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Yussuf Poulsen  (Útočník) nastupuje za Hamburger SV. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

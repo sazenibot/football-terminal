@@ -1,0 +1,31 @@
+{
+  "id": 34873426,
+  "name": "Samuel Simek",
+  "common_name": "S. Šimek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/34873426.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-04-12",
+  "age": 24,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Samuel Simek v této sezóně za Pardubice: 8 startů, 432 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:37Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 6,
+      "minutes": 432,
+      "yellow": 1,
+      "shots": 5,
+      "sot": 1,
+      "goals_conceded": 5
+    }
+  }
+}

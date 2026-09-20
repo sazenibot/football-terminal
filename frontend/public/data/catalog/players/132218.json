@@ -1,0 +1,31 @@
+{
+  "id": 132218,
+  "name": "Lamin Jawo",
+  "common_name": "L. Jawo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/132218.png",
+  "number": 44,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1995-03-15",
+  "age": 31,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Lamin Jawo v této sezóně za Jablonec: 9 startů, 433 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:08Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 4,
+      "minutes": 433,
+      "yellow": 2,
+      "shots": 18,
+      "sot": 2,
+      "goals_conceded": 5
+    }
+  }
+}

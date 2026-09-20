@@ -1,0 +1,32 @@
+{
+  "id": 30106019,
+  "name": "Bienvenue Kanakimana",
+  "common_name": "B. Kanakimana",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/30106019.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-12-28",
+  "age": 26,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Bienvenue Kanakimana v této sezóně za Zbrojovka Brno: 4 starty, 127 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:41Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 127,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 5,
+      "sot": 2,
+      "goals_conceded": 3
+    }
+  }
+}

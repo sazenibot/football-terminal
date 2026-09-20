@@ -1,0 +1,30 @@
+{
+  "id": 79978,
+  "name": "Jaromir Zmrhal",
+  "common_name": "J. Zmrhal",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/79978.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1993-08-02",
+  "age": 33,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jaromir Zmrhal v této sezóně za Zbrojovka Brno: 8 startů, 154 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:36Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 1,
+      "minutes": 154,
+      "shots": 1,
+      "sot": 1,
+      "goals_conceded": 3
+    }
+  }
+}

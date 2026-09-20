@@ -1,0 +1,19 @@
+{
+  "id": 31217483,
+  "name": "Ramón Enríquez",
+  "common_name": "R. Enríquez Rodríguez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/31217483.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-04-19",
+  "age": 25,
+  "team_id": 126,
+  "team_name": "Málaga",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Ramón Enríquez (Záložník) nastupuje za Málaga. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

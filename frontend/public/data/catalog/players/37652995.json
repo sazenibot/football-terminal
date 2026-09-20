@@ -1,0 +1,19 @@
+{
+  "id": 37652995,
+  "name": "Stephen Mfuni",
+  "common_name": "S. Mfuni",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37652995.png",
+  "number": 12,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2008-02-12",
+  "age": 18,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Stephen Mfuni (Obránce) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

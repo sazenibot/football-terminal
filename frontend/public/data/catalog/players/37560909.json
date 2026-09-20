@@ -1,0 +1,19 @@
+{
+  "id": 37560909,
+  "name": "Uzair Alhassan",
+  "common_name": "U. Alhassan",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": null,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-03-29",
+  "age": 24,
+  "team_id": 237562,
+  "team_name": "Arsenal Česká Lípa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Uzair Alhassan (Záložník) nastupuje za Arsenal Česká Lípa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

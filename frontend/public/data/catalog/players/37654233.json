@@ -1,0 +1,31 @@
+{
+  "id": 37654233,
+  "name": "Yevgeniy Skyba",
+  "common_name": "Y. Skyba",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 44,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-03-25",
+  "age": 23,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Yevgeniy Skyba v této sezóně za Baník Ostrava: 8 startů, 594 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:15Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 7,
+      "minutes": 594,
+      "yellow": 2,
+      "red": 1,
+      "shots": 3,
+      "goals_conceded": 14
+    }
+  }
+}

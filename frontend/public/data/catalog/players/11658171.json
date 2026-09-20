@@ -1,0 +1,19 @@
+{
+  "id": 11658171,
+  "name": "Sepp van den Berg",
+  "common_name": "S. van den Berg",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/11658171.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-12-20",
+  "age": 24,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Sepp van den Berg (Obránce) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37647013,
+  "name": "Grégoire Swiderski",
+  "common_name": "G. Swiderski",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/37647013.png",
+  "number": 31,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2005-10-05",
+  "age": 20,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Grégoire Swiderski (Brankář) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

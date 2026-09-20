@@ -1,0 +1,19 @@
+{
+  "id": 37297124,
+  "name": "Abde Ezzalzouli",
+  "common_name": "A. Ezzalzouli",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/37297124.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-12-17",
+  "age": 24,
+  "team_id": 485,
+  "team_name": "Real Betis",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Abde Ezzalzouli (Útočník) nastupuje za Real Betis. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

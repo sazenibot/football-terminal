@@ -1,0 +1,19 @@
+{
+  "id": 9606060,
+  "name": "Vitezslav Jaros ",
+  "common_name": "V. Jaroš",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/9606060.png",
+  "number": null,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2001-07-23",
+  "age": 25,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Vitezslav Jaros  (Brankář) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

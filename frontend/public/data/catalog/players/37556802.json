@@ -1,0 +1,31 @@
+{
+  "id": 37556802,
+  "name": "Jason Noslin",
+  "common_name": "J. Noslin",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/37556802.png",
+  "number": 43,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-02-09",
+  "age": 26,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jason Noslin v této sezóně za Pardubice: 7 startů, 589 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:28Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 6,
+      "minutes": 589,
+      "yellow": 1,
+      "shots": 10,
+      "sot": 1,
+      "goals_conceded": 12
+    }
+  }
+}

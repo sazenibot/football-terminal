@@ -1,0 +1,19 @@
+{
+  "id": 160956,
+  "name": "João Cancelo",
+  "common_name": "J. Cavaco Cancelo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/160956.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1994-05-27",
+  "age": 32,
+  "team_id": 83,
+  "team_name": "FC Barcelona",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "João Cancelo (Obránce) nastupuje za FC Barcelona. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

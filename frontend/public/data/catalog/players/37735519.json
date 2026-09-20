@@ -1,0 +1,19 @@
+{
+  "id": 37735519,
+  "name": "Kareem Tunde",
+  "common_name": "K. Tunde Ruiz",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-08-19",
+  "age": 21,
+  "team_id": 3457,
+  "team_name": "Levante",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Kareem Tunde (Útočník) nastupuje za Levante. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

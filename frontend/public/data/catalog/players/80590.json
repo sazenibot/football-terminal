@@ -1,0 +1,30 @@
+{
+  "id": 80590,
+  "name": "Daniel Trubac",
+  "common_name": "D. Trubač",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/80590.png",
+  "number": 27,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-07-17",
+  "age": 29,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Daniel Trubac v této sezóně za Hradec Králové: 9 startů, 589 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:44Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 7,
+      "minutes": 589,
+      "shots": 9,
+      "sot": 2,
+      "goals_conceded": 7
+    }
+  }
+}

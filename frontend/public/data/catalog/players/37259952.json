@@ -1,0 +1,30 @@
+{
+  "id": 37259952,
+  "name": "Jakub Kolar",
+  "common_name": "J. Kolar",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 28,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-01-16",
+  "age": 26,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jakub Kolar v této sezóně za Zlín: 5 startů, 364 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:46Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 5,
+      "minutes": 364,
+      "shots": 1,
+      "sot": 1,
+      "goals_conceded": 10
+    }
+  }
+}

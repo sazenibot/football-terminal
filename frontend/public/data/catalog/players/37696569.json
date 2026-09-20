@@ -1,0 +1,29 @@
+{
+  "id": 37696569,
+  "name": "Alexandr Buzek",
+  "common_name": "A. Bužek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37696569.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-08-02",
+  "age": 22,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Alexandr Buzek v této sezóně za Slovan Liberec: 4 starty, 148 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:20Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 148,
+      "shots": 2,
+      "sot": 1
+    }
+  }
+}

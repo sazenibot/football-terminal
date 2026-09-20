@@ -1,0 +1,32 @@
+{
+  "id": 37550144,
+  "name": "Aziz Kayondo",
+  "common_name": "A. Abdu Kayondo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/37550144.png",
+  "number": 27,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-10-06",
+  "age": 23,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Aziz Kayondo v této sezóně za Slovan Liberec: 9 startů, 810 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:16Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "goals": 1,
+      "yellow": 2,
+      "shots": 10,
+      "sot": 2,
+      "goals_conceded": 4
+    }
+  }
+}

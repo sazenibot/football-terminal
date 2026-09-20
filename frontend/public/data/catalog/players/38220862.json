@@ -1,0 +1,19 @@
+{
+  "id": 38220862,
+  "name": "Filip Dostal",
+  "common_name": "F. Dostal",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": null,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-10-21",
+  "age": 24,
+  "team_id": 8421,
+  "team_name": "Vlašim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Filip Dostal (Obránce) nastupuje za Vlašim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

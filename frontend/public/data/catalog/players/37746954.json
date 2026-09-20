@@ -1,0 +1,19 @@
+{
+  "id": 37746954,
+  "name": "Alassane Diatta",
+  "common_name": "A. Diatta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37746954.png",
+  "number": 5,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-05-14",
+  "age": 21,
+  "team_id": 3477,
+  "team_name": "Villarreal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Alassane Diatta (Záložník) nastupuje za Villarreal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

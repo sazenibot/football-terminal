@@ -1,0 +1,19 @@
+{
+  "id": 37567268,
+  "name": "Nicolás Valentini",
+  "common_name": "N. Valentini",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/37567268.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-04-06",
+  "age": 25,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Nicolás Valentini (Obránce) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 80879,
+  "name": "Petr Sevcik",
+  "common_name": "P. Ševčík",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/80879.png",
+  "number": 23,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1994-05-04",
+  "age": 32,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Petr Sevcik v této sezóně za Zbrojovka Brno: 4 starty, 142 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:39Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 142,
+      "shots": 1
+    }
+  }
+}

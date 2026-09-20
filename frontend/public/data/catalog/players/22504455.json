@@ -1,0 +1,32 @@
+{
+  "id": 22504455,
+  "name": "Jakub Cernin",
+  "common_name": "J. Černín",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/22504455.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-02-08",
+  "age": 27,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jakub Cernin v této sezóně za Zlín: 9 startů, 797 min, 2 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:46Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 797,
+      "goals": 2,
+      "yellow": 2,
+      "shots": 7,
+      "sot": 2,
+      "goals_conceded": 19
+    }
+  }
+}

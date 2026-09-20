@@ -1,5 +1,14 @@
 import { useEffect, useState } from "react";
-import type { DataIndex, LeagueRoundData, MatchData } from "../types";
+import type {
+  CatalogExplorer,
+  CatalogHub,
+  CatalogPlayerDetail,
+  CatalogRefereeDetail,
+  CatalogTeamDetail,
+  DataIndex,
+  LeagueRoundData,
+  MatchData,
+} from "../types";
 
 export class DataMissingError extends Error {
   constructor(url: string) {
@@ -72,6 +81,81 @@ export function useMatch(fixtureId: number | null) {
   }, [fixtureId]);
 
   return { match, error, missing };
+}
+
+export function useCatalogHub(leagueId: number | null) {
+  const [data, setData] = useState<CatalogHub | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [missing, setMissing] = useState(false);
+
+  useEffect(() => {
+    if (!leagueId) return;
+    setData(null);
+    setError(null);
+    setMissing(false);
+    fetchJson<CatalogHub>(`/data/catalog/leagues/${leagueId}.json`)
+      .then(setData)
+      .catch((e) => {
+        if (e instanceof DataMissingError) setMissing(true);
+        else setError(String(e));
+      });
+  }, [leagueId]);
+
+  return { data, error, missing };
+}
+
+function useCatalogEntity<T>(kind: "teams" | "players" | "referees", id: number | null) {
+  const [data, setData] = useState<T | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [missing, setMissing] = useState(false);
+
+  useEffect(() => {
+    if (!id) return;
+    setData(null);
+    setError(null);
+    setMissing(false);
+    fetchJson<T>(`/data/catalog/${kind}/${id}.json`)
+      .then(setData)
+      .catch((e) => {
+        if (e instanceof DataMissingError) setMissing(true);
+        else setError(String(e));
+      });
+  }, [kind, id]);
+
+  return { data, error, missing };
+}
+
+export function useCatalogTeam(id: number | null) {
+  return useCatalogEntity<CatalogTeamDetail>("teams", id);
+}
+
+export function useCatalogExplorer(leagueId: number | null) {
+  const [data, setData] = useState<CatalogExplorer | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [missing, setMissing] = useState(false);
+
+  useEffect(() => {
+    if (!leagueId) return;
+    setData(null);
+    setError(null);
+    setMissing(false);
+    fetchJson<CatalogExplorer>(`/data/catalog/leagues/${leagueId}.explorer.json`)
+      .then(setData)
+      .catch((e) => {
+        if (e instanceof DataMissingError) setMissing(true);
+        else setError(String(e));
+      });
+  }, [leagueId]);
+
+  return { data, error, missing };
+}
+
+export function useCatalogPlayer(id: number | null) {
+  return useCatalogEntity<CatalogPlayerDetail>("players", id);
+}
+
+export function useCatalogReferee(id: number | null) {
+  return useCatalogEntity<CatalogRefereeDetail>("referees", id);
 }
 
 export function isStale(generatedAt: string | undefined, hours: number): boolean {

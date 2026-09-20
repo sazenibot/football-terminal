@@ -1,0 +1,19 @@
+{
+  "id": 37913575,
+  "name": "Hamza Abdelkarim",
+  "common_name": "H. Abdel Karim",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/37913575.png",
+  "number": 29,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2008-01-01",
+  "age": 18,
+  "team_id": 83,
+  "team_name": "FC Barcelona",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Hamza Abdelkarim (Útočník) nastupuje za FC Barcelona. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

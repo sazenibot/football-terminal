@@ -1,0 +1,19 @@
+{
+  "id": 37576590,
+  "name": "Fabio Chiarodia ",
+  "common_name": "F. Cristian Chiarodia",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/37576590.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-06-05",
+  "age": 21,
+  "team_id": 683,
+  "team_name": "Borussia Mönchengladbach",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Fabio Chiarodia  (Obránce) nastupuje za Borussia Mönchengladbach. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

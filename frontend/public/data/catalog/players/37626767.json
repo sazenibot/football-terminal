@@ -1,0 +1,27 @@
+{
+  "id": 37626767,
+  "name": "Dominik Mares",
+  "common_name": "D. Mareš",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37626767.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-02-03",
+  "age": 23,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dominik Mares v této sezóně za Mladá Boleslav: 3 starty, 59 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:12Z",
+    "season": {
+      "appearances": 3,
+      "minutes": 59,
+      "goals_conceded": 1
+    }
+  }
+}

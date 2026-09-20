@@ -1,0 +1,26 @@
+{
+  "id": 37331670,
+  "name": "Enej Marsetič",
+  "common_name": "E. Marsetič",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 79,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-12-04",
+  "age": 21,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Enej Marsetič v této sezóně za Slovan Liberec: 2 starty, 17 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:21Z",
+    "season": {
+      "appearances": 2,
+      "minutes": 17
+    }
+  }
+}

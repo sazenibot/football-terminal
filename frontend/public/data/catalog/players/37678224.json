@@ -1,0 +1,19 @@
+{
+  "id": 37678224,
+  "name": "Gorka Carrera",
+  "common_name": "G. Carrera Zarranz",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37678224.png",
+  "number": 27,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-05-15",
+  "age": 21,
+  "team_id": 594,
+  "team_name": "Real Sociedad",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Gorka Carrera (Útočník) nastupuje za Real Sociedad. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37337129,
+  "name": "Martim Neto",
+  "common_name": "M. Carvalho Neto",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/37337129.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-01-14",
+  "age": 23,
+  "team_id": 1099,
+  "team_name": "Elche",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/1099.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Martim Neto (Záložník) nastupuje za Elche. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

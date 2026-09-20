@@ -1,0 +1,19 @@
+{
+  "id": 82400,
+  "name": "R. Reiter",
+  "common_name": "R. Reiter",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1994-09-28",
+  "age": 31,
+  "team_id": 2364,
+  "team_name": "Viktoria Žižkov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "R. Reiter (Záložník) nastupuje za Viktoria Žižkov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

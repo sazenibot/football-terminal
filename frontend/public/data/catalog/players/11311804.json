@@ -1,0 +1,31 @@
+{
+  "id": 11311804,
+  "name": "Nemanja Tekijaski",
+  "common_name": "N. Tekijaški",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/11311804.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-03-02",
+  "age": 29,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Nemanja Tekijaski v této sezóně za Jablonec: 6 startů, 540 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:59Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 6,
+      "minutes": 540,
+      "yellow": 1,
+      "shots": 6,
+      "sot": 2,
+      "goals_conceded": 5
+    }
+  }
+}

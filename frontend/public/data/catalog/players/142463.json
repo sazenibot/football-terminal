@@ -1,0 +1,31 @@
+{
+  "id": 142463,
+  "name": "Tihomir Kostadinov",
+  "common_name": "T. Kostadinov",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 26,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1996-03-04",
+  "age": 30,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tihomir Kostadinov v této sezóně za Slovácko: 7 startů, 596 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:40Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 7,
+      "minutes": 596,
+      "yellow": 2,
+      "shots": 6,
+      "sot": 1,
+      "goals_conceded": 12
+    }
+  }
+}

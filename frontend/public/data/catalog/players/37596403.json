@@ -1,0 +1,19 @@
+{
+  "id": 37596403,
+  "name": "Ibrahima Sow",
+  "common_name": "I. Sow",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37596403.png",
+  "number": 37,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-01-26",
+  "age": 19,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Ibrahima Sow (Útočník) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

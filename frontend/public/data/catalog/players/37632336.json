@@ -1,0 +1,19 @@
+{
+  "id": 37632336,
+  "name": "Junior Kroupi ",
+  "common_name": "E. Kroupi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37632336.png",
+  "number": 22,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2006-06-23",
+  "age": 20,
+  "team_id": 52,
+  "team_name": "AFC Bournemouth",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Junior Kroupi  (Útočník) nastupuje za AFC Bournemouth. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

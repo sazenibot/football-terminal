@@ -1,0 +1,33 @@
+{
+  "id": 8416702,
+  "name": "Matej Rynes",
+  "common_name": "M. Ryneš",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/8416702.png",
+  "number": 11,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-05-30",
+  "age": 25,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matej Rynes v této sezóně za Sparta Praha: 8 startů, 493 min, 1 gól, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:49Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 5,
+      "minutes": 493,
+      "goals": 1,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 5,
+      "sot": 2,
+      "goals_conceded": 6
+    }
+  }
+}

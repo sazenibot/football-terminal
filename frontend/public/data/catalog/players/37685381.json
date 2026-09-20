@@ -1,0 +1,19 @@
+{
+  "id": 37685381,
+  "name": "Younes Ebnoutalib",
+  "common_name": "Y. Ebnoutalib",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-09-13",
+  "age": 23,
+  "team_id": 366,
+  "team_name": "Eintracht Frankfurt",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Younes Ebnoutalib (Útočník) nastupuje za Eintracht Frankfurt. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

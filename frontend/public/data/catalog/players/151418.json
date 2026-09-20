@@ -1,0 +1,19 @@
+{
+  "id": 151418,
+  "name": "Kristoffer Ajer",
+  "common_name": "K. Vassbakk Ajer",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/151418.png",
+  "number": 20,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-04-17",
+  "age": 28,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Kristoffer Ajer (Obránce) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,31 @@
+{
+  "id": 37597195,
+  "name": "Lukas Penxa",
+  "common_name": "L. Penxa",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/37597195.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-06-06",
+  "age": 22,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Lukas Penxa v této sezóně za Zbrojovka Brno: 8 startů, 514 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:36Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 6,
+      "minutes": 514,
+      "goals": 1,
+      "shots": 4,
+      "sot": 1,
+      "goals_conceded": 8
+    }
+  }
+}

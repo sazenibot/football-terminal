@@ -1,0 +1,33 @@
+{
+  "id": 7026579,
+  "name": "Filip Vedral",
+  "common_name": "F. Vedral",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/7026579.png",
+  "number": 26,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-04-26",
+  "age": 29,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Filip Vedral v této sezóně za Zbrojovka Brno: 8 startů, 710 min, 1 gól, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:32Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 710,
+      "goals": 1,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 9,
+      "sot": 4,
+      "goals_conceded": 8
+    }
+  }
+}

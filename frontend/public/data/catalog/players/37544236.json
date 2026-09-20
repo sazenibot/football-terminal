@@ -1,0 +1,31 @@
+{
+  "id": 37544236,
+  "name": "Adam Gabriel",
+  "common_name": "A. Gabriel",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/37544236.png",
+  "number": 29,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-05-28",
+  "age": 25,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Gabriel v této sezóně za Viktoria Plzeň: 4 starty, 220 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:20Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 3,
+      "minutes": 220,
+      "yellow": 1,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 4
+    }
+  }
+}

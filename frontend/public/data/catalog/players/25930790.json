@@ -1,0 +1,19 @@
+{
+  "id": 25930790,
+  "name": "Brennan Johnson",
+  "common_name": "B. Johnson",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/25930790.png",
+  "number": 22,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-05-23",
+  "age": 25,
+  "team_id": 13,
+  "team_name": "Everton",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Brennan Johnson (Záložník) nastupuje za Everton. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

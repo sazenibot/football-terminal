@@ -1,0 +1,30 @@
+{
+  "id": 80730,
+  "name": "Tomas Poznar",
+  "common_name": "T. Poznar",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 88,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1988-09-27",
+  "age": 37,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tomas Poznar v této sezóně za Zlín: 8 startů, 274 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:59Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 3,
+      "minutes": 274,
+      "yellow": 2,
+      "shots": 7,
+      "goals_conceded": 5
+    }
+  }
+}

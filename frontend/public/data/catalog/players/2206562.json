@@ -1,0 +1,28 @@
+{
+  "id": 2206562,
+  "name": "Jan Kral",
+  "common_name": "J. Král",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/2206562.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-04-05",
+  "age": 27,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Kral v této sezóně za Sigma Olomouc: 2 starty, 180 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:45Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 2,
+      "minutes": 180,
+      "goals_conceded": 4
+    }
+  }
+}

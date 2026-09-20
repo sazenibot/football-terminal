@@ -1,0 +1,19 @@
+{
+  "id": 31739,
+  "name": "Pierre-Emerick Aubameyang",
+  "common_name": "P. Aubameyang",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/31739.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1989-06-18",
+  "age": 37,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Pierre-Emerick Aubameyang (Útočník) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

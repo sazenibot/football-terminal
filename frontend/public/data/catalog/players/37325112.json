@@ -1,0 +1,19 @@
+{
+  "id": 37325112,
+  "name": "Will Dennis",
+  "common_name": "W. Dennis",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/37325112.png",
+  "number": 40,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2000-07-10",
+  "age": 26,
+  "team_id": 52,
+  "team_name": "AFC Bournemouth",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Will Dennis (Brankář) nastupuje za AFC Bournemouth. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

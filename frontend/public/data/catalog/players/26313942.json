@@ -1,0 +1,31 @@
+{
+  "id": 26313942,
+  "name": "Mojmír Chytil",
+  "common_name": "M. Chytil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/26313942.png",
+  "number": 13,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-04-29",
+  "age": 27,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Mojmír Chytil v této sezóně za Slavia Praha: 7 startů, 413 min, 4 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 6,
+      "minutes": 413,
+      "goals": 4,
+      "shots": 16,
+      "sot": 9,
+      "goals_conceded": 3
+    }
+  }
+}

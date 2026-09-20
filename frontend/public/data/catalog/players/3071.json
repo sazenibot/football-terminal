@@ -1,0 +1,19 @@
+{
+  "id": 3071,
+  "name": "Jacob Murphy",
+  "common_name": "J. Murphy",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/3071.png",
+  "number": 23,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1995-02-24",
+  "age": 31,
+  "team_id": 20,
+  "team_name": "Newcastle United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jacob Murphy (Záložník) nastupuje za Newcastle United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": 80894,
+  "name": "Adam Vlkanova",
+  "common_name": "A. Vlkanova",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/80894.png",
+  "number": 58,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1994-09-04",
+  "age": 32,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Vlkanova v této sezóně za Hradec Králové: 7 startů, 176 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:44Z",
+    "season": {
+      "appearances": 7,
+      "minutes": 176,
+      "yellow": 2,
+      "shots": 3,
+      "goals_conceded": 2
+    }
+  }
+}

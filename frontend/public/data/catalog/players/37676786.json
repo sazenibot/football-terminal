@@ -1,0 +1,19 @@
+{
+  "id": 37676786,
+  "name": "Ayden Heaven",
+  "common_name": "A. Heaven",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37676786.png",
+  "number": 26,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-09-22",
+  "age": 19,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ayden Heaven (Obránce) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

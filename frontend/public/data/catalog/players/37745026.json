@@ -1,0 +1,29 @@
+{
+  "id": 37745026,
+  "name": "Jakub Kolisek",
+  "common_name": "J. Kolísek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 24,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-08-14",
+  "age": 19,
+  "team_id": 28363,
+  "team_name": "Slavia Praha B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jakub Kolisek v této sezóně za Slavia Praha B: 2 starty, 47 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 47,
+      "yellow": 1,
+      "goals_conceded": 1
+    }
+  }
+}

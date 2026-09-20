@@ -1,0 +1,19 @@
+{
+  "id": 37616276,
+  "name": "N. Milić",
+  "common_name": "N. Milić",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 19,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-05-01",
+  "age": 22,
+  "team_id": 512,
+  "team_name": "Karviná",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "N. Milić (Obránce) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

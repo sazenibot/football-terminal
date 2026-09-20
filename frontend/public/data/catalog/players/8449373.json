@@ -1,0 +1,19 @@
+{
+  "id": 8449373,
+  "name": "Mikkel Damsgaard",
+  "common_name": "M. Damsgaard",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/8449373.png",
+  "number": 24,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-07-03",
+  "age": 26,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Mikkel Damsgaard (Záložník) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

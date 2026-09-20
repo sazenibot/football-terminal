@@ -1,0 +1,19 @@
+{
+  "id": 37583537,
+  "name": "Kayne van Oevelen",
+  "common_name": "K. van Oevelen",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/37583537.png",
+  "number": 25,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2003-08-07",
+  "age": 23,
+  "team_id": 214,
+  "team_name": "Valencia",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Kayne van Oevelen (Brankář) nastupuje za Valencia. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

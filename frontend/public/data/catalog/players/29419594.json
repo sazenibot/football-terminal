@@ -1,0 +1,19 @@
+{
+  "id": 29419594,
+  "name": "Julio Enciso",
+  "common_name": "J. Enciso",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/29419594.png",
+  "number": 10,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-01-23",
+  "age": 22,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Julio Enciso (Záložník) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

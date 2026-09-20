@@ -1,0 +1,19 @@
+{
+  "id": 37622162,
+  "name": "Nobel Mendy",
+  "common_name": "N. Mendy",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37622162.png",
+  "number": 32,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-09-03",
+  "age": 22,
+  "team_id": 22,
+  "team_name": "Hull City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Nobel Mendy (Obránce) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

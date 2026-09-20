@@ -1,0 +1,19 @@
+{
+  "id": 37342617,
+  "name": "Lucas Gourna-Douath",
+  "common_name": "L. Gourna Douath",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37342617.png",
+  "number": 29,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-08-05",
+  "age": 23,
+  "team_id": 22,
+  "team_name": "Hull City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Lucas Gourna-Douath (Záložník) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 29394,
+  "name": "Joey Veerman",
+  "common_name": "J. Veerman",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/29394.png",
+  "number": 25,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-11-19",
+  "age": 27,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Joey Veerman (Záložník) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

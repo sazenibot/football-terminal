@@ -1,0 +1,27 @@
+{
+  "id": 80916,
+  "name": "Jakub Kucera",
+  "common_name": "J. Kučera",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/80916.png",
+  "number": 28,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-01-28",
+  "age": 29,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jakub Kucera v této sezóně za Hradec Králové: 2 starty, 119 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:46Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 119
+    }
+  }
+}

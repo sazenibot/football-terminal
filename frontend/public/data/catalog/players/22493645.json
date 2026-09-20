@@ -1,0 +1,19 @@
+{
+  "id": 22493645,
+  "name": "Amar Dedic",
+  "common_name": "A. Dedić",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/22493645.png",
+  "number": 37,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-08-18",
+  "age": 24,
+  "team_id": 20,
+  "team_name": "Newcastle United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Amar Dedic (Obránce) nastupuje za Newcastle United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

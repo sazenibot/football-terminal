@@ -1,0 +1,19 @@
+{
+  "id": 84426,
+  "name": "Mathias Jensen",
+  "common_name": "M. Jensen",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/84426.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1996-01-01",
+  "age": 30,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Mathias Jensen (Záložník) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,32 @@
+{
+  "id": 79179,
+  "name": "Jan Chramosta",
+  "common_name": "J. Chramosta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/79179.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1990-10-12",
+  "age": 35,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Chramosta v této sezóně za Jablonec: 6 startů, 258 min, 1 gól, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:06Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 4,
+      "minutes": 258,
+      "goals": 1,
+      "assists": 1,
+      "shots": 7,
+      "sot": 2,
+      "goals_conceded": 3
+    }
+  }
+}

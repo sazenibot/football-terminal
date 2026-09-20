@@ -1,0 +1,19 @@
+{
+  "id": 37760420,
+  "name": "Tomas Sirotek",
+  "common_name": "T. Sirotek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-07-08",
+  "age": 21,
+  "team_id": 8477,
+  "team_name": "Banik Ostrava B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Tomas Sirotek (Obránce) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

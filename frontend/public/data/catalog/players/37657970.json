@@ -1,0 +1,30 @@
+{
+  "id": 37657970,
+  "name": "Mikulas Konecny",
+  "common_name": "M. Konečný",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37657970.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-06-02",
+  "age": 20,
+  "team_id": 28363,
+  "team_name": "Slavia Praha B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Mikulas Konecny v této sezóně za Slavia Praha B: 6 startů, 451 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 5,
+      "minutes": 451,
+      "red": 1,
+      "shots": 1,
+      "goals_conceded": 2
+    }
+  }
+}

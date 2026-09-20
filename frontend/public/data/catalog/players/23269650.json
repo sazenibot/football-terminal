@@ -1,0 +1,19 @@
+{
+  "id": 23269650,
+  "name": "Arnaud Kalimuendo",
+  "common_name": "A. Muinga",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/23269650.png",
+  "number": 15,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-01-20",
+  "age": 24,
+  "team_id": 63,
+  "team_name": "Nottingham Forest",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Arnaud Kalimuendo (Útočník) nastupuje za Nottingham Forest. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

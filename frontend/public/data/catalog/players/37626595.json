@@ -1,0 +1,31 @@
+{
+  "id": 37626595,
+  "name": "Roan Nogha",
+  "common_name": "R. Nogha Nogha",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37626595.png",
+  "number": 83,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-03-12",
+  "age": 22,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Roan Nogha v této sezóně za Baník Ostrava: 9 startů, 754 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:15Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 8,
+      "minutes": 754,
+      "assists": 1,
+      "yellow": 2,
+      "shots": 3,
+      "goals_conceded": 15
+    }
+  }
+}

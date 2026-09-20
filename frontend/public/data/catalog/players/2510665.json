@@ -1,0 +1,19 @@
+{
+  "id": 2510665,
+  "name": "Jesús Areso",
+  "common_name": "J. Areso Blanco",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/2510665.png",
+  "number": 12,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-07-02",
+  "age": 27,
+  "team_id": 13258,
+  "team_name": "Athletic Club",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Jesús Areso (Obránce) nastupuje za Athletic Club. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

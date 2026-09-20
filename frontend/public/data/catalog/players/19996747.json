@@ -1,0 +1,23 @@
+{
+  "id": 19996747,
+  "name": "Ludek Nemecek",
+  "common_name": "L. Němeček",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/19996747.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1999-01-04",
+  "age": 27,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ludek Nemecek (Brankář) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:01Z",
+    "season": {}
+  }
+}

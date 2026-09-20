@@ -1,0 +1,23 @@
+{
+  "id": 37530614,
+  "name": "Vojtech Sychra",
+  "common_name": "V. Sychra",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/37530614.png",
+  "number": 28,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-11-30",
+  "age": 24,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vojtech Sychra (Záložník) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:26Z",
+    "season": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 188031,
+  "name": "Jon Guridi",
+  "common_name": "J. Guridi Aldalur",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/188031.png",
+  "number": 18,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1995-02-28",
+  "age": 31,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Jon Guridi (Záložník) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 37316338,
+  "name": "Matyas Vagner",
+  "common_name": "M. Vágner",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37316338.png",
+  "number": 20,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2003-02-05",
+  "age": 23,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matyas Vagner (Brankář) nastupuje za Hradec Králové. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:39Z",
+    "season": {}
+  }
+}

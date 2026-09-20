@@ -1,0 +1,33 @@
+{
+  "id": 37594544,
+  "name": "Stepan Chaloupek",
+  "common_name": "S. Chaloupek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37594544.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-03-08",
+  "age": 23,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Stepan Chaloupek v této sezóně za Slavia Praha: 9 startů, 569 min, 1 gól, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 6,
+      "minutes": 569,
+      "goals": 1,
+      "assists": 1,
+      "yellow": 2,
+      "shots": 8,
+      "sot": 3,
+      "goals_conceded": 5
+    }
+  }
+}

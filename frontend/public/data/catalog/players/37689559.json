@@ -1,0 +1,19 @@
+{
+  "id": 37689559,
+  "name": "Vitor Reis",
+  "common_name": "V. de Oliveira Nunes dos Reis",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37689559.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-01-12",
+  "age": 20,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Vitor Reis (Obránce) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

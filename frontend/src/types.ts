@@ -270,3 +270,314 @@ export interface AppData {
   round: RoundFixture[];
   matches: MatchData[];
 }
+
+export interface CatalogLeagueMeta {
+  id: number;
+  name: string;
+  short?: string | null;
+  country?: string | null;
+  country_id?: number | null;
+  logo?: string | null;
+  season_id?: number | null;
+  season_name?: string | null;
+  enabled?: boolean;
+}
+
+export interface CatalogTeamCard {
+  id: number;
+  name: string;
+  short?: string | null;
+  image?: string | null;
+  secondary?: string | null;
+}
+
+export interface CatalogPlayerCard {
+  id: number;
+  name: string;
+  image?: string | null;
+  team_id: number;
+  team_name: string;
+  position?: string | null;
+  number?: number | null;
+}
+
+export interface CatalogRefereeCard {
+  id: number;
+  name: string;
+  image?: string | null;
+  country?: string | null;
+  in_league: boolean;
+  league_matches?: number;
+}
+
+export interface CatalogHub {
+  generated_at: string;
+  league: CatalogLeagueMeta;
+  teams: CatalogTeamCard[];
+  players: CatalogPlayerCard[];
+  referees: CatalogRefereeCard[];
+}
+
+export interface CatalogSquadPlayer {
+  id: number;
+  name: string;
+  image?: string | null;
+  number?: number | null;
+  position?: string | null;
+  captain?: boolean;
+  position_id?: number | null;
+  status?: "active" | "loan" | "left" | null;
+  season?: CatalogPlayerSeason;
+}
+
+export interface CatalogUpcoming {
+  fixture_id: number;
+  starting_at: string | null;
+  is_home: boolean;
+  opponent: TeamBrief;
+  has_match_page?: boolean;
+  opponent_position?: number | null;
+  fdr?: "easy" | "mid" | "hard" | null;
+  fdr_rating?: number | null;
+}
+
+export interface CatalogPlayerSeason {
+  appearances?: number;
+  lineups?: number;
+  minutes?: number;
+  goals?: number;
+  assists?: number;
+  yellow?: number;
+  red?: number;
+  rating?: number;
+  shots?: number;
+  sot?: number;
+  clean_sheets?: number;
+  saves?: number;
+  goals_conceded?: number;
+}
+
+export interface CatalogRecentMatch {
+  fixture_id: number;
+  starting_at: string | null;
+  is_home: boolean;
+  opponent: TeamBrief;
+  gf: number;
+  ga: number;
+  result: "V" | "R" | "P";
+  has_match_page?: boolean;
+}
+
+export interface CatalogTeamTable {
+  position?: number | null;
+  points?: number | null;
+  played?: number | null;
+  won?: number | null;
+  drawn?: number | null;
+  lost?: number | null;
+  gf?: number | null;
+  ga?: number | null;
+  form?: string | null;
+}
+
+export interface CatalogProfileStat {
+  key?: string;
+  group?: "attack" | "defense" | "discipline" | "setpiece";
+  label: string;
+  value?: number | null;
+  league_avg?: number | null;
+  percentile?: number | null;
+  rank?: number | null;
+  league_size?: number | null;
+  higher_better?: boolean;
+}
+
+export interface CatalogEraSummary {
+  matches?: number;
+  won?: number;
+  drawn?: number;
+  lost?: number;
+  goals_for?: number | null;
+  goals_against?: number | null;
+  shots?: number | null;
+  sot?: number | null;
+  corners?: number | null;
+  possession?: number | null;
+  fouls?: number | null;
+  fouls_committed?: number | null;
+  fouls_received?: number | null;
+  yellow?: number | null;
+  cards?: number | null;
+}
+
+export interface CatalogEra {
+  coach_id?: number | null;
+  coach_name: string;
+  from?: string | null;
+  to?: string | null;
+  matches: number;
+  all: CatalogEraSummary;
+  home: CatalogEraSummary;
+  away: CatalogEraSummary;
+  radar: {
+    all: RadarAverages;
+    home: RadarAverages;
+    away: RadarAverages;
+  };
+}
+
+export interface CatalogExplorerMatch {
+  s?: number | null;
+  d: string;
+  h: 0 | 1;
+  gf: number;
+  ga: number;
+  sh?: number | null;
+  sot?: number | null;
+  c?: number | null;
+  p?: number | null;
+  f?: number | null;
+  of?: number | null;
+  y?: number | null;
+  r?: number | null;
+}
+
+export interface CatalogExplorerSeason {
+  id: number;
+  name?: string | null;
+  starting_at?: string | null;
+}
+
+export interface CatalogExplorerTeam {
+  id: number;
+  name: string;
+  short?: string | null;
+  image?: string | null;
+  matches?: CatalogExplorerMatch[];
+  eras: CatalogEra[];
+}
+
+export interface CatalogExplorer {
+  generated_at?: string;
+  league_id: number;
+  season_id?: number;
+  season_name?: string;
+  seasons?: CatalogExplorerSeason[];
+  teams: CatalogExplorerTeam[];
+}
+
+export interface CatalogTeamOverlay {
+  generated_at?: string;
+  hook_kind?: "mock" | "facts";
+  season_name?: string | null;
+  table?: CatalogTeamTable | null;
+  recent?: CatalogRecentMatch[];
+  season_avgs?: CatalogEraSummary;
+  coach?: CatalogTeamCoach | null;
+  profile?: {
+    matches?: number;
+    stats?: CatalogProfileStat[];
+    shots?: CatalogProfileStat;
+    sot?: CatalogProfileStat;
+    corners?: CatalogProfileStat;
+    possession?: CatalogProfileStat;
+    fouls?: CatalogProfileStat;
+    yellow?: CatalogProfileStat;
+  };
+  eras?: CatalogEra[];
+}
+
+export interface CatalogTeamCoach {
+  id?: number | null;
+  name?: string | null;
+  image?: string | null;
+  start?: string | null;
+  end?: string | null;
+  active?: boolean;
+}
+
+export interface CatalogTeamDetail {
+  id: number;
+  name: string;
+  short?: string | null;
+  image?: string | null;
+  country?: string | null;
+  founded?: number | null;
+  venue?: { name?: string | null; city?: string | null; capacity?: number | null } | null;
+  league_id: number;
+  league_name: string;
+  hook: string;
+  coach?: CatalogTeamCoach | null;
+  squad: CatalogSquadPlayer[];
+  upcoming: CatalogUpcoming[];
+  overlay?: CatalogTeamOverlay | null;
+}
+
+export interface CatalogPlayerDetail {
+  id: number;
+  name: string;
+  common_name?: string | null;
+  image?: string | null;
+  date_of_birth?: string | null;
+  age?: number | null;
+  team_id: number;
+  team_name: string;
+  team_image?: string | null;
+  league_id: number;
+  league_name: string;
+  number?: number | null;
+  position?: string | null;
+  hook: string;
+  overlay?: {
+    generated_at?: string;
+    season?: CatalogPlayerSeason;
+  } | null;
+}
+
+export interface CatalogRefereeRecent {
+  fixture_id: number;
+  starting_at?: string | null;
+  home?: string | null;
+  away?: string | null;
+  has_match_page?: boolean;
+}
+
+export interface CatalogRefereeOverlay {
+  generated_at?: string;
+  season?: {
+    matches?: number | null;
+    fouls_avg?: number | null;
+    yellow_avg?: number | null;
+    red_avg?: number | null;
+    penalties_avg?: number | null;
+  };
+  career?: {
+    seasons?: number | null;
+    matches?: number | null;
+    yellow?: number | null;
+    red?: number | null;
+    yellow_avg?: number | null;
+  };
+  league_context?: {
+    matches_sampled?: number;
+    fouls_per_match?: number;
+    yellow_per_match?: number;
+    red_per_match?: number;
+  } | null;
+  recent?: CatalogRefereeRecent[];
+}
+
+export interface CatalogRefereeDetail {
+  id: number;
+  name: string;
+  image?: string | null;
+  country?: string | null;
+  date_of_birth?: string | null;
+  league_id: number;
+  league_name: string;
+  in_league: boolean;
+  league_matches: number;
+  leagues?: { id: number; name: string; in_league: boolean; league_matches: number }[];
+  hook: string;
+  overlay?: CatalogRefereeOverlay | null;
+}

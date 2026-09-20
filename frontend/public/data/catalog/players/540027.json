@@ -1,0 +1,19 @@
+{
+  "id": 540027,
+  "name": "Calvin Bassey",
+  "common_name": "C. Bassey",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/540027.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-12-31",
+  "age": 26,
+  "team_id": 11,
+  "team_name": "Fulham",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Calvin Bassey (Obránce) nastupuje za Fulham. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

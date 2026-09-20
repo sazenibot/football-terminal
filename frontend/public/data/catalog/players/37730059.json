@@ -1,0 +1,32 @@
+{
+  "id": 37730059,
+  "name": "Stanislav Petruța",
+  "common_name": "S. Petruta",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 10,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-10-16",
+  "age": 20,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Stanislav Petruța v této sezóně za Zlín: 7 startů, 365 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:55Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 4,
+      "minutes": 365,
+      "goals": 1,
+      "yellow": 1,
+      "shots": 7,
+      "sot": 2,
+      "goals_conceded": 11
+    }
+  }
+}

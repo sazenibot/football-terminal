@@ -1,0 +1,19 @@
+{
+  "id": 37740887,
+  "name": "Macauley Zepa",
+  "common_name": "M. Zepa",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 35,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2008-07-07",
+  "age": 18,
+  "team_id": 11,
+  "team_name": "Fulham",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Macauley Zepa (Útočník) nastupuje za Fulham. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

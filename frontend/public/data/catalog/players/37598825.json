@@ -1,0 +1,29 @@
+{
+  "id": 37598825,
+  "name": "Eric Hunal",
+  "common_name": "E. Hunal",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-01-21",
+  "age": 21,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Eric Hunal v této sezóně za Zbrojovka Brno: 4 starty, 136 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:32Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 136,
+      "shots": 1,
+      "goals_conceded": 5
+    }
+  }
+}

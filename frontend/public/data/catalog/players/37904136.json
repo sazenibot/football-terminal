@@ -1,0 +1,19 @@
+{
+  "id": 37904136,
+  "name": "Sidas Praleika",
+  "common_name": "S. Praleika",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 20,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-05-25",
+  "age": 19,
+  "team_id": 512,
+  "team_name": "Karviná",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Sidas Praleika (Záložník) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

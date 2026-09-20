@@ -1,0 +1,19 @@
+{
+  "id": 37530812,
+  "name": "Mohamed-Ali Cho",
+  "common_name": "M. Cho",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37530812.png",
+  "number": 50,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-01-19",
+  "age": 22,
+  "team_id": 22,
+  "team_name": "Hull City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Mohamed-Ali Cho (Útočník) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

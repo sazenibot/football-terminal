@@ -1,0 +1,32 @@
+{
+  "id": 37761823,
+  "name": "Soliu Afolabi",
+  "common_name": "S. Afolabi",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-08-08",
+  "age": 21,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Soliu Afolabi v této sezóně za Slovan Liberec: 4 starty, 125 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:39Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 125,
+      "goals": 1,
+      "yellow": 2,
+      "shots": 5,
+      "sot": 3,
+      "goals_conceded": 1
+    }
+  }
+}

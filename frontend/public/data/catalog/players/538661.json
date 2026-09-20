@@ -1,0 +1,19 @@
+{
+  "id": 538661,
+  "name": "Hugo Jan Backovsky",
+  "common_name": "H. Bačkovský",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/538661.png",
+  "number": 59,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1999-10-10",
+  "age": 26,
+  "team_id": 3531,
+  "team_name": "Dukla Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/3531.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Hugo Jan Backovsky (Brankář) nastupuje za Dukla Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

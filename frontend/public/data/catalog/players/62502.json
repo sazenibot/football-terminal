@@ -1,0 +1,19 @@
+{
+  "id": 62502,
+  "name": "Ramy Bensebaini",
+  "common_name": "R. Bensebaini",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/62502.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1995-04-16",
+  "age": 31,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Ramy Bensebaini (Obránce) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

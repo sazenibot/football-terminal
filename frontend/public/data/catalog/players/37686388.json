@@ -1,0 +1,19 @@
+{
+  "id": 37686388,
+  "name": "Luis Engelns",
+  "common_name": "L. Engelns",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-03-11",
+  "age": 19,
+  "team_id": 2726,
+  "team_name": "TSG Hoffenheim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Luis Engelns (Záložník) nastupuje za TSG Hoffenheim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

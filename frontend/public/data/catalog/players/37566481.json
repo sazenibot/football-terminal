@@ -1,0 +1,29 @@
+{
+  "id": 37566481,
+  "name": "Petr Julis",
+  "common_name": "P. Julis",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/37566481.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-04-17",
+  "age": 23,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Petr Julis v této sezóně za Slovan Liberec: 5 startů, 163 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:20Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 2,
+      "minutes": 163,
+      "assists": 1,
+      "shots": 1
+    }
+  }
+}

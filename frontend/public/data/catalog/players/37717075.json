@@ -1,0 +1,19 @@
+{
+  "id": 37717075,
+  "name": "Aladji Bamba",
+  "common_name": "A. Bamba",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37717075.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-07-14",
+  "age": 20,
+  "team_id": 20,
+  "team_name": "Newcastle United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Aladji Bamba (Záložník) nastupuje za Newcastle United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

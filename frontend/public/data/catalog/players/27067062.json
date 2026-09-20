@@ -1,0 +1,19 @@
+{
+  "id": 27067062,
+  "name": "Kevin Schade",
+  "common_name": "K. Schade",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/27067062.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-11-27",
+  "age": 24,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Kevin Schade (Záložník) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

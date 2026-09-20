@@ -1,0 +1,32 @@
+{
+  "id": 378629,
+  "name": "Andrew Irving",
+  "common_name": "A. Irving",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/378629.png",
+  "number": 18,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-05-13",
+  "age": 26,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Andrew Irving v této sezóně za Sparta Praha: 6 startů, 399 min, 2 góly, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:52Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 5,
+      "minutes": 399,
+      "goals": 2,
+      "assists": 1,
+      "shots": 6,
+      "sot": 3,
+      "goals_conceded": 8
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 31561,
+  "name": "Matthias Ginter",
+  "common_name": "M. Ginter",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/31561.png",
+  "number": 28,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1994-01-19",
+  "age": 32,
+  "team_id": 3543,
+  "team_name": "SC Freiburg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/3543.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Matthias Ginter (Obránce) nastupuje za SC Freiburg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

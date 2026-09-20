@@ -1,0 +1,19 @@
+{
+  "id": 37719250,
+  "name": "Alex Marchal",
+  "common_name": "A. Marchal Garcia",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37719250.png",
+  "number": 29,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-09-17",
+  "age": 19,
+  "team_id": 594,
+  "team_name": "Real Sociedad",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Alex Marchal (Útočník) nastupuje za Real Sociedad. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

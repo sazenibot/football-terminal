@@ -1,0 +1,19 @@
+{
+  "id": 37721333,
+  "name": "Rio Ngumoha",
+  "common_name": "R. Ngumoha",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/37721333.png",
+  "number": 73,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2008-08-29",
+  "age": 18,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Rio Ngumoha (Útočník) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

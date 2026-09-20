@@ -1,0 +1,19 @@
+{
+  "id": 37704047,
+  "name": "M. Miška",
+  "common_name": "M. Miška",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 70,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-07-03",
+  "age": 23,
+  "team_id": 3887,
+  "team_name": "Táborsko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "M. Miška (Záložník) nastupuje za Táborsko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

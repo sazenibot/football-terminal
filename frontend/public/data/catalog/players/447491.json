@@ -1,0 +1,19 @@
+{
+  "id": 447491,
+  "name": "Alfon González ",
+  "common_name": "A. González Martínez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/447491.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-05-04",
+  "age": 27,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Alfon González  (Útočník) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

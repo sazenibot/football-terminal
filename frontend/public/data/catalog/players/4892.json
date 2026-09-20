@@ -1,0 +1,19 @@
+{
+  "id": 4892,
+  "name": "Kieran Dowell",
+  "common_name": "K. Dowell",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/4892.png",
+  "number": 26,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-10-10",
+  "age": 28,
+  "team_id": 22,
+  "team_name": "Hull City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Kieran Dowell (Záložník) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

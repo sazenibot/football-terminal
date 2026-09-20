@@ -1,0 +1,30 @@
+{
+  "id": 80750,
+  "name": "Antonin Krapka",
+  "common_name": "A. Křapka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/80750.png",
+  "number": 39,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1994-01-22",
+  "age": 32,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Antonin Krapka v této sezóně za Zlín: 4 starty, 344 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:45Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 3,
+      "minutes": 344,
+      "yellow": 1,
+      "shots": 2,
+      "goals_conceded": 8
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": 37533888,
+  "name": "Hilmir Rafn Mikaelsson",
+  "common_name": "H. Mikaelsson",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-02-02",
+  "age": 22,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Hilmir Rafn Mikaelsson v této sezóně za Sigma Olomouc: 3 starty, 56 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:56Z",
+    "season": {
+      "appearances": 3,
+      "minutes": 56,
+      "yellow": 1,
+      "shots": 1,
+      "goals_conceded": 2
+    }
+  }
+}

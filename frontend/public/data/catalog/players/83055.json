@@ -1,0 +1,19 @@
+{
+  "id": 83055,
+  "name": "D. Huf",
+  "common_name": "D. Huf",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/83055.png",
+  "number": 28,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-01-23",
+  "age": 27,
+  "team_id": 2364,
+  "team_name": "Viktoria Žižkov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "D. Huf (Útočník) nastupuje za Viktoria Žižkov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": 37356526,
+  "name": "Dominique Celidor Simon",
+  "common_name": "D. Simon",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/37356526.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-07-29",
+  "age": 26,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dominique Celidor Simon v této sezóně za Pardubice: 1 start, 67 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:33Z",
+    "season": {
+      "appearances": 1,
+      "lineups": 1,
+      "minutes": 67,
+      "yellow": 1,
+      "goals_conceded": 3
+    }
+  }
+}

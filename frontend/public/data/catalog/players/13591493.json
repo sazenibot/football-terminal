@@ -1,0 +1,33 @@
+{
+  "id": 13591493,
+  "name": "Tomas Cvancara ",
+  "common_name": "T. Čvančara",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/13591493.png",
+  "number": 70,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-08-13",
+  "age": 26,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tomas Cvancara  v této sezóně za Hradec Králové: 4 starty, 343 min, 1 gól, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:53Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 4,
+      "minutes": 343,
+      "goals": 1,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 4
+    }
+  }
+}

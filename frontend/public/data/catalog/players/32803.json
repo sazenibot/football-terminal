@@ -1,0 +1,19 @@
+{
+  "id": 32803,
+  "name": "Bakery Jatta",
+  "common_name": "B. Jatta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/32803.png",
+  "number": 18,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-06-06",
+  "age": 28,
+  "team_id": 2708,
+  "team_name": "Hamburger SV",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Bakery Jatta (Záložník) nastupuje za Hamburger SV. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

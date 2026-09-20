@@ -1,0 +1,32 @@
+{
+  "id": 154491,
+  "name": "Jonatan Braut Brunes",
+  "common_name": "J. Brunes",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/154491.png",
+  "number": 14,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-08-07",
+  "age": 26,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jonatan Braut Brunes v této sezóně za Sparta Praha: 8 startů, 588 min, 1 gól, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:59Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 7,
+      "minutes": 588,
+      "goals": 1,
+      "assists": 1,
+      "shots": 20,
+      "sot": 4,
+      "goals_conceded": 8
+    }
+  }
+}

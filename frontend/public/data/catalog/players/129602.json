@@ -1,0 +1,19 @@
+{
+  "id": 129602,
+  "name": "Bruno Fernandes ",
+  "common_name": "B. Fernandes",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/129602.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1994-09-08",
+  "age": 32,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Bruno Fernandes  (Záložník) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

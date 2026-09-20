@@ -1,0 +1,19 @@
+{
+  "id": 38220809,
+  "name": "Denis Nemec",
+  "common_name": "D. Nemec",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 27,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-09-11",
+  "age": 21,
+  "team_id": 8477,
+  "team_name": "Banik Ostrava B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Denis Nemec (Útočník) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

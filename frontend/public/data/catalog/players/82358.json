@@ -1,0 +1,19 @@
+{
+  "id": 82358,
+  "name": "Rene Dedic ",
+  "common_name": "R. Dedic",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/82358.png",
+  "number": 25,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1993-08-07",
+  "age": 33,
+  "team_id": 4134,
+  "team_name": "Třinec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/4134.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Rene Dedic  (Útočník) nastupuje za Třinec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

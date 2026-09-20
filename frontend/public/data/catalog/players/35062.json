@@ -1,0 +1,19 @@
+{
+  "id": 35062,
+  "name": "Sven Michel",
+  "common_name": "S. Michel",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/35062.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1990-07-15",
+  "age": 36,
+  "team_id": 2642,
+  "team_name": "Paderborn",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Sven Michel (Útočník) nastupuje za Paderborn. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

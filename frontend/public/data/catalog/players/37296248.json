@@ -1,0 +1,19 @@
+{
+  "id": 37296248,
+  "name": "Micky van de Ven ",
+  "common_name": "M. van de Ven",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/37296248.png",
+  "number": 37,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-04-19",
+  "age": 25,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Micky van de Ven  (Obránce) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

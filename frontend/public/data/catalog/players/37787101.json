@@ -1,0 +1,19 @@
+{
+  "id": 37787101,
+  "name": "Love Arrhov",
+  "common_name": "P. Arrhov",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 31,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2008-05-17",
+  "age": 18,
+  "team_id": 366,
+  "team_name": "Eintracht Frankfurt",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Love Arrhov (Záložník) nastupuje za Eintracht Frankfurt. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

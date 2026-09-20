@@ -1,0 +1,19 @@
+{
+  "id": 22136693,
+  "name": "Jon Ander Olasagasti",
+  "common_name": "J. Olasagasti Imizcoz",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/22136693.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-08-16",
+  "age": 26,
+  "team_id": 3457,
+  "team_name": "Levante",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Jon Ander Olasagasti (Záložník) nastupuje za Levante. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

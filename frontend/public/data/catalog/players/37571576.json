@@ -1,0 +1,19 @@
+{
+  "id": 37571576,
+  "name": "Lukas Fila",
+  "common_name": "L. Fila",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/37571576.png",
+  "number": 77,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-01-07",
+  "age": 22,
+  "team_id": 428,
+  "team_name": "Příbram",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Lukas Fila (Záložník) nastupuje za Příbram. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

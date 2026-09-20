@@ -1,0 +1,28 @@
+{
+  "id": 37683654,
+  "name": "John Paul Dembe ",
+  "common_name": "J. Dembe",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 17,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-07-03",
+  "age": 21,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "John Paul Dembe  v této sezóně za Sigma Olomouc: 3 starty, 54 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:58Z",
+    "season": {
+      "appearances": 3,
+      "minutes": 54,
+      "shots": 2,
+      "goals_conceded": 3
+    }
+  }
+}

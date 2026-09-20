@@ -1,0 +1,19 @@
+{
+  "id": 1397,
+  "name": "Karl Darlow",
+  "common_name": "K. Darlow",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/1397.png",
+  "number": 12,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1990-10-08",
+  "age": 35,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Karl Darlow (Brankář) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

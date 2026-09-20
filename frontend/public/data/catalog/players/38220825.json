@@ -1,0 +1,19 @@
+{
+  "id": 38220825,
+  "name": "Adama Kone",
+  "common_name": "A. Kone",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 5,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-06-25",
+  "age": 19,
+  "team_id": 512,
+  "team_name": "Karviná",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Adama Kone (Záložník) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

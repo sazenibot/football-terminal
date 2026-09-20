@@ -1,0 +1,19 @@
+{
+  "id": 28575686,
+  "name": "James Trafford",
+  "common_name": "J. Trafford",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/28575686.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-10-10",
+  "age": 23,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "James Trafford (Brankář) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,5920 @@
+{
+  "generated_at": "2026-09-20T21:56:05Z",
+  "league": {
+    "id": 265,
+    "name": "Chance Národní Liga",
+    "short": "CZ2",
+    "country": "Czech Republic",
+    "country_id": 245,
+    "logo": "https://cdn.sportmonks.com/images/soccer/leagues/9/265.png",
+    "season_id": 28213,
+    "season_name": "2026/2027",
+    "enabled": true
+  },
+  "teams": [
+    {
+      "id": 237562,
+      "name": "Arsenal Česká Lípa",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 8477,
+      "name": "Banik Ostrava B",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 3531,
+      "name": "Dukla Praha",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/11/3531.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 6957,
+      "name": "Hanácká",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 512,
+      "name": "Karviná",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 3734,
+      "name": "Kladno",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 3593,
+      "name": "Opava",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 6865,
+      "name": "Prostějov",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 428,
+      "name": "Příbram",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 28363,
+      "name": "Slavia Praha B",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 3887,
+      "name": "Táborsko",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 4134,
+      "name": "Třinec",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/6/4134.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 2364,
+      "name": "Viktoria Žižkov",
+      "short": "ZIZ",
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 8421,
+      "name": "Vlašim",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 2538,
+      "name": "Vysočina Jihlava",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
+      "secondary": "Czech Republic"
+    },
+    {
+      "id": 4184,
+      "name": "Ústí nad Labem",
+      "short": null,
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png",
+      "secondary": "Czech Republic"
+    }
+  ],
+  "players": [
+    {
+      "id": 80671,
+      "name": "A. Batioja",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 18
+    },
+    {
+      "id": 37316339,
+      "name": "A. Bárta",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": 24
+    },
+    {
+      "id": 37601998,
+      "name": "A. Markovic",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 21
+    },
+    {
+      "id": 37529860,
+      "name": "A. Matić",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 77
+    },
+    {
+      "id": 32796068,
+      "name": "A. Toula",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/4/32796068.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Útočník",
+      "number": 11
+    },
+    {
+      "id": 38220811,
+      "name": "Abdou Thiandoum",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 38203337,
+      "name": "Abel Cedergren",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Útočník",
+      "number": 19
+    },
+    {
+      "id": 37663588,
+      "name": "Adam Binar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 17
+    },
+    {
+      "id": 37925392,
+      "name": "Adam Buchta",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Obránce",
+      "number": 3
+    },
+    {
+      "id": 38220845,
+      "name": "Adam Cadek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37527767,
+      "name": "Adam Jagrik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Brankář",
+      "number": 31
+    },
+    {
+      "id": 37577334,
+      "name": "Adam Kronus",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 38225118,
+      "name": "Adam Mikula",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Útočník",
+      "number": 12
+    },
+    {
+      "id": 38220799,
+      "name": "Adam Ondracek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 82694,
+      "name": "Adam Ondráček",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/6/82694.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 14
+    },
+    {
+      "id": 37702631,
+      "name": "Adam Pešek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 29
+    },
+    {
+      "id": 37732666,
+      "name": "Adam Rajnoha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 20
+    },
+    {
+      "id": 37659508,
+      "name": "Adam Rezek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Brankář",
+      "number": 29
+    },
+    {
+      "id": 37772449,
+      "name": "Adam Sochor",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 27
+    },
+    {
+      "id": 38220830,
+      "name": "Adam Vodicka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Brankář",
+      "number": 34
+    },
+    {
+      "id": 37778859,
+      "name": "Adam Zouhar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Obránce",
+      "number": 44
+    },
+    {
+      "id": 37753355,
+      "name": "Adam Čadek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 15
+    },
+    {
+      "id": 37501841,
+      "name": "Adam Čičovský",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/37501841.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 11
+    },
+    {
+      "id": 38220825,
+      "name": "Adama Kone",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 5
+    },
+    {
+      "id": 37715508,
+      "name": "Adel Kadi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 21
+    },
+    {
+      "id": 38220751,
+      "name": "Adrian Cermak ",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37624429,
+      "name": "Adrian Fiala",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 12
+    },
+    {
+      "id": 82821,
+      "name": "Adrián Čermák",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/5/82821.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": 27
+    },
+    {
+      "id": 37912862,
+      "name": "Alain Guei",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 37537585,
+      "name": "Alan Do Marcolino",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/37537585.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Útočník",
+      "number": 9
+    },
+    {
+      "id": 37739182,
+      "name": "Albert Kotlin",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Brankář",
+      "number": 30
+    },
+    {
+      "id": 38220843,
+      "name": "Alexandr Barta",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37684970,
+      "name": "Aliou Diao",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Útočník",
+      "number": 99
+    },
+    {
+      "id": 38210447,
+      "name": "Aliyu Imrana",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Útočník",
+      "number": 11
+    },
+    {
+      "id": 38220836,
+      "name": "Amadou Aidara",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Obránce",
+      "number": 5
+    },
+    {
+      "id": 37579973,
+      "name": "Amath Cissé",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 37752466,
+      "name": "Andrej Nguyen",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Útočník",
+      "number": 7
+    },
+    {
+      "id": 38214647,
+      "name": "Andriy Rudenkyi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Obránce",
+      "number": 95
+    },
+    {
+      "id": 37549628,
+      "name": "Andriy Yuzvak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 23
+    },
+    {
+      "id": 37637125,
+      "name": "Antoni Franke",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Obránce",
+      "number": 27
+    },
+    {
+      "id": 78919,
+      "name": "Antonin Fantis",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Útočník",
+      "number": 77
+    },
+    {
+      "id": 38220796,
+      "name": "Antonin Kadlec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Brankář",
+      "number": null
+    },
+    {
+      "id": 38213281,
+      "name": "Apea Desouza",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Útočník",
+      "number": 9
+    },
+    {
+      "id": 38220866,
+      "name": "Augusto Batioja",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 38119946,
+      "name": "B. Ahmed",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Neuvedeno",
+      "number": null
+    },
+    {
+      "id": 37673162,
+      "name": "Baba Labaran Khalid",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": 17
+    },
+    {
+      "id": 37643633,
+      "name": "Babacar Sy",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/37643633.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 25
+    },
+    {
+      "id": 37562586,
+      "name": "Bachirou Yaméogo",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 12
+    },
+    {
+      "id": 37555808,
+      "name": "Barnabas Lacik",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/0/37555808.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 37754834,
+      "name": "Bartosz Szywala",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 38220871,
+      "name": "Basit Ahmed",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Útočník",
+      "number": 21
+    },
+    {
+      "id": 37736933,
+      "name": "Basit Lanre Ahmed",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Útočník",
+      "number": 21
+    },
+    {
+      "id": 38220806,
+      "name": "Bilyamin Abdullahi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 83023,
+      "name": "Bojan Djordjic",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 23
+    },
+    {
+      "id": 352236,
+      "name": "Boubou Diallo",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/12/352236.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Útočník",
+      "number": 11
+    },
+    {
+      "id": 37549333,
+      "name": "Cheick Traoré",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": 19
+    },
+    {
+      "id": 38220769,
+      "name": "Chidera Agbo",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": 16
+    },
+    {
+      "id": 36083971,
+      "name": "Chinonso Emeka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Útočník",
+      "number": 7
+    },
+    {
+      "id": 37782238,
+      "name": "Christian Bacinsky ",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/30/37782238.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37645906,
+      "name": "D. Bauer",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 37646082,
+      "name": "D. Doleček",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/2/37646082.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 14
+    },
+    {
+      "id": 83055,
+      "name": "D. Huf",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/15/83055.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Útočník",
+      "number": 28
+    },
+    {
+      "id": 37692125,
+      "name": "D. Kaulfus",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 17
+    },
+    {
+      "id": 37715331,
+      "name": "D. Kašpárek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Útočník",
+      "number": 20
+    },
+    {
+      "id": 81176,
+      "name": "D. Klusák",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 22
+    },
+    {
+      "id": 38021306,
+      "name": "D. Matoušek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": 25
+    },
+    {
+      "id": 37597202,
+      "name": "D. Michl",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Útočník",
+      "number": 9
+    },
+    {
+      "id": 37722741,
+      "name": "Damian Kotrba",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Útočník",
+      "number": 22
+    },
+    {
+      "id": 37945432,
+      "name": "Dan Kohout",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Útočník",
+      "number": 15
+    },
+    {
+      "id": 37620414,
+      "name": "Daniel Hais",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/30/37620414.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Útočník",
+      "number": 13
+    },
+    {
+      "id": 37698141,
+      "name": "Daniel Holasek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 16
+    },
+    {
+      "id": 37555810,
+      "name": "Daniel Kerl",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 9939109,
+      "name": "Daniel Kosek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/5/9939109.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 33
+    },
+    {
+      "id": 83069,
+      "name": "Daniel Kozma",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/29/83069.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Obránce",
+      "number": 39
+    },
+    {
+      "id": 37762736,
+      "name": "Daniel Polak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 80538,
+      "name": "Daniel Richter",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 38215073,
+      "name": "Daniel Rousar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 20
+    },
+    {
+      "id": 37562065,
+      "name": "Daniel Samek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/37562065.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 22
+    },
+    {
+      "id": 37721026,
+      "name": "Daniel Spilka ",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Brankář",
+      "number": null
+    },
+    {
+      "id": 37742355,
+      "name": "David Barcot",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 37626221,
+      "name": "David Beránek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": 25
+    },
+    {
+      "id": 81752,
+      "name": "David Brezina",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Obránce",
+      "number": 3
+    },
+    {
+      "id": 37497959,
+      "name": "David Cerny",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Útočník",
+      "number": 10
+    },
+    {
+      "id": 9939112,
+      "name": "David Eichler",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 16
+    },
+    {
+      "id": 37657972,
+      "name": "David Hajek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 37324993,
+      "name": "David Jambor",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/1/37324993.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 37618373,
+      "name": "David Jurcenko",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/5/37618373.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 9
+    },
+    {
+      "id": 38220873,
+      "name": "David Kasparek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 37597490,
+      "name": "David Koran",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Brankář",
+      "number": 29
+    },
+    {
+      "id": 37622215,
+      "name": "David Krch ",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/7/37622215.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37731199,
+      "name": "David Krupicka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 3
+    },
+    {
+      "id": 38220746,
+      "name": "David Matousek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37659518,
+      "name": "David Mikulanda",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 11
+    },
+    {
+      "id": 38220813,
+      "name": "David Moucka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37259980,
+      "name": "David Moučka",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/12/37259980.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 23
+    },
+    {
+      "id": 3861712,
+      "name": "David Nemec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 22514696,
+      "name": "David Nemecek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Obránce",
+      "number": 91
+    },
+    {
+      "id": 37772597,
+      "name": "David Polasek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 99
+    },
+    {
+      "id": 37730004,
+      "name": "David Rehacek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 25
+    },
+    {
+      "id": 37591295,
+      "name": "David Sellés",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/31/37591295.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 38220744,
+      "name": "David Stetka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37316345,
+      "name": "David Štětka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": 6
+    },
+    {
+      "id": 38220872,
+      "name": "Deco Mané",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Útočník",
+      "number": 14
+    },
+    {
+      "id": 38213284,
+      "name": "Defo Conte",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 37316075,
+      "name": "Denis Darmovzal",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/11/37316075.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 17
+    },
+    {
+      "id": 37509402,
+      "name": "Denis Dziuba",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 14
+    },
+    {
+      "id": 37550790,
+      "name": "Denis Kramar",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/6/37550790.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Útočník",
+      "number": 15
+    },
+    {
+      "id": 38220809,
+      "name": "Denis Nemec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Útočník",
+      "number": 27
+    },
+    {
+      "id": 37746455,
+      "name": "Denis Zamazal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 16
+    },
+    {
+      "id": 37541172,
+      "name": "Dennis Owusu",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 11
+    },
+    {
+      "id": 37505287,
+      "name": "Denny Samko",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/7/37505287.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 37789094,
+      "name": "Diego Velasquez",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 5
+    },
+    {
+      "id": 37745243,
+      "name": "Diego Zarate",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 37598163,
+      "name": "Divine Teah",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/19/37598163.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 21
+    },
+    {
+      "id": 37669223,
+      "name": "Dominik Farka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 38220849,
+      "name": "Dominik Fiser",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 9939101,
+      "name": "Dominik Fišer",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Obránce",
+      "number": 19
+    },
+    {
+      "id": 37373552,
+      "name": "Dominik Gembicky",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 17
+    },
+    {
+      "id": 2206745,
+      "name": "Dominik Hasek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/25/2206745.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Obránce",
+      "number": 18
+    },
+    {
+      "id": 20315929,
+      "name": "Dominik Kriz",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/25/20315929.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 80
+    },
+    {
+      "id": 37579896,
+      "name": "Dominik Masek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/24/37579896.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Obránce",
+      "number": 2
+    },
+    {
+      "id": 79558,
+      "name": "Dominik Simersky",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 2
+    },
+    {
+      "id": 32422606,
+      "name": "Dominik Soukenik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 37637106,
+      "name": "Dominik Vott",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 37718111,
+      "name": "Ebuka Okeke",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Útočník",
+      "number": 26
+    },
+    {
+      "id": 5283460,
+      "name": "Eldar Sehic",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/4/5283460.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Obránce",
+      "number": 33
+    },
+    {
+      "id": 38220838,
+      "name": "Elias Barteska",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37657989,
+      "name": "Elias Pitak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 43
+    },
+    {
+      "id": 81732,
+      "name": "Emmanuel Antwi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 37782544,
+      "name": "Emmanuel Ogbu",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37597194,
+      "name": "Enes Osmani",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 23
+    },
+    {
+      "id": 180923,
+      "name": "Erik Otrisal",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/27/180923.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Obránce",
+      "number": 5
+    },
+    {
+      "id": 37559097,
+      "name": "Evan Rotundo",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/25/37559097.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 19
+    },
+    {
+      "id": 37753141,
+      "name": "F. Zápotočný",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": 5
+    },
+    {
+      "id": 37786394,
+      "name": "Fallou Coly",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37919493,
+      "name": "Faycal Konate",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/5/37919493.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Útočník",
+      "number": 93
+    },
+    {
+      "id": 26337007,
+      "name": "Felix Cejka",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/15/26337007.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 37722729,
+      "name": "Ferdinand Riha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": 20
+    },
+    {
+      "id": 80734,
+      "name": "Filip Blecha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 20
+    },
+    {
+      "id": 38220862,
+      "name": "Filip Dostal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 81525,
+      "name": "Filip Havelka",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/21/81525.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 45
+    },
+    {
+      "id": 38220478,
+      "name": "Filip Kaza",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Útočník",
+      "number": 21
+    },
+    {
+      "id": 38205286,
+      "name": "Filip Kocvara",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 23
+    },
+    {
+      "id": 1508643,
+      "name": "Filip Mucha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Brankář",
+      "number": 27
+    },
+    {
+      "id": 37627497,
+      "name": "Filip Nalezinek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/9/37627497.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 81494,
+      "name": "Filip Novotny",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 29
+    },
+    {
+      "id": 38220864,
+      "name": "Filip Papousek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 26
+    },
+    {
+      "id": 38220816,
+      "name": "Filip Rajcan",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 28
+    },
+    {
+      "id": 37919428,
+      "name": "Filip Rataj",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 16
+    },
+    {
+      "id": 38220834,
+      "name": "Filip Ruzicka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 37685009,
+      "name": "Filip Sancl",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 16
+    },
+    {
+      "id": 37643752,
+      "name": "Filip Slavata",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Brankář",
+      "number": 31
+    },
+    {
+      "id": 19996748,
+      "name": "Filip Stepanek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/12/19996748.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 38220810,
+      "name": "Filip Svrcek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 19
+    },
+    {
+      "id": 38027033,
+      "name": "Filip Vácha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Brankář",
+      "number": 44
+    },
+    {
+      "id": 182373,
+      "name": "Filip Zak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 38220844,
+      "name": "Filip Zapotocny",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 24817139,
+      "name": "Franck Idumbo",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 23
+    },
+    {
+      "id": 38220852,
+      "name": "Frantisek Herak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 538613,
+      "name": "Frantisek Kotek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 24816825,
+      "name": "Frantisek Matys",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/25/24816825.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Obránce",
+      "number": 33
+    },
+    {
+      "id": 37659509,
+      "name": "František Herák",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 27
+    },
+    {
+      "id": 37597201,
+      "name": "H. Hruška",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 38220840,
+      "name": "Hamza Abdullahi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 538661,
+      "name": "Hugo Jan Backovsky",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/5/538661.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Brankář",
+      "number": 59
+    },
+    {
+      "id": 38220831,
+      "name": "Hynek Hruska ",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37564398,
+      "name": "Ibrahim Aldin",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 9
+    },
+    {
+      "id": 38021301,
+      "name": "Ibrahim Alkasim",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": 40
+    },
+    {
+      "id": 38200695,
+      "name": "Ibrahim El Nagaawy",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 13991404,
+      "name": "Ibrahim Usman",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Útočník",
+      "number": 70
+    },
+    {
+      "id": 38215577,
+      "name": "Ibrahima Kane",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": 27
+    },
+    {
+      "id": 37764865,
+      "name": "Izuchukwu Okonkwo",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 18
+    },
+    {
+      "id": 37702630,
+      "name": "J. Chytrý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 24
+    },
+    {
+      "id": 37662603,
+      "name": "J. Vlček",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 14
+    },
+    {
+      "id": 37730002,
+      "name": "Jachym Palivec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 5
+    },
+    {
+      "id": 337386,
+      "name": "Jakub Barac",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/10/337386.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 13
+    },
+    {
+      "id": 13991902,
+      "name": "Jakub Bolf",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/30/13991902.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Obránce",
+      "number": 9
+    },
+    {
+      "id": 37656865,
+      "name": "Jakub Chalupa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 4
+    },
+    {
+      "id": 37662307,
+      "name": "Jakub Dockal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Útočník",
+      "number": 17
+    },
+    {
+      "id": 81443,
+      "name": "Jakub Dostal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Brankář",
+      "number": 45
+    },
+    {
+      "id": 37659513,
+      "name": "Jakub Dufek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 5
+    },
+    {
+      "id": 37645669,
+      "name": "Jakub Hodek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Útočník",
+      "number": 9
+    },
+    {
+      "id": 37601219,
+      "name": "Jakub Jerabek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/3/37601219.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 24
+    },
+    {
+      "id": 11675304,
+      "name": "Jakub Kadák",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/8/11675304.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 26
+    },
+    {
+      "id": 38220856,
+      "name": "Jakub Kerbach",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Brankář",
+      "number": 55
+    },
+    {
+      "id": 37745026,
+      "name": "Jakub Kolisek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 24
+    },
+    {
+      "id": 38207086,
+      "name": "Jakub Kratochvil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 15
+    },
+    {
+      "id": 37658855,
+      "name": "Jakub Lapes",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/7/37658855.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Brankář",
+      "number": 30
+    },
+    {
+      "id": 37612551,
+      "name": "Jakub Lopatář",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": 20
+    },
+    {
+      "id": 23288510,
+      "name": "Jakub Matousek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 9
+    },
+    {
+      "id": 37726030,
+      "name": "Jakub Pira",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Útočník",
+      "number": 29
+    },
+    {
+      "id": 80128,
+      "name": "Jakub Plsek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/0/80128.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 20
+    },
+    {
+      "id": 81588,
+      "name": "Jakub Rezek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 24
+    },
+    {
+      "id": 24469165,
+      "name": "Jakub Selnar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 37698526,
+      "name": "Jakub Tosnar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 11
+    },
+    {
+      "id": 82748,
+      "name": "Jakub Urbanec",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/28/82748.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": 27
+    },
+    {
+      "id": 28571313,
+      "name": "Jakub Zeronik",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/28571313.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 12
+    },
+    {
+      "id": 38220869,
+      "name": "Jan Franek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37762319,
+      "name": "Jan Haala",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": 19
+    },
+    {
+      "id": 24446247,
+      "name": "Jan Kadlec",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/7/24446247.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Obránce",
+      "number": 21
+    },
+    {
+      "id": 1483350,
+      "name": "Jan Koudelka ",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/22/1483350.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 70
+    },
+    {
+      "id": 37704134,
+      "name": "Jan Kozojed",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Obránce",
+      "number": 27
+    },
+    {
+      "id": 37761804,
+      "name": "Jan Lacko",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Útočník",
+      "number": 18
+    },
+    {
+      "id": 38214646,
+      "name": "Jan Lacman",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 3
+    },
+    {
+      "id": 82028,
+      "name": "Jan Peterka ",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/12/82028.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Obránce",
+      "number": 8
+    },
+    {
+      "id": 37316337,
+      "name": "Jan Sirotník",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/37316337.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Brankář",
+      "number": 27
+    },
+    {
+      "id": 33992532,
+      "name": "Jan Stovicek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/20/33992532.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Brankář",
+      "number": 13
+    },
+    {
+      "id": 38220472,
+      "name": "Jan Vostrel",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 24
+    },
+    {
+      "id": 81118,
+      "name": "Jan Zaviska",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": 7
+    },
+    {
+      "id": 37552122,
+      "name": "Jaromir Srubek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 82243,
+      "name": "Jaroslav Malek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/3/82243.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 68
+    },
+    {
+      "id": 80704,
+      "name": "Jaroslav Svozil ",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/0/80704.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Obránce",
+      "number": 23
+    },
+    {
+      "id": 37722739,
+      "name": "Jaroslav Vanek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Útočník",
+      "number": 22
+    },
+    {
+      "id": 37710543,
+      "name": "Jevon Simons",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/15/37710543.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 28
+    },
+    {
+      "id": 518928,
+      "name": "Jiri Adamuska",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/16/518928.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Brankář",
+      "number": 22
+    },
+    {
+      "id": 2178596,
+      "name": "Jiri Ciupa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Brankář",
+      "number": 31
+    },
+    {
+      "id": 79491,
+      "name": "Jiri Fleisman",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/3/79491.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 25
+    },
+    {
+      "id": 37599056,
+      "name": "Jiri Hrubes",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/16/37599056.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 21
+    },
+    {
+      "id": 37693114,
+      "name": "Jiri Hudec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 21
+    },
+    {
+      "id": 38220839,
+      "name": "Jiri Janoscin",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 82686,
+      "name": "Jiri Katerinak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 22
+    },
+    {
+      "id": 38220860,
+      "name": "Jiri Kulhanek ",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37600221,
+      "name": "Jiri Splichal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 14
+    },
+    {
+      "id": 37704733,
+      "name": "Jirí Hamza",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 14
+    },
+    {
+      "id": 82561,
+      "name": "Jiří Janoščin",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/1/82561.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 83020,
+      "name": "Jiří Kulhánek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": 26
+    },
+    {
+      "id": 38221357,
+      "name": "John Edeh",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Útočník",
+      "number": 27
+    },
+    {
+      "id": 38220798,
+      "name": "John Patrick Edeh",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Útočník",
+      "number": 27
+    },
+    {
+      "id": 37704440,
+      "name": "Jonas Bzura",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 21
+    },
+    {
+      "id": 38210381,
+      "name": "Jonathan Okebugwu",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 25
+    },
+    {
+      "id": 38215245,
+      "name": "Josef Dub",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 22
+    },
+    {
+      "id": 37760417,
+      "name": "Josef Struhar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 37739104,
+      "name": "Kahuan Vinícius",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Útočník",
+      "number": 20
+    },
+    {
+      "id": 37730006,
+      "name": "Karel Belzik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 14
+    },
+    {
+      "id": 38220829,
+      "name": "Karel Hrubes",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37325163,
+      "name": "Karel Pojezny",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/11/37325163.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 31
+    },
+    {
+      "id": 38220749,
+      "name": "Khalid Labaran",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37597197,
+      "name": "L. Váňa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 28
+    },
+    {
+      "id": 37325195,
+      "name": "Ladislav Dufek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 11
+    },
+    {
+      "id": 13591462,
+      "name": "Ladislav Kodad",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 16
+    },
+    {
+      "id": 37586356,
+      "name": "Lauri Laine",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 13
+    },
+    {
+      "id": 37730054,
+      "name": "Lazar Savović",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 37560631,
+      "name": "Lucas Demitra",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Útočník",
+      "number": 18
+    },
+    {
+      "id": 37646973,
+      "name": "Lucas Kubr",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/29/37646973.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 77
+    },
+    {
+      "id": 37336954,
+      "name": "Luka Savic",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/26/37336954.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Brankář",
+      "number": 51
+    },
+    {
+      "id": 37667658,
+      "name": "Lukas Branecky",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Útočník",
+      "number": 11
+    },
+    {
+      "id": 16120849,
+      "name": "Lukas Cienciala",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/16120849.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": 26
+    },
+    {
+      "id": 37658730,
+      "name": "Lukas Dadak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Obránce",
+      "number": 27
+    },
+    {
+      "id": 38220821,
+      "name": "Lukas Dvoracek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37430164,
+      "name": "Lukas Endl",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/20/37430164.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 15
+    },
+    {
+      "id": 37571576,
+      "name": "Lukas Fila",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/24/37571576.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 77
+    },
+    {
+      "id": 80562,
+      "name": "Lukas Havel ",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/18/80562.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 2
+    },
+    {
+      "id": 80720,
+      "name": "Lukas Holik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 19
+    },
+    {
+      "id": 181025,
+      "name": "Lukas Hruska",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Útočník",
+      "number": 56
+    },
+    {
+      "id": 38215602,
+      "name": "Lukas Kostka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 13
+    },
+    {
+      "id": 83614,
+      "name": "Lukas Matejka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Útočník",
+      "number": 29
+    },
+    {
+      "id": 37730009,
+      "name": "Lukas Moudry",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 37569786,
+      "name": "Lukas Musil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 38212265,
+      "name": "Lukas Rajtmajer",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 22
+    },
+    {
+      "id": 38220761,
+      "name": "Lukas Zdrazil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Útočník",
+      "number": 11
+    },
+    {
+      "id": 37923329,
+      "name": "Lukáš Dvořáček",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 32777426,
+      "name": "M. Hönig",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 15
+    },
+    {
+      "id": 37597189,
+      "name": "M. Jedlička",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 80260,
+      "name": "M. Jirásek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 37776540,
+      "name": "M. Kovář",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 45
+    },
+    {
+      "id": 37704047,
+      "name": "M. Miška",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 70
+    },
+    {
+      "id": 4237084,
+      "name": "M. Richter",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 2
+    },
+    {
+      "id": 37764539,
+      "name": "M. Slouk",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 33
+    },
+    {
+      "id": 37556726,
+      "name": "Mamadou Kone",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": 2
+    },
+    {
+      "id": 33165970,
+      "name": "Marcel Novak",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/18/33165970.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 14
+    },
+    {
+      "id": 3219338,
+      "name": "Marco Tulio",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 12
+    },
+    {
+      "id": 80667,
+      "name": "Marek Cervenka",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/27/80667.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Útočník",
+      "number": 10
+    },
+    {
+      "id": 37783455,
+      "name": "Marek Halda",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/31/37783455.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 12
+    },
+    {
+      "id": 37745202,
+      "name": "Marek Havran",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 80230,
+      "name": "Marek Hlinka ",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/6/80230.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Obránce",
+      "number": 33
+    },
+    {
+      "id": 37631852,
+      "name": "Marek Jaron",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 18
+    },
+    {
+      "id": 37569810,
+      "name": "Marek Kejr",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 37259978,
+      "name": "Marek Mach",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/10/37259978.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 50
+    },
+    {
+      "id": 37693020,
+      "name": "Marek Naskos",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Záložník",
+      "number": 28
+    },
+    {
+      "id": 37505261,
+      "name": "Marek Polasek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 78654,
+      "name": "Marek Suchy",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/30/78654.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 17
+    },
+    {
+      "id": 37336762,
+      "name": "Marios Sinanaj",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": 66
+    },
+    {
+      "id": 37583612,
+      "name": "Martin Ambler",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/28/37583612.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Obránce",
+      "number": 12
+    },
+    {
+      "id": 37787273,
+      "name": "Martin Cerny",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Útočník",
+      "number": 20
+    },
+    {
+      "id": 37656183,
+      "name": "Martin Doubek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 7
+    },
+    {
+      "id": 37646079,
+      "name": "Martin Hruby ",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Brankář",
+      "number": 60
+    },
+    {
+      "id": 80679,
+      "name": "Martin Kouril ",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/7/80679.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Obránce",
+      "number": 22
+    },
+    {
+      "id": 38200369,
+      "name": "Martin Kovar ",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 5
+    },
+    {
+      "id": 38220771,
+      "name": "Martin Krakovcik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37324995,
+      "name": "Martin Kudela",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 38212825,
+      "name": "Martin Kulyk",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 40
+    },
+    {
+      "id": 37324799,
+      "name": "Martin Melichar",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/31/37324799.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Brankář",
+      "number": 21
+    },
+    {
+      "id": 80839,
+      "name": "Martin Novy",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 23
+    },
+    {
+      "id": 37665874,
+      "name": "Martin Palascak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 22
+    },
+    {
+      "id": 80852,
+      "name": "Martin Pastornicky",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Brankář",
+      "number": 18
+    },
+    {
+      "id": 83149,
+      "name": "Martin Samiec",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/13/83149.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 79953,
+      "name": "Martin Sindelar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Obránce",
+      "number": 13
+    },
+    {
+      "id": 37760456,
+      "name": "Martin Temel",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 18
+    },
+    {
+      "id": 80841,
+      "name": "Martin Toml",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Obránce",
+      "number": 25
+    },
+    {
+      "id": 15076406,
+      "name": "Martin Vaňák",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Brankář",
+      "number": 33
+    },
+    {
+      "id": 33576940,
+      "name": "Martin Vlachovsky",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": 15
+    },
+    {
+      "id": 80238,
+      "name": "Matej Hanousek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/14/80238.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Obránce",
+      "number": 15
+    },
+    {
+      "id": 83202,
+      "name": "Matej Helebrand",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/2/83202.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 80687,
+      "name": "Matej Helesic",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/15/80687.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Obránce",
+      "number": 22
+    },
+    {
+      "id": 38220857,
+      "name": "Matej Kolarik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 38205287,
+      "name": "Matej Kotrba",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Útočník",
+      "number": 8
+    },
+    {
+      "id": 80950,
+      "name": "Matej Kubista",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/22/80950.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 38220758,
+      "name": "Matej Selicha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37259968,
+      "name": "Matej Simon",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Útočník",
+      "number": 19
+    },
+    {
+      "id": 38220855,
+      "name": "Matej Slouk",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37684771,
+      "name": "Matej Vlk",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 37598813,
+      "name": "Matej Zitny",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 20
+    },
+    {
+      "id": 20335377,
+      "name": "Mateo Karamatic",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/20335377.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 38220870,
+      "name": "Mathias Skodon",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Brankář",
+      "number": null
+    },
+    {
+      "id": 38212822,
+      "name": "Mathias Škodoň",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 37628401,
+      "name": "Matous Krulich",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/37628401.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Útočník",
+      "number": 99
+    },
+    {
+      "id": 37562064,
+      "name": "Matous Nikl",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/16/37562064.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 27
+    },
+    {
+      "id": 37645608,
+      "name": "Matous Varacka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 15
+    },
+    {
+      "id": 38220805,
+      "name": "Matous Zastresek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 181490,
+      "name": "Matus Kmet",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/18/181490.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 32
+    },
+    {
+      "id": 80232,
+      "name": "Matus Lacko",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/8/80232.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": 22
+    },
+    {
+      "id": 38220807,
+      "name": "Matyas Bitta",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 38220826,
+      "name": "Matyas Jedlicka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 38220851,
+      "name": "Matyas Mervard",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 38220854,
+      "name": "Matyas Miska",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37730003,
+      "name": "Matyas Poturnay",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 32
+    },
+    {
+      "id": 37921988,
+      "name": "Matyáš Bitta",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Útočník",
+      "number": 17
+    },
+    {
+      "id": 37659512,
+      "name": "Matyáš Mervard",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 28
+    },
+    {
+      "id": 38212827,
+      "name": "Matěj Šelicha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": 42
+    },
+    {
+      "id": 38220770,
+      "name": "Maxim Obuch",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": 17
+    },
+    {
+      "id": 37583599,
+      "name": "Maximilian Baafi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Útočník",
+      "number": 10
+    },
+    {
+      "id": 37658727,
+      "name": "Michael Gergela",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Brankář",
+      "number": 22
+    },
+    {
+      "id": 38220804,
+      "name": "Michael Ouly",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 37
+    },
+    {
+      "id": 37763702,
+      "name": "Michael Vladař",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 36
+    },
+    {
+      "id": 37259957,
+      "name": "Michal Cernak",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/21/37259957.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 32
+    },
+    {
+      "id": 37316341,
+      "name": "Michal Hosek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/21/37316341.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": 21
+    },
+    {
+      "id": 80435,
+      "name": "Michal Hubinek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/19/80435.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 20
+    },
+    {
+      "id": 38200225,
+      "name": "Michal Kroupa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Útočník",
+      "number": 9
+    },
+    {
+      "id": 80561,
+      "name": "Michal Rezac",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 17
+    },
+    {
+      "id": 80661,
+      "name": "Michal Skwarczek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/21/80661.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Obránce",
+      "number": 29
+    },
+    {
+      "id": 2178962,
+      "name": "Michal Surzyn",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/18/2178962.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Obránce",
+      "number": 23
+    },
+    {
+      "id": 134050,
+      "name": "Michal Tomic",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/2/134050.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Obránce",
+      "number": 37
+    },
+    {
+      "id": 32405457,
+      "name": "Michal Vrána",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/32405457.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 17
+    },
+    {
+      "id": 37590564,
+      "name": "Michal Zahradnik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 83253,
+      "name": "Michal Zapletal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Obránce",
+      "number": 22
+    },
+    {
+      "id": 38200584,
+      "name": "Miguel Solarte",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 6
+    },
+    {
+      "id": 37657970,
+      "name": "Mikulas Konecny",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/18/37657970.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 37552127,
+      "name": "Mikulas Kubny",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/31/37552127.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Brankář",
+      "number": 41
+    },
+    {
+      "id": 38220842,
+      "name": "Milan Pisko ",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 82123,
+      "name": "Milan Piško",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/11/82123.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": 3
+    },
+    {
+      "id": 37645600,
+      "name": "Miroslav Krehlik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": 24
+    },
+    {
+      "id": 38220748,
+      "name": "Muhammad Abdullahi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37721219,
+      "name": "Muhammad Oladipupo Abdullahi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": 15
+    },
+    {
+      "id": 37762049,
+      "name": "Muhammad Yahaya",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 17
+    },
+    {
+      "id": 37742535,
+      "name": "Muhammed Jamiu Abdoulkarim",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Útočník",
+      "number": 14
+    },
+    {
+      "id": 79452,
+      "name": "Mun-sun Lee",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 24
+    },
+    {
+      "id": 37786611,
+      "name": "Musiliu Odekunle",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Útočník",
+      "number": 45
+    },
+    {
+      "id": 38220861,
+      "name": "Mustapha Badjie",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 19
+    },
+    {
+      "id": 37616276,
+      "name": "N. Milić",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 19
+    },
+    {
+      "id": 37543327,
+      "name": "Namory Cisse",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Útočník",
+      "number": 27
+    },
+    {
+      "id": 37707432,
+      "name": "Nazar Domchak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 38220772,
+      "name": "Nedzad Zinhasovic",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37316354,
+      "name": "Nedžad Zinhasovič",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/2/37316354.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": 12
+    },
+    {
+      "id": 6974924,
+      "name": "Nicolas Penner",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/12/6974924.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 19
+    },
+    {
+      "id": 37722727,
+      "name": "Nicolas Piralic",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Obránce",
+      "number": 27
+    },
+    {
+      "id": 37304035,
+      "name": "Nikola Turanjanin",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/3/37304035.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Útočník",
+      "number": 21
+    },
+    {
+      "id": 38223367,
+      "name": "Nikolas Horinek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 38224808,
+      "name": "Nikolas Hořínek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Brankář",
+      "number": 30
+    },
+    {
+      "id": 37650618,
+      "name": "Noa Kljajic",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 37683724,
+      "name": "Olatoundji Tessilimi",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/12/37683724.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 17
+    },
+    {
+      "id": 37787935,
+      "name": "Oldrich Buksa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Útočník",
+      "number": 14
+    },
+    {
+      "id": 37954588,
+      "name": "Oleksandr Koval",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Útočník",
+      "number": 17
+    },
+    {
+      "id": 37657946,
+      "name": "Oleksandr Petrenko",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 38221864,
+      "name": "Oliver Stecha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Obránce",
+      "number": 22
+    },
+    {
+      "id": 4536573,
+      "name": "Olivier Vliegen",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Brankář",
+      "number": 99
+    },
+    {
+      "id": 80915,
+      "name": "Ondrej Blaha",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/19/80915.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 38220841,
+      "name": "Ondrej Bleha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Brankář",
+      "number": null
+    },
+    {
+      "id": 38205282,
+      "name": "Ondrej Frolik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 26
+    },
+    {
+      "id": 30467980,
+      "name": "Ondrej Lehoczki",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Obránce",
+      "number": 23
+    },
+    {
+      "id": 37597193,
+      "name": "Ondrej Lilling",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 81048,
+      "name": "Ondrej Machuca",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/24/81048.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": 21
+    },
+    {
+      "id": 32404838,
+      "name": "Ondrej Mastny",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Brankář",
+      "number": 33
+    },
+    {
+      "id": 37524972,
+      "name": "Ondrej Mrozek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Brankář",
+      "number": 23
+    },
+    {
+      "id": 337389,
+      "name": "Ondrej Novotny",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Útočník",
+      "number": 11
+    },
+    {
+      "id": 38220832,
+      "name": "Ondrej Polak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37645879,
+      "name": "Ondrej Schovanec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Brankář",
+      "number": 23
+    },
+    {
+      "id": 37451196,
+      "name": "Ondrej Ullman",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/28/37451196.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Obránce",
+      "number": 15
+    },
+    {
+      "id": 38220482,
+      "name": "Ondrej Vencl",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 23
+    },
+    {
+      "id": 38220797,
+      "name": "Ondrej Zezulka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37732521,
+      "name": "Ondřej Mašek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Záložník",
+      "number": 25
+    },
+    {
+      "id": 81641,
+      "name": "Ondřej Šašinka",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/9/81641.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Útočník",
+      "number": 27
+    },
+    {
+      "id": 2178959,
+      "name": "Ondřej Žežulka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Obránce",
+      "number": 18
+    },
+    {
+      "id": 37739807,
+      "name": "Ousman Kujabi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Útočník",
+      "number": 13
+    },
+    {
+      "id": 37717991,
+      "name": "Ousmane Condé",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 31
+    },
+    {
+      "id": 38212828,
+      "name": "Ousmane Sambou",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Útočník",
+      "number": 46
+    },
+    {
+      "id": 37917979,
+      "name": "Pa Assan Corr",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Útočník",
+      "number": 14
+    },
+    {
+      "id": 38220808,
+      "name": "Pam Davou Peter",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 37722737,
+      "name": "Patrick Slanina",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 17
+    },
+    {
+      "id": 38212733,
+      "name": "Patrik Broz",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 99
+    },
+    {
+      "id": 38210792,
+      "name": "Patrik Goj",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 19
+    },
+    {
+      "id": 37536905,
+      "name": "Patrik Haitl",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 37597030,
+      "name": "Patrik Kulisek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 37
+    },
+    {
+      "id": 37661395,
+      "name": "Patrik Mekota",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 83171,
+      "name": "Patrik Schön",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 37
+    },
+    {
+      "id": 37594342,
+      "name": "Patrik Svestka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 16
+    },
+    {
+      "id": 83705,
+      "name": "Patrik Volesky",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/25/83705.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Útočník",
+      "number": 16
+    },
+    {
+      "id": 37722495,
+      "name": "Paul Nghabo",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": 45
+    },
+    {
+      "id": 37577330,
+      "name": "Pavel Behensky",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 12
+    },
+    {
+      "id": 38214645,
+      "name": "Pavel Budil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Útočník",
+      "number": 24
+    },
+    {
+      "id": 37598810,
+      "name": "Pavel Gaszczyk",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 38220827,
+      "name": "Pavel Hrdlicka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37747460,
+      "name": "Pavel Hrdlička",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Obránce",
+      "number": 5
+    },
+    {
+      "id": 80020,
+      "name": "Pavel Moulis",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 14
+    },
+    {
+      "id": 458630,
+      "name": "Pavel Soukup",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/6/458630.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Brankář",
+      "number": null
+    },
+    {
+      "id": 37590562,
+      "name": "Peter Juritka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Útočník",
+      "number": 77
+    },
+    {
+      "id": 12433112,
+      "name": "Petr Heppner",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 19
+    },
+    {
+      "id": 37594764,
+      "name": "Petr Jaron",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 24
+    },
+    {
+      "id": 24816828,
+      "name": "Petr Kurka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": 12
+    },
+    {
+      "id": 79627,
+      "name": "Petr Mares",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/11/79627.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Obránce",
+      "number": 9
+    },
+    {
+      "id": 82038,
+      "name": "Petr Mikulec",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/22/82038.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Brankář",
+      "number": 27
+    },
+    {
+      "id": 538614,
+      "name": "Petr Plachy",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 10
+    },
+    {
+      "id": 37665876,
+      "name": "Petr Potmesil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Útočník",
+      "number": 13
+    },
+    {
+      "id": 82750,
+      "name": "Petr Zavadil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Obránce",
+      "number": 3
+    },
+    {
+      "id": 82400,
+      "name": "R. Reiter",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 37328036,
+      "name": "R. Šuta",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Obránce",
+      "number": 9
+    },
+    {
+      "id": 37324988,
+      "name": "Radek Fojt",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 38220750,
+      "name": "Radek Krivanek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 37259961,
+      "name": "Radek Křivánek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Útočník",
+      "number": 11
+    },
+    {
+      "id": 37569778,
+      "name": "Radek Lehovec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 38220471,
+      "name": "Radek Novak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 38220812,
+      "name": "Radek Ovesny",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37764805,
+      "name": "Radek Ovesný",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 21
+    },
+    {
+      "id": 80224,
+      "name": "Radim Breite",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/0/80224.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 37527844,
+      "name": "Radovan Murin",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 181629,
+      "name": "Rajmund Mikus",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/29/181629.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 10
+    },
+    {
+      "id": 82358,
+      "name": "Rene Dedic ",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/22/82358.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Útočník",
+      "number": 25
+    },
+    {
+      "id": 80794,
+      "name": "Robert Bartolomeu",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/26/80794.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Záložník",
+      "number": 25
+    },
+    {
+      "id": 80627,
+      "name": "Robert Hruby",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/19/80627.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 38213283,
+      "name": "Roger Faye",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": 18
+    },
+    {
+      "id": 37597583,
+      "name": "Rok Štorman",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 77
+    },
+    {
+      "id": 20694596,
+      "name": "Roman Holis",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/4/20694596.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 98
+    },
+    {
+      "id": 37687785,
+      "name": "Roman Mokrovics",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Útočník",
+      "number": 12
+    },
+    {
+      "id": 38225448,
+      "name": "Roman Teterja",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Útočník",
+      "number": 16
+    },
+    {
+      "id": 28571315,
+      "name": "Roman Zalesak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 20
+    },
+    {
+      "id": 37920844,
+      "name": "Ruben Compaoré",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 3
+    },
+    {
+      "id": 37573891,
+      "name": "S. Hindi",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 21
+    },
+    {
+      "id": 37577966,
+      "name": "Sadiq Abdulfatai",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37341883,
+      "name": "Samson Tijani",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/27/37341883.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 14
+    },
+    {
+      "id": 37663595,
+      "name": "Samuel Pikolon",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Útočník",
+      "number": 11
+    },
+    {
+      "id": 37748199,
+      "name": "Sayibu Yakubu",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 32
+    },
+    {
+      "id": 37740117,
+      "name": "Sebastian Kop",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/21/37740117.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 38220835,
+      "name": "Sebastian Pejsa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 38214644,
+      "name": "Shalom Benneth",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 37768822,
+      "name": "Shehu Sulaiman",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 19
+    },
+    {
+      "id": 37904136,
+      "name": "Sidas Praleika",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 20
+    },
+    {
+      "id": 37745028,
+      "name": "Simon Drozd",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Útočník",
+      "number": 44
+    },
+    {
+      "id": 37754180,
+      "name": "Simon Jalovicor",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 37724144,
+      "name": "Simon Polasek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Obránce",
+      "number": 79
+    },
+    {
+      "id": 37660909,
+      "name": "Simon Vlna",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 38
+    },
+    {
+      "id": 37622682,
+      "name": "Solomon Osaghae",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 6
+    },
+    {
+      "id": 37704378,
+      "name": "Stanley Charles",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": 19
+    },
+    {
+      "id": 37663586,
+      "name": "Stefan Jovanoski",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Brankář",
+      "number": 83
+    },
+    {
+      "id": 37665864,
+      "name": "Stepan Chalus",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 23
+    },
+    {
+      "id": 37612552,
+      "name": "Stepan Misek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/8/37612552.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 18
+    },
+    {
+      "id": 37554159,
+      "name": "Stepan Sebrle",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/15/37554159.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 22
+    },
+    {
+      "id": 37923330,
+      "name": "Tadeas Frydl",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 38220814,
+      "name": "Tadeas Korycan",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 38220833,
+      "name": "Tadeas Pospisil ",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Útočník",
+      "number": 10
+    },
+    {
+      "id": 37787937,
+      "name": "Tadeáš Koryčan",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Útočník",
+      "number": 20
+    },
+    {
+      "id": 37749806,
+      "name": "Taiyo Ushiyama",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6865,
+      "team_name": "Prostějov",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 7346334,
+      "name": "Timotej Mudry",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/30/7346334.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Záložník",
+      "number": 26
+    },
+    {
+      "id": 82345,
+      "name": "Tomas Celustka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Obránce",
+      "number": 92
+    },
+    {
+      "id": 37577784,
+      "name": "Tomas Franek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Záložník",
+      "number": 7
+    },
+    {
+      "id": 79153,
+      "name": "Tomas Grigar",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/79153.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Brankář",
+      "number": 30
+    },
+    {
+      "id": 10667,
+      "name": "Tomas Holy",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Brankář",
+      "number": 91
+    },
+    {
+      "id": 37599354,
+      "name": "Tomas Jedlicka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Záložník",
+      "number": 23
+    },
+    {
+      "id": 38220865,
+      "name": "Tomas Kott",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 25168,
+      "name": "Tomas Necid",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/16/25168.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Útočník",
+      "number": 9
+    },
+    {
+      "id": 181605,
+      "name": "Tomas Omasta",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Záložník",
+      "number": 24
+    },
+    {
+      "id": 37579895,
+      "name": "Tomas Polyak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3887,
+      "team_name": "Táborsko",
+      "position": "Záložník",
+      "number": 26
+    },
+    {
+      "id": 37589854,
+      "name": "Tomas Schanelec ",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Útočník",
+      "number": 7
+    },
+    {
+      "id": 37760420,
+      "name": "Tomas Sirotek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Obránce",
+      "number": 21
+    },
+    {
+      "id": 37259959,
+      "name": "Tomas Svoboda",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Obránce",
+      "number": 8
+    },
+    {
+      "id": 37536904,
+      "name": "Tomas Vajner",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Brankář",
+      "number": 43
+    },
+    {
+      "id": 23260633,
+      "name": "Tomáš Kott",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 22
+    },
+    {
+      "id": 7346311,
+      "name": "Tomáš Smejkal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Záložník",
+      "number": 26
+    },
+    {
+      "id": 37668721,
+      "name": "Tsotne Berelidze",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Záložník",
+      "number": 17
+    },
+    {
+      "id": 28913060,
+      "name": "Tyrese Omotoye",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/4/28913060.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Útočník",
+      "number": 9
+    },
+    {
+      "id": 38220815,
+      "name": "Uchechukwu Ekebuzo",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 37908285,
+      "name": "Ukeme Nyah",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 8477,
+      "team_name": "Banik Ostrava B",
+      "position": "Útočník",
+      "number": 35
+    },
+    {
+      "id": 37560909,
+      "name": "Uzair Alhassan",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": null
+    },
+    {
+      "id": 79738,
+      "name": "V. Prošek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2364,
+      "team_name": "Viktoria Žižkov",
+      "position": "Záložník",
+      "number": 12
+    },
+    {
+      "id": 81562,
+      "name": "Vaclav Dudl",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/26/81562.png",
+      "team_id": 237562,
+      "team_name": "Arsenal Česká Lípa",
+      "position": "Záložník",
+      "number": 8
+    },
+    {
+      "id": 37745201,
+      "name": "Vaclav Jindra",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/17/37745201.png",
+      "team_id": 8421,
+      "team_name": "Vlašim",
+      "position": "Obránce",
+      "number": 4
+    },
+    {
+      "id": 38202240,
+      "name": "Victor Uduebo",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 38220863,
+      "name": "Vitek Kuta",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 38220828,
+      "name": "Vitezslav Klimes",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Útočník",
+      "number": 14
+    },
+    {
+      "id": 37531686,
+      "name": "Vito Strakl",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "position": "Obránce",
+      "number": 18
+    },
+    {
+      "id": 37329776,
+      "name": "Vladimir Neuman",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/16/37329776.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Brankář",
+      "number": 1
+    },
+    {
+      "id": 38220762,
+      "name": "Vojtech Brak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Obránce",
+      "number": null
+    },
+    {
+      "id": 37622881,
+      "name": "Vojtech Citek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3734,
+      "team_name": "Kladno",
+      "position": "Obránce",
+      "number": 8
+    },
+    {
+      "id": 20693892,
+      "name": "Vojtěch Brak",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/4/20693892.png",
+      "team_id": 4134,
+      "team_name": "Třinec",
+      "position": "Obránce",
+      "number": 13
+    },
+    {
+      "id": 38210656,
+      "name": "Yacouba Diarra",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4184,
+      "team_name": "Ústí nad Labem",
+      "position": "Útočník",
+      "number": 18
+    },
+    {
+      "id": 37694346,
+      "name": "Yahaya Lawali",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Záložník",
+      "number": 3
+    },
+    {
+      "id": 37631853,
+      "name": "Zdenek Riha",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Obránce",
+      "number": 44
+    },
+    {
+      "id": 37702534,
+      "name": "Zdenek Toman",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 6957,
+      "team_name": "Hanácká",
+      "position": "Obránce",
+      "number": 9
+    },
+    {
+      "id": 38220846,
+      "name": "Zekinho Apea",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 428,
+      "team_name": "Příbram",
+      "position": "Útočník",
+      "number": null
+    },
+    {
+      "id": 38224280,
+      "name": "Šimon Brzobohatý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3593,
+      "team_name": "Opava",
+      "position": "Obránce",
+      "number": 34
+    }
+  ],
+  "referees": [
+    {
+      "id": 75580,
+      "name": "Daniel Vokoun",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 6
+    },
+    {
+      "id": 15436,
+      "name": "Jan Machálek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 5
+    },
+    {
+      "id": 15625,
+      "name": "Ondřej Pechanec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 5
+    },
+    {
+      "id": 1158996,
+      "name": "Matěj Kubečka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
+      "id": 74540,
+      "name": "Vojtěch Opočenský",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
+      "id": 16465,
+      "name": "Pavel Orel",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 69866,
+      "name": "D. Černý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 74265,
+      "name": "Dominik Starý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 74596,
+      "name": "Filip Kotala",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 38367,
+      "name": "Jan Petřík",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 75583,
+      "name": "Jan Všetečka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 73711,
+      "name": "Lukáš Nehasil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 72915,
+      "name": "Marek Radina",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 71376,
+      "name": "Simon Vejtasa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 72429,
+      "name": "Vit Zaoral",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 1159814,
+      "name": "Habermann Lubomir",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 17129,
+      "name": "Ondřej Berka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 75577,
+      "name": "Stanislav Volek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 17130,
+      "name": "Adam Horak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 65572,
+      "name": "Alex Denev",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72300,
+      "name": "Alexandr Černoevič",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38382,
+      "name": "Antonin Kordula",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38375,
+      "name": "Bedřich Caletka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38369,
+      "name": "Dan Vodrazka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 30421,
+      "name": "David Hock",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 1159389,
+      "name": "David Jurajda",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 74830,
+      "name": "David Žurovec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15435,
+      "name": "Dusan Pospisil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 17137,
+      "name": "Emanuel Marek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38378,
+      "name": "Ivo Antoníček",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15427,
+      "name": "Ivo Nádvorník",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 74274,
+      "name": "J. Hádek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 65872,
+      "name": "Jakub Bures",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15434,
+      "name": "Jakub Hrabovský",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 41836,
+      "name": "Jakub Mojžíš",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16449,
+      "name": "Jakub Vojkovsky",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38368,
+      "name": "Jakub Šimáček",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 65562,
+      "name": "Jan Cihlář",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38376,
+      "name": "Jan Dohnálek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 1159007,
+      "name": "Jan Dorotík",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 66043,
+      "name": "Jan Hurych",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15422,
+      "name": "Jan Jilek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 18404,
+      "name": "Jan Mikyska",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16880,
+      "name": "Jan Paták",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 34491,
+      "name": "Jan Váňa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 30816,
+      "name": "Jana Adamkova",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15424,
+      "name": "Jaroslav Kubr",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 44993,
+      "name": "Jaroslav Melichar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38366,
+      "name": "Jaroslav Poživil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15428,
+      "name": "Jiri Molacek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 69767,
+      "name": "Jiri Musil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15430,
+      "name": "Jiří Houdek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 18387,
+      "name": "Jiří Kříž",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 37670,
+      "name": "Jiří Pečenka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 35087,
+      "name": "Jiří Polák",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38365,
+      "name": "Jiří Slabý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72582,
+      "name": "Josef Krejsa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 1158926,
+      "name": "Josef Suma",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 33625,
+      "name": "Josef Váňa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 18294,
+      "name": "Kamil Hájek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 65583,
+      "name": "Karel Hanousek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 19230,
+      "name": "Karel Hrubes",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 65874,
+      "name": "Karel Mikeska",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 75582,
+      "name": "Karel Roucek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 49606,
+      "name": "Krystof Mencl",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 70729,
+      "name": "Ladislav Szikszay",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 70821,
+      "name": "Leoš Slavíček",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 49610,
+      "name": "Libor Kovarik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38370,
+      "name": "Libor Novak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 27522,
+      "name": "Lucie Ratajova",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 70711,
+      "name": "Lukas Raplik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 1159262,
+      "name": "Lukáš Dohnal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38380,
+      "name": "Lukáš Lakomý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 70782,
+      "name": "Lukáš Machač",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 65894,
+      "name": "Lukáš Matousek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 71313,
+      "name": "Lukáš Slavíček",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 55451,
+      "name": "Marek Peterka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 26127,
+      "name": "Marek Podaný",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 48054,
+      "name": "Martin Leška",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16446,
+      "name": "Martin Nenadál",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 18293,
+      "name": "Martin Wilczek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 75646,
+      "name": "Matěj Cichra",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 34044,
+      "name": "Matěj Vlček",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 73892,
+      "name": "Michael Kvítek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16467,
+      "name": "Michael Pfeifer",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72901,
+      "name": "Michal Křepský",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15624,
+      "name": "Michal Myška",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38379,
+      "name": "Michal Novák",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 68691,
+      "name": "Michal Paták",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 71229,
+      "name": "Michal Volf",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16448,
+      "name": "Milan Flimmel",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 17131,
+      "name": "Milan Matejcek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72331,
+      "name": "Milan Vyhnanovský",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 34917,
+      "name": "Miloš Vitner",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 17143,
+      "name": "Miroslav Fišer",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16878,
+      "name": "Miroslav Zelinka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 27523,
+      "name": "Nikol Šafránková",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16879,
+      "name": "Ondrej Pelikán",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 41835,
+      "name": "Ondřej Cieslar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 17707,
+      "name": "Ondřej Ginzel",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 1159263,
+      "name": "Ondřej Ježek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38377,
+      "name": "Ondřej Kožár",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 25727,
+      "name": "Ondřej Lerch",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 25730,
+      "name": "Ondřej Černý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15622,
+      "name": "Pavel Franek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15433,
+      "name": "Pavel Julínek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 18292,
+      "name": "Pavel Kralovec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 75053,
+      "name": "Pavel Pospisil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15425,
+      "name": "Pavel Rejžek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 33624,
+      "name": "Pavel Vlasjuk",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38372,
+      "name": "Peter Mrázek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 28689,
+      "name": "Petr Antoníček",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15426,
+      "name": "Petr Ardeleanu",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 17136,
+      "name": "Petr Blažej",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 1159008,
+      "name": "Petr Brázdil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 33733,
+      "name": "Petr Caletka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 65588,
+      "name": "Petr Dorušák",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 65574,
+      "name": "Petr Hocek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 69839,
+      "name": "Petr Hojsik",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 66019,
+      "name": "Petr Klupák",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 33512,
+      "name": "Petr Kotalík",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72297,
+      "name": "Petr Líkař",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 30248,
+      "name": "Petr Vít",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 23738,
+      "name": "Radek Dubravsky",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15423,
+      "name": "Radek Kotík",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72626,
+      "name": "Radek Matejek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16468,
+      "name": "Radek Prihoda",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 23737,
+      "name": "Radim Dresler",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 70108,
+      "name": "Robert Hajek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72627,
+      "name": "Robert Kubán",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72573,
+      "name": "Roman Hrubes",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 24100,
+      "name": "Stanislav Pochylý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 1159923,
+      "name": "Tomas Mankovecky",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38371,
+      "name": "Tomás Lakomy",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38373,
+      "name": "Tomáš Batík",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 1159885,
+      "name": "Tomáš Ehrenberger",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 23736,
+      "name": "Tomáš Klíma",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 18403,
+      "name": "Tomáš Mokrusch",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72283,
+      "name": "Tomáš Ulrich",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 72896,
+      "name": "Tomáš Švagr",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 23746,
+      "name": "Valter Boček",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 17144,
+      "name": "Vojtech Severyn",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 38374,
+      "name": "Václav Kubec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 53889,
+      "name": "Václav Severýn",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 25580,
+      "name": "Vít Melichar",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 70707,
+      "name": "Vít Nedvěd",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 24505,
+      "name": "Zbynek Proske",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16466,
+      "name": "Zdenek Dobrovolný",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 16447,
+      "name": "Zdenek Koval",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 15623,
+      "name": "Zdeněk Arnošt",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 53890,
+      "name": "Zdeněk Vaňkát",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 36777,
+      "name": "Zuzana Špindlerová",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    }
+  ]
+}

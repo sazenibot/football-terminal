@@ -1,0 +1,19 @@
+{
+  "id": 81118,
+  "name": "Jan Zaviska",
+  "common_name": "J. Záviška",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 7,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1995-08-21",
+  "age": 31,
+  "team_id": 8421,
+  "team_name": "Vlašim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jan Zaviska (Obránce) nastupuje za Vlašim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

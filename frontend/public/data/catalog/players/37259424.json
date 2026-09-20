@@ -1,0 +1,19 @@
+{
+  "id": 37259424,
+  "name": "Nicolas Kristof",
+  "common_name": "N. Kristof",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/37259424.png",
+  "number": 20,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1999-12-20",
+  "age": 26,
+  "team_id": 3588,
+  "team_name": "Elversberg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Nicolas Kristof (Brankář) nastupuje za Elversberg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

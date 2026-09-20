@@ -1,0 +1,19 @@
+{
+  "id": 33165970,
+  "name": "Marcel Novak",
+  "common_name": "M. Novák",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/33165970.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-06-12",
+  "age": 24,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Marcel Novak (Záložník) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

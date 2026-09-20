@@ -1,0 +1,32 @@
+{
+  "id": 37530761,
+  "name": "Lukas Masek",
+  "common_name": "L. Mašek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/37530761.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-05-08",
+  "age": 22,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Lukas Masek v této sezóně za Slovan Liberec: 9 startů, 543 min, 3 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:27Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 7,
+      "minutes": 543,
+      "goals": 3,
+      "yellow": 1,
+      "shots": 20,
+      "sot": 11,
+      "goals_conceded": 2
+    }
+  }
+}

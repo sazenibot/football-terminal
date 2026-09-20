@@ -1,0 +1,19 @@
+{
+  "id": 4536500,
+  "name": "Marc Guéhi",
+  "common_name": "M. Guehi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/4536500.png",
+  "number": 6,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-07-13",
+  "age": 26,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Marc Guéhi (Obránce) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

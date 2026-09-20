@@ -1,0 +1,32 @@
+{
+  "id": 37618814,
+  "name": "Pavel Juroska",
+  "common_name": "P. Juroška",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/37618814.png",
+  "number": 77,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-07-07",
+  "age": 25,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Pavel Juroska v této sezóně za Slovácko: 6 startů, 318 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:39Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 5,
+      "minutes": 318,
+      "goals": 1,
+      "red": 1,
+      "shots": 6,
+      "sot": 2,
+      "goals_conceded": 7
+    }
+  }
+}

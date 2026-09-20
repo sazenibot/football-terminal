@@ -1,0 +1,28 @@
+{
+  "id": 37570074,
+  "name": "Jan Fiala",
+  "common_name": "J. Fiala",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/37570074.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-05-04",
+  "age": 25,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Fiala v této sezóně za Sigma Olomouc: 2 starty, 74 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:42Z",
+    "season": {
+      "appearances": 2,
+      "minutes": 74,
+      "shots": 1,
+      "goals_conceded": 2
+    }
+  }
+}

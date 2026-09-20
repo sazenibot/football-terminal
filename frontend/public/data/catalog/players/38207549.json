@@ -1,0 +1,19 @@
+{
+  "id": 38207549,
+  "name": "Noé Carrillo",
+  "common_name": "N. Carrillo",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 37,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-12-28",
+  "age": 19,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Noé Carrillo (Záložník) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

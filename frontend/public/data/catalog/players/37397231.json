@@ -1,0 +1,19 @@
+{
+  "id": 37397231,
+  "name": "Zaid Romero",
+  "common_name": "Z. Romero",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37397231.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-12-15",
+  "age": 26,
+  "team_id": 106,
+  "team_name": "Getafe",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Zaid Romero (Obránce) nastupuje za Getafe. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

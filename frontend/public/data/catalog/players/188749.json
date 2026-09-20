@@ -1,0 +1,19 @@
+{
+  "id": 188749,
+  "name": "Einar Galilea",
+  "common_name": "E. Galilea Azaceta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/188749.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1994-05-22",
+  "age": 32,
+  "team_id": 126,
+  "team_name": "Málaga",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Einar Galilea (Obránce) nastupuje za Málaga. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

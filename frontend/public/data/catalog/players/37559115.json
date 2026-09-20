@@ -1,0 +1,19 @@
+{
+  "id": 37559115,
+  "name": "Lucas Stassin",
+  "common_name": "L. Stassin",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/37559115.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-11-29",
+  "age": 21,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Lucas Stassin (Útočník) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

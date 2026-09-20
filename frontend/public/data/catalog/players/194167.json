@@ -1,0 +1,19 @@
+{
+  "id": 194167,
+  "name": "Viktor Gyökeres",
+  "common_name": "V. Gyökeres",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/194167.png",
+  "number": 14,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-06-04",
+  "age": 28,
+  "team_id": 19,
+  "team_name": "Arsenal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Viktor Gyökeres (Útočník) nastupuje za Arsenal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

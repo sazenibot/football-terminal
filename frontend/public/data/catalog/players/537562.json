@@ -1,0 +1,19 @@
+{
+  "id": 537562,
+  "name": "Moussa Sylla",
+  "common_name": "M. Sylla",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/537562.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-11-25",
+  "age": 26,
+  "team_id": 67,
+  "team_name": "Schalke 04",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Moussa Sylla (Útočník) nastupuje za Schalke 04. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

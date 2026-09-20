@@ -1,0 +1,19 @@
+{
+  "id": 37702000,
+  "name": "Allan",
+  "common_name": "A. Andrade Elias",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37702000.png",
+  "number": 37,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-04-19",
+  "age": 22,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Allan (Útočník) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

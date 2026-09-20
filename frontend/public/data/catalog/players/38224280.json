@@ -1,0 +1,19 @@
+{
+  "id": 38224280,
+  "name": "Šimon Brzobohatý",
+  "common_name": "Š. Brzobohatý",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 34,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2008-12-01",
+  "age": 17,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Šimon Brzobohatý (Obránce) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

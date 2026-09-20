@@ -1,0 +1,31 @@
+{
+  "id": 37259977,
+  "name": "David Jurásek ",
+  "common_name": "D. Jurásek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/37259977.png",
+  "number": 39,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-08-07",
+  "age": 26,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Jurásek  v této sezóně za Slavia Praha: 3 starty, 193 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 2,
+      "minutes": 193,
+      "goals": 1,
+      "shots": 5,
+      "sot": 2,
+      "goals_conceded": 1
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37694346,
+  "name": "Yahaya Lawali",
+  "common_name": "Y. Danjuma Lawali",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 3,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-06-05",
+  "age": 20,
+  "team_id": 512,
+  "team_name": "Karviná",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Yahaya Lawali (Záložník) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

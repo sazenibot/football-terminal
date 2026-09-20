@@ -1,0 +1,19 @@
+{
+  "id": 38220861,
+  "name": "Mustapha Badjie",
+  "common_name": "M. Badjie",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 19,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-11-20",
+  "age": 18,
+  "team_id": 2364,
+  "team_name": "Viktoria Žižkov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Mustapha Badjie (Záložník) nastupuje za Viktoria Žižkov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 29470,
+  "name": "Kjell Scherpen",
+  "common_name": "K. Scherpen",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/29470.png",
+  "number": 37,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2000-01-23",
+  "age": 26,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Kjell Scherpen (Brankář) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

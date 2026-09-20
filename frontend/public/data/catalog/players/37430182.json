@@ -1,0 +1,31 @@
+{
+  "id": 37430182,
+  "name": "Andrej Stojcevski",
+  "common_name": "A. Stoǰchevski",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/37430182.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-05-26",
+  "age": 23,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Andrej Stojcevski v této sezóně za Slovácko: 9 startů, 810 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:31Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "yellow": 2,
+      "shots": 5,
+      "sot": 2,
+      "goals_conceded": 16
+    }
+  }
+}

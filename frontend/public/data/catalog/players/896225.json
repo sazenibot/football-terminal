@@ -1,0 +1,19 @@
+{
+  "id": 896225,
+  "name": "Caoimhín Kelleher",
+  "common_name": "C. Kelleher",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/896225.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1998-11-23",
+  "age": 27,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Caoimhín Kelleher (Brankář) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

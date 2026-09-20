@@ -1,0 +1,19 @@
+{
+  "id": 3862360,
+  "name": "Yannik Keitel",
+  "common_name": "Y. Keitel",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/3862360.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-02-15",
+  "age": 26,
+  "team_id": 90,
+  "team_name": "FC Augsburg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Yannik Keitel (Záložník) nastupuje za FC Augsburg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

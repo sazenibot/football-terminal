@@ -1,0 +1,19 @@
+{
+  "id": 37687021,
+  "name": "Zavier Gozo",
+  "common_name": "Z. Gozo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/37687021.png",
+  "number": 12,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-03-22",
+  "age": 19,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Zavier Gozo (Útočník) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

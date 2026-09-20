@@ -1,0 +1,19 @@
+{
+  "id": 7698423,
+  "name": "Miguel Gutiérrez",
+  "common_name": "M. Gutiérrez Ortega",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/7698423.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-07-27",
+  "age": 25,
+  "team_id": 3321,
+  "team_name": "Bayer 04 Leverkusen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Miguel Gutiérrez (Obránce) nastupuje za Bayer 04 Leverkusen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

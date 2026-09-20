@@ -1,0 +1,28 @@
+{
+  "id": 3876766,
+  "name": "Simon Bammens",
+  "common_name": "S. Bammens",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 44,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-05-16",
+  "age": 28,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Simon Bammens v této sezóně za Pardubice: 4 starty, 316 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:31Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 4,
+      "minutes": 316,
+      "goals_conceded": 6
+    }
+  }
+}

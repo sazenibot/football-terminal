@@ -1,0 +1,19 @@
+{
+  "id": 9543,
+  "name": "Brandon Thomas-Asante",
+  "common_name": "B. Thomas-Asante",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/9543.png",
+  "number": 23,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-12-29",
+  "age": 27,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Brandon Thomas-Asante (Útočník) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

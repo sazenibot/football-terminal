@@ -1,0 +1,19 @@
+{
+  "id": 4545461,
+  "name": "Antonio Blanco",
+  "common_name": "A. Blanco Conde",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/4545461.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-07-23",
+  "age": 26,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Antonio Blanco (Záložník) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

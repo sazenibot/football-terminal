@@ -1,0 +1,23 @@
+{
+  "id": 458627,
+  "name": "J. Jinoch",
+  "common_name": "J. Jinoch",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 41,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1967-11-05",
+  "age": 58,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "J. Jinoch (Útočník) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:22Z",
+    "season": {}
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": 37537063,
+  "name": "Issa Fomba",
+  "common_name": "I. Fomba",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/37537063.png",
+  "number": 11,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-05-24",
+  "age": 25,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Issa Fomba v této sezóně za SK Artis Brno: 7 startů, 265 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:08Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 1,
+      "minutes": 265,
+      "goals": 1,
+      "yellow": 1,
+      "shots": 7,
+      "sot": 2,
+      "goals_conceded": 6
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": 79920,
+  "name": "Matej Hybs",
+  "common_name": "M. Hybš",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/79920.png",
+  "number": 11,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1993-01-03",
+  "age": 33,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matej Hybs v této sezóně za Mladá Boleslav: 8 startů, 700 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:14Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 700,
+      "yellow": 2,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 9
+    }
+  }
+}

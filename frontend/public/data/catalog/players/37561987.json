@@ -1,0 +1,33 @@
+{
+  "id": 37561987,
+  "name": "Tadeáš Vachoušek",
+  "common_name": "T. Vachoušek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-01-11",
+  "age": 22,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tadeáš Vachoušek v této sezóně za Zbrojovka Brno: 8 startů, 583 min, 1 gól, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:40Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 583,
+      "goals": 1,
+      "assists": 2,
+      "yellow": 1,
+      "shots": 10,
+      "sot": 4,
+      "goals_conceded": 8
+    }
+  }
+}

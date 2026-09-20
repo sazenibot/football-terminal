@@ -1,0 +1,31 @@
+{
+  "id": 82370,
+  "name": "Vaclav Jurecka",
+  "common_name": "V. Jurečka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/82370.png",
+  "number": 15,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1994-06-26",
+  "age": 32,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vaclav Jurecka v této sezóně za Baník Ostrava: 8 startů, 463 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:23Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 6,
+      "minutes": 463,
+      "goals": 1,
+      "shots": 7,
+      "sot": 3,
+      "goals_conceded": 10
+    }
+  }
+}

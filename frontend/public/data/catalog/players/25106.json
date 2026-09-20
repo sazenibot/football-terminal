@@ -1,0 +1,19 @@
+{
+  "id": 25106,
+  "name": "Kevin Diks",
+  "common_name": "K. Diks",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/25106.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-10-06",
+  "age": 29,
+  "team_id": 683,
+  "team_name": "Borussia Mönchengladbach",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Kevin Diks (Obránce) nastupuje za Borussia Mönchengladbach. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37662761,
+  "name": "Dani Requena",
+  "common_name": "D. Requena Sánchez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/37662761.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-02-12",
+  "age": 22,
+  "team_id": 3457,
+  "team_name": "Levante",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Dani Requena (Záložník) nastupuje za Levante. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

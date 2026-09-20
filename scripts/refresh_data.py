@@ -40,6 +40,7 @@ from build_match_data import (  # noqa: E402
     to_iso_utc,
 )
 from match_extras import enrich_match  # noqa: E402
+from build_catalog import build_all as build_catalog  # noqa: E402
 
 CONFIG_PATH = ROOT / "scripts" / "config" / "leagues.json"
 DATA_DIR = ROOT / "frontend" / "public" / "data"
@@ -268,6 +269,8 @@ def main() -> None:
     parser.add_argument("--full", action="store_true", help="Vynutit plný rebuild všech zápasů v okně")
     parser.add_argument("--migrate-only", action="store_true", help="Jen rozdělit starý match.json")
     parser.add_argument("--max-new", type=int, default=None, help="Max. nových full buildů za běh")
+    parser.add_argument("--catalog-only", action="store_true", help="Jen datový katalog (týmy/hráči/sudí)")
+    parser.add_argument("--skip-catalog", action="store_true", help="Přeskočit ingest katalogu")
     args = parser.parse_args()
 
     cfg = load_config()
@@ -275,6 +278,10 @@ def main() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "matches").mkdir(parents=True, exist_ok=True)
     (DATA_DIR / "leagues").mkdir(parents=True, exist_ok=True)
+
+    if args.catalog_only:
+        build_catalog(args.league)
+        return
 
     print(f"[0] migrace legacy match.json (pokud existuje)…")
     migrate_legacy_match_json()
@@ -348,6 +355,9 @@ def main() -> None:
             write_empty_league(league, now_iso())
     write_index(cfg, summaries)
     write_compat_match_json(cfg)
+    if not args.skip_catalog:
+        print("\n[catalog] datový katalog…")
+        build_catalog(args.league)
     stats = call_stats()
     print(f"\n✅ denní refresh hotov: {stats['calls']} API volání, {stats['cache_hits']} z cache")
 

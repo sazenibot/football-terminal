@@ -1,0 +1,23 @@
+{
+  "id": 13677,
+  "name": "Robert Jones",
+  "common_name": "R. Jones",
+  "image": "https://cdn.sportmonks.com/images//soccer/referees/13/13677.png",
+  "country": "England",
+  "country_id": 462,
+  "date_of_birth": null,
+  "league_id": 8,
+  "league_name": "Premier League",
+  "in_league": true,
+  "league_matches": 3,
+  "leagues": [
+    {
+      "id": 8,
+      "name": "Premier League",
+      "in_league": true,
+      "league_matches": 3
+    }
+  ],
+  "hook": "Robert Jones píská v soutěži Premier League jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

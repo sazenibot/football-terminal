@@ -1,0 +1,28 @@
+{
+  "id": 205450,
+  "name": "Eduard Sobol",
+  "common_name": "E. Sobol",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/205450.png",
+  "number": 23,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1995-04-20",
+  "age": 31,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Eduard Sobol v této sezóně za Jablonec: 2 starty, 99 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:56Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 99,
+      "goals_conceded": 2
+    }
+  }
+}

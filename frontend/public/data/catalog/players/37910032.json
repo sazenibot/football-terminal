@@ -1,0 +1,19 @@
+{
+  "id": 37910032,
+  "name": "Mahdi Nicoll-Jazuli",
+  "common_name": "M. Nicoll-Jazuli",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 32,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2010-01-06",
+  "age": 16,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Mahdi Nicoll-Jazuli (Záložník) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

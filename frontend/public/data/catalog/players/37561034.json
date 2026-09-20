@@ -1,0 +1,19 @@
+{
+  "id": 37561034,
+  "name": "Zeno Van Den Bosch",
+  "common_name": "Z. Van Den Bosch",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37561034.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-07-06",
+  "age": 23,
+  "team_id": 1079,
+  "team_name": "FC Union Berlin",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Zeno Van Den Bosch (Obránce) nastupuje za FC Union Berlin. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

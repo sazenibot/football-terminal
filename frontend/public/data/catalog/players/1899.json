@@ -1,0 +1,19 @@
+{
+  "id": 1899,
+  "name": "Héctor Bellerín",
+  "common_name": "H. Bellerín Moruno",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/1899.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1995-03-19",
+  "age": 31,
+  "team_id": 485,
+  "team_name": "Real Betis",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Héctor Bellerín (Obránce) nastupuje za Real Betis. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

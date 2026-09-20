@@ -1,0 +1,19 @@
+{
+  "id": 181025,
+  "name": "Lukas Hruska",
+  "common_name": "L. Hruška",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 56,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-02-28",
+  "age": 22,
+  "team_id": 3887,
+  "team_name": "Táborsko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Lukas Hruska (Útočník) nastupuje za Táborsko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

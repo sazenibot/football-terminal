@@ -1,0 +1,32 @@
+{
+  "id": 32048,
+  "name": "Vladimír Darida",
+  "common_name": "V. Darida",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/32048.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1990-08-08",
+  "age": 36,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vladimír Darida v této sezóně za Hradec Králové: 9 startů, 727 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:49Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 727,
+      "goals": 1,
+      "yellow": 2,
+      "shots": 18,
+      "sot": 5,
+      "goals_conceded": 6
+    }
+  }
+}

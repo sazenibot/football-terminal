@@ -1,0 +1,19 @@
+{
+  "id": 37626221,
+  "name": "David Beránek",
+  "common_name": "D. Beránek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 25,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-08-08",
+  "age": 22,
+  "team_id": 8421,
+  "team_name": "Vlašim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "David Beránek (Obránce) nastupuje za Vlašim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

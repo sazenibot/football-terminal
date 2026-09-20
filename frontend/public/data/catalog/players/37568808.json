@@ -1,0 +1,19 @@
+{
+  "id": 37568808,
+  "name": "Ethan Nwaneri",
+  "common_name": "E. Nwaneri",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/37568808.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-03-21",
+  "age": 19,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Ethan Nwaneri (Útočník) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

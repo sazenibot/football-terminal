@@ -1,0 +1,29 @@
+{
+  "id": 7026540,
+  "name": "Matous Trmal",
+  "common_name": "M. Trmal",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/7026540.png",
+  "number": 29,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1998-10-02",
+  "age": 27,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matous Trmal v této sezóně za Teplice: 8 startů, 720 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:01Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 720,
+      "saves": 20,
+      "goals_conceded": 13
+    }
+  }
+}

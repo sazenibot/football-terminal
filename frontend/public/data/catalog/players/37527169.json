@@ -1,0 +1,19 @@
+{
+  "id": 37527169,
+  "name": "Savinho",
+  "common_name": "S. Moreira de Oliveira",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/37527169.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-04-10",
+  "age": 22,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Savinho (Záložník) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

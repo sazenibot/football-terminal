@@ -1,0 +1,19 @@
+{
+  "id": 6970659,
+  "name": "Hugo Duro",
+  "common_name": "H. Duro",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/6970659.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-11-10",
+  "age": 26,
+  "team_id": 214,
+  "team_name": "Valencia",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Hugo Duro (Útočník) nastupuje za Valencia. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

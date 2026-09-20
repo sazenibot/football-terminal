@@ -1,0 +1,139 @@
+{
+  "id": 75577,
+  "name": "Stanislav Volek",
+  "common_name": "S. Volek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Czech Republic",
+  "country_id": 245,
+  "date_of_birth": null,
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "in_league": true,
+  "league_matches": 1,
+  "leagues": [
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "in_league": true,
+      "league_matches": 6
+    },
+    {
+      "id": 265,
+      "name": "Chance Národní Liga",
+      "in_league": true,
+      "league_matches": 1
+    }
+  ],
+  "hook": "Stanislav Volek píská v soutěži Chance Národní Liga jako hlavní. V této sezóně 5 zápasů, 4 žlutých na zápas.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:59Z",
+    "season": {
+      "matches": 5,
+      "fouls_avg": 24.8,
+      "yellow_avg": 4,
+      "red_avg": 0,
+      "penalties_avg": 0.6
+    },
+    "season_raw": {
+      "Penalties": {
+        "all": {
+          "count": 3,
+          "average": 0.6
+        },
+        "home": {
+          "count": 3,
+          "average": 0.6,
+          "percentage": 100
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 124,
+        "average": 24.8
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 20,
+          "average": 4,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 20
+        },
+        "home": {
+          "count": 8,
+          "average": 1.6,
+          "percentage": 40
+        },
+        "away": {
+          "count": 12,
+          "average": 2.4,
+          "percentage": 60
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 5
+      },
+      "VAR Moments": {
+        "count": 4,
+        "average": 0.8
+      }
+    },
+    "career": {
+      "seasons": 9,
+      "matches": 88,
+      "yellow": 384,
+      "red": 14,
+      "yellow_avg": 4.36
+    },
+    "league_context": {
+      "fouls_per_match": 24.8,
+      "yellow_per_match": 4.16,
+      "red_per_match": 0.2,
+      "matches_sampled": 25
+    },
+    "recent": []
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37616671,
+  "name": "Zento Uno",
+  "common_name": "Z. Uno",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/37616671.png",
+  "number": 47,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-11-20",
+  "age": 22,
+  "team_id": 683,
+  "team_name": "Borussia Mönchengladbach",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Zento Uno (Záložník) nastupuje za Borussia Mönchengladbach. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

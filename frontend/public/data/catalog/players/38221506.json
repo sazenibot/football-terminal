@@ -1,0 +1,19 @@
+{
+  "id": 38221506,
+  "name": "Marc Santos",
+  "common_name": "M. Santos",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2010-11-09",
+  "age": 15,
+  "team_id": 3457,
+  "team_name": "Levante",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Marc Santos (Obránce) nastupuje za Levante. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

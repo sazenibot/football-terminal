@@ -1,0 +1,29 @@
+{
+  "id": 37527996,
+  "name": "Jakub Uhrincat",
+  "common_name": "J. Uhrinčať",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 7,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-02-07",
+  "age": 25,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jakub Uhrincat v této sezóně za Hradec Králové: 9 startů, 755 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:42Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 8,
+      "minutes": 755,
+      "shots": 3,
+      "goals_conceded": 9
+    }
+  }
+}

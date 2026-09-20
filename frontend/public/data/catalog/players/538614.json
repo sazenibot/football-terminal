@@ -1,0 +1,19 @@
+{
+  "id": 538614,
+  "name": "Petr Plachy",
+  "common_name": "P. Plachý",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 10,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-01-28",
+  "age": 28,
+  "team_id": 3887,
+  "team_name": "Táborsko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Petr Plachy (Obránce) nastupuje za Táborsko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

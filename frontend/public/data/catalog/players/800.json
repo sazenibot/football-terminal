@@ -1,0 +1,19 @@
+{
+  "id": 800,
+  "name": "Iago Aspas ",
+  "common_name": "I. Aspas Juncal",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/800.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1987-08-01",
+  "age": 39,
+  "team_id": 36,
+  "team_name": "Celta de Vigo",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Iago Aspas  (Útočník) nastupuje za Celta de Vigo. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

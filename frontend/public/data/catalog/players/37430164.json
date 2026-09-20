@@ -1,0 +1,19 @@
+{
+  "id": 37430164,
+  "name": "Lukas Endl",
+  "common_name": "L. Endl",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/37430164.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-06-17",
+  "age": 23,
+  "team_id": 512,
+  "team_name": "Karviná",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Lukas Endl (Obránce) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

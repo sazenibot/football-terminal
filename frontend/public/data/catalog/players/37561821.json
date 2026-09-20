@@ -1,0 +1,23 @@
+{
+  "id": 37561821,
+  "name": "Vladimir Perisic",
+  "common_name": "V. Perišić",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37561821.png",
+  "number": 87,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-08-26",
+  "age": 22,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vladimir Perisic (Útočník) nastupuje za SK Artis Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {}
+  }
+}

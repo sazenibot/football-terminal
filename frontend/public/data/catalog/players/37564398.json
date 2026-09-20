@@ -1,0 +1,19 @@
+{
+  "id": 37564398,
+  "name": "Ibrahim Aldin",
+  "common_name": "I. Aldin",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 9,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-04-25",
+  "age": 24,
+  "team_id": 512,
+  "team_name": "Karviná",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Ibrahim Aldin (Záložník) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 178032,
+  "name": "Nikola Milenković",
+  "common_name": "N. Milenković",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/178032.png",
+  "number": 31,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-10-12",
+  "age": 28,
+  "team_id": 63,
+  "team_name": "Nottingham Forest",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Nikola Milenković (Obránce) nastupuje za Nottingham Forest. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

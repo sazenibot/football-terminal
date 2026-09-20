@@ -1,0 +1,27 @@
+{
+  "id": 80046,
+  "name": "Vukadin Vukadinovic",
+  "common_name": "V. Vukadinovic",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 77,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1990-12-14",
+  "age": 35,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vukadin Vukadinovic v této sezóně za SK Artis Brno: 2 starty, 29 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:11Z",
+    "season": {
+      "appearances": 2,
+      "minutes": 29,
+      "goals_conceded": 1
+    }
+  }
+}

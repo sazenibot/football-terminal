@@ -1,0 +1,19 @@
+{
+  "id": 37430162,
+  "name": "Antonín Kinský",
+  "common_name": "A. Kinský",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37430162.png",
+  "number": 31,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2003-03-13",
+  "age": 23,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Antonín Kinský (Brankář) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

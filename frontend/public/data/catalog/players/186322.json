@@ -1,0 +1,19 @@
+{
+  "id": 186322,
+  "name": "Unai López",
+  "common_name": "U. López Cabrera",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/186322.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1995-10-30",
+  "age": 30,
+  "team_id": 377,
+  "team_name": "Rayo Vallecano",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/377.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Unai López (Záložník) nastupuje za Rayo Vallecano. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

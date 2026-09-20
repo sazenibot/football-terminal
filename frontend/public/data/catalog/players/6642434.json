@@ -1,0 +1,29 @@
+{
+  "id": 6642434,
+  "name": "Florian Wiegele",
+  "common_name": "F. Wiegele",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/6642434.png",
+  "number": 44,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2001-03-21",
+  "age": 25,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Florian Wiegele v této sezóně za Viktoria Plzeň: 9 startů, 810 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:16Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "saves": 23,
+      "goals_conceded": 17
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37609122,
+  "name": "Luken Beitia",
+  "common_name": "L. Beitia Aguirregomezcorta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/37609122.png",
+  "number": 34,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-06-30",
+  "age": 22,
+  "team_id": 594,
+  "team_name": "Real Sociedad",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Luken Beitia (Obránce) nastupuje za Real Sociedad. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

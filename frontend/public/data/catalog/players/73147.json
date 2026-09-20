@@ -1,0 +1,19 @@
+{
+  "id": 73147,
+  "name": "Mateo Kovacic",
+  "common_name": "M. Kovačić",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/73147.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1994-05-06",
+  "age": 32,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Mateo Kovacic (Záložník) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

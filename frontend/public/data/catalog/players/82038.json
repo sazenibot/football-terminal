@@ -1,0 +1,19 @@
+{
+  "id": 82038,
+  "name": "Petr Mikulec",
+  "common_name": "P. Mikulec",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/82038.png",
+  "number": 27,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1999-04-05",
+  "age": 27,
+  "team_id": 6865,
+  "team_name": "Prostějov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Petr Mikulec (Brankář) nastupuje za Prostějov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 21412957,
+  "name": "Fábio Carvalho ",
+  "common_name": "F. Carvalho",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/21412957.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-08-30",
+  "age": 24,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Fábio Carvalho  (Záložník) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

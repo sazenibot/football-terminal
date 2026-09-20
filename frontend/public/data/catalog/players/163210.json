@@ -1,0 +1,19 @@
+{
+  "id": 163210,
+  "name": "Florentino",
+  "common_name": "F. Morris Luís",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/163210.png",
+  "number": 12,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-08-19",
+  "age": 27,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Florentino (Záložník) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

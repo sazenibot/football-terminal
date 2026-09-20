@@ -1,0 +1,19 @@
+{
+  "id": 24065388,
+  "name": "Tiago Tomás",
+  "common_name": "T. de Melo Tomás",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/24065388.png",
+  "number": 8,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-06-16",
+  "age": 24,
+  "team_id": 3319,
+  "team_name": "VfB Stuttgart",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/3319.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Tiago Tomás (Útočník) nastupuje za VfB Stuttgart. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

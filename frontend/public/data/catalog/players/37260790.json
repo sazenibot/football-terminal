@@ -1,0 +1,32 @@
+{
+  "id": 37260790,
+  "name": "David Krcik",
+  "common_name": "D. Krcik",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/37260790.png",
+  "number": 37,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-06-28",
+  "age": 27,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Krcik v této sezóně za Pardubice: 3 starty, 205 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:17Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 2,
+      "minutes": 205,
+      "goals": 1,
+      "red": 1,
+      "shots": 1,
+      "sot": 1,
+      "goals_conceded": 4
+    }
+  }
+}

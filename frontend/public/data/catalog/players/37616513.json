@@ -1,0 +1,31 @@
+{
+  "id": 37616513,
+  "name": "Ebrima Singhateh",
+  "common_name": "E. Singhateh",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/37616513.png",
+  "number": 27,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-09-10",
+  "age": 23,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ebrima Singhateh v této sezóně za Sparta Praha: 5 startů, 166 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:53Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 1,
+      "minutes": 166,
+      "goals": 1,
+      "shots": 10,
+      "sot": 3,
+      "goals_conceded": 2
+    }
+  }
+}

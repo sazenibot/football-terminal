@@ -1,0 +1,23 @@
+{
+  "id": 82643,
+  "name": "Milan Knobloch",
+  "common_name": "M. Knobloch",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 34,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1992-08-23",
+  "age": 34,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Milan Knobloch (Brankář) nastupuje za Zlín. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:43Z",
+    "season": {}
+  }
+}

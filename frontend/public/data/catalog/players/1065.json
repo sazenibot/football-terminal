@@ -1,0 +1,19 @@
+{
+  "id": 1065,
+  "name": "Callum Wilson",
+  "common_name": "C. Wilson",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/1065.png",
+  "number": 13,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1992-02-27",
+  "age": 34,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Callum Wilson (Útočník) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

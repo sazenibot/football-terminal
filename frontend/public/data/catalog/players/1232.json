@@ -1,0 +1,19 @@
+{
+  "id": 1232,
+  "name": "Andrej Kramaric",
+  "common_name": "A. Kramarić",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/1232.png",
+  "number": 27,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1991-06-19",
+  "age": 35,
+  "team_id": 2726,
+  "team_name": "TSG Hoffenheim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Andrej Kramaric (Útočník) nastupuje za TSG Hoffenheim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

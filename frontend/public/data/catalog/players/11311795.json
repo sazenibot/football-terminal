@@ -1,0 +1,19 @@
+{
+  "id": 11311795,
+  "name": "Wesley Fofana",
+  "common_name": "W. Fofana",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/11311795.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-12-17",
+  "age": 25,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Wesley Fofana (Obránce) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

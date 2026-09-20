@@ -1,0 +1,19 @@
+{
+  "id": 581004,
+  "name": "Tom McGill",
+  "common_name": "T. McGill",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/581004.png",
+  "number": 38,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2000-03-25",
+  "age": 26,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Tom McGill (Brankář) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

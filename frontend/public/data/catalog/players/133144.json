@@ -1,0 +1,29 @@
+{
+  "id": 133144,
+  "name": "Roman Macek",
+  "common_name": "R. Macek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/133144.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-04-18",
+  "age": 29,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Roman Macek v této sezóně za Mladá Boleslav: 1 start, 90 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:56Z",
+    "season": {
+      "appearances": 1,
+      "lineups": 1,
+      "minutes": 90,
+      "yellow": 1,
+      "goals_conceded": 2
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 24816996,
+  "name": "Sander Tangvik",
+  "common_name": "S. Tangvik",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/24816996.png",
+  "number": 12,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-11-29",
+  "age": 23,
+  "team_id": 2708,
+  "team_name": "Hamburger SV",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Sander Tangvik (Brankář) nastupuje za Hamburger SV. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

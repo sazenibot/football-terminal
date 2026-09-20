@@ -1,0 +1,19 @@
+{
+  "id": 11705403,
+  "name": "Nathan Collins ",
+  "common_name": "N. Collins",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/11705403.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-04-30",
+  "age": 25,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Nathan Collins  (Obránce) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

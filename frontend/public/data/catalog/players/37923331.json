@@ -1,0 +1,31 @@
+{
+  "id": 37923331,
+  "name": "T. Hellebrand",
+  "common_name": "T. Hellebrand",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 53,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-08-31",
+  "age": 19,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "T. Hellebrand v této sezóně za Zlín: 7 startů, 242 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:55Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 1,
+      "minutes": 242,
+      "yellow": 1,
+      "red": 1,
+      "shots": 7,
+      "goals_conceded": 6
+    }
+  }
+}

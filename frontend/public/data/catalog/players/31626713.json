@@ -1,0 +1,19 @@
+{
+  "id": 31626713,
+  "name": "Carney Chukwuemeka",
+  "common_name": "C. Chukwuemeka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/31626713.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-10-20",
+  "age": 22,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Carney Chukwuemeka (Záložník) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

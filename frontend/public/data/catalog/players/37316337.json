@@ -1,0 +1,19 @@
+{
+  "id": 37316337,
+  "name": "Jan Sirotník",
+  "common_name": "J. Sirotník",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/37316337.png",
+  "number": 27,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-04-16",
+  "age": 24,
+  "team_id": 2364,
+  "team_name": "Viktoria Žižkov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jan Sirotník (Brankář) nastupuje za Viktoria Žižkov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

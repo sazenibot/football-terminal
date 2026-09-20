@@ -1,0 +1,19 @@
+{
+  "id": 37599354,
+  "name": "Tomas Jedlicka",
+  "common_name": "T. Jedlička",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 23,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-07-05",
+  "age": 23,
+  "team_id": 428,
+  "team_name": "Příbram",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Tomas Jedlicka (Záložník) nastupuje za Příbram. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

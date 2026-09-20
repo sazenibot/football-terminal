@@ -1,0 +1,19 @@
+{
+  "id": 37255841,
+  "name": "Jacob Greaves",
+  "common_name": "J. Greaves",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/37255841.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-09-12",
+  "age": 26,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jacob Greaves (Obránce) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

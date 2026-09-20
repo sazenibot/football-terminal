@@ -1,0 +1,19 @@
+{
+  "id": 7124,
+  "name": "Ezri Konsa",
+  "common_name": "E. Konsa Ngoyo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/7124.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-10-23",
+  "age": 28,
+  "team_id": 19,
+  "team_name": "Arsenal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ezri Konsa (Obránce) nastupuje za Arsenal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

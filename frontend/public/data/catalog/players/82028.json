@@ -1,0 +1,19 @@
+{
+  "id": 82028,
+  "name": "Jan Peterka ",
+  "common_name": "J. Peterka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/82028.png",
+  "number": 8,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1990-04-22",
+  "age": 36,
+  "team_id": 4184,
+  "team_name": "Ústí nad Labem",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jan Peterka  (Obránce) nastupuje za Ústí nad Labem. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

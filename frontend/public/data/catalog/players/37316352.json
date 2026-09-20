@@ -1,0 +1,32 @@
+{
+  "id": 37316352,
+  "name": "Daniel Langhamer",
+  "common_name": "D. Langhamer",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/37316352.png",
+  "number": 28,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-03-20",
+  "age": 23,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Daniel Langhamer v této sezóně za Mladá Boleslav: 8 startů, 645 min, 1 gól, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:16Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 645,
+      "goals": 1,
+      "assists": 2,
+      "shots": 9,
+      "sot": 5,
+      "goals_conceded": 7
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 24838013,
+  "name": "Andrej Ilic ",
+  "common_name": "A. Ilić",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/24838013.png",
+  "number": 23,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-04-03",
+  "age": 26,
+  "team_id": 1079,
+  "team_name": "FC Union Berlin",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Andrej Ilic  (Útočník) nastupuje za FC Union Berlin. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 2283,
+  "name": "Péter Gulácsi",
+  "common_name": "P. Gulácsi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/2283.png",
+  "number": 25,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1990-05-06",
+  "age": 36,
+  "team_id": 3477,
+  "team_name": "Villarreal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Péter Gulácsi (Brankář) nastupuje za Villarreal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

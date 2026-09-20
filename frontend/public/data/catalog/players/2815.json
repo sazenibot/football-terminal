@@ -1,0 +1,19 @@
+{
+  "id": 2815,
+  "name": "Dan Burn ",
+  "common_name": "D. Burn",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/2815.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1992-05-09",
+  "age": 34,
+  "team_id": 20,
+  "team_name": "Newcastle United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Dan Burn  (Obránce) nastupuje za Newcastle United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 34573363,
+  "name": "Orri Óskarsson",
+  "common_name": "O. Óskarsson",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/34573363.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-08-29",
+  "age": 22,
+  "team_id": 594,
+  "team_name": "Real Sociedad",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Orri Óskarsson (Útočník) nastupuje za Real Sociedad. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

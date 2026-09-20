@@ -1,0 +1,19 @@
+{
+  "id": 600687,
+  "name": "Vinicius Junior",
+  "common_name": "V. Júnior",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/600687.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-07-12",
+  "age": 26,
+  "team_id": 3468,
+  "team_name": "Real Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Vinicius Junior (Záložník) nastupuje za Real Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

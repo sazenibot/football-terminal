@@ -1,0 +1,31 @@
+{
+  "id": 37742265,
+  "name": "Peter Kareem",
+  "common_name": "P. Kareem",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 25,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-08-10",
+  "age": 23,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Peter Kareem v této sezóně za Bohemians 1905: 5 startů, 337 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:29Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 3,
+      "minutes": 337,
+      "yellow": 1,
+      "shots": 1,
+      "sot": 1,
+      "goals_conceded": 7
+    }
+  }
+}

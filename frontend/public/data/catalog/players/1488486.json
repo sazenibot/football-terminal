@@ -1,0 +1,33 @@
+{
+  "id": 1488486,
+  "name": "Danijel Sturm",
+  "common_name": "D. Šturm",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-01-04",
+  "age": 27,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Danijel Sturm v této sezóně za Slavia Praha: 9 startů, 581 min, 1 gól, 3 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 7,
+      "minutes": 581,
+      "goals": 1,
+      "assists": 3,
+      "yellow": 2,
+      "shots": 15,
+      "sot": 7,
+      "goals_conceded": 4
+    }
+  }
+}

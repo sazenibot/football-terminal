@@ -1,0 +1,19 @@
+{
+  "id": 32258,
+  "name": "Marvin Friedrich ",
+  "common_name": "M. Friedrich",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/32258.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1995-12-13",
+  "age": 30,
+  "team_id": 1079,
+  "team_name": "FC Union Berlin",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Marvin Friedrich  (Obránce) nastupuje za FC Union Berlin. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

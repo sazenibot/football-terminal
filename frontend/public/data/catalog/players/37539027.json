@@ -1,0 +1,33 @@
+{
+  "id": 37539027,
+  "name": "Solomon John",
+  "common_name": "S. John",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37539027.png",
+  "number": 20,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-08-08",
+  "age": 25,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Solomon John v této sezóně za Mladá Boleslav: 8 startů, 639 min, 3 góly, 4 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:22Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 639,
+      "goals": 3,
+      "assists": 4,
+      "yellow": 1,
+      "shots": 25,
+      "sot": 11,
+      "goals_conceded": 8
+    }
+  }
+}

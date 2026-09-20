@@ -1,0 +1,19 @@
+{
+  "id": 80627,
+  "name": "Robert Hruby",
+  "common_name": "R. Hrubý",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/80627.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1994-04-27",
+  "age": 32,
+  "team_id": 2364,
+  "team_name": "Viktoria Žižkov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Robert Hruby (Záložník) nastupuje za Viktoria Žižkov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

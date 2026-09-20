@@ -1,0 +1,19 @@
+{
+  "id": 37650873,
+  "name": "Salim Musah",
+  "common_name": "S. Musah",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37650873.png",
+  "number": 29,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2006-02-22",
+  "age": 20,
+  "team_id": 82,
+  "team_name": "Werder Bremen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Salim Musah (Útočník) nastupuje za Werder Bremen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

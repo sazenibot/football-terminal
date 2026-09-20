@@ -1,0 +1,29 @@
+{
+  "id": 37530882,
+  "name": "Dalibor Vecerka",
+  "common_name": "D. Večerka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/37530882.png",
+  "number": 28,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-03-12",
+  "age": 23,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dalibor Vecerka v této sezóně za Teplice: 8 startů, 662 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:02Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 7,
+      "minutes": 662,
+      "yellow": 1,
+      "goals_conceded": 11
+    }
+  }
+}

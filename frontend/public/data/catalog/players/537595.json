@@ -1,0 +1,19 @@
+{
+  "id": 537595,
+  "name": "Óscar Mingueza",
+  "common_name": "Ó. Mingueza García",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/537595.png",
+  "number": 30,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-05-13",
+  "age": 27,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Óscar Mingueza (Obránce) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

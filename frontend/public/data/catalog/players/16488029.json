@@ -1,0 +1,31 @@
+{
+  "id": 16488029,
+  "name": "Tomas Solil",
+  "common_name": "T. Solil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/16488029.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-02-01",
+  "age": 26,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tomas Solil v této sezóně za Pardubice: 2 starty, 114 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:32Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 2,
+      "minutes": 114,
+      "goals": 1,
+      "shots": 1,
+      "sot": 1,
+      "goals_conceded": 1
+    }
+  }
+}

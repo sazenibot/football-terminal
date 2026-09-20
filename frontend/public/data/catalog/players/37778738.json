@@ -1,0 +1,31 @@
+{
+  "id": 37778738,
+  "name": "Fallou Faye",
+  "common_name": "F. Faye",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 60,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-11-29",
+  "age": 20,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Fallou Faye v této sezóně za Slovan Liberec: 9 startů, 602 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:22Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 7,
+      "minutes": 602,
+      "yellow": 3,
+      "shots": 11,
+      "sot": 2,
+      "goals_conceded": 2
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": 24816838,
+  "name": "David Pech",
+  "common_name": "D. Pech",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/24816838.png",
+  "number": 77,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-02-22",
+  "age": 24,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Pech v této sezóně za Mladá Boleslav: 2 starty, 56 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:17Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 56
+    }
+  }
+}

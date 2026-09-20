@@ -1,0 +1,19 @@
+{
+  "id": 37652784,
+  "name": "Javi Rodríguez",
+  "common_name": "J. Rodríguez Galiano",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37652784.png",
+  "number": 20,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-06-27",
+  "age": 23,
+  "team_id": 36,
+  "team_name": "Celta de Vigo",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Javi Rodríguez (Obránce) nastupuje za Celta de Vigo. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

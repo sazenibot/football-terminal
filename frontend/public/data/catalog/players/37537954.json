@@ -1,0 +1,19 @@
+{
+  "id": 37537954,
+  "name": "Tim Oermann",
+  "common_name": "T. Oermann",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/37537954.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-10-06",
+  "age": 22,
+  "team_id": 3321,
+  "team_name": "Bayer 04 Leverkusen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Tim Oermann (Obránce) nastupuje za Bayer 04 Leverkusen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

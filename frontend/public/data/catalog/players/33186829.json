@@ -1,0 +1,19 @@
+{
+  "id": 33186829,
+  "name": "Jamal Musiala",
+  "common_name": "J. Musiala",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/33186829.png",
+  "number": 10,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-02-26",
+  "age": 23,
+  "team_id": 503,
+  "team_name": "FC Bayern München",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Jamal Musiala (Záložník) nastupuje za FC Bayern München. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

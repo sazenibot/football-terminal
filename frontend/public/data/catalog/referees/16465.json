@@ -1,0 +1,29 @@
+{
+  "id": 16465,
+  "name": "Pavel Orel",
+  "common_name": "P. Orel",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Czech Republic",
+  "country_id": 245,
+  "date_of_birth": null,
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "in_league": true,
+  "league_matches": 3,
+  "leagues": [
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 265,
+      "name": "Chance Národní Liga",
+      "in_league": true,
+      "league_matches": 3
+    }
+  ],
+  "hook": "Pavel Orel píská v soutěži Chance Národní Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

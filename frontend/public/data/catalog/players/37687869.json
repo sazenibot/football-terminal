@@ -1,0 +1,29 @@
+{
+  "id": 37687869,
+  "name": "Alexandr Urban",
+  "common_name": "A. Urban",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37687869.png",
+  "number": 33,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-04-20",
+  "age": 22,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Alexandr Urban v této sezóně za Slovácko: 1 start, 90 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:29Z",
+    "season": {
+      "appearances": 1,
+      "lineups": 1,
+      "minutes": 90,
+      "saves": 4,
+      "goals_conceded": 5
+    }
+  }
+}

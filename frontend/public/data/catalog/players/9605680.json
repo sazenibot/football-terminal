@@ -1,0 +1,19 @@
+{
+  "id": 9605680,
+  "name": "Joshua Zirkzee",
+  "common_name": "J. Zirkzee",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/9605680.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-05-22",
+  "age": 25,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Joshua Zirkzee (Útočník) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

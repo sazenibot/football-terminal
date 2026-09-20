@@ -1,0 +1,32 @@
+{
+  "id": 37600577,
+  "name": "Fabijan Krivak",
+  "common_name": "F. Krivak",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/37600577.png",
+  "number": 23,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-02-24",
+  "age": 21,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Fabijan Krivak v této sezóně za Sigma Olomouc: 6 startů, 225 min, 1 gól, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:56Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 4,
+      "minutes": 225,
+      "goals": 1,
+      "assists": 1,
+      "shots": 2,
+      "sot": 2,
+      "goals_conceded": 1
+    }
+  }
+}

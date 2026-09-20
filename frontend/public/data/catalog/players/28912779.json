@@ -1,0 +1,19 @@
+{
+  "id": 28912779,
+  "name": "Kaine Kesler-Hayden",
+  "common_name": "K. Kessler",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/28912779.png",
+  "number": 20,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-10-23",
+  "age": 23,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Kaine Kesler-Hayden (Obránce) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

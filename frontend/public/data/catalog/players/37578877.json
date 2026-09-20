@@ -1,0 +1,31 @@
+{
+  "id": 37578877,
+  "name": "Sacha Komljenovic",
+  "common_name": "S. Komljenovic",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-05-10",
+  "age": 23,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Sacha Komljenovic v této sezóně za SK Artis Brno: 8 startů, 421 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:10Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 5,
+      "minutes": 421,
+      "goals": 1,
+      "shots": 5,
+      "sot": 2,
+      "goals_conceded": 11
+    }
+  }
+}

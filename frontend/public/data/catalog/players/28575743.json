@@ -1,0 +1,19 @@
+{
+  "id": 28575743,
+  "name": "Kasey McAteer ",
+  "common_name": "K. McAteer",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/28575743.png",
+  "number": 20,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-11-22",
+  "age": 24,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Kasey McAteer  (Záložník) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

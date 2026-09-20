@@ -1,0 +1,19 @@
+{
+  "id": 80562,
+  "name": "Lukas Havel ",
+  "common_name": "L. Havel",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/80562.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-06-06",
+  "age": 30,
+  "team_id": 3887,
+  "team_name": "Táborsko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Lukas Havel  (Obránce) nastupuje za Táborsko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

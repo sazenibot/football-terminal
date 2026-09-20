@@ -1,0 +1,19 @@
+{
+  "id": 3139,
+  "name": "Tammy Abraham",
+  "common_name": "K. Bakumo-Abraham",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/3139.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-10-02",
+  "age": 28,
+  "team_id": 15,
+  "team_name": "Aston Villa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Tammy Abraham (Útočník) nastupuje za Aston Villa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

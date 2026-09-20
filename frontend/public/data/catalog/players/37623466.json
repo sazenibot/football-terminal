@@ -1,0 +1,19 @@
+{
+  "id": 37623466,
+  "name": "Triston Rowe",
+  "common_name": "T. Rowe",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37623466.png",
+  "number": 45,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-10-02",
+  "age": 19,
+  "team_id": 15,
+  "team_name": "Aston Villa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Triston Rowe (Obránce) nastupuje za Aston Villa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

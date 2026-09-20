@@ -1,0 +1,19 @@
+{
+  "id": 627,
+  "name": "Danny Welbeck",
+  "common_name": "D. Tackie Mensah Welbeck",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/627.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1990-11-26",
+  "age": 35,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Danny Welbeck (Útočník) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

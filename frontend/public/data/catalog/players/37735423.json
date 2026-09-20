@@ -1,0 +1,19 @@
+{
+  "id": 37735423,
+  "name": "Bradley Burrowes",
+  "common_name": "B. Burrows",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/37735423.png",
+  "number": 49,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2008-03-04",
+  "age": 18,
+  "team_id": 15,
+  "team_name": "Aston Villa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Bradley Burrowes (Útočník) nastupuje za Aston Villa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,32 @@
+{
+  "id": 538978,
+  "name": "Jiri Boula",
+  "common_name": "J. Boula",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/538978.png",
+  "number": 5,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-04-08",
+  "age": 27,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jiri Boula v této sezóně za Baník Ostrava: 6 startů, 482 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:20Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 6,
+      "minutes": 482,
+      "assists": 1,
+      "yellow": 2,
+      "shots": 6,
+      "sot": 1,
+      "goals_conceded": 9
+    }
+  }
+}

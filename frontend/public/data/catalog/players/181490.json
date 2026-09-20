@@ -1,0 +1,29 @@
+{
+  "id": 181490,
+  "name": "Matus Kmet",
+  "common_name": "M. Kmet",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/181490.png",
+  "number": 32,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-06-27",
+  "age": 26,
+  "team_id": 8477,
+  "team_name": "Banik Ostrava B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Matus Kmet v této sezóně za Banik Ostrava B: 3 starty, 63 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:13Z",
+    "season": {
+      "appearances": 3,
+      "minutes": 63,
+      "yellow": 1,
+      "shots": 1,
+      "goals_conceded": 2
+    }
+  }
+}

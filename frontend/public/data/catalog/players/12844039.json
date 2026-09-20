@@ -1,0 +1,31 @@
+{
+  "id": 12844039,
+  "name": "Tomas Zlatohlavek",
+  "common_name": "T. Zlatohlávek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/12844039.png",
+  "number": 33,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-05-22",
+  "age": 26,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tomas Zlatohlavek v této sezóně za Teplice: 7 startů, 204 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:15Z",
+    "season": {
+      "appearances": 7,
+      "minutes": 204,
+      "goals": 1,
+      "yellow": 2,
+      "shots": 5,
+      "sot": 2,
+      "goals_conceded": 5
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37703288,
+  "name": "Curro Burgos",
+  "common_name": "F. Burgos Barrionuevo",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 29,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-05-30",
+  "age": 22,
+  "team_id": 106,
+  "team_name": "Getafe",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Curro Burgos (Obránce) nastupuje za Getafe. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

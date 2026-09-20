@@ -1,0 +1,31 @@
+{
+  "id": 37705839,
+  "name": "Artur Musak",
+  "common_name": "A. Musak",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 55,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-10-17",
+  "age": 20,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Artur Musak v této sezóně za Baník Ostrava: 7 startů, 301 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:17Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 2,
+      "minutes": 301,
+      "assists": 1,
+      "shots": 8,
+      "sot": 2,
+      "goals_conceded": 5
+    }
+  }
+}

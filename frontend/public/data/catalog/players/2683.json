@@ -1,0 +1,19 @@
+{
+  "id": 2683,
+  "name": "Jason Steele",
+  "common_name": "J. Steele",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/2683.png",
+  "number": 23,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1990-08-18",
+  "age": 36,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jason Steele (Brankář) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

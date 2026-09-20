@@ -1,0 +1,19 @@
+{
+  "id": 38220872,
+  "name": "Deco Mané",
+  "common_name": "D. Mané",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 14,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-02-06",
+  "age": 19,
+  "team_id": 8421,
+  "team_name": "Vlašim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Deco Mané (Útočník) nastupuje za Vlašim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

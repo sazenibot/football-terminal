@@ -1,0 +1,19 @@
+{
+  "id": 26328601,
+  "name": "Sergi Cardona",
+  "common_name": "S. Cardona Bermúdez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/26328601.png",
+  "number": 23,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-07-08",
+  "age": 27,
+  "team_id": 3477,
+  "team_name": "Villarreal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Sergi Cardona (Obránce) nastupuje za Villarreal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

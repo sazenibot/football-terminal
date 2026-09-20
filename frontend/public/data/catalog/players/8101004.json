@@ -1,0 +1,32 @@
+{
+  "id": 8101004,
+  "name": "Vojtech Patrak",
+  "common_name": "V. Patrák",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/8101004.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-03-18",
+  "age": 26,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vojtech Patrak v této sezóně za Pardubice: 4 starty, 223 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:41Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 4,
+      "minutes": 223,
+      "goals": 1,
+      "yellow": 1,
+      "shots": 5,
+      "sot": 3,
+      "goals_conceded": 4
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": 83740,
+  "name": "Michal Fukala",
+  "common_name": "M. Fukala",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/83740.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-10-22",
+  "age": 25,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Michal Fukala v této sezóně za Zlín: 8 startů, 581 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:47Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 581,
+      "goals": 1,
+      "yellow": 1,
+      "shots": 10,
+      "sot": 3,
+      "goals_conceded": 15
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37297042,
+  "name": "Fer Niño",
+  "common_name": "F. Niño Rodriguez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37297042.png",
+  "number": 14,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-10-24",
+  "age": 25,
+  "team_id": 1099,
+  "team_name": "Elche",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/1099.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Fer Niño (Útočník) nastupuje za Elche. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37583599,
+  "name": "Maximilian Baafi",
+  "common_name": "M. Baafi",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-04-16",
+  "age": 22,
+  "team_id": 2364,
+  "team_name": "Viktoria Žižkov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Maximilian Baafi (Útočník) nastupuje za Viktoria Žižkov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

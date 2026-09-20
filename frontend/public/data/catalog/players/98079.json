@@ -1,0 +1,19 @@
+{
+  "id": 98079,
+  "name": "Valentin Rosier",
+  "common_name": "V. Rosier",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/98079.png",
+  "number": 19,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-08-19",
+  "age": 30,
+  "team_id": 459,
+  "team_name": "Osasuna",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Valentin Rosier (Obránce) nastupuje za Osasuna. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

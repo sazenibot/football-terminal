@@ -1,0 +1,19 @@
+{
+  "id": 32058,
+  "name": "Lukas Kübler",
+  "common_name": "L. Kübler",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/32058.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1992-08-30",
+  "age": 34,
+  "team_id": 3543,
+  "team_name": "SC Freiburg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/3543.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Lukas Kübler (Obránce) nastupuje za SC Freiburg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

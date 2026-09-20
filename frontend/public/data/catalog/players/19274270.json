@@ -1,0 +1,19 @@
+{
+  "id": 19274270,
+  "name": "Philipp Sander",
+  "common_name": "P. Sander",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/19274270.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-02-21",
+  "age": 28,
+  "team_id": 683,
+  "team_name": "Borussia Mönchengladbach",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Philipp Sander (Záložník) nastupuje za Borussia Mönchengladbach. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

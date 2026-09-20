@@ -1,0 +1,19 @@
+{
+  "id": 37344218,
+  "name": "Arsen Zakharyan",
+  "common_name": "A. Zakharyan",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/37344218.png",
+  "number": 23,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-05-26",
+  "age": 23,
+  "team_id": 594,
+  "team_name": "Real Sociedad",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Arsen Zakharyan (Záložník) nastupuje za Real Sociedad. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

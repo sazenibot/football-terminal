@@ -1,0 +1,19 @@
+{
+  "id": 22859283,
+  "name": "Ferran Jutglà",
+  "common_name": "F. Jutlgà Blanc",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/22859283.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-02-01",
+  "age": 27,
+  "team_id": 36,
+  "team_name": "Celta de Vigo",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Ferran Jutglà (Útočník) nastupuje za Celta de Vigo. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

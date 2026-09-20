@@ -1,0 +1,19 @@
+{
+  "id": 1826,
+  "name": "Jordan Pickford",
+  "common_name": "J. Pickford",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/1826.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1994-03-07",
+  "age": 32,
+  "team_id": 13,
+  "team_name": "Everton",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jordan Pickford (Brankář) nastupuje za Everton. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37689514,
+  "name": "Braiden Graham",
+  "common_name": "B. Graham",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 58,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-11-07",
+  "age": 18,
+  "team_id": 13,
+  "team_name": "Everton",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Braiden Graham (Útočník) nastupuje za Everton. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

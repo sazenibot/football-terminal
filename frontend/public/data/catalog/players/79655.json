@@ -1,0 +1,32 @@
+{
+  "id": 79655,
+  "name": "Michal Frydrych ",
+  "common_name": "M. Frydrych",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/79655.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1990-02-27",
+  "age": 36,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Michal Frydrych  v této sezóně za Baník Ostrava: 4 starty, 154 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:14Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 2,
+      "minutes": 154,
+      "goals": 1,
+      "yellow": 1,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 2
+    }
+  }
+}

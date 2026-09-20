@@ -1,0 +1,19 @@
+{
+  "id": 11298616,
+  "name": "Evanilson",
+  "common_name": "F. de Lima Barbosa",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/11298616.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-10-06",
+  "age": 26,
+  "team_id": 52,
+  "team_name": "AFC Bournemouth",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Evanilson (Útočník) nastupuje za AFC Bournemouth. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

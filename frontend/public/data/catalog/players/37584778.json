@@ -1,0 +1,30 @@
+{
+  "id": 37584778,
+  "name": "Tom Ulbrich",
+  "common_name": "T. Ulbrich",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37584778.png",
+  "number": 4,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-05-11",
+  "age": 28,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tom Ulbrich v této sezóně za Zlín: 5 startů, 384 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:56Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 5,
+      "minutes": 384,
+      "yellow": 1,
+      "shots": 10,
+      "goals_conceded": 10
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37762319,
+  "name": "Jan Haala",
+  "common_name": "J. Haala",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 19,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-07-15",
+  "age": 21,
+  "team_id": 2538,
+  "team_name": "Vysočina Jihlava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jan Haala (Obránce) nastupuje za Vysočina Jihlava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

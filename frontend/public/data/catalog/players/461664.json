@@ -1,0 +1,19 @@
+{
+  "id": 461664,
+  "name": "Alemão",
+  "common_name": "A. Zurawski",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/461664.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-04-01",
+  "age": 28,
+  "team_id": 377,
+  "team_name": "Rayo Vallecano",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/377.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Alemão (Útočník) nastupuje za Rayo Vallecano. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

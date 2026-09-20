@@ -1,0 +1,26 @@
+{
+  "id": 38219688,
+  "name": "Moustapha Toure",
+  "common_name": "M. Toure",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-10-04",
+  "age": 18,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Moustapha Toure v této sezóně za Zlín: 1 start, 1 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:58Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 1
+    }
+  }
+}

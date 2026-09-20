@@ -1,0 +1,32 @@
+{
+  "id": 2178571,
+  "name": "Dominik Janosek",
+  "common_name": "D. Janosek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/2178571.png",
+  "number": 39,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-06-13",
+  "age": 28,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dominik Janosek v této sezóně za Sigma Olomouc: 9 startů, 616 min, 1 gól, 3 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:55Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 8,
+      "minutes": 616,
+      "goals": 1,
+      "assists": 3,
+      "shots": 11,
+      "sot": 5,
+      "goals_conceded": 8
+    }
+  }
+}

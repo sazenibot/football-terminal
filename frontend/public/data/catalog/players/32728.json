@@ -1,0 +1,19 @@
+{
+  "id": 32728,
+  "name": "Waldemar Anton",
+  "common_name": "W. Anton",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/32728.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-07-20",
+  "age": 30,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Waldemar Anton (Obránce) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

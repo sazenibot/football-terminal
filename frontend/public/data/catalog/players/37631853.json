@@ -1,0 +1,19 @@
+{
+  "id": 37631853,
+  "name": "Zdenek Riha",
+  "common_name": "Z. Říha",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 44,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-04-04",
+  "age": 24,
+  "team_id": 6957,
+  "team_name": "Hanácká",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Zdenek Riha (Obránce) nastupuje za Hanácká. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

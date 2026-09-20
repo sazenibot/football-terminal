@@ -1,0 +1,30 @@
+{
+  "id": 37260883,
+  "name": "Adam Carlén",
+  "common_name": "A. Carlén",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37260883.png",
+  "number": 21,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-06-27",
+  "age": 26,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Carlén v této sezóně za SK Artis Brno: 7 startů, 415 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:05Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 6,
+      "minutes": 415,
+      "yellow": 1,
+      "shots": 2,
+      "goals_conceded": 12
+    }
+  }
+}

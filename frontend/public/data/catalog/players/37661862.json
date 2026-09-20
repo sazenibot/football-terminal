@@ -1,0 +1,29 @@
+{
+  "id": 37661862,
+  "name": "Filip Spatenka",
+  "common_name": "F. Špatenka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/37661862.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-02-22",
+  "age": 22,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Filip Spatenka v této sezóně za Mladá Boleslav: 4 starty, 129 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:17Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 129,
+      "shots": 1,
+      "goals_conceded": 1
+    }
+  }
+}

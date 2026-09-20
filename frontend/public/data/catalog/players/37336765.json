@@ -1,0 +1,19 @@
+{
+  "id": 37336765,
+  "name": "Giannis Konstantelias",
+  "common_name": "I. Konstantelias",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37336765.png",
+  "number": 45,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-03-05",
+  "age": 23,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Giannis Konstantelias (Útočník) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

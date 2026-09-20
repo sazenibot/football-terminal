@@ -1,0 +1,19 @@
+{
+  "id": 37627036,
+  "name": "Murillo",
+  "common_name": "M. Santiago Costa dos Santos",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37627036.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-07-04",
+  "age": 24,
+  "team_id": 63,
+  "team_name": "Nottingham Forest",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Murillo (Obránce) nastupuje za Nottingham Forest. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

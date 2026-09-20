@@ -1,0 +1,29 @@
+{
+  "id": 37598775,
+  "name": "Jan Buryan",
+  "common_name": "J. Buryán",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37598775.png",
+  "number": 70,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-10-11",
+  "age": 20,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Buryan v této sezóně za Mladá Boleslav: 7 startů, 68 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:23Z",
+    "season": {
+      "appearances": 7,
+      "minutes": 68,
+      "shots": 3,
+      "sot": 2,
+      "goals_conceded": 1
+    }
+  }
+}

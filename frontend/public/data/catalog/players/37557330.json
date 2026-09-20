@@ -1,0 +1,31 @@
+{
+  "id": 37557330,
+  "name": "Emmanuel Godwin",
+  "common_name": "E. Godwin",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 15,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-05-26",
+  "age": 21,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Emmanuel Godwin v této sezóně za Pardubice: 9 startů, 762 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:34Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 762,
+      "yellow": 3,
+      "shots": 9,
+      "sot": 3,
+      "goals_conceded": 14
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 21089941,
+  "name": "Maarten Vandevoordt",
+  "common_name": "M. Vandevoordt",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/21089941.png",
+  "number": 26,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-02-26",
+  "age": 24,
+  "team_id": 277,
+  "team_name": "RB Leipzig",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Maarten Vandevoordt (Brankář) nastupuje za RB Leipzig. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 10310763,
+  "name": "Liam Kitching",
+  "common_name": "L. Kitching",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/10310763.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-09-25",
+  "age": 26,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Liam Kitching (Obránce) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

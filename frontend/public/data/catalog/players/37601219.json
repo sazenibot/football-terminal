@@ -1,0 +1,19 @@
+{
+  "id": 37601219,
+  "name": "Jakub Jerabek",
+  "common_name": "J. Jeřábek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37601219.png",
+  "number": 24,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-04-17",
+  "age": 25,
+  "team_id": 3734,
+  "team_name": "Kladno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jakub Jerabek (Záložník) nastupuje za Kladno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

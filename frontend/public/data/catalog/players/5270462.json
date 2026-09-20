@@ -1,0 +1,19 @@
+{
+  "id": 5270462,
+  "name": "Ryan Gravenberch",
+  "common_name": "R. Gravenberch",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/5270462.png",
+  "number": 38,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-05-16",
+  "age": 24,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ryan Gravenberch (Záložník) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

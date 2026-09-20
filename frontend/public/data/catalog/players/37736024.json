@@ -1,0 +1,19 @@
+{
+  "id": 37736024,
+  "name": "Nathan De Cat",
+  "common_name": "N. De Cat",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/37736024.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2008-07-19",
+  "age": 18,
+  "team_id": 2726,
+  "team_name": "TSG Hoffenheim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Nathan De Cat (Záložník) nastupuje za TSG Hoffenheim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

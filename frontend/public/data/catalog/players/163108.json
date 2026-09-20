@@ -1,0 +1,19 @@
+{
+  "id": 163108,
+  "name": "Reinildo Mandava",
+  "common_name": "R. Mandava",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/163108.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1994-01-21",
+  "age": 32,
+  "team_id": 3,
+  "team_name": "Sunderland",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Reinildo Mandava (Obránce) nastupuje za Sunderland. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

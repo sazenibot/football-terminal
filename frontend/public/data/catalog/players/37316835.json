@@ -1,0 +1,19 @@
+{
+  "id": 37316835,
+  "name": "Conor Bradley ",
+  "common_name": "C. Bradley",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37316835.png",
+  "number": 12,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-07-09",
+  "age": 23,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Conor Bradley  (Obránce) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

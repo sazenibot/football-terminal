@@ -1,0 +1,19 @@
+{
+  "id": 37675827,
+  "name": "Jonathan Friemel",
+  "common_name": "J. Friemel",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 39,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-04-17",
+  "age": 19,
+  "team_id": 3320,
+  "team_name": "FC Köln",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Jonathan Friemel (Záložník) nastupuje za FC Köln. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

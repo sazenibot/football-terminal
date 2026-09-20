@@ -1,0 +1,30 @@
+{
+  "id": 80926,
+  "name": "Jan Kuchta",
+  "common_name": "J. Kuchta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/80926.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-01-08",
+  "age": 29,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Kuchta v této sezóně za Sparta Praha: 1 start, 66 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:58Z",
+    "season": {
+      "appearances": 1,
+      "lineups": 1,
+      "minutes": 66,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 2
+    }
+  }
+}

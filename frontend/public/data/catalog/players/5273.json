@@ -1,0 +1,19 @@
+{
+  "id": 5273,
+  "name": "Declan Rice",
+  "common_name": "D. Rice",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/5273.png",
+  "number": 41,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-01-14",
+  "age": 27,
+  "team_id": 19,
+  "team_name": "Arsenal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Declan Rice (Záložník) nastupuje za Arsenal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

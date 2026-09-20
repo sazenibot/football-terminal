@@ -1,0 +1,19 @@
+{
+  "id": 37540234,
+  "name": "Kobbie Mainoo",
+  "common_name": "K. Mainoo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37540234.png",
+  "number": 37,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-04-19",
+  "age": 21,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Kobbie Mainoo (Záložník) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

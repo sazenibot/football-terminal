@@ -1,0 +1,32 @@
+{
+  "id": 15413328,
+  "name": "Marian Pisoja",
+  "common_name": "M. Pišoja",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/15413328.png",
+  "number": 82,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-06-16",
+  "age": 26,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Marian Pisoja v této sezóně za Zlín: 8 startů, 659 min, 3 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:53Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 7,
+      "minutes": 659,
+      "assists": 3,
+      "yellow": 3,
+      "shots": 4,
+      "sot": 1,
+      "goals_conceded": 15
+    }
+  }
+}

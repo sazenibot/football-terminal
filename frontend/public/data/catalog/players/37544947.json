@@ -1,0 +1,19 @@
+{
+  "id": 37544947,
+  "name": "Justin Diehl ",
+  "common_name": "J. Diehl",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37544947.png",
+  "number": 31,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-11-27",
+  "age": 21,
+  "team_id": 3319,
+  "team_name": "VfB Stuttgart",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/3319.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Justin Diehl  (Útočník) nastupuje za VfB Stuttgart. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

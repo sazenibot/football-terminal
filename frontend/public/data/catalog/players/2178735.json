@@ -1,0 +1,19 @@
+{
+  "id": 2178735,
+  "name": "Anton Stach",
+  "common_name": "A. Stach",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/2178735.png",
+  "number": 18,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-11-15",
+  "age": 27,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Anton Stach (Záložník) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

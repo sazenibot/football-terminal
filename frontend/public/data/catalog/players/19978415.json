@@ -1,0 +1,29 @@
+{
+  "id": 19978415,
+  "name": "Klemen Mihelak",
+  "common_name": "K. Mihelak",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/19978415.png",
+  "number": 99,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2001-12-31",
+  "age": 24,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Klemen Mihelak v této sezóně za Jablonec: 6 startů, 491 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:54Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 6,
+      "minutes": 491,
+      "saves": 12,
+      "goals_conceded": 4
+    }
+  }
+}

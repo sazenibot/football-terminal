@@ -1,0 +1,19 @@
+{
+  "id": 37595913,
+  "name": "Andrés Castrín",
+  "common_name": "A. López Gallo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/37595913.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-05-26",
+  "age": 23,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Andrés Castrín (Obránce) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

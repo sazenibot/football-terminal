@@ -1,0 +1,19 @@
+{
+  "id": 37592956,
+  "name": "Ángel Ortiz",
+  "common_name": "?. Ortiz Monterrey",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37592956.png",
+  "number": 12,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-07-25",
+  "age": 22,
+  "team_id": 485,
+  "team_name": "Real Betis",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Ángel Ortiz (Obránce) nastupuje za Real Betis. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

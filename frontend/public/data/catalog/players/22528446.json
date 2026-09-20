@@ -1,0 +1,19 @@
+{
+  "id": 22528446,
+  "name": "Luka Sucic",
+  "common_name": "L. Sučić",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/22528446.png",
+  "number": 24,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-09-08",
+  "age": 24,
+  "team_id": 594,
+  "team_name": "Real Sociedad",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Luka Sucic (Útočník) nastupuje za Real Sociedad. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

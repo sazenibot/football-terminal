@@ -1,0 +1,31 @@
+{
+  "id": 24816778,
+  "name": "Martin Šviderský",
+  "common_name": "M. Šviderský",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-10-04",
+  "age": 23,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Martin Šviderský v této sezóně za Slovácko: 7 startů, 406 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:37Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 5,
+      "minutes": 406,
+      "yellow": 2,
+      "shots": 6,
+      "sot": 1,
+      "goals_conceded": 6
+    }
+  }
+}

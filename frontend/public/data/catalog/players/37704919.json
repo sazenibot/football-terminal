@@ -1,0 +1,28 @@
+{
+  "id": 37704919,
+  "name": "Tomas Kral",
+  "common_name": "T. Král",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37704919.png",
+  "number": 19,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-10-26",
+  "age": 21,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tomas Kral v této sezóně za Slovácko: 1 start, 90 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:35Z",
+    "season": {
+      "appearances": 1,
+      "lineups": 1,
+      "minutes": 90,
+      "goals_conceded": 5
+    }
+  }
+}

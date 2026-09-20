@@ -1,0 +1,19 @@
+{
+  "id": 37316483,
+  "name": "Diego López ",
+  "common_name": "D. López Noguerol",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37316483.png",
+  "number": 16,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-05-13",
+  "age": 24,
+  "team_id": 214,
+  "team_name": "Valencia",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Diego López  (Útočník) nastupuje za Valencia. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

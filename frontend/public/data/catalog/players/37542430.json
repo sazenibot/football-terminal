@@ -1,0 +1,23 @@
+{
+  "id": 37542430,
+  "name": "Jakub Elbel",
+  "common_name": "J. Elbel",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/37542430.png",
+  "number": null,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-07-06",
+  "age": 26,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jakub Elbel (Obránce) nastupuje za Baník Ostrava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:10Z",
+    "season": {}
+  }
+}

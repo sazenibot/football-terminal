@@ -1,0 +1,29 @@
+{
+  "id": 79539,
+  "name": "Tomas Koubek",
+  "common_name": "T. Koubek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/79539.png",
+  "number": 40,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1992-08-26",
+  "age": 34,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tomas Koubek v této sezóně za Slovan Liberec: 9 startů, 810 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:15Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "saves": 23,
+      "goals_conceded": 4
+    }
+  }
+}

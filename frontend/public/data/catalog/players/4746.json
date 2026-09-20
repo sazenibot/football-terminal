@@ -1,0 +1,19 @@
+{
+  "id": 4746,
+  "name": "Oli McBurnie",
+  "common_name": "O. McBurnie",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/4746.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1996-06-04",
+  "age": 30,
+  "team_id": 22,
+  "team_name": "Hull City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Oli McBurnie (Útočník) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

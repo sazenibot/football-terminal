@@ -1,0 +1,31 @@
+{
+  "id": 37944932,
+  "name": "John Auta",
+  "common_name": "J. Auta",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-04-28",
+  "age": 20,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "John Auta v této sezóně za Teplice: 9 startů, 399 min, 4 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:07Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 4,
+      "minutes": 399,
+      "goals": 4,
+      "shots": 9,
+      "sot": 5,
+      "goals_conceded": 11
+    }
+  }
+}

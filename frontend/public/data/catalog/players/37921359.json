@@ -1,0 +1,19 @@
+{
+  "id": 37921359,
+  "name": "Brian Madjo ",
+  "common_name": "B. Djomeni Madjo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37921359.png",
+  "number": null,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2009-01-12",
+  "age": 17,
+  "team_id": 15,
+  "team_name": "Aston Villa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Brian Madjo  (Útočník) nastupuje za Aston Villa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": 38210130,
+  "name": "Richard Kasik",
+  "common_name": "R. Kašík",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 29,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2007-12-05",
+  "age": 18,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Richard Kasik v této sezóně za SK Artis Brno: 3 starty, 270 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:00Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 3,
+      "minutes": 270,
+      "saves": 13,
+      "goals_conceded": 4
+    }
+  }
+}

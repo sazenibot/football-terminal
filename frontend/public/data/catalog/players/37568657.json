@@ -1,0 +1,19 @@
+{
+  "id": 37568657,
+  "name": "Roberto Fernández",
+  "common_name": "R. Fernández Jaén",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/37568657.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-07-03",
+  "age": 24,
+  "team_id": 528,
+  "team_name": "Espanyol",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Roberto Fernández (Útočník) nastupuje za Espanyol. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

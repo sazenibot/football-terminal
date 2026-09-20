@@ -1,0 +1,19 @@
+{
+  "id": 37584217,
+  "name": "Marc Casadó",
+  "common_name": "M. Casadó Torras",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37584217.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-09-14",
+  "age": 23,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Marc Casadó (Záložník) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

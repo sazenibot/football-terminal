@@ -1,0 +1,19 @@
+{
+  "id": 24816825,
+  "name": "Frantisek Matys",
+  "common_name": "F. Matys",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/24816825.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-08-05",
+  "age": 24,
+  "team_id": 237562,
+  "team_name": "Arsenal Česká Lípa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Frantisek Matys (Obránce) nastupuje za Arsenal Česká Lípa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

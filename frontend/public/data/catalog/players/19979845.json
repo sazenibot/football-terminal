@@ -1,0 +1,19 @@
+{
+  "id": 19979845,
+  "name": "Giacomo Quagliata",
+  "common_name": "G. Quagliata",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/19979845.png",
+  "number": 12,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-02-19",
+  "age": 26,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Giacomo Quagliata (Obránce) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

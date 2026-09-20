@@ -1,0 +1,19 @@
+{
+  "id": 37371160,
+  "name": "Iker Muñoz",
+  "common_name": "I. Muñoz Cameros",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/37371160.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-09-05",
+  "age": 24,
+  "team_id": 459,
+  "team_name": "Osasuna",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Iker Muñoz (Záložník) nastupuje za Osasuna. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

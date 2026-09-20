@@ -1,0 +1,19 @@
+{
+  "id": 37613797,
+  "name": "Mert Kömür",
+  "common_name": "M. Kömür",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/37613797.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-07-17",
+  "age": 21,
+  "team_id": 90,
+  "team_name": "FC Augsburg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Mert Kömür (Útočník) nastupuje za FC Augsburg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

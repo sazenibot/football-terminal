@@ -1,0 +1,19 @@
+{
+  "id": 32589,
+  "name": "Leopold Zingerle",
+  "common_name": "L. Zingerle",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/32589.png",
+  "number": 25,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1994-04-10",
+  "age": 32,
+  "team_id": 277,
+  "team_name": "RB Leipzig",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Leopold Zingerle (Brankář) nastupuje za RB Leipzig. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

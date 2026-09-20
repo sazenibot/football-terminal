@@ -1,0 +1,19 @@
+{
+  "id": 55485,
+  "name": "Patson Daka",
+  "common_name": "P. Daka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/55485.png",
+  "number": 27,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-10-09",
+  "age": 27,
+  "team_id": 2708,
+  "team_name": "Hamburger SV",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Patson Daka (Útočník) nastupuje za Hamburger SV. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

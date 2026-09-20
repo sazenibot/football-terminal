@@ -1,0 +1,19 @@
+{
+  "id": 21773178,
+  "name": "Beto",
+  "common_name": "N. Bercique Gomes Betuncal",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/21773178.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-01-31",
+  "age": 28,
+  "team_id": 13,
+  "team_name": "Everton",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Beto (Útočník) nastupuje za Everton. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

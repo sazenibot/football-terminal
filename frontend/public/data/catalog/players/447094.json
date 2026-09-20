@@ -1,0 +1,19 @@
+{
+  "id": 447094,
+  "name": "Jorge de Frutos",
+  "common_name": "J. De Frutos Sebastián",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/447094.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-02-20",
+  "age": 29,
+  "team_id": 377,
+  "team_name": "Rayo Vallecano",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/377.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Jorge de Frutos (Útočník) nastupuje za Rayo Vallecano. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

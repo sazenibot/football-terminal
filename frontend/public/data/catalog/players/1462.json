@@ -1,0 +1,19 @@
+{
+  "id": 1462,
+  "name": "Jack Butland",
+  "common_name": "J. Butland",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/1462.png",
+  "number": null,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1993-03-10",
+  "age": 33,
+  "team_id": 22,
+  "team_name": "Hull City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jack Butland (Brankář) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

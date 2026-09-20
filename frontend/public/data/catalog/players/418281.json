@@ -1,0 +1,19 @@
+{
+  "id": 418281,
+  "name": "Timo Hübers",
+  "common_name": "T. Hübers",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/418281.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-07-20",
+  "age": 30,
+  "team_id": 3320,
+  "team_name": "FC Köln",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Timo Hübers (Obránce) nastupuje za FC Köln. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

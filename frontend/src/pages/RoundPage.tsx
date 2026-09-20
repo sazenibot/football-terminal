@@ -23,7 +23,7 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
 
   if (error) {
     return (
-      <div className="max-w-3xl mx-auto py-10 px-4">
+      <div className="max-w-3xl mx-auto py-10 px-4 pt-20">
         {index && <LeagueSwitcher index={index} activeId={leagueId} />}
         <div className="card p-8 text-center text-slate-300 light:text-slate-600">
           Pro tuhle ligu ještě nejsou denní data. Objeví se po dalším běhu ingestu.
@@ -41,12 +41,12 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
   }
 
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4">
-      <header className="mb-4">
-        <div className="text-emerald-400 text-sm font-mono mb-1">FOOTBALL TERMINAL</div>
-        <h1 className="text-2xl font-bold text-white light:text-slate-900">Soutěže</h1>
+    <div className="max-w-3xl mx-auto py-10 px-4 pt-20">
+      <header className="mb-4 pt-8">
+        <div className="text-emerald-400 text-sm font-mono mb-1">MATCH CENTER</div>
+        <h1 className="text-2xl font-bold text-white light:text-slate-900">Match Center</h1>
         <p className="text-sm text-slate-500 light:text-slate-400 mt-1">
-          Zápasy na {index.window_days} dní dopředu · detail po kliknutí
+          Zápasy na {index.window_days} dní dopředu · Match detail po kliknutí
         </p>
       </header>
       <LeagueSwitcher index={index} activeId={leagueId} />

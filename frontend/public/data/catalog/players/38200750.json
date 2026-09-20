@@ -1,0 +1,31 @@
+{
+  "id": 38200750,
+  "name": "Victor Samuel",
+  "common_name": "V. Samuel",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 35,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2006-06-29",
+  "age": 20,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Victor Samuel v této sezóně za Pardubice: 8 startů, 271 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:40Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 3,
+      "minutes": 271,
+      "yellow": 1,
+      "shots": 8,
+      "sot": 2,
+      "goals_conceded": 3
+    }
+  }
+}

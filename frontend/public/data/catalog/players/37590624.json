@@ -1,0 +1,19 @@
+{
+  "id": 37590624,
+  "name": "Lucas Noubi",
+  "common_name": "L. Noubi Ngnokam",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/37590624.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-01-15",
+  "age": 21,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Lucas Noubi (Obránce) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

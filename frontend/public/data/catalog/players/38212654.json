@@ -1,0 +1,19 @@
+{
+  "id": 38212654,
+  "name": "Bara Sapoko Ndiaye",
+  "common_name": "B. Sapoko Ndiaye",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/38212654.png",
+  "number": 39,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-12-31",
+  "age": 18,
+  "team_id": 503,
+  "team_name": "FC Bayern München",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Bara Sapoko Ndiaye (Záložník) nastupuje za FC Bayern München. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

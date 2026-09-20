@@ -1,0 +1,23 @@
+{
+  "id": 37772596,
+  "name": "O. Prodělal",
+  "common_name": "O. Prodělal",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 78,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2005-11-29",
+  "age": 20,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "O. Prodělal (Brankář) nastupuje za Zbrojovka Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:30Z",
+    "season": {}
+  }
+}

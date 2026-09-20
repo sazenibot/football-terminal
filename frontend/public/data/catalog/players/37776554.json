@@ -1,0 +1,23 @@
+{
+  "id": 37776554,
+  "name": "Jonas Topic",
+  "common_name": "J. Topič",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 42,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2008-06-08",
+  "age": 18,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jonas Topic (Obránce) nastupuje za Sparta Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:47Z",
+    "season": {}
+  }
+}

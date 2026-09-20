@@ -1,0 +1,19 @@
+{
+  "id": 9278,
+  "name": "Remi Matthews",
+  "common_name": "R. Matthews",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/9278.png",
+  "number": 31,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1994-02-10",
+  "age": 32,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Remi Matthews (Brankář) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

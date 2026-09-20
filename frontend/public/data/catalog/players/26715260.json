@@ -1,0 +1,19 @@
+{
+  "id": 26715260,
+  "name": "Femi Azeez",
+  "common_name": "F. Azeez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/26715260.png",
+  "number": null,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-06-05",
+  "age": 25,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Femi Azeez (Útočník) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

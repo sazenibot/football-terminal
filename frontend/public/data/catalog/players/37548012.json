@@ -1,0 +1,29 @@
+{
+  "id": 37548012,
+  "name": "Giannis Niarchos",
+  "common_name": "I. Niarchos",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-06-26",
+  "age": 24,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Giannis Niarchos v této sezóně za Slovácko: 4 starty, 256 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:42Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 3,
+      "minutes": 256,
+      "shots": 4,
+      "goals_conceded": 2
+    }
+  }
+}

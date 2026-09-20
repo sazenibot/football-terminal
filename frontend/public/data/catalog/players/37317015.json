@@ -1,0 +1,19 @@
+{
+  "id": 37317015,
+  "name": "Amad Diallo ",
+  "common_name": "A. Traoré",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37317015.png",
+  "number": 16,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-07-11",
+  "age": 24,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Amad Diallo  (Útočník) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

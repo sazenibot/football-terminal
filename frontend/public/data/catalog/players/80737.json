@@ -1,0 +1,30 @@
+{
+  "id": 80737,
+  "name": "Lukas Bartosak",
+  "common_name": "L. Bartošák",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 31,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1990-07-03",
+  "age": 36,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Lukas Bartosak v této sezóně za Zlín: 4 starty, 164 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:47Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 164,
+      "yellow": 2,
+      "shots": 3,
+      "goals_conceded": 3
+    }
+  }
+}

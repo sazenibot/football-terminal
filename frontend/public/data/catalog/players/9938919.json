@@ -1,0 +1,19 @@
+{
+  "id": 9938919,
+  "name": "Mykhaylo Mudryk",
+  "common_name": "M. Mudryk",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/9938919.png",
+  "number": 27,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-01-05",
+  "age": 25,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Mykhaylo Mudryk (Záložník) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

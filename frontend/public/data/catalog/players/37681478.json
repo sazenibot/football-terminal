@@ -1,0 +1,30 @@
+{
+  "id": 37681478,
+  "name": "Baboucarr Faal",
+  "common_name": "B. Faal",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 23,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-04-03",
+  "age": 23,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Baboucarr Faal v této sezóně za Viktoria Plzeň: 3 starty, 47 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:25Z",
+    "season": {
+      "appearances": 3,
+      "minutes": 47,
+      "goals": 1,
+      "shots": 1,
+      "sot": 1,
+      "goals_conceded": 1
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": 37356477,
+  "name": "Maksym Dyachuk",
+  "common_name": "M. Dyachuk",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37356477.png",
+  "number": 16,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-07-21",
+  "age": 23,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Maksym Dyachuk v této sezóně za Baník Ostrava: 5 startů, 242 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:12Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 2,
+      "minutes": 242,
+      "yellow": 2,
+      "shots": 1,
+      "goals_conceded": 4
+    }
+  }
+}

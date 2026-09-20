@@ -1,0 +1,19 @@
+{
+  "id": 17544737,
+  "name": "William Saliba ",
+  "common_name": "W. Saliba",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/17544737.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-03-24",
+  "age": 25,
+  "team_id": 19,
+  "team_name": "Arsenal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "William Saliba  (Obránce) nastupuje za Arsenal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

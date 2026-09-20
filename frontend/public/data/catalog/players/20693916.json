@@ -1,0 +1,31 @@
+{
+  "id": 20693916,
+  "name": "Abdullahi Tanko",
+  "common_name": "A. Tanko",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/20693916.png",
+  "number": 20,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-05-12",
+  "age": 28,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Abdullahi Tanko v této sezóně za Pardubice: 7 startů, 467 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:38Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 6,
+      "minutes": 467,
+      "goals": 1,
+      "shots": 11,
+      "sot": 4,
+      "goals_conceded": 8
+    }
+  }
+}

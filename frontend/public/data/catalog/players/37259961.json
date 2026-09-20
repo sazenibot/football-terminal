@@ -1,0 +1,19 @@
+{
+  "id": 37259961,
+  "name": "Radek Křivánek",
+  "common_name": "R. Křivánek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-01-21",
+  "age": 26,
+  "team_id": 2538,
+  "team_name": "Vysočina Jihlava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Radek Křivánek (Útočník) nastupuje za Vysočina Jihlava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

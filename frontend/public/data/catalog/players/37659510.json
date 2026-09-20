@@ -1,0 +1,23 @@
+{
+  "id": 37659510,
+  "name": "Filip Kolář",
+  "common_name": "F. Kolář",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 38,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-06-06",
+  "age": 21,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Filip Kolář (Obránce) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:12Z",
+    "season": {}
+  }
+}

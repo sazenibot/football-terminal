@@ -1,0 +1,31 @@
+{
+  "id": 37577891,
+  "name": "Josef Svanda",
+  "common_name": "J. Švanda",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37577891.png",
+  "number": 3,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-12-03",
+  "age": 24,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Josef Svanda v této sezóně za Teplice: 8 startů, 346 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:08Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 2,
+      "minutes": 346,
+      "assists": 1,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 5
+    }
+  }
+}

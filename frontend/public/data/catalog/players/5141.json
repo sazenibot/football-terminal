@@ -1,0 +1,19 @@
+{
+  "id": 5141,
+  "name": "Dominic Calvert-Lewin",
+  "common_name": "D. Calvert-Lewin",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/5141.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-03-16",
+  "age": 29,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Dominic Calvert-Lewin (Útočník) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

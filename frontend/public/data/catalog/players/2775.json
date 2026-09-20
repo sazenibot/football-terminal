@@ -1,0 +1,19 @@
+{
+  "id": 2775,
+  "name": "Kike García ",
+  "common_name": "E. García Martínez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/2775.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1989-11-25",
+  "age": 36,
+  "team_id": 528,
+  "team_name": "Espanyol",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Kike García  (Útočník) nastupuje za Espanyol. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

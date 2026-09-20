@@ -1,0 +1,19 @@
+{
+  "id": 37610686,
+  "name": "David Mokwa",
+  "common_name": "D. Mokwa Ntusu",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/37610686.png",
+  "number": 42,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-05-03",
+  "age": 22,
+  "team_id": 3588,
+  "team_name": "Elversberg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "David Mokwa (Útočník) nastupuje za Elversberg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 37585293,
+  "name": "Ro Abajas",
+  "common_name": "R. Abajas Martín",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/37585293.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-05-12",
+  "age": 23,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ro Abajas v této sezóně za Hradec Králové: 1 start, 14 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:43Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 14,
+      "goals_conceded": 1
+    }
+  }
+}

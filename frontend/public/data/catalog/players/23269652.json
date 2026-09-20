@@ -1,0 +1,31 @@
+{
+  "id": 23269652,
+  "name": "Ki-Jana Hoever",
+  "common_name": "K. Hoever",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/23269652.png",
+  "number": 25,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-01-18",
+  "age": 24,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ki-Jana Hoever v této sezóně za Sparta Praha: 2 starty, 100 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:48Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 100,
+      "yellow": 1,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 2
+    }
+  }
+}

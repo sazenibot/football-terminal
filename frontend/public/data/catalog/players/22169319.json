@@ -1,0 +1,19 @@
+{
+  "id": 22169319,
+  "name": "Mark Travers",
+  "common_name": "M. Travers",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/22169319.png",
+  "number": 12,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1999-05-18",
+  "age": 27,
+  "team_id": 13,
+  "team_name": "Everton",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Mark Travers (Brankář) nastupuje za Everton. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

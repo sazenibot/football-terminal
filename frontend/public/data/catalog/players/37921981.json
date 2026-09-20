@@ -1,0 +1,31 @@
+{
+  "id": 37921981,
+  "name": "Samuel Isife",
+  "common_name": "S. Isife",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-07-13",
+  "age": 22,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Samuel Isife v této sezóně za Slavia Praha: 6 startů, 381 min, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 5,
+      "minutes": 381,
+      "assists": 2,
+      "yellow": 1,
+      "shots": 5,
+      "sot": 1
+    }
+  }
+}

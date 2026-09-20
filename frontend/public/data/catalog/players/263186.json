@@ -1,0 +1,19 @@
+{
+  "id": 263186,
+  "name": "Haji Wright ",
+  "common_name": "H. Wright",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/263186.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-03-27",
+  "age": 28,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Haji Wright  (Útočník) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

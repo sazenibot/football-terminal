@@ -1,0 +1,19 @@
+{
+  "id": 52867,
+  "name": "Xaver Schlager",
+  "common_name": "X. Schlager",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/52867.png",
+  "number": 21,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-09-28",
+  "age": 28,
+  "team_id": 63,
+  "team_name": "Nottingham Forest",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Xaver Schlager (Záložník) nastupuje za Nottingham Forest. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

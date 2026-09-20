@@ -1,0 +1,30 @@
+{
+  "id": 38219689,
+  "name": "David Grygera",
+  "common_name": "D. Grygera",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-06-21",
+  "age": 21,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Grygera v této sezóně za Zlín: 3 starty, 151 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:45Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 2,
+      "minutes": 151,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 4
+    }
+  }
+}

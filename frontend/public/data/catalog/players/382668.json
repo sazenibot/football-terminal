@@ -1,0 +1,19 @@
+{
+  "id": 382668,
+  "name": "Miguel Loureiro",
+  "common_name": "M. Loureiro Ameijeda",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/382668.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-11-21",
+  "age": 29,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Miguel Loureiro (Obránce) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

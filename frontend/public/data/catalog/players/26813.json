@@ -1,0 +1,19 @@
+{
+  "id": 26813,
+  "name": "Gustavo Hamer",
+  "common_name": "G. Hamer",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/26813.png",
+  "number": 38,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-06-24",
+  "age": 29,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Gustavo Hamer (Záložník) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

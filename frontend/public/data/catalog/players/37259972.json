@@ -1,0 +1,23 @@
+{
+  "id": 37259972,
+  "name": "Matous Babka",
+  "common_name": "M. Babka",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 77,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-01-02",
+  "age": 24,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matous Babka (Brankář) nastupuje za Baník Ostrava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:09Z",
+    "season": {}
+  }
+}

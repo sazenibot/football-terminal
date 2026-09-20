@@ -1,0 +1,19 @@
+{
+  "id": 37687785,
+  "name": "Roman Mokrovics",
+  "common_name": "R. Mokrovics",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 12,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2006-06-04",
+  "age": 20,
+  "team_id": 2538,
+  "team_name": "Vysočina Jihlava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Roman Mokrovics (Útočník) nastupuje za Vysočina Jihlava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

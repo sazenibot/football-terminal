@@ -1,0 +1,19 @@
+{
+  "id": 4545453,
+  "name": "Víctor Chust",
+  "common_name": "V. Chust García",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/4545453.png",
+  "number": 23,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-03-05",
+  "age": 26,
+  "team_id": 1099,
+  "team_name": "Elche",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/1099.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Víctor Chust (Obránce) nastupuje za Elche. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

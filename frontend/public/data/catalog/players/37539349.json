@@ -1,0 +1,19 @@
+{
+  "id": 37539349,
+  "name": "Lamare Bogarde",
+  "common_name": "L. Bogarde",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/37539349.png",
+  "number": 26,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-01-05",
+  "age": 22,
+  "team_id": 15,
+  "team_name": "Aston Villa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Lamare Bogarde (Záložník) nastupuje za Aston Villa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

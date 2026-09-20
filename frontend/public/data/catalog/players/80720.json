@@ -1,0 +1,19 @@
+{
+  "id": 80720,
+  "name": "Lukas Holik",
+  "common_name": "L. Holík",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 19,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1992-08-23",
+  "age": 34,
+  "team_id": 6957,
+  "team_name": "Hanácká",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Lukas Holik (Záložník) nastupuje za Hanácká. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

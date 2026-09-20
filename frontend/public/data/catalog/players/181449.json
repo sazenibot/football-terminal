@@ -1,0 +1,19 @@
+{
+  "id": 181449,
+  "name": "Dávid Hancko",
+  "common_name": "D. Hancko",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/181449.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-12-13",
+  "age": 28,
+  "team_id": 7980,
+  "team_name": "Atlético de Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Dávid Hancko (Obránce) nastupuje za Atlético de Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

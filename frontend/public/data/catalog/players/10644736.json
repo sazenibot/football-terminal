@@ -1,0 +1,29 @@
+{
+  "id": 10644736,
+  "name": "Santiago Eneme",
+  "common_name": "S. Eneme",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/10644736.png",
+  "number": 5,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-09-29",
+  "age": 25,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Santiago Eneme v této sezóně za Sparta Praha: 6 startů, 224 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:56Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 1,
+      "minutes": 224,
+      "shots": 5,
+      "goals_conceded": 2
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 162536,
+  "name": "Rúben Dias",
+  "common_name": "R. Santos Gato Alves Dias",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/162536.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-05-14",
+  "age": 29,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Rúben Dias (Obránce) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

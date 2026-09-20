@@ -1,0 +1,19 @@
+{
+  "id": 28575676,
+  "name": "James McAtee",
+  "common_name": "J. Mcatee",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/28575676.png",
+  "number": 24,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-10-18",
+  "age": 23,
+  "team_id": 63,
+  "team_name": "Nottingham Forest",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "James McAtee (Záložník) nastupuje za Nottingham Forest. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

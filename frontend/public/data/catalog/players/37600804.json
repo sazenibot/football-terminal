@@ -1,0 +1,23 @@
+{
+  "id": 37600804,
+  "name": "Aleko Basiladze",
+  "common_name": "A. Basiladze",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 6,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-12-30",
+  "age": 20,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Aleko Basiladze (Útočník) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:27Z",
+    "season": {}
+  }
+}

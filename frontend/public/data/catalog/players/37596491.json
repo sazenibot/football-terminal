@@ -1,0 +1,27 @@
+{
+  "id": 37596491,
+  "name": "Samuel Grygar",
+  "common_name": "S. Grygar",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/37596491.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-08-09",
+  "age": 22,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Samuel Grygar v této sezóně za Mladá Boleslav: 1 start, 6 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:21Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 6,
+      "goals_conceded": 1
+    }
+  }
+}

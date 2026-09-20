@@ -1,0 +1,19 @@
+{
+  "id": 37261342,
+  "name": "Johnny Cardoso",
+  "common_name": "J. de Souza Cardoso",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/37261342.png",
+  "number": 5,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-09-20",
+  "age": 25,
+  "team_id": 7980,
+  "team_name": "Atlético de Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Johnny Cardoso (Záložník) nastupuje za Atlético de Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

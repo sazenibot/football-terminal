@@ -1,0 +1,19 @@
+{
+  "id": 10275412,
+  "name": "Imad Rondic",
+  "common_name": "I. Rondić",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/10275412.png",
+  "number": 15,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-02-16",
+  "age": 27,
+  "team_id": 3320,
+  "team_name": "FC Köln",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Imad Rondic (Útočník) nastupuje za FC Köln. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

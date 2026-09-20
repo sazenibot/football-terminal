@@ -1,0 +1,19 @@
+{
+  "id": 6286,
+  "name": "Oliver Burke ",
+  "common_name": "O. Burke",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/6286.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-04-07",
+  "age": 29,
+  "team_id": 1079,
+  "team_name": "FC Union Berlin",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Oliver Burke  (Útočník) nastupuje za FC Union Berlin. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

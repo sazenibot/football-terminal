@@ -1,0 +1,19 @@
+{
+  "id": 337389,
+  "name": "Ondrej Novotny",
+  "common_name": "O. Novotný",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-02-05",
+  "age": 28,
+  "team_id": 3734,
+  "team_name": "Kladno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Ondrej Novotny (Útočník) nastupuje za Kladno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

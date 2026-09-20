@@ -1,0 +1,19 @@
+{
+  "id": 188057,
+  "name": "Edu Expósito",
+  "common_name": "E. Expósito Jaén",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/188057.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1996-08-01",
+  "age": 30,
+  "team_id": 528,
+  "team_name": "Espanyol",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Edu Expósito (Záložník) nastupuje za Espanyol. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

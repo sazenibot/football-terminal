@@ -1,0 +1,19 @@
+{
+  "id": 4203,
+  "name": "Dominic Solanke",
+  "common_name": "D. Solanke",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/4203.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-09-14",
+  "age": 29,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Dominic Solanke (Útočník) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

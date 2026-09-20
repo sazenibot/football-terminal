@@ -1,0 +1,19 @@
+{
+  "id": 37777466,
+  "name": "Juan Francisco Fernández Martin",
+  "common_name": "J. Fernández Martin",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 32,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-01-17",
+  "age": 19,
+  "team_id": 126,
+  "team_name": "Málaga",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Juan Francisco Fernández Martin (Útočník) nastupuje za Málaga. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

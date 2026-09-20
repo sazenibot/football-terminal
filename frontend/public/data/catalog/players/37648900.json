@@ -1,0 +1,27 @@
+{
+  "id": 37648900,
+  "name": "Matej Mikulenka",
+  "common_name": "M. Mikulenka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/37648900.png",
+  "number": 25,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-02-05",
+  "age": 22,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matej Mikulenka v této sezóně za Sigma Olomouc: 1 start, 19 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:27Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 19,
+      "shots": 2
+    }
+  }
+}

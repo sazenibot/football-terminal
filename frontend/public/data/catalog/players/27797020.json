@@ -1,0 +1,19 @@
+{
+  "id": 27797020,
+  "name": "Julen Lobete",
+  "common_name": "J. Lobete Cienfuegos",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/27797020.png",
+  "number": 24,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-09-18",
+  "age": 26,
+  "team_id": 126,
+  "team_name": "Málaga",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Julen Lobete (Útočník) nastupuje za Málaga. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

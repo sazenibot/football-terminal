@@ -1,0 +1,19 @@
+{
+  "id": 28552845,
+  "name": "Keane Lewis-Potter",
+  "common_name": "K.Lewis-Potter",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/28552845.png",
+  "number": 23,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-02-22",
+  "age": 25,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Keane Lewis-Potter (Obránce) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

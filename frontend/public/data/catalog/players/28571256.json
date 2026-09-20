@@ -1,0 +1,29 @@
+{
+  "id": 28571256,
+  "name": "Matus Maly",
+  "common_name": "M. Malý",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/28571256.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-07-11",
+  "age": 25,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matus Maly v této sezóně za Sigma Olomouc: 7 startů, 606 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:47Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 7,
+      "minutes": 606,
+      "shots": 2,
+      "goals_conceded": 8
+    }
+  }
+}

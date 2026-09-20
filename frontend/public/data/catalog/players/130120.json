@@ -1,0 +1,19 @@
+{
+  "id": 130120,
+  "name": "Umar Sadiq",
+  "common_name": "U. Sadiq Mesbah",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/130120.png",
+  "number": 6,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-02-02",
+  "age": 29,
+  "team_id": 214,
+  "team_name": "Valencia",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Umar Sadiq (Útočník) nastupuje za Valencia. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": 81529,
+  "name": "David Puskac",
+  "common_name": "D. Puškáč",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/81529.png",
+  "number": 30,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1993-05-14",
+  "age": 33,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Puskac v této sezóně za Slovácko: 3 starty, 121 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:41Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 2,
+      "minutes": 121,
+      "assists": 1,
+      "shots": 2,
+      "goals_conceded": 5
+    }
+  }
+}

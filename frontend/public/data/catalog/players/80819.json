@@ -1,0 +1,28 @@
+{
+  "id": 80819,
+  "name": "David Stepanek",
+  "common_name": "D. Štěpánek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/80819.png",
+  "number": 23,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-03-30",
+  "age": 29,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Stepanek v této sezóně za Slovácko: 1 start, 81 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:31Z",
+    "season": {
+      "appearances": 1,
+      "lineups": 1,
+      "minutes": 81,
+      "goals_conceded": 5
+    }
+  }
+}

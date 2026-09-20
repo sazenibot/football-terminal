@@ -1,0 +1,19 @@
+{
+  "id": 31609,
+  "name": "Christian Nørgaard",
+  "common_name": "C. Nørgaard",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/31609.png",
+  "number": null,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1994-03-10",
+  "age": 32,
+  "team_id": 13,
+  "team_name": "Everton",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Christian Nørgaard (Záložník) nastupuje za Everton. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": 37529478,
+  "name": "A. Ekeroth",
+  "common_name": "A. Ekeroth",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 29,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-09-16",
+  "age": 25,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "A. Ekeroth v této sezóně za Sigma Olomouc: 5 startů, 330 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:43Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 4,
+      "minutes": 330,
+      "assists": 1,
+      "shots": 2,
+      "goals_conceded": 2
+    }
+  }
+}

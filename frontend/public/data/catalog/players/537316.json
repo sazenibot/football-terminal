@@ -1,0 +1,19 @@
+{
+  "id": 537316,
+  "name": "Zian Flemming",
+  "common_name": "Z. Flemming",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/537316.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-08-01",
+  "age": 28,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Zian Flemming (Útočník) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,27 @@
+{
+  "id": 82419,
+  "name": "Jan Vondra",
+  "common_name": "J. Vondra",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/82419.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1995-09-13",
+  "age": 31,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Vondra v této sezóně za Bohemians 1905: 1 start, 27 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:27Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 27,
+      "goals_conceded": 1
+    }
+  }
+}

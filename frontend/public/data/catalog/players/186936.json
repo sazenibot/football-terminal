@@ -1,0 +1,19 @@
+{
+  "id": 186936,
+  "name": "Mariano Díaz",
+  "common_name": "M. Díaz Mejía",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/186936.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1993-08-01",
+  "age": 33,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Mariano Díaz (Útočník) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

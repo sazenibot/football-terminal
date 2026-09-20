@@ -1,0 +1,19 @@
+{
+  "id": 340342,
+  "name": "Brahim Díaz",
+  "common_name": "B. Abdelkader Diaz",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/340342.png",
+  "number": 21,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-08-03",
+  "age": 27,
+  "team_id": 3468,
+  "team_name": "Real Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Brahim Díaz (Záložník) nastupuje za Real Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

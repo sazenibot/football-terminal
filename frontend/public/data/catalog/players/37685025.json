@@ -1,0 +1,19 @@
+{
+  "id": 37685025,
+  "name": "Giovanni Leoni ",
+  "common_name": "G. Leoni",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/37685025.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-12-21",
+  "age": 19,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Giovanni Leoni  (Obránce) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

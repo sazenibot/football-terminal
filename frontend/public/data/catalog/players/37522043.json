@@ -1,0 +1,31 @@
+{
+  "id": 37522043,
+  "name": "Daniel Horak",
+  "common_name": "D. Horák",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/37522043.png",
+  "number": 26,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-05-10",
+  "age": 26,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Daniel Horak v této sezóně za Hradec Králové: 7 startů, 594 min, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:40Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 7,
+      "minutes": 594,
+      "assists": 2,
+      "shots": 8,
+      "sot": 1,
+      "goals_conceded": 6
+    }
+  }
+}

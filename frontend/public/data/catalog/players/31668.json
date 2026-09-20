@@ -1,0 +1,19 @@
+{
+  "id": 31668,
+  "name": "Alexander Schwolow",
+  "common_name": "A. Schwolow",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/31668.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1992-06-02",
+  "age": 34,
+  "team_id": 794,
+  "team_name": "FSV Mainz 05",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/794.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Alexander Schwolow (Brankář) nastupuje za FSV Mainz 05. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

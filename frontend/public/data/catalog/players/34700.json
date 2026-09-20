@@ -1,0 +1,19 @@
+{
+  "id": 34700,
+  "name": "Ante Budimir",
+  "common_name": "A. Budimir",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/34700.png",
+  "number": 17,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1991-07-22",
+  "age": 35,
+  "team_id": 459,
+  "team_name": "Osasuna",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Ante Budimir (Útočník) nastupuje za Osasuna. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

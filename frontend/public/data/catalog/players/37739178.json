@@ -1,0 +1,19 @@
+{
+  "id": 37739178,
+  "name": "Yassir Zabiri",
+  "common_name": "M. Zabiri",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37739178.png",
+  "number": 21,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-02-23",
+  "age": 21,
+  "team_id": 9818,
+  "team_name": "Racing Santander",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/9818.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Yassir Zabiri (Útočník) nastupuje za Racing Santander. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37601748,
+  "name": "Stefanos Tzimas ",
+  "common_name": "S. Tzimas",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/37601748.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2006-01-06",
+  "age": 20,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Stefanos Tzimas  (Útočník) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

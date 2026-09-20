@@ -1,0 +1,26 @@
+{
+  "id": 80813,
+  "name": "Petr Kodes",
+  "common_name": "P. Kodeš",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/80813.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1996-01-31",
+  "age": 30,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Petr Kodes v této sezóně za Teplice: 1 start, 10 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:12Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 10
+    }
+  }
+}

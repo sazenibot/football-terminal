@@ -1,0 +1,19 @@
+{
+  "id": 3862700,
+  "name": "Christoph Baumgartner",
+  "common_name": "C. Baumgartner",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/3862700.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-08-01",
+  "age": 27,
+  "team_id": 277,
+  "team_name": "RB Leipzig",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Christoph Baumgartner (Záložník) nastupuje za RB Leipzig. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

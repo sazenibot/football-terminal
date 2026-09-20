@@ -1,0 +1,32 @@
+{
+  "id": 37316349,
+  "name": "Lukas Cerv",
+  "common_name": "L. Červ",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37316349.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-04-10",
+  "age": 25,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Lukas Cerv v této sezóně za Viktoria Plzeň: 9 startů, 608 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:22Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 7,
+      "minutes": 608,
+      "goals": 1,
+      "yellow": 2,
+      "shots": 10,
+      "sot": 2,
+      "goals_conceded": 9
+    }
+  }
+}

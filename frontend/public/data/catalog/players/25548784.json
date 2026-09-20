@@ -1,0 +1,19 @@
+{
+  "id": 25548784,
+  "name": "Adrián Rodríguez",
+  "common_name": "A. Rodríguez Giménez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/25548784.png",
+  "number": 13,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2000-12-12",
+  "age": 25,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Adrián Rodríguez (Brankář) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

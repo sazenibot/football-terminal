@@ -1,0 +1,31 @@
+{
+  "id": 81598,
+  "name": "Antonin Rusek",
+  "common_name": "A. Růsek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-03-22",
+  "age": 27,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Antonin Rusek v této sezóně za Jablonec: 6 startů, 340 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:04Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 4,
+      "minutes": 340,
+      "goals": 1,
+      "shots": 6,
+      "sot": 2,
+      "goals_conceded": 3
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": 21404427,
+  "name": "Giannis-Fivos Botos",
+  "common_name": "G. Botos",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/21404427.png",
+  "number": 90,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-12-20",
+  "age": 25,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Giannis-Fivos Botos v této sezóně za Pardubice: 5 startů, 116 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:34Z",
+    "season": {
+      "appearances": 5,
+      "minutes": 116,
+      "shots": 3,
+      "goals_conceded": 1
+    }
+  }
+}

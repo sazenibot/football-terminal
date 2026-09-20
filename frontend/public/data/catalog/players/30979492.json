@@ -1,0 +1,19 @@
+{
+  "id": 30979492,
+  "name": "Tatsuhiro Sakamoto",
+  "common_name": "T. Sakamoto",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/30979492.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1996-10-22",
+  "age": 29,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Tatsuhiro Sakamoto (Záložník) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

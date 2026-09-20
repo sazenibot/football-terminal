@@ -1,0 +1,19 @@
+{
+  "id": 37587454,
+  "name": "Ángel Pérez",
+  "common_name": "A. Pérez Hidalgo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/37587454.png",
+  "number": 7,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-06-08",
+  "age": 24,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Ángel Pérez (Obránce) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

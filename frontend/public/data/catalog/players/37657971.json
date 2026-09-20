@@ -1,0 +1,29 @@
+{
+  "id": 37657971,
+  "name": "David Planka",
+  "common_name": "D. Planka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37657971.png",
+  "number": 18,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-07-28",
+  "age": 21,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Planka v této sezóně za Baník Ostrava: 4 starty, 216 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:19Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 4,
+      "minutes": 216,
+      "shots": 1,
+      "goals_conceded": 6
+    }
+  }
+}

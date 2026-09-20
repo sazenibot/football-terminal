@@ -1,0 +1,19 @@
+{
+  "id": 21427714,
+  "name": "Robert Navarro",
+  "common_name": "R. Navarro Muñoz",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/21427714.png",
+  "number": 23,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-04-12",
+  "age": 24,
+  "team_id": 13258,
+  "team_name": "Athletic Club",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Robert Navarro (Záložník) nastupuje za Athletic Club. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

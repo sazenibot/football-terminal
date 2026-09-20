@@ -1,0 +1,30 @@
+{
+  "id": 37917553,
+  "name": "Gibril Sosseh",
+  "common_name": "G. Sosseh",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-01-01",
+  "age": 19,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Gibril Sosseh v této sezóně za Slovácko: 7 startů, 179 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:36Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 1,
+      "minutes": 179,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 3
+    }
+  }
+}

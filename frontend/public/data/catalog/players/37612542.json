@@ -1,0 +1,19 @@
+{
+  "id": 37612542,
+  "name": "Dean Huijsen",
+  "common_name": "D. Huijsen",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/37612542.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-04-14",
+  "age": 21,
+  "team_id": 3468,
+  "team_name": "Real Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Dean Huijsen (Obránce) nastupuje za Real Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

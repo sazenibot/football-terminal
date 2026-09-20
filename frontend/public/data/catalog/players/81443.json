@@ -1,0 +1,19 @@
+{
+  "id": 81443,
+  "name": "Jakub Dostal",
+  "common_name": "J. Dostál",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 45,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1996-05-15",
+  "age": 30,
+  "team_id": 6957,
+  "team_name": "Hanácká",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jakub Dostal (Brankář) nastupuje za Hanácká. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

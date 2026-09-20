@@ -1,0 +1,19 @@
+{
+  "id": 185573,
+  "name": "Leandro Cabrera",
+  "common_name": "L. Cabrera Sasía",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/185573.png",
+  "number": 6,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1991-06-17",
+  "age": 35,
+  "team_id": 528,
+  "team_name": "Espanyol",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Leandro Cabrera (Obránce) nastupuje za Espanyol. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37623459,
+  "name": "Abdukodir Khusanov",
+  "common_name": "A. Khusanov",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37623459.png",
+  "number": 45,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-02-29",
+  "age": 22,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Abdukodir Khusanov (Obránce) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

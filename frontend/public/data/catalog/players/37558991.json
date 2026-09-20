@@ -1,0 +1,19 @@
+{
+  "id": 37558991,
+  "name": "Brajan Gruda",
+  "common_name": "B. Gruda",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37558991.png",
+  "number": 10,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-05-31",
+  "age": 22,
+  "team_id": 277,
+  "team_name": "RB Leipzig",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Brajan Gruda (Záložník) nastupuje za RB Leipzig. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

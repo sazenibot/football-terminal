@@ -1,0 +1,27 @@
+{
+  "id": 38213053,
+  "name": "Adam Olamilekan Alabi",
+  "common_name": "A. Alabi",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 14,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-06-17",
+  "age": 20,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Olamilekan Alabi v této sezóně za Slovácko: 3 starty, 31 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:30Z",
+    "season": {
+      "appearances": 3,
+      "minutes": 31,
+      "goals_conceded": 2
+    }
+  }
+}

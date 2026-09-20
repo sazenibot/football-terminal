@@ -1,0 +1,19 @@
+{
+  "id": 5666458,
+  "name": "Maxence Lacroix",
+  "common_name": "M. Lacroix",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/5666458.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-04-06",
+  "age": 26,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Maxence Lacroix (Obránce) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

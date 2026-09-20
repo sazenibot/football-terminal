@@ -1,0 +1,19 @@
+{
+  "id": 7346334,
+  "name": "Timotej Mudry",
+  "common_name": "T. Múdry",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/7346334.png",
+  "number": 26,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-04-04",
+  "age": 26,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Timotej Mudry (Záložník) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

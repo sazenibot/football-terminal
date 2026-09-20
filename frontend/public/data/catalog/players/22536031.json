@@ -1,0 +1,19 @@
+{
+  "id": 22536031,
+  "name": "Moussa Diarra",
+  "common_name": "M. Diarra",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/22536031.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-11-10",
+  "age": 25,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Moussa Diarra (Obránce) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

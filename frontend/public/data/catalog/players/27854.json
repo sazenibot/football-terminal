@@ -1,0 +1,32 @@
+{
+  "id": 27854,
+  "name": "Gigli Ndefe",
+  "common_name": "G. Ndefe",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/27854.png",
+  "number": 2,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1994-03-02",
+  "age": 32,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Gigli Ndefe v této sezóně za Slovácko: 9 startů, 764 min, 2 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:37Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 764,
+      "goals": 2,
+      "yellow": 2,
+      "shots": 8,
+      "sot": 2,
+      "goals_conceded": 14
+    }
+  }
+}

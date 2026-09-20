@@ -1,0 +1,19 @@
+{
+  "id": 333616,
+  "name": "Juan Musso",
+  "common_name": "J. Musso",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/333616.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1994-05-06",
+  "age": 32,
+  "team_id": 7980,
+  "team_name": "Atlético de Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Juan Musso (Brankář) nastupuje za Atlético de Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

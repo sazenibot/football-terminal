@@ -1,0 +1,32 @@
+{
+  "id": 1484940,
+  "name": "Samuel Dancak",
+  "common_name": "S. Dancák",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/1484940.png",
+  "number": 11,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-03-06",
+  "age": 28,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Samuel Dancak v této sezóně za Hradec Králové: 9 startů, 510 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:48Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 6,
+      "minutes": 510,
+      "assists": 1,
+      "yellow": 2,
+      "shots": 3,
+      "sot": 2,
+      "goals_conceded": 7
+    }
+  }
+}

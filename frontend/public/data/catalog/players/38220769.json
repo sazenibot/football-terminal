@@ -1,0 +1,19 @@
+{
+  "id": 38220769,
+  "name": "Chidera Agbo",
+  "common_name": "C. Agbo",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-07-12",
+  "age": 22,
+  "team_id": 4134,
+  "team_name": "Třinec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/4134.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Chidera Agbo (Záložník) nastupuje za Třinec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

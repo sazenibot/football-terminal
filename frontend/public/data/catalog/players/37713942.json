@@ -1,0 +1,19 @@
+{
+  "id": 37713942,
+  "name": "Robinio Vaz",
+  "common_name": "R. Vaz",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/37713942.png",
+  "number": 47,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-02-17",
+  "age": 19,
+  "team_id": 22,
+  "team_name": "Hull City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Robinio Vaz (Útočník) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

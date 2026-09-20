@@ -1,0 +1,29 @@
+{
+  "id": 4969736,
+  "name": "Michal Cupak",
+  "common_name": "M. Cupák",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 26,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-09-26",
+  "age": 27,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Michal Cupak v této sezóně za Zlín: 7 startů, 259 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:54Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 2,
+      "minutes": 259,
+      "shots": 3,
+      "goals_conceded": 6
+    }
+  }
+}

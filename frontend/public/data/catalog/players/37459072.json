@@ -1,0 +1,19 @@
+{
+  "id": 37459072,
+  "name": "Lewis Hall",
+  "common_name": "L. Hall",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/37459072.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-09-08",
+  "age": 22,
+  "team_id": 20,
+  "team_name": "Newcastle United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Lewis Hall (Obránce) nastupuje za Newcastle United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

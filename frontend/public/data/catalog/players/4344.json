@@ -1,0 +1,19 @@
+{
+  "id": 4344,
+  "name": "Ainsley Maitland-Niles",
+  "common_name": "A. Maitland-Niles",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/4344.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-08-29",
+  "age": 29,
+  "team_id": 13,
+  "team_name": "Everton",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ainsley Maitland-Niles (Obránce) nastupuje za Everton. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

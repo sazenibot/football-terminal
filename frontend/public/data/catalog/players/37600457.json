@@ -1,0 +1,19 @@
+{
+  "id": 37600457,
+  "name": "Maurice Krattenmacher",
+  "common_name": "M. Krattenmacher",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/37600457.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-08-11",
+  "age": 21,
+  "team_id": 3588,
+  "team_name": "Elversberg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Maurice Krattenmacher (Záložník) nastupuje za Elversberg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

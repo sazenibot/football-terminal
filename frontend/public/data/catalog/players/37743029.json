@@ -1,0 +1,19 @@
+{
+  "id": 37743029,
+  "name": "Izei Hernández",
+  "common_name": "I. Hernández Cañas",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 29,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-02-02",
+  "age": 19,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Izei Hernández (Útočník) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

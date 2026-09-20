@@ -1,0 +1,19 @@
+{
+  "id": 989,
+  "name": "Ben Davies",
+  "common_name": "B. Davies",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/989.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1993-04-24",
+  "age": 33,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ben Davies (Obránce) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

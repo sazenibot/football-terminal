@@ -1,0 +1,29 @@
+{
+  "id": 538615,
+  "name": "Dominik Plechaty",
+  "common_name": "D. Plechatý",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/538615.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-04-18",
+  "age": 27,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dominik Plechaty v této sezóně za SK Artis Brno: 9 startů, 810 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:01Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "shots": 1,
+      "goals_conceded": 18
+    }
+  }
+}

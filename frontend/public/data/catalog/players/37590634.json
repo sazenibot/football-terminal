@@ -1,0 +1,19 @@
+{
+  "id": 37590634,
+  "name": "Chemsdine Talbi",
+  "common_name": "C. Talbi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37590634.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-05-09",
+  "age": 21,
+  "team_id": 3,
+  "team_name": "Sunderland",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Chemsdine Talbi (Útočník) nastupuje za Sunderland. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

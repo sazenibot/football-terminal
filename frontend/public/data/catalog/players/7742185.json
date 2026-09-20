@@ -1,0 +1,29 @@
+{
+  "id": 7742185,
+  "name": "M. Rymarenko",
+  "common_name": "M. Rymarkeno",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-04-09",
+  "age": 27,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "M. Rymarenko v této sezóně za Zbrojovka Brno: 4 starty, 127 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:42Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 127,
+      "shots": 7,
+      "goals_conceded": 2
+    }
+  }
+}

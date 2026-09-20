@@ -1,0 +1,19 @@
+{
+  "id": 540548,
+  "name": "Stanley Nsoki",
+  "common_name": "S. Nsoki",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/540548.png",
+  "number": 34,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-04-09",
+  "age": 27,
+  "team_id": 1079,
+  "team_name": "FC Union Berlin",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Stanley Nsoki (Obránce) nastupuje za FC Union Berlin. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

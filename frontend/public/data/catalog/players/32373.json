@@ -1,0 +1,30 @@
+{
+  "id": 32373,
+  "name": "Pavel Kaderabek",
+  "common_name": "P. Kadeřábek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/32373.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1992-04-25",
+  "age": 34,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Pavel Kaderabek v této sezóně za Sparta Praha: 4 starty, 257 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:50Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 3,
+      "minutes": 257,
+      "yellow": 1,
+      "shots": 1,
+      "goals_conceded": 6
+    }
+  }
+}

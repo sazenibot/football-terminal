@@ -1,0 +1,32 @@
+{
+  "id": 608263,
+  "name": "Frantisek Cech",
+  "common_name": "F. Čech",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/608263.png",
+  "number": 25,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-06-12",
+  "age": 28,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Frantisek Cech v této sezóně za Hradec Králové: 8 startů, 636 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:42Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 636,
+      "goals": 1,
+      "red": 1,
+      "shots": 4,
+      "sot": 2,
+      "goals_conceded": 6
+    }
+  }
+}

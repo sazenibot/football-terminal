@@ -1,0 +1,19 @@
+{
+  "id": 80950,
+  "name": "Matej Kubista",
+  "common_name": "M. Kubista",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/80950.png",
+  "number": null,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-01-05",
+  "age": 30,
+  "team_id": 237562,
+  "team_name": "Arsenal Česká Lípa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Matej Kubista (Obránce) nastupuje za Arsenal Česká Lípa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

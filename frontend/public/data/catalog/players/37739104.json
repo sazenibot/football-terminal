@@ -1,0 +1,30 @@
+{
+  "id": 37739104,
+  "name": "Kahuan Vinícius",
+  "common_name": "K. Guimaraes da Silva",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 20,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-03-15",
+  "age": 22,
+  "team_id": 512,
+  "team_name": "Karviná",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Kahuan Vinícius v této sezóně za Karviná: 7 startů, 192 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:40Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 1,
+      "minutes": 192,
+      "yellow": 2,
+      "shots": 3,
+      "goals_conceded": 3
+    }
+  }
+}

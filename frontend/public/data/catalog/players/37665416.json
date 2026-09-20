@@ -1,0 +1,31 @@
+{
+  "id": 37665416,
+  "name": "Lucky Ezeh",
+  "common_name": "L. Ezeh",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/37665416.png",
+  "number": 77,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-01-23",
+  "age": 22,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Lucky Ezeh v této sezóně za Zbrojovka Brno: 5 startů, 231 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:42Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 3,
+      "minutes": 231,
+      "goals": 1,
+      "shots": 6,
+      "sot": 4,
+      "goals_conceded": 2
+    }
+  }
+}

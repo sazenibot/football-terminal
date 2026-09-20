@@ -1,0 +1,29 @@
+{
+  "id": 37555809,
+  "name": "Ondrej Kukucka",
+  "common_name": "O. Kukučka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/37555809.png",
+  "number": 35,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-03-23",
+  "age": 22,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ondrej Kukucka v této sezóně za Zlín: 6 startů, 496 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:48Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 6,
+      "minutes": 496,
+      "shots": 1,
+      "goals_conceded": 11
+    }
+  }
+}

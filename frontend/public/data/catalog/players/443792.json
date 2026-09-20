@@ -1,0 +1,19 @@
+{
+  "id": 443792,
+  "name": "Nahuel Tenaglia",
+  "common_name": "N. Tenaglia",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/443792.png",
+  "number": 14,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-02-21",
+  "age": 30,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Nahuel Tenaglia (Obránce) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37600942,
+  "name": "Michael Kayode",
+  "common_name": "M. Kayode",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/37600942.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-07-10",
+  "age": 22,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Michael Kayode (Obránce) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

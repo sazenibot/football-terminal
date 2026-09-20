@@ -1,0 +1,19 @@
+{
+  "id": 37259163,
+  "name": "Jarell Quansah",
+  "common_name": "J. Quansah",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/37259163.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-01-29",
+  "age": 23,
+  "team_id": 3321,
+  "team_name": "Bayer 04 Leverkusen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Jarell Quansah (Obránce) nastupuje za Bayer 04 Leverkusen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

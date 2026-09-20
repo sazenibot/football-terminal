@@ -1,0 +1,19 @@
+{
+  "id": 539990,
+  "name": "Senne Lynen ",
+  "common_name": "S. Lynen",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/539990.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-02-19",
+  "age": 27,
+  "team_id": 82,
+  "team_name": "Werder Bremen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Senne Lynen  (Záložník) nastupuje za Werder Bremen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

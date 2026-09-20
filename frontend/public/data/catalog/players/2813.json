@@ -1,0 +1,19 @@
+{
+  "id": 2813,
+  "name": "Jake Bidwell",
+  "common_name": "J. Bidwell",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/2813.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1993-03-21",
+  "age": 33,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jake Bidwell (Obránce) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

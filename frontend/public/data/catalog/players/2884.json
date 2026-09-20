@@ -1,0 +1,19 @@
+{
+  "id": 2884,
+  "name": "Harry Maguire",
+  "common_name": "H. Maguire",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/2884.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1993-03-05",
+  "age": 33,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Harry Maguire (Obránce) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

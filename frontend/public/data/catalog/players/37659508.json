@@ -1,0 +1,19 @@
+{
+  "id": 37659508,
+  "name": "Adam Rezek",
+  "common_name": "A. Rezek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 29,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2005-11-21",
+  "age": 20,
+  "team_id": 28363,
+  "team_name": "Slavia Praha B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Adam Rezek (Brankář) nastupuje za Slavia Praha B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

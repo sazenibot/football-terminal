@@ -1,0 +1,30 @@
+{
+  "id": 80481,
+  "name": "Laco Takacs",
+  "common_name": "L. Takács",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/80481.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-07-15",
+  "age": 30,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Laco Takacs v této sezóně za Teplice: 4 starty, 89 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:04Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 89,
+      "red": 1,
+      "shots": 1,
+      "goals_conceded": 1
+    }
+  }
+}

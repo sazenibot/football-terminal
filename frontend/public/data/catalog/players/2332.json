@@ -1,0 +1,19 @@
+{
+  "id": 2332,
+  "name": "Will Hughes",
+  "common_name": "W. Hughes",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/2332.png",
+  "number": 19,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1995-04-17",
+  "age": 31,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Will Hughes (Záložník) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

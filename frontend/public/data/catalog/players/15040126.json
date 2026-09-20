@@ -1,0 +1,19 @@
+{
+  "id": 15040126,
+  "name": "Karim Adeyemi",
+  "common_name": "K. Adeyemi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/15040126.png",
+  "number": 14,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-01-18",
+  "age": 24,
+  "team_id": 83,
+  "team_name": "FC Barcelona",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Karim Adeyemi (Útočník) nastupuje za FC Barcelona. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

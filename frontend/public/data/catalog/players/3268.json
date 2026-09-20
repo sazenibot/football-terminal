@@ -1,0 +1,19 @@
+{
+  "id": 3268,
+  "name": "Marcus Bettinelli",
+  "common_name": "M. Bettinelli",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/3268.png",
+  "number": 13,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1992-05-24",
+  "age": 34,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Marcus Bettinelli (Brankář) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

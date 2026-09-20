@@ -1,0 +1,30 @@
+{
+  "id": 79532,
+  "name": "Martin Pospisil",
+  "common_name": "M. Pospíšil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/79532.png",
+  "number": 26,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1991-06-26",
+  "age": 35,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Martin Pospisil v této sezóně za SK Artis Brno: 8 startů, 409 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:08Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 3,
+      "minutes": 409,
+      "assists": 1,
+      "shots": 3,
+      "goals_conceded": 8
+    }
+  }
+}

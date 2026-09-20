@@ -1,0 +1,19 @@
+{
+  "id": 37552479,
+  "name": "Haitam Abaida",
+  "common_name": "H. Abaida",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/37552479.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-06-01",
+  "age": 24,
+  "team_id": 126,
+  "team_name": "Málaga",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Haitam Abaida (Útočník) nastupuje za Málaga. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": 104767,
+  "name": "Vakhtang Chanturishvili",
+  "common_name": "V. Tchanturishvili",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/104767.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1993-08-05",
+  "age": 33,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vakhtang Chanturishvili v této sezóně za Jablonec: 9 startů, 740 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:04Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 8,
+      "minutes": 740,
+      "shots": 13,
+      "sot": 5,
+      "goals_conceded": 9
+    }
+  }
+}

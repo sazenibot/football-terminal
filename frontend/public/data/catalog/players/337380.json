@@ -1,0 +1,33 @@
+{
+  "id": 337380,
+  "name": "Jan Fortelny",
+  "common_name": "J. Fortelny",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/337380.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-01-19",
+  "age": 27,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Fortelny v této sezóně za Teplice: 8 startů, 647 min, 1 gól, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:07Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 647,
+      "goals": 1,
+      "assists": 2,
+      "yellow": 4,
+      "shots": 11,
+      "sot": 3,
+      "goals_conceded": 13
+    }
+  }
+}

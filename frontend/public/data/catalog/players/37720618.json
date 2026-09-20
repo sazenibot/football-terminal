@@ -1,0 +1,19 @@
+{
+  "id": 37720618,
+  "name": "Max Dowman",
+  "common_name": "M. Dowman",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 56,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2009-12-31",
+  "age": 16,
+  "team_id": 19,
+  "team_name": "Arsenal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Max Dowman (Záložník) nastupuje za Arsenal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

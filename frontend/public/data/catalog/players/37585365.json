@@ -1,0 +1,32 @@
+{
+  "id": 37585365,
+  "name": "Prince Adu",
+  "common_name": "P. Adu",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/37585365.png",
+  "number": 80,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-09-23",
+  "age": 22,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Prince Adu v této sezóně za Viktoria Plzeň: 7 startů, 346 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:27Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 4,
+      "minutes": 346,
+      "goals": 1,
+      "yellow": 1,
+      "shots": 19,
+      "sot": 7,
+      "goals_conceded": 3
+    }
+  }
+}

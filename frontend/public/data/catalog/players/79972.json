@@ -1,0 +1,32 @@
+{
+  "id": 79972,
+  "name": "Tomas Holes",
+  "common_name": "T. Holeš",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/79972.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1993-03-31",
+  "age": 33,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tomas Holes v této sezóně za Slavia Praha: 6 startů, 431 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 6,
+      "minutes": 431,
+      "goals": 1,
+      "yellow": 1,
+      "shots": 4,
+      "sot": 1,
+      "goals_conceded": 4
+    }
+  }
+}

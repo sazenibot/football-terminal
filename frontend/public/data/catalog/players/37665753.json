@@ -1,0 +1,19 @@
+{
+  "id": 37665753,
+  "name": "Shea Lacey",
+  "common_name": "S. Lacey",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37665753.png",
+  "number": 31,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-04-14",
+  "age": 19,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Shea Lacey (Útočník) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

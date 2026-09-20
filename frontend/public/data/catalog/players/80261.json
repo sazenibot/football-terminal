@@ -1,0 +1,30 @@
+{
+  "id": 80261,
+  "name": "Milan Havel",
+  "common_name": "M. Havel",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/80261.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1994-08-07",
+  "age": 32,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Milan Havel v této sezóně za Bohemians 1905: 8 startů, 671 min, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:29Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 671,
+      "assists": 2,
+      "yellow": 1,
+      "goals_conceded": 10
+    }
+  }
+}

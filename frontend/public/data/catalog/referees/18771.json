@@ -1,0 +1,23 @@
+{
+  "id": 18771,
+  "name": "José María Sánchez Martínez",
+  "common_name": "J. Sánchez Martínez",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Spain",
+  "country_id": 32,
+  "date_of_birth": null,
+  "league_id": 564,
+  "league_name": "La Liga",
+  "in_league": true,
+  "league_matches": 3,
+  "leagues": [
+    {
+      "id": 564,
+      "name": "La Liga",
+      "in_league": true,
+      "league_matches": 3
+    }
+  ],
+  "hook": "José María Sánchez Martínez píská v soutěži La Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

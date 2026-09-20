@@ -1,0 +1,19 @@
+{
+  "id": 37709599,
+  "name": "Said El Mala",
+  "common_name": "S. El Mala",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/37709599.png",
+  "number": 10,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-08-26",
+  "age": 20,
+  "team_id": 3320,
+  "team_name": "FC Köln",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Said El Mala (Záložník) nastupuje za FC Köln. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

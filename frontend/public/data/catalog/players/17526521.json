@@ -1,0 +1,30 @@
+{
+  "id": 17526521,
+  "name": "David Simek",
+  "common_name": "D. Šimek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/17526521.png",
+  "number": 28,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-02-15",
+  "age": 28,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Simek v této sezóně za SK Artis Brno: 7 startů, 581 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:01Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 6,
+      "minutes": 581,
+      "shots": 5,
+      "sot": 1,
+      "goals_conceded": 14
+    }
+  }
+}

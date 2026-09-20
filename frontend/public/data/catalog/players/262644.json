@@ -1,0 +1,19 @@
+{
+  "id": 262644,
+  "name": "Alphonso Davies ",
+  "common_name": "A. Davies",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/262644.png",
+  "number": 19,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-11-02",
+  "age": 25,
+  "team_id": 503,
+  "team_name": "FC Bayern München",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Alphonso Davies  (Obránce) nastupuje za FC Bayern München. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

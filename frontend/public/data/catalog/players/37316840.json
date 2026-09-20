@@ -1,0 +1,19 @@
+{
+  "id": 37316840,
+  "name": "Jamie Gittens",
+  "common_name": "J. Bynoe-Gittens",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/37316840.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-08-08",
+  "age": 22,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jamie Gittens (Útočník) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

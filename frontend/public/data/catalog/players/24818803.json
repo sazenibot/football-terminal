@@ -1,0 +1,19 @@
+{
+  "id": 24818803,
+  "name": "Jan Paul van Hecke",
+  "common_name": "J. van Hecke",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/24818803.png",
+  "number": 6,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-06-08",
+  "age": 26,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jan Paul van Hecke (Obránce) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

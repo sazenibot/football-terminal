@@ -1,0 +1,30 @@
+{
+  "id": 25954318,
+  "name": "Augustin Drakpe",
+  "common_name": "A. Drakpe",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/25954318.png",
+  "number": 14,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-12-08",
+  "age": 24,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Augustin Drakpe v této sezóně za Slovan Liberec: 9 startů, 710 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:16Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 8,
+      "minutes": 710,
+      "yellow": 1,
+      "shots": 3,
+      "goals_conceded": 4
+    }
+  }
+}

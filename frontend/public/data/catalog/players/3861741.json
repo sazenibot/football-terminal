@@ -1,0 +1,19 @@
+{
+  "id": 3861741,
+  "name": "Ilia Gruev",
+  "common_name": "I. Gruev",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/3861741.png",
+  "number": 44,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-05-06",
+  "age": 26,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ilia Gruev (Záložník) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

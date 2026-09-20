@@ -1,0 +1,27 @@
+{
+  "id": 37555634,
+  "name": "Matej Naprstek",
+  "common_name": "M. Náprstek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37555634.png",
+  "number": 27,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-07-27",
+  "age": 23,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matej Naprstek v této sezóně za Teplice: 3 starty, 44 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:14Z",
+    "season": {
+      "appearances": 3,
+      "minutes": 44,
+      "goals_conceded": 1
+    }
+  }
+}

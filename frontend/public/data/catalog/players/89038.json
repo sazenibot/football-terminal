@@ -1,0 +1,30 @@
+{
+  "id": 89038,
+  "name": "Vlasiy Sinyavskiy",
+  "common_name": "V. Sinyavskiy",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/89038.png",
+  "number": 99,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1996-11-27",
+  "age": 29,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vlasiy Sinyavskiy v této sezóně za Baník Ostrava: 5 startů, 407 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:21Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 5,
+      "minutes": 407,
+      "red": 1,
+      "shots": 4,
+      "goals_conceded": 5
+    }
+  }
+}

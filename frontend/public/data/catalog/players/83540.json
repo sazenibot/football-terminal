@@ -1,0 +1,23 @@
+{
+  "id": 83540,
+  "name": "Jakub Siman",
+  "common_name": "J. Šiman",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/83540.png",
+  "number": 71,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1995-01-07",
+  "age": 31,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jakub Siman (Brankář) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:24Z",
+    "season": {}
+  }
+}

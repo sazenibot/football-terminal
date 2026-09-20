@@ -1,0 +1,23 @@
+{
+  "id": 15273,
+  "name": "Michael Oliver",
+  "common_name": "M. Oliver",
+  "image": "https://cdn.sportmonks.com/images//soccer/referees/9/15273.png",
+  "country": "England",
+  "country_id": 462,
+  "date_of_birth": null,
+  "league_id": 8,
+  "league_name": "Premier League",
+  "in_league": true,
+  "league_matches": 4,
+  "leagues": [
+    {
+      "id": 8,
+      "name": "Premier League",
+      "in_league": true,
+      "league_matches": 4
+    }
+  ],
+  "hook": "Michael Oliver píská v soutěži Premier League jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

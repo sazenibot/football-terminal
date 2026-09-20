@@ -1,0 +1,19 @@
+{
+  "id": 8101006,
+  "name": "Adam Hlozek",
+  "common_name": "A. Hložek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/8101006.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-07-25",
+  "age": 24,
+  "team_id": 2726,
+  "team_name": "TSG Hoffenheim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Adam Hlozek (Útočník) nastupuje za TSG Hoffenheim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

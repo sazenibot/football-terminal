@@ -1,0 +1,19 @@
+{
+  "id": 2875848,
+  "name": "Aji Alese",
+  "common_name": "A. Alese",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/2875848.png",
+  "number": null,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-01-17",
+  "age": 25,
+  "team_id": 3,
+  "team_name": "Sunderland",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Aji Alese (Obránce) nastupuje za Sunderland. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

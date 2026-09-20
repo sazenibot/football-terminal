@@ -1,0 +1,19 @@
+{
+  "id": 97626,
+  "name": "Boubacar Kamara",
+  "common_name": "B. Kamara",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/97626.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-11-23",
+  "age": 26,
+  "team_id": 15,
+  "team_name": "Aston Villa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Boubacar Kamara (Záložník) nastupuje za Aston Villa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37704861,
+  "name": "Gustavo Nunes",
+  "common_name": "G. Nunes Fernandes Gomes",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37704861.png",
+  "number": 39,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-11-20",
+  "age": 20,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Gustavo Nunes (Útočník) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

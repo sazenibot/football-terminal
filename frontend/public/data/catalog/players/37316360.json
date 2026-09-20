@@ -1,0 +1,29 @@
+{
+  "id": 37316360,
+  "name": "Matěj Jurásek ",
+  "common_name": "M. Jurásek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/37316360.png",
+  "number": 31,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-08-30",
+  "age": 23,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matěj Jurásek  v této sezóně za Sparta Praha: 6 startů, 139 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:55Z",
+    "season": {
+      "appearances": 6,
+      "minutes": 139,
+      "shots": 8,
+      "sot": 4,
+      "goals_conceded": 1
+    }
+  }
+}

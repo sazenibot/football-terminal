@@ -1,0 +1,19 @@
+{
+  "id": 37565028,
+  "name": "Amario Cozier-Duberry",
+  "common_name": "A. Cozier-Duberry",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/37565028.png",
+  "number": 22,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-05-29",
+  "age": 21,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Amario Cozier-Duberry (Záložník) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

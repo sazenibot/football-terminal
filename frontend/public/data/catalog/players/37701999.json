@@ -1,0 +1,19 @@
+{
+  "id": 37701999,
+  "name": "Estêvão",
+  "common_name": "E. Almeida de Oliveira Gonçalves",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37701999.png",
+  "number": 41,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-04-24",
+  "age": 19,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Estêvão (Útočník) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

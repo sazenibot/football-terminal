@@ -1,0 +1,19 @@
+{
+  "id": 37646866,
+  "name": "Karl Etta Eyong",
+  "common_name": "K. Etta Eyong",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37646866.png",
+  "number": 21,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-10-14",
+  "age": 22,
+  "team_id": 3457,
+  "team_name": "Levante",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Karl Etta Eyong (Útočník) nastupuje za Levante. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

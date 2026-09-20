@@ -1,0 +1,19 @@
+{
+  "id": 32525,
+  "name": "Nico Elvedi",
+  "common_name": "N. Elvedi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/32525.png",
+  "number": 30,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-09-30",
+  "age": 29,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Nico Elvedi (Obránce) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

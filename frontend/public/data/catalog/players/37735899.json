@@ -1,0 +1,19 @@
+{
+  "id": 37735899,
+  "name": "Honest Ahanor",
+  "common_name": "H. Ahanor",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/37735899.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2008-02-23",
+  "age": 18,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Honest Ahanor (Obránce) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

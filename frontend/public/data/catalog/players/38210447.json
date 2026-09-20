@@ -1,0 +1,19 @@
+{
+  "id": 38210447,
+  "name": "Aliyu Imrana",
+  "common_name": "A. Imrana",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2006-03-10",
+  "age": 20,
+  "team_id": 6865,
+  "team_name": "Prostějov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Aliyu Imrana (Útočník) nastupuje za Prostějov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

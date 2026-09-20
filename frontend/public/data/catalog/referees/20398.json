@@ -1,0 +1,23 @@
+{
+  "id": 20398,
+  "name": "Xabier Gómez Landazábal",
+  "common_name": "X. Gómez Landazábal",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Spain",
+  "country_id": 32,
+  "date_of_birth": null,
+  "league_id": 564,
+  "league_name": "La Liga",
+  "in_league": false,
+  "league_matches": 0,
+  "leagues": [
+    {
+      "id": 564,
+      "name": "La Liga",
+      "in_league": false,
+      "league_matches": 0
+    }
+  ],
+  "hook": "Xabier Gómez Landazábal je rozhodčí ze země této ligy. V aktuálním okně ho jako hlavního na zápasech ligy ještě nemáme.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

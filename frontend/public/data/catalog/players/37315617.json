@@ -1,0 +1,30 @@
+{
+  "id": 37315617,
+  "name": "Adam Petrak",
+  "common_name": "A. Petrák",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/37315617.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-08-20",
+  "age": 27,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Petrak v této sezóně za SK Artis Brno: 6 startů, 148 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:05Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 1,
+      "minutes": 148,
+      "shots": 4,
+      "sot": 1,
+      "goals_conceded": 2
+    }
+  }
+}

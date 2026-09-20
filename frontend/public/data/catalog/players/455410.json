@@ -1,0 +1,19 @@
+{
+  "id": 455410,
+  "name": "Regan Slater",
+  "common_name": "R. Slater",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/455410.png",
+  "number": 27,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-09-11",
+  "age": 27,
+  "team_id": 22,
+  "team_name": "Hull City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Regan Slater (Záložník) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

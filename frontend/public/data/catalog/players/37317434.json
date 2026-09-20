@@ -1,0 +1,19 @@
+{
+  "id": 37317434,
+  "name": "Ismael Saibari",
+  "common_name": "I. Saibari Ben El Basra",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/37317434.png",
+  "number": 34,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-01-28",
+  "age": 25,
+  "team_id": 503,
+  "team_name": "FC Bayern München",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Ismael Saibari (Záložník) nastupuje za FC Bayern München. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

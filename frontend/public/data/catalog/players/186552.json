@@ -1,0 +1,19 @@
+{
+  "id": 186552,
+  "name": "Gerard Moreno ",
+  "common_name": "G. Moreno Balaguero",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/186552.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1992-04-07",
+  "age": 34,
+  "team_id": 3477,
+  "team_name": "Villarreal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Gerard Moreno  (Útočník) nastupuje za Villarreal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

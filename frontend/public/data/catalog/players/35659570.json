@@ -1,0 +1,19 @@
+{
+  "id": 35659570,
+  "name": "Gabriel Slonina",
+  "common_name": "G. Slonina",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/35659570.png",
+  "number": 44,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-05-15",
+  "age": 22,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Gabriel Slonina (Brankář) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

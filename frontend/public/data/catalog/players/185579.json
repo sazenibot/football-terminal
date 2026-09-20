@@ -1,0 +1,19 @@
+{
+  "id": 185579,
+  "name": "Kiko Femenía",
+  "common_name": "F. Femenía Far",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/185579.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1991-02-02",
+  "age": 35,
+  "team_id": 106,
+  "team_name": "Getafe",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Kiko Femenía (Obránce) nastupuje za Getafe. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

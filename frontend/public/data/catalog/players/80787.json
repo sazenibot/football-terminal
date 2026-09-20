@@ -1,0 +1,29 @@
+{
+  "id": 80787,
+  "name": "Ales Mandous",
+  "common_name": "A. Mandous",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/80787.png",
+  "number": 30,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1992-04-21",
+  "age": 34,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ales Mandous v této sezóně za Pardubice: 1 start, 90 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:25Z",
+    "season": {
+      "appearances": 1,
+      "lineups": 1,
+      "minutes": 90,
+      "saves": 2,
+      "goals_conceded": 2
+    }
+  }
+}

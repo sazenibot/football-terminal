@@ -1,0 +1,19 @@
+{
+  "id": 465803,
+  "name": "Gabriel Suazo ",
+  "common_name": "G. Suazo Urbina",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/465803.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-08-09",
+  "age": 29,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Gabriel Suazo  (Obránce) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

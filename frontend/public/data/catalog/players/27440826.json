@@ -1,0 +1,19 @@
+{
+  "id": 27440826,
+  "name": "Aaron Hickey",
+  "common_name": "A. Hickey",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/27440826.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-06-10",
+  "age": 24,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Aaron Hickey (Obránce) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

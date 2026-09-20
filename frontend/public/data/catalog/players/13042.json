@@ -1,0 +1,19 @@
+{
+  "id": 13042,
+  "name": "Jack Taylor",
+  "common_name": "J. Taylor",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/13042.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-06-23",
+  "age": 28,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jack Taylor (Záložník) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

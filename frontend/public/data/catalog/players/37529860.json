@@ -1,0 +1,19 @@
+{
+  "id": 37529860,
+  "name": "A. Matić",
+  "common_name": "A. Matić",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 77,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-10-09",
+  "age": 22,
+  "team_id": 3531,
+  "team_name": "Dukla Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/3531.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "A. Matić (Záložník) nastupuje za Dukla Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

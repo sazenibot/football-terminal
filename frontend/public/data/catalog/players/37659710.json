@@ -1,0 +1,19 @@
+{
+  "id": 37659710,
+  "name": "Veljko Milosavljevic",
+  "common_name": "V. Milosavljević",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/37659710.png",
+  "number": 44,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2007-06-28",
+  "age": 19,
+  "team_id": 52,
+  "team_name": "AFC Bournemouth",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Veljko Milosavljevic (Obránce) nastupuje za AFC Bournemouth. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

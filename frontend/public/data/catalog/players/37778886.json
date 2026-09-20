@@ -1,0 +1,19 @@
+{
+  "id": 37778886,
+  "name": "Axel Tape",
+  "common_name": "A. Tape-Kobrissa",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/37778886.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-08-10",
+  "age": 19,
+  "team_id": 3457,
+  "team_name": "Levante",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Axel Tape (Záložník) nastupuje za Levante. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

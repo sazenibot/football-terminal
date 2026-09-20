@@ -1,0 +1,32 @@
+{
+  "id": 37560659,
+  "name": "Saidou Alioum Moubarak",
+  "common_name": "S. Alioum Moubarak",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37560659.png",
+  "number": 17,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-07-25",
+  "age": 23,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Saidou Alioum Moubarak v této sezóně za Jablonec: 6 startů, 368 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:08Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 4,
+      "minutes": 368,
+      "goals": 1,
+      "yellow": 2,
+      "shots": 14,
+      "sot": 4,
+      "goals_conceded": 4
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37650979,
+  "name": "Tom Wisbereit",
+  "common_name": "T. Wisbereit",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 48,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2007-11-17",
+  "age": 18,
+  "team_id": 90,
+  "team_name": "FC Augsburg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Tom Wisbereit (Brankář) nastupuje za FC Augsburg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

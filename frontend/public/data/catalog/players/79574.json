@@ -1,0 +1,28 @@
+{
+  "id": 79574,
+  "name": "Jan Boril",
+  "common_name": "J. Bořil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/79574.png",
+  "number": 26,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1991-01-11",
+  "age": 35,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Boril v této sezóně za Slovan Liberec: 1 start, 36 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:17Z",
+    "season": {
+      "appearances": 1,
+      "lineups": 1,
+      "minutes": 36,
+      "shots": 1
+    }
+  }
+}

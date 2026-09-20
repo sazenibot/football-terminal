@@ -1,0 +1,19 @@
+{
+  "id": 37614807,
+  "name": "Tani Oluwaseyi",
+  "common_name": "T. Oluwaseyi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37614807.png",
+  "number": 21,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-05-15",
+  "age": 26,
+  "team_id": 3477,
+  "team_name": "Villarreal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Tani Oluwaseyi (Útočník) nastupuje za Villarreal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

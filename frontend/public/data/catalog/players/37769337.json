@@ -1,0 +1,19 @@
+{
+  "id": 37769337,
+  "name": "Jayden Lienou",
+  "common_name": "J. Lienou",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37769337.png",
+  "number": 65,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2008-04-08",
+  "age": 18,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jayden Lienou (Obránce) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 38220864,
+  "name": "Filip Papousek",
+  "common_name": "F. Papousek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 26,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-11-03",
+  "age": 20,
+  "team_id": 2364,
+  "team_name": "Viktoria Žižkov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Filip Papousek (Záložník) nastupuje za Viktoria Žižkov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

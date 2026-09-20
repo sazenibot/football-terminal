@@ -1,0 +1,19 @@
+{
+  "id": 37296354,
+  "name": "Carlos Álvarez",
+  "common_name": "C. Álvarez Rivera",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/37296354.png",
+  "number": 10,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-08-06",
+  "age": 23,
+  "team_id": 3457,
+  "team_name": "Levante",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Carlos Álvarez (Záložník) nastupuje za Levante. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

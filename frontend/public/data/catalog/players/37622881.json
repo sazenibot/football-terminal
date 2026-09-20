@@ -1,0 +1,19 @@
+{
+  "id": 37622881,
+  "name": "Vojtech Citek",
+  "common_name": "V. Čítek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 8,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-02-28",
+  "age": 25,
+  "team_id": 3734,
+  "team_name": "Kladno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Vojtech Citek (Obránce) nastupuje za Kladno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

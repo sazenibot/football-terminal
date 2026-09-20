@@ -1,0 +1,19 @@
+{
+  "id": 37607177,
+  "name": "Lorenzo Amatucci",
+  "common_name": "L. Amatucci",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/37607177.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-02-05",
+  "age": 22,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Lorenzo Amatucci (Záložník) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37922937,
+  "name": "Yan Diomande",
+  "common_name": "Y. Diomande",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37922937.png",
+  "number": 25,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2006-11-14",
+  "age": 19,
+  "team_id": 3468,
+  "team_name": "Real Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Yan Diomande (Útočník) nastupuje za Real Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

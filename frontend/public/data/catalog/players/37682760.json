@@ -1,0 +1,19 @@
+{
+  "id": 37682760,
+  "name": "Deniz Zeitler",
+  "common_name": "D. Zeitler",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/37682760.png",
+  "number": 38,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2006-12-13",
+  "age": 19,
+  "team_id": 2642,
+  "team_name": "Paderborn",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Deniz Zeitler (Útočník) nastupuje za Paderborn. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

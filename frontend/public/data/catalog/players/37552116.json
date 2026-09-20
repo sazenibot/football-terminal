@@ -1,0 +1,28 @@
+{
+  "id": 37552116,
+  "name": "Matyas Vojta",
+  "common_name": "M. Vojta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/37552116.png",
+  "number": 29,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-02-26",
+  "age": 22,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matyas Vojta v této sezóně za Sparta Praha: 6 startů, 141 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:59Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 1,
+      "minutes": 141,
+      "goals_conceded": 3
+    }
+  }
+}

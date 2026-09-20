@@ -1,0 +1,19 @@
+{
+  "id": 15665,
+  "name": "Ethan Pinnock",
+  "common_name": "E. Pinnock",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/15665.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1993-05-29",
+  "age": 33,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Ethan Pinnock (Obránce) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

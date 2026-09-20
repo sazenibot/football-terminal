@@ -1,0 +1,19 @@
+{
+  "id": 37568219,
+  "name": "Álex Padilla",
+  "common_name": "?. Padilla Pérez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/37568219.png",
+  "number": 13,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2003-09-01",
+  "age": 23,
+  "team_id": 13258,
+  "team_name": "Athletic Club",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Álex Padilla (Brankář) nastupuje za Athletic Club. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

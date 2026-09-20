@@ -1,0 +1,19 @@
+{
+  "id": 33186827,
+  "name": "Jaden Philogene",
+  "common_name": "J. Philogene-Bidace",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/33186827.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-02-08",
+  "age": 24,
+  "team_id": 116,
+  "team_name": "Ipswich Town",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jaden Philogene (Útočník) nastupuje za Ipswich Town. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": 24816829,
+  "name": "Jachym Sip",
+  "common_name": "J. Šíp",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/24816829.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-01-22",
+  "age": 23,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jachym Sip v této sezóně za Sigma Olomouc: 8 startů, 98 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:51Z",
+    "season": {
+      "appearances": 8,
+      "minutes": 98,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 1,
+      "goals_conceded": 4
+    }
+  }
+}

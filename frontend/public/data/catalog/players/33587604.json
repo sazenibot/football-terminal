@@ -1,0 +1,23 @@
+{
+  "id": 33587604,
+  "name": "David Buchta",
+  "common_name": "D. Buchta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/33587604.png",
+  "number": 9,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-06-27",
+  "age": 27,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Buchta (Záložník) nastupuje za Baník Ostrava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:18Z",
+    "season": {}
+  }
+}

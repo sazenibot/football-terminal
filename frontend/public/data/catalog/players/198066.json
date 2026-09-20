@@ -1,0 +1,19 @@
+{
+  "id": 198066,
+  "name": "Cedric Itten",
+  "common_name": "C. Itten",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/198066.png",
+  "number": 26,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1996-12-27",
+  "age": 29,
+  "team_id": 82,
+  "team_name": "Werder Bremen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Cedric Itten (Útočník) nastupuje za Werder Bremen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

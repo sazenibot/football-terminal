@@ -1,0 +1,31 @@
+{
+  "id": 37569773,
+  "name": "David Tkac ",
+  "common_name": "D. Tkac",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 24,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-07-06",
+  "age": 24,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "David Tkac  v této sezóně za Sigma Olomouc: 9 startů, 470 min, 2 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:55Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 5,
+      "minutes": 470,
+      "goals": 2,
+      "shots": 9,
+      "sot": 4,
+      "goals_conceded": 7
+    }
+  }
+}

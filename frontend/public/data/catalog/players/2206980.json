@@ -1,0 +1,19 @@
+{
+  "id": 2206980,
+  "name": "Melvin Bard",
+  "common_name": "M. Bard",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/2206980.png",
+  "number": 26,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-11-06",
+  "age": 25,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Melvin Bard (Obránce) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

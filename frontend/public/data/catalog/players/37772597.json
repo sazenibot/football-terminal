@@ -1,0 +1,19 @@
+{
+  "id": 37772597,
+  "name": "David Polasek",
+  "common_name": "D. Polášek",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 99,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-11-03",
+  "age": 19,
+  "team_id": 6957,
+  "team_name": "Hanácká",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "David Polasek (Záložník) nastupuje za Hanácká. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

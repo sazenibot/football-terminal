@@ -1,0 +1,19 @@
+{
+  "id": 23697990,
+  "name": "Jérémy Doku ",
+  "common_name": "J. Doku",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/23697990.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-05-27",
+  "age": 24,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jérémy Doku  (Útočník) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

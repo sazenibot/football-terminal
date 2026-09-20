@@ -1,0 +1,19 @@
+{
+  "id": 323,
+  "name": "Jordan Henderson ",
+  "common_name": "J. Henderson",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/323.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1990-06-17",
+  "age": 36,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jordan Henderson  (Záložník) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 187232,
+  "name": "Álvaro Odriozola ",
+  "common_name": "Á. Odriozola Arzallus",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/187232.png",
+  "number": 20,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1995-12-14",
+  "age": 30,
+  "team_id": 594,
+  "team_name": "Real Sociedad",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Álvaro Odriozola  (Obránce) nastupuje za Real Sociedad. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

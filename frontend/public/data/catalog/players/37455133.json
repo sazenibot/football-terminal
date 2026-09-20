@@ -1,0 +1,33 @@
+{
+  "id": 37455133,
+  "name": "Ahmad Ghali",
+  "common_name": "A. Ghali",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37455133.png",
+  "number": 70,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-06-23",
+  "age": 26,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ahmad Ghali v této sezóně za Sigma Olomouc: 9 startů, 785 min, 3 góly, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:49Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 785,
+      "goals": 3,
+      "assists": 1,
+      "yellow": 3,
+      "shots": 14,
+      "sot": 8,
+      "goals_conceded": 12
+    }
+  }
+}

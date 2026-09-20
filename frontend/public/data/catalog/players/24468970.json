@@ -1,0 +1,19 @@
+{
+  "id": 24468970,
+  "name": "Yéremy Pino",
+  "common_name": "Y. Jesús Pino Santos",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/24468970.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-10-20",
+  "age": 23,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Yéremy Pino (Útočník) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

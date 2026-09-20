@@ -1,0 +1,19 @@
+{
+  "id": 37304035,
+  "name": "Nikola Turanjanin",
+  "common_name": "N. Turanjanin",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37304035.png",
+  "number": 21,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-04-12",
+  "age": 25,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Nikola Turanjanin (Útočník) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

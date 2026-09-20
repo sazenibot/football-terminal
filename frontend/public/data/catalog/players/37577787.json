@@ -1,0 +1,30 @@
+{
+  "id": 37577787,
+  "name": "Nelson Okeke",
+  "common_name": "N. Okeke",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-03-25",
+  "age": 24,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Nelson Okeke v této sezóně za Jablonec: 7 startů, 316 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:02Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 4,
+      "minutes": 316,
+      "yellow": 2,
+      "shots": 4,
+      "goals_conceded": 4
+    }
+  }
+}

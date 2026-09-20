@@ -1,0 +1,19 @@
+{
+  "id": 3862358,
+  "name": "Enzo Leopold",
+  "common_name": "E. Leopold",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-07-23",
+  "age": 26,
+  "team_id": 683,
+  "team_name": "Borussia Mönchengladbach",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Enzo Leopold (Záložník) nastupuje za Borussia Mönchengladbach. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

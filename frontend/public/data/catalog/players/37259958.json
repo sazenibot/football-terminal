@@ -1,0 +1,28 @@
+{
+  "id": 37259958,
+  "name": "Oliver Velich",
+  "common_name": "O. Velich",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/37259958.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-06-12",
+  "age": 25,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Oliver Velich v této sezóně za Zbrojovka Brno: 6 startů, 67 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:43Z",
+    "season": {
+      "appearances": 6,
+      "minutes": 67,
+      "shots": 2,
+      "goals_conceded": 2
+    }
+  }
+}

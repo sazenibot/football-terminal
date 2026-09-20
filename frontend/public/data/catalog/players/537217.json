@@ -1,0 +1,19 @@
+{
+  "id": 537217,
+  "name": "Lukas Nmecha",
+  "common_name": "L. Nmecha",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/537217.png",
+  "number": 14,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-12-14",
+  "age": 27,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Lukas Nmecha (Útočník) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

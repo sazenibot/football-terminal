@@ -1,0 +1,19 @@
+{
+  "id": 37567261,
+  "name": "Santiago Mouriño",
+  "common_name": "?. Mouriño González",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37567261.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-02-13",
+  "age": 24,
+  "team_id": 3477,
+  "team_name": "Villarreal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Santiago Mouriño (Obránce) nastupuje za Villarreal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

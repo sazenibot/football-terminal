@@ -1,0 +1,19 @@
+{
+  "id": 37661898,
+  "name": "Leon Avdullahu",
+  "common_name": "L. Avdullahu",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37661898.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-02-23",
+  "age": 22,
+  "team_id": 2726,
+  "team_name": "TSG Hoffenheim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Leon Avdullahu (Záložník) nastupuje za TSG Hoffenheim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

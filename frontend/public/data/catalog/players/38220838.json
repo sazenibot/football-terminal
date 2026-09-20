@@ -1,0 +1,19 @@
+{
+  "id": 38220838,
+  "name": "Elias Barteska",
+  "common_name": "E. Barteska",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": null,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2009-01-06",
+  "age": 17,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Elias Barteska (Záložník) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": 52750,
+  "name": "Asger Sörensen",
+  "common_name": "A. Sørensen",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/52750.png",
+  "number": 25,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-06-05",
+  "age": 30,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Asger Sörensen v této sezóně za Sparta Praha: 2 starty, 180 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:46Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 2,
+      "minutes": 180,
+      "shots": 1,
+      "sot": 1,
+      "goals_conceded": 2
+    }
+  }
+}

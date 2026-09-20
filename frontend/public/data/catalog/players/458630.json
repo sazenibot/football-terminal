@@ -1,0 +1,19 @@
+{
+  "id": 458630,
+  "name": "Pavel Soukup",
+  "common_name": "P. Soukup",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/458630.png",
+  "number": null,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1995-04-14",
+  "age": 31,
+  "team_id": 2538,
+  "team_name": "Vysočina Jihlava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Pavel Soukup (Brankář) nastupuje za Vysočina Jihlava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

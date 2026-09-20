@@ -1,0 +1,19 @@
+{
+  "id": 26354,
+  "name": "Enes Ünal",
+  "common_name": "E. Ünal",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/26354.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-05-10",
+  "age": 29,
+  "team_id": 106,
+  "team_name": "Getafe",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Enes Ünal (Útočník) nastupuje za Getafe. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

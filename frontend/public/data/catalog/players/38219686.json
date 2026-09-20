@@ -1,0 +1,26 @@
+{
+  "id": 38219686,
+  "name": "Filip Dorňák",
+  "common_name": "F. Dorňák",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 13,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-07-23",
+  "age": 20,
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Filip Dorňák v této sezóně za Zlín: 1 start, 25 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:51Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 25
+    }
+  }
+}

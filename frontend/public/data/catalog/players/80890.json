@@ -1,0 +1,30 @@
+{
+  "id": 80890,
+  "name": "Ondrej Karafiat",
+  "common_name": "O. Karafiát",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 44,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1994-12-01",
+  "age": 31,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ondrej Karafiat v této sezóně za Mladá Boleslav: 8 startů, 715 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:15Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 715,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 9
+    }
+  }
+}

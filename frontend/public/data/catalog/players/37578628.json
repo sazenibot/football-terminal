@@ -1,0 +1,33 @@
+{
+  "id": 37578628,
+  "name": "Josimar Alcócer",
+  "common_name": "J. Alcócer",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/37578628.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-07-07",
+  "age": 22,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Josimar Alcócer v této sezóně za Sparta Praha: 8 startů, 553 min, 4 góly, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:54Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 7,
+      "minutes": 553,
+      "goals": 4,
+      "assists": 1,
+      "yellow": 4,
+      "shots": 12,
+      "sot": 6,
+      "goals_conceded": 8
+    }
+  }
+}

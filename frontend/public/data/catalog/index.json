@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-09-20T21:56:07Z",
+  "leagues": [
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "teams": 16,
+      "players": 470,
+      "referees": 152
+    },
+    {
+      "id": 265,
+      "name": "Chance Národní Liga",
+      "teams": 16,
+      "players": 508,
+      "referees": 152
+    },
+    {
+      "id": 8,
+      "name": "Premier League",
+      "teams": 20,
+      "players": 581,
+      "referees": 223
+    },
+    {
+      "id": 82,
+      "name": "Bundesliga",
+      "teams": 18,
+      "players": 521,
+      "referees": 161
+    },
+    {
+      "id": 564,
+      "name": "La Liga",
+      "teams": 20,
+      "players": 599,
+      "referees": 443
+    }
+  ]
+}

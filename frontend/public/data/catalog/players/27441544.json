@@ -1,0 +1,19 @@
+{
+  "id": 27441544,
+  "name": "Tim Lemperle",
+  "common_name": "T. Lemperle",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/27441544.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-02-05",
+  "age": 24,
+  "team_id": 2726,
+  "team_name": "TSG Hoffenheim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Tim Lemperle (Útočník) nastupuje za TSG Hoffenheim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 37646973,
+  "name": "Lucas Kubr",
+  "common_name": "L. Kubr",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37646973.png",
+  "number": 77,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-02-25",
+  "age": 22,
+  "team_id": 6957,
+  "team_name": "Hanácká",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Lucas Kubr (Záložník) nastupuje za Hanácká. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:47Z",
+    "season": {}
+  }
+}

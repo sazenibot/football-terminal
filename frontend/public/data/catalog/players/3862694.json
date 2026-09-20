@@ -1,0 +1,19 @@
+{
+  "id": 3862694,
+  "name": "Stefan Drljaca",
+  "common_name": "S. Drljača",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/3862694.png",
+  "number": 46,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1999-04-20",
+  "age": 27,
+  "team_id": 3319,
+  "team_name": "VfB Stuttgart",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/3319.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Stefan Drljaca (Brankář) nastupuje za VfB Stuttgart. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

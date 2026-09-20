@@ -1,0 +1,32 @@
+{
+  "id": 37346887,
+  "name": "Cheick Souaré",
+  "common_name": "C. Souare",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/37346887.png",
+  "number": 19,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-09-03",
+  "age": 24,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Cheick Souaré v této sezóně za Viktoria Plzeň: 6 startů, 320 min, 1 gól, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:21Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 4,
+      "minutes": 320,
+      "goals": 1,
+      "assists": 2,
+      "shots": 13,
+      "sot": 3,
+      "goals_conceded": 7
+    }
+  }
+}

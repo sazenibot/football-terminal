@@ -1,0 +1,19 @@
+{
+  "id": 37316986,
+  "name": "Wilfried Gnonto",
+  "common_name": "D. Gnonto",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/37316986.png",
+  "number": 29,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-11-05",
+  "age": 22,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Wilfried Gnonto (Útočník) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

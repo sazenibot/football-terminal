@@ -1,0 +1,19 @@
+{
+  "id": 98903,
+  "name": "Ferland Mendy ",
+  "common_name": "F. Mendy",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/98903.png",
+  "number": 23,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1995-06-08",
+  "age": 31,
+  "team_id": 3468,
+  "team_name": "Real Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Ferland Mendy  (Obránce) nastupuje za Real Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

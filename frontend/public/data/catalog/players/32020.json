@@ -1,0 +1,29 @@
+{
+  "id": 32020,
+  "name": "Vaclav Pilar",
+  "common_name": "V. Pilař",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/32020.png",
+  "number": 11,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1988-10-13",
+  "age": 37,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Vaclav Pilar v této sezóně za Bohemians 1905: 7 startů, 272 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:35Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 3,
+      "minutes": 272,
+      "shots": 8,
+      "goals_conceded": 5
+    }
+  }
+}

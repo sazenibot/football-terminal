@@ -1,0 +1,19 @@
+{
+  "id": 96950,
+  "name": "Jean-Philippe Mateta ",
+  "common_name": "J. Mateta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/96950.png",
+  "number": 14,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-06-28",
+  "age": 29,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jean-Philippe Mateta  (Útočník) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37615861,
+  "name": "Berkay Yilmaz",
+  "common_name": "B. Yilmaz",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 27,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-02-25",
+  "age": 21,
+  "team_id": 3543,
+  "team_name": "SC Freiburg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/3543.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Berkay Yilmaz (Obránce) nastupuje za SC Freiburg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 537203,
+  "name": "Diego Conde ",
+  "common_name": "D. Conde Alcolado",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/537203.png",
+  "number": null,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1998-10-28",
+  "age": 27,
+  "team_id": 485,
+  "team_name": "Real Betis",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Diego Conde  (Brankář) nastupuje za Real Betis. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

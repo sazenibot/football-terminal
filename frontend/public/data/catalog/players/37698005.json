@@ -1,0 +1,19 @@
+{
+  "id": 37698005,
+  "name": "Conrad Harder",
+  "common_name": "C. Harder",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/37698005.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-04-07",
+  "age": 21,
+  "team_id": 277,
+  "team_name": "RB Leipzig",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Conrad Harder (Útočník) nastupuje za RB Leipzig. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

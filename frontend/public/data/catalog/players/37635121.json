@@ -1,0 +1,32 @@
+{
+  "id": 37635121,
+  "name": "Neil Glossoa",
+  "common_name": "N. Glossoa",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/37635121.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-09-10",
+  "age": 22,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Neil Glossoa v této sezóně za SK Artis Brno: 9 startů, 671 min, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:04Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 671,
+      "assists": 2,
+      "yellow": 3,
+      "shots": 3,
+      "saves": 5,
+      "goals_conceded": 17
+    }
+  }
+}

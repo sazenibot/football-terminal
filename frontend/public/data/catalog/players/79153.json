@@ -1,0 +1,19 @@
+{
+  "id": 79153,
+  "name": "Tomas Grigar",
+  "common_name": "T. Grigar",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/79153.png",
+  "number": 30,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1983-02-01",
+  "age": 43,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Tomas Grigar (Brankář) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

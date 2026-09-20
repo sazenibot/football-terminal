@@ -1,0 +1,29 @@
+{
+  "id": 2206762,
+  "name": "Adam Zadrazil",
+  "common_name": "A. Zadražil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/2206762.png",
+  "number": 12,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2000-08-06",
+  "age": 26,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Zadrazil v této sezóně za Hradec Králové: 9 startů, 810 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:39Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "saves": 30,
+      "goals_conceded": 9
+    }
+  }
+}

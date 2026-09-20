@@ -1,0 +1,29 @@
+{
+  "id": 37646034,
+  "name": "Krystof Lichtenberg",
+  "common_name": "K. Lichtenberg",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 31,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-11-30",
+  "age": 23,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Krystof Lichtenberg v této sezóně za Teplice: 1 start, 90 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:00Z",
+    "season": {
+      "appearances": 1,
+      "lineups": 1,
+      "minutes": 90,
+      "saves": 6,
+      "goals_conceded": 2
+    }
+  }
+}

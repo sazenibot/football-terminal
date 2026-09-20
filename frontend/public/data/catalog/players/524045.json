@@ -1,0 +1,19 @@
+{
+  "id": 524045,
+  "name": "Daniel Muñoz",
+  "common_name": "D. Muñoz Mejía",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/524045.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-05-26",
+  "age": 30,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Daniel Muñoz (Obránce) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

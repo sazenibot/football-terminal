@@ -1,0 +1,19 @@
+{
+  "id": 3187862,
+  "name": "Terem Moffi",
+  "common_name": "T. Moffi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/3187862.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-05-25",
+  "age": 27,
+  "team_id": 2708,
+  "team_name": "Hamburger SV",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Terem Moffi (Útočník) nastupuje za Hamburger SV. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

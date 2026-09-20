@@ -1,0 +1,19 @@
+{
+  "id": 38220844,
+  "name": "Filip Zapotocny",
+  "common_name": "F. Zapotocny",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": null,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2007-12-18",
+  "age": 18,
+  "team_id": 428,
+  "team_name": "Příbram",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Filip Zapotocny (Obránce) nastupuje za Příbram. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

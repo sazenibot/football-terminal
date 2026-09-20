@@ -1,0 +1,23 @@
+{
+  "id": 17226,
+  "name": "Robert Kampka",
+  "common_name": "R. Kampka",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Germany",
+  "country_id": 11,
+  "date_of_birth": null,
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "in_league": false,
+  "league_matches": 0,
+  "leagues": [
+    {
+      "id": 82,
+      "name": "Bundesliga",
+      "in_league": false,
+      "league_matches": 0
+    }
+  ],
+  "hook": "Robert Kampka je rozhodčí ze země této ligy. V aktuálním okně ho jako hlavního na zápasech ligy ještě nemáme.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

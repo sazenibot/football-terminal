@@ -1,0 +1,19 @@
+{
+  "id": 37649077,
+  "name": "Asier Osambela",
+  "common_name": "A. Osambela Larraya",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/37649077.png",
+  "number": 29,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-10-30",
+  "age": 21,
+  "team_id": 459,
+  "team_name": "Osasuna",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Asier Osambela (Obránce) nastupuje za Osasuna. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

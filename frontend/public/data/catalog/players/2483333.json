@@ -1,0 +1,19 @@
+{
+  "id": 2483333,
+  "name": "Ridle Baku",
+  "common_name": "R. Baku",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/2483333.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-04-08",
+  "age": 28,
+  "team_id": 277,
+  "team_name": "RB Leipzig",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Ridle Baku (Obránce) nastupuje za RB Leipzig. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

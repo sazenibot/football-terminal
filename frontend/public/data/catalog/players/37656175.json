@@ -1,0 +1,31 @@
+{
+  "id": 37656175,
+  "name": "Alexandr Sojka",
+  "common_name": "A. Sojka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37656175.png",
+  "number": 12,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-04-02",
+  "age": 23,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Alexandr Sojka v této sezóně za Viktoria Plzeň: 8 startů, 450 min, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:24Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 5,
+      "minutes": 450,
+      "assists": 2,
+      "yellow": 1,
+      "shots": 4,
+      "goals_conceded": 9
+    }
+  }
+}

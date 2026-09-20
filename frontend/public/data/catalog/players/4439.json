@@ -1,0 +1,19 @@
+{
+  "id": 4439,
+  "name": "Denis Suárez",
+  "common_name": "D. Suárez Fernández",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/4439.png",
+  "number": 4,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1994-01-06",
+  "age": 32,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Denis Suárez (Záložník) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

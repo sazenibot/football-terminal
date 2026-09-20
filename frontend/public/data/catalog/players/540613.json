@@ -1,0 +1,19 @@
+{
+  "id": 540613,
+  "name": "Kiernan Dewsbury-Hall",
+  "common_name": "K. Dewsbury-Hall",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/540613.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-09-06",
+  "age": 28,
+  "team_id": 13,
+  "team_name": "Everton",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Kiernan Dewsbury-Hall (Záložník) nastupuje za Everton. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

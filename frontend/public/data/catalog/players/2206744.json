@@ -1,0 +1,25 @@
+{
+  "id": 2206744,
+  "name": "Patrik Vizek",
+  "common_name": "P. Vízek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/2206744.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1993-02-26",
+  "age": 33,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Patrik Vizek (Brankář) nastupuje za Hradec Králové. Sezónní KPI zatím SportMonks neposlal.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:40Z",
+    "season": {
+      "yellow": 1
+    }
+  }
+}

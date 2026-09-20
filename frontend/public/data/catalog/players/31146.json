@@ -1,0 +1,19 @@
+{
+  "id": 31146,
+  "name": "Oliver Baumann",
+  "common_name": "O. Baumann",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/31146.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1990-06-02",
+  "age": 36,
+  "team_id": 2726,
+  "team_name": "TSG Hoffenheim",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Oliver Baumann (Brankář) nastupuje za TSG Hoffenheim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 31625663,
+  "name": "Juan Carlos Arana",
+  "common_name": "J. Arana Gómez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/31625663.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-02-08",
+  "age": 26,
+  "team_id": 9818,
+  "team_name": "Racing Santander",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/9818.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Juan Carlos Arana (Útočník) nastupuje za Racing Santander. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

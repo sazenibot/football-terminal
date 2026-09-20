@@ -1,0 +1,19 @@
+{
+  "id": 37656778,
+  "name": "Fran González",
+  "common_name": "F. González Pérez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37656778.png",
+  "number": 13,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2005-06-24",
+  "age": 21,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Fran González (Brankář) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

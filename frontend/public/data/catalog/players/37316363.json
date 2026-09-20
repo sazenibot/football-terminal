@@ -1,0 +1,32 @@
+{
+  "id": 37316363,
+  "name": "Denis Visinsky",
+  "common_name": "D. Višinský",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/37316363.png",
+  "number": 9,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-03-21",
+  "age": 23,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Denis Visinsky v této sezóně za Viktoria Plzeň: 7 startů, 315 min, 1 gól, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:21Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 3,
+      "minutes": 315,
+      "goals": 1,
+      "assists": 1,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 3
+    }
+  }
+}

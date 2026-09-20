@@ -1,0 +1,33 @@
+{
+  "id": 37341905,
+  "name": "John Mercado",
+  "common_name": "J. Mercado Cuero",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/37341905.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-06-03",
+  "age": 24,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "John Mercado v této sezóně za Sparta Praha: 9 startů, 704 min, 4 góly, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:54Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 704,
+      "goals": 4,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 20,
+      "sot": 10,
+      "goals_conceded": 13
+    }
+  }
+}

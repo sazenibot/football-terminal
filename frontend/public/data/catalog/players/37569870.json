@@ -1,0 +1,29 @@
+{
+  "id": 37569870,
+  "name": "Tomas Frühwald",
+  "common_name": "T. Frühwald",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/37569870.png",
+  "number": 23,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2002-09-23",
+  "age": 23,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tomas Frühwald v této sezóně za Bohemians 1905: 8 startů, 720 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:25Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 720,
+      "saves": 22,
+      "goals_conceded": 11
+    }
+  }
+}

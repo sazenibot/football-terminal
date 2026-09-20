@@ -1,0 +1,19 @@
+{
+  "id": 4592198,
+  "name": "Morgan Rogers",
+  "common_name": "M. Rogers",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/4592198.png",
+  "number": 17,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-07-26",
+  "age": 24,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Morgan Rogers (Útočník) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

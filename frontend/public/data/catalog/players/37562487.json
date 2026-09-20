@@ -1,0 +1,19 @@
+{
+  "id": 37562487,
+  "name": "Nico O'Reilly",
+  "common_name": "N. O'Reilly",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37562487.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-03-21",
+  "age": 21,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Nico O'Reilly (Obránce) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

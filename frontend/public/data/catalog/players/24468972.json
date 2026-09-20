@@ -1,0 +1,19 @@
+{
+  "id": 24468972,
+  "name": "Miguel Rodríguez",
+  "common_name": "M. Rodríguez Vidal",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/24468972.png",
+  "number": 22,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-04-29",
+  "age": 23,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Miguel Rodríguez (Útočník) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

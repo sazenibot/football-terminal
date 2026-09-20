@@ -1,0 +1,19 @@
+{
+  "id": 2461,
+  "name": "Lewis Dunk ",
+  "common_name": "L. Dunk",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/2461.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1991-11-21",
+  "age": 34,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Lewis Dunk  (Obránce) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

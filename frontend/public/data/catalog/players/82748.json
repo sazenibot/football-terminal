@@ -1,0 +1,19 @@
+{
+  "id": 82748,
+  "name": "Jakub Urbanec",
+  "common_name": "J. Urbanec",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/82748.png",
+  "number": 27,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1992-04-27",
+  "age": 34,
+  "team_id": 428,
+  "team_name": "Příbram",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jakub Urbanec (Obránce) nastupuje za Příbram. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

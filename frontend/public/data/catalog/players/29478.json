@@ -1,0 +1,19 @@
+{
+  "id": 29478,
+  "name": "Pascal Struijk",
+  "common_name": "P. Struijk",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/29478.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-08-11",
+  "age": 27,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Pascal Struijk (Obránce) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

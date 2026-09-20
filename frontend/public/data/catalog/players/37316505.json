@@ -1,0 +1,19 @@
+{
+  "id": 37316505,
+  "name": "Javi Rueda",
+  "common_name": "J. Rueda García",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/37316505.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-05-08",
+  "age": 24,
+  "team_id": 36,
+  "team_name": "Celta de Vigo",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Javi Rueda (Záložník) nastupuje za Celta de Vigo. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

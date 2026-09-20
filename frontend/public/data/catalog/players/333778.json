@@ -1,0 +1,19 @@
+{
+  "id": 333778,
+  "name": "Augusto Batalla",
+  "common_name": "A. Batalla Barga",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/333778.png",
+  "number": 13,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1996-04-30",
+  "age": 30,
+  "team_id": 377,
+  "team_name": "Rayo Vallecano",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/377.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Augusto Batalla (Brankář) nastupuje za Rayo Vallecano. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,31 @@
+{
+  "id": 37584732,
+  "name": "Daniel Smekal",
+  "common_name": "D. Smékal",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-12-08",
+  "age": 24,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Daniel Smekal v této sezóně za Pardubice: 8 startů, 398 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:39Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 3,
+      "minutes": 398,
+      "yellow": 1,
+      "shots": 14,
+      "sot": 5,
+      "goals_conceded": 7
+    }
+  }
+}

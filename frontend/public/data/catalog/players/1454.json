@@ -1,0 +1,19 @@
+{
+  "id": 1454,
+  "name": "Tom Heaton",
+  "common_name": "T. Heaton",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/1454.png",
+  "number": 22,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1986-04-15",
+  "age": 40,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Tom Heaton (Brankář) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

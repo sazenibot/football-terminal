@@ -1,0 +1,19 @@
+{
+  "id": 310131,
+  "name": "Daichi Kamada",
+  "common_name": "D. Kamada",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/310131.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1996-08-05",
+  "age": 30,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Daichi Kamada (Útočník) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

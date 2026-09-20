@@ -1,0 +1,31 @@
+{
+  "id": 37532696,
+  "name": "Ange N'Guessan",
+  "common_name": "C. N'Guessan",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/37532696.png",
+  "number": 6,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-09-01",
+  "age": 23,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ange N'Guessan v této sezóně za Slavia Praha: 5 startů, 248 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 2,
+      "minutes": 248,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 3,
+      "goals_conceded": 3
+    }
+  }
+}

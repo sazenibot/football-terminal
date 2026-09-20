@@ -1,0 +1,19 @@
+{
+  "id": 37692125,
+  "name": "D. Kaulfus",
+  "common_name": "D. Kaulfus",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-06-03",
+  "age": 22,
+  "team_id": 2364,
+  "team_name": "Viktoria Žižkov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "D. Kaulfus (Obránce) nastupuje za Viktoria Žižkov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

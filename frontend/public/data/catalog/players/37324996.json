@@ -1,0 +1,31 @@
+{
+  "id": 37324996,
+  "name": "Matej Hadas",
+  "common_name": "M. Hadas",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/37324996.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-11-25",
+  "age": 22,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matej Hadas v této sezóně za Sigma Olomouc: 6 startů, 199 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:46Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 1,
+      "minutes": 199,
+      "assists": 1,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 5
+    }
+  }
+}

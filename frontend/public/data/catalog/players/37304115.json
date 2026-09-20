@@ -1,0 +1,19 @@
+{
+  "id": 37304115,
+  "name": "Arnau Ortiz",
+  "common_name": "A. Ortiz Sanchez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37304115.png",
+  "number": 16,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-10-29",
+  "age": 24,
+  "team_id": 7980,
+  "team_name": "Atlético de Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Arnau Ortiz (Útočník) nastupuje za Atlético de Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

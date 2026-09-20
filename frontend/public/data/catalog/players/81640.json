@@ -1,0 +1,29 @@
+{
+  "id": 81640,
+  "name": "Denis Granečný",
+  "common_name": "D. Granečný",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/81640.png",
+  "number": 18,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-09-07",
+  "age": 28,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Denis Granečný v této sezóně za Zbrojovka Brno: 2 starty, 10 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:31Z",
+    "season": {
+      "appearances": 2,
+      "minutes": 10,
+      "yellow": 1,
+      "shots": 1,
+      "sot": 1
+    }
+  }
+}

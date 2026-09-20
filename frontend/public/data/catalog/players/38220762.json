@@ -1,0 +1,19 @@
+{
+  "id": 38220762,
+  "name": "Vojtech Brak",
+  "common_name": "V. Brak",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": null,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-02-12",
+  "age": 29,
+  "team_id": 4134,
+  "team_name": "Třinec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/4134.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Vojtech Brak (Obránce) nastupuje za Třinec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

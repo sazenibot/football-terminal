@@ -1,0 +1,19 @@
+{
+  "id": 37783789,
+  "name": "Enzo dos Santos",
+  "common_name": "E. de Pina Duarte dos Santos",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 44,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2009-01-28",
+  "age": 17,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Enzo dos Santos (Záložník) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

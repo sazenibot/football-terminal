@@ -1,0 +1,31 @@
+{
+  "id": 23269844,
+  "name": "Sebastian Nebyla",
+  "common_name": "S. Nebyla",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/20/23269844.png",
+  "number": 25,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-01-25",
+  "age": 24,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Sebastian Nebyla v této sezóně za Jablonec: 7 startů, 531 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:03Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 6,
+      "minutes": 531,
+      "assists": 1,
+      "shots": 6,
+      "sot": 1,
+      "goals_conceded": 4
+    }
+  }
+}

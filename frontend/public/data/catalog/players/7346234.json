@@ -1,0 +1,30 @@
+{
+  "id": 7346234,
+  "name": "Jakub Klíma",
+  "common_name": "J. Klíma",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/7346234.png",
+  "number": 39,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-08-28",
+  "age": 28,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jakub Klíma v této sezóně za Zbrojovka Brno: 9 startů, 790 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:33Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 790,
+      "yellow": 1,
+      "shots": 1,
+      "goals_conceded": 10
+    }
+  }
+}

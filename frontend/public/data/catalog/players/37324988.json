@@ -1,0 +1,19 @@
+{
+  "id": 37324988,
+  "name": "Radek Fojt",
+  "common_name": "R. Fojt",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": null,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-05-03",
+  "age": 23,
+  "team_id": 3734,
+  "team_name": "Kladno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Radek Fojt (Obránce) nastupuje za Kladno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

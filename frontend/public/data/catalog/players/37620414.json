@@ -1,0 +1,19 @@
+{
+  "id": 37620414,
+  "name": "Daniel Hais",
+  "common_name": "D. Hais",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/37620414.png",
+  "number": 13,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-06-02",
+  "age": 23,
+  "team_id": 6957,
+  "team_name": "Hanácká",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Daniel Hais (Útočník) nastupuje za Hanácká. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

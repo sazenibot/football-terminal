@@ -1,0 +1,19 @@
+{
+  "id": 37369430,
+  "name": "Nahuel Noll",
+  "common_name": "N. Noll",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/37369430.png",
+  "number": 15,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2003-03-17",
+  "age": 23,
+  "team_id": 2642,
+  "team_name": "Paderborn",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Nahuel Noll (Brankář) nastupuje za Paderborn. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,32 @@
+{
+  "id": 37577874,
+  "name": "Martin Suchomel",
+  "common_name": "M. Suchomel",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37577874.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-09-11",
+  "age": 24,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Martin Suchomel v této sezóně za Sparta Praha: 7 startů, 423 min, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:49Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 5,
+      "minutes": 423,
+      "assists": 1,
+      "yellow": 2,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 4
+    }
+  }
+}

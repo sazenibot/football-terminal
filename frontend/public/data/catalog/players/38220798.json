@@ -1,0 +1,19 @@
+{
+  "id": 38220798,
+  "name": "John Patrick Edeh",
+  "common_name": "J. Edeh",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 27,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2006-11-20",
+  "age": 19,
+  "team_id": 237562,
+  "team_name": "Arsenal Česká Lípa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "John Patrick Edeh (Útočník) nastupuje za Arsenal Česká Lípa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

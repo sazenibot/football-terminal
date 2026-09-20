@@ -1,0 +1,19 @@
+{
+  "id": 320838,
+  "name": "Jae-sung Lee",
+  "common_name": "J. Lee",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/320838.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1992-08-10",
+  "age": 34,
+  "team_id": 794,
+  "team_name": "FSV Mainz 05",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/794.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Jae-sung Lee (Záložník) nastupuje za FSV Mainz 05. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

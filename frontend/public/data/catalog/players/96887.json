@@ -1,0 +1,19 @@
+{
+  "id": 96887,
+  "name": "Mouctar Diakhaby",
+  "common_name": "M. Diakhaby",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/96887.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-12-19",
+  "age": 29,
+  "team_id": 214,
+  "team_name": "Valencia",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Mouctar Diakhaby (Obránce) nastupuje za Valencia. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

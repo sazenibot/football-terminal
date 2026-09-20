@@ -1,0 +1,31 @@
+{
+  "id": 20336073,
+  "name": "Daniel Vasulin",
+  "common_name": "D. Vašulín",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/20336073.png",
+  "number": 15,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-06-11",
+  "age": 28,
+  "team_id": 3350,
+  "team_name": "Zbrojovka Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Daniel Vasulin v této sezóně za Zbrojovka Brno: 9 startů, 734 min, 4 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:41Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 734,
+      "goals": 4,
+      "shots": 20,
+      "sot": 7,
+      "goals_conceded": 10
+    }
+  }
+}

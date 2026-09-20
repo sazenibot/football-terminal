@@ -1,0 +1,19 @@
+{
+  "id": 37518832,
+  "name": "Bobby Thomas",
+  "common_name": "B. Thomas",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37518832.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-01-30",
+  "age": 25,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Bobby Thomas (Obránce) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

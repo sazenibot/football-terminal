@@ -1,0 +1,26 @@
+{
+  "id": 137833,
+  "name": "Marko Regza",
+  "common_name": "M. Regža",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/137833.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-01-20",
+  "age": 27,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Marko Regza v této sezóně za Hradec Králové: 1 start, 1 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:51Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 1
+    }
+  }
+}

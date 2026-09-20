@@ -1,0 +1,28 @@
+{
+  "id": 37694875,
+  "name": "Stephane Aris Noumbissie",
+  "common_name": "S. Noumbissie",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 26,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-12-25",
+  "age": 19,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Stephane Aris Noumbissie v této sezóně za Sigma Olomouc: 2 starty, 67 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:48Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 67,
+      "goals_conceded": 2
+    }
+  }
+}

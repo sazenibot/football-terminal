@@ -1,0 +1,29 @@
+{
+  "id": 37329776,
+  "name": "Vladimir Neuman",
+  "common_name": "V. Neuman",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37329776.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2000-02-10",
+  "age": 26,
+  "team_id": 512,
+  "team_name": "Karviná",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Vladimir Neuman v této sezóně za Karviná: 7 startů, 630 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:26Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 7,
+      "minutes": 630,
+      "saves": 17,
+      "goals_conceded": 10
+    }
+  }
+}

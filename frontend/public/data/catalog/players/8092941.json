@@ -1,0 +1,19 @@
+{
+  "id": 8092941,
+  "name": "Jon Moncayola",
+  "common_name": "J. Moncayola Tollar",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/8092941.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-05-13",
+  "age": 28,
+  "team_id": 459,
+  "team_name": "Osasuna",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Jon Moncayola (Záložník) nastupuje za Osasuna. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37754180,
+  "name": "Simon Jalovicor",
+  "common_name": "S. Jalovičor",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-08-23",
+  "age": 21,
+  "team_id": 6865,
+  "team_name": "Prostějov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Simon Jalovicor (Záložník) nastupuje za Prostějov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

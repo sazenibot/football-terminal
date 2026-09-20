@@ -1,0 +1,31 @@
+{
+  "id": 37762068,
+  "name": "Dusan Pavlovic",
+  "common_name": "D. Pavlović",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-05-19",
+  "age": 22,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dusan Pavlovic v této sezóně za Jablonec: 9 startů, 804 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:56Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 804,
+      "yellow": 1,
+      "shots": 5,
+      "sot": 2,
+      "goals_conceded": 9
+    }
+  }
+}

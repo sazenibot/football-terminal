@@ -1,0 +1,28 @@
+{
+  "id": 78966,
+  "name": "Jan Kovarik",
+  "common_name": "J. Kovařík",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/78966.png",
+  "number": 19,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1988-06-19",
+  "age": 38,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Kovarik v této sezóně za Bohemians 1905: 2 starty, 68 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:31Z",
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 68,
+      "goals_conceded": 2
+    }
+  }
+}

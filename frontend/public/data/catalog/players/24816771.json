@@ -1,0 +1,19 @@
+{
+  "id": 24816771,
+  "name": "Trai Hume",
+  "common_name": "T. Hume",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/24816771.png",
+  "number": 32,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-03-18",
+  "age": 24,
+  "team_id": 3,
+  "team_name": "Sunderland",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Trai Hume (Obránce) nastupuje za Sunderland. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

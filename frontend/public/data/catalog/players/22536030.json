@@ -1,0 +1,19 @@
+{
+  "id": 22536030,
+  "name": "Bafodé Diakité",
+  "common_name": "B. Diakité",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/22536030.png",
+  "number": 18,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-01-06",
+  "age": 25,
+  "team_id": 52,
+  "team_name": "AFC Bournemouth",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Bafodé Diakité (Obránce) nastupuje za AFC Bournemouth. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 37379120,
+  "name": "Stepan Harazim",
+  "common_name": "Š. Harazim",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37379120.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-07-13",
+  "age": 26,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Stepan Harazim v této sezóně za SK Artis Brno: 5 startů, 93 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:04Z",
+    "season": {
+      "appearances": 5,
+      "minutes": 93,
+      "saves": 5,
+      "goals_conceded": 2
+    }
+  }
+}

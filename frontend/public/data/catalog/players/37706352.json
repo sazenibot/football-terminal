@@ -1,0 +1,19 @@
+{
+  "id": 37706352,
+  "name": "Luca Vozar",
+  "common_name": "L. Vozar",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 38,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-05-06",
+  "age": 19,
+  "team_id": 67,
+  "team_name": "Schalke 04",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Luca Vozar (Záložník) nastupuje za Schalke 04. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

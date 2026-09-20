@@ -1,0 +1,19 @@
+{
+  "id": 37316839,
+  "name": "James Wright",
+  "common_name": "J. Wright",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/37316839.png",
+  "number": 42,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-12-02",
+  "age": 21,
+  "team_id": 15,
+  "team_name": "Aston Villa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "James Wright (Brankář) nastupuje za Aston Villa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

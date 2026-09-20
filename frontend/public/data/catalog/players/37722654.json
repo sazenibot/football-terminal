@@ -1,0 +1,19 @@
+{
+  "id": 37722654,
+  "name": "Samuele Inácio",
+  "common_name": "S. Inacio",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 40,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2008-04-02",
+  "age": 18,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Samuele Inácio (Útočník) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

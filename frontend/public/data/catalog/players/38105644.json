@@ -1,0 +1,19 @@
+{
+  "id": 38105644,
+  "name": "Niklas Mohr",
+  "common_name": "Niklas Mohr",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-07-23",
+  "age": 22,
+  "team_id": 2642,
+  "team_name": "Paderborn",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Niklas Mohr (Obránce) nastupuje za Paderborn. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

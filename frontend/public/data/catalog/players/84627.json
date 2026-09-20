@@ -1,0 +1,19 @@
+{
+  "id": 84627,
+  "name": "Konstantinos Tsimikas",
+  "common_name": "K. Tsimikas",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/84627.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-05-12",
+  "age": 30,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Konstantinos Tsimikas (Obránce) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

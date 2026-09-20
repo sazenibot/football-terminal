@@ -1,0 +1,19 @@
+{
+  "id": 80889,
+  "name": "Martin Dúbravka",
+  "common_name": "M. Dúbravka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/25/80889.png",
+  "number": 39,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1989-01-15",
+  "age": 37,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Martin Dúbravka (Brankář) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37559767,
+  "name": "William Osula",
+  "common_name": "W. Osula",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/37559767.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-08-04",
+  "age": 23,
+  "team_id": 20,
+  "team_name": "Newcastle United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "William Osula (Útočník) nastupuje za Newcastle United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

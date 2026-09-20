@@ -1,0 +1,19 @@
+{
+  "id": 37543248,
+  "name": "Dango Ouattara",
+  "common_name": "Dango Ouattara",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37543248.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-02-11",
+  "age": 24,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Dango Ouattara (Útočník) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

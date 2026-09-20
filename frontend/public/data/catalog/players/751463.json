@@ -1,0 +1,29 @@
+{
+  "id": 751463,
+  "name": "Benson Sakala",
+  "common_name": "B. Sakala",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/751463.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1996-09-12",
+  "age": 30,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Benson Sakala v této sezóně za Bohemians 1905: 3 starty, 270 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:30Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 3,
+      "minutes": 270,
+      "shots": 3,
+      "goals_conceded": 3
+    }
+  }
+}

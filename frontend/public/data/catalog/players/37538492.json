@@ -1,0 +1,19 @@
+{
+  "id": 37538492,
+  "name": "Gabriel Vidovic",
+  "common_name": "G. Vidović",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37538492.png",
+  "number": 40,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-12-01",
+  "age": 22,
+  "team_id": 2642,
+  "team_name": "Paderborn",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Gabriel Vidovic (Záložník) nastupuje za Paderborn. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,31 @@
+{
+  "id": 37569702,
+  "name": "Tobias Guddal",
+  "common_name": "T. Kvalvågnes Guddal",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/37569702.png",
+  "number": 6,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-07-25",
+  "age": 24,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tobias Guddal v této sezóně za Sparta Praha: 7 startů, 630 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:51Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 7,
+      "minutes": 630,
+      "goals": 1,
+      "shots": 10,
+      "sot": 1,
+      "goals_conceded": 9
+    }
+  }
+}

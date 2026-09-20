@@ -1,0 +1,30 @@
+{
+  "id": 37597184,
+  "name": "Adam Sevinsky",
+  "common_name": "A. Ševínský",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/37597184.png",
+  "number": 19,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-06-19",
+  "age": 22,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Sevinsky v této sezóně za Sparta Praha: 4 starty, 277 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:45Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 3,
+      "minutes": 277,
+      "shots": 2,
+      "sot": 2,
+      "goals_conceded": 6
+    }
+  }
+}

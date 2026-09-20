@@ -1,0 +1,19 @@
+{
+  "id": 37650669,
+  "name": "Fernando Dickes ",
+  "common_name": "F. Dickes",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/37650669.png",
+  "number": 41,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2007-10-13",
+  "age": 18,
+  "team_id": 2708,
+  "team_name": "Hamburger SV",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Fernando Dickes  (Brankář) nastupuje za Hamburger SV. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

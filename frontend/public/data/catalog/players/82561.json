@@ -1,0 +1,19 @@
+{
+  "id": 82561,
+  "name": "Jiří Janoščin",
+  "common_name": "J. Janoščín",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/82561.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1992-10-08",
+  "age": 33,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jiří Janoščin (Záložník) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

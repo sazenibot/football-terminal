@@ -1,0 +1,19 @@
+{
+  "id": 82123,
+  "name": "Milan Piško",
+  "common_name": "M. Piško",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/82123.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-03-06",
+  "age": 30,
+  "team_id": 428,
+  "team_name": "Příbram",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Milan Piško (Obránce) nastupuje za Příbram. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

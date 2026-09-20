@@ -1,0 +1,23 @@
+{
+  "id": 37569871,
+  "name": "Bogdan Slyubyk",
+  "common_name": "B. Slyubyk",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37569871.png",
+  "number": 92,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-02-11",
+  "age": 22,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Bogdan Slyubyk (Obránce) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:27Z",
+    "season": {}
+  }
+}

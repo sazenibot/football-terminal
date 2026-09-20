@@ -1,0 +1,19 @@
+{
+  "id": 95093,
+  "name": "Benjamin Lecomte",
+  "common_name": "B. Lecomte",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/95093.png",
+  "number": 23,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1991-04-26",
+  "age": 35,
+  "team_id": 11,
+  "team_name": "Fulham",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Benjamin Lecomte (Brankář) nastupuje za Fulham. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

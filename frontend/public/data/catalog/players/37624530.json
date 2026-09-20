@@ -1,0 +1,30 @@
+{
+  "id": 37624530,
+  "name": "Jakub Jakubko",
+  "common_name": "J. Jakubko",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37624530.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-08-24",
+  "age": 22,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jakub Jakubko v této sezóně za Teplice: 5 startů, 191 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:03Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 2,
+      "minutes": 191,
+      "goals": 1,
+      "shots": 2,
+      "goals_conceded": 5
+    }
+  }
+}

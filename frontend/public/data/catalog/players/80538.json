@@ -1,0 +1,19 @@
+{
+  "id": 80538,
+  "name": "Daniel Richter",
+  "common_name": "D. Richter",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 7,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1995-03-11",
+  "age": 31,
+  "team_id": 4184,
+  "team_name": "Ústí nad Labem",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Daniel Richter (Záložník) nastupuje za Ústí nad Labem. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

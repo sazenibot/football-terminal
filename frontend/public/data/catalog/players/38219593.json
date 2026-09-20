@@ -1,0 +1,31 @@
+{
+  "id": 38219593,
+  "name": "Abdullahi Umar",
+  "common_name": "A. Umar",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 24,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2007-01-16",
+  "age": 19,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Abdullahi Umar v této sezóně za Hradec Králové: 8 startů, 224 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:50Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 1,
+      "minutes": 224,
+      "yellow": 2,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 3
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37601998,
+  "name": "A. Markovic",
+  "common_name": "A. Markovic",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-06-10",
+  "age": 24,
+  "team_id": 512,
+  "team_name": "Karviná",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "A. Markovic (Obránce) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

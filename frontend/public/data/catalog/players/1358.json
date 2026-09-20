@@ -1,0 +1,19 @@
+{
+  "id": 1358,
+  "name": "Edin Džeko",
+  "common_name": "E. Džeko",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/1358.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1986-03-17",
+  "age": 40,
+  "team_id": 67,
+  "team_name": "Schalke 04",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Edin Džeko (Útočník) nastupuje za Schalke 04. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

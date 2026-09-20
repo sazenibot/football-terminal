@@ -1,0 +1,19 @@
+{
+  "id": 37740608,
+  "name": "Floyd Samba",
+  "common_name": "F. Samba",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 75,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2009-01-15",
+  "age": 17,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Floyd Samba (Záložník) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

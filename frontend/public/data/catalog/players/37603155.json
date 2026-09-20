@@ -1,0 +1,19 @@
+{
+  "id": 37603155,
+  "name": "Carlos López",
+  "common_name": "C. López Nogueras",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37603155.png",
+  "number": 13,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-11-13",
+  "age": 21,
+  "team_id": 126,
+  "team_name": "Málaga",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Carlos López (Brankář) nastupuje za Málaga. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,30 @@
+{
+  "id": 37570626,
+  "name": "Dominik Hollý",
+  "common_name": "D. Hollý",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/37570626.png",
+  "number": 24,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-11-11",
+  "age": 22,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dominik Hollý v této sezóně za Jablonec: 3 starty, 71 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:52Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 1,
+      "minutes": 71,
+      "yellow": 2,
+      "shots": 1,
+      "goals_conceded": 3
+    }
+  }
+}

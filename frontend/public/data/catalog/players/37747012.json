@@ -1,0 +1,19 @@
+{
+  "id": 37747012,
+  "name": "Javi Morcillo",
+  "common_name": "J. Morcillo Rodrigalvarez",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 47,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-03-15",
+  "age": 20,
+  "team_id": 1099,
+  "team_name": "Elche",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/1099.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Javi Morcillo (Záložník) nastupuje za Elche. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

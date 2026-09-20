@@ -1,0 +1,32 @@
+{
+  "id": 37706709,
+  "name": "Adonija Ouanda",
+  "common_name": "B. Ouanda",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 18,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-04-30",
+  "age": 21,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adonija Ouanda v této sezóně za Slavia Praha: 3 starty, 181 min, 1 gól, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 3,
+      "minutes": 181,
+      "goals": 1,
+      "assists": 1,
+      "shots": 3,
+      "sot": 2,
+      "goals_conceded": 1
+    }
+  }
+}

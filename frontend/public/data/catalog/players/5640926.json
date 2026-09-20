@@ -1,0 +1,19 @@
+{
+  "id": 5640926,
+  "name": "Cheick Doucouré",
+  "common_name": "C. Doucoure",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/5640926.png",
+  "number": 28,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-01-08",
+  "age": 26,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Cheick Doucouré (Záložník) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

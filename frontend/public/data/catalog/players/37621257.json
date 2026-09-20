@@ -1,0 +1,30 @@
+{
+  "id": 37621257,
+  "name": "Abdallah Gning",
+  "common_name": "A. Gning",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/37621257.png",
+  "number": 12,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-09-29",
+  "age": 27,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Abdallah Gning v této sezóně za Baník Ostrava: 5 startů, 300 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:21Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 5,
+      "minutes": 300,
+      "shots": 4,
+      "sot": 1,
+      "goals_conceded": 5
+    }
+  }
+}

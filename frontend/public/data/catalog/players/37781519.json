@@ -1,0 +1,19 @@
+{
+  "id": 37781519,
+  "name": "Jocelin Ta Bi",
+  "common_name": "D. Bi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37781519.png",
+  "number": 37,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-02-09",
+  "age": 21,
+  "team_id": 3,
+  "team_name": "Sunderland",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jocelin Ta Bi (Útočník) nastupuje za Sunderland. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

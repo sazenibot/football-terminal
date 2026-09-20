@@ -1,0 +1,19 @@
+{
+  "id": 34987,
+  "name": "Tim Kleindienst ",
+  "common_name": "T. Kleindienst",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/34987.png",
+  "number": 11,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1995-08-31",
+  "age": 31,
+  "team_id": 683,
+  "team_name": "Borussia Mönchengladbach",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Tim Kleindienst  (Útočník) nastupuje za Borussia Mönchengladbach. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

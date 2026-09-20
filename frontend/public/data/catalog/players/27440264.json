@@ -1,0 +1,19 @@
+{
+  "id": 27440264,
+  "name": "Peque Fernández",
+  "common_name": "G. Fernández Castellano",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/27440264.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-10-04",
+  "age": 23,
+  "team_id": 676,
+  "team_name": "Sevilla",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Peque Fernández (Útočník) nastupuje za Sevilla. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

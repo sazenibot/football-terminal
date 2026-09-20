@@ -1,0 +1,30 @@
+{
+  "id": 37610663,
+  "name": "Garang Kuol",
+  "common_name": "G. Kuol",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/37610663.png",
+  "number": 36,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-09-15",
+  "age": 22,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Garang Kuol v této sezóně za Jablonec: 3 starty, 104 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:57Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 1,
+      "minutes": 104,
+      "shots": 3,
+      "sot": 1,
+      "goals_conceded": 2
+    }
+  }
+}

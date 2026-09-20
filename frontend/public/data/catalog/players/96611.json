@@ -1,0 +1,19 @@
+{
+  "id": 96611,
+  "name": "Kylian Mbappé ",
+  "common_name": "K. Mbappé",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/96611.png",
+  "number": 10,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1998-12-20",
+  "age": 27,
+  "team_id": 3468,
+  "team_name": "Real Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Kylian Mbappé  (Útočník) nastupuje za Real Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

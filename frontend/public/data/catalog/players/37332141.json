@@ -1,0 +1,19 @@
+{
+  "id": 37332141,
+  "name": "Francho Serrano",
+  "common_name": "F. Gracia",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/37332141.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-10-17",
+  "age": 24,
+  "team_id": 106,
+  "team_name": "Getafe",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Francho Serrano (Záložník) nastupuje za Getafe. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

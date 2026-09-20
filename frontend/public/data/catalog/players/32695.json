@@ -1,0 +1,19 @@
+{
+  "id": 32695,
+  "name": "Serhou Guirassy",
+  "common_name": "S. Guirassy",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/23/32695.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1996-03-12",
+  "age": 30,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Serhou Guirassy (Útočník) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

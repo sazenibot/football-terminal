@@ -1,0 +1,23 @@
+{
+  "id": 37594763,
+  "name": "Jaroslav Harustak",
+  "common_name": "J. Harušťák",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-01-08",
+  "age": 24,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jaroslav Harustak (Obránce) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:03Z",
+    "season": {}
+  }
+}

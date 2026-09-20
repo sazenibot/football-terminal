@@ -1,0 +1,19 @@
+{
+  "id": 37593240,
+  "name": "Wilson Odobert ",
+  "common_name": "W. Odobert",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/37593240.png",
+  "number": 28,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-11-28",
+  "age": 21,
+  "team_id": 6,
+  "team_name": "Tottenham Hotspur",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Wilson Odobert  (Útočník) nastupuje za Tottenham Hotspur. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

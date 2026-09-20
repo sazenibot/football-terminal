@@ -1,0 +1,23 @@
+{
+  "id": 38214074,
+  "name": "Štěpán Ponikelský",
+  "common_name": "Š. Ponikelský",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 22,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-06-25",
+  "age": 19,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Štěpán Ponikelský (Záložník) nastupuje za Hradec Králové. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:50Z",
+    "season": {}
+  }
+}

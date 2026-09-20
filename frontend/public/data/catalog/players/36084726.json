@@ -1,0 +1,29 @@
+{
+  "id": 36084726,
+  "name": "Filip Vecheta",
+  "common_name": "F. Vecheta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/36084726.png",
+  "number": 27,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-02-15",
+  "age": 23,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Filip Vecheta v této sezóně za Jablonec: 5 startů, 65 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:05Z",
+    "season": {
+      "appearances": 5,
+      "minutes": 65,
+      "shots": 2,
+      "sot": 2,
+      "goals_conceded": 1
+    }
+  }
+}

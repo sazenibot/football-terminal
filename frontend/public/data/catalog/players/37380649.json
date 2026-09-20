@@ -1,0 +1,19 @@
+{
+  "id": 37380649,
+  "name": "Alberto Moleiro",
+  "common_name": "A. Moleiro González",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/37380649.png",
+  "number": 10,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2003-09-30",
+  "age": 22,
+  "team_id": 3477,
+  "team_name": "Villarreal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Alberto Moleiro (Záložník) nastupuje za Villarreal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

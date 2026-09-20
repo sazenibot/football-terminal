@@ -1,0 +1,19 @@
+{
+  "id": 37380652,
+  "name": "Iván Romero",
+  "common_name": "I. Romero de Ávila Araque",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/37380652.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-04-10",
+  "age": 25,
+  "team_id": 3457,
+  "team_name": "Levante",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Iván Romero (Útočník) nastupuje za Levante. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

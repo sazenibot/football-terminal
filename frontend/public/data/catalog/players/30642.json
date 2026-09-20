@@ -1,0 +1,19 @@
+{
+  "id": 30642,
+  "name": "Manuel Neuer",
+  "common_name": "M. Neuer",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/30642.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1986-03-27",
+  "age": 40,
+  "team_id": 503,
+  "team_name": "FC Bayern München",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Manuel Neuer (Brankář) nastupuje za FC Bayern München. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

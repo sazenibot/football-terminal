@@ -1,0 +1,19 @@
+{
+  "id": 1314,
+  "name": "Thibaut Courtois",
+  "common_name": "T. Courtois",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/1314.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1992-05-11",
+  "age": 34,
+  "team_id": 3468,
+  "team_name": "Real Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Thibaut Courtois (Brankář) nastupuje za Real Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

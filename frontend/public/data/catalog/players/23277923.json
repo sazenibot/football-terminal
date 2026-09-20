@@ -1,0 +1,19 @@
+{
+  "id": 23277923,
+  "name": "Maximilian Beier",
+  "common_name": "M. Beier",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/23277923.png",
+  "number": 14,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-10-17",
+  "age": 23,
+  "team_id": 68,
+  "team_name": "Borussia Dortmund",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Maximilian Beier (Útočník) nastupuje za Borussia Dortmund. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

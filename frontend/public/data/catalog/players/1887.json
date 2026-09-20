@@ -1,0 +1,19 @@
+{
+  "id": 1887,
+  "name": "Granit Xhaka ",
+  "common_name": "G. Xhaka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/1887.png",
+  "number": 34,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1992-09-27",
+  "age": 33,
+  "team_id": 3,
+  "team_name": "Sunderland",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Granit Xhaka  (Záložník) nastupuje za Sunderland. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

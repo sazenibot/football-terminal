@@ -1,0 +1,19 @@
+{
+  "id": 37558978,
+  "name": "Mio Backhaus",
+  "common_name": "M. Backhaus",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/2/37558978.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-04-16",
+  "age": 22,
+  "team_id": 3543,
+  "team_name": "SC Freiburg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/3543.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Mio Backhaus (Brankář) nastupuje za SC Freiburg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

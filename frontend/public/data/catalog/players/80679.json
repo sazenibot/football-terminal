@@ -1,0 +1,19 @@
+{
+  "id": 80679,
+  "name": "Martin Kouril ",
+  "common_name": "M. Kouřil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/80679.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1991-02-24",
+  "age": 35,
+  "team_id": 237562,
+  "team_name": "Arsenal Česká Lípa",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Martin Kouril  (Obránce) nastupuje za Arsenal Česká Lípa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

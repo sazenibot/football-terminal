@@ -1,0 +1,19 @@
+{
+  "id": 30062,
+  "name": "Cody Gakpo",
+  "common_name": "C. Gakpo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/30062.png",
+  "number": 18,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-05-07",
+  "age": 27,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Cody Gakpo (Záložník) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

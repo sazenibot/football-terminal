@@ -1,0 +1,23 @@
+{
+  "id": 37405190,
+  "name": "Joao Grimaldo",
+  "common_name": "J. Grimaldo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/37405190.png",
+  "number": 21,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-02-20",
+  "age": 23,
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Joao Grimaldo (Útočník) nastupuje za Sparta Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:58Z",
+    "season": {}
+  }
+}

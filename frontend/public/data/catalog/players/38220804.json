@@ -1,0 +1,19 @@
+{
+  "id": 38220804,
+  "name": "Michael Ouly",
+  "common_name": "M. Ouly",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 37,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-07-19",
+  "age": 20,
+  "team_id": 8477,
+  "team_name": "Banik Ostrava B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Michael Ouly (Obránce) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

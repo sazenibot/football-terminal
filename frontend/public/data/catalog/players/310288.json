@@ -1,0 +1,19 @@
+{
+  "id": 310288,
+  "name": "Takehiro Tomiyasu",
+  "common_name": "T. Tomiyasu",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/310288.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-11-05",
+  "age": 27,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Takehiro Tomiyasu (Obránce) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

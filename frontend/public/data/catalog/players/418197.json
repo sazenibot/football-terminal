@@ -1,0 +1,19 @@
+{
+  "id": 418197,
+  "name": "Atakan Karazor",
+  "common_name": "A. Karazor",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/418197.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1996-10-13",
+  "age": 29,
+  "team_id": 3319,
+  "team_name": "VfB Stuttgart",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/3319.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Atakan Karazor (Záložník) nastupuje za VfB Stuttgart. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

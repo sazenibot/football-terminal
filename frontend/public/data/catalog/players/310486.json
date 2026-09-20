@@ -1,0 +1,19 @@
+{
+  "id": 310486,
+  "name": "Ritsu Doan ",
+  "common_name": "R. Doan",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/310486.png",
+  "number": 20,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-06-16",
+  "age": 28,
+  "team_id": 366,
+  "team_name": "Eintracht Frankfurt",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Ritsu Doan  (Záložník) nastupuje za Eintracht Frankfurt. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

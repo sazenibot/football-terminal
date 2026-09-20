@@ -1,0 +1,19 @@
+{
+  "id": 5329,
+  "name": "Gabriel Jesus",
+  "common_name": "G. de Jesus",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/5329.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-04-03",
+  "age": 29,
+  "team_id": 83,
+  "team_name": "FC Barcelona",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Gabriel Jesus (Útočník) nastupuje za FC Barcelona. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

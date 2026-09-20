@@ -1,0 +1,19 @@
+{
+  "id": 26536,
+  "name": "Frenkie de Jong ",
+  "common_name": "F. de Jong",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/26536.png",
+  "number": 21,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-05-12",
+  "age": 29,
+  "team_id": 83,
+  "team_name": "FC Barcelona",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Frenkie de Jong  (Záložník) nastupuje za FC Barcelona. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

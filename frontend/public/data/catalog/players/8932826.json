@@ -1,0 +1,19 @@
+{
+  "id": 8932826,
+  "name": "Warmed Omari",
+  "common_name": "W. Omari",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/8932826.png",
+  "number": 17,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2000-04-23",
+  "age": 26,
+  "team_id": 2708,
+  "team_name": "Hamburger SV",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Warmed Omari (Obránce) nastupuje za Hamburger SV. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

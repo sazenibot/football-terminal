@@ -1,0 +1,19 @@
+{
+  "id": 74109,
+  "name": "Nikola Katic",
+  "common_name": "N. Katić",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/74109.png",
+  "number": 25,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1996-10-10",
+  "age": 29,
+  "team_id": 67,
+  "team_name": "Schalke 04",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Nikola Katic (Obránce) nastupuje za Schalke 04. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

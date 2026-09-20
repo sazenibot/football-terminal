@@ -1,0 +1,19 @@
+{
+  "id": 37740117,
+  "name": "Sebastian Kop",
+  "common_name": "S. Kop",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/37740117.png",
+  "number": 6,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-08-11",
+  "age": 21,
+  "team_id": 428,
+  "team_name": "Příbram",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Sebastian Kop (Záložník) nastupuje za Příbram. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37316339,
+  "name": "A. Bárta",
+  "common_name": "A. Bárta",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-03-03",
+  "age": 25,
+  "team_id": 428,
+  "team_name": "Příbram",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "A. Bárta (Obránce) nastupuje za Příbram. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

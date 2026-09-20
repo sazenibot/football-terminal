@@ -1,0 +1,19 @@
+{
+  "id": 37659509,
+  "name": "František Herák",
+  "common_name": "F. Herák",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 27,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-10-03",
+  "age": 19,
+  "team_id": 28363,
+  "team_name": "Slavia Praha B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "František Herák (Obránce) nastupuje za Slavia Praha B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

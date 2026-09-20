@@ -1,0 +1,19 @@
+{
+  "id": 1453,
+  "name": "Joe Gomez ",
+  "common_name": "J. Gomez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/1453.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1997-05-23",
+  "age": 29,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Joe Gomez  (Obránce) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37328095,
+  "name": "Aurèle Amenda",
+  "common_name": "A. Amenda",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/37328095.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-07-31",
+  "age": 23,
+  "team_id": 117,
+  "team_name": "Coventry City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Aurèle Amenda (Obránce) nastupuje za Coventry City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

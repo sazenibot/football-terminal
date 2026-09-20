@@ -1,0 +1,19 @@
+{
+  "id": 37684970,
+  "name": "Aliou Diao",
+  "common_name": "A. Diao",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 99,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-10-17",
+  "age": 22,
+  "team_id": 3593,
+  "team_name": "Opava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Aliou Diao (Útočník) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

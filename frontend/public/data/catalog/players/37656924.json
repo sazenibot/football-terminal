@@ -1,0 +1,19 @@
+{
+  "id": 37656924,
+  "name": "Josh King",
+  "common_name": "J. King",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37656924.png",
+  "number": 24,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-01-03",
+  "age": 19,
+  "team_id": 11,
+  "team_name": "Fulham",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Josh King (Záložník) nastupuje za Fulham. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

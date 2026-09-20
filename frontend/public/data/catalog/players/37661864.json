@@ -1,0 +1,32 @@
+{
+  "id": 37661864,
+  "name": "Tom Sloncik",
+  "common_name": "T. Slončík",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/8/37661864.png",
+  "number": 19,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2004-12-21",
+  "age": 21,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tom Sloncik v této sezóně za Hradec Králové: 9 startů, 667 min, 3 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:53Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 667,
+      "goals": 3,
+      "yellow": 1,
+      "shots": 15,
+      "sot": 6,
+      "goals_conceded": 8
+    }
+  }
+}

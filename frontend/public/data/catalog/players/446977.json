@@ -1,0 +1,19 @@
+{
+  "id": 446977,
+  "name": "Eneko Jauregi",
+  "common_name": "E. Jauregi Escobar",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/446977.png",
+  "number": 17,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1996-07-13",
+  "age": 30,
+  "team_id": 126,
+  "team_name": "Málaga",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Eneko Jauregi (Útočník) nastupuje za Málaga. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

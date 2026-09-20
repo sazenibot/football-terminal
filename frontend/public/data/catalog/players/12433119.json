@@ -1,0 +1,30 @@
+{
+  "id": 12433119,
+  "name": "Jiri Slama",
+  "common_name": "J. Sláma",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/31/12433119.png",
+  "number": 20,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-01-08",
+  "age": 27,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jiri Slama v této sezóně za Jablonec: 6 startů, 382 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:57Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 4,
+      "minutes": 382,
+      "yellow": 1,
+      "shots": 6,
+      "goals_conceded": 5
+    }
+  }
+}

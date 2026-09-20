@@ -1,0 +1,19 @@
+{
+  "id": 24817168,
+  "name": "Ameen Al-Dakhil",
+  "common_name": "A. Al Dakhil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/24817168.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-03-06",
+  "age": 24,
+  "team_id": 3319,
+  "team_name": "VfB Stuttgart",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/3319.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Ameen Al-Dakhil (Obránce) nastupuje za VfB Stuttgart. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 28913060,
+  "name": "Tyrese Omotoye",
+  "common_name": "T. Omotoye",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/28913060.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2002-09-23",
+  "age": 23,
+  "team_id": 2538,
+  "team_name": "Vysočina Jihlava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Tyrese Omotoye (Útočník) nastupuje za Vysočina Jihlava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

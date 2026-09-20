@@ -1,0 +1,19 @@
+{
+  "id": 537493,
+  "name": "Marcus Tavernier",
+  "common_name": "M. Tavernier",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/21/537493.png",
+  "number": 16,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-03-22",
+  "age": 27,
+  "team_id": 52,
+  "team_name": "AFC Bournemouth",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Marcus Tavernier (Záložník) nastupuje za AFC Bournemouth. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

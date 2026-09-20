@@ -1,0 +1,19 @@
+{
+  "id": 260862,
+  "name": "Federico Valverde ",
+  "common_name": "F. Valverde Dipetta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/260862.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-07-22",
+  "age": 28,
+  "team_id": 3468,
+  "team_name": "Real Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Federico Valverde  (Záložník) nastupuje za Real Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,32 @@
+{
+  "id": 37730001,
+  "name": "Jiri Micek",
+  "common_name": "J. Míček",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 42,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2007-06-07",
+  "age": 19,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jiri Micek v této sezóně za Baník Ostrava: 8 startů, 608 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:11Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 7,
+      "minutes": 608,
+      "goals": 1,
+      "yellow": 2,
+      "shots": 5,
+      "sot": 4,
+      "goals_conceded": 14
+    }
+  }
+}

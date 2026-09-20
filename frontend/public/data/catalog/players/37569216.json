@@ -1,0 +1,26 @@
+{
+  "id": 37569216,
+  "name": "Adam Kadlec",
+  "common_name": "A. Kadlec",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/37569216.png",
+  "number": 27,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-07-06",
+  "age": 23,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Adam Kadlec v této sezóně za Mladá Boleslav: 2 starty, 6 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:11Z",
+    "season": {
+      "appearances": 2,
+      "minutes": 6
+    }
+  }
+}

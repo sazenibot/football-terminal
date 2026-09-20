@@ -1,0 +1,30 @@
+{
+  "id": 37702608,
+  "name": "Karel Spacil",
+  "common_name": "K. Spáčil",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/37702608.png",
+  "number": 5,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-05-18",
+  "age": 23,
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Karel Spacil v této sezóně za Viktoria Plzeň: 5 startů, 288 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:19Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 4,
+      "minutes": 288,
+      "shots": 2,
+      "sot": 1,
+      "goals_conceded": 9
+    }
+  }
+}

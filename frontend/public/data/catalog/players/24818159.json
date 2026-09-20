@@ -1,0 +1,23 @@
+{
+  "id": 24818159,
+  "name": "Luka Kharatishvili",
+  "common_name": "L. Kharatishvili",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/24818159.png",
+  "number": null,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2003-01-11",
+  "age": 23,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Luka Kharatishvili (Brankář) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:26Z",
+    "season": {}
+  }
+}

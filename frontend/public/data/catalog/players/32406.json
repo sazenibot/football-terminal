@@ -1,0 +1,19 @@
+{
+  "id": 32406,
+  "name": "Michael Zetterer",
+  "common_name": "M. Zetterer",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/32406.png",
+  "number": 16,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1995-07-12",
+  "age": 31,
+  "team_id": 71,
+  "team_name": "Leeds United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Michael Zetterer (Brankář) nastupuje za Leeds United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

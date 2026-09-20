@@ -1,0 +1,19 @@
+{
+  "id": 24446247,
+  "name": "Jan Kadlec",
+  "common_name": "J. Kadlec",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/24446247.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-02-08",
+  "age": 27,
+  "team_id": 6865,
+  "team_name": "Prostějov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Jan Kadlec (Obránce) nastupuje za Prostějov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

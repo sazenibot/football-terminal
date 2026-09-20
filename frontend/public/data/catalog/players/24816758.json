@@ -1,0 +1,30 @@
+{
+  "id": 24816758,
+  "name": "Dominik Javorcek",
+  "common_name": "D. Javorček",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/24816758.png",
+  "number": 37,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-11-02",
+  "age": 23,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Dominik Javorcek v této sezóně za Bohemians 1905: 6 startů, 452 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:31Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 6,
+      "minutes": 452,
+      "yellow": 2,
+      "shots": 2,
+      "goals_conceded": 5
+    }
+  }
+}

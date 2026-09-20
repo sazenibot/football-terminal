@@ -1,0 +1,19 @@
+{
+  "id": 26523850,
+  "name": "Abde Rebbach",
+  "common_name": "A. Rebbach",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/26523850.png",
+  "number": 21,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-08-11",
+  "age": 28,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Abde Rebbach (Obránce) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 978897,
+  "name": "Nicholas Mickelson",
+  "common_name": "L. Saa Nicholas K. Mickelson",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/978897.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-07-24",
+  "age": 27,
+  "team_id": 3588,
+  "team_name": "Elversberg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Nicholas Mickelson (Obránce) nastupuje za Elversberg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

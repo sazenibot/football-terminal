@@ -1,0 +1,32 @@
+{
+  "id": 181472,
+  "name": "Ladislav Almasi",
+  "common_name": "L. Almási",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 99,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1999-03-06",
+  "age": 27,
+  "team_id": 2488,
+  "team_name": "Bohemians 1905",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ladislav Almasi v této sezóně za Bohemians 1905: 8 startů, 680 min, 3 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:36Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 680,
+      "goals": 3,
+      "yellow": 2,
+      "shots": 19,
+      "sot": 7,
+      "goals_conceded": 10
+    }
+  }
+}

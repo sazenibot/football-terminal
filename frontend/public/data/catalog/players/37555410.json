@@ -1,0 +1,32 @@
+{
+  "id": 37555410,
+  "name": "Ryan Mahuta",
+  "common_name": "R. Mahuta",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/37555410.png",
+  "number": 25,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-07-07",
+  "age": 24,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ryan Mahuta v této sezóně za Pardubice: 6 startů, 168 min, 1 gól, 2 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:36Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 2,
+      "minutes": 168,
+      "goals": 1,
+      "assists": 2,
+      "shots": 2,
+      "sot": 2,
+      "goals_conceded": 2
+    }
+  }
+}

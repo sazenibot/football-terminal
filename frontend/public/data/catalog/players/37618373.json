@@ -1,0 +1,19 @@
+{
+  "id": 37618373,
+  "name": "David Jurcenko",
+  "common_name": "D. Jurčenko",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/37618373.png",
+  "number": 9,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-01-28",
+  "age": 22,
+  "team_id": 3734,
+  "team_name": "Kladno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "David Jurcenko (Záložník) nastupuje za Kladno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

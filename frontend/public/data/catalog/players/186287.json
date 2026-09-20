@@ -1,0 +1,19 @@
+{
+  "id": 186287,
+  "name": "Ximo Navarro",
+  "common_name": "J. Navarro Jiménez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/186287.png",
+  "number": 23,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1990-01-23",
+  "age": 36,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Ximo Navarro (Obránce) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37628401,
+  "name": "Matous Krulich",
+  "common_name": "M. Krulich",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/37628401.png",
+  "number": 99,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-04-19",
+  "age": 21,
+  "team_id": 428,
+  "team_name": "Příbram",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Matous Krulich (Útočník) nastupuje za Příbram. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

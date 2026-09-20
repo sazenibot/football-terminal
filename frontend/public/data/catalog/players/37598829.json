@@ -1,0 +1,19 @@
+{
+  "id": 37598829,
+  "name": "Emil Højlund",
+  "common_name": "E. Højlund",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 15,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2005-01-04",
+  "age": 21,
+  "team_id": 67,
+  "team_name": "Schalke 04",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Emil Højlund (Útočník) nastupuje za Schalke 04. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

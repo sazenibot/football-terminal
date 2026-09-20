@@ -1,0 +1,19 @@
+{
+  "id": 31077,
+  "name": "Willi Orbán",
+  "common_name": "W. Orban",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/31077.png",
+  "number": 4,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1992-11-03",
+  "age": 33,
+  "team_id": 277,
+  "team_name": "RB Leipzig",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Willi Orbán (Obránce) nastupuje za RB Leipzig. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37590621,
+  "name": "Mike Penders",
+  "common_name": "M. Penders",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/37590621.png",
+  "number": 39,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2005-07-31",
+  "age": 21,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Mike Penders (Brankář) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

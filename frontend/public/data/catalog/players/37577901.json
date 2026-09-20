@@ -1,0 +1,23 @@
+{
+  "id": 37577901,
+  "name": "Denis Halinsky",
+  "common_name": "D. Halinsky",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/37577901.png",
+  "number": 33,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2003-07-13",
+  "age": 23,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Denis Halinsky (Obránce) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {}
+  }
+}

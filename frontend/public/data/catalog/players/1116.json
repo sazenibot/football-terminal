@@ -1,0 +1,19 @@
+{
+  "id": 1116,
+  "name": "Jack Grealish",
+  "common_name": "J. Grealish",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/1116.png",
+  "number": 10,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1995-09-10",
+  "age": 31,
+  "team_id": 13,
+  "team_name": "Everton",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Jack Grealish (Záložník) nastupuje za Everton. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

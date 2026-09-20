@@ -1,0 +1,19 @@
+{
+  "id": 447278,
+  "name": "Alejandro Catena",
+  "common_name": "A. Catena Marugán",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/447278.png",
+  "number": 24,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1994-10-28",
+  "age": 31,
+  "team_id": 459,
+  "team_name": "Osasuna",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Alejandro Catena (Obránce) nastupuje za Osasuna. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

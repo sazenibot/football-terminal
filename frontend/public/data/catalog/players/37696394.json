@@ -1,0 +1,33 @@
+{
+  "id": 37696394,
+  "name": "Patrik Dulay",
+  "common_name": "P. Dulay",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/37696394.png",
+  "number": 24,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-03-03",
+  "age": 21,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Patrik Dulay v této sezóně za Slovan Liberec: 7 startů, 509 min, 3 góly, 1 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:23Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 5,
+      "minutes": 509,
+      "goals": 3,
+      "assists": 1,
+      "yellow": 1,
+      "shots": 11,
+      "sot": 5,
+      "goals_conceded": 3
+    }
+  }
+}

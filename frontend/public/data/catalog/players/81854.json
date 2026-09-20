@@ -1,0 +1,30 @@
+{
+  "id": 81854,
+  "name": "Jiri Floder",
+  "common_name": "J. Floder",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/81854.png",
+  "number": 59,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1997-01-03",
+  "age": 29,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jiri Floder v této sezóně za Mladá Boleslav: 8 startů, 720 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:09Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 720,
+      "yellow": 2,
+      "saves": 31,
+      "goals_conceded": 9
+    }
+  }
+}

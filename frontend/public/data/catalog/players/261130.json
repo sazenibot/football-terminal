@@ -1,0 +1,19 @@
+{
+  "id": 261130,
+  "name": "Carlos Protesoni",
+  "common_name": "C. Benavídez Protesoni",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/261130.png",
+  "number": 23,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-03-30",
+  "age": 28,
+  "team_id": 2975,
+  "team_name": "Deportivo Alavés",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Carlos Protesoni (Záložník) nastupuje za Deportivo Alavés. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

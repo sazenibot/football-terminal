@@ -1,0 +1,19 @@
+{
+  "id": 540208,
+  "name": "Juan Berrocal",
+  "common_name": "J. Berrocal González",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/16/540208.png",
+  "number": 25,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-02-05",
+  "age": 27,
+  "team_id": 126,
+  "team_name": "Málaga",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Juan Berrocal (Obránce) nastupuje za Málaga. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

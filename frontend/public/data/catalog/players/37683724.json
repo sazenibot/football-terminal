@@ -1,0 +1,19 @@
+{
+  "id": 37683724,
+  "name": "Olatoundji Tessilimi",
+  "common_name": "O. Tessilimi",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/12/37683724.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-11-02",
+  "age": 21,
+  "team_id": 3531,
+  "team_name": "Dukla Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/3531.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Olatoundji Tessilimi (Záložník) nastupuje za Dukla Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

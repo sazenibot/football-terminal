@@ -1,0 +1,29 @@
+{
+  "id": 1159885,
+  "name": "Tomáš Ehrenberger",
+  "common_name": "T. Ehrenberger",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Czech Republic",
+  "country_id": 245,
+  "date_of_birth": "1993-02-09",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "in_league": false,
+  "league_matches": 0,
+  "leagues": [
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 265,
+      "name": "Chance Národní Liga",
+      "in_league": false,
+      "league_matches": 0
+    }
+  ],
+  "hook": "Tomáš Ehrenberger je rozhodčí ze země této ligy. V aktuálním okně ho jako hlavního na zápasech ligy ještě nemáme.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

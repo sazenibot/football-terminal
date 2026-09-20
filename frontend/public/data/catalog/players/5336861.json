@@ -1,0 +1,19 @@
+{
+  "id": 5336861,
+  "name": "Thijs Dallinga",
+  "common_name": "T. Dallinga",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/5336861.png",
+  "number": 27,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-08-03",
+  "age": 26,
+  "team_id": 3320,
+  "team_name": "FC Köln",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Thijs Dallinga (Útočník) nastupuje za FC Köln. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

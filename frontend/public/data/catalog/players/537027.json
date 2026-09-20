@@ -1,0 +1,31 @@
+{
+  "id": 537027,
+  "name": "Daniel Marecek",
+  "common_name": "D. Mareček",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/537027.png",
+  "number": 37,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1998-05-30",
+  "age": 28,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Daniel Marecek v této sezóně za Teplice: 7 startů, 183 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:06Z",
+    "season": {
+      "appearances": 7,
+      "lineups": 1,
+      "minutes": 183,
+      "yellow": 1,
+      "shots": 4,
+      "sot": 2,
+      "goals_conceded": 2
+    }
+  }
+}

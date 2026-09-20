@@ -1,0 +1,30 @@
+{
+  "id": 38215603,
+  "name": "Idris Hopi",
+  "common_name": "I. Hopi",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 21,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2008-05-12",
+  "age": 18,
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Idris Hopi v této sezóně za Teplice: 5 startů, 225 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:13Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 3,
+      "minutes": 225,
+      "yellow": 1,
+      "shots": 6,
+      "goals_conceded": 3
+    }
+  }
+}

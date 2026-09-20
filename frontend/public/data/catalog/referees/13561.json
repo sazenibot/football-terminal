@@ -1,0 +1,23 @@
+{
+  "id": 13561,
+  "name": "John Brooks",
+  "common_name": "J. Brooks",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "England",
+  "country_id": 462,
+  "date_of_birth": null,
+  "league_id": 8,
+  "league_name": "Premier League",
+  "in_league": true,
+  "league_matches": 1,
+  "leagues": [
+    {
+      "id": 8,
+      "name": "Premier League",
+      "in_league": true,
+      "league_matches": 1
+    }
+  ],
+  "hook": "John Brooks píská v soutěži Premier League jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

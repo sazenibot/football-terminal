@@ -1,0 +1,19 @@
+{
+  "id": 37657587,
+  "name": "Luka Vuskovic",
+  "common_name": "L. Vušković",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/19/37657587.png",
+  "number": 44,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2007-02-24",
+  "age": 19,
+  "team_id": 78,
+  "team_name": "Brighton & Hove Albion",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Luka Vuskovic (Obránce) nastupuje za Brighton & Hove Albion. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

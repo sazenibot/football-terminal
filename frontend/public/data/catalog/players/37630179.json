@@ -1,0 +1,19 @@
+{
+  "id": 37630179,
+  "name": "Noah Sadiki",
+  "common_name": "N. Sadiki",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/37630179.png",
+  "number": 27,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-12-17",
+  "age": 21,
+  "team_id": 3,
+  "team_name": "Sunderland",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Noah Sadiki (Záložník) nastupuje za Sunderland. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

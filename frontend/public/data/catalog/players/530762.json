@@ -1,0 +1,19 @@
+{
+  "id": 530762,
+  "name": "Martín Zubimendi",
+  "common_name": "M. Zubimendi Ibáñez",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/10/530762.png",
+  "number": 36,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-02-02",
+  "age": 27,
+  "team_id": 19,
+  "team_name": "Arsenal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Martín Zubimendi (Záložník) nastupuje za Arsenal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

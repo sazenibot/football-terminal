@@ -1,0 +1,19 @@
+{
+  "id": 37600357,
+  "name": "Leny Yoro",
+  "common_name": "L. Yoro",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/37600357.png",
+  "number": 15,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2005-11-13",
+  "age": 20,
+  "team_id": 14,
+  "team_name": "Manchester United",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Leny Yoro (Obránce) nastupuje za Manchester United. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

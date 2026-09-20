@@ -1,0 +1,31 @@
+{
+  "id": 37680256,
+  "name": "Milan Lexa",
+  "common_name": "M. Lexa",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/0/37680256.png",
+  "number": 15,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-08-21",
+  "age": 22,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Milan Lexa v této sezóně za Slovan Liberec: 8 startů, 417 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:23Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 5,
+      "minutes": 417,
+      "yellow": 1,
+      "shots": 7,
+      "sot": 2,
+      "goals_conceded": 3
+    }
+  }
+}

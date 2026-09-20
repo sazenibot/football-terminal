@@ -1,0 +1,26 @@
+{
+  "id": 38200686,
+  "name": "Filip Hruska",
+  "common_name": "F. Hruška",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2008-08-29",
+  "age": 18,
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Filip Hruska v této sezóně za Slovácko: 1 start, 5 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:36Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 5
+    }
+  }
+}

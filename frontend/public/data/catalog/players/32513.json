@@ -1,0 +1,19 @@
+{
+  "id": 32513,
+  "name": "Luca Waldschmidt",
+  "common_name": "G. Waldschmidt",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/32513.png",
+  "number": 7,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1996-05-19",
+  "age": 30,
+  "team_id": 3320,
+  "team_name": "FC Köln",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Luca Waldschmidt (Útočník) nastupuje za FC Köln. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37575228,
+  "name": "Antoni Milambo",
+  "common_name": "A. Milambo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37575228.png",
+  "number": 17,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-04-03",
+  "age": 21,
+  "team_id": 236,
+  "team_name": "Brentford",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Antoni Milambo (Záložník) nastupuje za Brentford. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

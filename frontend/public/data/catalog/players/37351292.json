@@ -1,0 +1,19 @@
+{
+  "id": 37351292,
+  "name": "Maxime Estève",
+  "common_name": "M. Esteve",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37351292.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-05-26",
+  "age": 24,
+  "team_id": 277,
+  "team_name": "RB Leipzig",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Maxime Estève (Obránce) nastupuje za RB Leipzig. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,28 @@
+{
+  "id": 37631854,
+  "name": "Sebastian Bohac",
+  "common_name": "S. Boháč",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/14/37631854.png",
+  "number": 36,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-07-27",
+  "age": 24,
+  "team_id": 22031,
+  "team_name": "SK Artis Brno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Sebastian Bohac v této sezóně za SK Artis Brno: 1 start, 44 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:31:23Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 44,
+      "yellow": 1,
+      "goals_conceded": 2
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 336133,
+  "name": "Phil Foden",
+  "common_name": "P. Foden",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/5/336133.png",
+  "number": 47,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-05-28",
+  "age": 26,
+  "team_id": 9,
+  "team_name": "Manchester City",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Phil Foden (Záložník) nastupuje za Manchester City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

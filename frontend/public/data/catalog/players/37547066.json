@@ -1,0 +1,19 @@
+{
+  "id": 37547066,
+  "name": "Julián Malatini",
+  "common_name": "J. Malatini",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/26/37547066.png",
+  "number": 22,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2001-05-31",
+  "age": 25,
+  "team_id": 82,
+  "team_name": "Werder Bremen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Julián Malatini (Obránce) nastupuje za Werder Bremen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

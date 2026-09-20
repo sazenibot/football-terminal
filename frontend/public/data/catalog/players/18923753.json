@@ -1,0 +1,23 @@
+{
+  "id": 18923753,
+  "name": "Qëndrim Zyba",
+  "common_name": "Q. Zyba",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/9/18923753.png",
+  "number": 10,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-02-03",
+  "age": 25,
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Qëndrim Zyba (Záložník) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:24Z",
+    "season": {}
+  }
+}

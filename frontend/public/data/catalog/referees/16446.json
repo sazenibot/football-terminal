@@ -1,0 +1,29 @@
+{
+  "id": 16446,
+  "name": "Martin Nenadál",
+  "common_name": "M. Nenadál",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "country": "Czech Republic",
+  "country_id": 245,
+  "date_of_birth": null,
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "in_league": false,
+  "league_matches": 0,
+  "leagues": [
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 265,
+      "name": "Chance Národní Liga",
+      "in_league": false,
+      "league_matches": 0
+    }
+  ],
+  "hook": "Martin Nenadál je rozhodčí ze země této ligy. V aktuálním okně ho jako hlavního na zápasech ligy ještě nemáme.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

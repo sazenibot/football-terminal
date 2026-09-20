@@ -1,0 +1,29 @@
+{
+  "id": 79382,
+  "name": "Jan Hanus",
+  "common_name": "J. Hanuš",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/79382.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1988-04-28",
+  "age": 38,
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jan Hanus v této sezóně za Jablonec: 4 starty, 319 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:54Z",
+    "season": {
+      "appearances": 4,
+      "lineups": 3,
+      "minutes": 319,
+      "saves": 10,
+      "goals_conceded": 5
+    }
+  }
+}

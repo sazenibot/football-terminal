@@ -1,0 +1,19 @@
+{
+  "id": 37595819,
+  "name": "Víctor Muñoz",
+  "common_name": "V. Muñoz Villanueva",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/11/37595819.png",
+  "number": 23,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-07-13",
+  "age": 23,
+  "team_id": 8,
+  "team_name": "Liverpool",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Víctor Muñoz (Útočník) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

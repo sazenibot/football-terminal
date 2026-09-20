@@ -1,0 +1,19 @@
+{
+  "id": 21072676,
+  "name": "Riki Rodríguez",
+  "common_name": "R. Rodríguez Gil Carcedo",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/21072676.png",
+  "number": 14,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-09-25",
+  "age": 28,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Riki Rodríguez (Záložník) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

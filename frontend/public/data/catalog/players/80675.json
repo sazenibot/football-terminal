@@ -1,0 +1,19 @@
+{
+  "id": 80675,
+  "name": "Patrik Schick",
+  "common_name": "P. Schick",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/80675.png",
+  "number": 14,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1996-01-24",
+  "age": 30,
+  "team_id": 3321,
+  "team_name": "Bayer 04 Leverkusen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Patrik Schick (Útočník) nastupuje za Bayer 04 Leverkusen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

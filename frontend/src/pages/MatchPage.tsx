@@ -56,7 +56,7 @@ export function MatchPage() {
   const generatedAt = m.refreshed_at || m.built_at;
 
   return (
-    <div className="max-w-4xl mx-auto py-10 px-4">
+    <div className="max-w-4xl mx-auto py-10 px-4 pt-20">
       <Link to={backTo} className="text-emerald-400 text-sm">
         ← zpět na {m.league_name || "výpis kola"}
       </Link>

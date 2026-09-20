@@ -1,0 +1,19 @@
+{
+  "id": 2846904,
+  "name": "Ludovit Reis",
+  "common_name": "L. Reis",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/24/2846904.png",
+  "number": 15,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2000-06-01",
+  "age": 26,
+  "team_id": 82,
+  "team_name": "Werder Bremen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Ludovit Reis (Záložník) nastupuje za Werder Bremen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

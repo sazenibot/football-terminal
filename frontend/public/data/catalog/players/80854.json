@@ -1,0 +1,33 @@
+{
+  "id": 80854,
+  "name": "Matej Chalus",
+  "common_name": "M. Chaluš",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/80854.png",
+  "number": 37,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1998-02-02",
+  "age": 28,
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Matej Chalus v této sezóně za Baník Ostrava: 5 startů, 290 min, 1 gól.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:12Z",
+    "season": {
+      "appearances": 5,
+      "lineups": 4,
+      "minutes": 290,
+      "goals": 1,
+      "yellow": 1,
+      "red": 1,
+      "shots": 1,
+      "sot": 1,
+      "goals_conceded": 6
+    }
+  }
+}

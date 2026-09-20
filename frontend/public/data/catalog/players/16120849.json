@@ -1,0 +1,19 @@
+{
+  "id": 16120849,
+  "name": "Lukas Cienciala",
+  "common_name": "L. Cienciala",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/16120849.png",
+  "number": 26,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2001-02-04",
+  "age": 25,
+  "team_id": 4134,
+  "team_name": "Třinec",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/4134.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Lukas Cienciala (Záložník) nastupuje za Třinec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 37582044,
+  "name": "Aleksandar Pavlovic",
+  "common_name": "A. Pavlović",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/28/37582044.png",
+  "number": 45,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-05-03",
+  "age": 22,
+  "team_id": 503,
+  "team_name": "FC Bayern München",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Aleksandar Pavlovic (Záložník) nastupuje za FC Bayern München. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

@@ -1,0 +1,32 @@
+{
+  "id": 80707,
+  "name": "Tomas Chory",
+  "common_name": "T. Chorý",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/3/80707.png",
+  "number": 25,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1995-01-26",
+  "age": 31,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Tomas Chory v této sezóně za Slavia Praha: 6 startů, 341 min, 4 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 6,
+      "lineups": 3,
+      "minutes": 341,
+      "goals": 4,
+      "yellow": 1,
+      "shots": 14,
+      "sot": 6,
+      "goals_conceded": 3
+    }
+  }
+}

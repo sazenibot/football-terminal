@@ -1,0 +1,19 @@
+{
+  "id": 37550790,
+  "name": "Denis Kramar",
+  "common_name": "D. Kramar",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/37550790.png",
+  "number": 15,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2003-08-08",
+  "age": 23,
+  "team_id": 6865,
+  "team_name": "Prostějov",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Denis Kramar (Útočník) nastupuje za Prostějov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

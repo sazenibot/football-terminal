@@ -1,0 +1,23 @@
+{
+  "id": 38021304,
+  "name": "Youssoupha Mbodji",
+  "common_name": "El Hadji Youssoupha Mbodji",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 12,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-01-09",
+  "age": 22,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Youssoupha Mbodji (Obránce) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": 31140,
+  "name": "Sven Ulreich ",
+  "common_name": "S. Ulreich",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/31140.png",
+  "number": 26,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1988-08-03",
+  "age": 38,
+  "team_id": 503,
+  "team_name": "FC Bayern München",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Sven Ulreich  (Brankář) nastupuje za FC Bayern München. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

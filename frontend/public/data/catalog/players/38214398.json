@@ -1,0 +1,26 @@
+{
+  "id": 38214398,
+  "name": "Jiri Zima",
+  "common_name": "J. Zima",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 11,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2007-12-21",
+  "age": 18,
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Jiri Zima v této sezóně za Pardubice: 1 start, 14 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:35Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 14
+    }
+  }
+}

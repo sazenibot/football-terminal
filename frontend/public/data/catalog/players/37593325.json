@@ -1,0 +1,19 @@
+{
+  "id": 37593325,
+  "name": "David Mella ",
+  "common_name": "D. Mella Boullón",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/13/37593325.png",
+  "number": 11,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2005-05-23",
+  "age": 21,
+  "team_id": 429,
+  "team_name": "Deportivo A Coruña",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "David Mella  (Záložník) nastupuje za Deportivo A Coruña. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

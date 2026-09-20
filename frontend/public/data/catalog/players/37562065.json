@@ -1,0 +1,26 @@
+{
+  "id": 37562065,
+  "name": "Daniel Samek",
+  "common_name": "D. Samek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/17/37562065.png",
+  "number": 22,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2004-02-19",
+  "age": 22,
+  "team_id": 3734,
+  "team_name": "Kladno",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Daniel Samek v této sezóně za Kladno: 1 start, 31 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:06Z",
+    "season": {
+      "appearances": 1,
+      "minutes": 31
+    }
+  }
+}

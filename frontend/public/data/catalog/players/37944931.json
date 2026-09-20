@@ -1,0 +1,30 @@
+{
+  "id": 37944931,
+  "name": "J. Zíka",
+  "common_name": "J. Zíka",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 76,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2006-02-02",
+  "age": 20,
+  "team_id": 187,
+  "team_name": "Mladá Boleslav",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "J. Zíka v této sezóně za Mladá Boleslav: 8 startů, 640 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:18Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 7,
+      "minutes": 640,
+      "shots": 7,
+      "sot": 2,
+      "goals_conceded": 7
+    }
+  }
+}

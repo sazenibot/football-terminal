@@ -1,0 +1,33 @@
+{
+  "id": 30066,
+  "name": "Michal Sadílek",
+  "common_name": "M. Sadílek",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/30066.png",
+  "number": 23,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-05-31",
+  "age": 27,
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Michal Sadílek v této sezóně za Slavia Praha: 8 startů, 720 min, 1 gól, 3 asistence.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:30:13Z",
+    "season": {
+      "appearances": 8,
+      "lineups": 8,
+      "minutes": 720,
+      "goals": 1,
+      "assists": 3,
+      "yellow": 1,
+      "shots": 13,
+      "sot": 2,
+      "goals_conceded": 6
+    }
+  }
+}

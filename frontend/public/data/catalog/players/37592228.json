@@ -1,0 +1,19 @@
+{
+  "id": 37592228,
+  "name": "Cristhian Mosquera",
+  "common_name": "C. Mosquera",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/4/37592228.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2004-06-27",
+  "age": 22,
+  "team_id": 19,
+  "team_name": "Arsenal",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Cristhian Mosquera (Obránce) nastupuje za Arsenal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

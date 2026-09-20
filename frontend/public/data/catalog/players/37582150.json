@@ -1,0 +1,19 @@
+{
+  "id": 37582150,
+  "name": "Daniel Elfadli",
+  "common_name": "D. Elfadli",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/6/37582150.png",
+  "number": 8,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1997-04-06",
+  "age": 29,
+  "team_id": 2708,
+  "team_name": "Hamburger SV",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Daniel Elfadli (Záložník) nastupuje za Hamburger SV. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

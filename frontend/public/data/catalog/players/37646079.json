@@ -1,0 +1,19 @@
+{
+  "id": 37646079,
+  "name": "Martin Hruby ",
+  "common_name": "M. Hrubý",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 60,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "2004-03-22",
+  "age": 22,
+  "team_id": 8477,
+  "team_name": "Banik Ostrava B",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Martin Hruby  (Brankář) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

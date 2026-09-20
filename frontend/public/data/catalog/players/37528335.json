@@ -1,0 +1,32 @@
+{
+  "id": 37528335,
+  "name": "Louis Lurvink",
+  "common_name": "L. Lurvink",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37528335.png",
+  "number": 3,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2002-01-24",
+  "age": 24,
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Louis Lurvink v této sezóně za Sigma Olomouc: 9 startů, 810 min, 2 góly.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:29:46Z",
+    "season": {
+      "appearances": 9,
+      "lineups": 9,
+      "minutes": 810,
+      "goals": 2,
+      "yellow": 1,
+      "shots": 7,
+      "sot": 3,
+      "goals_conceded": 13
+    }
+  }
+}

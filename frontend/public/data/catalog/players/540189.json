@@ -1,0 +1,19 @@
+{
+  "id": 540189,
+  "name": "Morten Hjulmand",
+  "common_name": "M. Hjulmand",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/29/540189.png",
+  "number": 23,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "1999-06-25",
+  "age": 27,
+  "team_id": 7980,
+  "team_name": "Atlético de Madrid",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
+  "league_id": 564,
+  "league_name": "La Liga",
+  "hook": "Morten Hjulmand (Záložník) nastupuje za Atlético de Madrid. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:07Z"
+}

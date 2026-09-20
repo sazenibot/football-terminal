@@ -1,0 +1,19 @@
+{
+  "id": 12647,
+  "name": "Dean Henderson ",
+  "common_name": "D. Henderson",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/7/12647.png",
+  "number": 1,
+  "position": "Brankář",
+  "position_id": 24,
+  "captain": false,
+  "date_of_birth": "1997-03-12",
+  "age": 29,
+  "team_id": 51,
+  "team_name": "Crystal Palace",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "Dean Henderson  (Brankář) nastupuje za Crystal Palace. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

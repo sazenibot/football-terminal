@@ -1,0 +1,19 @@
+{
+  "id": 3862683,
+  "name": "Jonathan Burkardt",
+  "common_name": "J. Burkardt",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/27/3862683.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2000-07-11",
+  "age": 26,
+  "team_id": 366,
+  "team_name": "Eintracht Frankfurt",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Jonathan Burkardt (Útočník) nastupuje za Eintracht Frankfurt. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

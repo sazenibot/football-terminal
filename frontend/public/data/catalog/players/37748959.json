@@ -1,0 +1,19 @@
+{
+  "id": 37748959,
+  "name": "Kennet Eichhorn ",
+  "common_name": "K. Eichhorn",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 18,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2009-07-27",
+  "age": 17,
+  "team_id": 3321,
+  "team_name": "Bayer 04 Leverkusen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Kennet Eichhorn  (Záložník) nastupuje za Bayer 04 Leverkusen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

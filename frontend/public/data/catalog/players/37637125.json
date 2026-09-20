@@ -1,0 +1,19 @@
+{
+  "id": 37637125,
+  "name": "Antoni Franke",
+  "common_name": "A. Franke",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "number": 27,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-09-30",
+  "age": 19,
+  "team_id": 3531,
+  "team_name": "Dukla Praha",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/3531.png",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
+  "hook": "Antoni Franke (Obránce) nastupuje za Dukla Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:05Z"
+}

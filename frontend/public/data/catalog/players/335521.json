@@ -1,0 +1,19 @@
+{
+  "id": 335521,
+  "name": "Facundo Medina",
+  "common_name": "F. Medina",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/1/335521.png",
+  "number": 2,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "1999-05-28",
+  "age": 27,
+  "team_id": 3321,
+  "team_name": "Bayer 04 Leverkusen",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Facundo Medina (Obránce) nastupuje za Bayer 04 Leverkusen. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

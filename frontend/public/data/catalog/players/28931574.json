@@ -1,0 +1,19 @@
+{
+  "id": 28931574,
+  "name": "João Pedro",
+  "common_name": "J. Junqueira de Jesus",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/22/28931574.png",
+  "number": 9,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "2001-09-26",
+  "age": 24,
+  "team_id": 18,
+  "team_name": "Chelsea",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
+  "league_id": 8,
+  "league_name": "Premier League",
+  "hook": "João Pedro (Útočník) nastupuje za Chelsea. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

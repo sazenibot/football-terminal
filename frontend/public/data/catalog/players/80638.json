@@ -1,0 +1,29 @@
+{
+  "id": 80638,
+  "name": "Ondrej Mihalik",
+  "common_name": "O. Mihálik",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/30/80638.png",
+  "number": 17,
+  "position": "Útočník",
+  "position_id": 27,
+  "captain": false,
+  "date_of_birth": "1997-04-02",
+  "age": 29,
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "hook": "Ondrej Mihalik v této sezóně za Hradec Králové: 3 starty, 164 min.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-20T23:28:52Z",
+    "season": {
+      "appearances": 3,
+      "lineups": 2,
+      "minutes": 164,
+      "shots": 1,
+      "goals_conceded": 1
+    }
+  }
+}

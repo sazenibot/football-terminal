@@ -1,0 +1,19 @@
+{
+  "id": 37650095,
+  "name": "Noahkai Banks",
+  "common_name": "N. Banks",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/15/37650095.png",
+  "number": 40,
+  "position": "Obránce",
+  "position_id": 25,
+  "captain": false,
+  "date_of_birth": "2006-12-01",
+  "age": 19,
+  "team_id": 90,
+  "team_name": "FC Augsburg",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Noahkai Banks (Obránce) nastupuje za FC Augsburg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}

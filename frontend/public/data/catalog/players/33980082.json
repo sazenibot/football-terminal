@@ -1,0 +1,19 @@
+{
+  "id": 33980082,
+  "name": "Satoshi Tanaka",
+  "common_name": "S. Tanaka",
+  "image": "https://cdn.sportmonks.com/images/soccer/players/18/33980082.png",
+  "number": 13,
+  "position": "Záložník",
+  "position_id": 26,
+  "captain": false,
+  "date_of_birth": "2002-08-13",
+  "age": 24,
+  "team_id": 67,
+  "team_name": "Schalke 04",
+  "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png",
+  "league_id": 82,
+  "league_name": "Bundesliga",
+  "hook": "Satoshi Tanaka (Záložník) nastupuje za Schalke 04. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-20T21:56:06Z"
+}
