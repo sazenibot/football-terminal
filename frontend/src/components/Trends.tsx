@@ -75,7 +75,7 @@ export function TrendsTeamSection({
   return (
     <Section
       title="5. Trendy — posledních 5 ligových zápasů"
-      note="Malý vzorek (n=5). Kurz je desetinný kurz z PulseScore (Pinnacle), pokud ho ingest k trhu našel. Není to doporučení sázky."
+      note="Malý vzorek (n=5). Kurz je desetinný kurz z Chance.cz (přes PulseScore), pokud ho ingest k trhu našel. Není to doporučení sázky."
     >
       <ThresholdPills threshold={threshold} setThreshold={setThreshold} />
       <div className="grid grid-cols-[1fr_3rem_3.25rem_3.5rem] text-[11px] uppercase tracking-wide text-slate-500 px-0 mb-1">
