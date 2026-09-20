@@ -2044,39 +2044,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 1.88,
-      "away": 0.68
+      "home": 1.81,
+      "away": 1.43
     },
-    "home_win_pct": 65.5,
-    "draw_pct": 21.5,
-    "away_win_pct": 13.0,
-    "btts_pct": 42.0,
-    "over25_pct": 47.0,
-    "under25_pct": 53.0,
+    "home_win_pct": 44.1,
+    "draw_pct": 25.5,
+    "away_win_pct": 30.5,
+    "btts_pct": 63.6,
+    "over25_pct": 62.7,
+    "under25_pct": 37.2,
     "top_scorelines": [
       {
-        "score": "1-0",
-        "pct": 14.2
-      },
-      {
-        "score": "2-0",
-        "pct": 13.7
-      },
-      {
         "score": "1-1",
-        "pct": 9.9
+        "pct": 10.2
       },
       {
         "score": "2-1",
-        "pct": 9.4
+        "pct": 9.0
       },
       {
-        "score": "3-0",
-        "pct": 8.5
+        "score": "1-2",
+        "pct": 7.3
       },
       {
-        "score": "0-0",
-        "pct": 8.0
+        "score": "2-2",
+        "pct": 7.0
+      },
+      {
+        "score": "1-0",
+        "pct": 6.8
+      },
+      {
+        "score": "2-0",
+        "pct": 6.3
       }
     ]
   },
@@ -6822,5 +6822,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:35:38.190983Z"
+  "refreshed_at": "2026-09-20T00:35:38.190983Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Villarrealem a Levante se odehraje na Estadio de la Cerámica a vzhledem k aktuální formě obou týmů lze očekávat vyrovnaný duel. Domácí Villarreal má za sebou smíšené výsledky, přičemž vyhrál pouze jedno z posledních šesti utkání. Naopak Levante se snaží o zlepšení, přičemž jejich forma ukazuje na určité zlepšení s jednou výhrou v posledních pěti zápasech. Historie vzájemných zápasů však favorizuje Villarreal, který v posledních letech dominoval, což může mít vliv na psychiku hostů.\n\nPodle simulací očekávaných gólů (xG) má Villarreal mírnou výhodu s hodnotou 1.81 oproti 1.43 pro Levante. To naznačuje, že domácí tým by mohl být schopný vytvořit více kvalitních příležitostí ke skórování. Zároveň se ukazuje, že pravděpodobnost, že oba týmy vstřelí gól, je relativně vysoká (63.6 %), což naznačuje, že Levante by mohlo být schopno najít cestu k brance, i když se jim v minulosti proti Villarrealovi nedařilo.\n\nCelkově lze očekávat, že Villarreal bude mít mírnou převahu a bude se snažit potvrdit svou dominanci v historických vzájemných zápasech. Levante se bude snažit překvapit a využít jakékoli slabiny domácí obrany. Zápas by mohl být vyrovnaný, s potenciálem pro několik gólů na obou stranách, což by mohlo vést k atraktivnímu fotbalu pro diváky.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:21Z"
+  }
 }

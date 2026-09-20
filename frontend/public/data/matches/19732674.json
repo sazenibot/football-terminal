@@ -2169,39 +2169,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 0.76,
-      "away": 1.59
+      "home": 1.18,
+      "away": 1.26
     },
-    "home_win_pct": 17.8,
-    "draw_pct": 25.0,
-    "away_win_pct": 57.2,
-    "btts_pct": 42.7,
-    "over25_pct": 41.7,
-    "under25_pct": 58.3,
+    "home_win_pct": 37.8,
+    "draw_pct": 27.9,
+    "away_win_pct": 34.3,
+    "btts_pct": 50.0,
+    "over25_pct": 44.2,
+    "under25_pct": 55.8,
     "top_scorelines": [
       {
-        "score": "0-1",
-        "pct": 14.7
-      },
-      {
-        "score": "0-2",
-        "pct": 12.5
-      },
-      {
         "score": "1-1",
-        "pct": 11.7
+        "pct": 13.2
       },
       {
-        "score": "0-0",
-        "pct": 9.0
-      },
-      {
-        "score": "1-2",
-        "pct": 9.0
+        "score": "0-1",
+        "pct": 10.8
       },
       {
         "score": "1-0",
-        "pct": 7.5
+        "pct": 10.4
+      },
+      {
+        "score": "0-0",
+        "pct": 8.8
+      },
+      {
+        "score": "1-2",
+        "pct": 8.0
+      },
+      {
+        "score": "2-1",
+        "pct": 7.8
       }
     ]
   },
@@ -7709,5 +7709,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:35:45.680819Z"
+  "refreshed_at": "2026-09-20T00:35:45.680819Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Valencií a Realem Sociedad se odehraje na Estadio de Mestalla, což je pro domácí tým výhodné prostředí. Valencia v posledních šesti zápasech vykazuje slabou formu, kdy zaznamenala pouze jedno vítězství a pět porážek. Na druhé straně Real Sociedad má mírně lepší výsledky, s dvěma výhrami a třemi remízami. Tato forma naznačuje, že hosté budou mít psychologickou výhodu, ale domácí prostředí může Valencii poskytnout potřebnou motivaci.\n\nHistorie vzájemných zápasů ukazuje vyrovnané výsledky, přičemž poslední zápas skončil těsným vítězstvím Valencie 4:3. To může naznačovat, že obě mužstva mají schopnost skórovat, což je podpořeno i simulacemi očekávaných gólů (xG), které ukazují na mírně vyšší pravděpodobnost gólů pro hosty. Očekává se, že zápas bude vyrovnaný a může skončit remízou, což odpovídá i simulacím s pravděpodobností 27,9 %.\n\nZ pohledu statistiky je pravděpodobné, že obě mužstva vstřelí gól, což potvrzuje i 50% pravděpodobnost pro \"obě týmy skórují\". Zápas by mohl být dynamický s několika šancemi na obou stranách, ačkoli celkový počet gólů by mohl zůstat pod 2,5, což odpovídá 44,2% pravděpodobnosti. Vzhledem k výše uvedeným faktorům se dá očekávat vyrovnaný a napínavý zápas s minimálním rozdílem ve skóre.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:24Z"
+  }
 }

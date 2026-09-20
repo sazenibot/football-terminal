@@ -2569,39 +2569,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 2.58,
-      "away": 1.06
+      "home": 1.86,
+      "away": 1.44
     },
-    "home_win_pct": 69.7,
-    "draw_pct": 16.6,
-    "away_win_pct": 13.8,
-    "btts_pct": 60.9,
-    "over25_pct": 70.3,
-    "under25_pct": 29.7,
+    "home_win_pct": 45.1,
+    "draw_pct": 24.7,
+    "away_win_pct": 30.2,
+    "btts_pct": 64.2,
+    "over25_pct": 63.9,
+    "under25_pct": 36.1,
     "top_scorelines": [
       {
-        "score": "2-1",
-        "pct": 9.2
-      },
-      {
-        "score": "2-0",
-        "pct": 9.1
-      },
-      {
-        "score": "3-1",
-        "pct": 7.8
-      },
-      {
         "score": "1-1",
-        "pct": 7.2
+        "pct": 9.7
       },
       {
-        "score": "3-0",
-        "pct": 6.8
+        "score": "2-1",
+        "pct": 9.5
+      },
+      {
+        "score": "1-2",
+        "pct": 7.0
       },
       {
         "score": "1-0",
-        "pct": 6.2
+        "pct": 6.9
+      },
+      {
+        "score": "2-2",
+        "pct": 6.5
+      },
+      {
+        "score": "2-0",
+        "pct": 6.3
       }
     ]
   },
@@ -7699,5 +7699,10 @@
   "league_name": "Chance Liga",
   "build_mode": "refresh",
   "built_at": "2026-09-19T23:44:50.690267Z",
-  "refreshed_at": "2026-09-20T00:34:21.764704Z"
+  "refreshed_at": "2026-09-20T00:34:21.764704Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Sigmou Olomouc a Spartou Praha, který se uskuteční na Andrůvě stadionu, slibuje být vyrovnaným a zajímavým střetnutím. Sigma Olomouc se nachází v dobré formě, když vyhrála pět z posledních šesti zápasů, což naznačuje jejich silnou domácí výkonnost. Na druhé straně Sparta Praha, ačkoliv má také solidní výsledky, vykazuje menší stabilitu s dvěma remízami v posledních šesti zápasech. Historie vzájemných zápasů ukazuje, že Sparta má mírnou převahu, ale Sigma dokázala v nedávné minulosti také uspět.\n\nAnalýza očekávaných gólů (xG) naznačuje, že Sigma Olomouc má mírně vyšší šanci na vstřelení gólů (1.86) než Sparta Praha (1.44). To by mohlo znamenat, že domácí tým bude mít více příležitostí k ohrožení branky. Na druhou stranu, s ohledem na formu obou týmů a jejich vzájemné zápasy, je pravděpodobné, že se zápas může vyvíjet jako vyrovnané klání, kde obě strany budou mít šance na skórování.\n\nOčekává se, že zápas bude vyrovnaný, s pravděpodobností 45.1 % na vítězství domácího týmu a 30.2 % na výhru hostů. Možnost, že oba týmy skórují, je vysoká (64.2 %), což naznačuje, že by diváci mohli být svědky atraktivního zápasu s několika brankami. Celkově se dá očekávat, že zápas přinese napínavou podívanou s vyrovnaným průběhem a šancemi na obou stranách.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:03Z"
+  }
 }

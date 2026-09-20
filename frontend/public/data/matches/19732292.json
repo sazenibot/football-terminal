@@ -2067,39 +2067,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 1.33,
-      "away": 1.74
+      "home": 1.26,
+      "away": 1.55
     },
-    "home_win_pct": 29.3,
-    "draw_pct": 23.4,
-    "away_win_pct": 47.2,
-    "btts_pct": 60.8,
-    "over25_pct": 59.6,
-    "under25_pct": 40.4,
+    "home_win_pct": 36.2,
+    "draw_pct": 26.1,
+    "away_win_pct": 37.8,
+    "btts_pct": 56.6,
+    "over25_pct": 53.4,
+    "under25_pct": 46.6,
     "top_scorelines": [
       {
         "score": "1-1",
-        "pct": 10.7
-      },
-      {
-        "score": "1-2",
-        "pct": 9.5
+        "pct": 11.6
       },
       {
         "score": "0-1",
-        "pct": 8.0
+        "pct": 9.3
+      },
+      {
+        "score": "1-2",
+        "pct": 9.1
+      },
+      {
+        "score": "1-0",
+        "pct": 7.7
       },
       {
         "score": "2-1",
-        "pct": 7.0
+        "pct": 7.7
       },
       {
         "score": "0-2",
-        "pct": 6.8
-      },
-      {
-        "score": "2-2",
-        "pct": 6.2
+        "pct": 7.2
       }
     ]
   },
@@ -5599,5 +5599,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:34:34.073283Z"
+  "refreshed_at": "2026-09-20T00:34:34.073283Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Viktorií Žižkov a Třincem v rámci Chance Národní Ligy slibuje být vyrovnaným střetnutím. Domácí Viktoria se nachází v horší formě, když z posledních šesti zápasů zaznamenala pouze jedno vítězství a pět porážek. Naopak Třinec se může pochlubit lepšími výsledky, přičemž v posledních zápasech dokázal získat body i proti silnějším soupeřům. Historie vzájemných zápasů naznačuje, že souboje mezi těmito týmy bývají vyrovnané, což potvrzuje i poslední remíza 2:2.\n\nAnalýza očekávaných gólů (xG) ukazuje, že Třinec má mírnou výhodu s hodnotou 1.55 oproti Viktoriiným 1.26. To naznačuje, že hosté mají větší šanci na vstřelení gólů, což by mohlo ovlivnit průběh zápasu. Simulace také ukazují, že pravděpodobnost vítězství Třince je 37.8 %, zatímco remíza má pravděpodobnost 26.1 %. To naznačuje, že Třinec by mohl být favoritem, ale Viktoria má doma potenciál překvapit.\n\nCo se týče pravděpodobnosti gólů, analýza naznačuje, že šance na obě strany skórovat (BTTS) je 56.6 %, což naznačuje, že obě mužstva by mohla mít příležitosti ke vstřelení gólů. Také existuje 53.4% pravděpodobnost, že v zápase padne více než 2,5 gólu. Celkově se dá očekávat vyrovnaný duel s potenciálem pro dramatické momenty a několik gólových příležitostí na obou stranách.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:10Z"
+  }
 }

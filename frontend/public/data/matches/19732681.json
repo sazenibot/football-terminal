@@ -2099,39 +2099,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 3.2,
-      "away": 1.33
+      "home": 1.71,
+      "away": 1.69
     },
-    "home_win_pct": 73.8,
-    "draw_pct": 14.1,
-    "away_win_pct": 12.2,
-    "btts_pct": 70.5,
-    "over25_pct": 83.0,
-    "under25_pct": 17.0,
+    "home_win_pct": 40.2,
+    "draw_pct": 25.6,
+    "away_win_pct": 34.2,
+    "btts_pct": 66.2,
+    "over25_pct": 65.5,
+    "under25_pct": 34.5,
     "top_scorelines": [
       {
-        "score": "5-1",
-        "pct": 7.7
+        "score": "1-1",
+        "pct": 9.8
+      },
+      {
+        "score": "1-2",
+        "pct": 8.4
       },
       {
         "score": "2-1",
-        "pct": 7.5
+        "pct": 8.0
       },
       {
-        "score": "3-1",
-        "pct": 7.4
+        "score": "2-2",
+        "pct": 7.3
       },
       {
-        "score": "4-1",
-        "pct": 6.4
+        "score": "1-0",
+        "pct": 5.7
       },
       {
-        "score": "3-0",
-        "pct": 5.9
-      },
-      {
-        "score": "5-0",
-        "pct": 5.9
+        "score": "0-1",
+        "pct": 5.3
       }
     ]
   },
@@ -7257,5 +7257,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:35:33.567920Z"
+  "refreshed_at": "2026-09-20T00:35:33.567920Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Atlétikem Madrid a Realem Madrid, který se odehraje na stadionu Riyadh Air Metropolitano, slibuje být vysoce atraktivní podívanou. Obě mužstva mají v posledních utkáních solidní formu, přičemž domácí Atlético vyhrálo čtyři z posledních šesti zápasů, zatímco Real Madrid má na kontě pět výher. Historie vzájemných zápasů ukazuje na vyrovnanost, přičemž poslední tři duely skončily remízou nebo těsným vítězstvím jednoho z týmů.\n\nPodle simulací očekáváme vyrovnaný zápas s mírnou převahou v očekávaných gólech pro domácí Atlético (1.71 xG) oproti Realu Madrid (1.69 xG). Pravděpodobnost, že oba týmy skórují, je vysoká (66.2 %), což naznačuje, že se můžeme těšit na ofenzivní hru z obou stran. Očekávané skóre naznačuje, že by mohlo padnout více než 2,5 gólu, což je podpořeno i vysokou pravděpodobností tohoto výsledku (65.5 %).\n\nCelkově lze očekávat vyrovnaný a dramatický zápas, který bude pravděpodobně rozhodnut detaily a individuálními výkony klíčových hráčů. Vzhledem k rivalitě obou týmů a jejich aktuální formě se dá předpokládat, že utkání přinese napínavou atmosféru a kvalitní fotbal.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:34Z"
+  }
 }

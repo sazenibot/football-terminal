@@ -39,6 +39,7 @@ from build_match_data import (  # noqa: E402
     team_brief,
     to_iso_utc,
 )
+from match_extras import enrich_match  # noqa: E402
 
 CONFIG_PATH = ROOT / "scripts" / "config" / "leagues.json"
 DATA_DIR = ROOT / "frontend" / "public" / "data"
@@ -182,6 +183,10 @@ def process_league(league: dict, days: int, force_full: bool, max_new: int | Non
                 if existing is None:
                     new_counter[0] += 1
                     created += 1
+            try:
+                payload = enrich_match(payload)
+            except Exception as extra_exc:
+                print(f"  ⚠️ extras {fid}: {extra_exc}", file=sys.stderr)
             write_json(dest, payload)
             built_ids.add(fid)
         except Exception as exc:  # jeden zápas nesmí shodit ligu

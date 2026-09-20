@@ -2092,39 +2092,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 2.49,
-      "away": 2.07
+      "home": 1.48,
+      "away": 1.49
     },
-    "home_win_pct": 47.7,
-    "draw_pct": 19.1,
-    "away_win_pct": 33.2,
-    "btts_pct": 79.7,
-    "over25_pct": 83.0,
-    "under25_pct": 17.0,
+    "home_win_pct": 39.7,
+    "draw_pct": 25.8,
+    "away_win_pct": 34.5,
+    "btts_pct": 59.7,
+    "over25_pct": 56.7,
+    "under25_pct": 43.3,
     "top_scorelines": [
       {
-        "score": "2-2",
-        "pct": 7.3
+        "score": "1-1",
+        "pct": 11.1
       },
       {
         "score": "2-1",
-        "pct": 6.7
-      },
-      {
-        "score": "3-2",
-        "pct": 6.1
-      },
-      {
-        "score": "1-1",
-        "pct": 5.5
+        "pct": 8.6
       },
       {
         "score": "1-2",
-        "pct": 5.3
+        "pct": 8.3
       },
       {
-        "score": "3-1",
-        "pct": 5.1
+        "score": "0-1",
+        "pct": 7.9
+      },
+      {
+        "score": "1-0",
+        "pct": 7.7
+      },
+      {
+        "score": "2-2",
+        "pct": 6.3
       }
     ]
   },
@@ -6849,5 +6849,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:35:04.998916Z"
+  "refreshed_at": "2026-09-20T00:35:04.998916Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Fulhamem a Manchesterem United, který se odehraje na Craven Cottage, slibuje být vyrovnaným střetnutím. Domácí Fulham se nachází v horší formě, když v posledních čtyřech zápasech zaznamenal pouze jednu remízu a tři prohry. Naopak Manchester United, ačkoliv také neprožívá ideální období, má za sebou vítězství a remízu, což naznačuje, že se tým může dostávat do lepšího rytmu.\n\nHistorie vzájemných zápasů ukazuje, že Manchester United má v posledních střetnutích s Fulhamem mírnou převahu, přičemž poslední zápas skončil výhrou United 3:2. Vzhledem k tomu, že oba týmy mají podobné očekávané góly (xG) - Fulham 1.48 a Manchester United 1.49 - lze očekávat vyrovnanou hru, kde rozhodujícími faktory mohou být individuální výkony hráčů a taktické nastavení trenérů.\n\nStatistiky naznačují, že pravděpodobnost, že oba týmy skórují, je vysoká (59.7%), a také je zde solidní šance na více než 2,5 gólu v zápase (56.7%). Tato čísla podporují předpoklad, že zápas by mohl být dynamický a plný šancí, což by mohlo vést k atraktivnímu fotbalu pro diváky.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:10:43Z"
+  }
 }

@@ -2559,39 +2559,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 3.2,
-      "away": 1.28
+      "home": 2.1,
+      "away": 1.09
     },
-    "home_win_pct": 75.0,
-    "draw_pct": 13.4,
-    "away_win_pct": 11.6,
-    "btts_pct": 69.3,
-    "over25_pct": 82.5,
-    "under25_pct": 17.5,
+    "home_win_pct": 51.9,
+    "draw_pct": 24.1,
+    "away_win_pct": 23.9,
+    "btts_pct": 58.8,
+    "over25_pct": 62.0,
+    "under25_pct": 38.0,
     "top_scorelines": [
       {
-        "score": "5-1",
-        "pct": 7.8
-      },
-      {
-        "score": "3-1",
-        "pct": 7.8
+        "score": "1-1",
+        "pct": 9.6
       },
       {
         "score": "2-1",
-        "pct": 7.7
+        "pct": 9.5
       },
       {
-        "score": "4-1",
-        "pct": 6.6
+        "score": "2-0",
+        "pct": 9.1
+      },
+      {
+        "score": "1-0",
+        "pct": 8.6
+      },
+      {
+        "score": "3-1",
+        "pct": 7.0
       },
       {
         "score": "3-0",
-        "pct": 6.4
-      },
-      {
-        "score": "5-0",
-        "pct": 6.1
+        "pct": 6.0
       }
     ]
   },
@@ -8439,5 +8439,10 @@
   "league_name": "Chance Liga",
   "build_mode": "refresh",
   "built_at": "2026-09-19T23:44:50.690267Z",
-  "refreshed_at": "2026-09-20T00:34:28.653061Z"
+  "refreshed_at": "2026-09-20T00:34:28.653061Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Slavií Praha a Viktorií Plzeň, který se uskuteční 20. září 2026 na Fortuna Areně, slibuje být zajímavým soubojem dvou silných týmů. Slavia Praha se nachází v dobré formě, když v posledních šesti zápasech zaznamenala čtyři vítězství a dvě remízy. Naopak Viktoria Plzeň má za sebou smíšené výsledky s jedním vítězstvím, třemi remízami a dvěma prohrami. Historie vzájemných zápasů ukazuje, že Slavia má nad Plzní jasnou převahu, což může ovlivnit psychologii hráčů obou týmů.\n\nPodle simulací očekáváme, že Slavia Praha bude mít převahu v počtu očekávaných gólů (xG), s hodnotou 2.1 oproti 1.09 pro Plzeň. To naznačuje, že domácí tým by mohl být nebezpečnější v útočné fázi. Pravděpodobnost vítězství Slavie se pohybuje kolem 51.9 %, což potvrzuje jejich roli favorita. Na druhé straně, Plzeň bude muset najít způsob, jak se vyrovnat s tlakem a pokusit se o překvapení.\n\nZ pohledu statistik je také zajímavé, že pravděpodobnost, že oba týmy skórují (BTTS), je 58.8 %, a pravděpodobnost, že padne více než 2.5 gólu, je 62.0 %. To naznačuje, že zápas by mohl být ofenzivně laděný, s možností více gólů na obou stranách. Celkově se očekává, že Slavia Praha bude dominovat, ale Viktoria Plzeň se jistě pokusí o odpor a překvapení.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:10:52Z"
+  }
 }

@@ -1897,39 +1897,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 2.02,
-      "away": 0.99
+      "home": 1.63,
+      "away": 1.5
     },
-    "home_win_pct": 60.7,
-    "draw_pct": 21.3,
-    "away_win_pct": 18.0,
-    "btts_pct": 54.9,
-    "over25_pct": 58.4,
-    "under25_pct": 41.6,
+    "home_win_pct": 41.2,
+    "draw_pct": 25.9,
+    "away_win_pct": 33.0,
+    "btts_pct": 62.9,
+    "over25_pct": 60.8,
+    "under25_pct": 39.2,
     "top_scorelines": [
       {
         "score": "1-1",
-        "pct": 10.0
-      },
-      {
-        "score": "1-0",
-        "pct": 9.8
+        "pct": 10.5
       },
       {
         "score": "2-1",
-        "pct": 9.7
+        "pct": 8.9
       },
       {
-        "score": "2-0",
-        "pct": 9.7
+        "score": "1-2",
+        "pct": 8.2
       },
       {
-        "score": "3-0",
+        "score": "2-2",
         "pct": 7.0
       },
       {
-        "score": "3-1",
-        "pct": 6.6
+        "score": "1-0",
+        "pct": 6.9
+      },
+      {
+        "score": "0-1",
+        "pct": 6.8
       }
     ]
   },
@@ -5189,5 +5189,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:34:38.506332Z"
+  "refreshed_at": "2026-09-20T00:34:38.506332Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Kladnem a Příbramí v rámci Chance Národní Ligy slibuje vyrovnanou bitvu. Domácí Kladno se nachází v mírně lepší formě, když z posledních šesti utkání zaznamenalo tři remízy, dvě prohry a jednu výhru. Na druhé straně Příbram má také solidní výkonnost, s jednou výhrou a čtyřmi remízami v posledních šesti zápasech. Historie vzájemných zápasů naznačuje, že Příbram má mírnou převahu, což může ovlivnit psychologii hráčů.\n\nPodle simulací očekáváme vyrovnaný zápas s mírnou převahou Kladna v očekávaných gólech (xG 1.63 vs. 1.5 pro Příbram). To naznačuje, že domácí tým by mohl mít více příležitostí k ohrožení branky, avšak Příbram je schopna odpovědět rychlými protiútoky. Statistika ukazuje na pravděpodobnost 62.9 % pro obě mužstva, že skórují, což naznačuje, že zápas by mohl být atraktivní z pohledu ofenzivní hry.\n\nCelkově lze očekávat, že zápas bude vyrovnaný a napínavý, s možností remízy, která by odpovídala aktuálním formám obou týmů. Výsledek může být ovlivněn individuálními výkony klíčových hráčů a taktickými rozhodnutími trenérů, což může přinést nečekané zvraty.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:17Z"
+  }
 }

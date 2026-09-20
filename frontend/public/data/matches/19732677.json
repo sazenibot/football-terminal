@@ -2183,39 +2183,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 1.44,
-      "away": 0.3
+      "home": 1.26,
+      "away": 0.78
     },
-    "home_win_pct": 66.6,
-    "draw_pct": 25.9,
-    "away_win_pct": 7.5,
-    "btts_pct": 19.3,
-    "over25_pct": 25.0,
-    "under25_pct": 75.0,
+    "home_win_pct": 44.8,
+    "draw_pct": 28.9,
+    "away_win_pct": 26.3,
+    "btts_pct": 39.3,
+    "over25_pct": 33.8,
+    "under25_pct": 66.2,
     "top_scorelines": [
       {
         "score": "1-0",
-        "pct": 25.3
-      },
-      {
-        "score": "2-0",
-        "pct": 18.6
+        "pct": 15.9
       },
       {
         "score": "0-0",
-        "pct": 17.6
-      },
-      {
-        "score": "3-0",
-        "pct": 8.7
+        "pct": 13.1
       },
       {
         "score": "1-1",
-        "pct": 7.5
+        "pct": 12.8
+      },
+      {
+        "score": "0-1",
+        "pct": 10.3
+      },
+      {
+        "score": "2-0",
+        "pct": 10.2
       },
       {
         "score": "2-1",
-        "pct": 5.3
+        "pct": 8.2
       }
     ]
   },
@@ -5947,5 +5947,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:35:28.863463Z"
+  "refreshed_at": "2026-09-20T00:35:28.863463Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Getafe a Málagou se odehraje na stadionu Coliseum Alfonso Pérez a očekává se vyrovnaný duel. Domácí Getafe v posledních šesti zápasech vykazuje mírně lepší formu, s dvěma výhrami, třemi remízami a jednou prohrou. Na druhé straně Málaga má podobnou bilanci, ale s o něco méně přesvědčivými výkony. Historie vzájemných zápasů naznačuje, že Getafe má mírnou převahu, když v posledních pěti utkáních vyhrálo třikrát.\n\nPodle simulací očekáváme, že domácí tým bude mít mírně vyšší šance na vítězství, s očekávanými góly (xG) 1.26 oproti 0.78 pro Málagu. To naznačuje, že Getafe by mělo mít více příležitostí ke skórování. Nicméně, Málaga může být nebezpečná v protiútocích, a proto je pravděpodobné, že zápas bude vyrovnaný a může skončit remízou nebo těsným vítězstvím jednoho z týmů.\n\nZ hlediska pravděpodobnosti se jeví jako reálná varianta, že zápas skončí remízou (28.9 %) nebo těsným vítězstvím Getafe (44.8 %). Možnost, že oba týmy skórují, je také na úrovni 39.3 %, což naznačuje, že zápas by mohl být ofenzivně laděný, přičemž šance na více než dva góly v zápase jsou relativně nízké (33.8 %). Celkově se očekává napínavý duel s vyrovnaným výkonem obou týmů.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:28Z"
+  }
 }

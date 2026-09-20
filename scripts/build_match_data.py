@@ -642,6 +642,56 @@ def radar_averages(facts_list: list) -> dict:
     }
 
 
+def _mean_gf(facts: list) -> float:
+    if not facts:
+        return 0.0
+    return sum(f.get("gf") or 0 for f in facts) / len(facts)
+
+
+def _mean_ga(facts: list) -> float:
+    if not facts:
+        return 0.0
+    return sum(f.get("ga") or 0 for f in facts) / len(facts)
+
+
+def _shrink(obs: float, prior: float, n: int, k: int = 12) -> float:
+    if n <= 0:
+        return prior
+    return (n * obs + k * prior) / (n + k)
+
+
+def simulate_from_facts(home_facts: list, away_facts: list, h2h_home: list | None = None, h2h_away: list | None = None) -> dict:
+    """1X2 z Poissonu, ale s silným priorom — 3–6 zápasů nesmí udělat 70% favorita."""
+    prior_home, prior_away = 1.40, 1.15
+    home_lg = [f for f in home_facts if f.get("is_league_match")] or home_facts
+    away_lg = [f for f in away_facts if f.get("is_league_match")] or away_facts
+    att_h = _shrink(_mean_gf(home_lg), prior_home, len(home_lg))
+    def_h = _shrink(_mean_ga(home_lg), prior_away, len(home_lg))
+    att_a = _shrink(_mean_gf(away_lg), prior_away, len(away_lg))
+    def_a = _shrink(_mean_ga(away_lg), prior_home, len(away_lg))
+    last5_h = home_lg[:5]
+    last5_a = away_lg[:5]
+    h2h_h = (h2h_home or [])[:3]
+    h2h_a = (h2h_away or [])[:3]
+    att_h = 0.78 * att_h + 0.14 * (_mean_gf(last5_h) or att_h) + 0.08 * (_mean_gf(h2h_h) or att_h)
+    def_h = 0.78 * def_h + 0.14 * (_mean_ga(last5_h) or def_h) + 0.08 * (_mean_ga(h2h_h) or def_h)
+    att_a = 0.78 * att_a + 0.14 * (_mean_gf(last5_a) or att_a) + 0.08 * (_mean_gf(h2h_a) or att_a)
+    def_a = 0.78 * def_a + 0.14 * (_mean_ga(last5_a) or def_a) + 0.08 * (_mean_ga(h2h_a) or def_a)
+    lambda_home = max(0.75, min(2.10, att_h * (def_a / prior_home) * 1.08))
+    lambda_away = max(0.65, min(1.95, att_a * (def_h / prior_away) * 0.92))
+    raw = run_poisson_simulation(lambda_home, lambda_away, n=10000)
+    prior_1x2 = (42.0, 28.0, 30.0)
+    w = 0.55
+    home_p = w * raw["home_win_pct"] + (1 - w) * prior_1x2[0]
+    draw_p = w * raw["draw_pct"] + (1 - w) * prior_1x2[1]
+    away_p = w * raw["away_win_pct"] + (1 - w) * prior_1x2[2]
+    total = home_p + draw_p + away_p
+    raw["home_win_pct"] = round(100 * home_p / total, 1)
+    raw["draw_pct"] = round(100 * draw_p / total, 1)
+    raw["away_win_pct"] = round(100 * away_p / total, 1)
+    return raw
+
+
 def run_poisson_simulation(lambda_home: float, lambda_away: float, n: int = 10000) -> dict:
     rng = np.random.default_rng(42)
     home_goals = rng.poisson(lambda_home, n)
@@ -826,31 +876,13 @@ def build_match(fixture_id: int, league_id: int | None = None) -> dict:
         },
     }
 
-    print("[7] Poisson simulace (10 000 zápasů, model se štěpením doma/venku)…")
-    # Ligový základ: doma/venku průměry gólů z reálných zápasů obou týmů v sezóně
-    home_at_home = [f for f in team_matches["home"] if f["is_home"] and f["is_league_match"]]
-    away_at_away = [f for f in team_matches["away"] if not f["is_home"] and f["is_league_match"]]
-    home_at_home_r = radar_averages(home_at_home) if home_at_home else radar_out["season"]["home"]
-    away_at_away_r = radar_averages(away_at_away) if away_at_away else radar_out["season"]["away"]
-
-    LEAGUE_AVG_HOME_GOALS = 1.55  # orientační liga-průměr Chance Ligy (doma), doladíme na plné sezónní datě
-    LEAGUE_AVG_AWAY_GOALS = 1.15
-
-    def blend(season_v, last5_v, h2h_v):
-        return 0.6 * season_v + 0.25 * last5_v + 0.15 * h2h_v
-
-    attack_home = blend(home_at_home_r["goals_for"], facts_last5_home_gf := radar_out["last5"]["home"]["goals_for"], radar_out["last3_h2h"]["home"]["goals_for"])
-    defense_away = blend(away_at_away_r["goals_against"], radar_out["last5"]["away"]["goals_against"], radar_out["last3_h2h"]["away"]["goals_against"])
-    attack_away = blend(away_at_away_r["goals_for"], radar_out["last5"]["away"]["goals_for"], radar_out["last3_h2h"]["away"]["goals_for"])
-    defense_home = blend(home_at_home_r["goals_against"], radar_out["last5"]["home"]["goals_against"], radar_out["last3_h2h"]["home"]["goals_against"])
-
-    lambda_home = LEAGUE_AVG_HOME_GOALS * (attack_home / LEAGUE_AVG_HOME_GOALS) * (defense_away / LEAGUE_AVG_AWAY_GOALS)
-    lambda_away = LEAGUE_AVG_AWAY_GOALS * (attack_away / LEAGUE_AVG_AWAY_GOALS) * (defense_home / LEAGUE_AVG_HOME_GOALS)
-    # sanity klip — reálné ligové zápasy prakticky nikdy nemají očekávané góly nad ~3.2
-    lambda_home = max(0.3, min(3.2, lambda_home))
-    lambda_away = max(0.3, min(3.2, lambda_away))
-
-    simulation_out = run_poisson_simulation(lambda_home, lambda_away, n=10000)
+    print("[7] Poisson simulace (stažená k ligovému průměru)…")
+    simulation_out = simulate_from_facts(
+        team_matches["home"],
+        team_matches["away"],
+        h2h_facts_home,
+        h2h_facts_away,
+    )
 
     print("[8] Soupisky + sezónní statistiky hráčů (může trvat déle)…")
     players_out = {"home": [], "away": []}

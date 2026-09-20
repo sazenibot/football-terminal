@@ -1726,39 +1726,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 0.41,
-      "away": 1.39
+      "home": 1.55,
+      "away": 1.23
     },
-    "home_win_pct": 10.3,
-    "draw_pct": 27.2,
-    "away_win_pct": 62.5,
-    "btts_pct": 25.0,
-    "over25_pct": 26.9,
-    "under25_pct": 73.1,
+    "home_win_pct": 43.3,
+    "draw_pct": 26.4,
+    "away_win_pct": 30.2,
+    "btts_pct": 55.8,
+    "over25_pct": 53.0,
+    "under25_pct": 47.0,
     "top_scorelines": [
       {
-        "score": "0-1",
-        "pct": 23.1
-      },
-      {
-        "score": "0-0",
-        "pct": 16.7
-      },
-      {
-        "score": "0-2",
-        "pct": 16.2
-      },
-      {
         "score": "1-1",
+        "pct": 12.0
+      },
+      {
+        "score": "2-1",
+        "pct": 9.7
+      },
+      {
+        "score": "1-0",
         "pct": 9.2
       },
       {
-        "score": "0-3",
-        "pct": 7.3
+        "score": "0-1",
+        "pct": 7.5
       },
       {
         "score": "1-2",
-        "pct": 6.9
+        "pct": 7.2
+      },
+      {
+        "score": "2-0",
+        "pct": 7.2
       }
     ]
   },
@@ -5729,5 +5729,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:34:41.609373Z"
+  "refreshed_at": "2026-09-20T00:34:41.609373Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Baníkem Ostrava B a Ústím nad Labem, který se odehraje na Městském stadionu - Vítkovice Aréna, slibuje zajímavé střetnutí. Domácí tým se nachází v solidní formě, kdy z posledních šesti zápasů vybojoval tři vítězství, dvě remízy a jednu prohru. Naopak Ústí nad Labem má za sebou smíšené výsledky, přičemž v posledních dvou utkáních zaznamenali dvě vítězství, ale také tři remízy a jednu prohru. Tato forma naznačuje, že domácí mají mírně navrch, ale hosté mohou být nebezpeční.\n\nHistorie vzájemných zápasů ukazuje, že Ústí nad Labem má v posledních střetnutích s Baníkem Ostrava B navrch, když vyhrálo oba poslední zápasy. Tento fakt by mohl psychologicky ovlivnit výkon domácího týmu, který bude chtít napravit předchozí neúspěchy. Očekává se, že zápas bude vyrovnaný, avšak domácí tým bude mít motivaci před svými fanoušky.\n\nPodle simulací se očekává, že Baník Ostrava B vytvoří více očekávaných gólů (xG) s hodnotou 1.55 v porovnání s 1.23 pro Ústí nad Labem. Pravděpodobnost remízy je 26.4%, což naznačuje, že vyrovnaný výsledek je reálný. Vzhledem k tomu, že pravděpodobnost obou týmů skórovat (BTTS) je 55.8%, lze očekávat, že oba celky by se mohly prosadit. Celkově se tedy dá očekávat napínavý zápas s možnými šancemi na obou stranách.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:07Z"
+  }
 }

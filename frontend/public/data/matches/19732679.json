@@ -2186,39 +2186,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 1.81,
-      "away": 1.1
+      "home": 1.41,
+      "away": 1.15
     },
-    "home_win_pct": 53.0,
-    "draw_pct": 23.8,
-    "away_win_pct": 23.2,
-    "btts_pct": 56.0,
-    "over25_pct": 54.9,
-    "under25_pct": 45.1,
+    "home_win_pct": 42.4,
+    "draw_pct": 27.2,
+    "away_win_pct": 30.5,
+    "btts_pct": 51.6,
+    "over25_pct": 47.1,
+    "under25_pct": 52.9,
     "top_scorelines": [
       {
         "score": "1-1",
-        "pct": 11.3
+        "pct": 12.5
       },
       {
         "score": "1-0",
-        "pct": 9.6
-      },
-      {
-        "score": "2-1",
-        "pct": 9.6
-      },
-      {
-        "score": "2-0",
-        "pct": 9.0
+        "pct": 10.7
       },
       {
         "score": "0-1",
-        "pct": 6.1
+        "pct": 9.0
       },
       {
-        "score": "3-1",
-        "pct": 6.0
+        "score": "2-1",
+        "pct": 8.4
+      },
+      {
+        "score": "2-0",
+        "pct": 8.1
+      },
+      {
+        "score": "0-0",
+        "pct": 7.8
       }
     ]
   },
@@ -6294,5 +6294,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:35:41.319637Z"
+  "refreshed_at": "2026-09-20T00:35:41.319637Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Deportivo A Coruña a Real Betis, který se odehraje na stadionu Estadio Abanca-Riazor, slibuje zajímavé souboje. Domácí Deportivo A Coruña se nachází v mírně slabší formě, s posledními výsledky, které zahrnují dvě remízy a tři prohry. Naopak Real Betis se prezentuje silnějším výkonem, když vyhrál čtyři ze svých posledních šesti zápasů. Tato forma může hrát klíčovou roli v průběhu zápasu.\n\nHistorie vzájemných zápasů ukazuje, že Real Betis má v posledních letech navrch, přičemž vyhrál tři z posledních pěti utkání. I když Deportivo A Coruña dokázalo v minulosti s Betisem remizovat, jejich poslední vzájemné zápasy naznačují, že hosté budou favority. Vzhledem k současné formě a předchozím výsledkům se očekává, že Betis bude mít větší kontrolu nad hrou.\n\nPodle simulací očekávání naznačují, že Deportivo A Coruña má mírně vyšší očekávané góly (xG) než Real Betis, což může naznačovat, že domácí tým bude mít šance na skórování. Přestože je pravděpodobné, že zápas skončí remízou, varianta výhry pro Betis se jeví jako reálná. Očekává se také, že obě strany by mohly skórovat, což by odpovídalo trendům posledních zápasů.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:32Z"
+  }
 }

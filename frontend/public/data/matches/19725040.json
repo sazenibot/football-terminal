@@ -2375,39 +2375,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 1.36,
-      "away": 0.75
+      "home": 1.47,
+      "away": 1.16
     },
-    "home_win_pct": 51.8,
-    "draw_pct": 27.4,
-    "away_win_pct": 20.8,
-    "btts_pct": 39.7,
-    "over25_pct": 36.1,
-    "under25_pct": 63.9,
+    "home_win_pct": 43.2,
+    "draw_pct": 26.8,
+    "away_win_pct": 30.0,
+    "btts_pct": 53.2,
+    "over25_pct": 49.1,
+    "under25_pct": 50.9,
     "top_scorelines": [
       {
-        "score": "1-0",
-        "pct": 16.7
-      },
-      {
         "score": "1-1",
-        "pct": 12.2
+        "pct": 12.3
       },
       {
-        "score": "0-0",
-        "pct": 11.8
-      },
-      {
-        "score": "2-0",
-        "pct": 10.7
-      },
-      {
-        "score": "0-1",
-        "pct": 9.3
+        "score": "1-0",
+        "pct": 10.3
       },
       {
         "score": "2-1",
-        "pct": 9.0
+        "pct": 9.2
+      },
+      {
+        "score": "0-1",
+        "pct": 8.2
+      },
+      {
+        "score": "2-0",
+        "pct": 7.9
+      },
+      {
+        "score": "0-0",
+        "pct": 7.4
       }
     ]
   },
@@ -7182,5 +7182,10 @@
   "league_name": "Chance Liga",
   "build_mode": "refresh",
   "built_at": "2026-09-19T23:44:50.690267Z",
-  "refreshed_at": "2026-09-20T00:34:10.825081Z"
+  "refreshed_at": "2026-09-20T00:34:10.825081Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Hradcem Králové a Teplicemi v rámci Chance Ligy slibuje vyrovnanou konfrontaci. Domácí Hradec Králové se nachází v solidní formě, když z posledních šesti zápasů vybojoval čtyři vítězství a dvě prohry. Na druhé straně Teplice, které mají také dobré výsledky, zaznamenaly čtyři výhry, jednu remízu a jednu prohru. Historie vzájemných zápasů ukazuje na těsnou konkurenci, přičemž poslední utkání skončilo vítězstvím Hradce 1:0.\n\nAnalýza očekávaných gólů (xG) naznačuje, že Hradec Králové má mírnou výhodu s hodnotou 1.47 oproti Teplicím s 1.16. Tato statistika ukazuje, že domácí tým by mohl mít více příležitostí ke skórování, což se může projevit v celkovém výsledku. Nicméně, s přihlédnutím k formě obou týmů a jejich schopnosti bránit, je pravděpodobné, že zápas bude vyrovnaný.\n\nPodle simulací je pravděpodobnost vítězství Hradce Králové 43.2 %, remíza 26.8 % a vítězství Teplic 30 %. Také existuje 53.2 % šance, že oba týmy skórují, což naznačuje, že zápas by mohl být dynamický s několika šancemi na obou stranách. S ohledem na vše uvedené se očekává, že zápas bude napínavý a plný emocí, s možností těsného výsledku.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:10:59Z"
+  }
 }

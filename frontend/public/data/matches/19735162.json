@@ -1698,39 +1698,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 0.3,
-      "away": 1.39
+      "home": 1.46,
+      "away": 1.37
     },
-    "home_win_pct": 7.6,
-    "draw_pct": 26.8,
-    "away_win_pct": 65.6,
-    "btts_pct": 18.9,
-    "over25_pct": 23.3,
-    "under25_pct": 76.7,
+    "home_win_pct": 40.6,
+    "draw_pct": 26.6,
+    "away_win_pct": 32.9,
+    "btts_pct": 57.2,
+    "over25_pct": 53.4,
+    "under25_pct": 46.6,
     "top_scorelines": [
       {
-        "score": "0-1",
-        "pct": 25.9
-      },
-      {
-        "score": "0-2",
-        "pct": 18.6
-      },
-      {
-        "score": "0-0",
-        "pct": 18.4
-      },
-      {
-        "score": "0-3",
-        "pct": 8.1
-      },
-      {
         "score": "1-1",
-        "pct": 7.6
+        "pct": 12.1
+      },
+      {
+        "score": "2-1",
+        "pct": 8.7
       },
       {
         "score": "1-0",
-        "pct": 5.4
+        "pct": 8.6
+      },
+      {
+        "score": "0-1",
+        "pct": 8.2
+      },
+      {
+        "score": "1-2",
+        "pct": 7.7
+      },
+      {
+        "score": "2-2",
+        "pct": 6.2
       }
     ]
   },
@@ -5048,5 +5048,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:35:20.349564Z"
+  "refreshed_at": "2026-09-20T00:35:20.349564Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Paderbornem a TSG Hoffenheimem se odehraje na domácím stadionu Paderbornu, což může hrát klíčovou roli v průběhu utkání. Domácí tým se nachází v mírně slabší formě, když z posledních tří zápasů zaznamenal dvě prohry a jednu remízu. Naopak Hoffenheim má za sebou dvě výhry a jednu remízu, což naznačuje, že hosté vstoupí do zápasu s větším sebevědomím.\n\nHistorie vzájemných zápasů ukazuje, že Hoffenheim má navrch, přičemž poslední čtyři střetnutí skončila jednou remízou a třemi výhrami pro Hoffenheim. Nicméně, Paderborn se může opřít o domácí prostředí, které často přináší nečekané výsledky. Očekává se vyrovnaný zápas, přičemž simulace ukazují na mírnou převahu domácích v očekávaných gólech (xG), což naznačuje, že i Paderborn může být nebezpečný.\n\nAnalýza pravděpodobnosti naznačuje, že šance na remízu je 26,6 %, což je poměrně vysoké, a zároveň existuje 57,2 % pravděpodobnost, že oba týmy skórují. To naznačuje, že zápas by mohl být vyrovnaný a dramatický, s možností, že se oba týmy prosadí v ofenzivě. Celkově se dá očekávat napínavý duel, ve kterém bude klíčová efektivita v zakončení a schopnost využít šancí.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:38Z"
+  }
 }

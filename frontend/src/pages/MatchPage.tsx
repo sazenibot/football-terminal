@@ -9,7 +9,8 @@ import { RadarComparison } from "../components/RadarComparison";
 import { TrendsTeamSection, TrendsH2HSection } from "../components/Trends";
 import { Simulation } from "../components/Simulation";
 import { PlayersCompare } from "../components/PlayersCompare";
-import { RefereeSection, SidelinedSection } from "../components/RefereeAndAbsences";
+import { RefereeSection } from "../components/RefereeAndAbsences";
+import { AiAnalysisSection } from "../components/AiAnalysis";
 
 export function MatchPage() {
   const { fixtureId } = useParams();
@@ -69,10 +70,20 @@ export function MatchPage() {
           {m.league_name ? `${m.league_name} · ` : ""}
           {formatDateTimeLong(m.starting_at)} · {m.venue}
         </div>
-        <div className="flex items-center justify-center gap-6 text-xl font-bold text-white light:text-slate-900">
-          <span>{m.home.name}</span>
-          <span className="text-slate-500 text-base font-normal">vs</span>
-          <span>{m.away.name}</span>
+        <div className="flex items-center justify-center gap-5 text-xl font-bold text-white light:text-slate-900">
+          <span className="flex items-center gap-2.5 min-w-0">
+            {m.home.image && (
+              <img src={m.home.image} alt="" className="h-10 w-10 object-contain shrink-0" />
+            )}
+            <span className="truncate">{m.home.name}</span>
+          </span>
+          <span className="text-slate-500 text-base font-normal shrink-0">vs</span>
+          <span className="flex items-center gap-2.5 min-w-0">
+            {m.away.image && (
+              <img src={m.away.image} alt="" className="h-10 w-10 object-contain shrink-0" />
+            )}
+            <span className="truncate">{m.away.name}</span>
+          </span>
         </div>
       </header>
 
@@ -95,7 +106,7 @@ export function MatchPage() {
         playersAway={m.players.away ?? []}
       />
       <RefereeSection referee={m.referee} home={m.home} away={m.away} />
-      <SidelinedSection home={m.home} away={m.away} sidelined={m.sidelined} />
+      <AiAnalysisSection analysis={m.ai_analysis} />
 
       <footer className="text-xs text-slate-600 text-center py-6">
         Data: SportMonks

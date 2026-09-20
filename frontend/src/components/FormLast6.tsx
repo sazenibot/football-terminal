@@ -22,7 +22,7 @@ function VenueTag({ isHome }: { isHome: boolean }) {
   );
 }
 
-function TeamForm({ team, form, side }: { team: TeamBrief; form: FormSide; side: "left" | "right" }) {
+function TeamForm({ team, form }: { team: TeamBrief; form: FormSide }) {
   const [filter, setFilter] = useState<"all" | "home" | "away">("all");
 
   const source =
@@ -37,7 +37,10 @@ function TeamForm({ team, form, side }: { team: TeamBrief; form: FormSide; side:
   return (
     <div className="flex-1">
       <div className="flex items-center justify-between mb-2">
-        <h3 className="font-medium text-white light:text-slate-900">{team.name}</h3>
+        <h3 className="font-medium text-white light:text-slate-900 flex items-center gap-2">
+          {team.image && <img src={team.image} alt="" className="h-6 w-6 object-contain" />}
+          {team.name}
+        </h3>
         <div className="flex gap-1">
           <Pill active={filter === "all"} onClick={() => setFilter("all")}>
             Vše
@@ -55,57 +58,21 @@ function TeamForm({ team, form, side }: { team: TeamBrief; form: FormSide; side:
       </div>
       {source.length === 0 && <span className="text-slate-500 light:text-slate-400 text-sm">Nedostatek dat</span>}
       <div className="space-y-1">
-        {source.map((m) => {
-          const badge = <ResultBadge result={resultOf(m)} />;
-          const venueTag = <VenueTag isHome={m.is_home} />;
-          const info = (
-            <span className={`flex items-center gap-1.5 truncate text-xs text-slate-400 light:text-slate-500 ${side === "right" ? "justify-end text-right" : ""}`}>
-              {side === "right" ? (
-                <>
-                  {!m.is_league_match && (
-                    <span className="badge bg-purple-500/20 text-purple-300 light:bg-purple-100 light:text-purple-700 text-[10px] px-1.5 py-0 shrink-0">
-                      {m.league_name ?? "pohár"}
-                    </span>
-                  )}
-                  <span className="truncate">vs {m.opponent}</span>
-                  {venueTag}
-                </>
-              ) : (
-                <>
-                  {venueTag}
-                  <span className="truncate">vs {m.opponent}</span>
-                  {!m.is_league_match && (
-                    <span className="badge bg-purple-500/20 text-purple-300 light:bg-purple-100 light:text-purple-700 text-[10px] px-1.5 py-0 shrink-0">
-                      {m.league_name ?? "pohár"}
-                    </span>
-                  )}
-                </>
-              )}
-            </span>
-          );
-          const score = (
-            <span className="font-mono text-xs text-slate-300 light:text-slate-700 shrink-0 w-10 text-center">
+        {source.map((m) => (
+          <div key={m.fixture_id} className="flex items-center gap-2">
+            <ResultBadge result={resultOf(m)} />
+            <VenueTag isHome={m.is_home} />
+            <span className="font-mono text-xs text-slate-300 light:text-slate-700 shrink-0 w-10">
               {m.gf}:{m.ga}
             </span>
-          );
-          return (
-            <div key={m.fixture_id} className="flex items-center gap-2">
-              {side === "left" ? (
-                <>
-                  {badge}
-                  {info}
-                  {score}
-                </>
-              ) : (
-                <>
-                  {score}
-                  {info}
-                  {badge}
-                </>
-              )}
-            </div>
-          );
-        })}
+            <span className="truncate text-xs text-slate-400 light:text-slate-500">vs {m.opponent}</span>
+            {!m.is_league_match && (
+              <span className="badge bg-purple-500/20 text-purple-300 light:bg-purple-100 light:text-purple-700 text-[10px] px-1.5 py-0 shrink-0">
+                {m.league_name ?? "pohár"}
+              </span>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );
@@ -125,11 +92,11 @@ export function FormLast6({
   return (
     <Section
       title="3. Forma — posledních 6 zápasů z aktuální sezóny"
-      note="Počítáno jen ze zápasů od začátku aktuální sezóny — pokud jich tým dosud odehrál méně než 6, zobrazí se jen dostupný počet. Fialový štítek = zápas mimo ligu (pohár apod.). Barevný odznak V/R/P je vždy nejblíž okraji stránky (vlevo u domácího týmu, vpravo u hostů)."
+      note="Počítáno jen ze zápasů od začátku aktuální sezóny — pokud jich tým dosud odehrál méně než 6, zobrazí se jen dostupný počet. Fialový štítek = zápas mimo ligu (pohár apod.). Řádek je vždy: výsledek → doma/venku → skóre → soupeř."
     >
       <div className="flex gap-8 flex-wrap">
-        <TeamForm team={home} form={formHome} side="left" />
-        <TeamForm team={away} form={formAway} side="right" />
+        <TeamForm team={home} form={formHome} />
+        <TeamForm team={away} form={formAway} />
       </div>
     </Section>
   );

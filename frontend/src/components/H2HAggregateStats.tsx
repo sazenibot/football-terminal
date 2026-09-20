@@ -168,28 +168,48 @@ export function H2HAggregateStats({
       {filtered.length === 0 ? (
         <p className="text-slate-500 light:text-slate-400 text-sm">Žádná data pro tento filtr.</p>
       ) : view === "table" ? (
-        <table className="w-full text-sm">
-          <thead>
-            <tr className="text-slate-400 light:text-slate-500 text-left border-b border-slate-800 light:border-slate-200">
-              <th className="py-1">Statistika (průměr/zápas)</th>
-              <th className="py-1 text-right">{home.name}</th>
-              <th className="py-1 text-right">{away.name}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {ROWS.map((row) => {
-              const homeAvg = avg(filtered.map((m) => m.team_home_stats[row.key]));
-              const awayAvg = avg(filtered.map((m) => m.team_away_stats[row.key]));
-              return (
-                <tr key={row.key} className="border-b border-slate-900 light:border-slate-100">
-                  <td className="py-1.5 text-slate-300 light:text-slate-700">{row.label}</td>
-                  <td className="py-1.5 text-right font-mono light:text-slate-800">{homeAvg ?? "—"}</td>
-                  <td className="py-1.5 text-right font-mono light:text-slate-800">{awayAvg ?? "—"}</td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+        <div className="space-y-3">
+          <div className="grid grid-cols-[4.5rem_1fr_4.5rem] items-center text-[11px] uppercase tracking-wide text-slate-500 light:text-slate-400 px-1">
+            <span className="text-left truncate">{home.name}</span>
+            <span className="text-center">průměr / zápas</span>
+            <span className="text-right truncate">{away.name}</span>
+          </div>
+          {ROWS.map((row) => {
+            const homeAvg = avg(filtered.map((m) => m.team_home_stats[row.key]));
+            const awayAvg = avg(filtered.map((m) => m.team_away_stats[row.key]));
+            const h = homeAvg ?? 0;
+            const a = awayAvg ?? 0;
+            const sum = h + a;
+            const homeShare = sum > 0 ? (h / sum) * 100 : 50;
+            const homeLeads = homeAvg != null && awayAvg != null && h > a;
+            const awayLeads = homeAvg != null && awayAvg != null && a > h;
+            return (
+              <div key={row.key} className="grid grid-cols-[4.5rem_1fr_4.5rem] items-center gap-2">
+                <div
+                  className={`font-mono text-sm text-right ${
+                    homeLeads ? "text-emerald-400 font-semibold" : "text-slate-200 light:text-slate-800"
+                  }`}
+                >
+                  {homeAvg ?? "—"}
+                </div>
+                <div>
+                  <div className="text-center text-xs text-slate-400 light:text-slate-500 mb-1">{row.label}</div>
+                  <div className="h-1.5 rounded-full bg-slate-800 light:bg-slate-200 overflow-hidden flex">
+                    <div className="h-full bg-emerald-500" style={{ width: `${homeShare}%` }} />
+                    <div className="h-full bg-amber-400" style={{ width: `${100 - homeShare}%` }} />
+                  </div>
+                </div>
+                <div
+                  className={`font-mono text-sm text-left ${
+                    awayLeads ? "text-amber-400 font-semibold" : "text-slate-200 light:text-slate-800"
+                  }`}
+                >
+                  {awayAvg ?? "—"}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       ) : (
         <div className="h-80">
           <ResponsiveContainer width="100%" height="100%">

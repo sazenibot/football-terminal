@@ -1909,39 +1909,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 3.2,
-      "away": 1.11
+      "home": 2.1,
+      "away": 1.03
     },
-    "home_win_pct": 78.0,
-    "draw_pct": 12.7,
-    "away_win_pct": 9.4,
-    "btts_pct": 64.3,
-    "over25_pct": 80.2,
-    "under25_pct": 19.8,
+    "home_win_pct": 53.0,
+    "draw_pct": 23.8,
+    "away_win_pct": 23.2,
+    "btts_pct": 57.0,
+    "over25_pct": 60.9,
+    "under25_pct": 39.1,
     "top_scorelines": [
       {
-        "score": "5-1",
-        "pct": 8.3
+        "score": "2-1",
+        "pct": 10.1
       },
       {
-        "score": "2-1",
-        "pct": 7.8
+        "score": "2-0",
+        "pct": 9.5
+      },
+      {
+        "score": "1-0",
+        "pct": 9.3
+      },
+      {
+        "score": "1-1",
+        "pct": 9.1
       },
       {
         "score": "3-1",
-        "pct": 7.7
-      },
-      {
-        "score": "3-0",
-        "pct": 7.5
-      },
-      {
-        "score": "5-0",
         "pct": 7.0
       },
       {
-        "score": "4-1",
-        "pct": 6.8
+        "score": "3-0",
+        "pct": 6.5
       }
     ]
   },
@@ -6678,5 +6678,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:34:55.880851Z"
+  "refreshed_at": "2026-09-20T00:34:55.880851Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Leeds United a Crystal Palace se odehraje na stadionu Elland Road a bude mít zajímavý náboj, zejména vzhledem k formě obou týmů. Leeds United se v posledních čtyřech zápasech prezentoval smíšenými výsledky, přičemž zaznamenal dvě výhry a dvě remízy. Crystal Palace naopak zažívá těžší období, kdy v posledních čtyřech utkáních třikrát prohrál a jednou vyhrál, což naznačuje, že se jim nedaří najít stabilitu.\n\nHistorie vzájemných zápasů ukazuje, že se jedná o vyrovnané souboje, přičemž poslední zápas skončil remízou 0:0, zatímco Leeds v prosinci 2025 dokázal porazit Crystal Palace 4:1. Vzhledem k aktuální formě a statistickým simulacím, které ukazují na očekávané xG (expected goals) 2.1 pro Leeds a 1.03 pro Crystal Palace, se zdá, že domácí tým má mírnou výhodu a je pravděpodobné, že se pokusí dominovat v útočné hře.\n\nOčekává se, že zápas bude vyrovnaný, ale Leeds United by mohl mít navrch, zejména pokud se jim podaří využít domácí prostředí. S pravděpodobností 57 % na obě strany skórující (BTTS) a 60.9 % na více než 2.5 góly, by fanoušci mohli být svědky ofenzivního fotbalu. Celkově lze očekávat, že zápas nabídne zajímavou podívanou s potenciálem pro více než jedno vstřelené branky.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:10:39Z"
+  }
 }

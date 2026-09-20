@@ -14,7 +14,7 @@ export function Simulation({
     <Section
       title="7. Simulace 10 000 zápasů"
       subtitle={`n = ${sim.n.toLocaleString("cs-CZ")}`}
-      note="Poisson/Dixon-Coles model (naše vlastní implementace, zatím nebacktestovaný — čísla jsou první odhad, ne kalibrovaná predikce)."
+      note="Model bere sezónní góly, stáhne je k ligovému průměru (malý vzorek nesmí udělat 70% favorita) a 1X2 ještě přimíchá k typickému ligovému rozložení. Pořád odhad, ne kalibrovaná predikce."
     >
       <div className="grid grid-cols-3 gap-3 mb-6 text-center">
         <div className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-3">

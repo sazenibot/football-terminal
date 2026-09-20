@@ -1982,39 +1982,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 3.2,
-      "away": 0.62
+      "home": 1.77,
+      "away": 1.81
     },
-    "home_win_pct": 86.9,
-    "draw_pct": 9.1,
-    "away_win_pct": 4.0,
-    "btts_pct": 44.3,
-    "over25_pct": 73.3,
-    "under25_pct": 26.7,
+    "home_win_pct": 39.7,
+    "draw_pct": 24.7,
+    "away_win_pct": 35.6,
+    "btts_pct": 68.9,
+    "over25_pct": 69.2,
+    "under25_pct": 30.8,
     "top_scorelines": [
       {
-        "score": "3-0",
-        "pct": 11.9
+        "score": "1-1",
+        "pct": 8.7
       },
       {
-        "score": "5-0",
-        "pct": 11.7
+        "score": "1-2",
+        "pct": 8.0
       },
       {
-        "score": "2-0",
-        "pct": 11.3
+        "score": "2-1",
+        "pct": 7.8
       },
       {
-        "score": "4-0",
-        "pct": 9.7
+        "score": "2-2",
+        "pct": 7.2
       },
       {
-        "score": "3-1",
-        "pct": 7.4
+        "score": "0-1",
+        "pct": 5.0
       },
       {
-        "score": "5-1",
-        "pct": 7.3
+        "score": "1-0",
+        "pct": 5.0
       }
     ]
   },
@@ -6949,5 +6949,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:35:11.196121Z"
+  "refreshed_at": "2026-09-20T00:35:11.196121Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Bayerem 04 Leverkusen a RB Leipzig slibuje být vyrovnaným a atraktivním střetnutím. Domácí Leverkusen se nachází v mírně slabší formě, když z posledních tří zápasů zaznamenal jednu výhru, jednu remízu a jednu prohru. Na druhé straně Leipzig vykazuje lepší výkonnost, když vyhrál dva z posledních tří zápasů a pouze jednou remizoval. Historie vzájemných zápasů naznačuje, že Leverkusen má navrch, když v posledních pěti duelech vyhrál čtyřikrát, což může psychologicky hrát roli.\n\nAnalýza očekávaných gólů (xG) ukazuje na vyrovnaný duel, kdy Leverkusen má hodnotu 1.77 a Leipzig 1.81. To naznačuje, že oba týmy by měly mít šance na vstřelení gólů, a proto je pravděpodobné, že zápas skončí s minimálně jedním gólem na obou stranách. Sázkové simulace ukazují, že pravděpodobnost, že oba týmy skórují, je vysoká (68.9 %), což potvrzuje očekávání vyrovnaného a ofenzivně laděného zápasu.\n\nZ hlediska taktiky se dá očekávat, že Leverkusen se pokusí využít domácího prostředí a aktivně útočit, zatímco Leipzig bude spoléhat na rychlé protiútoky a efektivitu v zakončení. Rozhodčí Robert Schröder by měl mít klíčovou roli v udržení disciplíny na hřišti, což může ovlivnit tempo a styl hry. Celkově lze očekávat napínavý zápas s mnoha šancemi na obou stranách.",
+    "model": "gpt-4o-mini",
+    "generated_at": "2026-09-20T01:11:45Z"
+  }
 }

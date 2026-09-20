@@ -121,6 +121,13 @@ export interface TrendItem {
   hits: number;
   total: number;
   pct: number;
+  odds?: number | null;
+}
+
+export interface AiAnalysis {
+  text: string;
+  model?: string;
+  generated_at?: string;
 }
 
 export interface SimulationResult {
@@ -254,6 +261,7 @@ export interface MatchData {
   };
   simulation: SimulationResult;
   players: { home: PlayerBrief[]; away: PlayerBrief[] };
+  ai_analysis?: AiAnalysis | null;
 }
 
 export interface AppData {
