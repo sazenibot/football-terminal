@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-09-20T00:21:15Z",
+  "league": {
+    "id": 564,
+    "name": "La Liga",
+    "short": "ESP",
+    "country": "Španělsko",
+    "enabled": true,
+    "logo": "https://cdn.sportmonks.com/images/soccer/leagues/20/564.png"
+  },
+  "round": [
+    {
+      "fixture_id": 19732677,
+      "starting_at": "2026-09-20T12:00:00Z",
+      "venue": "Coliseum Alfonso Pérez",
+      "home": {
+        "id": 106,
+        "name": "Getafe",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png"
+      },
+      "away": {
+        "id": 126,
+        "name": "Málaga",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732681,
+      "starting_at": "2026-09-20T14:15:00Z",
+      "venue": "Riyadh Air Metropolitano",
+      "home": {
+        "id": 7980,
+        "name": "Atlético de Madrid",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png"
+      },
+      "away": {
+        "id": 3468,
+        "name": "Real Madrid",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732673,
+      "starting_at": "2026-09-20T16:30:00Z",
+      "venue": "Estadio de la Cerámica",
+      "home": {
+        "id": 3477,
+        "name": "Villarreal",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png"
+      },
+      "away": {
+        "id": 3457,
+        "name": "Levante",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732679,
+      "starting_at": "2026-09-20T16:30:00Z",
+      "venue": "Estadio Abanca-Riazor",
+      "home": {
+        "id": 429,
+        "name": "Deportivo A Coruña",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png"
+      },
+      "away": {
+        "id": 485,
+        "name": "Real Betis",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732674,
+      "starting_at": "2026-09-20T19:00:00Z",
+      "venue": "Estadio de Mestalla",
+      "home": {
+        "id": 214,
+        "name": "Valencia",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png"
+      },
+      "away": {
+        "id": 594,
+        "name": "Real Sociedad",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png"
+      },
+      "has_full_data": true
+    }
+  ],
+  "stats": {
+    "created": 5,
+    "refreshed": 0,
+    "errors": 0
+  }
+}

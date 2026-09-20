@@ -1,8 +1,11 @@
 __pycache__/
 *.pyc
+.DS_Store
 scripts/api_probe_out/
 scripts/sportmonks_probe_out/
+scripts/.cache/
 .env
 .env.*
 node_modules/
 frontend/dist/
+/package-lock.json

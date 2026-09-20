@@ -1,0 +1,308 @@
+{
+  "generated_at": "2026-09-20T00:21:15Z",
+  "default_league_id": 262,
+  "stale_after_hours": 26,
+  "window_days": 7,
+  "leagues": [
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "short": "CZ1",
+      "country": "Česko",
+      "enabled": true,
+      "logo": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png",
+      "match_count": 4,
+      "round_count": 4
+    },
+    {
+      "id": 265,
+      "name": "Chance Národní Liga",
+      "short": "CZ2",
+      "country": "Česko",
+      "enabled": true,
+      "logo": "https://cdn.sportmonks.com/images/soccer/leagues/9/265.png",
+      "match_count": 4,
+      "round_count": 4
+    },
+    {
+      "id": 8,
+      "name": "Premier League",
+      "short": "EPL",
+      "country": "Anglie",
+      "enabled": true,
+      "logo": "https://cdn.sportmonks.com/images/soccer/leagues/8/8.png",
+      "match_count": 4,
+      "round_count": 4
+    },
+    {
+      "id": 82,
+      "name": "Bundesliga",
+      "short": "GER",
+      "country": "Německo",
+      "enabled": true,
+      "logo": "https://cdn.sportmonks.com/images/soccer/leagues/18/82.png",
+      "match_count": 3,
+      "round_count": 3
+    },
+    {
+      "id": 564,
+      "name": "La Liga",
+      "short": "ESP",
+      "country": "Španělsko",
+      "enabled": true,
+      "logo": "https://cdn.sportmonks.com/images/soccer/leagues/20/564.png",
+      "match_count": 5,
+      "round_count": 5
+    },
+    {
+      "id": 268,
+      "name": "MOL Cup",
+      "short": "CZC",
+      "country": "Česko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 9,
+      "name": "Championship",
+      "short": "ECH",
+      "country": "Anglie",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 567,
+      "name": "La Liga 2",
+      "short": "ES2",
+      "country": "Španělsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 85,
+      "name": "2. Bundesliga",
+      "short": "GE2",
+      "country": "Německo",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 384,
+      "name": "Serie A",
+      "short": "ITA",
+      "country": "Itálie",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 387,
+      "name": "Serie B",
+      "short": "IT2",
+      "country": "Itálie",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 301,
+      "name": "Ligue 1",
+      "short": "FRA",
+      "country": "Francie",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 304,
+      "name": "Ligue 2",
+      "short": "FR2",
+      "country": "Francie",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 72,
+      "name": "Eredivisie",
+      "short": "NED",
+      "country": "Nizozemsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 612,
+      "name": "Primeira Liga",
+      "short": "POR",
+      "country": "Portugalsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 208,
+      "name": "Pro League",
+      "short": "BEL",
+      "country": "Belgie",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 501,
+      "name": "Premiership",
+      "short": "SCO",
+      "country": "Skotsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 2,
+      "name": "Champions League",
+      "short": "UCL",
+      "country": "Evropa",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 5,
+      "name": "Europa League",
+      "short": "UEL",
+      "country": "Evropa",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 2286,
+      "name": "Conference League",
+      "short": "UECL",
+      "country": "Evropa",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 181,
+      "name": "Bundesliga",
+      "short": "AUT",
+      "country": "Rakousko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 591,
+      "name": "Super League",
+      "short": "SUI",
+      "country": "Švýcarsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 271,
+      "name": "Superliga",
+      "short": "DEN",
+      "country": "Dánsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 453,
+      "name": "Ekstraklasa",
+      "short": "POL",
+      "country": "Polsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 543,
+      "name": "Niké Liga",
+      "short": "SVK",
+      "country": "Slovensko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 244,
+      "name": "HNL",
+      "short": "CRO",
+      "country": "Chorvatsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 573,
+      "name": "Allsvenskan",
+      "short": "SWE",
+      "country": "Švédsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 444,
+      "name": "Eliteserien",
+      "short": "NOR",
+      "country": "Norsko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 325,
+      "name": "Super League",
+      "short": "GRE",
+      "country": "Řecko",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    },
+    {
+      "id": 24,
+      "name": "FA Cup",
+      "short": "FAC",
+      "country": "Anglie",
+      "enabled": false,
+      "logo": null,
+      "match_count": 0,
+      "round_count": 0
+    }
+  ]
+}

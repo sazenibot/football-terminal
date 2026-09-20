@@ -74,6 +74,9 @@
       "has_full_data": true
     }
   ],
-  "matches": [],
-  "relocated_to": "/data/leagues/ a /data/matches/"
+  "stats": {
+    "created": 0,
+    "refreshed": 4,
+    "errors": 0
+  }
 }

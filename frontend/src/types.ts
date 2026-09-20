@@ -4,12 +4,38 @@ export interface TeamBrief {
   image?: string | null;
 }
 
+export interface LeagueMeta {
+  id: number;
+  name: string;
+  short?: string | null;
+  country?: string | null;
+  enabled: boolean;
+  logo?: string | null;
+  match_count?: number;
+  round_count?: number;
+}
+
+export interface DataIndex {
+  generated_at: string;
+  default_league_id: number;
+  stale_after_hours: number;
+  window_days: number;
+  leagues: LeagueMeta[];
+}
+
 export interface RoundFixture {
   fixture_id: number;
   starting_at: string;
   venue: string | null;
   home: TeamBrief;
   away: TeamBrief;
+  has_full_data?: boolean;
+}
+
+export interface LeagueRoundData {
+  generated_at: string;
+  league: LeagueMeta;
+  round: RoundFixture[];
 }
 
 export interface TeamMatchStats {
@@ -200,6 +226,11 @@ export interface RefereeInfo {
 
 export interface MatchData {
   fixture_id: number;
+  league_id?: number;
+  league_name?: string;
+  built_at?: string;
+  refreshed_at?: string;
+  build_mode?: "full" | "refresh";
   starting_at: string;
   venue: string | null;
   home: TeamBrief;

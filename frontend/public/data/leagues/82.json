@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-09-20T00:16:45Z",
+  "league": {
+    "id": 82,
+    "name": "Bundesliga",
+    "short": "GER",
+    "country": "Německo",
+    "enabled": true,
+    "logo": "https://cdn.sportmonks.com/images/soccer/leagues/18/82.png"
+  },
+  "round": [
+    {
+      "fixture_id": 19735168,
+      "starting_at": "2026-09-20T13:30:00Z",
+      "venue": "BayArena",
+      "home": {
+        "id": 3321,
+        "name": "Bayer 04 Leverkusen",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png"
+      },
+      "away": {
+        "id": 277,
+        "name": "RB Leipzig",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19735163,
+      "starting_at": "2026-09-20T15:30:00Z",
+      "venue": "Veltins-Arena",
+      "home": {
+        "id": 67,
+        "name": "Schalke 04",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png"
+      },
+      "away": {
+        "id": 3588,
+        "name": "Elversberg",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19735162,
+      "starting_at": "2026-09-20T17:30:00Z",
+      "venue": "Home Deluxe Arena",
+      "home": {
+        "id": 2642,
+        "name": "Paderborn",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png"
+      },
+      "away": {
+        "id": 2726,
+        "name": "TSG Hoffenheim",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png"
+      },
+      "has_full_data": true
+    }
+  ],
+  "stats": {
+    "created": 3,
+    "refreshed": 0,
+    "errors": 0
+  }
+}

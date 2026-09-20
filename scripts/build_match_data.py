@@ -9,8 +9,10 @@ Použití:
     python3 scripts/build_match_data.py [fixture_id]
 """
 
+import hashlib
 import json
 import math
+import os
 import re
 import ssl
 import sys
@@ -102,45 +104,100 @@ CATEGORY_CS = {
 }
 
 
+CACHE_DIR = ROOT / "scripts" / ".cache" / "api"
+DEFAULT_CACHE_TTL = 20 * 3600  # denní job: historická data se znovu netahejí
+
+
 def load_token() -> str:
-    for line in (ROOT / ".env").read_text().splitlines():
-        m = re.match(r"^SPORTMONKS_API_TOKEN=(.+)$", line.strip())
-        if m:
-            return m.group(1).strip()
-    raise SystemExit("Chybí SPORTMONKS_API_TOKEN v .env")
+    env = os.environ.get("SPORTMONKS_API_TOKEN", "").strip()
+    if env:
+        return env
+    env_path = ROOT / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            m = re.match(r"^SPORTMONKS_API_TOKEN=(.+)$", line.strip())
+            if m:
+                return m.group(1).strip()
+    raise SystemExit("Chybí SPORTMONKS_API_TOKEN (env nebo .env)")
 
 
-TOKEN = load_token()
+TOKEN: str | None = None
 _last_call = 0.0
 _call_count = 0
+_cache_hits = 0
 
 
-def _do_call(base: str, path: str, params: dict) -> dict:
-    global _last_call, _call_count
+def get_token() -> str:
+    global TOKEN
+    if not TOKEN:
+        TOKEN = load_token()
+    return TOKEN
+
+
+def _cache_key(base: str, path: str, params: dict) -> Path:
+    blob = json.dumps({"base": base, "path": path, "params": params}, sort_keys=True, ensure_ascii=False)
+    return CACHE_DIR / f"{hashlib.sha1(blob.encode()).hexdigest()}.json"
+
+
+def _do_call(base: str, path: str, params: dict, cache_ttl: int | None = DEFAULT_CACHE_TTL) -> dict:
+    global _last_call, _call_count, _cache_hits
+    if cache_ttl and cache_ttl > 0:
+        cpath = _cache_key(base, path, params)
+        if cpath.exists():
+            try:
+                cached = json.loads(cpath.read_text())
+                age = time.time() - cached.get("cached_at", 0)
+                if age < cache_ttl and cached.get("body") is not None:
+                    _cache_hits += 1
+                    return cached["body"]
+            except (json.JSONDecodeError, OSError):
+                pass
     wait = 0.3 - (time.time() - _last_call)
     if wait > 0:
         time.sleep(wait)
     query = dict(params)
-    query["api_token"] = TOKEN
+    query["api_token"] = get_token()
     url = f"{base}{path}?{urllib.parse.urlencode(query)}"
     req = urllib.request.Request(url)
-    _call_count += 1
-    try:
-        with urllib.request.urlopen(req, timeout=25, context=SSL_CONTEXT) as resp:
-            _last_call = time.time()
-            return json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        print(f"  ⚠️ HTTP {e.code} on {path}: {body[:150]}", file=sys.stderr)
-        return {"data": None}
+    retries = 0
+    while True:
+        _call_count += 1
+        try:
+            with urllib.request.urlopen(req, timeout=25, context=SSL_CONTEXT) as resp:
+                _last_call = time.time()
+                body = json.loads(resp.read().decode("utf-8"))
+            break
+        except urllib.error.HTTPError as e:
+            err = e.read().decode("utf-8", errors="replace")
+            if e.code == 429 and retries < 6:
+                retry_after = e.headers.get("Retry-After")
+                try:
+                    wait_s = max(15, int(retry_after))
+                except (TypeError, ValueError):
+                    wait_s = min(90, 20 * (retries + 1))
+                print(f"  ⏳ rate limit na {path}, čekám {wait_s}s…", file=sys.stderr)
+                time.sleep(wait_s)
+                retries += 1
+                continue
+            print(f"  ⚠️ HTTP {e.code} on {path}: {err[:150]}", file=sys.stderr)
+            return {"data": None}
+    if cache_ttl and cache_ttl > 0:
+        try:
+            CACHE_DIR.mkdir(parents=True, exist_ok=True)
+            _cache_key(base, path, params).write_text(
+                json.dumps({"cached_at": time.time(), "body": body}, ensure_ascii=False, default=str)
+            )
+        except OSError:
+            pass
+    return body
 
 
-def call(path: str, params: dict) -> dict:
-    return _do_call(BASE_URL, path, params)
+def call(path: str, params: dict, cache_ttl: int | None = DEFAULT_CACHE_TTL) -> dict:
+    return _do_call(BASE_URL, path, params, cache_ttl=cache_ttl)
 
 
-def call_core(path: str, params: dict) -> dict:
-    return _do_call(CORE_URL, path, params)
+def call_core(path: str, params: dict, cache_ttl: int | None = DEFAULT_CACHE_TTL) -> dict:
+    return _do_call(CORE_URL, path, params, cache_ttl=cache_ttl)
 
 
 def to_iso_utc(raw: str | None) -> str | None:
@@ -158,24 +215,47 @@ def to_iso_utc(raw: str | None) -> str | None:
 # Fetch helpers
 # ---------------------------------------------------------------------------
 
-def fetch_round_fixtures(days_ahead: int = 10) -> list:
+def fetch_round_fixtures(league_id: int | None = None, days_ahead: int = 10) -> list:
     start = date.today()
     end = start + timedelta(days=days_ahead)
+    lid = league_id or LEAGUE_ID
     data = call(
         f"/fixtures/between/{start.isoformat()}/{end.isoformat()}",
-        {"filters": f"fixtureLeagues:{LEAGUE_ID}", "include": "participants;venue;round"},
+        {"filters": f"fixtureLeagues:{lid}", "include": "participants;venue;round"},
+        cache_ttl=6 * 3600,
     )
     return data.get("data") or []
 
 
-def fetch_fixture_detail(fixture_id: int) -> dict:
+def fetch_fixture_detail(fixture_id: int, cache_ttl: int | None = DEFAULT_CACHE_TTL) -> dict:
     includes = "participants;venue;referees;sidelined;predictedLineups;round.season;league;scores;state"
-    data = call(f"/fixtures/{fixture_id}", {"include": includes})
+    data = call(f"/fixtures/{fixture_id}", {"include": includes}, cache_ttl=cache_ttl)
     return data.get("data") or {}
+
+
+def call_stats() -> dict:
+    return {"calls": _call_count, "cache_hits": _cache_hits}
+
+
+def predicted_lineups_from_fixture(fixture: dict, home_id: int, away_id: int) -> dict:
+    out: dict[str, list] = {"home": [], "away": []}
+    for pl in fixture.get("predictedlineups", []) or []:
+        side = "home" if pl.get("team_id") == home_id else "away"
+        out[side].append({
+            "player_name": pl.get("player_name"),
+            "jersey_number": pl.get("jersey_number"),
+            "formation_field": pl.get("formation_field"),
+        })
+    return out
 
 
 def fetch_season(season_id: int) -> dict:
     data = call(f"/seasons/{season_id}", {})
+    return data.get("data") or {}
+
+
+def fetch_league(league_id: int) -> dict:
+    data = call(f"/leagues/{league_id}", {}, cache_ttl=7 * 24 * 3600)
     return data.get("data") or {}
 
 
@@ -382,7 +462,7 @@ def main_referee(fixture: dict):
     return None
 
 
-def match_facts(fixture: dict, focal_team_id: int, opp_team_id: int) -> dict:
+def match_facts(fixture: dict, focal_team_id: int, opp_team_id: int, competition_id: int | None = None) -> dict:
     """Vrátí slovník faktů o zápase z pohledu `focal_team_id`."""
     gf = score_for(fixture, focal_team_id) or 0
     ga = score_for(fixture, opp_team_id) or 0
@@ -403,7 +483,7 @@ def match_facts(fixture: dict, focal_team_id: int, opp_team_id: int) -> dict:
         "opponent": opp_name,
         "league_id": league.get("id"),
         "league_name": league.get("name"),
-        "is_league_match": league.get("id") == LEAGUE_ID,
+        "is_league_match": league.get("id") == (competition_id or LEAGUE_ID),
         "gf": gf,
         "ga": ga,
         "ht_gf": ht_gf,
@@ -598,20 +678,22 @@ def team_brief(p: dict) -> dict:
 _LEAGUE_CONTEXT_CACHE: dict = {}
 
 
-def cached_league_context(season_start: date) -> dict | None:
+def cached_league_context(season_start: date, league_id: int | None = None) -> dict | None:
     """Ligové průměry (fauly/karty na zápas) se pro všechny zápasy stejné
     sezóny/soutěže shodují -> nepočítat pořád znovu při buildění více zápasů
     najednou."""
-    key = season_start.isoformat()
+    competition_id = league_id or LEAGUE_ID
+    key = f"{competition_id}:{season_start.isoformat()}"
     if key not in _LEAGUE_CONTEXT_CACHE:
-        league_fixtures = fetch_league_matches(LEAGUE_ID, season_start, date.today())
+        league_fixtures = fetch_league_matches(competition_id, season_start, date.today())
         _LEAGUE_CONTEXT_CACHE[key] = league_average_stats(league_fixtures)
     return _LEAGUE_CONTEXT_CACHE[key]
 
 
-def build_match(fixture_id: int) -> dict:
+def build_match(fixture_id: int, league_id: int | None = None) -> dict:
     """Stáhne a spočítá kompletní analytický balíček dat pro jeden zápas
     (H2H, forma, radar, trendy, simulace, hráči, rozhodčí, absence)."""
+    competition_id = league_id or LEAGUE_ID
     print(f"[2] Detail zápasu {fixture_id}…")
     fixture = fetch_fixture_detail(fixture_id)
     parts = fixture.get("participants", [])
@@ -640,8 +722,8 @@ def build_match(fixture_id: int) -> dict:
         coaches = {c["meta"]["participant_id"]: c.get("name") for c in fx.get("coaches", []) or []}
         opp_of_home = fx_away["id"] if fx_home["id"] == home_id else fx_home["id"]
         opp_of_away = fx_away["id"] if fx_home["id"] == away_id else fx_home["id"]
-        facts_home = match_facts(fx, home_id, opp_of_home)
-        facts_away = match_facts(fx, away_id, opp_of_away)
+        facts_home = match_facts(fx, home_id, opp_of_home, competition_id)
+        facts_away = match_facts(fx, away_id, opp_of_away, competition_id)
         h2h_facts_home.append(facts_home)
         h2h_facts_away.append(facts_away)
 
@@ -695,7 +777,7 @@ def build_match(fixture_id: int) -> dict:
             opp = next((p for p in fx_parts if p["id"] != tid), None)
             if not opp:
                 continue
-            facts_all.append(match_facts(fx, tid, opp["id"]))
+            facts_all.append(match_facts(fx, tid, opp["id"], competition_id))
         return facts_all
 
     team_matches_wide = {}
@@ -912,7 +994,7 @@ def build_match(fixture_id: int) -> dict:
             }
 
         print("    -> ligové průměry (kontext pro sezónní statistiky rozhodčího)…")
-        league_context = cached_league_context(season_start)
+        league_context = cached_league_context(season_start, competition_id)
 
         referee_out = {
             "id": ref_id,
@@ -999,18 +1081,15 @@ def build_match(fixture_id: int) -> dict:
             })
     print(f"    -> {len(sidelined_out)} absencí ({_call_count} API volání celkem)")
 
-    predicted_lineups_out = defaultdict(list)
-    for pl in fixture.get("predictedlineups", []) or []:
-        side = "home" if pl.get("team_id") == home_id else "away"
-        predicted_lineups_out[side].append({
-            "player_name": pl.get("player_name"),
-            "jersey_number": pl.get("jersey_number"),
-            "formation_field": pl.get("formation_field"),
-        })
+    predicted_lineups_out = predicted_lineups_from_fixture(fixture, home_id, away_id)
 
     print(f"    -> hotovo: {home_p['name']} vs {away_p['name']}")
     return {
         "fixture_id": fixture_id,
+        "league_id": competition_id,
+        "league_name": (fixture.get("league") or {}).get("name"),
+        "built_at": datetime.now().isoformat() + "Z",
+        "build_mode": "full",
         "starting_at": to_iso_utc(fixture.get("starting_at")),
         "venue": (fixture.get("venue") or {}).get("name"),
         "home": team_brief(home_p),
@@ -1026,6 +1105,117 @@ def build_match(fixture_id: int) -> dict:
         "simulation": simulation_out,
         "players": players_out,
     }
+
+
+REFRESH_TTL = 2 * 3600  # volatilní pole (rozhodčí, absence, kickoff) bereme čerstvější
+
+
+def _form_recent_fixture_id(existing: dict, side: str) -> int | None:
+    block = (existing.get("form") or {}).get(side) or {}
+    facts = block.get("recent_all") or block.get("matches") or []
+    if facts and facts[0].get("fixture_id"):
+        return facts[0]["fixture_id"]
+    return None
+
+
+def collect_sidelined_lightweight(fixture: dict, home_id: int, away_id: int, existing: dict) -> list:
+    """Absence bez plného rebuildu — jména z uloženého zápasu, „hrál naposledy“ z formy."""
+    player_name_lookup = {}
+    for side in ("home", "away"):
+        for p in (existing.get("players") or {}).get(side, []) or []:
+            player_name_lookup[p["id"]] = p["name"]
+        for s in existing.get("sidelined") or []:
+            if s.get("player_id") and s.get("player_name"):
+                player_name_lookup[s["player_id"]] = s["player_name"]
+
+    recently_playing = set()
+    for side in ("home", "away"):
+        fid = _form_recent_fixture_id(existing, side)
+        if fid:
+            recently_playing.update(fetch_lineup_stats(fid).keys())
+
+    fixture_date = date.fromisoformat((fixture.get("starting_at") or "2100-01-01")[:10])
+    stale_cutoff = fixture_date - timedelta(days=300)
+    sidelined_out = []
+    seen = set()
+    for label, tid in (("home", home_id), ("away", away_id)):
+        data = call(f"/teams/{tid}", {"include": "sidelined"}, cache_ttl=REFRESH_TTL)
+        for s in (data.get("data") or {}).get("sidelined", []) or []:
+            if s.get("completed"):
+                continue
+            pid = s.get("player_id")
+            key = (pid, s.get("type_id"), label)
+            if key in seen:
+                continue
+            seen.add(key)
+            start_date = s.get("start_date")
+            end_date = s.get("end_date")
+            if pid in recently_playing:
+                continue
+            if start_date:
+                try:
+                    is_old = date.fromisoformat(start_date) < stale_cutoff
+                except ValueError:
+                    is_old = False
+                if is_old and not end_date:
+                    continue
+            tname_en = type_name(s.get("type_id"))
+            likely_available = False
+            if end_date:
+                try:
+                    likely_available = date.fromisoformat(end_date) < fixture_date
+                except ValueError:
+                    pass
+            name = player_name_lookup.get(pid) or fetch_player_name(pid)
+            sidelined_out.append({
+                "side": label,
+                "player_id": pid,
+                "player_name": name,
+                "type_id": s.get("type_id"),
+                "type_name": tname_en,
+                "type_name_cs": INJURY_CS.get(tname_en, tname_en),
+                "category": s.get("category"),
+                "category_cs": CATEGORY_CS.get(s.get("category"), s.get("category")),
+                "start_date": start_date,
+                "end_date": end_date,
+                "games_missed": s.get("games_missed"),
+                "likely_available": likely_available,
+            })
+    return sidelined_out
+
+
+def refresh_volatile(existing: dict) -> dict:
+    """Denní delta: kickoff, stadion, rozhodčí, absence, predikované sestavy.
+    Historie (H2H, forma, radar, trendy, simulace, hráči) zůstává z plného buildu.
+    Pokud se změnil rozhodčí, přestaví se celý zápas — jeho profil je drahý a vzácný."""
+    fixture_id = existing["fixture_id"]
+    league_id = existing.get("league_id") or LEAGUE_ID
+    fixture = fetch_fixture_detail(fixture_id, cache_ttl=REFRESH_TTL)
+    if not fixture:
+        print(f"    ⚠️ refresh {fixture_id}: prázdný fixture, nechávám uložená data")
+        return existing
+
+    new_ref = main_referee(fixture)
+    old_ref = (existing.get("referee") or {}).get("id")
+    if new_ref and new_ref != old_ref:
+        print(f"    rozhodčí se změnil ({old_ref} → {new_ref}), plný rebuild")
+        return build_match(fixture_id, league_id)
+
+    parts = fixture.get("participants") or []
+    home_p = next((p for p in parts if (p.get("meta") or {}).get("location") == "home"), None)
+    away_p = next((p for p in parts if (p.get("meta") or {}).get("location") == "away"), None)
+    if not home_p or not away_p:
+        return existing
+
+    existing["starting_at"] = to_iso_utc(fixture.get("starting_at"))
+    existing["venue"] = (fixture.get("venue") or {}).get("name")
+    existing["league_id"] = existing.get("league_id") or (fixture.get("league") or {}).get("id") or league_id
+    existing["league_name"] = existing.get("league_name") or (fixture.get("league") or {}).get("name")
+    existing["predicted_lineups"] = predicted_lineups_from_fixture(fixture, home_p["id"], away_p["id"])
+    existing["sidelined"] = collect_sidelined_lightweight(fixture, home_p["id"], away_p["id"], existing)
+    existing["refreshed_at"] = datetime.now().isoformat() + "Z"
+    existing["build_mode"] = "refresh"
+    return existing
 
 
 def resolve_target_fixture_ids(round_fixtures: list) -> list:

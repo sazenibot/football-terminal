@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-09-20T00:10:43Z",
+  "league": {
+    "id": 265,
+    "name": "Chance Národní Liga",
+    "short": "CZ2",
+    "country": "Česko",
+    "enabled": true,
+    "logo": "https://cdn.sportmonks.com/images/soccer/leagues/9/265.png"
+  },
+  "round": [
+    {
+      "fixture_id": 19732292,
+      "starting_at": "2026-09-20T08:15:00Z",
+      "venue": "eFotbal aréna",
+      "home": {
+        "id": 2364,
+        "name": "Viktoria Žižkov",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png"
+      },
+      "away": {
+        "id": 4134,
+        "name": "Třinec",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/6/4134.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732298,
+      "starting_at": "2026-09-20T11:15:00Z",
+      "venue": "Stadion Františka Kloze",
+      "home": {
+        "id": 3734,
+        "name": "Kladno",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png"
+      },
+      "away": {
+        "id": 428,
+        "name": "Příbram",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732291,
+      "starting_at": "2026-09-20T12:30:00Z",
+      "venue": "Městský stadion - Vítkovice Aréna",
+      "home": {
+        "id": 8477,
+        "name": "Banik Ostrava B",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png"
+      },
+      "away": {
+        "id": 4184,
+        "name": "Ústí nad Labem",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732296,
+      "starting_at": "2026-09-20T14:30:00Z",
+      "venue": "Stadion Kollárova ulice",
+      "home": {
+        "id": 8421,
+        "name": "Vlašim",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png"
+      },
+      "away": {
+        "id": 3887,
+        "name": "Táborsko",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png"
+      },
+      "has_full_data": true
+    }
+  ],
+  "stats": {
+    "created": 3,
+    "refreshed": 1,
+    "errors": 0
+  }
+}
