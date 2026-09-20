@@ -1,0 +1,4 @@
+{
+  "status": 422,
+  "body": "{\"message\":\"Invalid request parameters\",\"errors\":{\"dateRange\":[\"You requested a date range of 400 days. The maximum range is 100 days. Please narrow your range.\"]}}"
+}

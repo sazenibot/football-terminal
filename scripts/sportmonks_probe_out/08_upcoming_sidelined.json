@@ -1,0 +1,1109 @@
+[
+  {
+    "id": 19725041,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408240,
+    "state_id": 5,
+    "venue_id": 17299,
+    "name": "SK Artis Brno vs Slovan Liberec",
+    "starting_at": "2026-09-19 13:00:00",
+    "result_info": "Game ended in draw.",
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": true,
+    "has_premium_odds": true,
+    "starting_at_timestamp": 1789822800,
+    "participants": [
+      {
+        "id": 463,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 57,
+        "gender": "male",
+        "name": "Slovan Liberec",
+        "short_code": "SLO",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
+        "founded": 1921,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "away",
+          "winner": false,
+          "position": 2
+        }
+      },
+      {
+        "id": 22031,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": null,
+        "gender": "male",
+        "name": "SK Artis Brno",
+        "short_code": null,
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+        "founded": 0,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "home",
+          "winner": false,
+          "position": 14
+        }
+      }
+    ],
+    "sidelined": [
+      {
+        "id": 6310991,
+        "fixture_id": 19725041,
+        "sideline_id": 695136,
+        "participant_id": 463,
+        "player_id": 79574,
+        "type_id": 587
+      },
+      {
+        "id": 6310990,
+        "fixture_id": 19725041,
+        "sideline_id": 729696,
+        "participant_id": 463,
+        "player_id": 25954305,
+        "type_id": 536
+      },
+      {
+        "id": 6310992,
+        "fixture_id": 19725041,
+        "sideline_id": 794595,
+        "participant_id": 22031,
+        "player_id": 37625199,
+        "type_id": 2046
+      },
+      {
+        "id": 6310989,
+        "fixture_id": 19725041,
+        "sideline_id": 812715,
+        "participant_id": 463,
+        "player_id": 17168903,
+        "type_id": 1918
+      }
+    ]
+  },
+  {
+    "id": 19725042,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408240,
+    "state_id": 5,
+    "venue_id": 339973,
+    "name": "Mladá Boleslav vs Zbrojovka Brno",
+    "starting_at": "2026-09-19 13:00:00",
+    "result_info": "Mladá Boleslav won after full-time.",
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": true,
+    "has_premium_odds": true,
+    "starting_at_timestamp": 1789822800,
+    "participants": [
+      {
+        "id": 3350,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 1959,
+        "gender": "male",
+        "name": "Zbrojovka Brno",
+        "short_code": null,
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+        "founded": 1913,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "away",
+          "winner": false,
+          "position": 4
+        }
+      },
+      {
+        "id": 187,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 339973,
+        "gender": "male",
+        "name": "Mladá Boleslav",
+        "short_code": "MBO",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+        "founded": 1902,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "home",
+          "winner": true,
+          "position": 5
+        }
+      }
+    ],
+    "sidelined": [
+      {
+        "id": 6311036,
+        "fixture_id": 19725042,
+        "sideline_id": 788340,
+        "participant_id": 187,
+        "player_id": 37657988,
+        "type_id": 587
+      },
+      {
+        "id": 6311035,
+        "fixture_id": 19725042,
+        "sideline_id": 821430,
+        "participant_id": 3350,
+        "player_id": 82060,
+        "type_id": 587
+      },
+      {
+        "id": 6311034,
+        "fixture_id": 19725042,
+        "sideline_id": 821475,
+        "participant_id": 3350,
+        "player_id": 37680263,
+        "type_id": 552
+      }
+    ]
+  },
+  {
+    "id": 19725045,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408240,
+    "state_id": 5,
+    "venue_id": 22604,
+    "name": "Pardubice vs Bohemians 1905",
+    "starting_at": "2026-09-19 13:00:00",
+    "result_info": "Pardubice won after full-time.",
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": true,
+    "has_premium_odds": true,
+    "starting_at_timestamp": 1789822800,
+    "participants": [
+      {
+        "id": 2488,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 1495,
+        "gender": "male",
+        "name": "Bohemians 1905",
+        "short_code": "B05",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+        "founded": 1905,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "away",
+          "winner": false,
+          "position": 11
+        }
+      },
+      {
+        "id": 4484,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 343771,
+        "gender": "male",
+        "name": "Pardubice",
+        "short_code": null,
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+        "founded": 2008,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "home",
+          "winner": true,
+          "position": 13
+        }
+      }
+    ],
+    "sidelined": [
+      {
+        "id": 6311108,
+        "fixture_id": 19725045,
+        "sideline_id": 807215,
+        "participant_id": 4484,
+        "player_id": 8101004,
+        "type_id": 557
+      }
+    ]
+  },
+  {
+    "id": 19725044,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408240,
+    "state_id": 5,
+    "venue_id": 5536,
+    "name": "Slovácko vs Baník Ostrava",
+    "starting_at": "2026-09-19 16:00:00",
+    "result_info": "Game ended in draw.",
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": true,
+    "has_premium_odds": true,
+    "starting_at_timestamp": 1789833600,
+    "participants": [
+      {
+        "id": 3269,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 5494,
+        "gender": "male",
+        "name": "Baník Ostrava",
+        "short_code": "OVA",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+        "founded": 1922,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 16:00:00",
+        "meta": {
+          "location": "away",
+          "winner": false,
+          "position": 12
+        }
+      },
+      {
+        "id": 234,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 5536,
+        "gender": "male",
+        "name": "Slovácko",
+        "short_code": "SLO",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+        "founded": 1927,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 16:00:00",
+        "meta": {
+          "location": "home",
+          "winner": false,
+          "position": 15
+        }
+      }
+    ],
+    "sidelined": [
+      {
+        "id": 6311024,
+        "fixture_id": 19725044,
+        "sideline_id": 810153,
+        "participant_id": 3269,
+        "player_id": 37621257,
+        "type_id": 2046
+      },
+      {
+        "id": 6311025,
+        "fixture_id": 19725044,
+        "sideline_id": 810564,
+        "participant_id": 3269,
+        "player_id": 89038,
+        "type_id": 536
+      }
+    ]
+  },
+  {
+    "id": 19725040,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408240,
+    "state_id": 1,
+    "venue_id": 343630,
+    "name": "Hradec Králové vs Teplice",
+    "starting_at": "2026-09-20 11:00:00",
+    "result_info": null,
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": true,
+    "has_premium_odds": true,
+    "starting_at_timestamp": 1789902000,
+    "participants": [
+      {
+        "id": 1351,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 605,
+        "gender": "male",
+        "name": "Teplice",
+        "short_code": "TEP",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
+        "founded": 1945,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-16 14:00:00",
+        "meta": {
+          "location": "away",
+          "winner": null,
+          "position": 8
+        }
+      },
+      {
+        "id": 3552,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 343573,
+        "gender": "male",
+        "name": "Hradec Králové",
+        "short_code": "HRK",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+        "founded": 1905,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-16 14:00:00",
+        "meta": {
+          "location": "home",
+          "winner": null,
+          "position": 6
+        }
+      }
+    ],
+    "sidelined": [
+      {
+        "id": 6311002,
+        "fixture_id": 19725040,
+        "sideline_id": 797377,
+        "participant_id": 1351,
+        "player_id": 37668679,
+        "type_id": 557
+      },
+      {
+        "id": 6311001,
+        "fixture_id": 19725040,
+        "sideline_id": 823611,
+        "participant_id": 1351,
+        "player_id": 337380,
+        "type_id": 1611
+      }
+    ]
+  },
+  {
+    "id": 19725039,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408240,
+    "state_id": 1,
+    "venue_id": 2132,
+    "name": "Jablonec vs Zlín",
+    "starting_at": "2026-09-20 13:00:00",
+    "result_info": null,
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": true,
+    "has_premium_odds": true,
+    "starting_at_timestamp": 1789909200,
+    "participants": [
+      {
+        "id": 1745,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 872,
+        "gender": "male",
+        "name": "Zlín",
+        "short_code": "FCZ",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+        "founded": 1919,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-16 14:00:00",
+        "meta": {
+          "location": "away",
+          "winner": null,
+          "position": 16
+        }
+      },
+      {
+        "id": 3643,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 2132,
+        "gender": "male",
+        "name": "Jablonec",
+        "short_code": "JAB",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+        "founded": 1945,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-12 16:00:00",
+        "meta": {
+          "location": "home",
+          "winner": null,
+          "position": 7
+        }
+      }
+    ],
+    "sidelined": [
+      {
+        "id": 6310982,
+        "fixture_id": 19725039,
+        "sideline_id": 786530,
+        "participant_id": 1745,
+        "player_id": 80172,
+        "type_id": 557
+      },
+      {
+        "id": 6310983,
+        "fixture_id": 19725039,
+        "sideline_id": 821320,
+        "participant_id": 3643,
+        "player_id": 37560671,
+        "type_id": 2046
+      }
+    ]
+  },
+  {
+    "id": 19725043,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408240,
+    "state_id": 1,
+    "venue_id": 1810,
+    "name": "Sigma Olomouc vs Sparta Praha",
+    "starting_at": "2026-09-20 13:00:00",
+    "result_info": null,
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": true,
+    "has_premium_odds": true,
+    "starting_at_timestamp": 1789909200,
+    "participants": [
+      {
+        "id": 2727,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 1619,
+        "gender": "male",
+        "name": "Sparta Praha",
+        "short_code": "SPA",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
+        "founded": 1893,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-16 16:45:00",
+        "meta": {
+          "location": "away",
+          "winner": null,
+          "position": 9
+        }
+      },
+      {
+        "id": 3097,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 1810,
+        "gender": "male",
+        "name": "Sigma Olomouc",
+        "short_code": "SIG",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+        "founded": 1919,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-13 13:00:00",
+        "meta": {
+          "location": "home",
+          "winner": null,
+          "position": 4
+        }
+      }
+    ],
+    "sidelined": [
+      {
+        "id": 6311028,
+        "fixture_id": 19725043,
+        "sideline_id": 735143,
+        "participant_id": 2727,
+        "player_id": 458507,
+        "type_id": 557
+      },
+      {
+        "id": 6311027,
+        "fixture_id": 19725043,
+        "sideline_id": 776885,
+        "participant_id": 2727,
+        "player_id": 37687998,
+        "type_id": 557
+      },
+      {
+        "id": 6311030,
+        "fixture_id": 19725043,
+        "sideline_id": 776891,
+        "participant_id": 2727,
+        "player_id": 62823,
+        "type_id": 533
+      },
+      {
+        "id": 6311033,
+        "fixture_id": 19725043,
+        "sideline_id": 776902,
+        "participant_id": 3097,
+        "player_id": 37324998,
+        "type_id": 540
+      },
+      {
+        "id": 6311032,
+        "fixture_id": 19725043,
+        "sideline_id": 799971,
+        "participant_id": 2727,
+        "player_id": 32490407,
+        "type_id": 536
+      },
+      {
+        "id": 6311029,
+        "fixture_id": 19725043,
+        "sideline_id": 800621,
+        "participant_id": 2727,
+        "player_id": 20315934,
+        "type_id": 587
+      },
+      {
+        "id": 6311026,
+        "fixture_id": 19725043,
+        "sideline_id": 821290,
+        "participant_id": 2727,
+        "player_id": 23269652,
+        "type_id": 605
+      }
+    ]
+  },
+  {
+    "id": 19725038,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408240,
+    "state_id": 1,
+    "venue_id": 5530,
+    "name": "Slavia Praha vs Viktoria Plzeň",
+    "starting_at": "2026-09-20 16:00:00",
+    "result_info": null,
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": true,
+    "has_premium_odds": true,
+    "starting_at_timestamp": 1789920000,
+    "participants": [
+      {
+        "id": 3545,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 2067,
+        "gender": "male",
+        "name": "Viktoria Plzeň",
+        "short_code": "VPL",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+        "founded": 1911,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-17 19:00:00",
+        "meta": {
+          "location": "away",
+          "winner": null,
+          "position": 10
+        }
+      },
+      {
+        "id": 216,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 5530,
+        "gender": "male",
+        "name": "Slavia Praha",
+        "short_code": "SLA",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+        "founded": 1892,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-16 14:00:00",
+        "meta": {
+          "location": "home",
+          "winner": null,
+          "position": 1
+        }
+      }
+    ],
+    "sidelined": [
+      {
+        "id": 6311017,
+        "fixture_id": 19725038,
+        "sideline_id": 695141,
+        "participant_id": 216,
+        "player_id": 81501,
+        "type_id": 587
+      },
+      {
+        "id": 6311022,
+        "fixture_id": 19725038,
+        "sideline_id": 705218,
+        "participant_id": 216,
+        "player_id": 37919886,
+        "type_id": 587
+      },
+      {
+        "id": 6311010,
+        "fixture_id": 19725038,
+        "sideline_id": 744237,
+        "participant_id": 3545,
+        "player_id": 24469158,
+        "type_id": 2017
+      },
+      {
+        "id": 6311011,
+        "fixture_id": 19725038,
+        "sideline_id": 776899,
+        "participant_id": 3545,
+        "player_id": 37598811,
+        "type_id": 548
+      },
+      {
+        "id": 6311016,
+        "fixture_id": 19725038,
+        "sideline_id": 796100,
+        "participant_id": 216,
+        "player_id": 12790042,
+        "type_id": 604
+      },
+      {
+        "id": 6311012,
+        "fixture_id": 19725038,
+        "sideline_id": 811217,
+        "participant_id": 216,
+        "player_id": 80194,
+        "type_id": 1612
+      },
+      {
+        "id": 6311014,
+        "fixture_id": 19725038,
+        "sideline_id": 816036,
+        "participant_id": 216,
+        "player_id": 37532696,
+        "type_id": 532
+      },
+      {
+        "id": 6311019,
+        "fixture_id": 19725038,
+        "sideline_id": 818363,
+        "participant_id": 216,
+        "player_id": 37674475,
+        "type_id": 587
+      },
+      {
+        "id": 6311023,
+        "fixture_id": 19725038,
+        "sideline_id": 818388,
+        "participant_id": 216,
+        "player_id": 37706709,
+        "type_id": 587
+      },
+      {
+        "id": 6311020,
+        "fixture_id": 19725038,
+        "sideline_id": 818410,
+        "participant_id": 216,
+        "player_id": 83003,
+        "type_id": 537
+      },
+      {
+        "id": 6311013,
+        "fixture_id": 19725038,
+        "sideline_id": 818422,
+        "participant_id": 216,
+        "player_id": 38205156,
+        "type_id": 587
+      },
+      {
+        "id": 6311018,
+        "fixture_id": 19725038,
+        "sideline_id": 821148,
+        "participant_id": 216,
+        "player_id": 79972,
+        "type_id": 2002
+      },
+      {
+        "id": 6311021,
+        "fixture_id": 19725038,
+        "sideline_id": 821441,
+        "participant_id": 216,
+        "player_id": 30066,
+        "type_id": 1985
+      },
+      {
+        "id": 6311015,
+        "fixture_id": 19725038,
+        "sideline_id": 821461,
+        "participant_id": 216,
+        "player_id": 23697916,
+        "type_id": 537
+      }
+    ]
+  },
+  {
+    "id": 19725030,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408239,
+    "state_id": 1,
+    "venue_id": 872,
+    "name": "Zlín vs Slavia Praha",
+    "starting_at": "2026-10-09 16:00:00",
+    "result_info": null,
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": false,
+    "has_premium_odds": false,
+    "starting_at_timestamp": 1791561600,
+    "participants": [
+      {
+        "id": 216,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 5530,
+        "gender": "male",
+        "name": "Slavia Praha",
+        "short_code": "SLA",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+        "founded": 1892,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-16 14:00:00",
+        "meta": {
+          "location": "away",
+          "winner": null,
+          "position": null
+        }
+      },
+      {
+        "id": 1745,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 872,
+        "gender": "male",
+        "name": "Zlín",
+        "short_code": "FCZ",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+        "founded": 1919,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-16 14:00:00",
+        "meta": {
+          "location": "home",
+          "winner": null,
+          "position": null
+        }
+      }
+    ],
+    "sidelined": []
+  },
+  {
+    "id": 19725031,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408239,
+    "state_id": 1,
+    "venue_id": 343573,
+    "name": "Hradec Králové vs SK Artis Brno",
+    "starting_at": "2026-10-10 13:00:00",
+    "result_info": null,
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": false,
+    "has_premium_odds": false,
+    "starting_at_timestamp": 1791637200,
+    "participants": [
+      {
+        "id": 22031,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": null,
+        "gender": "male",
+        "name": "SK Artis Brno",
+        "short_code": null,
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
+        "founded": 0,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "away",
+          "winner": null,
+          "position": null
+        }
+      },
+      {
+        "id": 3552,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 343573,
+        "gender": "male",
+        "name": "Hradec Králové",
+        "short_code": "HRK",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
+        "founded": 1905,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-16 14:00:00",
+        "meta": {
+          "location": "home",
+          "winner": null,
+          "position": null
+        }
+      }
+    ],
+    "sidelined": []
+  },
+  {
+    "id": 19725035,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408239,
+    "state_id": 1,
+    "venue_id": 1959,
+    "name": "Zbrojovka Brno vs Jablonec",
+    "starting_at": "2026-10-10 13:00:00",
+    "result_info": null,
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": false,
+    "has_premium_odds": false,
+    "starting_at_timestamp": 1791637200,
+    "participants": [
+      {
+        "id": 3643,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 2132,
+        "gender": "male",
+        "name": "Jablonec",
+        "short_code": "JAB",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+        "founded": 1945,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-12 16:00:00",
+        "meta": {
+          "location": "away",
+          "winner": null,
+          "position": null
+        }
+      },
+      {
+        "id": 3350,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 1959,
+        "gender": "male",
+        "name": "Zbrojovka Brno",
+        "short_code": null,
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+        "founded": 1913,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "home",
+          "winner": null,
+          "position": null
+        }
+      }
+    ],
+    "sidelined": []
+  },
+  {
+    "id": 19725037,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408239,
+    "state_id": 1,
+    "venue_id": 2067,
+    "name": "Viktoria Plzeň vs Mladá Boleslav",
+    "starting_at": "2026-10-10 13:00:00",
+    "result_info": null,
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": false,
+    "has_premium_odds": false,
+    "starting_at_timestamp": 1791637200,
+    "participants": [
+      {
+        "id": 187,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 339973,
+        "gender": "male",
+        "name": "Mladá Boleslav",
+        "short_code": "MBO",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
+        "founded": 1902,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "away",
+          "winner": null,
+          "position": null
+        }
+      },
+      {
+        "id": 3545,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 2067,
+        "gender": "male",
+        "name": "Viktoria Plzeň",
+        "short_code": "VPL",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+        "founded": 1911,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-17 19:00:00",
+        "meta": {
+          "location": "home",
+          "winner": null,
+          "position": null
+        }
+      }
+    ],
+    "sidelined": []
+  },
+  {
+    "id": 19725033,
+    "sport_id": 1,
+    "league_id": 262,
+    "season_id": 27984,
+    "stage_id": 77482591,
+    "group_id": null,
+    "aggregate_id": null,
+    "round_id": 408239,
+    "state_id": 1,
+    "venue_id": 1495,
+    "name": "Bohemians 1905 vs Baník Ostrava",
+    "starting_at": "2026-10-10 16:00:00",
+    "result_info": null,
+    "leg": "1/1",
+    "details": null,
+    "length": 90,
+    "placeholder": false,
+    "has_odds": false,
+    "has_premium_odds": false,
+    "starting_at_timestamp": 1791648000,
+    "participants": [
+      {
+        "id": 3269,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 5494,
+        "gender": "male",
+        "name": "Baník Ostrava",
+        "short_code": "OVA",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+        "founded": 1922,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 16:00:00",
+        "meta": {
+          "location": "away",
+          "winner": null,
+          "position": null
+        }
+      },
+      {
+        "id": 2488,
+        "sport_id": 1,
+        "country_id": 245,
+        "venue_id": 1495,
+        "gender": "male",
+        "name": "Bohemians 1905",
+        "short_code": "B05",
+        "image_path": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+        "founded": 1905,
+        "type": "domestic",
+        "placeholder": false,
+        "last_played_at": "2026-09-19 13:00:00",
+        "meta": {
+          "location": "home",
+          "winner": null,
+          "position": null
+        }
+      }
+    ],
+    "sidelined": []
+  }
+]
