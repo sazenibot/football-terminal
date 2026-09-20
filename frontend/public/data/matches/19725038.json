@@ -275,20 +275,6 @@
     },
     {
       "side": "home",
-      "player_id": 30066,
-      "player_name": "Michal Sadílek",
-      "type_id": 1985,
-      "type_name": "Broken Nose Bone",
-      "type_name_cs": "Zlomený nosní kůstka",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-10",
-      "end_date": null,
-      "games_missed": 3,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 38205156,
       "player_name": "Mubarak Emmanuel Suleiman",
       "type_id": 587,
@@ -313,6 +299,20 @@
       "start_date": "2026-08-22",
       "end_date": null,
       "games_missed": 6,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 30066,
+      "player_name": "Michal Sadílek",
+      "type_id": 1985,
+      "type_name": "Broken Nose Bone",
+      "type_name_cs": "Zlomený nosní kůstka",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-10",
+      "end_date": null,
+      "games_missed": 3,
       "likely_available": false
     },
     {
@@ -397,6 +397,20 @@
       "start_date": "2026-06-06",
       "end_date": "2026-09-30",
       "games_missed": 15,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 38200369,
+      "player_name": "Martin Kovar",
+      "type_id": 598,
+      "type_name": "Muscular problems",
+      "type_name_cs": "Muscular problems",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-03-07",
+      "end_date": null,
+      "games_missed": 25,
       "likely_available": false
     }
   ],
@@ -8496,7 +8510,7 @@
   "league_name": "Chance Liga",
   "build_mode": "refresh",
   "built_at": "2026-09-19T23:44:50.690267Z",
-  "refreshed_at": "2026-09-20T00:34:28.653061Z",
+  "refreshed_at": "2026-09-20T09:11:11.315796Z",
   "ai_analysis": {
     "text": "Zápas mezi Slavií Praha a Viktorií Plzeň, který se uskuteční 20. září 2026 na Fortuna Areně, slibuje být zajímavým soubojem dvou silných týmů. Slavia Praha se nachází v dobré formě, když v posledních šesti zápasech zaznamenala čtyři vítězství a dvě remízy. Naopak Viktoria Plzeň má za sebou smíšené výsledky s jedním vítězstvím, třemi remízami a dvěma prohrami. Historie vzájemných zápasů ukazuje, že Slavia má nad Plzní jasnou převahu, což může ovlivnit psychologii hráčů obou týmů.\n\nPodle simulací očekáváme, že Slavia Praha bude mít převahu v počtu očekávaných gólů (xG), s hodnotou 2.1 oproti 1.09 pro Plzeň. To naznačuje, že domácí tým by mohl být nebezpečnější v útočné fázi. Pravděpodobnost vítězství Slavie se pohybuje kolem 51.9 %, což potvrzuje jejich roli favorita. Na druhé straně, Plzeň bude muset najít způsob, jak se vyrovnat s tlakem a pokusit se o překvapení.\n\nZ pohledu statistik je také zajímavé, že pravděpodobnost, že oba týmy skórují (BTTS), je 58.8 %, a pravděpodobnost, že padne více než 2.5 gólu, je 62.0 %. To naznačuje, že zápas by mohl být ofenzivně laděný, s možností více gólů na obou stranách. Celkově se očekává, že Slavia Praha bude dominovat, ale Viktoria Plzeň se jistě pokusí o odpor a překvapení.",
     "model": "gpt-4o-mini",

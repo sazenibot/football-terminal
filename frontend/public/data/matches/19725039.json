@@ -7895,7 +7895,7 @@
   "league_name": "Chance Liga",
   "build_mode": "refresh",
   "built_at": "2026-09-19T23:44:50.690267Z",
-  "refreshed_at": "2026-09-20T00:34:15.369087Z",
+  "refreshed_at": "2026-09-20T09:10:56.206176Z",
   "ai_analysis": {
     "text": "Zápas mezi Jabloncem a Zlínem v rámci Chance Ligy se odehraje na Stadionu Střelnice a očekává se, že domácí tým bude mít výhodu. Jablonec v posledních šesti zápasech vykazuje smíšenou formu s třemi výhrami a třemi prohrami, zatímco Zlín má na kontě dvě výhry a čtyři remízy. Historie vzájemných zápasů naznačuje, že Jablonec má mírnou převahu, když v posledních pěti střetnutích vyhrál dvakrát a jednou remizoval.\n\nPodle analýzy očekávaných gólů (xG) má Jablonec výraznou výhodu s hodnotou 1.83, zatímco Zlín dosahuje pouze 0.96. To naznačuje, že domácí tým by měl mít více příležitostí ke skórování. Simulace zápasu ukazují, že pravděpodobnost výhry Jablonce je 50.4 %, zatímco Zlín má šanci na vítězství 24.4 %. Remíza se jeví jako méně pravděpodobná, s hodnotou 25.2 %.\n\nZ hlediska produktivity se očekává, že zápas by mohl být vyrovnaný, přičemž pravděpodobnost, že oba týmy skórují, je 52 %. Také existuje 52.9 % šance, že padne více než 2.5 gólu. Celkově se tedy zdá, že Jablonec má navrch, ale Zlín může překvapit, zejména s ohledem na jejich schopnost vyrovnat se v minulých vzájemných zápasech.",
     "model": "gpt-4o-mini",

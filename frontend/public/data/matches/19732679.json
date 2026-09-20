@@ -160,6 +160,20 @@
       "end_date": "2026-09-28",
       "games_missed": 1,
       "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 186595,
+      "player_name": "Diego Javier Llorente Ríos",
+      "type_id": 1985,
+      "type_name": "Broken Nose Bone",
+      "type_name_cs": "Zlomený nosní kůstka",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-04",
+      "end_date": "2026-09-15",
+      "games_missed": null,
+      "likely_available": true
     }
   ],
   "predicted_lineups": {
@@ -6343,7 +6357,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-09-20T00:35:41.319637Z",
+  "refreshed_at": "2026-09-20T09:15:48.057372Z",
   "ai_analysis": {
     "text": "Zápas mezi Deportivo A Coruña a Real Betis, který se odehraje na stadionu Estadio Abanca-Riazor, slibuje zajímavé souboje. Domácí Deportivo A Coruña se nachází v mírně slabší formě, s posledními výsledky, které zahrnují dvě remízy a tři prohry. Naopak Real Betis se prezentuje silnějším výkonem, když vyhrál čtyři ze svých posledních šesti zápasů. Tato forma může hrát klíčovou roli v průběhu zápasu.\n\nHistorie vzájemných zápasů ukazuje, že Real Betis má v posledních letech navrch, přičemž vyhrál tři z posledních pěti utkání. I když Deportivo A Coruña dokázalo v minulosti s Betisem remizovat, jejich poslední vzájemné zápasy naznačují, že hosté budou favority. Vzhledem k současné formě a předchozím výsledkům se očekává, že Betis bude mít větší kontrolu nad hrou.\n\nPodle simulací očekávání naznačují, že Deportivo A Coruña má mírně vyšší očekávané góly (xG) než Real Betis, což může naznačovat, že domácí tým bude mít šance na skórování. Přestože je pravděpodobné, že zápas skončí remízou, varianta výhry pro Betis se jeví jako reálná. Očekává se také, že obě strany by mohly skórovat, což by odpovídalo trendům posledních zápasů.",
     "model": "gpt-4o-mini",

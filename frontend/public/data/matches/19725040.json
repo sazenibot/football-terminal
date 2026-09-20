@@ -7238,7 +7238,7 @@
   "league_name": "Chance Liga",
   "build_mode": "refresh",
   "built_at": "2026-09-19T23:44:50.690267Z",
-  "refreshed_at": "2026-09-20T00:34:10.825081Z",
+  "refreshed_at": "2026-09-20T09:10:51.865157Z",
   "ai_analysis": {
     "text": "Zápas mezi Hradcem Králové a Teplicemi v rámci Chance Ligy slibuje vyrovnanou konfrontaci. Domácí Hradec Králové se nachází v solidní formě, když z posledních šesti zápasů vybojoval čtyři vítězství a dvě prohry. Na druhé straně Teplice, které mají také dobré výsledky, zaznamenaly čtyři výhry, jednu remízu a jednu prohru. Historie vzájemných zápasů ukazuje na těsnou konkurenci, přičemž poslední utkání skončilo vítězstvím Hradce 1:0.\n\nAnalýza očekávaných gólů (xG) naznačuje, že Hradec Králové má mírnou výhodu s hodnotou 1.47 oproti Teplicím s 1.16. Tato statistika ukazuje, že domácí tým by mohl mít více příležitostí ke skórování, což se může projevit v celkovém výsledku. Nicméně, s přihlédnutím k formě obou týmů a jejich schopnosti bránit, je pravděpodobné, že zápas bude vyrovnaný.\n\nPodle simulací je pravděpodobnost vítězství Hradce Králové 43.2 %, remíza 26.8 % a vítězství Teplic 30 %. Také existuje 53.2 % šance, že oba týmy skórují, což naznačuje, že zápas by mohl být dynamický s několika šancemi na obou stranách. S ohledem na vše uvedené se očekává, že zápas bude napínavý a plný emocí, s možností těsného výsledku.",
     "model": "gpt-4o-mini",
