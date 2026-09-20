@@ -1743,7 +1743,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.85
         },
         {
           "key": "yellow_under5",
@@ -1771,7 +1772,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.99
         },
         {
           "key": "scored2plus",
@@ -1913,7 +1915,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.85
         },
         {
           "key": "corners_under95",
@@ -1955,7 +1958,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.99
         },
         {
           "key": "scored2plus",
@@ -2022,7 +2026,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.85
         },
         {
           "key": "yellow_under5",
@@ -2155,7 +2160,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.99
         },
         {
           "key": "scored2plus",
@@ -2199,7 +2205,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.85
         },
         {
           "key": "ht_draw",
@@ -2353,7 +2360,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.99
         },
         {
           "key": "ht_leading",
@@ -7187,5 +7195,12 @@
     "text": "Zápas mezi Hradcem Králové a Teplicemi v rámci Chance Ligy slibuje vyrovnanou konfrontaci. Domácí Hradec Králové se nachází v solidní formě, když z posledních šesti zápasů vybojoval čtyři vítězství a dvě prohry. Na druhé straně Teplice, které mají také dobré výsledky, zaznamenaly čtyři výhry, jednu remízu a jednu prohru. Historie vzájemných zápasů ukazuje na těsnou konkurenci, přičemž poslední utkání skončilo vítězstvím Hradce 1:0.\n\nAnalýza očekávaných gólů (xG) naznačuje, že Hradec Králové má mírnou výhodu s hodnotou 1.47 oproti Teplicím s 1.16. Tato statistika ukazuje, že domácí tým by mohl mít více příležitostí ke skórování, což se může projevit v celkovém výsledku. Nicméně, s přihlédnutím k formě obou týmů a jejich schopnosti bránit, je pravděpodobné, že zápas bude vyrovnaný.\n\nPodle simulací je pravděpodobnost vítězství Hradce Králové 43.2 %, remíza 26.8 % a vítězství Teplic 30 %. Také existuje 53.2 % šance, že oba týmy skórují, což naznačuje, že zápas by mohl být dynamický s několika šancemi na obou stranách. S ohledem na vše uvedené se očekává, že zápas bude napínavý a plný emocí, s možností těsného výsledku.",
     "model": "gpt-4o-mini",
     "generated_at": "2026-09-20T01:10:59Z"
+  },
+  "odds": {
+    "over25": 1.99,
+    "under25": 1.85,
+    "home": 1.79,
+    "away": 4.65,
+    "draw": 3.62
   }
 }

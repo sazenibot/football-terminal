@@ -1773,7 +1773,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.96
         },
         {
           "key": "corners_under95",
@@ -1815,7 +1816,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.88
         },
         {
           "key": "corners_over95",
@@ -1929,7 +1931,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.88
         },
         {
           "key": "corners_over95",
@@ -2013,7 +2016,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.96
         },
         {
           "key": "corners_under95",
@@ -2136,7 +2140,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.88
         },
         {
           "key": "corners_over95",
@@ -2178,7 +2183,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.96
         },
         {
           "key": "scored2plus",
@@ -2334,7 +2340,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.96
         },
         {
           "key": "btts",
@@ -2348,7 +2355,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.88
         },
         {
           "key": "team_2plus_yellow",
@@ -7843,5 +7851,12 @@
     "text": "Zápas mezi Jabloncem a Zlínem v rámci Chance Ligy se odehraje na Stadionu Střelnice a očekává se, že domácí tým bude mít výhodu. Jablonec v posledních šesti zápasech vykazuje smíšenou formu s třemi výhrami a třemi prohrami, zatímco Zlín má na kontě dvě výhry a čtyři remízy. Historie vzájemných zápasů naznačuje, že Jablonec má mírnou převahu, když v posledních pěti střetnutích vyhrál dvakrát a jednou remizoval.\n\nPodle analýzy očekávaných gólů (xG) má Jablonec výraznou výhodu s hodnotou 1.83, zatímco Zlín dosahuje pouze 0.96. To naznačuje, že domácí tým by měl mít více příležitostí ke skórování. Simulace zápasu ukazují, že pravděpodobnost výhry Jablonce je 50.4 %, zatímco Zlín má šanci na vítězství 24.4 %. Remíza se jeví jako méně pravděpodobná, s hodnotou 25.2 %.\n\nZ hlediska produktivity se očekává, že zápas by mohl být vyrovnaný, přičemž pravděpodobnost, že oba týmy skórují, je 52 %. Také existuje 52.9 % šance, že padne více než 2.5 gólu. Celkově se tedy zdá, že Jablonec má navrch, ale Zlín může překvapit, zejména s ohledem na jejich schopnost vyrovnat se v minulých vzájemných zápasech.",
     "model": "gpt-4o-mini",
     "generated_at": "2026-09-20T01:10:56Z"
+  },
+  "odds": {
+    "over25": 1.88,
+    "under25": 1.96,
+    "home": 1.42,
+    "away": 7.73,
+    "draw": 4.54
   }
 }
