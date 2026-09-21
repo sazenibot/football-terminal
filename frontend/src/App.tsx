@@ -6,6 +6,8 @@ import { CatalogPage } from "./pages/CatalogPage";
 import { CatalogTeamPage } from "./pages/CatalogTeamPage";
 import { CatalogPlayerPage } from "./pages/CatalogPlayerPage";
 import { CatalogRefereePage } from "./pages/CatalogRefereePage";
+import { LabPage } from "./pages/LabPage";
+import { LabTrendmetrPage } from "./pages/LabTrendmetrPage";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { AppNav } from "./components/AppNav";
 
@@ -29,6 +31,8 @@ function App() {
         <Route path="/catalog/referees/:id" element={<CatalogRefereePage />} />
         <Route path="/katalog" element={<Navigate to="/catalog" replace />} />
         <Route path="/katalog/*" element={<Navigate to="/catalog" replace />} />
+        <Route path="/lab" element={<LabPage />} />
+        <Route path="/lab/trendmetr" element={<LabTrendmetrPage />} />
       </Routes>
     </BrowserRouter>
   );

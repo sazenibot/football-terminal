@@ -1,0 +1,3765 @@
+{
+  "id": "trendmetr-kolo8",
+  "title": "Trendmetr",
+  "subtitle": "8. kolo Chance Ligy · 70 % A i B vs Mix ≥",
+  "league": "Chance Liga",
+  "league_id": 262,
+  "round": "8",
+  "round_id": 408241,
+  "day": "2026-09-12",
+  "cutoff": "2026-09-12",
+  "rule": "Oba sloupce jsou over. 70 % A i B = podlaha T. Mix = totéž T, +1 jen když 65 % A i B ještě drží. Vzorky jen ze zápasů před 12. 9. 2026. Zelená = skutečnost ≥ tip, žlutá = o 1 pod, červená = míň. Fauly zatím zůstávají.",
+  "excluded_note": "Slepé kolo: rozpis nejdřív, statistiky až po spočtení linií. Tabulka FDR je stav před 8. kolem.",
+  "computed_at": "2026-09-21",
+  "history_from": "2022-07-30",
+  "metrics": [
+    {
+      "key": "shots",
+      "name": "Střely"
+    },
+    {
+      "key": "sot",
+      "name": "Střely na branku"
+    },
+    {
+      "key": "corners",
+      "name": "Rohy"
+    },
+    {
+      "key": "fouls",
+      "name": "Fauly"
+    },
+    {
+      "key": "offsides",
+      "name": "Ofsajdy"
+    }
+  ],
+  "methods": [
+    {
+      "id": "and70",
+      "title": "70 % A i B ≥",
+      "points": 206,
+      "scoring": "over"
+    },
+    {
+      "id": "mix",
+      "title": "Mix ≥",
+      "points": 198,
+      "scoring": "over"
+    }
+  ],
+  "winners": [
+    {
+      "id": "and70",
+      "title": "70 % A i B ≥",
+      "points": 206,
+      "scoring": "over"
+    }
+  ],
+  "stats": [
+    {
+      "key": "shots",
+      "name": "Střely",
+      "points": {
+        "and70": 40,
+        "mix": 37
+      },
+      "total": 77
+    },
+    {
+      "key": "sot",
+      "name": "Střely na branku",
+      "points": {
+        "and70": 40,
+        "mix": 40
+      },
+      "total": 80
+    },
+    {
+      "key": "corners",
+      "name": "Rohy",
+      "points": {
+        "and70": 43,
+        "mix": 40
+      },
+      "total": 83
+    },
+    {
+      "key": "fouls",
+      "name": "Fauly",
+      "points": {
+        "and70": 42,
+        "mix": 40
+      },
+      "total": 82
+    },
+    {
+      "key": "offsides",
+      "name": "Ofsajdy",
+      "points": {
+        "and70": 41,
+        "mix": 41
+      },
+      "total": 82
+    }
+  ],
+  "best_stat": {
+    "key": "corners",
+    "name": "Rohy",
+    "total": 83
+  },
+  "matches": [
+    {
+      "fixture_id": 19725048,
+      "kickoff": "2026-09-12 13:00:00",
+      "home": {
+        "id": 3350,
+        "name": "Zbrojovka Brno",
+        "short": "ZB",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
+      },
+      "away": {
+        "id": 22031,
+        "name": "SK Artis Brno",
+        "short": "AB",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
+      },
+      "home_fdr_away": 4,
+      "home_position": 7,
+      "sides": [
+        {
+          "label": "Zbrojovka Brno doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři (jen před 8. kolem).",
+          "cases": 5,
+          "n_a": 5,
+          "n_b": 0,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 19,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 9,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 9,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 9,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 5,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 18,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 9,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 9,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 0,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 13,
+            "mix": 13
+          }
+        },
+        {
+          "label": "SK Artis Brno venku",
+          "note": "3 venku proti FDR 4 + 3 na hřišti domácích (jen před 8. kolem).",
+          "cases": 0,
+          "n_a": 0,
+          "n_b": 0,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 10,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 17,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "—",
+                  "pick": null,
+                  "picks": [],
+                  "kind": "empty",
+                  "lo": null,
+                  "hi": null,
+                  "usable": false,
+                  "diff": null,
+                  "points": 0,
+                  "tone": "none"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 0,
+            "mix": 0
+          }
+        }
+      ],
+      "points": {
+        "and70": 13,
+        "mix": 13
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      }
+    },
+    {
+      "fixture_id": 19725052,
+      "kickoff": "2026-09-12 13:00:00",
+      "home": {
+        "id": 463,
+        "name": "Slovan Liberec",
+        "short": "SLO",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png"
+      },
+      "away": {
+        "id": 187,
+        "name": "Mladá Boleslav",
+        "short": "MBO",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png"
+      },
+      "home_fdr_away": 5,
+      "home_position": 2,
+      "sides": [
+        {
+          "label": "Slovan Liberec doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři (jen před 8. kolem).",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 26,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 16,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 16,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 8,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 7,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 16,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "over",
+                  "lo": 12,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥13",
+                  "pick": 13,
+                  "picks": [
+                    13
+                  ],
+                  "kind": "over",
+                  "lo": 12,
+                  "hi": 13,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 1,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 15
+          }
+        },
+        {
+          "label": "Mladá Boleslav venku",
+          "note": "3 venku proti FDR 5 + 3 na hřišti domácích (jen před 8. kolem).",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 10,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 12,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥8",
+                  "pick": 8,
+                  "picks": [
+                    8
+                  ],
+                  "kind": "over",
+                  "lo": 8,
+                  "hi": 8,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 8,
+                  "hi": 19,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 15
+          }
+        }
+      ],
+      "points": {
+        "and70": 30,
+        "mix": 30
+      },
+      "score": {
+        "home": 3,
+        "away": 0
+      }
+    },
+    {
+      "fixture_id": 19725051,
+      "kickoff": "2026-09-12 13:00:00",
+      "home": {
+        "id": 2488,
+        "name": "Bohemians 1905",
+        "short": "B05",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png"
+      },
+      "away": {
+        "id": 234,
+        "name": "Slovácko",
+        "short": "SLO",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png"
+      },
+      "home_fdr_away": 2,
+      "home_position": 12,
+      "sides": [
+        {
+          "label": "Bohemians 1905 doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři (jen před 8. kolem).",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 19,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "over",
+                  "lo": 12,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "over",
+                  "lo": 12,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 8,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 6,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 5,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥6",
+                  "pick": 6,
+                  "picks": [
+                    6
+                  ],
+                  "kind": "over",
+                  "lo": 5,
+                  "hi": 6,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 16,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 15
+          }
+        },
+        {
+          "label": "Slovácko venku",
+          "note": "3 venku proti FDR 2 + 3 na hřišti domácích (jen před 8. kolem).",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "over",
+                  "lo": 12,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": -8,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥13",
+                  "pick": 13,
+                  "picks": [
+                    13
+                  ],
+                  "kind": "over",
+                  "lo": 12,
+                  "hi": 14,
+                  "usable": true,
+                  "diff": -9,
+                  "points": 0,
+                  "tone": "miss"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 0,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": -3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": -4,
+                  "points": 0,
+                  "tone": "miss"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 9,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 7,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 1,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 9,
+            "mix": 9
+          }
+        }
+      ],
+      "points": {
+        "and70": 24,
+        "mix": 24
+      },
+      "score": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "fixture_id": 19725047,
+      "kickoff": "2026-09-12 16:00:00",
+      "home": {
+        "id": 2727,
+        "name": "Sparta Praha",
+        "short": "SPA",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png"
+      },
+      "away": {
+        "id": 3643,
+        "name": "Jablonec",
+        "short": "JAB",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
+      },
+      "home_fdr_away": 3,
+      "home_position": 10,
+      "sides": [
+        {
+          "label": "Sparta Praha doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři (jen před 8. kolem).",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 18,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥13",
+                  "pick": 13,
+                  "picks": [
+                    13
+                  ],
+                  "kind": "over",
+                  "lo": 13,
+                  "hi": 13,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥13",
+                  "pick": 13,
+                  "picks": [
+                    13
+                  ],
+                  "kind": "over",
+                  "lo": 13,
+                  "hi": 13,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 7,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 9,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 10,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 15
+          }
+        },
+        {
+          "label": "Jablonec venku",
+          "note": "3 venku proti FDR 3 + 3 na hřišti domácích (jen před 8. kolem).",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 8,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥7",
+                  "pick": 7,
+                  "picks": [
+                    7
+                  ],
+                  "kind": "over",
+                  "lo": 7,
+                  "hi": 7,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥8",
+                  "pick": 8,
+                  "picks": [
+                    8
+                  ],
+                  "kind": "over",
+                  "lo": 7,
+                  "hi": 8,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 15,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 15
+          }
+        }
+      ],
+      "points": {
+        "and70": 30,
+        "mix": 30
+      },
+      "score": {
+        "home": 2,
+        "away": 0
+      }
+    },
+    {
+      "fixture_id": 19725050,
+      "kickoff": "2026-09-13 11:00:00",
+      "home": {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "short": "OVA",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png"
+      },
+      "away": {
+        "id": 4484,
+        "name": "Pardubice",
+        "short": "P",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png"
+      },
+      "home_fdr_away": 2,
+      "home_position": 11,
+      "sides": [
+        {
+          "label": "Baník Ostrava doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři (jen před 8. kolem).",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 14,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 6,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 10,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 1,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 15
+          }
+        },
+        {
+          "label": "Pardubice venku",
+          "note": "3 venku proti FDR 2 + 3 na hřišti domácích (jen před 8. kolem).",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 16,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥6",
+                  "pick": 6,
+                  "picks": [
+                    6
+                  ],
+                  "kind": "over",
+                  "lo": 6,
+                  "hi": 6,
+                  "usable": true,
+                  "diff": 10,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥7",
+                  "pick": 7,
+                  "picks": [
+                    7
+                  ],
+                  "kind": "over",
+                  "lo": 6,
+                  "hi": 7,
+                  "usable": true,
+                  "diff": 9,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 7,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 9,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 14,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 13
+          }
+        }
+      ],
+      "points": {
+        "and70": 30,
+        "mix": 28
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "fixture_id": 19725049,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "id": 1745,
+        "name": "Zlín",
+        "short": "FCZ",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png"
+      },
+      "away": {
+        "id": 3552,
+        "name": "Hradec Králové",
+        "short": "HRK",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
+      },
+      "home_fdr_away": 1,
+      "home_position": 16,
+      "sides": [
+        {
+          "label": "Zlín doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři (jen před 8. kolem).",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 18,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥6",
+                  "pick": 6,
+                  "picks": [
+                    6
+                  ],
+                  "kind": "over",
+                  "lo": 6,
+                  "hi": 6,
+                  "usable": true,
+                  "diff": 12,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥6",
+                  "pick": 6,
+                  "picks": [
+                    6
+                  ],
+                  "kind": "over",
+                  "lo": 6,
+                  "hi": 6,
+                  "usable": true,
+                  "diff": 12,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 14,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 11,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 11,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 14,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥6",
+                  "pick": 6,
+                  "picks": [
+                    6
+                  ],
+                  "kind": "over",
+                  "lo": 6,
+                  "hi": 6,
+                  "usable": true,
+                  "diff": 8,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥7",
+                  "pick": 7,
+                  "picks": [
+                    7
+                  ],
+                  "kind": "over",
+                  "lo": 6,
+                  "hi": 13,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 0,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 13,
+            "mix": 13
+          }
+        },
+        {
+          "label": "Hradec Králové venku",
+          "note": "3 venku proti FDR 1 + 3 na hřišti domácích (jen před 8. kolem).",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 10,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "over",
+                  "lo": 11,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "over",
+                  "lo": 11,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": -2,
+                  "points": 0,
+                  "tone": "miss"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 5,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 6,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 8,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "over",
+                  "lo": 11,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": -3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "over",
+                  "lo": 11,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": -4,
+                  "points": 0,
+                  "tone": "miss"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 5,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 10,
+            "mix": 7
+          }
+        }
+      ],
+      "points": {
+        "and70": 23,
+        "mix": 20
+      },
+      "score": {
+        "home": 1,
+        "away": 2
+      }
+    },
+    {
+      "fixture_id": 19725053,
+      "kickoff": "2026-09-13 13:00:00",
+      "home": {
+        "id": 3545,
+        "name": "Viktoria Plzeň",
+        "short": "VPL",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png"
+      },
+      "away": {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "short": "SIG",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png"
+      },
+      "home_fdr_away": 3,
+      "home_position": 9,
+      "sides": [
+        {
+          "label": "Viktoria Plzeň doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři (jen před 8. kolem).",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 21,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 11,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": 10,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 12,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 5,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 5,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 10,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 15
+          }
+        },
+        {
+          "label": "Sigma Olomouc venku",
+          "note": "3 venku proti FDR 3 + 3 na hřišti domácích (jen před 8. kolem).",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 5,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 12,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "over",
+                  "lo": 11,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "over",
+                  "lo": 11,
+                  "hi": 15,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 15
+          }
+        }
+      ],
+      "points": {
+        "and70": 30,
+        "mix": 30
+      },
+      "score": {
+        "home": 2,
+        "away": 3
+      }
+    },
+    {
+      "fixture_id": 19725046,
+      "kickoff": "2026-09-13 16:00:00",
+      "home": {
+        "id": 1351,
+        "name": "Teplice",
+        "short": "TEP",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png"
+      },
+      "away": {
+        "id": 216,
+        "name": "Slavia Praha",
+        "short": "SLA",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
+      },
+      "home_fdr_away": 4,
+      "home_position": 6,
+      "sides": [
+        {
+          "label": "Teplice doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři (jen před 8. kolem).",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 12,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 5,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 5,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 0,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": -2,
+                  "points": 0,
+                  "tone": "miss"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 18,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "over",
+                  "lo": 12,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "over",
+                  "lo": 12,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 11,
+            "mix": 10
+          }
+        },
+        {
+          "label": "Slavia Praha venku",
+          "note": "3 venku proti FDR 4 + 3 na hřišti domácích (jen před 8. kolem).",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 13,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥13",
+                  "pick": 13,
+                  "picks": [
+                    13
+                  ],
+                  "kind": "over",
+                  "lo": 13,
+                  "hi": 13,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥14",
+                  "pick": 14,
+                  "picks": [
+                    14
+                  ],
+                  "kind": "over",
+                  "lo": 13,
+                  "hi": 16,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 7,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 6,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 17,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 8,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 13,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 15,
+            "mix": 13
+          }
+        }
+      ],
+      "points": {
+        "and70": 26,
+        "mix": 23
+      },
+      "score": {
+        "home": 0,
+        "away": 2
+      }
+    }
+  ],
+  "table_before": [
+    {
+      "id": 216,
+      "position": 1,
+      "name": "Slavia Praha",
+      "points": 17
+    },
+    {
+      "id": 463,
+      "position": 2,
+      "name": "Slovan Liberec",
+      "points": 16
+    },
+    {
+      "id": 187,
+      "position": 3,
+      "name": "Mladá Boleslav",
+      "points": 14
+    },
+    {
+      "id": 3097,
+      "position": 4,
+      "name": "Sigma Olomouc",
+      "points": 13
+    },
+    {
+      "id": 3643,
+      "position": 5,
+      "name": "Jablonec",
+      "points": 13
+    },
+    {
+      "id": 1351,
+      "position": 6,
+      "name": "Teplice",
+      "points": 13
+    },
+    {
+      "id": 3350,
+      "position": 7,
+      "name": "Zbrojovka Brno",
+      "points": 13
+    },
+    {
+      "id": 3552,
+      "position": 8,
+      "name": "Hradec Králové",
+      "points": 11
+    },
+    {
+      "id": 3545,
+      "position": 9,
+      "name": "Viktoria Plzeň",
+      "points": 10
+    },
+    {
+      "id": 2727,
+      "position": 10,
+      "name": "Sparta Praha",
+      "points": 9
+    },
+    {
+      "id": 3269,
+      "position": 11,
+      "name": "Baník Ostrava",
+      "points": 9
+    },
+    {
+      "id": 2488,
+      "position": 12,
+      "name": "Bohemians 1905",
+      "points": 6
+    },
+    {
+      "id": 22031,
+      "position": 13,
+      "name": "SK Artis Brno",
+      "points": 4
+    },
+    {
+      "id": 234,
+      "position": 14,
+      "name": "Slovácko",
+      "points": 3
+    },
+    {
+      "id": 4484,
+      "position": 15,
+      "name": "Pardubice",
+      "points": 2
+    },
+    {
+      "id": 1745,
+      "position": 16,
+      "name": "Zlín",
+      "points": 0
+    }
+  ],
+  "seasons": [
+    {
+      "id": 27984,
+      "name": "2026/2027"
+    },
+    {
+      "id": 25591,
+      "name": "2025/2026"
+    },
+    {
+      "id": 23641,
+      "name": "2024/2025"
+    },
+    {
+      "id": 21682,
+      "name": "2023/2024"
+    },
+    {
+      "id": 19791,
+      "name": "2022/2023"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+---
+description: Při rozšiřování na 30 lig připomenout cost-efficient ingest (Growth, přírůstek, katalog mimo git).
+alwaysApply: true
+---
+
+# 30 lig — provoz nesmí žrát kvótu
+
+Až Petr zapne víc než 5 lig, Growth tarif, `enabled: true` v `leagues.json`, nebo denní overlay pro další soutěže, **připomeň tyto změny dřív, než se začne programovat**. Cíl: web dál nevolá SportMonks, denní job je přírůstkový.
+
+Nekopíruj dnešní Chance Liga overlay × 30.
+
+## Musí se zařídit
+
+1. **Tarif.** Starter = max 5 lig. 30 lig = SportMonks Growth. Nezapínat ligy na Starteru.
+2. **Cold backfill jednou.** 5 sezon historie + overlay jen při onboardingu ligy, nikdy v denním cronu od nuly.
+3. **Denní jen včerejšek.** Overlay (hráč / FDR / sudí) z dohraných zápasů, ideálně z už uloženého JSON zápasu. Žádné `/fixtures/between` + `lineups.details` za 5 let každý den.
+4. **Ranky při ingestu.** Nevoz `*.players.json` se všemi zápasy do prohlížeče (Chance Liga ~8 MB). Stránka hráče = `players/{id}.json` + malá tabulka pořadí.
+5. **Katalog ven z gitu.** Git ať drží Match Center (okno ~7 dní). Overlay a historie lig → object storage/CDN nebo DB. Tisíce player JSON v `data: denní refresh` u 30 lig ne.
+
+Zapínat ligy po jedné: backfill → denní přírůstek. Ne 25 lig najednou.
+
+## Nesmí
+
+- `enrich_catalog.py` v plném 5letém režimu do GHA cronu pro všechny ligy
+- Client-side řazení přes kompletní match index ligy
+- Full rebuild všech zápasů v okně (`--full`) jako denní default

@@ -15,6 +15,7 @@ export function AppNav() {
   const onHome = pathname === "/";
   const onCenter = pathname.startsWith("/league") || pathname.startsWith("/match");
   const onCatalog = pathname.startsWith("/catalog") || pathname.startsWith("/katalog");
+  const onLab = pathname.startsWith("/lab");
 
   const item = (to: string, label: string, active: boolean) => (
     <Link
@@ -37,6 +38,7 @@ export function AppNav() {
       {item("/", "Football Terminal", onHome)}
       {item(center, "Match Center", onCenter)}
       {item("/catalog", "Katalog", onCatalog)}
+      {item("/lab", "Lab", onLab)}
     </nav>
   );
 }

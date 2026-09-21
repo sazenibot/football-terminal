@@ -1,0 +1,806 @@
+{
+  "id": "trendmetr-slavia-plzen",
+  "title": "Trendmetr",
+  "subtitle": "Slavia Praha – Viktoria Plzeň",
+  "league": "Chance Liga",
+  "league_id": 262,
+  "season_id": 27984,
+  "excluded_fixture_id": 19725038,
+  "excluded_note": "Včerejší Slavia – Plzeň (20. 9. 2026) není ve vzorcích.",
+  "rule": "Linie je nejvyšší celé číslo T, které platí v ≥70 % vzorku A i v ≥70 % vzorku B (alespoň T). Pravděpodobnost = zásahy / (A+B).",
+  "ratio": 0.7,
+  "computed_at": "2026-09-21",
+  "history_from": "2022-07-30",
+  "teams": {
+    "home": {
+      "id": 216,
+      "name": "Slavia Praha",
+      "short": "SLA",
+      "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
+    },
+    "away": {
+      "id": 3545,
+      "name": "Viktoria Plzeň",
+      "short": "PLZ",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png"
+    }
+  },
+  "fdr": {
+    "size": 16,
+    "away_band_5": "aktuální tabulka, venku: 1.–4. = 5",
+    "hard_opponents": [
+      {
+        "id": 216,
+        "name": "Slavia Praha",
+        "position": 1,
+        "fdr_away": 5
+      },
+      {
+        "id": 463,
+        "name": "Slovan Liberec",
+        "position": 2,
+        "fdr_away": 5
+      },
+      {
+        "id": 187,
+        "name": "Mladá Boleslav",
+        "position": 3,
+        "fdr_away": 5
+      },
+      {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "position": 4,
+        "fdr_away": 5
+      }
+    ]
+  },
+  "sides": [
+    {
+      "label": "Slavia doma",
+      "note": "5 domácích ligových + 3 domácí proti Plzni. 70 % z 5 = 4/5, 70 % ze 3 = 3/3.",
+      "cases": 8,
+      "set_a": {
+        "id": "home5",
+        "title": "Posledních 5 domácích v lize",
+        "matches": [
+          {
+            "fixture_id": 19725054,
+            "date": "2026-09-05",
+            "is_home": true,
+            "opponent_id": 3350,
+            "opponent": "Zbrojovka Brno",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+            "gf": 4,
+            "ga": 0,
+            "result": "V",
+            "opponent_position": 6,
+            "fdr": 4,
+            "shots": 16,
+            "sot": 6,
+            "corners": 5,
+            "opp_corners": 1,
+            "fouls": 14,
+            "opp_fouls": 13,
+            "offsides": 1
+          },
+          {
+            "fixture_id": 19725073,
+            "date": "2026-08-22",
+            "is_home": true,
+            "opponent_id": 2488,
+            "opponent": "Bohemians 1905",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
+            "gf": 2,
+            "ga": 2,
+            "result": "R",
+            "opponent_position": 12,
+            "fdr": 2,
+            "shots": 26,
+            "sot": 7,
+            "corners": 11,
+            "opp_corners": 1,
+            "fouls": 15,
+            "opp_fouls": 13,
+            "offsides": 2
+          },
+          {
+            "fixture_id": 19725090,
+            "date": "2026-08-09",
+            "is_home": true,
+            "opponent_id": 4484,
+            "opponent": "Pardubice",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
+            "gf": 2,
+            "ga": 1,
+            "result": "V",
+            "opponent_position": 13,
+            "fdr": 1,
+            "shots": 32,
+            "sot": 5,
+            "corners": 4,
+            "opp_corners": 2,
+            "fouls": 6,
+            "opp_fouls": 16,
+            "offsides": 1
+          },
+          {
+            "fixture_id": 19725106,
+            "date": "2026-07-26",
+            "is_home": true,
+            "opponent_id": 234,
+            "opponent": "Slovácko",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
+            "gf": 5,
+            "ga": 1,
+            "result": "V",
+            "opponent_position": 15,
+            "fdr": 1,
+            "shots": 15,
+            "sot": 10,
+            "corners": 5,
+            "opp_corners": 0,
+            "fouls": 22,
+            "opp_fouls": 14,
+            "offsides": 2
+          },
+          {
+            "fixture_id": 19703887,
+            "date": "2026-05-24",
+            "is_home": true,
+            "opponent_id": 3545,
+            "opponent": "Viktoria Plzeň",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+            "gf": 3,
+            "ga": 0,
+            "result": "V",
+            "opponent_position": 10,
+            "fdr": 2,
+            "shots": 10,
+            "sot": 4,
+            "corners": 5,
+            "opp_corners": 5,
+            "fouls": 10,
+            "opp_fouls": 11,
+            "offsides": 1
+          }
+        ]
+      },
+      "set_b": {
+        "id": "h2h3",
+        "title": "Poslední 3 domácí proti Plzni",
+        "matches": [
+          {
+            "fixture_id": 19703887,
+            "date": "2026-05-24",
+            "is_home": true,
+            "opponent_id": 3545,
+            "opponent": "Viktoria Plzeň",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+            "gf": 3,
+            "ga": 0,
+            "result": "V",
+            "opponent_position": 10,
+            "fdr": 2,
+            "shots": 10,
+            "sot": 4,
+            "corners": 5,
+            "opp_corners": 5,
+            "fouls": 10,
+            "opp_fouls": 11,
+            "offsides": 1
+          },
+          {
+            "fixture_id": 19439241,
+            "date": "2026-04-12",
+            "is_home": true,
+            "opponent_id": 3545,
+            "opponent": "Viktoria Plzeň",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+            "gf": 0,
+            "ga": 0,
+            "result": "R",
+            "opponent_position": 10,
+            "fdr": 2,
+            "shots": 20,
+            "sot": 6,
+            "corners": 4,
+            "opp_corners": 3,
+            "fouls": 18,
+            "opp_fouls": 13,
+            "offsides": 0
+          },
+          {
+            "fixture_id": 19416500,
+            "date": "2025-05-03",
+            "is_home": true,
+            "opponent_id": 3545,
+            "opponent": "Viktoria Plzeň",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
+            "gf": 4,
+            "ga": 3,
+            "result": "V",
+            "opponent_position": 10,
+            "fdr": 2,
+            "shots": 27,
+            "sot": 14,
+            "corners": 5,
+            "opp_corners": 7,
+            "fouls": 6,
+            "opp_fouls": 6,
+            "offsides": 2
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "key": "shots",
+          "name": "Střely",
+          "line": 10,
+          "hits": 8,
+          "n": 8,
+          "pct": 100,
+          "set_a": {
+            "hits": 5,
+            "n": 5,
+            "need": 4,
+            "values": [
+              16,
+              26,
+              32,
+              15,
+              10
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              10,
+              20,
+              27
+            ]
+          }
+        },
+        {
+          "key": "sot",
+          "name": "Střely na branku",
+          "line": 4,
+          "hits": 8,
+          "n": 8,
+          "pct": 100,
+          "set_a": {
+            "hits": 5,
+            "n": 5,
+            "need": 4,
+            "values": [
+              6,
+              7,
+              5,
+              10,
+              4
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              4,
+              6,
+              14
+            ]
+          }
+        },
+        {
+          "key": "corners",
+          "name": "Rohy získané",
+          "line": 4,
+          "hits": 8,
+          "n": 8,
+          "pct": 100,
+          "set_a": {
+            "hits": 5,
+            "n": 5,
+            "need": 4,
+            "values": [
+              5,
+              11,
+              4,
+              5,
+              5
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              5,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "key": "opp_corners",
+          "name": "Rohy inkasované",
+          "line": 1,
+          "hits": 7,
+          "n": 8,
+          "pct": 88,
+          "set_a": {
+            "hits": 4,
+            "n": 5,
+            "need": 4,
+            "values": [
+              1,
+              1,
+              2,
+              0,
+              5
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              5,
+              3,
+              7
+            ]
+          }
+        },
+        {
+          "key": "fouls",
+          "name": "Fauly způsobené",
+          "line": 6,
+          "hits": 8,
+          "n": 8,
+          "pct": 100,
+          "set_a": {
+            "hits": 5,
+            "n": 5,
+            "need": 4,
+            "values": [
+              14,
+              15,
+              6,
+              22,
+              10
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              10,
+              18,
+              6
+            ]
+          }
+        },
+        {
+          "key": "opp_fouls",
+          "name": "Fauly získané",
+          "line": 6,
+          "hits": 8,
+          "n": 8,
+          "pct": 100,
+          "set_a": {
+            "hits": 5,
+            "n": 5,
+            "need": 4,
+            "values": [
+              13,
+              13,
+              16,
+              14,
+              11
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              11,
+              13,
+              6
+            ]
+          }
+        },
+        {
+          "key": "offsides",
+          "name": "Ofsajdy",
+          "line": 0,
+          "hits": 8,
+          "n": 8,
+          "pct": 100,
+          "set_a": {
+            "hits": 5,
+            "n": 5,
+            "need": 4,
+            "values": [
+              1,
+              2,
+              1,
+              2,
+              1
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              1,
+              0,
+              2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Plzeň venku",
+      "note": "3 venkovní proti soupeři z váhy 5 (jako Slavia) + 3 na hřišti Slavie.",
+      "cases": 6,
+      "set_a": {
+        "id": "away_fdr5",
+        "title": "Poslední 3 venku proti FDR 5",
+        "matches": [
+          {
+            "fixture_id": 19703887,
+            "date": "2026-05-24",
+            "is_home": false,
+            "opponent_id": 216,
+            "opponent": "Slavia Praha",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+            "gf": 0,
+            "ga": 3,
+            "result": "P",
+            "opponent_position": 1,
+            "fdr": 5,
+            "shots": 8,
+            "sot": 4,
+            "corners": 5,
+            "opp_corners": 5,
+            "fouls": 11,
+            "opp_fouls": 10,
+            "offsides": 2
+          },
+          {
+            "fixture_id": 19439241,
+            "date": "2026-04-12",
+            "is_home": false,
+            "opponent_id": 216,
+            "opponent": "Slavia Praha",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+            "gf": 0,
+            "ga": 0,
+            "result": "R",
+            "opponent_position": 1,
+            "fdr": 5,
+            "shots": 12,
+            "sot": 5,
+            "corners": 3,
+            "opp_corners": 4,
+            "fouls": 13,
+            "opp_fouls": 18,
+            "offsides": 1
+          },
+          {
+            "fixture_id": 19439178,
+            "date": "2026-02-14",
+            "is_home": false,
+            "opponent_id": 3097,
+            "opponent": "Sigma Olomouc",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
+            "gf": 2,
+            "ga": 1,
+            "result": "V",
+            "opponent_position": 4,
+            "fdr": 5,
+            "shots": 16,
+            "sot": 4,
+            "corners": 5,
+            "opp_corners": 6,
+            "fouls": 15,
+            "opp_fouls": 14,
+            "offsides": 1
+          }
+        ]
+      },
+      "set_b": {
+        "id": "at_slavia",
+        "title": "Poslední 3 na hřišti Slavie",
+        "matches": [
+          {
+            "fixture_id": 19703887,
+            "date": "2026-05-24",
+            "is_home": false,
+            "opponent_id": 216,
+            "opponent": "Slavia Praha",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+            "gf": 0,
+            "ga": 3,
+            "result": "P",
+            "opponent_position": 1,
+            "fdr": 5,
+            "shots": 8,
+            "sot": 4,
+            "corners": 5,
+            "opp_corners": 5,
+            "fouls": 11,
+            "opp_fouls": 10,
+            "offsides": 2
+          },
+          {
+            "fixture_id": 19439241,
+            "date": "2026-04-12",
+            "is_home": false,
+            "opponent_id": 216,
+            "opponent": "Slavia Praha",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+            "gf": 0,
+            "ga": 0,
+            "result": "R",
+            "opponent_position": 1,
+            "fdr": 5,
+            "shots": 12,
+            "sot": 5,
+            "corners": 3,
+            "opp_corners": 4,
+            "fouls": 13,
+            "opp_fouls": 18,
+            "offsides": 1
+          },
+          {
+            "fixture_id": 19416500,
+            "date": "2025-05-03",
+            "is_home": false,
+            "opponent_id": 216,
+            "opponent": "Slavia Praha",
+            "opponent_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
+            "gf": 3,
+            "ga": 4,
+            "result": "P",
+            "opponent_position": 1,
+            "fdr": 5,
+            "shots": 10,
+            "sot": 4,
+            "corners": 7,
+            "opp_corners": 5,
+            "fouls": 6,
+            "opp_fouls": 6,
+            "offsides": 1
+          }
+        ]
+      },
+      "metrics": [
+        {
+          "key": "shots",
+          "name": "Střely",
+          "line": 8,
+          "hits": 6,
+          "n": 6,
+          "pct": 100,
+          "set_a": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              8,
+              12,
+              16
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              8,
+              12,
+              10
+            ]
+          }
+        },
+        {
+          "key": "sot",
+          "name": "Střely na branku",
+          "line": 4,
+          "hits": 6,
+          "n": 6,
+          "pct": 100,
+          "set_a": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              4,
+              5,
+              4
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              4,
+              5,
+              4
+            ]
+          }
+        },
+        {
+          "key": "corners",
+          "name": "Rohy získané",
+          "line": 3,
+          "hits": 6,
+          "n": 6,
+          "pct": 100,
+          "set_a": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              5,
+              3,
+              5
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              5,
+              3,
+              7
+            ]
+          }
+        },
+        {
+          "key": "opp_corners",
+          "name": "Rohy inkasované",
+          "line": 4,
+          "hits": 6,
+          "n": 6,
+          "pct": 100,
+          "set_a": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              5,
+              4,
+              6
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              5,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "key": "fouls",
+          "name": "Fauly způsobené",
+          "line": 6,
+          "hits": 6,
+          "n": 6,
+          "pct": 100,
+          "set_a": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              11,
+              13,
+              15
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              11,
+              13,
+              6
+            ]
+          }
+        },
+        {
+          "key": "opp_fouls",
+          "name": "Fauly získané",
+          "line": 6,
+          "hits": 6,
+          "n": 6,
+          "pct": 100,
+          "set_a": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              10,
+              18,
+              14
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              10,
+              18,
+              6
+            ]
+          }
+        },
+        {
+          "key": "offsides",
+          "name": "Ofsajdy",
+          "line": 1,
+          "hits": 6,
+          "n": 6,
+          "pct": 100,
+          "set_a": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              2,
+              1,
+              1
+            ]
+          },
+          "set_b": {
+            "hits": 3,
+            "n": 3,
+            "need": 3,
+            "values": [
+              2,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "seasons": [
+    {
+      "id": 27984,
+      "name": "2026/2027"
+    },
+    {
+      "id": 25591,
+      "name": "2025/2026"
+    },
+    {
+      "id": 23641,
+      "name": "2024/2025"
+    },
+    {
+      "id": 21682,
+      "name": "2023/2024"
+    },
+    {
+      "id": 19791,
+      "name": "2022/2023"
+    }
+  ]
+}

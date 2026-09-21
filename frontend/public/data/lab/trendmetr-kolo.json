@@ -1,0 +1,3156 @@
+{
+  "id": "trendmetr-kolo",
+  "title": "Trendmetr",
+  "subtitle": "Včerejší Chance Liga · odhad vs skutečnost",
+  "league": "Chance Liga",
+  "league_id": 262,
+  "day": "2026-09-20",
+  "rule": "První tři sloupce: modus v pásmu, přesně = 3 b., ±1 = 1 b. Mix ≥: podlaha 70 % A i B, +1 když 65 % A i B ještě drží. Zelená = skutečnost ≥ tip (over), žlutá = o 1 pod, červená = míň.",
+  "excluded_note": "Hodnocený zápas není ve svých vzorcích.",
+  "computed_at": "2026-09-21",
+  "history_from": "2022-07-30",
+  "metrics": [
+    {
+      "key": "shots",
+      "name": "Střely"
+    },
+    {
+      "key": "sot",
+      "name": "Střely na branku"
+    },
+    {
+      "key": "corners",
+      "name": "Rohy"
+    },
+    {
+      "key": "fouls",
+      "name": "Fauly"
+    },
+    {
+      "key": "offsides",
+      "name": "Ofsajdy"
+    }
+  ],
+  "methods": [
+    {
+      "id": "and70",
+      "title": "70 % A i B",
+      "points": 40,
+      "scoring": "exact"
+    },
+    {
+      "id": "pool70",
+      "title": "70 % z (A+B)",
+      "points": 40,
+      "scoring": "exact"
+    },
+    {
+      "id": "and65",
+      "title": "65 % A i B",
+      "points": 40,
+      "scoring": "exact"
+    },
+    {
+      "id": "mix",
+      "title": "Mix ≥",
+      "points": 115,
+      "scoring": "over"
+    }
+  ],
+  "winners": [
+    {
+      "id": "and70",
+      "title": "70 % A i B",
+      "points": 40,
+      "scoring": "exact"
+    },
+    {
+      "id": "pool70",
+      "title": "70 % z (A+B)",
+      "points": 40,
+      "scoring": "exact"
+    },
+    {
+      "id": "and65",
+      "title": "65 % A i B",
+      "points": 40,
+      "scoring": "exact"
+    }
+  ],
+  "stats": [
+    {
+      "key": "shots",
+      "name": "Střely",
+      "points": {
+        "and70": 4,
+        "pool70": 4,
+        "and65": 4,
+        "mix": 24
+      },
+      "total": 12
+    },
+    {
+      "key": "sot",
+      "name": "Střely na branku",
+      "points": {
+        "and70": 10,
+        "pool70": 10,
+        "and65": 10,
+        "mix": 24
+      },
+      "total": 30
+    },
+    {
+      "key": "corners",
+      "name": "Rohy",
+      "points": {
+        "and70": 5,
+        "pool70": 5,
+        "and65": 5,
+        "mix": 24
+      },
+      "total": 15
+    },
+    {
+      "key": "fouls",
+      "name": "Fauly",
+      "points": {
+        "and70": 4,
+        "pool70": 4,
+        "and65": 4,
+        "mix": 21
+      },
+      "total": 12
+    },
+    {
+      "key": "offsides",
+      "name": "Ofsajdy",
+      "points": {
+        "and70": 17,
+        "pool70": 17,
+        "and65": 17,
+        "mix": 22
+      },
+      "total": 51
+    }
+  ],
+  "best_stat": {
+    "key": "offsides",
+    "name": "Ofsajdy",
+    "total": 51
+  },
+  "matches": [
+    {
+      "fixture_id": 19725040,
+      "date": "2026-09-20",
+      "kickoff": "2026-09-20 11:00:00",
+      "home": {
+        "id": 3552,
+        "name": "Hradec Králové",
+        "short": "HRK",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
+      },
+      "away": {
+        "id": 1351,
+        "name": "Teplice",
+        "short": "TEP",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 2
+      },
+      "home_fdr_away": 3,
+      "home_position": 9,
+      "sides": [
+        {
+          "label": "Hradec Králové doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři.",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 16,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "13 nebo 15",
+                  "pick": null,
+                  "picks": [
+                    13,
+                    15
+                  ],
+                  "kind": "bimodal",
+                  "lo": 2,
+                  "hi": 15,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "13 nebo 15",
+                  "pick": null,
+                  "picks": [
+                    13,
+                    15
+                  ],
+                  "kind": "bimodal",
+                  "lo": 10,
+                  "hi": 15,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "13 nebo 15",
+                  "pick": null,
+                  "picks": [
+                    13,
+                    15
+                  ],
+                  "kind": "bimodal",
+                  "lo": 9,
+                  "hi": 15,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 13,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 7,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "2–7",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "range",
+                  "lo": 2,
+                  "hi": 7,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "4 nebo 5",
+                  "pick": null,
+                  "picks": [
+                    4,
+                    5
+                  ],
+                  "kind": "bimodal",
+                  "lo": 4,
+                  "hi": 5,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "4 nebo 5",
+                  "pick": null,
+                  "picks": [
+                    4,
+                    5
+                  ],
+                  "kind": "bimodal",
+                  "lo": 4,
+                  "hi": 5,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 7,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "3 nebo 5",
+                  "pick": null,
+                  "picks": [
+                    3,
+                    5
+                  ],
+                  "kind": "bimodal",
+                  "lo": 3,
+                  "hi": 9,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 4,
+                  "hi": 7,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "3 nebo 5",
+                  "pick": null,
+                  "picks": [
+                    3,
+                    5
+                  ],
+                  "kind": "bimodal",
+                  "lo": 3,
+                  "hi": 9,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 5,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "14",
+                  "pick": 14,
+                  "picks": [
+                    14
+                  ],
+                  "kind": "mode",
+                  "lo": 9,
+                  "hi": 14,
+                  "diff": 9,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "14",
+                  "pick": 14,
+                  "picks": [
+                    14
+                  ],
+                  "kind": "mode",
+                  "lo": 11,
+                  "hi": 14,
+                  "diff": 9,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "14",
+                  "pick": 14,
+                  "picks": [
+                    14
+                  ],
+                  "kind": "mode",
+                  "lo": 9,
+                  "hi": 14,
+                  "diff": 9,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": -4,
+                  "points": 0,
+                  "tone": "miss"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 1,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 0,
+                  "hi": 3,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 2,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 2,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 4,
+            "pool70": 4,
+            "and65": 4,
+            "mix": 12
+          }
+        },
+        {
+          "label": "Teplice venku",
+          "note": "3 venku proti FDR 3 + 3 na hřišti domácích.",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 10,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "mode",
+                  "lo": 2,
+                  "hi": 18,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "mode",
+                  "lo": 8,
+                  "hi": 12,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "point",
+                  "lo": 12,
+                  "hi": 12,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 12,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 5,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 3,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "point",
+                  "lo": 3,
+                  "hi": 3,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 10,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 3,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 3,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 10,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "mode",
+                  "lo": 8,
+                  "hi": 17,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "mode",
+                  "lo": 11,
+                  "hi": 14,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "mode",
+                  "lo": 11,
+                  "hi": 14,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 8,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 1,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "0 nebo 1",
+                  "pick": null,
+                  "picks": [
+                    0,
+                    1
+                  ],
+                  "kind": "bimodal",
+                  "lo": 0,
+                  "hi": 3,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "0 nebo 1",
+                  "pick": null,
+                  "picks": [
+                    0,
+                    1
+                  ],
+                  "kind": "bimodal",
+                  "lo": 0,
+                  "hi": 2,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "point",
+                  "lo": 1,
+                  "hi": 1,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 8,
+            "pool70": 8,
+            "and65": 8,
+            "mix": 15
+          }
+        }
+      ],
+      "points": {
+        "and70": 12,
+        "pool70": 12,
+        "and65": 12,
+        "mix": 27
+      }
+    },
+    {
+      "fixture_id": 19725039,
+      "date": "2026-09-20",
+      "kickoff": "2026-09-20 13:00:00",
+      "home": {
+        "id": 3643,
+        "name": "Jablonec",
+        "short": "JAB",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
+      },
+      "away": {
+        "id": 1745,
+        "name": "Zlín",
+        "short": "FCZ",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "home_fdr_away": 3,
+      "home_position": 8,
+      "sides": [
+        {
+          "label": "Jablonec doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři.",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 27,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "8–24",
+                  "pick": 14,
+                  "picks": [
+                    14
+                  ],
+                  "kind": "range",
+                  "lo": 8,
+                  "hi": 24,
+                  "diff": 13,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "11–23",
+                  "pick": 17,
+                  "picks": [
+                    17
+                  ],
+                  "kind": "range",
+                  "lo": 11,
+                  "hi": 23,
+                  "diff": 10,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "11–24",
+                  "pick": 19,
+                  "picks": [
+                    19
+                  ],
+                  "kind": "range",
+                  "lo": 11,
+                  "hi": 24,
+                  "diff": 8,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 8,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": 18,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 8,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "7",
+                  "pick": 7,
+                  "picks": [
+                    7
+                  ],
+                  "kind": "mode",
+                  "lo": 2,
+                  "hi": 7,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "7",
+                  "pick": 7,
+                  "picks": [
+                    7
+                  ],
+                  "kind": "mode",
+                  "lo": 3,
+                  "hi": 7,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "7",
+                  "pick": 7,
+                  "picks": [
+                    7
+                  ],
+                  "kind": "mode",
+                  "lo": 3,
+                  "hi": 7,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 3,
+                  "usable": true,
+                  "diff": 5,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 9,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "6 nebo 10",
+                  "pick": null,
+                  "picks": [
+                    6,
+                    10
+                  ],
+                  "kind": "bimodal",
+                  "lo": 2,
+                  "hi": 12,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "6 nebo 10",
+                  "pick": null,
+                  "picks": [
+                    6,
+                    10
+                  ],
+                  "kind": "bimodal",
+                  "lo": 6,
+                  "hi": 10,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "6 nebo 10",
+                  "pick": null,
+                  "picks": [
+                    6,
+                    10
+                  ],
+                  "kind": "bimodal",
+                  "lo": 6,
+                  "hi": 10,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 6,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 10,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "14",
+                  "pick": 14,
+                  "picks": [
+                    14
+                  ],
+                  "kind": "mode",
+                  "lo": 9,
+                  "hi": 15,
+                  "diff": 4,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "14",
+                  "pick": 14,
+                  "picks": [
+                    14
+                  ],
+                  "kind": "mode",
+                  "lo": 11,
+                  "hi": 14,
+                  "diff": 4,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "14",
+                  "pick": 14,
+                  "picks": [
+                    14
+                  ],
+                  "kind": "mode",
+                  "lo": 11,
+                  "hi": 14,
+                  "diff": 4,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "mode",
+                  "lo": 0,
+                  "hi": 3,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 2,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 2,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 5,
+            "pool70": 5,
+            "and65": 5,
+            "mix": 15
+          }
+        },
+        {
+          "label": "Zlín venku",
+          "note": "3 venku proti FDR 3 + 3 na hřišti domácích.",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 6,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "8",
+                  "pick": 8,
+                  "picks": [
+                    8
+                  ],
+                  "kind": "mode",
+                  "lo": 2,
+                  "hi": 17,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "8",
+                  "pick": 8,
+                  "picks": [
+                    8
+                  ],
+                  "kind": "mode",
+                  "lo": 7,
+                  "hi": 11,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "8",
+                  "pick": 8,
+                  "picks": [
+                    8
+                  ],
+                  "kind": "point",
+                  "lo": 8,
+                  "hi": 8,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 8,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 0,
+                  "hi": 5,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 2,
+                  "hi": 5,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 4,
+                  "hi": 5,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 5,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 3,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 3,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 16,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "mode",
+                  "lo": 9,
+                  "hi": 18,
+                  "diff": 5,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "mode",
+                  "lo": 11,
+                  "hi": 17,
+                  "diff": 5,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "mode",
+                  "lo": 11,
+                  "hi": 17,
+                  "diff": 5,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 0,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "0 nebo 1",
+                  "pick": null,
+                  "picks": [
+                    0,
+                    1
+                  ],
+                  "kind": "bimodal",
+                  "lo": 0,
+                  "hi": 1,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "0 nebo 1",
+                  "pick": null,
+                  "picks": [
+                    0,
+                    1
+                  ],
+                  "kind": "bimodal",
+                  "lo": 0,
+                  "hi": 1,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "0 nebo 1",
+                  "pick": null,
+                  "picks": [
+                    0,
+                    1
+                  ],
+                  "kind": "bimodal",
+                  "lo": 0,
+                  "hi": 1,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 4,
+            "pool70": 4,
+            "and65": 4,
+            "mix": 15
+          }
+        }
+      ],
+      "points": {
+        "and70": 9,
+        "pool70": 9,
+        "and65": 9,
+        "mix": 30
+      }
+    },
+    {
+      "fixture_id": 19725043,
+      "date": "2026-09-20",
+      "kickoff": "2026-09-20 13:00:00",
+      "home": {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "short": "SIG",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png"
+      },
+      "away": {
+        "id": 2727,
+        "name": "Sparta Praha",
+        "short": "SPA",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 3
+      },
+      "home_fdr_away": 5,
+      "home_position": 4,
+      "sides": [
+        {
+          "label": "Sigma Olomouc doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři.",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 12,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "mode",
+                  "lo": 4,
+                  "hi": 21,
+                  "diff": 3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "mode",
+                  "lo": 9,
+                  "hi": 18,
+                  "diff": 3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "mode",
+                  "lo": 9,
+                  "hi": 21,
+                  "diff": 3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 7,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "8",
+                  "pick": 8,
+                  "picks": [
+                    8
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 9,
+                  "diff": 4,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "8",
+                  "pick": 8,
+                  "picks": [
+                    8
+                  ],
+                  "kind": "mode",
+                  "lo": 3,
+                  "hi": 8,
+                  "diff": 4,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "8",
+                  "pick": 8,
+                  "picks": [
+                    8
+                  ],
+                  "kind": "mode",
+                  "lo": 2,
+                  "hi": 9,
+                  "diff": 4,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 2,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 3,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "5 nebo 6",
+                  "pick": null,
+                  "picks": [
+                    5,
+                    6
+                  ],
+                  "kind": "bimodal",
+                  "lo": 1,
+                  "hi": 7,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "5 nebo 6",
+                  "pick": null,
+                  "picks": [
+                    5,
+                    6
+                  ],
+                  "kind": "bimodal",
+                  "lo": 5,
+                  "hi": 6,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "5 nebo 6",
+                  "pick": null,
+                  "picks": [
+                    5,
+                    6
+                  ],
+                  "kind": "bimodal",
+                  "lo": 4,
+                  "hi": 6,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥2",
+                  "pick": 2,
+                  "picks": [
+                    2
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 11,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "mode",
+                  "lo": 10,
+                  "hi": 15,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "mode",
+                  "lo": 11,
+                  "hi": 13,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "mode",
+                  "lo": 11,
+                  "hi": 15,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 1,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 0,
+                  "hi": 2,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "point",
+                  "lo": 1,
+                  "hi": 1,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 0,
+                  "hi": 1,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥0",
+                  "pick": 0,
+                  "picks": [
+                    0
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 0,
+                  "usable": false,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 6,
+            "pool70": 6,
+            "and65": 6,
+            "mix": 15
+          }
+        },
+        {
+          "label": "Sparta Praha venku",
+          "note": "3 venku proti FDR 5 + 3 na hřišti domácích.",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 21,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "4–16",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "range",
+                  "lo": 4,
+                  "hi": 16,
+                  "diff": 10,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "6–15",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "range",
+                  "lo": 6,
+                  "hi": 15,
+                  "diff": 10,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "9 nebo 12",
+                  "pick": null,
+                  "picks": [
+                    9,
+                    12
+                  ],
+                  "kind": "bimodal",
+                  "lo": 9,
+                  "hi": 12,
+                  "diff": 9,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 9,
+                  "usable": true,
+                  "diff": 16,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 5,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 0,
+                  "hi": 6,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 5,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 5,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 7,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 2,
+                  "hi": 10,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 5,
+                  "hi": 7,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 5,
+                  "hi": 7,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥3",
+                  "pick": 3,
+                  "picks": [
+                    3
+                  ],
+                  "kind": "over",
+                  "lo": 2,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 11,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "13",
+                  "pick": 13,
+                  "picks": [
+                    13
+                  ],
+                  "kind": "mode",
+                  "lo": 9,
+                  "hi": 17,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "13",
+                  "pick": 13,
+                  "picks": [
+                    13
+                  ],
+                  "kind": "mode",
+                  "lo": 13,
+                  "hi": 15,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "13",
+                  "pick": 13,
+                  "picks": [
+                    13
+                  ],
+                  "kind": "mode",
+                  "lo": 13,
+                  "hi": 14,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "over",
+                  "lo": 9,
+                  "hi": 13,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 7,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 0,
+                  "hi": 4,
+                  "diff": 6,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 3,
+                  "diff": 6,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 3,
+                  "diff": 6,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 3,
+            "pool70": 3,
+            "and65": 3,
+            "mix": 15
+          }
+        }
+      ],
+      "points": {
+        "and70": 9,
+        "pool70": 9,
+        "and65": 9,
+        "mix": 30
+      }
+    },
+    {
+      "fixture_id": 19725038,
+      "date": "2026-09-20",
+      "kickoff": "2026-09-20 16:00:00",
+      "home": {
+        "id": 216,
+        "name": "Slavia Praha",
+        "short": "SLA",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
+      },
+      "away": {
+        "id": 3545,
+        "name": "Viktoria Plzeň",
+        "short": "VPL",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "home_fdr_away": 5,
+      "home_position": 1,
+      "sides": [
+        {
+          "label": "Slavia Praha doma",
+          "note": "5 domácích v lize + 3 domácí proti soupeři.",
+          "cases": 8,
+          "n_a": 5,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 21,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "mode",
+                  "lo": 10,
+                  "hi": 27,
+                  "diff": 11,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "15–26",
+                  "pick": 18,
+                  "picks": [
+                    18
+                  ],
+                  "kind": "range",
+                  "lo": 15,
+                  "hi": 26,
+                  "diff": 3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "15–26",
+                  "pick": 18,
+                  "picks": [
+                    18
+                  ],
+                  "kind": "range",
+                  "lo": 15,
+                  "hi": 26,
+                  "diff": 3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥11",
+                  "pick": 11,
+                  "picks": [
+                    11
+                  ],
+                  "kind": "over",
+                  "lo": 10,
+                  "hi": 15,
+                  "usable": true,
+                  "diff": 10,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 5,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "4 nebo 6",
+                  "pick": null,
+                  "picks": [
+                    4,
+                    6
+                  ],
+                  "kind": "bimodal",
+                  "lo": 4,
+                  "hi": 14,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "6",
+                  "pick": 6,
+                  "picks": [
+                    6
+                  ],
+                  "kind": "mode",
+                  "lo": 5,
+                  "hi": 7,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "6",
+                  "pick": 6,
+                  "picks": [
+                    6
+                  ],
+                  "kind": "mode",
+                  "lo": 5,
+                  "hi": 7,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 9,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 4,
+                  "hi": 5,
+                  "diff": 4,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "point",
+                  "lo": 5,
+                  "hi": 5,
+                  "diff": 4,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "point",
+                  "lo": 5,
+                  "hi": 5,
+                  "diff": 4,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 4,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 13,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "6 nebo 10",
+                  "pick": null,
+                  "picks": [
+                    6,
+                    10
+                  ],
+                  "kind": "bimodal",
+                  "lo": 6,
+                  "hi": 18,
+                  "diff": 3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "mode",
+                  "lo": 10,
+                  "hi": 15,
+                  "diff": 3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "10",
+                  "pick": 10,
+                  "picks": [
+                    10
+                  ],
+                  "kind": "mode",
+                  "lo": 10,
+                  "hi": 15,
+                  "diff": 3,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥7",
+                  "pick": 7,
+                  "picks": [
+                    7
+                  ],
+                  "kind": "over",
+                  "lo": 6,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 6,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 0,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 0,
+                  "hi": 2,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 2,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 2,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 0,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": -1,
+                  "points": 1,
+                  "tone": "close"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 2,
+            "pool70": 2,
+            "and65": 2,
+            "mix": 13
+          }
+        },
+        {
+          "label": "Viktoria Plzeň venku",
+          "note": "3 venku proti FDR 5 + 3 na hřišti domácích.",
+          "cases": 6,
+          "n_a": 3,
+          "n_b": 3,
+          "metrics": [
+            {
+              "key": "shots",
+              "name": "Střely",
+              "actual": 12,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "8 nebo 12",
+                  "pick": null,
+                  "picks": [
+                    8,
+                    12
+                  ],
+                  "kind": "bimodal",
+                  "lo": 8,
+                  "hi": 16,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "8 nebo 12",
+                  "pick": null,
+                  "picks": [
+                    8,
+                    12
+                  ],
+                  "kind": "bimodal",
+                  "lo": 8,
+                  "hi": 12,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "12",
+                  "pick": 12,
+                  "picks": [
+                    12
+                  ],
+                  "kind": "mode",
+                  "lo": 10,
+                  "hi": 12,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥9",
+                  "pick": 9,
+                  "picks": [
+                    9
+                  ],
+                  "kind": "over",
+                  "lo": 8,
+                  "hi": 10,
+                  "usable": true,
+                  "diff": 3,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "sot",
+              "name": "Střely na branku",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "mode",
+                  "lo": 4,
+                  "hi": 5,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "mode",
+                  "lo": 4,
+                  "hi": 5,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "point",
+                  "lo": 4,
+                  "hi": 4,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 4,
+                  "hi": 4,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "corners",
+              "name": "Rohy",
+              "actual": 4,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 3,
+                  "hi": 7,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "mode",
+                  "lo": 3,
+                  "hi": 5,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "5",
+                  "pick": 5,
+                  "picks": [
+                    5
+                  ],
+                  "kind": "point",
+                  "lo": 5,
+                  "hi": 5,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥4",
+                  "pick": 4,
+                  "picks": [
+                    4
+                  ],
+                  "kind": "over",
+                  "lo": 3,
+                  "hi": 5,
+                  "usable": true,
+                  "diff": 0,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "fouls",
+              "name": "Fauly",
+              "actual": 9,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "11 nebo 13",
+                  "pick": null,
+                  "picks": [
+                    11,
+                    13
+                  ],
+                  "kind": "bimodal",
+                  "lo": 6,
+                  "hi": 15,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "11 nebo 13",
+                  "pick": null,
+                  "picks": [
+                    11,
+                    13
+                  ],
+                  "kind": "bimodal",
+                  "lo": 11,
+                  "hi": 13,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "11 nebo 13",
+                  "pick": null,
+                  "picks": [
+                    11,
+                    13
+                  ],
+                  "kind": "bimodal",
+                  "lo": 11,
+                  "hi": 13,
+                  "diff": 2,
+                  "points": 0,
+                  "tone": "miss"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥7",
+                  "pick": 7,
+                  "picks": [
+                    7
+                  ],
+                  "kind": "over",
+                  "lo": 6,
+                  "hi": 11,
+                  "usable": true,
+                  "diff": 2,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            },
+            {
+              "key": "offsides",
+              "name": "Ofsajdy",
+              "actual": 2,
+              "methods": [
+                {
+                  "id": "and70",
+                  "title": "70 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 2,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "pool70",
+                  "title": "70 % z (A+B)",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "mode",
+                  "lo": 1,
+                  "hi": 2,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "and65",
+                  "title": "65 % A i B",
+                  "display": "1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "point",
+                  "lo": 1,
+                  "hi": 1,
+                  "diff": 1,
+                  "points": 1,
+                  "tone": "close"
+                },
+                {
+                  "id": "mix",
+                  "title": "Mix ≥",
+                  "display": "≥1",
+                  "pick": 1,
+                  "picks": [
+                    1
+                  ],
+                  "kind": "over",
+                  "lo": 1,
+                  "hi": 1,
+                  "usable": true,
+                  "diff": 1,
+                  "points": 3,
+                  "tone": "hit"
+                }
+              ]
+            }
+          ],
+          "points": {
+            "and70": 8,
+            "pool70": 8,
+            "and65": 8,
+            "mix": 15
+          }
+        }
+      ],
+      "points": {
+        "and70": 10,
+        "pool70": 10,
+        "and65": 10,
+        "mix": 28
+      }
+    }
+  ],
+  "seasons": [
+    {
+      "id": 27984,
+      "name": "2026/2027"
+    },
+    {
+      "id": 25591,
+      "name": "2025/2026"
+    },
+    {
+      "id": 23641,
+      "name": "2024/2025"
+    },
+    {
+      "id": 21682,
+      "name": "2023/2024"
+    },
+    {
+      "id": 19791,
+      "name": "2022/2023"
+    }
+  ]
+}
