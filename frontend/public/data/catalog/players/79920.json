@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Matej Hybs v této sezóně za Mladá Boleslav: 8 startů, 700 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:14Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 8,
-      "minutes": 700,
-      "yellow": 2,
-      "shots": 2,
-      "sot": 1,
-      "goals_conceded": 9
-    }
-  }
+  "hook": "Matej Hybs (Obránce) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

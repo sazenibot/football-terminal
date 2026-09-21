@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T21:56:06Z",
+  "generated_at": "2026-09-21T09:47:59Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -5386,20 +5386,20 @@
   ],
   "referees": [
     {
-      "id": 14812,
-      "name": "Darren England",
+      "id": 15293,
+      "name": "Craig Pawson",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
       "league_matches": 7
     },
     {
-      "id": 74959,
-      "name": "Andy Madley",
+      "id": 14812,
+      "name": "Darren England",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 6
+      "league_matches": 7
     },
     {
       "id": 14808,
@@ -5410,12 +5410,20 @@
       "league_matches": 6
     },
     {
-      "id": 15293,
-      "name": "Craig Pawson",
+      "id": 74959,
+      "name": "Andy Madley",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 6
+      "league_matches": 5
+    },
+    {
+      "id": 15294,
+      "name": "Paul Tierney",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 5
     },
     {
       "id": 14814,
@@ -5442,25 +5450,17 @@
       "league_matches": 5
     },
     {
-      "id": 15273,
-      "name": "Michael Oliver",
-      "image": "https://cdn.sportmonks.com/images//soccer/referees/9/15273.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
-      "id": 15294,
-      "name": "Paul Tierney",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
       "id": 14846,
       "name": "Thomas Bramall",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 5
+    },
+    {
+      "id": 15273,
+      "name": "Michael Oliver",
+      "image": "https://cdn.sportmonks.com/images//soccer/referees/9/15273.png",
       "country": "England",
       "in_league": true,
       "league_matches": 4
@@ -5474,12 +5474,20 @@
       "league_matches": 3
     },
     {
+      "id": 14813,
+      "name": "Tim Robinson",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
       "id": 13537,
       "name": "Michael Salisbury",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 3
+      "league_matches": 2
     },
     {
       "id": 13677,
@@ -5487,15 +5495,7 @@
       "image": "https://cdn.sportmonks.com/images//soccer/referees/13/13677.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 14813,
-      "name": "Tim Robinson",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 3
+      "league_matches": 2
     },
     {
       "id": 20172,

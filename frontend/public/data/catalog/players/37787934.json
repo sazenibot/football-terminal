@@ -14,17 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Abdullahi Bewene v této sezóně za Baník Ostrava: 9 startů, 730 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:16Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 8,
-      "minutes": 730,
-      "shots": 9,
-      "sot": 2,
-      "goals_conceded": 17
-    }
-  }
+  "hook": "Abdullahi Bewene (Záložník) nastupuje za Baník Ostrava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Stepan Langer v této sezóně za Zbrojovka Brno: 6 startů, 331 min, 1 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:31:40Z",
-    "season": {
-      "appearances": 6,
-      "lineups": 4,
-      "minutes": 331,
-      "assists": 1,
-      "shots": 5,
-      "sot": 2,
-      "goals_conceded": 5
-    }
-  }
+  "hook": "Stepan Langer (Záložník) nastupuje za Zbrojovka Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

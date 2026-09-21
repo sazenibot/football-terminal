@@ -14,19 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Saidou Alioum Moubarak v této sezóně za Jablonec: 6 startů, 368 min, 1 gól.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:08Z",
-    "season": {
-      "appearances": 6,
-      "lineups": 4,
-      "minutes": 368,
-      "goals": 1,
-      "yellow": 2,
-      "shots": 14,
-      "sot": 4,
-      "goals_conceded": 4
-    }
-  }
+  "hook": "Saidou Alioum Moubarak (Útočník) nastupuje za Jablonec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

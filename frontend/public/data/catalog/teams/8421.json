@@ -580,17 +580,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732296,
-      "starting_at": "2026-09-20T14:30:00Z",
-      "is_home": true,
-      "opponent": {
-        "id": 3887,
-        "name": "Táborsko",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732290,
       "starting_at": "2026-10-09T15:00:00Z",
       "is_home": false,
@@ -613,5 +602,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:05Z"
+  "generated_at": "2026-09-21T09:47:42Z"
 }

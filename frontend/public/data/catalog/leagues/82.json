@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T21:56:06Z",
+  "generated_at": "2026-09-21T09:48:25Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -4832,14 +4832,6 @@
   ],
   "referees": [
     {
-      "id": 926,
-      "name": "Sven Jablonski",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 6
-    },
-    {
       "id": 80234,
       "name": "Daniel Siebert",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4848,8 +4840,8 @@
       "league_matches": 5
     },
     {
-      "id": 15400,
-      "name": "Felix Zwayer",
+      "id": 926,
+      "name": "Sven Jablonski",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4866,6 +4858,14 @@
     {
       "id": 16993,
       "name": "Christian Dingert",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
+      "id": 15400,
+      "name": "Felix Zwayer",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4952,8 +4952,24 @@
       "league_matches": 3
     },
     {
-      "id": 12075,
-      "name": "Tobias Reichel",
+      "id": 17352,
+      "name": "Sascha Stegemann",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 12080,
+      "name": "Timo Gerach",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 25431,
+      "name": "Tobias Welz",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4984,16 +5000,8 @@
       "league_matches": 2
     },
     {
-      "id": 17352,
-      "name": "Sascha Stegemann",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 2
-    },
-    {
-      "id": 12080,
-      "name": "Timo Gerach",
+      "id": 12075,
+      "name": "Tobias Reichel",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -5002,14 +5010,6 @@
     {
       "id": 17233,
       "name": "Tobias Stieler",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 2
-    },
-    {
-      "id": 25431,
-      "name": "Tobias Welz",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,

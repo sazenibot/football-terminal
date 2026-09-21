@@ -14,17 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "J. Zíka v této sezóně za Mladá Boleslav: 8 startů, 640 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:18Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 7,
-      "minutes": 640,
-      "shots": 7,
-      "sot": 2,
-      "goals_conceded": 7
-    }
-  }
+  "hook": "J. Zíka (Záložník) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

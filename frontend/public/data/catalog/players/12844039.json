@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Tomas Zlatohlavek v této sezóně za Teplice: 7 startů, 204 min, 1 gól.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:31:15Z",
-    "season": {
-      "appearances": 7,
-      "minutes": 204,
-      "goals": 1,
-      "yellow": 2,
-      "shots": 5,
-      "sot": 2,
-      "goals_conceded": 5
-    }
-  }
+  "hook": "Tomas Zlatohlavek (Útočník) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

@@ -14,19 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Gigli Ndefe v této sezóně za Slovácko: 9 startů, 764 min, 2 góly.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:37Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 9,
-      "minutes": 764,
-      "goals": 2,
-      "yellow": 2,
-      "shots": 8,
-      "sot": 2,
-      "goals_conceded": 14
-    }
-  }
+  "hook": "Gigli Ndefe (Záložník) nastupuje za Slovácko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

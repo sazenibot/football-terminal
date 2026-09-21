@@ -14,15 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Elione Fernandes Neto v této sezóně za Hradec Králové: 3 starty, 33 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:45Z",
-    "season": {
-      "appearances": 3,
-      "minutes": 33,
-      "yellow": 1,
-      "goals_conceded": 1
-    }
-  }
+  "hook": "Elione Fernandes Neto (Záložník) nastupuje za Hradec Králové. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

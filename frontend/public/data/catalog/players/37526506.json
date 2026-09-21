@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Merchas Doski v této sezóně za Viktoria Plzeň: 8 startů, 686 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:31:23Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 8,
-      "minutes": 686,
-      "yellow": 2,
-      "shots": 3,
-      "sot": 1,
-      "goals_conceded": 16
-    }
-  }
+  "hook": "Merchas Doski (Záložník) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

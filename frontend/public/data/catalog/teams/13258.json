@@ -532,7 +532,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732686,
+      "starting_at": "2026-10-21T18:00:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 3457,
+        "name": "Levante",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:07Z"
+  "generated_at": "2026-09-21T09:48:48Z"
 }

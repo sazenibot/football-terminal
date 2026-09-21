@@ -14,17 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Daniel Holzer v této sezóně za Baník Ostrava: 8 startů, 323 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:17Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 4,
-      "minutes": 323,
-      "shots": 8,
-      "sot": 1,
-      "goals_conceded": 8
-    }
-  }
+  "hook": "Daniel Holzer (Záložník) nastupuje za Baník Ostrava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

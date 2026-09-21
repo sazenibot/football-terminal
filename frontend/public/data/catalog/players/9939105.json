@@ -14,16 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Tomas Vlcek v této sezóně za Slavia Praha: 6 startů, 335 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:13Z",
-    "season": {
-      "appearances": 6,
-      "lineups": 3,
-      "minutes": 335,
-      "yellow": 1,
-      "goals_conceded": 2
-    }
-  }
+  "hook": "Tomas Vlcek (Obránce) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

@@ -14,17 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Artūr Dolžnikov v této sezóně za Slovácko: 4 starty, 214 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:35Z",
-    "season": {
-      "appearances": 4,
-      "lineups": 2,
-      "minutes": 214,
-      "shots": 3,
-      "sot": 1,
-      "goals_conceded": 2
-    }
-  }
+  "hook": "Artūr Dolžnikov (Záložník) nastupuje za Slovácko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

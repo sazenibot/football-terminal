@@ -495,17 +495,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732292,
-      "starting_at": "2026-09-20T08:15:00Z",
-      "is_home": false,
-      "opponent": {
-        "id": 2364,
-        "name": "Viktoria Žižkov",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732287,
       "starting_at": "2026-10-10T16:00:00Z",
       "is_home": true,
@@ -528,5 +517,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:05Z"
+  "generated_at": "2026-09-21T09:47:42Z"
 }

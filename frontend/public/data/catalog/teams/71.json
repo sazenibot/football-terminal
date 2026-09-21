@@ -495,17 +495,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19722158,
-      "starting_at": "2026-09-20T13:00:00Z",
-      "is_home": true,
-      "opponent": {
-        "id": 51,
-        "name": "Crystal Palace",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19722153,
       "starting_at": "2026-10-10T11:30:00Z",
       "is_home": false,
@@ -528,5 +517,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:06Z"
+  "generated_at": "2026-09-21T09:47:59Z"
 }

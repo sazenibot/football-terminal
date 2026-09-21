@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Tomas Jelinek v této sezóně za Pardubice: 7 startů, 540 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:38Z",
-    "season": {
-      "appearances": 7,
-      "lineups": 6,
-      "minutes": 540,
-      "yellow": 2,
-      "shots": 12,
-      "sot": 6,
-      "goals_conceded": 7
-    }
-  }
+  "hook": "Tomas Jelinek (Záložník) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

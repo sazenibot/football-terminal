@@ -14,14 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
-  "hook": "Marek Havran v této sezóně za Banik Ostrava B: 2 starty, 41 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:19Z",
-    "season": {
-      "appearances": 2,
-      "minutes": 41,
-      "goals_conceded": 1
-    }
-  }
+  "hook": "Marek Havran (Záložník) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:42Z"
 }

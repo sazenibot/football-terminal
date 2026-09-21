@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T21:56:05Z",
+  "generated_at": "2026-09-21T09:47:42Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -4741,6 +4741,14 @@
       "league_matches": 4
     },
     {
+      "id": 73711,
+      "name": "Lukáš Nehasil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
       "id": 16465,
       "name": "Pavel Orel",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4789,14 +4797,6 @@
       "league_matches": 2
     },
     {
-      "id": 73711,
-      "name": "Lukáš Nehasil",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 2
-    },
-    {
       "id": 72915,
       "name": "Marek Radina",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4823,14 +4823,6 @@
     {
       "id": 1159814,
       "name": "Habermann Lubomir",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 1
-    },
-    {
-      "id": 17129,
-      "name": "Ondřej Berka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -5479,6 +5471,14 @@
     {
       "id": 16879,
       "name": "Ondrej Pelikán",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 17129,
+      "name": "Ondřej Berka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": false,

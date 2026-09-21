@@ -14,19 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "El Hadji Ndiaye v této sezóně za SK Artis Brno: 9 startů, 614 min, 1 gól.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:12Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 8,
-      "minutes": 614,
-      "goals": 1,
-      "yellow": 2,
-      "shots": 9,
-      "sot": 2,
-      "goals_conceded": 14
-    }
-  }
+  "hook": "El Hadji Ndiaye (Útočník) nastupuje za SK Artis Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

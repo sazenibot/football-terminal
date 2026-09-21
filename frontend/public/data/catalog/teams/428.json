@@ -580,17 +580,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732298,
-      "starting_at": "2026-09-20T11:15:00Z",
-      "is_home": false,
-      "opponent": {
-        "id": 3734,
-        "name": "Kladno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732283,
       "starting_at": "2026-10-10T15:30:00Z",
       "is_home": false,
@@ -613,5 +602,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:05Z"
+  "generated_at": "2026-09-21T09:47:42Z"
 }

@@ -14,17 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Filip Horsky v této sezóně za Slovácko: 6 startů, 312 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:41Z",
-    "season": {
-      "appearances": 6,
-      "lineups": 4,
-      "minutes": 312,
-      "shots": 7,
-      "sot": 2,
-      "goals_conceded": 6
-    }
-  }
+  "hook": "Filip Horsky (Útočník) nastupuje za Slovácko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

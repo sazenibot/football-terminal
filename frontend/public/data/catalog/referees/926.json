@@ -9,15 +9,15 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "in_league": true,
-  "league_matches": 6,
+  "league_matches": 5,
   "leagues": [
     {
       "id": 82,
       "name": "Bundesliga",
       "in_league": true,
-      "league_matches": 6
+      "league_matches": 5
     }
   ],
   "hook": "Sven Jablonski píská v soutěži Bundesliga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-09-20T21:56:06Z"
+  "generated_at": "2026-09-21T09:48:25Z"
 }

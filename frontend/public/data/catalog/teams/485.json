@@ -512,17 +512,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732679,
-      "starting_at": "2026-09-20T16:30:00Z",
-      "is_home": false,
-      "opponent": {
-        "id": 429,
-        "name": "Deportivo A Coruña",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732671,
       "starting_at": "2026-10-11T16:30:00Z",
       "is_home": true,
@@ -545,5 +534,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:07Z"
+  "generated_at": "2026-09-21T09:48:48Z"
 }

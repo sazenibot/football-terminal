@@ -14,16 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Dominique Celidor Simon v této sezóně za Pardubice: 1 start, 67 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:33Z",
-    "season": {
-      "appearances": 1,
-      "lineups": 1,
-      "minutes": 67,
-      "yellow": 1,
-      "goals_conceded": 3
-    }
-  }
+  "hook": "Dominique Celidor Simon (Záložník) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

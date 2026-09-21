@@ -14,14 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Matej Mikulenka v této sezóně za Sigma Olomouc: 1 start, 19 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:27Z",
-    "season": {
-      "appearances": 1,
-      "minutes": 19,
-      "shots": 2
-    }
-  }
+  "hook": "Matej Mikulenka (Útočník) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

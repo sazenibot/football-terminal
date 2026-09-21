@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Papalelé v této sezóně za SK Artis Brno: 9 startů, 615 min, 2 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:09Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 8,
-      "minutes": 615,
-      "assists": 2,
-      "shots": 7,
-      "sot": 1,
-      "goals_conceded": 12
-    }
-  }
+  "hook": "Papalelé (Záložník) nastupuje za SK Artis Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

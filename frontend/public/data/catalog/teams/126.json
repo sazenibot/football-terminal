@@ -546,17 +546,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732677,
-      "starting_at": "2026-09-20T12:00:00Z",
-      "is_home": false,
-      "opponent": {
-        "id": 106,
-        "name": "Getafe",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732667,
       "starting_at": "2026-10-09T19:00:00Z",
       "is_home": true,
@@ -579,5 +568,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:07Z"
+  "generated_at": "2026-09-21T09:48:48Z"
 }

@@ -14,17 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jachym Sip v této sezóně za Sigma Olomouc: 8 startů, 98 min, 1 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:51Z",
-    "season": {
-      "appearances": 8,
-      "minutes": 98,
-      "assists": 1,
-      "yellow": 1,
-      "shots": 1,
-      "goals_conceded": 4
-    }
-  }
+  "hook": "Jachym Sip (Záložník) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

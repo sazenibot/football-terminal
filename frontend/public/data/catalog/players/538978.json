@@ -14,19 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jiri Boula v této sezóně za Baník Ostrava: 6 startů, 482 min, 1 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:20Z",
-    "season": {
-      "appearances": 6,
-      "lineups": 6,
-      "minutes": 482,
-      "assists": 1,
-      "yellow": 2,
-      "shots": 6,
-      "sot": 1,
-      "goals_conceded": 9
-    }
-  }
+  "hook": "Jiri Boula (Záložník) nastupuje za Baník Ostrava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Martin Šviderský v této sezóně za Slovácko: 7 startů, 406 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:37Z",
-    "season": {
-      "appearances": 7,
-      "lineups": 5,
-      "minutes": 406,
-      "yellow": 2,
-      "shots": 6,
-      "sot": 1,
-      "goals_conceded": 6
-    }
-  }
+  "hook": "Martin Šviderský (Záložník) nastupuje za Slovácko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Marek Havlík v této sezóně za Slovácko: 9 startů, 658 min, 2 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:43Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 9,
-      "minutes": 658,
-      "assists": 2,
-      "shots": 7,
-      "sot": 2,
-      "goals_conceded": 12
-    }
-  }
+  "hook": "Marek Havlík (Útočník) nastupuje za Slovácko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

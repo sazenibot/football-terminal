@@ -648,17 +648,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732291,
-      "starting_at": "2026-09-20T12:30:00Z",
-      "is_home": true,
-      "opponent": {
-        "id": 4184,
-        "name": "Ústí nad Labem",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732284,
       "starting_at": "2026-10-12T15:00:00Z",
       "is_home": false,
@@ -671,7 +660,7 @@
     },
     {
       "fixture_id": 19732275,
-      "starting_at": "2026-10-18T12:30:00Z",
+      "starting_at": "2026-10-16T13:00:00Z",
       "is_home": true,
       "opponent": {
         "id": 28363,
@@ -681,5 +670,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:05Z"
+  "generated_at": "2026-09-21T09:47:42Z"
 }

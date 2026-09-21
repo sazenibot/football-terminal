@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "David Jurásek  v této sezóně za Slavia Praha: 3 starty, 193 min, 1 gól.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:13Z",
-    "season": {
-      "appearances": 3,
-      "lineups": 2,
-      "minutes": 193,
-      "goals": 1,
-      "shots": 5,
-      "sot": 2,
-      "goals_conceded": 1
-    }
-  }
+  "hook": "David Jurásek  (Záložník) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

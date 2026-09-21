@@ -14,17 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Vénuste Baboula v této sezóně za Slovan Liberec: 6 startů, 127 min, 1 gól, 1 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:28Z",
-    "season": {
-      "appearances": 6,
-      "minutes": 127,
-      "goals": 1,
-      "assists": 1,
-      "shots": 7,
-      "sot": 3
-    }
-  }
+  "hook": "Vénuste Baboula (Útočník) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

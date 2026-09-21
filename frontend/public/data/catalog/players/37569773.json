@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "David Tkac  v této sezóně za Sigma Olomouc: 9 startů, 470 min, 2 góly.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:55Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 5,
-      "minutes": 470,
-      "goals": 2,
-      "shots": 9,
-      "sot": 4,
-      "goals_conceded": 7
-    }
-  }
+  "hook": "David Tkac  (Útočník) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

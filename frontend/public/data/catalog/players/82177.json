@@ -14,20 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jiri Klima v této sezóně za Mladá Boleslav: 8 startů, 526 min, 4 góly, 1 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:23Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 8,
-      "minutes": 526,
-      "goals": 4,
-      "assists": 1,
-      "yellow": 1,
-      "shots": 15,
-      "sot": 5,
-      "goals_conceded": 6
-    }
-  }
+  "hook": "Jiri Klima (Útočník) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

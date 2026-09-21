@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Tomas Ladra v této sezóně za Viktoria Plzeň: 7 startů, 385 min, 1 gól.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:31:29Z",
-    "season": {
-      "appearances": 7,
-      "lineups": 4,
-      "minutes": 385,
-      "goals": 1,
-      "shots": 12,
-      "sot": 2,
-      "goals_conceded": 7
-    }
-  }
+  "hook": "Tomas Ladra (Útočník) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

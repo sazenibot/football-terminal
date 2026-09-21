@@ -14,17 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Dominik Preisler v této sezóně za SK Artis Brno: 8 startů, 480 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:02Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 6,
-      "minutes": 480,
-      "red": 1,
-      "shots": 4,
-      "goals_conceded": 16
-    }
-  }
+  "hook": "Dominik Preisler (Obránce) nastupuje za SK Artis Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

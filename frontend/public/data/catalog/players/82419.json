@@ -14,14 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jan Vondra v této sezóně za Bohemians 1905: 1 start, 27 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:27Z",
-    "season": {
-      "appearances": 1,
-      "minutes": 27,
-      "goals_conceded": 1
-    }
-  }
+  "hook": "Jan Vondra (Obránce) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

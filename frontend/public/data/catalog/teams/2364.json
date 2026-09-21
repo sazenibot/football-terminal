@@ -563,17 +563,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732292,
-      "starting_at": "2026-09-20T08:15:00Z",
-      "is_home": true,
-      "opponent": {
-        "id": 4134,
-        "name": "Třinec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/6/4134.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732289,
       "starting_at": "2026-10-10T13:00:00Z",
       "is_home": false,
@@ -596,5 +585,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:05Z"
+  "generated_at": "2026-09-21T09:47:42Z"
 }

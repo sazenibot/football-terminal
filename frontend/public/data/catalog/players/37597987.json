@@ -14,16 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Stefan Pirgic v této sezóně za Viktoria Plzeň: 9 startů, 239 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:31:24Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 2,
-      "minutes": 239,
-      "yellow": 1,
-      "goals_conceded": 10
-    }
-  }
+  "hook": "Stefan Pirgic (Záložník) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

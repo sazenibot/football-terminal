@@ -111,7 +111,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2000-09-21",
-      "age": 25,
+      "age": 26,
       "team_id": 3593,
       "team_name": "Opava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
@@ -568,5 +568,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:05Z"
+  "generated_at": "2026-09-21T09:47:42Z"
 }

@@ -14,15 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jan Kral v této sezóně za Sigma Olomouc: 2 starty, 180 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:29:45Z",
-    "season": {
-      "appearances": 2,
-      "lineups": 2,
-      "minutes": 180,
-      "goals_conceded": 4
-    }
-  }
+  "hook": "Jan Kral (Obránce) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

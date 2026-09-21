@@ -14,19 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Lukas Cerv v této sezóně za Viktoria Plzeň: 9 startů, 608 min, 1 gól.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:31:22Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 7,
-      "minutes": 608,
-      "goals": 1,
-      "yellow": 2,
-      "shots": 10,
-      "sot": 2,
-      "goals_conceded": 9
-    }
-  }
+  "hook": "Lukas Cerv (Záložník) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

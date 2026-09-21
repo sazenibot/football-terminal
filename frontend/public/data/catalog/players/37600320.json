@@ -14,15 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "F. Mielke v této sezóně za Hradec Králové: 4 starty, 199 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:45Z",
-    "season": {
-      "appearances": 4,
-      "lineups": 2,
-      "minutes": 199,
-      "goals_conceded": 3
-    }
-  }
+  "hook": "F. Mielke (Záložník) nastupuje za Hradec Králové. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

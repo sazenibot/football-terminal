@@ -478,17 +478,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732673,
-      "starting_at": "2026-09-20T16:30:00Z",
-      "is_home": true,
-      "opponent": {
-        "id": 3457,
-        "name": "Levante",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732664,
       "starting_at": "2026-10-10T19:00:00Z",
       "is_home": false,
@@ -511,5 +500,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:07Z"
+  "generated_at": "2026-09-21T09:48:48Z"
 }

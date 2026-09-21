@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T09:11:11Z",
+  "generated_at": "2026-09-21T09:47:18Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -8,75 +8,10 @@
     "enabled": true,
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png"
   },
-  "round": [
-    {
-      "fixture_id": 19725040,
-      "starting_at": "2026-09-20T11:00:00Z",
-      "venue": "Malšovická aréna",
-      "home": {
-        "id": 3552,
-        "name": "Hradec Králové",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
-      },
-      "away": {
-        "id": 1351,
-        "name": "Teplice",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png"
-      },
-      "has_full_data": true
-    },
-    {
-      "fixture_id": 19725039,
-      "starting_at": "2026-09-20T13:00:00Z",
-      "venue": "Stadion Střelnice",
-      "home": {
-        "id": 3643,
-        "name": "Jablonec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
-      },
-      "away": {
-        "id": 1745,
-        "name": "Zlín",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png"
-      },
-      "has_full_data": true
-    },
-    {
-      "fixture_id": 19725043,
-      "starting_at": "2026-09-20T13:00:00Z",
-      "venue": "Andrův stadion",
-      "home": {
-        "id": 3097,
-        "name": "Sigma Olomouc",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png"
-      },
-      "away": {
-        "id": 2727,
-        "name": "Sparta Praha",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png"
-      },
-      "has_full_data": true
-    },
-    {
-      "fixture_id": 19725038,
-      "starting_at": "2026-09-20T16:00:00Z",
-      "venue": "Fortuna Arena",
-      "home": {
-        "id": 216,
-        "name": "Slavia Praha",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
-      },
-      "away": {
-        "id": 3545,
-        "name": "Viktoria Plzeň",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png"
-      },
-      "has_full_data": true
-    }
-  ],
+  "round": [],
   "stats": {
     "created": 0,
-    "refreshed": 4,
+    "refreshed": 0,
     "errors": 0
   }
 }

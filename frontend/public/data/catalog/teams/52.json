@@ -529,17 +529,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19722163,
-      "starting_at": "2026-09-20T13:00:00Z",
-      "is_home": true,
-      "opponent": {
-        "id": 8,
-        "name": "Liverpool",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19722151,
       "starting_at": "2026-10-10T14:00:00Z",
       "is_home": false,
@@ -562,5 +551,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:06Z"
+  "generated_at": "2026-09-21T09:47:59Z"
 }

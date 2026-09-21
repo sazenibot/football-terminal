@@ -12,124 +12,18 @@
   "league_matches": 5,
   "leagues": [
     {
-      "id": 262,
-      "name": "Chance Liga",
-      "in_league": true,
-      "league_matches": 2
-    },
-    {
       "id": 265,
       "name": "Chance Národní Liga",
       "in_league": true,
       "league_matches": 5
+    },
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "in_league": true,
+      "league_matches": 2
     }
   ],
-  "hook": "Jan Machálek píská v soutěži Chance Národní Liga jako hlavní. V této sezóně 4 zápasů, 4 žlutých na zápas.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:31:59Z",
-    "season": {
-      "matches": 4,
-      "fouls_avg": 30.75,
-      "yellow_avg": 4,
-      "red_avg": 0.25,
-      "penalties_avg": 0.25
-    },
-    "season_raw": {
-      "Penalties": {
-        "all": {
-          "count": 1,
-          "average": 0.25
-        },
-        "home": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        },
-        "away": {
-          "count": 1,
-          "average": 0.25,
-          "percentage": 100
-        }
-      },
-      "Fouls": {
-        "count": 123,
-        "average": 30.75
-      },
-      "Redcards": {
-        "all": {
-          "count": 1,
-          "average": 0.25,
-          "on_bench": 0,
-          "for_coach": 0,
-          "on_pitch": 1
-        },
-        "home": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        },
-        "away": {
-          "count": 1,
-          "average": 0.25,
-          "percentage": 100
-        }
-      },
-      "Yellowcards": {
-        "all": {
-          "count": 16,
-          "average": 4,
-          "on_bench": 0,
-          "for_coach": 0,
-          "on_pitch": 16
-        },
-        "home": {
-          "count": 9,
-          "average": 2.25,
-          "percentage": 56.25
-        },
-        "away": {
-          "count": 7,
-          "average": 1.75,
-          "percentage": 43.75
-        }
-      },
-      "Yellowred Cards": {
-        "all": {
-          "count": 0,
-          "average": 0,
-          "on_bench": 0,
-          "for_coach": 0,
-          "on_pitch": 0
-        },
-        "home": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        },
-        "away": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        }
-      },
-      "Season Matches": {
-        "count": 4
-      }
-    },
-    "career": {
-      "seasons": 25,
-      "matches": 203,
-      "yellow": 751,
-      "red": 23,
-      "yellow_avg": 3.7
-    },
-    "league_context": {
-      "fouls_per_match": 24.8,
-      "yellow_per_match": 4.16,
-      "red_per_match": 0.2,
-      "matches_sampled": 25
-    },
-    "recent": []
-  }
+  "hook": "Jan Machálek píská v soutěži Chance Národní Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-09-21T09:47:42Z"
 }

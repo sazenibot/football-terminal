@@ -14,15 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Vladimir Zeman v této sezóně za Bohemians 1905: 5 startů, 60 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:38Z",
-    "season": {
-      "appearances": 5,
-      "minutes": 60,
-      "shots": 1,
-      "goals_conceded": 2
-    }
-  }
+  "hook": "Vladimir Zeman (Útočník) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

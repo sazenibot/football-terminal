@@ -14,19 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Ales Cermak v této sezóně za Bohemians 1905: 7 startů, 538 min, 2 góly, 1 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:30Z",
-    "season": {
-      "appearances": 7,
-      "lineups": 6,
-      "minutes": 538,
-      "goals": 2,
-      "assists": 1,
-      "shots": 5,
-      "sot": 3,
-      "goals_conceded": 10
-    }
-  }
+  "hook": "Ales Cermak (Záložník) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

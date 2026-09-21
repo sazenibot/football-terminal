@@ -14,17 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Lukas Letenay v této sezóně za Mladá Boleslav: 5 startů, 105 min, 1 gól.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:27Z",
-    "season": {
-      "appearances": 5,
-      "minutes": 105,
-      "goals": 1,
-      "shots": 3,
-      "sot": 1,
-      "goals_conceded": 2
-    }
-  }
+  "hook": "Lukas Letenay (Útočník) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

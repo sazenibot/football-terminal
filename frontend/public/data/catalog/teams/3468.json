@@ -563,17 +563,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732681,
-      "starting_at": "2026-09-20T14:15:00Z",
-      "is_home": false,
-      "opponent": {
-        "id": 7980,
-        "name": "Atlético de Madrid",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732664,
       "starting_at": "2026-10-10T19:00:00Z",
       "is_home": true,
@@ -596,5 +585,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:07Z"
+  "generated_at": "2026-09-21T09:48:48Z"
 }

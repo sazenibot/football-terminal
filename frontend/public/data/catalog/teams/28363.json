@@ -694,7 +694,7 @@
     },
     {
       "fixture_id": 19732275,
-      "starting_at": "2026-10-18T12:30:00Z",
+      "starting_at": "2026-10-16T13:00:00Z",
       "is_home": false,
       "opponent": {
         "id": 8477,
@@ -704,5 +704,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:05Z"
+  "generated_at": "2026-09-21T09:47:42Z"
 }

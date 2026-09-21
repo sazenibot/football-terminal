@@ -14,15 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jan Fiala v této sezóně za Sigma Olomouc: 2 starty, 74 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:42Z",
-    "season": {
-      "appearances": 2,
-      "minutes": 74,
-      "shots": 1,
-      "goals_conceded": 2
-    }
-  }
+  "hook": "Jan Fiala (Útočník) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

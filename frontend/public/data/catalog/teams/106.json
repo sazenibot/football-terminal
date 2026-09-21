@@ -529,17 +529,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732677,
-      "starting_at": "2026-09-20T12:00:00Z",
-      "is_home": true,
-      "opponent": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732669,
       "starting_at": "2026-10-10T16:30:00Z",
       "is_home": false,
@@ -562,5 +551,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:07Z"
+  "generated_at": "2026-09-21T09:48:48Z"
 }

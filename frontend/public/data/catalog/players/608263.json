@@ -14,19 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Frantisek Cech v této sezóně za Hradec Králové: 8 startů, 636 min, 1 gól.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:42Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 8,
-      "minutes": 636,
-      "goals": 1,
-      "red": 1,
-      "shots": 4,
-      "sot": 2,
-      "goals_conceded": 6
-    }
-  }
+  "hook": "Frantisek Cech (Obránce) nastupuje za Hradec Králové. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

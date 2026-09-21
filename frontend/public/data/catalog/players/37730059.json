@@ -14,19 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Stanislav Petruța v této sezóně za Zlín: 7 startů, 365 min, 1 gól.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:31:55Z",
-    "season": {
-      "appearances": 7,
-      "lineups": 4,
-      "minutes": 365,
-      "goals": 1,
-      "yellow": 1,
-      "shots": 7,
-      "sot": 2,
-      "goals_conceded": 11
-    }
-  }
+  "hook": "Stanislav Petruța (Záložník) nastupuje za Zlín. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

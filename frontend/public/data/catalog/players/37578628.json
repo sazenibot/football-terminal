@@ -14,20 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Josimar Alcócer v této sezóně za Sparta Praha: 8 startů, 553 min, 4 góly, 1 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:54Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 7,
-      "minutes": 553,
-      "goals": 4,
-      "assists": 1,
-      "yellow": 4,
-      "shots": 12,
-      "sot": 6,
-      "goals_conceded": 8
-    }
-  }
+  "hook": "Josimar Alcócer (Záložník) nastupuje za Sparta Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

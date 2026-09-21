@@ -478,17 +478,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19732291,
-      "starting_at": "2026-09-20T12:30:00Z",
-      "is_home": false,
-      "opponent": {
-        "id": 8477,
-        "name": "Banik Ostrava B",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19732285,
       "starting_at": "2026-10-09T16:00:00Z",
       "is_home": true,
@@ -511,5 +500,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:05Z"
+  "generated_at": "2026-09-21T09:47:42Z"
 }

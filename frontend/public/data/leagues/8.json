@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T09:11:44Z",
+  "generated_at": "2026-09-21T09:47:20Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -8,75 +8,10 @@
     "enabled": true,
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/8/8.png"
   },
-  "round": [
-    {
-      "fixture_id": 19722157,
-      "starting_at": "2026-09-20T13:00:00Z",
-      "venue": "Etihad Stadium",
-      "home": {
-        "id": 9,
-        "name": "Manchester City",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
-      },
-      "away": {
-        "id": 3,
-        "name": "Sunderland",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png"
-      },
-      "has_full_data": true
-    },
-    {
-      "fixture_id": 19722158,
-      "starting_at": "2026-09-20T13:00:00Z",
-      "venue": "Elland Road",
-      "home": {
-        "id": 71,
-        "name": "Leeds United",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png"
-      },
-      "away": {
-        "id": 51,
-        "name": "Crystal Palace",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png"
-      },
-      "has_full_data": true
-    },
-    {
-      "fixture_id": 19722163,
-      "starting_at": "2026-09-20T13:00:00Z",
-      "venue": "Vitality Stadium",
-      "home": {
-        "id": 52,
-        "name": "AFC Bournemouth",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png"
-      },
-      "away": {
-        "id": 8,
-        "name": "Liverpool",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png"
-      },
-      "has_full_data": true
-    },
-    {
-      "fixture_id": 19722159,
-      "starting_at": "2026-09-20T15:30:00Z",
-      "venue": "Craven Cottage",
-      "home": {
-        "id": 11,
-        "name": "Fulham",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png"
-      },
-      "away": {
-        "id": 14,
-        "name": "Manchester United",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png"
-      },
-      "has_full_data": true
-    }
-  ],
+  "round": [],
   "stats": {
     "created": 0,
-    "refreshed": 4,
+    "refreshed": 0,
     "errors": 0
   }
 }

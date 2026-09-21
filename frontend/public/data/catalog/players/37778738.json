@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Fallou Faye v této sezóně za Slovan Liberec: 9 startů, 602 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:22Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 7,
-      "minutes": 602,
-      "yellow": 3,
-      "shots": 11,
-      "sot": 2,
-      "goals_conceded": 2
-    }
-  }
+  "hook": "Fallou Faye (Záložník) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

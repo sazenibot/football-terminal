@@ -512,17 +512,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19722159,
-      "starting_at": "2026-09-20T15:30:00Z",
-      "is_home": false,
-      "opponent": {
-        "id": 11,
-        "name": "Fulham",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19722145,
       "starting_at": "2026-10-10T16:30:00Z",
       "is_home": true,
@@ -545,5 +534,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:06Z"
+  "generated_at": "2026-09-21T09:47:59Z"
 }

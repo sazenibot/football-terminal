@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Lukas Vorlicky v této sezóně za Slovácko: 6 startů, 195 min, 1 asistence.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:42Z",
-    "season": {
-      "appearances": 6,
-      "lineups": 1,
-      "minutes": 195,
-      "assists": 1,
-      "shots": 7,
-      "sot": 4,
-      "goals_conceded": 4
-    }
-  }
+  "hook": "Lukas Vorlicky (Útočník) nastupuje za Slovácko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

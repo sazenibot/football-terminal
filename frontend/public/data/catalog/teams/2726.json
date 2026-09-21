@@ -478,17 +478,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19735162,
-      "starting_at": "2026-09-20T17:30:00Z",
-      "is_home": false,
-      "opponent": {
-        "id": 2642,
-        "name": "Paderborn",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19735159,
       "starting_at": "2026-10-10T13:30:00Z",
       "is_home": true,
@@ -511,5 +500,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:06Z"
+  "generated_at": "2026-09-21T09:48:25Z"
 }

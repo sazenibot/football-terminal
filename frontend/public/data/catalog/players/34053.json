@@ -8,12 +8,12 @@
   "position_id": 27,
   "captain": false,
   "date_of_birth": "1999-09-21",
-  "age": 26,
+  "age": 27,
   "team_id": 8,
   "team_name": "Liverpool",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
   "league_id": 8,
   "league_name": "Premier League",
   "hook": "Alexander Isak (Útočník) nastupuje za Liverpool. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-20T21:56:06Z"
+  "generated_at": "2026-09-21T09:47:59Z"
 }

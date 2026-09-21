@@ -14,15 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jan Boril v této sezóně za Slovan Liberec: 1 start, 36 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:17Z",
-    "season": {
-      "appearances": 1,
-      "lineups": 1,
-      "minutes": 36,
-      "shots": 1
-    }
-  }
+  "hook": "Jan Boril (Obránce) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

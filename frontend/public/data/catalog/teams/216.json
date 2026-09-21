@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Slavia pod Trpišovským žije z PPDA 8.4 — nejvyšší lis v datasetu. Vysoký blok, vstupy do boxu a tresty ze zisku. Proti přechodové Spartě je to souboj tempa, ne držení.",
+  "hook": "Slavia Praha hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 9939100,
@@ -31,15 +31,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 9,
-        "lineups": 9,
-        "minutes": 810,
-        "saves": 17,
-        "goals_conceded": 6
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 4569,
@@ -56,8 +48,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37707432,
@@ -74,8 +65,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37643754,
@@ -92,12 +82,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 1,
-        "minutes": 44
-      },
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37532696,
@@ -114,17 +99,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 5,
-        "lineups": 2,
-        "minutes": 248,
-        "assists": 1,
-        "yellow": 1,
-        "shots": 3,
-        "goals_conceded": 3
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37742355,
@@ -141,8 +116,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 23697916,
@@ -159,17 +133,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 6,
-        "lineups": 6,
-        "minutes": 470,
-        "goals": 1,
-        "shots": 4,
-        "sot": 1,
-        "goals_conceded": 4
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37577901,
@@ -186,8 +150,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37657989,
@@ -204,16 +167,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 3,
-        "lineups": 3,
-        "minutes": 196,
-        "shots": 5,
-        "sot": 2,
-        "goals_conceded": 3
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37919886,
@@ -230,8 +184,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37745026,
@@ -248,15 +201,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 2,
-        "lineups": 1,
-        "minutes": 47,
-        "yellow": 1,
-        "goals_conceded": 1
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37657970,
@@ -273,16 +218,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 6,
-        "lineups": 5,
-        "minutes": 451,
-        "red": 1,
-        "shots": 1,
-        "goals_conceded": 2
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37953970,
@@ -299,13 +235,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 2,
-        "lineups": 1,
-        "minutes": 75
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37594544,
@@ -322,19 +252,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 9,
-        "lineups": 6,
-        "minutes": 569,
-        "goals": 1,
-        "assists": 1,
-        "yellow": 2,
-        "shots": 8,
-        "sot": 3,
-        "goals_conceded": 5
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79972,
@@ -351,18 +269,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 6,
-        "lineups": 6,
-        "minutes": 431,
-        "goals": 1,
-        "yellow": 1,
-        "shots": 4,
-        "sot": 1,
-        "goals_conceded": 4
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 9939105,
@@ -379,15 +286,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 6,
-        "lineups": 3,
-        "minutes": 335,
-        "yellow": 1,
-        "goals_conceded": 2
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38021304,
@@ -404,8 +303,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37732666,
@@ -422,8 +320,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37259977,
@@ -440,17 +337,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 3,
-        "lineups": 2,
-        "minutes": 193,
-        "goals": 1,
-        "shots": 5,
-        "sot": 2,
-        "goals_conceded": 1
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37674475,
@@ -467,14 +354,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 4,
-        "minutes": 107,
-        "assists": 1,
-        "goals_conceded": 1
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 83003,
@@ -491,17 +371,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 8,
-        "lineups": 5,
-        "minutes": 455,
-        "assists": 1,
-        "shots": 16,
-        "sot": 3,
-        "goals_conceded": 4
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 30066,
@@ -518,19 +388,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 8,
-        "lineups": 8,
-        "minutes": 720,
-        "goals": 1,
-        "assists": 3,
-        "yellow": 1,
-        "shots": 13,
-        "sot": 2,
-        "goals_conceded": 6
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38205156,
@@ -547,19 +405,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 4,
-        "lineups": 4,
-        "minutes": 360,
-        "goals": 1,
-        "assists": 1,
-        "yellow": 2,
-        "shots": 11,
-        "sot": 2,
-        "goals_conceded": 4
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37731744,
@@ -576,15 +422,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 6,
-        "lineups": 1,
-        "minutes": 198,
-        "shots": 4,
-        "goals_conceded": 1
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37921981,
@@ -601,17 +439,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 6,
-        "lineups": 5,
-        "minutes": 381,
-        "assists": 2,
-        "yellow": 1,
-        "shots": 5,
-        "sot": 1
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37920608,
@@ -628,15 +456,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 3,
-        "lineups": 1,
-        "minutes": 72,
-        "shots": 1,
-        "goals_conceded": 1
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37632496,
@@ -653,19 +473,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 9,
-        "lineups": 8,
-        "minutes": 622,
-        "goals": 5,
-        "assists": 1,
-        "yellow": 3,
-        "shots": 17,
-        "sot": 7,
-        "goals_conceded": 4
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37780770,
@@ -682,8 +490,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37706709,
@@ -700,18 +507,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 3,
-        "lineups": 3,
-        "minutes": 181,
-        "goals": 1,
-        "assists": 1,
-        "shots": 3,
-        "sot": 2,
-        "goals_conceded": 1
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 1488486,
@@ -728,19 +524,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 9,
-        "lineups": 7,
-        "minutes": 581,
-        "goals": 1,
-        "assists": 3,
-        "yellow": 2,
-        "shots": 15,
-        "sot": 7,
-        "goals_conceded": 4
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37729802,
@@ -757,19 +541,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 8,
-        "lineups": 4,
-        "minutes": 489,
-        "goals": 3,
-        "assists": 1,
-        "yellow": 1,
-        "shots": 11,
-        "sot": 5,
-        "goals_conceded": 2
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 81501,
@@ -786,14 +558,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 7,
-        "minutes": 124,
-        "assists": 1,
-        "goals_conceded": 1
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 26313942,
@@ -810,17 +575,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 7,
-        "lineups": 6,
-        "minutes": 413,
-        "goals": 4,
-        "shots": 16,
-        "sot": 9,
-        "goals_conceded": 3
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80707,
@@ -837,18 +592,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "season": {
-        "appearances": 6,
-        "lineups": 3,
-        "minutes": 341,
-        "goals": 4,
-        "yellow": 1,
-        "shots": 14,
-        "sot": 6,
-        "goals_conceded": 3
-      },
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -861,10 +605,7 @@
         "name": "Zlín",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png"
       },
-      "has_match_page": false,
-      "opponent_position": 16,
-      "fdr": "easy",
-      "fdr_rating": 1
+      "has_match_page": false
     },
     {
       "fixture_id": 19725024,
@@ -875,1288 +616,8 @@
         "name": "Hradec Králové",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
       },
-      "has_match_page": false,
-      "opponent_position": 9,
-      "fdr": "mid",
-      "fdr_rating": 3
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:13Z",
-    "hook_kind": "mock",
-    "season_name": "2026/2027",
-    "table": {
-      "position": 1,
-      "points": 23,
-      "played": 9,
-      "won": 7,
-      "drawn": 2,
-      "lost": 0,
-      "gf": 25,
-      "ga": 6,
-      "form": "VVVVR"
-    },
-    "recent": [
-      {
-        "fixture_id": 19725038,
-        "starting_at": "2026-09-20T16:00:00Z",
-        "is_home": true,
-        "opponent": {
-          "id": 3545,
-          "name": "Viktoria Plzeň",
-          "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png"
-        },
-        "gf": 2,
-        "ga": 1,
-        "result": "V",
-        "has_match_page": true
-      },
-      {
-        "fixture_id": 19725046,
-        "starting_at": "2026-09-13T16:00:00Z",
-        "is_home": false,
-        "opponent": {
-          "id": 1351,
-          "name": "Teplice",
-          "image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png"
-        },
-        "gf": 2,
-        "ga": 0,
-        "result": "V",
-        "has_match_page": false
-      },
-      {
-        "fixture_id": 19725054,
-        "starting_at": "2026-09-05T13:00:00Z",
-        "is_home": true,
-        "opponent": {
-          "id": 3350,
-          "name": "Zbrojovka Brno",
-          "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
-        },
-        "gf": 4,
-        "ga": 0,
-        "result": "V",
-        "has_match_page": false
-      },
-      {
-        "fixture_id": 19725063,
-        "starting_at": "2026-08-30T18:00:00Z",
-        "is_home": false,
-        "opponent": {
-          "id": 2727,
-          "name": "Sparta Praha",
-          "image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png"
-        },
-        "gf": 3,
-        "ga": 0,
-        "result": "V",
-        "has_match_page": false
-      },
-      {
-        "fixture_id": 19725073,
-        "starting_at": "2026-08-22T18:00:00Z",
-        "is_home": true,
-        "opponent": {
-          "id": 2488,
-          "name": "Bohemians 1905",
-          "image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png"
-        },
-        "gf": 2,
-        "ga": 2,
-        "result": "R",
-        "has_match_page": false
-      },
-      {
-        "fixture_id": 19725084,
-        "starting_at": "2026-08-16T18:00:00Z",
-        "is_home": false,
-        "opponent": {
-          "id": 463,
-          "name": "Slovan Liberec",
-          "image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png"
-        },
-        "gf": 1,
-        "ga": 1,
-        "result": "R",
-        "has_match_page": false
-      },
-      {
-        "fixture_id": 19725090,
-        "starting_at": "2026-08-09T13:00:00Z",
-        "is_home": true,
-        "opponent": {
-          "id": 4484,
-          "name": "Pardubice",
-          "image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png"
-        },
-        "gf": 2,
-        "ga": 1,
-        "result": "V",
-        "has_match_page": false
-      },
-      {
-        "fixture_id": 19725097,
-        "starting_at": "2026-08-01T15:00:00Z",
-        "is_home": false,
-        "opponent": {
-          "id": 3269,
-          "name": "Baník Ostrava",
-          "image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png"
-        },
-        "gf": 4,
-        "ga": 0,
-        "result": "V",
-        "has_match_page": false
-      },
-      {
-        "fixture_id": 19725106,
-        "starting_at": "2026-07-26T13:00:00Z",
-        "is_home": true,
-        "opponent": {
-          "id": 234,
-          "name": "Slovácko",
-          "image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png"
-        },
-        "gf": 5,
-        "ga": 1,
-        "result": "V",
-        "has_match_page": false
-      }
-    ],
-    "season_avgs": {
-      "matches": 9,
-      "won": 7,
-      "drawn": 2,
-      "lost": 0,
-      "goals_for": 2.78,
-      "goals_against": 0.67,
-      "shots": 17.33,
-      "sot": 6.0,
-      "corners": 5.78,
-      "possession": 54.33,
-      "fouls": 15.56,
-      "fouls_committed": 15.56,
-      "fouls_received": 13.33,
-      "yellow": 1.89,
-      "red": 0.11,
-      "cards": 2.0,
-      "clean_sheet_pct": 44.4,
-      "failed_to_score_pct": 0.0,
-      "shots_off": 7.22,
-      "shots_blocked": 4.67,
-      "shots_inside": 11.44,
-      "shots_outside": 5.78,
-      "attacks": 87.44,
-      "dangerous_attacks": 59.67,
-      "big_chances": 4.75,
-      "big_chances_missed": 2.88,
-      "assists": 1.67,
-      "key_passes": 9.0,
-      "passes": 384.0,
-      "pass_pct": 77.22,
-      "dribbles": 13.33,
-      "dribbles_ok": 7.0,
-      "dribble_pct": 50.62,
-      "saves": 1.89,
-      "tackles": 14.22,
-      "tackles_won": 9.25,
-      "interceptions": 8.89,
-      "duels_won": 53.86,
-      "offsides": 1.67,
-      "free_kicks": 13.0,
-      "throwins": 22.67,
-      "goal_kicks": 8.12,
-      "crosses": 22.75,
-      "accurate_crosses": 4.75,
-      "penalties": 1.0
-    },
-    "profile": {
-      "matches": 9,
-      "stats": [
-        {
-          "key": "goals_for",
-          "group": "attack",
-          "label": "Góly/zápas",
-          "value": 2.78,
-          "league_avg": 1.42,
-          "percentile": 100,
-          "rank": 1,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "shots",
-          "group": "attack",
-          "label": "Střely/zápas",
-          "value": 17.33,
-          "league_avg": 13.08,
-          "percentile": 100,
-          "rank": 1,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "sot",
-          "group": "attack",
-          "label": "Na bránu/zápas",
-          "value": 6.0,
-          "league_avg": 4.23,
-          "percentile": 93,
-          "rank": 2,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "shots_off",
-          "group": "attack",
-          "label": "Mimo/zápas",
-          "value": 7.22,
-          "league_avg": 5.57,
-          "percentile": 100,
-          "rank": 1,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "shots_inside",
-          "group": "attack",
-          "label": "Z vápna/zápas",
-          "value": 11.44,
-          "league_avg": 8.48,
-          "percentile": 100,
-          "rank": 1,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "shots_outside",
-          "group": "attack",
-          "label": "Mimo vápno/zápas",
-          "value": 5.78,
-          "league_avg": 4.84,
-          "percentile": 80,
-          "rank": 3,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "shots_blocked",
-          "group": "attack",
-          "label": "Zblokované soupeřem/zápas",
-          "value": 4.67,
-          "league_avg": 3.48,
-          "percentile": 13,
-          "rank": 14,
-          "league_size": 16,
-          "higher_better": false
-        },
-        {
-          "key": "possession",
-          "group": "attack",
-          "label": "Držení %",
-          "value": 54.33,
-          "league_avg": 50.0,
-          "percentile": 80,
-          "rank": 4,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "attacks",
-          "group": "attack",
-          "label": "Útoky/zápas",
-          "value": 87.44,
-          "league_avg": 84.57,
-          "percentile": 67,
-          "rank": 6,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "dangerous_attacks",
-          "group": "attack",
-          "label": "Nebezpečné útoky/zápas",
-          "value": 59.67,
-          "league_avg": 52.31,
-          "percentile": 93,
-          "rank": 2,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "big_chances",
-          "group": "attack",
-          "label": "Velké šance/zápas",
-          "value": 4.75,
-          "league_avg": 2.37,
-          "percentile": 100,
-          "rank": 1,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "big_chances_missed",
-          "group": "attack",
-          "label": "Zahozené velké šance/zápas",
-          "value": 2.88,
-          "league_avg": 1.65,
-          "percentile": 0,
-          "rank": 16,
-          "league_size": 16,
-          "higher_better": false
-        },
-        {
-          "key": "assists",
-          "group": "attack",
-          "label": "Asistence/zápas",
-          "value": 1.67,
-          "league_avg": 1.05,
-          "percentile": 100,
-          "rank": 1,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "key_passes",
-          "group": "attack",
-          "label": "Klíčové přihrávky/zápas",
-          "value": 9.0,
-          "league_avg": 10.01,
-          "percentile": 27,
-          "rank": 12,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "passes",
-          "group": "attack",
-          "label": "Přihrávky/zápas",
-          "value": 384.0,
-          "league_avg": 385.61,
-          "percentile": 53,
-          "rank": 8,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "pass_pct",
-          "group": "attack",
-          "label": "Úspěšnost přihrávek %",
-          "value": 77.22,
-          "league_avg": 78.64,
-          "percentile": 47,
-          "rank": 9,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "dribbles",
-          "group": "attack",
-          "label": "Driblingy/zápas",
-          "value": 13.33,
-          "league_avg": 13.11,
-          "percentile": 60,
-          "rank": 7,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "dribbles_ok",
-          "group": "attack",
-          "label": "Úspěšné driblingy/zápas",
-          "value": 7.0,
-          "league_avg": 6.32,
-          "percentile": 73,
-          "rank": 5,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "dribble_pct",
-          "group": "attack",
-          "label": "Úspěšnost driblingu %",
-          "value": 50.62,
-          "league_avg": 45.73,
-          "percentile": 87,
-          "rank": 3,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "failed_to_score_pct",
-          "group": "attack",
-          "label": "Zápasy bez gólu %",
-          "value": 0.0,
-          "league_avg": 25.94,
-          "percentile": 100,
-          "rank": 1,
-          "league_size": 16,
-          "higher_better": false
-        },
-        {
-          "key": "goals_against",
-          "group": "defense",
-          "label": "Obdrženo/zápas",
-          "value": 0.67,
-          "league_avg": 1.41,
-          "percentile": 93,
-          "rank": 2,
-          "league_size": 16,
-          "higher_better": false
-        },
-        {
-          "key": "saves",
-          "group": "defense",
-          "label": "Zákroky/zápas",
-          "value": 1.89,
-          "league_avg": 2.88,
-          "percentile": 0,
-          "rank": 16,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "tackles",
-          "group": "defense",
-          "label": "Skluzy/zápas",
-          "value": 14.22,
-          "league_avg": 14.6,
-          "percentile": 47,
-          "rank": 9,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "tackles_won",
-          "group": "defense",
-          "label": "Vyhrané skluzy/zápas",
-          "value": 9.25,
-          "league_avg": 9.37,
-          "percentile": 20,
-          "rank": 9,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "interceptions",
-          "group": "defense",
-          "label": "Zachycené přihrávky/zápas",
-          "value": 8.89,
-          "league_avg": 7.82,
-          "percentile": 93,
-          "rank": 2,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "duels_won",
-          "group": "defense",
-          "label": "Vyhrané souboje/zápas",
-          "value": 53.86,
-          "league_avg": 47.7,
-          "percentile": 93,
-          "rank": 2,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "clean_sheet_pct",
-          "group": "defense",
-          "label": "Čistá konta %",
-          "value": 44.4,
-          "league_avg": 26.2,
-          "percentile": 93,
-          "rank": 2,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "fouls",
-          "group": "discipline",
-          "label": "Fauly/zápas",
-          "value": 15.56,
-          "league_avg": 13.3,
-          "percentile": 7,
-          "rank": 15,
-          "league_size": 16,
-          "higher_better": false
-        },
-        {
-          "key": "fouls_received",
-          "group": "discipline",
-          "label": "Fauly proti/zápas",
-          "value": 13.33,
-          "league_avg": 13.32,
-          "percentile": 60,
-          "rank": 6,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "yellow",
-          "group": "discipline",
-          "label": "Žluté/zápas",
-          "value": 1.89,
-          "league_avg": 1.81,
-          "percentile": 33,
-          "rank": 11,
-          "league_size": 16,
-          "higher_better": false
-        },
-        {
-          "key": "red",
-          "group": "discipline",
-          "label": "Červené/zápas",
-          "value": 0.11,
-          "league_avg": 0.14,
-          "percentile": 33,
-          "rank": 6,
-          "league_size": 16,
-          "higher_better": false
-        },
-        {
-          "key": "cards",
-          "group": "discipline",
-          "label": "Karty/zápas",
-          "value": 2.0,
-          "league_avg": 1.95,
-          "percentile": 47,
-          "rank": 8,
-          "league_size": 16,
-          "higher_better": false
-        },
-        {
-          "key": "corners",
-          "group": "setpiece",
-          "label": "Rohy/zápas",
-          "value": 5.78,
-          "league_avg": 4.86,
-          "percentile": 93,
-          "rank": 2,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "free_kicks",
-          "group": "setpiece",
-          "label": "Standardky/zápas",
-          "value": 13.0,
-          "league_avg": 13.22,
-          "percentile": 47,
-          "rank": 9,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "throwins",
-          "group": "setpiece",
-          "label": "Auty/zápas",
-          "value": 22.67,
-          "league_avg": 21.41,
-          "percentile": 67,
-          "rank": 6,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "goal_kicks",
-          "group": "setpiece",
-          "label": "Výkopy/zápas",
-          "value": 8.12,
-          "league_avg": 9.06,
-          "percentile": 27,
-          "rank": 12,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "crosses",
-          "group": "setpiece",
-          "label": "Centry/zápas",
-          "value": 22.75,
-          "league_avg": 18.95,
-          "percentile": 87,
-          "rank": 3,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "accurate_crosses",
-          "group": "setpiece",
-          "label": "Přesné centry/zápas",
-          "value": 4.75,
-          "league_avg": 4.6,
-          "percentile": 53,
-          "rank": 7,
-          "league_size": 16,
-          "higher_better": true
-        },
-        {
-          "key": "offsides",
-          "group": "setpiece",
-          "label": "Ofsajdy/zápas",
-          "value": 1.67,
-          "league_avg": 1.5,
-          "percentile": 40,
-          "rank": 10,
-          "league_size": 16,
-          "higher_better": false
-        },
-        {
-          "key": "penalties",
-          "group": "setpiece",
-          "label": "Penalty/zápas",
-          "value": 1.0,
-          "league_avg": 0.44,
-          "percentile": 75,
-          "rank": 1,
-          "league_size": 13,
-          "higher_better": true
-        }
-      ],
-      "goals_for": {
-        "key": "goals_for",
-        "group": "attack",
-        "label": "Góly/zápas",
-        "value": 2.78,
-        "league_avg": 1.42,
-        "percentile": 100,
-        "rank": 1,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "shots": {
-        "key": "shots",
-        "group": "attack",
-        "label": "Střely/zápas",
-        "value": 17.33,
-        "league_avg": 13.08,
-        "percentile": 100,
-        "rank": 1,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "sot": {
-        "key": "sot",
-        "group": "attack",
-        "label": "Na bránu/zápas",
-        "value": 6.0,
-        "league_avg": 4.23,
-        "percentile": 93,
-        "rank": 2,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "shots_off": {
-        "key": "shots_off",
-        "group": "attack",
-        "label": "Mimo/zápas",
-        "value": 7.22,
-        "league_avg": 5.57,
-        "percentile": 100,
-        "rank": 1,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "shots_inside": {
-        "key": "shots_inside",
-        "group": "attack",
-        "label": "Z vápna/zápas",
-        "value": 11.44,
-        "league_avg": 8.48,
-        "percentile": 100,
-        "rank": 1,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "shots_outside": {
-        "key": "shots_outside",
-        "group": "attack",
-        "label": "Mimo vápno/zápas",
-        "value": 5.78,
-        "league_avg": 4.84,
-        "percentile": 80,
-        "rank": 3,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "shots_blocked": {
-        "key": "shots_blocked",
-        "group": "attack",
-        "label": "Zblokované soupeřem/zápas",
-        "value": 4.67,
-        "league_avg": 3.48,
-        "percentile": 13,
-        "rank": 14,
-        "league_size": 16,
-        "higher_better": false
-      },
-      "possession": {
-        "key": "possession",
-        "group": "attack",
-        "label": "Držení %",
-        "value": 54.33,
-        "league_avg": 50.0,
-        "percentile": 80,
-        "rank": 4,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "attacks": {
-        "key": "attacks",
-        "group": "attack",
-        "label": "Útoky/zápas",
-        "value": 87.44,
-        "league_avg": 84.57,
-        "percentile": 67,
-        "rank": 6,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "dangerous_attacks": {
-        "key": "dangerous_attacks",
-        "group": "attack",
-        "label": "Nebezpečné útoky/zápas",
-        "value": 59.67,
-        "league_avg": 52.31,
-        "percentile": 93,
-        "rank": 2,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "big_chances": {
-        "key": "big_chances",
-        "group": "attack",
-        "label": "Velké šance/zápas",
-        "value": 4.75,
-        "league_avg": 2.37,
-        "percentile": 100,
-        "rank": 1,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "big_chances_missed": {
-        "key": "big_chances_missed",
-        "group": "attack",
-        "label": "Zahozené velké šance/zápas",
-        "value": 2.88,
-        "league_avg": 1.65,
-        "percentile": 0,
-        "rank": 16,
-        "league_size": 16,
-        "higher_better": false
-      },
-      "assists": {
-        "key": "assists",
-        "group": "attack",
-        "label": "Asistence/zápas",
-        "value": 1.67,
-        "league_avg": 1.05,
-        "percentile": 100,
-        "rank": 1,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "key_passes": {
-        "key": "key_passes",
-        "group": "attack",
-        "label": "Klíčové přihrávky/zápas",
-        "value": 9.0,
-        "league_avg": 10.01,
-        "percentile": 27,
-        "rank": 12,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "passes": {
-        "key": "passes",
-        "group": "attack",
-        "label": "Přihrávky/zápas",
-        "value": 384.0,
-        "league_avg": 385.61,
-        "percentile": 53,
-        "rank": 8,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "pass_pct": {
-        "key": "pass_pct",
-        "group": "attack",
-        "label": "Úspěšnost přihrávek %",
-        "value": 77.22,
-        "league_avg": 78.64,
-        "percentile": 47,
-        "rank": 9,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "dribbles": {
-        "key": "dribbles",
-        "group": "attack",
-        "label": "Driblingy/zápas",
-        "value": 13.33,
-        "league_avg": 13.11,
-        "percentile": 60,
-        "rank": 7,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "dribbles_ok": {
-        "key": "dribbles_ok",
-        "group": "attack",
-        "label": "Úspěšné driblingy/zápas",
-        "value": 7.0,
-        "league_avg": 6.32,
-        "percentile": 73,
-        "rank": 5,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "dribble_pct": {
-        "key": "dribble_pct",
-        "group": "attack",
-        "label": "Úspěšnost driblingu %",
-        "value": 50.62,
-        "league_avg": 45.73,
-        "percentile": 87,
-        "rank": 3,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "failed_to_score_pct": {
-        "key": "failed_to_score_pct",
-        "group": "attack",
-        "label": "Zápasy bez gólu %",
-        "value": 0.0,
-        "league_avg": 25.94,
-        "percentile": 100,
-        "rank": 1,
-        "league_size": 16,
-        "higher_better": false
-      },
-      "goals_against": {
-        "key": "goals_against",
-        "group": "defense",
-        "label": "Obdrženo/zápas",
-        "value": 0.67,
-        "league_avg": 1.41,
-        "percentile": 93,
-        "rank": 2,
-        "league_size": 16,
-        "higher_better": false
-      },
-      "saves": {
-        "key": "saves",
-        "group": "defense",
-        "label": "Zákroky/zápas",
-        "value": 1.89,
-        "league_avg": 2.88,
-        "percentile": 0,
-        "rank": 16,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "tackles": {
-        "key": "tackles",
-        "group": "defense",
-        "label": "Skluzy/zápas",
-        "value": 14.22,
-        "league_avg": 14.6,
-        "percentile": 47,
-        "rank": 9,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "tackles_won": {
-        "key": "tackles_won",
-        "group": "defense",
-        "label": "Vyhrané skluzy/zápas",
-        "value": 9.25,
-        "league_avg": 9.37,
-        "percentile": 20,
-        "rank": 9,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "interceptions": {
-        "key": "interceptions",
-        "group": "defense",
-        "label": "Zachycené přihrávky/zápas",
-        "value": 8.89,
-        "league_avg": 7.82,
-        "percentile": 93,
-        "rank": 2,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "duels_won": {
-        "key": "duels_won",
-        "group": "defense",
-        "label": "Vyhrané souboje/zápas",
-        "value": 53.86,
-        "league_avg": 47.7,
-        "percentile": 93,
-        "rank": 2,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "clean_sheet_pct": {
-        "key": "clean_sheet_pct",
-        "group": "defense",
-        "label": "Čistá konta %",
-        "value": 44.4,
-        "league_avg": 26.2,
-        "percentile": 93,
-        "rank": 2,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "fouls": {
-        "key": "fouls",
-        "group": "discipline",
-        "label": "Fauly/zápas",
-        "value": 15.56,
-        "league_avg": 13.3,
-        "percentile": 7,
-        "rank": 15,
-        "league_size": 16,
-        "higher_better": false
-      },
-      "fouls_received": {
-        "key": "fouls_received",
-        "group": "discipline",
-        "label": "Fauly proti/zápas",
-        "value": 13.33,
-        "league_avg": 13.32,
-        "percentile": 60,
-        "rank": 6,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "yellow": {
-        "key": "yellow",
-        "group": "discipline",
-        "label": "Žluté/zápas",
-        "value": 1.89,
-        "league_avg": 1.81,
-        "percentile": 33,
-        "rank": 11,
-        "league_size": 16,
-        "higher_better": false
-      },
-      "red": {
-        "key": "red",
-        "group": "discipline",
-        "label": "Červené/zápas",
-        "value": 0.11,
-        "league_avg": 0.14,
-        "percentile": 33,
-        "rank": 6,
-        "league_size": 16,
-        "higher_better": false
-      },
-      "cards": {
-        "key": "cards",
-        "group": "discipline",
-        "label": "Karty/zápas",
-        "value": 2.0,
-        "league_avg": 1.95,
-        "percentile": 47,
-        "rank": 8,
-        "league_size": 16,
-        "higher_better": false
-      },
-      "corners": {
-        "key": "corners",
-        "group": "setpiece",
-        "label": "Rohy/zápas",
-        "value": 5.78,
-        "league_avg": 4.86,
-        "percentile": 93,
-        "rank": 2,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "free_kicks": {
-        "key": "free_kicks",
-        "group": "setpiece",
-        "label": "Standardky/zápas",
-        "value": 13.0,
-        "league_avg": 13.22,
-        "percentile": 47,
-        "rank": 9,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "throwins": {
-        "key": "throwins",
-        "group": "setpiece",
-        "label": "Auty/zápas",
-        "value": 22.67,
-        "league_avg": 21.41,
-        "percentile": 67,
-        "rank": 6,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "goal_kicks": {
-        "key": "goal_kicks",
-        "group": "setpiece",
-        "label": "Výkopy/zápas",
-        "value": 8.12,
-        "league_avg": 9.06,
-        "percentile": 27,
-        "rank": 12,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "crosses": {
-        "key": "crosses",
-        "group": "setpiece",
-        "label": "Centry/zápas",
-        "value": 22.75,
-        "league_avg": 18.95,
-        "percentile": 87,
-        "rank": 3,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "accurate_crosses": {
-        "key": "accurate_crosses",
-        "group": "setpiece",
-        "label": "Přesné centry/zápas",
-        "value": 4.75,
-        "league_avg": 4.6,
-        "percentile": 53,
-        "rank": 7,
-        "league_size": 16,
-        "higher_better": true
-      },
-      "offsides": {
-        "key": "offsides",
-        "group": "setpiece",
-        "label": "Ofsajdy/zápas",
-        "value": 1.67,
-        "league_avg": 1.5,
-        "percentile": 40,
-        "rank": 10,
-        "league_size": 16,
-        "higher_better": false
-      },
-      "penalties": {
-        "key": "penalties",
-        "group": "setpiece",
-        "label": "Penalty/zápas",
-        "value": 1.0,
-        "league_avg": 0.44,
-        "percentile": 75,
-        "rank": 1,
-        "league_size": 13,
-        "higher_better": true
-      }
-    },
-    "eras": [
-      {
-        "coach_id": 455705,
-        "coach_name": "Jindřich Trpišovský",
-        "from": "2022-07-31T14:00:00Z",
-        "to": "2026-09-20T16:00:00Z",
-        "matches": 148,
-        "all": {
-          "matches": 148,
-          "won": 110,
-          "drawn": 26,
-          "lost": 12,
-          "goals_for": 2.36,
-          "goals_against": 0.72,
-          "shots": 17.22,
-          "sot": 6.47,
-          "corners": 7.3,
-          "possession": 61.03,
-          "fouls": 12.01,
-          "fouls_committed": 12.01,
-          "fouls_received": 12.08,
-          "yellow": 1.66,
-          "red": 0.11,
-          "cards": 1.77,
-          "clean_sheet_pct": 48.0,
-          "failed_to_score_pct": 10.1,
-          "shots_off": 7.18,
-          "shots_blocked": 4.14,
-          "shots_inside": 11.91,
-          "shots_outside": 5.31,
-          "attacks": 101.97,
-          "dangerous_attacks": 75.32,
-          "big_chances": 3.73,
-          "big_chances_missed": 2.38,
-          "assists": 1.79,
-          "key_passes": 9.0,
-          "passes": 416.78,
-          "pass_pct": 77.28,
-          "dribbles": 11.26,
-          "dribbles_ok": 5.35,
-          "dribble_pct": 50.63,
-          "saves": 1.91,
-          "tackles": 11.52,
-          "tackles_won": 9.25,
-          "interceptions": 9.96,
-          "duels_won": 43.07,
-          "offsides": 1.6,
-          "free_kicks": 11.31,
-          "throwins": 23.58,
-          "goal_kicks": 5.85,
-          "crosses": 25.6,
-          "accurate_crosses": 7.12,
-          "penalties": 0.46
-        },
-        "home": {
-          "matches": 76,
-          "won": 68,
-          "drawn": 7,
-          "lost": 1,
-          "goals_for": 2.84,
-          "goals_against": 0.58,
-          "shots": 19.68,
-          "sot": 7.76,
-          "corners": 8.11,
-          "possession": 65.03,
-          "fouls": 11.26,
-          "fouls_committed": 11.26,
-          "fouls_received": 11.84,
-          "yellow": 1.54,
-          "red": 0.08,
-          "cards": 1.62,
-          "clean_sheet_pct": 55.3,
-          "failed_to_score_pct": 2.6,
-          "shots_off": 8.0,
-          "shots_blocked": 4.56,
-          "shots_inside": 13.54,
-          "shots_outside": 6.16,
-          "attacks": 102.72,
-          "dangerous_attacks": 79.08,
-          "big_chances": 4.64,
-          "big_chances_missed": 2.84,
-          "assists": 2.24,
-          "key_passes": 10.5,
-          "passes": 438.54,
-          "pass_pct": 79.91,
-          "dribbles": 12.4,
-          "dribbles_ok": 5.99,
-          "dribble_pct": 51.04,
-          "saves": 1.63,
-          "tackles": 11.23,
-          "tackles_won": 7.0,
-          "interceptions": 10.96,
-          "duels_won": 41.43,
-          "offsides": 1.44,
-          "free_kicks": 10.77,
-          "throwins": 22.53,
-          "goal_kicks": 5.22,
-          "crosses": 27.9,
-          "accurate_crosses": 8.01,
-          "penalties": 0.43
-        },
-        "away": {
-          "matches": 72,
-          "won": 42,
-          "drawn": 19,
-          "lost": 11,
-          "goals_for": 1.86,
-          "goals_against": 0.88,
-          "shots": 14.73,
-          "sot": 5.1,
-          "corners": 6.44,
-          "possession": 56.81,
-          "fouls": 12.81,
-          "fouls_committed": 12.81,
-          "fouls_received": 12.33,
-          "yellow": 1.78,
-          "red": 0.15,
-          "cards": 1.93,
-          "clean_sheet_pct": 40.3,
-          "failed_to_score_pct": 18.1,
-          "shots_off": 6.32,
-          "shots_blocked": 3.71,
-          "shots_inside": 10.34,
-          "shots_outside": 4.49,
-          "attacks": 101.2,
-          "dangerous_attacks": 71.46,
-          "big_chances": 2.85,
-          "big_chances_missed": 1.9,
-          "assists": 1.37,
-          "key_passes": 7.5,
-          "passes": 394.7,
-          "pass_pct": 74.56,
-          "dribbles": 10.13,
-          "dribbles_ok": 4.71,
-          "dribble_pct": 50.21,
-          "saves": 2.19,
-          "tackles": 11.8,
-          "tackles_won": 11.5,
-          "interceptions": 8.97,
-          "duels_won": 44.88,
-          "offsides": 1.76,
-          "free_kicks": 11.88,
-          "throwins": 24.74,
-          "goal_kicks": 6.55,
-          "crosses": 23.33,
-          "accurate_crosses": 6.24,
-          "penalties": 0.49
-        },
-        "radar": {
-          "all": {
-            "goals_for": 2.36,
-            "goals_against": 0.72,
-            "shots": 17.22,
-            "sot": 6.47,
-            "corners": 7.3,
-            "possession": 61.03,
-            "cards": 1.77,
-            "fouls_committed": 12.01,
-            "fouls_received": 12.08
-          },
-          "home": {
-            "goals_for": 2.84,
-            "goals_against": 0.58,
-            "shots": 19.68,
-            "sot": 7.76,
-            "corners": 8.11,
-            "possession": 65.03,
-            "cards": 1.62,
-            "fouls_committed": 11.26,
-            "fouls_received": 11.84
-          },
-          "away": {
-            "goals_for": 1.86,
-            "goals_against": 0.88,
-            "shots": 14.73,
-            "sot": 5.1,
-            "corners": 6.44,
-            "possession": 56.81,
-            "cards": 1.93,
-            "fouls_committed": 12.81,
-            "fouls_received": 12.33
-          }
-        }
-      }
-    ],
-    "coach": {
-      "id": 455705,
-      "name": "Jindřich Trpišovský",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "start": "2018-01-01",
-      "end": "2029-06-30",
-      "active": true
-    }
-  },
-  "coach": {
-    "id": 455705,
-    "name": "Jindřich Trpišovský",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2018-01-01",
-    "end": "2029-06-30",
-    "active": true
-  }
+  "generated_at": "2026-09-21T09:47:21Z"
 }

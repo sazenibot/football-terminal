@@ -9,15 +9,15 @@
   "league_id": 8,
   "league_name": "Premier League",
   "in_league": true,
-  "league_matches": 6,
+  "league_matches": 7,
   "leagues": [
     {
       "id": 8,
       "name": "Premier League",
       "in_league": true,
-      "league_matches": 6
+      "league_matches": 7
     }
   ],
   "hook": "Craig Pawson píská v soutěži Premier League jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-09-20T21:56:06Z"
+  "generated_at": "2026-09-21T09:47:59Z"
 }

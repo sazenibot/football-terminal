@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Andrej Stojcevski v této sezóně za Slovácko: 9 startů, 810 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:31Z",
-    "season": {
-      "appearances": 9,
-      "lineups": 9,
-      "minutes": 810,
-      "yellow": 2,
-      "shots": 5,
-      "sot": 2,
-      "goals_conceded": 16
-    }
-  }
+  "hook": "Andrej Stojcevski (Obránce) nastupuje za Slovácko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

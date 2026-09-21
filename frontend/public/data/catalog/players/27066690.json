@@ -14,19 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Martin Cedidla v této sezóně za Jablonec: 8 startů, 637 min, 3 góly.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:28:58Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 7,
-      "minutes": 637,
-      "goals": 3,
-      "yellow": 1,
-      "shots": 10,
-      "sot": 3,
-      "goals_conceded": 9
-    }
-  }
+  "hook": "Martin Cedidla (Obránce) nastupuje za Jablonec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

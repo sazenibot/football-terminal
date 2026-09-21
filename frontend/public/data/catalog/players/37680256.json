@@ -14,18 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Milan Lexa v této sezóně za Slovan Liberec: 8 startů, 417 min.",
-  "generated_at": "2026-09-20T21:56:05Z",
-  "overlay": {
-    "generated_at": "2026-09-20T23:30:23Z",
-    "season": {
-      "appearances": 8,
-      "lineups": 5,
-      "minutes": 417,
-      "yellow": 1,
-      "shots": 7,
-      "sot": 2,
-      "goals_conceded": 3
-    }
-  }
+  "hook": "Milan Lexa (Záložník) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-21T09:47:21Z"
 }

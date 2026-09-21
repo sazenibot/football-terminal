@@ -563,17 +563,6 @@
   ],
   "upcoming": [
     {
-      "fixture_id": 19735162,
-      "starting_at": "2026-09-20T17:30:00Z",
-      "is_home": true,
-      "opponent": {
-        "id": 2726,
-        "name": "TSG Hoffenheim",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png"
-      },
-      "has_match_page": true
-    },
-    {
       "fixture_id": 19735153,
       "starting_at": "2026-10-10T13:30:00Z",
       "is_home": true,
@@ -596,5 +585,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-20T21:56:06Z"
+  "generated_at": "2026-09-21T09:48:25Z"
 }
