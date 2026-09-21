@@ -135,7 +135,7 @@ def fetch_league_history(league_id: int, start: date, end: date) -> list:
             f"/fixtures/between/{chunk_start.isoformat()}/{window.isoformat()}",
             {
                 "filters": f"fixtureLeagues:{league_id}",
-                "include": "participants;statistics;scores;state;league;coaches",
+                "include": "participants;statistics;scores;state;league;coaches;referees",
             },
         )
         all_fx.extend(chunk)

@@ -1,169 +1,138 @@
 {
-  "id": 70782,
-  "name": "Lukáš Machač",
-  "common_name": "L. Machač",
-  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-  "country": "Czech Republic",
-  "country_id": 245,
-  "date_of_birth": null,
-  "league_id": 265,
-  "league_name": "Chance Národní Liga",
+  "id": 1158776,
+  "name": "Lukáš Glogar",
+  "league_id": 262,
+  "league_name": "Chance Liga",
   "in_league": true,
+  "leagues": [],
   "league_matches": 1,
-  "leagues": [
-    {
-      "id": 262,
-      "name": "Chance Liga",
-      "in_league": false,
-      "league_matches": 0
-    },
-    {
-      "id": 265,
-      "name": "Chance Národní Liga",
-      "in_league": false,
-      "league_matches": 0
-    }
-  ],
-  "hook": "Lukáš Machač je rozhodčí ze země této ligy. V aktuálním okně ho jako hlavního na zápasech ligy ještě nemáme.",
-  "generated_at": "2026-09-20T21:56:05Z",
+  "common_name": "L. Glogar",
+  "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+  "date_of_birth": null,
   "overlay": {
-    "generated_at": "2026-09-21T09:29:09Z",
+    "generated_at": "2026-09-21T09:29:22Z",
     "current_season_id": 27984,
     "career_matches": 1,
     "seasons": [
       {
-        "id": 25591,
-        "name": "2025/2026",
-        "starting_at": "2025-07-18",
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
         "matches": 1,
         "sm": {
           "yellowred": 0,
           "yellowred_count": 0,
-          "sm_matches": 1,
-          "var": 1,
-          "var_count": 1
+          "sm_matches": 1
         }
       }
     ],
     "matches": [
       {
-        "fid": 19439226,
-        "s": 25591,
-        "d": "2026-04-05",
-        "hid": 2727,
-        "aid": 512,
-        "hn": "Sparta Praha",
-        "an": "Karviná",
-        "hs": 2,
-        "as": 0,
+        "fid": 19416519,
+        "s": 23641,
+        "d": "2025-05-17",
+        "hid": 3487,
+        "aid": 1351,
+        "hn": "České Budějovice",
+        "an": "Teplice",
+        "hs": 0,
+        "as": 3,
         "st": {
           "fouls": [
-            7,
-            11
+            15,
+            20
           ],
           "yellow": [
-            2,
-            3
+            0,
+            2
           ],
           "shots": [
-            17,
-            13
+            12,
+            14
           ],
           "sot": [
-            8,
-            1
-          ],
-          "shots_off": [
-            4,
-            4
-          ],
-          "shots_inside": [
-            13,
-            7
-          ],
-          "shots_outside": [
-            4,
-            6
-          ],
-          "shots_blocked": [
-            5,
-            8
-          ],
-          "attacks": [
-            85,
-            69
-          ],
-          "dangerous_attacks": [
-            69,
-            50
-          ],
-          "big_chances": [
-            2,
-            1
-          ],
-          "big_chances_missed": [
-            2,
-            1
-          ],
-          "assists": [
-            2,
-            0
-          ],
-          "passes": [
-            456,
-            319
-          ],
-          "dribbles": [
-            16,
-            11
-          ],
-          "dribbles_ok": [
             6,
             4
           ],
-          "saves": [
-            1,
+          "shots_off": [
+            4,
+            9
+          ],
+          "shots_inside": [
+            8,
+            7
+          ],
+          "shots_outside": [
+            5,
             6
           ],
+          "shots_blocked": [
+            2,
+            1
+          ],
+          "attacks": [
+            85,
+            73
+          ],
+          "dangerous_attacks": [
+            49,
+            39
+          ],
+          "big_chances": [
+            0,
+            3
+          ],
+          "passes": [
+            381,
+            295
+          ],
+          "dribbles": [
+            10,
+            14
+          ],
+          "dribbles_ok": [
+            6,
+            9
+          ],
+          "saves": [
+            1,
+            7
+          ],
           "tackles": [
-            16,
-            19
+            12,
+            14
           ],
           "interceptions": [
-            13,
-            7
-          ],
-          "duels_won": [
-            40,
-            40
+            4,
+            4
           ],
           "corners": [
-            14,
-            5
+            2,
+            4
           ],
           "free_kicks": [
-            11,
-            7
+            20,
+            15
           ],
           "throwins": [
-            18,
-            20
+            19,
+            18
           ],
           "goal_kicks": [
-            7,
+            12,
             8
           ],
           "crosses": [
-            20,
+            14,
             13
           ],
           "accurate_crosses": [
             4,
-            4
+            6
           ],
           "offsides": [
-            3,
-            2
+            4,
+            0
           ]
         },
         "mp": false
@@ -340,12 +309,12 @@
       "all": {
         "fouls": {
           "league_avg": 24.19,
-          "rank": 37,
+          "rank": 1,
           "size": 38
         },
         "yellow": {
           "league_avg": 4.03,
-          "rank": 1,
+          "rank": 34,
           "size": 38
         },
         "red": {
@@ -365,41 +334,41 @@
         },
         "var": {
           "league_avg": 0.47,
-          "rank": 2,
+          "rank": null,
           "size": 31
         }
       },
       "seasons": {
-        "25591": {
+        "23641": {
           "fouls": {
-            "league_avg": 26.08,
-            "rank": 22,
-            "size": 22
+            "league_avg": 22.68,
+            "rank": 1,
+            "size": 25
           },
           "yellow": {
-            "league_avg": 4.1,
-            "rank": 4,
-            "size": 21
+            "league_avg": 3.88,
+            "rank": 22,
+            "size": 25
           },
           "red": {
-            "league_avg": 0.26,
-            "rank": 17,
-            "size": 22
+            "league_avg": 0.23,
+            "rank": 18,
+            "size": 25
           },
           "yellowred": {
             "league_avg": 0.07,
             "rank": 12,
-            "size": 22
+            "size": 25
           },
           "penalties": {
-            "league_avg": 0.27,
-            "rank": 18,
-            "size": 22
+            "league_avg": 0.19,
+            "rank": 16,
+            "size": 25
           },
           "var": {
-            "league_avg": 0.48,
-            "rank": 1,
-            "size": 18
+            "league_avg": 0.39,
+            "rank": null,
+            "size": 17
           }
         }
       }

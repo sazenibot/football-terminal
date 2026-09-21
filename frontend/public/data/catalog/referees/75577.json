@@ -6,16 +6,16 @@
   "country": "Czech Republic",
   "country_id": 245,
   "date_of_birth": null,
-  "league_id": 262,
-  "league_name": "Chance Liga",
+  "league_id": 265,
+  "league_name": "Chance Národní Liga",
   "in_league": true,
-  "league_matches": 7,
+  "league_matches": 5,
   "leagues": [
     {
       "id": 262,
       "name": "Chance Liga",
       "in_league": true,
-      "league_matches": 7
+      "league_matches": 6
     },
     {
       "id": 265,
@@ -24,6 +24,6982 @@
       "league_matches": 1
     }
   ],
-  "hook": "Stanislav Volek píská v soutěži Chance Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "hook": "Stanislav Volek píská v soutěži Chance Národní Liga jako hlavní. V této sezóně 5 zápasů, 4 žlutých na zápas.",
+  "generated_at": "2026-09-20T21:56:05Z",
+  "overlay": {
+    "generated_at": "2026-09-21T09:29:22Z",
+    "season": {
+      "matches": 5,
+      "fouls_avg": 24.8,
+      "yellow_avg": 4,
+      "red_avg": 0,
+      "penalties_avg": 0.6
+    },
+    "season_raw": {
+      "Penalties": {
+        "all": {
+          "count": 3,
+          "average": 0.6
+        },
+        "home": {
+          "count": 3,
+          "average": 0.6,
+          "percentage": 100
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 124,
+        "average": 24.8
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 20,
+          "average": 4,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 20
+        },
+        "home": {
+          "count": 8,
+          "average": 1.6,
+          "percentage": 40
+        },
+        "away": {
+          "count": 12,
+          "average": 2.4,
+          "percentage": 60
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 5
+      },
+      "VAR Moments": {
+        "count": 4,
+        "average": 0.8
+      }
+    },
+    "career": {
+      "seasons": 9,
+      "matches": 88,
+      "yellow": 384,
+      "red": 14,
+      "yellow_avg": 4.36
+    },
+    "league_context": {
+      "fouls_per_match": 24.8,
+      "yellow_per_match": 4.16,
+      "red_per_match": 0.2,
+      "matches_sampled": 25
+    },
+    "recent": [],
+    "current_season_id": 27984,
+    "career_matches": 57,
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 5,
+        "sm": {
+          "yellowred": 0,
+          "yellowred_count": 0,
+          "sm_matches": 5,
+          "var": 0.8,
+          "var_count": 4
+        }
+      },
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 29,
+        "sm": {
+          "yellowred": 0.1,
+          "yellowred_count": 3,
+          "sm_matches": 29,
+          "var": 0.38,
+          "var_count": 11
+        }
+      },
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 4,
+        "sm": {
+          "yellowred": 0,
+          "yellowred_count": 0,
+          "sm_matches": 4
+        }
+      },
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 16,
+        "sm": {
+          "yellowred": 0.19,
+          "yellowred_count": 3,
+          "sm_matches": 16,
+          "var": 0.75,
+          "var_count": 12
+        }
+      },
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 3,
+        "sm": {
+          "yellowred": 0.33,
+          "yellowred_count": 1,
+          "sm_matches": 3,
+          "var": 0.33,
+          "var_count": 1
+        }
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725038,
+        "s": 27984,
+        "d": "2026-09-20",
+        "hid": 216,
+        "aid": 3545,
+        "hn": "Slavia Praha",
+        "an": "Viktoria Plzeň",
+        "hs": 2,
+        "as": 1,
+        "st": {
+          "fouls": [
+            13,
+            9
+          ],
+          "yellow": [
+            1,
+            3
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            21,
+            12
+          ],
+          "sot": [
+            5,
+            4
+          ],
+          "shots_off": [
+            7,
+            6
+          ],
+          "shots_inside": [
+            10,
+            8
+          ],
+          "shots_outside": [
+            11,
+            4
+          ],
+          "shots_blocked": [
+            9,
+            2
+          ],
+          "attacks": [
+            130,
+            106
+          ],
+          "dangerous_attacks": [
+            82,
+            34
+          ],
+          "big_chances": [
+            1,
+            4
+          ],
+          "big_chances_missed": [
+            1,
+            3
+          ],
+          "assists": [
+            0,
+            1
+          ],
+          "key_passes": [
+            13,
+            9
+          ],
+          "passes": [
+            525,
+            298
+          ],
+          "dribbles": [
+            13,
+            8
+          ],
+          "dribbles_ok": [
+            7,
+            4
+          ],
+          "saves": [
+            3,
+            3
+          ],
+          "tackles": [
+            7,
+            14
+          ],
+          "tackles_won": [
+            6,
+            6
+          ],
+          "interceptions": [
+            8,
+            7
+          ],
+          "duels_won": [
+            35,
+            55
+          ],
+          "corners": [
+            9,
+            4
+          ],
+          "free_kicks": [
+            8,
+            13
+          ],
+          "throwins": [
+            20,
+            21
+          ],
+          "goal_kicks": [
+            9,
+            13
+          ],
+          "crosses": [
+            39,
+            12
+          ],
+          "accurate_crosses": [
+            14,
+            2
+          ],
+          "offsides": [
+            0,
+            2
+          ]
+        },
+        "mp": true
+      },
+      {
+        "fid": 19725047,
+        "s": 27984,
+        "d": "2026-09-12",
+        "hid": 2727,
+        "aid": 3643,
+        "hn": "Sparta Praha",
+        "an": "Jablonec",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            10,
+            15
+          ],
+          "yellow": [
+            2,
+            2
+          ],
+          "shots": [
+            18,
+            8
+          ],
+          "sot": [
+            7,
+            2
+          ],
+          "shots_off": [
+            6,
+            3
+          ],
+          "shots_inside": [
+            10,
+            6
+          ],
+          "shots_outside": [
+            8,
+            2
+          ],
+          "shots_blocked": [
+            5,
+            3
+          ],
+          "attacks": [
+            99,
+            51
+          ],
+          "dangerous_attacks": [
+            78,
+            30
+          ],
+          "big_chances": [
+            2,
+            1
+          ],
+          "big_chances_missed": [
+            0,
+            1
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "key_passes": [
+            15,
+            6
+          ],
+          "passes": [
+            514,
+            320
+          ],
+          "dribbles": [
+            23,
+            8
+          ],
+          "dribbles_ok": [
+            12,
+            5
+          ],
+          "saves": [
+            2,
+            5
+          ],
+          "tackles": [
+            14,
+            28
+          ],
+          "tackles_won": [
+            9,
+            19
+          ],
+          "interceptions": [
+            10,
+            9
+          ],
+          "duels_won": [
+            54,
+            53
+          ],
+          "corners": [
+            9,
+            3
+          ],
+          "free_kicks": [
+            15,
+            10
+          ],
+          "throwins": [
+            21,
+            25
+          ],
+          "goal_kicks": [
+            3,
+            9
+          ],
+          "crosses": [
+            33,
+            17
+          ],
+          "accurate_crosses": [
+            6,
+            2
+          ],
+          "offsides": [
+            2,
+            2
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725066,
+        "s": 27984,
+        "d": "2026-08-29",
+        "hid": 4484,
+        "aid": 22031,
+        "hn": "Pardubice",
+        "an": "SK Artis Brno",
+        "hs": 1,
+        "as": 2,
+        "st": {
+          "fouls": [
+            15,
+            12
+          ],
+          "yellow": [
+            3,
+            1
+          ],
+          "shots": [
+            18,
+            10
+          ],
+          "sot": [
+            6,
+            4
+          ],
+          "shots_off": [
+            9,
+            5
+          ],
+          "shots_inside": [
+            12,
+            8
+          ],
+          "shots_outside": [
+            6,
+            2
+          ],
+          "shots_blocked": [
+            3,
+            1
+          ],
+          "attacks": [
+            99,
+            86
+          ],
+          "dangerous_attacks": [
+            65,
+            42
+          ],
+          "big_chances": [
+            3,
+            1
+          ],
+          "big_chances_missed": [
+            2,
+            1
+          ],
+          "assists": [
+            0,
+            1
+          ],
+          "passes": [
+            334,
+            400
+          ],
+          "dribbles": [
+            16,
+            13
+          ],
+          "dribbles_ok": [
+            4,
+            5
+          ],
+          "saves": [
+            2,
+            5
+          ],
+          "tackles": [
+            18,
+            22
+          ],
+          "tackles_won": [
+            9,
+            10
+          ],
+          "interceptions": [
+            6,
+            3
+          ],
+          "duels_won": [
+            42,
+            52
+          ],
+          "corners": [
+            5,
+            3
+          ],
+          "free_kicks": [
+            12,
+            15
+          ],
+          "throwins": [
+            22,
+            18
+          ],
+          "goal_kicks": [
+            7,
+            10
+          ],
+          "crosses": [
+            19,
+            14
+          ],
+          "accurate_crosses": [
+            6,
+            4
+          ],
+          "offsides": [
+            0,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725093,
+        "s": 27984,
+        "d": "2026-08-08",
+        "hid": 187,
+        "aid": 2727,
+        "hn": "Mladá Boleslav",
+        "an": "Sparta Praha",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            14,
+            14
+          ],
+          "yellow": [
+            1,
+            4
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            11,
+            12
+          ],
+          "sot": [
+            4,
+            0
+          ],
+          "shots_off": [
+            6,
+            7
+          ],
+          "shots_inside": [
+            4,
+            10
+          ],
+          "shots_outside": [
+            7,
+            2
+          ],
+          "shots_blocked": [
+            1,
+            5
+          ],
+          "attacks": [
+            62,
+            107
+          ],
+          "dangerous_attacks": [
+            21,
+            69
+          ],
+          "big_chances": [
+            2,
+            2
+          ],
+          "big_chances_missed": [
+            0,
+            2
+          ],
+          "passes": [
+            314,
+            611
+          ],
+          "dribbles": [
+            20,
+            21
+          ],
+          "dribbles_ok": [
+            11,
+            6
+          ],
+          "saves": [
+            0,
+            2
+          ],
+          "tackles": [
+            20,
+            16
+          ],
+          "interceptions": [
+            4,
+            9
+          ],
+          "duels_won": [
+            50,
+            46
+          ],
+          "corners": [
+            1,
+            7
+          ],
+          "free_kicks": [
+            13,
+            14
+          ],
+          "throwins": [
+            10,
+            15
+          ],
+          "goal_kicks": [
+            15,
+            5
+          ],
+          "crosses": [
+            1,
+            36
+          ],
+          "accurate_crosses": [
+            0,
+            7
+          ],
+          "offsides": [
+            0,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725097,
+        "s": 27984,
+        "d": "2026-08-01",
+        "hid": 3269,
+        "aid": 216,
+        "hn": "Baník Ostrava",
+        "an": "Slavia Praha",
+        "hs": 0,
+        "as": 4,
+        "st": {
+          "fouls": [
+            10,
+            12
+          ],
+          "yellow": [
+            1,
+            1
+          ],
+          "shots": [
+            9,
+            16
+          ],
+          "sot": [
+            1,
+            6
+          ],
+          "shots_off": [
+            8,
+            10
+          ],
+          "shots_inside": [
+            5,
+            12
+          ],
+          "shots_outside": [
+            4,
+            3
+          ],
+          "shots_blocked": [
+            1,
+            5
+          ],
+          "attacks": [
+            95,
+            92
+          ],
+          "dangerous_attacks": [
+            55,
+            54
+          ],
+          "assists": [
+            0,
+            4
+          ],
+          "passes": [
+            329,
+            311
+          ],
+          "dribbles": [
+            9,
+            8
+          ],
+          "saves": [
+            1,
+            1
+          ],
+          "tackles": [
+            13,
+            8
+          ],
+          "interceptions": [
+            9,
+            9
+          ],
+          "corners": [
+            11,
+            9
+          ],
+          "free_kicks": [
+            12,
+            10
+          ],
+          "throwins": [
+            28,
+            22
+          ],
+          "offsides": [
+            0,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703871,
+        "s": 25591,
+        "d": "2026-05-23",
+        "hid": 1745,
+        "aid": 234,
+        "hn": "Zlín",
+        "an": "Slovácko",
+        "hs": 1,
+        "as": 0,
+        "st": {
+          "fouls": [
+            17,
+            17
+          ],
+          "yellow": [
+            2,
+            2
+          ],
+          "shots": [
+            6,
+            15
+          ],
+          "sot": [
+            3,
+            4
+          ],
+          "shots_off": [
+            1,
+            8
+          ],
+          "shots_inside": [
+            3,
+            9
+          ],
+          "shots_outside": [
+            3,
+            6
+          ],
+          "shots_blocked": [
+            2,
+            3
+          ],
+          "attacks": [
+            80,
+            86
+          ],
+          "dangerous_attacks": [
+            38,
+            58
+          ],
+          "big_chances": [
+            1,
+            1
+          ],
+          "big_chances_missed": [
+            0,
+            1
+          ],
+          "assists": [
+            1,
+            0
+          ],
+          "passes": [
+            251,
+            536
+          ],
+          "dribbles": [
+            13,
+            10
+          ],
+          "dribbles_ok": [
+            4,
+            2
+          ],
+          "saves": [
+            4,
+            2
+          ],
+          "tackles": [
+            16,
+            13
+          ],
+          "interceptions": [
+            7,
+            8
+          ],
+          "duels_won": [
+            47,
+            46
+          ],
+          "corners": [
+            3,
+            5
+          ],
+          "free_kicks": [
+            17,
+            17
+          ],
+          "throwins": [
+            21,
+            22
+          ],
+          "goal_kicks": [
+            13,
+            1
+          ],
+          "crosses": [
+            8,
+            9
+          ],
+          "accurate_crosses": [
+            2,
+            2
+          ],
+          "offsides": [
+            2,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703889,
+        "s": 25591,
+        "d": "2026-05-17",
+        "hid": 463,
+        "aid": 2727,
+        "hn": "Slovan Liberec",
+        "an": "Sparta Praha",
+        "hs": 0,
+        "as": 2,
+        "st": {
+          "fouls": [
+            16,
+            9
+          ],
+          "yellow": [
+            4,
+            0
+          ],
+          "red": [
+            1,
+            0
+          ],
+          "shots": [
+            13,
+            16
+          ],
+          "sot": [
+            3,
+            5
+          ],
+          "shots_off": [
+            6,
+            7
+          ],
+          "shots_inside": [
+            5,
+            13
+          ],
+          "shots_outside": [
+            8,
+            3
+          ],
+          "shots_blocked": [
+            4,
+            4
+          ],
+          "attacks": [
+            91,
+            98
+          ],
+          "dangerous_attacks": [
+            47,
+            67
+          ],
+          "big_chances": [
+            1,
+            4
+          ],
+          "big_chances_missed": [
+            1,
+            3
+          ],
+          "assists": [
+            0,
+            1
+          ],
+          "passes": [
+            270,
+            508
+          ],
+          "dribbles": [
+            11,
+            16
+          ],
+          "dribbles_ok": [
+            7,
+            7
+          ],
+          "saves": [
+            3,
+            3
+          ],
+          "tackles": [
+            20,
+            8
+          ],
+          "interceptions": [
+            13,
+            8
+          ],
+          "duels_won": [
+            44,
+            41
+          ],
+          "corners": [
+            5,
+            10
+          ],
+          "free_kicks": [
+            9,
+            16
+          ],
+          "throwins": [
+            20,
+            20
+          ],
+          "goal_kicks": [
+            12,
+            9
+          ],
+          "crosses": [
+            20,
+            21
+          ],
+          "accurate_crosses": [
+            5,
+            5
+          ],
+          "offsides": [
+            2,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703878,
+        "s": 25591,
+        "d": "2026-05-12",
+        "hid": 187,
+        "aid": 3531,
+        "hn": "Mladá Boleslav",
+        "an": "Dukla Praha",
+        "hs": 1,
+        "as": 2,
+        "st": {
+          "fouls": [
+            10,
+            16
+          ],
+          "yellow": [
+            0,
+            2
+          ],
+          "shots": [
+            18,
+            13
+          ],
+          "sot": [
+            3,
+            4
+          ],
+          "shots_off": [
+            6,
+            7
+          ],
+          "shots_inside": [
+            4,
+            11
+          ],
+          "shots_outside": [
+            14,
+            2
+          ],
+          "shots_blocked": [
+            9,
+            2
+          ],
+          "attacks": [
+            106,
+            75
+          ],
+          "dangerous_attacks": [
+            77,
+            56
+          ],
+          "big_chances": [
+            0,
+            5
+          ],
+          "big_chances_missed": [
+            0,
+            3
+          ],
+          "passes": [
+            619,
+            296
+          ],
+          "dribbles": [
+            13,
+            16
+          ],
+          "dribbles_ok": [
+            7,
+            5
+          ],
+          "saves": [
+            2,
+            3
+          ],
+          "tackles": [
+            13,
+            18
+          ],
+          "interceptions": [
+            8,
+            7
+          ],
+          "duels_won": [
+            44,
+            40
+          ],
+          "corners": [
+            4,
+            3
+          ],
+          "free_kicks": [
+            16,
+            10
+          ],
+          "throwins": [
+            19,
+            10
+          ],
+          "goal_kicks": [
+            8,
+            11
+          ],
+          "crosses": [
+            15,
+            13
+          ],
+          "accurate_crosses": [
+            3,
+            2
+          ],
+          "offsides": [
+            3,
+            2
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703896,
+        "s": 25591,
+        "d": "2026-05-09",
+        "hid": 3545,
+        "aid": 463,
+        "hn": "Viktoria Plzeň",
+        "an": "Slovan Liberec",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            9,
+            15
+          ],
+          "yellow": [
+            2,
+            3
+          ],
+          "shots": [
+            17,
+            6
+          ],
+          "sot": [
+            7,
+            2
+          ],
+          "shots_off": [
+            4,
+            2
+          ],
+          "shots_inside": [
+            10,
+            4
+          ],
+          "shots_outside": [
+            7,
+            2
+          ],
+          "shots_blocked": [
+            6,
+            2
+          ],
+          "attacks": [
+            101,
+            90
+          ],
+          "dangerous_attacks": [
+            40,
+            38
+          ],
+          "big_chances": [
+            4,
+            1
+          ],
+          "big_chances_missed": [
+            3,
+            1
+          ],
+          "assists": [
+            1,
+            0
+          ],
+          "passes": [
+            429,
+            287
+          ],
+          "dribbles": [
+            17,
+            11
+          ],
+          "dribbles_ok": [
+            8,
+            2
+          ],
+          "saves": [
+            2,
+            5
+          ],
+          "tackles": [
+            17,
+            18
+          ],
+          "interceptions": [
+            7,
+            7
+          ],
+          "duels_won": [
+            49,
+            38
+          ],
+          "corners": [
+            3,
+            2
+          ],
+          "free_kicks": [
+            15,
+            9
+          ],
+          "throwins": [
+            25,
+            14
+          ],
+          "goal_kicks": [
+            5,
+            6
+          ],
+          "crosses": [
+            9,
+            15
+          ],
+          "accurate_crosses": [
+            4,
+            2
+          ],
+          "offsides": [
+            3,
+            3
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703897,
+        "s": 25591,
+        "d": "2026-05-03",
+        "hid": 2727,
+        "aid": 3643,
+        "hn": "Sparta Praha",
+        "an": "Jablonec",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            17,
+            10
+          ],
+          "yellow": [
+            1,
+            2
+          ],
+          "red": [
+            1,
+            1
+          ],
+          "shots": [
+            19,
+            12
+          ],
+          "sot": [
+            5,
+            2
+          ],
+          "shots_off": [
+            8,
+            3
+          ],
+          "shots_inside": [
+            14,
+            8
+          ],
+          "shots_outside": [
+            5,
+            4
+          ],
+          "shots_blocked": [
+            6,
+            7
+          ],
+          "attacks": [
+            85,
+            68
+          ],
+          "dangerous_attacks": [
+            61,
+            29
+          ],
+          "big_chances": [
+            4,
+            1
+          ],
+          "big_chances_missed": [
+            3,
+            0
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "passes": [
+            460,
+            353
+          ],
+          "dribbles": [
+            9,
+            10
+          ],
+          "dribbles_ok": [
+            4,
+            4
+          ],
+          "saves": [
+            2,
+            3
+          ],
+          "tackles": [
+            11,
+            9
+          ],
+          "interceptions": [
+            2,
+            7
+          ],
+          "corners": [
+            9,
+            4
+          ],
+          "free_kicks": [
+            10,
+            17
+          ],
+          "throwins": [
+            18,
+            19
+          ],
+          "goal_kicks": [
+            5,
+            11
+          ],
+          "crosses": [
+            30,
+            14
+          ],
+          "accurate_crosses": [
+            9,
+            4
+          ],
+          "offsides": [
+            3,
+            3
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439225,
+        "s": 25591,
+        "d": "2026-04-25",
+        "hid": 216,
+        "aid": 3097,
+        "hn": "Slavia Praha",
+        "an": "Sigma Olomouc",
+        "hs": 2,
+        "as": 1,
+        "st": {
+          "fouls": [
+            6,
+            6
+          ],
+          "yellow": [
+            0,
+            1
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "shots": [
+            31,
+            4
+          ],
+          "sot": [
+            8,
+            3
+          ],
+          "shots_off": [
+            17,
+            0
+          ],
+          "shots_inside": [
+            26,
+            4
+          ],
+          "shots_outside": [
+            5,
+            0
+          ],
+          "shots_blocked": [
+            6,
+            1
+          ],
+          "attacks": [
+            82,
+            67
+          ],
+          "dangerous_attacks": [
+            54,
+            29
+          ],
+          "big_chances": [
+            5,
+            1
+          ],
+          "big_chances_missed": [
+            4,
+            1
+          ],
+          "assists": [
+            1,
+            1
+          ],
+          "passes": [
+            457,
+            276
+          ],
+          "dribbles": [
+            9,
+            15
+          ],
+          "dribbles_ok": [
+            6,
+            8
+          ],
+          "saves": [
+            2,
+            6
+          ],
+          "tackles": [
+            11,
+            12
+          ],
+          "interceptions": [
+            16,
+            14
+          ],
+          "duels_won": [
+            44,
+            34
+          ],
+          "corners": [
+            13,
+            2
+          ],
+          "free_kicks": [
+            6,
+            6
+          ],
+          "throwins": [
+            23,
+            23
+          ],
+          "goal_kicks": [
+            2,
+            16
+          ],
+          "crosses": [
+            54,
+            5
+          ],
+          "accurate_crosses": [
+            21,
+            2
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439249,
+        "s": 25591,
+        "d": "2026-04-19",
+        "hid": 3545,
+        "aid": 4484,
+        "hn": "Viktoria Plzeň",
+        "an": "Pardubice",
+        "hs": 0,
+        "as": 1,
+        "st": {
+          "fouls": [
+            12,
+            17
+          ],
+          "yellow": [
+            0,
+            2
+          ],
+          "red": [
+            1,
+            0
+          ],
+          "shots": [
+            16,
+            9
+          ],
+          "sot": [
+            3,
+            5
+          ],
+          "shots_off": [
+            9,
+            3
+          ],
+          "shots_inside": [
+            7,
+            7
+          ],
+          "shots_outside": [
+            9,
+            2
+          ],
+          "shots_blocked": [
+            4,
+            1
+          ],
+          "attacks": [
+            114,
+            84
+          ],
+          "dangerous_attacks": [
+            78,
+            36
+          ],
+          "big_chances": [
+            1,
+            2
+          ],
+          "big_chances_missed": [
+            1,
+            1
+          ],
+          "assists": [
+            0,
+            1
+          ],
+          "passes": [
+            520,
+            261
+          ],
+          "dribbles": [
+            16,
+            10
+          ],
+          "dribbles_ok": [
+            7,
+            1
+          ],
+          "saves": [
+            4,
+            3
+          ],
+          "tackles": [
+            18,
+            13
+          ],
+          "interceptions": [
+            14,
+            12
+          ],
+          "duels_won": [
+            57,
+            44
+          ],
+          "corners": [
+            7,
+            4
+          ],
+          "free_kicks": [
+            17,
+            12
+          ],
+          "throwins": [
+            21,
+            16
+          ],
+          "goal_kicks": [
+            7,
+            12
+          ],
+          "crosses": [
+            34,
+            10
+          ],
+          "accurate_crosses": [
+            2,
+            2
+          ],
+          "offsides": [
+            2,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439234,
+        "s": 25591,
+        "d": "2026-04-11",
+        "hid": 234,
+        "aid": 3552,
+        "hn": "Slovácko",
+        "an": "Hradec Králové",
+        "hs": 1,
+        "as": 3,
+        "st": {
+          "fouls": [
+            10,
+            12
+          ],
+          "yellow": [
+            2,
+            1
+          ],
+          "shots": [
+            6,
+            11
+          ],
+          "sot": [
+            2,
+            6
+          ],
+          "shots_off": [
+            3,
+            4
+          ],
+          "shots_inside": [
+            3,
+            9
+          ],
+          "shots_outside": [
+            3,
+            2
+          ],
+          "shots_blocked": [
+            1,
+            1
+          ],
+          "attacks": [
+            88,
+            85
+          ],
+          "dangerous_attacks": [
+            38,
+            49
+          ],
+          "big_chances": [
+            2,
+            5
+          ],
+          "big_chances_missed": [
+            1,
+            2
+          ],
+          "assists": [
+            1,
+            2
+          ],
+          "passes": [
+            515,
+            394
+          ],
+          "dribbles": [
+            8,
+            8
+          ],
+          "dribbles_ok": [
+            6,
+            5
+          ],
+          "saves": [
+            3,
+            1
+          ],
+          "tackles": [
+            9,
+            14
+          ],
+          "interceptions": [
+            6,
+            8
+          ],
+          "duels_won": [
+            40,
+            48
+          ],
+          "corners": [
+            1,
+            4
+          ],
+          "free_kicks": [
+            12,
+            10
+          ],
+          "throwins": [
+            15,
+            26
+          ],
+          "goal_kicks": [
+            7,
+            6
+          ],
+          "crosses": [
+            5,
+            15
+          ],
+          "accurate_crosses": [
+            0,
+            6
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439212,
+        "s": 25591,
+        "d": "2026-03-15",
+        "hid": 463,
+        "aid": 1351,
+        "hn": "Slovan Liberec",
+        "an": "Teplice",
+        "hs": 1,
+        "as": 1,
+        "st": {
+          "fouls": [
+            16,
+            23
+          ],
+          "yellow": [
+            3,
+            6
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            16,
+            9
+          ],
+          "sot": [
+            3,
+            5
+          ],
+          "shots_off": [
+            8,
+            3
+          ],
+          "shots_inside": [
+            9,
+            3
+          ],
+          "shots_outside": [
+            7,
+            6
+          ],
+          "shots_blocked": [
+            5,
+            1
+          ],
+          "attacks": [
+            126,
+            113
+          ],
+          "dangerous_attacks": [
+            54,
+            42
+          ],
+          "big_chances": [
+            2,
+            1
+          ],
+          "big_chances_missed": [
+            1,
+            1
+          ],
+          "assists": [
+            0,
+            1
+          ],
+          "passes": [
+            365,
+            282
+          ],
+          "dribbles": [
+            10,
+            17
+          ],
+          "dribbles_ok": [
+            4,
+            6
+          ],
+          "saves": [
+            4,
+            2
+          ],
+          "tackles": [
+            18,
+            6
+          ],
+          "interceptions": [
+            8,
+            11
+          ],
+          "corners": [
+            6,
+            4
+          ],
+          "free_kicks": [
+            22,
+            16
+          ],
+          "throwins": [
+            19,
+            24
+          ],
+          "goal_kicks": [
+            7,
+            10
+          ],
+          "crosses": [
+            22,
+            16
+          ],
+          "accurate_crosses": [
+            6,
+            2
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439209,
+        "s": 25591,
+        "d": "2026-03-08",
+        "hid": 216,
+        "aid": 2727,
+        "hn": "Slavia Praha",
+        "an": "Sparta Praha",
+        "hs": 3,
+        "as": 1,
+        "st": {
+          "fouls": [
+            13,
+            17
+          ],
+          "yellow": [
+            1,
+            6
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            15,
+            6
+          ],
+          "sot": [
+            4,
+            1
+          ],
+          "shots_off": [
+            6,
+            3
+          ],
+          "shots_inside": [
+            15,
+            6
+          ],
+          "shots_blocked": [
+            5,
+            2
+          ],
+          "attacks": [
+            81,
+            87
+          ],
+          "dangerous_attacks": [
+            66,
+            47
+          ],
+          "big_chances": [
+            3,
+            2
+          ],
+          "big_chances_missed": [
+            0,
+            1
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "passes": [
+            313,
+            268
+          ],
+          "dribbles": [
+            8,
+            18
+          ],
+          "dribbles_ok": [
+            4,
+            7
+          ],
+          "saves": [
+            0,
+            1
+          ],
+          "tackles": [
+            18,
+            9
+          ],
+          "interceptions": [
+            7,
+            6
+          ],
+          "corners": [
+            7,
+            2
+          ],
+          "free_kicks": [
+            16,
+            13
+          ],
+          "throwins": [
+            21,
+            29
+          ],
+          "goal_kicks": [
+            4,
+            12
+          ],
+          "crosses": [
+            25,
+            13
+          ],
+          "accurate_crosses": [
+            12,
+            2
+          ],
+          "offsides": [
+            3,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439200,
+        "s": 25591,
+        "d": "2026-03-01",
+        "hid": 3097,
+        "aid": 2488,
+        "hn": "Sigma Olomouc",
+        "an": "Bohemians 1905",
+        "hs": 1,
+        "as": 0,
+        "st": {
+          "fouls": [
+            6,
+            14
+          ],
+          "yellow": [
+            2,
+            0
+          ],
+          "shots": [
+            7,
+            16
+          ],
+          "sot": [
+            4,
+            6
+          ],
+          "shots_off": [
+            2,
+            8
+          ],
+          "shots_inside": [
+            4,
+            9
+          ],
+          "shots_outside": [
+            3,
+            7
+          ],
+          "shots_blocked": [
+            1,
+            2
+          ],
+          "attacks": [
+            66,
+            75
+          ],
+          "dangerous_attacks": [
+            47,
+            62
+          ],
+          "big_chances": [
+            1,
+            4
+          ],
+          "big_chances_missed": [
+            1,
+            4
+          ],
+          "assists": [
+            1,
+            0
+          ],
+          "passes": [
+            358,
+            352
+          ],
+          "dribbles": [
+            21,
+            17
+          ],
+          "dribbles_ok": [
+            9,
+            8
+          ],
+          "saves": [
+            6,
+            3
+          ],
+          "tackles": [
+            22,
+            18
+          ],
+          "interceptions": [
+            8,
+            5
+          ],
+          "corners": [
+            2,
+            5
+          ],
+          "free_kicks": [
+            14,
+            6
+          ],
+          "throwins": [
+            31,
+            32
+          ],
+          "goal_kicks": [
+            11,
+            8
+          ],
+          "crosses": [
+            17,
+            29
+          ],
+          "accurate_crosses": [
+            6,
+            4
+          ],
+          "offsides": [
+            1,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439193,
+        "s": 25591,
+        "d": "2026-02-22",
+        "hid": 3545,
+        "aid": 2727,
+        "hn": "Viktoria Plzeň",
+        "an": "Sparta Praha",
+        "hs": 0,
+        "as": 0,
+        "st": {
+          "fouls": [
+            15,
+            13
+          ],
+          "yellow": [
+            1,
+            4
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            20,
+            11
+          ],
+          "sot": [
+            7,
+            5
+          ],
+          "shots_off": [
+            6,
+            5
+          ],
+          "shots_inside": [
+            10,
+            7
+          ],
+          "shots_outside": [
+            10,
+            4
+          ],
+          "shots_blocked": [
+            7,
+            1
+          ],
+          "attacks": [
+            78,
+            77
+          ],
+          "dangerous_attacks": [
+            42,
+            24
+          ],
+          "big_chances": [
+            1,
+            1
+          ],
+          "big_chances_missed": [
+            1,
+            1
+          ],
+          "passes": [
+            288,
+            362
+          ],
+          "dribbles": [
+            6,
+            10
+          ],
+          "dribbles_ok": [
+            2,
+            4
+          ],
+          "saves": [
+            5,
+            6
+          ],
+          "tackles": [
+            9,
+            9
+          ],
+          "interceptions": [
+            13,
+            6
+          ],
+          "corners": [
+            10,
+            6
+          ],
+          "free_kicks": [
+            12,
+            15
+          ],
+          "throwins": [
+            23,
+            17
+          ],
+          "goal_kicks": [
+            5,
+            5
+          ],
+          "crosses": [
+            26,
+            13
+          ],
+          "accurate_crosses": [
+            4,
+            4
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439183,
+        "s": 25591,
+        "d": "2026-02-07",
+        "hid": 1351,
+        "aid": 512,
+        "hn": "Teplice",
+        "an": "Karviná",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            11,
+            9
+          ],
+          "yellow": [
+            1,
+            1
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "shots": [
+            14,
+            6
+          ],
+          "sot": [
+            6,
+            4
+          ],
+          "shots_off": [
+            6,
+            1
+          ],
+          "shots_inside": [
+            10,
+            5
+          ],
+          "shots_outside": [
+            4,
+            1
+          ],
+          "shots_blocked": [
+            2,
+            1
+          ],
+          "attacks": [
+            75,
+            66
+          ],
+          "dangerous_attacks": [
+            53,
+            55
+          ],
+          "big_chances": [
+            4,
+            1
+          ],
+          "big_chances_missed": [
+            3,
+            1
+          ],
+          "assists": [
+            1,
+            0
+          ],
+          "passes": [
+            303,
+            418
+          ],
+          "dribbles": [
+            10,
+            19
+          ],
+          "dribbles_ok": [
+            4,
+            6
+          ],
+          "saves": [
+            4,
+            4
+          ],
+          "tackles": [
+            24,
+            24
+          ],
+          "interceptions": [
+            18,
+            6
+          ],
+          "corners": [
+            3,
+            4
+          ],
+          "free_kicks": [
+            9,
+            11
+          ],
+          "throwins": [
+            30,
+            21
+          ],
+          "goal_kicks": [
+            4,
+            7
+          ],
+          "crosses": [
+            13,
+            17
+          ],
+          "accurate_crosses": [
+            6,
+            2
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439168,
+        "s": 25591,
+        "d": "2026-01-31",
+        "hid": 187,
+        "aid": 2488,
+        "hn": "Mladá Boleslav",
+        "an": "Bohemians 1905",
+        "hs": 2,
+        "as": 2,
+        "st": {
+          "fouls": [
+            10,
+            11
+          ],
+          "yellow": [
+            4,
+            1
+          ],
+          "shots": [
+            14,
+            11
+          ],
+          "sot": [
+            4,
+            3
+          ],
+          "shots_off": [
+            4,
+            5
+          ],
+          "shots_inside": [
+            10,
+            9
+          ],
+          "shots_outside": [
+            4,
+            2
+          ],
+          "shots_blocked": [
+            6,
+            3
+          ],
+          "attacks": [
+            102,
+            59
+          ],
+          "dangerous_attacks": [
+            77,
+            44
+          ],
+          "big_chances": [
+            2,
+            3
+          ],
+          "big_chances_missed": [
+            1,
+            1
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "passes": [
+            577,
+            227
+          ],
+          "dribbles": [
+            9,
+            10
+          ],
+          "dribbles_ok": [
+            3,
+            7
+          ],
+          "saves": [
+            1,
+            2
+          ],
+          "tackles": [
+            9,
+            18
+          ],
+          "interceptions": [
+            9,
+            20
+          ],
+          "duels_won": [
+            36,
+            55
+          ],
+          "corners": [
+            10,
+            3
+          ],
+          "free_kicks": [
+            11,
+            10
+          ],
+          "throwins": [
+            16,
+            20
+          ],
+          "goal_kicks": [
+            6,
+            8
+          ],
+          "crosses": [
+            22,
+            21
+          ],
+          "accurate_crosses": [
+            3,
+            3
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439161,
+        "s": 25591,
+        "d": "2025-12-14",
+        "hid": 3545,
+        "aid": 3531,
+        "hn": "Viktoria Plzeň",
+        "an": "Dukla Praha",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            13,
+            8
+          ],
+          "yellow": [
+            0,
+            2
+          ],
+          "shots": [
+            21,
+            17
+          ],
+          "sot": [
+            8,
+            7
+          ],
+          "shots_off": [
+            9,
+            3
+          ],
+          "shots_inside": [
+            16,
+            11
+          ],
+          "shots_outside": [
+            5,
+            6
+          ],
+          "shots_blocked": [
+            4,
+            7
+          ],
+          "attacks": [
+            83,
+            86
+          ],
+          "dangerous_attacks": [
+            63,
+            52
+          ],
+          "big_chances": [
+            6,
+            1
+          ],
+          "big_chances_missed": [
+            4,
+            1
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "passes": [
+            388,
+            315
+          ],
+          "dribbles": [
+            19,
+            12
+          ],
+          "dribbles_ok": [
+            6,
+            5
+          ],
+          "saves": [
+            7,
+            6
+          ],
+          "tackles": [
+            17,
+            22
+          ],
+          "interceptions": [
+            8,
+            9
+          ],
+          "duels_won": [
+            46,
+            56
+          ],
+          "corners": [
+            4,
+            1
+          ],
+          "free_kicks": [
+            8,
+            13
+          ],
+          "throwins": [
+            22,
+            16
+          ],
+          "goal_kicks": [
+            10,
+            10
+          ],
+          "crosses": [
+            23,
+            13
+          ],
+          "accurate_crosses": [
+            7,
+            3
+          ],
+          "offsides": [
+            5,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439153,
+        "s": 25591,
+        "d": "2025-12-06",
+        "hid": 3097,
+        "aid": 2727,
+        "hn": "Sigma Olomouc",
+        "an": "Sparta Praha",
+        "hs": 0,
+        "as": 1,
+        "st": {
+          "fouls": [
+            11,
+            13
+          ],
+          "yellow": [
+            2,
+            1
+          ],
+          "shots": [
+            9,
+            4
+          ],
+          "sot": [
+            1,
+            3
+          ],
+          "shots_off": [
+            8,
+            1
+          ],
+          "shots_inside": [
+            6,
+            4
+          ],
+          "shots_outside": [
+            3,
+            0
+          ],
+          "attacks": [
+            86,
+            101
+          ],
+          "dangerous_attacks": [
+            36,
+            41
+          ],
+          "big_chances": [
+            1,
+            1
+          ],
+          "big_chances_missed": [
+            1,
+            0
+          ],
+          "assists": [
+            0,
+            1
+          ],
+          "passes": [
+            298,
+            527
+          ],
+          "dribbles": [
+            7,
+            16
+          ],
+          "dribbles_ok": [
+            4,
+            9
+          ],
+          "saves": [
+            2,
+            1
+          ],
+          "tackles": [
+            10,
+            9
+          ],
+          "interceptions": [
+            5,
+            5
+          ],
+          "duels_won": [
+            40,
+            37
+          ],
+          "corners": [
+            4,
+            5
+          ],
+          "free_kicks": [
+            13,
+            11
+          ],
+          "throwins": [
+            14,
+            19
+          ],
+          "goal_kicks": [
+            6,
+            8
+          ],
+          "crosses": [
+            18,
+            17
+          ],
+          "accurate_crosses": [
+            5,
+            5
+          ],
+          "offsides": [
+            2,
+            3
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439134,
+        "s": 25591,
+        "d": "2025-11-29",
+        "hid": 216,
+        "aid": 234,
+        "hn": "Slavia Praha",
+        "an": "Slovácko",
+        "hs": 3,
+        "as": 0,
+        "st": {
+          "fouls": [
+            13,
+            11
+          ],
+          "yellow": [
+            2,
+            0
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            33,
+            12
+          ],
+          "sot": [
+            11,
+            5
+          ],
+          "shots_off": [
+            14,
+            5
+          ],
+          "shots_inside": [
+            24,
+            6
+          ],
+          "shots_outside": [
+            9,
+            6
+          ],
+          "shots_blocked": [
+            8,
+            2
+          ],
+          "attacks": [
+            68,
+            55
+          ],
+          "dangerous_attacks": [
+            54,
+            29
+          ],
+          "big_chances": [
+            10,
+            1
+          ],
+          "big_chances_missed": [
+            7,
+            1
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "passes": [
+            450,
+            427
+          ],
+          "dribbles": [
+            12,
+            9
+          ],
+          "dribbles_ok": [
+            6,
+            5
+          ],
+          "saves": [
+            5,
+            8
+          ],
+          "tackles": [
+            9,
+            10
+          ],
+          "interceptions": [
+            12,
+            4
+          ],
+          "duels_won": [
+            42,
+            42
+          ],
+          "corners": [
+            5,
+            5
+          ],
+          "free_kicks": [
+            10,
+            13
+          ],
+          "throwins": [
+            13,
+            11
+          ],
+          "goal_kicks": [
+            6,
+            13
+          ],
+          "crosses": [
+            18,
+            8
+          ],
+          "accurate_crosses": [
+            10,
+            1
+          ],
+          "offsides": [
+            7,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439144,
+        "s": 25591,
+        "d": "2025-11-22",
+        "hid": 4484,
+        "aid": 463,
+        "hn": "Pardubice",
+        "an": "Slovan Liberec",
+        "hs": 0,
+        "as": 4,
+        "st": {
+          "fouls": [
+            14,
+            16
+          ],
+          "yellow": [
+            4,
+            3
+          ],
+          "shots": [
+            6,
+            12
+          ],
+          "sot": [
+            2,
+            7
+          ],
+          "shots_off": [
+            0,
+            3
+          ],
+          "shots_inside": [
+            3,
+            6
+          ],
+          "shots_outside": [
+            3,
+            6
+          ],
+          "shots_blocked": [
+            4,
+            2
+          ],
+          "attacks": [
+            96,
+            96
+          ],
+          "dangerous_attacks": [
+            55,
+            65
+          ],
+          "big_chances": [
+            0,
+            5
+          ],
+          "big_chances_missed": [
+            0,
+            2
+          ],
+          "assists": [
+            0,
+            2
+          ],
+          "passes": [
+            360,
+            317
+          ],
+          "dribbles": [
+            13,
+            11
+          ],
+          "dribbles_ok": [
+            7,
+            3
+          ],
+          "saves": [
+            3,
+            2
+          ],
+          "tackles": [
+            15,
+            12
+          ],
+          "interceptions": [
+            8,
+            7
+          ],
+          "corners": [
+            3,
+            4
+          ],
+          "free_kicks": [
+            17,
+            14
+          ],
+          "throwins": [
+            25,
+            27
+          ],
+          "goal_kicks": [
+            4,
+            0
+          ],
+          "crosses": [
+            20,
+            25
+          ],
+          "accurate_crosses": [
+            2,
+            9
+          ],
+          "offsides": [
+            1,
+            4
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439122,
+        "s": 25591,
+        "d": "2025-11-09",
+        "hid": 2727,
+        "aid": 1351,
+        "hn": "Sparta Praha",
+        "an": "Teplice",
+        "hs": 2,
+        "as": 2,
+        "st": {
+          "fouls": [
+            8,
+            11
+          ],
+          "yellow": [
+            2,
+            4
+          ],
+          "shots": [
+            16,
+            7
+          ],
+          "sot": [
+            5,
+            3
+          ],
+          "shots_off": [
+            4,
+            2
+          ],
+          "shots_inside": [
+            13,
+            7
+          ],
+          "shots_outside": [
+            3,
+            0
+          ],
+          "shots_blocked": [
+            7,
+            2
+          ],
+          "attacks": [
+            119,
+            71
+          ],
+          "dangerous_attacks": [
+            84,
+            29
+          ],
+          "big_chances": [
+            2,
+            3
+          ],
+          "big_chances_missed": [
+            2,
+            2
+          ],
+          "passes": [
+            632,
+            227
+          ],
+          "dribbles": [
+            12,
+            10
+          ],
+          "dribbles_ok": [
+            7,
+            5
+          ],
+          "saves": [
+            1,
+            4
+          ],
+          "tackles": [
+            8,
+            7
+          ],
+          "interceptions": [
+            7,
+            11
+          ],
+          "corners": [
+            4,
+            1
+          ],
+          "free_kicks": [
+            11,
+            9
+          ],
+          "throwins": [
+            25,
+            13
+          ],
+          "goal_kicks": [
+            2,
+            9
+          ],
+          "crosses": [
+            27,
+            8
+          ],
+          "accurate_crosses": [
+            11,
+            2
+          ],
+          "offsides": [
+            2,
+            4
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439114,
+        "s": 25591,
+        "d": "2025-11-01",
+        "hid": 234,
+        "aid": 463,
+        "hn": "Slovácko",
+        "an": "Slovan Liberec",
+        "hs": 0,
+        "as": 3,
+        "st": {
+          "fouls": [
+            13,
+            9
+          ],
+          "yellow": [
+            3,
+            3
+          ],
+          "shots": [
+            16,
+            16
+          ],
+          "sot": [
+            3,
+            8
+          ],
+          "shots_off": [
+            8,
+            4
+          ],
+          "shots_inside": [
+            7,
+            11
+          ],
+          "shots_outside": [
+            9,
+            5
+          ],
+          "shots_blocked": [
+            5,
+            4
+          ],
+          "attacks": [
+            79,
+            58
+          ],
+          "dangerous_attacks": [
+            49,
+            39
+          ],
+          "big_chances": [
+            0,
+            6
+          ],
+          "big_chances_missed": [
+            0,
+            3
+          ],
+          "passes": [
+            326,
+            294
+          ],
+          "dribbles": [
+            8,
+            16
+          ],
+          "dribbles_ok": [
+            3,
+            11
+          ],
+          "saves": [
+            6,
+            2
+          ],
+          "tackles": [
+            10,
+            9
+          ],
+          "interceptions": [
+            9,
+            6
+          ],
+          "corners": [
+            6,
+            4
+          ],
+          "free_kicks": [
+            9,
+            13
+          ],
+          "throwins": [
+            16,
+            17
+          ],
+          "goal_kicks": [
+            13,
+            10
+          ],
+          "crosses": [
+            23,
+            13
+          ],
+          "accurate_crosses": [
+            6,
+            4
+          ],
+          "offsides": [
+            0,
+            4
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439103,
+        "s": 25591,
+        "d": "2025-10-18",
+        "hid": 4484,
+        "aid": 187,
+        "hn": "Pardubice",
+        "an": "Mladá Boleslav",
+        "hs": 2,
+        "as": 1,
+        "st": {
+          "fouls": [
+            21,
+            11
+          ],
+          "yellow": [
+            3,
+            2
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "shots": [
+            17,
+            10
+          ],
+          "sot": [
+            6,
+            7
+          ],
+          "shots_off": [
+            7,
+            2
+          ],
+          "shots_inside": [
+            13,
+            6
+          ],
+          "shots_outside": [
+            4,
+            4
+          ],
+          "shots_blocked": [
+            4,
+            1
+          ],
+          "attacks": [
+            57,
+            44
+          ],
+          "dangerous_attacks": [
+            52,
+            21
+          ],
+          "big_chances": [
+            4,
+            2
+          ],
+          "big_chances_missed": [
+            3,
+            2
+          ],
+          "passes": [
+            393,
+            322
+          ],
+          "dribbles": [
+            13,
+            10
+          ],
+          "dribbles_ok": [
+            6,
+            5
+          ],
+          "saves": [
+            5,
+            4
+          ],
+          "tackles": [
+            8,
+            9
+          ],
+          "interceptions": [
+            9,
+            9
+          ],
+          "corners": [
+            6,
+            3
+          ],
+          "free_kicks": [
+            11,
+            21
+          ],
+          "throwins": [
+            18,
+            21
+          ],
+          "goal_kicks": [
+            9,
+            12
+          ],
+          "crosses": [
+            30,
+            13
+          ],
+          "accurate_crosses": [
+            8,
+            3
+          ],
+          "offsides": [
+            2,
+            3
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439096,
+        "s": 25591,
+        "d": "2025-10-05",
+        "hid": 3097,
+        "aid": 3643,
+        "hn": "Sigma Olomouc",
+        "an": "Jablonec",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            15,
+            16
+          ],
+          "yellow": [
+            0,
+            1
+          ],
+          "shots": [
+            11,
+            13
+          ],
+          "sot": [
+            3,
+            2
+          ],
+          "shots_off": [
+            4,
+            7
+          ],
+          "shots_inside": [
+            8,
+            7
+          ],
+          "shots_outside": [
+            3,
+            6
+          ],
+          "shots_blocked": [
+            4,
+            4
+          ],
+          "attacks": [
+            64,
+            54
+          ],
+          "dangerous_attacks": [
+            43,
+            58
+          ],
+          "big_chances": [
+            0,
+            3
+          ],
+          "big_chances_missed": [
+            0,
+            3
+          ],
+          "passes": [
+            381,
+            466
+          ],
+          "dribbles": [
+            15,
+            11
+          ],
+          "dribbles_ok": [
+            7,
+            3
+          ],
+          "saves": [
+            2,
+            1
+          ],
+          "tackles": [
+            17,
+            8
+          ],
+          "interceptions": [
+            13,
+            8
+          ],
+          "corners": [
+            4,
+            7
+          ],
+          "free_kicks": [
+            16,
+            15
+          ],
+          "throwins": [
+            17,
+            27
+          ],
+          "goal_kicks": [
+            8,
+            3
+          ],
+          "crosses": [
+            14,
+            21
+          ],
+          "accurate_crosses": [
+            4,
+            6
+          ],
+          "offsides": [
+            1,
+            3
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439089,
+        "s": 25591,
+        "d": "2025-09-28",
+        "hid": 3545,
+        "aid": 1745,
+        "hn": "Viktoria Plzeň",
+        "an": "Zlín",
+        "hs": 0,
+        "as": 1,
+        "st": {
+          "fouls": [
+            18,
+            10
+          ],
+          "yellow": [
+            3,
+            3
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            19,
+            15
+          ],
+          "sot": [
+            3,
+            4
+          ],
+          "shots_off": [
+            6,
+            8
+          ],
+          "shots_inside": [
+            14,
+            11
+          ],
+          "shots_outside": [
+            5,
+            4
+          ],
+          "shots_blocked": [
+            10,
+            3
+          ],
+          "attacks": [
+            98,
+            89
+          ],
+          "dangerous_attacks": [
+            74,
+            50
+          ],
+          "big_chances": [
+            2,
+            2
+          ],
+          "big_chances_missed": [
+            2,
+            2
+          ],
+          "passes": [
+            467,
+            250
+          ],
+          "dribbles": [
+            15,
+            13
+          ],
+          "dribbles_ok": [
+            10,
+            8
+          ],
+          "saves": [
+            3,
+            3
+          ],
+          "tackles": [
+            13,
+            13
+          ],
+          "interceptions": [
+            9,
+            18
+          ],
+          "corners": [
+            10,
+            3
+          ],
+          "free_kicks": [
+            9,
+            18
+          ],
+          "throwins": [
+            20,
+            29
+          ],
+          "goal_kicks": [
+            10,
+            7
+          ],
+          "crosses": [
+            31,
+            11
+          ],
+          "accurate_crosses": [
+            5,
+            6
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439079,
+        "s": 25591,
+        "d": "2025-09-21",
+        "hid": 187,
+        "aid": 3269,
+        "hn": "Mladá Boleslav",
+        "an": "Baník Ostrava",
+        "hs": 1,
+        "as": 1,
+        "st": {
+          "fouls": [
+            15,
+            11
+          ],
+          "yellow": [
+            2,
+            4
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            22,
+            12
+          ],
+          "sot": [
+            5,
+            5
+          ],
+          "shots_off": [
+            6,
+            1
+          ],
+          "shots_inside": [
+            10,
+            7
+          ],
+          "shots_outside": [
+            13,
+            5
+          ],
+          "shots_blocked": [
+            11,
+            6
+          ],
+          "attacks": [
+            80,
+            81
+          ],
+          "dangerous_attacks": [
+            73,
+            71
+          ],
+          "big_chances": [
+            2,
+            2
+          ],
+          "big_chances_missed": [
+            1,
+            1
+          ],
+          "assists": [
+            0,
+            1
+          ],
+          "passes": [
+            452,
+            327
+          ],
+          "dribbles": [
+            15,
+            12
+          ],
+          "dribbles_ok": [
+            8,
+            9
+          ],
+          "saves": [
+            4,
+            3
+          ],
+          "tackles": [
+            7,
+            18
+          ],
+          "interceptions": [
+            4,
+            13
+          ],
+          "corners": [
+            9,
+            12
+          ],
+          "free_kicks": [
+            10,
+            15
+          ],
+          "throwins": [
+            17,
+            11
+          ],
+          "goal_kicks": [
+            6,
+            8
+          ],
+          "crosses": [
+            16,
+            29
+          ],
+          "accurate_crosses": [
+            4,
+            3
+          ],
+          "offsides": [
+            1,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439071,
+        "s": 25591,
+        "d": "2025-09-13",
+        "hid": 216,
+        "aid": 512,
+        "hn": "Slavia Praha",
+        "an": "Karviná",
+        "hs": 3,
+        "as": 1,
+        "st": {
+          "fouls": [
+            13,
+            18
+          ],
+          "yellow": [
+            3,
+            1
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "shots": [
+            26,
+            11
+          ],
+          "sot": [
+            9,
+            3
+          ],
+          "shots_off": [
+            8,
+            4
+          ],
+          "shots_inside": [
+            23,
+            5
+          ],
+          "shots_outside": [
+            4,
+            6
+          ],
+          "shots_blocked": [
+            9,
+            4
+          ],
+          "attacks": [
+            78,
+            73
+          ],
+          "dangerous_attacks": [
+            76,
+            42
+          ],
+          "big_chances": [
+            4,
+            1
+          ],
+          "big_chances_missed": [
+            2,
+            1
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "passes": [
+            339,
+            226
+          ],
+          "dribbles": [
+            5,
+            13
+          ],
+          "dribbles_ok": [
+            2,
+            2
+          ],
+          "saves": [
+            2,
+            6
+          ],
+          "tackles": [
+            22,
+            17
+          ],
+          "interceptions": [
+            9,
+            0
+          ],
+          "corners": [
+            13,
+            2
+          ],
+          "free_kicks": [
+            18,
+            13
+          ],
+          "throwins": [
+            5,
+            14
+          ],
+          "goal_kicks": [
+            7,
+            10
+          ],
+          "crosses": [
+            32,
+            12
+          ],
+          "accurate_crosses": [
+            7,
+            6
+          ],
+          "offsides": [
+            0,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439058,
+        "s": 25591,
+        "d": "2025-08-30",
+        "hid": 234,
+        "aid": 3643,
+        "hn": "Slovácko",
+        "an": "Jablonec",
+        "hs": 0,
+        "as": 2,
+        "st": {
+          "fouls": [
+            15,
+            16
+          ],
+          "yellow": [
+            3,
+            2
+          ],
+          "shots": [
+            18,
+            8
+          ],
+          "sot": [
+            4,
+            3
+          ],
+          "shots_off": [
+            9,
+            1
+          ],
+          "shots_inside": [
+            12,
+            4
+          ],
+          "shots_outside": [
+            6,
+            3
+          ],
+          "shots_blocked": [
+            5,
+            4
+          ],
+          "attacks": [
+            90,
+            73
+          ],
+          "dangerous_attacks": [
+            86,
+            59
+          ],
+          "big_chances": [
+            1,
+            2
+          ],
+          "big_chances_missed": [
+            1,
+            0
+          ],
+          "assists": [
+            0,
+            1
+          ],
+          "passes": [
+            353,
+            350
+          ],
+          "dribbles": [
+            6,
+            15
+          ],
+          "dribbles_ok": [
+            0,
+            7
+          ],
+          "saves": [
+            1,
+            4
+          ],
+          "tackles": [
+            14,
+            8
+          ],
+          "interceptions": [
+            11,
+            6
+          ],
+          "corners": [
+            10,
+            8
+          ],
+          "free_kicks": [
+            16,
+            15
+          ],
+          "throwins": [
+            22,
+            11
+          ],
+          "goal_kicks": [
+            10,
+            11
+          ],
+          "crosses": [
+            44,
+            16
+          ],
+          "accurate_crosses": [
+            10,
+            1
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439056,
+        "s": 25591,
+        "d": "2025-08-23",
+        "hid": 216,
+        "aid": 4484,
+        "hn": "Slavia Praha",
+        "an": "Pardubice",
+        "hs": 3,
+        "as": 1,
+        "st": {
+          "fouls": [
+            9,
+            12
+          ],
+          "yellow": [
+            0,
+            1
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "shots": [
+            26,
+            4
+          ],
+          "sot": [
+            10,
+            1
+          ],
+          "shots_off": [
+            9,
+            3
+          ],
+          "shots_inside": [
+            18,
+            4
+          ],
+          "shots_outside": [
+            8,
+            0
+          ],
+          "shots_blocked": [
+            7,
+            0
+          ],
+          "attacks": [
+            90,
+            61
+          ],
+          "dangerous_attacks": [
+            106,
+            27
+          ],
+          "big_chances": [
+            5,
+            2
+          ],
+          "big_chances_missed": [
+            3,
+            1
+          ],
+          "assists": [
+            3,
+            1
+          ],
+          "passes": [
+            515,
+            252
+          ],
+          "dribbles": [
+            15,
+            10
+          ],
+          "dribbles_ok": [
+            7,
+            5
+          ],
+          "saves": [
+            0,
+            7
+          ],
+          "tackles": [
+            15,
+            17
+          ],
+          "interceptions": [
+            14,
+            17
+          ],
+          "corners": [
+            18,
+            1
+          ],
+          "free_kicks": [
+            12,
+            9
+          ],
+          "throwins": [
+            27,
+            18
+          ],
+          "goal_kicks": [
+            5,
+            16
+          ],
+          "crosses": [
+            46,
+            8
+          ],
+          "accurate_crosses": [
+            13,
+            4
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439047,
+        "s": 25591,
+        "d": "2025-08-17",
+        "hid": 512,
+        "aid": 2488,
+        "hn": "Karviná",
+        "an": "Bohemians 1905",
+        "hs": 1,
+        "as": 2,
+        "st": {
+          "fouls": [
+            11,
+            18
+          ],
+          "yellow": [
+            0,
+            4
+          ],
+          "shots": [
+            12,
+            13
+          ],
+          "sot": [
+            4,
+            5
+          ],
+          "shots_off": [
+            6,
+            5
+          ],
+          "shots_inside": [
+            8,
+            10
+          ],
+          "shots_outside": [
+            4,
+            3
+          ],
+          "shots_blocked": [
+            2,
+            3
+          ],
+          "attacks": [
+            86,
+            98
+          ],
+          "dangerous_attacks": [
+            51,
+            67
+          ],
+          "big_chances": [
+            1,
+            2
+          ],
+          "big_chances_missed": [
+            0,
+            1
+          ],
+          "assists": [
+            1,
+            2
+          ],
+          "passes": [
+            354,
+            291
+          ],
+          "dribbles": [
+            12,
+            16
+          ],
+          "dribbles_ok": [
+            3,
+            10
+          ],
+          "saves": [
+            3,
+            3
+          ],
+          "tackles": [
+            20,
+            15
+          ],
+          "interceptions": [
+            6,
+            3
+          ],
+          "corners": [
+            4,
+            7
+          ],
+          "free_kicks": [
+            18,
+            11
+          ],
+          "throwins": [
+            15,
+            19
+          ],
+          "goal_kicks": [
+            8,
+            12
+          ],
+          "crosses": [
+            16,
+            13
+          ],
+          "accurate_crosses": [
+            6,
+            4
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439038,
+        "s": 25591,
+        "d": "2025-08-09",
+        "hid": 463,
+        "aid": 3531,
+        "hn": "Slovan Liberec",
+        "an": "Dukla Praha",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            16,
+            10
+          ],
+          "yellow": [
+            2,
+            2
+          ],
+          "shots": [
+            9,
+            7
+          ],
+          "sot": [
+            2,
+            2
+          ],
+          "shots_off": [
+            4,
+            3
+          ],
+          "shots_inside": [
+            6,
+            3
+          ],
+          "shots_outside": [
+            3,
+            3
+          ],
+          "shots_blocked": [
+            3,
+            2
+          ],
+          "attacks": [
+            90,
+            81
+          ],
+          "dangerous_attacks": [
+            46,
+            37
+          ],
+          "big_chances": [
+            1,
+            0
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "passes": [
+            315,
+            333
+          ],
+          "dribbles": [
+            16,
+            8
+          ],
+          "dribbles_ok": [
+            5,
+            3
+          ],
+          "saves": [
+            2,
+            0
+          ],
+          "tackles": [
+            8,
+            20
+          ],
+          "interceptions": [
+            10,
+            8
+          ],
+          "corners": [
+            5,
+            3
+          ],
+          "free_kicks": [
+            10,
+            16
+          ],
+          "throwins": [
+            24,
+            36
+          ],
+          "goal_kicks": [
+            6,
+            6
+          ],
+          "crosses": [
+            14,
+            9
+          ],
+          "accurate_crosses": [
+            4,
+            2
+          ],
+          "offsides": [
+            3,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19416323,
+        "s": 23641,
+        "d": "2025-05-18",
+        "hid": 2488,
+        "aid": 3552,
+        "hn": "Bohemians 1905",
+        "an": "Hradec Králové",
+        "hs": 1,
+        "as": 0,
+        "st": {
+          "fouls": [
+            10,
+            6
+          ],
+          "yellow": [
+            1,
+            0
+          ],
+          "shots": [
+            16,
+            24
+          ],
+          "sot": [
+            6,
+            5
+          ],
+          "shots_off": [
+            6,
+            13
+          ],
+          "shots_inside": [
+            8,
+            14
+          ],
+          "shots_outside": [
+            5,
+            6
+          ],
+          "shots_blocked": [
+            4,
+            6
+          ],
+          "attacks": [
+            65,
+            68
+          ],
+          "dangerous_attacks": [
+            47,
+            62
+          ],
+          "big_chances": [
+            0,
+            4
+          ],
+          "big_chances_missed": [
+            0,
+            4
+          ],
+          "passes": [
+            277,
+            442
+          ],
+          "dribbles": [
+            17,
+            13
+          ],
+          "dribbles_ok": [
+            5,
+            8
+          ],
+          "saves": [
+            5,
+            5
+          ],
+          "tackles": [
+            11,
+            16
+          ],
+          "interceptions": [
+            8,
+            8
+          ],
+          "corners": [
+            2,
+            7
+          ],
+          "free_kicks": [
+            6,
+            10
+          ],
+          "throwins": [
+            23,
+            26
+          ],
+          "goal_kicks": [
+            15,
+            7
+          ],
+          "crosses": [
+            17,
+            28
+          ],
+          "accurate_crosses": [
+            5,
+            9
+          ],
+          "offsides": [
+            4,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19416514,
+        "s": 23641,
+        "d": "2025-05-04",
+        "hid": 187,
+        "aid": 1351,
+        "hn": "Mladá Boleslav",
+        "an": "Teplice",
+        "hs": 1,
+        "as": 0,
+        "st": {
+          "fouls": [
+            14,
+            17
+          ],
+          "yellow": [
+            2,
+            2
+          ],
+          "shots": [
+            3,
+            10
+          ],
+          "sot": [
+            1,
+            3
+          ],
+          "shots_off": [
+            1,
+            3
+          ],
+          "shots_inside": [
+            4,
+            6
+          ],
+          "shots_outside": [
+            0,
+            4
+          ],
+          "shots_blocked": [
+            1,
+            4
+          ],
+          "attacks": [
+            87,
+            76
+          ],
+          "dangerous_attacks": [
+            41,
+            42
+          ],
+          "assists": [
+            1,
+            0
+          ],
+          "passes": [
+            514,
+            287
+          ],
+          "dribbles": [
+            14,
+            12
+          ],
+          "dribbles_ok": [
+            2,
+            6
+          ],
+          "saves": [
+            3,
+            0
+          ],
+          "tackles": [
+            10,
+            23
+          ],
+          "interceptions": [
+            5,
+            1
+          ],
+          "corners": [
+            3,
+            6
+          ],
+          "free_kicks": [
+            17,
+            14
+          ],
+          "throwins": [
+            22,
+            19
+          ],
+          "goal_kicks": [
+            8,
+            5
+          ],
+          "crosses": [
+            9,
+            18
+          ],
+          "accurate_crosses": [
+            0,
+            6
+          ],
+          "offsides": [
+            1,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138238,
+        "s": 23641,
+        "d": "2024-08-28",
+        "hid": 512,
+        "aid": 3269,
+        "hn": "Karviná",
+        "an": "Baník Ostrava",
+        "hs": 0,
+        "as": 0,
+        "st": {
+          "fouls": [
+            11,
+            7
+          ],
+          "yellow": [
+            3,
+            1
+          ],
+          "red": [
+            1,
+            1
+          ],
+          "sot": [
+            2,
+            1
+          ],
+          "shots_off": [
+            10,
+            2
+          ],
+          "saves": [
+            1,
+            2
+          ],
+          "corners": [
+            12,
+            2
+          ],
+          "throwins": [
+            20,
+            18
+          ],
+          "offsides": [
+            3,
+            3
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138256,
+        "s": 23641,
+        "d": "2024-08-24",
+        "hid": 1351,
+        "aid": 512,
+        "hn": "Teplice",
+        "an": "Karviná",
+        "hs": 1,
+        "as": 3,
+        "st": {
+          "fouls": [
+            12,
+            12
+          ],
+          "yellow": [
+            2,
+            4
+          ],
+          "shots": [
+            3,
+            5
+          ],
+          "sot": [
+            1,
+            2
+          ],
+          "shots_off": [
+            2,
+            3
+          ],
+          "attacks": [
+            41,
+            36
+          ],
+          "dangerous_attacks": [
+            38,
+            28
+          ],
+          "saves": [
+            2,
+            2
+          ],
+          "corners": [
+            7,
+            4
+          ],
+          "throwins": [
+            38,
+            28
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 19123250,
+        "s": 21682,
+        "d": "2024-05-19",
+        "hid": 1351,
+        "aid": 3552,
+        "hn": "Teplice",
+        "an": "Hradec Králové",
+        "hs": 0,
+        "as": 1,
+        "st": {
+          "fouls": [
+            10,
+            15
+          ],
+          "yellow": [
+            1,
+            1
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "shots": [
+            16,
+            10
+          ],
+          "sot": [
+            4,
+            4
+          ],
+          "shots_off": [
+            12,
+            6
+          ],
+          "shots_inside": [
+            10,
+            7
+          ],
+          "shots_outside": [
+            6,
+            3
+          ],
+          "shots_blocked": [
+            7,
+            2
+          ],
+          "attacks": [
+            97,
+            87
+          ],
+          "dangerous_attacks": [
+            55,
+            46
+          ],
+          "passes": [
+            451,
+            273
+          ],
+          "dribbles": [
+            9,
+            15
+          ],
+          "dribbles_ok": [
+            2,
+            8
+          ],
+          "saves": [
+            3,
+            4
+          ],
+          "tackles": [
+            13,
+            10
+          ],
+          "interceptions": [
+            6,
+            11
+          ],
+          "corners": [
+            8,
+            2
+          ],
+          "throwins": [
+            21,
+            21
+          ],
+          "crosses": [
+            23,
+            15
+          ],
+          "accurate_crosses": [
+            8,
+            8
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846058,
+        "s": 21682,
+        "d": "2024-03-16",
+        "hid": 187,
+        "aid": 3097,
+        "hn": "Mladá Boleslav",
+        "an": "Sigma Olomouc",
+        "hs": 2,
+        "as": 1,
+        "st": {
+          "fouls": [
+            11,
+            10
+          ],
+          "yellow": [
+            5,
+            4
+          ],
+          "red": [
+            1,
+            1
+          ],
+          "penalties": [
+            1,
+            1
+          ],
+          "shots": [
+            23,
+            6
+          ],
+          "sot": [
+            9,
+            4
+          ],
+          "shots_off": [
+            7,
+            2
+          ],
+          "shots_inside": [
+            14,
+            6
+          ],
+          "shots_outside": [
+            9,
+            0
+          ],
+          "shots_blocked": [
+            9,
+            0
+          ],
+          "attacks": [
+            102,
+            86
+          ],
+          "dangerous_attacks": [
+            59,
+            53
+          ],
+          "assists": [
+            2,
+            1
+          ],
+          "passes": [
+            400,
+            336
+          ],
+          "dribbles": [
+            7,
+            3
+          ],
+          "dribbles_ok": [
+            1,
+            0
+          ],
+          "saves": [
+            3,
+            5
+          ],
+          "tackles": [
+            12,
+            13
+          ],
+          "interceptions": [
+            6,
+            5
+          ],
+          "duels_won": [
+            32,
+            30
+          ],
+          "corners": [
+            5,
+            7
+          ],
+          "throwins": [
+            24,
+            26
+          ],
+          "crosses": [
+            16,
+            14
+          ],
+          "accurate_crosses": [
+            5,
+            3
+          ],
+          "offsides": [
+            0,
+            2
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846051,
+        "s": 21682,
+        "d": "2024-03-09",
+        "hid": 463,
+        "aid": 512,
+        "hn": "Slovan Liberec",
+        "an": "Karviná",
+        "hs": 1,
+        "as": 0,
+        "st": {
+          "fouls": [
+            12,
+            14
+          ],
+          "yellow": [
+            2,
+            4
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            17,
+            8
+          ],
+          "sot": [
+            6,
+            0
+          ],
+          "shots_off": [
+            5,
+            4
+          ],
+          "shots_inside": [
+            6,
+            6
+          ],
+          "shots_outside": [
+            11,
+            2
+          ],
+          "shots_blocked": [
+            6,
+            4
+          ],
+          "attacks": [
+            101,
+            75
+          ],
+          "dangerous_attacks": [
+            91,
+            69
+          ],
+          "passes": [
+            386,
+            307
+          ],
+          "dribbles": [
+            12,
+            8
+          ],
+          "dribbles_ok": [
+            8,
+            5
+          ],
+          "saves": [
+            0,
+            5
+          ],
+          "tackles": [
+            10,
+            20
+          ],
+          "interceptions": [
+            11,
+            10
+          ],
+          "duels_won": [
+            44,
+            53
+          ],
+          "corners": [
+            6,
+            5
+          ],
+          "throwins": [
+            31,
+            22
+          ],
+          "goal_kicks": [
+            1,
+            0
+          ],
+          "crosses": [
+            25,
+            22
+          ],
+          "accurate_crosses": [
+            7,
+            5
+          ],
+          "offsides": [
+            4,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846032,
+        "s": 21682,
+        "d": "2024-02-24",
+        "hid": 3269,
+        "aid": 2488,
+        "hn": "Baník Ostrava",
+        "an": "Bohemians 1905",
+        "hs": 1,
+        "as": 1,
+        "st": {
+          "fouls": [
+            8,
+            9
+          ],
+          "yellow": [
+            3,
+            3
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "penalties": [
+            0,
+            1
+          ],
+          "shots": [
+            20,
+            8
+          ],
+          "sot": [
+            3,
+            5
+          ],
+          "shots_off": [
+            7,
+            1
+          ],
+          "shots_inside": [
+            12,
+            6
+          ],
+          "shots_outside": [
+            8,
+            2
+          ],
+          "shots_blocked": [
+            11,
+            2
+          ],
+          "attacks": [
+            115,
+            83
+          ],
+          "dangerous_attacks": [
+            98,
+            70
+          ],
+          "assists": [
+            0,
+            1
+          ],
+          "passes": [
+            497,
+            289
+          ],
+          "dribbles": [
+            6,
+            10
+          ],
+          "dribbles_ok": [
+            3,
+            3
+          ],
+          "saves": [
+            4,
+            2
+          ],
+          "tackles": [
+            8,
+            9
+          ],
+          "interceptions": [
+            4,
+            8
+          ],
+          "duels_won": [
+            36,
+            32
+          ],
+          "corners": [
+            8,
+            7
+          ],
+          "throwins": [
+            23,
+            22
+          ],
+          "goal_kicks": [
+            6,
+            12
+          ],
+          "crosses": [
+            36,
+            19
+          ],
+          "accurate_crosses": [
+            6,
+            4
+          ],
+          "offsides": [
+            4,
+            2
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846020,
+        "s": 21682,
+        "d": "2024-02-10",
+        "hid": 234,
+        "aid": 4484,
+        "hn": "Slovácko",
+        "an": "Pardubice",
+        "hs": 1,
+        "as": 2,
+        "st": {
+          "fouls": [
+            16,
+            11
+          ],
+          "yellow": [
+            1,
+            4
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "penalties": [
+            0,
+            1
+          ],
+          "shots": [
+            24,
+            10
+          ],
+          "sot": [
+            9,
+            4
+          ],
+          "shots_off": [
+            13,
+            4
+          ],
+          "shots_inside": [
+            17,
+            4
+          ],
+          "shots_outside": [
+            7,
+            6
+          ],
+          "shots_blocked": [
+            2,
+            2
+          ],
+          "attacks": [
+            103,
+            72
+          ],
+          "dangerous_attacks": [
+            103,
+            38
+          ],
+          "assists": [
+            0,
+            2
+          ],
+          "passes": [
+            456,
+            286
+          ],
+          "dribbles": [
+            7,
+            12
+          ],
+          "dribbles_ok": [
+            3,
+            6
+          ],
+          "saves": [
+            2,
+            7
+          ],
+          "tackles": [
+            7,
+            15
+          ],
+          "interceptions": [
+            12,
+            11
+          ],
+          "duels_won": [
+            43,
+            52
+          ],
+          "corners": [
+            7,
+            1
+          ],
+          "throwins": [
+            18,
+            11
+          ],
+          "goal_kicks": [
+            8,
+            15
+          ],
+          "crosses": [
+            49,
+            4
+          ],
+          "accurate_crosses": [
+            14,
+            1
+          ],
+          "offsides": [
+            0,
+            2
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845994,
+        "s": 21682,
+        "d": "2023-12-13",
+        "hid": 2488,
+        "aid": 463,
+        "hn": "Bohemians 1905",
+        "an": "Slovan Liberec",
+        "hs": 0,
+        "as": 0,
+        "st": {
+          "fouls": [
+            22,
+            13
+          ],
+          "yellow": [
+            3,
+            3
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            9,
+            8
+          ],
+          "sot": [
+            1,
+            2
+          ],
+          "shots_off": [
+            6,
+            4
+          ],
+          "shots_blocked": [
+            2,
+            2
+          ],
+          "attacks": [
+            75,
+            68
+          ],
+          "dangerous_attacks": [
+            65,
+            44
+          ],
+          "saves": [
+            2,
+            1
+          ],
+          "corners": [
+            6,
+            5
+          ],
+          "throwins": [
+            24,
+            19
+          ],
+          "goal_kicks": [
+            11,
+            12
+          ],
+          "offsides": [
+            2,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846001,
+        "s": 21682,
+        "d": "2023-12-10",
+        "hid": 216,
+        "aid": 187,
+        "hn": "Slavia Praha",
+        "an": "Mladá Boleslav",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            6,
+            8
+          ],
+          "yellow": [
+            2,
+            2
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            21,
+            10
+          ],
+          "sot": [
+            11,
+            2
+          ],
+          "shots_off": [
+            8,
+            8
+          ],
+          "shots_inside": [
+            15,
+            6
+          ],
+          "shots_outside": [
+            6,
+            4
+          ],
+          "shots_blocked": [
+            2,
+            0
+          ],
+          "attacks": [
+            88,
+            63
+          ],
+          "dangerous_attacks": [
+            88,
+            49
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "passes": [
+            465,
+            241
+          ],
+          "dribbles": [
+            14,
+            14
+          ],
+          "dribbles_ok": [
+            7,
+            6
+          ],
+          "saves": [
+            2,
+            9
+          ],
+          "tackles": [
+            19,
+            13
+          ],
+          "interceptions": [
+            10,
+            9
+          ],
+          "duels_won": [
+            53,
+            33
+          ],
+          "corners": [
+            9,
+            6
+          ],
+          "throwins": [
+            31,
+            22
+          ],
+          "goal_kicks": [
+            10,
+            10
+          ],
+          "crosses": [
+            25,
+            14
+          ],
+          "accurate_crosses": [
+            8,
+            3
+          ],
+          "offsides": [
+            4,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845988,
+        "s": 21682,
+        "d": "2023-11-26",
+        "hid": 3643,
+        "aid": 4484,
+        "hn": "Jablonec",
+        "an": "Pardubice",
+        "hs": 2,
+        "as": 1,
+        "st": {
+          "fouls": [
+            14,
+            24
+          ],
+          "yellow": [
+            1,
+            3
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            0,
+            1
+          ],
+          "shots": [
+            17,
+            11
+          ],
+          "sot": [
+            11,
+            7
+          ],
+          "shots_off": [
+            6,
+            2
+          ],
+          "shots_blocked": [
+            0,
+            2
+          ],
+          "attacks": [
+            96,
+            96
+          ],
+          "dangerous_attacks": [
+            64,
+            47
+          ],
+          "assists": [
+            1,
+            1
+          ],
+          "passes": [
+            1,
+            1
+          ],
+          "saves": [
+            6,
+            7
+          ],
+          "corners": [
+            6,
+            6
+          ],
+          "throwins": [
+            30,
+            20
+          ],
+          "goal_kicks": [
+            4,
+            14
+          ],
+          "offsides": [
+            3,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845978,
+        "s": 21682,
+        "d": "2023-11-12",
+        "hid": 3097,
+        "aid": 216,
+        "hn": "Sigma Olomouc",
+        "an": "Slavia Praha",
+        "hs": 1,
+        "as": 3,
+        "st": {
+          "fouls": [
+            10,
+            16
+          ],
+          "yellow": [
+            3,
+            3
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            9,
+            13
+          ],
+          "sot": [
+            4,
+            6
+          ],
+          "shots_off": [
+            3,
+            4
+          ],
+          "shots_inside": [
+            6,
+            7
+          ],
+          "shots_outside": [
+            3,
+            6
+          ],
+          "shots_blocked": [
+            2,
+            4
+          ],
+          "attacks": [
+            118,
+            129
+          ],
+          "dangerous_attacks": [
+            54,
+            84
+          ],
+          "assists": [
+            1,
+            3
+          ],
+          "passes": [
+            369,
+            574
+          ],
+          "dribbles": [
+            5,
+            11
+          ],
+          "dribbles_ok": [
+            2,
+            7
+          ],
+          "saves": [
+            2,
+            3
+          ],
+          "tackles": [
+            14,
+            12
+          ],
+          "interceptions": [
+            6,
+            7
+          ],
+          "duels_won": [
+            55,
+            52
+          ],
+          "corners": [
+            2,
+            4
+          ],
+          "throwins": [
+            17,
+            22
+          ],
+          "goal_kicks": [
+            8,
+            5
+          ],
+          "crosses": [
+            15,
+            18
+          ],
+          "accurate_crosses": [
+            5,
+            5
+          ],
+          "offsides": [
+            1,
+            2
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845953,
+        "s": 21682,
+        "d": "2023-10-21",
+        "hid": 512,
+        "aid": 3552,
+        "hn": "Karviná",
+        "an": "Hradec Králové",
+        "hs": 1,
+        "as": 0,
+        "st": {
+          "fouls": [
+            14,
+            12
+          ],
+          "yellow": [
+            4,
+            3
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            13,
+            10
+          ],
+          "sot": [
+            5,
+            3
+          ],
+          "shots_off": [
+            3,
+            5
+          ],
+          "shots_inside": [
+            8,
+            4
+          ],
+          "shots_outside": [
+            5,
+            6
+          ],
+          "shots_blocked": [
+            5,
+            2
+          ],
+          "attacks": [
+            96,
+            76
+          ],
+          "dangerous_attacks": [
+            77,
+            73
+          ],
+          "passes": [
+            277,
+            282
+          ],
+          "dribbles": [
+            2,
+            3
+          ],
+          "dribbles_ok": [
+            1,
+            1
+          ],
+          "saves": [
+            3,
+            4
+          ],
+          "tackles": [
+            8,
+            6
+          ],
+          "interceptions": [
+            6,
+            1
+          ],
+          "duels_won": [
+            23,
+            20
+          ],
+          "corners": [
+            3,
+            6
+          ],
+          "throwins": [
+            24,
+            29
+          ],
+          "goal_kicks": [
+            11,
+            9
+          ],
+          "crosses": [
+            17,
+            16
+          ],
+          "accurate_crosses": [
+            4,
+            5
+          ],
+          "offsides": [
+            1,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845937,
+        "s": 21682,
+        "d": "2023-09-30",
+        "hid": 3643,
+        "aid": 234,
+        "hn": "Jablonec",
+        "an": "Slovácko",
+        "hs": 2,
+        "as": 0,
+        "st": {
+          "fouls": [
+            18,
+            18
+          ],
+          "yellow": [
+            2,
+            5
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            11,
+            5
+          ],
+          "sot": [
+            8,
+            0
+          ],
+          "shots_off": [
+            3,
+            3
+          ],
+          "shots_inside": [
+            10,
+            2
+          ],
+          "shots_outside": [
+            1,
+            3
+          ],
+          "shots_blocked": [
+            1,
+            2
+          ],
+          "attacks": [
+            85,
+            95
+          ],
+          "dangerous_attacks": [
+            58,
+            43
+          ],
+          "assists": [
+            2,
+            0
+          ],
+          "passes": [
+            354,
+            350
+          ],
+          "dribbles": [
+            14,
+            8
+          ],
+          "dribbles_ok": [
+            8,
+            5
+          ],
+          "saves": [
+            0,
+            6
+          ],
+          "tackles": [
+            15,
+            11
+          ],
+          "interceptions": [
+            3,
+            6
+          ],
+          "duels_won": [
+            60,
+            42
+          ],
+          "corners": [
+            6,
+            3
+          ],
+          "throwins": [
+            28,
+            23
+          ],
+          "goal_kicks": [
+            7,
+            4
+          ],
+          "crosses": [
+            22,
+            14
+          ],
+          "accurate_crosses": [
+            6,
+            2
+          ],
+          "offsides": [
+            2,
+            2
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845926,
+        "s": 21682,
+        "d": "2023-09-24",
+        "hid": 3545,
+        "aid": 4484,
+        "hn": "Viktoria Plzeň",
+        "an": "Pardubice",
+        "hs": 6,
+        "as": 2,
+        "st": {
+          "fouls": [
+            17,
+            10
+          ],
+          "yellow": [
+            2,
+            2
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            1,
+            0
+          ],
+          "shots": [
+            22,
+            6
+          ],
+          "sot": [
+            8,
+            3
+          ],
+          "shots_off": [
+            9,
+            2
+          ],
+          "shots_inside": [
+            18,
+            4
+          ],
+          "shots_outside": [
+            4,
+            2
+          ],
+          "shots_blocked": [
+            8,
+            1
+          ],
+          "attacks": [
+            119,
+            95
+          ],
+          "dangerous_attacks": [
+            93,
+            52
+          ],
+          "assists": [
+            4,
+            0
+          ],
+          "passes": [
+            391,
+            304
+          ],
+          "dribbles": [
+            19,
+            9
+          ],
+          "dribbles_ok": [
+            8,
+            6
+          ],
+          "saves": [
+            1,
+            2
+          ],
+          "tackles": [
+            16,
+            14
+          ],
+          "interceptions": [
+            3,
+            6
+          ],
+          "duels_won": [
+            48,
+            43
+          ],
+          "corners": [
+            5,
+            3
+          ],
+          "throwins": [
+            32,
+            15
+          ],
+          "goal_kicks": [
+            1,
+            12
+          ],
+          "crosses": [
+            23,
+            5
+          ],
+          "accurate_crosses": [
+            8,
+            1
+          ],
+          "offsides": [
+            0,
+            2
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845919,
+        "s": 21682,
+        "d": "2023-09-16",
+        "hid": 3097,
+        "aid": 3487,
+        "hn": "Sigma Olomouc",
+        "an": "České Budějovice",
+        "hs": 2,
+        "as": 1,
+        "st": {
+          "fouls": [
+            12,
+            10
+          ],
+          "yellow": [
+            1,
+            0
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            17,
+            13
+          ],
+          "sot": [
+            6,
+            5
+          ],
+          "shots_off": [
+            7,
+            5
+          ],
+          "shots_inside": [
+            9,
+            9
+          ],
+          "shots_outside": [
+            8,
+            4
+          ],
+          "shots_blocked": [
+            4,
+            4
+          ],
+          "attacks": [
+            86,
+            103
+          ],
+          "dangerous_attacks": [
+            73,
+            65
+          ],
+          "assists": [
+            2,
+            1
+          ],
+          "passes": [
+            322,
+            423
+          ],
+          "dribbles": [
+            2,
+            10
+          ],
+          "dribbles_ok": [
+            0,
+            4
+          ],
+          "saves": [
+            4,
+            4
+          ],
+          "tackles": [
+            7,
+            10
+          ],
+          "interceptions": [
+            4,
+            10
+          ],
+          "duels_won": [
+            19,
+            33
+          ],
+          "corners": [
+            5,
+            6
+          ],
+          "throwins": [
+            21,
+            24
+          ],
+          "goal_kicks": [
+            7,
+            12
+          ],
+          "crosses": [
+            8,
+            17
+          ],
+          "accurate_crosses": [
+            3,
+            1
+          ],
+          "offsides": [
+            4,
+            0
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845900,
+        "s": 21682,
+        "d": "2023-08-19",
+        "hid": 1351,
+        "aid": 2727,
+        "hn": "Teplice",
+        "an": "Sparta Praha",
+        "hs": 1,
+        "as": 1,
+        "st": {
+          "fouls": [
+            19,
+            12
+          ],
+          "yellow": [
+            2,
+            0
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            15,
+            9
+          ],
+          "sot": [
+            4,
+            1
+          ],
+          "shots_off": [
+            9,
+            6
+          ],
+          "shots_inside": [
+            8,
+            5
+          ],
+          "shots_outside": [
+            7,
+            4
+          ],
+          "shots_blocked": [
+            2,
+            2
+          ],
+          "attacks": [
+            47,
+            57
+          ],
+          "dangerous_attacks": [
+            33,
+            29
+          ],
+          "assists": [
+            1,
+            1
+          ],
+          "passes": [
+            297,
+            314
+          ],
+          "dribbles": [
+            7,
+            12
+          ],
+          "dribbles_ok": [
+            1,
+            5
+          ],
+          "saves": [
+            0,
+            3
+          ],
+          "tackles": [
+            20,
+            8
+          ],
+          "interceptions": [
+            6,
+            4
+          ],
+          "duels_won": [
+            46,
+            46
+          ],
+          "corners": [
+            6,
+            3
+          ],
+          "throwins": [
+            13,
+            15
+          ],
+          "goal_kicks": [
+            3,
+            8
+          ],
+          "crosses": [
+            15,
+            17
+          ],
+          "accurate_crosses": [
+            4,
+            4
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845885,
+        "s": 21682,
+        "d": "2023-08-13",
+        "hid": 3487,
+        "aid": 3545,
+        "hn": "České Budějovice",
+        "an": "Viktoria Plzeň",
+        "hs": 2,
+        "as": 5,
+        "st": {
+          "fouls": [
+            14,
+            22
+          ],
+          "yellow": [
+            3,
+            1
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            1,
+            1
+          ],
+          "shots": [
+            5,
+            16
+          ],
+          "sot": [
+            2,
+            10
+          ],
+          "shots_off": [
+            3,
+            5
+          ],
+          "shots_inside": [
+            3,
+            13
+          ],
+          "shots_outside": [
+            2,
+            3
+          ],
+          "shots_blocked": [
+            2,
+            3
+          ],
+          "attacks": [
+            120,
+            113
+          ],
+          "dangerous_attacks": [
+            70,
+            88
+          ],
+          "assists": [
+            1,
+            3
+          ],
+          "passes": [
+            337,
+            326
+          ],
+          "dribbles": [
+            7,
+            8
+          ],
+          "dribbles_ok": [
+            5,
+            6
+          ],
+          "saves": [
+            5,
+            0
+          ],
+          "tackles": [
+            7,
+            8
+          ],
+          "interceptions": [
+            5,
+            0
+          ],
+          "duels_won": [
+            34,
+            30
+          ],
+          "corners": [
+            1,
+            5
+          ],
+          "throwins": [
+            23,
+            27
+          ],
+          "goal_kicks": [
+            12,
+            3
+          ],
+          "crosses": [
+            7,
+            22
+          ],
+          "accurate_crosses": [
+            1,
+            6
+          ],
+          "offsides": [
+            1,
+            3
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845884,
+        "s": 21682,
+        "d": "2023-08-05",
+        "hid": 234,
+        "aid": 3097,
+        "hn": "Slovácko",
+        "an": "Sigma Olomouc",
+        "hs": 0,
+        "as": 2,
+        "st": {
+          "fouls": [
+            11,
+            18
+          ],
+          "yellow": [
+            1,
+            2
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            18,
+            9
+          ],
+          "sot": [
+            4,
+            4
+          ],
+          "shots_off": [
+            8,
+            3
+          ],
+          "shots_inside": [
+            12,
+            6
+          ],
+          "shots_outside": [
+            6,
+            3
+          ],
+          "shots_blocked": [
+            6,
+            2
+          ],
+          "attacks": [
+            158,
+            107
+          ],
+          "dangerous_attacks": [
+            102,
+            45
+          ],
+          "passes": [
+            455,
+            241
+          ],
+          "dribbles": [
+            11,
+            4
+          ],
+          "dribbles_ok": [
+            5,
+            0
+          ],
+          "saves": [
+            2,
+            4
+          ],
+          "tackles": [
+            7,
+            10
+          ],
+          "interceptions": [
+            3,
+            3
+          ],
+          "duels_won": [
+            36,
+            22
+          ],
+          "corners": [
+            11,
+            1
+          ],
+          "throwins": [
+            21,
+            19
+          ],
+          "goal_kicks": [
+            4,
+            16
+          ],
+          "crosses": [
+            40,
+            7
+          ],
+          "accurate_crosses": [
+            10,
+            1
+          ],
+          "offsides": [
+            3,
+            1
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18826699,
+        "s": 19791,
+        "d": "2023-05-27",
+        "hid": 2727,
+        "aid": 3545,
+        "hn": "Sparta Praha",
+        "an": "Viktoria Plzeň",
+        "hs": 0,
+        "as": 1,
+        "st": {
+          "fouls": [
+            11,
+            9
+          ],
+          "yellow": [
+            1,
+            1
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            19,
+            8
+          ],
+          "sot": [
+            7,
+            1
+          ],
+          "shots_off": [
+            11,
+            6
+          ],
+          "shots_inside": [
+            14,
+            4
+          ],
+          "shots_outside": [
+            5,
+            4
+          ],
+          "shots_blocked": [
+            5,
+            3
+          ],
+          "attacks": [
+            102,
+            101
+          ],
+          "dangerous_attacks": [
+            68,
+            50
+          ],
+          "passes": [
+            411,
+            343
+          ],
+          "dribbles": [
+            7,
+            8
+          ],
+          "dribbles_ok": [
+            6,
+            6
+          ],
+          "saves": [
+            0,
+            7
+          ],
+          "tackles": [
+            10,
+            4
+          ],
+          "interceptions": [
+            31,
+            49
+          ],
+          "duels_won": [
+            73,
+            59
+          ],
+          "corners": [
+            13,
+            2
+          ],
+          "throwins": [
+            27,
+            13
+          ],
+          "crosses": [
+            29,
+            8
+          ],
+          "accurate_crosses": [
+            10,
+            2
+          ],
+          "offsides": [
+            2,
+            3
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18833354,
+        "s": 19791,
+        "d": "2023-05-21",
+        "hid": 3552,
+        "aid": 463,
+        "hn": "Hradec Králové",
+        "an": "Slovan Liberec",
+        "hs": 0,
+        "as": 4,
+        "st": {
+          "fouls": [
+            16,
+            13
+          ],
+          "yellow": [
+            4,
+            0
+          ],
+          "red": [
+            0,
+            0
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            5,
+            12
+          ],
+          "sot": [
+            3,
+            6
+          ],
+          "shots_off": [
+            2,
+            6
+          ],
+          "attacks": [
+            62,
+            99
+          ],
+          "dangerous_attacks": [
+            40,
+            62
+          ],
+          "passes": [
+            0,
+            3
+          ],
+          "saves": [
+            2,
+            3
+          ],
+          "corners": [
+            4,
+            3
+          ],
+          "throwins": [
+            15,
+            19
+          ],
+          "offsides": [
+            2,
+            4
+          ]
+        },
+        "mp": false
+      },
+      {
+        "fid": 18826688,
+        "s": 19791,
+        "d": "2023-05-07",
+        "hid": 187,
+        "aid": 3552,
+        "hn": "Mladá Boleslav",
+        "an": "Hradec Králové",
+        "hs": 0,
+        "as": 0,
+        "st": {
+          "fouls": [
+            10,
+            18
+          ],
+          "yellow": [
+            0,
+            4
+          ],
+          "red": [
+            0,
+            1
+          ],
+          "penalties": [
+            0,
+            0
+          ],
+          "shots": [
+            14,
+            8
+          ],
+          "sot": [
+            4,
+            4
+          ],
+          "shots_off": [
+            10,
+            4
+          ],
+          "shots_blocked": [
+            3,
+            1
+          ],
+          "attacks": [
+            93,
+            83
+          ],
+          "dangerous_attacks": [
+            63,
+            42
+          ],
+          "saves": [
+            4,
+            4
+          ],
+          "corners": [
+            11,
+            4
+          ],
+          "throwins": [
+            29,
+            19
+          ],
+          "offsides": [
+            1,
+            1
+          ]
+        },
+        "mp": false
+      }
+    ],
+    "stat_meta": [
+      {
+        "key": "fouls",
+        "label": "Fauly",
+        "group": "discipline"
+      },
+      {
+        "key": "yellow",
+        "label": "Žluté karty",
+        "group": "discipline"
+      },
+      {
+        "key": "red",
+        "label": "Červené karty",
+        "group": "discipline"
+      },
+      {
+        "key": "yellowred",
+        "label": "Druhá žlutá",
+        "group": "discipline"
+      },
+      {
+        "key": "penalties",
+        "label": "Penalty",
+        "group": "discipline"
+      },
+      {
+        "key": "var",
+        "label": "VAR momenty",
+        "group": "discipline"
+      },
+      {
+        "key": "shots",
+        "label": "Střely",
+        "group": "attack"
+      },
+      {
+        "key": "sot",
+        "label": "Na bránu",
+        "group": "attack"
+      },
+      {
+        "key": "shots_off",
+        "label": "Mimo",
+        "group": "attack"
+      },
+      {
+        "key": "shots_inside",
+        "label": "Z vápna",
+        "group": "attack"
+      },
+      {
+        "key": "shots_outside",
+        "label": "Mimo vápno",
+        "group": "attack"
+      },
+      {
+        "key": "shots_blocked",
+        "label": "Zblokované",
+        "group": "attack"
+      },
+      {
+        "key": "attacks",
+        "label": "Útoky",
+        "group": "attack"
+      },
+      {
+        "key": "dangerous_attacks",
+        "label": "Nebezpečné útoky",
+        "group": "attack"
+      },
+      {
+        "key": "big_chances",
+        "label": "Velké šance",
+        "group": "attack"
+      },
+      {
+        "key": "big_chances_missed",
+        "label": "Zahozené velké šance",
+        "group": "attack"
+      },
+      {
+        "key": "assists",
+        "label": "Asistence",
+        "group": "attack"
+      },
+      {
+        "key": "key_passes",
+        "label": "Klíčové přihrávky",
+        "group": "attack"
+      },
+      {
+        "key": "passes",
+        "label": "Přihrávky",
+        "group": "attack"
+      },
+      {
+        "key": "dribbles",
+        "label": "Driblingy",
+        "group": "attack"
+      },
+      {
+        "key": "dribbles_ok",
+        "label": "Úspěšné driblingy",
+        "group": "attack"
+      },
+      {
+        "key": "saves",
+        "label": "Zákroky",
+        "group": "defense"
+      },
+      {
+        "key": "tackles",
+        "label": "Skluzy",
+        "group": "defense"
+      },
+      {
+        "key": "tackles_won",
+        "label": "Vyhrané skluzy",
+        "group": "defense"
+      },
+      {
+        "key": "interceptions",
+        "label": "Zachycené přihrávky",
+        "group": "defense"
+      },
+      {
+        "key": "duels_won",
+        "label": "Vyhrané souboje",
+        "group": "defense"
+      },
+      {
+        "key": "corners",
+        "label": "Rohy",
+        "group": "setpiece"
+      },
+      {
+        "key": "free_kicks",
+        "label": "Standardky",
+        "group": "setpiece"
+      },
+      {
+        "key": "throwins",
+        "label": "Auty",
+        "group": "setpiece"
+      },
+      {
+        "key": "goal_kicks",
+        "label": "Výkopy",
+        "group": "setpiece"
+      },
+      {
+        "key": "crosses",
+        "label": "Centry",
+        "group": "setpiece"
+      },
+      {
+        "key": "accurate_crosses",
+        "label": "Přesné centry",
+        "group": "setpiece"
+      },
+      {
+        "key": "offsides",
+        "label": "Ofsajdy",
+        "group": "setpiece"
+      }
+    ],
+    "discipline": {
+      "all": {
+        "fouls": {
+          "league_avg": 24.19,
+          "rank": 9,
+          "size": 38
+        },
+        "yellow": {
+          "league_avg": 4.03,
+          "rank": 14,
+          "size": 38
+        },
+        "red": {
+          "league_avg": 0.24,
+          "rank": 6,
+          "size": 38
+        },
+        "yellowred": {
+          "league_avg": 0.08,
+          "rank": 6,
+          "size": 38
+        },
+        "penalties": {
+          "league_avg": 0.26,
+          "rank": 10,
+          "size": 38
+        },
+        "var": {
+          "league_avg": 0.47,
+          "rank": 7,
+          "size": 31
+        }
+      },
+      "seasons": {
+        "19791": {
+          "fouls": {
+            "league_avg": 22.15,
+            "rank": 3,
+            "size": 21
+          },
+          "yellow": {
+            "league_avg": 3.86,
+            "rank": 18,
+            "size": 21
+          },
+          "red": {
+            "league_avg": 0.25,
+            "rank": 4,
+            "size": 21
+          },
+          "yellowred": {
+            "league_avg": 0.13,
+            "rank": 3,
+            "size": 21
+          },
+          "penalties": {
+            "league_avg": 0.28,
+            "rank": 17,
+            "size": 21
+          },
+          "var": {
+            "league_avg": 0.32,
+            "rank": 7,
+            "size": 16
+          }
+        },
+        "21682": {
+          "fouls": {
+            "league_avg": 25.26,
+            "rank": 6,
+            "size": 21
+          },
+          "yellow": {
+            "league_avg": 4.36,
+            "rank": 7,
+            "size": 21
+          },
+          "red": {
+            "league_avg": 0.22,
+            "rank": 3,
+            "size": 21
+          },
+          "yellowred": {
+            "league_avg": 0.07,
+            "rank": 2,
+            "size": 21
+          },
+          "penalties": {
+            "league_avg": 0.31,
+            "rank": 1,
+            "size": 21
+          },
+          "var": {
+            "league_avg": 0.4,
+            "rank": 2,
+            "size": 19
+          }
+        },
+        "23641": {
+          "fouls": {
+            "league_avg": 22.68,
+            "rank": 19,
+            "size": 25
+          },
+          "yellow": {
+            "league_avg": 3.88,
+            "rank": 13,
+            "size": 25
+          },
+          "red": {
+            "league_avg": 0.23,
+            "rank": 3,
+            "size": 25
+          },
+          "yellowred": {
+            "league_avg": 0.07,
+            "rank": 12,
+            "size": 25
+          },
+          "penalties": {
+            "league_avg": 0.19,
+            "rank": 16,
+            "size": 25
+          },
+          "var": {
+            "league_avg": 0.39,
+            "rank": null,
+            "size": 17
+          }
+        },
+        "25591": {
+          "fouls": {
+            "league_avg": 26.08,
+            "rank": 14,
+            "size": 22
+          },
+          "yellow": {
+            "league_avg": 4.1,
+            "rank": 12,
+            "size": 21
+          },
+          "red": {
+            "league_avg": 0.26,
+            "rank": 4,
+            "size": 22
+          },
+          "yellowred": {
+            "league_avg": 0.07,
+            "rank": 7,
+            "size": 22
+          },
+          "penalties": {
+            "league_avg": 0.27,
+            "rank": 14,
+            "size": 22
+          },
+          "var": {
+            "league_avg": 0.48,
+            "rank": 9,
+            "size": 18
+          }
+        },
+        "27984": {
+          "fouls": {
+            "league_avg": 26.64,
+            "rank": 15,
+            "size": 22
+          },
+          "yellow": {
+            "league_avg": 3.69,
+            "rank": 9,
+            "size": 22
+          },
+          "red": {
+            "league_avg": 0.28,
+            "rank": 13,
+            "size": 22
+          },
+          "yellowred": {
+            "league_avg": 0.03,
+            "rank": 3,
+            "size": 22
+          },
+          "penalties": {
+            "league_avg": 0.2,
+            "rank": 5,
+            "size": 22
+          },
+          "var": {
+            "league_avg": 0.64,
+            "rank": 5,
+            "size": 16
+          }
+        }
+      }
+    }
+  }
 }

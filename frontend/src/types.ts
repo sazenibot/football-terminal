@@ -542,8 +542,57 @@ export interface CatalogRefereeRecent {
   has_match_page?: boolean;
 }
 
+export interface CatalogRefereeMatch {
+  fid: number;
+  s?: number | null;
+  d: string;
+  hid: number;
+  aid: number;
+  hn?: string | null;
+  an?: string | null;
+  hs: number;
+  as: number;
+  st?: Record<string, Array<number | null>>;
+  mp?: boolean;
+}
+
+export interface CatalogRefereeSeason {
+  id: number;
+  name?: string | null;
+  starting_at?: string | null;
+  matches: number;
+  sm?: {
+    yellowred?: number | null;
+    yellowred_count?: number | null;
+    var?: number | null;
+    var_count?: number | null;
+    sm_matches?: number | null;
+  };
+}
+
+export interface CatalogRefereeStatMeta {
+  key: string;
+  label: string;
+  group: "attack" | "defense" | "discipline" | "setpiece";
+}
+
+export interface CatalogRefereeDiscStat {
+  league_avg?: number | null;
+  rank?: number | null;
+  size?: number | null;
+}
+
 export interface CatalogRefereeOverlay {
   generated_at?: string;
+  current_season_id?: number | null;
+  career_matches?: number | null;
+  seasons?: CatalogRefereeSeason[];
+  matches?: CatalogRefereeMatch[];
+  stat_meta?: CatalogRefereeStatMeta[];
+  discipline?: {
+    all?: Record<string, CatalogRefereeDiscStat>;
+    seasons?: Record<string, Record<string, CatalogRefereeDiscStat>>;
+  };
   season?: {
     matches?: number | null;
     fouls_avg?: number | null;

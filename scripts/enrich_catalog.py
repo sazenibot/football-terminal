@@ -27,6 +27,7 @@ from build_match_data import (  # noqa: E402
     fetch_referee_profile,
     fetch_season,
 )
+from catalog_referee_overlay import attach_referee_overlays  # noqa: E402
 from catalog_team_overlay import (  # noqa: E402
     HOOK_MOCK,
     attach_context,
@@ -526,6 +527,19 @@ def enrich_league_teams(league_id: int, team_ids: list[int], known: set[int], pl
         })
         print(f"  {team.get('name')}: éry={len(eras)} recent={len(team['overlay']['recent'])} tabulka={team['overlay']['table']}")
 
+    attach_referee_overlays(
+        history,
+        seasons,
+        season_id,
+        known,
+        load_json,
+        write_json,
+        CATALOG,
+        now_iso,
+        league_id,
+        sample.get("league_name") or season_name or "",
+    )
+
     write_json(
         CATALOG / "leagues" / f"{league_id}.explorer.json",
         {
@@ -626,14 +640,16 @@ def enrich_referee(rid: int, known: set[int]) -> None:
             "Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní."
         )
 
-    ref["overlay"] = {
+    overlay = ref.get("overlay") or {}
+    overlay.update({
         "generated_at": now_iso(),
         "season": compact,
         "season_raw": season_stats,
         "career": career,
         "league_context": league_context,
         "recent": recent,
-    }
+    })
+    ref["overlay"] = overlay
     write_json(path, ref)
     print(f"  rozhodčí {name}: sezóna={compact}, kariéra={career['matches']} zápasů, warehouse={len(recent)}")
 
