@@ -1,0 +1,83 @@
+{
+  "id": 37287355,
+  "name": "Cory Sène",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3545,
+  "team_name": "Viktoria Plzeň",
+  "in_league": true,
+  "number": 4,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 3545,
+        "name": "Viktoria Plzeň",
+        "from": "2024-08-11",
+        "to": "2024-12-15",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 2,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138367,
+        "s": 23641,
+        "d": "2024-12-15",
+        "h": 1,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 3487,
+        "on": "České Budějovice",
+        "hs": 7,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 9,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138244,
+        "s": 23641,
+        "d": "2024-08-11",
+        "h": 1,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 5,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 2,
+          "f": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

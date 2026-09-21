@@ -1,0 +1,81 @@
+{
+  "id": 37646068,
+  "name": "Adam Číž",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 1745,
+  "team_name": "Zlín",
+  "in_league": true,
+  "number": 29,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 1745,
+        "name": "Zlín",
+        "from": "2023-07-29",
+        "to": "2023-12-16",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 2,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18846009,
+        "s": 21682,
+        "d": "2023-12-16",
+        "h": 1,
+        "tid": 1745,
+        "tn": "Zlín",
+        "oid": 3552,
+        "on": "Hradec Králové",
+        "hs": 4,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 6,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845875,
+        "s": 21682,
+        "d": "2023-07-29",
+        "h": 1,
+        "tid": 1745,
+        "tn": "Zlín",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 0,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 5,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

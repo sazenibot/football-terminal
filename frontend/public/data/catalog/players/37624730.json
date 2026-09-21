@@ -15,5 +15,113 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "hook": "Viktor Baier (Brankář) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "gk",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 3545,
+        "name": "Viktoria Plzeň",
+        "from": "2023-10-29",
+        "to": "2025-05-03",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 2,
+        "games": 276
+      },
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 1,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19416500,
+        "s": 23641,
+        "d": "2025-05-03",
+        "h": 0,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 4,
+        "as": 3,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "tk": 1,
+          "cl": 2,
+          "sv": 9,
+          "gc": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19416331,
+        "s": 23641,
+        "d": "2025-04-27",
+        "h": 1,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 2,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 44,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845958,
+        "s": 21682,
+        "d": "2023-10-29",
+        "h": 1,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 0,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "cl": 2,
+          "sv": 4,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {}
+  }
 }

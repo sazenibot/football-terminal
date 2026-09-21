@@ -15,5 +15,61 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "hook": "Bogdan Slyubyk (Obránce) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 4484,
+        "name": "Pardubice",
+        "from": "2026-02-15",
+        "to": "2026-02-15",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 1,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19439174,
+        "s": 25591,
+        "d": "2026-02-15",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 0,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 24,
+          "sh": 1,
+          "sot": 1,
+          "dw": 3,
+          "tk": 3,
+          "cl": 2,
+          "gc": 2,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {}
+  }
 }

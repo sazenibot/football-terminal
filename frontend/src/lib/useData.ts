@@ -3,6 +3,7 @@ import type {
   CatalogExplorer,
   CatalogHub,
   CatalogPlayerDetail,
+  CatalogPlayerIndex,
   CatalogRefereeDetail,
   CatalogTeamDetail,
   DataIndex,
@@ -152,6 +153,27 @@ export function useCatalogExplorer(leagueId: number | null) {
 
 export function useCatalogPlayer(id: number | null) {
   return useCatalogEntity<CatalogPlayerDetail>("players", id);
+}
+
+export function useCatalogPlayerIndex(leagueId: number | null) {
+  const [data, setData] = useState<CatalogPlayerIndex | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [missing, setMissing] = useState(false);
+
+  useEffect(() => {
+    if (!leagueId) return;
+    setData(null);
+    setError(null);
+    setMissing(false);
+    fetchJson<CatalogPlayerIndex>(`/data/catalog/leagues/${leagueId}.players.json`)
+      .then(setData)
+      .catch((e) => {
+        if (e instanceof DataMissingError) setMissing(true);
+        else setError(String(e));
+      });
+  }, [leagueId]);
+
+  return { data, error, missing };
 }
 
 export function useCatalogReferee(id: number | null) {

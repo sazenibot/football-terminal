@@ -1,0 +1,111 @@
+{
+  "id": 37637028,
+  "name": "Christo Alejandro Vela Alatorre",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "in_league": true,
+  "number": 24,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 1351,
+        "name": "Teplice",
+        "from": "2022-08-13",
+        "to": "2022-08-27",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 3,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542667,
+        "s": 19791,
+        "d": "2022-08-27",
+        "h": 1,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 0,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 6,
+          "f": 1,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542659,
+        "s": 19791,
+        "d": "2022-08-20",
+        "h": 0,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 1,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "f": 2,
+          "dw": 1,
+          "aw": 1,
+          "gc": 1,
+          "kp": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542652,
+        "s": 19791,
+        "d": "2022-08-13",
+        "h": 1,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 0,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

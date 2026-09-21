@@ -14,6 +14,115 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Baboucarr Faal (Útočník) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Baboucarr Faal v této sezóně za Viktoria Plzeň: 3 starty, 47 min, 1 gól.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 3545,
+        "name": "Viktoria Plzeň",
+        "from": "2026-07-25",
+        "to": "2026-09-13",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 3,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725053,
+        "s": 27984,
+        "d": "2026-09-13",
+        "h": 1,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 2,
+        "as": 3,
+        "ob": 2,
+        "st": {
+          "mn": 27,
+          "g": 1,
+          "sh": 1,
+          "sot": 1,
+          "dw": 2,
+          "aw": 1,
+          "dr": 1,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725087,
+        "s": 27984,
+        "d": "2026-08-08",
+        "h": 0,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 5,
+        "as": 5,
+        "ob": 3,
+        "st": {
+          "mn": 11,
+          "tk": 1,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725109,
+        "s": 27984,
+        "d": "2026-07-25",
+        "h": 1,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 1,
+        "as": 3,
+        "ob": 2,
+        "st": {
+          "mn": 9,
+          "f": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 3,
+      "minutes": 47,
+      "goals": 1,
+      "shots": 1,
+      "sot": 1,
+      "goals_conceded": 1
+    }
+  }
 }

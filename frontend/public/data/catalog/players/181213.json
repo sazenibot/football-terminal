@@ -1,0 +1,82 @@
+{
+  "id": 181213,
+  "name": "Martin Košťál",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "in_league": true,
+  "number": 23,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "from": "2022-09-17",
+        "to": "2022-10-30",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 2,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542743,
+        "s": 19791,
+        "d": "2022-10-30",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 12,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542702,
+        "s": 19791,
+        "d": "2022-09-17",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 3487,
+        "on": "České Budějovice",
+        "hs": 0,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

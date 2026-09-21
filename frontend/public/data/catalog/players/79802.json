@@ -1,0 +1,233 @@
+{
+  "id": 79802,
+  "name": "Tomas Malinsky",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "in_league": true,
+  "number": 6,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:07Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 8,
+    "clubs": [
+      {
+        "id": 3643,
+        "name": "Jablonec",
+        "from": "2022-08-14",
+        "to": "2022-11-12",
+        "matches": 8
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 8,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542759,
+        "s": 19791,
+        "d": "2022-11-12",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 1,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542748,
+        "s": 19791,
+        "d": "2022-11-05",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 3,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 28,
+          "dw": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542708,
+        "s": 19791,
+        "d": "2022-10-02",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 3350,
+        "on": "Zbrojovka Brno",
+        "hs": 3,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 8,
+          "sh": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542684,
+        "s": 19791,
+        "d": "2022-09-03",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 3,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 6,
+          "sh": 1,
+          "f": 1,
+          "r": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542675,
+        "s": 19791,
+        "d": "2022-08-30",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 1,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 18,
+          "sh": 2,
+          "sot": 1,
+          "f": 1,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542666,
+        "s": 19791,
+        "d": "2022-08-27",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 1,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 26,
+          "f": 1,
+          "dw": 1,
+          "tk": 1,
+          "cl": 1,
+          "gc": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542658,
+        "s": 19791,
+        "d": "2022-08-21",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 2,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 9,
+          "dw": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542651,
+        "s": 19791,
+        "d": "2022-08-14",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 2,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 3,
+          "f": 1,
+          "dw": 1,
+          "tk": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

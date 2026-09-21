@@ -27,6 +27,7 @@ from build_match_data import (  # noqa: E402
     fetch_referee_profile,
     fetch_season,
 )
+from catalog_player_overlay import attach_player_overlays  # noqa: E402
 from catalog_referee_overlay import attach_referee_overlays  # noqa: E402
 from catalog_team_overlay import (  # noqa: E402
     HOOK_MOCK,
@@ -38,6 +39,7 @@ from catalog_team_overlay import (  # noqa: E402
     fdr_band,
     fdr_rating,
     league_pools,
+    last_seasons,
     load_history,
     summarize,
 )
@@ -539,6 +541,18 @@ def enrich_league_teams(league_id: int, team_ids: list[int], known: set[int], pl
         league_id,
         sample.get("league_name") or season_name or "",
     )
+    attach_player_overlays(
+        league_id,
+        season_id,
+        seasons,
+        known,
+        load_json,
+        write_json,
+        CATALOG,
+        now_iso,
+        sample.get("league_name") or season_name or "",
+        parse_standings,
+    )
 
     write_json(
         CATALOG / "leagues" / f"{league_id}.explorer.json",
@@ -565,10 +579,12 @@ def enrich_player_file(player_id: int, season_stats: dict, team: dict) -> None:
         player.get("team_name") or team.get("name") or "",
         season_stats,
     )
-    player["overlay"] = {
+    overlay = player.get("overlay") or {}
+    overlay.update({
         "generated_at": now_iso(),
         "season": season_stats,
-    }
+    })
+    player["overlay"] = overlay
     write_json(path, player)
 
 
@@ -671,7 +687,30 @@ def main() -> None:
     parser.add_argument("--league", type=int, default=262)
     parser.add_argument("--referees", help="id rozhodčích čárkou")
     parser.add_argument("--skip-players", action="store_true")
+    parser.add_argument("--players-only", action="store_true")
     args = parser.parse_args()
+    known = known_match_ids()
+    if args.players_only:
+        sample = load_json(CATALOG / "teams" / "216.json") or load_json(CATALOG / "leagues" / f"{args.league}.json") or {}
+        season_id = sample.get("season_id")
+        seasons = last_seasons(args.league)
+        league_name = sample.get("league_name") or "Chance Liga"
+        print(f"[catalog-overlay] jen hráči liga={args.league} sezona={season_id}")
+        attach_player_overlays(
+            args.league,
+            season_id,
+            seasons,
+            known,
+            load_json,
+            write_json,
+            CATALOG,
+            now_iso,
+            league_name,
+            parse_standings,
+        )
+        stats = call_stats()
+        print(f"[catalog-overlay] hotovo · API {stats['calls']} volání, cache {stats['cache_hits']}")
+        return
     teams = parse_ids(args.team, hub_team_ids(args.league) or PILOT_TEAMS)
     refs = parse_ids(args.referees, PILOT_REFS)
     player_ids = set() if args.skip_players else set(teams)

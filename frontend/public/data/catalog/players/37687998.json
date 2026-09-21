@@ -1,0 +1,62 @@
+{
+  "id": 37687998,
+  "name": "Ondrej Penxa",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "in_league": true,
+  "number": 52,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 2727,
+        "name": "Sparta Praha",
+        "from": "2025-11-22",
+        "to": "2025-11-22",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 1,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19439148,
+        "s": 25591,
+        "d": "2025-11-22",
+        "h": 0,
+        "tid": 2727,
+        "tn": "Sparta Praha",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 1,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 14,
+          "dw": 3,
+          "tk": 3,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

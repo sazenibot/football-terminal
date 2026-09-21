@@ -1,0 +1,166 @@
+{
+  "id": 37418793,
+  "name": "James Gomez",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "in_league": true,
+  "number": 5,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 5,
+    "clubs": [
+      {
+        "id": 2727,
+        "name": "Sparta Praha",
+        "from": "2023-08-05",
+        "to": "2023-10-29",
+        "matches": 5
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 5,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18845963,
+        "s": 21682,
+        "d": "2023-10-29",
+        "h": 0,
+        "tid": 2727,
+        "tn": "Sparta Praha",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 3,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "sh": 1,
+          "f": 1,
+          "dw": 1,
+          "tk": 1,
+          "gc": 3,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845952,
+        "s": 21682,
+        "d": "2023-10-22",
+        "h": 1,
+        "tid": 2727,
+        "tn": "Sparta Praha",
+        "oid": 3487,
+        "on": "České Budějovice",
+        "hs": 4,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 19,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845904,
+        "s": 21682,
+        "d": "2023-08-27",
+        "h": 1,
+        "tid": 2727,
+        "tn": "Sparta Praha",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 3,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "f": 2,
+          "dw": 2,
+          "aw": 2,
+          "cl": 9,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845892,
+        "s": 21682,
+        "d": "2023-08-12",
+        "h": 0,
+        "tid": 2727,
+        "tn": "Sparta Praha",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 1,
+        "as": 5,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "f": 1,
+          "dw": 8,
+          "aw": 8,
+          "cl": 3,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845879,
+        "s": 21682,
+        "d": "2023-08-05",
+        "h": 1,
+        "tid": 2727,
+        "tn": "Sparta Praha",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 5,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 30,
+          "f": 1,
+          "cl": 1,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

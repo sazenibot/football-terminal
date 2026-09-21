@@ -27,7 +27,7 @@
   "hook": "Tomáš Klíma je rozhodčí ze země této ligy. V aktuálním okně ho jako hlavního na zápasech ligy ještě nemáme.",
   "generated_at": "2026-09-20T21:56:05Z",
   "overlay": {
-    "generated_at": "2026-09-21T09:29:06Z",
+    "generated_at": "2026-09-21T15:45:03Z",
     "current_season_id": 27984,
     "career_matches": 19,
     "seasons": [
@@ -2298,7 +2298,7 @@
       },
       {
         "key": "var",
-        "label": "VAR momenty",
+        "label": "Použití VAR",
         "group": "discipline"
       },
       {

@@ -1,0 +1,61 @@
+{
+  "id": 1067,
+  "name": "Marcin Pogorzala",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "in_league": true,
+  "number": 3,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:07Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 2727,
+        "name": "Sparta Praha",
+        "from": "2023-05-27",
+        "to": "2023-05-27",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 1,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18826699,
+        "s": 19791,
+        "d": "2023-05-27",
+        "h": 1,
+        "tid": 2727,
+        "tn": "Sparta Praha",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 0,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 6,
+          "dw": 1,
+          "tk": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

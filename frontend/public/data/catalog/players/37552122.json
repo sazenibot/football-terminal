@@ -15,5 +15,151 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Jaromir Srubek (Obránce) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 5,
+    "clubs": [
+      {
+        "id": 234,
+        "name": "Slovácko",
+        "from": "2023-08-13",
+        "to": "2023-09-23",
+        "matches": 5
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 5,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18845932,
+        "s": 21682,
+        "d": "2023-09-23",
+        "h": 1,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 2,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 10,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845924,
+        "s": 21682,
+        "d": "2023-09-17",
+        "h": 0,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 5,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 79,
+          "dw": 3,
+          "aw": 1,
+          "tk": 1,
+          "it": 1,
+          "cl": 2,
+          "gc": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845912,
+        "s": 21682,
+        "d": "2023-09-02",
+        "h": 1,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 1,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 9,
+          "f": 1,
+          "y": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845908,
+        "s": 21682,
+        "d": "2023-08-26",
+        "h": 0,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 0,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 10,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845887,
+        "s": 21682,
+        "d": "2023-08-13",
+        "h": 0,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 0,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 24,
+          "it": 1,
+          "cl": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
 }

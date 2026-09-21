@@ -15,5 +15,56 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Adam Kronus (Záložník) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 3545,
+        "name": "Viktoria Plzeň",
+        "from": "2022-10-29",
+        "to": "2022-10-29",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 1,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542742,
+        "s": 19791,
+        "d": "2022-10-29",
+        "h": 0,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 0,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 4,
+          "cl": 1,
+          "kp": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
 }

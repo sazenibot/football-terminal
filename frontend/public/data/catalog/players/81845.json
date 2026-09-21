@@ -1,0 +1,208 @@
+{
+  "id": 81845,
+  "name": "Petr Rybička",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "in_league": true,
+  "number": 7,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:07Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 7,
+    "clubs": [
+      {
+        "id": 3552,
+        "name": "Hradec Králové",
+        "from": "2022-07-31",
+        "to": "2022-11-13",
+        "matches": 7
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 7,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542755,
+        "s": 19791,
+        "d": "2022-11-13",
+        "h": 1,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 1,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 8,
+          "sh": 1,
+          "f": 2,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542739,
+        "s": 19791,
+        "d": "2022-10-29",
+        "h": 1,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 1,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 18,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542714,
+        "s": 19791,
+        "d": "2022-10-08",
+        "h": 1,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 4,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 30,
+          "f": 1,
+          "r": 1,
+          "dw": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542710,
+        "s": 19791,
+        "d": "2022-10-01",
+        "h": 0,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 46,
+          "f": 1,
+          "y": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542692,
+        "s": 19791,
+        "d": "2022-09-11",
+        "h": 0,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 3,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 11,
+          "dw": 2,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542683,
+        "s": 19791,
+        "d": "2022-09-04",
+        "h": 1,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 0,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 4,
+          "sh": 1,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542636,
+        "s": 19791,
+        "d": "2022-07-31",
+        "h": 1,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 1,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 74,
+          "f": 2,
+          "dw": 1,
+          "tk": 1,
+          "cl": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

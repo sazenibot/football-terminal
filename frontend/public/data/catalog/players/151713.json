@@ -1,0 +1,136 @@
+{
+  "id": 151713,
+  "name": "Sheriff Sinyan",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "in_league": true,
+  "number": 2,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 4,
+    "clubs": [
+      {
+        "id": 216,
+        "name": "Slavia Praha",
+        "from": "2023-10-29",
+        "to": "2023-12-17",
+        "matches": 4
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 4,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18846005,
+        "s": 21682,
+        "d": "2023-12-17",
+        "h": 0,
+        "tid": 216,
+        "tn": "Slavia Praha",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 2,
+        "as": 3,
+        "ob": 2,
+        "st": {
+          "mn": 5,
+          "dw": 2,
+          "aw": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846001,
+        "s": 21682,
+        "d": "2023-12-10",
+        "h": 1,
+        "tid": 216,
+        "tn": "Slavia Praha",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 2,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 11,
+          "dw": 2,
+          "tk": 2,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845971,
+        "s": 21682,
+        "d": "2023-11-05",
+        "h": 1,
+        "tid": 216,
+        "tn": "Slavia Praha",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 1,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 18,
+          "dw": 1,
+          "tk": 1,
+          "it": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845961,
+        "s": 21682,
+        "d": "2023-10-29",
+        "h": 0,
+        "tid": 216,
+        "tn": "Slavia Praha",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 0,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 12,
+          "dw": 1,
+          "tk": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

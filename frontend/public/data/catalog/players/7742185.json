@@ -14,6 +14,151 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "M. Rymarenko (Útočník) nastupuje za Zbrojovka Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "M. Rymarenko v této sezóně za Zbrojovka Brno: 4 starty, 127 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 4,
+    "clubs": [
+      {
+        "id": 3350,
+        "name": "Zbrojovka Brno",
+        "from": "2026-08-01",
+        "to": "2026-09-19",
+        "matches": 4
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 4,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725042,
+        "s": 27984,
+        "d": "2026-09-19",
+        "h": 0,
+        "tid": 3350,
+        "tn": "Zbrojovka Brno",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 2,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 16,
+          "sh": 2,
+          "dw": 1,
+          "tk": 1,
+          "kp": 1,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725064,
+        "s": 27984,
+        "d": "2026-08-29",
+        "h": 1,
+        "tid": 3350,
+        "tn": "Zbrojovka Brno",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 3,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 34,
+          "sh": 3,
+          "dw": 2,
+          "tk": 1,
+          "it": 2,
+          "gc": 2,
+          "dr": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725070,
+        "s": 27984,
+        "d": "2026-08-23",
+        "h": 0,
+        "tid": 3350,
+        "tn": "Zbrojovka Brno",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 66,
+          "sh": 1,
+          "f": 1,
+          "dw": 4,
+          "aw": 1,
+          "tk": 1,
+          "it": 3,
+          "cl": 2,
+          "dr": 2,
+          "cr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725101,
+        "s": 27984,
+        "d": "2026-08-01",
+        "h": 0,
+        "tid": 3350,
+        "tn": "Zbrojovka Brno",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 1,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 11,
+          "sh": 1,
+          "dw": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 4,
+      "lineups": 1,
+      "minutes": 127,
+      "shots": 7,
+      "goals_conceded": 2
+    }
+  }
 }

@@ -1,0 +1,142 @@
+{
+  "id": 8449378,
+  "name": "Jakub Svec",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3487,
+  "team_name": "České Budějovice",
+  "in_league": true,
+  "number": 7,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 4,
+    "clubs": [
+      {
+        "id": 3487,
+        "name": "České Budějovice",
+        "from": "2022-08-21",
+        "to": "2022-10-29",
+        "matches": 4
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 4,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542741,
+        "s": 19791,
+        "d": "2022-10-29",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 3,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 10,
+          "sh": 1,
+          "dw": 1,
+          "tk": 1,
+          "gc": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542707,
+        "s": 19791,
+        "d": "2022-10-01",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 1,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 32,
+          "sh": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542696,
+        "s": 19791,
+        "d": "2022-09-11",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 6,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 44,
+          "f": 1,
+          "dw": 1,
+          "tk": 1,
+          "gc": 3,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542660,
+        "s": 19791,
+        "d": "2022-08-21",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 1,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 44,
+          "sh": 1,
+          "sot": 1,
+          "f": 1,
+          "dw": 1,
+          "cr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

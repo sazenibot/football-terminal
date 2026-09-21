@@ -3,7 +3,7 @@
   "name": "Hamidou Kante",
   "common_name": "H. Kante",
   "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-  "number": null,
+  "number": 3,
   "position": "Obránce",
   "position_id": 25,
   "captain": false,
@@ -15,5 +15,173 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "hook": "Hamidou Kante (Obránce) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 5,
+    "clubs": [
+      {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "from": "2026-02-01",
+        "to": "2026-02-28",
+        "matches": 5
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 5,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19439194,
+        "s": 25591,
+        "d": "2026-02-28",
+        "h": 0,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 5,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 26,
+          "f": 2,
+          "y": 1,
+          "dw": 1,
+          "aw": 1,
+          "cl": 3,
+          "gc": 3,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439186,
+        "s": 25591,
+        "d": "2026-02-22",
+        "h": 1,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 0,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 44,
+          "sh": 1,
+          "dw": 2,
+          "tk": 1,
+          "cl": 1,
+          "dr": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439172,
+        "s": 25591,
+        "d": "2026-02-15",
+        "h": 0,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 1,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 20,
+          "sh": 1,
+          "sot": 1,
+          "f": 4,
+          "y": 1,
+          "dw": 4,
+          "aw": 2,
+          "it": 1,
+          "cl": 1,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439177,
+        "s": 25591,
+        "d": "2026-02-07",
+        "h": 1,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 2,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 9,
+          "dw": 1,
+          "aw": 1,
+          "cl": 1,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439162,
+        "s": 25591,
+        "d": "2026-02-01",
+        "h": 0,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 2,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "f": 2,
+          "dw": 8,
+          "aw": 5,
+          "tk": 2,
+          "it": 5,
+          "cl": 10,
+          "gc": 2,
+          "cr": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {}
+  }
 }

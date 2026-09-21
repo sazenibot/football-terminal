@@ -15,5 +15,131 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Pavel Moulis (Záložník) nastupuje za Ústí nad Labem. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:07Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 4,
+    "clubs": [
+      {
+        "id": 3531,
+        "name": "Dukla Praha",
+        "from": "2024-08-10",
+        "to": "2024-11-24",
+        "matches": 4
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 4,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138343,
+        "s": 23641,
+        "d": "2024-11-24",
+        "h": 0,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 3,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 39,
+          "sh": 1,
+          "dw": 2,
+          "aw": 1,
+          "tk": 1,
+          "cl": 2,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138291,
+        "s": 23641,
+        "d": "2024-09-28",
+        "h": 1,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 1,
+        "as": 4,
+        "ob": 2,
+        "st": {
+          "mn": 15,
+          "dw": 1,
+          "aw": 1,
+          "cl": 1,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138281,
+        "s": 23641,
+        "d": "2024-09-22",
+        "h": 0,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 2,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 12,
+          "dw": 1,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138246,
+        "s": 23641,
+        "d": "2024-08-10",
+        "h": 1,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 45,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
 }

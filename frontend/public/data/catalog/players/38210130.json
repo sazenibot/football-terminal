@@ -14,6 +14,115 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Richard Kasik (Brankář) nastupuje za SK Artis Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Richard Kasik v této sezóně za SK Artis Brno: 3 starty, 270 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "gk",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 22031,
+        "name": "SK Artis Brno",
+        "from": "2026-08-09",
+        "to": "2026-09-19",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 3,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725041,
+        "s": 27984,
+        "d": "2026-09-19",
+        "h": 1,
+        "tid": 22031,
+        "tn": "SK Artis Brno",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 0,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "cl": 2,
+          "sv": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725048,
+        "s": 27984,
+        "d": "2026-09-12",
+        "h": 0,
+        "tid": 22031,
+        "tn": "SK Artis Brno",
+        "oid": 3350,
+        "on": "Zbrojovka Brno",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "aw": 1,
+          "cl": 1,
+          "sv": 7,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725092,
+        "s": 27984,
+        "d": "2026-08-09",
+        "h": 1,
+        "tid": 22031,
+        "tn": "SK Artis Brno",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 1,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "sv": 5,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 3,
+      "lineups": 3,
+      "minutes": 270,
+      "saves": 13,
+      "goals_conceded": 4
+    }
+  }
 }

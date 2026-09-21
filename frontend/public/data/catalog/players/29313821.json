@@ -1,0 +1,220 @@
+{
+  "id": 29313821,
+  "name": "Eduardo Nardini",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "in_league": true,
+  "number": 8,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 7,
+    "clubs": [
+      {
+        "id": 3643,
+        "name": "Jablonec",
+        "from": "2024-09-21",
+        "to": "2024-12-07",
+        "matches": 7
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 7,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138358,
+        "s": 23641,
+        "d": "2024-12-07",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 3531,
+        "on": "Dukla Praha",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "dw": 1,
+          "aw": 1,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138340,
+        "s": 23641,
+        "d": "2024-11-23",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 3,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 69,
+          "f": 1,
+          "y": 1,
+          "dw": 2,
+          "aw": 2,
+          "it": 1,
+          "cl": 3,
+          "gc": 1,
+          "kp": 2,
+          "cr": 2,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138334,
+        "s": 23641,
+        "d": "2024-11-09",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 2,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 21,
+          "dw": 2,
+          "aw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138323,
+        "s": 23641,
+        "d": "2024-11-02",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 3,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 85,
+          "g": 1,
+          "sot": 1,
+          "f": 2,
+          "dw": 4,
+          "aw": 2,
+          "tk": 1,
+          "it": 4,
+          "cl": 3,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138296,
+        "s": 23641,
+        "d": "2024-10-05",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 0,
+        "as": 5,
+        "ob": 2,
+        "st": {
+          "mn": 10,
+          "it": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138294,
+        "s": 23641,
+        "d": "2024-09-28",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 3552,
+        "on": "Hradec Králové",
+        "hs": 2,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 10,
+          "it": 1,
+          "kp": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138287,
+        "s": 23641,
+        "d": "2024-09-21",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 1,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 25,
+          "sh": 1,
+          "sot": 1,
+          "dw": 4,
+          "aw": 2,
+          "tk": 1,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

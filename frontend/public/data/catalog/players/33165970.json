@@ -15,5 +15,53 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Marcel Novak (Záložník) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 234,
+        "name": "Slovácko",
+        "from": "2024-05-26",
+        "to": "2024-05-26",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 1,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19119237,
+        "s": 21682,
+        "d": "2024-05-26",
+        "h": 0,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 6,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 5,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
 }

@@ -15,5 +15,9 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "hook": "Arouna Ouattara (Záložník) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:01Z",
+    "season": {}
+  }
 }

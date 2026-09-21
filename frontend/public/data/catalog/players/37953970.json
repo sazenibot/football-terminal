@@ -14,6 +14,93 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Oskar Kubiak  (Obránce) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Oskar Kubiak  v této sezóně za Slavia Praha: 2 starty, 75 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 216,
+        "name": "Slavia Praha",
+        "from": "2026-09-05",
+        "to": "2026-09-13",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 2,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725046,
+        "s": 27984,
+        "d": "2026-09-13",
+        "h": 0,
+        "tid": 216,
+        "tn": "Slavia Praha",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 12,
+          "f": 1,
+          "dw": 2,
+          "aw": 1,
+          "tk": 1,
+          "it": 1,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725054,
+        "s": 27984,
+        "d": "2026-09-05",
+        "h": 1,
+        "tid": 216,
+        "tn": "Slavia Praha",
+        "oid": 3350,
+        "on": "Zbrojovka Brno",
+        "hs": 4,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 63,
+          "dw": 7,
+          "aw": 3,
+          "tk": 1,
+          "it": 3,
+          "cl": 6,
+          "cr": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 75
+    }
+  }
 }

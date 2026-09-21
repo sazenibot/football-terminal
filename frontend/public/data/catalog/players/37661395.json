@@ -15,5 +15,59 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Patrik Mekota (Obránce) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "from": "2023-05-21",
+        "to": "2023-05-21",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 1,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18826706,
+        "s": 19791,
+        "d": "2023-05-21",
+        "h": 1,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "sh": 1,
+          "f": 1,
+          "dw": 3,
+          "tk": 3,
+          "it": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
 }

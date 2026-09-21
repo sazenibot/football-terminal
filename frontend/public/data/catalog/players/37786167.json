@@ -1,0 +1,87 @@
+{
+  "id": 37786167,
+  "name": "D. Němec",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3487,
+  "team_name": "České Budějovice",
+  "in_league": true,
+  "number": 9,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 3487,
+        "name": "České Budějovice",
+        "from": "2024-10-20",
+        "to": "2024-12-15",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 2,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138367,
+        "s": 23641,
+        "d": "2024-12-15",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 7,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 9,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138311,
+        "s": 23641,
+        "d": "2024-10-20",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 4,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 22,
+          "f": 1,
+          "dw": 1,
+          "tk": 1,
+          "kp": 1,
+          "dr": 1,
+          "cr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

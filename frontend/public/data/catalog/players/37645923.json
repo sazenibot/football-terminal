@@ -1,0 +1,60 @@
+{
+  "id": 37645923,
+  "name": "David Kratochvila",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 234,
+  "team_name": "Slovácko",
+  "in_league": true,
+  "number": 8,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 234,
+        "name": "Slovácko",
+        "from": "2024-05-11",
+        "to": "2024-05-11",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 1,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19119227,
+        "s": 21682,
+        "d": "2024-05-11",
+        "h": 0,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 4,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

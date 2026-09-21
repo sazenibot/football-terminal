@@ -1,0 +1,94 @@
+{
+  "id": 25548665,
+  "name": "Václav Svoboda",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "in_league": true,
+  "number": 15,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 4484,
+        "name": "Pardubice",
+        "from": "2022-08-30",
+        "to": "2022-09-04",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 2,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542686,
+        "s": 19791,
+        "d": "2022-09-04",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "f": 2,
+          "y": 1,
+          "dw": 4,
+          "aw": 1,
+          "tk": 1,
+          "cl": 1,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542678,
+        "s": 19791,
+        "d": "2022-08-30",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "sh": 1,
+          "dw": 1,
+          "aw": 1,
+          "it": 1,
+          "cl": 2,
+          "gc": 2,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

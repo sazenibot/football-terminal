@@ -1,0 +1,61 @@
+{
+  "id": 37678480,
+  "name": "Abderrazak Ennakouss",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 512,
+  "team_name": "Karviná",
+  "in_league": true,
+  "number": 12,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 512,
+        "name": "Karviná",
+        "from": "2023-07-22",
+        "to": "2023-07-22",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 1,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18845864,
+        "s": 21682,
+        "d": "2023-07-22",
+        "h": 1,
+        "tid": 512,
+        "tn": "Karviná",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 4,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 18,
+          "dw": 1,
+          "aw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

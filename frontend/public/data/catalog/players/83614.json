@@ -15,5 +15,220 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Lukas Matejka (Útočník) nastupuje za Táborsko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:07Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 7,
+    "clubs": [
+      {
+        "id": 3531,
+        "name": "Dukla Praha",
+        "from": "2024-07-27",
+        "to": "2024-12-14",
+        "matches": 7
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 7,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138365,
+        "s": 23641,
+        "d": "2024-12-14",
+        "h": 1,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 3552,
+        "on": "Hradec Králové",
+        "hs": 1,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 45,
+          "sh": 1,
+          "sot": 1,
+          "dw": 4,
+          "aw": 3,
+          "tk": 1,
+          "kp": 2,
+          "dr": 1,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138358,
+        "s": 23641,
+        "d": "2024-12-07",
+        "h": 0,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 20,
+          "dw": 1,
+          "aw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138276,
+        "s": 23641,
+        "d": "2024-12-04",
+        "h": 1,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 1,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 74,
+          "sh": 1,
+          "sot": 1,
+          "dw": 6,
+          "aw": 2,
+          "tk": 1,
+          "gc": 2,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138346,
+        "s": 23641,
+        "d": "2024-11-30",
+        "h": 1,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 1,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "sh": 1,
+          "sot": 1,
+          "f": 1,
+          "dw": 4,
+          "aw": 3,
+          "tk": 1,
+          "cl": 2,
+          "gc": 1,
+          "kp": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138328,
+        "s": 23641,
+        "d": "2024-11-09",
+        "h": 0,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 6,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 18,
+          "it": 1,
+          "kp": 1,
+          "dr": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138270,
+        "s": 23641,
+        "d": "2024-09-01",
+        "h": 0,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 0,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 57,
+          "f": 1,
+          "dw": 1,
+          "aw": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138231,
+        "s": 23641,
+        "d": "2024-07-27",
+        "h": 1,
+        "tid": 3531,
+        "tn": "Dukla Praha",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 1,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 23,
+          "f": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
 }

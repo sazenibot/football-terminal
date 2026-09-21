@@ -1,0 +1,239 @@
+{
+  "id": 32404861,
+  "name": "Vojtěch Křišťál",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "in_league": true,
+  "number": 24,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 8,
+    "clubs": [
+      {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "from": "2023-07-23",
+        "to": "2024-02-21",
+        "matches": 8
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 8,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18846000,
+        "s": 21682,
+        "d": "2024-02-21",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 2,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 46,
+          "cl": 1,
+          "gc": 1,
+          "kp": 2,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846022,
+        "s": 21682,
+        "d": "2024-02-17",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 3552,
+        "on": "Hradec Králové",
+        "hs": 0,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "f": 1,
+          "dw": 3,
+          "aw": 1,
+          "it": 1,
+          "dr": 2,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846018,
+        "s": 21682,
+        "d": "2024-02-10",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 2,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "dw": 4,
+          "aw": 2,
+          "tk": 2,
+          "it": 2,
+          "cl": 1,
+          "gc": 2,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845996,
+        "s": 21682,
+        "d": "2023-12-02",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 1,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 4,
+          "f": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845985,
+        "s": 21682,
+        "d": "2023-11-25",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845978,
+        "s": 21682,
+        "d": "2023-11-12",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 1,
+        "as": 3,
+        "ob": 1,
+        "st": {
+          "mn": 25,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845873,
+        "s": 21682,
+        "d": "2023-07-29",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 3,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "f": 1,
+          "dw": 5,
+          "aw": 5,
+          "cl": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845863,
+        "s": 21682,
+        "d": "2023-07-23",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 2,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 29,
+          "cl": 3,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

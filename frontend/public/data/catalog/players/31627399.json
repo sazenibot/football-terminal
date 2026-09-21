@@ -1,0 +1,105 @@
+{
+  "id": 31627399,
+  "name": "David Fadairo",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "in_league": true,
+  "number": 70,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "from": "2023-08-20",
+        "to": "2023-10-28",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 3,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18845960,
+        "s": 21682,
+        "d": "2023-10-28",
+        "h": 1,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 0,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 2,
+          "sh": 1,
+          "y": 1,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845944,
+        "s": 21682,
+        "d": "2023-10-07",
+        "h": 1,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 1,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845893,
+        "s": 21682,
+        "d": "2023-08-20",
+        "h": 0,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 1,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

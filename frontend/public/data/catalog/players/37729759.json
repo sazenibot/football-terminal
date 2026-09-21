@@ -1,0 +1,119 @@
+{
+  "id": 37729759,
+  "name": "Tuguldur Gantogtokh",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3487,
+  "team_name": "České Budějovice",
+  "in_league": true,
+  "number": 21,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 3487,
+        "name": "České Budějovice",
+        "from": "2023-11-11",
+        "to": "2025-05-25",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 2,
+        "games": 276
+      },
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 1,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19416523,
+        "s": 23641,
+        "d": "2025-05-25",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3531,
+        "on": "Dukla Praha",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 35,
+          "sh": 1,
+          "dr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19416519,
+        "s": 23641,
+        "d": "2025-05-17",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 0,
+        "as": 3,
+        "ob": 2,
+        "st": {
+          "mn": 33,
+          "sh": 1,
+          "sot": 1,
+          "f": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845974,
+        "s": 21682,
+        "d": "2023-11-11",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 0,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 8,
+          "dw": 1,
+          "aw": 1,
+          "kp": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

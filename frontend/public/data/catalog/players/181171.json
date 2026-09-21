@@ -1,0 +1,87 @@
+{
+  "id": 181171,
+  "name": "Juraj Kotula",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3487,
+  "team_name": "České Budějovice",
+  "in_league": true,
+  "number": 28,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 3487,
+        "name": "České Budějovice",
+        "from": "2024-08-04",
+        "to": "2025-02-01",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 2,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138373,
+        "s": 23641,
+        "d": "2025-02-01",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3531,
+        "on": "Dukla Praha",
+        "hs": 0,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 7,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138239,
+        "s": 23641,
+        "d": "2024-08-04",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 0,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 46,
+          "f": 1,
+          "y": 1,
+          "dw": 1,
+          "aw": 1,
+          "cl": 1,
+          "gc": 3,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

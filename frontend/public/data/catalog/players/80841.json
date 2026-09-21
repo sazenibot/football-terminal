@@ -15,5 +15,171 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Martin Toml (Obránce) nastupuje za Kladno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:07Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 5,
+    "clubs": [
+      {
+        "id": 4484,
+        "name": "Pardubice",
+        "from": "2022-07-31",
+        "to": "2022-08-27",
+        "matches": 5
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 5,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542671,
+        "s": 19791,
+        "d": "2022-08-27",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 0,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 41,
+          "dw": 1,
+          "aw": 1,
+          "it": 1,
+          "cl": 1,
+          "gc": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542664,
+        "s": 19791,
+        "d": "2022-08-21",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 7,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "f": 1,
+          "dw": 1,
+          "tk": 1,
+          "it": 1,
+          "cl": 8,
+          "gc": 7,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542656,
+        "s": 19791,
+        "d": "2022-08-14",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "tk": 1,
+          "it": 1,
+          "cl": 2,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542645,
+        "s": 19791,
+        "d": "2022-08-06",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "f": 1,
+          "y": 1,
+          "dw": 2,
+          "aw": 1,
+          "it": 2,
+          "cl": 6,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542635,
+        "s": 19791,
+        "d": "2022-07-31",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3487,
+        "on": "České Budějovice",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "sh": 1,
+          "sot": 1,
+          "f": 1,
+          "dw": 1,
+          "aw": 1,
+          "it": 1,
+          "cl": 2,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
 }

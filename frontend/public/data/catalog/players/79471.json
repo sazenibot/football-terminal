@@ -1,0 +1,224 @@
+{
+  "id": 79471,
+  "name": "David Vanecek",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3097,
+  "team_name": "Sigma Olomouc",
+  "in_league": true,
+  "number": 17,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:07Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 8,
+    "clubs": [
+      {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "from": "2023-02-26",
+        "to": "2023-05-07",
+        "matches": 8
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 8,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18826654,
+        "s": 19791,
+        "d": "2023-05-07",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 0,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542870,
+        "s": 19791,
+        "d": "2023-04-30",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 1,
+        "as": 4,
+        "ob": 3,
+        "st": {
+          "mn": 14,
+          "sh": 2,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542860,
+        "s": 19791,
+        "d": "2023-04-26",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 2,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542855,
+        "s": 19791,
+        "d": "2023-04-22",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 1,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 3,
+          "dw": 2,
+          "aw": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542842,
+        "s": 19791,
+        "d": "2023-04-15",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 0,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542841,
+        "s": 19791,
+        "d": "2023-04-09",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 2,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 8,
+          "dw": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542806,
+        "s": 19791,
+        "d": "2023-03-04",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 1,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "f": 2,
+          "y": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542798,
+        "s": 19791,
+        "d": "2023-02-26",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 2,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 7,
+          "dw": 1,
+          "aw": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

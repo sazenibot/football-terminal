@@ -1,0 +1,142 @@
+{
+  "id": 37568273,
+  "name": "Samuel Kopasek",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "in_league": true,
+  "number": 39,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 4,
+    "clubs": [
+      {
+        "id": 4484,
+        "name": "Pardubice",
+        "from": "2026-02-15",
+        "to": "2026-05-02",
+        "matches": 4
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 4,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19703903,
+        "s": 25591,
+        "d": "2026-05-02",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 1,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 62,
+          "tk": 3,
+          "cl": 2,
+          "gc": 1,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439215,
+        "s": 25591,
+        "d": "2026-03-14",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 2,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 44,
+          "sh": 1,
+          "it": 2,
+          "gc": 1,
+          "kp": 1,
+          "cr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439187,
+        "s": 25591,
+        "d": "2026-02-21",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 2,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 44,
+          "it": 1,
+          "gc": 1,
+          "kp": 1,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439174,
+        "s": 25591,
+        "d": "2026-02-15",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 0,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 25,
+          "sh": 1,
+          "dw": 2,
+          "tk": 2,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

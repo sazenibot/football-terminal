@@ -1,0 +1,192 @@
+{
+  "id": 37630018,
+  "name": "Matyas Vachousek",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 1351,
+  "team_name": "Teplice",
+  "in_league": true,
+  "number": 55,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 6,
+    "clubs": [
+      {
+        "id": 1351,
+        "name": "Teplice",
+        "from": "2024-03-10",
+        "to": "2025-05-17",
+        "matches": 6
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 3,
+        "games": 276
+      },
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 3,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19416519,
+        "s": 23641,
+        "d": "2025-05-17",
+        "h": 0,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 3487,
+        "on": "České Budějovice",
+        "hs": 0,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 28,
+          "f": 2,
+          "dw": 2,
+          "aw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138342,
+        "s": 23641,
+        "d": "2024-11-23",
+        "h": 0,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 1,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 15,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138330,
+        "s": 23641,
+        "d": "2024-11-10",
+        "h": 1,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 3487,
+        "on": "České Budějovice",
+        "hs": 5,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 26,
+          "a": 1,
+          "dw": 1,
+          "kp": 1,
+          "dr": 2,
+          "g": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846097,
+        "s": 21682,
+        "d": "2024-04-28",
+        "h": 0,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 3,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 5,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846066,
+        "s": 21682,
+        "d": "2024-03-31",
+        "h": 0,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 4,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 17,
+          "gc": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846052,
+        "s": 21682,
+        "d": "2024-03-10",
+        "h": 0,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 4,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 44,
+          "sh": 1,
+          "f": 2,
+          "dw": 3,
+          "gc": 2,
+          "kp": 1,
+          "dr": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

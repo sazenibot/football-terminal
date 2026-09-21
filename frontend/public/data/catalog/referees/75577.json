@@ -27,7 +27,7 @@
   "hook": "Stanislav Volek píská v soutěži Chance Národní Liga jako hlavní. V této sezóně 5 zápasů, 4 žlutých na zápas.",
   "generated_at": "2026-09-20T21:56:05Z",
   "overlay": {
-    "generated_at": "2026-09-21T09:29:22Z",
+    "generated_at": "2026-09-21T15:45:08Z",
     "season": {
       "matches": 5,
       "fouls_avg": 24.8,
@@ -6666,7 +6666,7 @@
       },
       {
         "key": "var",
-        "label": "VAR momenty",
+        "label": "Použití VAR",
         "group": "discipline"
       },
       {

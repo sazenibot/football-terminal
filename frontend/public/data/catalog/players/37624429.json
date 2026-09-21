@@ -15,5 +15,106 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Adrian Fiala (Záložník) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 234,
+        "name": "Slovácko",
+        "from": "2026-03-15",
+        "to": "2026-05-16",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 3,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19703875,
+        "s": 25591,
+        "d": "2026-05-16",
+        "h": 1,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 0,
+        "as": 3,
+        "ob": 2,
+        "st": {
+          "mn": 46,
+          "sh": 1,
+          "dw": 2,
+          "tk": 2,
+          "it": 1,
+          "gc": 2,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439221,
+        "s": 25591,
+        "d": "2026-04-25",
+        "h": 1,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 3531,
+        "on": "Dukla Praha",
+        "hs": 1,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439211,
+        "s": 25591,
+        "d": "2026-03-15",
+        "h": 0,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 5,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 4,
+          "dw": 1,
+          "tk": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
 }

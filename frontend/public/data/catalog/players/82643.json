@@ -15,5 +15,193 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "hook": "Milan Knobloch (Brankář) nastupuje za Zlín. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:07Z",
+    "current_season_id": 27984,
+    "role": "gk",
+    "career_matches": 6,
+    "clubs": [
+      {
+        "id": 1745,
+        "name": "Zlín",
+        "from": "2026-04-04",
+        "to": "2026-05-12",
+        "matches": 3
+      },
+      {
+        "id": 512,
+        "name": "Karviná",
+        "from": "2024-07-21",
+        "to": "2024-08-11",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 3,
+        "games": 273
+      },
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 3,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19703877,
+        "s": 25591,
+        "d": "2026-05-12",
+        "h": 1,
+        "tid": 1745,
+        "tn": "Zlín",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 2,
+        "as": 4,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "sv": 1,
+          "gc": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439235,
+        "s": 25591,
+        "d": "2026-04-11",
+        "h": 0,
+        "tid": 1745,
+        "tn": "Zlín",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 2,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "aw": 1,
+          "cl": 1,
+          "sv": 5,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439232,
+        "s": 25591,
+        "d": "2026-04-04",
+        "h": 1,
+        "tid": 1745,
+        "tn": "Zlín",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 0,
+        "as": 3,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "aw": 1,
+          "cl": 2,
+          "sv": 6,
+          "gc": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138244,
+        "s": 23641,
+        "d": "2024-08-11",
+        "h": 0,
+        "tid": 512,
+        "tn": "Karviná",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 5,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "sv": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138228,
+        "s": 23641,
+        "d": "2024-07-27",
+        "h": 0,
+        "tid": 512,
+        "tn": "Karviná",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 0,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "sv": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138216,
+        "s": 23641,
+        "d": "2024-07-21",
+        "h": 1,
+        "tid": 512,
+        "tn": "Karviná",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 1,
+        "as": 3,
+        "ob": 2,
+        "st": {
+          "mn": 45,
+          "sv": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {}
+  }
 }

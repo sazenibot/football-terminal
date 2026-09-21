@@ -14,6 +14,111 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Adam Olamilekan Alabi (Obránce) nastupuje za Slovácko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Adam Olamilekan Alabi v této sezóně za Slovácko: 3 starty, 31 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 234,
+        "name": "Slovácko",
+        "from": "2026-08-22",
+        "to": "2026-09-19",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 3,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725044,
+        "s": 27984,
+        "d": "2026-09-19",
+        "h": 1,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 2,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 16,
+          "f": 1,
+          "dw": 2,
+          "tk": 1,
+          "gc": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725051,
+        "s": 27984,
+        "d": "2026-09-12",
+        "h": 0,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 2,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 5,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725076,
+        "s": 27984,
+        "d": "2026-08-22",
+        "h": 0,
+        "tid": 234,
+        "tn": "Slovácko",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 2,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 10,
+          "dw": 2,
+          "tk": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 3,
+      "minutes": 31,
+      "goals_conceded": 2
+    }
+  }
 }

@@ -1,0 +1,83 @@
+{
+  "id": 8417749,
+  "name": "Jonáš Vais",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3487,
+  "team_name": "České Budějovice",
+  "in_league": true,
+  "number": 16,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 3487,
+        "name": "České Budějovice",
+        "from": "2022-07-31",
+        "to": "2022-08-14",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 2,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542657,
+        "s": 19791,
+        "d": "2022-08-14",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 2,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 9,
+          "gc": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542635,
+        "s": 19791,
+        "d": "2022-07-31",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

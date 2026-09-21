@@ -14,6 +14,117 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
-  "hook": "Matus Kmet (Obránce) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "hook": "Matus Kmet v této sezóně za Banik Ostrava B: 3 starty, 63 min.",
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "from": "2026-09-06",
+        "to": "2026-09-19",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 3,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725044,
+        "s": 27984,
+        "d": "2026-09-19",
+        "h": 0,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 2,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 15,
+          "f": 2,
+          "y": 1,
+          "dw": 2,
+          "it": 1,
+          "kp": 1,
+          "dr": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725074,
+        "s": 27984,
+        "d": "2026-09-09",
+        "h": 0,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 3,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 28,
+          "gc": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725059,
+        "s": 27984,
+        "d": "2026-09-06",
+        "h": 0,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 4,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 20,
+          "sh": 1,
+          "gc": 1,
+          "kp": 2,
+          "cr": 5,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 3,
+      "minutes": 63,
+      "yellow": 1,
+      "shots": 1,
+      "goals_conceded": 2
+    }
+  }
 }

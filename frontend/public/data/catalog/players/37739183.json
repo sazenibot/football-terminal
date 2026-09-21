@@ -1,0 +1,60 @@
+{
+  "id": 37739183,
+  "name": "Krystov Karban",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "in_league": true,
+  "number": 34,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 3643,
+        "name": "Jablonec",
+        "from": "2024-03-09",
+        "to": "2024-03-09",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 1,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18846049,
+        "s": 21682,
+        "d": "2024-03-09",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 0,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 1,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

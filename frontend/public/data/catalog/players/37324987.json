@@ -1,0 +1,61 @@
+{
+  "id": 37324987,
+  "name": "Viktor Filip Zentrich",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "in_league": true,
+  "number": 8,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 3552,
+        "name": "Hradec Králové",
+        "from": "2026-05-24",
+        "to": "2026-05-24",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 1,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19703886,
+        "s": 25591,
+        "d": "2026-05-24",
+        "h": 0,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 2,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 14,
+          "dw": 2,
+          "tk": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

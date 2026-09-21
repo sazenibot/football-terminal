@@ -14,6 +14,253 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Matej Zachoval (Obránce) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Matej Zachoval v této sezóně za Mladá Boleslav: 3 starty, 58 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 8,
+    "clubs": [
+      {
+        "id": 187,
+        "name": "Mladá Boleslav",
+        "from": "2025-02-22",
+        "to": "2026-09-19",
+        "matches": 8
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 3,
+        "games": 71
+      },
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 5,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725042,
+        "s": 27984,
+        "d": "2026-09-19",
+        "h": 1,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 3350,
+        "on": "Zbrojovka Brno",
+        "hs": 2,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 2,
+          "dw": 3,
+          "aw": 2,
+          "tk": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725052,
+        "s": 27984,
+        "d": "2026-09-12",
+        "h": 0,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 3,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 20,
+          "cl": 3,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725059,
+        "s": 27984,
+        "d": "2026-09-06",
+        "h": 1,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 4,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 36,
+          "dw": 3,
+          "tk": 2,
+          "cl": 1,
+          "kp": 1,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19416521,
+        "s": 23641,
+        "d": "2025-05-25",
+        "h": 1,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 2,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "sh": 1,
+          "f": 2,
+          "dw": 10,
+          "aw": 3,
+          "tk": 4,
+          "cl": 3,
+          "gc": 2,
+          "dr": 3,
+          "cr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19416518,
+        "s": 23641,
+        "d": "2025-05-17",
+        "h": 0,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 14,
+          "sh": 1,
+          "f": 1,
+          "y": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19416517,
+        "s": 23641,
+        "d": "2025-05-11",
+        "h": 1,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 3531,
+        "on": "Dukla Praha",
+        "hs": 2,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "f": 1,
+          "y": 1,
+          "dw": 2,
+          "aw": 1,
+          "cl": 4,
+          "gc": 3,
+          "dr": 2,
+          "cr": 3,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138401,
+        "s": 23641,
+        "d": "2025-03-02",
+        "h": 1,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 0,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 19,
+          "sh": 1,
+          "sot": 1,
+          "dw": 4,
+          "tk": 2,
+          "gc": 1,
+          "dr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138396,
+        "s": 23641,
+        "d": "2025-02-22",
+        "h": 0,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 0,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 3,
+      "minutes": 58
+    }
+  }
 }

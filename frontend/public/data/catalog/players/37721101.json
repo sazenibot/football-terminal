@@ -14,6 +14,83 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Dominik Sarapata  (Záložník) nastupuje za SK Artis Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Dominik Sarapata  v této sezóně za SK Artis Brno: 2 starty, 35 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 22031,
+        "name": "SK Artis Brno",
+        "from": "2026-09-05",
+        "to": "2026-09-12",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 2,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725048,
+        "s": 27984,
+        "d": "2026-09-12",
+        "h": 0,
+        "tid": 22031,
+        "tn": "SK Artis Brno",
+        "oid": 3350,
+        "on": "Zbrojovka Brno",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 11,
+          "dw": 1,
+          "aw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725058,
+        "s": 27984,
+        "d": "2026-09-05",
+        "h": 1,
+        "tid": 22031,
+        "tn": "SK Artis Brno",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 0,
+        "as": 3,
+        "ob": 1,
+        "st": {
+          "mn": 24,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 2,
+      "minutes": 35
+    }
+  }
 }

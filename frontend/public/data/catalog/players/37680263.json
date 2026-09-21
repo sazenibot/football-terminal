@@ -1,0 +1,192 @@
+{
+  "id": 37680263,
+  "name": "Colin Andrew",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3487,
+  "team_name": "České Budějovice",
+  "in_league": true,
+  "number": 29,
+  "position": "Brankář",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "gk",
+    "career_matches": 6,
+    "clubs": [
+      {
+        "id": 3487,
+        "name": "České Budějovice",
+        "from": "2025-02-01",
+        "to": "2025-03-08",
+        "matches": 6
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 6,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138415,
+        "s": 23641,
+        "d": "2025-03-08",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 2,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "y": 1,
+          "cl": 1,
+          "sv": 2,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138404,
+        "s": 23641,
+        "d": "2025-03-01",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 0,
+        "as": 4,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "dw": 2,
+          "aw": 1,
+          "cl": 1,
+          "sv": 9,
+          "gc": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138398,
+        "s": 23641,
+        "d": "2025-02-22",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 2,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "cl": 4,
+          "sv": 10,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138391,
+        "s": 23641,
+        "d": "2025-02-15",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 2,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "dw": 3,
+          "aw": 2,
+          "sv": 5,
+          "gc": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138383,
+        "s": 23641,
+        "d": "2025-02-09",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 1,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "aw": 1,
+          "cl": 2,
+          "sv": 3,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138373,
+        "s": 23641,
+        "d": "2025-02-01",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3531,
+        "on": "Dukla Praha",
+        "hs": 0,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "cl": 1,
+          "sv": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

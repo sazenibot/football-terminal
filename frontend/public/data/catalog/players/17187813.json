@@ -1,0 +1,62 @@
+{
+  "id": 17187813,
+  "name": "Colet Kapanga",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "in_league": true,
+  "number": 8,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 4484,
+        "name": "Pardubice",
+        "from": "2023-03-19",
+        "to": "2023-03-19",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 1,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542821,
+        "s": 19791,
+        "d": "2023-03-19",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 3,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 7,
+          "f": 1,
+          "dw": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

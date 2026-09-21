@@ -27,7 +27,7 @@
   "hook": "Marek Radina píská v soutěži Chance Národní Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
   "generated_at": "2026-09-20T21:56:05Z",
   "overlay": {
-    "generated_at": "2026-09-21T09:29:13Z",
+    "generated_at": "2026-09-21T15:45:03Z",
     "current_season_id": 27984,
     "career_matches": 82,
     "seasons": [
@@ -9455,7 +9455,7 @@
       },
       {
         "key": "var",
-        "label": "VAR momenty",
+        "label": "Použití VAR",
         "group": "discipline"
       },
       {

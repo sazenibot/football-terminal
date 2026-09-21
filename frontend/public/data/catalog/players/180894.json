@@ -14,6 +14,95 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Denis Vavro (Obránce) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Denis Vavro v této sezóně za Viktoria Plzeň: 2 starty, 150 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 3545,
+        "name": "Viktoria Plzeň",
+        "from": "2026-09-05",
+        "to": "2026-09-09",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 2,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725072,
+        "s": 27984,
+        "d": "2026-09-09",
+        "h": 0,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 3552,
+        "on": "Hradec Králové",
+        "hs": 0,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "sh": 1,
+          "f": 1,
+          "r": 1,
+          "dw": 4,
+          "aw": 4,
+          "it": 1,
+          "cl": 10,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725058,
+        "s": 27984,
+        "d": "2026-09-05",
+        "h": 0,
+        "tid": 3545,
+        "tn": "Viktoria Plzeň",
+        "oid": 22031,
+        "on": "SK Artis Brno",
+        "hs": 0,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 60,
+          "dw": 6,
+          "aw": 3,
+          "tk": 2,
+          "cl": 9,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 2,
+      "lineups": 2,
+      "minutes": 150,
+      "red": 1,
+      "shots": 1
+    }
+  }
 }

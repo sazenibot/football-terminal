@@ -15,5 +15,82 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Dominik Soukenik (Záložník) nastupuje za Vlašim. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 512,
+        "name": "Karviná",
+        "from": "2023-08-27",
+        "to": "2023-09-03",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 2,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18845913,
+        "s": 21682,
+        "d": "2023-09-03",
+        "h": 0,
+        "tid": 512,
+        "tn": "Karviná",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 5,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 64,
+          "it": 1,
+          "cl": 3,
+          "gc": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18845904,
+        "s": 21682,
+        "d": "2023-08-27",
+        "h": 0,
+        "tid": 512,
+        "tn": "Karviná",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 3,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 44,
+          "sh": 1,
+          "cl": 1,
+          "gc": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
 }

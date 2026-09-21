@@ -1,0 +1,269 @@
+{
+  "id": 1482426,
+  "name": "Ivan Krajcirik",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "in_league": true,
+  "number": 1,
+  "position": "Brankář",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "gk",
+    "career_matches": 9,
+    "clubs": [
+      {
+        "id": 463,
+        "name": "Slovan Liberec",
+        "from": "2025-02-08",
+        "to": "2026-05-17",
+        "matches": 9
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 2,
+        "games": 273
+      },
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 7,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19703889,
+        "s": 25591,
+        "d": "2026-05-17",
+        "h": 1,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 0,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "cl": 4,
+          "sv": 3,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703892,
+        "s": 25591,
+        "d": "2026-05-13",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 3552,
+        "on": "Hradec Králové",
+        "hs": 1,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "sv": 4,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19416328,
+        "s": 23641,
+        "d": "2025-05-11",
+        "h": 1,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 1,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "sv": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19416327,
+        "s": 23641,
+        "d": "2025-05-04",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 4,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "cl": 2,
+          "sv": 3,
+          "gc": 4,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138448,
+        "s": 23641,
+        "d": "2025-04-19",
+        "h": 1,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 512,
+        "on": "Karviná",
+        "hs": 2,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "dw": 2,
+          "aw": 1,
+          "gc": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138445,
+        "s": 23641,
+        "d": "2025-04-13",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 3552,
+        "on": "Hradec Králové",
+        "hs": 0,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "cl": 2,
+          "sv": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138392,
+        "s": 23641,
+        "d": "2025-02-23",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 0,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "aw": 1,
+          "cl": 2,
+          "sv": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138384,
+        "s": 23641,
+        "d": "2025-02-16",
+        "h": 1,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 3,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "dw": 1,
+          "aw": 1,
+          "cl": 3,
+          "sv": 4,
+          "gc": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138376,
+        "s": 23641,
+        "d": "2025-02-08",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 3,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 12,
+          "cl": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": 37600322,
+  "name": "Martin Ryzek",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "in_league": true,
+  "number": 4,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 463,
+        "name": "Slovan Liberec",
+        "from": "2026-05-24",
+        "to": "2026-05-24",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 1,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19703885,
+        "s": 25591,
+        "d": "2026-05-24",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 2,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 15,
+          "sh": 1,
+          "sot": 1,
+          "f": 1,
+          "r": 1,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

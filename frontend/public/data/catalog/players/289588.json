@@ -1,0 +1,133 @@
+{
+  "id": 289588,
+  "name": "Nana Akosah-Bempah",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "in_league": true,
+  "number": 25,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 4,
+    "clubs": [
+      {
+        "id": 4484,
+        "name": "Pardubice",
+        "from": "2022-08-21",
+        "to": "2022-09-11",
+        "matches": 4
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 4,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542691,
+        "s": 19791,
+        "d": "2022-09-11",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 3,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 10,
+          "dw": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542686,
+        "s": 19791,
+        "d": "2022-09-04",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542671,
+        "s": 19791,
+        "d": "2022-08-27",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 0,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 11,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542664,
+        "s": 19791,
+        "d": "2022-08-21",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 7,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 65,
+          "dw": 6,
+          "tk": 2,
+          "gc": 7,
+          "kp": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

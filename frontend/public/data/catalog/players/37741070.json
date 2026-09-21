@@ -14,6 +14,281 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Samuel Obinaya (Záložník) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Samuel Obinaya v této sezóně za Bohemians 1905: 2 starty, 18 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 9,
+    "clubs": [
+      {
+        "id": 2488,
+        "name": "Bohemians 1905",
+        "from": "2026-09-12",
+        "to": "2026-09-19",
+        "matches": 2
+      },
+      {
+        "id": 3643,
+        "name": "Jablonec",
+        "from": "2026-02-15",
+        "to": "2026-05-24",
+        "matches": 7
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 2,
+        "games": 71
+      },
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 7,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725045,
+        "s": 27984,
+        "d": "2026-09-19",
+        "h": 0,
+        "tid": 2488,
+        "tn": "Bohemians 1905",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 2,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 9,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725051,
+        "s": 27984,
+        "d": "2026-09-12",
+        "h": 1,
+        "tid": 2488,
+        "tn": "Bohemians 1905",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 2,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 9,
+          "f": 1,
+          "y": 1,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703885,
+        "s": 25591,
+        "d": "2026-05-24",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 2,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 36,
+          "dw": 1,
+          "tk": 1,
+          "cl": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703888,
+        "s": 25591,
+        "d": "2026-05-17",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 5,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "sh": 1,
+          "f": 2,
+          "y": 1,
+          "dw": 2,
+          "aw": 1,
+          "it": 2,
+          "cl": 3,
+          "gc": 5,
+          "kp": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703891,
+        "s": 25591,
+        "d": "2026-05-13",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 5,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "dw": 6,
+          "tk": 6,
+          "cl": 6,
+          "gc": 5,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703894,
+        "s": 25591,
+        "d": "2026-05-10",
+        "h": 1,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 3552,
+        "on": "Hradec Králové",
+        "hs": 1,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 83,
+          "f": 2,
+          "dw": 2,
+          "aw": 1,
+          "tk": 1,
+          "it": 1,
+          "cl": 3,
+          "gc": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703897,
+        "s": 25591,
+        "d": "2026-05-03",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 2,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 37,
+          "it": 1,
+          "cl": 2,
+          "gc": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439242,
+        "s": 25591,
+        "d": "2026-04-18",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 3,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 17,
+          "f": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439174,
+        "s": 25591,
+        "d": "2026-02-15",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 2,
+      "minutes": 18,
+      "yellow": 1
+    }
+  }
 }

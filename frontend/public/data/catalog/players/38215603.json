@@ -14,6 +14,213 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Idris Hopi (Útočník) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Idris Hopi v této sezóně za Teplice: 5 startů, 225 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 6,
+    "clubs": [
+      {
+        "id": 1351,
+        "name": "Teplice",
+        "from": "2026-05-23",
+        "to": "2026-09-13",
+        "matches": 6
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 5,
+        "games": 71
+      },
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 1,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725046,
+        "s": 27984,
+        "d": "2026-09-13",
+        "h": 1,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 0,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 46,
+          "sh": 1,
+          "dw": 1,
+          "aw": 1,
+          "it": 1,
+          "gc": 1,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725055,
+        "s": 27984,
+        "d": "2026-09-06",
+        "h": 0,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 1,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 61,
+          "f": 2,
+          "dw": 3,
+          "aw": 1,
+          "tk": 2,
+          "it": 1,
+          "dr": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725062,
+        "s": 27984,
+        "d": "2026-08-30",
+        "h": 1,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 2,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 59,
+          "sh": 2,
+          "dw": 3,
+          "tk": 1,
+          "it": 1,
+          "dr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725070,
+        "s": 27984,
+        "d": "2026-08-23",
+        "h": 1,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 3350,
+        "on": "Zbrojovka Brno",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 31,
+          "sh": 1,
+          "f": 2,
+          "dw": 2,
+          "gc": 1,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725103,
+        "s": 27984,
+        "d": "2026-07-25",
+        "h": 1,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 3,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 28,
+          "sh": 2,
+          "f": 1,
+          "y": 1,
+          "dw": 1,
+          "aw": 1,
+          "gc": 1,
+          "kp": 1,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19703872,
+        "s": 25591,
+        "d": "2026-05-23",
+        "h": 0,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 0,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 44,
+          "g": 1,
+          "sh": 2,
+          "sot": 1,
+          "dw": 1,
+          "cl": 1,
+          "dr": 1,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 5,
+      "lineups": 3,
+      "minutes": 225,
+      "yellow": 1,
+      "shots": 6,
+      "goals_conceded": 3
+    }
+  }
 }

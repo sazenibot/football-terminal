@@ -513,6 +513,71 @@ export interface CatalogTeamDetail {
   overlay?: CatalogTeamOverlay | null;
 }
 
+export type CatalogPlayerRole = "att" | "mid" | "def" | "gk";
+
+export interface CatalogPlayerMatch {
+  fid: number;
+  s?: number | null;
+  d: string;
+  h: 0 | 1;
+  tid: number;
+  tn?: string | null;
+  oid: number;
+  on?: string | null;
+  hs: number;
+  as: number;
+  ob?: 1 | 2 | 3 | null;
+  st: Record<string, number>;
+  mp?: boolean;
+}
+
+export interface CatalogPlayerClub {
+  id: number;
+  name: string;
+  from?: string | null;
+  to?: string | null;
+  matches: number;
+}
+
+export interface CatalogPlayerSeasonRow {
+  id: number;
+  name?: string | null;
+  starting_at?: string | null;
+  matches: number;
+  games?: number | null;
+}
+
+export interface CatalogPlayerOverlay {
+  generated_at?: string;
+  current_season_id?: number | null;
+  role?: CatalogPlayerRole;
+  career_matches?: number;
+  clubs?: CatalogPlayerClub[];
+  seasons?: CatalogPlayerSeasonRow[];
+  matches?: CatalogPlayerMatch[];
+  season?: CatalogPlayerSeason;
+}
+
+export interface CatalogPlayerIndexRow {
+  id: number;
+  name: string;
+  image?: string | null;
+  role: CatalogPlayerRole;
+  team_id?: number | null;
+  team_name?: string | null;
+  number?: number | null;
+  matches: CatalogPlayerMatch[];
+}
+
+export interface CatalogPlayerIndex {
+  generated_at: string;
+  league_id: number;
+  league_name?: string;
+  current_season_id?: number | null;
+  seasons: CatalogPlayerSeasonRow[];
+  players: CatalogPlayerIndexRow[];
+}
+
 export interface CatalogPlayerDetail {
   id: number;
   name: string;
@@ -528,10 +593,7 @@ export interface CatalogPlayerDetail {
   number?: number | null;
   position?: string | null;
   hook: string;
-  overlay?: {
-    generated_at?: string;
-    season?: CatalogPlayerSeason;
-  } | null;
+  overlay?: CatalogPlayerOverlay | null;
 }
 
 export interface CatalogRefereeRecent {

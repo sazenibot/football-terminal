@@ -1,0 +1,118 @@
+{
+  "id": 37739106,
+  "name": "Radim Šudák",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "in_league": true,
+  "number": 14,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "from": "2024-02-24",
+        "to": "2024-11-09",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 1,
+        "games": 276
+      },
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 2,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138328,
+        "s": 23641,
+        "d": "2024-11-09",
+        "h": 1,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 3531,
+        "on": "Dukla Praha",
+        "hs": 6,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 26,
+          "f": 1,
+          "dw": 3,
+          "tk": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19119223,
+        "s": 21682,
+        "d": "2024-05-04",
+        "h": 0,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 5,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 12,
+          "sh": 1,
+          "sot": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846032,
+        "s": 21682,
+        "d": "2024-02-24",
+        "h": 1,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 1,
+        "as": 1,
+        "ob": 1,
+        "st": {
+          "mn": 3,
+          "cr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

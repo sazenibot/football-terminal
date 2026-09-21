@@ -1,0 +1,83 @@
+{
+  "id": 37696568,
+  "name": "Dominik Holaň",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3269,
+  "team_name": "Baník Ostrava",
+  "in_league": true,
+  "number": 28,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "from": "2023-05-24",
+        "to": "2023-05-28",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 2,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18826712,
+        "s": 19791,
+        "d": "2023-05-28",
+        "h": 1,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 2,
+        "as": 4,
+        "ob": 3,
+        "st": {
+          "mn": 90,
+          "y": 1,
+          "gc": 4,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18826709,
+        "s": 19791,
+        "d": "2023-05-24",
+        "h": 0,
+        "tid": 3269,
+        "tn": "Baník Ostrava",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 13,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

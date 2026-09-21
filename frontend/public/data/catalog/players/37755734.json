@@ -1,0 +1,84 @@
+{
+  "id": 37755734,
+  "name": "Matej Kvacek",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "in_league": true,
+  "number": 37,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 4484,
+        "name": "Pardubice",
+        "from": "2025-08-03",
+        "to": "2025-08-10",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 25591,
+        "name": "2025/2026",
+        "starting_at": "2025-07-18",
+        "matches": 2,
+        "games": 273
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19439037,
+        "s": 25591,
+        "d": "2025-08-10",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3552,
+        "on": "Hradec Králové",
+        "hs": 1,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19439033,
+        "s": 25591,
+        "d": "2025-08-03",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 1,
+        "as": 3,
+        "ob": 1,
+        "st": {
+          "mn": 4,
+          "dw": 1,
+          "tk": 1,
+          "it": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

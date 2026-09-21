@@ -1,0 +1,64 @@
+{
+  "id": 27067052,
+  "name": "Nicolas Keckeisen",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3487,
+  "team_name": "České Budějovice",
+  "in_league": true,
+  "number": 4,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 3487,
+        "name": "České Budějovice",
+        "from": "2024-08-04",
+        "to": "2024-08-04",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 1,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138239,
+        "s": 23641,
+        "d": "2024-08-04",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 0,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 37,
+          "dw": 2,
+          "aw": 2,
+          "it": 1,
+          "cl": 4,
+          "gc": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

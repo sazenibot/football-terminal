@@ -1,0 +1,200 @@
+{
+  "id": 37316355,
+  "name": "Denis Alijagic",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 4484,
+  "team_name": "Pardubice",
+  "in_league": true,
+  "number": 39,
+  "position": "Útočník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 6,
+    "clubs": [
+      {
+        "id": 4484,
+        "name": "Pardubice",
+        "from": "2025-02-15",
+        "to": "2025-05-25",
+        "matches": 6
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 6,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19416522,
+        "s": 23641,
+        "d": "2025-05-25",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 3,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 90,
+          "sh": 4,
+          "sot": 1,
+          "f": 1,
+          "dw": 3,
+          "cl": 1,
+          "gc": 3,
+          "dr": 3,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138417,
+        "s": 23641,
+        "d": "2025-03-15",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3531,
+        "on": "Dukla Praha",
+        "hs": 0,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 55,
+          "sh": 1,
+          "f": 1,
+          "dw": 1,
+          "dr": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138413,
+        "s": 23641,
+        "d": "2025-03-09",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 0,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 70,
+          "sh": 1,
+          "dw": 2,
+          "aw": 1,
+          "tk": 1,
+          "cl": 1,
+          "kp": 1,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138400,
+        "s": 23641,
+        "d": "2025-03-01",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 2,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 44,
+          "sh": 1,
+          "f": 1,
+          "y": 1,
+          "gc": 1,
+          "kp": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138396,
+        "s": 23641,
+        "d": "2025-02-22",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 0,
+        "as": 3,
+        "ob": 1,
+        "st": {
+          "mn": 61,
+          "sh": 1,
+          "dw": 3,
+          "tk": 1,
+          "gc": 3,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138385,
+        "s": 23641,
+        "d": "2025-02-15",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 4,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 5,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

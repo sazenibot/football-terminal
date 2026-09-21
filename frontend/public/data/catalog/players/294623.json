@@ -1,0 +1,65 @@
+{
+  "id": 294623,
+  "name": "Ishaku Konda",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3643,
+  "team_name": "Jablonec",
+  "in_league": true,
+  "number": 20,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 3643,
+        "name": "Jablonec",
+        "from": "2022-11-05",
+        "to": "2022-11-05",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 1,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542748,
+        "s": 19791,
+        "d": "2022-11-05",
+        "h": 0,
+        "tid": 3643,
+        "tn": "Jablonec",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 3,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 28,
+          "f": 2,
+          "y": 1,
+          "dw": 1,
+          "tk": 1,
+          "it": 1,
+          "cl": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

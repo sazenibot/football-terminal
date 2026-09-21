@@ -1,0 +1,169 @@
+{
+  "id": 37710221,
+  "name": "Robin Polanský",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3487,
+  "team_name": "České Budějovice",
+  "in_league": true,
+  "number": 20,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 5,
+    "clubs": [
+      {
+        "id": 3487,
+        "name": "České Budějovice",
+        "from": "2024-02-10",
+        "to": "2025-03-08",
+        "matches": 5
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 3,
+        "games": 276
+      },
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 2,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138415,
+        "s": 23641,
+        "d": "2025-03-08",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 2,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 12,
+          "sh": 1,
+          "f": 1,
+          "dw": 1,
+          "kp": 1,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138391,
+        "s": 23641,
+        "d": "2025-02-15",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 2,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 44,
+          "f": 1,
+          "dw": 3,
+          "aw": 1,
+          "tk": 2,
+          "cl": 2,
+          "gc": 2,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138383,
+        "s": 23641,
+        "d": "2025-02-09",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 1,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 5,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846026,
+        "s": 21682,
+        "d": "2024-02-17",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 5,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 16,
+          "f": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846015,
+        "s": 21682,
+        "d": "2024-02-10",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 3,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 7,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

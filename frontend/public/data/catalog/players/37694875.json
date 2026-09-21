@@ -14,6 +14,96 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Stephane Aris Noumbissie (Obránce) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Stephane Aris Noumbissie v této sezóně za Sigma Olomouc: 2 starty, 67 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "from": "2026-08-02",
+        "to": "2026-08-23",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 2,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725077,
+        "s": 27984,
+        "d": "2026-08-23",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 3,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 14,
+          "dw": 3,
+          "aw": 1,
+          "cl": 1,
+          "gc": 1,
+          "dr": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725094,
+        "s": 27984,
+        "d": "2026-08-02",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 2,
+        "as": 2,
+        "ob": 2,
+        "st": {
+          "mn": 53,
+          "f": 1,
+          "dw": 3,
+          "tk": 2,
+          "it": 1,
+          "cl": 1,
+          "gc": 1,
+          "kp": 2,
+          "dr": 4,
+          "cr": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 2,
+      "lineups": 1,
+      "minutes": 67,
+      "goals_conceded": 2
+    }
+  }
 }

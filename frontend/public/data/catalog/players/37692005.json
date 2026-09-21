@@ -1,0 +1,81 @@
+{
+  "id": 37692005,
+  "name": "Vojtěch Baloun",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3552,
+  "team_name": "Hradec Králové",
+  "in_league": true,
+  "number": 32,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 3552,
+        "name": "Hradec Králové",
+        "from": "2023-05-13",
+        "to": "2023-05-26",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 2,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18833355,
+        "s": 19791,
+        "d": "2023-05-26",
+        "h": 0,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 2,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18826689,
+        "s": 19791,
+        "d": "2023-05-13",
+        "h": 1,
+        "tid": 3552,
+        "tn": "Hradec Králové",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 2,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

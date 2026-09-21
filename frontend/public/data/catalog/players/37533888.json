@@ -14,6 +14,114 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Hilmir Rafn Mikaelsson (Útočník) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Hilmir Rafn Mikaelsson v této sezóně za Sigma Olomouc: 3 starty, 56 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "att",
+    "career_matches": 3,
+    "clubs": [
+      {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "from": "2026-08-29",
+        "to": "2026-09-20",
+        "matches": 3
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 3,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725043,
+        "s": 27984,
+        "d": "2026-09-20",
+        "h": 1,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 0,
+        "as": 3,
+        "ob": 1,
+        "st": {
+          "mn": 18,
+          "dw": 1,
+          "aw": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": true
+      },
+      {
+        "fid": 19725053,
+        "s": 27984,
+        "d": "2026-09-13",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 2,
+        "as": 3,
+        "ob": 1,
+        "st": {
+          "mn": 26,
+          "sh": 1,
+          "f": 2,
+          "dw": 4,
+          "aw": 3,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19725067,
+        "s": 27984,
+        "d": "2026-08-29",
+        "h": 0,
+        "tid": 3097,
+        "tn": "Sigma Olomouc",
+        "oid": 3269,
+        "on": "Baník Ostrava",
+        "hs": 1,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 12,
+          "f": 1,
+          "y": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 3,
+      "minutes": 56,
+      "yellow": 1,
+      "shots": 1,
+      "goals_conceded": 2
+    }
+  }
 }

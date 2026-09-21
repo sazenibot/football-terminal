@@ -1,0 +1,84 @@
+{
+  "id": 36481646,
+  "name": "A. Goljan",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 2727,
+  "team_name": "Sparta Praha",
+  "in_league": true,
+  "number": 48,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 2,
+    "clubs": [
+      {
+        "id": 2727,
+        "name": "Sparta Praha",
+        "from": "2023-02-19",
+        "to": "2023-04-30",
+        "matches": 2
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 2,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542868,
+        "s": 19791,
+        "d": "2023-04-30",
+        "h": 0,
+        "tid": 2727,
+        "tn": "Sparta Praha",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 1,
+        "as": 3,
+        "ob": 3,
+        "st": {
+          "mn": 7,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542787,
+        "s": 19791,
+        "d": "2023-02-19",
+        "h": 1,
+        "tid": 2727,
+        "tn": "Sparta Praha",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 3,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 13,
+          "dw": 1,
+          "tk": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ]
+  }
+}

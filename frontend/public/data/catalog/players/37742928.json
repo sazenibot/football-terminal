@@ -14,6 +14,63 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Artem Garzha (Záložník) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z"
+  "hook": "Artem Garzha v této sezóně za Teplice: 1 start, 28 min.",
+  "generated_at": "2026-09-21T09:47:21Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 1351,
+        "name": "Teplice",
+        "from": "2026-08-01",
+        "to": "2026-08-01",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 27984,
+        "name": "2026/2027",
+        "starting_at": "2026-07-25",
+        "matches": 1,
+        "games": 71
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19725100,
+        "s": 27984,
+        "d": "2026-08-01",
+        "h": 0,
+        "tid": 1351,
+        "tn": "Teplice",
+        "oid": 463,
+        "on": "Slovan Liberec",
+        "hs": 0,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 28,
+          "f": 2,
+          "y": 1,
+          "dw": 3,
+          "tk": 2,
+          "dr": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      }
+    ],
+    "season": {
+      "appearances": 1,
+      "minutes": 28,
+      "yellow": 1
+    }
+  }
 }

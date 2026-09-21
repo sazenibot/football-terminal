@@ -1,0 +1,64 @@
+{
+  "id": 37604680,
+  "name": "Timothy Ouma",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 216,
+  "team_name": "Slavia Praha",
+  "in_league": true,
+  "number": 6,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 1,
+    "clubs": [
+      {
+        "id": 216,
+        "name": "Slavia Praha",
+        "from": "2025-05-18",
+        "to": "2025-05-18",
+        "matches": 1
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 1,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19416506,
+        "s": 23641,
+        "d": "2025-05-18",
+        "h": 0,
+        "tid": 216,
+        "tn": "Slavia Praha",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 3,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 69,
+          "f": 1,
+          "dw": 2,
+          "tk": 1,
+          "cl": 1,
+          "kp": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

@@ -15,5 +15,221 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Lukas Fila (Záložník) nastupuje za Příbram. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-21T09:47:42Z",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 7,
+    "clubs": [
+      {
+        "id": 4484,
+        "name": "Pardubice",
+        "from": "2025-02-08",
+        "to": "2025-05-25",
+        "matches": 3
+      },
+      {
+        "id": 187,
+        "name": "Mladá Boleslav",
+        "from": "2024-03-31",
+        "to": "2024-05-26",
+        "matches": 4
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 3,
+        "games": 276
+      },
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 4,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19416522,
+        "s": 23641,
+        "d": "2025-05-25",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 3,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 62,
+          "sh": 1,
+          "dw": 1,
+          "tk": 1,
+          "cl": 1,
+          "gc": 3,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138400,
+        "s": 23641,
+        "d": "2025-03-01",
+        "h": 0,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 2,
+        "as": 0,
+        "ob": 2,
+        "st": {
+          "mn": 31,
+          "dw": 3,
+          "aw": 2,
+          "cl": 1,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138378,
+        "s": 23641,
+        "d": "2025-02-08",
+        "h": 1,
+        "tid": 4484,
+        "tn": "Pardubice",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 0,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 70,
+          "dw": 3,
+          "aw": 1,
+          "tk": 2,
+          "it": 1,
+          "cl": 2,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19119236,
+        "s": 21682,
+        "d": "2024-05-26",
+        "h": 0,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 4,
+        "as": 0,
+        "ob": 1,
+        "st": {
+          "mn": 29,
+          "dw": 1,
+          "tk": 1,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846094,
+        "s": 21682,
+        "d": "2024-04-28",
+        "h": 0,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 1,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 76,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846081,
+        "s": 21682,
+        "d": "2024-04-13",
+        "h": 1,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 1351,
+        "on": "Teplice",
+        "hs": 1,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 14,
+          "cl": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846061,
+        "s": 21682,
+        "d": "2024-03-31",
+        "h": 1,
+        "tid": 187,
+        "tn": "Mladá Boleslav",
+        "oid": 1745,
+        "on": "Zlín",
+        "hs": 3,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 5,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
 }

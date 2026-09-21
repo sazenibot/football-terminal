@@ -1,0 +1,200 @@
+{
+  "id": 37629882,
+  "name": "Tomáš Hák",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 3487,
+  "team_name": "České Budějovice",
+  "in_league": true,
+  "number": 6,
+  "position": "Obránce",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "def",
+    "career_matches": 6,
+    "clubs": [
+      {
+        "id": 3487,
+        "name": "České Budějovice",
+        "from": "2024-02-25",
+        "to": "2024-12-15",
+        "matches": 6
+      }
+    ],
+    "seasons": [
+      {
+        "id": 23641,
+        "name": "2024/2025",
+        "starting_at": "2024-07-19",
+        "matches": 5,
+        "games": 276
+      },
+      {
+        "id": 21682,
+        "name": "2023/2024",
+        "starting_at": "2023-07-22",
+        "matches": 1,
+        "games": 277
+      }
+    ],
+    "matches": [
+      {
+        "fid": 19138367,
+        "s": 23641,
+        "d": "2024-12-15",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3545,
+        "on": "Viktoria Plzeň",
+        "hs": 7,
+        "as": 2,
+        "ob": 1,
+        "st": {
+          "mn": 24,
+          "f": 1,
+          "y": 1,
+          "dw": 1,
+          "aw": 1,
+          "tk": 1,
+          "it": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138354,
+        "s": 23641,
+        "d": "2024-12-08",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 187,
+        "on": "Mladá Boleslav",
+        "hs": 0,
+        "as": 4,
+        "ob": 1,
+        "st": {
+          "mn": 23,
+          "f": 1,
+          "dw": 1,
+          "aw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138279,
+        "s": 23641,
+        "d": "2024-12-04",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3643,
+        "on": "Jablonec",
+        "hs": 5,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 45,
+          "sh": 1,
+          "sot": 1,
+          "f": 1,
+          "cl": 2,
+          "gc": 4,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138351,
+        "s": 23641,
+        "d": "2024-12-01",
+        "h": 0,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 0,
+        "as": 0,
+        "ob": 3,
+        "st": {
+          "mn": 87,
+          "f": 2,
+          "y": 1,
+          "dw": 2,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 19138338,
+        "s": 23641,
+        "d": "2024-11-24",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 216,
+        "on": "Slavia Praha",
+        "hs": 0,
+        "as": 4,
+        "ob": 1,
+        "st": {
+          "mn": 90,
+          "sh": 1,
+          "f": 1,
+          "y": 1,
+          "dw": 4,
+          "tk": 4,
+          "gc": 4,
+          "dr": 2,
+          "cr": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18846031,
+        "s": 21682,
+        "d": "2024-02-25",
+        "h": 1,
+        "tid": 3487,
+        "tn": "České Budějovice",
+        "oid": 3097,
+        "on": "Sigma Olomouc",
+        "hs": 2,
+        "as": 1,
+        "ob": 2,
+        "st": {
+          "mn": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

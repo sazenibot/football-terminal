@@ -1,0 +1,164 @@
+{
+  "id": 433673,
+  "name": "Kamso Mara",
+  "league_id": 262,
+  "league_name": "Chance Liga",
+  "team_id": 463,
+  "team_name": "Slovan Liberec",
+  "in_league": true,
+  "number": 29,
+  "position": "Záložník",
+  "overlay": {
+    "generated_at": "2026-09-21T15:45:08Z",
+    "current_season_id": 27984,
+    "role": "mid",
+    "career_matches": 5,
+    "clubs": [
+      {
+        "id": 463,
+        "name": "Slovan Liberec",
+        "from": "2022-07-31",
+        "to": "2022-09-11",
+        "matches": 5
+      }
+    ],
+    "seasons": [
+      {
+        "id": 19791,
+        "name": "2022/2023",
+        "starting_at": "2022-07-30",
+        "matches": 5,
+        "games": 276
+      }
+    ],
+    "matches": [
+      {
+        "fid": 18542697,
+        "s": 19791,
+        "d": "2022-09-11",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 2488,
+        "on": "Bohemians 1905",
+        "hs": 0,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 5,
+          "dw": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 1
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542673,
+        "s": 19791,
+        "d": "2022-08-28",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 234,
+        "on": "Slovácko",
+        "hs": 1,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 31,
+          "f": 1,
+          "dw": 1,
+          "it": 1,
+          "cl": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542660,
+        "s": 19791,
+        "d": "2022-08-21",
+        "h": 1,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 3487,
+        "on": "České Budějovice",
+        "hs": 1,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 15,
+          "sh": 1,
+          "f": 1,
+          "y": 1,
+          "dw": 1,
+          "gc": 1,
+          "g": 0,
+          "a": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542656,
+        "s": 19791,
+        "d": "2022-08-14",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 4484,
+        "on": "Pardubice",
+        "hs": 2,
+        "as": 1,
+        "ob": 3,
+        "st": {
+          "mn": 61,
+          "f": 1,
+          "dw": 4,
+          "tk": 2,
+          "it": 2,
+          "gc": 2,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      },
+      {
+        "fid": 18542637,
+        "s": 19791,
+        "d": "2022-07-31",
+        "h": 0,
+        "tid": 463,
+        "tn": "Slovan Liberec",
+        "oid": 2727,
+        "on": "Sparta Praha",
+        "hs": 1,
+        "as": 2,
+        "ob": 3,
+        "st": {
+          "mn": 13,
+          "it": 1,
+          "cl": 1,
+          "g": 0,
+          "a": 0,
+          "y": 0,
+          "r": 0,
+          "cs": 0
+        },
+        "mp": false
+      }
+    ]
+  }
+}

@@ -10,7 +10,7 @@
   "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
   "date_of_birth": null,
   "overlay": {
-    "generated_at": "2026-09-21T09:29:21Z",
+    "generated_at": "2026-09-21T15:45:03Z",
     "current_season_id": 27984,
     "career_matches": 3,
     "seasons": [
@@ -439,7 +439,7 @@
       },
       {
         "key": "var",
-        "label": "VAR momenty",
+        "label": "Použití VAR",
         "group": "discipline"
       },
       {
