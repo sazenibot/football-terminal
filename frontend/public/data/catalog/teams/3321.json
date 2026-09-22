@@ -366,7 +366,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "1994-09-22",
-      "age": 31,
+      "age": 32,
       "team_id": 3321,
       "team_name": "Bayer 04 Leverkusen",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png",
@@ -551,5 +551,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:25Z"
+  "generated_at": "2026-09-22T09:12:38Z"
 }

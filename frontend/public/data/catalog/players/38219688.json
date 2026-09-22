@@ -14,60 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Moustapha Toure v této sezóně za Zlín: 1 start, 1 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
-  "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
-    "current_season_id": 27984,
-    "role": "att",
-    "career_matches": 1,
-    "clubs": [
-      {
-        "id": 1745,
-        "name": "Zlín",
-        "from": "2026-07-25",
-        "to": "2026-07-25",
-        "matches": 1
-      }
-    ],
-    "seasons": [
-      {
-        "id": 27984,
-        "name": "2026/2027",
-        "starting_at": "2026-07-25",
-        "matches": 1,
-        "games": 71
-      }
-    ],
-    "matches": [
-      {
-        "fid": 19725104,
-        "s": 27984,
-        "d": "2026-07-25",
-        "h": 1,
-        "tid": 1745,
-        "tn": "Zlín",
-        "oid": 3269,
-        "on": "Baník Ostrava",
-        "hs": 0,
-        "as": 1,
-        "ob": 3,
-        "st": {
-          "mn": 1,
-          "dw": 1,
-          "aw": 1,
-          "g": 0,
-          "a": 0,
-          "y": 0,
-          "r": 0,
-          "cs": 0
-        },
-        "mp": false
-      }
-    ],
-    "season": {
-      "appearances": 1,
-      "minutes": 1
-    }
-  }
+  "hook": "Moustapha Toure (Útočník) nastupuje za Zlín. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-22T09:11:34Z"
 }

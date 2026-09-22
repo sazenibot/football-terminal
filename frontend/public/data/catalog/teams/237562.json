@@ -430,7 +430,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "1999-09-22",
-      "age": 26,
+      "age": 27,
       "team_id": 237562,
       "team_name": "Arsenal Česká Lípa",
       "team_image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
@@ -598,5 +598,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-22T09:11:55Z"
 }

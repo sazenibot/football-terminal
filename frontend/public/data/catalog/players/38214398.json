@@ -14,59 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jiri Zima v této sezóně za Pardubice: 1 start, 14 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
-  "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
-    "current_season_id": 27984,
-    "role": "mid",
-    "career_matches": 1,
-    "clubs": [
-      {
-        "id": 4484,
-        "name": "Pardubice",
-        "from": "2026-08-23",
-        "to": "2026-08-23",
-        "matches": 1
-      }
-    ],
-    "seasons": [
-      {
-        "id": 27984,
-        "name": "2026/2027",
-        "starting_at": "2026-07-25",
-        "matches": 1,
-        "games": 71
-      }
-    ],
-    "matches": [
-      {
-        "fid": 19725077,
-        "s": 27984,
-        "d": "2026-08-23",
-        "h": 0,
-        "tid": 4484,
-        "tn": "Pardubice",
-        "oid": 3097,
-        "on": "Sigma Olomouc",
-        "hs": 3,
-        "as": 1,
-        "ob": 2,
-        "st": {
-          "mn": 14,
-          "f": 1,
-          "g": 0,
-          "a": 0,
-          "y": 0,
-          "r": 0,
-          "cs": 0
-        },
-        "mp": false
-      }
-    ],
-    "season": {
-      "appearances": 1,
-      "minutes": 14
-    }
-  }
+  "hook": "Jiri Zima (Záložník) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-22T09:11:34Z"
 }

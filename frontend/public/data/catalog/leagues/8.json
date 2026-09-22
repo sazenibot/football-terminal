@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T09:47:59Z",
+  "generated_at": "2026-09-22T09:12:12Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -5418,14 +5418,6 @@
       "league_matches": 5
     },
     {
-      "id": 15294,
-      "name": "Paul Tierney",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 5
-    },
-    {
       "id": 14814,
       "name": "Peter Bankes",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5461,6 +5453,14 @@
       "id": 15273,
       "name": "Michael Oliver",
       "image": "https://cdn.sportmonks.com/images//soccer/referees/9/15273.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
+      "id": 15294,
+      "name": "Paul Tierney",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
       "league_matches": 4

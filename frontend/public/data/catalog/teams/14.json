@@ -94,7 +94,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2006-09-22",
-      "age": 19,
+      "age": 20,
       "team_id": 14,
       "team_name": "Manchester United",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png",
@@ -534,5 +534,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:59Z"
+  "generated_at": "2026-09-22T09:12:12Z"
 }

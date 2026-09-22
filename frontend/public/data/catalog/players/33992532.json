@@ -15,56 +15,5 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Jan Stovicek (Brankář) nastupuje za Arsenal Česká Lípa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z",
-  "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
-    "current_season_id": 27984,
-    "role": "gk",
-    "career_matches": 1,
-    "clubs": [
-      {
-        "id": 3531,
-        "name": "Dukla Praha",
-        "from": "2025-05-25",
-        "to": "2025-05-25",
-        "matches": 1
-      }
-    ],
-    "seasons": [
-      {
-        "id": 23641,
-        "name": "2024/2025",
-        "starting_at": "2024-07-19",
-        "matches": 1,
-        "games": 276
-      }
-    ],
-    "matches": [
-      {
-        "fid": 19416523,
-        "s": 23641,
-        "d": "2025-05-25",
-        "h": 1,
-        "tid": 3531,
-        "tn": "Dukla Praha",
-        "oid": 3487,
-        "on": "České Budějovice",
-        "hs": 2,
-        "as": 1,
-        "ob": 3,
-        "st": {
-          "mn": 90,
-          "cl": 2,
-          "sv": 2,
-          "gc": 1,
-          "g": 0,
-          "a": 0,
-          "y": 0,
-          "r": 0,
-          "cs": 0
-        },
-        "mp": false
-      }
-    ]
-  }
+  "generated_at": "2026-09-22T09:11:55Z"
 }

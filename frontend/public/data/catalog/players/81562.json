@@ -8,12 +8,12 @@
   "position_id": 26,
   "captain": false,
   "date_of_birth": "1999-09-22",
-  "age": 26,
+  "age": 27,
   "team_id": 237562,
   "team_name": "Arsenal Česká Lípa",
   "team_image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Vaclav Dudl (Záložník) nastupuje za Arsenal Česká Lípa. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-22T09:11:55Z"
 }

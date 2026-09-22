@@ -14,62 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Abdourahman Badamosi v této sezóně za Teplice: 1 start, 17 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
-  "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
-    "current_season_id": 27984,
-    "role": "att",
-    "career_matches": 1,
-    "clubs": [
-      {
-        "id": 1351,
-        "name": "Teplice",
-        "from": "2026-09-13",
-        "to": "2026-09-13",
-        "matches": 1
-      }
-    ],
-    "seasons": [
-      {
-        "id": 27984,
-        "name": "2026/2027",
-        "starting_at": "2026-07-25",
-        "matches": 1,
-        "games": 71
-      }
-    ],
-    "matches": [
-      {
-        "fid": 19725046,
-        "s": 27984,
-        "d": "2026-09-13",
-        "h": 1,
-        "tid": 1351,
-        "tn": "Teplice",
-        "oid": 216,
-        "on": "Slavia Praha",
-        "hs": 0,
-        "as": 2,
-        "ob": 1,
-        "st": {
-          "mn": 17,
-          "sh": 1,
-          "gc": 1,
-          "g": 0,
-          "a": 0,
-          "y": 0,
-          "r": 0,
-          "cs": 0
-        },
-        "mp": false
-      }
-    ],
-    "season": {
-      "appearances": 1,
-      "minutes": 17,
-      "shots": 1,
-      "goals_conceded": 1
-    }
-  }
+  "hook": "Abdourahman Badamosi (Útočník) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-22T09:11:34Z"
 }

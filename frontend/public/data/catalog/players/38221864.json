@@ -8,12 +8,12 @@
   "position_id": 25,
   "captain": false,
   "date_of_birth": "2006-09-22",
-  "age": 19,
+  "age": 20,
   "team_id": 6957,
   "team_name": "Hanácká",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Oliver Stecha (Obránce) nastupuje za Hanácká. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-09-22T09:11:55Z"
 }

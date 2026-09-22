@@ -43,7 +43,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "1988-09-22",
-      "age": 37,
+      "age": 38,
       "team_id": 366,
       "team_name": "Eintracht Frankfurt",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png",
@@ -500,5 +500,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:25Z"
+  "generated_at": "2026-09-22T09:12:38Z"
 }

@@ -94,7 +94,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "1999-09-22",
-      "age": 26,
+      "age": 27,
       "team_id": 3,
       "team_name": "Sunderland",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png",
@@ -517,5 +517,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:59Z"
+  "generated_at": "2026-09-22T09:12:12Z"
 }

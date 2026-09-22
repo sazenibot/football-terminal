@@ -15,53 +15,5 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "J. Vlček (Záložník) nastupuje za Viktoria Žižkov. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z",
-  "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
-    "current_season_id": 27984,
-    "role": "att",
-    "career_matches": 1,
-    "clubs": [
-      {
-        "id": 187,
-        "name": "Mladá Boleslav",
-        "from": "2025-05-11",
-        "to": "2025-05-11",
-        "matches": 1
-      }
-    ],
-    "seasons": [
-      {
-        "id": 23641,
-        "name": "2024/2025",
-        "starting_at": "2024-07-19",
-        "matches": 1,
-        "games": 276
-      }
-    ],
-    "matches": [
-      {
-        "fid": 19416517,
-        "s": 23641,
-        "d": "2025-05-11",
-        "h": 1,
-        "tid": 187,
-        "tn": "Mladá Boleslav",
-        "oid": 3531,
-        "on": "Dukla Praha",
-        "hs": 2,
-        "as": 3,
-        "ob": 3,
-        "st": {
-          "mn": 14,
-          "g": 0,
-          "a": 0,
-          "y": 0,
-          "r": 0,
-          "cs": 0
-        },
-        "mp": false
-      }
-    ]
-  }
+  "generated_at": "2026-09-22T09:11:55Z"
 }

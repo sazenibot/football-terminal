@@ -8,12 +8,12 @@
   "position_id": 27,
   "captain": false,
   "date_of_birth": "1998-09-22",
-  "age": 27,
+  "age": 28,
   "team_id": 3588,
   "team_name": "Elversberg",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png",
   "league_id": 82,
   "league_name": "Bundesliga",
   "hook": "Tom Zimmerschied (Útočník) nastupuje za Elversberg. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:48:25Z"
+  "generated_at": "2026-09-22T09:12:38Z"
 }
