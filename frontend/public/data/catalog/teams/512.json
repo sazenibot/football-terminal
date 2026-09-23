@@ -532,7 +532,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/11/3531.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732269,
+      "starting_at": "2026-10-23T15:30:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 4184,
+        "name": "Ústí nad Labem",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-22T09:11:55Z"
+  "generated_at": "2026-09-23T09:12:20Z"
 }

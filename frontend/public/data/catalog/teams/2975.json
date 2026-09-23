@@ -515,7 +515,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732652,
+      "starting_at": "2026-10-23T19:00:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 126,
+        "name": "Málaga",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-22T09:13:00Z"
+  "generated_at": "2026-09-23T09:13:43Z"
 }

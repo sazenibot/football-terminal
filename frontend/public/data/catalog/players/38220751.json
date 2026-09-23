@@ -4,8 +4,8 @@
   "common_name": "A. Cermak",
   "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
   "number": null,
-  "position": "Záložník",
-  "position_id": 26,
+  "position": "Obránce",
+  "position_id": 25,
   "captain": false,
   "date_of_birth": "1993-07-01",
   "age": 33,
@@ -14,6 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
-  "hook": "Adrian Cermak  (Záložník) nastupuje za Vysočina Jihlava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-22T09:11:55Z"
+  "hook": "Adrian Cermak  (Obránce) nastupuje za Vysočina Jihlava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-09-23T09:12:20Z"
 }

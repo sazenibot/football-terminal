@@ -549,7 +549,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19735141,
+      "starting_at": "2026-10-23T18:30:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 3319,
+        "name": "VfB Stuttgart",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/23/3319.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-22T09:12:38Z"
+  "generated_at": "2026-09-23T09:13:14Z"
 }

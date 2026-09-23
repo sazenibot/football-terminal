@@ -8,12 +8,12 @@
   "position_id": 25,
   "captain": false,
   "date_of_birth": "1998-09-23",
-  "age": 27,
+  "age": 28,
   "team_id": 3320,
   "team_name": "FC Köln",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png",
   "league_id": 82,
   "league_name": "Bundesliga",
   "hook": "Joël Schmied (Obránce) nastupuje za FC Köln. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-22T09:12:38Z"
+  "generated_at": "2026-09-23T09:13:14Z"
 }

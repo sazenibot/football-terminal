@@ -532,7 +532,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19722127,
+      "starting_at": "2026-10-23T19:00:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 63,
+        "name": "Nottingham Forest",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-22T09:12:12Z"
+  "generated_at": "2026-09-23T09:12:41Z"
 }

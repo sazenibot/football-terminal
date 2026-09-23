@@ -8,12 +8,12 @@
   "position_id": 24,
   "captain": false,
   "date_of_birth": "2002-09-23",
-  "age": 23,
+  "age": 24,
   "team_id": 22031,
   "team_name": "SK Artis Brno",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
   "league_id": 262,
   "league_name": "Chance Liga",
   "hook": "Jiri Borek (Brankář) nastupuje za SK Artis Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-22T09:11:34Z"
+  "generated_at": "2026-09-23T09:11:53Z"
 }
