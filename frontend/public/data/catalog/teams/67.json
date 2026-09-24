@@ -498,7 +498,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/26/794.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19735136,
+      "starting_at": "2026-10-24T13:30:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 3320,
+        "name": "FC Köln",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-23T09:13:14Z"
+  "generated_at": "2026-09-24T09:11:05Z"
 }

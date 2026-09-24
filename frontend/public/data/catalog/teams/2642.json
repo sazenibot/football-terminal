@@ -583,7 +583,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19735135,
+      "starting_at": "2026-10-24T13:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 2708,
+        "name": "Hamburger SV",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-23T09:13:14Z"
+  "generated_at": "2026-09-24T09:11:05Z"
 }

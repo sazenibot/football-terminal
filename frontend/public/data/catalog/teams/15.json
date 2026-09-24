@@ -566,7 +566,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19722132,
+      "starting_at": "2026-10-24T11:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 9,
+        "name": "Manchester City",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-23T09:12:41Z"
+  "generated_at": "2026-09-24T09:10:42Z"
 }

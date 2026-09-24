@@ -596,7 +596,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732273,
+      "starting_at": "2026-10-24T12:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 428,
+        "name": "Příbram",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-23T09:12:20Z"
+  "generated_at": "2026-09-24T09:10:24Z"
 }

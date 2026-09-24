@@ -515,7 +515,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732647,
+      "starting_at": "2026-10-24T14:15:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 9818,
+        "name": "Racing Santander",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/26/9818.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-23T09:13:43Z"
+  "generated_at": "2026-09-24T09:11:27Z"
 }

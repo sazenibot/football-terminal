@@ -549,7 +549,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19735136,
+      "starting_at": "2026-10-24T13:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 67,
+        "name": "Schalke 04",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-23T09:13:14Z"
+  "generated_at": "2026-09-24T09:11:05Z"
 }

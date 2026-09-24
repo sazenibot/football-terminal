@@ -634,7 +634,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732643,
+      "starting_at": "2026-10-24T16:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 3477,
+        "name": "Villarreal",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-23T09:13:43Z"
+  "generated_at": "2026-09-24T09:11:27Z"
 }

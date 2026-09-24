@@ -532,7 +532,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19725017,
+      "starting_at": "2026-10-24T13:00:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 22031,
+        "name": "SK Artis Brno",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-23T09:11:53Z"
+  "generated_at": "2026-09-24T09:10:03Z"
 }

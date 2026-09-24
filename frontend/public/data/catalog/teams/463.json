@@ -566,7 +566,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19725015,
+      "starting_at": "2026-10-24T13:00:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-23T09:11:53Z"
+  "generated_at": "2026-09-24T09:10:03Z"
 }
