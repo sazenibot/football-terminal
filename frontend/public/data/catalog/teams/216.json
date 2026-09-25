@@ -230,7 +230,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2006-09-25",
-      "age": 19,
+      "age": 20,
       "team_id": 216,
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
@@ -630,5 +630,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-24T09:10:03Z"
+  "generated_at": "2026-09-25T09:29:48Z"
 }

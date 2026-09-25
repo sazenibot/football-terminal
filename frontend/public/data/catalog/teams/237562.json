@@ -192,7 +192,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "1998-09-25",
-      "age": 27,
+      "age": 28,
       "team_id": 237562,
       "team_name": "Arsenal Česká Lípa",
       "team_image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
@@ -209,7 +209,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "1998-09-25",
-      "age": 27,
+      "age": 28,
       "team_id": 237562,
       "team_name": "Arsenal Česká Lípa",
       "team_image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png",
@@ -609,5 +609,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-24T09:10:24Z"
+  "generated_at": "2026-09-25T09:30:08Z"
 }

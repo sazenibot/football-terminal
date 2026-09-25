@@ -532,7 +532,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19725014,
+      "starting_at": "2026-10-25T14:00:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 2727,
+        "name": "Sparta Praha",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-24T09:10:03Z"
+  "generated_at": "2026-09-25T09:29:48Z"
 }

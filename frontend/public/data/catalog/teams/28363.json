@@ -702,7 +702,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732274,
+      "starting_at": "2026-10-25T09:15:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 6865,
+        "name": "Prostějov",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-24T09:10:24Z"
+  "generated_at": "2026-09-25T09:30:08Z"
 }

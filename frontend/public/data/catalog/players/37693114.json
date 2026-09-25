@@ -8,12 +8,12 @@
   "position_id": 26,
   "captain": false,
   "date_of_birth": "2002-09-25",
-  "age": 23,
+  "age": 24,
   "team_id": 3734,
   "team_name": "Kladno",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Jiri Hudec (Záložník) nastupuje za Kladno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-24T09:10:24Z"
+  "generated_at": "2026-09-25T09:30:08Z"
 }

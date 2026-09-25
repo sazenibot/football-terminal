@@ -281,7 +281,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "1999-09-25",
-      "age": 26,
+      "age": 27,
       "team_id": 6957,
       "team_name": "Hanácká",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
@@ -579,5 +579,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-24T09:10:24Z"
+  "generated_at": "2026-09-25T09:30:08Z"
 }

@@ -532,7 +532,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19725021,
+      "starting_at": "2026-10-25T17:00:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 4484,
+        "name": "Pardubice",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-24T09:10:03Z"
+  "generated_at": "2026-09-25T09:29:48Z"
 }
