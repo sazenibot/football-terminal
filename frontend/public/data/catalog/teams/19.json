@@ -162,7 +162,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2006-09-26",
-      "age": 19,
+      "age": 20,
       "team_id": 19,
       "team_name": "Arsenal",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
@@ -477,5 +477,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-25T09:30:24Z"
+  "generated_at": "2026-09-26T09:15:22Z"
 }

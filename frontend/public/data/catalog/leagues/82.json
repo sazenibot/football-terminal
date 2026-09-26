@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T09:30:48Z",
+  "generated_at": "2026-09-26T09:15:47Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -4896,6 +4896,14 @@
       "league_matches": 3
     },
     {
+      "id": 11719,
+      "name": "Florian Badstübner",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
       "id": 19051,
       "name": "Florian Exner",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4914,14 +4922,6 @@
     {
       "id": 15399,
       "name": "Martin Petersen",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 12145,
-      "name": "Matthias Jöllenbeck",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4984,8 +4984,8 @@
       "league_matches": 2
     },
     {
-      "id": 11719,
-      "name": "Florian Badstübner",
+      "id": 12145,
+      "name": "Matthias Jöllenbeck",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,

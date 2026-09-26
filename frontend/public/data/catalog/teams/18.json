@@ -502,7 +502,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "2001-09-26",
-      "age": 24,
+      "age": 25,
       "team_id": 18,
       "team_name": "Chelsea",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
@@ -562,5 +562,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-25T09:30:24Z"
+  "generated_at": "2026-09-26T09:15:22Z"
 }
