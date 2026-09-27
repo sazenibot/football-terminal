@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T09:15:47Z",
+  "generated_at": "2026-09-27T09:56:04Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -4832,16 +4832,16 @@
   ],
   "referees": [
     {
-      "id": 80234,
-      "name": "Daniel Siebert",
+      "id": 926,
+      "name": "Sven Jablonski",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
       "league_matches": 5
     },
     {
-      "id": 926,
-      "name": "Sven Jablonski",
+      "id": 17210,
+      "name": "Sören Storks",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4864,16 +4864,16 @@
       "league_matches": 4
     },
     {
-      "id": 15400,
-      "name": "Felix Zwayer",
+      "id": 80234,
+      "name": "Daniel Siebert",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
       "league_matches": 4
     },
     {
-      "id": 17210,
-      "name": "Sören Storks",
+      "id": 15400,
+      "name": "Felix Zwayer",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4896,22 +4896,6 @@
       "league_matches": 3
     },
     {
-      "id": 11719,
-      "name": "Florian Badstübner",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 19051,
-      "name": "Florian Exner",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
       "id": 15402,
       "name": "Harm Osmers",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4922,6 +4906,14 @@
     {
       "id": 15399,
       "name": "Martin Petersen",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 15419,
+      "name": "Patrick Ittrich",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4968,6 +4960,14 @@
       "league_matches": 3
     },
     {
+      "id": 12075,
+      "name": "Tobias Reichel",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
       "id": 25431,
       "name": "Tobias Welz",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4984,24 +4984,24 @@
       "league_matches": 2
     },
     {
+      "id": 11719,
+      "name": "Florian Badstübner",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 19051,
+      "name": "Florian Exner",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
       "id": 12145,
       "name": "Matthias Jöllenbeck",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 2
-    },
-    {
-      "id": 15419,
-      "name": "Patrick Ittrich",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 2
-    },
-    {
-      "id": 12075,
-      "name": "Tobias Reichel",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,

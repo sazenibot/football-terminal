@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T09:14:45Z",
+  "generated_at": "2026-09-27T09:54:45Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -4375,24 +4375,24 @@
       "league_matches": 8
     },
     {
-      "id": 72915,
-      "name": "Marek Radina",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 7
-    },
-    {
       "id": 75577,
       "name": "Stanislav Volek",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 7
+      "league_matches": 8
     },
     {
       "id": 73711,
       "name": "Lukáš Nehasil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 6
+    },
+    {
+      "id": 72915,
+      "name": "Marek Radina",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4404,19 +4404,11 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 6
+      "league_matches": 5
     },
     {
       "id": 74265,
       "name": "Dominik Starý",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 15625,
-      "name": "Ondřej Pechanec",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4447,6 +4439,14 @@
       "league_matches": 2
     },
     {
+      "id": 15625,
+      "name": "Ondřej Pechanec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
       "id": 74540,
       "name": "Vojtěch Opočenský",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4465,6 +4465,14 @@
     {
       "id": 16465,
       "name": "Pavel Orel",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 72429,
+      "name": "Vit Zaoral",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -5473,14 +5481,6 @@
     {
       "id": 23746,
       "name": "Valter Boček",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": false,
-      "league_matches": 0
-    },
-    {
-      "id": 72429,
-      "name": "Vit Zaoral",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": false,
