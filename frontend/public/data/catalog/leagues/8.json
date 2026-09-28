@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T09:55:32Z",
+  "generated_at": "2026-09-28T10:44:24Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -5377,6 +5377,14 @@
   ],
   "referees": [
     {
+      "id": 15293,
+      "name": "Craig Pawson",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 8
+    },
+    {
       "id": 14812,
       "name": "Darren England",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5385,32 +5393,16 @@
       "league_matches": 8
     },
     {
-      "id": 15293,
-      "name": "Craig Pawson",
+      "id": 74959,
+      "name": "Andy Madley",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 7
+      "league_matches": 6
     },
     {
       "id": 14808,
       "name": "Chris Kavanagh",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 6
-    },
-    {
-      "id": 39573,
-      "name": "Samuel Barrott",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 6
-    },
-    {
-      "id": 74959,
-      "name": "Andy Madley",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
@@ -5425,25 +5417,25 @@
       "league_matches": 5
     },
     {
-      "id": 14532,
-      "name": "Anthony Taylor",
-      "image": "https://cdn.sportmonks.com/images//soccer/referees/4/14532.png",
+      "id": 39573,
+      "name": "Samuel Barrott",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 4
-    },
-    {
-      "id": 15273,
-      "name": "Michael Oliver",
-      "image": "https://cdn.sportmonks.com/images//soccer/referees/9/15273.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 4
+      "league_matches": 5
     },
     {
       "id": 15835,
       "name": "Stuart Attwell",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 5
+    },
+    {
+      "id": 15273,
+      "name": "Michael Oliver",
+      "image": "https://cdn.sportmonks.com/images//soccer/referees/9/15273.png",
       "country": "England",
       "in_league": true,
       "league_matches": 4
@@ -5455,6 +5447,14 @@
       "country": "England",
       "in_league": true,
       "league_matches": 4
+    },
+    {
+      "id": 14532,
+      "name": "Anthony Taylor",
+      "image": "https://cdn.sportmonks.com/images//soccer/referees/4/14532.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 3
     },
     {
       "id": 15294,
@@ -5473,16 +5473,16 @@
       "league_matches": 3
     },
     {
-      "id": 13537,
-      "name": "Michael Salisbury",
+      "id": 13561,
+      "name": "John Brooks",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
       "league_matches": 2
     },
     {
-      "id": 20172,
-      "name": "Thomas Kirk",
+      "id": 13537,
+      "name": "Michael Salisbury",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
@@ -5513,14 +5513,6 @@
       "league_matches": 1
     },
     {
-      "id": 13561,
-      "name": "John Brooks",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 1
-    },
-    {
       "id": 14824,
       "name": "Joshua Smith",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5531,6 +5523,14 @@
     {
       "id": 19850,
       "name": "Matt Donohue",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 20172,
+      "name": "Thomas Kirk",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T09:56:32Z",
+  "generated_at": "2026-09-28T10:45:11Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -5346,15 +5346,6 @@
       "team_name": "Málaga",
       "position": "Obránce",
       "number": 5
-    },
-    {
-      "id": 37595890,
-      "name": "Álex Primo",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/18/37595890.png",
-      "team_id": 3457,
-      "team_name": "Levante",
-      "position": "Brankář",
-      "number": null
     },
     {
       "id": 187110,

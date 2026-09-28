@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T09:56:04Z",
+  "generated_at": "2026-09-28T10:44:49Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -4832,16 +4832,16 @@
   ],
   "referees": [
     {
-      "id": 926,
-      "name": "Sven Jablonski",
+      "id": 15400,
+      "name": "Felix Zwayer",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
       "league_matches": 5
     },
     {
-      "id": 17210,
-      "name": "Sören Storks",
+      "id": 926,
+      "name": "Sven Jablonski",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4872,8 +4872,16 @@
       "league_matches": 4
     },
     {
-      "id": 15400,
-      "name": "Felix Zwayer",
+      "id": 11693,
+      "name": "Robert Schröder",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
+      "id": 17210,
+      "name": "Sören Storks",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4912,8 +4920,8 @@
       "league_matches": 3
     },
     {
-      "id": 15419,
-      "name": "Patrick Ittrich",
+      "id": 12145,
+      "name": "Matthias Jöllenbeck",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4922,14 +4930,6 @@
     {
       "id": 15803,
       "name": "Robert Hartmann",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 11693,
-      "name": "Robert Schröder",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4968,14 +4968,6 @@
       "league_matches": 3
     },
     {
-      "id": 25431,
-      "name": "Tobias Welz",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
       "id": 16778,
       "name": "Deniz Aytekin",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5000,8 +4992,8 @@
       "league_matches": 2
     },
     {
-      "id": 12145,
-      "name": "Matthias Jöllenbeck",
+      "id": 15419,
+      "name": "Patrick Ittrich",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -5010,6 +5002,14 @@
     {
       "id": 17233,
       "name": "Tobias Stieler",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 25431,
+      "name": "Tobias Welz",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,

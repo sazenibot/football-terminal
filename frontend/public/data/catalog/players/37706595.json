@@ -8,12 +8,12 @@
   "position_id": 27,
   "captain": false,
   "date_of_birth": "2004-09-28",
-  "age": 21,
+  "age": 22,
   "team_id": 1079,
   "team_name": "FC Union Berlin",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png",
   "league_id": 82,
   "league_name": "Bundesliga",
   "hook": "Livan Burcu (Útočník) nastupuje za FC Union Berlin. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-27T09:56:04Z"
+  "generated_at": "2026-09-28T10:44:49Z"
 }

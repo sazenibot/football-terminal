@@ -247,7 +247,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2005-09-28",
-      "age": 20,
+      "age": 21,
       "team_id": 2726,
       "team_name": "TSG Hoffenheim",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/2726.png",
@@ -500,5 +500,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-27T09:56:04Z"
+  "generated_at": "2026-09-28T10:44:49Z"
 }

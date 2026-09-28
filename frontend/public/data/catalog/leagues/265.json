@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T09:55:12Z",
+  "generated_at": "2026-09-28T10:44:08Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -4706,7 +4706,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 6
+      "league_matches": 7
     },
     {
       "id": 75580,
@@ -4714,7 +4714,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 5
+      "league_matches": 4
     },
     {
       "id": 15436,
@@ -4725,8 +4725,8 @@
       "league_matches": 4
     },
     {
-      "id": 73711,
-      "name": "Lukáš Nehasil",
+      "id": 1158996,
+      "name": "Matěj Kubečka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4749,8 +4749,8 @@
       "league_matches": 3
     },
     {
-      "id": 1158996,
-      "name": "Matěj Kubečka",
+      "id": 73711,
+      "name": "Lukáš Nehasil",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4765,16 +4765,16 @@
       "league_matches": 3
     },
     {
-      "id": 72429,
-      "name": "Vit Zaoral",
+      "id": 74596,
+      "name": "Filip Kotala",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 3
+      "league_matches": 2
     },
     {
-      "id": 74596,
-      "name": "Filip Kotala",
+      "id": 1159814,
+      "name": "Habermann Lubomir",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4797,6 +4797,14 @@
       "league_matches": 2
     },
     {
+      "id": 75582,
+      "name": "Karel Roucek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
       "id": 72915,
       "name": "Marek Radina",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4813,24 +4821,16 @@
       "league_matches": 2
     },
     {
+      "id": 72429,
+      "name": "Vit Zaoral",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
       "id": 69866,
       "name": "D. Černý",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 1
-    },
-    {
-      "id": 1159814,
-      "name": "Habermann Lubomir",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 1
-    },
-    {
-      "id": 75582,
-      "name": "Karel Roucek",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,

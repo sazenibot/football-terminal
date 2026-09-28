@@ -434,7 +434,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "1994-09-28",
-      "age": 31,
+      "age": 32,
       "team_id": 2364,
       "team_name": "Viktoria Žižkov",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
@@ -596,5 +596,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-27T09:55:12Z"
+  "generated_at": "2026-09-28T10:44:08Z"
 }

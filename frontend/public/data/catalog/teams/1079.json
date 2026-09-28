@@ -468,7 +468,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "2004-09-28",
-      "age": 21,
+      "age": 22,
       "team_id": 1079,
       "team_name": "FC Union Berlin",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png",
@@ -562,5 +562,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-27T09:56:04Z"
+  "generated_at": "2026-09-28T10:44:49Z"
 }
