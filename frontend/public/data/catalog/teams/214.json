@@ -9,7 +9,7 @@
   "venue": {
     "name": "Estadio de Mestalla",
     "city": "Valencia",
-    "capacity": 49430
+    "capacity": 55000
   },
   "league_id": 564,
   "league_name": "La Liga",
@@ -647,5 +647,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-28T10:45:11Z"
+  "generated_at": "2026-09-29T10:33:01Z"
 }

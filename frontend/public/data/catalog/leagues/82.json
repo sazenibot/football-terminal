@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T10:44:49Z",
+  "generated_at": "2026-09-29T10:32:39Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 37771728,
-      "name": "Ertugrul Yigit",
+      "name": "Ertugrul Yigit ",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 3319,
       "team_name": "VfB Stuttgart",
@@ -1807,7 +1807,7 @@
     },
     {
       "id": 37650895,
-      "name": "Jarzinho Malanga",
+      "name": "Jarzinho Malanga ",
       "image": "https://cdn.sportmonks.com/images/soccer/players/15/37650895.png",
       "team_id": 3319,
       "team_name": "VfB Stuttgart",
@@ -3076,7 +3076,7 @@
     },
     {
       "id": 37650883,
-      "name": "Maximilian Herwerth",
+      "name": "Maximilian Herwerth ",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 3319,
       "team_name": "VfB Stuttgart",

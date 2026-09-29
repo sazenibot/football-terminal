@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T10:44:08Z",
+  "generated_at": "2026-09-29T10:31:59Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -4717,14 +4717,6 @@
       "league_matches": 4
     },
     {
-      "id": 15436,
-      "name": "Jan Machálek",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
       "id": 1158996,
       "name": "Matěj Kubečka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4743,6 +4735,14 @@
     {
       "id": 74265,
       "name": "Dominik Starý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 15436,
+      "name": "Jan Machálek",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,

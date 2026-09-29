@@ -468,7 +468,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "1994-09-29",
-      "age": 31,
+      "age": 32,
       "team_id": 90,
       "team_name": "FC Augsburg",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png",
@@ -528,5 +528,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-28T10:44:49Z"
+  "generated_at": "2026-09-29T10:32:39Z"
 }

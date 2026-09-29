@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T10:44:24Z",
+  "generated_at": "2026-09-29T10:32:15Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -223,7 +223,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/players/3/202531.png",
       "team_id": 22,
       "team_name": "Hull City",
-      "position": "Záložník",
+      "position": "Útočník",
       "number": null
     },
     {
@@ -5390,7 +5390,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 8
+      "league_matches": 7
     },
     {
       "id": 74959,
@@ -5457,6 +5457,14 @@
       "league_matches": 3
     },
     {
+      "id": 13537,
+      "name": "Michael Salisbury",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
       "id": 15294,
       "name": "Paul Tierney",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5475,14 +5483,6 @@
     {
       "id": 13561,
       "name": "John Brooks",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 2
-    },
-    {
-      "id": 13537,
-      "name": "Michael Salisbury",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,

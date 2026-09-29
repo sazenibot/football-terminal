@@ -468,7 +468,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2000-09-29",
-      "age": 25,
+      "age": 26,
       "team_id": 2727,
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
@@ -613,5 +613,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-28T10:43:47Z"
+  "generated_at": "2026-09-29T10:31:39Z"
 }

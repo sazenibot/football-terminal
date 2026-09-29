@@ -205,7 +205,7 @@
     },
     {
       "id": 37650883,
-      "name": "Maximilian Herwerth",
+      "name": "Maximilian Herwerth ",
       "common_name": "M. Herwerth",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 37,
@@ -341,7 +341,7 @@
     },
     {
       "id": 37771728,
-      "name": "Ertugrul Yigit",
+      "name": "Ertugrul Yigit ",
       "common_name": "E. Yigit",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 39,
@@ -375,7 +375,7 @@
     },
     {
       "id": 37650895,
-      "name": "Jarzinho Malanga",
+      "name": "Jarzinho Malanga ",
       "common_name": "J. de Nascimento Malanga",
       "image": "https://cdn.sportmonks.com/images/soccer/players/15/37650895.png",
       "number": 43,
@@ -613,5 +613,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-28T10:44:49Z"
+  "generated_at": "2026-09-29T10:32:39Z"
 }

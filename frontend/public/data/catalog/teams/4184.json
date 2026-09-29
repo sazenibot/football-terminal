@@ -196,7 +196,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2007-09-29",
-      "age": 18,
+      "age": 19,
       "team_id": 4184,
       "team_name": "Ústí nad Labem",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png",
@@ -468,7 +468,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "2006-09-29",
-      "age": 19,
+      "age": 20,
       "team_id": 4184,
       "team_name": "Ústí nad Labem",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png",
@@ -511,5 +511,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-28T10:44:08Z"
+  "generated_at": "2026-09-29T10:31:59Z"
 }

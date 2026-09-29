@@ -8,12 +8,12 @@
   "position_id": 27,
   "captain": false,
   "date_of_birth": "1998-09-29",
-  "age": 27,
+  "age": 28,
   "team_id": 3269,
   "team_name": "Baník Ostrava",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
   "league_id": 262,
   "league_name": "Chance Liga",
   "hook": "Abdallah Gning (Útočník) nastupuje za Baník Ostrava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-28T10:43:47Z"
+  "generated_at": "2026-09-29T10:31:39Z"
 }
