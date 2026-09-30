@@ -543,7 +543,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732264,
+      "starting_at": "2026-10-30T16:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 28363,
+        "name": "Slavia Praha B",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-29T10:31:59Z"
+  "generated_at": "2026-09-30T10:22:45Z"
 }

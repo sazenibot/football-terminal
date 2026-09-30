@@ -9,13 +9,13 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "in_league": true,
-  "league_matches": 3,
+  "league_matches": 2,
   "leagues": [
     {
       "id": 262,
       "name": "Chance Liga",
       "in_league": true,
-      "league_matches": 3
+      "league_matches": 2
     },
     {
       "id": 265,
@@ -25,5 +25,5 @@
     }
   ],
   "hook": "Jan Všetečka píská v soutěži Chance Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-09-29T10:31:59Z"
+  "generated_at": "2026-09-30T10:22:45Z"
 }

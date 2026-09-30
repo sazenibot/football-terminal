@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T10:31:39Z",
+  "generated_at": "2026-09-30T10:22:25Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -197,6 +197,15 @@
       "team_name": "Baník Ostrava",
       "position": "Záložník",
       "number": 8
+    },
+    {
+      "id": 80879,
+      "name": "Adam Billewicz",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/15/80879.png",
+      "team_id": 3350,
+      "team_name": "Zbrojovka Brno",
+      "position": "Záložník",
+      "number": 23
     },
     {
       "id": 37260883,
@@ -3403,15 +3412,6 @@
       "number": 32
     },
     {
-      "id": 80879,
-      "name": "Petr Sevcik",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/15/80879.png",
-      "team_id": 3350,
-      "team_name": "Zbrojovka Brno",
-      "position": "Záložník",
-      "number": 23
-    },
-    {
       "id": 37585365,
       "name": "Prince Adu",
       "image": "https://cdn.sportmonks.com/images/soccer/players/21/37585365.png",
@@ -4407,16 +4407,8 @@
       "league_matches": 5
     },
     {
-      "id": 75583,
-      "name": "Jan Všetečka",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 15625,
-      "name": "Ondřej Pechanec",
+      "id": 74265,
+      "name": "Dominik Starý",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4431,16 +4423,32 @@
       "league_matches": 2
     },
     {
-      "id": 74265,
-      "name": "Dominik Starý",
+      "id": 15436,
+      "name": "Jan Machálek",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
       "league_matches": 2
     },
     {
-      "id": 15436,
-      "name": "Jan Machálek",
+      "id": 75583,
+      "name": "Jan Všetečka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 15625,
+      "name": "Ondřej Pechanec",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 74540,
+      "name": "Vojtěch Opočenský",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4465,14 +4473,6 @@
     {
       "id": 72429,
       "name": "Vit Zaoral",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 1
-    },
-    {
-      "id": 74540,
-      "name": "Vojtěch Opočenský",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,

@@ -204,6 +204,23 @@
       "league_name": "Chance Liga"
     },
     {
+      "id": 80879,
+      "name": "Adam Billewicz",
+      "common_name": "P. Ševčík",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/15/80879.png",
+      "number": 23,
+      "position": "Záložník",
+      "position_id": 26,
+      "captain": false,
+      "date_of_birth": "1994-05-04",
+      "age": 32,
+      "team_id": 3350,
+      "team_name": "Zbrojovka Brno",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
+      "league_id": 262,
+      "league_name": "Chance Liga"
+    },
+    {
       "id": 496674,
       "name": "Antonin Vanicek",
       "common_name": "A. Vaníček",
@@ -333,23 +350,6 @@
       "captain": false,
       "date_of_birth": "1999-01-21",
       "age": 27,
-      "team_id": 3350,
-      "team_name": "Zbrojovka Brno",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
-      "league_id": 262,
-      "league_name": "Chance Liga"
-    },
-    {
-      "id": 80879,
-      "name": "Petr Sevcik",
-      "common_name": "P. Ševčík",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/15/80879.png",
-      "number": 23,
-      "position": "Záložník",
-      "position_id": 26,
-      "captain": false,
-      "date_of_birth": "1994-05-04",
-      "age": 32,
       "team_id": 3350,
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
@@ -528,5 +528,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-29T10:31:39Z"
+  "generated_at": "2026-09-30T10:22:25Z"
 }

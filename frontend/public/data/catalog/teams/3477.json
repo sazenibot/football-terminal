@@ -247,7 +247,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2003-09-30",
-      "age": 22,
+      "age": 23,
       "team_id": 3477,
       "team_name": "Villarreal",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png",
@@ -511,5 +511,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-29T10:33:01Z"
+  "generated_at": "2026-09-30T10:23:47Z"
 }
