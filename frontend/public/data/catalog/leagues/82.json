@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T10:23:26Z",
+  "generated_at": "2026-10-01T10:50:32Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -958,15 +958,6 @@
       "team_name": "RB Leipzig",
       "position": "Obránce",
       "number": 22
-    },
-    {
-      "id": 155136,
-      "name": "Dawid Kownacki",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/0/155136.png",
-      "team_id": 82,
-      "team_name": "Werder Bremen",
-      "position": "Útočník",
-      "number": 21
     },
     {
       "id": 33685,

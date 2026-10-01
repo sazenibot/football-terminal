@@ -459,23 +459,6 @@
       "league_name": "Bundesliga"
     },
     {
-      "id": 155136,
-      "name": "Dawid Kownacki",
-      "common_name": "D. Kownacki",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/0/155136.png",
-      "number": 21,
-      "position": "Útočník",
-      "position_id": 27,
-      "captain": false,
-      "date_of_birth": "1997-03-14",
-      "age": 29,
-      "team_id": 82,
-      "team_name": "Werder Bremen",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png",
-      "league_id": 82,
-      "league_name": "Bundesliga"
-    },
-    {
       "id": 37266184,
       "name": "Eren Dinkçi",
       "common_name": "E. Dinkci",
@@ -647,5 +630,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-30T10:23:26Z"
+  "generated_at": "2026-10-01T10:50:32Z"
 }

@@ -60,7 +60,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "1998-10-01",
-      "age": 27,
+      "age": 28,
       "team_id": 63,
       "team_name": "Nottingham Forest",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png",
@@ -477,5 +477,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-30T10:23:01Z"
+  "generated_at": "2026-10-01T10:50:02Z"
 }

@@ -298,7 +298,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2008-10-01",
-      "age": 17,
+      "age": 18,
       "team_id": 6,
       "team_name": "Tottenham Hotspur",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
@@ -579,5 +579,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-30T10:23:01Z"
+  "generated_at": "2026-10-01T10:50:02Z"
 }

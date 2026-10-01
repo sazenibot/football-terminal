@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T10:22:45Z",
+  "generated_at": "2026-10-01T10:49:43Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -4749,14 +4749,6 @@
       "league_matches": 3
     },
     {
-      "id": 15436,
-      "name": "Jan Machálek",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
       "id": 73711,
       "name": "Lukáš Nehasil",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4775,6 +4767,14 @@
     {
       "id": 1159814,
       "name": "Habermann Lubomir",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 15436,
+      "name": "Jan Machálek",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,

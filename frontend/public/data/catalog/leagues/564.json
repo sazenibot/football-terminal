@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T10:23:47Z",
+  "generated_at": "2026-10-01T10:50:58Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -5611,6 +5611,14 @@
       "league_matches": 4
     },
     {
+      "id": 15712,
+      "name": "Juan Martínez Munuera",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
       "id": 21961,
       "name": "Mateo Busquets Ferrer",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5637,14 +5645,6 @@
     {
       "id": 18771,
       "name": "José María Sánchez Martínez",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 15712,
-      "name": "Juan Martínez Munuera",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
@@ -5689,14 +5689,6 @@
       "country": "Spain",
       "in_league": true,
       "league_matches": 2
-    },
-    {
-      "id": 13525,
-      "name": "Guillermo Cuadra Fernández",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 1
     },
     {
       "id": 14897,
@@ -7157,6 +7149,14 @@
     {
       "id": 17270,
       "name": "Guillermo Conejero Sánchez",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": false,
+      "league_matches": 0
+    },
+    {
+      "id": 13525,
+      "name": "Guillermo Cuadra Fernández",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": false,
