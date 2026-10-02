@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T10:49:13Z",
+  "generated_at": "2026-10-02T10:25:02Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -8,7 +8,24 @@
     "enabled": true,
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png"
   },
-  "round": [],
+  "round": [
+    {
+      "fixture_id": 19725030,
+      "starting_at": "2026-10-09T16:00:00Z",
+      "venue": "Stadion Letná",
+      "home": {
+        "id": 1745,
+        "name": "Zlín",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png"
+      },
+      "away": {
+        "id": 216,
+        "name": "Slavia Praha",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
+      },
+      "has_full_data": true
+    }
+  ],
   "matches": [],
   "relocated_to": "/data/leagues/ a /data/matches/"
 }

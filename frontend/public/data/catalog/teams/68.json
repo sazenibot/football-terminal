@@ -537,7 +537,7 @@
         "name": "Werder Bremen",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19735149,
@@ -562,5 +562,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-01T10:50:32Z"
+  "generated_at": "2026-10-02T10:33:21Z"
 }

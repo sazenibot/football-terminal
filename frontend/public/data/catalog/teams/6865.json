@@ -537,7 +537,7 @@
         "name": "Vysočina Jihlava",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732278,
@@ -562,5 +562,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-01T10:49:43Z"
+  "generated_at": "2026-10-02T10:32:47Z"
 }

@@ -230,7 +230,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2000-10-02",
-      "age": 25,
+      "age": 26,
       "team_id": 3593,
       "team_name": "Opava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
@@ -554,7 +554,7 @@
         "name": "Ústí nad Labem",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732277,
@@ -579,5 +579,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-01T10:49:43Z"
+  "generated_at": "2026-10-02T10:32:47Z"
 }

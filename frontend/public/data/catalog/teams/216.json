@@ -605,7 +605,7 @@
         "name": "Zlín",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19725024,
@@ -630,5 +630,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-01T10:49:17Z"
+  "generated_at": "2026-10-02T10:32:28Z"
 }

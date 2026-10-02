@@ -264,7 +264,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2007-10-02",
-      "age": 18,
+      "age": 19,
       "team_id": 9,
       "team_name": "Manchester City",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png",
@@ -562,5 +562,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-01T10:50:02Z"
+  "generated_at": "2026-10-02T10:32:56Z"
 }

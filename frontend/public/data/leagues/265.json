@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T10:49:14Z",
+  "generated_at": "2026-10-02T10:29:53Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -8,9 +8,74 @@
     "enabled": true,
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/9/265.png"
   },
-  "round": [],
+  "round": [
+    {
+      "fixture_id": 19732290,
+      "starting_at": "2026-10-09T15:00:00Z",
+      "venue": "Atletický stadion Prátelství na Strahove",
+      "home": {
+        "id": 28363,
+        "name": "Slavia Praha B",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png"
+      },
+      "away": {
+        "id": 8421,
+        "name": "Vlašim",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732285,
+      "starting_at": "2026-10-09T16:00:00Z",
+      "venue": "Městský stadion",
+      "home": {
+        "id": 4184,
+        "name": "Ústí nad Labem",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png"
+      },
+      "away": {
+        "id": 3593,
+        "name": "Opava",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732286,
+      "starting_at": "2026-10-09T16:00:00Z",
+      "venue": "Stadion v Jiráskově ulici",
+      "home": {
+        "id": 2538,
+        "name": "Vysočina Jihlava",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png"
+      },
+      "away": {
+        "id": 6865,
+        "name": "Prostějov",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732288,
+      "starting_at": "2026-10-09T16:00:00Z",
+      "venue": "Stadion Kvapilova",
+      "home": {
+        "id": 3887,
+        "name": "Táborsko",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png"
+      },
+      "away": {
+        "id": 512,
+        "name": "Karviná",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png"
+      },
+      "has_full_data": true
+    }
+  ],
   "stats": {
-    "created": 0,
+    "created": 4,
     "refreshed": 0,
     "errors": 0
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T10:49:16Z",
+  "generated_at": "2026-10-02T10:31:13Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -8,9 +8,26 @@
     "enabled": true,
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/18/82.png"
   },
-  "round": [],
+  "round": [
+    {
+      "fixture_id": 19735161,
+      "starting_at": "2026-10-09T18:30:00Z",
+      "venue": "Signal Iduna Park",
+      "home": {
+        "id": 68,
+        "name": "Borussia Dortmund",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/4/68.png"
+      },
+      "away": {
+        "id": 82,
+        "name": "Werder Bremen",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png"
+      },
+      "has_full_data": true
+    }
+  ],
   "stats": {
-    "created": 0,
+    "created": 1,
     "refreshed": 0,
     "errors": 0
   }

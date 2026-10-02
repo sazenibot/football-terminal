@@ -128,7 +128,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "1984-10-02",
-      "age": 41,
+      "age": 42,
       "team_id": 512,
       "team_name": "Karviná",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
@@ -520,7 +520,7 @@
         "name": "Táborsko",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732280,
@@ -556,5 +556,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-01T10:49:43Z"
+  "generated_at": "2026-10-02T10:32:47Z"
 }

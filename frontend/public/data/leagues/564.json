@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T10:49:17Z",
+  "generated_at": "2026-10-02T10:32:28Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -8,9 +8,26 @@
     "enabled": true,
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/20/564.png"
   },
-  "round": [],
+  "round": [
+    {
+      "fixture_id": 19732667,
+      "starting_at": "2026-10-09T19:00:00Z",
+      "venue": "Estadio La Rosaleda",
+      "home": {
+        "id": 126,
+        "name": "Málaga",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
+      },
+      "away": {
+        "id": 528,
+        "name": "Espanyol",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
+      },
+      "has_full_data": true
+    }
+  ],
   "stats": {
-    "created": 0,
+    "created": 1,
     "refreshed": 0,
     "errors": 0
   }

@@ -26,7 +26,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "1992-10-02",
-      "age": 33,
+      "age": 34,
       "team_id": 8,
       "team_name": "Liverpool",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
@@ -534,5 +534,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-01T10:50:02Z"
+  "generated_at": "2026-10-02T10:32:56Z"
 }
