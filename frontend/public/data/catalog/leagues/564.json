@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:33:41Z",
+  "generated_at": "2026-10-03T10:20:04Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -5579,14 +5579,6 @@
       "league_matches": 4
     },
     {
-      "id": 22618,
-      "name": "César Soto Grado",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
       "id": 13604,
       "name": "Francisco José Hernández Maeso",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5643,8 +5635,24 @@
       "league_matches": 4
     },
     {
+      "id": 22618,
+      "name": "César Soto Grado",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
       "id": 20636,
       "name": "Miguel Ángel Ortiz Arias",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 20814,
+      "name": "Víctor García Verdura",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
@@ -5685,14 +5693,6 @@
     {
       "id": 18770,
       "name": "Manuel Jesús Orellana Cid",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 2
-    },
-    {
-      "id": 20814,
-      "name": "Víctor García Verdura",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,

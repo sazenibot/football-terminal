@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:32:28Z",
+  "generated_at": "2026-10-03T10:18:58Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -3050,6 +3050,15 @@
       "team_name": "Zlín",
       "position": "Záložník",
       "number": 23
+    },
+    {
+      "id": 82717,
+      "name": "Milos Kratochvil",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 1745,
+      "team_name": "Zlín",
+      "position": "Záložník",
+      "number": null
     },
     {
       "id": 37777286,

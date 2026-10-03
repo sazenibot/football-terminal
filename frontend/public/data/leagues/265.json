@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:29:53Z",
+  "generated_at": "2026-10-03T09:55:44Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -72,11 +72,59 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png"
       },
       "has_full_data": true
+    },
+    {
+      "fixture_id": 19732289,
+      "starting_at": "2026-10-10T13:00:00Z",
+      "venue": "Městský stadion u Ploučnice",
+      "home": {
+        "id": 237562,
+        "name": "Arsenal Česká Lípa",
+        "image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png"
+      },
+      "away": {
+        "id": 2364,
+        "name": "Viktoria Žižkov",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732283,
+      "starting_at": "2026-10-10T15:30:00Z",
+      "venue": "Stadion SK Hanácká Slavia Kroměříž",
+      "home": {
+        "id": 6957,
+        "name": "Hanácká",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png"
+      },
+      "away": {
+        "id": 428,
+        "name": "Příbram",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732287,
+      "starting_at": "2026-10-10T16:00:00Z",
+      "venue": "Stadion Rudolfa Labaje",
+      "home": {
+        "id": 4134,
+        "name": "Třinec",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/6/4134.png"
+      },
+      "away": {
+        "id": 3734,
+        "name": "Kladno",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png"
+      },
+      "has_full_data": true
     }
   ],
   "stats": {
-    "created": 4,
-    "refreshed": 0,
+    "created": 3,
+    "refreshed": 4,
     "errors": 0
   }
 }

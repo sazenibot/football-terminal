@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:25:02Z",
+  "generated_at": "2026-10-03T09:51:17Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -24,11 +24,75 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
       },
       "has_full_data": true
+    },
+    {
+      "fixture_id": 19725031,
+      "starting_at": "2026-10-10T13:00:00Z",
+      "venue": "Malšovická aréna",
+      "home": {
+        "id": 3552,
+        "name": "Hradec Králové",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
+      },
+      "away": {
+        "id": 22031,
+        "name": "SK Artis Brno",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725035,
+      "starting_at": "2026-10-10T13:00:00Z",
+      "venue": "Městský fotbalový stadion Srbská",
+      "home": {
+        "id": 3350,
+        "name": "Zbrojovka Brno",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
+      },
+      "away": {
+        "id": 3643,
+        "name": "Jablonec",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725037,
+      "starting_at": "2026-10-10T13:00:00Z",
+      "venue": "Doosan Aréna",
+      "home": {
+        "id": 3545,
+        "name": "Viktoria Plzeň",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png"
+      },
+      "away": {
+        "id": 187,
+        "name": "Mladá Boleslav",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725033,
+      "starting_at": "2026-10-10T16:00:00Z",
+      "venue": "Stadion Dolícek",
+      "home": {
+        "id": 2488,
+        "name": "Bohemians 1905",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png"
+      },
+      "away": {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png"
+      },
+      "has_full_data": true
     }
   ],
   "stats": {
-    "created": 1,
-    "refreshed": 0,
+    "created": 4,
+    "refreshed": 1,
     "errors": 0
   }
 }

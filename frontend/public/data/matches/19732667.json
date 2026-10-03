@@ -3,7 +3,7 @@
   "league_id": 564,
   "league_name": "La Liga",
   "built_at": "2026-10-02T10:32:28.264346Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-09T19:00:00Z",
   "venue": "Estadio La Rosaleda",
   "home": {
@@ -18,6 +18,20 @@
   },
   "referee": null,
   "sidelined": [
+    {
+      "side": "home",
+      "player_id": 37336532,
+      "player_name": "Diego Murillo Dominguez",
+      "type_id": 2021,
+      "type_name": "Inner Knee Ligament Tear",
+      "type_name_cs": "Inner Knee Ligament Tear",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-06-20",
+      "end_date": "2026-12-01",
+      "games_missed": 13,
+      "likely_available": false
+    },
     {
       "side": "home",
       "player_id": 27797020,
@@ -44,20 +58,6 @@
       "start_date": "2026-08-17",
       "end_date": "2027-01-01",
       "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37336532,
-      "player_name": "Diego Murillo Dominguez",
-      "type_id": 2021,
-      "type_name": "Inner Knee Ligament Tear",
-      "type_name_cs": "Inner Knee Ligament Tear",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-06-20",
-      "end_date": "2026-12-01",
-      "games_missed": 13,
       "likely_available": false
     },
     {
@@ -5999,5 +5999,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-03T10:13:01.434506Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:32:47Z",
+  "generated_at": "2026-10-03T10:19:16Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -4741,20 +4741,20 @@
       "league_matches": 4
     },
     {
-      "id": 74265,
-      "name": "Dominik Starý",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
       "id": 73711,
       "name": "Lukáš Nehasil",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
       "league_matches": 3
+    },
+    {
+      "id": 74265,
+      "name": "Dominik Starý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
     },
     {
       "id": 74596,

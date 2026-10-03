@@ -503,7 +503,7 @@
         "name": "Baník Ostrava",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19725068,
@@ -539,5 +539,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-02T10:32:28Z"
+  "generated_at": "2026-10-03T10:18:58Z"
 }

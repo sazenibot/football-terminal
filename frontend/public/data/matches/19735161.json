@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-02T10:31:13.774978Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-09T18:30:00Z",
   "venue": "Signal Iduna Park",
   "home": {
@@ -48,20 +48,6 @@
     },
     {
       "side": "home",
-      "player_id": 37748580,
-      "player_name": "Justin Armando Lerma Soliz",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-26",
-      "end_date": null,
-      "games_missed": 6,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37602269,
       "player_name": "Filippo Calixte Mane",
       "type_id": 554,
@@ -72,6 +58,20 @@
       "start_date": "2026-09-06",
       "end_date": null,
       "games_missed": 3,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37748580,
+      "player_name": "Justin Armando Lerma Soliz",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-26",
+      "end_date": null,
+      "games_missed": 6,
       "likely_available": false
     },
     {
@@ -118,6 +118,20 @@
     },
     {
       "side": "away",
+      "player_id": 3861479,
+      "player_name": "Felix Agu",
+      "type_id": 547,
+      "type_name": "Fitness",
+      "type_name_cs": "Kondiční důvody",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-08",
+      "end_date": "2026-09-27",
+      "games_missed": null,
+      "likely_available": true
+    },
+    {
+      "side": "away",
       "player_id": 37259284,
       "player_name": "Justin Njinmah",
       "type_id": 535,
@@ -132,20 +146,6 @@
     },
     {
       "side": "away",
-      "player_id": 84658,
-      "player_name": "Jens Stage",
-      "type_id": 2036,
-      "type_name": "Tendon Rupture",
-      "type_name_cs": "Tendon Rupture",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-29",
-      "end_date": null,
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 3861479,
       "player_name": "Felix Agu",
       "type_id": 598,
@@ -154,9 +154,9 @@
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-07-26",
-      "end_date": null,
+      "end_date": "2026-09-07",
       "games_missed": 10,
-      "likely_available": false
+      "likely_available": true
     },
     {
       "side": "away",
@@ -170,6 +170,20 @@
       "start_date": "2026-03-26",
       "end_date": null,
       "games_missed": 19,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 84658,
+      "player_name": "Jens Stage",
+      "type_id": 2036,
+      "type_name": "Tendon Rupture",
+      "type_name_cs": "Tendon Rupture",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-29",
+      "end_date": null,
+      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -6733,5 +6747,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-03T10:04:40.551194Z"
 }

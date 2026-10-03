@@ -503,7 +503,7 @@
         "name": "FC Bayern München",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19735144,
@@ -528,5 +528,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-02T10:33:21Z"
+  "generated_at": "2026-10-03T10:19:48Z"
 }

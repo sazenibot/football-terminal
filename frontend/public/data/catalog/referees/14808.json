@@ -9,15 +9,15 @@
   "league_id": 8,
   "league_name": "Premier League",
   "in_league": true,
-  "league_matches": 5,
+  "league_matches": 6,
   "leagues": [
     {
       "id": 8,
       "name": "Premier League",
       "in_league": true,
-      "league_matches": 5
+      "league_matches": 6
     }
   ],
   "hook": "Chris Kavanagh píská v soutěži Premier League jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-10-02T10:32:56Z"
+  "generated_at": "2026-10-03T10:19:29Z"
 }

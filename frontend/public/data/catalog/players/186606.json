@@ -8,12 +8,12 @@
   "position_id": 24,
   "captain": false,
   "date_of_birth": "1994-10-03",
-  "age": 31,
+  "age": 32,
   "team_id": 19,
   "team_name": "Arsenal",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
   "league_id": 8,
   "league_name": "Premier League",
   "hook": "Kepa Arrizabalaga (Brankář) nastupuje za Arsenal. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-10-02T10:32:56Z"
+  "generated_at": "2026-10-03T10:19:29Z"
 }

@@ -3,7 +3,7 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "built_at": "2026-10-02T10:29:53.173892Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-09T16:00:00Z",
   "venue": "Stadion Kvapilova",
   "home": {
@@ -29,7 +29,7 @@
       "category_cs": "Trest/disciplinární",
       "start_date": "2026-09-19",
       "end_date": "2026-10-05",
-      "games_missed": 0,
+      "games_missed": 1,
       "likely_available": true
     }
   ],
@@ -5476,5 +5476,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-03T09:51:34.629333Z"
 }

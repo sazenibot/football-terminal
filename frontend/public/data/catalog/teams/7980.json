@@ -537,7 +537,7 @@
         "name": "Deportivo Alavés",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732659,
@@ -551,5 +551,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-02T10:33:41Z"
+  "generated_at": "2026-10-03T10:20:04Z"
 }

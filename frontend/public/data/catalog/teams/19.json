@@ -60,7 +60,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "1994-10-03",
-      "age": 31,
+      "age": 32,
       "team_id": 19,
       "team_name": "Arsenal",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
@@ -452,7 +452,7 @@
         "name": "Leeds United",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19722135,
@@ -477,5 +477,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-02T10:32:56Z"
+  "generated_at": "2026-10-03T10:19:29Z"
 }

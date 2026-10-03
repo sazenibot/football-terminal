@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:32:56Z",
+  "generated_at": "2026-10-03T10:19:29Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -5385,24 +5385,24 @@
       "league_matches": 7
     },
     {
+      "id": 14808,
+      "name": "Chris Kavanagh",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 6
+    },
+    {
       "id": 14812,
       "name": "Darren England",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 7
+      "league_matches": 6
     },
     {
       "id": 74959,
       "name": "Andy Madley",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 5
-    },
-    {
-      "id": 14808,
-      "name": "Chris Kavanagh",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,

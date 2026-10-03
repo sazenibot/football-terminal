@@ -391,6 +391,23 @@
       "league_name": "Chance Liga"
     },
     {
+      "id": 82717,
+      "name": "Milos Kratochvil",
+      "common_name": "M. Kratochvíl",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "number": null,
+      "position": "Záložník",
+      "position_id": 26,
+      "captain": false,
+      "date_of_birth": "1996-04-26",
+      "age": 30,
+      "team_id": 1745,
+      "team_name": "Zlín",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
+      "league_id": 262,
+      "league_name": "Chance Liga"
+    },
+    {
       "id": 37730059,
       "name": "Stanislav Petruța",
       "common_name": "S. Petruta",
@@ -579,5 +596,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-02T10:32:28Z"
+  "generated_at": "2026-10-03T10:18:58Z"
 }

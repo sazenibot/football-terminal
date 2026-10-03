@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T10:32:28Z",
+  "generated_at": "2026-10-03T10:18:58Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -24,11 +24,75 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
       },
       "has_full_data": true
+    },
+    {
+      "fixture_id": 19732665,
+      "starting_at": "2026-10-10T12:00:00Z",
+      "venue": "Estadio de Vallecas",
+      "home": {
+        "id": 377,
+        "name": "Rayo Vallecano",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/377.png"
+      },
+      "away": {
+        "id": 13258,
+        "name": "Athletic Club",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732672,
+      "starting_at": "2026-10-10T14:15:00Z",
+      "venue": "Estadio de Mendizorroza",
+      "home": {
+        "id": 2975,
+        "name": "Deportivo Alavés",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png"
+      },
+      "away": {
+        "id": 7980,
+        "name": "Atlético de Madrid",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732669,
+      "starting_at": "2026-10-10T16:30:00Z",
+      "venue": "Camp Nou",
+      "home": {
+        "id": 83,
+        "name": "FC Barcelona",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/19/83.png"
+      },
+      "away": {
+        "id": 106,
+        "name": "Getafe",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732664,
+      "starting_at": "2026-10-10T19:00:00Z",
+      "venue": "Estadio Santiago Bernabéu",
+      "home": {
+        "id": 3468,
+        "name": "Real Madrid",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/3468.png"
+      },
+      "away": {
+        "id": 3477,
+        "name": "Villarreal",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png"
+      },
+      "has_full_data": true
     }
   ],
   "stats": {
-    "created": 1,
-    "refreshed": 0,
+    "created": 4,
+    "refreshed": 1,
     "errors": 0
   }
 }

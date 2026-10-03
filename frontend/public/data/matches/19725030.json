@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-02T10:25:02.020832Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-09T16:00:00Z",
   "venue": "Stadion Letná",
   "home": {
@@ -29,7 +29,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-04-04",
       "end_date": "2026-12-31",
-      "games_missed": 28,
+      "games_missed": 29,
       "likely_available": false
     },
     {
@@ -62,20 +62,6 @@
     },
     {
       "side": "away",
-      "player_id": 37706709,
-      "player_name": "Brian Ouanda",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-01",
-      "end_date": null,
-      "games_missed": 5,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 37532696,
       "player_name": "Caumenan Ange Emmanu N'Guessan",
       "type_id": 532,
@@ -100,6 +86,20 @@
       "start_date": "2026-09-10",
       "end_date": null,
       "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37706709,
+      "player_name": "Brian Ouanda",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-01",
+      "end_date": null,
+      "games_missed": 5,
       "likely_available": false
     },
     {
@@ -7813,5 +7813,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-03T09:45:48.722179Z"
 }

@@ -537,7 +537,7 @@
         "name": "AFC Bournemouth",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19722140,
@@ -562,5 +562,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-02T10:32:56Z"
+  "generated_at": "2026-10-03T10:19:29Z"
 }
