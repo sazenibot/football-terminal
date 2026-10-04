@@ -3,7 +3,7 @@
   "league_id": 564,
   "league_name": "La Liga",
   "built_at": "2026-10-03T10:16:03.251196Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T14:15:00Z",
   "venue": "Estadio de Mendizorroza",
   "home": {
@@ -34,20 +34,6 @@
     },
     {
       "side": "home",
-      "player_id": 37591023,
-      "player_name": "Mikel Rodriguez Ulacia",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-04",
-      "end_date": "2027-05-01",
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 522619,
       "player_name": "Facundo Tomás Garcés",
       "type_id": 1615,
@@ -58,6 +44,20 @@
       "start_date": "2026-03-05",
       "end_date": "2026-11-02",
       "games_missed": 24,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37591023,
+      "player_name": "Mikel Rodriguez Ulacia",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-04",
+      "end_date": "2027-05-01",
+      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -7040,5 +7040,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:40:31.472812Z"
 }

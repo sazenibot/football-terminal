@@ -588,7 +588,7 @@
         "name": "Pardubice",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19725022,
@@ -613,5 +613,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-03T10:18:58Z"
+  "generated_at": "2026-10-04T10:45:23Z"
 }

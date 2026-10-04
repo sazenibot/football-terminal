@@ -9,21 +9,21 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "in_league": true,
-  "league_matches": 5,
+  "league_matches": 7,
   "leagues": [
     {
       "id": 262,
       "name": "Chance Liga",
       "in_league": true,
-      "league_matches": 5
+      "league_matches": 7
     },
     {
       "id": 265,
       "name": "Chance Národní Liga",
-      "in_league": false,
-      "league_matches": 0
+      "in_league": true,
+      "league_matches": 1
     }
   ],
   "hook": "Ondřej Berka píská v soutěži Chance Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-10-03T10:19:16Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

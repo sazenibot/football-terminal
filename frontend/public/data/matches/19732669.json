@@ -3,7 +3,7 @@
   "league_id": 564,
   "league_name": "La Liga",
   "built_at": "2026-10-03T10:17:33.559878Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T16:30:00Z",
   "venue": "Camp Nou",
   "home": {
@@ -118,17 +118,17 @@
     },
     {
       "side": "away",
-      "player_id": 185579,
-      "player_name": "Francisco Femenía Far",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
+      "player_id": 1410,
+      "player_name": "Juan Miguel Jiménez López",
+      "type_id": 536,
+      "type_name": "Knee Injury",
+      "type_name_cs": "Zranění kolena",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-07",
-      "end_date": "2026-10-05",
-      "games_missed": 4,
-      "likely_available": true
+      "start_date": "2026-04-21",
+      "end_date": "2026-11-02",
+      "games_missed": 22,
+      "likely_available": false
     },
     {
       "side": "away",
@@ -146,17 +146,17 @@
     },
     {
       "side": "away",
-      "player_id": 1410,
-      "player_name": "Juan Miguel Jiménez López",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
+      "player_id": 185579,
+      "player_name": "Francisco Femenía Far",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-04-21",
-      "end_date": "2026-11-02",
-      "games_missed": 22,
-      "likely_available": false
+      "start_date": "2026-09-07",
+      "end_date": "2026-10-05",
+      "games_missed": 4,
+      "likely_available": true
     }
   ],
   "predicted_lineups": {
@@ -7109,5 +7109,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:40:35.654770Z"
 }

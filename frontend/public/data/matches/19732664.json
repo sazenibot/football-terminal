@@ -3,7 +3,7 @@
   "league_id": 564,
   "league_name": "La Liga",
   "built_at": "2026-10-03T10:18:58.739894Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T19:00:00Z",
   "venue": "Estadio Santiago Bernabéu",
   "home": {
@@ -7281,5 +7281,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:40:38.894590Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T10:18:58Z",
+  "generated_at": "2026-10-04T10:45:23Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -88,11 +88,75 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png"
       },
       "has_full_data": true
+    },
+    {
+      "fixture_id": 19732670,
+      "starting_at": "2026-10-11T12:00:00Z",
+      "venue": "Estadio Manuel Martínez Valero",
+      "home": {
+        "id": 1099,
+        "name": "Elche",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/1099.png"
+      },
+      "away": {
+        "id": 36,
+        "name": "Celta de Vigo",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732663,
+      "starting_at": "2026-10-11T14:15:00Z",
+      "venue": "Anoeta Stadium",
+      "home": {
+        "id": 594,
+        "name": "Real Sociedad",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png"
+      },
+      "away": {
+        "id": 429,
+        "name": "Deportivo A Coruña",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732671,
+      "starting_at": "2026-10-11T16:30:00Z",
+      "venue": "Estadio La Cartuja de Sevilla",
+      "home": {
+        "id": 485,
+        "name": "Real Betis",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/5/485.png"
+      },
+      "away": {
+        "id": 459,
+        "name": "Osasuna",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19732666,
+      "starting_at": "2026-10-11T19:00:00Z",
+      "venue": "Campos de Sport de El Sardinero",
+      "home": {
+        "id": 9818,
+        "name": "Racing Santander",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/26/9818.png"
+      },
+      "away": {
+        "id": 214,
+        "name": "Valencia",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png"
+      },
+      "has_full_data": true
     }
   ],
   "stats": {
     "created": 4,
-    "refreshed": 1,
+    "refreshed": 5,
     "errors": 0
   }
 }

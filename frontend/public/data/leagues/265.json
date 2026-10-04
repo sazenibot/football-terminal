@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T09:55:44Z",
+  "generated_at": "2026-10-04T10:33:31Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -123,8 +123,8 @@
     }
   ],
   "stats": {
-    "created": 3,
-    "refreshed": 4,
+    "created": 0,
+    "refreshed": 7,
     "errors": 0
   }
 }

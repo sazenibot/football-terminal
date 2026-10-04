@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-03T10:08:53.496454Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T13:30:00Z",
   "venue": "Mewa Arena",
   "home": {
@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 129609,
-      "player_name": "Silvan Widmer",
-      "type_id": 2029,
-      "type_name": "Patellar Tendon Problems",
-      "type_name_cs": "Patellar Tendon Problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-05",
-      "end_date": null,
-      "games_missed": 3,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 31982,
       "player_name": "Dominik Kohr",
       "type_id": 537,
@@ -43,7 +29,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-08-30",
       "end_date": null,
-      "games_missed": 3,
+      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -57,7 +43,21 @@
       "category_cs": "Zranění",
       "start_date": "2026-09-14",
       "end_date": null,
-      "games_missed": 1,
+      "games_missed": 2,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 129609,
+      "player_name": "Silvan Widmer",
+      "type_id": 2029,
+      "type_name": "Patellar Tendon Problems",
+      "type_name_cs": "Patellar Tendon Problems",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-05",
+      "end_date": null,
+      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -71,7 +71,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-04-09",
       "end_date": null,
-      "games_missed": 20,
+      "games_missed": 21,
       "likely_available": false
     },
     {
@@ -85,7 +85,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-03-13",
       "end_date": null,
-      "games_missed": 24,
+      "games_missed": 25,
       "likely_available": false
     },
     {
@@ -99,7 +99,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-08-06",
       "end_date": null,
-      "games_missed": 7,
+      "games_missed": 8,
       "likely_available": false
     },
     {
@@ -118,20 +118,6 @@
     },
     {
       "side": "away",
-      "player_id": 37316600,
-      "player_name": "Guela Doué",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-15",
-      "end_date": null,
-      "games_missed": 2,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 37601342,
       "player_name": "Eliesse Ben Seghir",
       "type_id": 531,
@@ -142,6 +128,20 @@
       "start_date": "2026-09-19",
       "end_date": null,
       "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37316600,
+      "player_name": "Guela Doué",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-15",
+      "end_date": null,
+      "games_missed": 2,
       "likely_available": false
     },
     {
@@ -6826,5 +6826,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:37:50.145242Z"
 }

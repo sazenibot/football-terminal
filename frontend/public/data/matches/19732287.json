@@ -3,7 +3,7 @@
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "built_at": "2026-10-03T09:55:44.312586Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T16:00:00Z",
   "venue": "Stadion Rudolfa Labaje",
   "home": {
@@ -5154,5 +5154,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:33:31.381362Z"
 }

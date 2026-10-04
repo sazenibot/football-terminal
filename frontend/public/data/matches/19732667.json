@@ -20,16 +20,16 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37336532,
-      "player_name": "Diego Murillo Dominguez",
-      "type_id": 2021,
-      "type_name": "Inner Knee Ligament Tear",
-      "type_name_cs": "Inner Knee Ligament Tear",
+      "player_id": 37723837,
+      "player_name": "Aarón Ochoa Moloney",
+      "type_id": 1543,
+      "type_name": "Meniscus Tear",
+      "type_name_cs": "Meniscus Tear",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-06-20",
-      "end_date": "2026-12-01",
-      "games_missed": 13,
+      "start_date": "2026-08-17",
+      "end_date": "2027-01-01",
+      "games_missed": 7,
       "likely_available": false
     },
     {
@@ -48,16 +48,16 @@
     },
     {
       "side": "home",
-      "player_id": 37723837,
-      "player_name": "Aarón Ochoa Moloney",
-      "type_id": 1543,
-      "type_name": "Meniscus Tear",
-      "type_name_cs": "Meniscus Tear",
+      "player_id": 37336532,
+      "player_name": "Diego Murillo Dominguez",
+      "type_id": 2021,
+      "type_name": "Inner Knee Ligament Tear",
+      "type_name_cs": "Inner Knee Ligament Tear",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-17",
-      "end_date": "2027-01-01",
-      "games_missed": 7,
+      "start_date": "2026-06-20",
+      "end_date": "2026-12-01",
+      "games_missed": 13,
       "likely_available": false
     },
     {
@@ -6000,5 +6000,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-03T10:13:01.434506Z"
+  "refreshed_at": "2026-10-04T10:40:23.572354Z"
 }

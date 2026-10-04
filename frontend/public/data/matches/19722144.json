@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-10-03T09:58:28.782818Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T14:00:00Z",
   "venue": "Stadium of Light",
   "home": {
@@ -6402,5 +6402,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:33:40.455478Z"
 }

@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-03T09:51:17.350831Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T16:00:00Z",
   "venue": "Stadion Dolícek",
   "home": {
@@ -29,7 +29,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-08-30",
       "end_date": null,
-      "games_missed": 5,
+      "games_missed": 6,
       "likely_available": false
     },
     {
@@ -43,7 +43,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-08-30",
       "end_date": null,
-      "games_missed": 5,
+      "games_missed": 6,
       "likely_available": false
     }
   ],
@@ -7229,5 +7229,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:29:20.165084Z"
 }

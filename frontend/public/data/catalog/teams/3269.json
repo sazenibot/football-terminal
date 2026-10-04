@@ -442,6 +442,23 @@
       "league_name": "Chance Liga"
     },
     {
+      "id": 37539019,
+      "name": "David Latal",
+      "common_name": "D. Látal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "number": null,
+      "position": "Útočník",
+      "position_id": 27,
+      "captain": false,
+      "date_of_birth": "2003-01-21",
+      "age": 23,
+      "team_id": 3269,
+      "team_name": "Baník Ostrava",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
+      "league_id": 262,
+      "league_name": "Chance Liga"
+    },
+    {
       "id": 80987,
       "name": "Filip Kubala ",
       "common_name": "F. Kubala",
@@ -528,5 +545,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-03T10:18:58Z"
+  "generated_at": "2026-10-04T10:45:23Z"
 }

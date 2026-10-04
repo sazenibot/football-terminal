@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-03T09:49:56.848877Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T13:00:00Z",
   "venue": "Doosan Aréna",
   "home": {
@@ -7194,5 +7194,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:29:16.440737Z"
 }

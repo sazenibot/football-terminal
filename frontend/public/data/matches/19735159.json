@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-03T10:11:34.104452Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T13:30:00Z",
   "venue": "PreZero Arena",
   "home": {
@@ -6314,5 +6314,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:37:58.111024Z"
 }

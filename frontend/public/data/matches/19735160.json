@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-03T10:12:53.599966Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T16:30:00Z",
   "venue": "Red Bull Arena",
   "home": {
@@ -20,16 +20,16 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37266099,
-      "player_name": "Rocco Reitz",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
+      "player_id": 37400407,
+      "player_name": "Johan Bakayoko",
+      "type_id": 531,
+      "type_name": "Knock",
+      "type_name_cs": "Knock",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-03",
+      "start_date": "2026-09-20",
       "end_date": null,
-      "games_missed": 4,
+      "games_missed": 1,
       "likely_available": false
     },
     {
@@ -48,14 +48,28 @@
     },
     {
       "side": "home",
-      "player_id": 37400407,
-      "player_name": "Johan Bakayoko",
-      "type_id": 531,
-      "type_name": "Knock",
-      "type_name_cs": "Knock",
+      "player_id": 37266099,
+      "player_name": "Rocco Reitz",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-20",
+      "start_date": "2026-09-03",
+      "end_date": null,
+      "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37645043,
+      "player_name": "Forzan Assan Ouedraogo",
+      "type_id": 545,
+      "type_name": "Shoulder Injury",
+      "type_name_cs": "Zranění ramene",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-14",
       "end_date": null,
       "games_missed": 1,
       "likely_available": false
@@ -70,20 +84,6 @@
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-19",
-      "end_date": null,
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37645043,
-      "player_name": "Forzan Assan Ouedraogo",
-      "type_id": 545,
-      "type_name": "Shoulder Injury",
-      "type_name_cs": "Zranění ramene",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-14",
       "end_date": null,
       "games_missed": 1,
       "likely_available": false
@@ -6719,5 +6719,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:38:01.062371Z"
 }

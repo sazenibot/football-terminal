@@ -519,7 +519,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "2007-10-04",
-      "age": 18,
+      "age": 19,
       "team_id": 1745,
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
@@ -596,5 +596,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-03T10:18:58Z"
+  "generated_at": "2026-10-04T10:45:23Z"
 }

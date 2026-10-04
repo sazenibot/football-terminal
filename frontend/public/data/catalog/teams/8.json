@@ -520,7 +520,7 @@
         "name": "Manchester City",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19722142,
@@ -534,5 +534,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-03T10:19:29Z"
+  "generated_at": "2026-10-04T10:45:54Z"
 }

@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-03T09:47:11.301103Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T13:00:00Z",
   "venue": "Malšovická aréna",
   "home": {
@@ -29,7 +29,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-05-31",
       "end_date": null,
-      "games_missed": 18,
+      "games_missed": 19,
       "likely_available": false
     }
   ],
@@ -5809,5 +5809,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:29:10.578738Z"
 }

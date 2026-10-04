@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-03T10:10:13.362047Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T13:30:00Z",
   "venue": "WWK Arena",
   "home": {
@@ -20,6 +20,20 @@
   "sidelined": [
     {
       "side": "home",
+      "player_id": 96201,
+      "player_name": "Steve Mounié",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-07-31",
+      "end_date": null,
+      "games_missed": 9,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37703671,
       "player_name": "Faik Sakar",
       "type_id": 672,
@@ -29,7 +43,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-09-10",
       "end_date": null,
-      "games_missed": 4,
+      "games_missed": 5,
       "likely_available": false
     },
     {
@@ -44,20 +58,6 @@
       "start_date": "2026-09-02",
       "end_date": null,
       "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 96201,
-      "player_name": "Steve Mounié",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-07-31",
-      "end_date": null,
-      "games_missed": 9,
       "likely_available": false
     },
     {
@@ -85,7 +85,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-08-29",
       "end_date": null,
-      "games_missed": 6,
+      "games_missed": 7,
       "likely_available": false
     }
   ],
@@ -6478,5 +6478,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:37:54.424719Z"
 }

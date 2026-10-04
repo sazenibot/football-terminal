@@ -213,7 +213,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2003-10-04",
-      "age": 22,
+      "age": 23,
       "team_id": 2642,
       "team_name": "Paderborn",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png",
@@ -485,7 +485,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "1999-10-04",
-      "age": 26,
+      "age": 27,
       "team_id": 2642,
       "team_name": "Paderborn",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png",
@@ -596,5 +596,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-03T10:19:48Z"
+  "generated_at": "2026-10-04T10:46:13Z"
 }

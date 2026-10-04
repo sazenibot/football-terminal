@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T10:18:58Z",
+  "generated_at": "2026-10-04T10:45:23Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -854,6 +854,15 @@
       "team_name": "Pardubice",
       "position": "Obránce",
       "number": 37
+    },
+    {
+      "id": 37539019,
+      "name": "David Latal",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3269,
+      "team_name": "Baník Ostrava",
+      "position": "Útočník",
+      "number": null
     },
     {
       "id": 82080,
@@ -4381,11 +4390,19 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 8
+      "league_matches": 7
     },
     {
       "id": 72915,
       "name": "Marek Radina",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 7
+    },
+    {
+      "id": 17129,
+      "name": "Ondřej Berka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4405,14 +4422,6 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 6
-    },
-    {
-      "id": 17129,
-      "name": "Ondřej Berka",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
       "league_matches": 5
     },
     {
@@ -4421,15 +4430,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 75580,
-      "name": "Daniel Vokoun",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 2
+      "league_matches": 4
     },
     {
       "id": 15436,
@@ -4462,6 +4463,14 @@
       "country": "Czech Republic",
       "in_league": true,
       "league_matches": 2
+    },
+    {
+      "id": 75580,
+      "name": "Daniel Vokoun",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 1
     },
     {
       "id": 1158996,

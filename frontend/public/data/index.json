@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T10:18:58Z",
+  "generated_at": "2026-10-04T10:45:23Z",
   "default_league_id": 262,
   "stale_after_hours": 26,
   "window_days": 7,
@@ -11,8 +11,8 @@
       "country": "Česko",
       "enabled": true,
       "logo": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png",
-      "match_count": 5,
-      "round_count": 5
+      "match_count": 8,
+      "round_count": 8
     },
     {
       "id": 265,
@@ -31,8 +31,8 @@
       "country": "Anglie",
       "enabled": true,
       "logo": "https://cdn.sportmonks.com/images/soccer/leagues/8/8.png",
-      "match_count": 6,
-      "round_count": 6
+      "match_count": 9,
+      "round_count": 9
     },
     {
       "id": 82,
@@ -41,8 +41,8 @@
       "country": "Německo",
       "enabled": true,
       "logo": "https://cdn.sportmonks.com/images/soccer/leagues/18/82.png",
-      "match_count": 7,
-      "round_count": 7
+      "match_count": 9,
+      "round_count": 9
     },
     {
       "id": 564,
@@ -51,8 +51,8 @@
       "country": "Španělsko",
       "enabled": true,
       "logo": "https://cdn.sportmonks.com/images/soccer/leagues/20/564.png",
-      "match_count": 5,
-      "round_count": 5
+      "match_count": 9,
+      "round_count": 9
     },
     {
       "id": 268,

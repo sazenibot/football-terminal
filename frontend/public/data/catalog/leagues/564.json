@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T10:20:04Z",
+  "generated_at": "2026-10-04T10:46:32Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -5544,7 +5544,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
-      "league_matches": 5
+      "league_matches": 6
     },
     {
       "id": 13963,
@@ -5563,14 +5563,6 @@
       "league_matches": 4
     },
     {
-      "id": 19630,
-      "name": "Alejandro Muñíz Ruiz",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
       "id": 50680,
       "name": "Alejandro Quintero González",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5579,16 +5571,8 @@
       "league_matches": 4
     },
     {
-      "id": 13604,
-      "name": "Francisco José Hernández Maeso",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
-      "id": 838433,
-      "name": "Jesús Gil Manzano",
+      "id": 22618,
+      "name": "César Soto Grado",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
@@ -5627,6 +5611,14 @@
       "league_matches": 4
     },
     {
+      "id": 20636,
+      "name": "Miguel Ángel Ortiz Arias",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
       "id": 18637,
       "name": "Ricardo De Burgos Bengoetxea",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5635,16 +5627,24 @@
       "league_matches": 4
     },
     {
-      "id": 22618,
-      "name": "César Soto Grado",
+      "id": 19630,
+      "name": "Alejandro Muñíz Ruiz",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
       "league_matches": 3
     },
     {
-      "id": 20636,
-      "name": "Miguel Ángel Ortiz Arias",
+      "id": 13604,
+      "name": "Francisco José Hernández Maeso",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 838433,
+      "name": "Jesús Gil Manzano",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
@@ -5697,6 +5697,14 @@
       "country": "Spain",
       "in_league": true,
       "league_matches": 2
+    },
+    {
+      "id": 13525,
+      "name": "Guillermo Cuadra Fernández",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 1
     },
     {
       "id": 14321,
@@ -7149,14 +7157,6 @@
     {
       "id": 17270,
       "name": "Guillermo Conejero Sánchez",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": false,
-      "league_matches": 0
-    },
-    {
-      "id": 13525,
-      "name": "Guillermo Cuadra Fernández",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": false,

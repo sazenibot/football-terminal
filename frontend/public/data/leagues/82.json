@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T10:12:53Z",
+  "generated_at": "2026-10-04T10:40:17Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -120,11 +120,43 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png"
       },
       "has_full_data": true
+    },
+    {
+      "fixture_id": 19735154,
+      "starting_at": "2026-10-11T13:30:00Z",
+      "venue": "RheinEnergieStadion",
+      "home": {
+        "id": 3320,
+        "name": "FC Köln",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/3320.png"
+      },
+      "away": {
+        "id": 683,
+        "name": "Borussia Mönchengladbach",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19735158,
+      "starting_at": "2026-10-11T15:30:00Z",
+      "venue": "Europa-Park Stadion",
+      "home": {
+        "id": 3543,
+        "name": "SC Freiburg",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/23/3543.png"
+      },
+      "away": {
+        "id": 67,
+        "name": "Schalke 04",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png"
+      },
+      "has_full_data": true
     }
   ],
   "stats": {
-    "created": 6,
-    "refreshed": 1,
+    "created": 2,
+    "refreshed": 7,
     "errors": 0
   }
 }

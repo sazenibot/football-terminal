@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T10:04:27Z",
+  "generated_at": "2026-10-04T10:37:26Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -104,11 +104,59 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png"
       },
       "has_full_data": true
+    },
+    {
+      "fixture_id": 19722148,
+      "starting_at": "2026-10-11T13:00:00Z",
+      "venue": "MKM Stadium",
+      "home": {
+        "id": 22,
+        "name": "Hull City",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png"
+      },
+      "away": {
+        "id": 13,
+        "name": "Everton",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722149,
+      "starting_at": "2026-10-11T13:00:00Z",
+      "venue": "Selhurst Park",
+      "home": {
+        "id": 51,
+        "name": "Crystal Palace",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png"
+      },
+      "away": {
+        "id": 63,
+        "name": "Nottingham Forest",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722146,
+      "starting_at": "2026-10-11T15:30:00Z",
+      "venue": "Anfield",
+      "home": {
+        "id": 8,
+        "name": "Liverpool",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png"
+      },
+      "away": {
+        "id": 9,
+        "name": "Manchester City",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
+      },
+      "has_full_data": true
     }
   ],
   "stats": {
-    "created": 6,
-    "refreshed": 0,
+    "created": 3,
+    "refreshed": 6,
     "errors": 0
   }
 }

@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-03T10:07:26.771199Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T13:30:00Z",
   "venue": "Stadion An der Alten Försterei",
   "home": {
@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 540548,
-      "player_name": "Stanley Nsoki",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-07-15",
-      "end_date": null,
-      "games_missed": 12,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37650987,
       "player_name": "Andrik Markgraf",
       "type_id": 1918,
@@ -48,16 +34,16 @@
     },
     {
       "side": "home",
-      "player_id": 37721450,
-      "player_name": "Mekhi Gray",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
+      "player_id": 540548,
+      "player_name": "Stanley Nsoki",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-17",
+      "start_date": "2026-07-15",
       "end_date": null,
-      "games_missed": 6,
+      "games_missed": 12,
       "likely_available": false
     },
     {
@@ -72,6 +58,20 @@
       "start_date": "2026-07-20",
       "end_date": null,
       "games_missed": 10,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37721450,
+      "player_name": "Mekhi Gray",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-17",
+      "end_date": null,
+      "games_missed": 6,
       "likely_available": false
     },
     {
@@ -4482,5 +4482,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-04T10:37:43.790856Z"
 }

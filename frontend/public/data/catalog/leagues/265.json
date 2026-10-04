@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T10:19:16Z",
+  "generated_at": "2026-10-04T10:45:39Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -4706,7 +4706,15 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 7
+      "league_matches": 6
+    },
+    {
+      "id": 74540,
+      "name": "Vojtěch Opočenský",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 5
     },
     {
       "id": 75580,
@@ -4727,14 +4735,6 @@
     {
       "id": 16465,
       "name": "Pavel Orel",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
-      "id": 74540,
-      "name": "Vojtěch Opočenský",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4831,6 +4831,14 @@
     {
       "id": 69866,
       "name": "D. Černý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 17129,
+      "name": "Ondřej Berka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -5471,14 +5479,6 @@
     {
       "id": 16879,
       "name": "Ondrej Pelikán",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": false,
-      "league_matches": 0
-    },
-    {
-      "id": 17129,
-      "name": "Ondřej Berka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": false,

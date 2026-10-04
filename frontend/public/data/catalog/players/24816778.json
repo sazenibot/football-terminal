@@ -8,12 +8,12 @@
   "position_id": 26,
   "captain": false,
   "date_of_birth": "2002-10-04",
-  "age": 23,
+  "age": 24,
   "team_id": 234,
   "team_name": "Slovácko",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
   "league_id": 262,
   "league_name": "Chance Liga",
   "hook": "Martin Šviderský (Záložník) nastupuje za Slovácko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-10-03T10:18:58Z"
+  "generated_at": "2026-10-04T10:45:23Z"
 }

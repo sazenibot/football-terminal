@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T09:51:17Z",
+  "generated_at": "2026-10-04T10:33:08Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -86,6 +86,54 @@
         "id": 3269,
         "name": "Baník Ostrava",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725034,
+      "starting_at": "2026-10-11T11:00:00Z",
+      "venue": "Stadion u Nisy",
+      "home": {
+        "id": 463,
+        "name": "Slovan Liberec",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png"
+      },
+      "away": {
+        "id": 234,
+        "name": "Slovácko",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725036,
+      "starting_at": "2026-10-11T13:00:00Z",
+      "venue": "Na Stínadlech",
+      "home": {
+        "id": 1351,
+        "name": "Teplice",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png"
+      },
+      "away": {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725032,
+      "starting_at": "2026-10-11T16:00:00Z",
+      "venue": "TC Strahov",
+      "home": {
+        "id": 2727,
+        "name": "Sparta Praha",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png"
+      },
+      "away": {
+        "id": 4484,
+        "name": "Pardubice",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png"
       },
       "has_full_data": true
     }
