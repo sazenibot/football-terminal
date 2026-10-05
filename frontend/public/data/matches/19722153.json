@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 3259,
-      "player_name": "Ben White",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-18",
-      "end_date": "2026-10-10",
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37592228,
       "player_name": "Cristhian Andrey Mosquera Ibarguen",
       "type_id": 535,
@@ -44,6 +30,20 @@
       "start_date": "2026-08-31",
       "end_date": "2026-10-10",
       "games_missed": 6,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 3259,
+      "player_name": "Ben White",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-18",
+      "end_date": "2026-10-10",
+      "games_missed": 1,
       "likely_available": false
     },
     {
@@ -6490,5 +6490,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:33:36.989633Z"
+  "refreshed_at": "2026-10-05T11:20:16.796892Z"
 }

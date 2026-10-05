@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-04T10:30:37.057929Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T11:00:00Z",
   "venue": "Stadion u Nisy",
   "home": {
@@ -18,20 +18,6 @@
   },
   "referee": null,
   "sidelined": [
-    {
-      "side": "home",
-      "player_id": 25954305,
-      "player_name": "Jan Knapík",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2025-01-21",
-      "end_date": "2026-10-02",
-      "games_missed": 76,
-      "likely_available": true
-    },
     {
       "side": "home",
       "player_id": 37600322,
@@ -7137,5 +7123,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-05T11:18:26.184955Z"
 }

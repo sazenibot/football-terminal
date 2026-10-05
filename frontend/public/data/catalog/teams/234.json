@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Slovácko je 15. v tabulce Chance Liga (4 b. z 9 zápasů, skóre 7:16).",
+  "hook": "Slovácko hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 37687869,
@@ -31,8 +31,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79357,
@@ -49,8 +48,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80686,
@@ -67,8 +65,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38213053,
@@ -85,8 +82,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37430182,
@@ -103,8 +99,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80819,
@@ -121,8 +116,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37553586,
@@ -139,8 +133,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38212428,
@@ -157,8 +150,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 181086,
@@ -175,8 +167,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38209244,
@@ -193,8 +184,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37730010,
@@ -211,12 +201,11 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37704919,
-      "name": "Tomas Kral",
+      "name": "Tomáš Král",
       "common_name": "T. Král",
       "image": "https://cdn.sportmonks.com/images/soccer/players/23/37704919.png",
       "number": 19,
@@ -229,8 +218,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 25922234,
@@ -247,8 +235,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38200686,
@@ -265,8 +252,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37917553,
@@ -283,8 +269,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 27854,
@@ -301,8 +286,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 24816778,
@@ -319,8 +303,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79921,
@@ -337,8 +320,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 182146,
@@ -355,8 +337,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37618814,
@@ -373,8 +354,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 142463,
@@ -391,8 +371,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 34392012,
@@ -409,8 +388,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 81529,
@@ -427,8 +405,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37577338,
@@ -445,8 +422,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37548012,
@@ -463,8 +439,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37570074,
@@ -481,8 +456,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 24816840,
@@ -499,8 +473,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80280,
@@ -517,8 +490,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37761200,
@@ -535,8 +507,7 @@
       "team_name": "Slovácko",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -583,7 +554,7 @@
       "fdr": "hard"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:11Z",
     "hook_kind": "facts",
@@ -597,7 +568,7 @@
       "lost": 5,
       "gf": 7,
       "ga": 16,
-      "form": "RPRRP"
+      "form": null
     },
     "recent": [
       {
@@ -3089,13 +3060,5 @@
       "end": "2029-06-30",
       "active": true
     }
-  },
-  "coach": {
-    "id": 81136,
-    "name": "Jan Jelinek",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2026-07-01",
-    "end": "2029-06-30",
-    "active": true
   }
 }

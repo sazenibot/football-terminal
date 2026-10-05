@@ -103,7 +103,7 @@
     },
     {
       "id": 37702630,
-      "name": "J. Chytrý",
+      "name": "Jan Chytrý",
       "common_name": "J. Chytrý",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 24,
@@ -137,7 +137,7 @@
     },
     {
       "id": 37704733,
-      "name": "Jirí Hamza",
+      "name": "Jiří Hamza",
       "common_name": "J. Hamza",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 14,
@@ -556,5 +556,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:45:39Z"
+  "generated_at": "2026-10-05T11:24:39Z"
 }

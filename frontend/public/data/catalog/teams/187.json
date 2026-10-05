@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Mladá Boleslav je 3. v tabulce Chance Liga (17 b. z 8 zápasů, skóre 17:9).",
+  "hook": "Mladá Boleslav hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 81854,
@@ -31,8 +31,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37729998,
@@ -49,8 +48,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80997,
@@ -67,8 +65,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37569216,
@@ -85,8 +82,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37509506,
@@ -103,8 +99,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37626767,
@@ -121,8 +116,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37659510,
@@ -139,8 +133,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37629262,
@@ -157,8 +150,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37921890,
@@ -175,8 +167,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 180960,
@@ -193,8 +184,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79920,
@@ -211,8 +201,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37612553,
@@ -229,8 +218,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80890,
@@ -247,8 +235,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37316352,
@@ -265,8 +252,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37499633,
@@ -283,8 +269,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 24816838,
@@ -301,8 +286,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37661862,
@@ -319,8 +303,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37944931,
@@ -337,8 +320,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37730008,
@@ -355,8 +337,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37745202,
@@ -373,8 +354,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37577340,
@@ -391,8 +371,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 6974924,
@@ -409,8 +388,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 133144,
@@ -427,8 +405,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37596491,
@@ -445,8 +422,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37539027,
@@ -463,8 +439,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 458627,
@@ -481,12 +456,11 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37598775,
-      "name": "Jan Buryan",
+      "name": "Jan Buryán",
       "common_name": "J. Buryán",
       "image": "https://cdn.sportmonks.com/images/soccer/players/23/37598775.png",
       "number": 70,
@@ -499,8 +473,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 82177,
@@ -517,8 +490,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 22158841,
@@ -535,8 +507,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37692124,
@@ -553,8 +524,7 @@
       "team_name": "Mladá Boleslav",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -615,7 +585,7 @@
       "fdr": "hard"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:05Z",
     "hook_kind": "facts",
@@ -629,7 +599,7 @@
       "lost": 1,
       "gf": 17,
       "ga": 9,
-      "form": "VPVVR"
+      "form": null
     },
     "recent": [
       {
@@ -2924,13 +2894,5 @@
       "end": "2029-06-30",
       "active": true
     }
-  },
-  "coach": {
-    "id": 37761621,
-    "name": "A. Majer",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2025-07-01",
-    "end": "2029-06-30",
-    "active": true
   }
 }

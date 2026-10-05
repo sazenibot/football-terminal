@@ -222,7 +222,7 @@
     },
     {
       "id": 37581741,
-      "name": "Archie Gray",
+      "name": "Archie James Francis Gray",
       "common_name": "A. Gray",
       "image": "https://cdn.sportmonks.com/images/soccer/players/13/37581741.png",
       "number": 14,
@@ -477,7 +477,7 @@
     },
     {
       "id": 37531504,
-      "name": "Mathys Tel",
+      "name": "Mathys Henri Tel",
       "common_name": "M. Tel",
       "image": "https://cdn.sportmonks.com/images/soccer/players/16/37531504.png",
       "number": 11,
@@ -528,7 +528,7 @@
     },
     {
       "id": 37593240,
-      "name": "Wilson Odobert ",
+      "name": "Wilson Serge Eric Odobert",
       "common_name": "W. Odobert",
       "image": "https://cdn.sportmonks.com/images/soccer/players/24/37593240.png",
       "number": 28,
@@ -579,5 +579,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:45:54Z"
+  "generated_at": "2026-10-05T11:24:53Z"
 }

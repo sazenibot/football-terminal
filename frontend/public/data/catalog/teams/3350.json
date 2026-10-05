@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Zbrojovka Brno je 6. v tabulce Chance Liga (16 b. z 9 zápasů, skóre 12:12).",
+  "hook": "Zbrojovka Brno hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 37564661,
@@ -31,8 +31,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 81432,
@@ -49,8 +48,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37772596,
@@ -67,8 +65,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 30446914,
@@ -85,8 +82,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 81640,
@@ -103,12 +99,11 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37598825,
-      "name": "Eric Hunal",
+      "name": "Eric Hunál",
       "common_name": "E. Hunal",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 4,
@@ -121,8 +116,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 7026579,
@@ -139,8 +133,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 7346234,
@@ -157,8 +150,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 82492,
@@ -175,8 +167,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37731745,
@@ -193,8 +184,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80482,
@@ -211,8 +201,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80879,
@@ -229,8 +218,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 496674,
@@ -247,8 +235,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 82593,
@@ -265,8 +252,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79978,
@@ -283,12 +269,11 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37597195,
-      "name": "Lukas Penxa",
+      "name": "Lukáš Penxa",
       "common_name": "L. Penxa",
       "image": "https://cdn.sportmonks.com/images/soccer/players/11/37597195.png",
       "number": 6,
@@ -301,8 +286,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37663591,
@@ -319,8 +303,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37586104,
@@ -337,8 +320,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 82825,
@@ -355,8 +337,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 82060,
@@ -373,8 +354,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37761823,
@@ -391,8 +371,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 23697929,
@@ -409,8 +388,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37561987,
@@ -427,8 +405,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 30106019,
@@ -445,8 +422,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 20336073,
@@ -463,8 +439,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37665416,
@@ -481,8 +456,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 7742185,
@@ -499,8 +473,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37259958,
@@ -517,8 +490,7 @@
       "team_name": "Zbrojovka Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -565,7 +537,7 @@
       "fdr": "easy"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:15Z",
     "hook_kind": "facts",
@@ -579,7 +551,7 @@
       "lost": 3,
       "gf": 12,
       "ga": 12,
-      "form": "PVPVV"
+      "form": null
     },
     "recent": [
       {
@@ -2200,13 +2172,5 @@
       "end": "2030-06-30",
       "active": true
     }
-  },
-  "coach": {
-    "id": 524084,
-    "name": "Martin Svědík",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2025-04-12",
-    "end": "2030-06-30",
-    "active": true
   }
 }

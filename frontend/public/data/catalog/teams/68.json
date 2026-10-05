@@ -290,7 +290,7 @@
     },
     {
       "id": 37581777,
-      "name": "Jobe Bellingham",
+      "name": "Jobe Samuel Patrick Bellingham",
       "common_name": "J. Bellingham",
       "image": "https://cdn.sportmonks.com/images/soccer/players/17/37581777.png",
       "number": 7,
@@ -409,7 +409,7 @@
     },
     {
       "id": 37568808,
-      "name": "Ethan Nwaneri",
+      "name": "Ethan Chidiebere Nwaneri",
       "common_name": "E. Nwaneri",
       "image": "https://cdn.sportmonks.com/images/soccer/players/8/37568808.png",
       "number": 18,
@@ -562,5 +562,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:46:13Z"
+  "generated_at": "2026-10-05T11:25:16Z"
 }

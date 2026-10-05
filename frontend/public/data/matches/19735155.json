@@ -20,34 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37650987,
-      "player_name": "Andrik Markgraf",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-07-09",
-      "end_date": null,
-      "games_missed": 14,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 540548,
-      "player_name": "Stanley Nsoki",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-07-15",
-      "end_date": null,
-      "games_missed": 12,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 6286,
       "player_name": "Oliver Burke",
       "type_id": 603,
@@ -72,6 +44,34 @@
       "start_date": "2026-08-17",
       "end_date": null,
       "games_missed": 6,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37650987,
+      "player_name": "Andrik Markgraf",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-07-09",
+      "end_date": null,
+      "games_missed": 14,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 540548,
+      "player_name": "Stanley Nsoki",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-07-15",
+      "end_date": null,
+      "games_missed": 12,
       "likely_available": false
     },
     {
@@ -4483,5 +4483,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:37:43.790856Z"
+  "refreshed_at": "2026-10-05T11:22:10.075684Z"
 }

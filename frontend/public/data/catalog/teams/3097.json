@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Sigma Olomouc je 4. v tabulce Chance Liga (16 b. z 9 zápasů, skóre 16:13).",
+  "hook": "Sigma Olomouc hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 37664960,
@@ -31,12 +31,11 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37702574,
-      "name": "Jan Koutny",
+      "name": "Jan Koutný",
       "common_name": "J. Koutný",
       "image": "https://cdn.sportmonks.com/images/soccer/players/14/37702574.png",
       "number": 91,
@@ -49,8 +48,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 81885,
@@ -67,8 +65,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37529478,
@@ -85,8 +82,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 21781423,
@@ -103,8 +99,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37685962,
@@ -121,8 +116,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37590296,
@@ -139,8 +133,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 2206562,
@@ -157,8 +150,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37528335,
@@ -175,8 +167,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37324996,
@@ -193,8 +184,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 28571256,
@@ -211,8 +201,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37730615,
@@ -229,8 +218,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37694875,
@@ -247,8 +235,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 181049,
@@ -265,8 +252,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37455133,
@@ -283,8 +269,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37344034,
@@ -301,8 +286,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37687958,
@@ -319,8 +303,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 24816829,
@@ -337,8 +320,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 19996755,
@@ -355,8 +337,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37537180,
@@ -373,8 +354,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37324970,
@@ -391,8 +371,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37253472,
@@ -409,8 +388,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 23697806,
@@ -427,8 +405,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37762354,
@@ -445,8 +422,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38031489,
@@ -463,8 +439,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37569773,
@@ -481,8 +456,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 2178571,
@@ -499,8 +473,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37600577,
@@ -517,8 +490,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37533888,
@@ -535,8 +507,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37570074,
@@ -553,8 +524,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 32548,
@@ -571,8 +541,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37683654,
@@ -589,12 +558,11 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37648900,
-      "name": "Matej Mikulenka",
+      "name": "Matěj Mikulenka",
       "common_name": "M. Mikulenka",
       "image": "https://cdn.sportmonks.com/images/soccer/players/4/37648900.png",
       "number": 25,
@@ -607,8 +575,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 24816839,
@@ -625,8 +592,7 @@
       "team_name": "Sigma Olomouc",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -673,7 +639,7 @@
       "fdr": "easy"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:07Z",
     "hook_kind": "facts",
@@ -687,7 +653,7 @@
       "lost": 3,
       "gf": 16,
       "ga": 13,
-      "form": "PVVPV"
+      "form": null
     },
     "recent": [
       {
@@ -2630,13 +2596,5 @@
       "end": null,
       "active": true
     }
-  },
-  "coach": {
-    "id": 896141,
-    "name": "Pavel Hapal",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2026-07-01",
-    "end": null,
-    "active": true
   }
 }

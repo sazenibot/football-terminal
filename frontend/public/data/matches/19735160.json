@@ -20,6 +20,20 @@
   "sidelined": [
     {
       "side": "home",
+      "player_id": 37664041,
+      "player_name": "Marc Guiu Paz",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-18",
+      "end_date": null,
+      "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37400407,
       "player_name": "Johan Bakayoko",
       "type_id": 531,
@@ -34,14 +48,14 @@
     },
     {
       "side": "home",
-      "player_id": 37664041,
-      "player_name": "Marc Guiu Paz",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
+      "player_id": 24469115,
+      "player_name": "Castello Lukeba",
+      "type_id": 598,
+      "type_name": "Muscular problems",
+      "type_name_cs": "Muscular problems",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-18",
+      "start_date": "2026-09-19",
       "end_date": null,
       "games_missed": 1,
       "likely_available": false
@@ -76,20 +90,6 @@
     },
     {
       "side": "home",
-      "player_id": 24469115,
-      "player_name": "Castello Lukeba",
-      "type_id": 598,
-      "type_name": "Muscular problems",
-      "type_name_cs": "Muscular problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-19",
-      "end_date": null,
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 32589,
       "player_name": "Leopold Zingerle",
       "type_id": 1612,
@@ -118,20 +118,6 @@
     },
     {
       "side": "away",
-      "player_id": 37645047,
-      "player_name": "Jeremiaha Maluze",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-13",
-      "end_date": null,
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 3861788,
       "player_name": "Jessic Ngankam",
       "type_id": 535,
@@ -142,6 +128,20 @@
       "start_date": "2026-08-07",
       "end_date": null,
       "games_missed": 9,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37645047,
+      "player_name": "Jeremiaha Maluze",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-13",
+      "end_date": null,
+      "games_missed": 1,
       "likely_available": false
     }
   ],
@@ -6720,5 +6720,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:38:01.062371Z"
+  "refreshed_at": "2026-10-05T11:22:27.183705Z"
 }

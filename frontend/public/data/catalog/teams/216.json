@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Slavia pod Trpišovským žije z PPDA 8.4 — nejvyšší lis v datasetu. Vysoký blok, vstupy do boxu a tresty ze zisku. Proti přechodové Spartě je to souboj tempa, ne držení.",
+  "hook": "Slavia Praha hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 9939100,
@@ -31,8 +31,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 4569,
@@ -49,8 +48,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37707432,
@@ -67,12 +65,11 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37643754,
-      "name": "Albert Labik",
+      "name": "Albert Labík",
       "common_name": "A. Labik",
       "image": "https://cdn.sportmonks.com/images/soccer/players/10/37643754.png",
       "number": 9,
@@ -85,8 +82,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37532696,
@@ -103,8 +99,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37742355,
@@ -121,8 +116,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 23697916,
@@ -139,8 +133,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37577901,
@@ -157,8 +150,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37657989,
@@ -175,8 +167,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37919886,
@@ -193,8 +184,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37745026,
@@ -211,12 +201,11 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37657970,
-      "name": "Mikulas Konecny",
+      "name": "Mikuláš Konečný",
       "common_name": "M. Konečný",
       "image": "https://cdn.sportmonks.com/images/soccer/players/18/37657970.png",
       "number": 42,
@@ -229,8 +218,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37953970,
@@ -247,8 +235,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37594544,
@@ -265,8 +252,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79972,
@@ -283,8 +269,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 9939105,
@@ -301,8 +286,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38021304,
@@ -319,8 +303,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37732666,
@@ -337,8 +320,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37259977,
@@ -355,8 +337,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37674475,
@@ -373,8 +354,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 83003,
@@ -391,8 +371,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 30066,
@@ -409,8 +388,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38205156,
@@ -427,12 +405,11 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37731744,
-      "name": "Pavel Kacor",
+      "name": "Pavel Kačor",
       "common_name": "P. Kačor",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 32,
@@ -445,8 +422,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37921981,
@@ -463,8 +439,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37920608,
@@ -481,8 +456,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37632496,
@@ -499,8 +473,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37780770,
@@ -517,8 +490,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37706709,
@@ -535,8 +507,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 1488486,
@@ -553,8 +524,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37729802,
@@ -571,8 +541,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 81501,
@@ -589,8 +558,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 26313942,
@@ -607,8 +575,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80707,
@@ -625,8 +592,7 @@
       "team_name": "Slavia Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -673,7 +639,7 @@
       "fdr": "hard"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:09Z",
     "hook_kind": "mock",
@@ -687,7 +653,7 @@
       "lost": 0,
       "gf": 25,
       "ga": 6,
-      "form": "VVVVR"
+      "form": null
     },
     "recent": [
       {
@@ -1942,13 +1908,5 @@
       "end": "2029-06-30",
       "active": true
     }
-  },
-  "coach": {
-    "id": 455705,
-    "name": "Jindřich Trpišovský",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2018-01-01",
-    "end": "2029-06-30",
-    "active": true
   }
 }

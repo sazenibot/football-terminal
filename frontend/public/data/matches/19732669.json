@@ -99,7 +99,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-04-23",
       "end_date": "2027-04-01",
-      "games_missed": 9,
+      "games_missed": 10,
       "likely_available": false
     },
     {
@@ -118,20 +118,6 @@
     },
     {
       "side": "away",
-      "player_id": 1410,
-      "player_name": "Juan Miguel Jiménez López",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-04-21",
-      "end_date": "2026-11-02",
-      "games_missed": 22,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 21781710,
       "player_name": "Abdelkabir Abqar",
       "type_id": 2011,
@@ -146,17 +132,17 @@
     },
     {
       "side": "away",
-      "player_id": 185579,
-      "player_name": "Francisco Femenía Far",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
+      "player_id": 1410,
+      "player_name": "Juan Miguel Jiménez López",
+      "type_id": 536,
+      "type_name": "Knee Injury",
+      "type_name_cs": "Zranění kolena",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-07",
-      "end_date": "2026-10-05",
-      "games_missed": 4,
-      "likely_available": true
+      "start_date": "2026-04-21",
+      "end_date": "2026-11-02",
+      "games_missed": 22,
+      "likely_available": false
     }
   ],
   "predicted_lineups": {
@@ -7110,5 +7096,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:40:35.654770Z"
+  "refreshed_at": "2026-10-05T11:22:51.141158Z"
 }

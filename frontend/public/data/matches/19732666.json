@@ -3,7 +3,7 @@
   "league_id": 564,
   "league_name": "La Liga",
   "built_at": "2026-10-04T10:45:23.094507Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T19:00:00Z",
   "venue": "Campos de Sport de El Sardinero",
   "home": {
@@ -47,17 +47,17 @@
       "likely_available": false
     },
     {
-      "side": "away",
-      "player_id": 2823394,
-      "player_name": "José Manuel Arias Copete",
-      "type_id": 1971,
-      "type_name": "Meniscus Injury",
-      "type_name_cs": "Meniscus Injury",
+      "side": "home",
+      "player_id": 37743776,
+      "player_name": "Hráč #37743776",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-07-01",
-      "end_date": "2026-12-01",
-      "games_missed": 13,
+      "start_date": "2026-02-06",
+      "end_date": "2026-11-01",
+      "games_missed": 25,
       "likely_available": false
     },
     {
@@ -71,6 +71,20 @@
       "category_cs": "Zranění",
       "start_date": "2026-09-01",
       "end_date": "2026-11-02",
+      "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 95680,
+      "player_name": "Dimitri Foulquier",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-05",
+      "end_date": "2026-10-19",
       "games_missed": 4,
       "likely_available": false
     },
@@ -90,20 +104,6 @@
     },
     {
       "side": "away",
-      "player_id": 95680,
-      "player_name": "Dimitri Foulquier",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-05",
-      "end_date": "2026-10-19",
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 37316483,
       "player_name": "Diego López Noguerol",
       "type_id": 1918,
@@ -118,17 +118,17 @@
     },
     {
       "side": "away",
-      "player_id": 37592231,
-      "player_name": "César Tárrega Requeni",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
+      "player_id": 2823394,
+      "player_name": "José Manuel Arias Copete",
+      "type_id": 1971,
+      "type_name": "Meniscus Injury",
+      "type_name_cs": "Meniscus Injury",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-14",
-      "end_date": "2026-10-05",
-      "games_missed": 2,
-      "likely_available": true
+      "start_date": "2026-07-01",
+      "end_date": "2026-12-01",
+      "games_missed": 13,
+      "likely_available": false
     }
   ],
   "predicted_lineups": {
@@ -6478,5 +6478,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-05T11:23:06.993607Z"
 }

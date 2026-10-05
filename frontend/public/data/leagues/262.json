@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T10:33:08Z",
+  "generated_at": "2026-10-05T11:18:34Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -139,8 +139,8 @@
     }
   ],
   "stats": {
-    "created": 3,
-    "refreshed": 5,
+    "created": 0,
+    "refreshed": 8,
     "errors": 0
   }
 }

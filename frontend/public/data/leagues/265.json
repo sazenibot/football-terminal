@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T10:33:31Z",
+  "generated_at": "2026-10-05T11:20:11Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -120,10 +120,26 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png"
       },
       "has_full_data": true
+    },
+    {
+      "fixture_id": 19732284,
+      "starting_at": "2026-10-12T15:00:00Z",
+      "venue": "Stadion Juliska",
+      "home": {
+        "id": 3531,
+        "name": "Dukla Praha",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/3531.png"
+      },
+      "away": {
+        "id": 8477,
+        "name": "Banik Ostrava B",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png"
+      },
+      "has_full_data": true
     }
   ],
   "stats": {
-    "created": 0,
+    "created": 1,
     "refreshed": 7,
     "errors": 0
   }

@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-10-04T10:36:18.166756Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T13:00:00Z",
   "venue": "Selhurst Park",
   "home": {
@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 96950,
-      "player_name": "Jean-Philippe Mateta",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-23",
-      "end_date": null,
-      "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37537937,
       "player_name": "Chadi Riad",
       "type_id": 540,
@@ -44,6 +30,20 @@
       "start_date": "2026-08-22",
       "end_date": null,
       "games_missed": 8,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 96950,
+      "player_name": "Jean-Philippe Mateta",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-23",
+      "end_date": null,
+      "games_missed": 7,
       "likely_available": false
     },
     {
@@ -6813,5 +6813,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-05T11:20:42.063947Z"
 }

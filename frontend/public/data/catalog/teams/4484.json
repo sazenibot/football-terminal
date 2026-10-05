@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Pardubice je 13. v tabulce Chance Liga (8 b. z 9 zápasů, skóre 9:14).",
+  "hook": "Pardubice hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 80787,
@@ -31,8 +31,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37569708,
@@ -49,8 +48,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 24818159,
@@ -67,8 +65,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37329776,
@@ -85,8 +82,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37569871,
@@ -103,8 +99,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37260790,
@@ -121,8 +116,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37577901,
@@ -139,12 +133,11 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37626220,
-      "name": "Jan Tredl",
+      "name": "Jan Trédl",
       "common_name": "J. Trédl",
       "image": "https://cdn.sportmonks.com/images/soccer/players/12/37626220.png",
       "number": 12,
@@ -157,8 +150,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37556802,
@@ -175,12 +167,11 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37704733,
-      "name": "Jirí Hamza",
+      "name": "Jiří Hamza",
       "common_name": "J. Hamza",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 29,
@@ -193,8 +184,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37530760,
@@ -211,8 +201,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38220658,
@@ -229,8 +218,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37661850,
@@ -247,8 +235,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 3876766,
@@ -265,8 +252,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37745198,
@@ -283,8 +269,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 16488029,
@@ -301,8 +286,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37694655,
@@ -319,8 +303,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37356526,
@@ -337,8 +320,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37557330,
@@ -355,8 +337,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 21404427,
@@ -373,8 +354,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38214398,
@@ -391,8 +371,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 81983,
@@ -409,8 +388,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37357256,
@@ -427,8 +405,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37555410,
@@ -445,8 +422,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 34873426,
@@ -463,8 +439,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37612552,
@@ -481,12 +456,11 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37657992,
-      "name": "Tomas Jelinek",
+      "name": "Tomáš Jelínek",
       "common_name": "T. Jelínek",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 16,
@@ -499,8 +473,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 20693916,
@@ -517,8 +490,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37584732,
@@ -535,8 +507,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37739104,
@@ -553,8 +524,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 538647,
@@ -571,8 +541,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38200750,
@@ -589,8 +558,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 8101004,
@@ -607,8 +575,7 @@
       "team_name": "Pardubice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -655,7 +622,7 @@
       "fdr": "mid"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:06Z",
     "hook_kind": "facts",
@@ -669,7 +636,7 @@
       "lost": 5,
       "gf": 9,
       "ga": 14,
-      "form": "VVRPP"
+      "form": null
     },
     "recent": [
       {
@@ -3022,13 +2989,5 @@
       "end": null,
       "active": true
     }
-  },
-  "coach": {
-    "id": 37259987,
-    "name": "Jiří Krejčí",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": null,
-    "end": null,
-    "active": true
   }
 }

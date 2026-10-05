@@ -48,20 +48,6 @@
     },
     {
       "side": "away",
-      "player_id": 200872,
-      "player_name": "Miro Muheim",
-      "type_id": 547,
-      "type_name": "Fitness",
-      "type_name_cs": "Kondiční důvody",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-02",
-      "end_date": null,
-      "games_missed": 3,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 37755719,
       "player_name": "Alexander Røssing-Lelesiit",
       "type_id": 537,
@@ -71,7 +57,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-05-01",
       "end_date": null,
-      "games_missed": 13,
+      "games_missed": 14,
       "likely_available": false
     },
     {
@@ -85,7 +71,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-03-06",
       "end_date": null,
-      "games_missed": 20,
+      "games_missed": 21,
       "likely_available": false
     }
   ],
@@ -6315,5 +6301,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:37:58.111024Z"
+  "refreshed_at": "2026-10-05T11:22:24.184791Z"
 }

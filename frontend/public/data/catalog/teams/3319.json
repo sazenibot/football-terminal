@@ -18,7 +18,7 @@
   "squad": [
     {
       "id": 37582212,
-      "name": "Dennis Seimen ",
+      "name": "Dennis Seimen",
       "common_name": "D. Seimen",
       "image": "https://cdn.sportmonks.com/images/soccer/players/4/37582212.png",
       "number": 41,
@@ -477,7 +477,7 @@
     },
     {
       "id": 37590611,
-      "name": "Dzenan Pejcinovic",
+      "name": "Dženan Pejčinović",
       "common_name": "D. Pejcinovic",
       "image": "https://cdn.sportmonks.com/images/soccer/players/19/37590611.png",
       "number": 17,
@@ -613,5 +613,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:46:13Z"
+  "generated_at": "2026-10-05T11:25:16Z"
 }

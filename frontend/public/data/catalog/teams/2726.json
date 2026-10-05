@@ -35,7 +35,7 @@
     },
     {
       "id": 37344040,
-      "name": "Lúkas Petersson",
+      "name": "Lúkas Jóhannes Blöndal Petersson",
       "common_name": "L. Petersson",
       "image": "https://cdn.sportmonks.com/images/soccer/players/8/37344040.png",
       "number": 36,
@@ -290,7 +290,7 @@
     },
     {
       "id": 37650245,
-      "name": "Cajetan Lenz",
+      "name": "Cajetan Benjamin Lenz",
       "common_name": "C. Lenz",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 32,
@@ -500,5 +500,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:46:13Z"
+  "generated_at": "2026-10-05T11:25:16Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -298,15 +298,6 @@
       "number": 9
     },
     {
-      "id": 37597184,
-      "name": "Adam Sevinsky",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/0/37597184.png",
-      "team_id": 2727,
-      "team_name": "Sparta Praha",
-      "position": "Obránce",
-      "number": 19
-    },
-    {
       "id": 80894,
       "name": "Adam Vlkanova",
       "image": "https://cdn.sportmonks.com/images/soccer/players/30/80894.png",
@@ -323,6 +314,15 @@
       "team_name": "Hradec Králové",
       "position": "Brankář",
       "number": 12
+    },
+    {
+      "id": 37597184,
+      "name": "Adam Ševínský",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/0/37597184.png",
+      "team_id": 2727,
+      "team_name": "Sparta Praha",
+      "position": "Obránce",
+      "number": 19
     },
     {
       "id": 37706709,
@@ -353,7 +353,7 @@
     },
     {
       "id": 37643754,
-      "name": "Albert Labik",
+      "name": "Albert Labík",
       "image": "https://cdn.sportmonks.com/images/soccer/players/10/37643754.png",
       "team_id": 22031,
       "team_name": "SK Artis Brno",
@@ -389,7 +389,7 @@
     },
     {
       "id": 37696569,
-      "name": "Alexandr Buzek",
+      "name": "Alexandr Bužek",
       "image": "https://cdn.sportmonks.com/images/soccer/players/25/37696569.png",
       "team_id": 463,
       "team_name": "Slovan Liberec",
@@ -1217,7 +1217,7 @@
     },
     {
       "id": 37598825,
-      "name": "Eric Hunal",
+      "name": "Eric Hunál",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 3350,
       "team_name": "Zbrojovka Brno",
@@ -1730,7 +1730,7 @@
     },
     {
       "id": 37598775,
-      "name": "Jan Buryan",
+      "name": "Jan Buryán",
       "image": "https://cdn.sportmonks.com/images/soccer/players/23/37598775.png",
       "team_id": 187,
       "team_name": "Mladá Boleslav",
@@ -1784,7 +1784,7 @@
     },
     {
       "id": 37702574,
-      "name": "Jan Koutny",
+      "name": "Jan Koutný",
       "image": "https://cdn.sportmonks.com/images/soccer/players/14/37702574.png",
       "team_id": 3097,
       "team_name": "Sigma Olomouc",
@@ -1847,7 +1847,7 @@
     },
     {
       "id": 37626220,
-      "name": "Jan Tredl",
+      "name": "Jan Trédl",
       "image": "https://cdn.sportmonks.com/images/soccer/players/12/37626220.png",
       "team_id": 4484,
       "team_name": "Pardubice",
@@ -2000,7 +2000,7 @@
     },
     {
       "id": 37704733,
-      "name": "Jirí Hamza",
+      "name": "Jiří Hamza",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 4484,
       "team_name": "Pardubice",
@@ -2386,15 +2386,6 @@
       "number": 23
     },
     {
-      "id": 37530761,
-      "name": "Lukas Masek",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/9/37530761.png",
-      "team_id": 463,
-      "team_name": "Slovan Liberec",
-      "position": "Útočník",
-      "number": 9
-    },
-    {
       "id": 79977,
       "name": "Lukas Masopust",
       "image": "https://cdn.sportmonks.com/images/soccer/players/9/79977.png",
@@ -2402,15 +2393,6 @@
       "team_name": "Slovan Liberec",
       "position": "Záložník",
       "number": 8
-    },
-    {
-      "id": 37597195,
-      "name": "Lukas Penxa",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/11/37597195.png",
-      "team_id": 3350,
-      "team_name": "Zbrojovka Brno",
-      "position": "Záložník",
-      "number": 6
     },
     {
       "id": 83003,
@@ -2429,6 +2411,24 @@
       "team_name": "Slovácko",
       "position": "Útočník",
       "number": 72
+    },
+    {
+      "id": 37530761,
+      "name": "Lukáš Mašek",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/9/37530761.png",
+      "team_id": 463,
+      "team_name": "Slovan Liberec",
+      "position": "Útočník",
+      "number": 9
+    },
+    {
+      "id": 37597195,
+      "name": "Lukáš Penxa",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/11/37597195.png",
+      "team_id": 3350,
+      "team_name": "Zbrojovka Brno",
+      "position": "Záložník",
+      "number": 6
     },
     {
       "id": 37546635,
@@ -2692,15 +2692,6 @@
       "number": 3
     },
     {
-      "id": 37648900,
-      "name": "Matej Mikulenka",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/4/37648900.png",
-      "team_id": 3097,
-      "team_name": "Sigma Olomouc",
-      "position": "Útočník",
-      "number": 25
-    },
-    {
       "id": 37555634,
       "name": "Matej Naprstek",
       "image": "https://cdn.sportmonks.com/images/soccer/players/18/37555634.png",
@@ -2782,6 +2773,15 @@
       "number": 26
     },
     {
+      "id": 37648900,
+      "name": "Matěj Mikulenka",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/4/37648900.png",
+      "team_id": 3097,
+      "team_name": "Sigma Olomouc",
+      "position": "Útočník",
+      "number": 25
+    },
+    {
       "id": 37683878,
       "name": "Mathews Banda",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -2855,7 +2855,7 @@
     },
     {
       "id": 37552116,
-      "name": "Matyas Vojta",
+      "name": "Matyáš Vojta",
       "image": "https://cdn.sportmonks.com/images/soccer/players/20/37552116.png",
       "team_id": 2727,
       "team_name": "Sparta Praha",
@@ -3008,7 +3008,7 @@
     },
     {
       "id": 37657970,
-      "name": "Mikulas Konecny",
+      "name": "Mikuláš Konečný",
       "image": "https://cdn.sportmonks.com/images/soccer/players/18/37657970.png",
       "team_id": 216,
       "team_name": "Slavia Praha",
@@ -3367,15 +3367,6 @@
       "number": 77
     },
     {
-      "id": 37731744,
-      "name": "Pavel Kacor",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "team_id": 216,
-      "team_name": "Slavia Praha",
-      "position": "Záložník",
-      "number": 32
-    },
-    {
       "id": 32373,
       "name": "Pavel Kaderabek",
       "image": "https://cdn.sportmonks.com/images/soccer/players/21/32373.png",
@@ -3383,6 +3374,15 @@
       "team_name": "Sparta Praha",
       "position": "Obránce",
       "number": 3
+    },
+    {
+      "id": 37731744,
+      "name": "Pavel Kačor",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 216,
+      "team_name": "Slavia Praha",
+      "position": "Záložník",
+      "number": 32
     },
     {
       "id": 37742265,
@@ -3475,15 +3475,6 @@
       "number": 10
     },
     {
-      "id": 37597187,
-      "name": "R. Horák",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "team_id": 3643,
-      "team_name": "Jablonec",
-      "position": "Záložník",
-      "number": 22
-    },
-    {
       "id": 17168903,
       "name": "Raimonds Krollis",
       "image": "https://cdn.sportmonks.com/images/soccer/players/7/17168903.png",
@@ -3554,6 +3545,15 @@
       "team_name": "Pardubice",
       "position": "Záložník",
       "number": 77
+    },
+    {
+      "id": 37597187,
+      "name": "Roman Horák",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3643,
+      "team_name": "Jablonec",
+      "position": "Záložník",
+      "number": 22
     },
     {
       "id": 81573,
@@ -3908,7 +3908,7 @@
     },
     {
       "id": 37661864,
-      "name": "Tom Sloncik",
+      "name": "Tom Slončík",
       "image": "https://cdn.sportmonks.com/images/soccer/players/8/37661864.png",
       "team_id": 3552,
       "team_name": "Hradec Králové",
@@ -3979,15 +3979,6 @@
       "number": null
     },
     {
-      "id": 37657992,
-      "name": "Tomas Jelinek",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "team_id": 4484,
-      "team_name": "Pardubice",
-      "position": "Záložník",
-      "number": 16
-    },
-    {
       "id": 79539,
       "name": "Tomas Koubek",
       "image": "https://cdn.sportmonks.com/images/soccer/players/19/79539.png",
@@ -3995,15 +3986,6 @@
       "team_name": "Slovan Liberec",
       "position": "Brankář",
       "number": 40
-    },
-    {
-      "id": 37704919,
-      "name": "Tomas Kral",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/23/37704919.png",
-      "team_id": 234,
-      "team_name": "Slovácko",
-      "position": "Obránce",
-      "number": 19
     },
     {
       "id": 82764,
@@ -4067,6 +4049,24 @@
       "team_name": "Zbrojovka Brno",
       "position": "Obránce",
       "number": 25
+    },
+    {
+      "id": 37657992,
+      "name": "Tomáš Jelínek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 4484,
+      "team_name": "Pardubice",
+      "position": "Záložník",
+      "number": 16
+    },
+    {
+      "id": 37704919,
+      "name": "Tomáš Král",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/23/37704919.png",
+      "team_id": 234,
+      "team_name": "Slovácko",
+      "position": "Obránce",
+      "number": 19
     },
     {
       "id": 83496,
@@ -4382,7 +4382,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 8
+      "league_matches": 9
     },
     {
       "id": 75582,

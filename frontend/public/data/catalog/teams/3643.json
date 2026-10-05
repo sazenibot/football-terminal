@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Jablonec je 8. v tabulce Chance Liga (14 b. z 9 zápasů, skóre 11:9).",
+  "hook": "Jablonec hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 79382,
@@ -31,8 +31,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 19978415,
@@ -49,8 +48,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37331748,
@@ -67,8 +65,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 83566,
@@ -85,8 +82,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37762068,
@@ -103,8 +99,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 205450,
@@ -121,8 +116,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79839,
@@ -139,8 +133,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 12433119,
@@ -157,8 +150,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 27066690,
@@ -175,8 +167,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37317473,
@@ -193,8 +184,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 11311804,
@@ -211,8 +201,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80603,
@@ -229,8 +218,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37610663,
@@ -247,8 +235,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37565359,
@@ -265,8 +252,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 27066685,
@@ -283,8 +269,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37577787,
@@ -301,26 +286,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
-    },
-    {
-      "id": 37597187,
-      "name": "R. Horák",
-      "common_name": "R. Horák",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "number": 22,
-      "position": "Záložník",
-      "position_id": 26,
-      "captain": false,
-      "date_of_birth": "2005-02-25",
-      "age": 21,
-      "team_id": 3643,
-      "team_name": "Jablonec",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
-      "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 538609,
@@ -337,8 +303,24 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
+    },
+    {
+      "id": 37597187,
+      "name": "Roman Horák",
+      "common_name": "R. Horák",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "number": 22,
+      "position": "Záložník",
+      "position_id": 26,
+      "captain": false,
+      "date_of_birth": "2005-02-25",
+      "age": 21,
+      "team_id": 3643,
+      "team_name": "Jablonec",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
+      "league_id": 262,
+      "league_name": "Chance Liga"
     },
     {
       "id": 23269844,
@@ -355,8 +337,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 104767,
@@ -373,8 +354,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 81598,
@@ -391,8 +371,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37570626,
@@ -409,8 +388,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 36084726,
@@ -427,8 +405,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79179,
@@ -445,8 +422,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80691,
@@ -463,8 +439,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37560671,
@@ -481,8 +456,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 132218,
@@ -499,8 +473,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37631496,
@@ -517,8 +490,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37560659,
@@ -535,8 +507,7 @@
       "team_name": "Jablonec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -583,7 +554,7 @@
       "fdr": "mid"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:03Z",
     "hook_kind": "facts",
@@ -597,7 +568,7 @@
       "lost": 3,
       "gf": 11,
       "ga": 9,
-      "form": "RPVPR"
+      "form": null
     },
     "recent": [
       {
@@ -2357,13 +2328,5 @@
       "end": null,
       "active": true
     }
-  },
-  "coach": {
-    "id": 37357466,
-    "name": "Luboš Kozel",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2024-07-01",
-    "end": null,
-    "active": true
   }
 }

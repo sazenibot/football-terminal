@@ -476,6 +476,23 @@
       "league_name": "Premier League"
     },
     {
+      "id": 37632336,
+      "name": "Eli Junior Éric Anatole Rainha Kroupi",
+      "common_name": "E. Kroupi",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/16/37632336.png",
+      "number": 22,
+      "position": "Útočník",
+      "position_id": 27,
+      "captain": false,
+      "date_of_birth": "2006-06-23",
+      "age": 20,
+      "team_id": 52,
+      "team_name": "AFC Bournemouth",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
+      "league_id": 8,
+      "league_name": "Premier League"
+    },
+    {
       "id": 11298616,
       "name": "Evanilson",
       "common_name": "F. de Lima Barbosa",
@@ -486,23 +503,6 @@
       "captain": false,
       "date_of_birth": "1999-10-06",
       "age": 26,
-      "team_id": 52,
-      "team_name": "AFC Bournemouth",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
-      "league_id": 8,
-      "league_name": "Premier League"
-    },
-    {
-      "id": 37632336,
-      "name": "Junior Kroupi ",
-      "common_name": "E. Kroupi",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/16/37632336.png",
-      "number": 22,
-      "position": "Útočník",
-      "position_id": 27,
-      "captain": false,
-      "date_of_birth": "2006-06-23",
-      "age": 20,
       "team_id": 52,
       "team_name": "AFC Bournemouth",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png",
@@ -551,5 +551,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:45:54Z"
+  "generated_at": "2026-10-05T11:24:53Z"
 }

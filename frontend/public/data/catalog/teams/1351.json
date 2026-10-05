@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Teplice je 5. v tabulce Chance Liga (16 b. z 9 zápasů, skóre 17:15).",
+  "hook": "Teplice hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 37646034,
@@ -31,8 +31,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 19996747,
@@ -49,8 +48,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 7026540,
@@ -67,8 +65,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37530882,
@@ -85,8 +82,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 1548625,
@@ -103,8 +99,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37624530,
@@ -121,8 +116,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37594763,
@@ -139,8 +133,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80481,
@@ -157,8 +150,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37579201,
@@ -175,8 +167,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 24817160,
@@ -193,8 +184,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37776541,
@@ -211,8 +201,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37742928,
@@ -229,8 +218,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 537027,
@@ -247,8 +235,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 337380,
@@ -265,8 +252,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37944932,
@@ -283,8 +269,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37577891,
@@ -301,8 +286,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79659,
@@ -319,8 +303,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 24285,
@@ -337,8 +320,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 2206701,
@@ -355,8 +337,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 9939106,
@@ -373,8 +354,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 8101008,
@@ -391,8 +371,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 83607,
@@ -409,8 +388,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80813,
@@ -427,8 +405,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 2206747,
@@ -445,8 +422,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37917978,
@@ -463,8 +439,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38215603,
@@ -481,8 +456,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37555634,
@@ -499,8 +473,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80944,
@@ -517,8 +490,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 12844039,
@@ -535,8 +507,7 @@
       "team_name": "Teplice",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -583,7 +554,7 @@
       "fdr": "easy"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:13Z",
     "hook_kind": "facts",
@@ -597,7 +568,7 @@
       "lost": 3,
       "gf": 17,
       "ga": 15,
-      "form": "VPVVP"
+      "form": null
     },
     "recent": [
       {
@@ -2035,13 +2006,5 @@
       "end": null,
       "active": true
     }
-  },
-  "coach": {
-    "id": 1512207,
-    "name": "Zdenko Frťala",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2023-03-06",
-    "end": null,
-    "active": true
   }
 }

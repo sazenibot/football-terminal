@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Sparta Praha je 7. v tabulce Chance Liga (15 b. z 9 zápasů, skóre 18:12).",
+  "hook": "Sparta Praha hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 24816775,
@@ -31,8 +31,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 23697794,
@@ -49,8 +48,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37726015,
@@ -67,12 +65,11 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37597184,
-      "name": "Adam Sevinsky",
+      "name": "Adam Ševínský",
       "common_name": "A. Ševínský",
       "image": "https://cdn.sportmonks.com/images/soccer/players/0/37597184.png",
       "number": 19,
@@ -85,8 +82,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 52750,
@@ -103,8 +99,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79540,
@@ -121,8 +116,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37776554,
@@ -139,8 +133,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 23269652,
@@ -157,8 +150,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 4536583,
@@ -175,8 +167,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37577874,
@@ -193,8 +184,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 8416702,
@@ -211,8 +201,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 32373,
@@ -229,8 +218,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37776541,
@@ -247,8 +235,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37569702,
@@ -265,8 +252,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37721868,
@@ -283,8 +269,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37332629,
@@ -301,8 +286,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 378629,
@@ -319,8 +303,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37570626,
@@ -337,8 +320,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37616513,
@@ -355,8 +337,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37776545,
@@ -373,8 +354,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37341905,
@@ -391,8 +371,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37578628,
@@ -409,8 +388,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 133633,
@@ -427,8 +405,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37316360,
@@ -445,8 +422,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37324994,
@@ -463,8 +439,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 133144,
@@ -481,8 +456,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 10644736,
@@ -499,8 +473,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 32490407,
@@ -517,8 +490,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37610663,
@@ -535,8 +507,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80926,
@@ -553,8 +524,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37405190,
@@ -571,8 +541,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 154491,
@@ -589,12 +558,11 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37552116,
-      "name": "Matyas Vojta",
+      "name": "Matyáš Vojta",
       "common_name": "M. Vojta",
       "image": "https://cdn.sportmonks.com/images/soccer/players/20/37552116.png",
       "number": 29,
@@ -607,8 +575,7 @@
       "team_name": "Sparta Praha",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -655,7 +622,7 @@
       "fdr": "easy"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:12Z",
     "hook_kind": "facts",
@@ -669,7 +636,7 @@
       "lost": 4,
       "gf": 18,
       "ga": 12,
-      "form": "VVPPV"
+      "form": null
     },
     "recent": [
       {
@@ -2290,13 +2257,5 @@
       "end": null,
       "active": true
     }
-  },
-  "coach": {
-    "id": 82974,
-    "name": "Brian Priske Pedersen",
-    "image": "https://cdn.sportmonks.com/images/soccer/coaches/30/82974.png",
-    "start": "2025-07-01",
-    "end": null,
-    "active": true
   }
 }

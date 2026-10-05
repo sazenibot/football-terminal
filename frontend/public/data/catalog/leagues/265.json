@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T10:45:39Z",
+  "generated_at": "2026-10-05T11:24:39Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -1675,15 +1675,6 @@
       "number": 18
     },
     {
-      "id": 37702630,
-      "name": "J. Chytrý",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "team_id": 512,
-      "team_name": "Karviná",
-      "position": "Obránce",
-      "number": 24
-    },
-    {
       "id": 37662603,
       "name": "J. Vlček",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -1898,6 +1889,15 @@
       "team_name": "Táborsko",
       "position": "Záložník",
       "number": 12
+    },
+    {
+      "id": 37702630,
+      "name": "Jan Chytrý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 512,
+      "team_name": "Karviná",
+      "position": "Obránce",
+      "number": 24
     },
     {
       "id": 38220869,
@@ -2135,7 +2135,7 @@
     },
     {
       "id": 37704733,
-      "name": "Jirí Hamza",
+      "name": "Jiří Hamza",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 512,
       "team_name": "Karviná",
@@ -2926,15 +2926,6 @@
       "number": 4
     },
     {
-      "id": 37598813,
-      "name": "Matej Zitny",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "team_id": 3531,
-      "team_name": "Dukla Praha",
-      "position": "Záložník",
-      "number": 20
-    },
-    {
       "id": 20335377,
       "name": "Mateo Karamatic",
       "image": "https://cdn.sportmonks.com/images/soccer/players/17/20335377.png",
@@ -3086,6 +3077,15 @@
       "team_name": "Vysočina Jihlava",
       "position": "Záložník",
       "number": 42
+    },
+    {
+      "id": 37598813,
+      "name": "Matěj Žitný",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "team_id": 3531,
+      "team_name": "Dukla Praha",
+      "position": "Záložník",
+      "number": 20
     },
     {
       "id": 38220770,
@@ -3241,15 +3241,6 @@
       "number": 6
     },
     {
-      "id": 37657970,
-      "name": "Mikulas Konecny",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/18/37657970.png",
-      "team_id": 28363,
-      "team_name": "Slavia Praha B",
-      "position": "Obránce",
-      "number": 4
-    },
-    {
       "id": 37552127,
       "name": "Mikulas Kubny",
       "image": "https://cdn.sportmonks.com/images/soccer/players/31/37552127.png",
@@ -3257,6 +3248,15 @@
       "team_name": "Táborsko",
       "position": "Brankář",
       "number": 41
+    },
+    {
+      "id": 37657970,
+      "name": "Mikuláš Konečný",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/18/37657970.png",
+      "team_id": 28363,
+      "team_name": "Slavia Praha B",
+      "position": "Obránce",
+      "number": 4
     },
     {
       "id": 38220842,
@@ -3746,7 +3746,7 @@
     },
     {
       "id": 37661395,
-      "name": "Patrik Mekota",
+      "name": "Patrik Měkota",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 8477,
       "team_name": "Banik Ostrava B",
@@ -4709,6 +4709,14 @@
       "league_matches": 6
     },
     {
+      "id": 75580,
+      "name": "Daniel Vokoun",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 5
+    },
+    {
       "id": 74540,
       "name": "Vojtěch Opočenský",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4717,16 +4725,8 @@
       "league_matches": 5
     },
     {
-      "id": 75580,
-      "name": "Daniel Vokoun",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
-      "id": 1158996,
-      "name": "Matěj Kubečka",
+      "id": 73711,
+      "name": "Lukáš Nehasil",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4741,20 +4741,12 @@
       "league_matches": 4
     },
     {
-      "id": 73711,
-      "name": "Lukáš Nehasil",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
       "id": 74265,
       "name": "Dominik Starý",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 2
+      "league_matches": 3
     },
     {
       "id": 74596,
@@ -4813,16 +4805,16 @@
       "league_matches": 2
     },
     {
-      "id": 71376,
-      "name": "Simon Vejtasa",
+      "id": 1158996,
+      "name": "Matěj Kubečka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
       "league_matches": 2
     },
     {
-      "id": 72429,
-      "name": "Vit Zaoral",
+      "id": 71376,
+      "name": "Simon Vejtasa",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4847,6 +4839,22 @@
     {
       "id": 75577,
       "name": "Stanislav Volek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 1159885,
+      "name": "Tomáš Ehrenberger",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 72429,
+      "name": "Vit Zaoral",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -5775,14 +5783,6 @@
     {
       "id": 38373,
       "name": "Tomáš Batík",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": false,
-      "league_matches": 0
-    },
-    {
-      "id": 1159885,
-      "name": "Tomáš Ehrenberger",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": false,

@@ -59,20 +59,6 @@
       "end_date": "2027-04-30",
       "games_missed": 18,
       "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 189585,
-      "player_name": "Santiago Comesaña Veiga",
-      "type_id": 1959,
-      "type_name": "Ankle Sprain",
-      "type_name_cs": "Ankle Sprain",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-17",
-      "end_date": "2026-10-05",
-      "games_missed": 2,
-      "likely_available": true
     }
   ],
   "predicted_lineups": {
@@ -7282,5 +7268,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:40:38.894590Z"
+  "refreshed_at": "2026-10-05T11:22:54.151190Z"
 }

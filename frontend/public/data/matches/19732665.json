@@ -34,20 +34,6 @@
     },
     {
       "side": "home",
-      "player_id": 37569513,
-      "player_name": "Jozhua Vertrouwd",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-31",
-      "end_date": "2026-10-05",
-      "games_missed": 5,
-      "likely_available": true
-    },
-    {
-      "side": "home",
       "player_id": 333778,
       "player_name": "Augusto Martín Batalla Barga",
       "type_id": 2063,
@@ -73,34 +59,6 @@
       "end_date": "2026-10-10",
       "games_missed": 2,
       "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 3510288,
-      "player_name": "Daniel Vivian Moreno",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-16",
-      "end_date": "2026-10-05",
-      "games_missed": 6,
-      "likely_available": true
-    },
-    {
-      "side": "away",
-      "player_id": 447226,
-      "player_name": "Andoni Gorosabel Espinosa",
-      "type_id": 1952,
-      "type_name": "Adductor Injury",
-      "type_name_cs": "Adductor Injury",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-07-06",
-      "end_date": "2026-10-05",
-      "games_missed": 13,
-      "likely_available": true
     },
     {
       "side": "away",
@@ -7551,5 +7509,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:40:28.674946Z"
+  "refreshed_at": "2026-10-05T11:22:43.682317Z"
 }
