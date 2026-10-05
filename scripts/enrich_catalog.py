@@ -13,7 +13,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -28,7 +28,11 @@ from build_match_data import (  # noqa: E402
     fetch_season,
 )
 from catalog_player_overlay import attach_player_overlays  # noqa: E402
-from catalog_referee_overlay import attach_referee_overlays  # noqa: E402
+from catalog_referee_overlay import (  # noqa: E402
+    attach_referee_overlays,
+    compact_ref_match,
+    recompute_discipline_on_disk,
+)
 from catalog_team_overlay import (  # noqa: E402
     HOOK_MOCK,
     attach_context,
@@ -38,6 +42,7 @@ from catalog_team_overlay import (  # noqa: E402
     facts_by_team,
     fdr_band,
     fdr_rating,
+    fetch_league_history,
     league_pools,
     last_seasons,
     load_history,
@@ -460,7 +465,13 @@ def enrich_players(team: dict, season_id: int | None) -> int:
     return n
 
 
-def enrich_league_teams(league_id: int, team_ids: list[int], known: set[int], player_ids: set[int]) -> None:
+def enrich_league_teams(
+    league_id: int,
+    team_ids: list[int],
+    known: set[int],
+    player_ids: set[int],
+    skip_player_history: bool = False,
+) -> None:
     sample = None
     for tid in team_ids:
         sample = load_json(CATALOG / "teams" / f"{tid}.json")
@@ -541,18 +552,21 @@ def enrich_league_teams(league_id: int, team_ids: list[int], known: set[int], pl
         league_id,
         sample.get("league_name") or season_name or "",
     )
-    attach_player_overlays(
-        league_id,
-        season_id,
-        seasons,
-        known,
-        load_json,
-        write_json,
-        CATALOG,
-        now_iso,
-        sample.get("league_name") or season_name or "",
-        parse_standings,
-    )
+    if skip_player_history:
+        print("  hráčský overlay přeskočen (lineups.details)")
+    else:
+        attach_player_overlays(
+            league_id,
+            season_id,
+            seasons,
+            known,
+            load_json,
+            write_json,
+            CATALOG,
+            now_iso,
+            sample.get("league_name") or season_name or "",
+            parse_standings,
+        )
 
     write_json(
         CATALOG / "leagues" / f"{league_id}.explorer.json",
@@ -681,15 +695,161 @@ def hub_team_ids(league_id: int) -> list[int]:
     return [int(t["id"]) for t in hub.get("teams") or [] if t.get("id")]
 
 
+def apply_fdr_from_standings(league_id: int) -> None:
+    """Váhy 1–5 na kalendář z aktuální tabulky. Bez 5leté historie."""
+    team_ids = hub_team_ids(league_id)
+    if not team_ids:
+        print(f"  FDR {league_id}: žádné týmy v hubu")
+        return
+    sample = load_json(CATALOG / "teams" / f"{team_ids[0]}.json") or {}
+    season_id = sample.get("season_id")
+    if not season_id:
+        print(f"  FDR {league_id}: chybí season_id")
+        return
+    table_map = parse_standings(int(season_id))
+    size = len(table_map)
+    now = now_iso()
+    n = 0
+    for tid in team_ids:
+        path = CATALOG / "teams" / f"{tid}.json"
+        team = load_json(path)
+        if not team:
+            continue
+        upcoming = [
+            fx
+            for fx in (team.get("upcoming") or [])
+            if (fx.get("starting_at") or "") > now
+        ]
+        for fx in upcoming:
+            opp_id = (fx.get("opponent") or {}).get("id")
+            row = table_map.get(int(opp_id)) if opp_id else None
+            pos = row.get("position") if row else None
+            rating = fdr_rating(pos, size, bool(fx.get("is_home")))
+            if pos:
+                fx["opponent_position"] = pos
+            fx["fdr_rating"] = rating
+            fx["fdr"] = fdr_band(rating)
+        team["upcoming"] = upcoming
+        overlay = team.get("overlay")
+        if overlay is not None and table_map.get(tid):
+            overlay["table"] = table_map[tid]
+            team["overlay"] = overlay
+        write_json(path, team)
+        n += 1
+    print(f"  FDR {league_id}: {n} týmů, tabulka {size}")
+
+
+def _refresh_ref_seasons(overlay: dict, seasons_meta: list[dict], current_season_id: int | None) -> None:
+    matches = overlay.get("matches") or []
+    counts: dict[int, int] = {}
+    for m in matches:
+        sid = m.get("s")
+        if sid:
+            counts[int(sid)] = counts.get(int(sid), 0) + 1
+    meta_by_id = {int(s["id"]): s for s in seasons_meta if s.get("id")}
+    old_by_id = {int(s["id"]): s for s in (overlay.get("seasons") or []) if s.get("id")}
+    rows = []
+    for sid, n in counts.items():
+        old = old_by_id.get(sid) or {}
+        meta = meta_by_id.get(sid) or {}
+        rows.append({
+            "id": sid,
+            "name": old.get("name") or meta.get("name") or str(sid),
+            "starting_at": old.get("starting_at") or meta.get("starting_at"),
+            "matches": n,
+            "sm": old.get("sm") or {},
+        })
+    rows.sort(key=lambda r: r.get("starting_at") or "", reverse=True)
+    overlay["seasons"] = rows
+    overlay["career_matches"] = len(matches)
+    if current_season_id:
+        overlay["current_season_id"] = current_season_id
+
+
+def merge_incremental_overlay(league_id: int, days: int = 2) -> None:
+    """Do existujícího overlay přidá dohrané zápasy z posledních dní. Bez cold backfillu."""
+    team_ids = hub_team_ids(league_id)
+    has_overlay = any((load_json(CATALOG / "teams" / f"{tid}.json") or {}).get("overlay") for tid in team_ids[:3])
+    if not has_overlay:
+        print(f"  overlay {league_id}: chybí cold backfill — FDR je z tabulky, rozhodčí až po enrich_catalog.py")
+        return
+    end = date.today()
+    start = end - timedelta(days=days)
+    history = fetch_league_history(league_id, start, end)
+    if not history:
+        print(f"  overlay {league_id}: v okně {start}→{end} žádný dohraný zápas")
+        return
+    known = known_match_ids()
+    sample = load_json(CATALOG / "teams" / f"{team_ids[0]}.json") or {}
+    season_id = sample.get("season_id")
+    seasons_meta = last_seasons(league_id)
+    by_team = facts_by_team(history, set(team_ids))
+    for tid, rows in by_team.items():
+        path = CATALOG / "teams" / f"{tid}.json"
+        team = load_json(path)
+        overlay = (team or {}).get("overlay")
+        if not team or not overlay:
+            continue
+        recent = overlay.get("recent") or []
+        seen = {r.get("fixture_id") for r in recent}
+        incoming = recent_from_rows(rows, known, limit=20)
+        merged = [r for r in incoming if r["fixture_id"] not in seen] + recent
+        overlay["recent"] = merged[:10]
+        overlay["generated_at"] = now_iso()
+        team["overlay"] = overlay
+        write_json(path, team)
+
+    added_refs = 0
+    for fx in history:
+        row = compact_ref_match(fx, known)
+        if not row:
+            continue
+        rid = row.pop("rid", None)
+        row.pop("rn", None)
+        if not rid:
+            continue
+        path = CATALOG / "referees" / f"{rid}.json"
+        ref = load_json(path)
+        overlay = (ref or {}).get("overlay")
+        if not ref or not overlay:
+            continue
+        matches = overlay.get("matches") or []
+        if any(m.get("fid") == row.get("fid") for m in matches):
+            continue
+        matches.append(row)
+        matches.sort(key=lambda m: m.get("d") or "", reverse=True)
+        overlay["matches"] = matches
+        overlay["generated_at"] = now_iso()
+        _refresh_ref_seasons(overlay, seasons_meta, season_id)
+        ref["overlay"] = overlay
+        write_json(path, ref)
+        added_refs += 1
+    if added_refs:
+        recompute_discipline_on_disk(CATALOG, load_json, write_json)
+    print(f"  overlay {league_id}: +{len(history)} zápasů v okně, rozhodčí souborů s přírůstkem {added_refs}")
+
+
+def apply_daily_overlay(league_id: int) -> None:
+    apply_fdr_from_standings(league_id)
+    merge_incremental_overlay(league_id, days=2)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--team", help="id týmů čárkou; default všichni z ligy 262")
     parser.add_argument("--league", type=int, default=262)
     parser.add_argument("--referees", help="id rozhodčích čárkou")
     parser.add_argument("--skip-players", action="store_true")
+    parser.add_argument("--skip-player-history", action="store_true")
     parser.add_argument("--players-only", action="store_true")
+    parser.add_argument("--fdr-only", action="store_true")
     args = parser.parse_args()
     known = known_match_ids()
+    if args.fdr_only:
+        apply_daily_overlay(args.league)
+        stats = call_stats()
+        print(f"[catalog-overlay] hotovo · API {stats['calls']} volání, cache {stats['cache_hits']}")
+        return
     if args.players_only:
         sample = load_json(CATALOG / "teams" / "216.json") or load_json(CATALOG / "leagues" / f"{args.league}.json") or {}
         season_id = sample.get("season_id")
@@ -716,7 +876,13 @@ def main() -> None:
     player_ids = set() if args.skip_players else set(teams)
     known = known_match_ids()
     print(f"[catalog-overlay] liga={args.league} týmy={teams} hráči={sorted(player_ids)}")
-    enrich_league_teams(args.league, teams, known, player_ids)
+    enrich_league_teams(
+        args.league,
+        teams,
+        known,
+        player_ids,
+        skip_player_history=args.skip_player_history,
+    )
     for rid in refs:
         enrich_referee(rid, known)
     stats = call_stats()

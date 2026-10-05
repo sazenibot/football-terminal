@@ -50,6 +50,14 @@ def now_iso() -> str:
 
 
 def write_json(path: Path, payload: dict) -> None:
+    # Identita nesmí mazat FDR / rozhodčí overlay z předchozího enrich.
+    if path.exists() and "overlay" not in payload:
+        try:
+            old = json.loads(path.read_text())
+            if old.get("overlay"):
+                payload["overlay"] = old["overlay"]
+        except (json.JSONDecodeError, OSError):
+            pass
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(payload, indent=2, ensure_ascii=False, default=str))

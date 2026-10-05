@@ -10,7 +10,7 @@
   "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
   "date_of_birth": null,
   "overlay": {
-    "generated_at": "2026-09-21T15:45:03Z",
+    "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,
     "career_matches": 43,
     "seasons": [
@@ -5369,12 +5369,12 @@
         },
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
-            "rank": 10,
+            "league_avg": 26.56,
+            "rank": 9,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
+            "league_avg": 3.7,
             "rank": 1,
             "size": 22
           },
