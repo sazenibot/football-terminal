@@ -375,7 +375,7 @@
     },
     {
       "id": 37598813,
-      "name": "Matej Zitny",
+      "name": "Matěj Žitný",
       "common_name": "M. Žitný",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 20,
@@ -639,7 +639,7 @@
         "name": "Banik Ostrava B",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732280,
@@ -664,5 +664,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:45:39Z"
+  "generated_at": "2026-10-05T11:24:39Z"
 }

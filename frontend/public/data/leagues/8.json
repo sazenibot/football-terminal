@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T10:37:26Z",
+  "generated_at": "2026-10-05T11:21:52Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -152,11 +152,27 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
       },
       "has_full_data": true
+    },
+    {
+      "fixture_id": 19722150,
+      "starting_at": "2026-10-12T19:00:00Z",
+      "venue": "The Coventry Building Society Arena",
+      "home": {
+        "id": 117,
+        "name": "Coventry City",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png"
+      },
+      "away": {
+        "id": 20,
+        "name": "Newcastle United",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png"
+      },
+      "has_full_data": true
     }
   ],
   "stats": {
-    "created": 3,
-    "refreshed": 6,
+    "created": 1,
+    "refreshed": 9,
     "errors": 0
   }
 }

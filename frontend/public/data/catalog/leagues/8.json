@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T10:45:54Z",
+  "generated_at": "2026-10-05T11:24:53Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -561,7 +561,7 @@
     },
     {
       "id": 37581741,
-      "name": "Archie Gray",
+      "name": "Archie James Francis Gray",
       "image": "https://cdn.sportmonks.com/images/soccer/players/13/37581741.png",
       "team_id": 6,
       "team_name": "Tottenham Hotspur",
@@ -858,7 +858,7 @@
     },
     {
       "id": 37459070,
-      "name": "Brooke Norton-Cuffy",
+      "name": "Brooke Dion Nelson Norton-Cuffy",
       "image": "https://cdn.sportmonks.com/images/soccer/players/30/37459070.png",
       "team_id": 22,
       "team_name": "Hull City",
@@ -1371,7 +1371,7 @@
     },
     {
       "id": 37734644,
-      "name": "Dayann Méthalie",
+      "name": "Dayann Methalie",
       "image": "https://cdn.sportmonks.com/images/soccer/players/20/37734644.png",
       "team_id": 3,
       "team_name": "Sunderland",
@@ -1523,6 +1523,15 @@
       "number": 25
     },
     {
+      "id": 37632336,
+      "name": "Eli Junior Éric Anatole Rainha Kroupi",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/16/37632336.png",
+      "team_id": 52,
+      "team_name": "AFC Bournemouth",
+      "position": "Útočník",
+      "number": 22
+    },
+    {
       "id": 21412837,
       "name": "Eliot Matazo ",
       "image": "https://cdn.sportmonks.com/images/soccer/players/5/21412837.png",
@@ -1668,7 +1677,7 @@
     },
     {
       "id": 37568808,
-      "name": "Ethan Nwaneri",
+      "name": "Ethan Chidiebere Nwaneri",
       "image": "https://cdn.sportmonks.com/images/soccer/players/8/37568808.png",
       "team_id": 19,
       "team_name": "Arsenal",
@@ -2235,7 +2244,7 @@
     },
     {
       "id": 37561625,
-      "name": "Jack Hinshelwood",
+      "name": "Jack Luca Hinshelwood",
       "image": "https://cdn.sportmonks.com/images/soccer/players/25/37561625.png",
       "team_id": 78,
       "team_name": "Brighton & Hove Albion",
@@ -2487,7 +2496,7 @@
     },
     {
       "id": 37688184,
-      "name": "Jaydee Canvot",
+      "name": "Jaydee Bruce Hamady Canvot",
       "image": "https://cdn.sportmonks.com/images/soccer/players/24/37688184.png",
       "team_id": 51,
       "team_name": "Crystal Palace",
@@ -2720,15 +2729,6 @@
       "number": 21
     },
     {
-      "id": 37631362,
-      "name": "Josh Acheampong",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/2/37631362.png",
-      "team_id": 18,
-      "team_name": "Chelsea",
-      "position": "Obránce",
-      "number": 34
-    },
-    {
       "id": 339093,
       "name": "Josh Dasilva",
       "image": "https://cdn.sportmonks.com/images/soccer/players/21/339093.png",
@@ -2748,12 +2748,21 @@
     },
     {
       "id": 37656924,
-      "name": "Josh King",
+      "name": "Joshua David Steven King",
       "image": "https://cdn.sportmonks.com/images/soccer/players/28/37656924.png",
       "team_id": 11,
       "team_name": "Fulham",
       "position": "Záložník",
       "number": 24
+    },
+    {
+      "id": 37631362,
+      "name": "Joshua Kofi Acheampong",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/2/37631362.png",
+      "team_id": 18,
+      "team_name": "Chelsea",
+      "position": "Obránce",
+      "number": 34
     },
     {
       "id": 9605680,
@@ -2835,15 +2844,6 @@
       "team_name": "AFC Bournemouth",
       "position": "Obránce",
       "number": null
-    },
-    {
-      "id": 37632336,
-      "name": "Junior Kroupi ",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/16/37632336.png",
-      "team_id": 52,
-      "team_name": "AFC Bournemouth",
-      "position": "Útočník",
-      "number": 22
     },
     {
       "id": 5270466,
@@ -3099,7 +3099,7 @@
     },
     {
       "id": 37600357,
-      "name": "Leny Yoro",
+      "name": "Leny Jean-Luc Yoro",
       "image": "https://cdn.sportmonks.com/images/soccer/players/5/37600357.png",
       "team_id": 14,
       "team_name": "Manchester United",
@@ -3630,7 +3630,7 @@
     },
     {
       "id": 37531504,
-      "name": "Mathys Tel",
+      "name": "Mathys Henri Tel",
       "image": "https://cdn.sportmonks.com/images/soccer/players/16/37531504.png",
       "team_id": 6,
       "team_name": "Tottenham Hotspur",
@@ -3999,7 +3999,7 @@
     },
     {
       "id": 37568815,
-      "name": "Myles Lewis-Skelly",
+      "name": "Myles Anthony Lewis-Skelly",
       "image": "https://cdn.sportmonks.com/images/soccer/players/15/37568815.png",
       "team_id": 19,
       "team_name": "Arsenal",
@@ -4449,7 +4449,7 @@
     },
     {
       "id": 37459073,
-      "name": "Rico Lewis",
+      "name": "Rico Henry Mark Lewis",
       "image": "https://cdn.sportmonks.com/images/soccer/players/1/37459073.png",
       "team_id": 9,
       "team_name": "Manchester City",
@@ -4970,15 +4970,6 @@
       "number": 12
     },
     {
-      "id": 37561126,
-      "name": "Tyler Dibling",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/6/37561126.png",
-      "team_id": 13,
-      "team_name": "Everton",
-      "position": "Útočník",
-      "number": 20
-    },
-    {
       "id": 37678829,
       "name": "Tyler Fletcher",
       "image": "https://cdn.sportmonks.com/images/soccer/players/13/37678829.png",
@@ -4986,6 +4977,15 @@
       "team_name": "Manchester United",
       "position": "Záložník",
       "number": null
+    },
+    {
+      "id": 37561126,
+      "name": "Tyler-Jay Robert Dibling",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/6/37561126.png",
+      "team_id": 13,
+      "team_name": "Everton",
+      "position": "Útočník",
+      "number": 20
     },
     {
       "id": 4598710,
@@ -4998,7 +4998,7 @@
     },
     {
       "id": 37592037,
-      "name": "Tyrique George",
+      "name": "Tyrique Aaron Delali Yusuff George",
       "image": "https://cdn.sportmonks.com/images/soccer/players/5/37592037.png",
       "team_id": 13,
       "team_name": "Everton",
@@ -5205,7 +5205,7 @@
     },
     {
       "id": 37593240,
-      "name": "Wilson Odobert ",
+      "name": "Wilson Serge Eric Odobert",
       "image": "https://cdn.sportmonks.com/images/soccer/players/24/37593240.png",
       "team_id": 6,
       "team_name": "Tottenham Hotspur",

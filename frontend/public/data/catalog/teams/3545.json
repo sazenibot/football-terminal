@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Viktoria Plzeň je 10. v tabulce Chance Liga (10 b. z 9 zápasů, skóre 17:17).",
+  "hook": "Viktoria Plzeň hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 37619484,
@@ -31,8 +31,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 6642434,
@@ -49,11 +48,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 83101,
@@ -70,8 +65,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37624730,
@@ -88,8 +82,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37260790,
@@ -106,11 +99,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 180894,
@@ -127,11 +116,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37375833,
@@ -148,11 +133,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37702608,
@@ -169,11 +150,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37573859,
@@ -190,11 +167,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37726587,
@@ -211,11 +184,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37544236,
@@ -232,11 +201,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37346887,
@@ -253,11 +218,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37316363,
@@ -274,11 +235,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37656868,
@@ -295,11 +252,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37316349,
@@ -316,11 +269,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 21413447,
@@ -337,11 +286,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37526506,
@@ -358,11 +303,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80228,
@@ -379,11 +320,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37631854,
@@ -400,11 +337,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37597987,
@@ -421,11 +354,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37656175,
@@ -442,11 +371,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37576529,
@@ -463,11 +388,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37681478,
@@ -484,11 +405,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37430166,
@@ -505,11 +422,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 1148,
@@ -526,11 +439,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37777286,
@@ -547,11 +456,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37585365,
@@ -568,11 +473,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37697289,
@@ -589,11 +490,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 82764,
@@ -610,11 +507,7 @@
       "team_name": "Viktoria Plzeň",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -661,7 +554,7 @@
       "fdr": "easy"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:14Z",
     "hook_kind": "facts",
@@ -675,7 +568,7 @@
       "lost": 3,
       "gf": 17,
       "ga": 17,
-      "form": "PPRVR"
+      "form": null
     },
     "recent": [
       {
@@ -2479,13 +2372,5 @@
       "end": "2027-06-30",
       "active": true
     }
-  },
-  "coach": {
-    "id": 37510953,
-    "name": "R. Kováč",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2026-08-23",
-    "end": "2027-06-30",
-    "active": true
   }
 }

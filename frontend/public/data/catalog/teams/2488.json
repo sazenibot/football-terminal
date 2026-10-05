@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Bohemians 1905 je 12. v tabulce Chance Liga (9 b. z 8 zápasů, skóre 9:11).",
+  "hook": "Bohemians 1905 hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 83540,
@@ -31,8 +31,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80623,
@@ -49,8 +48,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37569870,
@@ -67,11 +65,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 14337977,
@@ -88,11 +82,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 82080,
@@ -109,11 +99,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 23301871,
@@ -130,11 +116,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 82419,
@@ -151,11 +133,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37739160,
@@ -172,11 +150,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37683878,
@@ -193,11 +167,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80261,
@@ -214,11 +184,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37742265,
@@ -235,11 +201,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80320,
@@ -256,11 +218,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 751463,
@@ -277,11 +235,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 24816758,
@@ -298,11 +252,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 78966,
@@ -319,11 +269,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 38219633,
@@ -340,8 +286,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38026847,
@@ -358,8 +303,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38027393,
@@ -376,11 +320,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37741070,
@@ -397,11 +337,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37909121,
@@ -418,11 +354,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 32020,
@@ -439,11 +371,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 81662,
@@ -460,11 +388,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 537552,
@@ -481,11 +405,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 181472,
@@ -502,11 +422,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 9939113,
@@ -523,11 +439,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37621024,
@@ -544,8 +456,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 81573,
@@ -562,11 +473,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37702623,
@@ -583,11 +490,7 @@
       "team_name": "Bohemians 1905",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -648,7 +551,7 @@
       "fdr": "hard"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:01Z",
     "hook_kind": "facts",
@@ -662,7 +565,7 @@
       "lost": 3,
       "gf": 9,
       "ga": 11,
-      "form": "PVPRR"
+      "form": null
     },
     "recent": [
       {
@@ -1903,13 +1806,5 @@
       "end": "2028-06-30",
       "active": true
     }
-  },
-  "coach": {
-    "id": 37259986,
-    "name": "Jaroslav Veselý",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2022-03-21",
-    "end": "2028-06-30",
-    "active": true
   }
 }

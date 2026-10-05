@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-04T10:31:52.042643Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T13:00:00Z",
   "venue": "Na Stínadlech",
   "home": {
@@ -34,6 +34,20 @@
     },
     {
       "side": "away",
+      "player_id": 23697806,
+      "player_name": "Péter Baráth",
+      "type_id": 661,
+      "type_name": "Calf Problems",
+      "type_name_cs": "Calf Problems",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-10",
+      "end_date": null,
+      "games_missed": 3,
+      "likely_available": false
+    },
+    {
+      "side": "away",
       "player_id": 32548,
       "player_name": "Jan Kliment",
       "type_id": 336,
@@ -58,20 +72,6 @@
       "start_date": "2026-09-15",
       "end_date": null,
       "games_missed": 2,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 23697806,
-      "player_name": "Péter Baráth",
-      "type_id": 661,
-      "type_name": "Calf Problems",
-      "type_name_cs": "Calf Problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-10",
-      "end_date": null,
-      "games_missed": 3,
       "likely_available": false
     }
   ],
@@ -7426,5 +7426,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-05T11:18:31.185170Z"
 }

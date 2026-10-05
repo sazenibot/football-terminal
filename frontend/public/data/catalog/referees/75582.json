@@ -9,7 +9,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "in_league": true,
-  "league_matches": 5,
+  "league_matches": 7,
   "leagues": [
     {
       "id": 262,
@@ -24,8 +24,8 @@
       "league_matches": 2
     }
   ],
-  "hook": "Karel Roucek píská v soutěži Chance Liga jako hlavní. V této sezóně 5 zápasů, 3.6 žlutých na zápas.",
-  "generated_at": "2026-10-04T10:45:39Z",
+  "hook": "Karel Roucek píská v soutěži Chance Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-10-05T11:24:39Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,

@@ -3,7 +3,7 @@
   "league_id": 564,
   "league_name": "La Liga",
   "built_at": "2026-10-04T10:42:58.229539Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T14:15:00Z",
   "venue": "Anoeta Stadium",
   "home": {
@@ -18,20 +18,6 @@
   },
   "referee": null,
   "sidelined": [
-    {
-      "side": "home",
-      "player_id": 37546475,
-      "player_name": "Pablo Marín Tejada",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-07-14",
-      "end_date": "2026-10-05",
-      "games_missed": 14,
-      "likely_available": true
-    },
     {
       "side": "home",
       "player_id": 187232,
@@ -6228,5 +6214,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-05T11:23:00.624058Z"
 }

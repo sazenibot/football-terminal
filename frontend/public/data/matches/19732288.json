@@ -17,22 +17,7 @@
     "image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png"
   },
   "referee": null,
-  "sidelined": [
-    {
-      "side": "away",
-      "player_id": 37564398,
-      "player_name": "Ibrahim Aldin",
-      "type_id": 1608,
-      "type_name": "Red Card Suspension",
-      "type_name_cs": "Trest za červenou kartu",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-09-19",
-      "end_date": "2026-10-05",
-      "games_missed": 1,
-      "likely_available": true
-    }
-  ],
+  "sidelined": [],
   "predicted_lineups": {
     "home": [],
     "away": []
@@ -5477,5 +5462,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:33:22.664868Z"
+  "refreshed_at": "2026-10-05T11:18:48.111107Z"
 }

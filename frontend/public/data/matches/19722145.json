@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37317015,
-      "player_name": "Amad Diallo Traoré",
-      "type_id": 531,
-      "type_name": "Knock",
-      "type_name_cs": "Knock",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-20",
-      "end_date": "2026-10-10",
-      "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 893705,
       "player_name": "Manuel Ugarte Ribeiro",
       "type_id": 1918,
@@ -61,17 +47,17 @@
       "likely_available": false
     },
     {
-      "side": "away",
-      "player_id": 37317392,
-      "player_name": "Xavi Simons",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
+      "side": "home",
+      "player_id": 37317015,
+      "player_name": "Amad Diallo Traoré",
+      "type_id": 531,
+      "type_name": "Knock",
+      "type_name_cs": "Knock",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-04-25",
-      "end_date": "2027-02-20",
-      "games_missed": 19,
+      "start_date": "2026-08-20",
+      "end_date": "2026-10-10",
+      "games_missed": 7,
       "likely_available": false
     },
     {
@@ -86,6 +72,20 @@
       "start_date": "2026-02-10",
       "end_date": "2026-11-28",
       "games_missed": 29,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37317392,
+      "player_name": "Xavi Simons",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-04-25",
+      "end_date": "2027-02-20",
+      "games_missed": 19,
       "likely_available": false
     },
     {
@@ -7165,5 +7165,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:33:56.059309Z"
+  "refreshed_at": "2026-10-05T11:20:35.021539Z"
 }

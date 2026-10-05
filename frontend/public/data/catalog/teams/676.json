@@ -571,7 +571,7 @@
         "name": "Levante",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732655,
@@ -585,5 +585,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:46:32Z"
+  "generated_at": "2026-10-05T11:25:37Z"
 }

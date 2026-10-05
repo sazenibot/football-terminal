@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 31982,
-      "player_name": "Dominik Kohr",
-      "type_id": 537,
-      "type_name": "Ankle Injury",
-      "type_name_cs": "Zranění kotníku",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-30",
-      "end_date": null,
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 32338,
       "player_name": "Robin Zentner",
       "type_id": 664,
@@ -48,14 +34,14 @@
     },
     {
       "side": "home",
-      "player_id": 129609,
-      "player_name": "Silvan Widmer",
-      "type_id": 2029,
-      "type_name": "Patellar Tendon Problems",
-      "type_name_cs": "Patellar Tendon Problems",
+      "player_id": 31982,
+      "player_name": "Dominik Kohr",
+      "type_id": 537,
+      "type_name": "Ankle Injury",
+      "type_name_cs": "Zranění kotníku",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-05",
+      "start_date": "2026-08-30",
       "end_date": null,
       "games_missed": 4,
       "likely_available": false
@@ -72,6 +58,20 @@
       "start_date": "2026-04-09",
       "end_date": null,
       "games_missed": 21,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 129609,
+      "player_name": "Silvan Widmer",
+      "type_id": 2029,
+      "type_name": "Patellar Tendon Problems",
+      "type_name_cs": "Patellar Tendon Problems",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-05",
+      "end_date": null,
+      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -104,16 +104,16 @@
     },
     {
       "side": "away",
-      "player_id": 37748959,
-      "player_name": "Kennet Eichhorn",
-      "type_id": 1612,
-      "type_name": "No Eligibility",
-      "type_name_cs": "Nezpůsobilost k nasazení",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-09-04",
-      "end_date": "2027-01-29",
-      "games_missed": 4,
+      "player_id": 37316600,
+      "player_name": "Guela Doué",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-15",
+      "end_date": null,
+      "games_missed": 2,
       "likely_available": false
     },
     {
@@ -132,16 +132,16 @@
     },
     {
       "side": "away",
-      "player_id": 37316600,
-      "player_name": "Guela Doué",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-15",
-      "end_date": null,
-      "games_missed": 2,
+      "player_id": 37748959,
+      "player_name": "Kennet Eichhorn",
+      "type_id": 1612,
+      "type_name": "No Eligibility",
+      "type_name_cs": "Nezpůsobilost k nasazení",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-09-04",
+      "end_date": "2027-01-29",
+      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -6827,5 +6827,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:37:50.145242Z"
+  "refreshed_at": "2026-10-05T11:22:16.498697Z"
 }

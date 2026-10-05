@@ -154,7 +154,7 @@
     },
     {
       "id": 37568815,
-      "name": "Myles Lewis-Skelly",
+      "name": "Myles Anthony Lewis-Skelly",
       "common_name": "M. Lewis-Skelly",
       "image": "https://cdn.sportmonks.com/images/soccer/players/15/37568815.png",
       "number": 49,
@@ -307,7 +307,7 @@
     },
     {
       "id": 37568808,
-      "name": "Ethan Nwaneri",
+      "name": "Ethan Chidiebere Nwaneri",
       "common_name": "E. Nwaneri",
       "image": "https://cdn.sportmonks.com/images/soccer/players/8/37568808.png",
       "number": 22,
@@ -477,5 +477,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:45:54Z"
+  "generated_at": "2026-10-05T11:24:53Z"
 }

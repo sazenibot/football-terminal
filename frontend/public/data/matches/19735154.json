@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-04T10:39:11.305710Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T13:30:00Z",
   "venue": "RheinEnergieStadion",
   "home": {
@@ -20,16 +20,16 @@
   "sidelined": [
     {
       "side": "away",
-      "player_id": 2178915,
-      "player_name": "Nicolas-Gerrit Kühn",
-      "type_id": 667,
-      "type_name": "Torn Muscle Bundle",
-      "type_name_cs": "Torn Muscle Bundle",
+      "player_id": 37528761,
+      "player_name": "Jens Castrop",
+      "type_id": 545,
+      "type_name": "Shoulder Injury",
+      "type_name_cs": "Zranění ramene",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-08",
+      "start_date": "2026-08-06",
       "end_date": null,
-      "games_missed": 4,
+      "games_missed": 8,
       "likely_available": false
     },
     {
@@ -48,16 +48,16 @@
     },
     {
       "side": "away",
-      "player_id": 37528761,
-      "player_name": "Jens Castrop",
-      "type_id": 545,
-      "type_name": "Shoulder Injury",
-      "type_name_cs": "Zranění ramene",
+      "player_id": 2178915,
+      "player_name": "Nicolas-Gerrit Kühn",
+      "type_id": 667,
+      "type_name": "Torn Muscle Bundle",
+      "type_name_cs": "Torn Muscle Bundle",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-06",
+      "start_date": "2026-09-08",
       "end_date": null,
-      "games_missed": 8,
+      "games_missed": 4,
       "likely_available": false
     }
   ],
@@ -6305,5 +6305,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-05T11:22:29.965946Z"
 }

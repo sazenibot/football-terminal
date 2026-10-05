@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Baník Ostrava je 11. v tabulce Chance Liga (10 b. z 9 zápasů, skóre 7:17).",
+  "hook": "Baník Ostrava hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 537501,
@@ -31,11 +31,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37259972,
@@ -52,8 +48,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80927,
@@ -70,8 +65,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37542430,
@@ -88,8 +82,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37730001,
@@ -106,11 +99,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37325163,
@@ -127,11 +116,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37356477,
@@ -148,11 +133,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80854,
@@ -169,11 +150,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 181490,
@@ -190,11 +167,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 79655,
@@ -211,11 +184,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37659720,
@@ -232,11 +201,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37626595,
@@ -253,11 +218,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37654233,
@@ -274,11 +235,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37787934,
@@ -295,11 +252,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37697452,
@@ -316,11 +269,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37705839,
@@ -337,11 +286,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80080,
@@ -358,11 +303,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 33587604,
@@ -379,8 +320,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37657971,
@@ -397,11 +337,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37685009,
@@ -418,11 +354,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 538978,
@@ -439,11 +371,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 20693889,
@@ -460,11 +388,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 89038,
@@ -481,11 +405,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37621257,
@@ -502,11 +422,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37687921,
@@ -523,11 +439,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37539019,
@@ -544,8 +456,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80987,
@@ -562,11 +473,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 82370,
@@ -583,11 +490,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37776553,
@@ -604,11 +507,7 @@
       "team_name": "Baník Ostrava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -655,7 +554,7 @@
       "fdr": "hard"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:00Z",
     "hook_kind": "facts",
@@ -669,7 +568,7 @@
       "lost": 5,
       "gf": 7,
       "ga": 17,
-      "form": "RPPPV"
+      "form": null
     },
     "recent": [
       {
@@ -2978,13 +2877,5 @@
       "end": null,
       "active": true
     }
-  },
-  "coach": {
-    "id": 1452449,
-    "name": "Roman Skuhravý",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2026-07-01",
-    "end": null,
-    "active": true
   }
 }

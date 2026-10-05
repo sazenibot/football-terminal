@@ -34,20 +34,6 @@
     },
     {
       "side": "home",
-      "player_id": 522619,
-      "player_name": "Facundo Tomás Garcés",
-      "type_id": 1615,
-      "type_name": "Suspension Through Sports Court",
-      "type_name_cs": "Suspension Through Sports Court",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-03-05",
-      "end_date": "2026-11-02",
-      "games_missed": 24,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37591023,
       "player_name": "Mikel Rodriguez Ulacia",
       "type_id": 1918,
@@ -58,6 +44,20 @@
       "start_date": "2026-09-04",
       "end_date": "2027-05-01",
       "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 522619,
+      "player_name": "Facundo Tomás Garcés",
+      "type_id": 1615,
+      "type_name": "Suspension Through Sports Court",
+      "type_name_cs": "Suspension Through Sports Court",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-03-05",
+      "end_date": "2026-11-02",
+      "games_missed": 24,
       "likely_available": false
     },
     {
@@ -7041,5 +7041,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:40:31.472812Z"
+  "refreshed_at": "2026-10-05T11:22:46.854157Z"
 }

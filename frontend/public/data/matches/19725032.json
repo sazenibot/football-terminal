@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-04T10:33:08.890280Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T16:00:00Z",
   "venue": "TC Strahov",
   "home": {
@@ -22,20 +22,6 @@
       "side": "home",
       "player_id": 458507,
       "player_name": "Magnus Andersen",
-      "type_id": 1612,
-      "type_name": "No Eligibility",
-      "type_name_cs": "Nezpůsobilost k nasazení",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-09-03",
-      "end_date": "2027-01-29",
-      "games_missed": 6,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37757395,
-      "player_name": "Emmanuel Uchenna Aririerisim",
       "type_id": 1612,
       "type_name": "No Eligibility",
       "type_name_cs": "Nezpůsobilost k nasazení",
@@ -76,6 +62,20 @@
     },
     {
       "side": "home",
+      "player_id": 37757395,
+      "player_name": "Emmanuel Uchenna Aririerisim",
+      "type_id": 1612,
+      "type_name": "No Eligibility",
+      "type_name_cs": "Nezpůsobilost k nasazení",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-09-03",
+      "end_date": "2027-01-29",
+      "games_missed": 6,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37341896,
       "player_name": "Jhoanner Stalin Chávez Quintero",
       "type_id": 533,
@@ -85,7 +85,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-04-01",
       "end_date": null,
-      "games_missed": 22,
+      "games_missed": 24,
       "likely_available": false
     },
     {
@@ -7610,5 +7610,6 @@
         }
       }
     ]
-  }
+  },
+  "refreshed_at": "2026-10-05T11:18:34.715681Z"
 }

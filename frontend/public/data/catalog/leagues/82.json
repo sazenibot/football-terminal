@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T10:46:13Z",
+  "generated_at": "2026-10-05T11:25:16Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -475,7 +475,7 @@
     },
     {
       "id": 37445066,
-      "name": "Arijon Ibrahimovic",
+      "name": "Arijon Ibrahimović",
       "image": "https://cdn.sportmonks.com/images/soccer/players/10/37445066.png",
       "team_id": 90,
       "team_name": "FC Augsburg",
@@ -664,7 +664,7 @@
     },
     {
       "id": 37650245,
-      "name": "Cajetan Lenz",
+      "name": "Cajetan Benjamin Lenz",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 2726,
       "team_name": "TSG Hoffenheim",
@@ -826,7 +826,7 @@
     },
     {
       "id": 37698005,
-      "name": "Conrad Harder",
+      "name": "Conrad Harder Weibel Schandorf",
       "image": "https://cdn.sportmonks.com/images/soccer/players/21/37698005.png",
       "team_id": 277,
       "team_name": "RB Leipzig",
@@ -997,7 +997,7 @@
     },
     {
       "id": 37582212,
-      "name": "Dennis Seimen ",
+      "name": "Dennis Seimen",
       "image": "https://cdn.sportmonks.com/images/soccer/players/4/37582212.png",
       "team_id": 3319,
       "team_name": "VfB Stuttgart",
@@ -1033,7 +1033,7 @@
     },
     {
       "id": 37590611,
-      "name": "Dzenan Pejcinovic",
+      "name": "Dženan Pejčinović",
       "image": "https://cdn.sportmonks.com/images/soccer/players/19/37590611.png",
       "team_id": 3319,
       "team_name": "VfB Stuttgart",
@@ -1186,7 +1186,7 @@
     },
     {
       "id": 37568808,
-      "name": "Ethan Nwaneri",
+      "name": "Ethan Chidiebere Nwaneri",
       "image": "https://cdn.sportmonks.com/images/soccer/players/8/37568808.png",
       "team_id": 68,
       "team_name": "Borussia Dortmund",
@@ -1816,7 +1816,7 @@
     },
     {
       "id": 37590934,
-      "name": "Jeanuël Belocian",
+      "name": "Jeanuël Merick Belocian",
       "image": "https://cdn.sportmonks.com/images/soccer/players/22/37590934.png",
       "team_id": 3321,
       "team_name": "Bayer 04 Leverkusen",
@@ -1897,7 +1897,7 @@
     },
     {
       "id": 37581777,
-      "name": "Jobe Bellingham",
+      "name": "Jobe Samuel Patrick Bellingham",
       "image": "https://cdn.sportmonks.com/images/soccer/players/17/37581777.png",
       "team_id": 68,
       "team_name": "Borussia Dortmund",
@@ -2698,7 +2698,7 @@
     },
     {
       "id": 37344040,
-      "name": "Lúkas Petersson",
+      "name": "Lúkas Jóhannes Blöndal Petersson",
       "image": "https://cdn.sportmonks.com/images/soccer/players/8/37344040.png",
       "team_id": 2726,
       "team_name": "TSG Hoffenheim",
@@ -3508,7 +3508,7 @@
     },
     {
       "id": 37650324,
-      "name": "Noah Darvich",
+      "name": "Noah Yanis Darvich",
       "image": "https://cdn.sportmonks.com/images/soccer/players/20/37650324.png",
       "team_id": 3588,
       "team_name": "Elversberg",
@@ -4047,15 +4047,6 @@
       "number": 23
     },
     {
-      "id": 37709599,
-      "name": "Said El Mala",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/31/37709599.png",
-      "team_id": 3320,
-      "team_name": "FC Köln",
-      "position": "Záložník",
-      "number": 10
-    },
-    {
       "id": 37650873,
       "name": "Salim Musah",
       "image": "https://cdn.sportmonks.com/images/soccer/players/25/37650873.png",
@@ -4117,6 +4108,15 @@
       "team_name": "Schalke 04",
       "position": "Záložník",
       "number": 13
+    },
+    {
+      "id": 37709599,
+      "name": "Saïd El Mala",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/31/37709599.png",
+      "team_id": 3320,
+      "team_name": "FC Köln",
+      "position": "Záložník",
+      "number": 10
     },
     {
       "id": 37645309,
@@ -4515,6 +4515,15 @@
       "number": 21
     },
     {
+      "id": 37558983,
+      "name": "Tom Alexander Rothe",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/7/37558983.png",
+      "team_id": 1079,
+      "team_name": "FC Union Berlin",
+      "position": "Obránce",
+      "number": 15
+    },
+    {
       "id": 36653,
       "name": "Tom Baack",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4540,15 +4549,6 @@
       "team_name": "FC Köln",
       "position": "Záložník",
       "number": 5
-    },
-    {
-      "id": 37558983,
-      "name": "Tom Rothe",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/7/37558983.png",
-      "team_id": 1079,
-      "team_name": "FC Union Berlin",
-      "position": "Obránce",
-      "number": 15
     },
     {
       "id": 37650979,
@@ -4823,6 +4823,14 @@
   ],
   "referees": [
     {
+      "id": 80234,
+      "name": "Daniel Siebert",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 5
+    },
+    {
       "id": 926,
       "name": "Sven Jablonski",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4833,22 +4841,6 @@
     {
       "id": 14473,
       "name": "Bastian Dankert",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
-      "id": 16993,
-      "name": "Christian Dingert",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 4
-    },
-    {
-      "id": 80234,
-      "name": "Daniel Siebert",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4879,8 +4871,24 @@
       "league_matches": 3
     },
     {
+      "id": 16993,
+      "name": "Christian Dingert",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
       "id": 15730,
       "name": "Daniel Schlager",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 16778,
+      "name": "Deniz Aytekin",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4927,14 +4935,6 @@
       "league_matches": 3
     },
     {
-      "id": 33370,
-      "name": "Robin Braun",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
       "id": 17352,
       "name": "Sascha Stegemann",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4967,14 +4967,6 @@
       "league_matches": 3
     },
     {
-      "id": 16778,
-      "name": "Deniz Aytekin",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 2
-    },
-    {
       "id": 11719,
       "name": "Florian Badstübner",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5001,6 +4993,14 @@
     {
       "id": 15399,
       "name": "Martin Petersen",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 33370,
+      "name": "Robin Braun",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,

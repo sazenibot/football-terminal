@@ -8,8 +8,8 @@
   "date_of_birth": null,
   "league_id": 262,
   "league_name": "Chance Liga",
-  "in_league": true,
-  "league_matches": 1,
+  "in_league": false,
+  "league_matches": 0,
   "leagues": [
     {
       "id": 262,
@@ -25,7 +25,7 @@
     }
   ],
   "hook": "Lukáš Machač je rozhodčí ze země této ligy. V aktuálním okně ho jako hlavního na zápasech ligy ještě nemáme.",
-  "generated_at": "2026-10-04T10:45:39Z",
+  "generated_at": "2026-10-05T11:24:39Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,

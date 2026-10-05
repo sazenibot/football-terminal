@@ -62,6 +62,20 @@
     },
     {
       "side": "away",
+      "player_id": 339093,
+      "player_name": "Pelenda Joshua Tunga Dasilva",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-31",
+      "end_date": "2026-10-06",
+      "games_missed": 4,
+      "likely_available": true
+    },
+    {
+      "side": "away",
       "player_id": 37656906,
       "player_name": "Kaye Iyowuna Furo",
       "type_id": 608,
@@ -87,20 +101,6 @@
       "end_date": null,
       "games_missed": 4,
       "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 339093,
-      "player_name": "Pelenda Joshua Tunga Dasilva",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-31",
-      "end_date": "2026-10-06",
-      "games_missed": 4,
-      "likely_available": true
     },
     {
       "side": "away",
@@ -6845,5 +6845,5 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-04T10:33:54.104736Z"
+  "refreshed_at": "2026-10-05T11:20:33.355277Z"
 }

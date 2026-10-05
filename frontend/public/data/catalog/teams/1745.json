@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Zlín je 16. v tabulce Chance Liga (1 b. z 9 zápasů, skóre 8:19).",
+  "hook": "Zlín hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 82643,
@@ -31,8 +31,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79754,
@@ -49,11 +48,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37718903,
@@ -70,8 +65,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 80750,
@@ -88,11 +82,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 38219689,
@@ -109,11 +99,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 22504455,
@@ -130,11 +116,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37259952,
@@ -151,11 +133,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80737,
@@ -172,11 +150,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 83740,
@@ -193,11 +167,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37555809,
@@ -214,11 +184,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37685814,
@@ -235,11 +201,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37656054,
@@ -256,8 +218,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37342581,
@@ -274,11 +235,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37539679,
@@ -295,11 +252,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80949,
@@ -316,11 +269,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 38219686,
@@ -337,11 +286,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37561380,
@@ -358,11 +303,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 132241,
@@ -379,11 +320,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37344021,
@@ -400,11 +337,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 15413328,
@@ -421,11 +354,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 4969736,
@@ -442,11 +371,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80723,
@@ -463,11 +388,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "left",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 82717,
@@ -484,8 +405,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37730059,
@@ -502,11 +422,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37923331,
@@ -523,11 +439,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37584778,
@@ -544,11 +456,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 38219690,
@@ -565,11 +473,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37569808,
@@ -586,11 +490,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 38219685,
@@ -607,11 +507,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 38219688,
@@ -628,11 +524,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 23269960,
@@ -649,11 +541,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80730,
@@ -670,11 +558,7 @@
       "team_name": "Zlín",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -721,7 +605,7 @@
       "fdr": "hard"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:16Z",
     "hook_kind": "facts",
@@ -735,7 +619,7 @@
       "lost": 8,
       "gf": 8,
       "ga": 19,
-      "form": "RPPPP"
+      "form": null
     },
     "recent": [
       {
@@ -2356,13 +2240,5 @@
       "end": null,
       "active": true
     }
-  },
-  "coach": {
-    "id": 1552175,
-    "name": "Pavel Hoftych",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2026-09-07",
-    "end": null,
-    "active": true
   }
 }

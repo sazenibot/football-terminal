@@ -60,7 +60,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "2005-10-05",
-      "age": 20,
+      "age": 21,
       "team_id": 2975,
       "team_name": "Deportivo Alavés",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
@@ -528,5 +528,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:46:32Z"
+  "generated_at": "2026-10-05T11:25:37Z"
 }

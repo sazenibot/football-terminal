@@ -120,7 +120,7 @@
     },
     {
       "id": 37590934,
-      "name": "Jeanuël Belocian",
+      "name": "Jeanuël Merick Belocian",
       "common_name": "J. Belocian",
       "image": "https://cdn.sportmonks.com/images/soccer/players/22/37590934.png",
       "number": 24,
@@ -383,7 +383,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2005-10-05",
-      "age": 20,
+      "age": 21,
       "team_id": 9818,
       "team_name": "Racing Santander",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/9818.png",
@@ -613,5 +613,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:46:32Z"
+  "generated_at": "2026-10-05T11:25:37Z"
 }

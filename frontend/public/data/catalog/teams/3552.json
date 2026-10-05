@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Hradec Králové je 9. v tabulce Chance Liga (14 b. z 9 zápasů, skóre 8:9).",
+  "hook": "Hradec Králové hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 2206762,
@@ -31,11 +31,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37316338,
@@ -52,8 +48,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 2206744,
@@ -70,8 +65,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37522043,
@@ -88,11 +82,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37645610,
@@ -109,11 +99,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 12844216,
@@ -130,11 +116,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 608263,
@@ -151,11 +133,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37527996,
@@ -172,11 +150,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37585293,
@@ -193,11 +167,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80759,
@@ -214,11 +184,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80894,
@@ -235,11 +201,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80590,
@@ -256,11 +218,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37644897,
@@ -277,11 +235,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37600320,
@@ -298,11 +252,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80916,
@@ -319,11 +269,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80765,
@@ -340,8 +286,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37646973,
@@ -358,8 +303,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 21413447,
@@ -376,11 +320,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 1484940,
@@ -397,11 +337,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 83496,
@@ -418,11 +354,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 32048,
@@ -439,11 +371,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 38214074,
@@ -460,8 +388,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38219593,
@@ -478,11 +405,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37645669,
@@ -499,8 +422,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 137833,
@@ -517,11 +439,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 24308,
@@ -538,11 +456,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80638,
@@ -559,15 +473,11 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37661864,
-      "name": "Tom Sloncik",
+      "name": "Tom Slončík",
       "common_name": "T. Slončík",
       "image": "https://cdn.sportmonks.com/images/soccer/players/8/37661864.png",
       "number": 19,
@@ -580,11 +490,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 13591493,
@@ -601,11 +507,7 @@
       "team_name": "Hradec Králové",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -652,7 +554,7 @@
       "fdr": "mid"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:02Z",
     "hook_kind": "facts",
@@ -666,7 +568,7 @@
       "lost": 3,
       "gf": 8,
       "ga": 9,
-      "form": "PVRVP"
+      "form": null
     },
     "recent": [
       {
@@ -2931,13 +2833,5 @@
       "end": "2029-06-30",
       "active": true
     }
-  },
-  "coach": {
-    "id": 78594,
-    "name": "David Horejs",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2024-02-28",
-    "end": "2029-06-30",
-    "active": true
   }
 }

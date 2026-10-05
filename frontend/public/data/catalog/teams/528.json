@@ -60,7 +60,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "2001-10-05",
-      "age": 24,
+      "age": 25,
       "team_id": 528,
       "team_name": "Espanyol",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png",
@@ -528,5 +528,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-10-04T10:46:32Z"
+  "generated_at": "2026-10-05T11:25:37Z"
 }

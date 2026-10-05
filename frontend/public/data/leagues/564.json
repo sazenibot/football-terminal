@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -152,11 +152,27 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png"
       },
       "has_full_data": true
+    },
+    {
+      "fixture_id": 19732668,
+      "starting_at": "2026-10-12T19:00:00Z",
+      "venue": "Estadio Ciudad de Valencia",
+      "home": {
+        "id": 3457,
+        "name": "Levante",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png"
+      },
+      "away": {
+        "id": 676,
+        "name": "Sevilla",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/4/676.png"
+      },
+      "has_full_data": true
     }
   ],
   "stats": {
-    "created": 4,
-    "refreshed": 5,
+    "created": 1,
+    "refreshed": 9,
     "errors": 0
   }
 }

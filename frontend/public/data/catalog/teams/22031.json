@@ -10,7 +10,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "SK Artis Brno je 14. v tabulce Chance Liga (5 b. z 9 zápasů, skóre 7:18).",
+  "hook": "SK Artis Brno hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 37530797,
@@ -27,8 +27,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 38210130,
@@ -45,11 +44,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37567538,
@@ -66,11 +61,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 17526521,
@@ -87,11 +78,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 538615,
@@ -108,11 +95,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80814,
@@ -129,11 +112,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37712671,
@@ -150,11 +129,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80504,
@@ -171,8 +146,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37325163,
@@ -189,11 +163,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37635121,
@@ -210,11 +180,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37379120,
@@ -231,11 +197,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37260883,
@@ -252,11 +214,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37315617,
@@ -273,15 +231,11 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37643754,
-      "name": "Albert Labik",
+      "name": "Albert Labík",
       "common_name": "A. Labik",
       "image": "https://cdn.sportmonks.com/images/soccer/players/10/37643754.png",
       "number": 9,
@@ -294,11 +248,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 96698,
@@ -315,11 +265,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37562065,
@@ -336,11 +282,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37721101,
@@ -357,11 +299,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 38218059,
@@ -378,8 +316,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37537063,
@@ -396,11 +333,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 79532,
@@ -417,11 +350,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 22514700,
@@ -438,11 +367,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37391031,
@@ -459,11 +384,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37578877,
@@ -480,11 +401,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37631854,
@@ -501,11 +418,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 3
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80046,
@@ -522,11 +435,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37780770,
@@ -543,11 +452,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37657973,
@@ -564,8 +469,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37642678,
@@ -582,11 +486,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37589721,
@@ -603,11 +503,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37561821,
@@ -624,8 +520,7 @@
       "team_name": "SK Artis Brno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -672,7 +567,7 @@
       "fdr": "hard"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:08Z",
     "hook_kind": "facts",
@@ -686,7 +581,7 @@
       "lost": 6,
       "gf": 7,
       "ga": 18,
-      "form": "RPPVP"
+      "form": null
     },
     "recent": [
       {
@@ -1941,13 +1836,5 @@
       "end": null,
       "active": true
     }
-  },
-  "coach": {
-    "id": 1552502,
-    "name": "Roman Nadvornik",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2026-03-23",
-    "end": null,
-    "active": true
   }
 }

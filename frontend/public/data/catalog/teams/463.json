@@ -14,7 +14,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "season_id": 27984,
-  "hook": "Slovan Liberec je 2. v tabulce Chance Liga (20 b. z 9 zápasů, skóre 13:4).",
+  "hook": "Slovan Liberec hraje soutěž Chance Liga. Herní styl (Hook) doplníme, až bude k dispozici model pro tento klub — není tu text jiného týmu.",
   "squad": [
     {
       "id": 37582778,
@@ -31,8 +31,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37763858,
@@ -49,8 +48,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37546635,
@@ -67,8 +65,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79539,
@@ -85,11 +82,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 25954318,
@@ -106,11 +99,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37550144,
@@ -127,11 +116,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37694727,
@@ -148,8 +133,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 79574,
@@ -166,11 +150,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 1
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80317,
@@ -187,11 +167,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 24816826,
@@ -208,11 +184,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 80505,
@@ -229,11 +201,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37597177,
@@ -250,11 +218,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37566481,
@@ -271,15 +235,11 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37696569,
-      "name": "Alexandr Buzek",
+      "name": "Alexandr Bužek",
       "common_name": "A. Bužek",
       "image": "https://cdn.sportmonks.com/images/soccer/players/25/37696569.png",
       "number": 16,
@@ -292,11 +252,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37597204,
@@ -313,8 +269,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37331670,
@@ -331,11 +286,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 2
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37778738,
@@ -352,11 +303,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 79977,
@@ -373,11 +320,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37680256,
@@ -394,11 +337,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 8
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37696394,
@@ -415,11 +354,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 18923753,
@@ -436,8 +371,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37761823,
@@ -454,11 +388,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 3861378,
@@ -475,11 +405,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 7
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37500741,
@@ -496,11 +422,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37530614,
@@ -517,8 +439,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 37600804,
@@ -535,8 +456,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active"
+      "league_name": "Chance Liga"
     },
     {
       "id": 22158841,
@@ -553,15 +473,11 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "loan",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37530761,
-      "name": "Lukas Masek",
+      "name": "Lukáš Mašek",
       "common_name": "L. Mašek",
       "image": "https://cdn.sportmonks.com/images/soccer/players/9/37530761.png",
       "number": 9,
@@ -574,15 +490,11 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 9
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37648900,
-      "name": "Matej Mikulenka",
+      "name": "Matěj Mikulenka",
       "common_name": "M. Mikulenka",
       "image": "https://cdn.sportmonks.com/images/soccer/players/4/37648900.png",
       "number": 25,
@@ -595,11 +507,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 4
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 17168903,
@@ -616,11 +524,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 5
-      }
+      "league_name": "Chance Liga"
     },
     {
       "id": 37533892,
@@ -637,11 +541,7 @@
       "team_name": "Slovan Liberec",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
       "league_id": 262,
-      "league_name": "Chance Liga",
-      "status": "active",
-      "season": {
-        "appearances": 6
-      }
+      "league_name": "Chance Liga"
     }
   ],
   "upcoming": [
@@ -688,7 +588,7 @@
       "fdr": "easy"
     }
   ],
-  "generated_at": "2026-10-04T10:45:23Z",
+  "generated_at": "2026-10-05T11:24:19Z",
   "overlay": {
     "generated_at": "2026-10-05T09:34:10Z",
     "hook_kind": "facts",
@@ -702,7 +602,7 @@
       "lost": 1,
       "gf": 13,
       "ga": 4,
-      "form": "RVVVV"
+      "form": null
     },
     "recent": [
       {
@@ -2323,13 +2223,5 @@
       "end": null,
       "active": true
     }
-  },
-  "coach": {
-    "id": 37344245,
-    "name": "Branislav Fodrek",
-    "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-    "start": "2026-07-01",
-    "end": null,
-    "active": true
   }
 }
