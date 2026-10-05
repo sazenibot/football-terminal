@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Cletus Nombil v této sezóně za Zlín: 7 startů, 608 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Cletus Nombil (Záložník) nastupuje za Zlín. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 47,
@@ -73,7 +73,8 @@
           "dw": 7,
           "aw": 4,
           "tk": 2,
-          "cl": 9,
+          "it": 1,
+          "cl": 8,
           "gc": 1,
           "g": 0,
           "a": 0,
@@ -1427,15 +1428,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 7,
-      "lineups": 7,
-      "minutes": 608,
-      "yellow": 1,
-      "shots": 4,
-      "sot": 1,
-      "goals_conceded": 13
-    }
+    ]
   }
 }

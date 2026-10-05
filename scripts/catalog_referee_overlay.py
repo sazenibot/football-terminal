@@ -370,3 +370,42 @@ def attach_referee_overlays(
         ref["overlay"] = overlay
         write_json(path, ref)
         print(f"  rozhodčí {ref.get('name')}: {len(matches)} zápasů, sezón={len(season_rows)}")
+
+    display = {rid: ref.get("name") or names.get(rid) for rid, (_path, ref, _m, _s) in payloads.items()}
+    sync_hub_referees(catalog, league_id, current_season_id, by_ref, {**names, **display}, load_json, write_json)
+
+
+def sync_hub_referees(
+    catalog,
+    league_id: int,
+    current_season_id: int | None,
+    by_ref: dict[int, list],
+    names: dict[int, str],
+    load_json,
+    write_json,
+) -> None:
+    """Do adresáře ligy jen rozhodčí s letošními zápasy, ne celý národní sbor."""
+    hub_path = catalog / "leagues" / f"{league_id}.json"
+    hub = load_json(hub_path)
+    if not hub:
+        return
+    existing = {int(r["id"]): r for r in hub.get("referees") or [] if r.get("id")}
+    cards = []
+    for rid, matches in by_ref.items():
+        n = sum(1 for m in matches if current_season_id and m.get("s") == current_season_id)
+        if n <= 0:
+            continue
+        prev = existing.get(rid) or {}
+        cards.append({
+            "id": rid,
+            "name": names.get(rid) or prev.get("name") or f"Rozhodčí #{rid}",
+            "image": prev.get("image"),
+            "country": prev.get("country"),
+            "in_league": True,
+            "league_matches": n,
+            "season_matches": n,
+        })
+    cards.sort(key=lambda r: (-(r.get("season_matches") or 0), (r.get("name") or "").lower()))
+    hub["referees"] = cards
+    write_json(hub_path, hub)
+    print(f"  hub rozhodčí letos: {len(cards)}")

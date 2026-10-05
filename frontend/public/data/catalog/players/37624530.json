@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jakub Jakubko v této sezóně za Teplice: 5 startů, 191 min, 1 gól.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Jakub Jakubko (Obránce) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 14,
@@ -62,6 +62,13 @@
         "st": {
           "mn": 34,
           "g": 1,
+          "sh": 1,
+          "sot": 1,
+          "dw": 2,
+          "aw": 1,
+          "tk": 1,
+          "it": 2,
+          "cl": 3,
           "a": 0,
           "y": 0,
           "r": 0,
@@ -418,14 +425,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 5,
-      "lineups": 2,
-      "minutes": 191,
-      "goals": 1,
-      "shots": 2,
-      "goals_conceded": 5
-    }
+    ]
   }
 }

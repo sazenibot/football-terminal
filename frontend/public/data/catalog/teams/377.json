@@ -605,7 +605,7 @@
         "name": "Athletic Club",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732658,
@@ -617,7 +617,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/10/106.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732646,
+      "starting_at": "2026-10-24T12:00:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 1099,
+        "name": "Elche",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/1099.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:48Z"
+  "generated_at": "2026-10-04T10:46:32Z"
 }

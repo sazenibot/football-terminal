@@ -1,0 +1,1572 @@
+{
+  "generated_at": "2026-10-05T16:00:56.697033+00:00",
+  "note": "TEST. Základ zůstává SportMonks. Tohle srovnává jen doplněk na Sparta–Slavia 30. 8. 2026.",
+  "match": {
+    "date": "2026-08-30",
+    "kickoff": "2026-08-30T18:00:00Z",
+    "score": "0:3",
+    "home": "Sparta Praha",
+    "away": "Slavia Praha",
+    "pitch_id": "m_0rqqyE",
+    "league_pitch": "1. Liga",
+    "season_pitch": "2026/2027",
+    "round_pitch": "6",
+    "stadium_pitch": "epet ARENA",
+    "stadium_sm": "TC Strahov",
+    "referee_pitch": "Jan Machálek",
+    "referee_ts": "Jan Machalek",
+    "coach_home_pitch": "Brian Priske Pedersen",
+    "coach_away_pitch": "Jindřich Trpišovský",
+    "coach_home_ts": "Brian Priske",
+    "coach_away_ts": "Jindřich Trpišovský",
+    "formation_pitch": [
+      "4-2-3-1",
+      "4-3-3"
+    ],
+    "formation_ts": [
+      "4-2-3-1",
+      "4-3-3"
+    ],
+    "xi_pitch": {
+      "home": [
+        {
+          "name": "Jakub Surovčík",
+          "jersey": "44"
+        },
+        {
+          "name": "Martin Suchomel",
+          "jersey": "2"
+        },
+        {
+          "name": "Matěj Ryneš",
+          "jersey": "11"
+        },
+        {
+          "name": "Santiago Eneme Bocari",
+          "jersey": "5"
+        },
+        {
+          "name": "Tobias Kvalvågnes Guddal",
+          "jersey": "6"
+        },
+        {
+          "name": "Loïc Junior Mbe Soh",
+          "jersey": "22"
+        },
+        {
+          "name": "John Anthony Mercado Cuero",
+          "jersey": "17"
+        },
+        {
+          "name": "Roman Macek",
+          "jersey": "28"
+        },
+        {
+          "name": "Jonatan Braut Brunes",
+          "jersey": "14"
+        },
+        {
+          "name": "Adam Karabec",
+          "jersey": "10"
+        },
+        {
+          "name": "Josimar Angelo Alcócer McCook",
+          "jersey": "7"
+        }
+      ],
+      "away": [
+        {
+          "name": "Jakub Markovič",
+          "jersey": "35"
+        },
+        {
+          "name": "Tomáš Vlček",
+          "jersey": "27"
+        },
+        {
+          "name": "Štěpán Chaloupek",
+          "jersey": "2"
+        },
+        {
+          "name": "Michal Sadílek",
+          "jersey": "23"
+        },
+        {
+          "name": "David Zima",
+          "jersey": "4"
+        },
+        {
+          "name": "Mikuláš Konečný",
+          "jersey": "42"
+        },
+        {
+          "name": "Wiktor Nowak",
+          "jersey": "30"
+        },
+        {
+          "name": "Lukáš Provod",
+          "jersey": "17"
+        },
+        {
+          "name": "Adonija Bryan Ouanda",
+          "jersey": "18"
+        },
+        {
+          "name": "Emmanuel Dennis Ayaosi",
+          "jersey": "20"
+        },
+        {
+          "name": "Danijel Šturm",
+          "jersey": "10"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "pitch_shots": 30,
+    "ts_shots": 30,
+    "paired": 29,
+    "xg_mae": 0.029,
+    "depth_mae_m": 0.67,
+    "xgot_nonzero": 10,
+    "goal_coords": 30
+  },
+  "rows": [
+    {
+      "label": "Střely",
+      "sm": [
+        21.0,
+        9.0
+      ],
+      "ts": [
+        21.0,
+        9.0
+      ],
+      "pitch": [
+        21.0,
+        9.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Střely na branku",
+      "sm": [
+        5.0,
+        5.0
+      ],
+      "ts": [
+        5.0,
+        5.0
+      ],
+      "pitch": [
+        5.0,
+        5.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Střely mimo",
+      "sm": [
+        8.0,
+        4.0
+      ],
+      "ts": [
+        8.0,
+        4.0
+      ],
+      "pitch": [
+        8.0,
+        4.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Zblokované",
+      "sm": [
+        8.0,
+        0.0
+      ],
+      "ts": [
+        8.0,
+        0.0
+      ],
+      "pitch": [
+        8.0,
+        0.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Rohy",
+      "sm": [
+        13.0,
+        2.0
+      ],
+      "ts": [
+        13.0,
+        2.0
+      ],
+      "pitch": [
+        13.0,
+        2.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Držení %",
+      "sm": [
+        71.0,
+        29.0
+      ],
+      "ts": [
+        71.0,
+        29.0
+      ],
+      "pitch": [
+        71.0,
+        29.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Fauly",
+      "sm": [
+        13.0,
+        24.0
+      ],
+      "ts": [
+        13.0,
+        24.0
+      ],
+      "pitch": [
+        13.0,
+        24.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Žluté",
+      "sm": [
+        2.0,
+        2.0
+      ],
+      "ts": [
+        2.0,
+        2.0
+      ],
+      "pitch": [
+        2.0,
+        2.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Ofsajdy",
+      "sm": [
+        0.0,
+        1.0
+      ],
+      "ts": [
+        0.0,
+        1.0
+      ],
+      "pitch": [
+        0.0,
+        1.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Velké šance",
+      "sm": [
+        2.0,
+        4.0
+      ],
+      "ts": [
+        1.0,
+        3.0
+      ],
+      "pitch": [
+        2.0,
+        4.0
+      ],
+      "note": null
+    },
+    {
+      "label": "Zákroky brankáře",
+      "sm": [
+        2.0,
+        5.0
+      ],
+      "ts": [
+        2.0,
+        5.0
+      ],
+      "pitch": [
+        2.0,
+        5.0
+      ],
+      "note": null
+    },
+    {
+      "label": "xG",
+      "sm": [
+        null,
+        null
+      ],
+      "ts": [
+        2.34,
+        1.83
+      ],
+      "pitch": [
+        2.62,
+        2.03
+      ],
+      "note": "SportMonks na Starteru xG nevrací."
+    },
+    {
+      "label": "xGOT",
+      "sm": null,
+      "ts": null,
+      "pitch": [
+        0.8,
+        2.32
+      ],
+      "note": "Hodnota po střele. TheStatsAPI ji na střele nemá."
+    },
+    {
+      "label": "Góly zabráněné",
+      "sm": null,
+      "ts": [
+        -0.33,
+        1.12
+      ],
+      "pitch": [
+        -0.68,
+        0.8
+      ],
+      "note": "U PitchAPI dopočet: xGOT soupeře minus inkasované góly. TheStatsAPI vrací vlastní PSxG."
+    }
+  ],
+  "shots": [
+    {
+      "minute": 10,
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.089,
+      "xg_ts": 0.121,
+      "xg_delta": -0.032,
+      "xgot": 0.0,
+      "depth_pitch": 9.14,
+      "depth_ts": 8.7,
+      "y_pitch": 37.4,
+      "y_ts": 37.4,
+      "goal_y": 42.77,
+      "goal_z": 1.16
+    },
+    {
+      "minute": 11,
+      "player": "Wiktor Nowak",
+      "side": "away",
+      "result_pitch": "Goal",
+      "result_ts": "goal",
+      "xg_pitch": 0.068,
+      "xg_ts": 0.062,
+      "xg_delta": 0.006,
+      "xgot": 0.57,
+      "depth_pitch": 12.81,
+      "depth_ts": 12.6,
+      "y_pitch": 42.7,
+      "y_ts": 42.98,
+      "goal_y": 31.69,
+      "goal_z": 1.34
+    },
+    {
+      "minute": 15,
+      "player": "John Mercado",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "save",
+      "xg_pitch": 0.023,
+      "xg_ts": 0.013,
+      "xg_delta": 0.01,
+      "xgot": 0.056,
+      "depth_pitch": 2.73,
+      "depth_ts": 2.6,
+      "y_pitch": 16.32,
+      "y_ts": 16.32,
+      "goal_y": 31.48,
+      "goal_z": 0.65
+    },
+    {
+      "minute": 21,
+      "player": "Adam Karabec",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "save",
+      "xg_pitch": 0.066,
+      "xg_ts": 0.07,
+      "xg_delta": -0.004,
+      "xgot": 0.216,
+      "depth_pitch": 26.35,
+      "depth_ts": 25.6,
+      "y_pitch": 31.42,
+      "y_ts": 31.28,
+      "goal_y": 36.58,
+      "goal_z": 0.12
+    },
+    {
+      "minute": 29,
+      "player": "Adonija Bryan Ouanda",
+      "side": "away",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "save",
+      "xg_pitch": 0.045,
+      "xg_ts": 0.043,
+      "xg_delta": 0.002,
+      "xgot": 0.022,
+      "depth_pitch": 25.72,
+      "depth_ts": 24.5,
+      "y_pitch": 38.22,
+      "y_ts": 38.22,
+      "goal_y": 33.12,
+      "goal_z": 0.94
+    },
+    {
+      "minute": 34,
+      "player": "Santiago Eneme",
+      "side": "home",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.055,
+      "xg_ts": 0.077,
+      "xg_delta": -0.022,
+      "xgot": 0.0,
+      "depth_pitch": 14.59,
+      "depth_ts": 15.9,
+      "y_pitch": 44.06,
+      "y_ts": 44.95,
+      "goal_y": 31.08,
+      "goal_z": 5.0
+    },
+    {
+      "minute": 35,
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "block",
+      "xg_pitch": 0.065,
+      "xg_ts": 0.063,
+      "xg_delta": 0.002,
+      "xgot": 0.0,
+      "depth_pitch": 11.02,
+      "depth_ts": 10.5,
+      "y_pitch": 27.4,
+      "y_ts": 27.4,
+      "goal_y": 33.86,
+      "goal_z": 1.22
+    },
+    {
+      "minute": 44,
+      "player": "Josimar Alcócer",
+      "side": "home",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.015,
+      "xg_ts": 0.029,
+      "xg_delta": -0.014,
+      "xgot": 0.0,
+      "depth_pitch": 21.84,
+      "depth_ts": 20.8,
+      "y_pitch": 46.1,
+      "y_ts": 46.1,
+      "goal_y": 39.98,
+      "goal_z": 0.09
+    },
+    {
+      "minute": 47,
+      "player": "Danijel Šturm",
+      "side": "away",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.561,
+      "xg_ts": 0.44,
+      "xg_delta": 0.121,
+      "xgot": 0.0,
+      "depth_pitch": 12.6,
+      "depth_ts": 12.0,
+      "y_pitch": 38.35,
+      "y_ts": 38.35,
+      "goal_y": 39.24,
+      "goal_z": 0.27
+    },
+    {
+      "minute": 49,
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "block",
+      "xg_pitch": 0.114,
+      "xg_ts": 0.109,
+      "xg_delta": 0.005,
+      "xgot": 0.0,
+      "depth_pitch": 11.02,
+      "depth_ts": 10.5,
+      "y_pitch": 32.23,
+      "y_ts": 32.23,
+      "goal_y": 36.18,
+      "goal_z": 1.22
+    },
+    {
+      "minute": 56,
+      "player": "John Mercado",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "block",
+      "xg_pitch": 0.04,
+      "xg_ts": 0.041,
+      "xg_delta": -0.001,
+      "xgot": 0.0,
+      "depth_pitch": 4.41,
+      "depth_ts": 4.2,
+      "y_pitch": 25.57,
+      "y_ts": 25.57,
+      "goal_y": 33.66,
+      "goal_z": 1.22
+    },
+    {
+      "minute": 56,
+      "player": "Tobias Guddal",
+      "side": "home",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.453,
+      "xg_ts": 0.437,
+      "xg_delta": 0.016,
+      "xgot": 0.0,
+      "depth_pitch": 2.84,
+      "depth_ts": 2.7,
+      "y_pitch": 34.07,
+      "y_ts": 34.07,
+      "goal_y": 28.9,
+      "goal_z": 1.52
+    },
+    {
+      "minute": 59,
+      "player": "Danijel Šturm",
+      "side": "away",
+      "result_pitch": "Goal",
+      "result_ts": "goal",
+      "xg_pitch": 0.559,
+      "xg_ts": 0.584,
+      "xg_delta": -0.025,
+      "xgot": 0.53,
+      "depth_pitch": 17.11,
+      "depth_ts": 16.3,
+      "y_pitch": 30.8,
+      "y_ts": 30.8,
+      "goal_y": 35.09,
+      "goal_z": 0.08
+    },
+    {
+      "minute": 62,
+      "player": "Tobias Guddal",
+      "side": "home",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.047,
+      "xg_ts": 0.037,
+      "xg_delta": 0.01,
+      "xgot": 0.0,
+      "depth_pitch": 11.23,
+      "depth_ts": 10.7,
+      "y_pitch": 33.52,
+      "y_ts": 33.52,
+      "goal_y": 27.68,
+      "goal_z": 1.52
+    },
+    {
+      "minute": 64,
+      "player": "Adam Karabec",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "save",
+      "xg_pitch": 0.288,
+      "xg_ts": 0.301,
+      "xg_delta": -0.013,
+      "xgot": 0.374,
+      "depth_pitch": 10.61,
+      "depth_ts": 10.1,
+      "y_pitch": 28.76,
+      "y_ts": 28.76,
+      "goal_y": 35.56,
+      "goal_z": 0.61
+    },
+    {
+      "minute": 68,
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.028,
+      "xg_ts": 0.029,
+      "xg_delta": -0.001,
+      "xgot": 0.0,
+      "depth_pitch": 15.33,
+      "depth_ts": 14.6,
+      "y_pitch": 24.62,
+      "y_ts": 24.62,
+      "goal_y": 27.4,
+      "goal_z": 0.44
+    },
+    {
+      "minute": 68,
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.832,
+      "xg_ts": 0.532,
+      "xg_delta": 0.3,
+      "xgot": 0.0,
+      "depth_pitch": 2.62,
+      "depth_ts": 2.5,
+      "y_pitch": 34.27,
+      "y_ts": 34.27,
+      "goal_y": 42.77,
+      "goal_z": 2.23
+    },
+    {
+      "minute": 72,
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "block",
+      "xg_pitch": 0.081,
+      "xg_ts": 0.05,
+      "xg_delta": 0.031,
+      "xgot": 0.0,
+      "depth_pitch": 20.16,
+      "depth_ts": 21.1,
+      "y_pitch": 42.3,
+      "y_ts": 43.72,
+      "goal_y": 33.39,
+      "goal_z": 0.09
+    },
+    {
+      "minute": 80,
+      "player": "Stepán Chaloupek",
+      "side": "away",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "save",
+      "xg_pitch": 0.051,
+      "xg_ts": 0.045,
+      "xg_delta": 0.006,
+      "xgot": 0.341,
+      "depth_pitch": 21.31,
+      "depth_ts": 20.3,
+      "y_pitch": 42.43,
+      "y_ts": 42.43,
+      "goal_y": 31.21,
+      "goal_z": 1.18
+    },
+    {
+      "minute": 81,
+      "player": "Ange N'Guessan",
+      "side": "away",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.099,
+      "xg_ts": 0.071,
+      "xg_delta": 0.028,
+      "xgot": 0.0,
+      "depth_pitch": 3.46,
+      "depth_ts": 3.3,
+      "y_pitch": 40.53,
+      "y_ts": 40.53,
+      "goal_y": 33.73,
+      "goal_z": 3.57
+    },
+    {
+      "minute": 81,
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.105,
+      "xg_ts": 0.109,
+      "xg_delta": -0.004,
+      "xgot": 0.0,
+      "depth_pitch": 11.45,
+      "depth_ts": 10.9,
+      "y_pitch": 30.12,
+      "y_ts": 30.12,
+      "goal_y": 55.28,
+      "goal_z": 2.14
+    },
+    {
+      "minute": 84,
+      "player": "Loïc Mbe Soh",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "block",
+      "xg_pitch": 0.082,
+      "xg_ts": 0.054,
+      "xg_delta": 0.028,
+      "xgot": 0.0,
+      "depth_pitch": 19.32,
+      "depth_ts": 18.4,
+      "y_pitch": 26.18,
+      "y_ts": 26.18,
+      "goal_y": 33.18,
+      "goal_z": 1.22
+    },
+    {
+      "minute": 84,
+      "player": "Tomás Chorý",
+      "side": "away",
+      "result_pitch": "Miss",
+      "result_ts": "miss",
+      "xg_pitch": 0.381,
+      "xg_ts": 0.396,
+      "xg_delta": -0.015,
+      "xgot": 0.0,
+      "depth_pitch": 15.85,
+      "depth_ts": 15.1,
+      "y_pitch": 36.31,
+      "y_ts": 36.31,
+      "goal_y": 27.74,
+      "goal_z": 0.18
+    },
+    {
+      "minute": 85,
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "save",
+      "xg_pitch": 0.013,
+      "xg_ts": 0.012,
+      "xg_delta": 0.001,
+      "xgot": 0.036,
+      "depth_pitch": 27.09,
+      "depth_ts": 25.8,
+      "y_pitch": 49.5,
+      "y_ts": 49.5,
+      "goal_y": 35.43,
+      "goal_z": 0.98
+    },
+    {
+      "minute": 86,
+      "player": "Loïc Mbe Soh",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "block",
+      "xg_pitch": 0.028,
+      "xg_ts": 0.024,
+      "xg_delta": 0.004,
+      "xgot": 0.0,
+      "depth_pitch": 9.14,
+      "depth_ts": 8.7,
+      "y_pitch": 44.0,
+      "y_ts": 44.0,
+      "goal_y": 32.91,
+      "goal_z": 1.22
+    },
+    {
+      "minute": 87,
+      "player": "John Mercado",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "block",
+      "xg_pitch": 0.091,
+      "xg_ts": 0.119,
+      "xg_delta": -0.028,
+      "xgot": 0.0,
+      "depth_pitch": 16.06,
+      "depth_ts": 14.8,
+      "y_pitch": 28.9,
+      "y_ts": 31.69,
+      "goal_y": 32.64,
+      "goal_z": 1.22
+    },
+    {
+      "minute": 88,
+      "player": "Matěj Jurásek",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "save",
+      "xg_pitch": 0.063,
+      "xg_ts": 0.104,
+      "xg_delta": -0.041,
+      "xgot": 0.114,
+      "depth_pitch": 11.45,
+      "depth_ts": 10.9,
+      "y_pitch": 26.38,
+      "y_ts": 26.38,
+      "goal_y": 33.52,
+      "goal_z": 1.43
+    },
+    {
+      "minute": 90,
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "result_pitch": "AttemptSaved",
+      "result_ts": "block",
+      "xg_pitch": 0.038,
+      "xg_ts": 0.033,
+      "xg_delta": 0.005,
+      "xgot": 0.0,
+      "depth_pitch": 21.0,
+      "depth_ts": 20.0,
+      "y_pitch": 30.12,
+      "y_ts": 30.12,
+      "goal_y": 34.0,
+      "goal_z": 1.22
+    },
+    {
+      "minute": 90,
+      "player": "Emmanuel Ayaosi",
+      "side": "away",
+      "result_pitch": "Goal",
+      "result_ts": "goal",
+      "xg_pitch": 0.25,
+      "xg_ts": 0.19,
+      "xg_delta": 0.06,
+      "xgot": 0.86,
+      "depth_pitch": 13.97,
+      "depth_ts": 13.3,
+      "y_pitch": 40.73,
+      "y_ts": 40.73,
+      "goal_y": 31.14,
+      "goal_z": 0.45
+    }
+  ],
+  "unmatched": {
+    "pitch": [
+      "Tomás Chorý 72'"
+    ],
+    "ts": [
+      "John Mercado 74'"
+    ]
+  },
+  "players": [
+    {
+      "name": "Danijel Šturm",
+      "side": "away",
+      "goals": 1,
+      "shots": 2,
+      "xg_pitch": 1.12,
+      "xg_ts": 0.98
+    },
+    {
+      "name": "Ebrima Singhateh",
+      "side": "home",
+      "goals": 0,
+      "shots": 4,
+      "xg_pitch": 1.03,
+      "xg_ts": 0.68
+    },
+    {
+      "name": "Tobias Guddal",
+      "side": "home",
+      "goals": 0,
+      "shots": 2,
+      "xg_pitch": 0.5,
+      "xg_ts": 0.47
+    },
+    {
+      "name": "Tomás Chorý",
+      "side": "away",
+      "goals": 0,
+      "shots": 2,
+      "xg_pitch": 0.4,
+      "xg_ts": 0.38
+    },
+    {
+      "name": "Adam Karabec",
+      "side": "home",
+      "goals": 0,
+      "shots": 2,
+      "xg_pitch": 0.35,
+      "xg_ts": 0.35
+    },
+    {
+      "name": "Jonatan Braut Brunes",
+      "side": "home",
+      "goals": 0,
+      "shots": 5,
+      "xg_pitch": 0.34,
+      "xg_ts": 0.35
+    },
+    {
+      "name": "Emmanuel Ayaosi",
+      "side": "away",
+      "goals": 1,
+      "shots": 1,
+      "xg_pitch": 0.25,
+      "xg_ts": 0.19
+    },
+    {
+      "name": "John Mercado",
+      "side": "home",
+      "goals": 0,
+      "shots": 3,
+      "xg_pitch": 0.15,
+      "xg_ts": 0.11
+    },
+    {
+      "name": "Loïc Mbe Soh",
+      "side": "home",
+      "goals": 0,
+      "shots": 2,
+      "xg_pitch": 0.11,
+      "xg_ts": 0.07
+    },
+    {
+      "name": "Ange N'Guessan",
+      "side": "away",
+      "goals": 0,
+      "shots": 1,
+      "xg_pitch": 0.1,
+      "xg_ts": 0.07
+    },
+    {
+      "name": "Wiktor Nowak",
+      "side": "away",
+      "goals": 1,
+      "shots": 1,
+      "xg_pitch": 0.07,
+      "xg_ts": 0.06
+    },
+    {
+      "name": "Matěj Jurásek",
+      "side": "home",
+      "goals": 0,
+      "shots": 1,
+      "xg_pitch": 0.06,
+      "xg_ts": 0.1
+    },
+    {
+      "name": "Santiago Eneme",
+      "side": "home",
+      "goals": 0,
+      "shots": 1,
+      "xg_pitch": 0.06,
+      "xg_ts": 0.07
+    },
+    {
+      "name": "Stepán Chaloupek",
+      "side": "away",
+      "goals": 0,
+      "shots": 1,
+      "xg_pitch": 0.05,
+      "xg_ts": 0.04
+    },
+    {
+      "name": "Adonija Bryan Ouanda",
+      "side": "away",
+      "goals": 0,
+      "shots": 1,
+      "xg_pitch": 0.04,
+      "xg_ts": 0.04
+    },
+    {
+      "name": "Josimar Alcócer",
+      "side": "home",
+      "goals": 0,
+      "shots": 1,
+      "xg_pitch": 0.02,
+      "xg_ts": 0.03
+    }
+  ],
+  "advanced": [
+    {
+      "name": "Sparta Prague",
+      "possession_pct": 71.2,
+      "field_tilt": 77.6,
+      "ppda": 5.76
+    },
+    {
+      "name": "Slavia Prague",
+      "possession_pct": 28.8,
+      "field_tilt": 22.4,
+      "ppda": 8.92
+    }
+  ],
+  "shots_pitch": [
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 10,
+      "depth_m": 9.14,
+      "y_m": 37.4,
+      "xg": 0.089,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Wiktor Nowak",
+      "side": "away",
+      "minute": 11,
+      "depth_m": 12.81,
+      "y_m": 42.7,
+      "xg": 0.068,
+      "xgot": 0.57,
+      "result": "Goal"
+    },
+    {
+      "player": "John Mercado",
+      "side": "home",
+      "minute": 15,
+      "depth_m": 2.73,
+      "y_m": 16.32,
+      "xg": 0.023,
+      "xgot": 0.056,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Adam Karabec",
+      "side": "home",
+      "minute": 21,
+      "depth_m": 26.35,
+      "y_m": 31.42,
+      "xg": 0.066,
+      "xgot": 0.216,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Adonija Bryan Ouanda",
+      "side": "away",
+      "minute": 29,
+      "depth_m": 25.72,
+      "y_m": 38.22,
+      "xg": 0.045,
+      "xgot": 0.022,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Santiago Eneme",
+      "side": "home",
+      "minute": 34,
+      "depth_m": 14.59,
+      "y_m": 44.06,
+      "xg": 0.055,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 35,
+      "depth_m": 11.02,
+      "y_m": 27.4,
+      "xg": 0.065,
+      "xgot": 0.0,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Josimar Alcócer",
+      "side": "home",
+      "minute": 44,
+      "depth_m": 21.84,
+      "y_m": 46.1,
+      "xg": 0.015,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Danijel Šturm",
+      "side": "away",
+      "minute": 47,
+      "depth_m": 12.6,
+      "y_m": 38.35,
+      "xg": 0.561,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 49,
+      "depth_m": 11.02,
+      "y_m": 32.23,
+      "xg": 0.114,
+      "xgot": 0.0,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "John Mercado",
+      "side": "home",
+      "minute": 56,
+      "depth_m": 4.41,
+      "y_m": 25.57,
+      "xg": 0.04,
+      "xgot": 0.0,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Tobias Guddal",
+      "side": "home",
+      "minute": 56,
+      "depth_m": 2.84,
+      "y_m": 34.07,
+      "xg": 0.453,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Danijel Šturm",
+      "side": "away",
+      "minute": 59,
+      "depth_m": 17.11,
+      "y_m": 30.8,
+      "xg": 0.559,
+      "xgot": 0.53,
+      "result": "Goal"
+    },
+    {
+      "player": "Tobias Guddal",
+      "side": "home",
+      "minute": 62,
+      "depth_m": 11.23,
+      "y_m": 33.52,
+      "xg": 0.047,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Adam Karabec",
+      "side": "home",
+      "minute": 64,
+      "depth_m": 10.61,
+      "y_m": 28.76,
+      "xg": 0.288,
+      "xgot": 0.374,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 68,
+      "depth_m": 15.33,
+      "y_m": 24.62,
+      "xg": 0.028,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "minute": 68,
+      "depth_m": 2.62,
+      "y_m": 34.27,
+      "xg": 0.832,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Tomás Chorý",
+      "side": "away",
+      "minute": 72,
+      "depth_m": 12.7,
+      "y_m": 45.9,
+      "xg": 0.018,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "minute": 72,
+      "depth_m": 20.16,
+      "y_m": 42.3,
+      "xg": 0.081,
+      "xgot": 0.0,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Stepán Chaloupek",
+      "side": "away",
+      "minute": 80,
+      "depth_m": 21.31,
+      "y_m": 42.43,
+      "xg": 0.051,
+      "xgot": 0.341,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Ange N'Guessan",
+      "side": "away",
+      "minute": 81,
+      "depth_m": 3.46,
+      "y_m": 40.53,
+      "xg": 0.099,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "minute": 81,
+      "depth_m": 11.45,
+      "y_m": 30.12,
+      "xg": 0.105,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Loïc Mbe Soh",
+      "side": "home",
+      "minute": 84,
+      "depth_m": 19.32,
+      "y_m": 26.18,
+      "xg": 0.082,
+      "xgot": 0.0,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Tomás Chorý",
+      "side": "away",
+      "minute": 84,
+      "depth_m": 15.85,
+      "y_m": 36.31,
+      "xg": 0.381,
+      "xgot": 0.0,
+      "result": "Miss"
+    },
+    {
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "minute": 85,
+      "depth_m": 27.09,
+      "y_m": 49.5,
+      "xg": 0.013,
+      "xgot": 0.036,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Loïc Mbe Soh",
+      "side": "home",
+      "minute": 86,
+      "depth_m": 9.14,
+      "y_m": 44.0,
+      "xg": 0.028,
+      "xgot": 0.0,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "John Mercado",
+      "side": "home",
+      "minute": 87,
+      "depth_m": 16.06,
+      "y_m": 28.9,
+      "xg": 0.091,
+      "xgot": 0.0,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Matěj Jurásek",
+      "side": "home",
+      "minute": 88,
+      "depth_m": 11.45,
+      "y_m": 26.38,
+      "xg": 0.063,
+      "xgot": 0.114,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 90,
+      "depth_m": 21.0,
+      "y_m": 30.12,
+      "xg": 0.038,
+      "xgot": 0.0,
+      "result": "AttemptSaved"
+    },
+    {
+      "player": "Emmanuel Ayaosi",
+      "side": "away",
+      "minute": 90,
+      "depth_m": 13.97,
+      "y_m": 40.73,
+      "xg": 0.25,
+      "xgot": 0.86,
+      "result": "Goal"
+    }
+  ],
+  "shots_ts": [
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 10,
+      "depth_m": 8.7,
+      "y_m": 37.4,
+      "xg": 0.121,
+      "result": "miss"
+    },
+    {
+      "player": "Wiktor Nowak",
+      "side": "away",
+      "minute": 11,
+      "depth_m": 12.6,
+      "y_m": 42.98,
+      "xg": 0.062,
+      "result": "goal"
+    },
+    {
+      "player": "John Mercado",
+      "side": "home",
+      "minute": 15,
+      "depth_m": 2.6,
+      "y_m": 16.32,
+      "xg": 0.013,
+      "result": "save"
+    },
+    {
+      "player": "Adam Karabec",
+      "side": "home",
+      "minute": 21,
+      "depth_m": 25.6,
+      "y_m": 31.28,
+      "xg": 0.07,
+      "result": "save"
+    },
+    {
+      "player": "Adonija Ouanda",
+      "side": "away",
+      "minute": 29,
+      "depth_m": 24.5,
+      "y_m": 38.22,
+      "xg": 0.043,
+      "result": "save"
+    },
+    {
+      "player": "Santiago Eneme",
+      "side": "home",
+      "minute": 34,
+      "depth_m": 15.9,
+      "y_m": 44.95,
+      "xg": 0.077,
+      "result": "miss"
+    },
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 35,
+      "depth_m": 10.5,
+      "y_m": 27.4,
+      "xg": 0.063,
+      "result": "block"
+    },
+    {
+      "player": "Josimar Alcócer",
+      "side": "home",
+      "minute": 44,
+      "depth_m": 20.8,
+      "y_m": 46.1,
+      "xg": 0.029,
+      "result": "miss"
+    },
+    {
+      "player": "Danijel Šturm",
+      "side": "away",
+      "minute": 47,
+      "depth_m": 12.0,
+      "y_m": 38.35,
+      "xg": 0.44,
+      "result": "miss"
+    },
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 49,
+      "depth_m": 10.5,
+      "y_m": 32.23,
+      "xg": 0.109,
+      "result": "block"
+    },
+    {
+      "player": "John Mercado",
+      "side": "home",
+      "minute": 56,
+      "depth_m": 4.2,
+      "y_m": 25.57,
+      "xg": 0.041,
+      "result": "block"
+    },
+    {
+      "player": "Tobias Kvalvagnes Guddal",
+      "side": "home",
+      "minute": 56,
+      "depth_m": 2.7,
+      "y_m": 34.07,
+      "xg": 0.437,
+      "result": "miss"
+    },
+    {
+      "player": "Danijel Šturm",
+      "side": "away",
+      "minute": 59,
+      "depth_m": 16.3,
+      "y_m": 30.8,
+      "xg": 0.584,
+      "result": "goal"
+    },
+    {
+      "player": "Tobias Kvalvagnes Guddal",
+      "side": "home",
+      "minute": 62,
+      "depth_m": 10.7,
+      "y_m": 33.52,
+      "xg": 0.037,
+      "result": "miss"
+    },
+    {
+      "player": "Adam Karabec",
+      "side": "home",
+      "minute": 64,
+      "depth_m": 10.1,
+      "y_m": 28.76,
+      "xg": 0.301,
+      "result": "save"
+    },
+    {
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "minute": 68,
+      "depth_m": 2.5,
+      "y_m": 34.27,
+      "xg": 0.532,
+      "result": "miss"
+    },
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 68,
+      "depth_m": 14.6,
+      "y_m": 24.62,
+      "xg": 0.029,
+      "result": "miss"
+    },
+    {
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "minute": 72,
+      "depth_m": 21.1,
+      "y_m": 43.72,
+      "xg": 0.05,
+      "result": "block"
+    },
+    {
+      "player": "John Mercado",
+      "side": "home",
+      "minute": 74,
+      "depth_m": 7.6,
+      "y_m": 28.42,
+      "xg": 0.094,
+      "result": "miss"
+    },
+    {
+      "player": "Štěpán Chaloupek",
+      "side": "away",
+      "minute": 80,
+      "depth_m": 20.3,
+      "y_m": 42.43,
+      "xg": 0.045,
+      "result": "save"
+    },
+    {
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "minute": 81,
+      "depth_m": 10.9,
+      "y_m": 30.12,
+      "xg": 0.109,
+      "result": "miss"
+    },
+    {
+      "player": "Ange N'Guessan",
+      "side": "away",
+      "minute": 81,
+      "depth_m": 3.3,
+      "y_m": 40.53,
+      "xg": 0.071,
+      "result": "miss"
+    },
+    {
+      "player": "Loïc Mbe Soh",
+      "side": "home",
+      "minute": 84,
+      "depth_m": 18.4,
+      "y_m": 26.18,
+      "xg": 0.054,
+      "result": "block"
+    },
+    {
+      "player": "Tomáš Chorý",
+      "side": "away",
+      "minute": 84,
+      "depth_m": 15.1,
+      "y_m": 36.31,
+      "xg": 0.396,
+      "result": "miss"
+    },
+    {
+      "player": "Ebrima Singhateh",
+      "side": "home",
+      "minute": 85,
+      "depth_m": 25.8,
+      "y_m": 49.5,
+      "xg": 0.012,
+      "result": "save"
+    },
+    {
+      "player": "Loïc Mbe Soh",
+      "side": "home",
+      "minute": 86,
+      "depth_m": 8.7,
+      "y_m": 44.0,
+      "xg": 0.024,
+      "result": "block"
+    },
+    {
+      "player": "John Mercado",
+      "side": "home",
+      "minute": 87,
+      "depth_m": 14.8,
+      "y_m": 31.69,
+      "xg": 0.119,
+      "result": "block"
+    },
+    {
+      "player": "Matěj Jurásek",
+      "side": "home",
+      "minute": 88,
+      "depth_m": 10.9,
+      "y_m": 26.38,
+      "xg": 0.104,
+      "result": "save"
+    },
+    {
+      "player": "Jonatan Braut Brunes",
+      "side": "home",
+      "minute": 90,
+      "depth_m": 20.0,
+      "y_m": 30.12,
+      "xg": 0.033,
+      "result": "block"
+    },
+    {
+      "player": "Emmanuel Ayaosi",
+      "side": "away",
+      "minute": 90,
+      "depth_m": 13.3,
+      "y_m": 40.73,
+      "xg": 0.19,
+      "result": "goal"
+    }
+  ]
+}

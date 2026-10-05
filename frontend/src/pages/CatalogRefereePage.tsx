@@ -73,7 +73,7 @@ export function CatalogRefereePage() {
 
   return (
     <div className="max-w-6xl mx-auto py-12 px-4 pt-20 flex flex-col gap-8">
-      <Link to={`/catalog?league=${primary.id}`} className="text-emerald-400 text-sm w-fit">
+      <Link to={`/catalog?league=${primary.id}&tab=referees`} className="text-emerald-400 text-sm w-fit">
         ← {primary.name}
       </Link>
 
@@ -153,7 +153,7 @@ export function CatalogRefereePage() {
             </div>
             <p className="text-xs text-slate-500 mt-2">
               1. = nejvíc v lize (přísnější). Ligový průměr je ze všech zápasů soutěže v tomto filtru. Použití VAR =
-              kolikrát v zápase zasáhl videoasistent (kontrola i případná změna verdiktu). SportMonks nerozlišuje, jestli
+              kolikrát v zápase zasáhl videoasistent (kontrola i případná změna verdiktu), bez rozlišení, jestli
               rozhodnutí padlo, nebo zůstalo.
             </p>
           </section>

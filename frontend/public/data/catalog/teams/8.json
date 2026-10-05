@@ -26,7 +26,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "1992-10-02",
-      "age": 33,
+      "age": 34,
       "team_id": 8,
       "team_name": "Liverpool",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
@@ -60,7 +60,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "2000-09-29",
-      "age": 25,
+      "age": 26,
       "team_id": 8,
       "team_name": "Liverpool",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png",
@@ -520,7 +520,7 @@
         "name": "Manchester City",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19722142,
@@ -534,5 +534,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:59Z"
+  "generated_at": "2026-10-04T10:45:54Z"
 }

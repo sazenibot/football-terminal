@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Lukas Hulka v této sezóně za Slovan Liberec: 9 startů, 810 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Lukas Hulka (Obránce) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 138,
@@ -94,7 +94,7 @@
           "aw": 8,
           "tk": 2,
           "it": 3,
-          "cl": 7,
+          "cl": 6,
           "cr": 1,
           "g": 0,
           "a": 0,
@@ -4008,15 +4008,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 9,
-      "minutes": 810,
-      "yellow": 2,
-      "shots": 5,
-      "sot": 2,
-      "goals_conceded": 4
-    }
+    ]
   }
 }

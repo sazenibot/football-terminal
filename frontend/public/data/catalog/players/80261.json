@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Milan Havel v této sezóně za Bohemians 1905: 8 startů, 671 min, 2 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Milan Havel (Obránce) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 96,
@@ -90,8 +90,8 @@
         "st": {
           "mn": 90,
           "f": 1,
-          "dw": 7,
-          "tk": 6,
+          "dw": 5,
+          "tk": 4,
           "it": 1,
           "cl": 3,
           "gc": 2,
@@ -2745,14 +2745,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 8,
-      "lineups": 8,
-      "minutes": 671,
-      "assists": 2,
-      "yellow": 1,
-      "goals_conceded": 10
-    }
+    ]
   }
 }

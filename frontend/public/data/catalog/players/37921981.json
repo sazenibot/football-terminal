@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Samuel Isife v této sezóně za Slavia Praha: 6 startů, 381 min, 2 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Samuel Isife (Záložník) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 35,
@@ -69,7 +69,8 @@
         "st": {
           "mn": 63,
           "sh": 1,
-          "dw": 1,
+          "dw": 2,
+          "tk": 1,
           "cr": 6,
           "g": 0,
           "a": 0,
@@ -1105,15 +1106,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 6,
-      "lineups": 5,
-      "minutes": 381,
-      "assists": 2,
-      "yellow": 1,
-      "shots": 5,
-      "sot": 1
-    }
+    ]
   }
 }

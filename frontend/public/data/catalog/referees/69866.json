@@ -6,8 +6,8 @@
   "country": "Czech Republic",
   "country_id": 245,
   "date_of_birth": null,
-  "league_id": 265,
-  "league_name": "Chance Národní Liga",
+  "league_id": 262,
+  "league_name": "Chance Liga",
   "in_league": true,
   "league_matches": 4,
   "leagues": [
@@ -15,19 +15,19 @@
       "id": 262,
       "name": "Chance Liga",
       "in_league": true,
-      "league_matches": 7
+      "league_matches": 8
     },
     {
       "id": 265,
       "name": "Chance Národní Liga",
       "in_league": true,
-      "league_matches": 2
+      "league_matches": 1
     }
   ],
-  "hook": "D. Černý píská v soutěži Chance Národní Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-09-20T21:56:05Z",
+  "hook": "D. Černý píská v soutěži Chance Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:03Z",
+    "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,
     "career_matches": 101,
     "seasons": [
@@ -11636,7 +11636,7 @@
       "all": {
         "fouls": {
           "league_avg": 24.19,
-          "rank": 23,
+          "rank": 22,
           "size": 38
         },
         "yellow": {
@@ -11796,12 +11796,12 @@
         },
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
-            "rank": 9,
+            "league_avg": 26.56,
+            "rank": 8,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
+            "league_avg": 3.7,
             "rank": 14,
             "size": 22
           },

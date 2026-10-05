@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Garang Kuol v této sezóně za Jablonec: 3 starty, 104 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Garang Kuol (Záložník) nastupuje za Jablonec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 23,
@@ -76,7 +76,7 @@
           "aw": 1,
           "kp": 2,
           "dr": 4,
-          "cr": 3,
+          "cr": 2,
           "a": 0,
           "y": 0,
           "r": 0,
@@ -685,14 +685,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 3,
-      "lineups": 1,
-      "minutes": 104,
-      "shots": 3,
-      "sot": 1,
-      "goals_conceded": 2
-    }
+    ]
   }
 }

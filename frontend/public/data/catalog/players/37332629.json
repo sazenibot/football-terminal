@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Adam Karabec v této sezóně za Sparta Praha: 9 startů, 729 min, 3 góly, 2 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Adam Karabec (Záložník) nastupuje za Sparta Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 53,
@@ -75,8 +75,8 @@
           "dw": 4,
           "aw": 1,
           "tk": 1,
-          "kp": 4,
-          "dr": 2,
+          "kp": 5,
+          "dr": 1,
           "cr": 9,
           "g": 0,
           "y": 0,
@@ -1468,17 +1468,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 8,
-      "minutes": 729,
-      "goals": 3,
-      "assists": 2,
-      "yellow": 1,
-      "shots": 23,
-      "sot": 10,
-      "goals_conceded": 10
-    }
+    ]
   }
 }

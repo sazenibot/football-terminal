@@ -1,0 +1,1 @@
+{"source":"PitchAPI","league_id":262,"season":"2026/2027","player":{"id":80686,"name":"Pavel Halouska","team_id":234},"keeper":true,"matches":[{"id":"m_1lyZMq","date":"2026-08-15","home":true,"opponent":"Sigma Olomouc","opponent_short":"SIG","gf":1,"ga":2,"xg":1.16,"xgot":2.03,"xg_open":0.57,"xg_set":0.58,"npxg":1.16,"xgot_faced":1.77,"sot_faced":4.0,"saves":2.0,"shots":[]}]}

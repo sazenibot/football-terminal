@@ -147,7 +147,7 @@ export function PlayerSeasonGrid({
     return true;
   });
   if (items.length === 0) {
-    return <EmptyNote>Sezónní KPI zatím SportMonks neposlal. Necpeme sem cizí profil.</EmptyNote>;
+    return <EmptyNote>Sezónní KPI u tohoto hráče zatím nemáme.</EmptyNote>;
   }
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">

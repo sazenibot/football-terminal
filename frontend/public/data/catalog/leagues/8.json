@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T09:47:59Z",
+  "generated_at": "2026-10-04T10:45:54Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -223,7 +223,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/players/3/202531.png",
       "team_id": 22,
       "team_name": "Hull City",
-      "position": "Záložník",
+      "position": "Útočník",
       "number": null
     },
     {
@@ -2756,15 +2756,6 @@
       "number": 24
     },
     {
-      "id": 24838234,
-      "name": "Josh Wilson-Esbrand",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/26/24838234.png",
-      "team_id": 9,
-      "team_name": "Manchester City",
-      "position": "Obránce",
-      "number": null
-    },
-    {
       "id": 9605680,
       "name": "Joshua Zirkzee",
       "image": "https://cdn.sportmonks.com/images/soccer/players/16/9605680.png",
@@ -2955,7 +2946,7 @@
     },
     {
       "id": 37656906,
-      "name": "Kaye Furo",
+      "name": "Kaye Furo ",
       "image": "https://cdn.sportmonks.com/images/soccer/players/10/37656906.png",
       "team_id": 236,
       "team_name": "Brentford",
@@ -5386,6 +5377,14 @@
   ],
   "referees": [
     {
+      "id": 14808,
+      "name": "Chris Kavanagh",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 7
+    },
+    {
       "id": 15293,
       "name": "Craig Pawson",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5399,31 +5398,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 7
-    },
-    {
-      "id": 14808,
-      "name": "Chris Kavanagh",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
       "league_matches": 6
-    },
-    {
-      "id": 74959,
-      "name": "Andy Madley",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 5
-    },
-    {
-      "id": 15294,
-      "name": "Paul Tierney",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 5
     },
     {
       "id": 14814,
@@ -5458,9 +5433,17 @@
       "league_matches": 5
     },
     {
-      "id": 15273,
-      "name": "Michael Oliver",
-      "image": "https://cdn.sportmonks.com/images//soccer/referees/9/15273.png",
+      "id": 74959,
+      "name": "Andy Madley",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
+      "id": 15294,
+      "name": "Paul Tierney",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
       "league_matches": 4
@@ -5474,9 +5457,9 @@
       "league_matches": 3
     },
     {
-      "id": 14813,
-      "name": "Tim Robinson",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "id": 15273,
+      "name": "Michael Oliver",
+      "image": "https://cdn.sportmonks.com/images//soccer/referees/9/15273.png",
       "country": "England",
       "in_league": true,
       "league_matches": 3
@@ -5487,7 +5470,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
-      "league_matches": 2
+      "league_matches": 3
     },
     {
       "id": 13677,
@@ -5495,11 +5478,19 @@
       "image": "https://cdn.sportmonks.com/images//soccer/referees/13/13677.png",
       "country": "England",
       "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 13561,
+      "name": "John Brooks",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
       "league_matches": 2
     },
     {
-      "id": 20172,
-      "name": "Thomas Kirk",
+      "id": 14813,
+      "name": "Tim Robinson",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,
@@ -5522,14 +5513,6 @@
       "league_matches": 1
     },
     {
-      "id": 13561,
-      "name": "John Brooks",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "England",
-      "in_league": true,
-      "league_matches": 1
-    },
-    {
       "id": 14824,
       "name": "Joshua Smith",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5540,6 +5523,14 @@
     {
       "id": 19850,
       "name": "Matt Donohue",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "England",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 20172,
+      "name": "Thomas Kirk",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "England",
       "in_league": true,

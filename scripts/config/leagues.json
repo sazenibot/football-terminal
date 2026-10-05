@@ -5,7 +5,7 @@
   "stale_after_hours": 26,
   "notes": "enabled=true jen soutěže na aktuálním tarifu (Starter: 5). Zbytek je katalog na Growth 30 — bez enabled se nestahují a API se nevolá.",
   "leagues": [
-    {"id": 262, "name": "Chance Liga", "short": "CZ1", "country": "Česko", "enabled": true, "logo": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png"},
+    {"id": 262, "name": "Chance Liga", "short": "CZ1", "country": "Česko", "enabled": true, "overlay": true, "logo": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png"},
     {"id": 265, "name": "Chance Národní Liga", "short": "CZ2", "country": "Česko", "enabled": true, "logo": "https://cdn.sportmonks.com/images/soccer/leagues/9/265.png"},
     {"id": 8, "name": "Premier League", "short": "EPL", "country": "Anglie", "enabled": true, "logo": "https://cdn.sportmonks.com/images/soccer/leagues/8/8.png"},
     {"id": 82, "name": "Bundesliga", "short": "GER", "country": "Německo", "enabled": true, "logo": "https://cdn.sportmonks.com/images/soccer/leagues/18/82.png"},

@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Amadou Dante v této sezóně za Zbrojovka Brno: 9 startů, 727 min, 2 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Amadou Dante (Obránce) nastupuje za Zbrojovka Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 9,
@@ -57,11 +57,11 @@
           "dw": 4,
           "aw": 2,
           "tk": 2,
-          "it": 4,
+          "it": 3,
           "cl": 4,
           "gc": 2,
           "kp": 4,
-          "dr": 1,
+          "dr": 2,
           "cr": 9,
           "g": 0,
           "a": 0,
@@ -316,16 +316,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 8,
-      "minutes": 727,
-      "assists": 2,
-      "yellow": 2,
-      "shots": 3,
-      "sot": 2,
-      "goals_conceded": 12
-    }
+    ]
   }
 }

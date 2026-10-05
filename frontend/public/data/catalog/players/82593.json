@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jakub Janetzky v této sezóně za Zbrojovka Brno: 8 startů, 544 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Jakub Janetzky (Záložník) nastupuje za Zbrojovka Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 64,
@@ -1800,14 +1800,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 8,
-      "lineups": 6,
-      "minutes": 544,
-      "yellow": 1,
-      "shots": 1,
-      "goals_conceded": 7
-    }
+    ]
   }
 }

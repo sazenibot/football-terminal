@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jakub Markovic v této sezóně za Slavia Praha: 9 startů, 810 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Jakub Markovic (Brankář) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "gk",
     "career_matches": 61,
@@ -96,7 +96,7 @@
         "ob": 1,
         "st": {
           "mn": 90,
-          "cl": 1,
+          "cl": 2,
           "sv": 3,
           "gc": 1,
           "g": 0,
@@ -1578,13 +1578,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 9,
-      "minutes": 810,
-      "saves": 17,
-      "goals_conceded": 6
-    }
+    ]
   }
 }

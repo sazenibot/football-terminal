@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Tomas Chory v této sezóně za Slavia Praha: 6 startů, 341 min, 4 góly.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Tomas Chory (Útočník) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 123,
@@ -93,14 +93,14 @@
           "sh": 3,
           "sot": 2,
           "f": 4,
-          "dw": 6,
-          "aw": 2,
+          "dw": 5,
+          "aw": 1,
           "cl": 3,
           "gc": 1,
           "kp": 3,
           "dr": 3,
           "ps": 1,
-          "cr": 2,
+          "cr": 1,
           "a": 0,
           "y": 0,
           "r": 0,
@@ -3635,16 +3635,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 6,
-      "lineups": 3,
-      "minutes": 341,
-      "goals": 4,
-      "yellow": 1,
-      "shots": 14,
-      "sot": 6,
-      "goals_conceded": 3
-    }
+    ]
   }
 }

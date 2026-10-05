@@ -8,16 +8,16 @@
   "position_id": 25,
   "captain": false,
   "date_of_birth": "2001-09-23",
-  "age": 24,
+  "age": 25,
   "team_id": 8477,
   "team_name": "Banik Ostrava B",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Karel Pojezny (Obránce) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 114,
@@ -91,9 +91,10 @@
           "mn": 90,
           "sh": 1,
           "f": 1,
-          "dw": 5,
+          "dw": 4,
           "aw": 1,
           "tk": 2,
+          "it": 1,
           "cl": 7,
           "dr": 1,
           "g": 0,
@@ -3350,7 +3351,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {}
+    ]
   }
 }

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-21T09:49:22Z",
+  "generated_at": "2026-10-04T10:46:56Z",
   "leagues": [
     {
       "id": 262,
       "name": "Chance Liga",
       "teams": 16,
-      "players": 470,
+      "players": 472,
       "referees": 152
     },
     {
@@ -19,21 +19,21 @@
       "id": 8,
       "name": "Premier League",
       "teams": 20,
-      "players": 581,
+      "players": 580,
       "referees": 223
     },
     {
       "id": 82,
       "name": "Bundesliga",
       "teams": 18,
-      "players": 521,
+      "players": 520,
       "referees": 161
     },
     {
       "id": 564,
       "name": "La Liga",
       "teams": 20,
-      "players": 599,
+      "players": 598,
       "referees": 443
     }
   ]

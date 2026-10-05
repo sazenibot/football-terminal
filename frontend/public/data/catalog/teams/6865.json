@@ -230,7 +230,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2000-10-04",
-      "age": 25,
+      "age": 26,
       "team_id": 6865,
       "team_name": "Prostějov",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png",
@@ -537,7 +537,7 @@
         "name": "Vysočina Jihlava",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732278,
@@ -549,7 +549,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732274,
+      "starting_at": "2026-10-25T09:15:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 28363,
+        "name": "Slavia Praha B",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

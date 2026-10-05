@@ -14,12 +14,12 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Matej Vydra v této sezóně za Viktoria Plzeň: 3 starty, 174 min, 1 gól.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Matej Vydra (Útočník) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
-    "role": "mid",
+    "role": "att",
     "career_matches": 100,
     "clubs": [
       {
@@ -2791,16 +2791,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 3,
-      "lineups": 2,
-      "minutes": 174,
-      "goals": 1,
-      "yellow": 1,
-      "shots": 4,
-      "sot": 1,
-      "goals_conceded": 8
-    }
+    ]
   }
 }

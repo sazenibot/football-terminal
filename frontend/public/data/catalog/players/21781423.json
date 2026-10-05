@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Abdoulaye Sylla v této sezóně za Sigma Olomouc: 9 startů, 810 min, 2 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Abdoulaye Sylla (Obránce) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 43,
@@ -1283,16 +1283,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 9,
-      "minutes": 810,
-      "assists": 2,
-      "yellow": 2,
-      "shots": 5,
-      "sot": 3,
-      "goals_conceded": 13
-    }
+    ]
   }
 }

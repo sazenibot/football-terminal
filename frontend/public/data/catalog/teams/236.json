@@ -511,7 +511,7 @@
     },
     {
       "id": 37656906,
-      "name": "Kaye Furo",
+      "name": "Kaye Furo ",
       "common_name": "K. Furo",
       "image": "https://cdn.sportmonks.com/images/soccer/players/10/37656906.png",
       "number": 47,
@@ -537,7 +537,7 @@
         "name": "Aston Villa",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19722142,
@@ -551,5 +551,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:59Z"
+  "generated_at": "2026-10-04T10:45:54Z"
 }

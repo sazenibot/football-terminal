@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Roman Kvet v této sezóně za Bohemians 1905: 7 startů, 613 min, 2 góly, 1 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Roman Kvet (Útočník) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 38,
@@ -79,9 +79,9 @@
           "sh": 1,
           "sot": 1,
           "f": 2,
-          "dw": 5,
-          "tk": 2,
-          "it": 3,
+          "dw": 7,
+          "tk": 4,
+          "it": 2,
           "gc": 2,
           "kp": 1,
           "dr": 2,
@@ -1127,17 +1127,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 7,
-      "lineups": 7,
-      "minutes": 613,
-      "goals": 2,
-      "assists": 1,
-      "yellow": 1,
-      "shots": 11,
-      "sot": 8,
-      "goals_conceded": 8
-    }
+    ]
   }
 }

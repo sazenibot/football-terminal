@@ -8,6 +8,9 @@ import { CatalogPlayerPage } from "./pages/CatalogPlayerPage";
 import { CatalogRefereePage } from "./pages/CatalogRefereePage";
 import { LabPage } from "./pages/LabPage";
 import { LabTrendmetrPage } from "./pages/LabTrendmetrPage";
+import { LabXDataPage } from "./pages/LabXDataPage";
+import { LabPitchVsTsPage } from "./pages/LabPitchVsTsPage";
+import { LabPitchModelsPage } from "./pages/LabPitchModelsPage";
 import { ThemeToggle } from "./components/ThemeToggle";
 import { AppNav } from "./components/AppNav";
 
@@ -33,6 +36,11 @@ function App() {
         <Route path="/katalog/*" element={<Navigate to="/catalog" replace />} />
         <Route path="/lab" element={<LabPage />} />
         <Route path="/lab/trendmetr" element={<LabTrendmetrPage />} />
+        <Route path="/lab/xdata" element={<LabXDataPage />} />
+        <Route path="/lab/api" element={<Navigate to="/lab" replace />} />
+        <Route path="/lab/api/sm-pitch" element={<Navigate to="/lab" replace />} />
+        <Route path="/lab/api/pitch" element={<LabPitchVsTsPage />} />
+        <Route path="/lab/pitch-models" element={<LabPitchModelsPage />} />
       </Routes>
     </BrowserRouter>
   );

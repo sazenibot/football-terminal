@@ -9,7 +9,7 @@
   "venue": {
     "name": "Estadio de Mestalla",
     "city": "Valencia",
-    "capacity": 49430
+    "capacity": 55000
   },
   "league_id": 564,
   "league_name": "La Liga",
@@ -622,7 +622,7 @@
         "name": "Racing Santander",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/26/9818.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732654,
@@ -634,7 +634,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732643,
+      "starting_at": "2026-10-24T16:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 3477,
+        "name": "Villarreal",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/21/3477.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:48Z"
+  "generated_at": "2026-10-04T10:46:32Z"
 }

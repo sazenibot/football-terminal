@@ -50,6 +50,14 @@ def now_iso() -> str:
 
 
 def write_json(path: Path, payload: dict) -> None:
+    # Identita nesmí mazat FDR / rozhodčí overlay z předchozího enrich.
+    if path.exists() and "overlay" not in payload:
+        try:
+            old = json.loads(path.read_text())
+            if old.get("overlay"):
+                payload["overlay"] = old["overlay"]
+        except (json.JSONDecodeError, OSError):
+            pass
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
     tmp.write_text(json.dumps(payload, indent=2, ensure_ascii=False, default=str))
@@ -403,16 +411,18 @@ def build_league_catalog(league_cfg: dict) -> dict:
             "generated_at": generated,
         }
         write_json(dest, payload)
-        hub_refs.append({
-            "id": rid,
-            "name": name,
-            "image": ref.get("image_path"),
-            "country": country_name,
-            "in_league": in_league,
-            "league_matches": in_league_counts.get(rid, 0),
-        })
+        if in_league:
+            hub_refs.append({
+                "id": rid,
+                "name": name,
+                "image": ref.get("image_path"),
+                "country": country_name,
+                "in_league": True,
+                "league_matches": in_league_counts.get(rid, 0),
+                "season_matches": in_league_counts.get(rid, 0),
+            })
 
-    hub_refs.sort(key=lambda r: (not r["in_league"], -(r.get("league_matches") or 0), (r.get("name") or "").lower()))
+    hub_refs.sort(key=lambda r: (-(r.get("season_matches") or r.get("league_matches") or 0), (r.get("name") or "").lower()))
 
     hub = {
         "generated_at": generated,

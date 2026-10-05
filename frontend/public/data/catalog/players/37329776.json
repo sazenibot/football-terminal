@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
-  "hook": "Vladimir Neuman v této sezóně za Karviná: 7 startů, 630 min.",
-  "generated_at": "2026-09-21T09:47:42Z",
+  "hook": "Vladimir Neuman (Brankář) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "gk",
     "career_matches": 16,
@@ -460,13 +460,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 7,
-      "lineups": 7,
-      "minutes": 630,
-      "saves": 17,
-      "goals_conceded": 10
-    }
+    ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T09:47:20Z",
+  "generated_at": "2026-10-04T10:37:26Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -8,10 +8,155 @@
     "enabled": true,
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/8/8.png"
   },
-  "round": [],
+  "round": [
+    {
+      "fixture_id": 19722153,
+      "starting_at": "2026-10-10T11:30:00Z",
+      "venue": "Emirates Stadium",
+      "home": {
+        "id": 19,
+        "name": "Arsenal",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png"
+      },
+      "away": {
+        "id": 71,
+        "name": "Leeds United",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722144,
+      "starting_at": "2026-10-10T14:00:00Z",
+      "venue": "Stadium of Light",
+      "home": {
+        "id": 3,
+        "name": "Sunderland",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/3/3.png"
+      },
+      "away": {
+        "id": 78,
+        "name": "Brighton & Hove Albion",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722147,
+      "starting_at": "2026-10-10T14:00:00Z",
+      "venue": "Portman Road Stadium",
+      "home": {
+        "id": 116,
+        "name": "Ipswich Town",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png"
+      },
+      "away": {
+        "id": 11,
+        "name": "Fulham",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722151,
+      "starting_at": "2026-10-10T14:00:00Z",
+      "venue": "Stamford Bridge",
+      "home": {
+        "id": 18,
+        "name": "Chelsea",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png"
+      },
+      "away": {
+        "id": 52,
+        "name": "AFC Bournemouth",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722152,
+      "starting_at": "2026-10-10T14:00:00Z",
+      "venue": "Villa Park",
+      "home": {
+        "id": 15,
+        "name": "Aston Villa",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png"
+      },
+      "away": {
+        "id": 236,
+        "name": "Brentford",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722145,
+      "starting_at": "2026-10-10T16:30:00Z",
+      "venue": "Old Trafford",
+      "home": {
+        "id": 14,
+        "name": "Manchester United",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png"
+      },
+      "away": {
+        "id": 6,
+        "name": "Tottenham Hotspur",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722148,
+      "starting_at": "2026-10-11T13:00:00Z",
+      "venue": "MKM Stadium",
+      "home": {
+        "id": 22,
+        "name": "Hull City",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png"
+      },
+      "away": {
+        "id": 13,
+        "name": "Everton",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722149,
+      "starting_at": "2026-10-11T13:00:00Z",
+      "venue": "Selhurst Park",
+      "home": {
+        "id": 51,
+        "name": "Crystal Palace",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/19/51.png"
+      },
+      "away": {
+        "id": 63,
+        "name": "Nottingham Forest",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19722146,
+      "starting_at": "2026-10-11T15:30:00Z",
+      "venue": "Anfield",
+      "home": {
+        "id": 8,
+        "name": "Liverpool",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png"
+      },
+      "away": {
+        "id": 9,
+        "name": "Manchester City",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
+      },
+      "has_full_data": true
+    }
+  ],
   "stats": {
-    "created": 0,
-    "refreshed": 0,
+    "created": 3,
+    "refreshed": 6,
     "errors": 0
   }
 }

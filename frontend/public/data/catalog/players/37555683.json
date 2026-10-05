@@ -8,12 +8,12 @@
   "position_id": 25,
   "captain": false,
   "date_of_birth": "2003-10-04",
-  "age": 22,
+  "age": 23,
   "team_id": 2642,
   "team_name": "Paderborn",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png",
   "league_id": 82,
   "league_name": "Bundesliga",
   "hook": "Tristan Zobel (Obránce) nastupuje za Paderborn. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:48:25Z"
+  "generated_at": "2026-10-04T10:46:13Z"
 }

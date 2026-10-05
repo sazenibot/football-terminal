@@ -10,7 +10,7 @@
   "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
   "date_of_birth": null,
   "overlay": {
-    "generated_at": "2026-09-21T15:45:03Z",
+    "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,
     "career_matches": 5,
     "seasons": [
@@ -62,19 +62,35 @@
         "hs": 0,
         "as": 2,
         "st": {
+          "fouls": [
+            5,
+            10
+          ],
           "yellow": [
             4,
             3
           ],
           "shots": [
-            9,
-            4
+            16,
+            10
           ],
           "sot": [
-            4,
-            3
+            7,
+            2
           ],
           "shots_off": [
+            4,
+            7
+          ],
+          "shots_inside": [
+            11,
+            7
+          ],
+          "shots_outside": [
+            5,
+            3
+          ],
+          "shots_blocked": [
             5,
             1
           ],
@@ -86,21 +102,73 @@
             77,
             40
           ],
+          "big_chances": [
+            1,
+            1
+          ],
+          "big_chances_missed": [
+            1,
+            1
+          ],
           "assists": [
             0,
             2
           ],
           "passes": [
-            1,
-            10
+            631,
+            329
+          ],
+          "dribbles": [
+            23,
+            14
+          ],
+          "dribbles_ok": [
+            13,
+            8
           ],
           "saves": [
             1,
-            4
+            8
+          ],
+          "tackles": [
+            15,
+            19
+          ],
+          "interceptions": [
+            8,
+            10
+          ],
+          "duels_won": [
+            51,
+            40
           ],
           "corners": [
             7,
             3
+          ],
+          "free_kicks": [
+            10,
+            5
+          ],
+          "throwins": [
+            25,
+            11
+          ],
+          "goal_kicks": [
+            5,
+            12
+          ],
+          "crosses": [
+            27,
+            14
+          ],
+          "accurate_crosses": [
+            7,
+            4
+          ],
+          "offsides": [
+            1,
+            1
           ]
         },
         "mp": true
@@ -757,7 +825,7 @@
       "all": {
         "fouls": {
           "league_avg": 24.19,
-          "rank": 13,
+          "rank": 28,
           "size": 38
         },
         "yellow": {
@@ -853,12 +921,12 @@
         },
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
-            "rank": 8,
+            "league_avg": 26.56,
+            "rank": 19,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
+            "league_avg": 3.7,
             "rank": 10,
             "size": 22
           },

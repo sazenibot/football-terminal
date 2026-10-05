@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Quadri Adediran v této sezóně za SK Artis Brno: 5 startů, 363 min, 2 góly, 1 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Quadri Adediran (Útočník) nastupuje za SK Artis Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 76,
@@ -2184,16 +2184,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 5,
-      "lineups": 4,
-      "minutes": 363,
-      "goals": 2,
-      "assists": 1,
-      "shots": 13,
-      "sot": 4,
-      "goals_conceded": 8
-    }
+    ]
   }
 }

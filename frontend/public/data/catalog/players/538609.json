@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Richard Sedlacek v této sezóně za Jablonec: 9 startů, 710 min, 4 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Richard Sedlacek (Záložník) nastupuje za Jablonec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 55,
@@ -77,13 +77,12 @@
           "mn": 90,
           "a": 2,
           "sh": 1,
-          "dw": 2,
           "tk": 2,
-          "it": 2,
+          "it": 1,
           "cl": 1,
           "gc": 1,
           "kp": 2,
-          "cr": 4,
+          "cr": 3,
           "g": 0,
           "y": 0,
           "r": 0,
@@ -1632,14 +1631,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 8,
-      "minutes": 710,
-      "assists": 4,
-      "shots": 6,
-      "goals_conceded": 9
-    }
+    ]
   }
 }

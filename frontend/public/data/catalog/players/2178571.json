@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Dominik Janosek v této sezóně za Sigma Olomouc: 9 startů, 616 min, 1 gól, 3 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Dominik Janosek (Útočník) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 62,
@@ -76,11 +76,11 @@
         "st": {
           "mn": 72,
           "sh": 2,
-          "dw": 4,
+          "dw": 6,
           "cl": 1,
           "gc": 2,
-          "dr": 3,
-          "cr": 1,
+          "dr": 5,
+          "cr": 2,
           "g": 0,
           "a": 0,
           "y": 0,
@@ -1811,16 +1811,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 8,
-      "minutes": 616,
-      "goals": 1,
-      "assists": 3,
-      "shots": 11,
-      "sot": 5,
-      "goals_conceded": 8
-    }
+    ]
   }
 }

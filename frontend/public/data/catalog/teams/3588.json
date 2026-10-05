@@ -366,7 +366,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2006-09-25",
-      "age": 19,
+      "age": 20,
       "team_id": 3588,
       "team_name": "Elversberg",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png",
@@ -451,7 +451,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "1998-09-22",
-      "age": 27,
+      "age": 28,
       "team_id": 3588,
       "team_name": "Elversberg",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png",
@@ -469,7 +469,7 @@
         "name": "FC Union Berlin",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19735144,
@@ -481,7 +481,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19735142,
+      "starting_at": "2026-10-24T13:30:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 277,
+        "name": "RB Leipzig",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/21/277.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:25Z"
+  "generated_at": "2026-10-04T10:46:13Z"
 }

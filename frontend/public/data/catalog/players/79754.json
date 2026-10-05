@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Stanislav Dostal v této sezóně za Zlín: 9 startů, 810 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Stanislav Dostal (Brankář) nastupuje za Zlín. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "gk",
     "career_matches": 80,
@@ -2087,13 +2087,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 9,
-      "minutes": 810,
-      "saves": 25,
-      "goals_conceded": 20
-    }
+    ]
   }
 }

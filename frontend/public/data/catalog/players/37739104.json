@@ -14,12 +14,12 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
-  "hook": "Kahuan Vinícius v této sezóně za Karviná: 7 startů, 192 min.",
-  "generated_at": "2026-09-21T09:47:42Z",
+  "hook": "Kahuan Vinícius (Útočník) nastupuje za Karviná. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
-    "role": "att",
+    "role": "mid",
     "career_matches": 27,
     "clubs": [
       {
@@ -84,7 +84,8 @@
           "mn": 67,
           "sh": 1,
           "f": 1,
-          "dw": 2,
+          "dw": 3,
+          "aw": 1,
           "tk": 2,
           "cl": 2,
           "gc": 1,
@@ -766,14 +767,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 7,
-      "lineups": 1,
-      "minutes": 192,
-      "yellow": 2,
-      "shots": 3,
-      "goals_conceded": 3
-    }
+    ]
   }
 }

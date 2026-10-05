@@ -41,6 +41,7 @@ from build_match_data import (  # noqa: E402
 )
 from match_extras import enrich_match  # noqa: E402
 from build_catalog import build_all as build_catalog  # noqa: E402
+from enrich_catalog import apply_daily_overlay  # noqa: E402
 
 CONFIG_PATH = ROOT / "scripts" / "config" / "leagues.json"
 DATA_DIR = ROOT / "frontend" / "public" / "data"
@@ -249,6 +250,16 @@ def write_index(cfg: dict, enabled_summaries: list[dict]) -> None:
     })
 
 
+def apply_overlays(cfg: dict, league_id: int | None) -> None:
+    """FDR + přírůstkový overlay jen u lig s overlay=true (teď Chance Liga)."""
+    wanted = [l for l in cfg["leagues"] if l.get("overlay")]
+    if league_id:
+        wanted = [l for l in wanted if l["id"] == league_id]
+    for league in wanted:
+        print(f"\n[catalog-overlay] {league['name']} ({league['id']})")
+        apply_daily_overlay(int(league["id"]))
+
+
 def write_compat_match_json(cfg: dict) -> None:
     """Tenký match.json, ať starý frontend/URL nespadne na 404."""
     default_id = cfg.get("default_league_id", 262)
@@ -281,6 +292,7 @@ def main() -> None:
 
     if args.catalog_only:
         build_catalog(args.league)
+        apply_overlays(cfg, args.league)
         return
 
     print(f"[0] migrace legacy match.json (pokud existuje)…")
@@ -358,6 +370,7 @@ def main() -> None:
     if not args.skip_catalog:
         print("\n[catalog] datový katalog…")
         build_catalog(args.league)
+        apply_overlays(cfg, args.league)
     stats = call_stats()
     print(f"\n✅ denní refresh hotov: {stats['calls']} API volání, {stats['cache_hits']} z cache")
 

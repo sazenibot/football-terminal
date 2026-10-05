@@ -366,7 +366,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2003-10-01",
-      "age": 22,
+      "age": 23,
       "team_id": 2975,
       "team_name": "Deportivo Alavés",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png",
@@ -503,7 +503,7 @@
         "name": "Atlético de Madrid",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732661,
@@ -515,7 +515,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/4/36.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732652,
+      "starting_at": "2026-10-23T19:00:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 126,
+        "name": "Málaga",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:48Z"
+  "generated_at": "2026-10-04T10:46:32Z"
 }

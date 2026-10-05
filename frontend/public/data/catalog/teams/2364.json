@@ -230,7 +230,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "1990-09-24",
-      "age": 35,
+      "age": 36,
       "team_id": 2364,
       "team_name": "Viktoria Žižkov",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
@@ -434,7 +434,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "1994-09-28",
-      "age": 31,
+      "age": 32,
       "team_id": 2364,
       "team_name": "Viktoria Žižkov",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png",
@@ -571,7 +571,7 @@
         "name": "Arsenal Česká Lípa",
         "image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732276,
@@ -583,7 +583,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732267,
+      "starting_at": "2026-10-24T14:30:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 6957,
+        "name": "Hanácká",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

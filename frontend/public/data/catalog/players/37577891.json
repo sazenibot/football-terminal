@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Josef Svanda v této sezóně za Teplice: 8 startů, 346 min, 1 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Josef Svanda (Záložník) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 72,
@@ -76,6 +76,7 @@
         "st": {
           "mn": 12,
           "a": 1,
+          "cl": 1,
           "g": 0,
           "y": 0,
           "r": 0,
@@ -2068,15 +2069,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 8,
-      "lineups": 2,
-      "minutes": 346,
-      "assists": 1,
-      "shots": 3,
-      "sot": 1,
-      "goals_conceded": 5
-    }
+    ]
   }
 }

@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Daniel Marecek v této sezóně za Teplice: 7 startů, 183 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Daniel Marecek (Záložník) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 125,
@@ -89,6 +89,11 @@
         "ob": 1,
         "st": {
           "mn": 68,
+          "dw": 4,
+          "aw": 1,
+          "tk": 3,
+          "cl": 1,
+          "cr": 1,
           "g": 0,
           "a": 0,
           "y": 0,
@@ -3505,15 +3510,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 7,
-      "lineups": 1,
-      "minutes": 183,
-      "yellow": 1,
-      "shots": 4,
-      "sot": 2,
-      "goals_conceded": 2
-    }
+    ]
   }
 }

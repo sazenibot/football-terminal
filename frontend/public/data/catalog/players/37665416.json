@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Lucky Ezeh v této sezóně za Zbrojovka Brno: 5 startů, 231 min, 1 gól.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Lucky Ezeh (Útočník) nastupuje za Zbrojovka Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 75,
@@ -88,7 +88,7 @@
           "dw": 1,
           "aw": 1,
           "kp": 3,
-          "dr": 1,
+          "dr": 2,
           "g": 0,
           "a": 0,
           "y": 0,
@@ -2109,15 +2109,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 5,
-      "lineups": 3,
-      "minutes": 231,
-      "goals": 1,
-      "shots": 6,
-      "sot": 4,
-      "goals_conceded": 2
-    }
+    ]
   }
 }

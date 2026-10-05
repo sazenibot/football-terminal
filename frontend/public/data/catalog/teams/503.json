@@ -435,7 +435,7 @@
         "name": "FC Augsburg",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19735152,
@@ -449,5 +449,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:25Z"
+  "generated_at": "2026-10-04T10:46:13Z"
 }

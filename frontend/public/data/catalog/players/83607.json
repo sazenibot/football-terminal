@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Michal Bilek v této sezóně za Teplice: 7 startů, 435 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Michal Bilek (Záložník) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 88,
@@ -75,9 +75,12 @@
         "ob": 1,
         "st": {
           "mn": 22,
+          "a": 1,
           "y": 1,
+          "it": 2,
+          "kp": 1,
+          "cr": 1,
           "g": 0,
-          "a": 0,
           "r": 0,
           "cs": 1
         },
@@ -2568,14 +2571,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 7,
-      "lineups": 6,
-      "minutes": 435,
-      "yellow": 2,
-      "shots": 8,
-      "goals_conceded": 10
-    }
+    ]
   }
 }

@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Vit Skrkon v této sezóně za Baník Ostrava: 9 startů, 468 min, 1 gól.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Vit Skrkon (Útočník) nastupuje za Baník Ostrava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 11,
@@ -346,15 +346,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 3,
-      "minutes": 468,
-      "goals": 1,
-      "shots": 15,
-      "sot": 5,
-      "goals_conceded": 11
-    }
+    ]
   }
 }

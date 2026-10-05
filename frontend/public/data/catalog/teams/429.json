@@ -349,7 +349,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "1997-09-25",
-      "age": 28,
+      "age": 29,
       "team_id": 429,
       "team_name": "Deportivo A Coruña",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/429.png",
@@ -520,7 +520,7 @@
         "name": "Real Sociedad",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/18/594.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732660,
@@ -534,5 +534,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:48Z"
+  "generated_at": "2026-10-04T10:46:32Z"
 }

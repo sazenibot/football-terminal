@@ -111,7 +111,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "1990-10-04",
-      "age": 35,
+      "age": 36,
       "team_id": 6957,
       "team_name": "Hanácká",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
@@ -128,7 +128,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2006-09-22",
-      "age": 19,
+      "age": 20,
       "team_id": 6957,
       "team_name": "Hanácká",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
@@ -281,7 +281,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "1999-09-25",
-      "age": 26,
+      "age": 27,
       "team_id": 6957,
       "team_name": "Hanácká",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/13/6957.png",
@@ -554,7 +554,7 @@
         "name": "Příbram",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732279,
@@ -566,7 +566,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732267,
+      "starting_at": "2026-10-24T14:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 2364,
+        "name": "Viktoria Žižkov",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

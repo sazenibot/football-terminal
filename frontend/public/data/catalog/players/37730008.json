@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Josef Kolarik v této sezóně za Mladá Boleslav: 8 startů, 346 min, 1 gól, 1 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Josef Kolarik (Záložník) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 35,
@@ -61,8 +61,8 @@
         "ob": 3,
         "st": {
           "mn": 17,
-          "dw": 1,
-          "aw": 1,
+          "dw": 2,
+          "aw": 2,
           "cl": 1,
           "kp": 2,
           "dr": 2,
@@ -1016,16 +1016,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 8,
-      "lineups": 2,
-      "minutes": 346,
-      "goals": 1,
-      "assists": 1,
-      "shots": 6,
-      "sot": 4,
-      "goals_conceded": 5
-    }
+    ]
   }
 }

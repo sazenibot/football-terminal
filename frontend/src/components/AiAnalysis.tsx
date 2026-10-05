@@ -10,7 +10,7 @@ export function AiAnalysisSection({ analysis }: { analysis?: AiAnalysis | null }
     >
       {!analysis?.text ? (
         <p className="text-slate-500 light:text-slate-400 text-sm">
-          Analýza se doplní při denním ingestu. Prohlížeč OpenAI nevolá.
+          Analýza se doplní při aktualizaci dat.
         </p>
       ) : (
         <div className="text-sm leading-relaxed text-slate-300 light:text-slate-700 whitespace-pre-wrap">

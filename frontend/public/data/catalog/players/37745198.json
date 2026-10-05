@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Tobias Boledovic v této sezóně za Pardubice: 9 startů, 710 min, 2 góly, 1 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Tobias Boledovic (Obránce) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 15,
@@ -63,10 +63,11 @@
           "mn": 44,
           "sh": 2,
           "sot": 1,
-          "dw": 2,
+          "dw": 3,
           "tk": 1,
-          "cl": 2,
+          "cl": 3,
           "kp": 1,
+          "dr": 1,
           "g": 0,
           "a": 0,
           "y": 0,
@@ -453,16 +454,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 7,
-      "minutes": 710,
-      "goals": 2,
-      "assists": 1,
-      "shots": 7,
-      "sot": 4,
-      "goals_conceded": 13
-    }
+    ]
   }
 }

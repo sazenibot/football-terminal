@@ -4,8 +4,8 @@
   "common_name": "A. Ömür",
   "image": "https://cdn.sportmonks.com/images/soccer/players/3/202531.png",
   "number": null,
-  "position": "Záložník",
-  "position_id": 26,
+  "position": "Útočník",
+  "position_id": 27,
   "captain": false,
   "date_of_birth": "1999-06-25",
   "age": 27,
@@ -14,6 +14,6 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
   "league_id": 8,
   "league_name": "Premier League",
-  "hook": "Abdülkadir Ömür (Záložník) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:59Z"
+  "hook": "Abdülkadir Ömür (Útočník) nastupuje za Hull City. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:54Z"
 }

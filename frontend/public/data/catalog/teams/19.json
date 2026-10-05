@@ -60,7 +60,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "1994-10-03",
-      "age": 31,
+      "age": 32,
       "team_id": 19,
       "team_name": "Arsenal",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
@@ -162,7 +162,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2006-09-26",
-      "age": 19,
+      "age": 20,
       "team_id": 19,
       "team_name": "Arsenal",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/19/19.png",
@@ -452,7 +452,7 @@
         "name": "Leeds United",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19722135,
@@ -464,7 +464,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19722133,
+      "starting_at": "2026-10-24T14:00:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 13,
+        "name": "Everton",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:59Z"
+  "generated_at": "2026-10-04T10:45:54Z"
 }

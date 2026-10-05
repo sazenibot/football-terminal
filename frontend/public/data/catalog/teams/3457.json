@@ -51,23 +51,6 @@
       "league_name": "La Liga"
     },
     {
-      "id": 37595890,
-      "name": "Álex Primo",
-      "common_name": "A. Primo Hernández",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/18/37595890.png",
-      "number": null,
-      "position": "Brankář",
-      "position_id": 24,
-      "captain": false,
-      "date_of_birth": "2004-07-10",
-      "age": 22,
-      "team_id": 3457,
-      "team_name": "Levante",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/1/3457.png",
-      "league_id": 564,
-      "league_name": "La Liga"
-    },
-    {
       "id": 4545454,
       "name": "Adrián Dela",
       "common_name": "A. De la Fuente Barquilla",
@@ -528,5 +511,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:48Z"
+  "generated_at": "2026-10-04T10:46:32Z"
 }

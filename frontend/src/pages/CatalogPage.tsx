@@ -61,17 +61,28 @@ export function CatalogPage() {
     return enabled[0]?.id ?? defaultId;
   }, [params, enabled, defaultId]);
 
-  const [tab, setTab] = useState<Tab>("teams");
+  const tab: Tab =
+    params.get("tab") === "players" || params.get("tab") === "referees"
+      ? (params.get("tab") as Tab)
+      : "teams";
   const [q, setQ] = useState("");
   const { data, error, missing } = useCatalogHub(leagueId);
+
+  const setTab = (next: Tab) => {
+    setParams({ league: String(leagueId), tab: next }, { replace: true });
+  };
 
   useEffect(() => {
     if (!leagueId) return;
     rememberCatalogLeague(leagueId);
-    if (params.get("league") !== String(leagueId)) {
-      setParams({ league: String(leagueId) }, { replace: true });
+    const next: Record<string, string> = { league: String(leagueId) };
+    if (tab !== "teams") next.tab = tab;
+    const curLeague = params.get("league");
+    const curTab = params.get("tab") || "teams";
+    if (curLeague !== next.league || curTab !== (next.tab || "teams")) {
+      setParams(next, { replace: true });
     }
-  }, [leagueId, params, setParams]);
+  }, [leagueId, tab, params, setParams]);
 
   const teams = useMemo(
     () =>
@@ -85,14 +96,19 @@ export function CatalogPage() {
       ),
     [data, q],
   );
-  const referees = useMemo(
-    () => (data?.referees || []).filter((r) => matchesQuery(`${r.name} ${r.country || ""}`, q)),
-    [data, q],
-  );
+  const referees = useMemo(() => {
+    const rows = (data?.referees || []).filter((r) => {
+      if (typeof r.season_matches === "number") return r.season_matches > 0;
+      return Boolean(r.in_league);
+    });
+    return rows.filter((r) => matchesQuery(`${r.name} ${r.country || ""}`, q));
+  }, [data, q]);
 
   const onLeague = (id: number) => {
     setQ("");
-    setParams({ league: String(id) }, { replace: true });
+    const next: Record<string, string> = { league: String(id) };
+    if (tab !== "teams") next.tab = tab;
+    setParams(next, { replace: true });
   };
 
   return (
@@ -101,7 +117,7 @@ export function CatalogPage() {
         <div className="text-emerald-400 text-sm font-mono mb-1">KATALOG</div>
         <h1 className="text-2xl font-bold text-white light:text-slate-900">Datový katalog</h1>
         <p className="text-sm text-slate-500 light:text-slate-400 mt-1">
-          Encyklopedie ligy — týmy, hráči a hlavní rozhodčí. Asistenti a VAR sem nepatří.
+          Týmy, hráči a hlavní rozhodčí z lig, které jinde v jednom místě nenasbíráte.
         </p>
       </header>
 
@@ -138,11 +154,16 @@ export function CatalogPage() {
           Rozhodčí ({referees.length})
         </Pill>
       </div>
+      {tab === "referees" && (
+        <p className="text-sm text-slate-400 light:text-slate-500 -mt-2 mb-5">
+          Jen hlavní rozhodčí, kteří v aktuální sezoně této ligy už pískali.
+        </p>
+      )}
 
       {error && <p className="text-rose-400">Adresář se nepodařilo načíst: {error}</p>}
       {missing && (
         <div className="card p-8 text-center text-slate-400 light:text-slate-500">
-          Pro tuhle ligu ještě není stažený katalog. Objeví se po dalším ingestu.
+          Pro tuhle ligu zatím nemáme stažený katalog.
         </div>
       )}
       {!data && !error && !missing && (
@@ -202,7 +223,7 @@ function PlayerGrid({ items }: { items: CatalogPlayerCard[] }) {
 
 function RefereeGrid({ items, leagueId }: { items: CatalogRefereeCard[]; leagueId: number }) {
   if (items.length === 0) {
-    return <Empty label="Žádný rozhodčí neodpovídá hledání." />;
+    return <Empty label="Letos v téhle lize zatím nikdo z hlavních nepískal — nebo hledání nic nenašlo." />;
   }
   return (
     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -212,7 +233,11 @@ function RefereeGrid({ items, leagueId }: { items: CatalogRefereeCard[]; leagueI
           <div className="min-w-0">
             <div className="font-medium text-white light:text-slate-900 truncate">{r.name}</div>
             <div className="text-xs text-slate-500 truncate">
-              {r.in_league ? "V lize · hlavní" : "Země ligy"}
+              {r.season_matches != null
+                ? `${r.season_matches} ${r.season_matches === 1 ? "zápas" : r.season_matches < 5 ? "zápasy" : "zápasů"} letos`
+                : r.in_league
+                  ? "Letos v lize · hlavní"
+                  : "Hlavní"}
               {r.country ? ` · ${r.country}` : ""}
             </div>
           </div>

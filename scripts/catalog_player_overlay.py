@@ -339,3 +339,36 @@ def attach_player_overlays(
     }
     explorer_path.write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + "\n")
     print(f"  index hráčů: {len(index_players)} ({explorer_path.name})")
+    sync_squad_appearances(catalog, league_id, current_season_id, load_json, write_json)
+
+
+def sync_squad_appearances(catalog, league_id: int, current_season_id: int | None, load_json, write_json) -> None:
+    hub = load_json(catalog / "leagues" / f"{league_id}.json") or {}
+    n = 0
+    for card in hub.get("teams") or []:
+        tid = card.get("id")
+        if not tid:
+            continue
+        path = catalog / "teams" / f"{tid}.json"
+        team = load_json(path)
+        if not team:
+            continue
+        changed = False
+        for player in team.get("squad") or []:
+            pid = player.get("id")
+            if not pid:
+                continue
+            src = load_json(catalog / "players" / f"{pid}.json") or {}
+            matches = (src.get("overlay") or {}).get("matches") or []
+            apps = sum(1 for m in matches if current_season_id and m.get("s") == current_season_id)
+            if not apps:
+                continue
+            season = dict(player.get("season") or {})
+            if season.get("appearances") != apps:
+                season["appearances"] = apps
+                player["season"] = season
+                changed = True
+        if changed:
+            write_json(path, team)
+            n += 1
+    print(f"  soupisky: vytížení hráčů u {n} týmů")

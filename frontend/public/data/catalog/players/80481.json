@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Laco Takacs v této sezóně za Teplice: 4 starty, 89 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Laco Takacs (Obránce) nastupuje za Teplice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 27,
@@ -89,6 +89,10 @@
         "ob": 1,
         "st": {
           "mn": 56,
+          "dw": 4,
+          "aw": 1,
+          "tk": 3,
+          "cl": 5,
           "g": 0,
           "a": 0,
           "y": 0,
@@ -778,14 +782,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 4,
-      "lineups": 1,
-      "minutes": 89,
-      "red": 1,
-      "shots": 1,
-      "goals_conceded": 1
-    }
+    ]
   }
 }

@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Samuel Grygar v této sezóně za Mladá Boleslav: 1 start, 6 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Samuel Grygar (Záložník) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 15,
@@ -427,11 +427,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 1,
-      "minutes": 6,
-      "goals_conceded": 1
-    }
+    ]
   }
 }

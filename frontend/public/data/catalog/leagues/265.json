@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T09:47:42Z",
+  "generated_at": "2026-10-04T10:45:39Z",
   "league": {
     "id": 265,
     "name": "Chance Národní Liga",
@@ -357,7 +357,7 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 2538,
       "team_name": "Vysočina Jihlava",
-      "position": "Záložník",
+      "position": "Obránce",
       "number": null
     },
     {
@@ -4701,28 +4701,28 @@
   ],
   "referees": [
     {
-      "id": 75580,
-      "name": "Daniel Vokoun",
+      "id": 15625,
+      "name": "Ondřej Pechanec",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
       "league_matches": 6
     },
     {
-      "id": 15436,
-      "name": "Jan Machálek",
+      "id": 74540,
+      "name": "Vojtěch Opočenský",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
       "league_matches": 5
     },
     {
-      "id": 15625,
-      "name": "Ondřej Pechanec",
+      "id": 75580,
+      "name": "Daniel Vokoun",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
-      "league_matches": 5
+      "league_matches": 4
     },
     {
       "id": 1158996,
@@ -4733,8 +4733,8 @@
       "league_matches": 4
     },
     {
-      "id": 74540,
-      "name": "Vojtěch Opočenský",
+      "id": 16465,
+      "name": "Pavel Orel",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4747,22 +4747,6 @@
       "country": "Czech Republic",
       "in_league": true,
       "league_matches": 3
-    },
-    {
-      "id": 16465,
-      "name": "Pavel Orel",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 69866,
-      "name": "D. Černý",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": true,
-      "league_matches": 2
     },
     {
       "id": 74265,
@@ -4781,6 +4765,22 @@
       "league_matches": 2
     },
     {
+      "id": 1159814,
+      "name": "Habermann Lubomir",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 15436,
+      "name": "Jan Machálek",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
       "id": 38367,
       "name": "Jan Petřík",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4791,6 +4791,14 @@
     {
       "id": 75583,
       "name": "Jan Všetečka",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 75582,
+      "name": "Karel Roucek",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -4821,8 +4829,16 @@
       "league_matches": 2
     },
     {
-      "id": 1159814,
-      "name": "Habermann Lubomir",
+      "id": 69866,
+      "name": "D. Černý",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Czech Republic",
+      "in_league": true,
+      "league_matches": 1
+    },
+    {
+      "id": 17129,
+      "name": "Ondřej Berka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": true,
@@ -5197,14 +5213,6 @@
       "league_matches": 0
     },
     {
-      "id": 75582,
-      "name": "Karel Roucek",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": false,
-      "league_matches": 0
-    },
-    {
       "id": 49606,
       "name": "Krystof Mencl",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5471,14 +5479,6 @@
     {
       "id": 16879,
       "name": "Ondrej Pelikán",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Czech Republic",
-      "in_league": false,
-      "league_matches": 0
-    },
-    {
-      "id": 17129,
-      "name": "Ondřej Berka",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Czech Republic",
       "in_league": false,

@@ -366,7 +366,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2002-09-25",
-      "age": 23,
+      "age": 24,
       "team_id": 3734,
       "team_name": "Kladno",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png",
@@ -605,7 +605,7 @@
         "name": "Třinec",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/6/4134.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732281,
@@ -617,7 +617,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/team_placeholder.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732268,
+      "starting_at": "2026-10-23T16:00:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 3531,
+        "name": "Dukla Praha",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/3531.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

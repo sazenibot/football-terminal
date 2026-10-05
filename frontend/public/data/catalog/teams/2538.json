@@ -68,6 +68,23 @@
       "league_name": "Chance Národní Liga"
     },
     {
+      "id": 38220751,
+      "name": "Adrian Cermak ",
+      "common_name": "A. Cermak",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "number": null,
+      "position": "Obránce",
+      "position_id": 25,
+      "captain": false,
+      "date_of_birth": "1993-07-01",
+      "age": 33,
+      "team_id": 2538,
+      "team_name": "Vysočina Jihlava",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
+      "league_id": 265,
+      "league_name": "Chance Národní Liga"
+    },
+    {
       "id": 38021306,
       "name": "D. Matoušek",
       "common_name": "David Matoušek",
@@ -255,23 +272,6 @@
       "league_name": "Chance Národní Liga"
     },
     {
-      "id": 38220751,
-      "name": "Adrian Cermak ",
-      "common_name": "A. Cermak",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "number": null,
-      "position": "Záložník",
-      "position_id": 26,
-      "captain": false,
-      "date_of_birth": "1993-07-01",
-      "age": 33,
-      "team_id": 2538,
-      "team_name": "Vysočina Jihlava",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
-      "league_id": 265,
-      "league_name": "Chance Národní Liga"
-    },
-    {
       "id": 82821,
       "name": "Adrián Čermák",
       "common_name": "A. Čermák",
@@ -383,7 +383,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2005-10-01",
-      "age": 20,
+      "age": 21,
       "team_id": 2538,
       "team_name": "Vysočina Jihlava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
@@ -417,7 +417,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2005-10-01",
-      "age": 20,
+      "age": 21,
       "team_id": 2538,
       "team_name": "Vysočina Jihlava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
@@ -604,7 +604,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "2002-09-23",
-      "age": 23,
+      "age": 24,
       "team_id": 2538,
       "team_name": "Vysočina Jihlava",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/10/2538.png",
@@ -622,7 +622,7 @@
         "name": "Prostějov",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732277,
@@ -634,7 +634,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732270,
+      "starting_at": "2026-10-23T16:00:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 8421,
+        "name": "Vlašim",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

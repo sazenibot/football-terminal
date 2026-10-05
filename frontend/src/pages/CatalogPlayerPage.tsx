@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { CatalogPlayerRadar } from "../components/CatalogPlayerRadar";
 import { EmptyNote } from "../components/CatalogStats";
+import { KeeperCard, ShotMap, type MatchRow, type SeasonOpt } from "../components/PitchCards";
 import { Pill } from "../components/ui";
 import { formatDate } from "../lib/format";
 import {
@@ -32,7 +33,7 @@ import {
   type SeasonKey,
   type Venue,
 } from "../lib/playerCatalog";
-import { useCatalogPlayer, useCatalogPlayerIndex } from "../lib/useData";
+import { useCatalogPlayer, useCatalogPlayerIndex, usePitchPlayer } from "../lib/useData";
 import type { CatalogPlayerIndexRow, CatalogPlayerMatch, CatalogPlayerRole } from "../types";
 import { CatalogNotFound } from "./CatalogNotFound";
 
@@ -61,6 +62,7 @@ export function CatalogPlayerPage() {
   const [radarHalf, setRadarHalf] = useState<Half>("all");
 
   const overlay = player?.overlay;
+  const pitch = usePitchPlayer(Number.isFinite(id) ? id : null);
   const currentSeasonId = overlay?.current_season_id ?? index?.current_season_id ?? null;
   const resolvedSeason: SeasonKey = season ?? currentSeasonId ?? "all";
   const resolvedRadarSeason: SeasonKey = radarSeason ?? currentSeasonId ?? "all";
@@ -167,6 +169,10 @@ export function CatalogPlayerPage() {
   const kpi = kpiFor(role, slice, kpiPool);
   const buckets = fdrBuckets(slice);
   const explorerStats = PLAYER_STATS.filter((s) => s.group === tab && metricValue(slice, s) != null);
+  const pitchClubOk = club === "all" || club === "current" || club === player.team_id;
+  const pitchRows = pitchClubOk ? pitchMatchesForHeader(pitch?.matches || [], resolvedSeason, currentSeasonId) : [];
+  const pitchSeasons: SeasonOpt[] = [{ id: "view", label: pitch?.season || "", matches: pitchRows }];
+  const shotCount = pitchRows.reduce((n, m) => n + (m.shots?.length || 0), 0);
 
   return (
     <div className="max-w-6xl mx-auto py-12 px-4 pt-20 flex flex-col gap-8">
@@ -279,6 +285,25 @@ export function CatalogPlayerPage() {
           <FdrCard title="Lehké" tone="easy" role={role} rows={buckets.easy} />
         </div>
       </section>
+
+      {role === "gk" && pitch?.keeper && pitchRows.length ? (
+        <KeeperCard
+          seasons={pitchSeasons}
+          defaultSeason="view"
+          name={player.common_name || player.name}
+          showSeason={false}
+        />
+      ) : null}
+      {shotCount > 0 ? (
+        <ShotMap
+          title={`Shotmapa · ${player.common_name || player.name}`}
+          lead="Branka nahoře. Barva říká, jestli šlo o střelu ze hry, nebo ze standardky. Kroužek je gól, světlejší tečka mimo bránu."
+          seasons={pitchSeasons}
+          defaultSeason="view"
+          shotsOf={(m) => m.shots}
+          showSeason={false}
+        />
+      ) : null}
 
       <section className="card p-5">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-end lg:justify-between mb-4">
@@ -706,4 +731,11 @@ function roleFromPosition(position?: string | null): CatalogPlayerRole {
   if (p.includes("obrán") || p.includes("obran")) return "def";
   if (p.includes("zálož") || p.includes("zaloz")) return "mid";
   return "att";
+}
+
+function pitchMatchesForHeader(matches: MatchRow[], season: SeasonKey, current: number | null): MatchRow[] {
+  if (!matches.length) return [];
+  if (season === "all") return matches;
+  if (current != null && season === current) return matches;
+  return [];
 }

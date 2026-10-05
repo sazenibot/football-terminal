@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Matej Kadlec v této sezóně za Bohemians 1905: 6 startů, 526 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Matej Kadlec (Obránce) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 22,
@@ -699,14 +699,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 6,
-      "lineups": 6,
-      "minutes": 526,
-      "shots": 3,
-      "sot": 1,
-      "goals_conceded": 6
-    }
+    ]
   }
 }

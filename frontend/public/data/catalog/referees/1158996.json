@@ -12,22 +12,22 @@
   "league_matches": 3,
   "leagues": [
     {
-      "id": 262,
-      "name": "Chance Liga",
-      "in_league": true,
-      "league_matches": 1
-    },
-    {
       "id": 265,
       "name": "Chance Národní Liga",
       "in_league": true,
       "league_matches": 4
+    },
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "in_league": true,
+      "league_matches": 1
     }
   ],
   "hook": "Matěj Kubečka píská v soutěži Chance Národní Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-09-20T21:56:05Z",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:03Z",
+    "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,
     "career_matches": 3,
     "seasons": [
@@ -620,12 +620,12 @@
       "seasons": {
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
+            "league_avg": 26.56,
             "rank": 21,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
+            "league_avg": 3.7,
             "rank": 19,
             "size": 22
           },

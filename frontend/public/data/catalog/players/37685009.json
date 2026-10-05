@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
-  "hook": "Filip Sancl v této sezóně za Banik Ostrava B: 2 starty, 43 min, 1 gól.",
-  "generated_at": "2026-09-21T09:47:42Z",
+  "hook": "Filip Sancl (Záložník) nastupuje za Banik Ostrava B. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 35,
@@ -991,14 +991,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 2,
-      "minutes": 43,
-      "goals": 1,
-      "shots": 1,
-      "sot": 1,
-      "goals_conceded": 1
-    }
+    ]
   }
 }

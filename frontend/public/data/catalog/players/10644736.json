@@ -8,16 +8,16 @@
   "position_id": 26,
   "captain": false,
   "date_of_birth": "2000-09-29",
-  "age": 25,
+  "age": 26,
   "team_id": 2727,
   "team_name": "Sparta Praha",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Santiago Eneme v této sezóně za Sparta Praha: 6 startů, 224 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Santiago Eneme (Záložník) nastupuje za Sparta Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 47,
@@ -1345,13 +1345,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 6,
-      "lineups": 1,
-      "minutes": 224,
-      "shots": 5,
-      "goals_conceded": 2
-    }
+    ]
   }
 }

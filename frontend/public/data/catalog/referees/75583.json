@@ -6,8 +6,8 @@
   "country": "Czech Republic",
   "country_id": 245,
   "date_of_birth": null,
-  "league_id": 265,
-  "league_name": "Chance Národní Liga",
+  "league_id": 262,
+  "league_name": "Chance Liga",
   "in_league": true,
   "league_matches": 4,
   "leagues": [
@@ -24,10 +24,10 @@
       "league_matches": 2
     }
   ],
-  "hook": "Jan Všetečka píská v soutěži Chance Národní Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-09-20T21:56:05Z",
+  "hook": "Jan Všetečka píská v soutěži Chance Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:03Z",
+    "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,
     "career_matches": 85,
     "seasons": [
@@ -134,11 +134,11 @@
             4
           ],
           "shots_inside": [
-            8,
+            7,
             6
           ],
           "shots_outside": [
-            6,
+            7,
             4
           ],
           "shots_blocked": [
@@ -170,16 +170,16 @@
             8
           ],
           "passes": [
-            399,
-            441
+            405,
+            447
           ],
           "dribbles": [
-            8,
-            10
+            10,
+            11
           ],
           "dribbles_ok": [
-            4,
-            3
+            6,
+            4
           ],
           "saves": [
             2,
@@ -187,19 +187,19 @@
           ],
           "tackles": [
             13,
-            17
+            18
           ],
           "tackles_won": [
             10,
             11
           ],
           "interceptions": [
-            5,
-            11
+            4,
+            9
           ],
           "duels_won": [
-            41,
-            50
+            45,
+            52
           ],
           "corners": [
             4,
@@ -223,7 +223,7 @@
           ],
           "accurate_crosses": [
             0,
-            8
+            9
           ],
           "offsides": [
             0,
@@ -9732,7 +9732,7 @@
       "all": {
         "fouls": {
           "league_avg": 24.19,
-          "rank": 26,
+          "rank": 25,
           "size": 38
         },
         "yellow": {
@@ -9892,12 +9892,12 @@
         },
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
+            "league_avg": 26.56,
             "rank": 5,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
+            "league_avg": 3.7,
             "rank": 6,
             "size": 22
           },

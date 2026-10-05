@@ -196,7 +196,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2007-09-29",
-      "age": 18,
+      "age": 19,
       "team_id": 4184,
       "team_name": "Ústí nad Labem",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png",
@@ -468,7 +468,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "2006-09-29",
-      "age": 19,
+      "age": 20,
       "team_id": 4184,
       "team_name": "Ústí nad Labem",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png",
@@ -486,7 +486,7 @@
         "name": "Opava",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732278,
@@ -498,7 +498,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732269,
+      "starting_at": "2026-10-23T15:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 512,
+        "name": "Karviná",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

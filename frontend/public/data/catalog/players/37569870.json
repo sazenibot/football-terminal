@@ -8,16 +8,16 @@
   "position_id": 24,
   "captain": false,
   "date_of_birth": "2002-09-23",
-  "age": 23,
+  "age": 24,
   "team_id": 2488,
   "team_name": "Bohemians 1905",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Tomas Frühwald v této sezóně za Bohemians 1905: 8 startů, 720 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Tomas Frühwald (Brankář) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "gk",
     "career_matches": 28,
@@ -748,13 +748,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 8,
-      "lineups": 8,
-      "minutes": 720,
-      "saves": 22,
-      "goals_conceded": 11
-    }
+    ]
   }
 }

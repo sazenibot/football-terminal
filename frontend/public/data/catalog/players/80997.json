@@ -15,9 +15,9 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "hook": "Vojtech Vorel (Brankář) nastupuje za Mladá Boleslav. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "gk",
     "career_matches": 14,
@@ -415,7 +415,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {}
+    ]
   }
 }

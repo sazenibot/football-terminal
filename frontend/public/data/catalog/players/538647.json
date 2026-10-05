@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Vaclav Drchal v této sezóně za Pardubice: 8 startů, 438 min, 2 góly, 1 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Vaclav Drchal (Útočník) nastupuje za Pardubice. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 122,
@@ -106,7 +106,8 @@
           "g": 1,
           "sh": 4,
           "sot": 2,
-          "dw": 6,
+          "dw": 7,
+          "aw": 1,
           "tk": 3,
           "gc": 1,
           "dr": 2,
@@ -3414,17 +3415,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 8,
-      "lineups": 5,
-      "minutes": 438,
-      "goals": 2,
-      "assists": 1,
-      "yellow": 1,
-      "shots": 11,
-      "sot": 4,
-      "goals_conceded": 11
-    }
+    ]
   }
 }

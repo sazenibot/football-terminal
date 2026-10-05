@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jiri Slama v této sezóně za Jablonec: 6 startů, 382 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Jiri Slama (Obránce) nastupuje za Jablonec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 90,
@@ -90,6 +90,9 @@
         "st": {
           "mn": 7,
           "sh": 1,
+          "dw": 1,
+          "aw": 1,
+          "cl": 1,
           "cr": 1,
           "g": 0,
           "a": 0,
@@ -2626,14 +2629,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 6,
-      "lineups": 4,
-      "minutes": 382,
-      "yellow": 1,
-      "shots": 6,
-      "goals_conceded": 5
-    }
+    ]
   }
 }

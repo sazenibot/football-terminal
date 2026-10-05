@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { useCatalogExplorer, useCatalogTeam } from "../lib/useData";
+import { ShotMap, TeamTrend, pitchSeasonOpts } from "../components/PitchCards";
+import { XgotBadgeChip } from "../components/XgotBadge";
+import { last5BadgeForTeam } from "../lib/xgEfficiency";
+import { useCatalogExplorer, useCatalogTeam, usePitchTeam, useXgotIndex } from "../lib/useData";
 import { CatalogNotFound } from "./CatalogNotFound";
 import { CatalogTeamExplorer } from "../components/CatalogTeamExplorer";
 import { EmptyNote, Metric, RecentList } from "../components/CatalogStats";
@@ -33,9 +36,13 @@ const FDR_NUM: Record<number, string> = {
 export function CatalogTeamPage() {
   const id = Number(useParams().id);
   const { data: team, error, missing } = useCatalogTeam(Number.isFinite(id) ? id : null);
-  const { data: explorer } = useCatalogExplorer(team?.league_id ?? null);
+  const xgotIndex = useXgotIndex();
+  const { data: explorer, missing: explorerMissing, error: explorerError } = useCatalogExplorer(
+    team?.league_id ?? null,
+  );
   const [openRecent, setOpenRecent] = useState(false);
   const [profileTab, setProfileTab] = useState<ProfileGroup>("attack");
+  const pitch = usePitchTeam(Number.isFinite(id) ? id : null);
 
   if (missing) return <CatalogNotFound kind="tým" />;
   if (error) {
@@ -57,6 +64,8 @@ export function CatalogTeamPage() {
   const profile = overlay?.profile;
   const upcoming = team.upcoming || [];
   const coach = resolveCoach(team);
+  const xgotBadge = last5BadgeForTeam(xgotIndex, team.id);
+  const pitchSeasons = pitch ? pitchSeasonOpts(pitch.season, pitch.matches) : [];
 
   return (
     <div className="max-w-6xl mx-auto py-12 px-4 pt-20 flex flex-col gap-6">
@@ -67,7 +76,10 @@ export function CatalogTeamPage() {
         {team.image && <img src={team.image} alt="" className="h-16 w-16 shrink-0 object-contain mt-1" />}
         <div className="min-w-0">
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-400/85">Profil týmu</p>
-          <h1 className="text-3xl font-bold text-white light:text-slate-900 mt-1">{team.name}</h1>
+          <h1 className="text-3xl font-bold text-white light:text-slate-900 mt-1 flex flex-wrap items-center gap-2.5">
+            {team.name}
+            {xgotBadge ? <XgotBadgeChip badge={xgotBadge} /> : null}
+          </h1>
           <p className="text-sm text-slate-400 light:text-slate-500 mt-1">
             {team.league_name}
             {overlay?.season_name ? ` · ${overlay.season_name}` : ""}
@@ -89,22 +101,6 @@ export function CatalogTeamPage() {
         <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-400">The Hook</p>
         <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1">AI herní styl</h2>
         <p className="text-[15px] leading-relaxed text-slate-200 light:text-slate-700 mt-2">{team.hook}</p>
-        {overlay?.hook_kind === "mock" && (
-          <p className="text-xs text-slate-500 mt-3">Mockup copy z návrhu. Definici Hook modelu doplníme později.</p>
-        )}
-      </section>
-
-      <SquadBlock players={team.squad} />
-
-      <section className="card p-5">
-        <div className="flex flex-wrap items-end justify-between gap-3 mb-4">
-          <div>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">FDR kalendář</p>
-            <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1">Nadcházející zápasy</h2>
-          </div>
-          <FdrLegend />
-        </div>
-        <FdrStrip items={upcoming} />
       </section>
 
       <section className="card p-5">
@@ -129,7 +125,7 @@ export function CatalogTeamPage() {
             </div>
           </div>
         ) : (
-          <EmptyNote>Tabulku doplníme, až ji SportMonks pošle pro tuhle sezónu.</EmptyNote>
+          <EmptyNote>Tabulku této sezóny zatím nemáme.</EmptyNote>
         )}
         {(overlay?.recent || []).length > 0 && (
           <div className="mt-4">
@@ -148,6 +144,30 @@ export function CatalogTeamPage() {
           </div>
         )}
       </section>
+
+      <section className="card p-5">
+        <div className="flex flex-wrap items-end justify-between gap-3 mb-4">
+          <div>
+            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">FDR kalendář</p>
+            <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1">Nadcházející zápasy</h2>
+          </div>
+          <FdrLegend />
+        </div>
+        <FdrStrip items={upcoming} />
+      </section>
+
+      {pitch ? (
+        <>
+          <TeamTrend seasons={pitchSeasons} defaultSeason={pitch.season} team={team.name} />
+          <ShotMap
+            title="Shotmapa týmu"
+            lead="Branka nahoře. Barva říká, jestli šlo o střelu ze hry, nebo ze standardky. Kroužek je gól, světlejší tečka mimo bránu."
+            seasons={pitchSeasons}
+            defaultSeason={pitch.season}
+            shotsOf={(m) => m.shots}
+          />
+        </>
+      ) : null}
 
       <section className="card p-5">
         <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">Profil zápasu</p>
@@ -177,7 +197,13 @@ export function CatalogTeamPage() {
         )}
       </section>
 
-      <CatalogTeamExplorer explorer={explorer} defaultTeamId={team.id} />
+      <CatalogTeamExplorer
+        explorer={explorer}
+        defaultTeamId={team.id}
+        loading={!explorer && !explorerMissing && !explorerError}
+      />
+
+      <SquadBlock players={team.squad} />
     </div>
   );
 }
@@ -288,7 +314,7 @@ function coachInitials(name: string): string {
 
 function CoachCard({ coach }: { coach?: CatalogTeamCoach | null }) {
   if (!coach?.name) {
-    return <p className="text-sm text-slate-500 self-center">Hlavního trenéra SportMonks u tohoto klubu neposlal.</p>;
+    return <p className="text-sm text-slate-500 self-center">Hlavního trenéra u tohoto klubu zatím nemáme.</p>;
   }
   const photo = coach.image && !coach.image.includes("placeholder") ? coach.image : null;
   const days = daysSince(coach.start);
@@ -457,7 +483,7 @@ function SquadGroup({ label, players }: { label: string; players: CatalogSquadPl
                 {p.captain ? <span className="ml-1.5 text-[10px] text-amber-400">C</span> : null}
               </p>
               <span className="text-[11px] tabular-nums text-slate-500">
-                {p.season?.appearances != null ? `${p.season.appearances} z` : "0 z"}
+                {p.season?.appearances != null ? `${p.season.appearances} z` : "—"}
               </span>
             </Link>
           </li>

@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Antonin Rusek v této sezóně za Jablonec: 6 startů, 340 min, 1 gól.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Antonin Rusek (Útočník) nastupuje za Jablonec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 60,
@@ -1739,15 +1739,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 6,
-      "lineups": 4,
-      "minutes": 340,
-      "goals": 1,
-      "shots": 6,
-      "sot": 2,
-      "goals_conceded": 3
-    }
+    ]
   }
 }

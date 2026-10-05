@@ -60,7 +60,7 @@
       "position_id": 24,
       "captain": false,
       "date_of_birth": "2005-09-30",
-      "age": 20,
+      "age": 21,
       "team_id": 7980,
       "team_name": "Atlético de Madrid",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png",
@@ -537,7 +537,7 @@
         "name": "Deportivo Alavés",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732659,
@@ -551,5 +551,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:48Z"
+  "generated_at": "2026-10-04T10:46:32Z"
 }

@@ -91,9 +91,11 @@ function sideLabel(team: string, season: SeasonKey, seasons: CatalogExplorer["se
 export function CatalogTeamExplorer({
   explorer,
   defaultTeamId,
+  loading = false,
 }: {
   explorer: CatalogExplorer | null;
   defaultTeamId: number;
+  loading?: boolean;
 }) {
   const teams = explorer?.teams || [];
   const seasons = explorer?.seasons || [];
@@ -147,12 +149,22 @@ export function CatalogTeamExplorer({
   const nameTeamA = recA ? sideLabel(recA.name, seasonA, seasons, venueA, halfA) : "Tým A";
   const nameTeamB = recB ? sideLabel(recB.name, seasonB, seasons, venueB, halfB) : "Tým B";
 
+  if (loading) {
+    return (
+      <section className="card p-5 mb-6">
+        <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">Pro Data Explorer</p>
+        <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1">Porovnání</h2>
+        <p className="text-sm text-slate-400">Načítám srovnání týmů…</p>
+      </section>
+    );
+  }
+
   if (!explorer || teams.length === 0) {
     return (
       <section className="card p-5 mb-6">
         <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">Pro Data Explorer</p>
         <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1">Porovnání</h2>
-        <EmptyNote>Explorer ligy ještě není spočtený. Objeví se po overlay ingestu.</EmptyNote>
+        <EmptyNote>Srovnání týmů pro tuhle ligu zatím nemáme.</EmptyNote>
       </section>
     );
   }

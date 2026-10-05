@@ -8,12 +8,12 @@
   "position_id": 25,
   "captain": false,
   "date_of_birth": "1996-10-02",
-  "age": 29,
+  "age": 30,
   "team_id": 3887,
   "team_name": "Táborsko",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Michal Rezac (Obránce) nastupuje za Táborsko. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

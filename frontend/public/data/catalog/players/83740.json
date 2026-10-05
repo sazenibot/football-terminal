@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Michal Fukala v této sezóně za Zlín: 8 startů, 581 min, 1 gól.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Michal Fukala (Obránce) nastupuje za Zlín. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 85,
@@ -100,7 +100,7 @@
           "dw": 3,
           "tk": 3,
           "it": 2,
-          "cl": 3,
+          "cl": 2,
           "kp": 1,
           "g": 0,
           "a": 0,
@@ -2456,16 +2456,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 8,
-      "lineups": 8,
-      "minutes": 581,
-      "goals": 1,
-      "yellow": 1,
-      "shots": 10,
-      "sot": 3,
-      "goals_conceded": 15
-    }
+    ]
   }
 }

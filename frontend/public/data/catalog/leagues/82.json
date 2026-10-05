@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T09:48:25Z",
+  "generated_at": "2026-10-04T10:46:13Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -960,15 +960,6 @@
       "number": 22
     },
     {
-      "id": 155136,
-      "name": "Dawid Kownacki",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/0/155136.png",
-      "team_id": 82,
-      "team_name": "Werder Bremen",
-      "position": "Útočník",
-      "number": 21
-    },
-    {
       "id": 33685,
       "name": "Dayot Upamecano",
       "image": "https://cdn.sportmonks.com/images/soccer/players/21/33685.png",
@@ -1186,7 +1177,7 @@
     },
     {
       "id": 37771728,
-      "name": "Ertugrul Yigit",
+      "name": "Ertugrul Yigit ",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 3319,
       "team_name": "VfB Stuttgart",
@@ -1807,7 +1798,7 @@
     },
     {
       "id": 37650895,
-      "name": "Jarzinho Malanga",
+      "name": "Jarzinho Malanga ",
       "image": "https://cdn.sportmonks.com/images/soccer/players/15/37650895.png",
       "team_id": 3319,
       "team_name": "VfB Stuttgart",
@@ -3076,7 +3067,7 @@
     },
     {
       "id": 37650883,
-      "name": "Maximilian Herwerth",
+      "name": "Maximilian Herwerth ",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "team_id": 3319,
       "team_name": "VfB Stuttgart",
@@ -4832,14 +4823,6 @@
   ],
   "referees": [
     {
-      "id": 80234,
-      "name": "Daniel Siebert",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 5
-    },
-    {
       "id": 926,
       "name": "Sven Jablonski",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4858,6 +4841,14 @@
     {
       "id": 16993,
       "name": "Christian Dingert",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
+      "id": 80234,
+      "name": "Daniel Siebert",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4904,24 +4895,16 @@
       "league_matches": 3
     },
     {
-      "id": 15402,
-      "name": "Harm Osmers",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 15399,
-      "name": "Martin Petersen",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
       "id": 12145,
       "name": "Matthias Jöllenbeck",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
+      "id": 15419,
+      "name": "Patrick Ittrich",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -4968,6 +4951,14 @@
       "league_matches": 3
     },
     {
+      "id": 12075,
+      "name": "Tobias Reichel",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
       "id": 25431,
       "name": "Tobias Welz",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -4992,16 +4983,24 @@
       "league_matches": 2
     },
     {
-      "id": 15419,
-      "name": "Patrick Ittrich",
+      "id": 17356,
+      "name": "Frank Willenborg",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
       "league_matches": 2
     },
     {
-      "id": 12075,
-      "name": "Tobias Reichel",
+      "id": 15402,
+      "name": "Harm Osmers",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Germany",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 15399,
+      "name": "Martin Petersen",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Germany",
       "in_league": true,
@@ -5014,14 +5013,6 @@
       "country": "Germany",
       "in_league": true,
       "league_matches": 2
-    },
-    {
-      "id": 17356,
-      "name": "Frank Willenborg",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Germany",
-      "in_league": true,
-      "league_matches": 1
     },
     {
       "id": 12037,

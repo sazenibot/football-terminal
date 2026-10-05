@@ -502,7 +502,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "2001-09-26",
-      "age": 24,
+      "age": 25,
       "team_id": 18,
       "team_name": "Chelsea",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png",
@@ -537,7 +537,7 @@
         "name": "AFC Bournemouth",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19722140,
@@ -549,7 +549,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19722131,
+      "starting_at": "2026-10-24T16:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 6,
+        "name": "Tottenham Hotspur",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:59Z"
+  "generated_at": "2026-10-04T10:45:54Z"
 }

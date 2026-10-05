@@ -24,6 +24,74 @@ html.light body {
   color: #14171f;
 }
 
+.hp-hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(1100px 420px at 12% -20%, rgba(16, 185, 129, 0.28), transparent 55%),
+    radial-gradient(700px 280px at 92% 0%, rgba(251, 191, 36, 0.14), transparent 50%),
+    linear-gradient(165deg, #123528 0%, #0d1a14 42%, #0b0e14 100%);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+}
+
+.hp-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 44px,
+    rgba(255, 255, 255, 0.035) 44px 46px
+  );
+  pointer-events: none;
+}
+
+html.light .hp-hero {
+  background:
+    radial-gradient(1100px 420px at 12% -20%, rgba(16, 185, 129, 0.2), transparent 55%),
+    linear-gradient(165deg, #ecfdf5 0%, #f4f5f7 72%);
+  border-color: #bbf7d0;
+}
+
+.card.hp-center {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(720px 240px at 8% -30%, rgba(244, 63, 94, 0.28), transparent 55%),
+    linear-gradient(165deg, #4a151c 0%, #12161f 62%);
+  border-color: rgba(244, 63, 94, 0.45);
+}
+html.light .card.hp-center {
+  background:
+    radial-gradient(720px 240px at 8% -30%, rgba(244, 63, 94, 0.16), transparent 55%),
+    linear-gradient(165deg, #fff1f2 0%, #ffffff 70%);
+  border-color: #fecdd3;
+}
+
+.hp-catalog {
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  background: #10141c;
+  border: 1px solid #2a3142;
+}
+html.light .hp-catalog {
+  background: #eef2f7;
+  border-color: #d5dbe6;
+}
+
+.card.hp-catalog-tile {
+  background: #12161f;
+  border: 1px solid #3b4560;
+}
+html.light .card.hp-catalog-tile {
+  background: #ffffff;
+  border-color: #c9d2e3;
+}
+.card.hp-catalog-tile:hover {
+  border-color: #7dd3fc;
+}
+
 .card {
   background-color: #12161f;
   border: 1px solid #232837;

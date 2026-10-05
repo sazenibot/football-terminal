@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T09:48:48Z",
+  "generated_at": "2026-10-04T10:46:32Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -5348,15 +5348,6 @@
       "number": 5
     },
     {
-      "id": 37595890,
-      "name": "Álex Primo",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/18/37595890.png",
-      "team_id": 3457,
-      "team_name": "Levante",
-      "position": "Brankář",
-      "number": null
-    },
-    {
       "id": 187110,
       "name": "Álex Remiro",
       "image": "https://cdn.sportmonks.com/images/soccer/players/6/187110.png",
@@ -5553,19 +5544,11 @@
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
-      "league_matches": 5
+      "league_matches": 6
     },
     {
-      "id": 50680,
-      "name": "Alejandro Quintero González",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 5
-    },
-    {
-      "id": 22618,
-      "name": "César Soto Grado",
+      "id": 13963,
+      "name": "Isidro Díaz de Mera Escuderos",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
@@ -5580,16 +5563,16 @@
       "league_matches": 4
     },
     {
-      "id": 13604,
-      "name": "Francisco José Hernández Maeso",
+      "id": 50680,
+      "name": "Alejandro Quintero González",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
       "league_matches": 4
     },
     {
-      "id": 13963,
-      "name": "Isidro Díaz de Mera Escuderos",
+      "id": 22618,
+      "name": "César Soto Grado",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
@@ -5620,6 +5603,22 @@
       "league_matches": 4
     },
     {
+      "id": 21086,
+      "name": "Miguel Sesma Espinosa",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
+      "id": 20636,
+      "name": "Miguel Ángel Ortiz Arias",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 4
+    },
+    {
       "id": 18637,
       "name": "Ricardo De Burgos Bengoetxea",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
@@ -5636,32 +5635,16 @@
       "league_matches": 3
     },
     {
+      "id": 13604,
+      "name": "Francisco José Hernández Maeso",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 3
+    },
+    {
       "id": 838433,
       "name": "Jesús Gil Manzano",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 18771,
-      "name": "José María Sánchez Martínez",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 21086,
-      "name": "Miguel Sesma Espinosa",
-      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
-      "country": "Spain",
-      "in_league": true,
-      "league_matches": 3
-    },
-    {
-      "id": 20636,
-      "name": "Miguel Ángel Ortiz Arias",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,
@@ -5694,6 +5677,14 @@
     {
       "id": 23029,
       "name": "José Luis Guzmán Mansilla",
+      "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
+      "country": "Spain",
+      "in_league": true,
+      "league_matches": 2
+    },
+    {
+      "id": 18771,
+      "name": "José María Sánchez Martínez",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "country": "Spain",
       "in_league": true,

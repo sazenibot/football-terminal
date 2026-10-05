@@ -6,8 +6,8 @@
   "country": "Czech Republic",
   "country_id": 245,
   "date_of_birth": null,
-  "league_id": 265,
-  "league_name": "Chance Národní Liga",
+  "league_id": 262,
+  "league_name": "Chance Liga",
   "in_league": true,
   "league_matches": 4,
   "leagues": [
@@ -24,10 +24,10 @@
       "league_matches": 2
     }
   ],
-  "hook": "Dominik Starý píská v soutěži Chance Národní Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-09-20T21:56:05Z",
+  "hook": "Dominik Starý píská v soutěži Chance Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:03Z",
+    "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,
     "career_matches": 89,
     "seasons": [
@@ -135,11 +135,11 @@
           ],
           "shots_inside": [
             6,
-            15
+            16
           ],
           "shots_outside": [
             4,
-            6
+            5
           ],
           "shots_blocked": [
             1,
@@ -155,11 +155,11 @@
           ],
           "big_chances": [
             3,
-            1
+            2
           ],
           "big_chances_missed": [
             2,
-            1
+            2
           ],
           "assists": [
             1,
@@ -170,12 +170,12 @@
             18
           ],
           "passes": [
-            464,
-            394
+            468,
+            402
           ],
           "dribbles": [
-            16,
-            8
+            18,
+            11
           ],
           "dribbles_ok": [
             8,
@@ -186,8 +186,8 @@
             4
           ],
           "tackles": [
-            14,
-            17
+            16,
+            19
           ],
           "tackles_won": [
             7,
@@ -198,8 +198,8 @@
             8
           ],
           "duels_won": [
-            38,
-            38
+            43,
+            42
           ],
           "corners": [
             8,
@@ -215,7 +215,7 @@
           ],
           "goal_kicks": [
             12,
-            13
+            14
           ],
           "crosses": [
             11,
@@ -10268,7 +10268,7 @@
       "all": {
         "fouls": {
           "league_avg": 24.19,
-          "rank": 22,
+          "rank": 21,
           "size": 38
         },
         "yellow": {
@@ -10428,12 +10428,12 @@
         },
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
-            "rank": 16,
+            "league_avg": 26.56,
+            "rank": 15,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
+            "league_avg": 3.7,
             "rank": 12,
             "size": 22
           },

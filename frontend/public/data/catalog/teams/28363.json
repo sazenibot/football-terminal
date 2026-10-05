@@ -111,7 +111,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2006-10-03",
-      "age": 19,
+      "age": 20,
       "team_id": 28363,
       "team_name": "Slavia Praha B",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png",
@@ -128,7 +128,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "2006-10-03",
-      "age": 19,
+      "age": 20,
       "team_id": 28363,
       "team_name": "Slavia Praha B",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png",
@@ -690,7 +690,7 @@
         "name": "Vlašim",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732275,
@@ -702,7 +702,29 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732274,
+      "starting_at": "2026-10-25T09:15:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 6865,
+        "name": "Prostějov",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png"
+      },
+      "has_match_page": false
+    },
+    {
+      "fixture_id": 19732264,
+      "starting_at": "2026-10-30T16:30:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 512,
+        "name": "Karviná",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

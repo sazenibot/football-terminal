@@ -255,23 +255,6 @@
       "league_name": "Premier League"
     },
     {
-      "id": 202531,
-      "name": "Abdülkadir Ömür",
-      "common_name": "A. Ömür",
-      "image": "https://cdn.sportmonks.com/images/soccer/players/3/202531.png",
-      "number": null,
-      "position": "Záložník",
-      "position_id": 26,
-      "captain": false,
-      "date_of_birth": "1999-06-25",
-      "age": 27,
-      "team_id": 22,
-      "team_name": "Hull City",
-      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
-      "league_id": 8,
-      "league_name": "Premier League"
-    },
-    {
       "id": 37664291,
       "name": "Christos Mouzakitis",
       "common_name": "C. Mouzakitis",
@@ -510,6 +493,23 @@
       "league_name": "Premier League"
     },
     {
+      "id": 202531,
+      "name": "Abdülkadir Ömür",
+      "common_name": "A. Ömür",
+      "image": "https://cdn.sportmonks.com/images/soccer/players/3/202531.png",
+      "number": null,
+      "position": "Útočník",
+      "position_id": 27,
+      "captain": false,
+      "date_of_birth": "1999-06-25",
+      "age": 27,
+      "team_id": 22,
+      "team_name": "Hull City",
+      "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
+      "league_id": 8,
+      "league_name": "Premier League"
+    },
+    {
       "id": 37645082,
       "name": "Ilyas Ansah",
       "common_name": "I. Ansah",
@@ -553,7 +553,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "1999-09-27",
-      "age": 26,
+      "age": 27,
       "team_id": 22,
       "team_name": "Hull City",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png",
@@ -622,7 +622,7 @@
         "name": "Everton",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19722139,
@@ -636,5 +636,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:59Z"
+  "generated_at": "2026-10-04T10:45:54Z"
 }

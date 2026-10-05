@@ -520,7 +520,7 @@
         "name": "Osasuna",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732662,
@@ -534,5 +534,5 @@
       "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:48Z"
+  "generated_at": "2026-10-04T10:46:32Z"
 }

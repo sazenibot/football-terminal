@@ -128,7 +128,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "1984-10-02",
-      "age": 41,
+      "age": 42,
       "team_id": 512,
       "team_name": "Karviná",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png",
@@ -520,7 +520,7 @@
         "name": "Táborsko",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/15/3887.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732280,
@@ -532,7 +532,29 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/11/3531.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732269,
+      "starting_at": "2026-10-23T15:30:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 4184,
+        "name": "Ústí nad Labem",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/4184.png"
+      },
+      "has_match_page": false
+    },
+    {
+      "fixture_id": 19732264,
+      "starting_at": "2026-10-30T16:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 28363,
+        "name": "Slavia Praha B",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/28363.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:42Z"
+  "generated_at": "2026-10-04T10:45:39Z"
 }

@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Ro Abajas v této sezóně za Hradec Králové: 1 start, 14 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Ro Abajas (Obránce) nastupuje za Hradec Králové. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 1,
@@ -66,11 +66,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 1,
-      "minutes": 14,
-      "goals_conceded": 1
-    }
+    ]
   }
 }

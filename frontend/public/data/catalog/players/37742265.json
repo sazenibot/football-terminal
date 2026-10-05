@@ -14,12 +14,12 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Peter Kareem v této sezóně za Bohemians 1905: 5 startů, 337 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Peter Kareem (Obránce) nastupuje za Bohemians 1905. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
-    "role": "def",
+    "role": "mid",
     "career_matches": 39,
     "clubs": [
       {
@@ -1158,15 +1158,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 5,
-      "lineups": 3,
-      "minutes": 337,
-      "yellow": 1,
-      "shots": 1,
-      "sot": 1,
-      "goals_conceded": 7
-    }
+    ]
   }
 }

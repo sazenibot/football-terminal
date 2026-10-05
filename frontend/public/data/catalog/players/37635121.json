@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Neil Glossoa v této sezóně za SK Artis Brno: 9 startů, 671 min, 2 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Neil Glossoa (Obránce) nastupuje za SK Artis Brno. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 9,
@@ -57,9 +57,9 @@
           "dw": 6,
           "tk": 2,
           "it": 1,
-          "cl": 6,
+          "cl": 7,
           "dr": 5,
-          "cr": 2,
+          "cr": 3,
           "g": 0,
           "a": 0,
           "y": 0,
@@ -308,16 +308,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 9,
-      "minutes": 671,
-      "assists": 2,
-      "yellow": 3,
-      "shots": 3,
-      "saves": 5,
-      "goals_conceded": 17
-    }
+    ]
   }
 }

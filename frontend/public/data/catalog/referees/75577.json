@@ -6,8 +6,8 @@
   "country": "Czech Republic",
   "country_id": 245,
   "date_of_birth": null,
-  "league_id": 265,
-  "league_name": "Chance Národní Liga",
+  "league_id": 262,
+  "league_name": "Chance Liga",
   "in_league": true,
   "league_matches": 5,
   "leagues": [
@@ -15,7 +15,7 @@
       "id": 262,
       "name": "Chance Liga",
       "in_league": true,
-      "league_matches": 6
+      "league_matches": 7
     },
     {
       "id": 265,
@@ -24,117 +24,10 @@
       "league_matches": 1
     }
   ],
-  "hook": "Stanislav Volek píská v soutěži Chance Národní Liga jako hlavní. V této sezóně 5 zápasů, 4 žlutých na zápas.",
-  "generated_at": "2026-09-20T21:56:05Z",
+  "hook": "Stanislav Volek píská v soutěži Chance Liga jako hlavní. V této sezóně 5 zápasů, 4 žlutých na zápas.",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
-    "season": {
-      "matches": 5,
-      "fouls_avg": 24.8,
-      "yellow_avg": 4,
-      "red_avg": 0,
-      "penalties_avg": 0.6
-    },
-    "season_raw": {
-      "Penalties": {
-        "all": {
-          "count": 3,
-          "average": 0.6
-        },
-        "home": {
-          "count": 3,
-          "average": 0.6,
-          "percentage": 100
-        },
-        "away": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        }
-      },
-      "Fouls": {
-        "count": 124,
-        "average": 24.8
-      },
-      "Redcards": {
-        "all": {
-          "count": 0,
-          "average": 0,
-          "on_bench": 0,
-          "for_coach": 0,
-          "on_pitch": 0
-        },
-        "home": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        },
-        "away": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        }
-      },
-      "Yellowcards": {
-        "all": {
-          "count": 20,
-          "average": 4,
-          "on_bench": 0,
-          "for_coach": 0,
-          "on_pitch": 20
-        },
-        "home": {
-          "count": 8,
-          "average": 1.6,
-          "percentage": 40
-        },
-        "away": {
-          "count": 12,
-          "average": 2.4,
-          "percentage": 60
-        }
-      },
-      "Yellowred Cards": {
-        "all": {
-          "count": 0,
-          "average": 0,
-          "on_bench": 0,
-          "for_coach": 0,
-          "on_pitch": 0
-        },
-        "home": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        },
-        "away": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        }
-      },
-      "Season Matches": {
-        "count": 5
-      },
-      "VAR Moments": {
-        "count": 4,
-        "average": 0.8
-      }
-    },
-    "career": {
-      "seasons": 9,
-      "matches": 88,
-      "yellow": 384,
-      "red": 14,
-      "yellow_avg": 4.36
-    },
-    "league_context": {
-      "fouls_per_match": 24.8,
-      "yellow_per_match": 4.16,
-      "red_per_match": 0.2,
-      "matches_sampled": 25
-    },
-    "recent": [],
+    "generated_at": "2026-10-05T09:34:39Z",
     "current_season_id": 27984,
     "career_matches": 57,
     "seasons": [
@@ -220,7 +113,7 @@
           ],
           "yellow": [
             1,
-            3
+            4
           ],
           "penalties": [
             1,
@@ -260,11 +153,11 @@
           ],
           "big_chances": [
             1,
-            4
+            3
           ],
           "big_chances_missed": [
             1,
-            3
+            2
           ],
           "assists": [
             0,
@@ -275,12 +168,12 @@
             9
           ],
           "passes": [
-            525,
-            298
+            526,
+            301
           ],
           "dribbles": [
-            13,
-            8
+            12,
+            6
           ],
           "dribbles_ok": [
             7,
@@ -291,7 +184,7 @@
             3
           ],
           "tackles": [
-            7,
+            6,
             14
           ],
           "tackles_won": [
@@ -299,11 +192,11 @@
             6
           ],
           "interceptions": [
-            8,
+            7,
             7
           ],
           "duels_won": [
-            35,
+            33,
             55
           ],
           "corners": [
@@ -323,12 +216,12 @@
             13
           ],
           "crosses": [
-            39,
-            12
+            37,
+            10
           ],
           "accurate_crosses": [
-            14,
-            2
+            12,
+            3
           ],
           "offsides": [
             0,
@@ -6969,13 +6862,13 @@
         },
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
-            "rank": 15,
+            "league_avg": 26.56,
+            "rank": 14,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
-            "rank": 9,
+            "league_avg": 3.7,
+            "rank": 8,
             "size": 22
           },
           "red": {
@@ -7000,6 +6893,121 @@
           }
         }
       }
-    }
+    },
+    "season": {
+      "matches": 5,
+      "fouls_avg": 24.8,
+      "yellow_avg": 4,
+      "red_avg": 0,
+      "penalties_avg": 0.6
+    },
+    "season_raw": {
+      "Penalties": {
+        "all": {
+          "count": 3,
+          "average": 0.6
+        },
+        "home": {
+          "count": 3,
+          "average": 0.6,
+          "percentage": 100
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 124,
+        "average": 24.8
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 20,
+          "average": 4,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 20
+        },
+        "home": {
+          "count": 8,
+          "average": 1.6,
+          "percentage": 40
+        },
+        "away": {
+          "count": 12,
+          "average": 2.4,
+          "percentage": 60
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 5
+      },
+      "VAR Moments": {
+        "count": 4,
+        "average": 0.8
+      }
+    },
+    "career": {
+      "seasons": 9,
+      "matches": 88,
+      "yellow": 384,
+      "red": 14,
+      "yellow_avg": 4.36
+    },
+    "league_context": {
+      "fouls_per_match": 27.0,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.4,
+      "matches_sampled": 25
+    },
+    "recent": [
+      {
+        "fixture_id": 19725038,
+        "starting_at": "2026-09-20T16:00:00Z",
+        "home": "Slavia Praha",
+        "away": "Viktoria Plzeň",
+        "has_match_page": true
+      }
+    ]
   }
 }

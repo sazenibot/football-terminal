@@ -267,7 +267,7 @@ export function SidelinedSection({
   return (
     <Section
       title="10. Absence hráčů (zranění / tresty)"
-      note="'Možný návrat' = SportMonks eviduje očekávaný konec absence (end_date) před termínem tohoto zápasu — orientační odhad, ne garance. 'Chybí' = konec absence není znám nebo je až po termínu zápasu. Data se doplňují postupně, jak se blíží zápas."
+      note="'Možný návrat' = evidujeme očekávaný konec absence před termínem tohoto zápasu — orientační odhad, ne garance. 'Chybí' = konec absence není znám nebo je až po termínu zápasu. Data se doplňují postupně, jak se blíží zápas."
     >
       <div className="grid md:grid-cols-2 gap-6">
         <div>

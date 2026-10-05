@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Pavel Kacor v této sezóně za Slavia Praha: 6 startů, 198 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Pavel Kacor (Záložník) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 24,
@@ -700,13 +700,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 6,
-      "lineups": 1,
-      "minutes": 198,
-      "shots": 4,
-      "goals_conceded": 1
-    }
+    ]
   }
 }

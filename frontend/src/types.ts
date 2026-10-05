@@ -308,6 +308,7 @@ export interface CatalogRefereeCard {
   country?: string | null;
   in_league: boolean;
   league_matches?: number;
+  season_matches?: number;
 }
 
 export interface CatalogHub {

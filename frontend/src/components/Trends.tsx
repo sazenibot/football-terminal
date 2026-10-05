@@ -1,5 +1,6 @@
 import { useState } from "react";
-import type { TrendItem } from "../types";
+import { buildH2hTrends, type H2hScope } from "../lib/h2hTrends";
+import type { H2HMatch, TeamBrief, TrendItem } from "../types";
 import { Pill, Section } from "./ui";
 
 type Threshold = 100 | 80 | 60 | 0;
@@ -75,7 +76,7 @@ export function TrendsTeamSection({
   return (
     <Section
       title="5. Trendy — posledních 5 ligových zápasů"
-      note="Malý vzorek (n=5). Kurz je desetinný kurz z Chance.cz (přes PulseScore), pokud ho ingest k trhu našel. Není to doporučení sázky."
+      note="Malý vzorek (n=5). Kurz je desetinný kurz z Chance.cz, pokud ho k trhu máme. Není to doporučení sázky."
     >
       <ThresholdPills threshold={threshold} setThreshold={setThreshold} />
       <div className="grid grid-cols-[1fr_3rem_3.25rem_3.5rem] text-[11px] uppercase tracking-wide text-slate-500 px-0 mb-1">
@@ -99,25 +100,45 @@ export function TrendsTeamSection({
 }
 
 export function TrendsH2HSection({
+  h2h,
+  home,
+  away,
   last3,
   last5,
 }: {
+  h2h: H2HMatch[];
+  home: TeamBrief;
+  away: TeamBrief;
   last3: TrendItem[];
   last5: TrendItem[];
 }) {
-  const [window, setWindow] = useState<"3" | "5">("5");
+  const [scope, setScope] = useState<H2hScope>("match");
+  const [span, setSpan] = useState<"3" | "5">("5");
   const [threshold, setThreshold] = useState<Threshold>(80);
-  const items = window === "3" ? last3 : last5;
+  const stored = span === "3" ? last3 : last5;
+  const items = buildH2hTrends(h2h, home, away, scope, span === "3" ? 3 : 5, stored);
   return (
     <Section
       title="6. Trendy — vzájemné zápasy"
-      note="Statement-level fakta (BTTS, over/under, karty…) jsou nezávislé na straně. Kurz je stejný trh k nadcházejícímu zápasu, ne k historickým H2H."
+      note="Zápas = oba týmy dohromady. Tým = jen statistiky tohoto mužstva, ať v historickém duelu hrálo doma nebo venku. Kurz je k nadcházejícímu zápasu."
     >
+      <p className="text-sm text-slate-400 light:text-slate-500 mb-3">Pro koho trendy platí</p>
+      <div className="flex gap-2 mb-3 flex-wrap">
+        <Pill active={scope === "match"} onClick={() => setScope("match")}>
+          Zápas (oba týmy)
+        </Pill>
+        <Pill active={scope === "home"} onClick={() => setScope("home")}>
+          {home.name} · domácí
+        </Pill>
+        <Pill active={scope === "away"} onClick={() => setScope("away")}>
+          {away.name} · hosté
+        </Pill>
+      </div>
       <div className="flex gap-2 mb-3">
-        <Pill active={window === "3"} onClick={() => setWindow("3")}>
+        <Pill active={span === "3"} onClick={() => setSpan("3")}>
           Poslední 3 vzájemné
         </Pill>
-        <Pill active={window === "5"} onClick={() => setWindow("5")}>
+        <Pill active={span === "5"} onClick={() => setSpan("5")}>
           Posledních 5 vzájemných
         </Pill>
       </div>

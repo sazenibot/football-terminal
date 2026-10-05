@@ -502,7 +502,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "1997-09-30",
-      "age": 28,
+      "age": 29,
       "team_id": 9818,
       "team_name": "Racing Santander",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/9818.png",
@@ -588,7 +588,7 @@
         "name": "Valencia",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/22/214.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19732656,
@@ -600,7 +600,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/11/459.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19732647,
+      "starting_at": "2026-10-24T14:15:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 528,
+        "name": "Espanyol",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:48Z"
+  "generated_at": "2026-10-04T10:46:32Z"
 }

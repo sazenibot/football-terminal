@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Daniel Trubac v této sezóně za Hradec Králové: 9 startů, 589 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Daniel Trubac (Záložník) nastupuje za Hradec Králové. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 131,
@@ -89,7 +89,14 @@
         "ob": 3,
         "st": {
           "mn": 90,
+          "sh": 3,
+          "sot": 1,
+          "dw": 3,
+          "tk": 1,
           "gc": 2,
+          "kp": 3,
+          "dr": 5,
+          "cr": 10,
           "g": 0,
           "a": 0,
           "y": 0,
@@ -3814,14 +3821,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 7,
-      "minutes": 589,
-      "shots": 9,
-      "sot": 2,
-      "goals_conceded": 7
-    }
+    ]
   }
 }

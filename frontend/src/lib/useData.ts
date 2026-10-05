@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import type { PitchCatalogFile } from "../components/PitchCards";
+import type { XgotIndex } from "./xgEfficiency";
 import type {
   CatalogExplorer,
   CatalogHub,
@@ -178,6 +180,51 @@ export function useCatalogPlayerIndex(leagueId: number | null) {
 
 export function useCatalogReferee(id: number | null) {
   return useCatalogEntity<CatalogRefereeDetail>("referees", id);
+}
+
+export function useXgotIndex() {
+  const [data, setData] = useState<XgotIndex | null>(null);
+
+  useEffect(() => {
+    fetchJson<XgotIndex>("/data/lab/xgot-efficiency.json")
+      .then(setData)
+      .catch(() => setData(null));
+  }, []);
+
+  return data;
+}
+
+export function usePitchTeam(id: number | null) {
+  return useOptionalJson<PitchCatalogFile>(id ? `/data/catalog/pitch/teams/${id}.json` : null);
+}
+
+export function usePitchPlayer(id: number | null) {
+  return useOptionalJson<PitchCatalogFile>(id ? `/data/catalog/pitch/players/${id}.json` : null);
+}
+
+function useOptionalJson<T>(url: string | null) {
+  const [data, setData] = useState<T | null>(null);
+
+  useEffect(() => {
+    if (!url) {
+      setData(null);
+      return;
+    }
+    let cancelled = false;
+    setData(null);
+    fetchJson<T>(url)
+      .then((payload) => {
+        if (!cancelled) setData(payload);
+      })
+      .catch(() => {
+        if (!cancelled) setData(null);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [url]);
+
+  return data;
 }
 
 export function isStale(generatedAt: string | undefined, hours: number): boolean {

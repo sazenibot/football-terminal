@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Soliu Afolabi v této sezóně za Slovan Liberec: 4 starty, 125 min, 1 gól.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Soliu Afolabi (Záložník) nastupuje za Slovan Liberec. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 37,
@@ -1096,16 +1096,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 4,
-      "lineups": 1,
-      "minutes": 125,
-      "goals": 1,
-      "yellow": 2,
-      "shots": 5,
-      "sot": 3,
-      "goals_conceded": 1
-    }
+    ]
   }
 }

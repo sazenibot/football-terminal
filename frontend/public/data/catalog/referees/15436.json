@@ -6,8 +6,8 @@
   "country": "Czech Republic",
   "country_id": 245,
   "date_of_birth": null,
-  "league_id": 265,
-  "league_name": "Chance Národní Liga",
+  "league_id": 262,
+  "league_name": "Chance Liga",
   "in_league": true,
   "league_matches": 4,
   "leagues": [
@@ -21,116 +21,13 @@
       "id": 265,
       "name": "Chance Národní Liga",
       "in_league": true,
-      "league_matches": 5
+      "league_matches": 2
     }
   ],
-  "hook": "Jan Machálek píská v soutěži Chance Národní Liga jako hlavní. V této sezóně 4 zápasů, 4 žlutých na zápas.",
-  "generated_at": "2026-09-20T21:56:05Z",
+  "hook": "Jan Machálek píská v soutěži Chance Liga jako hlavní. V této sezóně 4 zápasů, 4 žlutých na zápas.",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
-    "season": {
-      "matches": 4,
-      "fouls_avg": 30.75,
-      "yellow_avg": 4,
-      "red_avg": 0.25,
-      "penalties_avg": 0.25
-    },
-    "season_raw": {
-      "Penalties": {
-        "all": {
-          "count": 1,
-          "average": 0.25
-        },
-        "home": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        },
-        "away": {
-          "count": 1,
-          "average": 0.25,
-          "percentage": 100
-        }
-      },
-      "Fouls": {
-        "count": 123,
-        "average": 30.75
-      },
-      "Redcards": {
-        "all": {
-          "count": 1,
-          "average": 0.25,
-          "on_bench": 0,
-          "for_coach": 0,
-          "on_pitch": 1
-        },
-        "home": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        },
-        "away": {
-          "count": 1,
-          "average": 0.25,
-          "percentage": 100
-        }
-      },
-      "Yellowcards": {
-        "all": {
-          "count": 16,
-          "average": 4,
-          "on_bench": 0,
-          "for_coach": 0,
-          "on_pitch": 16
-        },
-        "home": {
-          "count": 9,
-          "average": 2.25,
-          "percentage": 56.25
-        },
-        "away": {
-          "count": 7,
-          "average": 1.75,
-          "percentage": 43.75
-        }
-      },
-      "Yellowred Cards": {
-        "all": {
-          "count": 0,
-          "average": 0,
-          "on_bench": 0,
-          "for_coach": 0,
-          "on_pitch": 0
-        },
-        "home": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        },
-        "away": {
-          "count": 0,
-          "average": 0,
-          "percentage": 0
-        }
-      },
-      "Season Matches": {
-        "count": 4
-      }
-    },
-    "career": {
-      "seasons": 25,
-      "matches": 203,
-      "yellow": 751,
-      "red": 23,
-      "yellow_avg": 3.7
-    },
-    "league_context": {
-      "fouls_per_match": 24.8,
-      "yellow_per_match": 4.16,
-      "red_per_match": 0.2,
-      "matches_sampled": 25
-    },
-    "recent": [],
+    "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,
     "career_matches": 44,
     "seasons": [
@@ -211,8 +108,8 @@
         "as": 2,
         "st": {
           "fouls": [
-            9,
-            18
+            10,
+            23
           ],
           "yellow": [
             1,
@@ -235,12 +132,12 @@
             7
           ],
           "shots_inside": [
-            9,
-            11
+            11,
+            12
           ],
           "shots_outside": [
-            4,
-            4
+            5,
+            5
           ],
           "shots_blocked": [
             2,
@@ -256,11 +153,11 @@
           ],
           "big_chances": [
             3,
-            5
+            7
           ],
           "big_chances_missed": [
             2,
-            4
+            6
           ],
           "assists": [
             1,
@@ -271,63 +168,63 @@
             10
           ],
           "passes": [
-            328,
-            316
+            443,
+            382
           ],
           "dribbles": [
-            11,
-            11
+            13,
+            15
           ],
           "dribbles_ok": [
-            4,
-            6
+            6,
+            8
           ],
           "saves": [
             5,
-            1
+            3
           ],
           "tackles": [
-            8,
-            13
+            14,
+            16
           ],
           "tackles_won": [
             5,
             7
           ],
           "interceptions": [
-            5,
+            10,
             8
           ],
           "duels_won": [
-            36,
-            32
+            51,
+            39
           ],
           "corners": [
             3,
             5
           ],
           "free_kicks": [
-            18,
-            8
+            23,
+            9
           ],
           "throwins": [
-            7,
-            13
+            12,
+            18
           ],
           "goal_kicks": [
-            8,
+            9,
             10
           ],
           "crosses": [
-            13,
-            11
+            17,
+            12
           ],
           "accurate_crosses": [
-            6,
-            4
+            7,
+            5
           ],
           "offsides": [
-            2,
+            4,
             2
           ]
         },
@@ -5247,7 +5144,7 @@
       "all": {
         "fouls": {
           "league_avg": 24.19,
-          "rank": 19,
+          "rank": 17,
           "size": 38
         },
         "yellow": {
@@ -5407,12 +5304,12 @@
         },
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
+            "league_avg": 26.56,
             "rank": 3,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
+            "league_avg": 3.7,
             "rank": 8,
             "size": 22
           },
@@ -5438,6 +5335,109 @@
           }
         }
       }
-    }
+    },
+    "season": {
+      "matches": 4,
+      "fouls_avg": 30.75,
+      "yellow_avg": 4,
+      "red_avg": 0.25,
+      "penalties_avg": 0.25
+    },
+    "season_raw": {
+      "Penalties": {
+        "all": {
+          "count": 1,
+          "average": 0.25
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.25,
+          "percentage": 100
+        }
+      },
+      "Fouls": {
+        "count": 123,
+        "average": 30.75
+      },
+      "Redcards": {
+        "all": {
+          "count": 1,
+          "average": 0.25,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 1
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.25,
+          "percentage": 100
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 16,
+          "average": 4,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 16
+        },
+        "home": {
+          "count": 9,
+          "average": 2.25,
+          "percentage": 56.25
+        },
+        "away": {
+          "count": 7,
+          "average": 1.75,
+          "percentage": 43.75
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 4
+      }
+    },
+    "career": {
+      "seasons": 25,
+      "matches": 203,
+      "yellow": 751,
+      "red": 23,
+      "yellow_avg": 3.7
+    },
+    "league_context": {
+      "fouls_per_match": 27.0,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.4,
+      "matches_sampled": 25
+    },
+    "recent": []
   }
 }

@@ -213,7 +213,7 @@
       "position_id": 25,
       "captain": false,
       "date_of_birth": "1997-09-24",
-      "age": 28,
+      "age": 29,
       "team_id": 6,
       "team_name": "Tottenham Hotspur",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
@@ -298,7 +298,7 @@
       "position_id": 26,
       "captain": false,
       "date_of_birth": "2008-10-01",
-      "age": 17,
+      "age": 18,
       "team_id": 6,
       "team_name": "Tottenham Hotspur",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png",
@@ -554,7 +554,7 @@
         "name": "Manchester United",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/14/14.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19722134,
@@ -566,7 +566,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/21/117.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19722131,
+      "starting_at": "2026-10-24T16:30:00Z",
+      "is_home": false,
+      "opponent": {
+        "id": 18,
+        "name": "Chelsea",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:47:59Z"
+  "generated_at": "2026-10-04T10:45:54Z"
 }

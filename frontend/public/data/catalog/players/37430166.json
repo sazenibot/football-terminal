@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Christophe Kabongo v této sezóně za Viktoria Plzeň: 8 startů, 426 min, 3 góly.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Christophe Kabongo (Útočník) nastupuje za Viktoria Plzeň. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 32,
@@ -73,7 +73,7 @@
           "tk": 1,
           "it": 1,
           "cl": 1,
-          "dr": 3,
+          "dr": 2,
           "g": 0,
           "a": 0,
           "y": 0,
@@ -931,16 +931,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 8,
-      "lineups": 5,
-      "minutes": 426,
-      "goals": 3,
-      "yellow": 2,
-      "shots": 7,
-      "sot": 5,
-      "goals_conceded": 9
-    }
+    ]
   }
 }

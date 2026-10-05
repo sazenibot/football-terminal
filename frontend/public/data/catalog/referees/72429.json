@@ -12,22 +12,22 @@
   "league_matches": 2,
   "leagues": [
     {
-      "id": 262,
-      "name": "Chance Liga",
-      "in_league": false,
-      "league_matches": 0
-    },
-    {
       "id": 265,
       "name": "Chance Národní Liga",
       "in_league": true,
       "league_matches": 2
+    },
+    {
+      "id": 262,
+      "name": "Chance Liga",
+      "in_league": true,
+      "league_matches": 1
     }
   ],
   "hook": "Vit Zaoral píská v soutěži Chance Národní Liga jako hlavní rozhodčí. Karetní styl a tachometry doplníme, až budou spočtené ze zápasů, kde je on jediný hlavní.",
-  "generated_at": "2026-09-20T21:56:05Z",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:03Z",
+    "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,
     "career_matches": 30,
     "seasons": [
@@ -3755,12 +3755,12 @@
         },
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
-            "rank": 13,
+            "league_avg": 26.56,
+            "rank": 12,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
+            "league_avg": 3.7,
             "rank": 3,
             "size": 22
           },

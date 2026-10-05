@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Wiktor Nowak v této sezóně za Slavia Praha: 9 startů, 622 min, 5 gólů, 1 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Wiktor Nowak (Záložník) nastupuje za Slavia Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 9,
@@ -56,7 +56,7 @@
           "mn": 90,
           "sh": 2,
           "f": 3,
-          "it": 2,
+          "it": 1,
           "cl": 3,
           "gc": 1,
           "g": 0,
@@ -298,17 +298,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 8,
-      "minutes": 622,
-      "goals": 5,
-      "assists": 1,
-      "yellow": 3,
-      "shots": 17,
-      "sot": 7,
-      "goals_conceded": 4
-    }
+    ]
   }
 }

@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Vaclav Sejk v této sezóně za Sigma Olomouc: 9 startů, 758 min, 3 góly, 2 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Vaclav Sejk (Útočník) nastupuje za Sigma Olomouc. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
     "role": "att",
     "career_matches": 62,
@@ -95,7 +95,7 @@
           "dw": 1,
           "cl": 1,
           "gc": 2,
-          "kp": 2,
+          "kp": 1,
           "dr": 2,
           "cr": 1,
           "g": 0,
@@ -1763,17 +1763,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 9,
-      "lineups": 9,
-      "minutes": 758,
-      "goals": 3,
-      "assists": 2,
-      "yellow": 1,
-      "shots": 14,
-      "sot": 7,
-      "goals_conceded": 11
-    }
+    ]
   }
 }

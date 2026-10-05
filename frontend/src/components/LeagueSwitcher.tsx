@@ -24,23 +24,22 @@ function LeagueLogo({ league, active }: { league: LeagueMeta; active: boolean })
   if (!league.logo) {
     return (
       <span
-        className={`flex h-6 w-6 items-center justify-center rounded-full text-[10px] font-bold ${
-          active ? "bg-black/15 text-black" : "bg-slate-700 text-slate-200 light:bg-slate-200 light:text-slate-600"
+        className={`flex h-10 w-10 items-center justify-center rounded-full text-xs font-bold ${
+          active ? "bg-emerald-500/20 text-emerald-300" : "bg-slate-800 text-slate-300 light:bg-slate-200 light:text-slate-600"
         }`}
       >
         {(league.short || league.name).slice(0, 2)}
       </span>
     );
   }
-  return (
-    <img
-      src={league.logo}
-      alt=""
-      width={24}
-      height={24}
-      className="h-6 w-6 object-contain"
-    />
-  );
+  return <img src={league.logo} alt="" width={40} height={40} className="h-10 w-10 object-contain" />;
+}
+
+function matchLabel(n: number | undefined) {
+  if (n == null) return null;
+  if (n === 1) return "1 zápas";
+  if (n >= 2 && n <= 4) return `${n} zápasy`;
+  return `${n} zápasů`;
 }
 
 export function LeagueSwitcher({
@@ -53,38 +52,38 @@ export function LeagueSwitcher({
   const enabled = index.leagues.filter((l) => l.enabled);
 
   return (
-    <div className="mb-6 -mx-4 px-4 overflow-x-auto">
-      <div
-        role="tablist"
-        aria-label="Soutěže"
-        className="flex min-w-min border-b border-slate-800 light:border-slate-200"
-      >
+    <nav aria-label="Soutěže" className="mb-6">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500 mb-2">Ligy</p>
+      <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
         {enabled.map((l) => {
           const active = l.id === activeId;
+          const count = matchLabel(l.round_count ?? l.match_count);
           return (
             <Link
               key={l.id}
-              role="tab"
-              aria-selected={active}
               to={`/league/${l.id}`}
               onClick={() => rememberLeague(l.id)}
-              className={`flex items-center gap-2 shrink-0 px-3 py-2.5 text-sm font-medium border-b-2 -mb-px transition-colors ${
+              aria-current={active ? "page" : undefined}
+              className={`card catalog-tile flex items-center gap-3 px-3.5 py-3 ${
                 active
-                  ? "border-emerald-500 text-emerald-400 light:text-emerald-700"
-                  : "border-transparent text-slate-400 hover:text-slate-200 light:text-slate-500 light:hover:text-slate-800"
+                  ? "border-emerald-500 ring-1 ring-emerald-500/40"
+                  : "hover:border-emerald-500/50"
               }`}
             >
               <LeagueLogo league={l} active={active} />
-              <span className="whitespace-nowrap">{l.name}</span>
-              {typeof l.round_count === "number" && (
-                <span className={`text-xs tabular-nums ${active ? "opacity-80" : "opacity-50"}`}>
-                  {l.round_count}
-                </span>
-              )}
+              <div className="min-w-0">
+                <p className={`font-medium truncate ${active ? "text-emerald-300 light:text-emerald-700" : "text-white light:text-slate-900"}`}>
+                  {l.name}
+                </p>
+                <p className="text-xs text-slate-500 truncate">
+                  {l.country || l.short}
+                  {count ? ` · ${count} v okně` : ""}
+                </p>
+              </div>
             </Link>
           );
         })}
       </div>
-    </div>
+    </nav>
   );
 }

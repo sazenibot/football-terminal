@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Jaroslav Zelený v této sezóně za Sparta Praha: 7 startů, 365 min, 1 asistence.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Jaroslav Zelený (Obránce) nastupuje za Sparta Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "def",
     "career_matches": 114,
@@ -84,8 +84,10 @@
           "mn": 26,
           "sh": 1,
           "f": 2,
+          "dw": 1,
           "it": 1,
           "kp": 1,
+          "dr": 1,
           "g": 0,
           "a": 0,
           "y": 0,
@@ -3258,15 +3260,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 7,
-      "lineups": 4,
-      "minutes": 365,
-      "assists": 1,
-      "yellow": 1,
-      "shots": 3,
-      "goals_conceded": 8
-    }
+    ]
   }
 }

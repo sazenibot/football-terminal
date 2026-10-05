@@ -14,10 +14,10 @@
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png",
   "league_id": 262,
   "league_name": "Chance Liga",
-  "hook": "Pavel Kaderabek v této sezóně za Sparta Praha: 4 starty, 257 min.",
-  "generated_at": "2026-09-21T09:47:21Z",
+  "hook": "Pavel Kaderabek (Obránce) nastupuje za Sparta Praha. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
+  "generated_at": "2026-10-04T10:45:23Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:07Z",
+    "generated_at": "2026-10-05T14:03:35Z",
     "current_season_id": 27984,
     "role": "mid",
     "career_matches": 26,
@@ -61,10 +61,10 @@
         "ob": 2,
         "st": {
           "mn": 73,
-          "dw": 4,
-          "aw": 1,
+          "dw": 3,
           "tk": 2,
-          "cl": 1,
+          "it": 1,
+          "cl": 3,
           "kp": 1,
           "cr": 2,
           "g": 0,
@@ -776,14 +776,6 @@
         },
         "mp": false
       }
-    ],
-    "season": {
-      "appearances": 4,
-      "lineups": 3,
-      "minutes": 257,
-      "yellow": 1,
-      "shots": 1,
-      "goals_conceded": 6
-    }
+    ]
   }
 }

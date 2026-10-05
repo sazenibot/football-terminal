@@ -8,18 +8,18 @@
   "position_id": 26,
   "captain": false,
   "date_of_birth": "2000-10-02",
-  "age": 25,
+  "age": 26,
   "team_id": 3593,
   "team_name": "Opava",
   "team_image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png",
   "league_id": 265,
   "league_name": "Chance Národní Liga",
   "hook": "Babacar Sy (Záložník) nastupuje za Opava. Role badge a KPI overlay se doplní z modelu, až budou čísla pro tohoto hráče.",
-  "generated_at": "2026-09-21T09:47:42Z",
+  "generated_at": "2026-10-04T10:45:39Z",
   "overlay": {
-    "generated_at": "2026-09-21T15:45:08Z",
+    "generated_at": "2026-10-05T14:03:36Z",
     "current_season_id": 27984,
-    "role": "att",
+    "role": "mid",
     "career_matches": 10,
     "clubs": [
       {

@@ -468,7 +468,7 @@
       "position_id": 27,
       "captain": false,
       "date_of_birth": "1994-09-29",
-      "age": 31,
+      "age": 32,
       "team_id": 90,
       "team_name": "FC Augsburg",
       "team_image": "https://cdn.sportmonks.com/images/soccer/teams/26/90.png",
@@ -503,7 +503,7 @@
         "name": "FC Bayern München",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19735144,
@@ -515,7 +515,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19735138,
+      "starting_at": "2026-10-24T13:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 1079,
+        "name": "FC Union Berlin",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/23/1079.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:25Z"
+  "generated_at": "2026-10-04T10:46:13Z"
 }

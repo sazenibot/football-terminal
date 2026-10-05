@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T09:47:18Z",
+  "generated_at": "2026-10-04T10:33:08Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -8,10 +8,139 @@
     "enabled": true,
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png"
   },
-  "round": [],
+  "round": [
+    {
+      "fixture_id": 19725030,
+      "starting_at": "2026-10-09T16:00:00Z",
+      "venue": "Stadion Letná",
+      "home": {
+        "id": 1745,
+        "name": "Zlín",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png"
+      },
+      "away": {
+        "id": 216,
+        "name": "Slavia Praha",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725031,
+      "starting_at": "2026-10-10T13:00:00Z",
+      "venue": "Malšovická aréna",
+      "home": {
+        "id": 3552,
+        "name": "Hradec Králové",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
+      },
+      "away": {
+        "id": 22031,
+        "name": "SK Artis Brno",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725035,
+      "starting_at": "2026-10-10T13:00:00Z",
+      "venue": "Městský fotbalový stadion Srbská",
+      "home": {
+        "id": 3350,
+        "name": "Zbrojovka Brno",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
+      },
+      "away": {
+        "id": 3643,
+        "name": "Jablonec",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725037,
+      "starting_at": "2026-10-10T13:00:00Z",
+      "venue": "Doosan Aréna",
+      "home": {
+        "id": 3545,
+        "name": "Viktoria Plzeň",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3545.png"
+      },
+      "away": {
+        "id": 187,
+        "name": "Mladá Boleslav",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725033,
+      "starting_at": "2026-10-10T16:00:00Z",
+      "venue": "Stadion Dolícek",
+      "home": {
+        "id": 2488,
+        "name": "Bohemians 1905",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png"
+      },
+      "away": {
+        "id": 3269,
+        "name": "Baník Ostrava",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725034,
+      "starting_at": "2026-10-11T11:00:00Z",
+      "venue": "Stadion u Nisy",
+      "home": {
+        "id": 463,
+        "name": "Slovan Liberec",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png"
+      },
+      "away": {
+        "id": 234,
+        "name": "Slovácko",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725036,
+      "starting_at": "2026-10-11T13:00:00Z",
+      "venue": "Na Stínadlech",
+      "home": {
+        "id": 1351,
+        "name": "Teplice",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png"
+      },
+      "away": {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png"
+      },
+      "has_full_data": true
+    },
+    {
+      "fixture_id": 19725032,
+      "starting_at": "2026-10-11T16:00:00Z",
+      "venue": "TC Strahov",
+      "home": {
+        "id": 2727,
+        "name": "Sparta Praha",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/2727.png"
+      },
+      "away": {
+        "id": 4484,
+        "name": "Pardubice",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png"
+      },
+      "has_full_data": true
+    }
+  ],
   "stats": {
-    "created": 0,
-    "refreshed": 0,
+    "created": 3,
+    "refreshed": 5,
     "errors": 0
   }
 }

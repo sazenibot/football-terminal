@@ -1,5 +1,7 @@
 import { Link, useParams } from "react-router-dom";
-import { useDataIndex, useMatch } from "../lib/useData";
+import { XgotBadgeChip } from "../components/XgotBadge";
+import { last5BadgeForTeam } from "../lib/xgEfficiency";
+import { useDataIndex, useMatch, useXgotIndex } from "../lib/useData";
 import { StaleBanner } from "../components/StaleBanner";
 import { formatDateTimeLong } from "../lib/format";
 import { H2HResults } from "../components/H2HResults";
@@ -11,12 +13,14 @@ import { Simulation } from "../components/Simulation";
 import { PlayersCompare } from "../components/PlayersCompare";
 import { RefereeSection } from "../components/RefereeAndAbsences";
 import { AiAnalysisSection } from "../components/AiAnalysis";
+import { TrendmetrCard } from "../components/TrendmetrCard";
 
 export function MatchPage() {
   const { fixtureId } = useParams();
   const id = Number(fixtureId);
   const { index } = useDataIndex();
   const { match: m, error, missing } = useMatch(Number.isFinite(id) ? id : null);
+  const xgotIndex = useXgotIndex();
   const backTo = m?.league_id ? `/league/${m.league_id}` : "/";
 
   if (error) {
@@ -54,6 +58,8 @@ export function MatchPage() {
   }
 
   const generatedAt = m.refreshed_at || m.built_at;
+  const homeBadge = last5BadgeForTeam(xgotIndex, m.home.id);
+  const awayBadge = last5BadgeForTeam(xgotIndex, m.away.id);
 
   return (
     <div className="max-w-4xl mx-auto py-10 px-4 pt-20">
@@ -70,19 +76,25 @@ export function MatchPage() {
           {m.league_name ? `${m.league_name} · ` : ""}
           {formatDateTimeLong(m.starting_at)} · {m.venue}
         </div>
-        <div className="flex items-center justify-center gap-5 text-xl font-bold text-white light:text-slate-900">
-          <span className="flex items-center gap-2.5 min-w-0">
-            {m.home.image && (
-              <img src={m.home.image} alt="" className="h-10 w-10 object-contain shrink-0" />
-            )}
-            <span className="truncate">{m.home.name}</span>
+        <div className="flex items-start justify-center gap-5 text-xl font-bold text-white light:text-slate-900">
+          <span className="flex flex-col items-end gap-1.5 min-w-0">
+            <span className="flex items-center gap-2.5 min-w-0">
+              {m.home.image && (
+                <img src={m.home.image} alt="" className="h-10 w-10 object-contain shrink-0" />
+              )}
+              <span className="truncate">{m.home.name}</span>
+            </span>
+            {homeBadge ? <XgotBadgeChip badge={homeBadge} /> : null}
           </span>
-          <span className="text-slate-500 text-base font-normal shrink-0">vs</span>
-          <span className="flex items-center gap-2.5 min-w-0">
-            {m.away.image && (
-              <img src={m.away.image} alt="" className="h-10 w-10 object-contain shrink-0" />
-            )}
-            <span className="truncate">{m.away.name}</span>
+          <span className="text-slate-500 text-base font-normal shrink-0 mt-2">vs</span>
+          <span className="flex flex-col items-start gap-1.5 min-w-0">
+            <span className="flex items-center gap-2.5 min-w-0">
+              {m.away.image && (
+                <img src={m.away.image} alt="" className="h-10 w-10 object-contain shrink-0" />
+              )}
+              <span className="truncate">{m.away.name}</span>
+            </span>
+            {awayBadge ? <XgotBadgeChip badge={awayBadge} /> : null}
           </span>
         </div>
       </header>
@@ -97,7 +109,14 @@ export function MatchPage() {
         home={m.trends.team_last5.home}
         away={m.trends.team_last5.away}
       />
-      <TrendsH2HSection last3={m.trends.h2h.last3} last5={m.trends.h2h.last5} />
+      <TrendsH2HSection
+        h2h={m.h2h}
+        home={m.home}
+        away={m.away}
+        last3={m.trends.h2h.last3}
+        last5={m.trends.h2h.last5}
+      />
+      <TrendmetrCard match={m} />
       <Simulation sim={m.simulation} home={m.home} away={m.away} />
       <PlayersCompare
         home={m.home}
@@ -109,9 +128,7 @@ export function MatchPage() {
       <AiAnalysisSection analysis={m.ai_analysis} />
 
       <footer className="text-xs text-slate-600 text-center py-6">
-        Data: SportMonks
-        {generatedAt ? ` · aktualizováno ${new Date(generatedAt).toLocaleString("cs-CZ")}` : ""}
-        {m.build_mode ? ` · ${m.build_mode === "full" ? "plný build" : "denní refresh"}` : ""}
+        {generatedAt ? `Aktualizováno ${new Date(generatedAt).toLocaleString("cs-CZ")}` : ""}
       </footer>
     </div>
   );

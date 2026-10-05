@@ -10,7 +10,7 @@
   "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
   "date_of_birth": null,
   "overlay": {
-    "generated_at": "2026-09-21T15:45:03Z",
+    "generated_at": "2026-10-05T09:34:38Z",
     "current_season_id": 27984,
     "career_matches": 6,
     "seasons": [
@@ -117,23 +117,23 @@
             8
           ],
           "passes": [
-            410,
-            354
+            407,
+            353
           ],
           "dribbles": [
             23,
-            12
+            14
           ],
           "dribbles_ok": [
-            15,
-            8
+            14,
+            9
           ],
           "saves": [
             1,
             2
           ],
           "tackles": [
-            16,
+            15,
             15
           ],
           "tackles_won": [
@@ -141,12 +141,12 @@
             12
           ],
           "interceptions": [
-            13,
+            12,
             6
           ],
           "duels_won": [
-            64,
-            46
+            62,
+            47
           ],
           "corners": [
             6,
@@ -165,11 +165,11 @@
             6
           ],
           "crosses": [
-            16,
+            17,
             21
           ],
           "accurate_crosses": [
-            4,
+            5,
             3
           ],
           "offsides": [
@@ -953,12 +953,12 @@
         },
         "27984": {
           "fouls": {
-            "league_avg": 26.64,
-            "rank": 11,
+            "league_avg": 26.56,
+            "rank": 10,
             "size": 22
           },
           "yellow": {
-            "league_avg": 3.69,
+            "league_avg": 3.7,
             "rank": 22,
             "size": 22
           },

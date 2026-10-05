@@ -205,7 +205,7 @@
     },
     {
       "id": 37650883,
-      "name": "Maximilian Herwerth",
+      "name": "Maximilian Herwerth ",
       "common_name": "M. Herwerth",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 37,
@@ -341,7 +341,7 @@
     },
     {
       "id": 37771728,
-      "name": "Ertugrul Yigit",
+      "name": "Ertugrul Yigit ",
       "common_name": "E. Yigit",
       "image": "https://cdn.sportmonks.com/images/soccer/placeholder.png",
       "number": 39,
@@ -375,7 +375,7 @@
     },
     {
       "id": 37650895,
-      "name": "Jarzinho Malanga",
+      "name": "Jarzinho Malanga ",
       "common_name": "J. de Nascimento Malanga",
       "image": "https://cdn.sportmonks.com/images/soccer/players/15/37650895.png",
       "number": 43,
@@ -588,7 +588,7 @@
         "name": "Paderborn",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/18/2642.png"
       },
-      "has_match_page": false
+      "has_match_page": true
     },
     {
       "fixture_id": 19735147,
@@ -600,7 +600,18 @@
         "image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png"
       },
       "has_match_page": false
+    },
+    {
+      "fixture_id": 19735141,
+      "starting_at": "2026-10-23T18:30:00Z",
+      "is_home": true,
+      "opponent": {
+        "id": 683,
+        "name": "Borussia Mönchengladbach",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png"
+      },
+      "has_match_page": false
     }
   ],
-  "generated_at": "2026-09-21T09:48:25Z"
+  "generated_at": "2026-10-04T10:46:13Z"
 }
