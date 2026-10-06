@@ -1,0 +1,71 @@
+name: League backfill
+
+# Cold backfill jedné ligy (5 sezón: týmy, hráči, rozhodčí, historie). Spouští se ručně, JEDNOU na ligu.
+# Denní job dělá potom jen přírůstek za poslední 2 dny. Ligy se pouštějí po jedné, ne všechny najednou.
+# Stav katalogu: R2 (ft-public/catalog). Match Center okno (7 dní) dodá další noční běh, sem nepatří.
+
+on:
+  workflow_dispatch:
+    inputs:
+      league_id:
+        description: "SportMonks ID ligy (8 Premier League, 82 Bundesliga, 564 La Liga, 72 Eredivisie)"
+        required: true
+        type: choice
+        options: ["8", "82", "564", "72"]
+
+permissions:
+  contents: read
+
+# Stejná skupina jako noční refresh: nikdy dva zápisy do stavu katalogu najednou.
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+env:
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+  SPORTMONKS_API_TOKEN: ${{ secrets.SPORTMONKS_API_TOKEN }}
+  LEAGUE: ${{ inputs.league_id }}
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt boto3
+
+      - name: Stav katalogu z R2
+        run: python scripts/r2_sync.py down frontend/public/data/catalog --bucket ft-public --prefix catalog --require-nonempty
+
+      # Odpovědi SportMonks se cachují na disk. Když běh spadne (limit, timeout), druhý pokus je znovu nevolá.
+      - name: Cache API odpovědí
+        uses: actions/cache@v4
+        with:
+          path: scripts/.cache/api
+          key: sm-api-${{ inputs.league_id }}-${{ github.run_id }}
+          restore-keys: |
+            sm-api-${{ inputs.league_id }}-
+
+      - name: Základ katalogu ligy (týmy, soupisky, tabulka)
+        run: python scripts/refresh_data.py --catalog-only --league "$LEAGUE"
+
+      # --referees 0 = nepoužít výchozí české pilotní rozhodčí. Rozhodčí ligy se skládají z historie zápasů.
+      - name: Cold backfill (5 sezón)
+        run: python scripts/enrich_catalog.py --league "$LEAGUE" --referees 0
+
+      - name: Odvozené soubory (shardy hráčů, vyhledávání)
+        run: |
+          python scripts/catalog_player_shards.py --league "$LEAGUE"
+          python scripts/catalog_search.py
+
+      # I po chybě: ať se uložený postup neztratí. Další pokus pak čte z cache a z R2.
+      - name: Katalog do R2
+        if: always()
+        run: python scripts/r2_sync.py up frontend/public/data/catalog --bucket ft-public --prefix catalog
