@@ -46,10 +46,17 @@ export function LabPage() {
           <p className="text-sm text-slate-400 light:text-slate-500 mt-2">
             Karty jsou v katalogu týmu a hráče. Chance Liga, data z PitchAPI.
           </p>
-          <Link to="/catalog/teams/216" className="inline-block mt-4 text-sm text-emerald-400 hover:underline">
+          <Link to="/catalog/teams/2727" className="inline-block mt-4 text-sm text-emerald-400 hover:underline">
             Otevřít katalog Slavia →
           </Link>
         </div>
+        <Link to="/lab/match-list" className="card catalog-tile p-6 block hover:border-amber-400">
+          <div className="text-xs font-mono text-amber-400 mb-2">NÁVRH</div>
+          <h2 className="text-xl font-semibold text-white light:text-slate-900">Rozcestník Match Center</h2>
+          <p className="text-sm text-slate-400 light:text-slate-500 mt-2">
+            Tři varianty výpisu zápasů a přepínač pro 30 lig.
+          </p>
+        </Link>
         <Link to="/lab/api/pitch" className="card catalog-tile p-6 block hover:border-amber-400">
           <div className="text-xs font-mono text-amber-400 mb-2">TEST</div>
           <h2 className="text-xl font-semibold text-white light:text-slate-900">PitchAPI</h2>

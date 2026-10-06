@@ -283,3 +283,19 @@ export type LeagueUniverse = {
 export function useLeagueUniverse(leagueId: number | null) {
   return useOptionalJson<LeagueUniverse>(leagueId ? `/data/catalog/leagues/${leagueId}.ref_universe.json` : null);
 }
+
+/** Primární barvy týmů z log (scripts/build_team_colors.py). Jeden malý soubor, načte se jednou. */
+let teamColorsPromise: Promise<Record<string, string>> | null = null;
+
+export function useTeamColors(): Record<string, string> {
+  const [colors, setColors] = useState<Record<string, string>>({});
+  useEffect(() => {
+    teamColorsPromise ??= fetchJson<Record<string, string>>("/data/team_colors.json").catch(() => ({}));
+    let live = true;
+    teamColorsPromise.then((c) => live && setColors(c));
+    return () => {
+      live = false;
+    };
+  }, []);
+  return colors;
+}

@@ -2,11 +2,12 @@ import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { formatDateTime } from "../lib/format";
 import { hasPitchData } from "../lib/pitchMatch";
-import { isStale, useDataIndex, useLeagueRound } from "../lib/useData";
+import { LeaguePicker } from "../components/LeaguePicker";
+import { isStale, useDataIndex, useLeagueRound, useTeamColors } from "../lib/useData";
 import { rememberLeague } from "../components/LeagueSwitcher";
 import { kickoffLabel } from "../mc2/derive";
 import { Empty, ProbBar, TeamLogo, plural } from "../mc2/kit";
-import type { LeagueMeta, RoundFixture } from "../types";
+import type { RoundFixture } from "../types";
 
 /* ---------- ikonky u zápasů ---------- */
 
@@ -14,7 +15,7 @@ type SignalId = "referee";
 
 type SignalDef = { id: SignalId; label: string; icon: ReactNode; active: (f: RoundFixture) => boolean };
 
-const Whistle = () => (
+export const Whistle = () => (
   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
     <circle cx="8.5" cy="14.5" r="5" />
     <path d="M12.2 11.2 21 8v4.2h-6.3" />
@@ -85,73 +86,11 @@ function useSeen(fixtures: RoundFixture[] | undefined) {
 
 /* ---------- ligy ---------- */
 
-function LeagueLogo({ league, soon }: { league: LeagueMeta; soon: boolean }) {
-  const cls = `h-8 w-8 shrink-0 object-contain ${soon ? "opacity-35 grayscale" : ""}`;
-  if (!league.logo) {
-    return (
-      <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-(--c-raised) text-[11px] font-bold text-(--c-muted) ${soon ? "opacity-50" : ""}`}>
-        {(league.short || league.name).slice(0, 2)}
-      </span>
-    );
-  }
-  return <img src={league.logo} alt="" className={cls} />;
-}
-
-function LeagueChips({ leagues, activeId, base }: { leagues: LeagueMeta[]; activeId: number; base: string }) {
-  const sorted = [...leagues].sort((a, b) => Number(hasPitchData(b.id)) - Number(hasPitchData(a.id)));
-  return (
-    <nav aria-label="Soutěže" className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0">
-      {sorted.map((l) => {
-        const live = hasPitchData(l.id);
-        const active = l.id === activeId;
-        if (!live) {
-          return (
-            <div
-              key={l.id}
-              aria-disabled
-              title="Match Center pro tuhle soutěž připravujeme"
-              className="flex shrink-0 cursor-default items-center gap-3 rounded-2xl border border-dashed border-(--c-line) px-3 py-2.5"
-            >
-              <LeagueLogo league={l} soon />
-              <div className="min-w-0">
-                <div className="truncate text-sm font-medium text-(--c-faint)">{l.name}</div>
-                <div className="mt-0.5 inline-block rounded-md bg-(--c-raised) px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-(--c-muted)">
-                  Připravujeme
-                </div>
-              </div>
-            </div>
-          );
-        }
-        const n = l.round_count ?? l.match_count ?? 0;
-        return (
-          <Link
-            key={l.id}
-            to={`${base}/${l.id}`}
-            onClick={() => rememberLeague(l.id)}
-            aria-current={active ? "page" : undefined}
-            className={`flex shrink-0 items-center gap-3 rounded-2xl border px-3 py-2.5 transition-colors ${
-              active ? "border-(--c-accent) bg-(--c-accent)/10" : "border-(--c-line) bg-(--c-surface) hover:border-(--c-faint)"
-            }`}
-          >
-            <LeagueLogo league={l} soon={false} />
-            <div className="min-w-0">
-              <div className={`truncate text-sm font-semibold ${active ? "text-(--c-accent)" : "text-(--c-text)"}`}>{l.name}</div>
-              <div className="mt-0.5 text-[11px] text-(--c-muted)">
-                {n} {plural(n, "zápas", "zápasy", "zápasů")}
-              </div>
-            </div>
-          </Link>
-        );
-      })}
-    </nav>
-  );
-}
-
 /* ---------- zápasy ---------- */
 
 const dayKey = (iso: string) => new Date(iso).toDateString();
 
-function dayLabel(iso: string, now = new Date()): { main: string; rel: string | null } {
+export function dayLabel(iso: string, now = new Date()): { main: string; rel: string | null } {
   const d = new Date(iso);
   const days = Math.round((new Date(d.toDateString()).getTime() - new Date(now.toDateString()).getTime()) / 86400e3);
   const main = d.toLocaleDateString("cs-CZ", { weekday: "long", day: "numeric", month: "numeric" });
@@ -184,7 +123,7 @@ function Signals({ f, isNew }: { f: RoundFixture; isNew: (f: RoundFixture, id: S
   );
 }
 
-function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; home: RoundFixture["home"]; away: RoundFixture["away"]; isNew: (f: RoundFixture, id: SignalId) => boolean; onOpen: () => void }) {
+export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; home: RoundFixture["home"]; away: RoundFixture["away"]; isNew: (f: RoundFixture, id: SignalId) => boolean; onOpen: () => void }) {
   const ready = f.has_full_data !== false;
   const time = new Date(f.starting_at).toLocaleTimeString("cs-CZ", { hour: "2-digit", minute: "2-digit" });
   const live = kickoffLabel(f.starting_at).live;
@@ -249,6 +188,69 @@ function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; home: Rou
   );
 }
 
+const NEUTRAL = "#6b7280";
+
+/** Karta zápasu: pruhy po stranách v primárních barvách týmů (domácí vlevo, hosté vpravo), čas vycentrovaný v pásu. */
+function MatchCard({ f, colors, isNew, onOpen }: { f: RoundFixture; colors: Record<string, string>; isNew: (f: RoundFixture, id: SignalId) => boolean; onOpen: () => void }) {
+  const ready = f.has_full_data !== false;
+  const time = new Date(f.starting_at).toLocaleTimeString("cs-CZ", { hour: "2-digit", minute: "2-digit" });
+  const live = kickoffLabel(f.starting_at).live;
+  const probs = f.signals?.probs;
+  const homeColor = colors[f.home.id] ?? NEUTRAL;
+  const awayColor = colors[f.away.id] ?? NEUTRAL;
+  const cls = "group relative block overflow-hidden rounded-2xl border border-(--c-line) bg-(--c-surface) shadow-sm";
+  const body = (
+    <>
+      <span aria-hidden className="absolute inset-y-0 left-0 w-1.5" style={{ background: homeColor }} />
+      <span aria-hidden className="absolute inset-y-0 right-0 w-1.5" style={{ background: awayColor }} />
+      <div className="grid grid-cols-[1fr_auto_1fr] items-center bg-(--c-raised)/70 px-4 py-1.5">
+        <span aria-hidden />
+        <div className="flex items-baseline justify-center gap-2">
+          <span className="text-[13px] font-bold tabular-nums">{time}</span>
+          {live && <span className="text-[10px] font-semibold uppercase text-(--c-loss)">živě</span>}
+        </div>
+        <div className="flex justify-end">
+          <Signals f={f} isNew={isNew} />
+        </div>
+      </div>
+      <div className="px-5 py-3">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
+          <div className="flex min-w-0 flex-col items-center gap-1.5 text-center">
+            <TeamLogo team={f.home} size={32} />
+            <span className="w-full truncate text-[14px] font-semibold">{f.home.name}</span>
+          </div>
+          <span aria-hidden className="text-[11px] font-semibold text-(--c-faint)">
+            vs
+          </span>
+          <div className="flex min-w-0 flex-col items-center gap-1.5 text-center">
+            <TeamLogo team={f.away} size={32} />
+            <span className="w-full truncate text-[14px] font-semibold">{f.away.name}</span>
+          </div>
+        </div>
+        {probs && (
+          <div className="mt-3" title="Pravděpodobnost výhry domácích, remízy a výhry hostů podle modelu">
+            <ProbBar home={probs[0]} draw={probs[1]} away={probs[2]} height={6} />
+            <div className="mt-1 grid grid-cols-3 text-[11px] tabular-nums">
+              <span style={{ color: "var(--c-home)" }}>{probs[0]} %</span>
+              <span className="text-center text-(--c-faint)">{probs[1]} %</span>
+              <span className="text-right" style={{ color: "var(--c-away)" }}>
+                {probs[2]} %
+              </span>
+            </div>
+          </div>
+        )}
+        {!ready && <div className="mt-2 text-center text-[12px] text-(--c-muted)">Rozbor zápasu se připravuje.</div>}
+      </div>
+    </>
+  );
+  if (!ready) return <div className={`${cls} opacity-70`}>{body}</div>;
+  return (
+    <Link to={`/match/${f.fixture_id}`} onClick={onOpen} className={`${cls} transition-all hover:-translate-y-px hover:border-(--c-accent) hover:shadow-md focus-visible:border-(--c-accent)`}>
+      {body}
+    </Link>
+  );
+}
+
 /* ---------- stránka ---------- */
 
 export function MatchListPage({ leagueId, base }: { leagueId: number; base: string }) {
@@ -257,6 +259,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
   const live = hasPitchData(leagueId);
   const fixtures = live ? data?.round : undefined;
   const { isNew, markSeen } = useSeen(fixtures);
+  const colors = useTeamColors();
 
   useEffect(() => {
     document.title = "Match Center";
@@ -277,7 +280,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
   const stale = live && data && index ? isStale(data.generated_at, index.stale_after_hours) : false;
 
   return (
-    <div className="mc2 mx-auto max-w-3xl px-4 pb-16 pt-20">
+    <div className="mc2 mx-auto max-w-4xl px-4 pb-16 pt-20">
       <header className="pt-4">
         <h1 className="text-2xl font-bold sm:text-3xl">Match Center</h1>
         <p className="mt-1.5 text-[15px] text-(--c-muted)">
@@ -286,7 +289,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
       </header>
 
       <div className="mt-5">
-        {index && <LeagueChips leagues={enabled} activeId={leagueId} base={base} />}
+        {index && <LeaguePicker leagues={enabled} activeId={leagueId} base={base} />}
       </div>
 
       {(indexError || (error && live)) && (
@@ -314,30 +317,6 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
         </section>
       ) : (
         <>
-          {SIGNALS.length > 0 && (
-            <p className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-1.5 text-[12px] text-(--c-muted)">
-              <span className="font-semibold uppercase tracking-[0.14em] text-(--c-faint) text-[11px]">Ikonky</span>
-              {SIGNALS.map((s) => (
-                <span key={s.id} className="inline-flex items-center gap-1.5">
-                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-(--c-raised) text-(--c-muted)">{s.icon}</span>
-                  {s.label}
-                </span>
-              ))}
-              <span className="inline-flex items-center gap-1.5">
-                <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-(--c-warn)" />
-                nové od vaší poslední návštěvy
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <span aria-hidden className="flex h-1.5 w-10 gap-px overflow-hidden rounded-full">
-                  <span className="w-1/2" style={{ background: "var(--c-home)" }} />
-                  <span className="w-1/4 opacity-60" style={{ background: "var(--c-draw)" }} />
-                  <span className="w-1/4" style={{ background: "var(--c-away)" }} />
-                </span>
-                šance na výhru domácích, remíza, hosté
-              </span>
-            </p>
-          )}
-
           {!data && !error && <p className="mt-8 text-center text-(--c-muted)">Načítám zápasy…</p>}
 
           {data && groups.length === 0 && (
@@ -346,7 +325,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
             </div>
           )}
 
-          <div className="mt-4 space-y-6">
+          <div className="mt-6 space-y-6">
             {groups.map((g) => {
               const d = dayLabel(g[0].starting_at);
               return (
@@ -358,15 +337,46 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
                       {g.length} {plural(g.length, "zápas", "zápasy", "zápasů")}
                     </span>
                   </h2>
-                  <div className="space-y-2">
+                  <div className="grid gap-3 sm:grid-cols-2">
                     {g.map((f) => (
-                      <MatchRow key={f.fixture_id} f={f} home={f.home} away={f.away} isNew={isNew} onOpen={() => markSeen(f)} />
+                      <MatchCard key={f.fixture_id} f={f} colors={colors} isNew={isNew} onOpen={() => markSeen(f)} />
                     ))}
                   </div>
                 </section>
               );
             })}
           </div>
+
+          {groups.length > 0 && (
+            <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 rounded-2xl border border-(--c-line) bg-(--c-surface) px-4 py-3 text-[12px] text-(--c-muted)">
+              <span className="font-semibold uppercase tracking-[0.14em] text-(--c-faint) text-[11px]">Vysvětlivky</span>
+              {SIGNALS.map((s) => (
+                <span key={s.id} className="inline-flex items-center gap-1.5">
+                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-(--c-raised) text-(--c-muted)">{s.icon}</span>
+                  {s.label}
+                </span>
+              ))}
+              <span className="inline-flex items-center gap-1.5">
+                <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-(--c-warn)" />
+                nové od vaší poslední návštěvy
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span aria-hidden className="flex h-4 w-4 justify-between rounded-sm border border-(--c-line)">
+                  <span className="w-[3px] bg-rose-500" />
+                  <span className="w-[3px] bg-sky-500" />
+                </span>
+                pruhy po stranách = barvy týmů (domácí vlevo)
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span aria-hidden className="flex h-1.5 w-10 gap-px overflow-hidden rounded-full">
+                  <span className="w-1/2" style={{ background: "var(--c-home)" }} />
+                  <span className="w-1/4 opacity-60" style={{ background: "var(--c-draw)" }} />
+                  <span className="w-1/4" style={{ background: "var(--c-away)" }} />
+                </span>
+                šance na výhru domácích, remíza, hosté
+              </span>
+            </div>
+          )}
         </>
       )}
 

@@ -230,3 +230,9 @@ html.light .mc2 {
 .prose-ft a { color: var(--c-accent); text-decoration: underline; text-underline-offset: 2px; }
 .prose-ft code { border-radius: 4px; background: var(--c-raised); padding: 0.1rem 0.35rem; font-size: 0.9em; }
 .prose-ft blockquote { margin: 1rem 0; border-left: 3px solid var(--c-line); padding-left: 1rem; color: var(--c-muted); }
+
+/* Hlavní tlačítko: tmavý text na světle zelené v tmavém režimu, bílý text na tmavě zelené ve světlém (kontrast nad 4,5:1). */
+.btn-accent { background: var(--c-accent); color: #04110b; }
+.btn-accent-sub { color: rgb(4 17 11 / 0.8); }
+html.light .btn-accent { background: #047857; color: #fff; }
+html.light .btn-accent-sub { color: rgb(255 255 255 / 0.9); }

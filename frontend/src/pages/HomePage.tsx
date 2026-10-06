@@ -31,11 +31,22 @@ export function HomePage() {
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="min-w-0 space-y-4">
           <MatchCenterCard leagueId={league} matches={upcoming.slice(0, 3)} />
-          <div className="grid gap-4 sm:grid-cols-3">
+          <section className="rounded-3xl border border-(--c-line) bg-(--c-surface)/40 p-4 sm:p-5">
+            <div className="mb-3 flex flex-wrap items-end justify-between gap-x-4 gap-y-1 px-1">
+              <div>
+                <p className={eyebrow}>Datový katalog</p>
+                <p className="mt-0.5 text-[13px] text-(--c-muted)">Profily týmů, hráčů a rozhodčích napříč sezónami.</p>
+              </div>
+              <Link to="/catalog" className="text-[13px] font-medium text-(--c-accent) hover:underline">
+                Otevřít katalog →
+              </Link>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-3">
             <CatalogCard to={`/catalog?league=${defaultId}&tab=teams`} title="Týmy" text="Kádr, FDR kalendář a radar napříč trenérskými érami." note="První dvě části zdarma" motif={<RadarMotif />} />
             <CatalogCard to={`/catalog?league=${defaultId}&tab=players`} title="Hráči" text="Výkony podle soupeře, mapa střel a srovnání se stejnou rolí." note="První dvě části zdarma" motif={<BarsMotif />} />
             <CatalogCard to={`/catalog?league=${defaultId}&tab=referees`} title="Rozhodčí" text="Jak píská, kolik karet rozdává a jak zachází s konkrétním týmem." note="Přehled zdarma" motif={<CardsMotif />} />
-          </div>
+            </div>
+          </section>
           <div className="grid gap-4 sm:grid-cols-2">
             <Soon title="Value finder" text="Stránka s přehledem zápasů, kde jsme našli největší hodnotu: rozdíl v modelové simulaci oproti kurzu." />
             <Soon
@@ -86,18 +97,23 @@ function Hero({ leagueId, anon, next, leagueName }: { leagueId: number; anon: bo
             vidí <span className="bg-gradient-to-r from-(--c-accent) to-(--c-home) bg-clip-text text-transparent">data</span>.
           </h1>
           <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-(--c-muted) sm:text-[17px]">
-            Nejsme další výsledková tabulka. Hledáme statistiky, které se v zápasech opakují, a ukazujeme, kde z nich může plynout výhoda. Herní styl, trendy, rozhodčí i linie,
-            které z historie drží.
+            Vidíme v datech to, co ostatním uniká. Zapomeňte na obyčejné výsledkové tabulky. Jdeme daleko za hranice čísel – odkrýváme skryté vzorce v herních stylech, vlivech
+            rozhodčích i historických liniích, ze kterých můžete získat skutečnou výhodu.
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-2.5">
             <Link
               to={`/league/${leagueId}`}
-              className="inline-flex min-h-11 items-center rounded-xl bg-(--c-accent) px-6 text-[15px] font-semibold text-black shadow-lg shadow-(--c-accent)/20 transition-transform hover:-translate-y-0.5"
+              className="inline-flex min-h-14 flex-col justify-center btn-accent rounded-xl px-6 py-2 shadow-lg shadow-(--c-accent)/20 transition-transform hover:-translate-y-0.5"
             >
-              Otevřít Match Center
+              <span className="text-[15px] font-semibold leading-tight">Otevřít Match Center</span>
+              <span className="btn-accent-sub text-[12px] leading-tight">Detailní rozbor zápasů v dalších 7 dnech</span>
             </Link>
-            <Link to="/catalog" className="inline-flex min-h-11 items-center rounded-xl border border-(--c-line) bg-(--c-surface)/70 px-6 text-[15px] font-medium backdrop-blur hover:border-(--c-faint)">
-              Prozkoumat katalog
+            <Link
+              to="/catalog"
+              className="inline-flex min-h-14 flex-col justify-center rounded-xl border border-(--c-line) bg-(--c-surface)/70 px-6 py-2 backdrop-blur hover:border-(--c-faint)"
+            >
+              <span className="text-[15px] font-semibold leading-tight">Datový katalog</span>
+              <span className="text-[12px] leading-tight text-(--c-muted)">Nejrozsáhlejší databáze týmů, hráčů a rozhodčích</span>
             </Link>
             {anon && (
               <Link to="/prihlaseni" className="inline-flex min-h-11 items-center px-2 text-[14px] font-medium text-(--c-accent) hover:underline">
@@ -106,7 +122,7 @@ function Hero({ leagueId, anon, next, leagueName }: { leagueId: number; anon: bo
             )}
           </div>
           <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-1.5 text-[13px] text-(--c-muted)">
-            {["Zápasy na 7 dní dopředu", "Týmy, hráči i rozhodčí", "Simulace a kurzy"].map((t) => (
+            {["Trendy a opakující se vzorce", "Radary týmů a shotmapy hráčů", "Simulace a srovnání trenérů"].map((t) => (
               <li key={t} className="flex items-center gap-1.5">
                 <span className="text-(--c-accent)">●</span>
                 {t}
@@ -185,7 +201,7 @@ function MatchCenterCard({ leagueId, matches }: { leagueId: number; matches: Rou
           </IconTile>
           <h2 className="mt-4 text-2xl font-bold sm:text-3xl">Match Center</h2>
           <p className="mt-2 text-[14px] leading-relaxed text-(--c-muted)">
-            Ligové zápasy na sedm dní dopředu. Herní styly, forma, vzájemné zápasy, vliv rozhodčího, kurzy a simulace v jednom rozboru.
+            Detailní rozbor každého ligového zápasu na sedm dní dopředu. Herní styly, forma, vzájemné zápasy, vliv rozhodčího, opakující se trendy, modelová simulace, bilance trenérů, hráčské statistiky, hodnoty do betbuilderů... to vše v jednom rozsáhlém, vizuálně přehledném reportu.
           </p>
           <p className="mt-2 text-[12px] text-(--c-faint)">Odehrané zápasy zdarma, budoucí od registrace.</p>
           <Link to={`/league/${leagueId}`} className="mt-auto inline-flex pt-5 text-[14px] font-semibold text-(--c-accent) after:absolute after:inset-0 after:content-[''] hover:underline">
@@ -283,8 +299,8 @@ function BarsMotif() {
 function CardsMotif() {
   return (
     <svg width="96" height="80" viewBox="0 0 96 80" aria-hidden>
-      <rect x="22" y="14" width="30" height="46" rx="4" fill="var(--c-warn)" transform="rotate(-10 37 37)" />
-      <rect x="46" y="14" width="30" height="46" rx="4" fill="var(--c-loss)" transform="rotate(8 61 37)" />
+      <rect x="22" y="14" width="30" height="46" rx="4" fill="#facc15" transform="rotate(-10 37 37)" />
+      <rect x="46" y="14" width="30" height="46" rx="4" fill="#ef4444" transform="rotate(8 61 37)" />
     </svg>
   );
 }

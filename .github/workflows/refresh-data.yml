@@ -95,6 +95,14 @@ jobs:
           python scripts/build_track_record.py
           python scripts/build_feed.py
 
+      # Barvy týmů pro pruhy v Match Center. Přírůstkově: stahuje jen loga týmů, které ještě nemají barvu.
+      - name: Barvy týmů z log
+        if: steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        run: |
+          pip install pillow
+          python scripts/build_team_colors.py
+
       - name: Commit data
         if: steps.gate.outputs.run == 'true'
         run: |

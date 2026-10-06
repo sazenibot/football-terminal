@@ -11,6 +11,7 @@ import { LabTrendmetrPage } from "./pages/LabTrendmetrPage";
 import { LabXDataPage } from "./pages/LabXDataPage";
 import { LabPitchVsTsPage } from "./pages/LabPitchVsTsPage";
 import { MatchListPage } from "./pages/MatchListPage";
+import { LabMatchListPage } from "./pages/LabMatchListPage";
 import { LabPitchModelsPage } from "./pages/LabPitchModelsPage";
 import { ArticlePage, ArticlesPage } from "./pages/ArticlesPage";
 import { PricingPage } from "./pages/PricingPage";
@@ -83,6 +84,7 @@ function App() {
         <Route path="/lab/api" element={<Navigate to="/lab" replace />} />
         <Route path="/lab/api/sm-pitch" element={<Navigate to="/lab" replace />} />
         <Route path="/lab/api/pitch" element={<LabPitchVsTsPage />} />
+        <Route path="/lab/match-list" element={<LabMatchListPage />} />
         <Route path="/lab/pitch-models" element={<LabPitchModelsPage />} />
         <Route path="/lab/match-center-list" element={<Navigate to="/league" replace />} />
         <Route path="/lab/match-center-list/:leagueId" element={<LabListRedirect />} />

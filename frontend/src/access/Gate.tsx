@@ -37,11 +37,11 @@ export function Paywall({ need, title, text, compact = false }: { need: Tier; ti
       </p>
       <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
         {wantsAccount && tier === "anon" ? (
-          <Link to="/prihlaseni" className="inline-flex min-h-9 items-center rounded-xl bg-(--c-accent) px-4 text-[13px] font-semibold text-black hover:opacity-90">
+          <Link to="/prihlaseni" className="inline-flex min-h-9 items-center rounded-xl btn-accent px-4 text-[13px] font-semibold hover:opacity-90">
             Zaregistrovat zdarma
           </Link>
         ) : (
-          <Link to="/tarify" className="inline-flex min-h-9 items-center rounded-xl bg-(--c-accent) px-4 text-[13px] font-semibold text-black hover:opacity-90">
+          <Link to="/tarify" className="inline-flex min-h-9 items-center rounded-xl btn-accent px-4 text-[13px] font-semibold hover:opacity-90">
             Zobrazit tarify
           </Link>
         )}

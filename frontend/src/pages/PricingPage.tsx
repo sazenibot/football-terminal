@@ -56,7 +56,7 @@ export function PricingPage() {
               ) : t.id === "anon" ? (
                 <span className="text-[12px] text-(--c-faint)">Bez registrace</span>
               ) : t.id === "account" ? (
-                <Link to="/prihlaseni" className="inline-flex min-h-9 items-center rounded-xl bg-(--c-accent) px-4 text-[13px] font-semibold text-black hover:opacity-90">
+                <Link to="/prihlaseni" className="inline-flex min-h-9 items-center rounded-xl btn-accent px-4 text-[13px] font-semibold hover:opacity-90">
                   Zaregistrovat zdarma
                 </Link>
               ) : (
