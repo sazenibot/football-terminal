@@ -7611,14 +7611,17 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T01:57:53.132007Z",
+  "refreshed_at": "2026-10-06T15:49:23.073227Z",
   "odds": {
     "home": 1.26,
     "draw": 5.78,
     "away": 9.81,
+    "under15": 5.39,
     "over15": 1.15,
     "under25": 2.57,
     "over25": 1.5,
+    "under35": 1.6,
+    "over35": 2.33,
     "btts": 1.86,
     "source": "chance",
     "home_scoreless": 9.01,
@@ -7635,9 +7638,9 @@
     "away_ht_leading": 8.04
   },
   "ai_analysis": {
-    "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy slibuje zajímavou konfrontaci dvou týmů s odlišnou formou. Sparta Praha se nachází v dobré formě, když z posledních šesti zápasů vyhrála čtyři a dvakrát prohrála. Naopak Pardubice mají za sebou dva vítězné zápasy, ale také dvě prohry a remízu. Historie vzájemných zápasů ukazuje, že Sparta má mírnou převahu, ale Pardubice dokázaly v minulosti Spartě několikrát zdatně vzdorovat.\n\nPodle simulací a očekávaných gólových šancí (xG) je Sparta favoritem zápasu s průměrným xG 1.92 oproti 1.05 Pardubic. To naznačuje, že domácí tým by měl mít více příležitostí ke skórování. Pravděpodobnost výhry Sparty je odhadována na 49.9 %, zatímco šance na remízu a vítězství Pardubic se pohybují kolem 25 %. Vzhledem k formě a domácímu prostředí se očekává, že Sparta bude dominovat v držení míče a vytváření šancí.\n\nCo se týče gólů, statistiky naznačují, že je pravděpodobné, že oba týmy skórují (55.9 % pravděpodobnost), což by mohlo vést k atraktivnímu a dynamickému zápasu. S ohledem na to, že Sparta doma často skóruje více než dva góly, je také pravděpodobné, že zápas překročí hranici 2.5 gólů (57.3 %). Celkově lze očekávat, že Sparta Praha bude usilovat o zisk tří bodů, zatímco Pardubice se pokusí o překvapení a využití případných chyb domácích.",
+    "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy slibuje zajímavé střetnutí, zejména s ohledem na aktuální formu obou týmů. Sparta se v posledních šesti zápasech prezentovala solidními výkony, když vyhrála čtyřikrát a dvakrát prohrála. Naopak Pardubice mají za sebou smíšené výsledky, s dvěma výhrami, jednou remízou a třemi prohrami. Historie vzájemných zápasů naznačuje, že Sparta má mírnou převahu, přičemž poslední vzájemný duel skončil výhrou Pardubic 4:2.\n\nAnalýza očekávaných gólů (xG) ukazuje, že Sparta by měla mít navrch v ofenzivě, s hodnotou 1.92 oproti Pardubicím, které mají xG pouze 1.05. To naznačuje, že domácí tým by měl být schopen vytvořit více vyložených šancí. Pravděpodobnost vítězství Sparty se odhaduje na 49.9 %, zatímco šance na remízu a výhru Pardubic jsou 25.1 % a 25.0 %.\n\nZ pohledu statistik je také zajímavé, že pravděpodobnost, že oba týmy skórují, je 55.9 %, což naznačuje, že by se mohlo jednat o vyrovnaný zápas s několika góly. Celkově se očekává, že Sparta Praha, jakožto favorit, bude dominovat v držení míče a vytváření šancí, zatímco Pardubice se budou snažit o efektivní brejky a využití standardních situací.",
     "model": "gpt-4o-mini",
-    "input_hash": "f06fdaeaab2c4761",
-    "generated_at": "2026-10-05T23:57:57Z"
+    "input_hash": "30e5faddb1053817",
+    "generated_at": "2026-10-06T13:49:28Z"
   }
 }

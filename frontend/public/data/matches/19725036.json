@@ -48,20 +48,6 @@
     },
     {
       "side": "away",
-      "player_id": 32548,
-      "player_name": "Jan Kliment",
-      "type_id": 336,
-      "type_name": "Ill",
-      "type_name_cs": "Ill",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-12",
-      "end_date": null,
-      "games_missed": 3,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 37600577,
       "player_name": "Fabijan Krivak",
       "type_id": 687,
@@ -72,6 +58,20 @@
       "start_date": "2026-09-15",
       "end_date": null,
       "games_missed": 2,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 32548,
+      "player_name": "Jan Kliment",
+      "type_id": 336,
+      "type_name": "Ill",
+      "type_name_cs": "Ill",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-12",
+      "end_date": null,
+      "games_missed": 3,
       "likely_available": false
     }
   ],
@@ -7455,14 +7455,17 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T01:57:49.483283Z",
+  "refreshed_at": "2026-10-06T15:49:15.081546Z",
   "odds": {
     "home": 2.56,
     "draw": 3.41,
     "away": 2.61,
+    "under15": 3.85,
     "over15": 1.25,
     "under25": 2.02,
     "over25": 1.8,
+    "under35": 1.38,
+    "over35": 2.99,
     "btts": 1.63,
     "source": "chance",
     "home_scoreless": 3.56,
@@ -7479,9 +7482,9 @@
     "away_ht_leading": 3.15
   },
   "ai_analysis": {
-    "text": "Zápas mezi Teplicemi a Sigmou Olomouc se odehraje na stadionu Na Stínadlech a slibuje zajímavou konfrontaci dvou týmů s odlišnou formou. Teplice v posledních šesti zápasech zaznamenaly tři výhry a tři prohry, což naznačuje nestabilní výkonnost. Na druhé straně Sigma Olomouc se může pochlubit lepšími výsledky, když vyhrála čtyři z posledních šesti zápasů, což jí dává mírnou výhodu před tímto utkáním.\n\nHistorie vzájemných zápasů ukazuje na vyrovnanost obou týmů, přičemž poslední zápas skončil výhrou Sigmy 3:1. Teplice však mají doma silnou podporu a mohou se spolehnout na to, že se jim daří lépe na vlastním hřišti. Očekává se, že zápas bude vyrovnaný, s mírně vyššími šancemi na výhru pro hosty, jak naznačují i simulace s xG hodnotami 1.73 pro Teplice a 1.55 pro Sigmu.\n\nStatistiky naznačují, že by mohlo padnout více než dvě branky, přičemž pravděpodobnost, že oba týmy skórují, je vysoká (64.5 %). Teplice se mohou spolehnout na domácí prostředí, ale Sigma Olomouc má formu, která je může posunout k úspěchu. Celkově lze očekávat napínavý zápas s vyrovnaným průběhem a šancemi na obě strany.",
+    "text": "Zápas mezi Teplicemi a Sigmou Olomouc v rámci Chance ligy slibuje vyrovnané a napínavé utkání. Domácí Teplice mají v posledních šesti zápasech smíšenou formu, s třemi výhrami a třemi prohrami. Na druhé straně Sigma Olomouc se prezentuje lepšími výkony, když vyhrála čtyři z posledních šesti zápasů. Historie vzájemných zápasů ukazuje, že Sigma má mírnou převahu, přičemž poslední vzájemné utkání skončilo výhrou pro Sigmu 3:1.\n\nPodle simulací očekáváme, že Teplice budou mít mírně vyšší očekávané góly (xG 1.73) než Sigma (xG 1.55). To naznačuje, že domácí mohou mít více příležitostí ke skórování, avšak Sigma má zkušenosti a formu, která jí může pomoci v obranné fázi. Očekává se, že zápas bude vyrovnaný, s pravděpodobností 41.9 % na výhru Teplic, 32.8 % na výhru Sigmy a 25.4 % na remízu.\n\nStatistiky také naznačují vysokou pravděpodobnost, že oba týmy skórují (64.5 %), což by mohlo přispět k atraktivnímu utkání. Vzhledem k formě obou týmů a jejich vzájemným zápasům je pravděpodobné, že zápas bude vyrovnaný a může rozhodnout jediný gól nebo individuální chyba. Na domácím stadionu Na Stínadlech mohou Teplice těžit z podpory fanoušků, což by mohlo hrát klíčovou roli v konečném výsledku.",
     "model": "gpt-4o-mini",
-    "input_hash": "e85fa189bd4b6963",
-    "generated_at": "2026-10-05T23:57:53Z"
+    "input_hash": "0ff9c272b5c4a138",
+    "generated_at": "2026-10-06T13:49:21Z"
   }
 }

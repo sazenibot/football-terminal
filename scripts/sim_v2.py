@@ -613,6 +613,13 @@ def implied(odds: dict) -> dict | None:
         out["over25_pct"] = round(100 * (1 / o) / s2, 1)
         out["under25_pct"] = round(100 * (1 / u) / s2, 1)
         out["odds"].update({"over25": o, "under25": u})
+    for line in ("15", "35"):
+        o, u = odds.get(f"over{line}"), odds.get(f"under{line}")
+        if isinstance(o, (int, float)) and isinstance(u, (int, float)) and o > 1 and u > 1:
+            s2 = 1 / o + 1 / u
+            out[f"over{line}_pct"] = round(100 * (1 / o) / s2, 1)
+            out[f"under{line}_pct"] = round(100 * (1 / u) / s2, 1)
+            out["odds"].update({f"over{line}": o, f"under{line}": u})
     return out
 
 

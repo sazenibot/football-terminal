@@ -7258,14 +7258,17 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T01:57:40.112255Z",
+  "refreshed_at": "2026-10-06T15:49:00.502849Z",
   "odds": {
     "home": 2.25,
     "draw": 3.55,
     "away": 2.93,
+    "under15": 4.02,
     "over15": 1.23,
     "under25": 2.08,
     "over25": 1.75,
+    "under35": 1.4,
+    "over35": 2.91,
     "btts": 1.6,
     "source": "chance",
     "home_scoreless": 4.1,
@@ -7282,9 +7285,9 @@
     "away_ht_leading": 3.41
   },
   "ai_analysis": {
-    "text": "Zápas mezi Bohemians 1905 a Baníkem Ostrava, který se odehraje na Stadionu Dolíček, slibuje zajímavou podívanou. Domácí Bohemians mají v posledních zápasech smíšenou formu, s dvěma výhrami, dvěma remízami a jednou prohrou. Na druhé straně Baník Ostrava se prezentuje solidními výkony, přičemž v posledních šesti zápasech zaznamenal čtyři výhry a dvě remízy. Historie vzájemných zápasů naznačuje vyrovnanost, přičemž poslední tři střetnutí skončila vítězstvím Bohemians.\n\nPodle simulací očekáváme, že domácí tým bude mít mírnou převahu, s očekávanými góly (xG) 1.67 oproti 0.99 pro Baník. To naznačuje, že Bohemians by měli být schopni vytvořit více příležitostí ke skórování. Pravděpodobnost remízy se pohybuje kolem 25.8 %, což ukazuje, že vyrovnaný zápas je také na stole. Očekává se, že oba týmy budou mít šanci skórovat, přičemž pravděpodobnost, že oba týmy dají gól, je 51.2 %.\n\nCelkově lze očekávat, že zápas bude vyrovnaný s mírnou převahou domácích. Klíčovými faktory budou efektivita v zakončení a schopnost obrany udržet čisté konto. Pokud Bohemians dokážou využít domácí prostředí a Baník bude mít problémy s produktivitou, mohli by se radovat z dalšího vítězství. Na druhou stranu, pokud se Baník podaří udržet tlak a využít své šance, mohou překvapit a odvézt si bod nebo dokonce tři.",
+    "text": "Zápas mezi Bohemians 1905 a Baníkem Ostrava, který se odehraje na Stadionu Dolíček, slibuje zajímavou konfrontaci dvou týmů s rozdílnou formou. Domácí Bohemians mají za sebou smíšené výsledky, přičemž poslední zápasy ukazují na určitou stabilitu s dvěma výhrami, ale také s několika remízami a prohrami. Naopak Baník Ostrava se může pyšnit lepší formou, když v posledních zápasech dokázal vybojovat několik vítězství, což by mohlo posílit jejich sebevědomí před tímto klíčovým střetnutím.\n\nHistorie vzájemných zápasů naznačuje vyrovnanost obou týmů, přičemž poslední čtyři duely skončily různými výsledky, včetně dvou výher pro Bohemians a jedné pro Baník. Statistiky ukazují na mírnou převahu domácího týmu, který má průměrné očekávané góly (xG) 1.67, zatímco Baník má xG pouze 0.99. To naznačuje, že Bohemians by měli mít více příležitostí ke skórování, což by mohlo hrát klíčovou roli v celkovém výsledku.\n\nPodle simulací je pravděpodobnost výhry domácího týmu 47.9 %, zatímco Baník má šanci na výhru 26.4 %. Také je zde 51.2 % pravděpodobnost, že oba týmy skórují. Z hlediska ofenzivní síly a domácího prostředí by Bohemians měli mít navrch, ale Baník může překvapit, pokud se mu podaří udržet defenzivu a využít příležitosti ke kontraútokům. Celkově lze očekávat vyrovnaný zápas s mírnou převahou domácího týmu.",
     "model": "gpt-4o-mini",
-    "input_hash": "9734eb47ea603064",
-    "generated_at": "2026-10-05T23:57:44Z"
+    "input_hash": "d1350d8d96e3d3f6",
+    "generated_at": "2026-10-06T13:49:07Z"
   }
 }

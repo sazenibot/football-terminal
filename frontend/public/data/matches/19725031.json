@@ -5838,14 +5838,17 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T01:57:24.365783Z",
+  "refreshed_at": "2026-10-06T15:48:31.538354Z",
   "odds": {
     "home": 1.52,
     "draw": 4.08,
     "away": 6.06,
+    "under15": 3.71,
     "over15": 1.27,
     "under25": 1.95,
     "over25": 1.85,
+    "under35": 1.34,
+    "over35": 3.19,
     "btts": 1.88,
     "source": "chance",
     "home_scoreless": 5.78,
@@ -5862,9 +5865,9 @@
     "away_ht_leading": 5.87
   },
   "ai_analysis": {
-    "text": "Zápas mezi Hradcem Králové a SK Artis Brno, který se odehraje na stadionu Malšovická aréna, slibuje zajímavou konfrontaci. Domácí tým se nachází ve smíšené formě, když z posledních šesti zápasů zaznamenal dvě výhry, dvě remízy a dvě prohry. Na druhé straně hosté z Brna mají stabilnější formu, s pěti zápasy bez prohry, což by mohlo posílit jejich sebevědomí před tímto klíčovým utkáním.\n\nHistorie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž poslední čtyři duely skončily remízou nebo těsným vítězstvím. S ohledem na statistiky očekávaných gólů (xG) má Hradec Králové mírnou výhodu s 1.48 xG oproti 0.8 xG Brna, což naznačuje, že domácí tým by mohl být produktivnější v koncovce. Nicméně, brněnská obrana se může spolehnout na solidní výkony, což zvyšuje pravděpodobnost, že zápas skončí s nízkým počtem gólů.\n\nAnalýza také naznačuje, že existuje 43.4% šance na obě strany skórovat, což by mohlo přispět k atraktivnímu utkání. Celkově lze očekávat, že Hradec Králové se pokusí využít domácího prostředí a aktivní ofenzívy, zatímco Brno bude spoléhat na pevnou obranu a rychlé protiútoky. Výsledek zápasu by mohl být těsný, s vysokou pravděpodobností remízy nebo těsného vítězství pro domácí.",
+    "text": "Zápas mezi Hradcem Králové a SK Artis Brno, který se odehraje 10. října 2026 na Malšovické aréně, slibuje zajímavé střetnutí. Domácí tým Hradec Králové se nachází v mírně kolísající formě, přičemž v posledních šesti zápasech zaznamenal dvě výhry, dvě remízy a dvě prohry. Na druhé straně, SK Artis Brno má stabilnější výkon, s pěti zápasy bez prohry, což může posílit jejich sebevědomí před tímto utkáním.\n\nHistorie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž poslední čtyři zápasy skončily remízou nebo těsným vítězstvím. To naznačuje, že i tentokrát by se mohlo jednat o vyrovnaný duel. Podle simulací očekávaných gólů (xG) má Hradec Králové mírnou výhodu s hodnotou 1.48 oproti 0.8 pro Brno, což naznačuje, že domácí by mohli mít více příležitostí ke skórování.\n\nStatistiky také ukazují, že šance na remízu se pohybuje kolem 27.2 %, což je solidní pravděpodobnost. Hradec Králové má navíc slušné šance na vstřelení dvou a více gólů, což může být klíčové pro úspěch v tomto zápase. Celkově se očekává, že zápas bude vyrovnaný, s možností, že domácí tým využije výhodu domácího prostředí k zisku tří bodů.",
     "model": "gpt-4o-mini",
-    "input_hash": "ae5b2ee4098b6b4c",
-    "generated_at": "2026-10-05T23:57:29Z"
+    "input_hash": "890f1a7851f42f6d",
+    "generated_at": "2026-10-06T13:48:36Z"
   }
 }

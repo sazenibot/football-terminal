@@ -7223,14 +7223,17 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T01:57:34.671619Z",
+  "refreshed_at": "2026-10-06T15:48:49.651544Z",
   "odds": {
     "home": 1.48,
     "draw": 4.67,
     "away": 5.76,
+    "under15": 5.68,
     "over15": 1.13,
     "under25": 2.72,
     "over25": 1.45,
+    "under35": 1.67,
+    "over35": 2.2,
     "btts": 1.54,
     "source": "chance",
     "home_scoreless": 7.68,
@@ -7247,9 +7250,9 @@
     "away_ht_leading": 5.31
   },
   "ai_analysis": {
-    "text": "Zápas mezi Viktorií Plzeň a Mladou Boleslaví v rámci Chance Ligy se odehraje na Doosan Aréně 10. října 2026. Domácí Plzeň má v posledních zápasech smíšenou formu, s dvěma výhrami, jednou remízou a třemi prohrami. Naopak Mladá Boleslav se může pochlubit lepšími výkony, když vyhrála čtyři z posledních šesti utkání. Historie vzájemných zápasů ukazuje jasnou dominanci Plzně, která v posledních pěti střetnutích s Boleslaví zvítězila čtyřikrát.\n\nZ pohledu očekávaných výkonů naznačuje analýza xG (expected goals), že Mladá Boleslav má mírně vyšší šance na vstřelení gólů (1.8) než Plzeň (1.52). To by mohlo naznačovat, že hosté budou mít v útoku větší příležitosti. Nicméně, s ohledem na domácí prostředí a historickou bilanci, je pravděpodobné, že Plzeň se pokusí využít výhody domácího hřiště a aktivně napadat.\n\nPodle simulací je pravděpodobnost výhry Plzně 36.8 %, remízy 24.9 % a výhry Boleslavi 38.4 %. Vysoká pravděpodobnost (64.9 %) obou týmů, že vstřelí gól, a také možnost, že padne více než 2,5 gólu (65.1 %), naznačuje, že zápas by mohl být vyrovnaný a ofenzivně laděný. Celkově lze očekávat napínavý duel, kde budou oba týmy usilovat o zisk důležitých bodů.",
+    "text": "Zápas mezi Viktorií Plzeň a Mladou Boleslaví v rámci Chance Ligy se odehraje na Doosan Aréně, kde domácí tým má výhodu. Plzeň se v posledních zápasech nachází v mírně kolísavé formě, s jednou výhrou, dvěma remízami a dvěma prohrami. Na druhou stranu, Mladá Boleslav se prezentuje stabilněji, s čtyřmi výhrami a jednou remízou v posledních šesti utkáních. Historie vzájemných zápasů ukazuje jasnou dominanci Plzně, která v posledních pěti střetnutích s Boleslaví neztratila ani bod.\n\nPodle simulací očekávaných gólů (xG) má Mladá Boleslav mírně vyšší hodnotu (1.8) oproti Plzni (1.52), což naznačuje, že hosté by mohli být nebezpečnější v ofenzivě. Nicméně, Plzeň má silnou domácí bilanci a pravděpodobnost, že oba týmy skórují, je vysoká (64.9 %). Vzhledem k formě obou týmů a historickým výsledkům lze očekávat vyrovnaný zápas, kde by Plzeň mohla mít mírnou výhodu.\n\nCo se týče očekávaného výsledku, podle simulací je pravděpodobnost výhry Plzně 36.8 %, remízy 24.9 % a výhry Boleslavi 38.4 %. To naznačuje, že zápas by mohl skončit těsným výsledkem, možná s výhodou pro hosty, pokud udrží svou aktuální formu. Celkově se očekává atraktivní zápas s možností několika gólů, přičemž šance na více než 2,5 góly je 65.1 %.",
     "model": "gpt-4o-mini",
-    "input_hash": "1be7c1db1b5a2837",
-    "generated_at": "2026-10-05T23:57:40Z"
+    "input_hash": "8a992c425b8bc0ee",
+    "generated_at": "2026-10-06T13:48:59Z"
   }
 }

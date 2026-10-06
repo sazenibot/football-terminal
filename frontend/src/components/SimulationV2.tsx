@@ -41,7 +41,9 @@ export type SimV2 = {
     draw_pct: number;
     away_win_pct: number;
     margin_pct: number;
+    over15_pct?: number;
     over25_pct?: number;
+    over35_pct?: number;
     under25_pct?: number;
     odds: Record<string, number>;
   } | null;

@@ -7828,14 +7828,17 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T01:57:19.775240Z",
+  "refreshed_at": "2026-10-06T15:48:22.045170Z",
   "odds": {
     "home": 9.45,
     "draw": 5.91,
     "away": 1.26,
+    "under15": 5.35,
     "over15": 1.15,
     "under25": 2.56,
     "over25": 1.5,
+    "under35": 1.6,
+    "over35": 2.33,
     "btts": 1.88,
     "source": "chance",
     "home_scoreless": 1.96,
@@ -7852,9 +7855,9 @@
     "away_ht_leading": 1.62
   },
   "ai_analysis": {
-    "text": "Zápas mezi Zlínem a Slavií Praha v rámci Chance Ligy slibuje zajímavé střetnutí, přičemž domácí tým Zlína se nachází v slabé formě. V posledních šesti zápasech zaznamenali pouze jednu remízu a pět porážek, což naznačuje, že se jim nedaří. Naopak Slavia Praha, která má za sebou čtyři vítězství a dvě remízy, se nachází v dobré formě a je favoritem tohoto utkání.\n\nHistorie vzájemných zápasů ukazuje, že Slavia má nad Zlínem jasnou převahu, když v posledních pěti zápasech získala čtyři vítězství a jednou remizovala. Zlín se snažil v posledních zápasech o zlepšení, ale s ohledem na aktuální formu a statistiky se očekává, že Slavia bude dominovat. Očekávané xG hodnoty (0.91 pro Zlín a 1.95 pro Slavii) potvrzují, že Slavia má výrazně vyšší šance na vstřelení gólů.\n\nZ pohledu pravděpodobnosti lze očekávat, že Slavia Praha vyhraje, přičemž šance na remízu se pohybují kolem 24.5 %. Vzhledem k formě obou týmů a historickým výsledkům by se mohlo jednat o zápas s několika góly, přičemž pravděpodobnost, že oba týmy skórují, se pohybuje kolem 51.7 %. Celkově lze očekávat, že Slavia Praha si odnese tři body a Zlín bude mít problém s efektivitou v útoku.",
+    "text": "Zápas mezi Zlínem a Slavií Praha, který se odehraje na stadionu Letná, slibuje zajímavé střetnutí. Domácí Zlín se nachází v těžké formě, kdy posledních šest zápasů skončilo čtyřmi prohrami a dvěma remízami. Naopak Slavia Praha se může pyšnit pozitivními výsledky, když vyhrála čtyři z posledních šesti utkání a dvakrát remizovala. Historie vzájemných zápasů naznačuje, že Slavia má výraznou převahu, což se projevilo i v posledním utkání, kdy Zlín prohrál 1:3.\n\nAnalýza očekávaných gólů (xG) ukazuje, že Slavia má výrazně vyšší očekávané góly (1.95) než Zlín (0.91). To naznačuje, že Slavia má větší šanci na úspěch v ofenzivě, zatímco Zlín bude muset spoléhat na solidní obranu a efektivní využití šancí. Podle simulací je pravděpodobnost vítězství Slavie 47.4 %, zatímco remíza se odhaduje na 24.5 % a vítězství Zlína na 28.1 %.\n\nZ pohledu statistik se očekává, že zápas bude mít více než 2,5 gólu, což je podpořeno pravděpodobností 54.9 %. Také je zde šance na to, že oba týmy skórují, což má pravděpodobnost 51.7 %. Celkově se dá očekávat, že Slavia Praha bude dominovat v ofenzivě, zatímco Zlín se bude snažit udržet krok a překvapit domácí fanoušky.",
     "model": "gpt-4o-mini",
-    "input_hash": "6604eba87ab061cc",
-    "generated_at": "2026-10-05T23:57:24Z"
+    "input_hash": "adac4c9eb082deb4",
+    "generated_at": "2026-10-06T13:48:30Z"
   }
 }

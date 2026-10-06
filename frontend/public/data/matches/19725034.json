@@ -7152,14 +7152,17 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T01:57:44.160522Z",
+  "refreshed_at": "2026-10-06T15:49:08.223013Z",
   "odds": {
     "home": 1.45,
     "draw": 4.29,
     "away": 7.02,
+    "under15": 3.57,
     "over15": 1.28,
     "under25": 1.9,
     "over25": 1.9,
+    "under35": 1.32,
+    "over35": 3.31,
     "btts": 2.02,
     "source": "chance",
     "home_scoreless": 5.92,
@@ -7176,9 +7179,9 @@
     "away_ht_leading": 6.57
   },
   "ai_analysis": {
-    "text": "Zápas mezi Slovanem Liberec a Slováckem v rámci Chance Ligy se očekává jako souboj, ve kterém domácí tým vstupuje s výraznou výhodou. Slovan Liberec má v posledních zápasech solidní formu, s pěti výhrami a jednou remízou. Naopak Slovácko se potýká s problémy, když v posledních šesti utkáních zaznamenalo pouze dvě remízy a čtyři prohry. Historie vzájemných zápasů také hovoří jasně ve prospěch Liberce, který vyhrál všechny poslední čtyři duely.\n\nAnalýza očekávaných výkonů naznačuje, že Slovan Liberec by měl dominovat na hřišti. Podle simulací má domácí tým očekávané góly (xG) 1.72, zatímco Slovácko pouze 0.65. To naznačuje, že Liberec by měl mít více příležitostí ke skórování a pravděpodobně se dočká i více než jednoho gólu. Očekává se, že Slovácko bude mít potíže s prolomením obrany domácích.\n\nVzhledem k formě obou týmů a historickým výsledkům je pravděpodobné, že Slovan Liberec zvítězí, přičemž remíza je méně pravděpodobná. Očekává se, že zápas by mohl skončit s výsledkem 2:0 nebo 3:1 pro Liberec, s nízkou pravděpodobností, že by Slovácko dokázalo vstřelit více než jeden gól. Celkově by zápas měl být ve prospěch domácího týmu, který si bude chtít udržet svoji vítěznou sérii.",
+    "text": "Zápas mezi Slovanem Liberec a Slováckem v rámci Chance Ligy slibuje zajímavé střetnutí, zejména s ohledem na aktuální formu obou týmů. Domácí Slovan se nachází v dobré formě, když z posledních šesti zápasů zaznamenal čtyři vítězství a dvě remízy. Naopak Slovácko zažívá těžší období, kdy se mu podařilo vyhrát pouze jednou a dvakrát remizovalo, což naznačuje, že budou mít problémy s udržením tempa proti silnému soupeři.\n\nHistorie vzájemných zápasů ukazuje jasnou dominanci Slovanu Liberec, který v posledních pěti utkáních proti Slovácku vyhrál se skóre 15:2. Tento trend se pravděpodobně promítne i do nadcházejícího zápasu, kde Slovan bude chtít potvrdit svou nadvládu a získat tři body na domácím stadionu. Očekává se, že domácí tým bude mít výraznou převahu v držení míče a šancích, což potvrzují i simulace s očekávanými góly (xG), kde Slovan vykazuje 1.72 oproti 0.65 pro Slovácko.\n\nNa základě těchto faktorů se dá předpokládat, že Slovan Liberec vstoupí do zápasu jako favorit a bude usilovat o rychlé otevření skóre. Slovácko bude muset zlepšit svou defenzivu, aby se vyhnulo vysoké porážce. Vzhledem k formě a historickým výsledkům se očekává, že zápas skončí vítězstvím domácího týmu, přičemž šance na to, že oba týmy skórují, jsou relativně nízké.",
     "model": "gpt-4o-mini",
-    "input_hash": "a464ee9673623df8",
-    "generated_at": "2026-10-05T23:57:49Z"
+    "input_hash": "6247fd51a1a3baff",
+    "generated_at": "2026-10-06T13:49:13Z"
   }
 }

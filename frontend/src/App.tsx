@@ -1,6 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes, useParams } from "react-router-dom";
 import { RoundPage } from "./pages/RoundPage";
-import { MatchPage } from "./pages/MatchPage";
+import { MatchCenterLabRedirect, MatchRoute } from "./pages/MatchRoute";
 import { HomePage } from "./pages/HomePage";
 import { CatalogPage } from "./pages/CatalogPage";
 import { CatalogTeamPage } from "./pages/CatalogTeamPage";
@@ -32,7 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/league/:leagueId" element={<LeagueRoute />} />
-        <Route path="/match/:fixtureId" element={<MatchPage />} />
+        <Route path="/match/:fixtureId" element={<MatchRoute />} />
         <Route path="/catalog" element={<CatalogPage />} />
         <Route path="/catalog/teams/:id" element={<CatalogTeamPage />} />
         <Route path="/catalog/players/:id" element={<CatalogPlayerPage />} />
@@ -46,6 +46,8 @@ function App() {
         <Route path="/lab/api/sm-pitch" element={<Navigate to="/lab" replace />} />
         <Route path="/lab/api/pitch" element={<LabPitchVsTsPage />} />
         <Route path="/lab/pitch-models" element={<LabPitchModelsPage />} />
+        <Route path="/lab/match-center-2" element={<MatchCenterLabRedirect />} />
+        <Route path="/lab/match-center-2/:fixtureId" element={<MatchCenterLabRedirect />} />
         <Route path="/lab/match" element={<Navigate to="/league/262" replace />} />
         <Route path="/lab/match/:fixtureId" element={<LabMatchRedirect />} />
       </Routes>

@@ -227,10 +227,16 @@ def extract_odds_board(event: dict, home_name: str, away_name: str) -> dict:
             if canon == "OVER_UNDER" and "počet gólů v zápasu" in raw_l and "tým" not in raw_l:
                 if line == 1.5 and outcome == "OVER":
                     match_keys.setdefault("over15", dec)
+                if line == 1.5 and outcome == "UNDER":
+                    match_keys.setdefault("under15", dec)
                 if line == 2.5 and outcome == "OVER":
                     match_keys.setdefault("over25", dec)
                 if line == 2.5 and outcome == "UNDER":
                     match_keys.setdefault("under25", dec)
+                if line == 3.5 and outcome == "OVER":
+                    match_keys.setdefault("over35", dec)
+                if line == 3.5 and outcome == "UNDER":
+                    match_keys.setdefault("under35", dec)
 
             if canon == "HOME_OVER_UNDER" and "počet gólů týmu" in raw_l:
                 if line == 0.5 and outcome == "UNDER":
