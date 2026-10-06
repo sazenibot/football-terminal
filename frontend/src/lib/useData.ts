@@ -15,6 +15,10 @@ import type {
   MatchData,
 } from "../types";
 
+/** Katalog (týmy, hráči, rozhodčí, historie) leží v R2, ne v gitu. Adresu bucketu dává VITE_CATALOG_BASE
+    (např. https://data.football-terminal.com/catalog). Bez ní se čte z /data/catalog u webu (lokální vývoj). */
+const CATALOG = ((import.meta.env.VITE_CATALOG_BASE as string | undefined) || "/data/catalog").replace(/\/$/, "");
+
 export class DataMissingError extends Error {
   constructor(url: string) {
     super(`missing:${url}`);
@@ -98,7 +102,7 @@ export function useCatalogHub(leagueId: number | null) {
     setData(null);
     setError(null);
     setMissing(false);
-    fetchJson<CatalogHub>(`/data/catalog/leagues/${leagueId}.json`)
+    fetchJson<CatalogHub>(`${CATALOG}/leagues/${leagueId}.json`)
       .then(setData)
       .catch((e) => {
         if (e instanceof DataMissingError) setMissing(true);
@@ -119,7 +123,7 @@ function useCatalogEntity<T>(kind: "teams" | "players" | "referees", id: number 
     setData(null);
     setError(null);
     setMissing(false);
-    fetchJson<T>(`/data/catalog/${kind}/${id}.json`)
+    fetchJson<T>(`${CATALOG}/${kind}/${id}.json`)
       .then(setData)
       .catch((e) => {
         if (e instanceof DataMissingError) setMissing(true);
@@ -144,7 +148,7 @@ export function useCatalogExplorer(leagueId: number | null) {
     setData(null);
     setError(null);
     setMissing(false);
-    fetchJson<CatalogExplorer>(`/data/catalog/leagues/${leagueId}.explorer.json`)
+    fetchJson<CatalogExplorer>(`${CATALOG}/leagues/${leagueId}.explorer.json`)
       .then(setData)
       .catch((e) => {
         if (e instanceof DataMissingError) setMissing(true);
@@ -163,7 +167,7 @@ export function useCatalogPlayer(id: number | null) {
 export const PLAYER_SHARDS = 32;
 
 export function usePlayerShard(leagueId: number | null, playerId: number | null) {
-  return useOptionalJson<CatalogPlayerIndex>(leagueId && playerId ? `/data/catalog/player_matches/${leagueId}/${playerId % PLAYER_SHARDS}.json` : null);
+  return useOptionalJson<CatalogPlayerIndex>(leagueId && playerId ? `${CATALOG}/player_matches/${leagueId}/${playerId % PLAYER_SHARDS}.json` : null);
 }
 
 /** Souhrny hráčů ligy pro vybranou sezónu: buňky "doma/venku.podzim/jaro", řádek = [id, role, tým, zápasy, ...POOL_KEYS]. */
@@ -176,7 +180,7 @@ export type PlayerPool = {
 };
 
 export function usePlayerPool(leagueId: number | null, season: number | "all" | null) {
-  return useOptionalJson<PlayerPool>(leagueId && season != null ? `/data/catalog/player_pools/${leagueId}/${season}.json` : null);
+  return useOptionalJson<PlayerPool>(leagueId && season != null ? `${CATALOG}/player_pools/${leagueId}/${season}.json` : null);
 }
 
 export function useCatalogReferee(id: number | null) {
@@ -205,12 +209,12 @@ export type CatalogSearchIndex = {
 };
 
 export function useCatalogDirectory() {
-  return useOptionalJson<{ leagues: CatalogDirectoryLeague[] }>("/data/catalog/directory.json");
+  return useOptionalJson<{ leagues: CatalogDirectoryLeague[] }>(`${CATALOG}/directory.json`);
 }
 
 /** Index pro fulltext přes všechny ligy. Stahuje se až když ho někdo potřebuje (první psaní do hledání). */
 export function useCatalogSearchIndex(enabled: boolean) {
-  return useOptionalJson<CatalogSearchIndex>(enabled ? "/data/catalog/search.json" : null);
+  return useOptionalJson<CatalogSearchIndex>(enabled ? `${CATALOG}/search.json` : null);
 }
 
 export function useXgotIndex() {
@@ -226,11 +230,11 @@ export function useXgotIndex() {
 }
 
 export function usePitchTeam(id: number | null) {
-  return useOptionalJson<PitchCatalogFile>(id ? `/data/catalog/pitch/teams/${id}.json` : null);
+  return useOptionalJson<PitchCatalogFile>(id ? `${CATALOG}/pitch/teams/${id}.json` : null);
 }
 
 export function usePitchPlayer(id: number | null) {
-  return useOptionalJson<PitchCatalogFile>(id ? `/data/catalog/pitch/players/${id}.json` : null);
+  return useOptionalJson<PitchCatalogFile>(id ? `${CATALOG}/pitch/players/${id}.json` : null);
 }
 
 export function useSimV2(fixtureId: number | null) {
@@ -238,7 +242,7 @@ export function useSimV2(fixtureId: number | null) {
 }
 
 export function usePitchH2H(enabled = true) {
-  return useOptionalJson<PitchH2HFile>(enabled ? "/data/catalog/pitch/h2h.json" : null);
+  return useOptionalJson<PitchH2HFile>(enabled ? `${CATALOG}/pitch/h2h.json` : null);
 }
 
 function useOptionalJson<T>(url: string | null) {
@@ -281,7 +285,7 @@ export type LeagueUniverse = {
 };
 
 export function useLeagueUniverse(leagueId: number | null) {
-  return useOptionalJson<LeagueUniverse>(leagueId ? `/data/catalog/leagues/${leagueId}.ref_universe.json` : null);
+  return useOptionalJson<LeagueUniverse>(leagueId ? `${CATALOG}/leagues/${leagueId}.ref_universe.json` : null);
 }
 
 /** Primární barvy týmů z log (scripts/build_team_colors.py). Jeden malý soubor, načte se jednou. */
