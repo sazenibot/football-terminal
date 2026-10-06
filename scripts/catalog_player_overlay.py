@@ -372,3 +372,77 @@ def sync_squad_appearances(catalog, league_id: int, current_season_id: int | Non
             write_json(path, team)
             n += 1
     print(f"  soupisky: vytížení hráčů u {n} týmů")
+
+
+def merge_fixtures_into_index(index: dict, fixtures: list, known: set[int], prev_by_season: dict[int, dict[int, int]]) -> tuple[int, int]:
+    """Přidá dohrané zápasy (se soupiskami) do ligového indexu hráčů. Vrací (nových řádků, nových zápasů).
+
+    Idempotentní: zápas, který hráč v indexu už má (podle fid), se nepřidá podruhé.
+    """
+    players = {int(p["id"]): p for p in index.get("players") or []}
+    seen_fids = {m["fid"] for p in players.values() for m in p["matches"]}
+    new_fids: dict[int, set[int]] = defaultdict(set)
+    added = 0
+    for fx in fixtures:
+        sid = fx.get("season_id")
+        prev_pos = prev_by_season.get(int(sid), {}) if sid else {}
+        fid = fx.get("id")
+        for lu in fx.get("lineups") or []:
+            row = compact_player_match(fx, lu, known, prev_pos)
+            if not row:
+                continue
+            pid, name, pos, no = row.pop("pid"), row.pop("pn"), row.pop("pos"), row.pop("no")
+            player = players.get(pid)
+            if player is None:
+                player = {
+                    "id": pid,
+                    "name": name or f"Hráč #{pid}",
+                    "image": None,
+                    "role": role_of(pos),
+                    "team_id": row["tid"],
+                    "team_name": row["tn"],
+                    "number": no,
+                    "matches": [],
+                }
+                players[pid] = player
+            if any(m["fid"] == row["fid"] for m in player["matches"]):
+                continue
+            if fid not in seen_fids and sid:
+                new_fids[int(sid)].add(int(fid))
+            player["matches"].append(row)
+            added += 1
+            if row["d"] >= max((m["d"] for m in player["matches"]), default=""):
+                player["team_id"], player["team_name"] = row["tid"], row["tn"]
+                if no is not None:
+                    player["number"] = no
+    for player in players.values():
+        player["matches"].sort(key=lambda m: m.get("d") or "", reverse=True)
+    index["players"] = sorted(players.values(), key=lambda p: p["id"])
+    for s in index.get("seasons") or []:
+        extra = len(new_fids.get(int(s["id"]), ()))
+        if extra:
+            s["games"] = (s.get("games") or 0) + extra
+    return added, sum(len(v) for v in new_fids.values())
+
+
+def merge_incremental_players(league_id: int, catalog, days: int, known: set[int], parse_standings, now_iso) -> None:
+    """Denní přírůstek hráčského indexu: jedno volání na posledních pár dní, žádný 5letý backfill."""
+    import json
+    from datetime import timedelta
+
+    path = catalog / "leagues" / f"{league_id}.players.json"
+    if not path.exists():
+        print(f"  hráči {league_id}: chybí cold index ({path.name}), přírůstek přeskočen")
+        return
+    index = json.loads(path.read_text(encoding="utf-8"))
+    end = date.today()
+    fixtures = fetch_history_with_lineups(league_id, end - timedelta(days=days), end)
+    if not fixtures:
+        return
+    # FDR pásmo soupeře z loňské tabulky stačí pro sezónu přírůstku (poslední dvě sezóny, jedno volání standings)
+    prev_by_season = prev_tables_for_seasons(last_seasons(league_id)[:2], parse_standings)
+    added, new_games = merge_fixtures_into_index(index, fixtures, known, prev_by_season)
+    if added:
+        index["generated_at"] = now_iso()
+        path.write_text(json.dumps(index, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+    print(f"  hráči {league_id}: +{added} řádků zápasů hráčů, +{new_games} nových zápasů v indexu")

@@ -92,7 +92,8 @@ export function per90(total: number, minutes: number) {
 export function metricValue(rows: CatalogPlayerMatch[], def: PlayerStatDef): number | null {
   if (!rows.length) return null;
   if (def.asPct) {
-    return Math.round((100 * sumKey(rows, def.key)) / rows.length);
+    // souhrnný řádek z poolu nese počet zápasů v "_n", obyčejné řádky se prostě počítají
+    return Math.round((100 * sumKey(rows, def.key)) / (sumKey(rows, "_n") || rows.length));
   }
   if (def.per90) return per90(sumKey(rows, def.key), minutesOf(rows));
   return sumKey(rows, def.key);
@@ -255,4 +256,21 @@ export function rankBar(rank: number, size: number) {
   if (rank <= Math.max(1, Math.round(size * 0.2))) return "bg-emerald-500";
   if (rank > size - Math.max(1, Math.round(size * 0.2))) return "bg-rose-500";
   return "bg-amber-400";
+}
+
+/* ---------- souhrny hráčů z poolu ---------- */
+
+/** Pořadí sloupců v řádku poolu, musí sedět s KEYS v scripts/catalog_player_shards.py. */
+export const POOL_KEYS = ["mn", "g", "a", "sh", "sot", "kp", "dr", "ps", "cr", "dw", "aw", "tk", "it", "cl", "sv", "gc", "cs", "f", "y", "r"] as const;
+const POOL_ROLES: CatalogPlayerRole[] = ["att", "mid", "def", "gk"];
+
+export type PoolPlayer = { id: number; role: CatalogPlayerRole; teamId: number; rows: CatalogPlayerMatch[] };
+
+/** Řádek poolu jako jediný "zápas" se součty. Díky tomu fungují stejné funkce jako pro zápasy hráče. */
+export function poolPlayer(row: number[]): PoolPlayer {
+  const st: Record<string, number> = { _n: row[3] };
+  POOL_KEYS.forEach((key, i) => {
+    st[key] = row[4 + i] ?? 0;
+  });
+  return { id: row[0], role: POOL_ROLES[row[1]] ?? "mid", teamId: row[2], rows: [{ st } as unknown as CatalogPlayerMatch] };
 }

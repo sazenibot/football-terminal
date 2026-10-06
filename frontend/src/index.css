@@ -207,3 +207,11 @@ html.light .mc2 {
 .mc2 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* Starší karty (mapa střel, trend, srovnání) uvnitř nových stránek katalogu přebírají barvy Match Center,
+   ať nevypadají jako cizí těleso. Stačí povrch a okraj, vnitřek si řídí svými třídami. */
+.mc2 .catalog-legacy .card {
+  background-color: var(--c-surface);
+  border-color: var(--c-line);
+  border-radius: 1rem;
+}

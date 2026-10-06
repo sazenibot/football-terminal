@@ -71,6 +71,19 @@ jobs:
         continue-on-error: true
         run: python scripts/round_signals.py
 
+      # Vyhledávací index katalogu (jeden malý JSON z uložených dat, žádné API).
+      - name: Vyhledávací index katalogu
+        if: steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        run: python scripts/catalog_search.py
+
+      # Shardy zápasů hráčů + pooly pro pořadí (z uloženého players.json, žádné API).
+      # Stránka hráče si stáhne jeden shard a jeden pool místo 8MB indexu.
+      - name: Shardy a pooly hráčů
+        if: steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        run: python scripts/catalog_player_shards.py
+
       - name: Commit data
         if: steps.gate.outputs.run == 'true'
         run: |

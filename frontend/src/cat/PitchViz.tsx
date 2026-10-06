@@ -1,0 +1,627 @@
+import { useId, useMemo, useState, type ReactNode } from "react";
+import { Bar, Cell, ComposedChart, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, BarChart } from "recharts";
+import type { MatchRow, SeasonOpt, Shot } from "../components/PitchCards";
+import { finishingLead, xgotEfficiencyBadge } from "../lib/xgEfficiency";
+import { Card, Chip, Disclosure, Empty, Info, Seg, Stat, VenueTag, n1, n2, plural } from "../mc2/kit";
+import { Pill } from "./kit";
+
+/* Grafy z PitchAPI v jazyce Match Center: barvy z témat (světlý i tmavý režim), ovládání z mc2/kit,
+   čísla nahoře, graf pod nimi. Jedna sezóna na kartu, výběr sezóny řeší stránka. */
+
+type Venue = "all" | "home" | "away";
+type Recency = "all" | "5";
+
+const COL = {
+  goals: "var(--c-accent)",
+  xgot: "var(--c-warn)",
+  xg: "var(--c-home)",
+  open: "var(--c-home)",
+  set: "var(--c-away)",
+};
+
+const signed = (n: number) => `${n > 0 ? "+" : n < 0 ? "−" : ""}${n2(Math.abs(n))}`;
+const czDate = (iso: string) => {
+  const [, m, d] = iso.split("-");
+  return `${Number(d)}. ${Number(m)}.`;
+};
+const tone = (d: number, eps = 0.15) => (d > eps ? "var(--c-win)" : d < -eps ? "var(--c-loss)" : "var(--c-muted)");
+
+/** Nejdřív okno (posledních 5 zápasů týmu), pak doma/venku uvnitř něj. Tak "Posledních 5" + "Doma" ukáže jen domácí zápasy z těch pěti. */
+function pick(matches: MatchRow[], recency: Recency, venue: Venue) {
+  const chrono = [...matches].sort((a, b) => a.date.localeCompare(b.date));
+  const windowed = recency === "all" ? chrono : chrono.slice(-5);
+  return venue === "all" ? windowed : windowed.filter((m) => m.home === (venue === "home"));
+}
+
+/** Stav vybrané sezóny. Zápasy sezóny jsou v `seasons`, výběr řeší karta sama. */
+function useSeason(seasons: SeasonOpt[], defaultSeason: string) {
+  const [seasonId, setSeasonId] = useState(defaultSeason);
+  const current = seasons.find((s) => s.id === seasonId) ?? seasons[0];
+  return { seasonId: current?.id ?? defaultSeason, setSeasonId, matches: current?.matches ?? [], label: current?.label ?? "" };
+}
+
+function SeasonSelect({ seasons, value, onChange }: { seasons: SeasonOpt[]; value: string; onChange: (id: string) => void }) {
+  return (
+    <label className="inline-flex items-center gap-2 text-xs text-(--c-muted)">
+      Sezona
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="min-h-9 rounded-xl border border-(--c-line) bg-(--c-raised) px-3 text-xs font-medium text-(--c-text)"
+      >
+        {seasons.map((s) => (
+          <option key={s.id} value={s.id} disabled={s.disabled}>
+            {s.label}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+}
+
+/** Období a místo. Stejné dva přepínače na všech třech kartách. */
+function Controls({
+  recency,
+  setRecency,
+  venue,
+  setVenue,
+  season,
+}: {
+  recency: Recency;
+  setRecency: (v: Recency) => void;
+  venue: Venue;
+  setVenue: (v: Venue) => void;
+  season?: { seasons: SeasonOpt[]; value: string; onChange: (id: string) => void };
+}) {
+  return (
+    <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+      {season && <SeasonSelect seasons={season.seasons} value={season.value} onChange={season.onChange} />}
+      <Seg
+        label="Období"
+        value={recency}
+        onChange={setRecency}
+        options={[
+          { id: "all", label: "Celá sezona" },
+          { id: "5", label: "Posledních 5" },
+        ]}
+      />
+      <Seg
+        label="Místo"
+        value={venue}
+        onChange={setVenue}
+        options={[
+          { id: "all", label: "Doma i venku" },
+          { id: "home", label: "Doma" },
+          { id: "away", label: "Venku" },
+        ]}
+      />
+    </div>
+  );
+}
+
+function Legend({ items }: { items: { color: string; label: string; ring?: boolean }[] }) {
+  return (
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-(--c-muted)">
+      {items.map((i) => (
+        <span key={i.label} className="inline-flex items-center gap-1.5">
+          <i className="inline-block h-2.5 w-2.5 rounded-full" style={{ background: i.color }} />
+          {i.label}
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function ChartTip({ active, payload, rows }: { active?: boolean; payload?: readonly { payload?: { i: number } }[]; rows: { name: string; value: string; color: string }[][] }) {
+  const i = payload?.[0]?.payload?.i;
+  if (!active || i == null || !rows[i]) return null;
+  return (
+    <div className="rounded-xl border border-(--c-line) bg-(--c-raised) px-3 py-2 text-xs shadow-lg">
+      <ul className="space-y-0.5">
+        {rows[i].map((r, k) => (
+          <li key={k} className={k === 0 ? "mb-1 text-(--c-muted)" : "flex items-center justify-between gap-6"}>
+            {k === 0 ? (
+              r.name
+            ) : (
+              <>
+                <span className="inline-flex items-center gap-1.5 text-(--c-text)">
+                  <i className="h-2 w-2 rounded-full" style={{ background: r.color }} />
+                  {r.name}
+                </span>
+                <span className="font-semibold tabular-nums text-(--c-text)">{r.value}</span>
+              </>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+/** Popisek osy X: soupeř a pod ním D (doma) nebo V (venku). Datum je v tooltipu. */
+function MatchTick({ x, y, payload, rows }: { x?: number; y?: number; payload?: { value: number }; rows: MatchRow[] }) {
+  const m = payload ? rows[payload.value] : null;
+  if (x == null || y == null || !m) return null;
+  const dense = rows.length > 14;
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text textAnchor="middle" dy={14} fontSize={dense ? 10 : 11} fontWeight={600} fill="var(--c-text)">
+        {m.opponent_short}
+      </text>
+      {!dense && (
+        <text textAnchor="middle" dy={28} fontSize={10} fontWeight={600} fill={m.home ? "var(--c-home)" : "var(--c-away)"}>
+          {m.home ? "D" : "V"}
+        </text>
+      )}
+    </g>
+  );
+}
+
+function MatchTable({ head, rows }: { head: string[]; rows: { m: MatchRow; cells: ReactNode[] }[] }) {
+  return (
+    <div className="overflow-x-auto">
+      <table className="w-full min-w-[30rem] text-sm">
+        <thead>
+          <tr className="text-[11px] uppercase tracking-wide text-(--c-faint)">
+            <th className="py-1.5 text-left font-medium">Zápas</th>
+            {head.map((h) => (
+              <th key={h} className="text-right font-medium">
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map(({ m, cells }) => (
+            <tr key={m.id} className="border-t border-(--c-line)">
+              <td className="py-2">
+                <span className="inline-flex items-center gap-2 text-(--c-text)">
+                  <span className="tabular-nums text-(--c-muted)">{czDate(m.date)}</span>
+                  <VenueTag home={m.home} />
+                  <span>{m.opponent_short}</span>
+                  <span className="text-xs text-(--c-faint)">
+                    {m.gf}:{m.ga}
+                  </span>
+                </span>
+              </td>
+              {cells.map((c, i) => (
+                <td key={i} className="text-right tabular-nums">
+                  {c}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+/* ---------- Trend střelby ---------- */
+
+export function TrendCard({ team, seasons, defaultSeason }: { team: string; seasons: SeasonOpt[]; defaultSeason: string }) {
+  const { seasonId, setSeasonId, matches, label: season } = useSeason(seasons, defaultSeason);
+  const [recency, setRecency] = useState<Recency>("all");
+  const [venue, setVenue] = useState<Venue>("all");
+  const [mode, setMode] = useState<"compare" | "split">("compare");
+  const rows = useMemo(() => pick(matches, recency, venue), [matches, recency, venue]);
+
+  const goals = rows.reduce((s, m) => s + m.gf, 0);
+  const xg = rows.reduce((s, m) => s + m.xg, 0);
+  const xgot = rows.reduce((s, m) => s + m.xgot, 0);
+  const diff = goals - xgot;
+  const badge = xgotEfficiencyBadge(goals, xgot, recency === "5" ? "last5" : "season");
+
+  const data = rows.map((m, i) => ({ i, gf: m.gf, xg: m.xg, xgot: m.xgot, open: m.xg_open, set: m.xg_set }));
+  const top = Math.max(3, Math.ceil(Math.max(0, ...data.map((d) => Math.max(d.gf, d.xg, d.xgot, d.open + d.set)))));
+  const tips = rows.map((m, i) => [
+    { name: `${czDate(m.date)} ${m.home ? "doma" : "venku"} · ${m.opponent_short} ${m.gf}:${m.ga}`, value: "", color: "" },
+    ...(mode === "compare"
+      ? [
+          { name: "Góly", value: String(m.gf), color: COL.goals },
+          { name: "xGOT", value: n2(data[i].xgot), color: COL.xgot },
+          { name: "xG", value: n2(data[i].xg), color: COL.xg },
+        ]
+      : [
+          { name: "Góly", value: String(m.gf), color: COL.goals },
+          { name: "xG ze hry", value: n2(data[i].open), color: COL.open },
+          { name: "xG ze standardek", value: n2(data[i].set), color: COL.set },
+        ]),
+  ]);
+
+  return (
+    <Card
+      title="Trend střelby"
+      lead={rows.length ? finishingLead(team, goals, xgot).replace("v tomhle okně", recency === "5" ? "v posledních zápasech" : "v sezóně") : `Sezóna ${season}.`}
+      aside={badge ? <Pill tone={badge.id === "lucky_scoring_team" ? "var(--c-warn)" : "var(--c-loss)"}>{badge.label}</Pill> : undefined}
+    >
+      <Controls recency={recency} setRecency={setRecency} venue={venue} setVenue={setVenue} season={{ seasons, value: seasonId, onChange: setSeasonId }} />
+
+      {!rows.length ? (
+        <div className="mt-4">
+          <Empty>V tomhle výběru nejsou žádné zápasy.</Empty>
+        </div>
+      ) : (
+        <>
+          <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4">
+            <Stat value={goals} label="Góly" tone={COL.goals} />
+            <Stat value={n2(xgot)} label="xGOT" tone={COL.xgot} hint="Kvalita zakončení po vystřelení. Počítají se jen střely na bránu." />
+            <Stat value={n2(xg)} label="xG" tone={COL.xg} hint="Kvalita šance před vystřelením, u všech střel." />
+            <Stat
+              value={signed(diff)}
+              label="Góly − xGOT"
+              tone={tone(diff)}
+              hint="Kladné číslo znamená, že tým dává víc gólů, než by odpovídalo kvalitě jeho střel na bránu."
+            />
+          </div>
+
+          <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
+            <Legend
+              items={
+                mode === "compare"
+                  ? [
+                      { color: COL.goals, label: "Góly (sloupec)" },
+                      { color: COL.xgot, label: "xGOT" },
+                      { color: COL.xg, label: "xG" },
+                    ]
+                  : [
+                      { color: COL.open, label: "xG ze hry" },
+                      { color: COL.set, label: "xG ze standardek" },
+                      { color: COL.goals, label: "Góly" },
+                    ]
+              }
+            />
+            <div className="flex gap-1.5">
+              <Chip active={mode === "compare"} onClick={() => setMode("compare")}>
+                Góly vs xG
+              </Chip>
+              <Chip active={mode === "split"} onClick={() => setMode("split")}>
+                Rozpad xG
+              </Chip>
+            </div>
+          </div>
+
+          <div className="mt-2 h-64 sm:h-72" role="img" aria-label="Trend gólů a očekávaných gólů po zápasech">
+            <ResponsiveContainer width="100%" height="100%">
+              <ComposedChart data={data} margin={{ top: 10, right: 8, left: -18, bottom: 0 }} barCategoryGap="22%">
+                <XAxis dataKey="i" tickLine={false} axisLine={{ stroke: "var(--c-line)" }} interval={data.length > 14 ? 1 : 0} height={rows.length > 14 ? 24 : 38} tick={<MatchTick rows={rows} />} />
+                <YAxis domain={[0, top]} ticks={Array.from({ length: top + 1 }, (_, i) => i)} allowDecimals={false} tickLine={false} axisLine={false} width={34} tick={{ fill: "var(--c-faint)", fontSize: 11 }} />
+                {[1, 2, 3, 4, 5, 6].filter((v) => v <= top).map((v) => (
+                  <ReferenceLine key={v} y={v} stroke="var(--c-line)" strokeDasharray="3 4" />
+                ))}
+                <Tooltip cursor={{ fill: "var(--c-raised)", opacity: 0.6 }} content={(p) => <ChartTip {...p} rows={tips} />} />
+                {mode === "compare" ? (
+                  <>
+                    <Bar dataKey="gf" fill={COL.goals} fillOpacity={0.85} radius={[5, 5, 0, 0]} maxBarSize={28} isAnimationActive={false} />
+                    <Line dataKey="xgot" stroke="none" isAnimationActive={false} activeDot={false} dot={{ r: 5, fill: COL.xgot, stroke: "var(--c-surface)", strokeWidth: 2 }} />
+                    <Line dataKey="xg" stroke="none" isAnimationActive={false} activeDot={false} dot={{ r: 4.5, fill: COL.xg, stroke: "var(--c-surface)", strokeWidth: 2 }} />
+                  </>
+                ) : (
+                  <>
+                    <Bar dataKey="open" stackId="xg" fill={COL.open} fillOpacity={0.8} maxBarSize={28} isAnimationActive={false} />
+                    <Bar dataKey="set" stackId="xg" fill={COL.set} fillOpacity={0.8} radius={[5, 5, 0, 0]} maxBarSize={28} isAnimationActive={false} />
+                    <Line dataKey="gf" stroke="none" isAnimationActive={false} activeDot={false} dot={{ r: 6, fill: COL.goals, stroke: "var(--c-surface)", strokeWidth: 2 }} />
+                  </>
+                )}
+              </ComposedChart>
+            </ResponsiveContainer>
+          </div>
+
+          <div className="mt-3">
+            <Disclosure summary="Tabulka zápasů">
+              <MatchTable
+                head={["Góly", "xGOT", "xG", "Góly − xGOT"]}
+                rows={[...rows].reverse().map((m) => {
+                  const d = m.gf - m.xgot;
+                  return {
+                    m,
+                    cells: [
+                      <b key="g" className="text-(--c-text)">{m.gf}</b>,
+                      <span key="a" className="text-(--c-muted)">{n2(m.xgot)}</span>,
+                      <span key="b" className="text-(--c-muted)">{n2(m.xg)}</span>,
+                      <span key="c" style={{ color: tone(d) }}>{signed(d)}</span>,
+                    ],
+                  };
+                })}
+              />
+            </Disclosure>
+          </div>
+        </>
+      )}
+    </Card>
+  );
+}
+
+/* ---------- Mapa střel ---------- */
+
+type Cut = "all" | "on_target" | "off" | "goal";
+type Kind = "all" | "play" | "set";
+type ShotView = Shot & { date: string; home: boolean; opponent_short: string };
+
+const SHOT = { play: "#fbbf24", set: "#38bdf8" };
+
+export function ShotMapCard({
+  title,
+  lead,
+  seasons,
+  defaultSeason,
+  shotsOf,
+  showSeason = true,
+}: {
+  title: string;
+  lead: string;
+  seasons: SeasonOpt[];
+  defaultSeason: string;
+  shotsOf: (m: MatchRow) => Shot[];
+  showSeason?: boolean;
+}) {
+  const { seasonId, setSeasonId, matches } = useSeason(seasons, defaultSeason);
+  const [recency, setRecency] = useState<Recency>("all");
+  const [venue, setVenue] = useState<Venue>("all");
+  const [cut, setCut] = useState<Cut>("all");
+  const [kind, setKind] = useState<Kind>("all");
+  const [hover, setHover] = useState<ShotView | null>(null);
+  const [pinned, setPinned] = useState<ShotView | null>(null);
+
+  const rows = useMemo(() => pick(matches, recency, venue), [matches, recency, venue]);
+  const all: ShotView[] = useMemo(() => rows.flatMap((m) => shotsOf(m).map((s) => ({ ...s, date: m.date, home: m.home, opponent_short: m.opponent_short }))), [rows, shotsOf]);
+  const shots = all.filter((s) => {
+    if (cut === "goal" && !s.goal) return false;
+    if (cut === "on_target" && !(s.on_target || s.goal)) return false;
+    if (cut === "off" && (s.on_target || s.goal)) return false;
+    if (kind !== "all" && s.kind !== kind) return false;
+    return true;
+  });
+  const onT = shots.filter((s) => s.on_target || s.goal).length;
+  const goals = shots.filter((s) => s.goal).length;
+  const xg = shots.reduce((s, x) => s + x.xg, 0);
+  const shown = pinned ?? hover;
+
+  return (
+    <Card title={title} lead={lead}>
+      <Controls recency={recency} setRecency={setRecency} venue={venue} setVenue={setVenue} season={showSeason ? { seasons, value: seasonId, onChange: setSeasonId } : undefined} />
+      {!rows.length ? (
+        <div className="mt-4">
+          <Empty>V tomhle výběru nejsou žádné zápasy.</Empty>
+        </div>
+      ) : (
+        <div className="mt-4 grid gap-4 md:grid-cols-[minmax(0,1fr)_11rem]">
+          <div className="grid grid-cols-4 gap-2 md:order-2 md:grid-cols-1 md:content-start">
+            <Stat value={shots.length} label="Střel" hint={`Z ${rows.length} ${plural(rows.length, "zápasu", "zápasů", "zápasů")}.`} />
+            <Stat value={shots.length ? `${Math.round((100 * onT) / shots.length)} %` : "—"} label="Na bránu" />
+            <Stat value={goals} label="Góly" tone={COL.goals} />
+            <Stat value={n2(xg)} label="xG" tone={COL.xg} hint="Součet očekávaných gólů vybraných střel." />
+          </div>
+
+          <div className="min-w-0 md:order-1">
+            <Pitch shots={shots} active={shown} onHover={setHover} onPin={(s) => setPinned((p) => (p === s ? null : s))} />
+            <div className="mt-2 flex min-h-11 items-center rounded-xl bg-(--c-raised) px-3 py-2 text-xs text-(--c-muted)">
+              {shown ? (
+                <p className="leading-snug">
+                  <b className="text-(--c-text)">
+                    {shown.minute}′ {shown.player}
+                  </b>
+                  {" · "}
+                  {shown.goal ? "gól" : shown.on_target ? "na bránu" : "mimo"}
+                  {" · "}
+                  {shown.kind === "set" ? "standardka" : "ze hry"}
+                  {" · "}xG {n2(shown.xg)}
+                  {" · "}
+                  {n1(shown.depth)} m od branky
+                  {" · "}
+                  {czDate(shown.date)} {shown.home ? "doma" : "venku"} {shown.opponent_short}
+                </p>
+              ) : (
+                <p>Najeďte na tečku nebo na ni klepněte. Velikost tečky je xG střely.</p>
+              )}
+            </div>
+      <div className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2">
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span className="mr-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">Střely</span>
+          {(
+            [
+              ["all", "Všechny"],
+              ["on_target", "Na bránu"],
+              ["off", "Mimo"],
+              ["goal", "Góly"],
+            ] as [Cut, string][]
+          ).map(([id, label]) => (
+            <Chip key={id} active={cut === id} onClick={() => setCut(id)}>
+              {label}
+            </Chip>
+          ))}
+        </div>
+        <div className="flex flex-wrap items-center gap-1.5">
+          <span className="mr-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">Typ</span>
+          {(
+            [
+              ["all", "Vše"],
+              ["play", "Ze hry"],
+              ["set", "Standardka"],
+            ] as [Kind, string][]
+          ).map(([id, label]) => (
+            <Chip key={id} active={kind === id} onClick={() => setKind(id)}>
+              {label}
+            </Chip>
+          ))}
+        </div>
+      </div>
+
+            <div className="mt-3">
+              <Legend
+                items={[
+                  { color: SHOT.play, label: "Ze hry" },
+                  { color: SHOT.set, label: "Standardka" },
+                ]}
+              />
+              <p className="mt-1 text-xs text-(--c-faint)">Plná tečka je střela na bránu, prázdná mimo, tečka v kroužku gól.</p>
+            </div>
+          </div>
+        </div>
+      )}
+    </Card>
+  );
+}
+
+/** FIFA 105×68 m. Útočný řez 40 m, branka nahoře. */
+function Pitch({ shots, active, onHover, onPin }: { shots: ShotView[]; active: ShotView | null; onHover: (s: ShotView | null) => void; onPin: (s: ShotView) => void }) {
+  const clip = useId().replace(/:/g, "");
+  const PW = 68;
+  const VD = 40;
+  const scale = 9;
+  const pad = 14;
+  const iw = PW * scale;
+  const ih = VD * scale;
+  const W = iw + pad * 2;
+  const H = ih + pad * 2;
+  const x = (m: number) => pad + (m / PW) * iw;
+  const y = (d: number) => pad + (Math.min(d, VD) / VD) * ih;
+  const line = "rgba(255,255,255,0.42)";
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full rounded-xl border border-(--c-line)" role="img" aria-label="Mapa střel, branka nahoře" style={{ background: "linear-gradient(180deg,#14532d,#0f3d2a)" }}>
+      <defs>
+        <clipPath id={clip}>
+          <rect x={pad} y={y(16.5)} width={iw} height={ih + pad - y(16.5) + pad} />
+        </clipPath>
+      </defs>
+      <rect x={pad} y={pad} width={iw} height={ih} fill="none" stroke={line} strokeWidth="2" />
+      <rect x={x((PW - 40.32) / 2)} y={y(0)} width={40.32 * scale} height={16.5 * scale} fill="none" stroke={line} />
+      <rect x={x((PW - 18.32) / 2)} y={y(0)} width={18.32 * scale} height={5.5 * scale} fill="none" stroke={line} />
+      <circle cx={x(PW / 2)} cy={y(11)} r="2.2" fill={line} />
+      <circle cx={x(PW / 2)} cy={y(11)} r={9.15 * scale} fill="none" stroke={line} clipPath={`url(#${clip})`} />
+      <line x1={x((PW - 7.32) / 2)} y1={pad} x2={x((PW + 7.32) / 2)} y2={pad} stroke="#fff" strokeWidth="4" />
+      {shots.map((s, i) => {
+        const r = 3.5 + s.xg * 11;
+        const col = s.kind === "set" ? SHOT.set : SHOT.play;
+        const hit = s.on_target || s.goal;
+        const on = active === s;
+        return (
+          <g key={i} onMouseEnter={() => onHover(s)} onMouseLeave={() => onHover(null)} onClick={() => onPin(s)} className="cursor-pointer">
+            {s.goal && <circle cx={x(s.y)} cy={y(s.depth)} r={r + 3.5} fill="none" stroke="#fff" strokeWidth="1.8" />}
+            <circle
+              cx={x(s.y)}
+              cy={y(s.depth)}
+              r={on ? r + 1.5 : r}
+              fill={hit ? col : "none"}
+              fillOpacity={0.92}
+              stroke={on ? "#fff" : col}
+              strokeWidth={hit ? (on ? 2 : 0) : 2}
+            />
+            {/* větší terč pro prst */}
+            <circle cx={x(s.y)} cy={y(s.depth)} r={Math.max(r, 12)} fill="transparent" />
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
+/* ---------- Brankář ---------- */
+
+export function KeeperCardV2({ name, seasons, defaultSeason, showSeason = true }: { name: string; seasons: SeasonOpt[]; defaultSeason: string; showSeason?: boolean }) {
+  const { seasonId, setSeasonId, matches } = useSeason(seasons, defaultSeason);
+  const [recency, setRecency] = useState<Recency>("all");
+  const [venue, setVenue] = useState<Venue>("all");
+  const rows = useMemo(() => pick(matches, recency, venue), [matches, recency, venue]);
+  const faced = rows.reduce((s, m) => s + m.xgot_faced, 0);
+  const conceded = rows.reduce((s, m) => s + m.ga, 0);
+  const saves = Math.round(rows.reduce((s, m) => s + m.saves, 0));
+  const sot = Math.round(rows.reduce((s, m) => s + m.sot_faced, 0));
+  const prevented = faced - conceded;
+  const data = rows.map((m, i) => ({ i, d: m.xgot_faced - m.ga }));
+  const lim = Math.max(1, Math.ceil(Math.max(0, ...data.map((d) => Math.abs(d.d))) * 2) / 2);
+  const line =
+    prevented >= 0.05
+      ? `Chytil o ${n2(prevented)} gólu víc, než měl.`
+      : prevented <= -0.05
+        ? `Dostal o ${n2(-prevented)} gólu víc, než měl.`
+        : "Dostal zhruba tolik, kolik střely slibovaly.";
+
+  return (
+    <Card title={name} lead="Inkasované góly proti xGOT střel, kterým brankář čelil. Kladné číslo znamená, že chytil víc, než šance slibovaly.">
+      <Controls recency={recency} setRecency={setRecency} venue={venue} setVenue={setVenue} season={showSeason ? { seasons, value: seasonId, onChange: setSeasonId } : undefined} />
+      {!rows.length ? (
+        <div className="mt-4">
+          <Empty>V tomhle výběru nejsou žádné zápasy.</Empty>
+        </div>
+      ) : (
+        <>
+          <div className="mt-4 rounded-2xl bg-(--c-raised) px-4 py-4 text-center">
+            <div className="text-4xl font-bold tabular-nums" style={{ color: tone(prevented, 0.05) }}>
+              {signed(prevented)}
+            </div>
+            <p className="mt-1.5 text-sm text-(--c-muted)">
+              {line} {rows.length} {plural(rows.length, "zápas", "zápasy", "zápasů")}.
+            </p>
+          </div>
+          <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-4">
+            <Stat value={n2(faced)} label="xGOT proti" tone={COL.xgot} hint="Kolik gólů by z těchto střel padlo v průměru." />
+            <Stat value={conceded} label="Inkasované" />
+            <Stat value={`${saves} / ${sot}`} label="Zákroky / na bránu" />
+            <Stat value={sot ? `${Math.round((100 * saves) / sot)} %` : "—"} label="Úspěšnost zákroků" />
+          </div>
+
+          <h3 className="mb-1 mt-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">
+            Chyceno navíc po zápasech
+            <Info>Zelený sloupec: brankář v zápase chytil víc, než střely slibovaly. Červený: dostal víc.</Info>
+          </h3>
+          <div className="h-36">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 0 }} barCategoryGap="25%">
+                <XAxis dataKey="i" tickLine={false} axisLine={false} interval={data.length > 14 ? 1 : 0} height={rows.length > 14 ? 24 : 38} tick={<MatchTick rows={rows} />} />
+                <YAxis domain={[-lim, lim]} ticks={[-lim, 0, lim]} tickLine={false} axisLine={false} width={40} tick={{ fill: "var(--c-faint)", fontSize: 11 }} tickFormatter={(v) => String(v).replace(".", ",")} />
+                <ReferenceLine y={0} stroke="var(--c-faint)" />
+                <Tooltip
+                  cursor={{ fill: "var(--c-raised)", opacity: 0.6 }}
+                  content={(p) => {
+                    const i = p.payload?.[0]?.payload?.i as number | undefined;
+                    const m = i != null ? rows[i] : null;
+                    if (!p.active || !m) return null;
+                    return (
+                      <div className="rounded-xl border border-(--c-line) bg-(--c-raised) px-3 py-2 text-xs shadow-lg">
+                        <p className="mb-1 text-(--c-muted)">
+                          {czDate(m.date)} {m.home ? "doma" : "venku"} · {m.opponent_short} {m.gf}:{m.ga}
+                        </p>
+                        <p className="text-(--c-text)">
+                          Inkasoval {m.ga}, xGOT proti {n2(m.xgot_faced)}
+                        </p>
+                        <p className="font-semibold" style={{ color: tone(m.xgot_faced - m.ga) }}>
+                          {signed(m.xgot_faced - m.ga)}
+                        </p>
+                      </div>
+                    );
+                  }}
+                />
+                <Bar dataKey="d" radius={3} maxBarSize={26} isAnimationActive={false}>
+                  {data.map((d) => (
+                    <Cell key={d.i} fill={d.d >= 0 ? "var(--c-win)" : "var(--c-loss)"} fillOpacity={0.85} />
+                  ))}
+                </Bar>
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+
+          <div className="mt-3">
+            <Disclosure summary="Tabulka zápasů">
+              <MatchTable
+                head={["Inkasované", "xGOT proti", "Chyceno navíc", "Zákroky / na bránu"]}
+                rows={[...rows].reverse().map((m) => {
+                  const d = m.xgot_faced - m.ga;
+                  return {
+                    m,
+                    cells: [
+                      <b key="a" className="text-(--c-text)">{m.ga}</b>,
+                      <span key="b" className="text-(--c-muted)">{n2(m.xgot_faced)}</span>,
+                      <span key="c" style={{ color: tone(d) }}>{signed(d)}</span>,
+                      <span key="d" className="text-(--c-muted)">{Math.round(m.saves)} / {Math.round(m.sot_faced)}</span>,
+                    ],
+                  };
+                })}
+              />
+            </Disclosure>
+          </div>
+        </>
+      )}
+    </Card>
+  );
+}

@@ -1,0 +1,59 @@
+{
+ "leagues": [
+  {
+   "id": 262,
+   "name": "Chance Liga",
+   "country": "Czech Republic",
+   "logo": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png",
+   "season": "2026/2027",
+   "teams": 16,
+   "players": 472,
+   "referees": 15,
+   "full": true
+  },
+  {
+   "id": 265,
+   "name": "Chance Národní Liga",
+   "country": "Czech Republic",
+   "logo": "https://cdn.sportmonks.com/images/soccer/leagues/9/265.png",
+   "season": "2026/2027",
+   "teams": 16,
+   "players": 508,
+   "referees": 20,
+   "full": false
+  },
+  {
+   "id": 564,
+   "name": "La Liga",
+   "country": "Spain",
+   "logo": "https://cdn.sportmonks.com/images/soccer/leagues/20/564.png",
+   "season": "2026/2027",
+   "teams": 20,
+   "players": 598,
+   "referees": 22,
+   "full": false
+  },
+  {
+   "id": 8,
+   "name": "Premier League",
+   "country": "England",
+   "logo": "https://cdn.sportmonks.com/images/soccer/leagues/8/8.png",
+   "season": "2026/2027",
+   "teams": 20,
+   "players": 580,
+   "referees": 21,
+   "full": false
+  },
+  {
+   "id": 82,
+   "name": "Bundesliga",
+   "country": "Germany",
+   "logo": "https://cdn.sportmonks.com/images/soccer/leagues/18/82.png",
+   "season": "2026/2027",
+   "teams": 18,
+   "players": 520,
+   "referees": 26,
+   "full": false
+  }
+ ]
+}

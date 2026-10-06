@@ -159,29 +159,58 @@ export function useCatalogPlayer(id: number | null) {
   return useCatalogEntity<CatalogPlayerDetail>("players", id);
 }
 
-export function useCatalogPlayerIndex(leagueId: number | null) {
-  const [data, setData] = useState<CatalogPlayerIndex | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [missing, setMissing] = useState(false);
+/** Zápasy hráčů jednoho shardu (id hráče % 32). Stránka hráče nestahuje celý ligový index. */
+export const PLAYER_SHARDS = 32;
 
-  useEffect(() => {
-    if (!leagueId) return;
-    setData(null);
-    setError(null);
-    setMissing(false);
-    fetchJson<CatalogPlayerIndex>(`/data/catalog/leagues/${leagueId}.players.json`)
-      .then(setData)
-      .catch((e) => {
-        if (e instanceof DataMissingError) setMissing(true);
-        else setError(String(e));
-      });
-  }, [leagueId]);
+export function usePlayerShard(leagueId: number | null, playerId: number | null) {
+  return useOptionalJson<CatalogPlayerIndex>(leagueId && playerId ? `/data/catalog/player_matches/${leagueId}/${playerId % PLAYER_SHARDS}.json` : null);
+}
 
-  return { data, error, missing };
+/** Souhrny hráčů ligy pro vybranou sezónu: buňky "doma/venku.podzim/jaro", řádek = [id, role, tým, zápasy, ...POOL_KEYS]. */
+export type PlayerPool = {
+  league_id: number;
+  season: string;
+  games: number;
+  keys: string[];
+  cells: Record<string, number[][]>;
+};
+
+export function usePlayerPool(leagueId: number | null, season: number | "all" | null) {
+  return useOptionalJson<PlayerPool>(leagueId && season != null ? `/data/catalog/player_pools/${leagueId}/${season}.json` : null);
 }
 
 export function useCatalogReferee(id: number | null) {
   return useCatalogEntity<CatalogRefereeDetail>("referees", id);
+}
+
+export type CatalogDirectoryLeague = {
+  id: number;
+  name: string;
+  country?: string | null;
+  logo?: string | null;
+  season?: string | null;
+  teams: number;
+  players: number;
+  referees: number;
+  /** Plný katalog = statistiky týmů a hráčů. Jinak jen soupisky a základní profily. */
+  full: boolean;
+};
+
+export type CatalogSearchIndex = {
+  cdn: string;
+  leagues: { id: number; name: string; logo?: string | null }[];
+  teams: [number, string, number, string | null][];
+  players: [number, string, number, number | null, string | null, string | null, number | null, string | null][];
+  referees: [number, string, number, string | null, number | null][];
+};
+
+export function useCatalogDirectory() {
+  return useOptionalJson<{ leagues: CatalogDirectoryLeague[] }>("/data/catalog/directory.json");
+}
+
+/** Index pro fulltext přes všechny ligy. Stahuje se až když ho někdo potřebuje (první psaní do hledání). */
+export function useCatalogSearchIndex(enabled: boolean) {
+  return useOptionalJson<CatalogSearchIndex>(enabled ? "/data/catalog/search.json" : null);
 }
 
 export function useXgotIndex() {
@@ -242,4 +271,15 @@ export function isStale(generatedAt: string | undefined, hours: number): boolean
   const then = new Date(generatedAt).getTime();
   if (Number.isNaN(then)) return false;
   return Date.now() - then > hours * 3600 * 1000;
+}
+
+/** Zápasy ligy po sezónách a průměrné fauly / karty týmů (kontext pro stránku rozhodčího). */
+export type LeagueUniverseBucket = { m?: number; n?: number; f?: number; fa?: number; y?: number; ya?: number; nya?: number; r?: number; ra?: number };
+export type LeagueUniverse = {
+  league_id: number;
+  seasons: Record<string, { total: number; teams: Record<string, { home: LeagueUniverseBucket; away: LeagueUniverseBucket }> }>;
+};
+
+export function useLeagueUniverse(leagueId: number | null) {
+  return useOptionalJson<LeagueUniverse>(leagueId ? `/data/catalog/leagues/${leagueId}.ref_universe.json` : null);
 }

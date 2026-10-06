@@ -1,518 +1,484 @@
-import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
-import { ShotMap, TeamTrend, pitchSeasonOpts } from "../components/PitchCards";
-import { XgotBadgeChip } from "../components/XgotBadge";
-import { last5BadgeForTeam } from "../lib/xgEfficiency";
-import { useCatalogExplorer, useCatalogTeam, usePitchTeam, useXgotIndex } from "../lib/useData";
-import { CatalogNotFound } from "./CatalogNotFound";
-import { CatalogTeamExplorer } from "../components/CatalogTeamExplorer";
-import { EmptyNote, Metric, RecentList } from "../components/CatalogStats";
-import { Pill, ResultBadge } from "../components/ui";
+import { useEffect, useMemo, useState } from "react";
+import { Link, useParams, useSearchParams } from "react-router-dom";
+import { CoachComparePanel, TeamRadarPanel } from "../cat/TeamCompare";
+import { Avatar, Back, Crest, Frame, Hero, Loading, Meta, NotFound, Pill, RankCard, StatStrip, StickyTabs, fmtNum, rankColor } from "../cat/kit";
+import { pitchSeasonOpts, type MatchRow } from "../components/PitchCards";
+import { ShotMapCard, TrendCard } from "../cat/PitchViz";
 import { formatDate } from "../lib/format";
-import type {
-  CatalogProfileStat,
-  CatalogSquadPlayer,
-  CatalogTeamCoach,
-  CatalogTeamDetail,
-  CatalogUpcoming,
-} from "../types";
+import { useCatalogExplorer, useCatalogTeam, usePitchTeam, useXgotIndex } from "../lib/useData";
+import { last5BadgeForTeam, type XgotBadge } from "../lib/xgEfficiency";
+import { Card, Empty, FormDots, Info, ResBadge, Seg, Stat, VenueTag, plural, type Res } from "../mc2/kit";
+import type { CatalogProfileStat, CatalogSquadPlayer, CatalogTeamCoach, CatalogTeamDetail, CatalogUpcoming } from "../types";
 
-const FDR_TILE: Record<number, string> = {
-  1: "bg-emerald-500/15 ring-2 ring-emerald-400",
-  2: "bg-emerald-500/10 ring-2 ring-emerald-500/70",
-  3: "bg-amber-500/15 ring-2 ring-amber-400",
-  4: "bg-orange-500/15 ring-2 ring-orange-400",
-  5: "bg-rose-500/15 ring-2 ring-rose-400",
-};
+const TABS = [
+  { id: "overview", label: "Přehled" },
+  { id: "stats", label: "Statistiky" },
+  { id: "squad", label: "Kádr" },
+  { id: "radar", label: "Radar týmu" },
+  { id: "coaches", label: "Trenéři" },
+] as const;
+type TabId = (typeof TABS)[number]["id"];
 
-const FDR_NUM: Record<number, string> = {
-  1: "bg-emerald-500 text-black",
-  2: "bg-emerald-400 text-black",
-  3: "bg-amber-400 text-black",
-  4: "bg-orange-400 text-black",
-  5: "bg-rose-500 text-white",
-};
-
-export function CatalogTeamPage() {
-  const id = Number(useParams().id);
-  const { data: team, error, missing } = useCatalogTeam(Number.isFinite(id) ? id : null);
-  const xgotIndex = useXgotIndex();
-  const { data: explorer, missing: explorerMissing, error: explorerError } = useCatalogExplorer(
-    team?.league_id ?? null,
-  );
-  const [openRecent, setOpenRecent] = useState(false);
-  const [profileTab, setProfileTab] = useState<ProfileGroup>("attack");
-  const pitch = usePitchTeam(Number.isFinite(id) ? id : null);
-
-  if (missing) return <CatalogNotFound kind="tým" />;
-  if (error) {
-    return (
-      <div className="max-w-6xl mx-auto py-12 px-4 text-rose-400">
-        <Link to="/catalog" className="text-emerald-400 text-sm">
-          ← katalog
-        </Link>
-        <p className="mt-4">{error}</p>
-      </div>
-    );
-  }
-  if (!team) {
-    return <p className="max-w-6xl mx-auto py-16 px-4 text-slate-400">Načítám tým…</p>;
-  }
-
-  const overlay = team.overlay;
-  const table = overlay?.table;
-  const profile = overlay?.profile;
-  const upcoming = team.upcoming || [];
-  const coach = resolveCoach(team);
-  const xgotBadge = last5BadgeForTeam(xgotIndex, team.id);
-  const pitchSeasons = pitch ? pitchSeasonOpts(pitch.season, pitch.matches) : [];
-
-  return (
-    <div className="max-w-6xl mx-auto py-12 px-4 pt-20 flex flex-col gap-6">
-      <Link to={`/catalog?league=${team.league_id}`} className="text-emerald-400 text-sm w-fit">
-        ← Datový katalog
-      </Link>
-      <header className="flex items-start gap-4">
-        {team.image && <img src={team.image} alt="" className="h-16 w-16 shrink-0 object-contain mt-1" />}
-        <div className="min-w-0">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-400/85">Profil týmu</p>
-          <h1 className="text-3xl font-bold text-white light:text-slate-900 mt-1 flex flex-wrap items-center gap-2.5">
-            {team.name}
-            {xgotBadge ? <XgotBadgeChip badge={xgotBadge} /> : null}
-          </h1>
-          <p className="text-sm text-slate-400 light:text-slate-500 mt-1">
-            {team.league_name}
-            {overlay?.season_name ? ` · ${overlay.season_name}` : ""}
-          </p>
-        </div>
-      </header>
-
-      <section className="card p-5 grid md:grid-cols-2 gap-6 items-center">
-        <div className="grid grid-cols-2 gap-x-4 gap-y-3 content-start">
-          <IdentityField label="Zkratka" value={team.short} />
-          <IdentityField label="Stadion" value={team.venue?.name} />
-          <IdentityField label="Založeno" value={team.founded != null ? String(team.founded) : null} />
-          <IdentityField label="Město" value={team.venue?.city} />
-        </div>
-        <CoachCard coach={coach} />
-      </section>
-
-      <section className="card p-5 ring-1 ring-emerald-500/15">
-        <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-400">The Hook</p>
-        <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1">AI herní styl</h2>
-        <p className="text-[15px] leading-relaxed text-slate-200 light:text-slate-700 mt-2">{team.hook}</p>
-      </section>
-
-      <section className="card p-5">
-        <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">Tabulka a sezóna</p>
-        <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1 mb-4">Aktuální soutěž</h2>
-        {table ? (
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            <Metric label="Pozice" value={table.position != null ? `${table.position}.` : null} />
-            <Metric label="Body" value={table.points} />
-            <Metric label="Zápasy" value={table.played} />
-            <Metric
-              label="V–R–P"
-              value={table.won != null ? `${table.won}–${table.drawn ?? 0}–${table.lost ?? 0}` : null}
-            />
-            <Metric
-              label="Skóre"
-              value={table.gf != null && table.ga != null ? `${table.gf}:${table.ga}` : null}
-            />
-            <div className="rounded-lg bg-slate-900/40 light:bg-slate-100 px-3 py-3 text-center col-span-2 md:col-span-1">
-              <FormPills form={table.form} />
-              <div className="text-xs text-slate-500 mt-1">Forma</div>
-            </div>
-          </div>
-        ) : (
-          <EmptyNote>Tabulku této sezóny zatím nemáme.</EmptyNote>
-        )}
-        {(overlay?.recent || []).length > 0 && (
-          <div className="mt-4">
-            <button
-              type="button"
-              onClick={() => setOpenRecent((v) => !v)}
-              className="text-sm text-emerald-400 hover:underline"
-            >
-              {openRecent ? "Skrýt poslední zápasy" : `Zobrazit poslední zápasy (${overlay?.recent?.length})`}
-            </button>
-            {openRecent && (
-              <div className="mt-3">
-                <RecentList items={overlay?.recent || []} />
-              </div>
-            )}
-          </div>
-        )}
-      </section>
-
-      <section className="card p-5">
-        <div className="flex flex-wrap items-end justify-between gap-3 mb-4">
-          <div>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">FDR kalendář</p>
-            <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1">Nadcházející zápasy</h2>
-          </div>
-          <FdrLegend />
-        </div>
-        <FdrStrip items={upcoming} />
-      </section>
-
-      {pitch ? (
-        <>
-          <TeamTrend seasons={pitchSeasons} defaultSeason={pitch.season} team={team.name} />
-          <ShotMap
-            title="Shotmapa týmu"
-            lead="Branka nahoře. Barva říká, jestli šlo o střelu ze hry, nebo ze standardky. Kroužek je gól, světlejší tečka mimo bránu."
-            seasons={pitchSeasons}
-            defaultSeason={pitch.season}
-            shotsOf={(m) => m.shots}
-          />
-        </>
-      ) : null}
-
-      <section className="card p-5">
-        <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">Profil zápasu</p>
-        <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1 mb-1">Sezónní průměry</h2>
-        <p className="text-xs text-slate-500 mb-3">
-          Pořadí mezi týmy aktuální ligy. Zelená 1.–5., žlutá do 10., červená spodní šestka.
-        </p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {PROFILE_TABS.map((tab) => (
-            <Pill key={tab.id} active={profileTab === tab.id} onClick={() => setProfileTab(tab.id)}>
-              {tab.label}
-            </Pill>
-          ))}
-        </div>
-        {profile ? (
-          profileStats(profile, profileTab).length ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-              {profileStats(profile, profileTab).map((stat) => (
-                <ProfileCard key={stat.key || stat.label} stat={stat} />
-              ))}
-            </div>
-          ) : (
-            <EmptyNote>Pro tento štítek zatím nemáme spočtené průměry.</EmptyNote>
-          )
-        ) : (
-          <EmptyNote>Sezónní průměry ještě nejsou spočtené.</EmptyNote>
-        )}
-      </section>
-
-      <CatalogTeamExplorer
-        explorer={explorer}
-        defaultTeamId={team.id}
-        loading={!explorer && !explorerMissing && !explorerError}
-      />
-
-      <SquadBlock players={team.squad} />
-    </div>
-  );
-}
-
-function FormPills({ form }: { form?: string | null }) {
-  if (!form) return <div className="text-xl font-semibold text-white light:text-slate-900">—</div>;
-  return (
-    <div className="flex justify-center gap-1">
-      {form.split("").map((ch, i) => (
-        <ResultBadge key={`${ch}-${i}`} result={ch} />
-      ))}
-    </div>
-  );
-}
-
-function rankTone(rank: number, size: number): string {
-  if (rank <= 5) return "text-emerald-400";
-  if (size > 0 && rank > size - 6) return "text-rose-400";
-  return "text-amber-400";
-}
-
-function rankBar(rank: number, size: number): string {
-  if (rank <= 5) return "bg-emerald-500";
-  if (size > 0 && rank > size - 6) return "bg-rose-500";
-  return "bg-amber-400";
-}
-
-type ProfileGroup = "attack" | "defense" | "discipline" | "setpiece";
-
-const PROFILE_TABS: { id: ProfileGroup; label: string }[] = [
-  { id: "attack", label: "Ofenzivní" },
-  { id: "defense", label: "Defenzivní" },
+type Group = "attack" | "defense" | "discipline" | "setpiece";
+const GROUPS: { id: Group; label: string }[] = [
+  { id: "attack", label: "Útok" },
+  { id: "defense", label: "Obrana" },
   { id: "discipline", label: "Disciplína" },
-  { id: "setpiece", label: "Standardní situace" },
+  { id: "setpiece", label: "Standardky" },
 ];
 
-const LEGACY_PROFILE_KEYS = ["shots", "sot", "corners", "possession", "fouls", "yellow"] as const;
+/** Údaje bez „lepší / horší“ (objem hry), do silných a slabých stránek je nepočítáme. */
+const NEUTRAL_KEYS = new Set(["shots_off", "shots_inside", "shots_outside", "attacks", "dangerous_attacks", "passes", "free_kicks", "throwins", "goal_kicks", "crosses", "accurate_crosses", "possession", "penalties", "dribbles", "fouls_received", "saves", "tackles"]);
+
+/** Náročnost soupeře 1 až 5. Pevné barvy, ať je text čitelný v tmavém i světlém režimu. */
+const FDR_STYLE: Record<number, { bg: string; fg: string }> = {
+  1: { bg: "#34d399", fg: "#052e1f" },
+  2: { bg: "#86efac", fg: "#052e1f" },
+  3: { bg: "#fbbf24", fg: "#3b2a00" },
+  4: { bg: "#fb923c", fg: "#3b1500" },
+  5: { bg: "#f43f5e", fg: "#ffffff" },
+};
+
+/* ---------- pomocné ---------- */
 
 function resolveCoach(team: CatalogTeamDetail): CatalogTeamCoach | null {
   if (team.coach?.name) return team.coach;
   if (team.overlay?.coach?.name) return team.overlay.coach;
   const era = team.overlay?.eras?.[0];
   if (!era?.coach_name) return null;
-  return {
-    id: era.coach_id,
-    name: era.coach_name,
-    start: era.from ? era.from.slice(0, 10) : null,
-    image: null,
-  };
-}
-
-function profileStats(
-  profile: NonNullable<CatalogTeamDetail["overlay"]>["profile"],
-  group: ProfileGroup,
-): CatalogProfileStat[] {
-  if (!profile) return [];
-  if (profile.stats?.length) {
-    return profile.stats.filter((s) => (s.group || "attack") === group && s.value != null);
-  }
-  if (group !== "attack" && group !== "discipline" && group !== "setpiece") return [];
-  return LEGACY_PROFILE_KEYS.map((key) => profile[key])
-    .filter((s): s is CatalogProfileStat => Boolean(s && s.value != null))
-    .filter((s) => {
-      if (group === "discipline") return s.label.toLowerCase().includes("faul") || s.label.toLowerCase().includes("žlut");
-      if (group === "setpiece") return s.label.toLowerCase().includes("roh");
-      return !s.label.toLowerCase().includes("faul") && !s.label.toLowerCase().includes("žlut") && !s.label.toLowerCase().includes("roh");
-    });
-}
-
-function IdentityField({ label, value }: { label: string; value?: string | null }) {
-  return (
-    <div>
-      <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">{label}</p>
-      <p className="mt-1 text-sm font-semibold text-white light:text-slate-900">{value || "—"}</p>
-    </div>
-  );
-}
-
-function formatCoachSince(start?: string | null): string | null {
-  if (!start) return null;
-  const part = start.slice(0, 10);
-  const [year, month, day] = part.split("-").map(Number);
-  if (!year || !month || !day) return start;
-  return `ve funkci od ${day}. ${month}. ${year}`;
+  return { id: era.coach_id, name: era.coach_name, start: era.from ? era.from.slice(0, 10) : null, image: null };
 }
 
 function daysSince(start?: string | null): number | null {
   if (!start) return null;
-  const [year, month, day] = start.slice(0, 10).split("-").map(Number);
-  if (!year || !month || !day) return null;
-  const from = Date.UTC(year, month - 1, day);
+  const [y, m, d] = start.slice(0, 10).split("-").map(Number);
+  if (!y || !m || !d) return null;
   const now = new Date();
-  const to = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
-  return Math.max(0, Math.round((to - from) / 86_400_000));
+  return Math.max(0, Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(y, m - 1, d)) / 86_400_000));
 }
 
-function csDays(n: number): string {
-  if (n === 1) return "1 den";
-  if (n >= 2 && n <= 4) return `${n} dny`;
-  return `${n.toLocaleString("cs-CZ")} dní`;
-}
-
-function coachInitials(name: string): string {
-  const parts = name.split(/\s+/).filter(Boolean);
-  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
-  return `${parts[0][0] ?? ""}${parts[parts.length - 1][0] ?? ""}`.toUpperCase();
-}
-
-function CoachCard({ coach }: { coach?: CatalogTeamCoach | null }) {
-  if (!coach?.name) {
-    return <p className="text-sm text-slate-500 self-center">Hlavního trenéra u tohoto klubu zatím nemáme.</p>;
+function tenure(days: number): string {
+  if (days < 60) return `${days} ${plural(days, "den", "dny", "dní")}`;
+  if (days < 730) {
+    const mo = Math.round(days / 30.4);
+    return `${mo} ${plural(mo, "měsíc", "měsíce", "měsíců")}`;
   }
-  const photo = coach.image && !coach.image.includes("placeholder") ? coach.image : null;
-  const days = daysSince(coach.start);
+  const y = Math.floor(days / 365.25);
+  return `${y} ${plural(y, "rok", "roky", "let")}`;
+}
+
+function statsOf(team: CatalogTeamDetail): CatalogProfileStat[] {
+  const p = team.overlay?.profile;
+  if (!p) return [];
+  if (p.stats?.length) return p.stats.filter((s) => s.value != null);
+  return [p.shots, p.sot, p.corners, p.possession, p.fouls, p.yellow].filter((s): s is CatalogProfileStat => !!s && s.value != null).map((s) => ({ ...s, group: "attack" as const }));
+}
+
+function LuckChip({ badge }: { badge: XgotBadge }) {
+  const lucky = badge.id === "lucky_scoring_team";
   return (
-    <div className="flex items-center gap-4 rounded-xl bg-slate-900/40 light:bg-slate-100 px-4 py-3">
-      {photo ? (
-        <img src={photo} alt="" className="h-24 w-24 shrink-0 rounded-full object-cover ring-1 ring-white/10" />
-      ) : (
-        <span className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-emerald-500/15 text-3xl font-bold tracking-wide text-emerald-400 light:bg-emerald-500/10">
-          {coachInitials(coach.name)}
-        </span>
-      )}
-      <div className="min-w-0">
-        <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500">Hlavní trenér</p>
-        <p className="mt-1 text-xl font-bold text-white light:text-slate-900">{coach.name}</p>
-        <p className="mt-1 text-sm text-slate-300 light:text-slate-600">
-          {formatCoachSince(coach.start) || "datum začátku funkce neznáme"}
-        </p>
-        {days != null && <p className="text-sm text-slate-400">{csDays(days)}</p>}
-      </div>
-    </div>
+    <Pill tone={lucky ? "var(--c-warn)" : "var(--c-loss)"}>
+      {lucky ? "Štěstí" : "Smolaři"}
+      <Info label="Co to znamená">{badge.tooltip}</Info>
+    </Pill>
   );
 }
 
-function ProfileCard({ stat }: { stat?: CatalogProfileStat }) {
-  if (!stat) return null;
-  const rank = stat.rank ?? null;
-  const size = stat.league_size ?? 0;
-  const width = rank != null && size > 0 ? Math.max(8, Math.round(((size - rank + 1) / size) * 100)) : 0;
-  const tone = rank != null ? rankTone(rank, size) : "text-slate-400";
-  const bar = rank != null ? rankBar(rank, size) : "bg-slate-600";
+/* ---------- stránka ---------- */
+
+export function CatalogTeamPage() {
+  const id = Number(useParams().id);
+  const [params, setParams] = useSearchParams();
+  const { data: team, error, missing } = useCatalogTeam(Number.isFinite(id) ? id : null);
+  const xgotIndex = useXgotIndex();
+  const { data: explorer, missing: explorerMissing, error: explorerError } = useCatalogExplorer(team?.league_id ?? null);
+  const pitch = usePitchTeam(Number.isFinite(id) ? id : null);
+
+  const rawTab = params.get("tab") === "compare" ? "radar" : params.get("tab");
+  const tab = (TABS.find((t) => t.id === rawTab)?.id ?? "overview") as TabId;
+  const setTab = (t: TabId) => setParams(t === "overview" ? {} : { tab: t }, { replace: true });
+
+  useEffect(() => {
+    document.title = team ? `${team.name} · tým · Katalog` : "Tým · Katalog";
+  }, [team]);
+
+  const back = <Back to={team ? `/catalog?league=${team.league_id}` : "/catalog"}>{team?.league_name ?? "Katalog"}</Back>;
+  if (missing) return <NotFound kind="Tento tým" back={back} />;
+  if (error)
+    return (
+      <Frame>
+        {back}
+        <p className="mt-4 text-(--c-loss)">Tým se nepodařilo načíst: {error}</p>
+      </Frame>
+    );
+  if (!team) return <Loading>Načítám tým…</Loading>;
+
+  const overlay = team.overlay;
+  const table = overlay?.table;
+  const stats = statsOf(team);
+  const badge = last5BadgeForTeam(xgotIndex, team.id);
+  const hasCompare = !!explorer || (!explorerMissing && !explorerError);
+  const tabs = TABS.filter((t) => (t.id !== "radar" && t.id !== "coaches") || (hasCompare && !!overlay));
+  const active = tabs.some((t) => t.id === tab) ? tab : "overview";
+  const recentRes = (overlay?.recent || []).slice(0, 5).map((r) => r.result).reverse();
+  const formFromTable = (table?.form || "").split("").filter((c): c is Res => c === "V" || c === "R" || c === "P");
+  const form: Res[] = formFromTable.length ? formFromTable : recentRes;
+
   return (
-    <div className="rounded-xl bg-slate-900/40 light:bg-slate-100 px-4 py-3">
-      <div className="flex items-baseline justify-between gap-2">
-        <span className="text-xl font-semibold text-white light:text-slate-900">{stat.value ?? "—"}</span>
-        <span className={`text-sm font-semibold ${tone}`}>
-          {rank != null ? `${rank}. v lize` : "bez pořadí"}
-        </span>
+    <Frame>
+      {back}
+      <div className="mt-3">
+        <Hero
+          media={<Crest src={team.image} name={team.name} size={72} />}
+          eyebrow="Profil týmu"
+          title={team.name}
+          sub={
+            <>
+              {team.league_name}
+              {overlay?.season_name ? ` · ${overlay.season_name}` : ""}
+            </>
+          }
+          chips={
+            <>
+              {team.short && <Pill tone="var(--c-muted)">{team.short}</Pill>}
+              {badge && <LuckChip badge={badge} />}
+            </>
+          }
+        >
+          {table ? (
+            <StatStrip>
+              <Stat value={table.position != null ? `${table.position}.` : "—"} label="Pozice v tabulce" />
+              <Stat value={table.points ?? "—"} label={`Body · ${table.played ?? 0} z.`} />
+              <Stat value={table.gf != null && table.ga != null ? `${table.gf}:${table.ga}` : "—"} label={table.won != null ? `Skóre · ${table.won}V ${table.drawn ?? 0}R ${table.lost ?? 0}P` : "Skóre"} />
+              <div className="flex flex-col items-center justify-center rounded-xl bg-(--c-raised) px-3 py-3">
+                <FormDots results={form} />
+                <div className="mt-1.5 text-xs text-(--c-muted)">Forma</div>
+              </div>
+            </StatStrip>
+          ) : (
+            <p className="text-[13px] text-(--c-muted)">Tabulku této sezóny zatím nemáme.</p>
+          )}
+        </Hero>
       </div>
-      <div className="text-xs text-slate-400 mt-1">{stat.label}</div>
-      <div className="text-[11px] text-slate-500 mt-0.5">liga {stat.league_avg ?? "—"}</div>
-      <div className="mt-3 h-2.5 rounded-full bg-slate-800 light:bg-slate-200 overflow-hidden">
-        <div className={`h-full rounded-full ${bar}`} style={{ width: `${width}%` }} />
+
+      <StickyTabs tabs={tabs} value={active} onChange={setTab} label="Sekce týmu" />
+
+      <div role="tabpanel" className="mt-4 space-y-5">
+        {active === "overview" && <Overview team={team} stats={stats} onMore={() => setTab("stats")} />}
+        {active === "stats" && (
+          <>
+            <StatsCard stats={stats} />
+            {pitch && <PitchBlock team={team} pitch={pitch} />}
+          </>
+        )}
+        {active === "squad" && <SquadCard players={team.squad} />}
+        {active === "radar" && <TeamRadarPanel explorer={explorer} defaultTeamId={team.id} loading={!explorer && !explorerMissing && !explorerError} />}
+        {active === "coaches" && <CoachComparePanel explorer={explorer} defaultTeamId={team.id} loading={!explorer && !explorerMissing && !explorerError} />}
       </div>
-      {rank != null && size > 0 && (
-        <p className={`mt-1.5 text-[11px] font-medium ${tone}`}>
-          {rank}. z {size}
-        </p>
-      )}
+
+      <footer className="pt-8 text-center text-xs text-(--c-faint)">Informativní údaje, nejde o doporučení k sázce.</footer>
+    </Frame>
+  );
+}
+
+/* ---------- přehled ---------- */
+
+function Overview({ team, stats, onMore }: { team: CatalogTeamDetail; stats: CatalogProfileStat[]; onMore: () => void }) {
+  const upcoming = team.upcoming || [];
+  const recent = team.overlay?.recent || [];
+  const coach = resolveCoach(team);
+  return (
+    <>
+      <Strengths stats={stats} onMore={onMore} />
+
+      <div className="grid gap-5 md:grid-cols-2">
+        <Card title="Nadcházející zápasy" lead="Číslo vpravo je náročnost soupeře: 1 lehčí, 5 těžší." aside={<FdrLegend />}>
+          {upcoming.length === 0 ? <Empty>V kalendáři nic není.</Empty> : <ul className="-mx-1 divide-y divide-(--c-line)">{upcoming.map((fx) => <UpcomingRow key={fx.fixture_id} fx={fx} />)}</ul>}
+        </Card>
+
+        <Card title="Poslední zápasy" lead="Výsledky letošní sezóny.">
+          {recent.length === 0 ? (
+            <Empty>Zatím žádný odehraný zápas.</Empty>
+          ) : (
+            <ul className="-mx-1 divide-y divide-(--c-line)">
+              {recent.map((r) => {
+                const body = (
+                  <div className="flex items-center gap-2.5 px-1 py-2.5">
+                    <ResBadge r={r.result} />
+                    <VenueTag home={r.is_home} />
+                    <Crest src={r.opponent.image} name={r.opponent.name} size={20} />
+                    <span className="min-w-0 flex-1 truncate text-[13px] font-medium">{r.opponent.name}</span>
+                    <span className="shrink-0 text-[13px] font-bold tabular-nums">
+                      {r.gf}:{r.ga}
+                    </span>
+                    <span className="hidden w-16 shrink-0 text-right text-[11px] text-(--c-faint) sm:block">{r.starting_at ? formatDate(r.starting_at) : ""}</span>
+                  </div>
+                );
+                return (
+                  <li key={r.fixture_id}>
+                    {r.has_match_page ? (
+                      <Link to={`/match/${r.fixture_id}`} className="block rounded-lg hover:bg-(--c-raised)">
+                        {body}
+                      </Link>
+                    ) : (
+                      body
+                    )}
+                  </li>
+                );
+              })}
+            </ul>
+          )}
+        </Card>
+      </div>
+
+      <Card title="Klub">
+        <div className="grid gap-5 md:grid-cols-2">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-4 content-start">
+            <Meta label="Stadion" value={team.venue?.name} />
+            <Meta label="Město" value={team.venue?.city} />
+            <Meta label="Kapacita" value={team.venue?.capacity != null ? team.venue.capacity.toLocaleString("cs-CZ") : null} />
+            <Meta label="Založeno" value={team.founded} />
+          </div>
+          <CoachCard coach={coach} />
+        </div>
+      </Card>
+    </>
+  );
+}
+
+function CoachCard({ coach }: { coach: CatalogTeamCoach | null }) {
+  if (!coach?.name) return <p className="self-center text-sm text-(--c-muted)">Hlavního trenéra u tohoto klubu zatím nemáme.</p>;
+  const days = daysSince(coach.start);
+  return (
+    <div className="flex items-center gap-4 rounded-xl bg-(--c-raised) px-4 py-3">
+      <Avatar src={coach.image} name={coach.name} size={64} />
+      <div className="min-w-0">
+        <div className="text-[10px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">Hlavní trenér</div>
+        <div className="mt-0.5 text-[17px] font-bold leading-tight">{coach.name}</div>
+        <div className="mt-0.5 text-xs text-(--c-muted)">
+          {coach.start
+            ? `ve funkci od ${coach.start.slice(0, 10).split("-").reverse().map(Number).join(". ")}${days != null ? ` · ${tenure(days)}` : ""}`
+            : "datum nástupu neznáme"}
+        </div>
+      </div>
     </div>
   );
 }
 
 function FdrLegend() {
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-[10px] uppercase tracking-wider text-slate-500">lehčí</span>
-      <div className="flex gap-1">
-        {([1, 2, 3, 4, 5] as const).map((n) => (
-          <span
-            key={n}
-            className={`flex h-6 w-6 items-center justify-center rounded-md text-[11px] font-bold ${FDR_NUM[n]}`}
-          >
-            {n}
-          </span>
-        ))}
-      </div>
-      <span className="text-[10px] uppercase tracking-wider text-slate-500">těžší</span>
+    <div className="flex items-center gap-1" aria-hidden>
+      {[1, 2, 3, 4, 5].map((n) => (
+        <span key={n} className="flex h-5 w-5 items-center justify-center rounded text-[10px] font-bold" style={{ background: FDR_STYLE[n].bg, color: FDR_STYLE[n].fg }}>
+          {n}
+        </span>
+      ))}
     </div>
   );
 }
 
-function FdrStrip({ items }: { items: CatalogUpcoming[] }) {
-  if (items.length === 0) {
-    return <EmptyNote>V kalendáři nic není.</EmptyNote>;
-  }
-  return (
-    <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
-      {items.map((fx) => {
-        const rating = fx.fdr_rating ?? 0;
-        const inner = (
-          <div
-            className={`flex flex-col items-center gap-2 rounded-2xl px-2 py-3 ${FDR_TILE[rating] || "bg-slate-900/40 ring-2 ring-white/15 light:bg-slate-100"}`}
-          >
-            {fx.opponent.image ? (
-              <img src={fx.opponent.image} alt="" className="h-9 w-9 object-contain" />
-            ) : (
-              <span className="h-9 w-9 rounded-full bg-slate-800 light:bg-slate-200" />
-            )}
-            <p className="text-[11px] font-bold text-white light:text-slate-900">
-              {(fx.opponent.name || "").replace(/\b(FC|FK|SK|AC|MFK)\b/gi, "").trim().slice(0, 3).toUpperCase() || "—"}
-            </p>
-            <p className="text-center text-[10px] leading-tight text-slate-400">
-              {fx.starting_at ? formatDate(fx.starting_at) : "—"}
-              <br />
-              {fx.is_home ? "Doma" : "Venku"}
-              {fx.opponent_position != null ? ` · ${fx.opponent_position}.` : ""}
-            </p>
-            <span
-              className={`flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold ${FDR_NUM[rating] || "bg-slate-600 text-white"}`}
-            >
-              {rating || "—"}
-            </span>
-          </div>
-        );
-        return fx.has_match_page ? (
-          <Link key={fx.fixture_id} to={`/match/${fx.fixture_id}`}>
-            {inner}
-          </Link>
-        ) : (
-          <div key={fx.fixture_id}>{inner}</div>
-        );
-      })}
+function UpcomingRow({ fx }: { fx: CatalogUpcoming }) {
+  const rating = fx.fdr_rating ?? 0;
+  const body = (
+    <div className="flex items-center gap-2.5 px-1 py-2.5">
+      <VenueTag home={fx.is_home} />
+      <Crest src={fx.opponent.image} name={fx.opponent.name} size={22} />
+      <div className="min-w-0 flex-1">
+        <div className="truncate text-[13px] font-medium">{fx.opponent.name}</div>
+        <div className="text-[11px] text-(--c-faint)">
+          {fx.starting_at ? new Date(fx.starting_at).toLocaleDateString("cs-CZ", { weekday: "short", day: "numeric", month: "numeric" }) : "—"}
+          {fx.opponent_position != null ? ` · soupeř ${fx.opponent_position}.` : ""}
+        </div>
+      </div>
+      {rating > 0 && (
+        <span
+          className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-[13px] font-bold"
+          style={{ background: FDR_STYLE[rating]?.bg, color: FDR_STYLE[rating]?.fg }}
+          title={`Náročnost soupeře ${rating} z 5`}
+        >
+          {rating}
+        </span>
+      )}
     </div>
   );
-}
-
-const SQUAD_PREVIEW = 4;
-
-function SquadBlock({ players }: { players: CatalogSquadPlayer[] }) {
-  const active = players.filter((p) => p.status !== "loan" && p.status !== "left");
-  const groups = groupSquad(active);
   return (
-    <section className="card p-5">
-      <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-500">Soupiska</p>
-      <h2 className="text-lg font-semibold text-white light:text-slate-900 mt-1">
-        Aktuální kádr · {active.length} hráčů
-      </h2>
-      <p className="text-xs text-slate-500 mb-4">Bez hráčů na hostování a bez těch, kteří už klub opustili.</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {groups.map((g) => (
-          <SquadGroup key={g.label} label={g.label} players={g.players} />
-        ))}
-      </div>
-    </section>
+    <li>
+      {fx.has_match_page ? (
+        <Link to={`/match/${fx.fixture_id}`} className="block rounded-lg hover:bg-(--c-raised)">
+          {body}
+        </Link>
+      ) : (
+        body
+      )}
+    </li>
   );
 }
 
-function SquadGroup({ label, players }: { label: string; players: CatalogSquadPlayer[] }) {
+/* ---------- silné a slabé stránky ---------- */
+
+function Strengths({ stats, onMore }: { stats: CatalogProfileStat[]; onMore: () => void }) {
+  const rated = stats.filter((s) => s.rank != null && (s.league_size ?? 0) >= 8 && s.key && !NEUTRAL_KEYS.has(s.key));
+  if (rated.length < 6) return null;
+  const byQuality = [...rated].sort((a, b) => (a.rank! / a.league_size!) - (b.rank! / b.league_size!));
+  const best = byQuality.slice(0, 3);
+  const worst = byQuality.slice(-3).reverse();
+  const row = (s: CatalogProfileStat) => (
+    <li key={s.key} className="flex items-center gap-3 py-2">
+      <span className="min-w-0 flex-1">
+        <span className="block truncate text-[13px] font-medium">{s.label}</span>
+        <span className="text-[11px] text-(--c-faint)">
+          {fmtNum(s.value)} · liga {fmtNum(s.league_avg)}
+        </span>
+      </span>
+      <span className="shrink-0 rounded-md px-2 py-0.5 text-[12px] font-bold tabular-nums" style={{ color: rankColor(s.rank!, s.league_size!), background: `color-mix(in oklab, ${rankColor(s.rank!, s.league_size!)} 15%, transparent)` }}>
+        {s.rank}. z {s.league_size}
+      </span>
+    </li>
+  );
+  return (
+    <Card
+      title="V čem je tým silný a slabý"
+      lead="Pořadí mezi týmy ligy v letošní sezóně, 1. je nejlepší."
+      aside={
+        <button type="button" onClick={onMore} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
+          Všechna čísla →
+        </button>
+      }
+    >
+      <div className="grid gap-x-6 gap-y-3 md:grid-cols-2">
+        <div>
+          <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-win)" }}>
+            Nejsilnější stránky
+          </h3>
+          <ul className="divide-y divide-(--c-line)">{best.map(row)}</ul>
+        </div>
+        <div>
+          <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-loss)" }}>
+            Nejslabší stránky
+          </h3>
+          <ul className="divide-y divide-(--c-line)">{worst.map(row)}</ul>
+        </div>
+      </div>
+    </Card>
+  );
+}
+
+/* ---------- statistiky ---------- */
+
+const PREVIEW = 6;
+
+function StatsCard({ stats }: { stats: CatalogProfileStat[] }) {
+  const [group, setGroup] = useState<Group>("attack");
   const [open, setOpen] = useState(false);
-  const shown = open ? players : players.slice(0, SQUAD_PREVIEW);
-  const hidden = players.length - shown.length;
+  const rows = useMemo(() => stats.filter((s) => (s.group || "attack") === group), [stats, group]);
+  const shown = open ? rows : rows.slice(0, PREVIEW);
+  useEffect(() => setOpen(false), [group]);
+
+  if (!stats.length) {
+    return (
+      <Card title="Sezónní průměry">
+        <Empty>Sezónní průměry ještě nejsou spočtené.</Empty>
+      </Card>
+    );
+  }
   return (
-    <div>
-      <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-emerald-400/85 mb-2">
-        {label}
-        <span className="ml-1.5 text-slate-500">{players.length}</span>
-      </p>
-      <ul className="flex flex-col gap-1.5">
-        {shown.map((p) => (
-          <li key={p.id}>
-            <Link
-              to={`/catalog/players/${p.id}`}
-              className="flex items-center gap-2.5 rounded-lg bg-slate-900/40 light:bg-slate-100 px-2.5 py-1.5 hover:ring-1 hover:ring-emerald-500/40"
-            >
-              <span className="w-6 text-center text-xs text-slate-500">{p.number ?? "–"}</span>
-              {p.image && !p.image.includes("placeholder") ? (
-                <img src={p.image} alt="" className="h-7 w-7 rounded-full object-cover" />
-              ) : (
-                <span className="flex h-7 w-7 items-center justify-center rounded-full bg-slate-800 light:bg-slate-200 text-[10px] font-bold">
-                  {p.name.slice(0, 2).toUpperCase()}
-                </span>
-              )}
-              <p className="min-w-0 flex-1 truncate text-sm font-semibold text-white light:text-slate-900">
-                {p.name}
-                {p.captain ? <span className="ml-1.5 text-[10px] text-amber-400">C</span> : null}
-              </p>
-              <span className="text-[11px] tabular-nums text-slate-500">
-                {p.season?.appearances != null ? `${p.season.appearances} z` : "—"}
-              </span>
-            </Link>
-          </li>
+    <Card title="Sezónní průměry" lead="Na zápas, s pořadím mezi týmy ligy. Zelená je horní pětina, růžová dolní, 1. je nejlepší.">
+      <Seg label="Skupina statistik" value={group} onChange={setGroup} options={GROUPS.map((g) => ({ id: g.id, label: g.label }))} />
+      <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {shown.map((s) => (
+          <RankCard key={s.key || s.label} label={s.label} value={s.value} rank={s.rank} size={s.league_size} avg={s.league_avg} />
         ))}
-      </ul>
-      {hidden > 0 && (
-        <button type="button" onClick={() => setOpen(true)} className="mt-1.5 text-xs text-emerald-400 hover:underline">
-          Zobrazit další {hidden}
+      </div>
+      {rows.length === 0 && <Empty>Pro tuto skupinu zatím nemáme čísla.</Empty>}
+      {rows.length > PREVIEW && (
+        <button type="button" onClick={() => setOpen((o) => !o)} className="mt-3 min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
+          {open ? "Méně" : `Zobrazit dalších ${rows.length - PREVIEW}`}
         </button>
       )}
-      {open && players.length > SQUAD_PREVIEW && (
-        <button type="button" onClick={() => setOpen(false)} className="mt-1.5 text-xs text-slate-500 hover:underline">
-          Méně
-        </button>
-      )}
+    </Card>
+  );
+}
+
+function PitchBlock({ team, pitch }: { team: CatalogTeamDetail; pitch: NonNullable<ReturnType<typeof usePitchTeam>> }) {
+  const seasons = pitchSeasonOpts(pitch.season, pitch.matches);
+  return (
+    <div className="space-y-5">
+      <TrendCard team={team.name} seasons={seasons} defaultSeason={pitch.season} />
+      <ShotMapCard
+        title="Mapa střel týmu"
+        lead="Odkud tým střílí. Branka je nahoře, velikost tečky je xG střely."
+        seasons={seasons}
+        defaultSeason={pitch.season}
+        shotsOf={shotsOfMatch}
+      />
     </div>
   );
 }
 
-function groupSquad(players: CatalogSquadPlayer[]): { label: string; players: CatalogSquadPlayer[] }[] {
-  const labels = ["Brankáři", "Obránci", "Záložníci", "Útočníci", "Ostatní"];
-  const buckets: CatalogSquadPlayer[][] = [[], [], [], [], []];
-  for (const p of players) {
-    const rank =
-      p.position_id === 24 ? 0 : p.position_id === 25 ? 1 : p.position_id === 26 ? 2 : p.position_id === 27 ? 3 : 4;
-    buckets[rank].push(p);
-  }
-  for (const group of buckets) {
-    group.sort((a, b) => (b.season?.appearances ?? 0) - (a.season?.appearances ?? 0) || a.name.localeCompare(b.name));
-  }
-  return buckets.map((group, i) => ({ label: labels[i], players: group })).filter((g) => g.players.length > 0);
+const shotsOfMatch = (m: MatchRow) => m.shots;
+
+/* ---------- kádr ---------- */
+
+const SQUAD_GROUPS = ["Brankáři", "Obránci", "Záložníci", "Útočníci", "Ostatní"];
+
+function SquadCard({ players }: { players: CatalogSquadPlayer[] }) {
+  const active = players.filter((p) => p.status !== "loan" && p.status !== "left");
+  const [pos, setPos] = useState<string>("all");
+  const groups = useMemo(() => {
+    const buckets: CatalogSquadPlayer[][] = SQUAD_GROUPS.map(() => []);
+    for (const p of active) {
+      const i = p.position_id === 24 ? 0 : p.position_id === 25 ? 1 : p.position_id === 26 ? 2 : p.position_id === 27 ? 3 : 4;
+      buckets[i].push(p);
+    }
+    for (const g of buckets) g.sort((a, b) => (b.season?.minutes ?? 0) - (a.season?.minutes ?? 0) || (a.number ?? 99) - (b.number ?? 99));
+    return buckets.map((g, i) => ({ label: SQUAD_GROUPS[i], players: g })).filter((g) => g.players.length);
+  }, [active]);
+  const visible = groups.filter((g) => pos === "all" || g.label === pos);
+  const anyStats = active.some((p) => p.season?.appearances != null);
+
+  return (
+    <Card title={`Kádr · ${active.length} ${plural(active.length, "hráč", "hráči", "hráčů")}`} lead="Bez hráčů na hostování a bez těch, kteří už klub opustili. V rámci postu podle odehraných minut.">
+      <Seg label="Post" value={pos} onChange={setPos} options={[{ id: "all", label: "Všichni" }, ...groups.map((g) => ({ id: g.label, label: g.label }))]} />
+      <div className="mt-4 space-y-5">
+        {visible.map((g) => (
+          <section key={g.label}>
+            <div className="mb-1 flex items-center justify-between px-1">
+              <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">
+                {g.label} <span className="ml-1 tabular-nums">{g.players.length}</span>
+              </h3>
+              {anyStats && (
+                <div className="flex gap-3 pr-6 text-[10px] uppercase tracking-wide text-(--c-faint)">
+                  <span className="w-8 text-center">Záp.</span>
+                  <span className="w-8 text-center">G</span>
+                  <span className="w-8 text-center">A</span>
+                </div>
+              )}
+            </div>
+            <ul className="divide-y divide-(--c-line)">
+              {g.players.map((p) => (
+                <li key={p.id}>
+                  <Link to={`/catalog/players/${p.id}`} className="flex min-h-12 items-center gap-2.5 rounded-lg px-1 py-1.5 hover:bg-(--c-raised)">
+                    <span className="w-6 shrink-0 text-center text-xs tabular-nums text-(--c-faint)">{p.number ?? "–"}</span>
+                    <Avatar src={p.image} name={p.name} size={32} />
+                    <span className="min-w-0 flex-1 truncate text-[14px] font-medium">
+                      {p.name}
+                      {p.captain && <span className="ml-1.5 text-[10px] font-bold" style={{ color: "var(--c-warn)" }}>C</span>}
+                    </span>
+                    {anyStats && (
+                      <span className="flex gap-3 text-[13px] tabular-nums text-(--c-muted)">
+                        <span className="w-8 text-center">{p.season?.appearances ?? "–"}</span>
+                        <span className="w-8 text-center">{p.season?.goals ?? "–"}</span>
+                        <span className="w-8 text-center">{p.season?.assists ?? "–"}</span>
+                      </span>
+                    )}
+                    <span aria-hidden className="text-lg leading-none text-(--c-faint)">›</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </Card>
+  );
 }

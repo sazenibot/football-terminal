@@ -27,7 +27,7 @@ from build_match_data import (  # noqa: E402
     fetch_referee_profile,
     fetch_season,
 )
-from catalog_player_overlay import attach_player_overlays  # noqa: E402
+from catalog_player_overlay import attach_player_overlays, merge_incremental_players  # noqa: E402
 from catalog_referee_overlay import (  # noqa: E402
     attach_referee_overlays,
     compact_ref_match,
@@ -766,6 +766,40 @@ def _refresh_ref_seasons(overlay: dict, seasons_meta: list[dict], current_season
         overlay["current_season_id"] = current_season_id
 
 
+def merge_fixtures_into_explorer(explorer: dict, by_team: dict[int, list[dict]]) -> int:
+    """Doplní týmové zápasy z okna do explorer.json (radar týmu, srovnání trenérů, základ pro rozhodčí).
+    Idempotentní: zápas, který tým v souboru už má, se nepřidá znovu."""
+    added = 0
+    for team in explorer.get("teams") or []:
+        rows = by_team.get(int(team["id"])) or []
+        matches = team.get("matches") or []
+        have = {(m.get("s"), m.get("d"), m.get("h"), m.get("gf"), m.get("ga")) for m in matches}
+        fresh = []
+        for row in rows:
+            cm = compact_match(row)
+            key = (cm["s"], cm["d"], cm["h"], cm["gf"], cm["ga"])
+            if key in have:
+                continue
+            have.add(key)
+            fresh.append(cm)
+        if fresh:
+            team["matches"] = sorted(fresh + matches, key=lambda m: m.get("d") or "", reverse=True)
+            added += len(fresh)
+    return added
+
+
+def merge_incremental_explorer(league_id: int, by_team: dict[int, list[dict]]) -> None:
+    path = CATALOG / "leagues" / f"{league_id}.explorer.json"
+    explorer = load_json(path)
+    if not explorer:
+        return
+    added = merge_fixtures_into_explorer(explorer, by_team)
+    if added:
+        explorer["generated_at"] = now_iso()
+        write_json(path, explorer)
+    print(f"  explorer {league_id}: +{added} týmových zápasů")
+
+
 def merge_incremental_overlay(league_id: int, days: int = 2) -> None:
     """Do existujícího overlay přidá dohrané zápasy z posledních dní. Bez cold backfillu."""
     team_ids = hub_team_ids(league_id)
@@ -784,6 +818,7 @@ def merge_incremental_overlay(league_id: int, days: int = 2) -> None:
     season_id = sample.get("season_id")
     seasons_meta = last_seasons(league_id)
     by_team = facts_by_team(history, set(team_ids))
+    merge_incremental_explorer(league_id, by_team)
     for tid, rows in by_team.items():
         path = CATALOG / "teams" / f"{tid}.json"
         team = load_json(path)
@@ -832,6 +867,10 @@ def merge_incremental_overlay(league_id: int, days: int = 2) -> None:
 def apply_daily_overlay(league_id: int) -> None:
     apply_fdr_from_standings(league_id)
     merge_incremental_overlay(league_id, days=2)
+    try:
+        merge_incremental_players(league_id, CATALOG, 2, known_match_ids(), parse_standings, now_iso)
+    except Exception as exc:  # hráčský přírůstek nesmí shodit denní refresh, doplní se další den
+        print(f"  hráči {league_id}: přírůstek selhal ({exc})")
 
 
 def main() -> None:

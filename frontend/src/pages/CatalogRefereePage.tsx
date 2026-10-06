@@ -1,33 +1,100 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
-import { useCatalogReferee } from "../lib/useData";
-import { CatalogNotFound } from "./CatalogNotFound";
-import { EmptyNote } from "../components/CatalogStats";
+import { Avatar, Back, Frame, Hero, Loading, NotFound, Pill, RankCard, Select, StatStrip, StickyTabs, csMatches, fmtNum } from "../cat/kit";
+import { HomeAwaySplit, TeamLeaderboard, TeamTreatment } from "../cat/RefereeInsights";
+import { roundsPlayed } from "../cat/refStats";
 import { formatDate } from "../lib/format";
+import { useCatalogReferee, useLeagueUniverse } from "../lib/useData";
+import { Card, Empty, Info, ProbBar, Stat } from "../mc2/kit";
 import type { CatalogRefereeDiscStat, CatalogRefereeMatch, CatalogRefereeSeason } from "../types";
 
 type SeasonKey = "all" | number;
+const TABS = [
+  { id: "overview", label: "Přehled" },
+  { id: "matches", label: "Zápasy" },
+] as const;
+type TabId = (typeof TABS)[number]["id"];
 
-const SELECT =
-  "mt-1 w-full rounded-lg border border-slate-700 bg-[#12161f] text-slate-100 text-sm px-3 py-2 light:bg-white light:border-slate-300 light:text-slate-800";
+/* ---------- výpočty ---------- */
+
+const pairSum = (pair?: Array<number | null> | null): number | null => {
+  if (!pair) return null;
+  const vals = pair.filter((v): v is number => v != null);
+  return vals.length ? vals.reduce((a, b) => a + b, 0) : null;
+};
+
+function mean(values: Array<number | null | undefined>): number | null {
+  const clean = values.filter((v): v is number => v != null);
+  if (!clean.length) return null;
+  return Math.round((clean.reduce((a, b) => a + b, 0) / clean.length) * 100) / 100;
+}
+
+function avgSum(rows: CatalogRefereeMatch[], key: string): number | null {
+  const zeroIfAbsent = key === "red" || key === "penalties";
+  return mean(
+    rows.map((m) => {
+      const sum = pairSum(m.st?.[key]);
+      if (sum != null) return sum;
+      if (zeroIfAbsent && (m.st?.fouls || m.st?.yellow || m.st?.red || m.st?.penalties)) return 0;
+      return null;
+    }),
+  );
+}
+
+function discFor(
+  discipline: { all?: Record<string, CatalogRefereeDiscStat>; seasons?: Record<string, Record<string, CatalogRefereeDiscStat>> } | undefined,
+  season: SeasonKey,
+): Record<string, CatalogRefereeDiscStat> {
+  if (!discipline) return {};
+  return season === "all" ? discipline.all || {} : discipline.seasons?.[String(season)] || {};
+}
+
+function smFor(seasons: CatalogRefereeSeason[] | undefined, season: SeasonKey): { yellowred?: number | null; var?: number | null } {
+  const rows = seasons || [];
+  if (season === "all") return { yellowred: mean(rows.map((s) => s.sm?.yellowred)), var: mean(rows.map((s) => s.sm?.var)) };
+  const hit = rows.find((s) => s.id === season)?.sm;
+  return { yellowred: hit?.yellowred ?? null, var: hit?.var ?? null };
+}
+
+function seasonLabel(season: SeasonKey, seasons: { id: number; name?: string | null }[], current?: number | null) {
+  if (season === "all") return "všechny sezony";
+  if (season === current) return "tato sezona";
+  return seasons.find((s) => s.id === season)?.name || `sezona ${season}`;
+}
+
+/** Přísnost podle žlutých karet: pořadí 1 = nejvíc žlutých v lize. */
+function strictness(y?: CatalogRefereeDiscStat): { label: string; tone: string } | null {
+  if (!y?.rank || !y.size || y.size < 5) return null;
+  const edge = Math.max(1, Math.round(y.size * 0.2));
+  if (y.rank <= edge) return { label: "Přísnější než většina", tone: "var(--c-warn)" };
+  if (y.rank > y.size - edge) return { label: "Nechává hrát", tone: "var(--c-home)" };
+  return { label: "Průměrná přísnost", tone: "var(--c-muted)" };
+}
+
+/* ---------- stránka ---------- */
 
 export function CatalogRefereePage() {
   const id = Number(useParams().id);
-  const [params] = useSearchParams();
+  const [params, setParams] = useSearchParams();
   const { data: ref, error, missing } = useCatalogReferee(Number.isFinite(id) ? id : null);
   const [season, setSeason] = useState<SeasonKey | null>(null);
   const [teamId, setTeamId] = useState<number | "all">("all");
 
+  const tab = (TABS.find((t) => t.id === params.get("tab"))?.id ?? "overview") as TabId;
+  const setTab = (t: TabId) => {
+    const next = new URLSearchParams(params);
+    if (t === "overview") next.delete("tab");
+    else next.set("tab", t);
+    setParams(next, { replace: true });
+  };
+
+  const universe = useLeagueUniverse(ref?.league_id ?? null);
   const overlay = ref?.overlay;
   const currentSeasonId = overlay?.current_season_id ?? null;
   const resolvedSeason: SeasonKey = season ?? currentSeasonId ?? "all";
-  const matches = overlay?.matches || [];
-  const seasons = overlay?.seasons || [];
-
-  const seasonMatches = useMemo(
-    () => matches.filter((m) => resolvedSeason === "all" || m.s === resolvedSeason),
-    [matches, resolvedSeason],
-  );
+  const matches = useMemo(() => overlay?.matches ?? [], [overlay]);
+  const seasons = useMemo(() => overlay?.seasons ?? [], [overlay]);
+  const seasonMatches = useMemo(() => matches.filter((m) => resolvedSeason === "all" || m.s === resolvedSeason), [matches, resolvedSeason]);
 
   const teams = useMemo(() => {
     const map = new Map<number, string>();
@@ -37,352 +104,281 @@ export function CatalogRefereePage() {
     }
     return [...map.entries()].sort((a, b) => a[1].localeCompare(b[1], "cs"));
   }, [seasonMatches]);
+  const tableMatches = useMemo(() => seasonMatches.filter((m) => teamId === "all" || m.hid === teamId || m.aid === teamId), [seasonMatches, teamId]);
 
-  const tableMatches = useMemo(
-    () =>
-      seasonMatches.filter((m) => teamId === "all" || m.hid === teamId || m.aid === teamId),
-    [seasonMatches, teamId],
-  );
-
-  if (missing) return <CatalogNotFound kind="rozhodčí" />;
-  if (error) {
-    return (
-      <div className="max-w-6xl mx-auto py-12 px-4 text-rose-400">
-        <Link to="/catalog" className="text-emerald-400 text-sm">
-          ← katalog
-        </Link>
-        <p className="mt-4">{error}</p>
-      </div>
-    );
-  }
-  if (!ref) {
-    return <p className="max-w-6xl mx-auto py-16 px-4 text-slate-400">Načítám rozhodčího…</p>;
-  }
+  useEffect(() => {
+    document.title = ref ? `${ref.name} · rozhodčí · Katalog` : "Rozhodčí · Katalog";
+  }, [ref]);
 
   const fromQuery = Number(params.get("league"));
-  const primary =
-    (ref.leagues || []).find((l) => l.id === fromQuery) ||
-    [...(ref.leagues || [])].sort(
-      (a, b) => Number(b.in_league) - Number(a.in_league) || (b.league_matches || 0) - (a.league_matches || 0),
-    )[0] || { id: ref.league_id, name: ref.league_name, in_league: ref.in_league, league_matches: ref.league_matches };
+  const primary = ref
+    ? (ref.leagues || []).find((l) => l.id === fromQuery) ||
+      [...(ref.leagues || [])].sort((a, b) => Number(b.in_league) - Number(a.in_league) || (b.league_matches || 0) - (a.league_matches || 0))[0] || {
+        id: ref.league_id,
+        name: ref.league_name,
+        in_league: ref.in_league,
+        league_matches: ref.league_matches,
+      }
+    : null;
+  const back = <Back to={primary ? `/catalog?league=${primary.id}&tab=referees` : "/catalog"}>{primary?.name ?? "Katalog"}</Back>;
 
+  if (missing) return <NotFound kind="Tento rozhodčí" back={back} />;
+  if (error)
+    return (
+      <Frame>
+        {back}
+        <p className="mt-4 text-(--c-loss)">Profil se nepodařilo načíst: {error}</p>
+      </Frame>
+    );
+  if (!ref || !primary) return <Loading>Načítám rozhodčího…</Loading>;
+
+  // sezóny, které se berou jako "možné": vybraná, nebo všechny, kde rozhodčí aspoň jednou pískal
+  const seasonIds = resolvedSeason === "all" ? seasons.filter((x) => (x.matches ?? 0) > 0).map((x) => x.id) : [resolvedSeason];
+  const possible = roundsPlayed(universe, seasonIds);
   const career = overlay?.career_matches ?? matches.length;
   const sm = smFor(seasons, resolvedSeason);
-  const split = resultSplit(seasonMatches);
   const disc = discFor(overlay?.discipline, resolvedSeason);
-
-  return (
-    <div className="max-w-6xl mx-auto py-12 px-4 pt-20 flex flex-col gap-8">
-      <Link to={`/catalog?league=${primary.id}&tab=referees`} className="text-emerald-400 text-sm w-fit">
-        ← {primary.name}
-      </Link>
-
-      <header className="card px-5 py-4 flex items-center justify-between gap-6">
-        <div className="min-w-0">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-400/85">Hlavní rozhodčí</p>
-          <h1 className="text-2xl font-bold text-white light:text-slate-900 mt-0.5">{ref.name}</h1>
-          <p className="text-sm text-slate-400 light:text-slate-500 mt-1">
-            <span className="text-white light:text-slate-900 font-semibold">{seasonMatches.length}</span>
-            {` ${csMatches(seasonMatches.length)}`}
-            {resolvedSeason !== "all" ? ` · ${seasonLabel(resolvedSeason, seasons, currentSeasonId)}` : ""}
-            <span className="text-slate-500">{` (${career} ${csMatches(career)} celkem)`}</span>
-          </p>
-        </div>
-        <label className="text-xs text-slate-500 w-52 shrink-0">
-          Sezóna
-          <select
-            className={SELECT}
-            value={resolvedSeason === "all" ? "all" : String(resolvedSeason)}
-            onChange={(e) => {
-              const v = e.target.value;
-              setSeason(v === "all" ? "all" : Number(v));
-              setTeamId("all");
-            }}
-          >
-            <option value="all">Všechny sezony</option>
-            {seasons.map((s) => (
-              <option key={s.id} value={s.id}>
-                {s.name || s.id}
-                {s.id === currentSeasonId ? " (aktuální)" : ""} · {s.matches}×
-              </option>
-            ))}
-          </select>
-        </label>
-      </header>
-
-      {seasonMatches.length === 0 ? (
-        <EmptyNote>V tomto filtru zatím nemáme zápas, kde je hlavní.</EmptyNote>
-      ) : (
-        <>
-          <section>
-            <h2 className="mb-3 text-sm font-semibold text-slate-400">Poměr výsledků v jeho zápasech</h2>
-            <ResultSplitBar homePct={split.home} drawPct={split.draw} awayPct={split.away} />
-          </section>
-
-          <section>
-            <h2 className="mb-3 text-sm font-semibold text-slate-400">
-              Disciplinární tendence (na zápas, oba týmy dohromady)
-            </h2>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-              <DiscCard
-                swatch="bg-amber-400"
-                label="Žluté karty"
-                value={avgSum(seasonMatches, "yellow")}
-                ctx={disc.yellow}
-              />
-              <DiscCard swatch="bg-red-500" label="Červené karty" value={avgSum(seasonMatches, "red")} ctx={disc.red} />
-              <DiscCard
-                swatch="bg-orange-400"
-                label="Druhá žlutá"
-                value={avgSum(seasonMatches, "yellowred") ?? sm.yellowred ?? null}
-                ctx={disc.yellowred}
-              />
-              <DiscCard ring label="Fauly" value={avgSum(seasonMatches, "fouls")} ctx={disc.fouls} />
-              <DiscCard
-                swatch="bg-emerald-400"
-                label="Penalty"
-                value={avgSum(seasonMatches, "penalties")}
-                ctx={disc.penalties}
-              />
-              <DiscCard
-                swatch="bg-sky-400"
-                label="Použití VAR"
-                value={avgSum(seasonMatches, "var") ?? sm.var ?? null}
-                ctx={disc.var}
-              />
-            </div>
-            <p className="text-xs text-slate-500 mt-2">
-              1. = nejvíc v lize (přísnější). Ligový průměr je ze všech zápasů soutěže v tomto filtru. Použití VAR =
-              kolikrát v zápase zasáhl videoasistent (kontrola i případná změna verdiktu), bez rozlišení, jestli
-              rozhodnutí padlo, nebo zůstalo.
-            </p>
-          </section>
-
-          <section>
-            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between mb-3">
-              <h2 className="text-sm font-semibold text-slate-400">Zápasy</h2>
-              <label className="text-xs text-slate-500 sm:w-64">
-                Tým
-                <select
-                  className={SELECT}
-                  value={teamId === "all" ? "all" : String(teamId)}
-                  onChange={(e) => setTeamId(e.target.value === "all" ? "all" : Number(e.target.value))}
-                >
-                  <option value="all">Všechny týmy</option>
-                  {teams.map(([tid, name]) => (
-                    <option key={tid} value={tid}>
-                      {name}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            </div>
-            <MatchTable rows={tableMatches} />
-          </section>
-        </>
-      )}
-    </div>
-  );
-}
-
-function discFor(
-  discipline: { all?: Record<string, CatalogRefereeDiscStat>; seasons?: Record<string, Record<string, CatalogRefereeDiscStat>> } | undefined,
-  season: SeasonKey,
-): Record<string, CatalogRefereeDiscStat> {
-  if (!discipline) return {};
-  if (season === "all") return discipline.all || {};
-  return discipline.seasons?.[String(season)] || {};
-}
-
-function smFor(
-  seasons: CatalogRefereeSeason[] | undefined,
-  season: SeasonKey,
-): { yellowred?: number | null; var?: number | null } {
-  const rows = seasons || [];
-  if (season === "all") {
-    const yellow = mean(rows.map((s) => s.sm?.yellowred));
-    const varr = mean(rows.map((s) => s.sm?.var));
-    return { yellowred: yellow, var: varr };
-  }
-  const hit = rows.find((s) => s.id === season)?.sm;
-  return { yellowred: hit?.yellowred ?? null, var: hit?.var ?? null };
-}
-
-function seasonLabel(season: SeasonKey, seasons: { id: number; name?: string | null }[], current?: number | null) {
-  if (season === "all") return "Všechny sezony";
-  const name = seasons.find((s) => s.id === season)?.name;
-  if (season === current) return "Tato sezona";
-  return name || `Sezona ${season}`;
-}
-
-function resultSplit(rows: CatalogRefereeMatch[]) {
-  const n = rows.length || 1;
-  const home = rows.filter((m) => m.hs > m.as).length;
-  const draw = rows.filter((m) => m.hs === m.as).length;
-  const away = rows.filter((m) => m.hs < m.as).length;
-  return {
-    home: round1((100 * home) / n),
-    draw: round1((100 * draw) / n),
-    away: round1((100 * away) / n),
+  const n = seasonMatches.length;
+  const split = {
+    home: n ? Math.round((100 * seasonMatches.filter((m) => m.hs > m.as).length) / n) : 0,
+    draw: n ? Math.round((100 * seasonMatches.filter((m) => m.hs === m.as).length) / n) : 0,
+    away: n ? Math.round((100 * seasonMatches.filter((m) => m.hs < m.as).length) / n) : 0,
   };
-}
+  const yellow = avgSum(seasonMatches, "yellow");
+  const fouls = avgSum(seasonMatches, "fouls");
+  const penalties = avgSum(seasonMatches, "penalties");
+  const strict = strictness(disc.yellow);
 
-function pairSum(pair?: Array<number | null> | null): number | null {
-  if (!pair) return null;
-  const vals = pair.filter((v): v is number => v != null);
-  if (!vals.length) return null;
-  return vals.reduce((a, b) => a + b, 0);
-}
+  const filters = (
+    <div className="mt-4 rounded-2xl border border-(--c-line) bg-(--c-surface) p-3 sm:p-4">
+      <div className="grid max-w-md grid-cols-1 gap-3">
+        <Select
+          label="Sezóna"
+          value={resolvedSeason === "all" ? "all" : String(resolvedSeason)}
+          onChange={(v) => {
+            setSeason(v === "all" ? "all" : Number(v));
+            setTeamId("all");
+          }}
+          options={[
+            { id: "all", label: "Všechny sezony" },
+            ...seasons.map((s) => ({ id: String(s.id), label: `${s.name || s.id}${s.id === currentSeasonId ? " · teď" : ""} · ${s.matches}×` })),
+          ]}
+        />
+      </div>
+    </div>
+  );
 
-function avgSum(rows: CatalogRefereeMatch[], key: string): number | null {
-  const zeroIfAbsent = key === "red" || key === "penalties";
-  const vals = rows
-    .map((m) => {
-      const sum = pairSum(m.st?.[key]);
-      if (sum != null) return sum;
-      if (zeroIfAbsent && (m.st?.fouls || m.st?.yellow || m.st?.red || m.st?.penalties)) return 0;
-      return null;
-    })
-    .filter((v): v is number => v != null);
-  return mean(vals);
-}
-
-function mean(values: Array<number | null | undefined>): number | null {
-  const clean = values.filter((v): v is number => v != null);
-  if (!clean.length) return null;
-  return Math.round((clean.reduce((a, b) => a + b, 0) / clean.length) * 100) / 100;
-}
-
-function round1(n: number) {
-  return Math.round(n * 10) / 10;
-}
-
-function fmt(n: number | null | undefined) {
-  if (n == null) return "—";
-  return n.toLocaleString("cs-CZ", { maximumFractionDigits: 2 });
-}
-
-function csMatches(n: number) {
-  if (n === 1) return "zápas";
-  if (n >= 2 && n <= 4) return "zápasy";
-  return "zápasů";
-}
-
-function rankTone(rank: number, size: number): string {
-  const edge = Math.max(1, Math.round(size * 0.2));
-  if (rank <= edge) return "text-rose-400";
-  if (rank > size - edge) return "text-emerald-400";
-  return "text-slate-400";
-}
-
-function DiscCard({
-  swatch,
-  ring,
-  label,
-  value,
-  ctx,
-}: {
-  swatch?: string;
-  ring?: boolean;
-  label: string;
-  value: number | null;
-  ctx?: CatalogRefereeDiscStat;
-}) {
-  const rank = ctx?.rank ?? null;
-  const size = ctx?.size ?? 0;
-  const tone = rank != null && size >= 2 ? rankTone(rank, size) : "text-slate-400";
   return (
-    <div className="flex items-center gap-3 rounded-xl border border-slate-800 light:border-slate-200 bg-slate-900/30 light:bg-white px-4 py-3">
-      <span
-        className={`h-4 w-4 shrink-0 rounded-sm ${swatch || ""} ${ring ? "border-2 border-slate-400 bg-transparent" : ""}`}
-      />
-      <div className="min-w-0 flex-1">
-        <div className="flex items-baseline justify-between gap-2">
-          <p className="text-lg font-semibold tabular-nums text-white light:text-slate-900">{fmt(value)}</p>
-          {rank != null && size >= 2 && (
-            <p className={`text-[11px] font-semibold tabular-nums ${tone}`}>
-              {rank}. z {size}
-            </p>
+    <Frame>
+      {back}
+      <div className="mt-3">
+        <Hero
+          media={<Avatar src={ref.image} name={ref.name} size={72} />}
+          eyebrow="Hlavní rozhodčí"
+          title={ref.name}
+          sub={
+            <>
+              {primary.name}
+              {ref.country ? ` · ${ref.country}` : ""}
+            </>
+          }
+          chips={
+            <>
+              <Pill tone="var(--c-muted)">
+                {n} {csMatches(n)} · {seasonLabel(resolvedSeason, seasons, currentSeasonId)}
+              </Pill>
+              <Pill tone="var(--c-faint)">
+                {career} {csMatches(career)} celkem
+              </Pill>
+              {strict && <Pill tone={strict.tone}>{strict.label}</Pill>}
+            </>
+          }
+        >
+          {n > 0 && (
+            <StatStrip>
+              {possible >= n && possible > 0 ? (
+                <Stat
+                  value={`${n} z ${possible}`}
+                  label={`Odpískáno z možných · ${Math.round((100 * n) / possible)} %`}
+                  hint="Rozhodčí smí v kole pískat jeden zápas, takže „možné“ je počet odehraných kol. U „všech sezon“ se berou jen sezony, ve kterých aspoň jednou pískal."
+                />
+              ) : (
+                <Stat value={n} label="Odpískané zápasy" />
+              )}
+              <Stat value={fmtNum(yellow)} label="Žluté / zápas" hint="Součet obou týmů." />
+              <Stat value={fmtNum(fouls, 1)} label="Fauly / zápas" hint="Součet obou týmů." />
+              <Stat value={fmtNum(penalties)} label="Penalty / zápas" />
+            </StatStrip>
           )}
-        </div>
-        <p className="text-[11px] text-slate-500">{label}</p>
-        <p className="text-[11px] text-slate-500">liga {fmt(ctx?.league_avg)}</p>
+        </Hero>
       </div>
-    </div>
+
+      {filters}
+      <StickyTabs tabs={TABS} value={tab} onChange={setTab} label="Sekce profilu rozhodčího" />
+
+      <div role="tabpanel" className="mt-4 space-y-5">
+        {n === 0 ? (
+          <Empty>V tomto výběru zatím nemáme zápas, kde byl hlavním rozhodčím.</Empty>
+        ) : tab === "overview" ? (
+          <>
+            <Card
+              title="Jak píská"
+              lead="Průměr na zápas, oba týmy dohromady. Pořadí v lize ukazuje, kolikátý je mezi rozhodčími: 1. píská nejvíc."
+            >
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <RankCard label="Žluté karty" value={yellow} rank={disc.yellow?.rank} size={disc.yellow?.size} avg={disc.yellow?.league_avg} neutralRank />
+                <RankCard label="Červené karty" value={avgSum(seasonMatches, "red")} rank={disc.red?.rank} size={disc.red?.size} avg={disc.red?.league_avg} neutralRank />
+                <RankCard
+                  label="Druhá žlutá"
+                  value={avgSum(seasonMatches, "yellowred") ?? sm.yellowred ?? null}
+                  rank={disc.yellowred?.rank}
+                  size={disc.yellowred?.size}
+                  avg={disc.yellowred?.league_avg}
+                  neutralRank
+                />
+                <RankCard label="Fauly" value={fouls} digits={1} rank={disc.fouls?.rank} size={disc.fouls?.size} avg={disc.fouls?.league_avg} neutralRank />
+                <RankCard label="Penalty" value={penalties} rank={disc.penalties?.rank} size={disc.penalties?.size} avg={disc.penalties?.league_avg} neutralRank />
+                <RankCard
+                  label="Zásahy VAR"
+                  hint="Kolikrát v zápase zasáhl videoasistent (kontrola i případná změna verdiktu), bez rozlišení, jestli rozhodnutí padlo, nebo zůstalo."
+                  value={avgSum(seasonMatches, "var") ?? sm.var ?? null}
+                  rank={disc.var?.rank}
+                  size={disc.var?.size}
+                  avg={disc.var?.league_avg}
+                  neutralRank
+                />
+              </div>
+              <p className="mt-3 text-xs text-(--c-faint)">Ligový průměr je ze všech zápasů soutěže ve stejném výběru.</p>
+            </Card>
+
+            <Card title="Výsledky v jeho zápasech" lead="Jak často vyhrají domácí, uhrají remízu, nebo vyhrají hosté.">
+              <ProbBar home={split.home} draw={split.draw} away={split.away} height={10} />
+              <div className="mt-2 grid grid-cols-3 text-xs tabular-nums">
+                <span style={{ color: "var(--c-home)" }}>Domácí {split.home} %</span>
+                <span className="text-center text-(--c-faint)">Remíza {split.draw} %</span>
+                <span className="text-right" style={{ color: "var(--c-away)" }}>
+                  Hosté {split.away} %
+                </span>
+              </div>
+              <p className="mt-3 text-xs text-(--c-faint)">
+                Z {n} {csMatches(n)}.
+                <Info>Malý vzorek zápasů nic nedokazuje. Rozhodčí nerozhoduje o výsledku sám, jde jen o statistický kontext.</Info>
+              </p>
+            </Card>
+
+            <HomeAwaySplit rows={seasonMatches} universe={universe} seasonIds={seasonIds} />
+
+            <TeamLeaderboard rows={matches} universe={universe} currentSeasonId={currentSeasonId} allSeasonIds={seasons.filter((x) => (x.matches ?? 0) > 0).map((x) => x.id)} />
+
+            <RecentPreview rows={seasonMatches} onMore={() => setTab("matches")} />
+          </>
+        ) : (
+          <>
+            <div className="rounded-2xl border border-(--c-line) bg-(--c-surface) p-3 sm:p-4">
+              <div className="max-w-xs">
+                <Select
+                  label="Tým"
+                  value={teamId === "all" ? "all" : String(teamId)}
+                  onChange={(v) => setTeamId(v === "all" ? "all" : Number(v))}
+                  options={[{ id: "all", label: "Všechny týmy" }, ...teams.map(([tid, name]) => ({ id: String(tid), label: name }))]}
+                />
+              </div>
+              {teamId === "all" && <p className="mt-2 text-xs text-(--c-muted)">Vyberte tým a nad seznamem uvidíte, jak k němu rozhodčí přistupuje: fauly a karty doma i venku.</p>}
+            </div>
+            {teamId !== "all" && (
+              <TeamTreatment rows={tableMatches} teamId={teamId} teamName={teams.find(([tid]) => tid === teamId)?.[1] ?? "týmem"} universe={universe} seasonIds={seasonIds} />
+            )}
+            <Card title="Zápasy" lead={`${tableMatches.length} ${csMatches(tableMatches.length)}, ${seasonLabel(resolvedSeason, seasons, currentSeasonId)}. Fauly a žluté karty jsou domácí : hosté. Klepnutím na výsledek otevřete Match Center.`}>
+              <MatchRows rows={tableMatches} />
+            </Card>
+          </>
+        )}
+      </div>
+
+      <footer className="pt-8 text-center text-xs text-(--c-faint)">
+        Statistiky vznikají z odehraných zápasů. Informativní údaje, nejde o doporučení k sázce.
+      </footer>
+    </Frame>
   );
 }
 
-function ResultSplitBar({ homePct, drawPct, awayPct }: { homePct: number; drawPct: number; awayPct: number }) {
+/* ---------- řádky zápasů ---------- */
+
+function RecentPreview({ rows, onMore }: { rows: CatalogRefereeMatch[]; onMore: () => void }) {
+  const last = [...rows].sort((a, b) => b.d.localeCompare(a.d)).slice(0, 5);
   return (
-    <div>
-      <div className="flex h-3 w-full overflow-hidden rounded-full bg-slate-800 light:bg-slate-200">
-        <div className="h-full bg-emerald-500" style={{ width: `${homePct}%` }} />
-        <div className="h-full bg-zinc-500" style={{ width: `${drawPct}%` }} />
-        <div className="h-full bg-sky-500" style={{ width: `${awayPct}%` }} />
-      </div>
-      <div className="mt-2 flex justify-between text-xs text-slate-500">
-        <span className="flex items-center gap-1.5">
-          <span className="h-2 w-2 rounded-full bg-emerald-500" /> Domácí {fmt(homePct)} %
-        </span>
-        <span className="flex items-center gap-1.5">
-          <span className="h-2 w-2 rounded-full bg-zinc-500" /> Remíza {fmt(drawPct)} %
-        </span>
-        <span className="flex items-center gap-1.5">
-          <span className="h-2 w-2 rounded-full bg-sky-500" /> Hosté {fmt(awayPct)} %
-        </span>
-      </div>
-    </div>
+    <Card title="Poslední zápasy" lead="Fauly a žluté karty jsou domácí : hosté." aside={rows.length > 5 ? <button type="button" onClick={onMore} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">Všechny zápasy →</button> : undefined}>
+      <MatchRows rows={last} />
+    </Card>
   );
 }
 
-function MatchTable({ rows }: { rows: CatalogRefereeMatch[] }) {
-  if (!rows.length) {
-    return <EmptyNote>Pro vybraný tým v této sezoně nic není.</EmptyNote>;
-  }
+function MatchRows({ rows, pageSize = 25 }: { rows: CatalogRefereeMatch[]; pageSize?: number }) {
+  const [shown, setShown] = useState(pageSize);
+  if (!rows.length) return <Empty>Pro vybraný tým tu nic není.</Empty>;
+  const sorted = [...rows].sort((a, b) => b.d.localeCompare(a.d));
   return (
-    <div className="overflow-x-auto card">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="text-left text-[11px] uppercase tracking-wide text-slate-500">
-            <th className="px-3 py-2 font-semibold">Datum</th>
-            <th className="px-3 py-2 font-semibold">Domácí</th>
-            <th className="px-3 py-2 font-semibold text-center">Výsledek</th>
-            <th className="px-3 py-2 font-semibold">Hosté</th>
-            <th className="px-3 py-2 font-semibold text-right">Fauly</th>
-            <th className="px-3 py-2 font-semibold text-right">D</th>
-            <th className="px-3 py-2 font-semibold text-right">H</th>
-            <th className="px-3 py-2 font-semibold text-right">Žluté</th>
-            <th className="px-3 py-2 font-semibold text-right">Červené</th>
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((m) => {
-            const fouls = m.st?.fouls;
-            const score = `${m.hs}:${m.as}`;
-            return (
-              <tr key={m.fid} className="border-t border-slate-800/80 light:border-slate-200">
-                <td className="px-3 py-2 text-slate-500 whitespace-nowrap">{m.d ? formatDate(m.d) : "—"}</td>
-                <td className="px-3 py-2 text-white light:text-slate-900">{m.hn}</td>
-                <td className="px-3 py-2 text-center tabular-nums font-semibold">
-                  {m.mp ? (
-                    <Link to={`/match/${m.fid}`} className="text-emerald-400 hover:underline">
-                      {score}
-                    </Link>
-                  ) : (
-                    <span className="text-white light:text-slate-900">{score}</span>
-                  )}
-                </td>
-                <td className="px-3 py-2 text-white light:text-slate-900">{m.an}</td>
-                <td className="px-3 py-2 text-right tabular-nums">{fmt(pairSum(fouls))}</td>
-                <td className="px-3 py-2 text-right tabular-nums text-slate-400">{fmt(fouls?.[0] ?? null)}</td>
-                <td className="px-3 py-2 text-right tabular-nums text-slate-400">{fmt(fouls?.[1] ?? null)}</td>
-                <td className="px-3 py-2 text-right tabular-nums">{fmt(pairSum(m.st?.yellow))}</td>
-                <td className="px-3 py-2 text-right tabular-nums">{fmt(pairSum(m.st?.red))}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+    <>
+    <ul className="-mx-1 divide-y divide-(--c-line)">
+      {sorted.slice(0, shown).map((m) => {
+        const body = (
+          <div className="px-1 py-2.5 sm:flex sm:items-center sm:gap-3">
+            <div className="min-w-0 flex-1">
+              <div className="text-[11px] text-(--c-faint)">{m.d ? formatDate(m.d) : "—"}</div>
+              <div className="mt-0.5 grid grid-cols-[1fr_auto_1fr] items-center gap-2 text-[13px] sm:text-sm">
+                <span className="truncate text-right font-medium">{m.hn}</span>
+                <span className="rounded-md bg-(--c-raised) px-2 py-0.5 text-[13px] font-bold tabular-nums">
+                  {m.hs}:{m.as}
+                </span>
+                <span className="truncate font-medium">{m.an}</span>
+              </div>
+            </div>
+            <div className="mt-1.5 flex justify-center gap-1 sm:mt-0 sm:justify-end">
+              <Mini label="Fauly" pair={m.st?.fouls} />
+              <Mini label="ŽK" pair={m.st?.yellow} tone="var(--c-warn)" />
+              <Mini label="ČK" total={pairSum(m.st?.red) ?? (m.st?.fouls || m.st?.yellow ? 0 : null)} tone="var(--c-loss)" />
+            </div>
+          </div>
+        );
+        return (
+          <li key={m.fid}>
+            {m.mp ? (
+              <Link to={`/match/${m.fid}`} className="block rounded-lg hover:bg-(--c-raised)">
+                {body}
+              </Link>
+            ) : (
+              body
+            )}
+          </li>
+        );
+      })}
+    </ul>
+    {sorted.length > shown && (
+      <button type="button" onClick={() => setShown((n) => n + pageSize)} className="mt-3 min-h-10 w-full rounded-xl border border-(--c-line) text-[13px] font-medium text-(--c-accent) hover:bg-(--c-raised)">
+        Zobrazit dalších {Math.min(pageSize, sorted.length - shown)}
+      </button>
+    )}
+    </>
+  );
+}
+
+function Mini({ label, pair, total, tone }: { label: string; pair?: Array<number | null> | null; total?: number | null; tone?: string }) {
+  const has = pair && pair.length === 2 && pair[0] != null && pair[1] != null;
+  const sum = has ? (pair![0] as number) + (pair![1] as number) : total ?? null;
+  return (
+    <div className={`flex shrink-0 items-baseline justify-center gap-1.5 sm:block sm:text-center ${total === undefined ? "w-24 sm:w-[4.5rem]" : "w-16 sm:w-11"}`}>
+      <div className="text-[10px] uppercase tracking-wide text-(--c-faint)">{label}</div>
+      <div className="text-[14px] font-semibold tabular-nums" style={tone && sum ? { color: tone } : undefined}>
+        {has ? (
+          <>
+            {pair![0]}
+            <span className="mx-1 font-normal text-(--c-faint)">:</span>
+            {pair![1]}
+          </>
+        ) : (
+          (total ?? "—")
+        )}
+      </div>
     </div>
   );
 }
