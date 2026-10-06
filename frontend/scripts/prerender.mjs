@@ -155,7 +155,9 @@ function render(page) {
 }
 
 for (const page of pages) {
-  const out = page.path === "/" ? join(dist, "index.html") : join(dist, page.path, "index.html");
+  // /en/pricing → en/pricing.html. Hosting (Cloudflare) ho vydá na adrese bez lomítka, shodné s canonical.
+  // Varianta pricing/index.html by přesměrovala na /pricing/ a canonical by neseděl.
+  const out = page.path === "/" ? join(dist, "index.html") : join(dist, `${page.path.replace(/\/$/, "")}.html`);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, render(page));
 }
