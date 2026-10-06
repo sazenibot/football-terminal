@@ -7,6 +7,8 @@ import { ShotMapCard, TrendCard } from "../cat/PitchViz";
 import { formatDate } from "../lib/format";
 import { useCatalogExplorer, useCatalogTeam, usePitchTeam, useXgotIndex } from "../lib/useData";
 import { last5BadgeForTeam, type XgotBadge } from "../lib/xgEfficiency";
+import { useTabLock } from "../access/catalogGate";
+import { Gate } from "../access/Gate";
 import { Card, Empty, FormDots, Info, ResBadge, Seg, Stat, VenueTag, plural, type Res } from "../mc2/kit";
 import type { CatalogProfileStat, CatalogSquadPlayer, CatalogTeamCoach, CatalogTeamDetail, CatalogUpcoming } from "../types";
 
@@ -91,6 +93,7 @@ export function CatalogTeamPage() {
   const [params, setParams] = useSearchParams();
   const { data: team, error, missing } = useCatalogTeam(Number.isFinite(id) ? id : null);
   const xgotIndex = useXgotIndex();
+  const lock = useTabLock("teams");
   const { data: explorer, missing: explorerMissing, error: explorerError } = useCatalogExplorer(team?.league_id ?? null);
   const pitch = usePitchTeam(Number.isFinite(id) ? id : null);
 
@@ -161,8 +164,9 @@ export function CatalogTeamPage() {
         </Hero>
       </div>
 
-      <StickyTabs tabs={tabs} value={active} onChange={setTab} label="Sekce týmu" />
+      <StickyTabs tabs={lock.withLocks(tabs)} value={active} onChange={setTab} label="Sekce týmu" />
 
+      <Gate need={lock.need(active) ?? "account"} when={!!lock.need(active)} title="Celý profil týmu je pro registrované" text="Radar, trenéři i kádr odemkne bezplatná registrace. Přehled a statistiky jsou otevřené.">
       <div role="tabpanel" className="mt-4 space-y-5">
         {active === "overview" && <Overview team={team} stats={stats} onMore={() => setTab("stats")} />}
         {active === "stats" && (
@@ -175,6 +179,7 @@ export function CatalogTeamPage() {
         {active === "radar" && <TeamRadarPanel explorer={explorer} defaultTeamId={team.id} loading={!explorer && !explorerMissing && !explorerError} />}
         {active === "coaches" && <CoachComparePanel explorer={explorer} defaultTeamId={team.id} loading={!explorer && !explorerMissing && !explorerError} />}
       </div>
+      </Gate>
 
       <footer className="pt-8 text-center text-xs text-(--c-faint)">Informativní údaje, nejde o doporučení k sázce.</footer>
     </Frame>

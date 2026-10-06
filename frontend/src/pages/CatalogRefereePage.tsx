@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
+import { useTabLock } from "../access/catalogGate";
+import { Gate } from "../access/Gate";
 import { Avatar, Back, Frame, Hero, Loading, NotFound, Pill, RankCard, Select, StatStrip, StickyTabs, csMatches, fmtNum } from "../cat/kit";
 import { HomeAwaySplit, TeamLeaderboard, TeamTreatment } from "../cat/RefereeInsights";
 import { roundsPlayed } from "../cat/refStats";
@@ -79,6 +81,7 @@ export function CatalogRefereePage() {
   const { data: ref, error, missing } = useCatalogReferee(Number.isFinite(id) ? id : null);
   const [season, setSeason] = useState<SeasonKey | null>(null);
   const [teamId, setTeamId] = useState<number | "all">("all");
+  const lock = useTabLock("referees");
 
   const tab = (TABS.find((t) => t.id === params.get("tab"))?.id ?? "overview") as TabId;
   const setTab = (t: TabId) => {
@@ -214,8 +217,9 @@ export function CatalogRefereePage() {
       </div>
 
       {filters}
-      <StickyTabs tabs={TABS} value={tab} onChange={setTab} label="Sekce profilu rozhodčího" />
+      <StickyTabs tabs={lock.withLocks(TABS)} value={tab} onChange={setTab} label="Sekce profilu rozhodčího" />
 
+      <Gate need={lock.need(tab) ?? "unlimited"} when={!!lock.need(tab)} title="Zápasy rozhodčího jsou v tarifu Unlimited" text="Rozpis zápasů a srovnání s konkrétním týmem patří do Unlimited. Přehled je otevřený.">
       <div role="tabpanel" className="mt-4 space-y-5">
         {n === 0 ? (
           <Empty>V tomto výběru zatím nemáme zápas, kde byl hlavním rozhodčím.</Empty>
@@ -294,6 +298,7 @@ export function CatalogRefereePage() {
           </>
         )}
       </div>
+      </Gate>
 
       <footer className="pt-8 text-center text-xs text-(--c-faint)">
         Statistiky vznikají z odehraných zápasů. Informativní údaje, nejde o doporučení k sázce.

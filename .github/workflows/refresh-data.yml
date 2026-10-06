@@ -84,6 +84,17 @@ jobs:
         continue-on-error: true
         run: python scripts/catalog_player_shards.py
 
+      # Kniha predikcí: před výkopem se zamkne predikce a kurz, po dohrání se doplní výsledek.
+      # Musí běžet po výpočtu simulací (pitch_daily) a po doplnění explorer.json (refresh_data).
+      # Bez API. Z ledgeru se pak skládá stránka Výsledky a automatické aktuality na homepage.
+      - name: Kniha predikcí, výsledky, aktuality
+        if: steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        run: |
+          python scripts/prediction_ledger.py
+          python scripts/build_track_record.py
+          python scripts/build_feed.py
+
       - name: Commit data
         if: steps.gate.outputs.run == 'true'
         run: |

@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Téma se nastaví před prvním vykreslením, ať stránka při načtení neprobliká.
+      try {
+        var t = localStorage.getItem("football-terminal-theme");
+        var light = t ? t === "light" : window.matchMedia("(prefers-color-scheme: light)").matches;
+        if (light) document.documentElement.classList.add("light");
+      } catch (e) {}
+    </script>
     <title>Football Terminal</title>
   </head>
   <body>

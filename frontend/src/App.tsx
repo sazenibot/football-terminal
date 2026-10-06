@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes, useParams, useSearchParams } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes, useLocation, useParams, useSearchParams } from "react-router-dom";
 import { RoundPage } from "./pages/RoundPage";
 import { MatchCenterLabRedirect, MatchRoute } from "./pages/MatchRoute";
 import { HomePage } from "./pages/HomePage";
@@ -12,8 +12,14 @@ import { LabXDataPage } from "./pages/LabXDataPage";
 import { LabPitchVsTsPage } from "./pages/LabPitchVsTsPage";
 import { MatchListPage } from "./pages/MatchListPage";
 import { LabPitchModelsPage } from "./pages/LabPitchModelsPage";
-import { ThemeToggle } from "./components/ThemeToggle";
-import { AppNav } from "./components/AppNav";
+import { ArticlePage, ArticlesPage } from "./pages/ArticlesPage";
+import { PricingPage } from "./pages/PricingPage";
+import { ResultsPage } from "./pages/ResultsPage";
+import { LoginPage } from "./pages/LoginPage";
+import { AccessProvider } from "./access/AccessContext";
+import { ViewAsSwitcher } from "./access/ViewAsSwitcher";
+import { SiteFooter, SiteNav, TopRight } from "./site/shell";
+import { useEffect } from "react";
 import { lastLeagueId } from "./components/LeagueSwitcher";
 import { useDataIndex } from "./lib/useData";
 import { hasPitchData } from "./lib/pitchMatch";
@@ -40,12 +46,27 @@ function LabMatchRedirect() {
   return <Navigate to={`/match/${fixtureId}`} replace />;
 }
 
+function ScrollTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
 function App() {
   return (
+    <AccessProvider>
     <BrowserRouter>
-      <AppNav />
-      <ThemeToggle />
+      <ScrollTop />
+      <SiteNav />
+      <TopRight />
       <Routes>
+        <Route path="/clanky" element={<ArticlesPage />} />
+        <Route path="/clanky/:slug" element={<ArticlePage />} />
+        <Route path="/tarify" element={<PricingPage />} />
+        <Route path="/vysledky" element={<ResultsPage />} />
+        <Route path="/prihlaseni" element={<LoginPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/league" element={<LeagueRoute />} />
         <Route path="/league/:leagueId" element={<LeagueRoute />} />
@@ -70,7 +91,10 @@ function App() {
         <Route path="/lab/match" element={<Navigate to="/league/262" replace />} />
         <Route path="/lab/match/:fixtureId" element={<LabMatchRedirect />} />
       </Routes>
+      <SiteFooter />
+      <ViewAsSwitcher />
     </BrowserRouter>
+    </AccessProvider>
   );
 }
 

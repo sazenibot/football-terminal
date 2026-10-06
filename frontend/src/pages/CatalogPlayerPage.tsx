@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer, Tooltip } from "recharts";
+import { useTabLock } from "../access/catalogGate";
+import { Gate } from "../access/Gate";
 import { Avatar, Back, Crest, FilterBar, Frame, Hero, Loading, NotFound, Pill, RankCard, Select, StickyTabs, csMatches, fmtNum, rankColor } from "../cat/kit";
 import type { MatchRow, SeasonOpt } from "../components/PitchCards";
 import { KeeperCardV2, ShotMapCard } from "../cat/PitchViz";
@@ -105,6 +107,7 @@ export function CatalogPlayerPage() {
   // Zápasy tohoto hráče z malého shardu (~250 kB), ne z celého ligového indexu.
   const shard = usePlayerShard(player?.league_id ?? null, Number.isFinite(id) ? id : null);
   const pitch = usePitchPlayer(Number.isFinite(id) ? id : null);
+  const lock = useTabLock("players");
 
   const tab = (TABS.find((t) => t.id === params.get("tab"))?.id ?? "overview") as TabId;
   const setTab = (t: TabId) => setParams(t === "overview" ? {} : { tab: t }, { replace: true });
@@ -284,8 +287,9 @@ export function CatalogPlayerPage() {
         <Select label="Jaro / podzim" value={half} onChange={setHalf} options={HALVES} />
       </FilterBar>
 
-      <StickyTabs tabs={tabs} value={active} onChange={setTab} label="Sekce hráče" />
+      <StickyTabs tabs={lock.withLocks(tabs)} value={active} onChange={setTab} label="Sekce hráče" />
 
+      <Gate need={lock.need(active) ?? "unlimited"} when={!!lock.need(active)} title="Celý profil hráče je v tarifu Unlimited" text="Mapa střel, srovnání hráčů a rozpis zápasů patří do Unlimited. Přehled a statistiky jsou otevřené.">
       <div role="tabpanel" className="mt-4 space-y-5">
         {!shard && !matches.length ? (
           <p className="py-10 text-center text-sm text-(--c-muted)">Načítám statistiky hráče…</p>
@@ -367,6 +371,7 @@ export function CatalogPlayerPage() {
           </>
         )}
       </div>
+      </Gate>
 
       <footer className="pt-8 text-center text-xs text-(--c-faint)">Informativní údaje, nejde o doporučení k sázce.</footer>
     </Frame>
