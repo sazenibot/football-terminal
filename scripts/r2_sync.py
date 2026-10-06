@@ -34,13 +34,19 @@ def client():
     secret = os.environ.get("R2_SECRET_ACCESS_KEY")
     if not (account and key and secret):
         raise SystemExit("Chybí R2_ACCOUNT_ID / R2_ACCESS_KEY_ID / R2_SECRET_ACCESS_KEY")
+    cfg = dict(retries={"max_attempts": 5, "mode": "standard"}, max_pool_connections=WORKERS * 2)
+    try:
+        # Novější boto3 přidává kontrolní součty, které R2 u některých operací odmítne. Posílat je jen když je to nutné.
+        config = Config(**cfg, request_checksum_calculation="when_required", response_checksum_validation="when_required")
+    except TypeError:
+        config = Config(**cfg)
     return boto3.client(
         "s3",
         endpoint_url=f"https://{account}.r2.cloudflarestorage.com",
         aws_access_key_id=key,
         aws_secret_access_key=secret,
         region_name="auto",
-        config=Config(retries={"max_attempts": 5, "mode": "standard"}, max_pool_connections=WORKERS * 2),
+        config=config,
     )
 
 
@@ -147,6 +153,10 @@ def main() -> None:
     root = Path(a.folder)
     prefix = a.prefix.strip("/")
     s3 = client()
+    try:
+        s3.head_bucket(Bucket=a.bucket)
+    except Exception as e:  # noqa: BLE001
+        sys.exit(f"Bucket {a.bucket} se nepodařilo otevřít: {e}\nZkontroluj název bucketu, R2_ACCOUNT_ID, klíče a že token má k bucketu přístup.")
     if a.mode == "up":
         if not root.is_dir():
             sys.exit(f"Složka {root} neexistuje")
