@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { lastLeagueId } from "./LeagueSwitcher";
 import { useDataIndex } from "../lib/useData";
@@ -17,7 +18,7 @@ export function AppNav() {
   const onCatalog = pathname.startsWith("/catalog") || pathname.startsWith("/katalog");
   const onLab = pathname.startsWith("/lab");
 
-  const item = (to: string, label: string, active: boolean) => (
+  const item = (to: string, label: ReactNode, active: boolean) => (
     <Link
       to={to}
       className={`rounded-full px-3 py-1.5 text-xs font-medium transition-colors ${
@@ -35,7 +36,14 @@ export function AppNav() {
       aria-label="Hlavní menu"
       className="fixed top-3 left-3 z-50 flex items-center gap-1 rounded-full border border-slate-700 bg-[#12161f] px-1.5 py-1 shadow-lg light:bg-white light:border-slate-300"
     >
-      {item("/", "Football Terminal", onHome)}
+      {item(
+        "/",
+        <>
+          <span className="sm:hidden">Domů</span>
+          <span className="hidden sm:inline">Football Terminal</span>
+        </>,
+        onHome,
+      )}
       {item(center, "Match Center", onCenter)}
       {item("/catalog", "Katalog", onCatalog)}
       {item("/lab", "Lab", onLab)}

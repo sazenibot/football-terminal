@@ -30,6 +30,12 @@ export interface RoundFixture {
   home: TeamBrief;
   away: TeamBrief;
   has_full_data?: boolean;
+  /** Malé shrnutí pro výpis kola (doplňuje scripts/round_signals.py). */
+  signals?: {
+    referee?: boolean;
+    /** domácí / remíza / hosté v % z nového modelu */
+    probs?: [number, number, number];
+  };
 }
 
 export interface LeagueRoundData {

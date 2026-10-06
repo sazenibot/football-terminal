@@ -23,7 +23,10 @@
         "name": "Werder Bremen",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19735153,
@@ -39,7 +42,10 @@
         "name": "VfB Stuttgart",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/23/3319.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19735155,
@@ -55,7 +61,10 @@
         "name": "Elversberg",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/4/3588.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19735156,
@@ -71,7 +80,10 @@
         "name": "Bayer 04 Leverkusen",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3321.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19735157,
@@ -87,7 +99,10 @@
         "name": "FC Bayern München",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/23/503.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19735159,
@@ -103,7 +118,10 @@
         "name": "Hamburger SV",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/20/2708.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19735160,
@@ -119,7 +137,10 @@
         "name": "Eintracht Frankfurt",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19735154,
@@ -135,7 +156,10 @@
         "name": "Borussia Mönchengladbach",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19735158,
@@ -151,7 +175,10 @@
         "name": "Schalke 04",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     }
   ],
   "stats": {

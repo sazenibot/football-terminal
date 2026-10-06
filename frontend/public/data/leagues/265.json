@@ -23,7 +23,10 @@
         "name": "Vlašim",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/5/8421.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19732285,
@@ -39,7 +42,10 @@
         "name": "Opava",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/9/3593.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19732286,
@@ -55,7 +61,10 @@
         "name": "Prostějov",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/17/6865.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19732288,
@@ -71,7 +80,10 @@
         "name": "Karviná",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/0/512.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19732289,
@@ -87,7 +99,10 @@
         "name": "Viktoria Žižkov",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/28/2364.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19732283,
@@ -103,7 +118,10 @@
         "name": "Příbram",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/12/428.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19732287,
@@ -119,7 +137,10 @@
         "name": "Kladno",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3734.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19732284,
@@ -135,7 +156,10 @@
         "name": "Banik Ostrava B",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/29/8477.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     }
   ],
   "stats": {

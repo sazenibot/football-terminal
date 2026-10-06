@@ -65,6 +65,12 @@ jobs:
           PITCHAPI_API_KEY: ${{ secrets.PITCHAPI_API_KEY }}
         run: python scripts/pitch_daily.py
 
+      # Signály pro rozcestník Match Center (ikonky, mini predikce). Čte jen uložené JSON, žádné API.
+      - name: Signály pro výpis kola
+        if: steps.gate.outputs.run == 'true'
+        continue-on-error: true
+        run: python scripts/round_signals.py
+
       - name: Commit data
         if: steps.gate.outputs.run == 'true'
         run: |

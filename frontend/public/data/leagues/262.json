@@ -23,7 +23,15 @@
         "name": "Slavia Praha",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          7,
+          12,
+          81
+        ]
+      }
     },
     {
       "fixture_id": 19725031,
@@ -39,7 +47,15 @@
         "name": "SK Artis Brno",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          59,
+          26,
+          15
+        ]
+      }
     },
     {
       "fixture_id": 19725035,
@@ -55,7 +71,15 @@
         "name": "Jablonec",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          37,
+          28,
+          35
+        ]
+      }
     },
     {
       "fixture_id": 19725037,
@@ -71,7 +95,15 @@
         "name": "Mladá Boleslav",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          60,
+          18,
+          21
+        ]
+      }
     },
     {
       "fixture_id": 19725033,
@@ -87,7 +119,15 @@
         "name": "Baník Ostrava",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/5/3269.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          62,
+          22,
+          16
+        ]
+      }
     },
     {
       "fixture_id": 19725034,
@@ -103,7 +143,15 @@
         "name": "Slovácko",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          76,
+          17,
+          7
+        ]
+      }
     },
     {
       "fixture_id": 19725036,
@@ -119,7 +167,15 @@
         "name": "Sigma Olomouc",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          49,
+          24,
+          28
+        ]
+      }
     },
     {
       "fixture_id": 19725032,
@@ -135,7 +191,15 @@
         "name": "Pardubice",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          69,
+          17,
+          13
+        ]
+      }
     }
   ],
   "stats": {

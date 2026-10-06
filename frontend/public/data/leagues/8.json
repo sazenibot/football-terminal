@@ -23,7 +23,10 @@
         "name": "Leeds United",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/7/71.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19722144,
@@ -39,7 +42,10 @@
         "name": "Brighton & Hove Albion",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/14/78.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19722147,
@@ -55,7 +61,10 @@
         "name": "Fulham",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19722151,
@@ -71,7 +80,10 @@
         "name": "AFC Bournemouth",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19722152,
@@ -87,7 +99,10 @@
         "name": "Brentford",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19722145,
@@ -103,7 +118,10 @@
         "name": "Tottenham Hotspur",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19722148,
@@ -119,7 +137,10 @@
         "name": "Everton",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19722149,
@@ -135,7 +156,10 @@
         "name": "Nottingham Forest",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/31/63.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19722146,
@@ -151,7 +175,10 @@
         "name": "Manchester City",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     },
     {
       "fixture_id": 19722150,
@@ -167,7 +194,10 @@
         "name": "Newcastle United",
         "image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png"
       },
-      "has_full_data": true
+      "has_full_data": true,
+      "signals": {
+        "referee": false
+      }
     }
   ],
   "stats": {
