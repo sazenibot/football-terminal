@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
 import { useDataIndex, useLeagueRound } from "../lib/useData";
 import { LeagueSwitcher, rememberLeague } from "../components/LeagueSwitcher";
 import { StaleBanner } from "../components/StaleBanner";
 import { formatDateTime } from "../lib/format";
 import { useEffect } from "react";
+import { t } from "../i18n/locale";
 
 export function RoundPage({ leagueId }: { leagueId: number }) {
   const { index, error: indexError } = useDataIndex();
@@ -16,7 +17,7 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
   if (indexError) {
     return (
       <div className="min-h-screen flex items-center justify-center text-rose-400">
-        Chyba při načítání katalogu: {indexError}
+        {t("mx.round.error", { error: indexError })}
       </div>
     );
   }
@@ -26,7 +27,7 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
       <div className="max-w-5xl mx-auto py-10 px-4 pt-20">
         {index && <LeagueSwitcher index={index} activeId={leagueId} />}
         <div className="card p-8 text-center text-slate-300 light:text-slate-600">
-          Pro tuhle ligu zatím nemáme denní data.
+          {t("mx.round.noData")}
         </div>
       </div>
     );
@@ -35,7 +36,7 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
   if (!index || !data) {
     return (
       <div className="min-h-screen flex items-center justify-center text-slate-400 light:text-slate-500">
-        Načítám kolo…
+        {t("mx.round.loading")}
       </div>
     );
   }
@@ -45,15 +46,13 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
       <header className="mb-4 pt-8">
         <div className="text-emerald-400 text-sm font-mono mb-1">MATCH CENTER</div>
         <h1 className="text-2xl font-bold text-white light:text-slate-900">Match Center</h1>
-        <p className="text-sm text-slate-500 light:text-slate-400 mt-1">
-          Zápasy na {index.window_days} dní dopředu — herní styly, trendy, rozhodčí, Trendmetr
-        </p>
+        <p className="text-sm text-slate-500 light:text-slate-400 mt-1">{t("mx.round.lead", { n: index.window_days })}</p>
       </header>
       <LeagueSwitcher index={index} activeId={leagueId} />
       <StaleBanner generatedAt={data.generated_at} hours={index.stale_after_hours} />
       {data.round.length === 0 ? (
         <div className="card p-8 text-center text-slate-400 light:text-slate-500">
-          V následujících {index.window_days} dnech v {data.league.name} nic nehraje.
+          {t("list.empty", { n: index.window_days, league: data.league.name })}
         </div>
       ) : (
         <div className="space-y-2">
@@ -88,9 +87,7 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
           })}
         </div>
       )}
-      <p className="text-xs text-slate-500 light:text-slate-400 mt-6">
-        Data se obnovují jednou denně.
-      </p>
+      <p className="text-xs text-slate-500 light:text-slate-400 mt-6">{t("mx.round.refresh")}</p>
     </div>
   );
 }

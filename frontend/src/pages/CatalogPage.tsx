@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import { Link, useNavigate, useSearchParams } from "react-router-dom";
-import { Avatar, Crest, Field, Frame, Pill } from "../cat/kit";
+import { Link, useNavigate, useSearchParams } from "../i18n/router";
+import { Avatar, Crest, Field, Frame, Pill, csMatches } from "../cat/kit";
+import { t, type Key } from "../i18n/locale";
 import {
   useCatalogDirectory,
   useCatalogHub,
@@ -8,8 +9,9 @@ import {
   type CatalogDirectoryLeague,
   type CatalogSearchIndex,
 } from "../lib/useData";
-import { Chip, Empty, Seg, plural } from "../mc2/kit";
+import { Chip, Empty, Seg } from "../mc2/kit";
 import type { CatalogHub, CatalogPlayerCard, CatalogRefereeCard, CatalogTeamCard } from "../types";
+import { dataPosition } from "../i18n/dataText";
 
 type Tab = "teams" | "players" | "referees";
 const LAST_LEAGUE_KEY = "ft-catalog-league";
@@ -77,7 +79,7 @@ export function CatalogPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [input]);
   useEffect(() => {
-    document.title = "Datový katalog · Football Terminal";
+    document.title = t("ct.hub.docTitle");
   }, []);
 
   const pick = (id: number | null) => {
@@ -99,11 +101,10 @@ export function CatalogPage() {
   return (
     <Frame wide>
       <header>
-        <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-(--c-accent)">Katalog</p>
-        <h1 className="mt-1 text-2xl font-bold sm:text-3xl">Datový katalog</h1>
+        <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-(--c-accent)">{t("ct.hub.eyebrow")}</p>
+        <h1 className="mt-1 text-2xl font-bold sm:text-3xl">{t("ct.hub.title")}</h1>
         <p className="mt-1.5 max-w-2xl text-[14px] leading-snug text-(--c-muted)">
-          Týmy, hráči a hlavní rozhodčí s čísly, která jinde v jednom místě nenajdete. Začněte ligou, nebo rovnou hledejte
-          jméno.
+          {t("ct.hub.lead")}
         </p>
       </header>
 
@@ -112,7 +113,7 @@ export function CatalogPage() {
         onChange={setInput}
         inputRef={inputRef}
         onFocus={() => setWarm(true)}
-        placeholder={current ? `Hledat v lize ${current.name}…` : "Hledat tým, hráče, rozhodčího…"}
+        placeholder={current ? t("ct.hub.phLeague", { name: current.name }) : t("ct.hub.phAll")}
         onEnter={() => {
           const first = document.querySelector<HTMLAnchorElement>("[data-first-result]");
           if (first) navigate(first.getAttribute("href") || "/catalog");
@@ -129,7 +130,7 @@ export function CatalogPage() {
       ) : league && current ? (
         <LeagueView league={current} leagues={leagues} tab={tab} q={input} onTab={(t) => update({ tab: t })} onLeague={pick} onAll={() => update({ league: null })} />
       ) : (
-        <LeagueGrid leagues={leagues} loaded={!!dir} onPick={pick} hint={norm(input).trim().length === 1 ? "Napište alespoň dva znaky." : null} />
+        <LeagueGrid leagues={leagues} loaded={!!dir} onPick={pick} hint={norm(input).trim().length === 1 ? t("ct.hub.minChars") : null} />
       )}
     </Frame>
   );
@@ -166,7 +167,7 @@ function SearchBox({
         onFocus={onFocus}
         onKeyDown={(e) => e.key === "Enter" && onEnter()}
         placeholder={placeholder}
-        aria-label="Hledat v katalogu"
+        aria-label={t("ct.hub.searchAria")}
         autoComplete="off"
         className="min-h-12 w-full rounded-2xl border border-(--c-line) bg-(--c-surface) pl-10 pr-10 text-[15px] text-(--c-text) placeholder:text-(--c-faint) focus:border-(--c-accent) focus:outline-none [&::-webkit-search-cancel-button]:hidden"
       />
@@ -174,7 +175,7 @@ function SearchBox({
         <button
           type="button"
           onClick={onClear}
-          aria-label="Smazat hledání"
+          aria-label={t("ct.hub.clearAria")}
           className="absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-(--c-muted) hover:bg-(--c-raised) hover:text-(--c-text)"
         >
           ×
@@ -198,13 +199,13 @@ function LeagueGrid({
   hint: string | null;
 }) {
   return (
-    <section className="mt-6" aria-label="Výběr ligy">
+    <section className="mt-6" aria-label={t("ct.hub.pickAria")}>
       <div className="mb-3 flex items-baseline justify-between gap-3">
-        <h2 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">Vyberte ligu</h2>
+        <h2 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("ct.hub.pickTitle")}</h2>
         {hint && <span className="text-xs text-(--c-muted)">{hint}</span>}
       </div>
       {!loaded ? (
-        <p className="text-sm text-(--c-muted)">Načítám ligy…</p>
+        <p className="text-sm text-(--c-muted)">{t("ct.hub.loadingLeagues")}</p>
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {leagues
@@ -231,18 +232,18 @@ function LeagueGrid({
                   </span>
                 </div>
                 <div className="mt-3">
-                  <Pill tone={l.full ? "var(--c-accent)" : "var(--c-faint)"}>{l.full ? "Plný katalog" : "Základní profily"}</Pill>
+                  <Pill tone={l.full ? "var(--c-accent)" : "var(--c-faint)"}>{l.full ? t("ct.hub.full") : t("ct.hub.basic")}</Pill>
                 </div>
                 <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-(--c-line) pt-3 text-center">
                   {(
                     [
-                      [l.teams, "týmů"],
-                      [l.players, "hráčů"],
-                      [l.referees, "rozhodčích"],
+                      [l.teams, "ct.hub.teams"],
+                      [l.players, "ct.hub.players"],
+                      [l.referees, "ct.hub.referees"],
                     ] as const
                   ).map(([n, label]) => (
                     <div key={label}>
-                      <dt className="text-[10px] uppercase tracking-wider text-(--c-faint)">{label}</dt>
+                      <dt className="text-[10px] uppercase tracking-wider text-(--c-faint)">{t(label)}</dt>
                       <dd className="text-[17px] font-bold leading-tight tabular-nums">{n}</dd>
                     </div>
                   ))}
@@ -307,7 +308,7 @@ function GlobalResults({
         id: r[0],
         name: r[1],
         lid: r[2],
-        sub: [r[3], r[4] != null ? `${r[4]} ${plural(r[4], "zápas", "zápasy", "zápasů")} letos` : null].filter(Boolean).join(" · "),
+        sub: [r[3], r[4] != null ? t("ct.hub.refYear", { n: r[4] }) : null].filter(Boolean).join(" · "),
       }))
       .sort(byScore);
     return { teams, players, referees };
@@ -325,7 +326,7 @@ function GlobalResults({
   const fR = referees.filter(keep);
   const total = fT.length + fP.length + fR.length;
 
-  if (!index) return <p className="mt-6 text-sm text-(--c-muted)">Hledám…</p>;
+  if (!index) return <p className="mt-6 text-sm text-(--c-muted)">{t("ct.hub.searching")}</p>;
 
   let firstDone = false;
   const link = (h: Hit) => {
@@ -361,7 +362,7 @@ function GlobalResults({
         </div>
         {rows.length > limit && (
           <p className="mt-1.5 text-xs text-(--c-muted)">
-            A dalších {rows.length - limit}. Zpřesněte hledání, nebo vyberte ligu.
+            {t("ct.hub.more", { n: rows.length - limit })}
           </p>
         )}
       </section>
@@ -372,7 +373,7 @@ function GlobalResults({
       {perLeague.size > 1 && (
         <div className="flex flex-wrap items-center gap-2">
           <Chip active={!onlyLeague} onClick={() => setOnlyLeague(null)}>
-            Všechny ligy · {all.length}
+            {t("ct.hub.allLeaguesCount", { n: all.length })}
           </Chip>
           {[...perLeague.entries()].map(([id, n]) => (
             <Chip key={id} active={onlyLeague === id} onClick={() => setOnlyLeague(onlyLeague === id ? null : id)}>
@@ -382,15 +383,15 @@ function GlobalResults({
         </div>
       )}
       {total === 0 ? (
-        <Empty>Nic jsme nenašli. Zkuste jen příjmení, nebo vyberte ligu.</Empty>
+        <Empty>{t("ct.hub.nothing")}</Empty>
       ) : (
         <>
-          {group("Týmy", fT, 8)}
-          {group("Hráči", fP, 12)}
-          {group("Rozhodčí", fR, 8)}
+          {group(t("ct.hub.groupTeams"), fT, 8)}
+          {group(t("ct.hub.groupPlayers"), fP, 12)}
+          {group(t("ct.hub.groupReferees"), fR, 8)}
           {onlyLeague && (
             <button type="button" onClick={() => onLeague(onlyLeague)} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-              Procházet celou ligu {leagueName(onlyLeague)} →
+              {t("ct.hub.browseLeague", { name: leagueName(onlyLeague) })}
             </button>
           )}
         </>
@@ -401,12 +402,12 @@ function GlobalResults({
 
 /* ---------- 3) uvnitř ligy ---------- */
 
-const POS: { id: string; label: string; test: (p: string) => boolean }[] = [
-  { id: "all", label: "Všichni", test: () => true },
-  { id: "gk", label: "Brankáři", test: (p) => p.includes("brank") },
-  { id: "def", label: "Obránci", test: (p) => p.includes("obr") },
-  { id: "mid", label: "Záložníci", test: (p) => p.includes("zálož") || p.includes("zaloz") },
-  { id: "att", label: "Útočníci", test: (p) => p.includes("útoč") || p.includes("utoc") },
+const POS: { id: string; label: Key; test: (p: string) => boolean }[] = [
+  { id: "all", label: "ct.pos.all", test: () => true },
+  { id: "gk", label: "ct.pos.gk", test: (p) => p.includes("brank") },
+  { id: "def", label: "ct.pos.def", test: (p) => p.includes("obr") },
+  { id: "mid", label: "ct.pos.mid", test: (p) => p.includes("zálož") || p.includes("zaloz") },
+  { id: "att", label: "ct.pos.att", test: (p) => p.includes("útoč") || p.includes("utoc") },
 ];
 
 function LeagueView({
@@ -445,7 +446,7 @@ function LeagueView({
     : { teams: league.teams, players: league.players, referees: league.referees };
 
   return (
-    <section className="mt-5" aria-label={`Liga ${league.name}`}>
+    <section className="mt-5" aria-label={t("ct.hub.leagueAria", { name: league.name })}>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-3 rounded-2xl border border-(--c-line) bg-(--c-surface) p-4">
         <Crest src={league.logo} name={league.name} size={48} />
         <div className="min-w-0 flex-1">
@@ -455,12 +456,12 @@ function LeagueView({
             {league.season ? ` · ${league.season}` : ""}
           </p>
           <div className="mt-2">
-            <Pill tone={league.full ? "var(--c-accent)" : "var(--c-faint)"}>{league.full ? "Plný katalog" : "Základní profily"}</Pill>
+            <Pill tone={league.full ? "var(--c-accent)" : "var(--c-faint)"}>{league.full ? t("ct.hub.full") : t("ct.hub.basic")}</Pill>
           </div>
         </div>
         <div className="flex w-full items-end gap-2 sm:w-auto">
           <div className="min-w-0 flex-1 sm:w-56">
-            <Field label="Liga">
+            <Field label={t("ct.hub.leagueLabel")}>
               <select
                 value={league.id}
                 onChange={(e) => onLeague(Number(e.target.value))}
@@ -475,34 +476,34 @@ function LeagueView({
             </Field>
           </div>
           <button type="button" onClick={onAll} className="min-h-10 shrink-0 rounded-xl px-3 text-[13px] font-medium text-(--c-accent) hover:bg-(--c-raised)">
-            Všechny ligy
+            {t("ct.hub.allLeagues")}
           </button>
         </div>
       </div>
 
       {!league.full && (
         <p className="mt-3 rounded-xl border border-(--c-line) bg-(--c-surface) px-3.5 py-2.5 text-[13px] leading-snug text-(--c-muted)">
-          U této ligy zatím máme soupisky, kalendář a základní údaje. Statistiky hráčů, srovnání a mapy střel doplňujeme jako u Chance Ligy.
+          {t("ct.hub.notFullNote")}
         </p>
       )}
 
       <div className="mt-4 flex items-center justify-between gap-3">
         <Seg
-          label="Co chcete procházet"
+          label={t("ct.hub.browseAria")}
           value={tab}
           onChange={onTab}
           options={[
-            { id: "teams", label: `Týmy · ${counts.teams}` },
-            { id: "players", label: `Hráči · ${counts.players}` },
-            { id: "referees", label: `Rozhodčí · ${counts.referees}` },
+            { id: "teams", label: `${t("ct.hub.groupTeams")} · ${counts.teams}` },
+            { id: "players", label: `${t("ct.hub.groupPlayers")} · ${counts.players}` },
+            { id: "referees", label: `${t("ct.hub.groupReferees")} · ${counts.referees}` },
           ]}
         />
       </div>
 
       <div className="mt-4">
-        {error && <p className="text-(--c-loss)">Katalog se nepodařilo načíst: {error}</p>}
-        {missing && <Empty>Pro tuto ligu zatím nemáme stažený katalog.</Empty>}
-        {!data && !error && !missing && <p className="text-sm text-(--c-muted)">Načítám katalog…</p>}
+        {error && <p className="text-(--c-loss)">{t("ct.hub.loadError", { error })}</p>}
+        {missing && <Empty>{t("ct.hub.missing")}</Empty>}
+        {!data && !error && !missing && <p className="text-sm text-(--c-muted)">{t("ct.hub.loadingCatalog")}</p>}
         {data && tab === "teams" && <TeamList items={teams} q={q} />}
         {data && tab === "players" && <PlayerList items={players} hub={data} q={q} />}
         {data && tab === "referees" && <RefereeList items={referees} leagueId={league.id} q={q} />}
@@ -512,7 +513,7 @@ function LeagueView({
 }
 
 function TeamList({ items, q }: { items: CatalogTeamCard[]; q: string }) {
-  if (!items.length) return <Empty>{q ? "Žádný tým neodpovídá hledání." : "Žádné týmy."}</Empty>;
+  if (!items.length) return <Empty>{q ? t("ct.hub.noTeamMatch") : t("ct.hub.noTeams")}</Empty>;
   return (
     <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((t, i) => (
@@ -561,16 +562,16 @@ function PlayerList({ items, hub, q }: { items: CatalogPlayerCard[]; hub: Catalo
       <div className="flex flex-wrap items-center gap-2">
         {POS.map((p) => (
           <Chip key={p.id} active={pos === p.id} onClick={() => setPos(p.id)}>
-            {p.label}
+            {t(p.label)}
           </Chip>
         ))}
         <select
-          aria-label="Filtr podle týmu"
+          aria-label={t("ct.hub.teamFilterAria")}
           value={team === "all" ? "all" : String(team)}
           onChange={(e) => setTeam(e.target.value === "all" ? "all" : Number(e.target.value))}
           className="ml-auto min-h-8 rounded-full border border-(--c-line) bg-(--c-raised) px-3 text-xs text-(--c-text)"
         >
-          <option value="all">Všechny týmy</option>
+          <option value="all">{t("ct.hub.allTeams")}</option>
           {teams.map(([id, name]) => (
             <option key={id} value={id}>
               {name}
@@ -581,7 +582,7 @@ function PlayerList({ items, hub, q }: { items: CatalogPlayerCard[]; hub: Catalo
 
       {rows.length === 0 ? (
         <div className="mt-3">
-          <Empty>{q ? "Žádný hráč neodpovídá hledání." : "Žádní hráči v tomto filtru."}</Empty>
+          <Empty>{q ? t("ct.hub.noPlayerMatch") : t("ct.hub.noPlayers")}</Empty>
         </div>
       ) : (
         <>
@@ -602,7 +603,7 @@ function PlayerList({ items, hub, q }: { items: CatalogPlayerCard[]; hub: Catalo
                     </div>
                   </div>
                   <div className="shrink-0 text-right text-xs text-(--c-muted)">
-                    <div>{p.position ?? "—"}</div>
+                    <div>{dataPosition(p.position) || "—"}</div>
                     {p.number != null && <div className="tabular-nums text-(--c-faint)">#{p.number}</div>}
                   </div>
                   <span aria-hidden className="text-lg leading-none text-(--c-faint)">›</span>
@@ -616,7 +617,7 @@ function PlayerList({ items, hub, q }: { items: CatalogPlayerCard[]; hub: Catalo
               onClick={() => setShown((s) => s + PAGE)}
               className="mt-3 min-h-10 w-full rounded-xl border border-(--c-line) text-[13px] font-medium text-(--c-accent) hover:bg-(--c-surface)"
             >
-              Zobrazit dalších {Math.min(PAGE, rows.length - shown)} z {rows.length - shown}
+              {t("ct.hub.showMore", { n: Math.min(PAGE, rows.length - shown), rest: rows.length - shown })}
             </button>
           )}
         </>
@@ -628,9 +629,9 @@ function PlayerList({ items, hub, q }: { items: CatalogPlayerCard[]; hub: Catalo
 function RefereeList({ items, leagueId, q }: { items: CatalogRefereeCard[]; leagueId: number; q: string }): ReactNode {
   return (
     <div>
-      <p className="mb-3 text-[13px] text-(--c-muted)">Jen hlavní rozhodčí, kteří v aktuální sezoně této ligy už pískali. Nejvytíženější nahoře.</p>
+      <p className="mb-3 text-[13px] text-(--c-muted)">{t("ct.hub.refNote")}</p>
       {items.length === 0 ? (
-        <Empty>{q ? "Žádný rozhodčí neodpovídá hledání." : "Letos v této lize zatím nikdo z hlavních nepískal."}</Empty>
+        <Empty>{q ? t("ct.hub.noRefMatch") : t("ct.hub.noRefs")}</Empty>
       ) : (
         <ul className="divide-y divide-(--c-line) overflow-hidden rounded-2xl border border-(--c-line) bg-(--c-surface)">
           {items.map((r, i) => (
@@ -645,10 +646,10 @@ function RefereeList({ items, leagueId, q }: { items: CatalogRefereeCard[]; leag
                   <div className="truncate text-[14px] font-semibold">{r.name}</div>
                   {r.country && <div className="truncate text-xs text-(--c-muted)">{r.country}</div>}
                 </div>
-                {r.season_matches == null && <span className="shrink-0 text-xs text-(--c-faint)">letos v lize</span>}
+                {r.season_matches == null && <span className="shrink-0 text-xs text-(--c-faint)">{t("ct.hub.refInLeague")}</span>}
                 {r.season_matches != null && (
                   <div className="shrink-0 text-right text-xs text-(--c-muted)">
-                    <b className="text-[15px] tabular-nums text-(--c-text)">{r.season_matches}</b> {plural(r.season_matches, "zápas", "zápasy", "zápasů")}
+                    <b className="text-[15px] tabular-nums text-(--c-text)">{r.season_matches}</b> {csMatches(r.season_matches)}
                   </div>
                 )}
                 <span aria-hidden className="text-lg leading-none text-(--c-faint)">›</span>

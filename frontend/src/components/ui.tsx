@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { t } from "../i18n/locale";
 
 export function Section({
   title,
@@ -57,7 +58,9 @@ export function ResultBadge({ result }: { result: string }) {
       : result === "P"
       ? "bg-rose-500 text-black"
       : "bg-slate-500 text-black";
-  return <span className={`badge w-6 justify-center ${color}`}>{result}</span>;
+  // Kódy V / R / P jsou česká data (výhra / remíza / prohra), zobrazují se podle jazyka.
+  const label = result === "V" ? t("mx.res.V") : result === "R" ? t("mx.res.R") : result === "P" ? t("mx.res.P") : result;
+  return <span className={`badge w-6 justify-center ${color}`}>{label}</span>;
 }
 
 export function TrendBar({ pct }: { pct: number }) {

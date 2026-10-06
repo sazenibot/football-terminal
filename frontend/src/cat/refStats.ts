@@ -1,5 +1,6 @@
 import type { LeagueUniverse } from "../lib/useData";
 import type { CatalogRefereeMatch } from "../types";
+import { t } from "../i18n/locale";
 
 /* Součty faulů a karet po stranách: "for" = tým sám, "against" = soupeř týmu.
    Stejný tvar pro zápasy rozhodčího i pro celou ligu, takže jde odečíst a spočítat "ostatní rozhodčí". */
@@ -10,10 +11,29 @@ export type Agg = { m: number } & Record<Field, Cell>;
 export type Venue = "home" | "away";
 export type Metric = "fouls" | "yellow" | "red";
 
+/* Štítek je getter, ať se přeloží až při čtení (ne při importu modulu). */
 export const METRICS: Record<Metric, { label: string; own: Field; opp: Field }> = {
-  fouls: { label: "Fauly", own: "f", opp: "fa" },
-  yellow: { label: "Žluté karty", own: "y", opp: "ya" },
-  red: { label: "Červené karty", own: "r", opp: "ra" },
+  fouls: {
+    get label() {
+      return t("ct.rs.fouls");
+    },
+    own: "f",
+    opp: "fa",
+  },
+  yellow: {
+    get label() {
+      return t("ct.rs.yellow");
+    },
+    own: "y",
+    opp: "ya",
+  },
+  red: {
+    get label() {
+      return t("ct.rs.red");
+    },
+    own: "r",
+    opp: "ra",
+  },
 };
 
 export const emptyAgg = (): Agg => ({ m: 0, f: { s: 0, n: 0 }, fa: { s: 0, n: 0 }, y: { s: 0, n: 0 }, ya: { s: 0, n: 0 }, r: { s: 0, n: 0 }, ra: { s: 0, n: 0 } });

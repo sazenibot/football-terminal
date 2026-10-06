@@ -13,6 +13,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+import { intlTag, t } from "../i18n/locale";
 
 type Venue = "all" | "home" | "away";
 type Recency = "all" | "5";
@@ -78,7 +79,7 @@ export type PitchCatalogFile = {
 export function pitchSeasonOpts(season: string, matches: MatchRow[]): SeasonOpt[] {
   return [
     { id: season, label: season, matches, disabled: false },
-    { id: "2025/2026", label: "2025/2026 — zatím nemáme", matches: [], disabled: true },
+    { id: "2025/2026", label: t("mc.pc.seasonSoon"), matches: [], disabled: true },
   ];
 }
 
@@ -93,12 +94,12 @@ const C = {
 };
 
 function fmt(n: number, d = 2): string {
-  return n.toLocaleString("cs-CZ", { minimumFractionDigits: d, maximumFractionDigits: d });
+  return n.toLocaleString(intlTag(), { minimumFractionDigits: d, maximumFractionDigits: d });
 }
 
 function czDate(iso: string): string {
-  const [, m, d] = iso.split("-");
-  return `${Number(d)}. ${Number(m)}.`;
+  const [y, m, d] = iso.split("-");
+  return new Date(Number(y), Number(m) - 1, Number(d)).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
 }
 
 function filterMatches(matches: MatchRow[], recency: Recency, venue: Venue): MatchRow[] {
@@ -107,9 +108,9 @@ function filterMatches(matches: MatchRow[], recency: Recency, venue: Venue): Mat
 }
 
 function outcomeOf(s: Shot): string {
-  if (s.goal) return "gól";
-  if (s.on_target) return "na branku";
-  return "mimo";
+  if (s.goal) return t("mc.pc.out.goal");
+  if (s.on_target) return t("mc.pc.out.onTarget");
+  return t("mc.pc.out.off");
 }
 
 export function TeamTrend({
@@ -159,8 +160,8 @@ export function TeamTrend({
   return (
     <section className="card p-5">
       <CardHead
-        kicker="Karta týmu"
-        title="Trend střelby"
+        kicker={t("mc.pc.teamCard")}
+        title={t("mc.pc.trend")}
         lead={finishingLead(team, goals, xgot)}
         badges={
           trendBadges.length ? (
@@ -173,73 +174,73 @@ export function TeamTrend({
         }
       />
       <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <Field label="Období">
+        <Field label={t("mc.pe.pl.period")}>
           <Segmented
             value={recency}
             onChange={setRecency}
             options={[
-              ["all", "Celá sezona"],
-              ["5", "Posledních 5"],
+              ["all", t("mc.pc.wholeSeason")],
+              ["5", t("mc.pe.pl.last5")],
             ]}
           />
         </Field>
-        <Field label="Sezona">
+        <Field label={t("mc.pe.pl.season")}>
           <SeasonSelect seasons={seasons} value={seasonId} onChange={setSeasonId} />
         </Field>
-        <Field label="Graf">
+        <Field label={t("mc.pc.chart")}>
           <Segmented
             value={mode}
             onChange={setMode}
             options={[
-              ["compare", "Góly vs xG"],
-              ["split", "Rozpad xG"],
+              ["compare", t("mc.pc.goalsVsXg")],
+              ["split", t("mc.pc.xgBreakdown")],
             ]}
           />
         </Field>
-        <Field label="Místo">
+        <Field label={t("mc.pc.place")}>
           <Segmented
             value={venue}
             onChange={setVenue}
             options={[
-              ["all", "Doma i venku"],
-              ["home", "Doma"],
-              ["away", "Venku"],
+              ["all", t("mc.pc.homeAndAway")],
+              ["home", t("mc.pc.venue.home")],
+              ["away", t("mc.pc.venue.away")],
             ]}
           />
         </Field>
       </div>
       <div className="mt-4 grid grid-cols-3 gap-3">
         <MiniStat
-          label="Góly"
+          label={t("mc.pe.col.g")}
           value={String(goals)}
           color={C.goals}
-          hint="Reálně vstřelené góly."
+          hint={t("mc.pc.hint.goals")}
         />
         <MiniStat
           label="xGOT"
           value={fmt(xgot)}
           color={C.xgot}
-          hint="Kvalita zakončení po vystřelení (pouze střely na bránu)."
+          hint={t("mc.pc.hint.xgot")}
         />
         <MiniStat
           label="xG"
           value={fmt(xg)}
           color={C.xg}
-          hint="Kvalita šance před vystřelením (u všech střel)."
+          hint={t("mc.pc.hint.xg")}
         />
       </div>
       <div className="mt-3 flex flex-wrap gap-4 text-xs text-slate-300 light:text-slate-600">
         {mode === "compare" ? (
           <>
-            <Swatch color={C.goals} label="Góly" />
+            <Swatch color={C.goals} label={t("mc.pe.col.g")} />
             <Swatch color={C.xgot} label="xGOT" />
             <Swatch color={C.xg} label="xG" />
           </>
         ) : (
           <>
-            <Swatch color={C.open} label="xG ze hry" />
-            <Swatch color={C.set} label="xG ze standardek" />
-            <Swatch color={C.goals} label="Góly" />
+            <Swatch color={C.open} label={t("mc.pc.xgOpen")} />
+            <Swatch color={C.set} label={t("mc.pc.xgSet")} />
+            <Swatch color={C.goals} label={t("mc.pe.col.g")} />
           </>
         )}
       </div>
@@ -250,11 +251,11 @@ export function TeamTrend({
           <table className="w-full min-w-[36rem] text-sm">
             <thead>
               <tr className="text-[11px] uppercase tracking-wide text-slate-500">
-                <th className="text-left py-1.5 font-medium">Zápas</th>
-                <th className="text-right font-medium">Góly</th>
+                <th className="text-left py-1.5 font-medium">{t("mc.pc.match")}</th>
+                <th className="text-right font-medium">{t("mc.pe.col.g")}</th>
                 <th className="text-right font-medium">xGOT</th>
                 <th className="text-right font-medium">xG</th>
-                <th className="text-right font-medium">Góly − xGOT</th>
+                <th className="text-right font-medium">{t("mc.pc.goalsMinusXgot")}</th>
               </tr>
             </thead>
             <tbody>
@@ -333,7 +334,7 @@ export function ShotMap({
   return (
     <section className="card p-5">
       <CardHead
-        kicker="Shotmapa"
+        kicker={t("mc.pc.shotmap")}
         title={title}
         lead={lead}
         seasons={showSeason ? seasons : undefined}
@@ -341,54 +342,55 @@ export function ShotMap({
         onSeason={showSeason ? setSeasonId : undefined}
       />
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
-        <Field label="Období">
+        <Field label={t("mc.pe.pl.period")}>
           <Segmented
             value={recency}
             onChange={setRecency}
             options={[
-              ["all", "Celá sezona"],
-              ["5", "Posledních 5"],
+              ["all", t("mc.pc.wholeSeason")],
+              ["5", t("mc.pe.pl.last5")],
             ]}
           />
         </Field>
-        <Field label="Místo">
+        <Field label={t("mc.pc.place")}>
           <Segmented
             value={venue}
             onChange={setVenue}
             options={[
-              ["all", "Vše"],
-              ["home", "Doma"],
-              ["away", "Venku"],
+              ["all", t("mc.pc.all")],
+              ["home", t("mc.pc.venue.home")],
+              ["away", t("mc.pc.venue.away")],
             ]}
           />
         </Field>
-        <Field label="Střely">
+        <Field label={t("mc.pe.col.shT")}>
           <Segmented
             value={cut}
             onChange={setCut}
             options={[
-              ["all", "Vše"],
-              ["on_target", "Na branku"],
-              ["off", "Mimo"],
-              ["goal", "Góly"],
+              ["all", t("mc.pc.all")],
+              ["on_target", t("mc.pc.onTarget")],
+              ["off", t("mc.pc.off")],
+              ["goal", t("mc.pe.col.g")],
             ]}
           />
         </Field>
-        <Field label="Typ">
+        <Field label={t("mc.pc.type")}>
           <Segmented
             value={kind}
             onChange={setKind}
             options={[
-              ["all", "Vše"],
-              ["play", "Ze hry"],
-              ["set", "Standardka"],
+              ["all", t("mc.pc.all")],
+              ["play", t("mc.pc.openPlay")],
+              ["set", t("mc.pc.setPiece")],
             ]}
           />
         </Field>
       </div>
       <p className="mt-3 text-[11px] text-slate-500">
-        {shots.length} střel z {rows.length} {rows.length === 1 ? "zápasu" : "zápasů"}. {boxEdge} z úhlu vápna
-        {wide ? `, ${wide} mimo vápno` : ", žádná mimo vápno"}.
+        {wide
+          ? t("mc.pc.summary", { shots: shots.length, rows: rows.length, box: boxEdge, wide })
+          : t("mc.pc.summaryNoWide", { shots: shots.length, rows: rows.length, box: boxEdge })}
       </p>
       <div className="mt-3 max-w-xl mx-auto">
         <Ticker hover={hover} />
@@ -396,23 +398,23 @@ export function ShotMap({
       </div>
       <div className="mt-3 flex flex-col items-center gap-1.5 text-xs text-slate-300 light:text-slate-600">
         <div className="flex flex-wrap justify-center gap-4">
-          <Swatch color={C.play} label="Ze hry" />
-          <Swatch color={C.setShot} label="Standardka" />
+          <Swatch color={C.play} label={t("mc.pc.openPlay")} />
+          <Swatch color={C.setShot} label={t("mc.pc.setPiece")} />
         </div>
         <div className="flex flex-wrap justify-center gap-4">
           <span className="inline-flex items-center gap-1.5">
             <i className="relative inline-block h-3 w-3 rounded-full" style={{ background: C.play }}>
               <i className="absolute -inset-0.5 rounded-full border border-white" />
             </i>
-            Gól — kroužek, sytá výplň
+            {t("mc.pc.legend.goal")}
           </span>
           <span className="inline-flex items-center gap-1.5">
             <i className="inline-block h-3 w-3 rounded-full" style={{ background: C.play }} />
-            Na branku — sytá výplň
+            {t("mc.pc.legend.onTarget")}
           </span>
           <span className="inline-flex items-center gap-1.5">
             <i className="inline-block h-3 w-3 rounded-full" style={{ background: C.play, opacity: 0.28 }} />
-            Mimo — světlejší
+            {t("mc.pc.legend.off")}
           </span>
         </div>
       </div>
@@ -449,40 +451,40 @@ export function KeeperCard({
   const above = prevented >= 0.05;
   const below = prevented <= -0.05;
   const line = above
-    ? `Chytil o ${abs} gólu víc, než měl.`
+    ? t("mc.pc.keeper.above", { abs })
     : below
-      ? `Dostal o ${abs} gólu víc, než měl.`
-      : "Dostal zhruba tolik, kolik střely slibovaly.";
+      ? t("mc.pc.keeper.below", { abs })
+      : t("mc.pc.keeper.flat");
 
   return (
     <section className="card p-5">
       <CardHead
-        kicker="Karta brankáře"
+        kicker={t("mc.pc.keeperCard")}
         title={name}
-        lead="Srovnání inkasovaných gólů s xGOT střel, kterým čelil. Kladné číslo = chytil víc, než šance slibovaly."
+        lead={t("mc.pc.keeperLead")}
         seasons={showSeason ? seasons : undefined}
         seasonId={showSeason ? seasonId : undefined}
         onSeason={showSeason ? setSeasonId : undefined}
       />
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
-        <Field label="Období">
+        <Field label={t("mc.pe.pl.period")}>
           <Segmented
             value={recency}
             onChange={setRecency}
             options={[
-              ["all", "Celá sezona"],
-              ["5", "Posledních 5"],
+              ["all", t("mc.pc.wholeSeason")],
+              ["5", t("mc.pe.pl.last5")],
             ]}
           />
         </Field>
-        <Field label="Místo">
+        <Field label={t("mc.pc.place")}>
           <Segmented
             value={venue}
             onChange={setVenue}
             options={[
-              ["all", "Doma i venku"],
-              ["home", "Doma"],
-              ["away", "Venku"],
+              ["all", t("mc.pc.homeAndAway")],
+              ["home", t("mc.pc.venue.home")],
+              ["away", t("mc.pc.venue.away")],
             ]}
           />
         </Field>
@@ -492,12 +494,12 @@ export function KeeperCard({
         {fmt(prevented)}
       </p>
       <p className="text-sm text-slate-300 light:text-slate-700 mt-1">
-        {line} {rows.length} {rows.length === 1 ? "zápas" : rows.length < 5 ? "zápasy" : "zápasů"}.
+        {t("mc.pc.keeperLine", { line, n: rows.length })}
       </p>
       <div className="mt-4 grid gap-3 sm:grid-cols-3">
-        <Stat label="xGOT proti" value={fmt(faced)} />
-        <Stat label="Inkasované" value={String(goals)} />
-        <Stat label="Zákroky / střely na branku" value={`${Math.round(saves)} / ${Math.round(sot)}`} />
+        <Stat label={t("mc.st.xgotAgainst")} value={fmt(faced)} />
+        <Stat label={t("mc.pc.concededCap")} value={String(goals)} />
+        <Stat label={t("mc.pc.savesShots")} value={`${Math.round(saves)} / ${Math.round(sot)}`} />
       </div>
       <TableToggle open={showTable} onToggle={() => setShowTable((v) => !v)} />
       {showTable ? (
@@ -505,11 +507,11 @@ export function KeeperCard({
           <table className="w-full min-w-[36rem] text-sm">
             <thead>
               <tr className="text-[11px] uppercase tracking-wide text-slate-500">
-                <th className="text-left py-1.5 font-medium">Zápas</th>
-                <th className="text-right font-medium">Inkasované</th>
-                <th className="text-right font-medium">xGOT proti</th>
-                <th className="text-right font-medium">Chyceno navíc</th>
-                <th className="text-right font-medium">Zákroky / na branku</th>
+                <th className="text-left py-1.5 font-medium">{t("mc.pc.match")}</th>
+                <th className="text-right font-medium">{t("mc.pc.concededCap")}</th>
+                <th className="text-right font-medium">{t("mc.st.xgotAgainst")}</th>
+                <th className="text-right font-medium">{t("mc.pc.extraSaved")}</th>
+                <th className="text-right font-medium">{t("mc.pc.savesOnTarget")}</th>
               </tr>
             </thead>
             <tbody>
@@ -571,7 +573,7 @@ function CardHead({
       </div>
       {seasons && seasonId && onSeason ? (
         <label className="shrink-0 text-[11px] uppercase tracking-wide text-slate-500">
-          Sezona
+          {t("mc.pe.pl.season")}
           <SeasonSelect seasons={seasons} value={seasonId} onChange={onSeason} className="mt-1 block min-w-[9.5rem]" />
         </label>
       ) : null}
@@ -616,7 +618,7 @@ function TableToggle({ open, onToggle }: { open: boolean; onToggle: () => void }
       <span className={`inline-block text-[11px] transition-transform ${open ? "rotate-180" : ""}`} aria-hidden>
         ▼
       </span>
-      {open ? "Skrýt tabulku" : "Zobrazit tabulku"}
+      {open ? t("mc.pc.hideTable") : t("mc.pc.showTable")}
     </button>
   );
 }
@@ -640,10 +642,10 @@ function VenueMark({ home }: { home: boolean }) {
           ? "bg-sky-500/15 text-sky-300 light:bg-sky-100 light:text-sky-700"
           : "bg-orange-500/15 text-orange-300 light:bg-orange-100 light:text-orange-700"
       }`}
-      title={home ? "Doma" : "Venku"}
+      title={home ? t("mc.pc.venue.home") : t("mc.pc.venue.away")}
     >
       <span aria-hidden>{home ? "🏠" : "✈️"}</span>
-      {home ? "D" : "V"}
+      {home ? t("mc.pc.venueLetter.home") : t("mc.pc.venueLetter.away")}
     </span>
   );
 }
@@ -655,18 +657,18 @@ function Ticker({ hover }: { hover: ShotView | null }) {
         <p className="leading-snug">
           {hover.minute}′ {hover.player}
           <span className="text-slate-500"> · </span>
-          {hover.kind === "set" ? "standardka" : "ze hry"}
+          {hover.kind === "set" ? t("mc.pc.setPieceLc") : t("mc.pc.openPlayLc")}
           <span className="text-slate-500"> · </span>
           {outcomeOf(hover)}
           <span className="text-slate-500"> · </span>
           xG {fmt(hover.xg)}
           <span className="text-slate-500"> · </span>
-          {fmt(hover.depth, 1)} m od branky
+          {t("mc.pc.fromGoal", { d: fmt(hover.depth, 1) })}
           <span className="text-slate-500"> · </span>
           {czDate(hover.date)} {hover.home ? "🏠" : "✈️"} {hover.opponent_short}
         </p>
       ) : (
-        <p className="text-slate-500">Najed na tečku.</p>
+        <p className="text-slate-500">{t("mc.pc.hover")}</p>
       )}
     </div>
   );
@@ -685,19 +687,19 @@ function TrendPlot({ data, mode }: { data: ChartPoint[]; mode: TrendMode }) {
     />
   );
 
-  if (!data.length) return <p className="mt-4 text-sm text-slate-500">Žádné zápasy v tomhle filtru.</p>;
+  if (!data.length) return <p className="mt-4 text-sm text-slate-500">{t("mc.pc.noMatches")}</p>;
 
   const dots =
     mode === "compare"
       ? [
-          { key: "gf", name: "Góly", color: C.goals, r: 7 },
+          { key: "gf", name: t("mc.pe.col.g"), color: C.goals, r: 7 },
           { key: "xgot", name: "xGOT", color: C.xgot, r: 5.2 },
           { key: "xg", name: "xG", color: C.xg, r: 3.6 },
         ]
       : [
-          { key: "gf", name: "Góly", color: C.goals, r: 7 },
-          { key: "xg_set", name: "xG ze standardek", color: C.set, r: 5.2 },
-          { key: "xg_open", name: "xG ze hry", color: C.open, r: 3.6 },
+          { key: "gf", name: t("mc.pe.col.g"), color: C.goals, r: 7 },
+          { key: "xg_set", name: t("mc.pc.xgSet"), color: C.set, r: 5.2 },
+          { key: "xg_open", name: t("mc.pc.xgOpen"), color: C.open, r: 3.6 },
         ];
 
   return (
@@ -719,7 +721,7 @@ function TrendPlot({ data, mode }: { data: ChartPoint[]; mode: TrendMode }) {
             {tip}
             {mode === "compare" ? (
               <>
-                <Bar dataKey="gf" name="Góly" fill={C.goals} radius={[3, 3, 0, 0]} isAnimationActive={false}>
+                <Bar dataKey="gf" name={t("mc.pe.col.g")} fill={C.goals} radius={[3, 3, 0, 0]} isAnimationActive={false}>
                   <LabelList dataKey="gf" content={<BarValue decimals={0} fill={C.goals} />} />
                 </Bar>
                 <Bar dataKey="xgot" name="xGOT" fill={C.xgot} radius={[3, 3, 0, 0]} isAnimationActive={false}>
@@ -731,11 +733,11 @@ function TrendPlot({ data, mode }: { data: ChartPoint[]; mode: TrendMode }) {
               </>
             ) : (
               <>
-                <Bar dataKey="xg_open" name="xG ze hry" stackId="xg" fill={C.open} isAnimationActive={false} />
-                <Bar dataKey="xg_set" name="xG ze standardek" stackId="xg" fill={C.set} radius={[3, 3, 0, 0]} isAnimationActive={false}>
+                <Bar dataKey="xg_open" name={t("mc.pc.xgOpen")} stackId="xg" fill={C.open} isAnimationActive={false} />
+                <Bar dataKey="xg_set" name={t("mc.pc.xgSet")} stackId="xg" fill={C.set} radius={[3, 3, 0, 0]} isAnimationActive={false}>
                   <LabelList dataKey="xg" content={<BarValue decimals={2} fill="#e2e8f0" />} />
                 </Bar>
-                <Bar dataKey="gf" name="Góly" fill={C.goals} radius={[3, 3, 0, 0]} isAnimationActive={false}>
+                <Bar dataKey="gf" name={t("mc.pe.col.g")} fill={C.goals} radius={[3, 3, 0, 0]} isAnimationActive={false}>
                   <LabelList dataKey="gf" content={<BarValue decimals={0} fill={C.goals} />} />
                 </Bar>
               </>
@@ -825,14 +827,14 @@ function TrendTooltip({ active, payload, label, mode }: TipProps) {
   const items =
     mode === "compare"
       ? [
-          { name: "Góly", value: row.gf, color: C.goals, decimals: 0 },
+          { name: t("mc.pe.col.g"), value: row.gf, color: C.goals, decimals: 0 },
           { name: "xGOT", value: row.xgot, color: C.xgot, decimals: 2 },
           { name: "xG", value: row.xg, color: C.xg, decimals: 2 },
         ]
       : [
-          { name: "Góly", value: row.gf, color: C.goals, decimals: 0 },
-          { name: "xG ze hry", value: row.xg_open, color: C.open, decimals: 2 },
-          { name: "xG ze standardek", value: row.xg_set, color: C.set, decimals: 2 },
+          { name: t("mc.pe.col.g"), value: row.gf, color: C.goals, decimals: 0 },
+          { name: t("mc.pc.xgOpen"), value: row.xg_open, color: C.open, decimals: 2 },
+          { name: t("mc.pc.xgSet"), value: row.xg_set, color: C.set, decimals: 2 },
         ];
 
   return (
@@ -956,7 +958,7 @@ function Pitch({ shots, hover, onHover }: { shots: ShotView[]; hover: ShotView |
   const boxLine = y(16.5);
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto rounded-lg bg-emerald-950/80 light:bg-emerald-900" role="img" aria-label="Shotmapa, branka nahoře">
+    <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto rounded-lg bg-emerald-950/80 light:bg-emerald-900" role="img" aria-label={t("mc.pc.pitchAria")}>
       <defs>
         <clipPath id={clipId}>
           <rect x={padX} y={boxLine} width={innerW} height={padY + innerH - boxLine} />

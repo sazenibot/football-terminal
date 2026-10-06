@@ -1,13 +1,15 @@
 import { useEffect, type ReactNode } from "react";
-import { Navigate, useParams, useSearchParams } from "react-router-dom";
+import { Navigate, useParams, useSearchParams } from "../i18n/router";
 import { useAccess } from "../access/AccessContext";
 import { Paywall } from "../access/Gate";
 import { Back, Frame } from "../cat/kit";
+import { t } from "../i18n/locale";
 import type { MatchData } from "../types";
 import { hasPitchData } from "../lib/pitchMatch";
 import { useMatch } from "../lib/useData";
 import { MatchCenterPage } from "./MatchCenterPage";
 import { MatchPage } from "./MatchPage";
+import { intlTag } from "../i18n/locale";
 
 /**
  * Nový Match Center dostávají ligy, pro které máme nový model a PitchAPI (zatím Chance Liga).
@@ -21,7 +23,7 @@ export function MatchRoute() {
 
   if (params.get("classic") === "1") return <MatchPage />;
   if (error || missing) return <MatchPage />;
-  if (!match) return <div className="flex min-h-[60vh] items-center justify-center text-slate-400">Načítám zápas…</div>;
+  if (!match) return <div className="flex min-h-[60vh] items-center justify-center text-slate-400">{t("future.loading")}</div>;
   const page = hasPitchData(match.league_id) ? <MatchCenterPage /> : <MatchPage />;
   return <FutureGuard match={match}>{page}</FutureGuard>;
 }
@@ -46,7 +48,7 @@ function FutureGuard({ match, children }: { match: MatchData; children: ReactNod
         {future && (freeSlotOpen || mine) && (
           <div className="mc2 pointer-events-none fixed inset-x-0 bottom-3 z-40 flex justify-center px-3">
             <p className="pointer-events-auto rounded-full border border-(--c-line) bg-(--c-surface) px-4 py-1.5 text-xs text-(--c-muted) shadow-lg">
-              Tohle je váš jeden bezplatný budoucí zápas. Další se zamknou, odemkne je Unlimited.
+              {t("future.banner")}
             </p>
           </div>
         )}
@@ -57,25 +59,21 @@ function FutureGuard({ match, children }: { match: MatchData; children: ReactNod
   const usedUp = tier === "account";
   return (
     <Frame>
-      <Back to={`/league/${match.league_id ?? ""}`}>Zpět na zápasy</Back>
+      <Back to={`/league/${match.league_id ?? ""}`}>{t("future.back")}</Back>
       <div className="mt-4 rounded-2xl border border-(--c-line) bg-(--c-surface) px-5 py-8 text-center">
-        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-(--c-accent)">Budoucí zápas</p>
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-(--c-accent)">{t("future.eyebrow")}</p>
         <h1 className="mt-2 text-2xl font-bold">
           {match.home.name} – {match.away.name}
         </h1>
         <p className="mt-1 text-sm text-(--c-muted)">
-          {new Date(match.starting_at).toLocaleString("cs-CZ", { weekday: "long", day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" })}
+          {new Date(match.starting_at).toLocaleString(intlTag(), { weekday: "long", day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" })}
         </p>
       </div>
       <div className="mt-4">
         <Paywall
           need={usedUp ? "unlimited" : "account"}
-          title={usedUp ? "Svůj bezplatný budoucí zápas jste už využili" : "Rozbor budoucího zápasu je pro registrované"}
-          text={
-            usedUp
-              ? "Všechny budoucí zápasy s rozborem, simulací a kurzy odemkne tarif Unlimited. Odehrané zápasy jsou otevřené pořád."
-              : "Po bezplatné registraci si můžete otevřít jeden budoucí zápas. Všechny odemkne tarif Unlimited. Odehrané zápasy jsou otevřené pořád."
-          }
+          title={usedUp ? t("future.usedTitle") : t("future.accountTitle")}
+          text={usedUp ? t("future.usedText") : t("future.accountText")}
         />
       </div>
     </Frame>

@@ -12,6 +12,22 @@ import {
 import type { MatchData, RadarAverages, TeamBrief } from "../types";
 import { Pill, Section } from "./ui";
 import type { RadarView, RadarXgot } from "../lib/pitchMatch";
+import { t, type Key } from "../i18n/locale";
+
+/** Názvy os radaru podle klíče (v datech jsou jen česky). */
+const METRIC_LABEL: Record<keyof RadarAverages | "xgot_for" | "xgot_against", Key> = {
+  goals_for: "mx.radar.goals_for",
+  goals_against: "mx.radar.goals_against",
+  shots: "mx.radar.shots",
+  sot: "mx.radar.sot",
+  corners: "mx.radar.corners",
+  possession: "mx.radar.possession",
+  cards: "mx.radar.cards",
+  fouls_committed: "mx.radar.fouls_committed",
+  fouls_received: "mx.radar.fouls_received",
+  xgot_for: "mx.radar.xgot_for",
+  xgot_against: "mx.radar.xgot_against",
+};
 
 const KEYS: (keyof RadarAverages)[] = [
   "goals_for",
@@ -64,8 +80,8 @@ export function RadarComparison({
   const hasData = !!dataset.home && !!dataset.away;
   const chartData = useMemo(() => {
     if (!hasData) return [];
-    const base = KEYS.map((k, i) => ({
-      metric: data.categories[i],
+    const base = KEYS.map((k) => ({
+      metric: t(METRIC_LABEL[k]),
       home: normalize(k, dataset.home![k]),
       away: normalize(k, dataset.away![k]),
       homeRaw: dataset.home![k],
@@ -73,34 +89,34 @@ export function RadarComparison({
     }));
     if (!xgotView) return base;
     const extra = (["xgot_for", "xgot_against"] as const).map((k) => ({
-      metric: k === "xgot_for" ? "xGOT" : "xGOT proti",
+      metric: t(METRIC_LABEL[k]),
       home: normalize(k, xgotView.home[k]),
       away: normalize(k, xgotView.away[k]),
       homeRaw: xgotView.home[k],
       awayRaw: xgotView.away[k],
     }));
     return [base[0], extra[0], base[1], extra[1], ...base.slice(2)];
-  }, [dataset, data.categories, hasData, xgotView]);
+  }, [dataset, hasData, xgotView]);
 
   return (
-    <Section title="4. Radarové srovnání týmů">
+    <Section title={t("mx.radar.title")}>
       <div className="flex gap-2 mb-4 flex-wrap">
         <Pill active={view === "season"} onClick={() => setView("season")}>
-          Letošní sezóna
+          {t("mx.radar.season")}
         </Pill>
         <Pill active={view === "last5"} onClick={() => setView("last5")}>
-          Posledních 5
+          {t("mx.radar.last5")}
         </Pill>
         <Pill active={view === "last3_h2h"} onClick={() => setView("last3_h2h")}>
-          Poslední 3 vzájemné zápasy
+          {t("mx.radar.h2h3")}
         </Pill>
         <Pill active={view === "last3_h2h_home_venue"} onClick={() => setView("last3_h2h_home_venue")}>
-          Poslední 3 vzájemné zápasy {home.name} doma
+          {t("mx.radar.h2h3home", { name: home.name })}
         </Pill>
       </div>
       {!hasData ? (
         <p className="text-slate-500 light:text-slate-400 text-sm py-8 text-center">
-          Nedostatek dat — {home.name} nebyla v posledních vzájemných zápasech dostatečně často domácím týmem.
+          {t("mx.radar.noData", { name: home.name })}
         </p>
       ) : (
         <>
@@ -124,14 +140,12 @@ export function RadarComparison({
             </ResponsiveContainer>
           </div>
           <p className="text-xs text-slate-500 light:text-slate-400 mt-2">
-            Hodnoty jsou normalizované 0–100 pro čitelnost grafu; skutečné hodnoty viz tooltip.
+            {t("mx.radar.normalised")}
             {view === "last3_h2h_home_venue" && ` (n=${data.last3_h2h_home_venue.sample_size})`}
           </p>
           {xgot && (view === "last3_h2h" || view === "last3_h2h_home_venue") && (
             <p className="text-xs text-slate-500 light:text-slate-400 mt-1">
-              {xgotView
-                ? `xGOT z ${xgotView.home.n} ${xgotView.home.n === 1 ? "zápasu" : "zápasů"} z těchto vzájemných, starší a pohárové ho nemají.`
-                : "xGOT u těchto vzájemných zápasů nemáme (starší sezony nebo pohár)."}
+              {xgotView ? t("mx.radar.xgotFrom", { n: xgotView.home.n }) : t("mx.radar.xgotNone")}
             </p>
           )}
         </>

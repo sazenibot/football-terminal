@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { FormSide, MatchFacts, TeamBrief } from "../types";
 import { Pill, ResultBadge, Section } from "./ui";
+import { t } from "../i18n/locale";
 
 function resultOf(m: MatchFacts): "V" | "R" | "P" {
   return m.gf > m.ga ? "V" : m.gf === m.ga ? "R" : "P";
@@ -10,6 +11,7 @@ function resultOf(m: MatchFacts): "V" | "R" | "P" {
 function VenueTag({ isHome }: { isHome: boolean }) {
   return (
     <span
+      title={isHome ? t("mx.common.home") : t("mx.common.away")}
       className={`inline-flex items-center gap-1 text-[10px] font-bold px-1.5 py-0.5 rounded shrink-0 ${
         isHome
           ? "bg-sky-500/15 text-sky-300 light:bg-sky-100 light:text-sky-700"
@@ -17,7 +19,7 @@ function VenueTag({ isHome }: { isHome: boolean }) {
       }`}
     >
       <span aria-hidden>{isHome ? "🏠" : "✈️"}</span>
-      {isHome ? "D" : "V"}
+      {isHome ? t("mx.form.venueHome") : t("mx.form.venueAway")}
     </span>
   );
 }
@@ -43,20 +45,20 @@ function TeamForm({ team, form }: { team: TeamBrief; form: FormSide }) {
         </h3>
         <div className="flex gap-1">
           <Pill active={filter === "all"} onClick={() => setFilter("all")}>
-            Vše
+            {t("mx.common.all")}
           </Pill>
           <Pill active={filter === "home"} onClick={() => setFilter("home")}>
-            Doma
+            {t("mx.common.home")}
           </Pill>
           <Pill active={filter === "away"} onClick={() => setFilter("away")}>
-            Venku
+            {t("mx.common.away")}
           </Pill>
         </div>
       </div>
       <div className="text-sm text-slate-400 light:text-slate-500 mb-2">
-        {source.length} zápasů · {pts} b · skóre {gf}:{ga}
+        {t("mx.form.summary", { n: source.length, pts, gf, ga })}
       </div>
-      {source.length === 0 && <span className="text-slate-500 light:text-slate-400 text-sm">Nedostatek dat</span>}
+      {source.length === 0 && <span className="text-slate-500 light:text-slate-400 text-sm">{t("mx.common.noData")}</span>}
       <div className="space-y-1">
         {source.map((m) => (
           <div key={m.fixture_id} className="flex items-center gap-2">
@@ -68,7 +70,7 @@ function TeamForm({ team, form }: { team: TeamBrief; form: FormSide }) {
             <span className="truncate text-xs text-slate-400 light:text-slate-500">vs {m.opponent}</span>
             {!m.is_league_match && (
               <span className="badge bg-purple-500/20 text-purple-300 light:bg-purple-100 light:text-purple-700 text-[10px] px-1.5 py-0 shrink-0">
-                {m.league_name ?? "pohár"}
+                {m.league_name ?? t("mx.form.cup")}
               </span>
             )}
           </div>
@@ -91,8 +93,8 @@ export function FormLast6({
 }) {
   return (
     <Section
-      title="3. Forma — posledních 6 zápasů z aktuální sezóny"
-      note="Počítáno jen ze zápasů od začátku aktuální sezóny — pokud jich tým dosud odehrál méně než 6, zobrazí se jen dostupný počet. Fialový štítek = zápas mimo ligu (pohár apod.). Řádek je vždy: výsledek → doma/venku → skóre → soupeř."
+      title={t("mx.form.title")}
+      note={t("mx.form.note")}
     >
       <div className="flex gap-8 flex-wrap">
         <TeamForm team={home} form={formHome} />

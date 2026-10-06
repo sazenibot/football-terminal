@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
 import { KeeperCard, ShotMap, TeamTrend, pitchSeasonOpts } from "../components/PitchCards";
 import { Back, Frame } from "../cat/kit";
 import { KeeperCardV2, ShotMapCard, TrendCard } from "../cat/PitchViz";

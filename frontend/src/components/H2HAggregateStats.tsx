@@ -11,18 +11,19 @@ import {
 } from "recharts";
 import type { H2HMatch, TeamBrief, TeamMatchStats } from "../types";
 import { Pill, Section } from "./ui";
+import { t, type Key } from "../i18n/locale";
 
-const ROWS: { key: keyof TeamMatchStats; label: string }[] = [
-  { key: "shots", label: "Střely celkem" },
-  { key: "sot", label: "Střely na branku" },
-  { key: "corners", label: "Rohy" },
-  { key: "fouls", label: "Fauly" },
-  { key: "yellow", label: "Žluté karty" },
-  { key: "red", label: "Červené karty" },
-  { key: "possession", label: "Držení míče (%)" },
+const ROWS: { key: keyof TeamMatchStats; label: Key }[] = [
+  { key: "shots", label: "mx.h2hs.shots" },
+  { key: "sot", label: "mx.h2hs.sot" },
+  { key: "corners", label: "mx.h2hs.corners" },
+  { key: "fouls", label: "mx.h2hs.fouls" },
+  { key: "yellow", label: "mx.h2hs.yellow" },
+  { key: "red", label: "mx.h2hs.red" },
+  { key: "possession", label: "mx.h2hs.possession" },
 ];
 
-const XGOT_ROWS: { key: keyof TeamMatchStats; label: string }[] = [{ key: "xgot", label: "xGOT" }];
+const XGOT_ROWS: { key: keyof TeamMatchStats; label: Key }[] = [{ key: "xgot", label: "mx.h2hs.xgot" }];
 
 function avg(nums: (number | null | undefined)[], digits = 1): number | null {
   const vals = nums.filter((n): n is number => n !== null && n !== undefined);
@@ -94,7 +95,7 @@ export function H2HAggregateStats({
   });
 
   const chartData = rows.map((row) => ({
-    metric: row.label,
+    metric: t(row.label),
     [home.name]: avg(filtered.map((m) => m.team_home_stats[row.key]), digitsOf(row.key)) ?? 0,
     [away.name]: avg(filtered.map((m) => m.team_away_stats[row.key]), digitsOf(row.key)) ?? 0,
   }));
@@ -102,13 +103,13 @@ export function H2HAggregateStats({
 
   return (
     <Section
-      title="2. Souhrnná H2H statistika"
-      subtitle={`${filtered.length} zápasů ve výběru`}
-      note={`"${home.name}" a "${away.name}" = statistika daného týmu v konkrétním vzájemném zápase, ať už tehdy hrál doma nebo venku (ne obecné "domácí/hosté").`}
+      title={t("mx.h2hs.title")}
+      subtitle={t("mx.h2hs.subtitle", { n: filtered.length })}
+      note={t("mx.h2hs.note", { home: home.name, away: away.name })}
     >
       <div className="flex flex-col gap-3 mb-4 text-sm">
         <div className="flex gap-3 flex-wrap items-center">
-          <span className="text-slate-500 light:text-slate-400 text-xs">Roky:</span>
+          <span className="text-slate-500 light:text-slate-400 text-xs">{t("mx.h2hs.years")}</span>
           <div className="flex gap-1.5">
             {years.map((y) => (
               <Pill key={y} active={selectedYears.has(y)} onClick={() => toggleYear(y)}>
@@ -120,19 +121,19 @@ export function H2HAggregateStats({
                 onClick={() => setSelectedYears(new Set())}
                 className="text-xs text-slate-500 hover:text-slate-300 light:hover:text-slate-700 underline"
               >
-                zrušit výběr
+                {t("mx.h2hs.clear")}
               </button>
             )}
           </div>
         </div>
         <div className="flex gap-3 flex-wrap items-center">
-          <span className="text-slate-500 light:text-slate-400 text-xs">Trenéři:</span>
+          <span className="text-slate-500 light:text-slate-400 text-xs">{t("mx.h2hs.coaches")}</span>
           <select
             value={homeCoach}
             onChange={(e) => setHomeCoach(e.target.value)}
             className="bg-slate-900 border border-slate-700 rounded px-2 py-1 light:bg-white light:border-slate-300 light:text-slate-800"
           >
-            <option value="all">Trenér {home.name} (všichni)</option>
+            <option value="all">{t("mx.h2hs.coachAll", { name: home.name })}</option>
             {homeCoaches.map((c) => (
               <option key={c} value={c}>
                 {c}
@@ -144,7 +145,7 @@ export function H2HAggregateStats({
             onChange={(e) => setAwayCoach(e.target.value)}
             className="bg-slate-900 border border-slate-700 rounded px-2 py-1 light:bg-white light:border-slate-300 light:text-slate-800"
           >
-            <option value="all">Trenér {away.name} (všichni)</option>
+            <option value="all">{t("mx.h2hs.coachAll", { name: away.name })}</option>
             {awayCoaches.map((c) => (
               <option key={c} value={c}>
                 {c}
@@ -155,32 +156,32 @@ export function H2HAggregateStats({
         <div className="flex gap-3 flex-wrap items-center">
           <div className="flex gap-2">
             <Pill active={venueFilter === "all"} onClick={() => setVenueFilter("all")}>
-              Všechny
+              {t("mx.common.allPl")}
             </Pill>
             <Pill active={venueFilter === "home"} onClick={() => setVenueFilter("home")}>
-              {home.name} doma
+              {t("mx.h2hr.homeAt", { name: home.name })}
             </Pill>
             <Pill active={venueFilter === "away"} onClick={() => setVenueFilter("away")}>
-              {home.name} venku
+              {t("mx.h2hr.awayAt", { name: home.name })}
             </Pill>
           </div>
           <div className="flex gap-2 ml-auto">
             <Pill active={view === "table"} onClick={() => setView("table")}>
-              Tabulka
+              {t("mx.h2hs.table")}
             </Pill>
             <Pill active={view === "chart"} onClick={() => setView("chart")}>
-              Graf
+              {t("mx.h2hs.chart")}
             </Pill>
           </div>
         </div>
       </div>
       {filtered.length === 0 ? (
-        <p className="text-slate-500 light:text-slate-400 text-sm">Žádná data pro tento filtr.</p>
+        <p className="text-slate-500 light:text-slate-400 text-sm">{t("mx.h2hs.empty")}</p>
       ) : view === "table" ? (
         <div className="space-y-3">
           <div className="grid grid-cols-[4.5rem_1fr_4.5rem] items-center text-[11px] uppercase tracking-wide text-slate-500 light:text-slate-400 px-1">
             <span className="text-left truncate">{home.name}</span>
-            <span className="text-center">průměr / zápas</span>
+            <span className="text-center">{t("mx.h2hs.avgPerMatch")}</span>
             <span className="text-right truncate">{away.name}</span>
           </div>
           {rows.map((row) => {
@@ -202,7 +203,7 @@ export function H2HAggregateStats({
                   {homeAvg ?? "—"}
                 </div>
                 <div>
-                  <div className="text-center text-xs text-slate-400 light:text-slate-500 mb-1">{row.label}</div>
+                  <div className="text-center text-xs text-slate-400 light:text-slate-500 mb-1">{t(row.label)}</div>
                   <div className="h-1.5 rounded-full bg-slate-800 light:bg-slate-200 overflow-hidden flex">
                     <div className="h-full bg-emerald-500" style={{ width: `${homeShare}%` }} />
                     <div className="h-full bg-amber-400" style={{ width: `${100 - homeShare}%` }} />
@@ -220,7 +221,7 @@ export function H2HAggregateStats({
           })}
           {withXgot && (
             <p className="text-xs text-slate-500 light:text-slate-400 pt-1">
-              xGOT máme u {xgotCount} z {filtered.length} zápasů ve výběru, starší sezony a poháry ho nemají.
+              {t("mx.h2hs.xgotNote", { n: xgotCount, total: filtered.length })}
             </p>
           )}
         </div>

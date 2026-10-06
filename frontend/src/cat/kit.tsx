@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
 import { Info } from "../mc2/kit";
+import { getLocale, intlTag, t } from "../i18n/locale";
 
 /* Sdílené stavební kameny nového katalogu. Vizuálně navazují na Match Center (mc2/kit),
    takže tabulky, karty i záložky mají stejný jazyk. */
 
 export const fmtNum = (n: number | null | undefined, digits = 2) =>
-  n == null ? "—" : n.toLocaleString("cs-CZ", { maximumFractionDigits: digits });
+  n == null ? "—" : n.toLocaleString(intlTag(), { maximumFractionDigits: digits });
 
 export const isPhoto = (src?: string | null): src is string => !!src && !src.includes("placeholder");
 
@@ -40,7 +41,7 @@ export function NotFound({ kind, back }: { kind: string; back: ReactNode }) {
     <Frame>
       {back}
       <p className="mt-6 rounded-2xl border border-(--c-line) bg-(--c-surface) p-8 text-center text-(--c-muted)">
-        {kind} v katalogu není. Nepodstrkáváme cizí profil ani mock.
+        {t("cat.notFound", { kind })}
       </p>
     </Frame>
   );
@@ -203,10 +204,10 @@ export function FilterBar({ children, summary, note }: { children: ReactNode; su
         onClick={() => setOpen((o) => !o)}
         className="flex min-h-12 w-full items-center gap-3 px-4 py-2 text-left"
       >
-        <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-(--c-faint)">Výběr</span>
+        <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-(--c-faint)">{t("ct.kit.selection")}</span>
         <span className="min-w-0 flex-1 truncate text-[13px] text-(--c-text)">{summary}</span>
         <span className="shrink-0 text-[13px] font-medium text-(--c-accent)">
-          {open ? "Hotovo" : "Upravit"}
+          {open ? t("ct.kit.done") : t("ct.kit.edit")}
           <span aria-hidden className={`ml-1 inline-block transition-transform ${open ? "rotate-90" : ""}`}>›</span>
         </span>
       </button>
@@ -267,7 +268,7 @@ export function RankCard({
         </span>
         {hasRank && (
           <span className="text-[13px] font-semibold tabular-nums" style={{ color }}>
-            {rank}. z {size}
+            {t("ct.kit.rankOf", { rank: rank!, size: size! })}
           </span>
         )}
       </div>
@@ -280,7 +281,7 @@ export function RankCard({
           <div className="h-full rounded-full" style={{ width: `${fill}%`, background: color }} />
         </div>
       )}
-      {avg != null && <div className="mt-1.5 text-[11px] text-(--c-faint)">liga {fmtNum(avg, digits)}{suffix}</div>}
+      {avg != null && <div className="mt-1.5 text-[11px] text-(--c-faint)">{t("ct.kit.leagueAvg", { v: `${fmtNum(avg, digits)}${suffix}` })}</div>}
     </div>
   );
 }
@@ -359,4 +360,12 @@ export function StatStrip({ children, cols = 4 }: { children: ReactNode; cols?: 
   return <div className={`grid grid-cols-2 gap-2 ${c}`}>{children}</div>;
 }
 
-export const csMatches = (n: number) => (n === 1 ? "zápas" : n >= 2 && n <= 4 ? "zápasy" : "zápasů");
+/** Slovo „zápas“ ve správném tvaru podle počtu (česky zápas / zápasy / zápasů, anglicky match / matches). */
+export const csMatches = (n: number) => t("ct.matchWord", { n });
+
+/** Pořadové číslo: česky „3.“, anglicky „3rd“. */
+export function ord(n: number): string {
+  if (getLocale() === "cs") return `${n}.`;
+  const suffix = { one: "st", two: "nd", few: "rd", other: "th" }[new Intl.PluralRules("en-GB", { type: "ordinal" }).select(n) as "one" | "two" | "few" | "other"];
+  return `${n}${suffix}`;
+}

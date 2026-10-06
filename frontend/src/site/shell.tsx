@@ -1,5 +1,7 @@
 import { useState, type ReactNode } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link as RawLink, useLocation as useRawLocation } from "react-router-dom";
+import { LANG_KEY, localizePath, t, useBarePath, useLocale, type Locale } from "../i18n";
+import { Link } from "../i18n/router";
 import { useAccess } from "../access/AccessContext";
 import { tierName } from "../access/tiers";
 import { ThemeToggle } from "../components/ThemeToggle";
@@ -8,8 +10,41 @@ import { useDataIndex } from "../lib/useData";
 
 const PILL = "rounded-full border border-slate-700 bg-[#12161f] shadow-lg light:bg-white light:border-slate-300";
 
+/** Přepínač CZ | EN. Stejná stránka v druhém jazyce, volba se pamatuje. */
+export function LangSwitch() {
+  const { locale } = useLocale();
+  const { pathname, search, hash } = useRawLocation();
+  const opts: Locale[] = ["cs", "en"];
+  return (
+    <div role="group" aria-label={t("lang.aria")} className={`${PILL} flex items-center p-0.5 text-xs font-semibold`}>
+      {opts.map((l) => (
+        <RawLink
+          key={l}
+          to={localizePath(pathname, l) + search + hash}
+          hrefLang={l}
+          lang={l}
+          aria-current={l === locale ? "true" : undefined}
+          title={t(l === "cs" ? "lang.csName" : "lang.enName")}
+          onClick={() => {
+            try {
+              localStorage.setItem(LANG_KEY, l);
+            } catch {
+              /* soukromý režim apod. */
+            }
+          }}
+          className={`rounded-full px-2.5 py-1 transition-colors ${
+            l === locale ? "bg-emerald-500 text-black" : "text-slate-300 hover:text-white light:text-slate-600 light:hover:text-slate-900"
+          }`}
+        >
+          {t(l === "cs" ? "lang.cs" : "lang.en")}
+        </RawLink>
+      ))}
+    </div>
+  );
+}
+
 export function SiteNav() {
-  const { pathname } = useLocation();
+  const pathname = useBarePath();
   const { index } = useDataIndex();
   const [more, setMore] = useState(false);
   const { tier } = useAccess();
@@ -30,40 +65,40 @@ export function SiteNav() {
   );
 
   const secondary = [
-    { to: "/clanky", label: "Články", on: is("/clanky") },
-    { to: "/vysledky", label: "Výsledky", on: is("/vysledky") },
-    { to: "/tarify", label: "Tarify", on: is("/tarify") },
-    { to: "/lab", label: "Lab", on: is("/lab") },
+    { to: "/clanky", label: t("nav.articles"), on: is("/clanky") },
+    { to: "/vysledky", label: t("nav.results"), on: is("/vysledky") },
+    { to: "/tarify", label: t("nav.pricing"), on: is("/tarify") },
+    { to: "/lab", label: t("nav.lab"), on: is("/lab") },
   ];
 
   return (
-    <nav aria-label="Hlavní menu" className={`fixed top-3 left-3 z-50 ${PILL} px-1.5 py-1`}>
+    <nav aria-label={t("nav.aria")} className={`fixed top-3 left-3 z-50 ${PILL} px-1.5 py-1`}>
       <div className="flex items-center gap-1">
         {item(
           "/",
           <>
-            <span className="sm:hidden">Domů</span>
-            <span className="hidden sm:inline">Football Terminal</span>
+            <span className="sm:hidden">{t("nav.home")}</span>
+            <span className="hidden sm:inline">{t("nav.brand")}</span>
           </>,
           pathname === "/",
         )}
-        {item(center, "Match Center", is("/league") || is("/match"))}
-        {item("/catalog", "Katalog", is("/catalog") || is("/katalog"))}
+        {item(center, t("nav.matchCenter"), is("/league") || is("/match"))}
+        {item("/catalog", t("nav.catalog"), is("/catalog") || is("/katalog"))}
         {secondary.map((s) => item(s.to, s.label, s.on, "hidden lg:inline-block"))}
         <button
           type="button"
-          aria-label="Další stránky"
+          aria-label={t("nav.morePages")}
           aria-expanded={more}
           onClick={() => setMore((v) => !v)}
           className="rounded-full px-2.5 py-1.5 text-xs font-medium text-slate-300 hover:text-white lg:hidden light:text-slate-600"
         >
-          Více ▾
+          {t("nav.more")}
         </button>
       </div>
       {more && (
         <div className={`absolute left-0 top-full mt-2 flex min-w-40 flex-col gap-0.5 p-1.5 lg:hidden ${PILL} rounded-2xl`}>
           {secondary.map((s) => item(s.to, s.label, s.on, "block"))}
-          {item(tier === "anon" ? "/prihlaseni" : "/tarify", tier === "anon" ? "Přihlásit" : `Účet · ${tierName(tier)}`, false, "block sm:hidden")}
+          {item(tier === "anon" ? "/prihlaseni" : "/tarify", tier === "anon" ? t("nav.login") : t("nav.account", { tier: tierName(tier) }), false, "block sm:hidden")}
         </div>
       )}
     </nav>
@@ -78,8 +113,9 @@ export function TopRight() {
         to={tier === "anon" ? "/prihlaseni" : "/tarify"}
         className={`${PILL} hidden px-3 py-1.5 text-xs font-medium text-slate-200 transition-colors hover:border-emerald-500 sm:block light:text-slate-700`}
       >
-        {tier === "anon" ? "Přihlásit" : <>Účet · <b className="text-emerald-400 light:text-emerald-700">{tierName(tier)}</b></>}
+        {tier === "anon" ? t("nav.login") : <>{t("nav.account", { tier: "" })}<b className="text-emerald-400 light:text-emerald-700">{tierName(tier)}</b></>}
       </Link>
+      <LangSwitch />
       <ThemeToggle />
     </div>
   );
@@ -91,28 +127,27 @@ export function SiteFooter() {
     <footer className="mc2 mx-auto max-w-6xl border-t border-(--c-line) px-4 pb-24 pt-8 text-[13px]">
       <div className="grid gap-6 sm:grid-cols-4">
         <div>
-          <p className="font-semibold text-(--c-text)">Football Terminal</p>
-          <p className="mt-1 text-(--c-muted)">Fotbalová analytika. Hledáme statistiky, které se opakují.</p>
+          <p className="font-semibold text-(--c-text)">{t("nav.brand")}</p>
+          <p className="mt-1 text-(--c-muted)">{t("footer.tagline")}</p>
         </div>
-        <FooterCol title="Produkt">
-          <Link className={link} to="/league">Match Center</Link>
-          <Link className={link} to="/catalog">Datový katalog</Link>
-          <Link className={link} to="/vysledky">Výsledky</Link>
+        <FooterCol title={t("footer.product")}>
+          <Link className={link} to="/league">{t("footer.matchCenter")}</Link>
+          <Link className={link} to="/catalog">{t("footer.catalog")}</Link>
+          <Link className={link} to="/vysledky">{t("footer.results")}</Link>
         </FooterCol>
-        <FooterCol title="Servis">
-          <Link className={link} to="/clanky">Články a návody</Link>
-          <Link className={link} to="/clanky/jak-funguje-simulace">Metodika modelu</Link>
-          <Link className={link} to="/tarify">Tarify</Link>
+        <FooterCol title={t("footer.service")}>
+          <Link className={link} to="/clanky">{t("footer.articles")}</Link>
+          <Link className={link} to="/clanky/jak-funguje-simulace">{t("footer.methodology")}</Link>
+          <Link className={link} to="/tarify">{t("footer.pricing")}</Link>
         </FooterCol>
-        <FooterCol title="Právní">
-          <span className="text-(--c-faint)">Obchodní podmínky (připravujeme)</span>
-          <span className="text-(--c-faint)">Ochrana osobních údajů (připravujeme)</span>
-          <span className="text-(--c-faint)">Kontakt (připravujeme)</span>
+        <FooterCol title={t("footer.legal")}>
+          <span className="text-(--c-faint)">{t("footer.terms")}</span>
+          <span className="text-(--c-faint)">{t("footer.privacy")}</span>
+          <span className="text-(--c-faint)">{t("footer.contact")}</span>
         </FooterCol>
       </div>
       <p className="mt-8 text-[12px] leading-relaxed text-(--c-faint)">
-        Služba je určena osobám starším 18 let. Informativní údaje, nejde o doporučení k sázce ani o příslib výhry. Modelové pravděpodobnosti jsou odhad a minulá úspěšnost
-        nezaručuje budoucí výsledky. Hazard může způsobit závislost.
+        {t("footer.disclaimer")}
       </p>
     </footer>
   );

@@ -474,44 +474,53 @@ def generate_ai_analysis(match: dict) -> dict | None:
         },
         "kurzy": odds,
     }
-    # Stejný vstup = stejná analýza, OpenAI se nevolá znovu.
+    # Stejný vstup = stejná analýza, OpenAI se nevolá znovu. Česky i anglicky ze stejných dat.
     input_hash = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
     prev = match.get("ai_analysis") or {}
-    if prev.get("text") and prev.get("input_hash") == input_hash:
+    same = prev.get("input_hash") == input_hash
+    text = prev.get("text") if same else None
+    text_en = prev.get("text_en") if same else None
+    if text and text_en:
         return prev
-    body = {
-        "model": "gpt-4o-mini",
-        "temperature": 0.4,
-        "messages": [
-            {
-                "role": "system",
-                "content": "Jsi fotbalový analytik. Píšeš česky, věcně, bez sázkových rad. 3 krátké odstavce.",
-            },
-            {
-                "role": "user",
-                "content": (
-                    "Vytvoř ze zadaných dat analýzu zápasu, jak ho očekáváš, co je pravděpodobné, že nastane.\n\n"
-                    + json.dumps(payload, ensure_ascii=False)
-                ),
-            },
-        ],
-    }
-    headers = {
-        "Authorization": f"Bearer {key}",
-        "Content-Type": "application/json",
-    }
-    resp = _http_json("https://api.openai.com/v1/chat/completions", headers, payload=body)
-    if not resp:
-        return None
-    text = (((resp.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
+
+    def ask(system: str, user: str) -> str:
+        body = {
+            "model": "gpt-4o-mini",
+            "temperature": 0.4,
+            "messages": [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user + json.dumps(payload, ensure_ascii=False)},
+            ],
+        }
+        headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
+        resp = _http_json("https://api.openai.com/v1/chat/completions", headers, payload=body)
+        if not resp:
+            return ""
+        return (((resp.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
+
+    if not text:
+        text = ask(
+            "Jsi fotbalový analytik. Píšeš česky, věcně, bez sázkových rad. 3 krátké odstavce.",
+            "Vytvoř ze zadaných dat analýzu zápasu, jak ho očekáváš, co je pravděpodobné, že nastane.\n\n",
+        )
     if not text:
         return None
-    return {
+    if not text_en:
+        text_en = ask(
+            "You are a football analyst. Write in English, factual, no betting advice. 3 short paragraphs. "
+            "The input keys are in Czech: zapas = match, soutěž = competition, stadion = venue, rozhodčí = referee, "
+            "forma_domaci / forma_hoste = home / away recent form (V = win, R = draw, P = loss), kurzy = odds, simulace = simulation.",
+            "From the given data write an analysis of the match: how you expect it to go and what is likely to happen.\n\n",
+        )
+    out = {
         "text": text,
         "model": "gpt-4o-mini",
         "input_hash": input_hash,
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
     }
+    if text_en:
+        out["text_en"] = text_en
+    return out
 
 
 def enrich_match(match: dict) -> dict:

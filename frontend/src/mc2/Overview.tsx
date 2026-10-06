@@ -3,16 +3,18 @@ import type { MatchData } from "../types";
 import type { XgotBadge } from "../lib/xgEfficiency";
 import { buildInsights, formRows, formSummary, h2hRecord, resOf, type Prediction } from "./derive";
 import { H2HRecordBar } from "./FormH2H";
-import { REFEREE_PENDING } from "./People";
+import { refereePending } from "./People";
 import { PredictionSummary } from "./Prediction";
 import { Card, FormDots, Info, ResBadge, Stat, TeamTitle, type Res } from "./kit";
+import { intlTag, t } from "../i18n/locale";
+import { aiText } from "../components/AiAnalysis";
 
 const TONE = { pos: "var(--c-win)", neutral: "var(--c-faint)", warn: "var(--c-warn)" };
 
 function InsightsCard({ m, p, badges }: { m: MatchData; p: Prediction; badges: { home: XgotBadge | null; away: XgotBadge | null } }) {
   const list = buildInsights(m, p, badges);
   return (
-    <Card title="Co stojí za povšimnutí" lead="Automatický souhrn z dat, která máme k zápasu.">
+    <Card title={t("mc.ov.insights.title")} lead={t("mc.ov.insights.lead")}>
       <ul className="space-y-3">
         {list.map((i, k) => (
           <li key={k} className="flex gap-3 text-[14px] leading-snug">
@@ -36,19 +38,19 @@ function FormMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
           <TeamTitle team={team} side={s} />
         </div>
         <div className="mt-2 flex items-center justify-between gap-3">
-          <FormDots results={chrono.map(resOf)} titles={chrono.map((r) => `${r.gf}:${r.ga} ${r.is_home ? "doma" : "venku"} vs ${r.opponent}`)} />
-          <span className="shrink-0 text-xs tabular-nums text-(--c-muted)">{sum.pts} b. z {sum.n}</span>
+          <FormDots results={chrono.map(resOf)} titles={chrono.map((r) => `${r.gf}:${r.ga} ${r.is_home ? t("mc.kit.home") : t("mc.kit.away")} vs ${r.opponent}`)} />
+          <span className="shrink-0 text-xs tabular-nums text-(--c-muted)">{t("mc.ov.pts", { pts: sum.pts, n: sum.n })}</span>
         </div>
       </div>
     );
   };
   return (
     <Card
-      title="Forma"
-      lead="Posledních 6 zápasů, nejnovější vpravo."
+      title={t("mc.ov.form.title")}
+      lead={t("mc.ov.form.lead")}
       aside={
         <button type="button" onClick={onMore} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-          Detail ›
+          {t("mc.ov.detail")}
         </button>
       }
     >
@@ -64,16 +66,16 @@ function H2HMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
   const r = h2hRecord(m);
   return (
     <Card
-      title="Vzájemné zápasy"
-      lead={r.n ? `Posledních ${r.n}, bilance ${m.home.name}.` : undefined}
+      title={t("mc.ov.h2h.title")}
+      lead={r.n ? t("mc.ov.h2h.lead", { n: r.n, team: m.home.name }) : undefined}
       aside={
         <button type="button" onClick={onMore} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-          Detail ›
+          {t("mc.ov.detail")}
         </button>
       }
     >
       {r.n === 0 ? (
-        <p className="text-sm text-(--c-muted)">Tyto týmy spolu v dostupných datech zatím nehrály.</p>
+        <p className="text-sm text-(--c-muted)">{t("mc.ov.h2h.none")}</p>
       ) : (
         <>
           <H2HRecordBar m={m} />
@@ -98,13 +100,13 @@ function RefereeMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
   const lc = r?.league_context;
   const more = (
     <button type="button" onClick={onMore} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-      Detail ›
+      {t("mc.ov.detail")}
     </button>
   );
   if (!r) {
     return (
-      <Card title="Rozhodčí" aside={more}>
-        <p className="rounded-xl border border-dashed border-(--c-line) px-4 py-4 text-center text-[13px] leading-snug text-(--c-muted)">{REFEREE_PENDING}</p>
+      <Card title={t("mc.tab.referee")} aside={more}>
+        <p className="rounded-xl border border-dashed border-(--c-line) px-4 py-4 text-center text-[13px] leading-snug text-(--c-muted)">{refereePending()}</p>
       </Card>
     );
   }
@@ -113,13 +115,13 @@ function RefereeMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
   const yellow = num(s?.["Yellowcards"]?.average ?? s?.["Yellowcards"]?.all?.average);
   const fouls = num(s?.["Fouls"]?.average ?? s?.["Fouls"]?.all?.average);
   const red = num(s?.["Redcards"]?.average ?? s?.["Redcards"]?.all?.average);
-  const f = (v: number | null) => (v == null ? "—" : v.toLocaleString("cs-CZ", { maximumFractionDigits: 2 }));
+  const f = (v: number | null) => (v == null ? "—" : v.toLocaleString(intlTag(), { maximumFractionDigits: 2 }));
   return (
-    <Card title={`Rozhodčí: ${r.name}`} lead="Průměr na zápas v této sezóně. Ligový průměr ukáže ikona (i)." aside={more}>
+    <Card title={t("mc.ov.ref.title", { name: r.name })} lead={t("mc.ov.ref.lead")} aside={more}>
       <div className="grid grid-cols-3 gap-2">
-        <Stat value={f(fouls)} label="faulů" hint={lc ? `Ligový průměr: ${lc.fouls_per_match}` : undefined} />
-        <Stat value={f(yellow)} label="žlutých" hint={lc ? `Ligový průměr: ${lc.yellow_per_match}` : undefined} />
-        <Stat value={f(red)} label="červených" hint={lc ? `Ligový průměr: ${lc.red_per_match}` : undefined} />
+        <Stat value={f(fouls)} label={t("mc.ov.ref.fouls")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: f(lc.fouls_per_match) }) : undefined} />
+        <Stat value={f(yellow)} label={t("mc.ov.ref.yellows")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: f(lc.yellow_per_match) }) : undefined} />
+        <Stat value={f(red)} label={t("mc.ov.ref.reds")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: f(lc.red_per_match) }) : undefined} />
       </div>
     </Card>
   );
@@ -127,20 +129,20 @@ function RefereeMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
 
 function AiCard({ m }: { m: MatchData }) {
   const [open, setOpen] = useState(false);
-  const text = m.ai_analysis?.text;
+  const text = aiText(m.ai_analysis);
   if (!text) return null;
   return (
     <Card
       title={
         <>
-          Slovní shrnutí
-          <Info>Text napsal jazykový model z našich dat (forma, vzájemné zápasy, simulace, kurzy). Není to sázková rada a může se mýlit.</Info>
+          {t("mc.ov.ai.title")}
+          <Info>{t("mc.ov.ai.info")}</Info>
         </>
       }
     >
       <div className={`whitespace-pre-line text-[14px] leading-relaxed text-(--c-muted) ${open ? "" : "clamp-4"}`}>{text}</div>
       <button type="button" onClick={() => setOpen((o) => !o)} className="mt-1 min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-        {open ? "Skrýt" : "Číst celé"}
+        {open ? t("mc.ov.ai.hide") : t("mc.ov.ai.more")}
       </button>
     </Card>
   );

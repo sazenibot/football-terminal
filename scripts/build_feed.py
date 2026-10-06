@@ -33,6 +33,10 @@ def cz(n: float) -> str:
     return f"{n:.1f}".replace(".", ",")
 
 
+def en(n: float) -> str:
+    return f"{n:.1f}"
+
+
 def gap_item(now: datetime) -> dict | None:
     best = None
     for path in sorted((DATA / "sim").glob("*.json")):
@@ -40,10 +44,14 @@ def gap_item(now: datetime) -> dict | None:
         model, market = sim.get("model") or {}, sim.get("market") or {}
         if not market.get("home_win_pct") or sim.get("starting_at", "") <= iso(now):
             continue
-        for key, label in (("home_win_pct", "výhra domácích"), ("draw_pct", "remíza"), ("away_win_pct", "výhra hostů")):
+        for key, label, label_en in (
+            ("home_win_pct", "výhra domácích", "a home win"),
+            ("draw_pct", "remíza", "a draw"),
+            ("away_win_pct", "výhra hostů", "an away win"),
+        ):
             diff = model[key] - market[key]
             if best is None or abs(diff) > abs(best["diff"]):
-                best = {"sim": sim, "key": key, "label": label, "diff": diff}
+                best = {"sim": sim, "key": key, "label": label, "label_en": label_en, "diff": diff}
     if not best:
         return None
     sim = best["sim"]
@@ -58,6 +66,11 @@ def gap_item(now: datetime) -> dict | None:
         "text": f'U zápasu {name} dává model na „{best["label"]}“ {cz(sim["model"][key])} %, zatímco kurz odpovídá {cz(sim["market"][key])} %. Rozdíl {cz(abs(best["diff"]))} procentního bodu.',
         "link": f"/match/{sim['fixture_id']}",
         "auto": True,
+        "en": {
+            "tag": "Model",
+            "title": f"Biggest gap between model and odds in the next round: {name}",
+            "text": f'For {name} the model puts {best["label_en"]} at {en(sim["model"][key])}%, while the odds imply {en(sim["market"][key])}%. A gap of {en(abs(best["diff"]))} percentage points.',
+        },
     }
 
 
@@ -81,6 +94,11 @@ def settled_item(now: datetime) -> dict | None:
         "text": f"Predikce byly zamčené před výkopem. Celkem je v knize vypořádáno {len(done)} zápasů.",
         "link": "/vysledky",
         "auto": True,
+        "en": {
+            "tag": "Results",
+            "title": f"Prediction ledger: {len(day)} matches played, the model's favourite won in {hits}",
+            "text": f"Predictions were locked before kick-off. {len(done)} matches are settled in the ledger in total.",
+        },
     }
 
 
@@ -90,8 +108,13 @@ def main() -> None:
     items = {i["id"]: i for i in feed["items"]}
     added = 0
     for item in (gap_item(now), settled_item(now)):
-        if item and item["id"] not in items:
+        if not item:
+            continue
+        if item["id"] not in items:
             items[item["id"]] = item
+            added += 1
+        elif "en" not in items[item["id"]]:  # starší záznam bez anglické verze
+            items[item["id"]]["en"] = item["en"]
             added += 1
     if not added and OUT.exists():
         print("feed: beze změny")

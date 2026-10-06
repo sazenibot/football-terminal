@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { TeamBrief } from "../types";
 import { Section } from "./ui";
+import { intlTag, t } from "../i18n/locale";
 
 type SideTotal = { home: number; away: number; total?: number; league_avg?: number; hfa?: number };
 
@@ -49,9 +50,9 @@ export type SimV2 = {
   } | null;
 };
 
-const pct = (n: number) => `${n.toLocaleString("cs-CZ", { maximumFractionDigits: 1 })} %`;
-const x2 = (n: number) => n.toLocaleString("cs-CZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const x1 = (n: number) => n.toLocaleString("cs-CZ", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const pct = (n: number) => t("fmt.pct", { n: n.toLocaleString(intlTag(), { maximumFractionDigits: 1 }) });
+const x2 = (n: number) => n.toLocaleString(intlTag(), { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const x1 = (n: number) => n.toLocaleString(intlTag(), { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 
 function Diff({ model, market }: { model: number; market?: number }) {
   if (market == null) return null;
@@ -59,8 +60,10 @@ function Diff({ model, market }: { model: number; market?: number }) {
   const tone = Math.abs(d) < 3 ? "text-slate-500" : d > 0 ? "text-emerald-400" : "text-rose-400";
   return (
     <div className={`text-[11px] mt-0.5 ${tone}`}>
-      Chance {pct(market)} · {d > 0 ? "+" : ""}
-      {d.toLocaleString("cs-CZ", { maximumFractionDigits: 1 })} b.
+      {t("mx.simv2.diff", {
+        market: pct(market),
+        diff: `${d > 0 ? "+" : ""}${d.toLocaleString(intlTag(), { maximumFractionDigits: 1 })}`,
+      })}
     </div>
   );
 }
@@ -94,8 +97,8 @@ function VolumeRow({
       <div className="font-mono text-sm text-amber-400 text-right min-w-[3rem]">{x1(side.away)}</div>
       <div className="font-mono text-sm text-slate-400 text-right min-w-[3.5rem]">{x1(side.total ?? side.home + side.away)}</div>
       <div className="text-[11px] text-slate-500 col-span-4">
-        {homeName} / {awayName} / celkem
-        {side.league_avg != null ? ` · liga Ø ${x1(side.league_avg)} na tým` : ""}
+        {t("mx.simv2.volumeSides", { home: homeName, away: awayName })}
+        {side.league_avg != null ? t("mx.simv2.volumeLeague", { n: x1(side.league_avg) }) : ""}
       </div>
     </div>
   );
@@ -107,12 +110,12 @@ function Breakdown({ sim, home, away }: { sim: SimV2; home: TeamBrief; away: Tea
   return (
     <div className="mt-4 text-sm space-y-3">
       <p className="text-slate-400 light:text-slate-500">
-        Góly: Maher ratingy útok/obrana se silou soupeře, {Math.round((1 - (sim.params.opp_xg_blend ?? 0.6)) * 100)} % gólový fit +{" "}
-        {Math.round((sim.params.opp_xg_blend ?? 0.6) * 100)} % xG fit, loňská sezona jako prior, obrana se k loňsku stahuje víc než
-        útok. Skóre se počítá přesně z Poissonovy mřížky 0–{sim.params.max_goals}. Oba dají gól a over jsou kalibrované
-        (zpětně se ukázalo, že surové hodnoty byly příliš sebejisté). Střely, SOT a rohy: doma/venku rate týmu a soupeře
-        stažený k loňsku ({sim.league.prev_stats ?? "?"} zápasů se stats), nováčci berou průměr spodních 3 týmů. Kurz Chance
-        do modelu nevstupuje.
+        {t("mx.simv2.method", {
+          goalsFit: t("fmt.pct", { n: Math.round((1 - (sim.params.opp_xg_blend ?? 0.6)) * 100) }),
+          xgFit: t("fmt.pct", { n: Math.round((sim.params.opp_xg_blend ?? 0.6) * 100) }),
+          maxGoals: sim.params.max_goals,
+          prev: sim.league.prev_stats ?? "?",
+        })}
       </p>
       {meta && (
         <table className="w-full text-sm">
@@ -125,7 +128,7 @@ function Breakdown({ sim, home, away }: { sim: SimV2; home: TeamBrief; away: Tea
           </thead>
           <tbody>
             <tr className="border-t border-slate-800 light:border-slate-200">
-              <td className="py-1.5 text-slate-400">Útok / obrana (góly)</td>
+              <td className="py-1.5 text-slate-400">{t("mx.simv2.ratingAttDef")}</td>
               <td className="py-1.5 px-2 text-right font-mono text-emerald-300">
                 {x2(meta.att_goals ?? 0)} / {x2(meta.def_goals_home ?? 0)}
               </td>
@@ -134,7 +137,7 @@ function Breakdown({ sim, home, away }: { sim: SimV2; home: TeamBrief; away: Tea
               </td>
             </tr>
             <tr className="border-t border-slate-800 light:border-slate-200">
-              <td className="py-1.5 text-slate-400">λ góly → xG → finál</td>
+              <td className="py-1.5 text-slate-400">{t("mx.simv2.ratingLam")}</td>
               <td className="py-1.5 px-2 text-right font-mono text-emerald-300">
                 {x2(meta.lam_goals?.[0] ?? 0)} → {x2(meta.lam_xg?.[0] ?? 0)} → {x2(m.expected_goals.home)}
               </td>
@@ -143,7 +146,7 @@ function Breakdown({ sim, home, away }: { sim: SimV2; home: TeamBrief; away: Tea
               </td>
             </tr>
             <tr className="border-t border-slate-800 light:border-slate-200">
-              <td className="py-1.5 text-slate-400">Odpočinek (dny)</td>
+              <td className="py-1.5 text-slate-400">{t("mx.simv2.rest")}</td>
               <td className="py-1.5 px-2 text-right font-mono">{meta.rest?.home ?? "—"}</td>
               <td className="py-1.5 pl-2 text-right font-mono">{meta.rest?.away ?? "—"}</td>
             </tr>
@@ -151,8 +154,12 @@ function Breakdown({ sim, home, away }: { sim: SimV2; home: TeamBrief; away: Tea
         </table>
       )}
       <p className="text-xs text-slate-500">
-        Domácí výhoda góly {x2(meta?.hfa_goals ?? 0)}, xG {x2(meta?.hfa_xg ?? 0)}. Historie do výpočtu: {sim.league.matches_current}{" "}
-        letošních + {sim.league.matches_prev} loňských zápasů.
+        {t("mx.simv2.hfa", {
+          goals: x2(meta?.hfa_goals ?? 0),
+          xg: x2(meta?.hfa_xg ?? 0),
+          cur: sim.league.matches_current,
+          prev: sim.league.matches_prev,
+        })}
       </p>
     </div>
   );
@@ -165,13 +172,13 @@ export function SimulationV2({ sim, home, away }: { sim: SimV2; home: TeamBrief;
   const hasVolume = m.expected_shots || m.expected_sot;
   return (
     <Section
-      title="7. Simulace 10 000 zápasů"
-      subtitle="síla soupeřů · góly + xG · střely"
-      note="Chance Liga, data PitchAPI. Zpětný test na 346 zápasech dvou sezon: o něco přesnější než model bez síly soupeřů a u střel i střel na branku přesnější než ligový průměr. Pořád odhad, ne záruka. Kurz Chance je jen srovnání, do modelu nevstupuje."
+      title={t("mx.sim.title")}
+      subtitle={t("mx.simv2.subtitle")}
+      note={t("mx.simv2.note")}
     >
       <div className="grid grid-cols-3 gap-3 mb-4 text-center">
         <Outcome value={m.home_win_pct} label={home.name} market={mk?.home_win_pct} color="text-emerald-400" />
-        <Outcome value={m.draw_pct} label="Remíza" market={mk?.draw_pct} color="text-slate-300 light:text-slate-700" />
+        <Outcome value={m.draw_pct} label={t("mx.common.draw")} market={mk?.draw_pct} color="text-slate-300 light:text-slate-700" />
         <Outcome value={m.away_win_pct} label={away.name} market={mk?.away_win_pct} color="text-amber-400" />
       </div>
 
@@ -180,7 +187,7 @@ export function SimulationV2({ sim, home, away }: { sim: SimV2; home: TeamBrief;
           <div className="font-mono text-lg">
             {x2(m.expected_goals.home)} : {x2(m.expected_goals.away)}
           </div>
-          <div className="text-xs text-slate-500 light:text-slate-400">Očekávané góly</div>
+          <div className="text-xs text-slate-500 light:text-slate-400">{t("mx.simv2.xg")}</div>
         </div>
         <div>
           <div className="font-mono text-lg">
@@ -189,7 +196,7 @@ export function SimulationV2({ sim, home, away }: { sim: SimV2; home: TeamBrief;
           <div className="text-xs text-slate-500 light:text-slate-400">Over / Under 2.5</div>
           {mk?.over25_pct != null && (
             <div className="text-[11px] text-slate-500 mt-0.5">
-              Chance {pct(mk.over25_pct)} / {pct(mk.under25_pct ?? 0)}
+              {t("mx.simv2.chanceOu", { over: pct(mk.over25_pct), under: pct(mk.under25_pct ?? 0) })}
             </div>
           )}
         </div>
@@ -197,13 +204,13 @@ export function SimulationV2({ sim, home, away }: { sim: SimV2; home: TeamBrief;
 
       {hasVolume && (
         <div className="mb-4 rounded-lg bg-slate-900/40 light:bg-slate-50 px-3 py-1">
-          <div className="text-xs uppercase tracking-wide text-slate-500 pt-2 pb-1">Střely (očekávané)</div>
-          <VolumeRow label="Střely" side={m.expected_shots} homeName={home.name} awayName={away.name} />
-          <VolumeRow label="Střely na branku" side={m.expected_sot} homeName={home.name} awayName={away.name} />
+          <div className="text-xs uppercase tracking-wide text-slate-500 pt-2 pb-1">{t("mx.simv2.volumeTitle")}</div>
+          <VolumeRow label={t("mx.simv2.shots")} side={m.expected_shots} homeName={home.name} awayName={away.name} />
+          <VolumeRow label={t("mx.simv2.sot")} side={m.expected_sot} homeName={home.name} awayName={away.name} />
         </div>
       )}
 
-      <h4 className="text-sm font-medium text-slate-300 light:text-slate-700 mb-2">Nejpravděpodobnější výsledky</h4>
+      <h4 className="text-sm font-medium text-slate-300 light:text-slate-700 mb-2">{t("mx.sim.topScores")}</h4>
       <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
         {m.top_scorelines.map((s) => (
           <div key={s.score} className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-2 text-center">
@@ -215,23 +222,31 @@ export function SimulationV2({ sim, home, away }: { sim: SimV2; home: TeamBrief;
 
       <div className="mt-4 text-xs text-slate-500 space-y-0.5">
         <div>
-          Orientačně: oba dají gól {pct(m.btts_pct)}
-          {m.expected_corners
-            ? ` · rohy ${x1(m.expected_corners.home)} : ${x1(m.expected_corners.away)} (celkem ${x1(
-                m.expected_corners.total ?? m.expected_corners.home + m.expected_corners.away,
-              )})`
-            : ""}
-          . U těchto dvou čísel zpětný test neprokázal, že by byla výrazně lepší než ligový průměr.
+          {t("mx.simv2.rough", {
+            btts: pct(m.btts_pct),
+            corners: m.expected_corners
+              ? t("mx.simv2.corners", {
+                  home: x1(m.expected_corners.home),
+                  away: x1(m.expected_corners.away),
+                  total: x1(m.expected_corners.total ?? m.expected_corners.home + m.expected_corners.away),
+                })
+              : "",
+          })}
         </div>
         {mk && (
           <div>
-            Chance 1X2 kurz {x2(mk.odds.home)} / {x2(mk.odds.draw)} / {x2(mk.odds.away)}, marže {pct(mk.margin_pct)} odečtena.
+            {t("mx.simv2.odds", {
+              home: x2(mk.odds.home),
+              draw: x2(mk.odds.draw),
+              away: x2(mk.odds.away),
+              margin: pct(mk.margin_pct),
+            })}
           </div>
         )}
       </div>
 
       <button type="button" onClick={() => setOpen((o) => !o)} className="mt-4 text-sm text-emerald-400 hover:underline">
-        {open ? "Skrýt, jak číslo vzniklo" : "Ukázat, jak číslo vzniklo"}
+        {open ? t("mx.simv2.hide") : t("mx.simv2.show")}
       </button>
       {open && <Breakdown sim={sim} home={home} away={away} />}
     </Section>

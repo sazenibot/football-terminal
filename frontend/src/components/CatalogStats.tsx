@@ -1,7 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
 import type { CatalogPlayerSeason, CatalogRecentMatch, CatalogUpcoming } from "../types";
 import { formatDate, formatDateTime } from "../lib/format";
 import { ResultBadge } from "./ui";
+import { ord } from "../cat/kit";
+import { t, type Key } from "../i18n/locale";
 
 export function Metric({
   label,
@@ -32,15 +34,15 @@ const FDR_CLASS: Record<string, string> = {
   hard: "text-rose-400",
 };
 
-const FDR_LABEL: Record<string, string> = {
-  easy: "slabší",
-  mid: "střed",
-  hard: "těžší",
+const FDR_LABEL: Record<string, Key> = {
+  easy: "ct.cs.fdr.easy",
+  mid: "ct.cs.fdr.mid",
+  hard: "ct.cs.fdr.hard",
 };
 
 export function UpcomingList({ items }: { items: CatalogUpcoming[] }) {
   if (items.length === 0) {
-    return <EmptyNote>V nejbližším okně nic není.</EmptyNote>;
+    return <EmptyNote>{t("ct.cs.noUpcoming")}</EmptyNote>;
   }
   return (
     <div className="space-y-2">
@@ -50,12 +52,12 @@ export function UpcomingList({ items }: { items: CatalogUpcoming[] }) {
             <span className="text-slate-500 w-32 shrink-0">
               {fx.starting_at ? formatDateTime(fx.starting_at) : "—"}
             </span>
-            <span className="text-slate-400 w-12">{fx.is_home ? "Doma" : "Venku"}</span>
+            <span className="text-slate-400 w-12">{fx.is_home ? t("ct.cs.home") : t("ct.cs.away")}</span>
             <span className="text-white light:text-slate-900 flex-1">{fx.opponent.name}</span>
             {fx.opponent_position != null && (
               <span className={`text-xs ${FDR_CLASS[fx.fdr || ""] || "text-slate-500"}`}>
-                {fx.opponent_position}.
-                {fx.fdr ? ` · ${FDR_LABEL[fx.fdr]}` : ""}
+                {ord(fx.opponent_position)}
+                {fx.fdr ? ` · ${t(FDR_LABEL[fx.fdr])}` : ""}
               </span>
             )}
           </div>
@@ -80,7 +82,7 @@ export function UpcomingList({ items }: { items: CatalogUpcoming[] }) {
 
 export function RecentList({ items }: { items: CatalogRecentMatch[] }) {
   if (items.length === 0) {
-    return <EmptyNote>V této sezóně ještě nemáme odehraný ligový zápas.</EmptyNote>;
+    return <EmptyNote>{t("ct.cs.noRecent")}</EmptyNote>;
   }
   return (
     <div className="space-y-2">
@@ -91,7 +93,7 @@ export function RecentList({ items }: { items: CatalogRecentMatch[] }) {
             <span className="text-slate-500 w-24 shrink-0">
               {fx.starting_at ? formatDate(fx.starting_at) : "—"}
             </span>
-            <span className="text-slate-400 w-12">{fx.is_home ? "Doma" : "Venku"}</span>
+            <span className="text-slate-400 w-12">{fx.is_home ? t("ct.cs.home") : t("ct.cs.away")}</span>
             <span className="flex-1 text-white light:text-slate-900">{fx.opponent.name}</span>
             <span className="font-mono text-white light:text-slate-900">
               {fx.gf}:{fx.ga}
@@ -116,19 +118,19 @@ export function RecentList({ items }: { items: CatalogRecentMatch[] }) {
   );
 }
 
-const PLAYER_METRICS: { key: keyof CatalogPlayerSeason; label: string }[] = [
-  { key: "appearances", label: "Starty" },
-  { key: "minutes", label: "Minuty" },
-  { key: "goals", label: "Góly" },
-  { key: "assists", label: "Asistence" },
-  { key: "shots", label: "Střely" },
-  { key: "sot", label: "Na bránu" },
-  { key: "yellow", label: "Žluté" },
-  { key: "red", label: "Červené" },
-  { key: "rating", label: "Rating" },
-  { key: "saves", label: "Zákroky" },
-  { key: "clean_sheets", label: "Nuly" },
-  { key: "goals_conceded", label: "Obdrženo" },
+const PLAYER_METRICS: { key: keyof CatalogPlayerSeason; label: Key }[] = [
+  { key: "appearances", label: "ct.cs.m.appearances" },
+  { key: "minutes", label: "ct.cs.m.minutes" },
+  { key: "goals", label: "ct.cs.m.goals" },
+  { key: "assists", label: "ct.cs.m.assists" },
+  { key: "shots", label: "ct.cs.m.shots" },
+  { key: "sot", label: "ct.cs.m.sot" },
+  { key: "yellow", label: "ct.cs.m.yellow" },
+  { key: "red", label: "ct.cs.m.red" },
+  { key: "rating", label: "ct.cs.m.rating" },
+  { key: "saves", label: "ct.cs.m.saves" },
+  { key: "clean_sheets", label: "ct.cs.m.clean_sheets" },
+  { key: "goals_conceded", label: "ct.cs.m.goals_conceded" },
 ];
 
 const GK_ONLY = new Set(["saves", "clean_sheets", "goals_conceded"]);
@@ -147,12 +149,12 @@ export function PlayerSeasonGrid({
     return true;
   });
   if (items.length === 0) {
-    return <EmptyNote>Sezónní KPI u tohoto hráče zatím nemáme.</EmptyNote>;
+    return <EmptyNote>{t("ct.cs.noKpi")}</EmptyNote>;
   }
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
       {items.map((m) => (
-        <Metric key={m.key} label={m.label} value={season?.[m.key]} />
+        <Metric key={m.key} label={t(m.label)} value={season?.[m.key]} />
       ))}
     </div>
   );

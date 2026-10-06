@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { t } from "../i18n/locale";
 import { useAccess } from "./AccessContext";
 import { FEATURES, allows, type Tier } from "./tiers";
 
@@ -26,14 +27,14 @@ export function useTabLock(kind: Kind) {
   const need = (id: string): Tier | null => (FREE_TABS[kind].includes(id) || allows(tier, min) ? null : min);
   /** Přidá ke štítku záložky zámeček. */
   const withLocks = <T extends { id: string; label: ReactNode }>(tabs: readonly T[]) =>
-    tabs.map((t) => ({
-      ...t,
-      label: need(t.id) ? (
+    tabs.map((tab) => ({
+      ...tab,
+      label: need(tab.id) ? (
         <>
-          {t.label} <span aria-label="zamčeno" className="text-[10px] opacity-70">🔒</span>
+          {tab.label} <span aria-label={t("gate.locked")} className="text-[10px] opacity-70">🔒</span>
         </>
       ) : (
-        t.label
+        tab.label
       ),
     }));
   return { need, withLocks };

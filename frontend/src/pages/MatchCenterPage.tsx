@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "../i18n/router";
 import { last5BadgeForTeam, type XgotBadge } from "../lib/xgEfficiency";
 import { h2hWithXgot, hasPitchData, radarXgot } from "../lib/pitchMatch";
 import { isStale, useDataIndex, useMatch, usePitchH2H, usePitchTeam, useSimV2, useXgotIndex } from "../lib/useData";
@@ -12,15 +12,16 @@ import { GoalsBlock, OutcomeBlock, ScorelinesBlock, VolumeBlock } from "../mc2/P
 import { GoalsXgotCard, TeamCompareCard } from "../mc2/Stats";
 import { BetbuilderCard, TrendsCard } from "../mc2/Trends";
 import type { MatchData } from "../types";
+import { intlTag, t, type Key } from "../i18n/locale";
 
-const TABS = [
-  { id: "overview", label: "Přehled" },
-  { id: "prediction", label: "Predikce" },
-  { id: "form", label: "Forma a H2H" },
-  { id: "stats", label: "Statistiky" },
-  { id: "people", label: "Hráči" },
-  { id: "referee", label: "Rozhodčí" },
-] as const;
+const TABS: readonly { id: "overview" | "prediction" | "form" | "stats" | "people" | "referee"; label: Key }[] = [
+  { id: "overview", label: "mc.tab.overview" },
+  { id: "prediction", label: "mc.tab.prediction" },
+  { id: "form", label: "mc.tab.form" },
+  { id: "stats", label: "mc.tab.stats" },
+  { id: "people", label: "mc.tab.people" },
+  { id: "referee", label: "mc.tab.referee" },
+];
 type TabId = (typeof TABS)[number]["id"];
 
 /* ---------- hlavička ---------- */
@@ -33,8 +34,8 @@ function LuckChip({ badge }: { badge: XgotBadge }) {
       className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold"
       style={{ color: c, background: `color-mix(in oklab, ${c} 14%, transparent)` }}
     >
-      {lucky ? "Štěstí" : "Smolaři"}
-      <Info label="Co to znamená">{badge.tooltip}</Info>
+      {lucky ? t("mc.luck.lucky") : t("mc.luck.unlucky")}
+      <Info label={t("mc.luck.what")}>{badge.tooltip}</Info>
     </span>
   );
 }
@@ -42,14 +43,14 @@ function LuckChip({ badge }: { badge: XgotBadge }) {
 function Hero({ m, badges }: { m: MatchData; badges: { home: XgotBadge | null; away: XgotBadge | null } }) {
   const k = kickoffLabel(m.starting_at);
   const d = new Date(m.starting_at);
-  const team = (t: MatchData["home"], side: "home" | "away", badge: XgotBadge | null) => (
+  const team = (tm: MatchData["home"], side: "home" | "away", badge: XgotBadge | null) => (
     <div className="flex min-w-0 flex-col items-center gap-2 text-center">
-      <TeamLogo team={t} size={56} />
+      <TeamLogo team={tm} size={56} />
       <div className="text-[15px] font-bold leading-tight sm:text-xl" style={{ overflowWrap: "anywhere" }}>
-        {t.name}
+        {tm.name}
       </div>
       <div className="text-[11px] font-semibold uppercase tracking-wider" style={{ color: side === "home" ? "var(--c-home)" : "var(--c-away)" }}>
-        {side === "home" ? "domácí" : "hosté"}
+        {side === "home" ? t("mc.side.home") : t("mc.side.away")}
       </div>
       {badge && <LuckChip badge={badge} />}
     </div>
@@ -63,8 +64,8 @@ function Hero({ m, badges }: { m: MatchData; badges: { home: XgotBadge | null; a
       <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-3 sm:gap-6">
         {team(m.home, "home", badges.home)}
         <div className="flex flex-col items-center gap-1.5 pt-1 text-center">
-          <div className="text-xs capitalize text-(--c-muted)">{d.toLocaleDateString("cs-CZ", { weekday: "short", day: "numeric", month: "numeric" })}</div>
-          <div className="text-2xl font-bold leading-none tabular-nums sm:text-3xl">{d.toLocaleTimeString("cs-CZ", { hour: "2-digit", minute: "2-digit" })}</div>
+          <div className="text-xs capitalize text-(--c-muted)">{d.toLocaleDateString(intlTag(), { weekday: "short", day: "numeric", month: "numeric" })}</div>
+          <div className="text-2xl font-bold leading-none tabular-nums sm:text-3xl">{d.toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" })}</div>
           <span
             className="mt-1 rounded-full px-2.5 py-1 text-[11px] font-semibold"
             style={{
@@ -104,9 +105,9 @@ export function MatchCenterPage() {
     return () => window.removeEventListener("scroll", on);
   }, []);
 
-  const tab = (TABS.find((t) => t.id === params.get("tab"))?.id ?? "overview") as TabId;
-  const go = (t: string) => {
-    setParams(t === "overview" ? {} : { tab: t }, { replace: true });
+  const tab = (TABS.find((x) => x.id === params.get("tab"))?.id ?? "overview") as TabId;
+  const go = (id: string) => {
+    setParams(id === "overview" ? {} : { tab: id }, { replace: true });
     requestAnimationFrame(() => {
       const el = barRef.current;
       if (el && el.getBoundingClientRect().top < 70) window.scrollTo({ top: el.offsetTop - 64, behavior: "smooth" });
@@ -121,7 +122,7 @@ export function MatchCenterPage() {
 
   const back = (
     <Link to={m?.league_id ? `/league/${m.league_id}` : "/"} className="inline-flex min-h-9 items-center text-[13px] text-(--c-accent) hover:underline">
-      ← Výpis kola
+      {t("mc.page.back")}
     </Link>
   );
 
@@ -129,7 +130,7 @@ export function MatchCenterPage() {
     return (
       <div className="mc2 mx-auto max-w-3xl px-4 pt-20">
         {back}
-        <p className="mt-4 text-(--c-loss)">Zápas se nepodařilo načíst: {error}</p>
+        <p className="mt-4 text-(--c-loss)">{t("mc.page.error", { error })}</p>
       </div>
     );
   if (missing)
@@ -137,11 +138,11 @@ export function MatchCenterPage() {
       <div className="mc2 mx-auto max-w-3xl px-4 pt-20">
         {back}
         <p className="mt-6 rounded-2xl border border-(--c-line) bg-(--c-surface) p-8 text-center text-(--c-muted)">
-          Detailní data k tomuto zápasu ještě nejsou. Objeví se po dalším denním běhu.
+          {t("mc.page.missing")}
         </p>
       </div>
     );
-  if (!m) return <div className="mc2 flex min-h-[60vh] items-center justify-center text-(--c-muted)">Načítám zápas…</div>;
+  if (!m) return <div className="mc2 flex min-h-[60vh] items-center justify-center text-(--c-muted)">{t("future.loading")}</div>;
 
   const badges = { home: last5BadgeForTeam(xgotIndex, m.home.id), away: last5BadgeForTeam(xgotIndex, m.away.id) };
   const pitchReady = pitchOn && !!homePitch && !!awayPitch && (!m.league_id || homePitch.league_id === m.league_id);
@@ -157,7 +158,7 @@ export function MatchCenterPage() {
       {back}
       {stale && checkedAt && (
         <div className="mt-3 rounded-xl border border-(--c-warn)/40 bg-(--c-warn)/10 px-3 py-2 text-[13px] text-(--c-warn)">
-          Data jsou starší než denní interval (poslední kontrola {new Date(checkedAt).toLocaleString("cs-CZ")}).
+          {t("list.stale", { when: new Date(checkedAt).toLocaleString(intlTag()) })}
         </div>
       )}
       <div className="mt-3">
@@ -167,19 +168,19 @@ export function MatchCenterPage() {
       <div ref={barRef} data-stuck={stuck}
         className="sticky top-14 z-30 -mx-4 mt-4 bg-(--c-page)/95 px-4 py-2 backdrop-blur before:pointer-events-none before:absolute before:inset-x-0 before:-top-14 before:h-14 before:bg-(--c-page) before:opacity-0 data-[stuck=true]:before:opacity-100"
       >
-        <div role="tablist" aria-label="Sekce zápasu" className="no-scrollbar flex gap-1 overflow-x-auto rounded-2xl border border-(--c-line) bg-(--c-surface) p-1">
-          {TABS.map((t, i) => {
-            const on = t.id === tab;
+        <div role="tablist" aria-label={t("mc.tabs.aria")} className="no-scrollbar flex gap-1 overflow-x-auto rounded-2xl border border-(--c-line) bg-(--c-surface) p-1">
+          {TABS.map((tb, i) => {
+            const on = tb.id === tab;
             return (
               <button
-                key={t.id}
-                id={`tab-${t.id}`}
+                key={tb.id}
+                id={`tab-${tb.id}`}
                 role="tab"
                 type="button"
                 aria-selected={on}
-                aria-controls={`panel-${t.id}`}
+                aria-controls={`panel-${tb.id}`}
                 tabIndex={on ? 0 : -1}
-                onClick={() => go(t.id)}
+                onClick={() => go(tb.id)}
                 onKeyDown={(e) => {
                   if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
                     const n = TABS[(i + (e.key === "ArrowRight" ? 1 : TABS.length - 1)) % TABS.length];
@@ -191,7 +192,7 @@ export function MatchCenterPage() {
                   on ? "bg-(--c-accent) text-black" : "text-(--c-muted) hover:text-(--c-text)"
                 }`}
               >
-                {t.label}
+                {t(tb.label)}
               </button>
             );
           })}
@@ -203,19 +204,19 @@ export function MatchCenterPage() {
 
         {tab === "prediction" && (
           <>
-            <Card title="Kdo vyhraje" lead="Pravděpodobnost výhry domácích, remízy a výhry hostů.">
+            <Card title={t("mc.pred.outcome.title")} lead={t("mc.pred.outcome.lead")}>
               <OutcomeBlock p={p} home={m.home} away={m.away} />
             </Card>
             <div className="grid gap-5 md:grid-cols-2">
-              <Card title="Góly" lead="Kolik gólů padne.">
+              <Card title={t("mc.pred.goals.title")} lead={t("mc.pred.goals.lead")}>
                 <GoalsBlock p={p} />
               </Card>
-              <Card title="Nejpravděpodobnější výsledky" lead="Nejčastější výsledky objevující se v simulacích.">
+              <Card title={t("mc.pred.scorelines.title")} lead={t("mc.pred.scorelines.lead")}>
                 <ScorelinesBlock p={p} />
               </Card>
             </div>
             {(p.shots || p.sot || p.corners) && (
-              <Card title="Střely a rohy" lead="Očekávaný počet za zápas pro každý tým na základě simulací.">
+              <Card title={t("mc.pred.volume.title")} lead={t("mc.pred.volume.lead")}>
                 <VolumeBlock p={p} home={m.home} away={m.away} />
               </Card>
             )}
@@ -250,8 +251,8 @@ export function MatchCenterPage() {
       </div>
 
       <footer className="space-y-1 pt-8 text-center text-xs text-(--c-faint)">
-        <p>Informativní údaje, nejde o doporučení k sázce.</p>
-        {checkedAt && <p>Data zkontrolována {new Date(checkedAt).toLocaleString("cs-CZ")}</p>}
+        <p>{t("mc.page.disclaimer")}</p>
+        {checkedAt && <p>{t("mc.page.checked", { when: new Date(checkedAt).toLocaleString(intlTag()) })}</p>}
       </footer>
     </div>
   );

@@ -1,28 +1,31 @@
 import { useMemo, useState, type MouseEvent } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "../i18n/router";
 import { useAccess } from "../access/AccessContext";
 import { Paywall, TierBadge } from "../access/Gate";
 import { allows } from "../access/tiers";
 import { Back, Frame, NotFound, Pill } from "../cat/kit";
-import { CATEGORIES, articleBySlug, articleTeaser, articles, renderMarkdown } from "../content/content";
+import { articleBySlug, articleTeaser, getArticles, renderMarkdown } from "../content/content";
+import { t } from "../i18n/locale";
 import { Chip } from "../mc2/kit";
 import { fmtDate } from "../site/data";
 
 export function ArticlesPage() {
   const [cat, setCat] = useState<string>("all");
-  const list = useMemo(() => (cat === "all" ? articles : articles.filter((a) => a.category === cat)), [cat]);
+  const articles = useMemo(() => getArticles(), []);
+  const categories = useMemo(() => [...new Set(articles.map((a) => a.category))], [articles]);
+  const list = useMemo(() => (cat === "all" ? articles : articles.filter((a) => a.category === cat)), [cat, articles]);
   return (
     <Frame wide>
-      <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-(--c-accent)">Servis</p>
-      <h1 className="mt-1 text-3xl font-bold">Články a návody</h1>
+      <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-(--c-accent)">{t("articles.eyebrow")}</p>
+      <h1 className="mt-1 text-3xl font-bold">{t("articles.title")}</h1>
       <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-(--c-muted)">
-        Jak číst jednotlivé statistiky, jak se vyznat na webu a jak model funguje. Ať víte, co čísla říkají, a hlavně co ne.
+        {t("articles.lead")}
       </p>
       <div className="mt-5 flex flex-wrap gap-1.5">
         <Chip active={cat === "all"} onClick={() => setCat("all")}>
-          Vše
+          {t("articles.all")}
         </Chip>
-        {CATEGORIES.filter((c) => articles.some((a) => a.category === c)).map((c) => (
+        {categories.map((c) => (
           <Chip key={c} active={cat === c} onClick={() => setCat(c)}>
             {c}
           </Chip>
@@ -38,7 +41,7 @@ export function ArticlesPage() {
             <h2 className="mt-2 text-[17px] font-semibold leading-snug">{a.title}</h2>
             <p className="mt-1 text-[13px] leading-snug text-(--c-muted)">{a.excerpt}</p>
             <p className="mt-3 text-[12px] text-(--c-faint)">
-              {fmtDate(a.date)} · {a.minutes} min čtení
+              {fmtDate(a.date)} · {t("articles.minutesRead", { n: a.minutes })}
             </p>
           </Link>
         ))}
@@ -52,8 +55,8 @@ export function ArticlePage() {
   const article = articleBySlug(slug);
   const { tier } = useAccess();
   const navigate = useNavigate();
-  const back = <Back to="/clanky">Články</Back>;
-  if (!article) return <NotFound kind="Tento článek" back={back} />;
+  const back = <Back to="/clanky">{t("articles.back")}</Back>;
+  if (!article) return <NotFound kind={t("articles.notFound")} back={back} />;
 
   const open = allows(tier, article.tier);
   const html = renderMarkdown(open ? article.body.replace("<!-- gate -->", "") : articleTeaser(article.body));
@@ -78,7 +81,7 @@ export function ArticlePage() {
         </div>
         <h1 className="mt-2 text-[28px] font-bold leading-tight sm:text-4xl">{article.title}</h1>
         <p className="mt-2 text-[13px] text-(--c-faint)">
-          {fmtDate(article.date)} · {article.minutes} min čtení
+          {fmtDate(article.date)} · {t("articles.minutesRead", { n: article.minutes })}
         </p>
         <div className="prose-ft relative mt-6" onClick={onClick}>
           <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -86,7 +89,7 @@ export function ArticlePage() {
         </div>
         {!open && (
           <div className="mt-2">
-            <Paywall need={article.tier} title="Zbytek článku je pro registrované" text="Úvod je otevřený. Pokračování odemkne bezplatný účet." />
+            <Paywall need={article.tier} title={t("articles.lockedTitle")} text={t("articles.lockedText")} />
           </div>
         )}
       </article>

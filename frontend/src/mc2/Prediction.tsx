@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import type { TeamBrief } from "../types";
 import type { Prediction } from "./derive";
+import { t } from "../i18n/locale";
 import { Card, Info, MeterBar, MirrorRow, ProbBar, SideHeads, SubTitle, ValueTag, n1, n2, pct } from "./kit";
 
 /* ---------- Kdo vyhraje ---------- */
@@ -31,8 +32,8 @@ function OutcomeCol({
       {market != null && (
         <div className="mt-2 text-[11px] leading-snug text-(--c-muted)">
           <div className="tabular-nums">
-            Sázková kancelář {pct(market)}
-            {odd != null && <span className="text-(--c-faint)"> · kurz {n2(odd)}</span>}
+            {t("mc.pr.bookmaker", { p: pct(market) })}
+            {odd != null && <span className="text-(--c-faint)"> · {t("mc.pr.odds", { v: n2(odd) })}</span>}
           </div>
           <div className={`mt-1 flex ${j}`}>
             <ValueTag model={value} market={market} />
@@ -49,7 +50,7 @@ export function OutcomeBlock({ p, home, away }: { p: Prediction; home: TeamBrief
     <div>
       <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-3">
         <OutcomeCol name={home.name} value={p.home} color="var(--c-home)" market={mk?.home_win_pct} odd={mk?.odds.home} align="left" />
-        <OutcomeCol name="Remíza" value={p.draw} color="var(--c-muted)" market={mk?.draw_pct} odd={mk?.odds.draw} align="center" />
+        <OutcomeCol name={t("mc.pr.draw")} value={p.draw} color="var(--c-muted)" market={mk?.draw_pct} odd={mk?.odds.draw} align="center" />
         <OutcomeCol name={away.name} value={p.away} color="var(--c-away)" market={mk?.away_win_pct} odd={mk?.odds.away} align="right" />
       </div>
       <div className="mt-3">
@@ -57,7 +58,7 @@ export function OutcomeBlock({ p, home, away }: { p: Prediction; home: TeamBrief
       </div>
       {mk && (
         <p className="mt-2 text-[11px] text-(--c-faint)">
-          Sázková kancelář = kurzy přepočtené na pravděpodobnost bez marže. Slouží jen ke srovnání.
+          {t("mc.pr.bookmakerNote")}
         </p>
       )}
     </div>
@@ -70,11 +71,11 @@ export function PredictionSummary({ p, home, away, onMore }: { p: Prediction; ho
   const top = p.scorelines[0];
   return (
     <Card
-      title="Predikce zápasu"
-      lead="Počítač 10 000× odehrál tenhle zápas podle formy a síly soupeřů."
+      title={t("mc.pr.sum.title")}
+      lead={t("mc.pr.sum.lead")}
       aside={
         <button type="button" onClick={onMore} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-          Celá predikce ›
+          {t("mc.pr.sum.more")}
         </button>
       }
     >
@@ -82,7 +83,7 @@ export function PredictionSummary({ p, home, away, onMore }: { p: Prediction; ho
 
       <div className="mt-5 grid grid-cols-3 gap-2">
         <MiniFact
-          label="Očekávané góly"
+          label={t("mc.pr.xg")}
           value={
             <>
               <span style={{ color: "var(--c-home)" }}>{n2(p.xg.home)}</span>
@@ -91,11 +92,11 @@ export function PredictionSummary({ p, home, away, onMore }: { p: Prediction; ho
             </>
           }
         />
-        <MiniFact label="Nejčastější skóre" value={top ? top.score.replace("-", ":") : "—"} sub={top ? pct(top.pct, 1) : undefined} />
+        <MiniFact label={t("mc.pr.topScore")} value={top ? top.score.replace("-", ":") : "—"} sub={top ? pct(top.pct, 1) : undefined} />
         <MiniFact
-          label="Over 2,5 gólu"
+          label={t("mc.pr.over25goals")}
           value={pct(p.over25)}
-          sub={p.market?.over25_pct != null ? `Sázková kancelář ${pct(p.market.over25_pct)}` : undefined}
+          sub={p.market?.over25_pct != null ? t("mc.pr.bookmaker", { p: pct(p.market.over25_pct) }) : undefined}
           tag={<ValueTag model={p.over25} market={p.market?.over25_pct} />}
         />
       </div>
@@ -139,8 +140,8 @@ function LineRow({
       {market != null && (
         <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 pl-[6.25rem] text-[11px] text-(--c-faint)">
           <span className="tabular-nums">
-            Sázková kancelář {pct(market)}
-            {odd != null && <> · kurz {n2(odd)}</>}
+            {t("mc.pr.bookmaker", { p: pct(market) })}
+            {odd != null && <> · {t("mc.pr.odds", { v: n2(odd) })}</>}
           </span>
           <ValueTag model={value} market={market} />
         </div>
@@ -167,20 +168,20 @@ export function GoalsBlock({ p }: { p: Prediction }) {
         </div>
       </div>
       <div className="mb-4 text-center text-xs text-(--c-muted)">
-        očekávané góly (průměr ze všech simulací)
-        <Info>Ne konkrétní výsledek, ale průměr. Skutečný zápas skončí celým číslem. Nejpravděpodobnější výsledky jsou níž.</Info>
+        {t("mc.pr.xgAvg")}
+        <Info>{t("mc.pr.xgAvgInfo")}</Info>
       </div>
 
-      <SubTitle>Kolik padne gólů</SubTitle>
-      {p.over15 != null && <LineRow label="Over 1,5" value={p.over15} market={mk?.over15_pct} odd={mk?.odds.over15} />}
-      <LineRow label="Over 2,5" value={p.over25} emphasize market={mk?.over25_pct} odd={mk?.odds.over25} />
-      {p.over35 != null && <LineRow label="Over 3,5" value={p.over35} market={mk?.over35_pct} odd={mk?.odds.over35} />}
-      <LineRow label="Under 2,5" value={p.under25} market={mk?.under25_pct} odd={mk?.odds.under25} />
+      <SubTitle>{t("mc.pr.howManyGoals")}</SubTitle>
+      {p.over15 != null && <LineRow label={t("mc.pr.line.over15")} value={p.over15} market={mk?.over15_pct} odd={mk?.odds.over15} />}
+      <LineRow label={t("mc.pr.line.over25")} value={p.over25} emphasize market={mk?.over25_pct} odd={mk?.odds.over25} />
+      {p.over35 != null && <LineRow label={t("mc.pr.line.over35")} value={p.over35} market={mk?.over35_pct} odd={mk?.odds.over35} />}
+      <LineRow label={t("mc.pr.line.under25")} value={p.under25} market={mk?.under25_pct} odd={mk?.odds.under25} />
 
       <div className="mt-4 flex items-center justify-between gap-3 rounded-xl bg-(--c-raised) px-3 py-2.5">
         <span className="text-[13px] text-(--c-muted)">
-          Oba týmy skórují
-          <Info>Orientační číslo.</Info>
+          {t("mc.pr.btts")}
+          <Info>{t("mc.pr.approx")}</Info>
         </span>
         <span className="text-sm font-semibold tabular-nums text-(--c-muted)">{pct(p.btts)}</span>
       </div>
@@ -197,29 +198,29 @@ export function VolumeBlock({ p, home, away }: { p: Prediction; home: TeamBrief;
       <SideHeads home={home} away={away} />
       {p.shots && (
         <MirrorRow
-          label="Střely"
+          label={t("mc.pr.shots")}
           home={p.shots.home}
           away={p.shots.away}
-          note={p.shots.league_avg != null ? `liga Ø ${n1(p.shots.league_avg)} na tým` : undefined}
+          note={p.shots.league_avg != null ? t("mc.pr.leagueAvg", { n: n1(p.shots.league_avg) }) : undefined}
         />
       )}
       {p.sot && (
         <MirrorRow
-          label="Střely na branku"
-          hint="Střely, které mířily na bránu (chycené brankářem i góly)."
+          label={t("mc.pr.sot")}
+          hint={t("mc.pr.sotHint")}
           home={p.sot.home}
           away={p.sot.away}
-          note={p.sot.league_avg != null ? `liga Ø ${n1(p.sot.league_avg)} na tým` : undefined}
+          note={p.sot.league_avg != null ? t("mc.pr.leagueAvg", { n: n1(p.sot.league_avg) }) : undefined}
         />
       )}
       {p.corners && (
         <MirrorRow
-          label="Rohy"
+          label={t("mc.pr.corners")}
           muted
-          hint="Orientační číslo."
+          hint={t("mc.pr.approx")}
           home={p.corners.home}
           away={p.corners.away}
-          note="orientačně"
+          note={t("mc.pr.approxNote")}
         />
       )}
     </div>
@@ -240,7 +241,7 @@ export function ScorelinesBlock({ p }: { p: Prediction }) {
           <span className="text-right text-xs tabular-nums text-(--c-muted)">{pct(s.pct, 1)}</span>
         </div>
       ))}
-      <p className="pt-1 text-[11px] text-(--c-faint)">I nejčastější výsledek padne jen v zlomku zápasů. Proto sledujte spíš celkové pravděpodobnosti nahoře.</p>
+      <p className="pt-1 text-[11px] text-(--c-faint)">{t("mc.pr.scoreNote")}</p>
     </div>
   );
 }

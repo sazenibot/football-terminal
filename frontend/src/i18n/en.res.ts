@@ -1,0 +1,80 @@
+import type { csRes } from "./cs.res";
+
+/* Anglické texty: res. */
+export const enRes: Record<keyof typeof csRes, string> = {
+  /* ---------- Results page ---------- */
+  "res.eyebrow": "Results",
+  "res.title": "Does our model work?",
+  "res.lead.pre": "Two separate things that must not be mixed.",
+  "res.lead.liveBold": "Live book",
+  "res.lead.live": ": predictions we lock before kick-off and settle after the match. Nothing is edited retroactively.",
+  "res.lead.backBold": "Backtest",
+  "res.lead.back": ": how the model would have predicted matches already played if it only knew the data before them.",
+  "res.loadError": "We couldn't load the results.",
+  "res.loading": "Loading…",
+
+  /* ---------- live book ---------- */
+  "res.live.title": "Live prediction book",
+  "res.live.since": "since {date}",
+  "res.live.lead": "Predictions are locked before kick-off. We publish the probabilities after the match, next to the real result, so nobody can claim they were changed.",
+  "res.live.locked": "Locked predictions",
+  "res.live.settled": "Settled",
+  "res.live.upcoming": "Awaiting kick-off",
+  "res.live.empty": "Nothing to evaluate yet. The first results will appear after the first match from the book is played. Until a few dozen matches are settled, we won't calculate any accuracy.",
+  "res.live.hitModel": "Correct (model)",
+  "res.live.loglossModel": "Model log loss",
+  "res.live.hitMarket": "Correct (odds)",
+  "res.live.loglossMarket": "Odds log loss",
+  "res.live.pendingTitle": "Locked, awaiting the match",
+  "res.col.kickoff": "Kick-off",
+  "res.col.match": "Match",
+  "res.col.locked": "Locked",
+
+  /* ---------- backtest ---------- */
+  "res.bt.title": "Backtest",
+  "res.bt.lead": "{league}, season {season}, {from} – {to}. For each match, the model uses only data that was available before it.",
+  "res.bt.accuracy": "Correct result",
+  "res.bt.accuracyHint": "Always home: {pct} (+{lift} pp)",
+  "res.bt.logloss": "Log loss (lower is better)",
+  "res.bt.loglossHint": "Based on frequencies alone: {v}",
+  "res.bt.brier": "Brier score (lower is better)",
+  "res.bt.matches": "Matches",
+  "res.bt.matchesHint": "Actual: {home} home, {draw} draw, {away} away",
+  "res.bt.margin": "With {n, plural, one {# match} other {# matches}}, accuracy carries a margin of roughly ±{pm} percentage points. Log loss and Brier score also reward how confident the model was, not just whether it was right.",
+  "res.bt.gateTitle": "Registered users can see the calibration and match list",
+  "res.bt.gateText": "A free account is enough.",
+
+  /* ---------- calibration ---------- */
+  "res.cal.title": "Calibration: when the model says X%, how often does it happen?",
+  "res.cal.lead": "Each outcome (home, draw, away) in each match counts as one prediction. If the model is well calibrated, the paired bars are equally tall. The fewer predictions in a band, the more of the gap is down to chance.",
+  "res.cal.model": "Model expected",
+  "res.cal.real": "Actually happened",
+  "res.cal.count": "{n, plural, one {# prediction} other {# predictions}}",
+
+  /* ---------- match list ---------- */
+  "res.list.title": "Match list",
+  "res.list.date": "Date",
+  "res.list.match": "Match",
+  "res.list.score": "Score",
+  "res.list.probs": "Model H / D / A",
+  "res.list.pick": "Model pick",
+  "res.list.less": "Show less",
+  "res.list.all": "Show all {n}",
+  "res.word.home": "Home",
+  "res.word.draw": "Draw",
+  "res.word.away": "Away",
+
+  /* ---------- limits ---------- */
+  "res.limits.title": "What to take from these numbers, and what not",
+  "res.limits.1.b": "{n, plural, one {# match is} other {# matches are}} not many.",
+  "res.limits.1.t": "The numbers show a direction, not certainty. They will sharpen as more rounds are played.",
+  "res.limits.2.b": "A backtest is not a live result.",
+  "res.limits.2.t": "We tuned the model settings on the 2025/26 season, and 2026/27 serves as independent validation. Even so, it is a look back, which is why we keep a separate live book that cannot be edited.",
+  "res.limits.3.b": "We don't compare against odds yet.",
+  "res.limits.3.t": "We have no historical odds for past matches. A comparison of model and market will be possible from the live book, where we store the odds together with the prediction.",
+  "res.limits.4.b": "Picking the winner doesn't mean making money.",
+  "res.limits.4.t": "What matters is the ratio between probability and odds. That is why we also track log loss and calibration.",
+  "res.limits.how": "How the model works",
+  "res.limits.howText": "You'll find a short explanation in the article",
+  "res.limits.howLink": "How the match simulation works",
+};

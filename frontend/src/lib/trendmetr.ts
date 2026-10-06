@@ -1,11 +1,13 @@
 import type { MatchData, MatchFacts, TeamBrief } from "../types";
+import { getLocale, t } from "../i18n/locale";
 
+/* Popisky jsou getery, aby se překlad vyhodnotil při vykreslení (ne při importu modulu). */
 export const TRENDMETR_METRICS = [
-  { key: "shots", short: "Střely", name: "Střely" },
-  { key: "sot", short: "Na branku", name: "Střely na branku" },
-  { key: "corners", short: "Rohy", name: "Rohy získané" },
-  { key: "fouls", short: "Fauly", name: "Fauly způsobené" },
-  { key: "offsides", short: "Ofsajdy", name: "Ofsajdy" },
+  { key: "shots", get short() { return t("mc.tm.shots.short"); }, get name() { return t("mc.tm.shots.name"); } },
+  { key: "sot", get short() { return t("mc.tm.sot.short"); }, get name() { return t("mc.tm.sot.name"); } },
+  { key: "corners", get short() { return t("mc.tm.corners.short"); }, get name() { return t("mc.tm.corners.name"); } },
+  { key: "fouls", get short() { return t("mc.tm.fouls.short"); }, get name() { return t("mc.tm.fouls.name"); } },
+  { key: "offsides", get short() { return t("mc.tm.offsides.short"); }, get name() { return t("mc.tm.offsides.name"); } },
 ] as const;
 
 export type TrendmetrMetricKey = (typeof TRENDMETR_METRICS)[number]["key"];
@@ -57,7 +59,8 @@ function vsOpponent(rows: MatchFacts[], opponentName: string): MatchFacts[] {
 }
 
 export function overLabel(line: number): string {
-  return `${String(line - 0.5).replace(".", ",")}+`;
+  const n = String(line - 0.5);
+  return `${getLocale() === "cs" ? n.replace(".", ",") : n}+`;
 }
 
 export function teamShort(name: string): string {

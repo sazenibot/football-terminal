@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { MatchData, RefereeInfo, RefereeTeamMatch, TeamBrief } from "../types";
 import { formatDate } from "../lib/format";
+import { t } from "../i18n/locale";
 import { Pill, Section } from "./ui";
 
 // Stejná barevná logika jako u H2H výsledků (1. sekce) — ať je vizuální jazyk
@@ -68,8 +69,8 @@ export function RefereeSection({
 
   if (!referee) {
     return (
-      <Section title="9. Rozhodčí">
-        <p className="text-slate-500 light:text-slate-400 text-sm">Rozhodčí ještě není přiřazen.</p>
+      <Section title={t("mx.ref.title")}>
+        <p className="text-slate-500 light:text-slate-400 text-sm">{t("mx.ref.none")}</p>
       </Section>
     );
   }
@@ -78,22 +79,22 @@ export function RefereeSection({
   const c = referee.career_stats;
 
   return (
-    <Section title="9. Rozhodčí" subtitle={referee.name}>
+    <Section title={t("mx.ref.title")} subtitle={referee.name}>
       <div className="flex flex-wrap gap-2 mb-4">
         <Pill active={tab === "season"} onClick={() => setTab("season")}>
-          Tato sezóna
+          {t("mx.ref.tabSeason")}
         </Pill>
         <Pill active={tab === "career"} onClick={() => setTab("career")}>
-          Kariérní data
+          {t("mx.ref.tabCareer")}
         </Pill>
         <Pill active={tab === "h2h"} onClick={() => setTab("h2h")}>
-          Vzájemné zápasy
+          {t("mx.common.h2h")}
         </Pill>
         <Pill active={tab === "home"} onClick={() => setTab("home")}>
-          Zápasy {home.name}
+          {t("mx.ref.tabTeam", { name: home.name })}
         </Pill>
         <Pill active={tab === "away"} onClick={() => setTab("away")}>
-          Zápasy {away.name}
+          {t("mx.ref.tabTeam", { name: away.name })}
         </Pill>
       </div>
 
@@ -101,43 +102,42 @@ export function RefereeSection({
         s ? (
           <>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
-              <Metric label="Zápasy v sezóně" value={statCount(s["Season Matches"])} />
+              <Metric label={t("mx.ref.seasonMatches")} value={statCount(s["Season Matches"])} />
               <Metric
-                label="Fauly/zápas"
+                label={t("mx.ref.foulsPm")}
                 value={s["Fouls"]?.average ?? "—"}
-                sub={referee.league_context ? `ligový průměr: ${referee.league_context.fouls_per_match}` : undefined}
+                sub={referee.league_context ? t("mx.ref.leagueAvg", { n: referee.league_context.fouls_per_match }) : undefined}
               />
               <Metric
-                label="Žluté/zápas"
+                label={t("mx.ref.yellowPm")}
                 value={statAvg(s["Yellowcards"])}
-                sub={referee.league_context ? `ligový průměr: ${referee.league_context.yellow_per_match}` : undefined}
+                sub={referee.league_context ? t("mx.ref.leagueAvg", { n: referee.league_context.yellow_per_match }) : undefined}
               />
               <Metric
-                label="Červené/zápas"
+                label={t("mx.ref.redPm")}
                 value={statAvg(s["Redcards"])}
-                sub={referee.league_context ? `ligový průměr: ${referee.league_context.red_per_match}` : undefined}
+                sub={referee.league_context ? t("mx.ref.leagueAvg", { n: referee.league_context.red_per_match }) : undefined}
               />
-              <Metric label="Penalty/zápas" value={statAvg(s["Penalties"])} />
+              <Metric label={t("mx.ref.pensPm")} value={statAvg(s["Penalties"])} />
             </div>
             {referee.league_context && (
               <p className="text-xs text-slate-500 light:text-slate-400 mt-3">
-                Ligový průměr = průměr přes {referee.league_context.matches_sampled} odehraných zápasů celé soutěže v
-                této sezóně (kontext, jestli je rozhodčí nadprůměrně přísný, nebo naopak).
+                {t("mx.ref.leagueNote", { n: referee.league_context.matches_sampled })}
               </p>
             )}
           </>
         ) : (
-          <p className="text-slate-500 light:text-slate-400 text-sm">Pro tuto sezónu ještě nemá rozhodčí žádný zápas.</p>
+          <p className="text-slate-500 light:text-slate-400 text-sm">{t("mx.ref.noSeason")}</p>
         )
       )}
 
       {tab === "career" && (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-center">
-          <Metric label="Sledovaných sezón" value={c.total_seasons_tracked} />
-          <Metric label="Odpískané zápasy" value={c.matches} />
-          <Metric label="Žluté karty celkem" value={c.yellow_cards} />
-          <Metric label="Červené karty celkem" value={c.red_cards} />
-          <Metric label="Žluté/zápas (kariéra)" value={c.avg_yellow_per_match ?? "—"} />
+          <Metric label={t("mx.ref.seasonsTracked")} value={c.total_seasons_tracked} />
+          <Metric label={t("mx.ref.officiated")} value={c.matches} />
+          <Metric label={t("mx.ref.yellowTotal")} value={c.yellow_cards} />
+          <Metric label={t("mx.ref.redTotal")} value={c.red_cards} />
+          <Metric label={t("mx.ref.yellowCareer")} value={c.avg_yellow_per_match ?? "—"} />
         </div>
       )}
 
@@ -145,7 +145,7 @@ export function RefereeSection({
         <div>
           {referee.h2h_matches_officiated.length === 0 ? (
             <p className="text-slate-500 light:text-slate-400 text-sm">
-              {referee.name} v dostupných datech nepískal žádný vzájemný zápas této dvojice.
+              {t("mx.ref.h2hNone", { name: referee.name })}
             </p>
           ) : (
             <>
@@ -163,7 +163,7 @@ export function RefereeSection({
                 ))}
               </div>
               <p className="text-[11px] text-slate-600 light:text-slate-400 mt-2">
-                Všechny dostupné vzájemné zápasy, které {referee.name} pískal. Barva = výsledek z pohledu {home.name}.
+                {t("mx.ref.h2hNote", { name: referee.name, team: home.name })}
               </p>
             </>
           )}
@@ -177,19 +177,18 @@ export function RefereeSection({
           if (!summary) {
             return (
               <p className="text-slate-500 light:text-slate-400 text-sm">
-                {referee.name} nepískal žádný zápas týmu {teamName} za posledních ~2 sezóny v datech, ze kterých
-                čerpáme.
+                {t("mx.ref.teamNone", { name: referee.name, team: teamName })}
               </p>
             );
           }
           return (
             <div>
               <div className="grid grid-cols-2 md:grid-cols-5 gap-3 text-center mb-4">
-                <Metric label={`Zápasy ${teamName} s tímto rozhodčím`} value={summary.matches} />
-                <Metric label="Fauly týmu/zápas" value={summary.avg_fouls_by_team} />
-                <Metric label="Fauly celkem/zápas" value={summary.avg_fouls_total} />
-                <Metric label="Žluté týmu/zápas" value={summary.avg_yellow_by_team} />
-                <Metric label="Červené týmu/zápas" value={summary.avg_red_by_team} />
+                <Metric label={t("mx.ref.teamMatches", { team: teamName })} value={summary.matches} />
+                <Metric label={t("mx.ref.teamFouls")} value={summary.avg_fouls_by_team} />
+                <Metric label={t("mx.ref.totalFouls")} value={summary.avg_fouls_total} />
+                <Metric label={t("mx.ref.teamYellow")} value={summary.avg_yellow_by_team} />
+                <Metric label={t("mx.ref.teamRed")} value={summary.avg_red_by_team} />
               </div>
               <div className="space-y-1.5 text-sm">
                 {summary.recent_matches.map((m: RefereeTeamMatch) => (
@@ -205,8 +204,7 @@ export function RefereeSection({
                 ))}
               </div>
               <p className="text-[11px] text-slate-600 light:text-slate-400 mt-2">
-                Zahrnuje zápasy za posledních ~2 sezóny (ne jen aktuální), ať má statistika rozumný vzorek i na
-                začátku sezóny.
+                {t("mx.ref.teamNote")}
               </p>
             </div>
           );
@@ -246,7 +244,7 @@ export function SidelinedSection({
             <div className="text-slate-100 light:text-slate-800">{s.player_name}</div>
             <div className="text-xs text-slate-500 light:text-slate-400">
               {s.category_cs ?? s.category} · {s.type_name_cs}
-              {s.games_missed ? ` · zameškal ${s.games_missed} zápasů` : ""}
+              {s.games_missed ? ` · ${t("mx.side.missed", { n: s.games_missed })}` : ""}
             </div>
           </div>
           <span
@@ -256,18 +254,18 @@ export function SidelinedSection({
                 : "bg-rose-500/20 text-rose-300 light:bg-rose-100 light:text-rose-700"
             }`}
           >
-            {s.likely_available ? "možný návrat" : "chybí"}
+            {s.likely_available ? t("mx.side.maybe") : t("mx.side.out")}
           </span>
         </li>
       ))}
-      {list.length === 0 && <li className="text-slate-500 light:text-slate-400">Žádné hlášené absence.</li>}
+      {list.length === 0 && <li className="text-slate-500 light:text-slate-400">{t("mx.side.empty")}</li>}
     </ul>
   );
 
   return (
     <Section
-      title="10. Absence hráčů (zranění / tresty)"
-      note="'Možný návrat' = evidujeme očekávaný konec absence před termínem tohoto zápasu — orientační odhad, ne garance. 'Chybí' = konec absence není znám nebo je až po termínu zápasu. Data se doplňují postupně, jak se blíží zápas."
+      title={t("mx.side.title")}
+      note={t("mx.side.note")}
     >
       <div className="grid md:grid-cols-2 gap-6">
         <div>

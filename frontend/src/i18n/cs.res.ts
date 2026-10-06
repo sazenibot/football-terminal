@@ -1,0 +1,78 @@
+/* České texty: res. Zdroj pravdy; klíče musí mít předponu "res." */
+export const csRes = {
+  /* ---------- stránka Výsledky ---------- */
+  "res.eyebrow": "Výsledky",
+  "res.title": "Funguje náš model?",
+  "res.lead.pre": "Dvě oddělené věci, které se nesmí míchat.",
+  "res.lead.liveBold": "Živá kniha",
+  "res.lead.live": ": predikce, které zamkneme před výkopem a po zápase vyhodnotíme. Nic se zpětně nepřepisuje.",
+  "res.lead.backBold": "Zpětný test",
+  "res.lead.back": ": jak by model předpověděl už odehrané zápasy, kdyby znal jen data před nimi.",
+  "res.loadError": "Výsledky se nepodařilo načíst.",
+  "res.loading": "Načítám…",
+
+  /* ---------- živá kniha ---------- */
+  "res.live.title": "Živá kniha predikcí",
+  "res.live.since": "od {date}",
+  "res.live.lead": "Predikce se zamykají před výkopem. Pravděpodobnosti zveřejníme po zápase, vedle skutečného výsledku, ať nikdo nemůže tvrdit, že se upravily.",
+  "res.live.locked": "Zamčených predikcí",
+  "res.live.settled": "Vyhodnoceno",
+  "res.live.upcoming": "Čeká na výkop",
+  "res.live.empty": "Zatím není co vyhodnocovat. První výsledky přibudou po prvním odehraném zápase z knihy. Dokud nebude vyhodnocených aspoň několik desítek zápasů, nebudeme počítat žádnou úspěšnost.",
+  "res.live.hitModel": "Trefeno (model)",
+  "res.live.loglossModel": "Logloss modelu",
+  "res.live.hitMarket": "Trefeno (kurz)",
+  "res.live.loglossMarket": "Logloss kurzu",
+  "res.live.pendingTitle": "Zamčeno, čeká na zápas",
+  "res.col.kickoff": "Výkop",
+  "res.col.match": "Zápas",
+  "res.col.locked": "Zamčeno",
+
+  /* ---------- zpětný test ---------- */
+  "res.bt.title": "Zpětný test",
+  "res.bt.lead": "{league}, sezóna {season}, {from} – {to}. Model u každého zápasu používá jen data, která byla k dispozici před ním.",
+  "res.bt.accuracy": "Trefený výsledek",
+  "res.bt.accuracyHint": "Vždy domácí: {pct} (+{lift} p. b.)",
+  "res.bt.logloss": "Logloss (nižší je lepší)",
+  "res.bt.loglossHint": "Podle samotných frekvencí: {v}",
+  "res.bt.brier": "Brier skóre (nižší je lepší)",
+  "res.bt.matches": "Zápasů",
+  "res.bt.matchesHint": "Skutečně: {home} domácí, {draw} remíza, {away} hosté",
+  "res.bt.margin": "Přesnost je u {n, plural, one {# zápasu} other {# zápasů}} zatížená odchylkou přibližně ±{pm} procentních bodů. Logloss a Brier hodnotí i to, jak moc si model věřil, ne jen jestli trefil.",
+  "res.bt.gateTitle": "Kalibraci a rozpis zápasů vidí registrovaní",
+  "res.bt.gateText": "Stačí bezplatný účet.",
+
+  /* ---------- kalibrace ---------- */
+  "res.cal.title": "Kalibrace: když model řekne X %, jak často to vyjde?",
+  "res.cal.lead": "Každý výsledek (domácí, remíza, hosté) v každém zápase je jedna predikce. Pokud je model vyvážený, sloupce vedle sebe jsou stejně vysoké. Čím méně predikcí v pásmu, tím víc je rozdíl náhoda.",
+  "res.cal.model": "Model čekal",
+  "res.cal.real": "Skutečně nastalo",
+  "res.cal.count": "{n, plural, one {# predikce} few {# predikce} other {# predikcí}}",
+
+  /* ---------- rozpis zápasů ---------- */
+  "res.list.title": "Rozpis zápasů",
+  "res.list.date": "Datum",
+  "res.list.match": "Zápas",
+  "res.list.score": "Skóre",
+  "res.list.probs": "Model D / R / H",
+  "res.list.pick": "Tip modelu",
+  "res.list.less": "Zobrazit méně",
+  "res.list.all": "Zobrazit všech {n}",
+  "res.word.home": "Domácí",
+  "res.word.draw": "Remíza",
+  "res.word.away": "Hosté",
+
+  /* ---------- omezení ---------- */
+  "res.limits.title": "Co z těchto čísel vyčíst a co ne",
+  "res.limits.1.b": "{n, plural, one {# zápas je} few {# zápasy jsou} other {# zápasů je}} málo.",
+  "res.limits.1.t": "Čísla ukazují směr, ne jistotu. S přibývajícími koly se zpřesní.",
+  "res.limits.2.b": "Zpětný test není živý výsledek.",
+  "res.limits.2.t": "Nastavení modelu jsme ladili na sezóně 2025/26, sezóna 2026/27 slouží jako nezávislé ověření. I tak jde o zpětný pohled, proto vedeme zvlášť živou knihu, která se nedá upravit.",
+  "res.limits.3.b": "S kurzy se zatím neporovnáváme.",
+  "res.limits.3.t": "K zápasům z minulosti nemáme historické kurzy. Srovnání modelu a trhu bude možné z živé knihy, kde si kurz ukládáme spolu s predikcí.",
+  "res.limits.4.b": "Trefit vítěze neznamená vydělat.",
+  "res.limits.4.t": "Rozhoduje poměr mezi pravděpodobností a kurzem. Proto sledujeme i logloss a kalibraci.",
+  "res.limits.how": "Jak model funguje",
+  "res.limits.howText": "Krátké vysvětlení najdete v článku",
+  "res.limits.howLink": "Jak funguje simulace zápasu",
+} as const;

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
+import { intlTag } from "../i18n/locale";
 
 type Side = "home" | "away";
 type Cell = number | string | null;
@@ -99,7 +100,7 @@ const RESULT_CS: Record<string, string> = {
 
 function fmt(n: number | null | undefined, d = 2): string {
   if (n == null || Number.isNaN(n)) return "—";
-  return n.toLocaleString("cs-CZ", { minimumFractionDigits: d, maximumFractionDigits: d });
+  return n.toLocaleString(intlTag(), { minimumFractionDigits: d, maximumFractionDigits: d });
 }
 
 function cellText(value: Cell): string {

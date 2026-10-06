@@ -7,6 +7,7 @@ import {
   TRENDMETR_METRICS,
 } from "../lib/trendmetr";
 import type { MatchData, TrendItem } from "../types";
+import { getLocale, t, type Key } from "../i18n/locale";
 import { Card, Empty, Info, Seg, TeamTitle, n2 } from "./kit";
 
 /* ---------- Trendy ---------- */
@@ -30,30 +31,67 @@ const BOTH_KEYS = new Set([
 ]);
 
 type Scope = { text: string; color: string } | null;
-const czNum = (s: string) => s.replace(/(\d)\.(\d)/g, "$1,$2");
+/** Desetinná čárka jen v češtině. */
+const czNum = (s: string) => (getLocale() === "cs" ? s.replace(/(\d)\.(\d)/g, "$1,$2") : s);
 
-function TrendRows({ items, min, scopeOf }: { items: TrendItem[]; min: Min; scopeOf: (t: TrendItem) => Scope }) {
+/** Popisky trendů, které přicházejí z dat (česky). Překládáme podle klíče, neznámý klíč zůstane beze změny. */
+const DATA_LABEL: Record<string, Key> = {
+  btts: "mc.tr.d.btts",
+  clean_sheet: "mc.tr.d.clean_sheet",
+  scoreless: "mc.tr.d.scoreless",
+  over15: "mc.tr.d.over15",
+  over25: "mc.tr.d.over25",
+  under25: "mc.tr.d.under25",
+  scored2plus: "mc.tr.d.scored2plus",
+  corners_over95: "mc.tr.d.corners_over95",
+  corners_under95: "mc.tr.d.corners_under95",
+  more_corners: "mc.tr.d.more_corners",
+  yellow_under5: "mc.tr.d.yellow_under5",
+  yellow_5plus: "mc.tr.d.yellow_5plus",
+  red_card: "mc.tr.d.red_card",
+  team_2plus_yellow: "mc.tr.d.team_2plus_yellow",
+  ht_leading: "mc.tr.d.ht_leading",
+  ht_draw: "mc.tr.d.ht_draw",
+  ht_behind: "mc.tr.d.ht_behind",
+  shots_over: "mc.tr.d.shots_over",
+  shots_under: "mc.tr.d.shots_under",
+  sot_over: "mc.tr.d.sot_over",
+  sot_under: "mc.tr.d.sot_under",
+  fouls_over: "mc.tr.d.fouls_over",
+  fouls_under: "mc.tr.d.fouls_under",
+  offsides_over: "mc.tr.d.offsides_over",
+  offsides_under: "mc.tr.d.offsides_under",
+};
+
+function dataLabel(i: TrendItem): string {
+  const k = DATA_LABEL[i.key];
+  if (!k) return i.label;
+  const n = i.label.match(/-?\d+(?:\.\d+)?/)?.[0] ?? "";
+  return t(k, { n });
+}
+
+function TrendRows({ items, min, scopeOf, fromData = false }: { items: TrendItem[]; min: Min; scopeOf: (i: TrendItem) => Scope; fromData?: boolean }) {
   const [all, setAll] = useState(false);
   // „-0,5+“ platí vždy, takže nic neříká
   const list = items
-    .filter((i) => i.pct >= min && !i.label.includes("-0.5"))
+    .filter((i) => i.pct >= min && !/-0[.,]5/.test(i.label))
     .sort((a, b) => b.pct - a.pct);
   if (!list.length)
-    return <Empty>V tomhle vzorku není žádný trend nad {min} %.</Empty>;
+    return <Empty>{t("mc.tr.none", { p: t("fmt.pct", { n: min }) })}</Empty>;
   const shown = all ? list : list.slice(0, LIMIT);
   return (
     <>
       <ul className="divide-y divide-(--c-line)">
-        {shown.map((t) => {
+        {shown.map((it) => {
           const color =
-            t.pct >= 80
+            it.pct >= 80
               ? "var(--c-win)"
-              : t.pct >= 60
+              : it.pct >= 60
                 ? "var(--c-warn)"
                 : "var(--c-faint)";
-          const sc = scopeOf(t);
+          const sc = scopeOf(it);
           return (
-            <li key={t.key} className="py-2">
+            <li key={it.key} className="py-2">
               <div className="flex items-start justify-between gap-3">
                 <span className="text-[13px] leading-snug">
                   {sc && (
@@ -64,14 +102,14 @@ function TrendRows({ items, min, scopeOf }: { items: TrendItem[]; min: Min; scop
                       {sc.text}
                     </span>
                   )}
-                  <span className="align-middle">{czNum(t.label)}</span>
+                  <span className="align-middle">{czNum(fromData ? dataLabel(it) : it.label)}</span>
                 </span>
-                {t.odds != null && (
+                {it.odds != null && (
                   <span
                     className="shrink-0 rounded-md bg-(--c-raised) px-1.5 py-0.5 text-[11px] font-semibold tabular-nums text-(--c-muted)"
-                    title="Kurz sázkové kanceláře"
+                    title={t("mc.tr.oddsTitle")}
                   >
-                    {n2(t.odds)}
+                    {n2(it.odds)}
                   </span>
                 )}
               </div>
@@ -79,14 +117,14 @@ function TrendRows({ items, min, scopeOf }: { items: TrendItem[]; min: Min; scop
                 <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-(--c-raised)">
                   <div
                     className="h-full rounded-full"
-                    style={{ width: `${t.pct}%`, background: color }}
+                    style={{ width: `${it.pct}%`, background: color }}
                   />
                 </div>
                 <span className="w-24 shrink-0 text-right text-xs tabular-nums text-(--c-muted)">
                   <b className="font-semibold text-(--c-text)">
-                    {Math.round(t.pct)} %
+                    {t("fmt.pct", { n: Math.round(it.pct) })}
                   </b>{" "}
-                  · {t.hits}/{t.total}
+                  · {it.hits}/{it.total}
                 </span>
               </div>
             </li>
@@ -99,7 +137,7 @@ function TrendRows({ items, min, scopeOf }: { items: TrendItem[]; min: Min; scop
           onClick={() => setAll((a) => !a)}
           className="mt-1 min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline"
         >
-          {all ? "Zobrazit méně" : `Zobrazit všech ${list.length}`}
+          {all ? t("home.news.less") : t("mc.pe.pl.showAll", { n: list.length })}
         </button>
       )}
     </>
@@ -108,8 +146,8 @@ function TrendRows({ items, min, scopeOf }: { items: TrendItem[]; min: Min; scop
 
 const scopeFor =
   (team: string, color: string) =>
-  (t: TrendItem): Scope =>
-    BOTH_KEYS.has(t.key) ? { text: "Oba týmy dohromady", color: "var(--c-muted)" } : { text: team, color };
+  (it: TrendItem): Scope =>
+    BOTH_KEYS.has(it.key) ? { text: t("mc.tr.both"), color: "var(--c-muted)" } : { text: team, color };
 
 export function TrendsCard({ m }: { m: MatchData }) {
   const [source, setSource] = useState<"team" | "h2h">("team");
@@ -130,57 +168,53 @@ export function TrendsCard({ m }: { m: MatchData }) {
     <Card
       title={
         <>
-          Trendy, co se opakují
-          <Info>
-            Jak často se v posledních zápasech stala daná věc. 5/5 = pokaždé.
-            Malý vzorek (5 zápasů) znamená, že jde o vodítko, ne o pravidlo.
-            Kurz je desetinný kurz sázkové kanceláře k tomuto zápasu, pokud ho k trhu máme.
-          </Info>
+          {t("mc.tr.title")}
+          <Info>{t("mc.tr.info")}</Info>
         </>
       }
-      lead="Vzorce z posledních zápasů. Řazeno od nejčastějších."
+      lead={t("mc.tr.lead")}
       aside={
         <Seg
-          label="Zdroj trendů"
+          label={t("mc.tr.source")}
           value={source}
           onChange={setSource}
           options={[
-            { id: "team", label: "Poslední zápasy týmů" },
-            { id: "h2h", label: "Vzájemné zápasy" },
+            { id: "team", label: t("mc.tr.srcTeam") },
+            { id: "h2h", label: t("mc.ov.h2h.title") },
           ]}
         />
       }
     >
       <div className="mb-4 flex flex-wrap items-center gap-2">
-        <span className="text-xs text-(--c-muted)">Zobrazit od</span>
+        <span className="text-xs text-(--c-muted)">{t("mc.tr.showFrom")}</span>
         <Seg
-          label="Minimální četnost"
+          label={t("mc.tr.minFreq")}
           value={String(min) as "0" | "60" | "80" | "100"}
           onChange={(v) => setMin(Number(v) as Min)}
           options={[
-            { id: "0", label: "vše" },
-            { id: "60", label: "60 %" },
-            { id: "80", label: "80 %" },
-            { id: "100", label: "100 %" },
+            { id: "0", label: t("mc.tr.all") },
+            { id: "60", label: t("fmt.pct", { n: 60 }) },
+            { id: "80", label: t("fmt.pct", { n: 80 }) },
+            { id: "100", label: t("fmt.pct", { n: 100 }) },
           ]}
         />
         {source === "h2h" && (
           <>
             <Seg
-              label="Vzorek"
+              label={t("mc.tr.sample")}
               value={span}
               onChange={setSpan}
               options={[
-                { id: "3", label: "poslední 3" },
-                { id: "5", label: "posledních 5" },
+                { id: "3", label: t("mc.tr.last3") },
+                { id: "5", label: t("mc.xb.last5") },
               ]}
             />
             <Seg
-              label="Pro koho"
+              label={t("mc.tr.forWhom")}
               value={scope}
               onChange={setScope}
               options={[
-                { id: "match", label: "oba týmy" },
+                { id: "match", label: t("mc.tr.bothTeams") },
                 { id: "home", label: m.home.name },
                 { id: "away", label: m.away.name },
               ]}
@@ -195,23 +229,23 @@ export function TrendsCard({ m }: { m: MatchData }) {
             <div className="mb-1">
               <TeamTitle team={m.home} side="home" />
             </div>
-            <TrendRows items={m.trends.team_last5.home} min={min} scopeOf={scopeFor(m.home.name, "var(--c-home)")} />
+            <TrendRows fromData items={m.trends.team_last5.home} min={min} scopeOf={scopeFor(m.home.name, "var(--c-home)")} />
           </div>
           <div>
             <div className="mb-1">
               <TeamTitle team={m.away} side="away" />
             </div>
-            <TrendRows items={m.trends.team_last5.away} min={min} scopeOf={scopeFor(m.away.name, "var(--c-away)")} />
+            <TrendRows fromData items={m.trends.team_last5.away} min={min} scopeOf={scopeFor(m.away.name, "var(--c-away)")} />
           </div>
         </div>
       ) : m.h2h.length ? (
         <TrendRows
           items={h2hItems}
           min={min}
-          scopeOf={() => (scope === "match" ? { text: "Oba týmy dohromady", color: "var(--c-muted)" } : null)}
+          scopeOf={() => (scope === "match" ? { text: t("mc.tr.both"), color: "var(--c-muted)" } : null)}
         />
       ) : (
-        <Empty>Tyto týmy spolu zatím nehrály.</Empty>
+        <Empty>{t("mc.tr.noH2h")}</Empty>
       )}
     </Card>
   );
@@ -235,23 +269,18 @@ export function BetbuilderCard({ m }: { m: MatchData }) {
     <Card
       title={
         <>
-          Betbuilder linie
-          <Info>
-            Nejvyšší hranice, kterou tým překonal alespoň v 70 % posledních
-            zápasů ve stejné roli (doma/venku) a zároveň v zápasech proti tomuto
-            soupeři. Např. „Střely 11,5+“ znamená 12 a víc střel. Není to
-            doporučení sázky.
-          </Info>
+          {t("mc.bb.title")}
+          <Info>{t("mc.bb.info")}</Info>
         </>
       }
-      lead="Minimální hodnoty opakující se v posledních a vzájemných zápasech, vhodné převážně do betbuilderů."
+      lead={t("mc.bb.lead")}
     >
       <div className="grid gap-5 md:grid-cols-2">
         {rows.map((row, i) => (
           <div key={row.team.id}>
             <div className="mb-2 flex items-center gap-2">
               <TeamTitle team={row.team} side={i === 0 ? "home" : "away"} />
-              <span className="text-[11px] text-(--c-faint)">{row.role}</span>
+              <span className="text-[11px] text-(--c-faint)">{row.role === "doma" ? t("mc.kit.home") : t("mc.kit.away")}</span>
             </div>
             <div className="grid grid-cols-5 gap-1.5">
               {TRENDMETR_METRICS.map((col) => {
@@ -295,7 +324,7 @@ export function BetbuilderCard({ m }: { m: MatchData }) {
 
       <div className="mt-4 rounded-xl bg-(--c-raised) px-3 py-2.5">
         {picked.length === 0 ? (
-          <p className="text-xs text-(--c-muted)">Zatím nic nevybráno.</p>
+          <p className="text-xs text-(--c-muted)">{t("mc.bb.nothing")}</p>
         ) : (
           <div className="flex flex-wrap items-center gap-1.5">
             {picked.map((p) => (
@@ -304,7 +333,7 @@ export function BetbuilderCard({ m }: { m: MatchData }) {
                 type="button"
                 onClick={() => toggle(p.key, p.text)}
                 className="inline-flex min-h-8 items-center gap-1.5 rounded-full border border-(--c-accent)/50 bg-(--c-accent)/10 px-2.5 text-xs text-(--c-accent)"
-                aria-label={`Odebrat ${p.text}`}
+                aria-label={t("mc.bb.remove", { text: p.text })}
               >
                 {p.text} <span aria-hidden>×</span>
               </button>
@@ -314,7 +343,7 @@ export function BetbuilderCard({ m }: { m: MatchData }) {
               onClick={() => setPicked([])}
               className="ml-auto min-h-8 px-2 text-xs text-(--c-muted) hover:text-(--c-text)"
             >
-              vyčistit
+              {t("mc.bb.clear")}
             </button>
           </div>
         )}

@@ -1,5 +1,8 @@
 import type { SimulationResult, TeamBrief } from "../types";
 import { Section } from "./ui";
+import { intlTag, t } from "../i18n/locale";
+
+const pct = (n: number) => t("fmt.pct", { n: n.toLocaleString(intlTag(), { maximumFractionDigits: 1 }) });
 
 export function Simulation({
   sim,
@@ -12,21 +15,21 @@ export function Simulation({
 }) {
   return (
     <Section
-      title="7. Simulace 10 000 zápasů"
-      subtitle={`n = ${sim.n.toLocaleString("cs-CZ")}`}
-      note="Model bere sezónní góly, stáhne je k ligovému průměru (malý vzorek nesmí udělat 70% favorita) a 1X2 ještě přimíchá k typickému ligovému rozložení. Pořád odhad, ne kalibrovaná predikce."
+      title={t("mx.sim.title")}
+      subtitle={`n = ${sim.n.toLocaleString(intlTag())}`}
+      note={t("mx.sim.note")}
     >
       <div className="grid grid-cols-3 gap-3 mb-6 text-center">
         <div className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-3">
-          <div className="text-2xl font-bold text-emerald-400">{sim.home_win_pct}%</div>
+          <div className="text-2xl font-bold text-emerald-400">{pct(sim.home_win_pct)}</div>
           <div className="text-xs text-slate-400 light:text-slate-500 mt-1">{home.name}</div>
         </div>
         <div className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-3">
-          <div className="text-2xl font-bold text-slate-300 light:text-slate-700">{sim.draw_pct}%</div>
-          <div className="text-xs text-slate-400 light:text-slate-500 mt-1">Remíza</div>
+          <div className="text-2xl font-bold text-slate-300 light:text-slate-700">{pct(sim.draw_pct)}</div>
+          <div className="text-xs text-slate-400 light:text-slate-500 mt-1">{t("mx.common.draw")}</div>
         </div>
         <div className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-3">
-          <div className="text-2xl font-bold text-amber-400">{sim.away_win_pct}%</div>
+          <div className="text-2xl font-bold text-amber-400">{pct(sim.away_win_pct)}</div>
           <div className="text-xs text-slate-400 light:text-slate-500 mt-1">{away.name}</div>
         </div>
       </div>
@@ -36,26 +39,26 @@ export function Simulation({
           <div className="font-mono text-lg">
             {sim.expected_goals.home} : {sim.expected_goals.away}
           </div>
-          <div className="text-xs text-slate-500 light:text-slate-400">Očekávané góly (xG model)</div>
+          <div className="text-xs text-slate-500 light:text-slate-400">{t("mx.sim.xgModel")}</div>
         </div>
         <div>
-          <div className="font-mono text-lg">{sim.btts_pct}%</div>
-          <div className="text-xs text-slate-500 light:text-slate-400">Oba dají gól</div>
+          <div className="font-mono text-lg">{pct(sim.btts_pct)}</div>
+          <div className="text-xs text-slate-500 light:text-slate-400">{t("mx.sim.btts")}</div>
         </div>
         <div>
           <div className="font-mono text-lg">
-            {sim.over25_pct}% / {sim.under25_pct}%
+            {pct(sim.over25_pct)} / {pct(sim.under25_pct)}
           </div>
           <div className="text-xs text-slate-500 light:text-slate-400">Over / Under 2.5</div>
         </div>
       </div>
 
-      <h4 className="text-sm font-medium text-slate-300 light:text-slate-700 mb-2">Nejpravděpodobnější výsledky</h4>
+      <h4 className="text-sm font-medium text-slate-300 light:text-slate-700 mb-2">{t("mx.sim.topScores")}</h4>
       <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
         {sim.top_scorelines.map((s) => (
           <div key={s.score} className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-2 text-center">
             <div className="font-mono font-bold light:text-slate-800">{s.score}</div>
-            <div className="text-xs text-slate-500 light:text-slate-400">{s.pct}%</div>
+            <div className="text-xs text-slate-500 light:text-slate-400">{pct(s.pct)}</div>
           </div>
         ))}
       </div>

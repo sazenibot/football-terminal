@@ -1,5 +1,6 @@
 import { marked } from "marked";
 import type { Tier } from "../access/tiers";
+import { getLocale, type Locale } from "../i18n/locale";
 
 /* Obsah webu jsou markdown soubory ve frontend/content/. Vzniká se v repu, žádné CMS.
    news/*.md      krátké aktuality (feed na homepage)
@@ -14,6 +15,8 @@ export type NewsItem = {
   text: string;
   link?: string;
   auto?: boolean;
+  /** Anglická verze automatické aktuality (texty se generují ve skriptu). */
+  en?: { tag: string; title: string; text: string };
 };
 
 export type Article = {
@@ -28,8 +31,6 @@ export type Article = {
   body: string;
 };
 
-export const CATEGORIES = ["Jak číst statistiky", "Průvodce webem", "Metodika", "Analýzy"] as const;
-
 export function parseFrontmatter(raw: string): { meta: Record<string, string>; body: string } {
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/);
   if (!m) return { meta: {}, body: raw };
@@ -43,32 +44,51 @@ export function parseFrontmatter(raw: string): { meta: Record<string, string>; b
 
 const slugOf = (path: string) => path.split("/").pop()!.replace(/\.md$/, "");
 
-const newsFiles = import.meta.glob("../../content/news/*.md", { query: "?raw", import: "default", eager: true }) as Record<string, string>;
-const articleFiles = import.meta.glob("../../content/articles/*.md", { query: "?raw", import: "default", eager: true }) as Record<string, string>;
+type Files = Record<string, string>;
+const glob = {
+  news: {
+    cs: import.meta.glob("../../content/news/*.md", { query: "?raw", import: "default", eager: true }) as Files,
+    en: import.meta.glob("../../content/news/en/*.md", { query: "?raw", import: "default", eager: true }) as Files,
+  },
+  articles: {
+    cs: import.meta.glob("../../content/articles/*.md", { query: "?raw", import: "default", eager: true }) as Files,
+    en: import.meta.glob("../../content/articles/en/*.md", { query: "?raw", import: "default", eager: true }) as Files,
+  },
+};
 
-export const manualNews: NewsItem[] = Object.entries(newsFiles).map(([path, raw]) => {
-  const { meta, body } = parseFrontmatter(raw);
-  return { id: slugOf(path), date: meta.date, tag: meta.tag || "Novinka", title: meta.title, text: body, link: meta.link || undefined };
-});
+/** Slug je název souboru a je stejný v obou jazycích. Chybí-li anglická verze, použije se česká. */
+function bySlug(files: { cs: Files; en: Files }, locale: Locale): [string, string][] {
+  const cs = new Map(Object.entries(files.cs).map(([p, raw]) => [slugOf(p), raw] as const));
+  if (locale === "cs") return [...cs.entries()];
+  const en = new Map(Object.entries(files.en).map(([p, raw]) => [slugOf(p), raw] as const));
+  return [...cs.keys()].map((slug) => [slug, en.get(slug) ?? cs.get(slug)!]);
+}
 
-export const articles: Article[] = Object.entries(articleFiles)
-  .map(([path, raw]) => {
+export const getManualNews = (locale: Locale = getLocale()): NewsItem[] =>
+  bySlug(glob.news, locale).map(([id, raw]) => {
     const { meta, body } = parseFrontmatter(raw);
-    const tier = (["anon", "account", "unlimited", "pro"].includes(meta.tier) ? meta.tier : "anon") as Tier;
-    return {
-      slug: slugOf(path),
-      title: meta.title,
-      date: meta.date,
-      category: meta.category || "Průvodce webem",
-      excerpt: meta.excerpt || "",
-      minutes: Number(meta.minutes) || Math.max(1, Math.round(body.split(/\s+/).length / 200)),
-      tier,
-      body,
-    };
-  })
-  .sort((a, b) => b.date.localeCompare(a.date));
+    return { id, date: meta.date, tag: meta.tag || (locale === "en" ? "News" : "Novinka"), title: meta.title, text: body, link: meta.link || undefined };
+  });
 
-export const articleBySlug = (slug: string | undefined) => articles.find((a) => a.slug === slug);
+export const getArticles = (locale: Locale = getLocale()): Article[] =>
+  bySlug(glob.articles, locale)
+    .map(([slug, raw]) => {
+      const { meta, body } = parseFrontmatter(raw);
+      const tier = (["anon", "account", "unlimited", "pro"].includes(meta.tier) ? meta.tier : "anon") as Tier;
+      return {
+        slug,
+        title: meta.title,
+        date: meta.date,
+        category: meta.category || (locale === "en" ? "Site guide" : "Průvodce webem"),
+        excerpt: meta.excerpt || "",
+        minutes: Number(meta.minutes) || Math.max(1, Math.round(body.split(/\s+/).length / 200)),
+        tier,
+        body,
+      };
+    })
+    .sort((a, b) => b.date.localeCompare(a.date));
+
+export const articleBySlug = (slug: string | undefined) => getArticles().find((a) => a.slug === slug);
 
 export function renderMarkdown(md: string): string {
   return marked.parse(md, { async: false }) as string;

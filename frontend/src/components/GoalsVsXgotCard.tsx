@@ -5,6 +5,7 @@ import type { MatchRow, PitchCatalogFile } from "./PitchCards";
 import { goalUnit } from "../lib/xgEfficiency";
 import { XGOT_WINDOW, pickWindow, rowsBefore, type SideWindow } from "../lib/pitchMatch";
 import { Pill, Section } from "./ui";
+import { intlTag, t } from "../i18n/locale";
 
 const GAP = 0.15;
 const HOME_COLOR = "#34d399";
@@ -27,55 +28,47 @@ const againstOf = (r: MatchRow) => r.goals_against ?? r.ga;
 
 function totals(rows: MatchRow[]): Totals {
   return rows.reduce<Totals>(
-    (t, r) => ({
-      n: t.n + 1,
-      goals: t.goals + goalsOf(r),
-      xgot: t.xgot + r.xgot,
-      against: t.against + againstOf(r),
-      xgotFaced: t.xgotFaced + r.xgot_faced,
-      saves: t.saves + r.saves,
-      sotFaced: t.sotFaced + r.sot_faced,
+    (a, r) => ({
+      n: a.n + 1,
+      goals: a.goals + goalsOf(r),
+      xgot: a.xgot + r.xgot,
+      against: a.against + againstOf(r),
+      xgotFaced: a.xgotFaced + r.xgot_faced,
+      saves: a.saves + r.saves,
+      sotFaced: a.sotFaced + r.sot_faced,
     }),
     { n: 0, goals: 0, xgot: 0, against: 0, xgotFaced: 0, saves: 0, sotFaced: 0 },
   );
 }
 
 function x2(n: number): string {
-  return n.toLocaleString("cs-CZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-}
-
-function plural(n: number, one: string, few: string, many: string): string {
-  if (n === 1) return one;
-  if (n >= 2 && n <= 4) return few;
-  return many;
+  return n.toLocaleString(intlTag(), { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
 
 function windowLabel(w: Window): string {
   const n = w.rows.length;
-  if (w.fallback) return `posledních ${n} ligových`;
-  return `posledních ${n} ${w.atHome ? "doma" : "venku"}`;
+  if (w.fallback) return t("mc.gx.win.league", { n });
+  return t(w.atHome ? "mc.gx.win.home" : "mc.gx.win.away", { n });
 }
 
-function attackLine(team: string, w: Window, t: Totals): string {
-  const head = `${team} v ${windowLabel(w)} dala ${t.goals} ${goalUnit(t.goals)} z ${x2(t.xgot)} xGOT`;
-  const d = t.goals - t.xgot;
-  if (d > GAP) return `${head}, výsledky jsou lepší, než střely na branku.`;
-  if (d < -GAP) return `${head}, výsledky jsou horší, než střely na branku.`;
-  return `${head}.`;
+function attackLine(team: string, w: Window, tt: Totals): string {
+  const vars = { team, win: windowLabel(w), goals: tt.goals, unit: goalUnit(tt.goals), xgot: x2(tt.xgot) };
+  const d = tt.goals - tt.xgot;
+  if (d > GAP) return t("mc.gx.attack.better", vars);
+  if (d < -GAP) return t("mc.gx.attack.worse", vars);
+  return t("mc.gx.attack.flat", vars);
 }
 
-function keeperLine(t: Totals): string {
-  const head = `V tom okně dostala ${t.against} ${goalUnit(t.against)} z ${x2(t.xgotFaced)} xGOT proti`;
-  const d = t.xgotFaced - t.against;
-  if (d > GAP) return `${head}, brankář je nad střelami.`;
-  if (d < -GAP) return `${head}, brankář je pod střelami.`;
-  return `${head}.`;
+function keeperLine(tt: Totals): string {
+  const vars = { against: tt.against, unit: goalUnit(tt.against), xgot: x2(tt.xgotFaced) };
+  const d = tt.xgotFaced - tt.against;
+  if (d > GAP) return t("mc.gx.keeper.better", vars);
+  if (d < -GAP) return t("mc.gx.keeper.worse", vars);
+  return t("mc.gx.keeper.flat", vars);
 }
 
-function savesLine(t: Totals): string {
-  const saves = Math.round(t.saves);
-  const sot = Math.round(t.sotFaced);
-  return `${saves} ${plural(saves, "zákrok", "zákroky", "zákroků")} z ${sot} ${sot === 1 ? "střely" : "střel"} na branku`;
+function savesLine(tt: Totals): string {
+  return t("mc.gx.saves", { saves: Math.round(tt.saves), sot: Math.round(tt.sotFaced) });
 }
 
 function Pair({ a, aLabel, b, bLabel }: { a: string; aLabel: string; b: string; bLabel: string }) {
@@ -94,7 +87,7 @@ function Pair({ a, aLabel, b, bLabel }: { a: string; aLabel: string; b: string; 
 }
 
 function SideColumn({ team, label, w }: { team: TeamBrief; label: string; w: Window }) {
-  const t = totals(w.rows);
+  const tt = totals(w.rows);
   return (
     <div className="space-y-3">
       <div className="flex items-center gap-2">
@@ -104,24 +97,24 @@ function SideColumn({ team, label, w }: { team: TeamBrief; label: string; w: Win
           {label} · {windowLabel(w)}
         </span>
       </div>
-      {t.n === 0 ? (
-        <p className="text-sm text-slate-400 light:text-slate-500">Zatím žádný ligový zápas této sezóny.</p>
+      {tt.n === 0 ? (
+        <p className="text-sm text-slate-400 light:text-slate-500">{t("mc.gx.none")}</p>
       ) : (
         <>
           <div>
-            <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">Útok</div>
-            <Pair a={String(t.goals)} aLabel="vstřelené góly" b={x2(t.xgot)} bLabel="xGOT" />
-            <p className="text-sm text-slate-300 light:text-slate-700 mt-2">{attackLine(team.name, w, t)}</p>
+            <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">{t("mc.st.grp.attack")}</div>
+            <Pair a={String(tt.goals)} aLabel={t("mc.gx.goalsScored")} b={x2(tt.xgot)} bLabel="xGOT" />
+            <p className="text-sm text-slate-300 light:text-slate-700 mt-2">{attackLine(team.name, w, tt)}</p>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">Branka</div>
-            <Pair a={x2(t.xgotFaced)} aLabel="xGOT proti" b={String(t.against)} bLabel="inkasované" />
-            <p className="text-sm text-slate-300 light:text-slate-700 mt-2">{keeperLine(t)}</p>
-            <p className="text-xs text-slate-500 mt-1">{savesLine(t)}</p>
+            <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">{t("mc.gx.goal")}</div>
+            <Pair a={x2(tt.xgotFaced)} aLabel={t("mc.st.xgotAgainst")} b={String(tt.against)} bLabel={t("mc.gx.conceded")} />
+            <p className="text-sm text-slate-300 light:text-slate-700 mt-2">{keeperLine(tt)}</p>
+            <p className="text-xs text-slate-500 mt-1">{savesLine(tt)}</p>
           </div>
           {w.fallback && (
             <p className="text-xs text-amber-400/80 light:text-amber-700">
-              Málo zápasů na téhle straně, beru posledních {XGOT_WINDOW}.
+              {t("mc.gx.fallback", { n: XGOT_WINDOW })}
             </p>
           )}
         </>
@@ -145,11 +138,11 @@ function chartPoints(hw: Window, aw: Window, mode: ChartMode): ChartPoint[] {
 }
 
 function rowLine(r: MatchRow, mode: ChartMode): string {
-  const day = new Date(r.date).toLocaleDateString("cs-CZ", { day: "numeric", month: "numeric" });
+  const day = new Date(r.date).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
   const vs = `${r.home ? "vs" : "@"} ${r.opponent}`;
   return mode === "attack"
-    ? `${day} ${vs}: ${x2(r.xgot)} xGOT, ${goalsOf(r)} ${goalUnit(goalsOf(r))}`
-    : `${day} ${vs}: ${x2(r.xgot_faced)} xGOT proti, ${againstOf(r)} inkas.`;
+    ? t("mc.gx.row.attack", { day, vs, xgot: x2(r.xgot), goals: goalsOf(r), unit: goalUnit(goalsOf(r)) })
+    : t("mc.gx.row.keeper", { day, vs, xgot: x2(r.xgot_faced), against: againstOf(r) });
 }
 
 type TipProps = { active?: boolean; payload?: readonly { payload?: ChartPoint }[] };
@@ -176,10 +169,10 @@ function XgotTrend({ home, away, hw, aw }: { home: TeamBrief; away: TeamBrief; h
         </span>
         <div className="flex gap-2">
           <Pill active={mode === "attack"} onClick={() => setMode("attack")}>
-            xGOT útoku
+            {t("mc.gx.pill.attack")}
           </Pill>
           <Pill active={mode === "keeper"} onClick={() => setMode("keeper")}>
-            xGOT proti
+            {t("mc.st.xgotAgainst")}
           </Pill>
         </div>
       </div>
@@ -190,7 +183,7 @@ function XgotTrend({ home, away, hw, aw }: { home: TeamBrief; away: TeamBrief; h
             <XAxis
               dataKey="i"
               tick={{ fill: "#94a3b8", fontSize: 11 }}
-              tickFormatter={(i: number) => (i === data.length ? "poslední" : `${i - data.length}`)}
+              tickFormatter={(i: number) => (i === data.length ? t("mc.gx.last") : `${i - data.length}`)}
             />
             <YAxis
               tick={{ fill: "#94a3b8", fontSize: 11 }}
@@ -207,8 +200,8 @@ function XgotTrend({ home, away, hw, aw }: { home: TeamBrief; away: TeamBrief; h
       </div>
       <p className="text-xs text-slate-500 mt-1">
         {mode === "attack"
-          ? "xGOT útoku: kvalita střel týmu na branku v každém zápase okna."
-          : "xGOT proti: kvalita střel, kterým čelil brankář týmu."}
+          ? t("mc.gx.cap.attack")
+          : t("mc.gx.cap.keeper")}
       </p>
     </div>
   );
@@ -232,15 +225,15 @@ export function GoalsVsXgotCard({
   const aw = pickWindow(awayRows, false);
 
   return (
-    <Section title="Góly proti xGOT" subtitle={`PitchAPI · ${homeFile.season}`}>
+    <Section title={t("mc.gx.title")} subtitle={`PitchAPI · ${homeFile.season}`}>
       <p className="text-sm text-slate-400 light:text-slate-500 mb-4">
-        Útok domácích se v tomhle zápase potkává s brankou hostů, a naopak.
+        {t("mc.gx.intro")}
       </p>
 
-      <h3 className="text-sm font-medium text-slate-300 light:text-slate-700 mb-3">Do zápasu</h3>
+      <h3 className="text-sm font-medium text-slate-300 light:text-slate-700 mb-3">{t("mc.gx.into")}</h3>
       <div className="grid md:grid-cols-2 gap-6 mb-6">
-        <SideColumn team={match.home} label="domácí" w={hw} />
-        <SideColumn team={match.away} label="hosté" w={aw} />
+        <SideColumn team={match.home} label={t("mc.side.home")} w={hw} />
+        <SideColumn team={match.away} label={t("mc.side.away")} w={aw} />
       </div>
       <XgotTrend home={match.home} away={match.away} hw={hw} aw={aw} />
     </Section>

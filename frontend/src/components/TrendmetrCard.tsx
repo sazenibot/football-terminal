@@ -1,6 +1,18 @@
 import { useState } from "react";
-import { buildTrendmetr, overLabel, teamShort, TRENDMETR_METRICS } from "../lib/trendmetr";
+import { buildTrendmetr, teamShort, TRENDMETR_METRICS, type TrendmetrMetricKey } from "../lib/trendmetr";
+import { intlTag, t, type Key } from "../i18n/locale";
 import type { MatchData } from "../types";
+
+const METRIC_KEYS: Record<TrendmetrMetricKey, { short: Key; name: Key }> = {
+  shots: { short: "mx.tm.shots.short", name: "mx.tm.shots.name" },
+  sot: { short: "mx.tm.sot.short", name: "mx.tm.sot.name" },
+  corners: { short: "mx.tm.corners.short", name: "mx.tm.corners.name" },
+  fouls: { short: "mx.tm.fouls.short", name: "mx.tm.fouls.name" },
+  offsides: { short: "mx.tm.offsides.short", name: "mx.tm.offsides.name" },
+};
+
+/** Linie „2,5+“ / „2.5+“ podle jazyka. */
+const overLabel = (line: number) => `${(line - 0.5).toLocaleString(intlTag(), { maximumFractionDigits: 1 })}+`;
 
 type Leg = {
   sideKey: string;
@@ -28,17 +40,17 @@ export function TrendmetrCard({ match }: { match: MatchData }) {
     <article className="card overflow-hidden mb-6">
       <div className="px-4 pt-4 pb-3 md:px-5">
         <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-emerald-400">Trendmetr</p>
-        <p className="text-sm text-slate-400 light:text-slate-500 mt-0.5">Linie do betbuilderu z opakujících se čísel</p>
+        <p className="text-sm text-slate-400 light:text-slate-500 mt-0.5">{t("mx.tm.lead")}</p>
       </div>
 
       <div className="overflow-x-auto">
         <table className="w-full min-w-[36rem] text-sm">
           <thead>
             <tr className="text-[11px] uppercase tracking-wide text-slate-500 border-y border-slate-800 light:border-slate-200">
-              <th className="text-left font-medium pl-4 md:pl-5 pr-3 py-2 w-[11rem]">Tým</th>
+              <th className="text-left font-medium pl-4 md:pl-5 pr-3 py-2 w-[11rem]">{t("mx.tm.team")}</th>
               {TRENDMETR_METRICS.map((col) => (
                 <th key={col.key} className="font-medium text-center px-1.5 py-2">
-                  {col.short}
+                  {t(METRIC_KEYS[col.key].short)}
                 </th>
               ))}
             </tr>
@@ -53,7 +65,7 @@ export function TrendmetrCard({ match }: { match: MatchData }) {
                     ) : null}
                     <div className="min-w-0">
                       <p className="font-semibold text-white light:text-slate-900 truncate">{row.team.name}</p>
-                      <p className="text-[11px] text-slate-500">{row.role}</p>
+                      <p className="text-[11px] text-slate-500">{row.role === "doma" ? t("mx.tm.roleHome") : t("mx.tm.roleAway")}</p>
                     </div>
                   </div>
                 </td>
@@ -78,7 +90,7 @@ export function TrendmetrCard({ match }: { match: MatchData }) {
                             sideKey: String(row.team.id),
                             metricKey: col.key,
                             short: teamShort(row.team.name),
-                            metric: col.name,
+                            metric: t(METRIC_KEYS[col.key].name),
                             line,
                           })
                         }
@@ -101,7 +113,7 @@ export function TrendmetrCard({ match }: { match: MatchData }) {
 
       <div className="px-4 md:px-5 py-3 border-t border-slate-800 light:border-slate-200 bg-slate-950/40 light:bg-slate-50">
         {picked.length === 0 ? (
-          <p className="text-xs text-slate-500">Klikni na nohu. Skládá se builder.</p>
+          <p className="text-xs text-slate-500">{t("mx.tm.hint")}</p>
         ) : (
           <div className="flex flex-wrap items-center gap-2">
             <p className="text-[11px] uppercase tracking-wide text-slate-500 mr-1">Builder</p>

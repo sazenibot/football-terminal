@@ -134,6 +134,8 @@ export interface TrendItem {
 
 export interface AiAnalysis {
   text: string;
+  /** Anglická verze; chybí u starších zápasů, dokud je noční job nedogeneruje. */
+  text_en?: string;
   model?: string;
   generated_at?: string;
 }

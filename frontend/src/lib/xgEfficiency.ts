@@ -1,3 +1,5 @@
+import { getLocale, intlTag, t } from "../i18n/locale";
+
 export const XGOT_BADGE_MIN = 5;
 export const XGOT_BADGE_PCT = 20;
 
@@ -31,12 +33,9 @@ export type XgotIndex = {
 };
 
 function pct1(n: number): string {
-  return n.toLocaleString("cs-CZ", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  return n.toLocaleString(intlTag(), { minimumFractionDigits: 1, maximumFractionDigits: 1 });
 }
 
-function windowPhrase(window: XgotWindow): string {
-  return window === "last5" ? "v posledních 5 zápasech" : "v této sezóně";
-}
 
 /** Stateless: ze součtů gólů a xGOT vrátí štítek, nebo nic. */
 export function xgotEfficiencyBadge(goals: number, xgot: number, window: XgotWindow = "season"): XgotBadge | null {
@@ -45,8 +44,8 @@ export function xgotEfficiencyBadge(goals: number, xgot: number, window: XgotWin
   if (efficiency_pct >= XGOT_BADGE_PCT) {
     return {
       id: "lucky_scoring_team",
-      label: "Šťastně skórující mužstvo",
-      tooltip: `Tento tým dává ${windowPhrase(window)} o ${pct1(efficiency_pct)} % více gólů, než odpovídá kvalitě jejich střel na bránu (xGOT). Proměňuje i těžké šance nebo těží z chyb brankářů.`,
+      label: t("mc.xg.badge.lucky"),
+      tooltip: t(window === "last5" ? "mc.xg.tip.lucky.last5" : "mc.xg.tip.lucky.season", { p: t("fmt.pct", { n: pct1(efficiency_pct) }) }),
       efficiency_pct,
       window,
     };
@@ -54,8 +53,8 @@ export function xgotEfficiencyBadge(goals: number, xgot: number, window: XgotWin
   if (efficiency_pct <= -XGOT_BADGE_PCT) {
     return {
       id: "unlucky_finishing_team",
-      label: "Smolní paliči šancí",
-      tooltip: `Tento tým dává ${windowPhrase(window)} o ${pct1(Math.abs(efficiency_pct))} % méně gólů, než odpovídá kvalitě jejich střel na bránu (xGOT). Dlouhodobě zaostává za očekáváním.`,
+      label: t("mc.xg.badge.unlucky"),
+      tooltip: t(window === "last5" ? "mc.xg.tip.unlucky.last5" : "mc.xg.tip.unlucky.season", { p: t("fmt.pct", { n: pct1(Math.abs(efficiency_pct)) }) }),
       efficiency_pct,
       window,
     };
@@ -65,23 +64,24 @@ export function xgotEfficiencyBadge(goals: number, xgot: number, window: XgotWin
 
 export function goalUnit(n: number): string {
   const a = Math.abs(n);
-  if (Math.abs(a - Math.round(a)) > 0.001) return "gólu";
+  if (Math.abs(a - Math.round(a)) > 0.001) return t("mc.xg.goal.frac");
   const i = Math.round(a);
-  if (i === 1) return "gól";
-  if (i >= 2 && i <= 4) return "góly";
-  return "gólů";
+  if (i === 1) return t("mc.xg.goal.one");
+  if (i >= 2 && i <= 4) return t("mc.xg.goal.few");
+  return t("mc.xg.goal.many");
 }
 
 export function finishingLead(team: string, goals: number, xgot: number): string {
   const delta = goals - xgot;
-  const abs = Math.abs(delta).toLocaleString("cs-CZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  const unit = goalUnit(Math.abs(delta));
+  const abs = Math.abs(delta).toLocaleString(intlTag(), { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  // rozdíl se píše na dvě desetinná místa, v angličtině je jednotka vždy množné číslo
+  const unit = getLocale() === "en" ? t("mc.xg.goal.many") : goalUnit(Math.abs(delta));
   const gUnit = goalUnit(goals);
-  const xgotTxt = xgot.toLocaleString("cs-CZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  const head = `${team} v tomhle okně dala ${goals} ${gUnit} z ${xgotTxt} xGOT`;
-  if (delta > 0.15) return `${head} — o ${abs} ${unit} více než měla podle kvality střel na bránu.`;
-  if (delta < -0.15) return `${head} — vstřelila o ${abs} ${unit} méně než měla podle kvality střel na bránu.`;
-  return `${head}.`;
+  const xgotTxt = xgot.toLocaleString(intlTag(), { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const vars = { team, goals, gUnit, xgot: xgotTxt, abs, unit };
+  if (delta > 0.15) return t("mc.xg.lead.more", vars);
+  if (delta < -0.15) return t("mc.xg.lead.less", vars);
+  return t("mc.xg.lead.flat", vars);
 }
 
 export function last5BadgeForTeam(index: XgotIndex | null | undefined, teamId: number | null | undefined): XgotBadge | null {

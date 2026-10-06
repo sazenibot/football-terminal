@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import type { TeamBrief } from "../types";
+import { intlTag, t, type Key } from "../i18n/locale";
 
 /* ---------- formátování ---------- */
 
-export const n1 = (n: number) => n.toLocaleString("cs-CZ", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
-export const n2 = (n: number) => n.toLocaleString("cs-CZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+export const n1 = (n: number) => n.toLocaleString(intlTag(), { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+export const n2 = (n: number) => n.toLocaleString(intlTag(), { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 export const pct = (n: number, d = 0) =>
-  `${n.toLocaleString("cs-CZ", { minimumFractionDigits: d, maximumFractionDigits: d })} %`;
+  t("fmt.pct", { n: n.toLocaleString(intlTag(), { minimumFractionDigits: d, maximumFractionDigits: d }) });
 
 export function plural(n: number, one: string, few: string, many: string): string {
   if (n === 1) return one;
@@ -17,7 +18,7 @@ export function plural(n: number, one: string, few: string, many: string): strin
 /* ---------- vysvětlivka (i) ---------- */
 
 /** Malé „i“ s popisem. Na desktopu po najetí, na mobilu po klepnutí. Popis se vykreslí fixně, takže ho neořízne tabulka. */
-export function Info({ children, label = "Vysvětlivka" }: { children: ReactNode; label?: string }) {
+export function Info({ children, label }: { children: ReactNode; label?: string }) {
   const [pos, setPos] = useState<{ top: number; left: number } | null>(null);
   const ref = useRef<HTMLSpanElement>(null);
 
@@ -50,7 +51,7 @@ export function Info({ children, label = "Vysvětlivka" }: { children: ReactNode
     <span ref={ref} className="inline-flex align-middle" onMouseEnter={show} onMouseLeave={() => setPos(null)}>
       <button
         type="button"
-        aria-label={label}
+        aria-label={label ?? t("mc.kit.info")}
         aria-expanded={!!pos}
         onClick={() => (pos ? setPos(null) : show())}
         className="ml-1.5 inline-flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full border border-(--c-faint) text-[10px] font-bold normal-case leading-none text-(--c-muted) hover:border-(--c-text) hover:text-(--c-text)"
@@ -222,23 +223,27 @@ export function TeamTitle({ team, side }: { team: TeamBrief; side: "home" | "awa
 
 export type Res = "V" | "R" | "P";
 const RES_COLOR: Record<Res, string> = { V: "var(--c-win)", R: "var(--c-draw)", P: "var(--c-loss)" };
-export const RES_WORD: Record<Res, string> = { V: "výhra", R: "remíza", P: "prohra" };
+const RES_LETTER_KEY: Record<Res, Key> = { V: "mc.kit.resLetter.V", R: "mc.kit.resLetter.R", P: "mc.kit.resLetter.P" };
+const RES_WORD_KEY: Record<Res, Key> = { V: "mc.kit.res.V", R: "mc.kit.res.R", P: "mc.kit.res.P" };
+
+export const resLetter = (r: Res) => t(RES_LETTER_KEY[r]);
+export const resWord = (r: Res) => t(RES_WORD_KEY[r]);
 
 export function ResBadge({ r, title }: { r: Res; title?: string }) {
   return (
     <span
-      title={title ?? RES_WORD[r]}
-      aria-label={RES_WORD[r]}
+      title={title ?? t(RES_WORD_KEY[r])}
+      aria-label={t(RES_WORD_KEY[r])}
       style={{ background: `color-mix(in oklab, ${RES_COLOR[r]} 18%, transparent)`, color: RES_COLOR[r] }}
       className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[11px] font-bold"
     >
-      {r}
+      {t(RES_LETTER_KEY[r])}
     </span>
   );
 }
 
 export function FormDots({ results, titles }: { results: Res[]; titles?: string[] }) {
-  if (!results.length) return <span className="text-xs text-(--c-faint)">bez zápasů</span>;
+  if (!results.length) return <span className="text-xs text-(--c-faint)">{t("mc.kit.noMatches")}</span>;
   return (
     <span className="inline-flex gap-1">
       {results.map((r, i) => (
@@ -255,7 +260,7 @@ export function VenueTag({ home }: { home: boolean }) {
       style={{ background: `color-mix(in oklab, ${c} 16%, transparent)`, color: c }}
       className="inline-flex w-12 shrink-0 justify-center rounded-md py-0.5 text-[10px] font-semibold uppercase tracking-wide"
     >
-      {home ? "doma" : "venku"}
+      {home ? t("mc.kit.home") : t("mc.kit.away")}
     </span>
   );
 }
@@ -276,7 +281,7 @@ export function ValueTag({ model, market, className = "" }: { model: number; mar
         color: pos ? "var(--c-accent)" : "var(--c-warn)",
       }}
     >
-      {pos ? "Vidíme hodnotu" : "Sázková kancelář tomu věří víc"}
+      {pos ? t("mc.kit.value") : t("mc.kit.marketHigher")}
     </span>
   );
 }
@@ -288,7 +293,7 @@ export function ProbBar({ home, draw, away, height = 10 }: { home: number; draw:
   return (
     <div
       role="img"
-      aria-label={`Domácí ${Math.round(home)} %, remíza ${Math.round(draw)} %, hosté ${Math.round(away)} %`}
+      aria-label={t("mc.kit.probAria", { h: Math.round(home), d: Math.round(draw), a: Math.round(away) })}
       className="flex w-full gap-0.5 overflow-hidden rounded-full"
       style={{ height }}
     >
@@ -335,7 +340,7 @@ export function MirrorRow({
   const max = Math.max(h ?? 0, a ?? 0, 1e-9);
   const lead = h == null || a == null || h === a ? null : (h > a) !== lowerBetter ? "home" : "away";
   const fmt = (v: number | null) =>
-    v == null ? "—" : `${v.toLocaleString("cs-CZ", { minimumFractionDigits: digits, maximumFractionDigits: digits })}${suffix}`;
+    v == null ? "—" : `${v.toLocaleString(intlTag(), { minimumFractionDigits: digits, maximumFractionDigits: digits })}${suffix}`;
   const w = (v: number | null) => (v == null ? 0 : Math.max(4, (v / max) * 100));
   return (
     <div className={`py-2 ${muted ? "opacity-80" : ""}`}>

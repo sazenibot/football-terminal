@@ -2,9 +2,10 @@ import { useMemo, useState } from "react";
 import type { H2HMatch, MatchData, MatchFacts, TeamBrief, TeamMatchStats } from "../types";
 import { formatDate } from "../lib/format";
 import { formRows, formSummary, h2hRecord, resOf } from "./derive";
-import { Card, Chip, Empty, MirrorRow, ResBadge, Seg, SideHeads, TeamTitle, VenueTag, n1, pct, type Res } from "./kit";
+import { Card, Chip, Empty, MirrorRow, ResBadge, Seg, SideHeads, TeamTitle, VenueTag, n1, pct, resLetter, type Res } from "./kit";
+import { intlTag, t, type Key } from "../i18n/locale";
 
-const short = (iso: string) => new Date(iso).toLocaleDateString("cs-CZ", { day: "numeric", month: "numeric" });
+const short = (iso: string) => new Date(iso).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
 
 /* ---------- Forma ---------- */
 
@@ -18,24 +19,24 @@ function FormColumn({ team, side, rows }: { team: TeamBrief; side: "home" | "awa
       <p className="mb-2 text-xs text-(--c-muted)">
         {s.n ? (
           <>
-            <b className="text-(--c-text)">{s.pts} b.</b> · {s.w}V {s.d}R {s.l}P · skóre {s.gf}:{s.ga}
+            <b className="text-(--c-text)">{t("mc.fh.pts", { n: s.pts })}</b> · {s.w}{resLetter("V")} {s.d}{resLetter("R")} {s.l}{resLetter("P")} · {t("mc.fh.score", { gf: s.gf, ga: s.ga })}
           </>
         ) : (
-          "Zatím žádný zápas v téhle sezóně"
+          t("mc.fh.noMatches")
         )}
       </p>
       <ul className="space-y-1">
         {rows.map((r) => (
           <li key={r.fixture_id} className="grid grid-cols-[2.75rem_1.5rem_2.25rem_1fr_auto] items-center gap-2 rounded-lg px-1 py-1 text-[13px] hover:bg-(--c-raised)">
             <span className="text-xs text-(--c-faint)">{short(r.date)}</span>
-            <ResBadge r={resOf(r)} title={`${resOf(r)} ${r.gf}:${r.ga} vs ${r.opponent}`} />
+            <ResBadge r={resOf(r)} title={`${resLetter(resOf(r))} ${r.gf}:${r.ga} vs ${r.opponent}`} />
             <span className="font-semibold tabular-nums">
               {r.gf}:{r.ga}
             </span>
             <span className="min-w-0 truncate text-(--c-muted)">
               {r.opponent}
               {!r.is_league_match && (
-                <span className="ml-1.5 rounded bg-(--c-raised) px-1 py-0.5 text-[10px] text-(--c-faint)">{r.league_name ?? "pohár"}</span>
+                <span className="ml-1.5 rounded bg-(--c-raised) px-1 py-0.5 text-[10px] text-(--c-faint)">{r.league_name ?? t("mc.fh.cup")}</span>
               )}
             </span>
             <VenueTag home={r.is_home} />
@@ -50,16 +51,16 @@ export function FormCard({ m }: { m: MatchData }) {
   const [venueOnly, setVenueOnly] = useState(false);
   return (
     <Card
-      title="Forma týmů"
-      lead="Posledních 6 zápasů letošní sezóny. Nejnovější nahoře."
+      title={t("mc.fh.title")}
+      lead={t("mc.fh.lead")}
       aside={
         <Seg
-          label="Které zápasy"
+          label={t("mc.fh.which")}
           value={venueOnly ? "venue" : "all"}
           onChange={(v) => setVenueOnly(v === "venue")}
           options={[
-            { id: "all", label: "Všechny" },
-            { id: "venue", label: "Doma / venku" },
+            { id: "all", label: t("mc.fh.all") },
+            { id: "venue", label: t("mc.fh.homeAway") },
           ]}
         />
       }
@@ -68,7 +69,7 @@ export function FormCard({ m }: { m: MatchData }) {
         <FormColumn team={m.home} side="home" rows={formRows(m.form.home, venueOnly, true)} />
         <FormColumn team={m.away} side="away" rows={formRows(m.form.away, venueOnly, false)} />
       </div>
-      {venueOnly && <p className="mt-3 text-[11px] text-(--c-faint)">Domácí tým jen z domácích zápasů, hosté jen z venkovních. Takhle se nejlíp vidí, jak tým hraje v roli, kterou čeká v tomhle zápase.</p>}
+      {venueOnly && <p className="mt-3 text-[11px] text-(--c-faint)">{t("mc.fh.venueNote")}</p>}
     </Card>
   );
 }
@@ -81,7 +82,7 @@ export function H2HRecordBar({ m }: { m: MatchData }) {
   const w = (v: number) => `${(v / r.n) * 100}%`;
   return (
     <div>
-      <div className="flex h-2.5 gap-0.5 overflow-hidden rounded-full" role="img" aria-label={`${r.w} výher domácích, ${r.d} remíz, ${r.l} výher hostů`}>
+      <div className="flex h-2.5 gap-0.5 overflow-hidden rounded-full" role="img" aria-label={t("mc.fh.recAria", { w: r.w, d: r.d, l: r.l })}>
         <div style={{ width: w(r.w), background: "var(--c-home)" }} />
         <div style={{ width: w(r.d), background: "var(--c-draw)", opacity: 0.55 }} />
         <div style={{ width: w(r.l), background: "var(--c-away)" }} />
@@ -90,7 +91,7 @@ export function H2HRecordBar({ m }: { m: MatchData }) {
         <span style={{ color: "var(--c-home)" }} className="truncate font-semibold">
           {m.home.name} {r.w}×
         </span>
-        <span className="text-center text-(--c-muted)">remíza {r.d}×</span>
+        <span className="text-center text-(--c-muted)">{t("mc.fh.drawN", { n: r.d })}</span>
         <span style={{ color: "var(--c-away)" }} className="truncate text-right font-semibold">
           {m.away.name} {r.l}×
         </span>
@@ -108,37 +109,37 @@ export function H2HCard({ m }: { m: MatchData }) {
 
   return (
     <Card
-      title="Vzájemné zápasy"
-      lead={`Posledních ${m.h2h.length} z ${m.h2h_total_available} dostupných.`}
+      title={t("mc.ov.h2h.title")}
+      lead={t("mc.fh.h2hLead", { n: m.h2h.length, total: m.h2h_total_available })}
       aside={
         <Seg
-          label="Filtr zápasů"
+          label={t("mc.fh.filter")}
           value={filter}
           onChange={(v) => {
             setFilter(v);
             setAll(false);
           }}
           options={[
-            { id: "all", label: "Všechny" },
-            { id: "home", label: `${m.home.name} doma` },
+            { id: "all", label: t("mc.fh.all") },
+            { id: "home", label: t("mc.fh.teamHome", { team: m.home.name }) },
           ]}
         />
       }
     >
       {m.h2h.length === 0 ? (
-        <Empty>Tyto týmy spolu v dostupných datech zatím nehrály.</Empty>
+        <Empty>{t("mc.ov.h2h.none")}</Empty>
       ) : (
         <>
           <H2HRecordBar m={m} />
           <div className="mt-3 grid grid-cols-3 gap-2 text-center text-xs text-(--c-muted)">
             <div>
-              <b className="block text-base text-(--c-text)">{n1(r.avgGoals)}</b>gólu na zápas
+              <b className="block text-base text-(--c-text)">{n1(r.avgGoals)}</b>{t("mc.fh.goalsPer")}
             </div>
             <div>
-              <b className="block text-base text-(--c-text)">{pct(r.over25Pct)}</b>over 2,5
+              <b className="block text-base text-(--c-text)">{pct(r.over25Pct)}</b>{t("mc.ins.item.over25")}
             </div>
             <div>
-              <b className="block text-base text-(--c-text)">{pct(r.bttsPct)}</b>oba skórovali
+              <b className="block text-base text-(--c-text)">{pct(r.bttsPct)}</b>{t("mc.fh.bothScored")}
             </div>
           </div>
           <ul className="mt-4 space-y-1">
@@ -148,10 +149,10 @@ export function H2HCard({ m }: { m: MatchData }) {
           </ul>
           {list.length > 5 && (
             <button type="button" onClick={() => setAll((a) => !a)} className="mt-2 min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-              {all ? "Zobrazit méně" : `Zobrazit dalších ${list.length - 5}`}
+              {all ? t("home.news.less") : t("mc.fh.showMore", { n: list.length - 5 })}
             </button>
           )}
-          <p className="mt-2 text-[11px] text-(--c-faint)">Písmeno a barva = výsledek z pohledu týmu {m.home.name}.</p>
+          <p className="mt-2 text-[11px] text-(--c-faint)">{t("mc.fh.letterNote", { team: m.home.name })}</p>
         </>
       )}
     </Card>
@@ -176,15 +177,15 @@ function H2HRow({ x }: { x: H2HMatch }) {
 
 /* ---------- Statistiky ze vzájemných zápasů ---------- */
 
-const ROWS: { key: keyof TeamMatchStats; label: string; digits?: number; hint?: string }[] = [
-  { key: "shots", label: "Střely" },
-  { key: "sot", label: "Střely na branku" },
-  { key: "xgot", label: "xGOT", digits: 2, hint: "Kvalita střel na branku: kolik gólů by z nich dal průměrný střelec. Máme ho jen u novějších zápasů." },
-  { key: "corners", label: "Rohy" },
-  { key: "fouls", label: "Fauly" },
-  { key: "yellow", label: "Žluté karty" },
-  { key: "red", label: "Červené karty", digits: 2 },
-  { key: "possession", label: "Držení míče", digits: 0 },
+const ROWS: { key: keyof TeamMatchStats; label: Key; digits?: number; hint?: Key }[] = [
+  { key: "shots", label: "mc.pr.shots" },
+  { key: "sot", label: "mc.pr.sot" },
+  { key: "xgot", label: "mc.fh.xgot", digits: 2, hint: "mc.fh.xgotHint" },
+  { key: "corners", label: "mc.pr.corners" },
+  { key: "fouls", label: "mc.pe.col.fT" },
+  { key: "yellow", label: "mc.fh.yellowCards" },
+  { key: "red", label: "mc.fh.redCards", digits: 2 },
+  { key: "possession", label: "mc.fh.possession", digits: 0 },
 ];
 
 function avg(nums: (number | null | undefined)[], digits: number): number | null {
@@ -227,26 +228,22 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
 
   return (
     <Card
-      title="Statistiky ze vzájemných zápasů"
-      lead={
-        venue === "home"
-          ? `Průměr na zápas za každý tým ze vzájemných zápasů, ve kterých ${m.home.name} hrála doma.`
-          : "Průměr na zápas za každý tým ze všech vzájemných zápasů, ať hrál doma, nebo venku."
-      }
+      title={t("mc.fh.stats.title")}
+      lead={venue === "home" ? t("mc.fh.stats.leadHome", { team: m.home.name }) : t("mc.fh.stats.leadAll")}
       aside={
         <Seg
-          label="Domácí prostředí"
+          label={t("mc.fh.venue")}
           value={venue}
           onChange={setVenue}
           options={[
-            { id: "all", label: "Všechny" },
-            { id: "home", label: `${m.home.name} doma` },
+            { id: "all", label: t("mc.fh.all") },
+            { id: "home", label: t("mc.fh.teamHome", { team: m.home.name }) },
           ]}
         />
       }
     >
       <div className="mb-3 flex flex-wrap items-center gap-1.5">
-        <span className="mr-1 text-xs text-(--c-muted)">Roky</span>
+        <span className="mr-1 text-xs text-(--c-muted)">{t("mc.fh.years")}</span>
         {years.map((y) => (
           <Chip key={y} active={sel.has(y)} onClick={() => toggleYear(y)}>
             {y}
@@ -254,24 +251,24 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
         ))}
         {sel.size > 0 && (
           <button type="button" onClick={() => setSel(new Set())} className="min-h-8 px-2 text-xs text-(--c-muted) underline">
-            zrušit
+            {t("mc.fh.clear")}
           </button>
         )}
       </div>
       {(homeCoaches.length > 1 || awayCoaches.length > 1) && (
         <div className="mb-3 flex flex-wrap items-center gap-2">
-          <span className="mr-1 text-xs text-(--c-muted)">Trenér</span>
+          <span className="mr-1 text-xs text-(--c-muted)">{t("mc.fh.coach")}</span>
           {homeCoaches.length > 1 && (
-            <select aria-label={`Trenér ${m.home.name}`} value={hc} onChange={(e) => setHc(e.target.value)} className={selectCls}>
-              <option value="all">{m.home.name}: všichni</option>
+            <select aria-label={t("mc.fh.coachOf", { team: m.home.name })} value={hc} onChange={(e) => setHc(e.target.value)} className={selectCls}>
+              <option value="all">{t("mc.fh.allCoaches", { team: m.home.name })}</option>
               {homeCoaches.map((c) => (
                 <option key={c}>{c}</option>
               ))}
             </select>
           )}
           {awayCoaches.length > 1 && (
-            <select aria-label={`Trenér ${m.away.name}`} value={ac} onChange={(e) => setAc(e.target.value)} className={selectCls}>
-              <option value="all">{m.away.name}: všichni</option>
+            <select aria-label={t("mc.fh.coachOf", { team: m.away.name })} value={ac} onChange={(e) => setAc(e.target.value)} className={selectCls}>
+              <option value="all">{t("mc.fh.allCoaches", { team: m.away.name })}</option>
               {awayCoaches.map((c) => (
                 <option key={c}>{c}</option>
               ))}
@@ -281,12 +278,12 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
       )}
 
       {f.length === 0 ? (
-        <Empty>Pro tenhle výběr nemáme žádný zápas. Zkuste zrušit filtr.</Empty>
+        <Empty>{t("mc.fh.noSelection")}</Empty>
       ) : (
         <>
           <div className="mb-1 flex items-center justify-between text-[11px] text-(--c-faint)">
             <span>
-              {f.length} {f.length === 1 ? "zápas" : f.length < 5 ? "zápasy" : "zápasů"} ve výběru
+              {t("mc.fh.inSelection", { n: f.length })}
             </span>
           </div>
           <SideHeads home={m.home} away={m.away} />
@@ -295,16 +292,16 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
             return (
               <MirrorRow
                 key={r.key}
-                label={r.label}
-                hint={r.hint}
+                label={t(r.label)}
+                hint={r.hint ? t(r.hint) : undefined}
                 digits={d}
-                suffix={r.key === "possession" ? " %" : ""}
+                suffix={r.key === "possession" ? t("mc.fh.pctSuffix") : ""}
                 home={avg(f.map((x) => x.team_home_stats[r.key] as number | null), d)}
                 away={avg(f.map((x) => x.team_away_stats[r.key] as number | null), d)}
               />
             );
           })}
-          {withXgot && <p className="mt-1 text-[11px] text-(--c-faint)">xGOT máme u {xgotN} z {f.length} zápasů, starší sezóny a poháry ho nemají.</p>}
+          {withXgot && <p className="mt-1 text-[11px] text-(--c-faint)">{t("mc.fh.xgotNote", { n: xgotN, total: f.length })}</p>}
         </>
       )}
     </Card>

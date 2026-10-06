@@ -1,7 +1,8 @@
 import type { SimV2 } from "../components/SimulationV2";
 import type { XgotBadge } from "../lib/xgEfficiency";
 import type { FormSide, MatchData, MatchFacts } from "../types";
-import { n1, n2, pct, plural, VALUE_THRESHOLD, type Res } from "./kit";
+import { n1, n2, pct, VALUE_THRESHOLD, type Res } from "./kit";
+import { intlTag, t } from "../i18n/locale";
 
 /* ---------- jednotná predikce (nový model nebo starší simulace jiných lig) ---------- */
 
@@ -106,13 +107,13 @@ export function kickoffLabel(iso: string, now = new Date()): { text: string; liv
   const k = new Date(iso);
   const diffMs = k.getTime() - now.getTime();
   const sameDay = k.toDateString() === now.toDateString();
-  const time = k.toLocaleTimeString("cs-CZ", { hour: "2-digit", minute: "2-digit" });
-  if (diffMs < -2.5 * 3600e3) return { text: "odehráno", live: false };
-  if (diffMs < 0) return { text: "právě se hraje", live: true };
-  if (sameDay) return { text: `dnes v ${time}`, live: false };
+  const time = k.toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" });
+  if (diffMs < -2.5 * 3600e3) return { text: t("mc.kick.played"), live: false };
+  if (diffMs < 0) return { text: t("mc.kick.live"), live: true };
+  if (sameDay) return { text: t("mc.kick.today", { time }), live: false };
   const days = Math.round((new Date(k.toDateString()).getTime() - new Date(now.toDateString()).getTime()) / 86400e3);
-  if (days === 1) return { text: `zítra v ${time}`, live: false };
-  return { text: `za ${days} ${plural(days, "den", "dny", "dní")}`, live: false };
+  if (days === 1) return { text: t("mc.kick.tomorrow", { time }), live: false };
+  return { text: t("mc.kick.inDays", { n: days }), live: false };
 }
 
 /* ---------- klíčová zjištění ---------- */
@@ -127,8 +128,8 @@ export function buildInsights(m: MatchData, p: Prediction, badges: { home: XgotB
   // 1) kdo je favorit
   const fav = p.home >= p.away ? { name: hn, v: p.home } : { name: an, v: p.away };
   const gap = Math.abs(p.home - p.away);
-  if (gap >= 15) out.push({ tone: "pos", text: `Model vidí jako favorita ${fav.name}: ${pct(fav.v)} na výhru.` });
-  else out.push({ tone: "neutral", text: `Vyrovnaný zápas. ${hn} ${pct(p.home)}, remíza ${pct(p.draw)}, ${an} ${pct(p.away)}.` });
+  if (gap >= 15) out.push({ tone: "pos", text: t("mc.ins.fav", { team: fav.name, p: pct(fav.v) }) });
+  else out.push({ tone: "neutral", text: t("mc.ins.even", { home: hn, ph: pct(p.home), pd: pct(p.draw), away: an, pa: pct(p.away) }) });
 
   // 2) kde se model liší od sázkové kanceláře
   if (p.market) {
@@ -137,19 +138,19 @@ export function buildInsights(m: MatchData, p: Prediction, badges: { home: XgotB
     const add = (name: string, model: number | undefined, market: number | undefined) => {
       if (model != null && market != null) items.push({ name, d: model - market, model, market });
     };
-    add(`výhra ${hn}`, p.home, mk.home_win_pct);
-    add("remíza", p.draw, mk.draw_pct);
-    add(`výhra ${an}`, p.away, mk.away_win_pct);
-    add("over 1,5", p.over15, mk.over15_pct);
-    add("over 2,5", p.over25, mk.over25_pct);
-    add("over 3,5", p.over35, mk.over35_pct);
-    add("under 2,5", p.under25, mk.under25_pct);
-    const fmt = (i: (typeof items)[number]) => `${i.name} (model ${pct(i.model)}, sázková kancelář ${pct(i.market)})`;
+    add(t("mc.ins.item.win", { team: hn }), p.home, mk.home_win_pct);
+    add(t("mc.ins.item.draw"), p.draw, mk.draw_pct);
+    add(t("mc.ins.item.win", { team: an }), p.away, mk.away_win_pct);
+    add(t("mc.ins.item.over15"), p.over15, mk.over15_pct);
+    add(t("mc.ins.item.over25"), p.over25, mk.over25_pct);
+    add(t("mc.ins.item.over35"), p.over35, mk.over35_pct);
+    add(t("mc.ins.item.under25"), p.under25, mk.under25_pct);
+    const fmt = (i: (typeof items)[number]) => t("mc.ins.itemFmt", { name: i.name, model: pct(i.model), market: pct(i.market) });
     const up = items.filter((i) => i.d >= VALUE_THRESHOLD).sort((x, y) => y.d - x.d).slice(0, 2);
     const down = items.filter((i) => i.d <= -VALUE_THRESHOLD).sort((x, y) => x.d - y.d).slice(0, 2);
-    if (up.length) out.push({ tone: "pos", text: `Vidíme hodnotu: ${up.map(fmt).join("; ")}.` });
-    if (down.length) out.push({ tone: "neutral", text: `Sázková kancelář tomu věří víc: ${down.map(fmt).join("; ")}.` });
-    if (!up.length && !down.length) out.push({ tone: "neutral", text: "Model i sázková kancelář vidí zápas skoro stejně." });
+    if (up.length) out.push({ tone: "pos", text: t("mc.ins.value", { items: up.map(fmt).join("; ") }) });
+    if (down.length) out.push({ tone: "neutral", text: t("mc.ins.marketHigher", { items: down.map(fmt).join("; ") }) });
+    if (!up.length && !down.length) out.push({ tone: "neutral", text: t("mc.ins.same") });
   }
 
   // 3) forma
@@ -162,7 +163,7 @@ export function buildInsights(m: MatchData, p: Prediction, badges: { home: XgotB
       const other = diff > 0 ? { n: an, s: fa } : { n: hn, s: fh };
       out.push({
         tone: "pos",
-        text: `Ve formě vede ${better.n}: ${better.s.pts} bodů z ${better.s.n} zápasů, ${other.n} má ${other.s.pts} z ${other.s.n}.`,
+        text: t("mc.ins.form", { leader: better.n, lp: better.s.pts, ln: better.s.n, other: other.n, op: other.s.pts, on: other.s.n }),
       });
     }
   }
@@ -172,7 +173,7 @@ export function buildInsights(m: MatchData, p: Prediction, badges: { home: XgotB
   if (h.n >= 3) {
     out.push({
       tone: "neutral",
-      text: `Z posledních ${h.n} vzájemných zápasů: ${hn} ${h.w}× vyhrála, ${h.d}× remíza, ${h.l}× prohrála. Průměrně padlo ${n1(h.avgGoals)} gólu.`,
+      text: t("mc.ins.h2h", { n: h.n, team: hn, w: h.w, d: h.d, l: h.l, avg: n1(h.avgGoals) }),
     });
   }
 
@@ -182,10 +183,10 @@ export function buildInsights(m: MatchData, p: Prediction, badges: { home: XgotB
     tone: "neutral",
     text:
       p.over25 >= 58
-        ? `Čekají se góly: model dává na over 2,5 ${pct(p.over25)} (očekáváno ${n1(total)} gólu).`
+        ? t("mc.ins.goalsHigh", { over: pct(p.over25), total: n1(total) })
         : p.over25 <= 42
-          ? `Spíš uzavřený zápas: over 2,5 jen ${pct(p.over25)} (očekáváno ${n1(total)} gólu).`
-          : `Gólově nejasno: over 2,5 ${pct(p.over25)} (očekáváno ${n1(total)} gólu).`,
+          ? t("mc.ins.goalsLow", { over: pct(p.over25), total: n1(total) })
+          : t("mc.ins.goalsMid", { over: pct(p.over25), total: n1(total) }),
   });
 
   // 6) šťastné / smolné finišování
@@ -198,8 +199,8 @@ export function buildInsights(m: MatchData, p: Prediction, badges: { home: XgotB
         tone: "warn",
         text:
           b.id === "lucky_scoring_team"
-            ? `${name} v posledních 5 zápasech dává víc gólů, než odpovídá kvalitě střel (číslo se může vrátit k normálu).`
-            : `${name} v posledních 5 zápasech dává míň gólů, než odpovídá kvalitě střel (může se to otočit).`,
+            ? t("mc.ins.lucky", { team: name })
+            : t("mc.ins.unlucky", { team: name }),
       });
     }
   }
@@ -210,8 +211,8 @@ export function buildInsights(m: MatchData, p: Prediction, badges: { home: XgotB
   const avgYellow = ref?.season_stats?.["Yellowcards"]?.average ?? ref?.season_stats?.["Yellowcards"]?.all?.average;
   if (ref && lc && typeof avgYellow === "number" && lc.yellow_per_match) {
     const rel = avgYellow / lc.yellow_per_match;
-    if (rel >= 1.15) out.push({ tone: "warn", text: `Rozhodčí ${ref.name} dává víc žlutých než liga (${n2(avgYellow)} vs. ${n2(lc.yellow_per_match)} na zápas).` });
-    else if (rel <= 0.85) out.push({ tone: "neutral", text: `Rozhodčí ${ref.name} dává méně žlutých než liga (${n2(avgYellow)} vs. ${n2(lc.yellow_per_match)} na zápas).` });
+    if (rel >= 1.15) out.push({ tone: "warn", text: t("mc.ins.refMore", { ref: ref.name, a: n2(avgYellow), b: n2(lc.yellow_per_match) }) });
+    else if (rel <= 0.85) out.push({ tone: "neutral", text: t("mc.ins.refLess", { ref: ref.name, a: n2(avgYellow), b: n2(lc.yellow_per_match) }) });
   }
 
   return out.slice(0, 7);

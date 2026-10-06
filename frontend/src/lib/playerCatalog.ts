@@ -1,4 +1,5 @@
 import type { CatalogPlayerMatch, CatalogPlayerRole } from "../types";
+import { intlTag, t, type Key } from "../i18n/locale";
 
 export type SeasonKey = "all" | number;
 export type Venue = "all" | "home" | "away";
@@ -10,12 +11,24 @@ export type ProfileGroup = "attack" | "defense" | "discipline";
 export const SELECT =
   "mt-1 w-full rounded-lg border border-slate-700 bg-[#12161f] text-slate-100 text-sm px-3 py-2 light:bg-white light:border-slate-300 light:text-slate-800";
 
+/* Štítky jsou getter, ať se překládají až při čtení (ne při importu modulu). */
 export const ROLE_LABEL: Record<CatalogPlayerRole, string> = {
-  att: "Útočník",
-  mid: "Záložník",
-  def: "Obránce",
-  gk: "Brankář",
+  get att() {
+    return t("ct.role.att");
+  },
+  get mid() {
+    return t("ct.role.mid");
+  },
+  get def() {
+    return t("ct.role.def");
+  },
+  get gk() {
+    return t("ct.role.gk");
+  },
 };
+
+/** Přípona procent za číslem: česky " %", anglicky "%". */
+export const pctSuffix = () => t("fmt.pct", { n: "" });
 
 export type PlayerStatDef = {
   key: string;
@@ -26,26 +39,37 @@ export type PlayerStatDef = {
   asPct?: boolean;
 };
 
+type StatKey = "g" | "a" | "sh" | "sot" | "kp" | "dr" | "ps" | "cr" | "dw" | "aw" | "tk" | "it" | "cl" | "sv" | "gc" | "cs" | "f" | "y" | "r";
+
+/* Štítek je getter, ať se přeloží až při čtení (ne při importu modulu). */
+const stat = (key: StatKey, rest: Omit<PlayerStatDef, "key" | "label">): PlayerStatDef => ({
+  key,
+  get label() {
+    return t(`ct.stat.${key}`);
+  },
+  ...rest,
+});
+
 export const PLAYER_STATS: PlayerStatDef[] = [
-  { key: "g", label: "Góly/90", group: "attack", higherBetter: true, per90: true },
-  { key: "a", label: "Asistence/90", group: "attack", higherBetter: true, per90: true },
-  { key: "sh", label: "Střely/90", group: "attack", higherBetter: true, per90: true },
-  { key: "sot", label: "Na bránu/90", group: "attack", higherBetter: true, per90: true },
-  { key: "kp", label: "Klíčové přihrávky/90", group: "attack", higherBetter: true, per90: true },
-  { key: "dr", label: "Driblingy/90", group: "attack", higherBetter: true, per90: true },
-  { key: "ps", label: "Proměněné penalty/90", group: "attack", higherBetter: true, per90: true },
-  { key: "cr", label: "Centrující přihrávky/90", group: "attack", higherBetter: true, per90: true },
-  { key: "dw", label: "Vyhrané souboje/90", group: "defense", higherBetter: true, per90: true },
-  { key: "aw", label: "Vzdušné souboje/90", group: "defense", higherBetter: true, per90: true },
-  { key: "tk", label: "Skluzy/90", group: "defense", higherBetter: true, per90: true },
-  { key: "it", label: "Zachycené přihrávky/90", group: "defense", higherBetter: true, per90: true },
-  { key: "cl", label: "Vyčištění/90", group: "defense", higherBetter: true, per90: true },
-  { key: "sv", label: "Zákroky/90", group: "defense", higherBetter: true, per90: true },
-  { key: "gc", label: "Obdržené/90", group: "defense", higherBetter: false, per90: true },
-  { key: "cs", label: "Čistá konta %", group: "defense", higherBetter: true, per90: false, asPct: true },
-  { key: "f", label: "Fauly/90", group: "discipline", higherBetter: false, per90: true },
-  { key: "y", label: "Žluté/90", group: "discipline", higherBetter: false, per90: true },
-  { key: "r", label: "Červené/90", group: "discipline", higherBetter: false, per90: true },
+  stat("g", { group: "attack", higherBetter: true, per90: true }),
+  stat("a", { group: "attack", higherBetter: true, per90: true }),
+  stat("sh", { group: "attack", higherBetter: true, per90: true }),
+  stat("sot", { group: "attack", higherBetter: true, per90: true }),
+  stat("kp", { group: "attack", higherBetter: true, per90: true }),
+  stat("dr", { group: "attack", higherBetter: true, per90: true }),
+  stat("ps", { group: "attack", higherBetter: true, per90: true }),
+  stat("cr", { group: "attack", higherBetter: true, per90: true }),
+  stat("dw", { group: "defense", higherBetter: true, per90: true }),
+  stat("aw", { group: "defense", higherBetter: true, per90: true }),
+  stat("tk", { group: "defense", higherBetter: true, per90: true }),
+  stat("it", { group: "defense", higherBetter: true, per90: true }),
+  stat("cl", { group: "defense", higherBetter: true, per90: true }),
+  stat("sv", { group: "defense", higherBetter: true, per90: true }),
+  stat("gc", { group: "defense", higherBetter: false, per90: true }),
+  stat("cs", { group: "defense", higherBetter: true, per90: false, asPct: true }),
+  stat("f", { group: "discipline", higherBetter: false, per90: true }),
+  stat("y", { group: "discipline", higherBetter: false, per90: true }),
+  stat("r", { group: "discipline", higherBetter: false, per90: true }),
 ];
 
 export const RADAR_AXES: Record<CatalogPlayerRole, string[]> = {
@@ -120,7 +144,7 @@ export type Badge = { emoji: string; label: string; tone: "value" | "warning" | 
 type BadgeRule = {
   id: string;
   emoji: string;
-  label: string;
+  label: Key;
   tone: Badge["tone"];
   roles?: CatalogPlayerRole[];
   priority: number;
@@ -138,7 +162,7 @@ const BADGE_RULES: BadgeRule[] = [
   {
     id: "pen",
     emoji: "🎯",
-    label: "Penaltový exekutor",
+    label: "ct.badge.pen",
     tone: "value",
     priority: 10,
     test: ({ rows }) => sumKey(rows, "ps") >= 3,
@@ -146,7 +170,7 @@ const BADGE_RULES: BadgeRule[] = [
   {
     id: "shot",
     emoji: "🧤",
-    label: "Shot-stopper",
+    label: "ct.badge.shot",
     tone: "value",
     roles: ["gk"],
     priority: 9,
@@ -155,7 +179,7 @@ const BADGE_RULES: BadgeRule[] = [
   {
     id: "air",
     emoji: "🛡️",
-    label: "Vzdušný duelist",
+    label: "ct.badge.air",
     tone: "value",
     roles: ["def", "att", "mid"],
     priority: 8,
@@ -164,7 +188,7 @@ const BADGE_RULES: BadgeRule[] = [
   {
     id: "box",
     emoji: "⚡",
-    label: "Box threat",
+    label: "ct.badge.box",
     tone: "value",
     roles: ["att", "mid"],
     priority: 7,
@@ -173,7 +197,7 @@ const BADGE_RULES: BadgeRule[] = [
   {
     id: "create",
     emoji: "🎯",
-    label: "Tvůrce šancí",
+    label: "ct.badge.create",
     tone: "value",
     roles: ["att", "mid"],
     priority: 6,
@@ -182,7 +206,7 @@ const BADGE_RULES: BadgeRule[] = [
   {
     id: "cards",
     emoji: "🛑",
-    label: "Magnet na karty",
+    label: "ct.badge.cards",
     tone: "warning",
     priority: 5,
     test: ({ pct }) => (pct("y", true) ?? 0) >= 80,
@@ -190,7 +214,7 @@ const BADGE_RULES: BadgeRule[] = [
   {
     id: "work",
     emoji: "🧱",
-    label: "Workhorse",
+    label: "ct.badge.work",
     tone: "neutral",
     priority: 4,
     test: ({ minutes, available }) => available > 0 && minutes / available >= 0.8,
@@ -217,7 +241,7 @@ export function badgesFor(
   return BADGE_RULES.filter((r) => (!r.roles || r.roles.includes(role)) && r.test({ rows, role, per90Of, pct, minutes, available: availableMinutes }))
     .sort((a, b) => b.priority - a.priority)
     .slice(0, 3)
-    .map((r) => ({ emoji: r.emoji, label: r.label, tone: r.tone }));
+    .map((r) => ({ emoji: r.emoji, label: t(r.label), tone: r.tone }));
 }
 
 export function fdrBuckets(rows: CatalogPlayerMatch[]) {
@@ -230,20 +254,18 @@ export function fdrBuckets(rows: CatalogPlayerMatch[]) {
 
 export function fmt(n: number | null | undefined, digits = 2) {
   if (n == null) return "—";
-  return n.toLocaleString("cs-CZ", { maximumFractionDigits: digits });
+  return n.toLocaleString(intlTag(), { maximumFractionDigits: digits });
 }
 
 export function seasonLabel(season: SeasonKey, seasons: { id: number; name?: string | null }[], current?: number | null) {
-  if (season === "all") return "Všechny sezony";
+  if (season === "all") return t("ct.season.all");
   const name = seasons.find((s) => s.id === season)?.name;
-  if (season === current) return "Tato sezona";
-  return name || `Sezona ${season}`;
+  if (season === current) return t("ct.season.current");
+  return name || t("ct.season.n", { n: season });
 }
 
 export function csMatches(n: number) {
-  if (n === 1) return "zápas";
-  if (n >= 2 && n <= 4) return "zápasy";
-  return "zápasů";
+  return t("ct.matchWord", { n });
 }
 
 export function rankTone(rank: number, size: number) {

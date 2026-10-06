@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
+import { t } from "../i18n/locale";
 import { useAccess } from "./AccessContext";
 import { FEATURES, allows as tierAllows, tierName, type Feature, type Tier } from "./tiers";
 
@@ -31,23 +32,23 @@ export function Paywall({ need, title, text, compact = false }: { need: Tier; ti
       className={`rounded-2xl border border-(--c-line) bg-(--c-surface)/95 text-center shadow-lg backdrop-blur ${compact ? "px-4 py-4" : "px-5 py-6"}`}
     >
       <TierBadge tier={need} />
-      <h3 className="mt-2 text-[15px] font-semibold text-(--c-text)">{title ?? `Tato část je v tarifu ${tierName(need)}`}</h3>
+      <h3 className="mt-2 text-[15px] font-semibold text-(--c-text)">{title ?? t("gate.title", { tier: tierName(need) })}</h3>
       <p className="mx-auto mt-1 max-w-md text-[13px] leading-snug text-(--c-muted)">
-        {text ?? (wantsAccount ? "Stačí bezplatná registrace." : `Odemkne ji tarif ${tierName(need)}. Aktuálně máte: ${tierName(tier)}.`)}
+        {text ?? (wantsAccount ? t("gate.textAccount") : t("gate.text", { tier: tierName(need), current: tierName(tier) }))}
       </p>
       <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
         {wantsAccount && tier === "anon" ? (
           <Link to="/prihlaseni" className="inline-flex min-h-9 items-center rounded-xl btn-accent px-4 text-[13px] font-semibold hover:opacity-90">
-            Zaregistrovat zdarma
+            {t("gate.register")}
           </Link>
         ) : (
           <Link to="/tarify" className="inline-flex min-h-9 items-center rounded-xl btn-accent px-4 text-[13px] font-semibold hover:opacity-90">
-            Zobrazit tarify
+            {t("gate.seePlans")}
           </Link>
         )}
         {wantsAccount && tier === "anon" && (
           <Link to="/tarify" className="inline-flex min-h-9 items-center rounded-xl border border-(--c-line) px-4 text-[13px] font-medium text-(--c-text) hover:border-(--c-faint)">
-            Srovnat tarify
+            {t("gate.comparePlans")}
           </Link>
         )}
       </div>

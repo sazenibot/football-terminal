@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "../i18n/router";
 import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer, Tooltip } from "recharts";
 import { useTabLock } from "../access/catalogGate";
 import { Gate } from "../access/Gate";
@@ -11,6 +11,7 @@ import {
   PLAYER_STATS,
   RADAR_AXES,
   ROLE_LABEL,
+  pctSuffix,
   badgesFor,
   fdrBuckets,
   filterMatches,
@@ -31,35 +32,37 @@ import {
   type SeasonKey,
   type Venue,
 } from "../lib/playerCatalog";
+import { t, type Key } from "../i18n/locale";
 import { useCatalogHub, useCatalogPlayer, usePitchPlayer, usePlayerPool, usePlayerShard } from "../lib/useData";
 import { Card, Chip, Empty, Info, ResBadge, Seg, VenueTag, type Res } from "../mc2/kit";
 import type { CatalogPlayerClub, CatalogPlayerMatch, CatalogPlayerOverlay, CatalogPlayerRole } from "../types";
+import { dataPosition } from "../i18n/dataText";
 
 const TABS = [
-  { id: "overview", label: "Přehled" },
-  { id: "stats", label: "Statistiky" },
-  { id: "shots", label: "Střely" },
-  { id: "compare", label: "Srovnání" },
-  { id: "matches", label: "Zápasy" },
-] as const;
+  { id: "overview", label: "ct.pl.tab.overview" },
+  { id: "stats", label: "ct.pl.tab.stats" },
+  { id: "shots", label: "ct.pl.tab.shots" },
+  { id: "compare", label: "ct.pl.tab.compare" },
+  { id: "matches", label: "ct.pl.tab.matches" },
+] as const satisfies readonly { id: string; label: Key }[];
 type TabId = (typeof TABS)[number]["id"];
 type Scope = "league" | "role";
 
-const GROUPS: { id: ProfileGroup; label: string }[] = [
-  { id: "attack", label: "Útok" },
-  { id: "defense", label: "Obrana" },
-  { id: "discipline", label: "Disciplína" },
+const GROUPS: { id: ProfileGroup; label: Key }[] = [
+  { id: "attack", label: "ct.pl.group.attack" },
+  { id: "defense", label: "ct.pl.group.defense" },
+  { id: "discipline", label: "ct.pl.group.discipline" },
 ];
 
-const VENUES = [
-  { id: "all", label: "Doma + venku" },
-  { id: "home", label: "Doma" },
-  { id: "away", label: "Venku" },
+const VENUES: { id: string; label: Key }[] = [
+  { id: "all", label: "ct.pl.venue.all" },
+  { id: "home", label: "ct.pl.venue.home" },
+  { id: "away", label: "ct.pl.venue.away" },
 ];
-const HALVES = [
-  { id: "all", label: "Celá sezona" },
-  { id: "autumn", label: "Podzim" },
-  { id: "spring", label: "Jaro" },
+const HALVES: { id: string; label: Key }[] = [
+  { id: "all", label: "ct.pl.half.all" },
+  { id: "autumn", label: "ct.pl.half.autumn" },
+  { id: "spring", label: "ct.pl.half.spring" },
 ];
 
 /** Brankář se hodnotí jinými čísly než hráč v poli. */
@@ -188,19 +191,19 @@ export function CatalogPlayerPage() {
   const compare = compareId !== "" ? teamPeers.find((p) => p.id === compareId) ?? null : null;
 
   useEffect(() => {
-    document.title = player ? `${player.name} · hráč · Katalog` : "Hráč · Katalog";
+    document.title = player ? t("ct.pl.docTitle", { name: player.name }) : t("ct.pl.docTitleLoading");
   }, [player]);
 
-  const back = <Back to={player ? `/catalog?league=${player.league_id}&tab=players` : "/catalog"}>{player?.league_name ?? "Katalog"}</Back>;
-  if (missing) return <NotFound kind="Tento hráč" back={back} />;
+  const back = <Back to={player ? `/catalog?league=${player.league_id}&tab=players` : "/catalog"}>{player?.league_name ?? t("ct.pl.backFallback")}</Back>;
+  if (missing) return <NotFound kind={t("ct.pl.kind")} back={back} />;
   if (error)
     return (
       <Frame>
         {back}
-        <p className="mt-4 text-(--c-loss)">Hráče se nepodařilo načíst: {error}</p>
+        <p className="mt-4 text-(--c-loss)">{t("ct.pl.loadError", { error })}</p>
       </Frame>
     );
-  if (!player) return <Loading>Načítám hráče…</Loading>;
+  if (!player) return <Loading>{t("ct.pl.loading")}</Loading>;
 
   const kpi = kpiFor(role, slice, pools.league);
   const buckets = fdrBuckets(slice);
@@ -220,7 +223,7 @@ export function CatalogPlayerPage() {
       <div className="mt-3">
         <Hero
           media={<Avatar src={player.image} name={player.name} size={80} />}
-          eyebrow="Profil hráče"
+          eyebrow={t("ct.pl.eyebrow")}
           title={player.name}
           sub={
             <>
@@ -229,9 +232,9 @@ export function CatalogPlayerPage() {
                 {player.team_name}
               </Link>
               <div className="mt-0.5">
-                {player.position || ROLE_LABEL[role]}
+                {dataPosition(player.position) || ROLE_LABEL[role]}
                 {player.number != null ? ` · #${player.number}` : ""}
-                {player.age != null ? ` · ${player.age} let` : ""}
+                {player.age != null ? ` · ${t("ct.pl.age", { n: player.age })}` : ""}
               </div>
             </>
           }
@@ -239,7 +242,7 @@ export function CatalogPlayerPage() {
             <>
               {(shard || matches.length > 0) && (
                 <Pill tone="var(--c-muted)">
-                  {slice.length} {csMatches(slice.length)} ve výběru
+                  {t("ct.pl.inSelection", { n: slice.length })}
                 </Pill>
               )}
               {badges.map((b) => (
@@ -258,53 +261,55 @@ export function CatalogPlayerPage() {
 
       <FilterBar
         summary={[
-          seasonLabel(resolvedSeason, seasons, currentSeasonId) === "Tato sezona" ? seasons.find((x) => x.id === resolvedSeason)?.name || "Tato sezona" : seasonLabel(resolvedSeason, seasons, currentSeasonId),
-          club === "current" ? "současný klub" : club === "all" ? "všechny kluby" : clubs.find((c) => c.id === club)?.name,
-          venue === "all" ? null : venue === "home" ? "doma" : "venku",
-          half === "all" ? null : half === "autumn" ? "podzim" : "jaro",
+          seasonLabel(resolvedSeason, seasons, currentSeasonId) === t("ct.season.current")
+            ? seasons.find((x) => x.id === resolvedSeason)?.name || t("ct.season.current")
+            : seasonLabel(resolvedSeason, seasons, currentSeasonId),
+          club === "current" ? t("ct.pl.sum.thisClub") : club === "all" ? t("ct.pl.sum.allClubs") : clubs.find((c) => c.id === club)?.name,
+          venue === "all" ? null : venue === "home" ? t("ct.pl.sum.home") : t("ct.pl.sum.away"),
+          half === "all" ? null : half === "autumn" ? t("ct.pl.sum.autumn") : t("ct.pl.sum.spring"),
         ]
           .filter(Boolean)
           .join(" · ")}
-        note={!shard && !matches.length ? undefined : `${slice.length} ${csMatches(slice.length)} ve výběru z ${total} dostupných. Pořadí se počítá mezi hráči s alespoň 20 % možných minut.`}
+        note={!shard && !matches.length ? undefined : t("ct.pl.note", { n: slice.length, total })}
       >
         <Select
-          label="Sezóna"
+          label={t("ct.pl.season")}
           value={resolvedSeason === "all" ? "all" : String(resolvedSeason)}
           onChange={(v) => setSeason(v === "all" ? "all" : Number(v))}
-          options={[{ id: "all", label: "Všechny sezony" }, ...seasons.map((s) => ({ id: String(s.id), label: `${s.name || s.id}${s.id === currentSeasonId ? " (aktuální)" : ""}` }))]}
+          options={[{ id: "all", label: t("ct.season.all") }, ...seasons.map((s) => ({ id: String(s.id), label: `${s.name || s.id}${s.id === currentSeasonId ? t("ct.pl.currentTag") : ""}` }))]}
         />
         <Select
-          label="Klub"
+          label={t("ct.pl.club")}
           value={String(club)}
           onChange={(v) => setClub(v === "all" || v === "current" ? v : Number(v))}
           options={[
-            { id: "current", label: "Současný klub" },
-            { id: "all", label: "Všechny kluby" },
+            { id: "current", label: t("ct.pl.opt.currentClub") },
+            { id: "all", label: t("ct.pl.opt.allClubs") },
             ...clubs.map((c) => ({ id: String(c.id), label: `${c.name}${c.from && c.to ? ` (${c.from.slice(0, 4)}–${c.to.slice(0, 4)})` : ""}` })),
           ]}
         />
-        <Select label="Doma / venku" value={venue} onChange={setVenue} options={VENUES} />
-        <Select label="Jaro / podzim" value={half} onChange={setHalf} options={HALVES} />
+        <Select label={t("ct.pl.venueLabel")} value={venue} onChange={setVenue} options={VENUES.map((o) => ({ id: o.id, label: t(o.label) }))} />
+        <Select label={t("ct.pl.halfLabel")} value={half} onChange={setHalf} options={HALVES.map((o) => ({ id: o.id, label: t(o.label) }))} />
       </FilterBar>
 
-      <StickyTabs tabs={lock.withLocks(tabs)} value={active} onChange={setTab} label="Sekce hráče" />
+      <StickyTabs tabs={lock.withLocks(tabs.map((x) => ({ ...x, label: t(x.label) })))} value={active} onChange={setTab} label={t("ct.pl.tabsAria")} />
 
-      <Gate need={lock.need(active) ?? "unlimited"} when={!!lock.need(active)} title="Celý profil hráče je v tarifu Unlimited" text="Mapa střel, srovnání hráčů a rozpis zápasů patří do Unlimited. Přehled a statistiky jsou otevřené.">
+      <Gate need={lock.need(active) ?? "unlimited"} when={!!lock.need(active)} title={t("ct.pl.gateTitle")} text={t("ct.pl.gateText")}>
       <div role="tabpanel" className="mt-4 space-y-5">
         {!shard && !matches.length ? (
-          <p className="py-10 text-center text-sm text-(--c-muted)">Načítám statistiky hráče…</p>
+          <p className="py-10 text-center text-sm text-(--c-muted)">{t("ct.pl.loadingStats")}</p>
         ) : slice.length === 0 && active !== "shots" ? (
-          <Empty>V tomto výběru hráč nemá žádný zápas. Zkuste jiný klub nebo sezónu.</Empty>
+          <Empty>{t("ct.pl.noMatches")}</Empty>
         ) : (
           <>
             {active === "overview" && (
               <>
                 <Strengths slice={slice} role={role} pool={pools.role} onMore={() => setTab("stats")} />
-                <Card title="Výkon podle soupeře" lead="Těžší soupeř = první pětka loňské tabulky, střed 6. až 11., lehčí soupeř 12. a níž a nováčci. Čísla jsou eventová, ne xG.">
+                <Card title={t("ct.pl.fdrTitle")} lead={t("ct.pl.fdrLead")}>
                   <div className="grid gap-3 md:grid-cols-3">
-                    <FdrCard title="Těžší soupeři" color="var(--c-loss)" role={role} rows={buckets.hard} />
-                    <FdrCard title="Střed tabulky" color="var(--c-warn)" role={role} rows={buckets.mid} />
-                    <FdrCard title="Lehčí soupeři" color="var(--c-win)" role={role} rows={buckets.easy} />
+                    <FdrCard title={t("ct.pl.fdrHard")} color="var(--c-loss)" role={role} rows={buckets.hard} />
+                    <FdrCard title={t("ct.pl.fdrMid")} color="var(--c-warn)" role={role} rows={buckets.mid} />
+                    <FdrCard title={t("ct.pl.fdrEasy")} color="var(--c-win)" role={role} rows={buckets.easy} />
                   </div>
                 </Card>
               </>
@@ -319,8 +324,8 @@ export function CatalogPlayerPage() {
                 {hasKeeper && <KeeperCardV2 seasons={pitchSeasons} defaultSeason="view" name={player.common_name || player.name} showSeason={false} />}
                 {shotCount > 0 && (
                   <ShotMapCard
-                    title={`Mapa střel · ${player.common_name || player.name}`}
-                    lead="Odkud hráč střílí. Branka je nahoře, velikost tečky je xG střely."
+                    title={t("ct.pl.shotMapTitle", { name: player.common_name || player.name })}
+                    lead={t("ct.pl.shotMapLead")}
                     seasons={pitchSeasons}
                     defaultSeason="view"
                     shotsOf={shotsOfMatch}
@@ -331,22 +336,22 @@ export function CatalogPlayerPage() {
             )}
 
             {active === "compare" && (
-              <Card title="Srovnání s hráčem stejné role" lead="Radar používá stejný výběr sezóny, doma/venku a jara/podzimu jako nahoře. Střed osy je ligový průměr stejné role.">
+              <Card title={t("ct.pl.cmpTitle")} lead={t("ct.pl.cmpLead")}>
                 <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                   <Select
-                    label="Tým soupeře"
+                    label={t("ct.pl.cmpTeam")}
                     value={compareTeamId === "" ? "" : String(compareTeamId)}
                     onChange={(v) => {
                       setCompareTeamId(v ? Number(v) : "");
                       setCompareId("");
                     }}
-                    options={[{ id: "", label: "— vyberte tým —" }, ...radarTeams.map(([tid, name]) => ({ id: String(tid), label: name }))]}
+                    options={[{ id: "", label: t("ct.pl.cmpPickTeam") }, ...radarTeams.map(([tid, name]) => ({ id: String(tid), label: name }))]}
                   />
                   <Select
-                    label="Hráč"
+                    label={t("ct.pl.cmpPlayer")}
                     value={compare && compareId !== "" ? String(compareId) : ""}
                     onChange={(v) => setCompareId(v ? Number(v) : "")}
-                    options={[{ id: "", label: compareTeamId === "" ? "— nejdřív tým —" : "— vyberte hráče —" }, ...teamPeers.map((p) => ({ id: String(p.id), label: `${p.name}${p.number != null ? ` · #${p.number}` : ""}` }))]}
+                    options={[{ id: "", label: compareTeamId === "" ? t("ct.pl.cmpTeamFirst") : t("ct.pl.cmpPickPlayer") }, ...teamPeers.map((p) => ({ id: String(p.id), label: `${p.name}${p.number != null ? ` · #${p.number}` : ""}` }))]}
                   />
                 </div>
                 <PlayerRadar
@@ -364,7 +369,7 @@ export function CatalogPlayerPage() {
             )}
 
             {active === "matches" && (
-              <Card title="Zápasy" lead="Nejnovější nahoře. Klepnutím na zápas otevřete Match Center, pokud ho k zápasu máme.">
+              <Card title={t("ct.pl.matchesTitle")} lead={t("ct.pl.matchesLead")}>
                 <MatchRows rows={slice} role={role} teamId={player.team_id} />
               </Card>
             )}
@@ -373,7 +378,7 @@ export function CatalogPlayerPage() {
       </div>
       </Gate>
 
-      <footer className="pt-8 text-center text-xs text-(--c-faint)">Informativní údaje, nejde o doporučení k sázce.</footer>
+      <footer className="pt-8 text-center text-xs text-(--c-faint)">{t("ct.c.disclaimer")}</footer>
     </Frame>
   );
 }
@@ -397,25 +402,25 @@ function kpiFor(role: CatalogPlayerRole, rows: CatalogPlayerMatch[], pool: Catal
   const poolRate = (key: string) => pool.map((p) => per90(sumKey(p, key), minutesOf(p)));
   if (role === "gk") {
     return [
-      kpiCell("Zákroky", total("sv"), 0, poolTotal("sv"), true),
-      kpiCell("Zákroky / 90", per90(sumKey(rows, "sv"), mn), 2, poolRate("sv"), true),
-      kpiCell("Čistá konta", total("cs"), 0, poolTotal("cs"), true),
-      kpiCell("Obdržené góly", total("gc"), 0, poolTotal("gc"), false),
+      kpiCell(t("ct.pl.k.saves"), total("sv"), 0, poolTotal("sv"), true),
+      kpiCell(t("ct.pl.k.saves90"), per90(sumKey(rows, "sv"), mn), 2, poolRate("sv"), true),
+      kpiCell(t("ct.pl.k.cs"), total("cs"), 0, poolTotal("cs"), true),
+      kpiCell(t("ct.pl.k.gc"), total("gc"), 0, poolTotal("gc"), false),
     ];
   }
   if (role === "def") {
     return [
-      kpiCell("Minuty", mn || null, 0, pool.map(minutesOf), true),
-      kpiCell("Čistá konta", total("cs"), 0, poolTotal("cs"), true),
-      kpiCell("Fauly / 90", per90(sumKey(rows, "f"), mn), 2, poolRate("f"), false),
-      kpiCell("Souboje / 90", per90(sumKey(rows, "dw"), mn), 2, poolRate("dw"), true),
+      kpiCell(t("ct.pl.k.min"), mn || null, 0, pool.map(minutesOf), true),
+      kpiCell(t("ct.pl.k.cs"), total("cs"), 0, poolTotal("cs"), true),
+      kpiCell(t("ct.pl.k.f90"), per90(sumKey(rows, "f"), mn), 2, poolRate("f"), false),
+      kpiCell(t("ct.pl.k.dw90"), per90(sumKey(rows, "dw"), mn), 2, poolRate("dw"), true),
     ];
   }
   return [
-    kpiCell("Minuty", mn || null, 0, pool.map(minutesOf), true),
-    kpiCell("Góly", total("g"), 0, poolTotal("g"), true),
-    kpiCell("Asistence", total("a"), 0, poolTotal("a"), true),
-    kpiCell("Střely / 90", per90(sumKey(rows, "sh"), mn), 2, poolRate("sh"), true),
+    kpiCell(t("ct.pl.k.min"), mn || null, 0, pool.map(minutesOf), true),
+    kpiCell(t("ct.pl.k.g"), total("g"), 0, poolTotal("g"), true),
+    kpiCell(t("ct.pl.k.a"), total("a"), 0, poolTotal("a"), true),
+    kpiCell(t("ct.pl.k.sh90"), per90(sumKey(rows, "sh"), mn), 2, poolRate("sh"), true),
   ];
 }
 
@@ -430,7 +435,7 @@ function Kpi({ label, value, digits, rank, size }: { label: string; value: numbe
       <div className="text-xl font-bold leading-none tabular-nums">{fmtNum(value, digits)}</div>
       <div className="mt-1.5 text-xs text-(--c-muted)">{label}</div>
       <div className="mt-0.5 h-4 text-[11px] font-semibold tabular-nums" style={rank != null ? { color: rankColor(rank, size) } : undefined}>
-        {rank != null ? `${rank}. z ${size}` : ""}
+        {rank != null ? t("ct.kit.rankOf", { rank, size }) : ""}
       </div>
     </div>
   );
@@ -461,31 +466,31 @@ function Strengths({ slice, role, pool, onMore }: { slice: CatalogPlayerMatch[];
         <span className="block truncate text-[13px] font-medium">{r.def.label}</span>
         <span className="text-[11px] text-(--c-faint)">
           {fmtNum(r.value)}
-          {r.def.asPct ? " %" : ""} · průměr role {fmtNum(r.avg)}
+          {r.def.asPct ? pctSuffix() : ""} · {t("ct.pl.roleAvg", { v: fmtNum(r.avg) })}
         </span>
       </span>
       <span className="shrink-0 rounded-md px-2 py-0.5 text-[12px] font-bold tabular-nums" style={{ color: rankColor(r.rank!, r.size), background: `color-mix(in oklab, ${rankColor(r.rank!, r.size)} 15%, transparent)` }}>
-        {r.rank}. z {r.size}
+        {t("ct.kit.rankOf", { rank: r.rank!, size: r.size })}
       </span>
     </li>
   );
   return (
     <Card
-      title="V čem je hráč silný a slabý"
-      lead="Pořadí mezi hráči stejné role v lize, 1. je nejlepší. Počítá se na 90 minut."
+      title={t("ct.pl.strengthTitle")}
+      lead={t("ct.pl.strengthLead")}
       aside={
         <button type="button" onClick={onMore} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-          Všechna čísla →
+          {t("ct.c.allNumbers")}
         </button>
       }
     >
       <div className="grid gap-x-6 gap-y-3 md:grid-cols-2">
         <div>
-          <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-win)" }}>Nejsilnější stránky</h3>
+          <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-win)" }}>{t("ct.c.best")}</h3>
           <ul className="divide-y divide-(--c-line)">{best.map(item)}</ul>
         </div>
         <div>
-          <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-loss)" }}>Nejslabší stránky</h3>
+          <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-loss)" }}>{t("ct.c.worst")}</h3>
           <ul className="divide-y divide-(--c-line)">{worst.map(item)}</ul>
         </div>
       </div>
@@ -498,17 +503,17 @@ function FdrCard({ title, color, role, rows }: { title: string; color: string; r
   const pair =
     role === "gk"
       ? [
-          { label: "Zákroky / 90", value: per90(sumKey(rows, "sv"), mn) },
-          { label: "Obdržené / 90", value: per90(sumKey(rows, "gc"), mn) },
+          { label: t("ct.pl.k.saves90"), value: per90(sumKey(rows, "sv"), mn) },
+          { label: t("ct.pl.k.gc90"), value: per90(sumKey(rows, "gc"), mn) },
         ]
       : role === "def"
         ? [
-            { label: "Souboje / 90", value: per90(sumKey(rows, "dw"), mn) },
-            { label: "Čistá konta", value: sumKey(rows, "cs") || null },
+            { label: t("ct.pl.k.dw90"), value: per90(sumKey(rows, "dw"), mn) },
+            { label: t("ct.pl.k.cs"), value: sumKey(rows, "cs") || null },
           ]
         : [
-            { label: "Góly / 90", value: per90(sumKey(rows, "g"), mn) },
-            { label: "Střely / 90", value: per90(sumKey(rows, "sh"), mn) },
+            { label: t("ct.pl.k.g90"), value: per90(sumKey(rows, "g"), mn) },
+            { label: t("ct.pl.k.sh90"), value: per90(sumKey(rows, "sh"), mn) },
           ];
   return (
     <div className="rounded-xl bg-(--c-raised) px-4 py-3.5" style={{ boxShadow: `inset 3px 0 0 ${color}` }}>
@@ -550,32 +555,32 @@ function StatsCard({
   const stats = PLAYER_STATS.filter((s) => s.group === group && relevant(s, role) && metricValue(slice, s) != null);
   return (
     <Card
-      title="Sazby na 90 minut"
-      lead={`Pořadí mezi hráči s alespoň 20 % možných minut. ${scope === "league" ? "Celá liga." : "Jen stejná pozice."}`}
+      title={t("ct.pl.ratesTitle")}
+      lead={scope === "league" ? t("ct.pl.ratesLeadLeague") : t("ct.pl.ratesLeadRole")}
     >
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2 rounded-xl bg-(--c-raised) px-3 py-2.5">
-        <span className="text-[13px] font-semibold text-(--c-text)">Srovnání s hráči:</span>
+        <span className="text-[13px] font-semibold text-(--c-text)">{t("ct.pl.compareWith")}</span>
         <Seg
-          label="S kým srovnávat"
+          label={t("ct.pl.scopeAria")}
           value={scope}
           onChange={setScope}
           options={[
-            { id: "league", label: "Celá liga" },
-            { id: "role", label: "Stejná pozice" },
+            { id: "league", label: t("ct.pl.scopeLeague") },
+            { id: "role", label: t("ct.pl.scopeRole") },
           ]}
         />
       </div>
       <div className="mt-3 flex flex-wrap items-center gap-2">
-        <span className="mr-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-(--c-faint)">Skupina</span>
+        <span className="mr-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-(--c-faint)">{t("ct.pl.groupLabel")}</span>
         {GROUPS.map((g) => (
           <Chip key={g.id} active={g.id === group} onClick={() => setGroup(g.id)}>
-            {g.label}
+            {t(g.label)}
           </Chip>
         ))}
       </div>
       {group === "attack" && (
         <p className="mt-3 text-xs text-(--c-faint)">
-          Centrující přihrávky jsou křížné nahrávky z boku hřiště do vápna. Penalty jsou eventové trefené kopy, ne xG z penalty.
+          {t("ct.pl.attackNote")}
         </p>
       )}
       {stats.length ? (
@@ -584,12 +589,12 @@ function StatsCard({
             const value = metricValue(slice, def);
             const values = pool.map((rows) => metricValue(rows, def));
             const { rank, size } = rankDesc(value, values, def.higherBetter);
-            return <RankCard key={def.key} label={def.label} value={value} rank={rank} size={size} avg={mean(values)} suffix={def.asPct ? " %" : ""} hint={!def.higherBetter ? "U tohoto čísla je lepší nižší hodnota." : undefined} />;
+            return <RankCard key={def.key} label={def.label} value={value} rank={rank} size={size} avg={mean(values)} suffix={def.asPct ? pctSuffix() : ""} hint={!def.higherBetter ? t("ct.pl.lowerBetter") : undefined} />;
           })}
         </div>
       ) : (
         <div className="mt-4">
-          <Empty>Pro tuto skupinu ve vybraném období nic není.</Empty>
+          <Empty>{t("ct.pl.noGroup")}</Empty>
         </div>
       )}
     </Card>
@@ -637,7 +642,7 @@ function PlayerRadar({
       avgRaw: lv,
     };
   });
-  if (!Object.values(a).some((v) => v != null)) return <Empty>V tomto výběru nemáme minuty.</Empty>;
+  if (!Object.values(a).some((v) => v != null)) return <Empty>{t("ct.pl.noMinutes")}</Empty>;
   return (
     <div>
       <div className="h-[380px] w-full">
@@ -658,7 +663,7 @@ function PlayerRadar({
                     <div className="mb-1 font-semibold">{p.metric}</div>
                     <div style={{ color: "var(--c-home)" }}>{nameA}: {fmtNum(p.aRaw)}</div>
                     {hasB && <div style={{ color: "var(--c-away)" }}>{nameB}: {fmtNum(p.bRaw)}</div>}
-                    <div className="text-(--c-muted)">Průměr role: {fmtNum(p.avgRaw)}</div>
+                    <div className="text-(--c-muted)">{t("ct.pl.avgRole", { v: fmtNum(p.avgRaw) })}</div>
                   </div>
                 );
               }}
@@ -669,7 +674,7 @@ function PlayerRadar({
       <ul className="mt-1 flex flex-wrap gap-x-5 gap-y-1 text-xs text-(--c-muted)">
         <li className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full" style={{ background: "var(--c-home)" }} />{nameA}</li>
         {hasB && <li className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full" style={{ background: "var(--c-away)" }} />{nameB}</li>}
-        <li className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full border border-dashed border-(--c-faint)" />Průměr role<Info>Ligový průměr stejné role leží uprostřed osy (50). Nadprůměr roste ven, podprůměr dovnitř. Čísla v bublině jsou na 90 minut, čistá konta v %.</Info></li>
+        <li className="flex items-center gap-2"><span className="h-2.5 w-2.5 rounded-full border border-dashed border-(--c-faint)" />{t("ct.pl.avgRoleLabel")}<Info>{t("ct.pl.avgRoleInfo")}</Info></li>
       </ul>
     </div>
   );
@@ -684,21 +689,21 @@ function MatchRows({ rows, role, teamId }: { rows: CatalogPlayerMatch[]; role: C
   const cols =
     role === "gk"
       ? [
-          { key: "mn", label: "Min", inline: false },
-          { key: "sv", label: "Zák.", inline: true },
-          { key: "gc", label: "Obd.", inline: true },
-          { key: "y", label: "ŽK", inline: false },
-          { key: "r", label: "ČK", inline: false },
+          { key: "mn", label: t("ct.pl.col.min"), inline: false },
+          { key: "sv", label: t("ct.pl.col.sv"), inline: true },
+          { key: "gc", label: t("ct.pl.col.gc"), inline: true },
+          { key: "y", label: t("ct.pl.col.y"), inline: false },
+          { key: "r", label: t("ct.pl.col.r"), inline: false },
         ]
       : [
-          { key: "mn", label: "Min", inline: false },
-          { key: "g", label: "G", inline: true },
-          { key: "a", label: "A", inline: true },
-          { key: "sh", label: "Stř.", inline: false },
-          { key: "sot", label: "Na br.", inline: false },
-          { key: "f", label: "Fauly", inline: false },
-          { key: "y", label: "ŽK", inline: false },
-          { key: "r", label: "ČK", inline: false },
+          { key: "mn", label: t("ct.pl.col.min"), inline: false },
+          { key: "g", label: t("ct.pl.col.g"), inline: true },
+          { key: "a", label: t("ct.pl.col.a"), inline: true },
+          { key: "sh", label: t("ct.pl.col.sh"), inline: false },
+          { key: "sot", label: t("ct.pl.col.sot"), inline: false },
+          { key: "f", label: t("ct.pl.col.f"), inline: false },
+          { key: "y", label: t("ct.pl.col.y"), inline: false },
+          { key: "r", label: t("ct.pl.col.r"), inline: false },
         ];
   /* SportMonks nulové statistiky neposílá, takže u hráče, který hrál, znamená chybějící údaj 0 */
   const val = (m: CatalogPlayerMatch, key: string) => m.st?.[key] ?? ((m.st?.mn ?? 0) > 0 ? 0 : null);
@@ -717,7 +722,7 @@ function MatchRows({ rows, role, teamId }: { rows: CatalogPlayerMatch[]; role: C
                 <div className="flex items-center gap-1.5 text-[11px] text-(--c-faint)">
                   <span>{m.d ? formatDate(m.d) : "—"}</span>
                   <VenueTag home={!!m.h} />
-                  {m.tn && m.tid !== teamId && <span className="truncate">za {m.tn}</span>}
+                  {m.tn && m.tid !== teamId && <span className="truncate">{t("ct.pl.for", { team: m.tn })}</span>}
                 </div>
                 <div className="mt-0.5 flex items-baseline gap-2 text-[14px]">
                   <span className="truncate font-semibold">{m.on}</span>
@@ -759,7 +764,7 @@ function MatchRows({ rows, role, teamId }: { rows: CatalogPlayerMatch[]; role: C
       </ul>
       {sorted.length > shown && (
         <button type="button" onClick={() => setShown((s) => s + 25)} className="mt-3 min-h-10 w-full rounded-xl border border-(--c-line) text-[13px] font-medium text-(--c-accent) hover:bg-(--c-raised)">
-          Zobrazit dalších {Math.min(25, sorted.length - shown)}
+          {t("ct.c.showMore", { n: Math.min(25, sorted.length - shown) })}
         </button>
       )}
     </>

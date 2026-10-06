@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import { manualNews, type NewsItem } from "../content/content";
+import { getManualNews, type NewsItem } from "../content/content";
+import { getLocale } from "../i18n/locale";
+import { intlTag } from "../i18n/locale";
 
 async function getJson<T>(url: string): Promise<T | null> {
   try {
@@ -60,10 +62,12 @@ export function useFeed() {
   useEffect(() => {
     getJson<{ items: NewsItem[] }>("/data/feed_auto.json").then((d) => setAuto(d?.items ?? []));
   }, []);
-  const items = [...manualNews, ...auto].sort((a, b) => b.date.localeCompare(a.date));
+  const en = getLocale() === "en";
+  const localized = auto.map((i) => (en && i.en ? { ...i, ...i.en } : i));
+  const items = [...getManualNews(), ...localized].sort((a, b) => b.date.localeCompare(a.date));
   return items;
 }
 
-export const fmtDate = (iso: string) => new Date(iso).toLocaleDateString("cs-CZ", { day: "numeric", month: "numeric", year: "numeric" });
+export const fmtDate = (iso: string) => new Date(iso).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric", year: "numeric" });
 export const fmtDateTime = (iso: string) =>
-  new Date(iso).toLocaleString("cs-CZ", { weekday: "short", day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" });
+  new Date(iso).toLocaleString(intlTag(), { weekday: "short", day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" });

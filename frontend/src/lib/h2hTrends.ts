@@ -1,4 +1,5 @@
 import type { H2HMatch, TeamBrief, TeamMatchStats, TrendItem } from "../types";
+import { getLocale, t, type Key } from "../i18n/locale";
 
 export type H2hScope = "match" | "home" | "away";
 
@@ -70,7 +71,7 @@ function bestUnder(values: number[]): { t: number; hits: number; total: number }
 }
 
 function lineLabel(n: number): string {
-  return String(n).replace(".", ",");
+  return getLocale() === "cs" ? String(n).replace(".", ",") : String(n);
 }
 
 function item(key: string, label: string, hits: number, total: number): TrendItem {
@@ -92,15 +93,15 @@ function matchTrends(rows: H2HMatch[]): TrendItem[] {
     };
   });
   const out: TrendItem[] = [
-    item("btts", "Oba týmy skórovaly (BTTS)", totals.filter((t) => t.btts).length, n),
-    item("over15", "Over 1.5 gólů v zápase", totals.filter((t) => t.goals > 1.5).length, n),
-    item("over25", "Over 2.5 gólů v zápase", totals.filter((t) => t.goals > 2.5).length, n),
-    item("under25", "Under 2.5 gólů v zápase", totals.filter((t) => t.goals < 2.5).length, n),
-    item("corners_over95", "Over 9.5 rohů v zápase (oba týmy)", totals.filter((t) => t.corners > 9.5).length, n),
-    item("corners_under95", "Under 9.5 rohů v zápase (oba týmy)", totals.filter((t) => t.corners < 9.5).length, n),
-    item("yellow_under5", "Méně než 5 žlutých v zápase (oba týmy)", totals.filter((t) => t.yellow < 5).length, n),
-    item("yellow_5plus", "5+ žlutých v zápase (oba týmy)", totals.filter((t) => t.yellow >= 5).length, n),
-    item("red_card", "Padla červená karta (kterýkoli tým)", totals.filter((t) => t.red > 0).length, n),
+    item("btts", t("mc.tr.h.btts"), totals.filter((x) => x.btts).length, n),
+    item("over15", t("mc.tr.h.over15"), totals.filter((x) => x.goals > 1.5).length, n),
+    item("over25", t("mc.tr.h.over25"), totals.filter((x) => x.goals > 2.5).length, n),
+    item("under25", t("mc.tr.h.under25"), totals.filter((x) => x.goals < 2.5).length, n),
+    item("corners_over95", t("mc.tr.h.cornersOver"), totals.filter((x) => x.corners > 9.5).length, n),
+    item("corners_under95", t("mc.tr.h.cornersUnder"), totals.filter((x) => x.corners < 9.5).length, n),
+    item("yellow_under5", t("mc.tr.h.yellowUnder5"), totals.filter((x) => x.yellow < 5).length, n),
+    item("yellow_5plus", t("mc.tr.h.yellow5plus"), totals.filter((x) => x.yellow >= 5).length, n),
+    item("red_card", t("mc.tr.h.redCard"), totals.filter((x) => x.red > 0).length, n),
   ];
   out.sort((a, b) => b.pct - a.pct);
   return out;
@@ -111,26 +112,26 @@ function teamTrends(rows: H2HMatch[], teamName: string, upcomingHome: boolean): 
   const n = facts.length;
   if (!n) return [];
   const out: TrendItem[] = [
-    item("clean_sheet", `${teamName}: čisté konto`, facts.filter((f) => f.ga === 0).length, n),
-    item("scoreless", `${teamName} nevstřelil gól`, facts.filter((f) => f.gf === 0).length, n),
-    item("scored2plus", `${teamName} vstřelil 2+ gólů`, facts.filter((f) => f.gf >= 2).length, n),
-    item("more_corners", `${teamName} měl víc rohů než soupeř`, facts.filter((f) => f.corners > f.oppCorners).length, n),
-    item("team_2plus_yellow", `${teamName} dostal 2+ žluté`, facts.filter((f) => f.yellow >= 2).length, n),
+    item("clean_sheet", t("mc.tr.h.cleanSheet", { team: teamName }), facts.filter((f) => f.ga === 0).length, n),
+    item("scoreless", t("mc.tr.h.scoreless", { team: teamName }), facts.filter((f) => f.gf === 0).length, n),
+    item("scored2plus", t("mc.tr.h.scored2plus", { team: teamName }), facts.filter((f) => f.gf >= 2).length, n),
+    item("more_corners", t("mc.tr.h.moreCorners", { team: teamName }), facts.filter((f) => f.corners > f.oppCorners).length, n),
+    item("team_2plus_yellow", t("mc.tr.h.yellow2plus", { team: teamName }), facts.filter((f) => f.yellow >= 2).length, n),
   ];
-  const metrics: Array<[keyof SideFacts, string, string]> = [
-    ["shots", "shots", "střely"],
-    ["sot", "sot", "střely na branku"],
-    ["fouls", "fouls", "fauly"],
+  const metrics: Array<[keyof SideFacts, string, Key, Key]> = [
+    ["shots", "shots", "mc.tr.h.shots.over", "mc.tr.h.shots.under"],
+    ["sot", "sot", "mc.tr.h.sot.over", "mc.tr.h.sot.under"],
+    ["fouls", "fouls", "mc.tr.h.fouls.over", "mc.tr.h.fouls.under"],
   ];
-  for (const [field, key, label] of metrics) {
+  for (const [field, key, overKey, underKey] of metrics) {
     const values = facts.map((f) => f[field] as number);
     const over = bestOver(values);
     const under = bestUnder(values);
     if (over) {
-      out.push(item(`${key}_over`, `${teamName}: ${label} ${lineLabel(over.t)}+`, over.hits, over.total));
+      out.push(item(`${key}_over`, t(overKey, { team: teamName, line: lineLabel(over.t) }), over.hits, over.total));
     }
     if (under) {
-      out.push(item(`${key}_under`, `${teamName}: ${label} méně než ${lineLabel(under.t)}`, under.hits, under.total));
+      out.push(item(`${key}_under`, t(underKey, { team: teamName, line: lineLabel(under.t) }), under.hits, under.total));
     }
   }
   out.sort((a, b) => b.pct - a.pct);

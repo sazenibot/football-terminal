@@ -1,3 +1,5 @@
+import { getLocale } from "../i18n/locale";
+
 /** Vlajka země podle českého názvu z data/index.json. Obrázek místo emoji, protože na Windows se emoji vlajky nezobrazí (jen písmena). */
 
 const CODES: Record<string, string> = {
@@ -31,6 +33,16 @@ const CODES: Record<string, string> = {
   USA: "us",
   Evropa: "eu",
 };
+
+const EN_NAMES: Record<string, string> = {
+  Anglie: "England", Skotsko: "Scotland", Wales: "Wales", Belgie: "Belgium", Brazílie: "Brazil", Česko: "Czechia", Chorvatsko: "Croatia",
+  Dánsko: "Denmark", Francie: "France", Itálie: "Italy", Maďarsko: "Hungary", Mexiko: "Mexico", Nizozemsko: "Netherlands", Německo: "Germany",
+  Norsko: "Norway", Polsko: "Poland", Portugalsko: "Portugal", Rakousko: "Austria", Rumunsko: "Romania", Řecko: "Greece", Slovensko: "Slovakia",
+  Srbsko: "Serbia", Španělsko: "Spain", Švédsko: "Sweden", Švýcarsko: "Switzerland", Turecko: "Türkiye", Ukrajina: "Ukraine", USA: "USA", Evropa: "Europe",
+};
+
+/** Název země v aktuálním jazyce (data/index.json je má česky). */
+export const countryName = (cz: string) => (getLocale() === "en" ? (EN_NAMES[cz] ?? cz) : cz);
 
 export function Flag({ country, width = 18 }: { country?: string | null; width?: number }) {
   const code = country ? CODES[country] : undefined;

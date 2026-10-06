@@ -8,6 +8,7 @@ import {
   Tooltip,
 } from "recharts";
 import { PLAYER_STATS } from "../lib/playerCatalog";
+import { t } from "../i18n/locale";
 
 export function CatalogPlayerRadar({
   a,
@@ -87,7 +88,7 @@ export function CatalogPlayerRadar({
             <Tooltip
               contentStyle={{ background: "#12161f", border: "1px solid #232837" }}
               formatter={(_value, name, entry: { payload?: { aRaw: number; bRaw: number; avgRaw: number } }) => {
-                if (name === "avg") return [entry.payload?.avgRaw, "Ligový průměr"];
+                if (name === "avg") return [entry.payload?.avgRaw, t("ct.rad.avg")];
                 const raw = name === "A" ? entry.payload?.aRaw : entry.payload?.bRaw;
                 return [raw, name === "A" ? nameA : nameB || "B"];
               }}
@@ -109,13 +110,12 @@ export function CatalogPlayerRadar({
         {hasAvg ? (
           <li className="flex items-center gap-2">
             <span className="h-2.5 w-2.5 rounded-full border border-dashed border-slate-400" />
-            Ligový průměr
+            {t("ct.rad.avg")}
           </li>
         ) : null}
       </ul>
       <p className="text-xs text-slate-500 mt-2">
-        Ligový průměr je na ose uprostřed (50). Nadprůměr roste ven, podprůměr dovnitř. Tooltip ukazuje /90
-        (čistá konta v %).
+        {t("ct.rad.note")}
       </p>
     </div>
   );

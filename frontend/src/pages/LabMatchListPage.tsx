@@ -1,17 +1,18 @@
 import { useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
 import { Frame } from "../cat/kit";
 import { useLeagueRound } from "../lib/useData";
 import { Card, ProbBar, Seg, TeamLogo, plural } from "../mc2/kit";
 import type { RoundFixture, TeamBrief } from "../types";
 import { MatchRow, Whistle, dayLabel } from "./MatchListPage";
+import { intlTag } from "../i18n/locale";
 
 /* Návrh přepracování rozcestníku Match Center: tři varianty řádku zápasu a přepínač pro 30 lig.
    Data jsou skutečná (Chance Liga), seznam 30 lig je jen ukázkový. */
 
 type Variant = "now" | "a" | "b" | "c";
 
-const timeOf = (iso: string) => new Date(iso).toLocaleTimeString("cs-CZ", { hour: "2-digit", minute: "2-digit" });
+const timeOf = (iso: string) => new Date(iso).toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" });
 
 /** Kdo je favorit podle modelu a jak silný. */
 function favourite(p?: [number, number, number]): { side: "home" | "away" | "none"; color: string } {

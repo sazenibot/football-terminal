@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
 import { Section } from "../components/ui";
+import { intlTag } from "../i18n/locale";
 
 type Side = "home" | "away";
 type Pair = [number | null, number | null] | null;
@@ -80,7 +81,7 @@ type Payload = {
 
 function fmt(value: number | null | undefined, digits = 0): string {
   if (value == null || Number.isNaN(value)) return "—";
-  return value.toLocaleString("cs-CZ", { minimumFractionDigits: digits, maximumFractionDigits: digits });
+  return value.toLocaleString(intlTag(), { minimumFractionDigits: digits, maximumFractionDigits: digits });
 }
 
 function pairText(pair: Pair, digits = 0): string {

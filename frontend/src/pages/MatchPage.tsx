@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams } from "../i18n/router";
 import { XgotBadgeChip } from "../components/XgotBadge";
 import { last5BadgeForTeam } from "../lib/xgEfficiency";
 import { useDataIndex, useMatch, usePitchH2H, usePitchTeam, useSimV2, useXgotIndex } from "../lib/useData";
@@ -17,6 +17,7 @@ import { RefereeSection } from "../components/RefereeAndAbsences";
 import { AiAnalysisSection } from "../components/AiAnalysis";
 import { TrendmetrCard } from "../components/TrendmetrCard";
 import { GoalsVsXgotCard } from "../components/GoalsVsXgotCard";
+import { intlTag, t } from "../i18n/locale";
 
 export function MatchPage() {
   const { fixtureId } = useParams();
@@ -35,9 +36,9 @@ export function MatchPage() {
     return (
       <div className="max-w-3xl mx-auto py-10 px-4 text-rose-400">
         <Link to="/" className="text-emerald-400 text-sm">
-          ← zpět na výpis kola
+          {t("mx.match.backTo", { name: t("mx.match.roundList") })}
         </Link>
-        <p className="mt-4">Chyba při načítání zápasu: {error}</p>
+        <p className="mt-4">{t("mx.match.error", { error })}</p>
       </div>
     );
   }
@@ -46,12 +47,10 @@ export function MatchPage() {
     return (
       <div className="max-w-3xl mx-auto py-10 px-4">
         <Link to="/" className="text-emerald-400 text-sm">
-          ← zpět na výpis kola
+          {t("mx.match.backTo", { name: t("mx.match.roundList") })}
         </Link>
         <div className="card p-8 mt-6 text-center">
-          <p className="text-slate-300 light:text-slate-600">
-            Pro tento zápas ještě nejsou stažená detailní data. Objeví se po dalším denním běhu.
-          </p>
+          <p className="text-slate-300 light:text-slate-600">{t("mx.match.missing")}</p>
         </div>
       </div>
     );
@@ -60,7 +59,7 @@ export function MatchPage() {
   if (!m) {
     return (
       <div className="min-h-screen flex items-center justify-center text-slate-400 light:text-slate-500">
-        Načítám zápas…
+        {t("future.loading")}
       </div>
     );
   }
@@ -76,7 +75,7 @@ export function MatchPage() {
   return (
     <div className="max-w-4xl mx-auto py-10 px-4 pt-20">
       <Link to={backTo} className="text-emerald-400 text-sm">
-        ← zpět na {m.league_name || "výpis kola"}
+        {t("mx.match.backTo", { name: m.league_name || t("mx.match.roundList") })}
       </Link>
 
       <div className="mt-4">
@@ -145,7 +144,7 @@ export function MatchPage() {
       <AiAnalysisSection analysis={m.ai_analysis} />
 
       <footer className="text-xs text-slate-600 text-center py-6">
-        {generatedAt ? `Aktualizováno ${new Date(generatedAt).toLocaleString("cs-CZ")}` : ""}
+        {generatedAt ? t("mx.match.updated", { when: new Date(generatedAt).toLocaleString(intlTag()) }) : ""}
       </footer>
     </div>
   );

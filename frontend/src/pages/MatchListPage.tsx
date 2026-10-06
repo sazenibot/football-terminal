@@ -1,19 +1,20 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
 import { formatDateTime } from "../lib/format";
 import { hasPitchData } from "../lib/pitchMatch";
 import { LeaguePicker } from "../components/LeaguePicker";
 import { isStale, useDataIndex, useLeagueRound, useTeamColors } from "../lib/useData";
 import { rememberLeague } from "../components/LeagueSwitcher";
 import { kickoffLabel } from "../mc2/derive";
-import { Empty, ProbBar, TeamLogo, plural } from "../mc2/kit";
+import { Empty, ProbBar, TeamLogo } from "../mc2/kit";
 import type { RoundFixture } from "../types";
+import { getLocale, intlTag, t, type Key } from "../i18n/locale";
 
 /* ---------- ikonky u zápasů ---------- */
 
 type SignalId = "referee";
 
-type SignalDef = { id: SignalId; label: string; icon: ReactNode; active: (f: RoundFixture) => boolean };
+type SignalDef = { id: SignalId; label: Key; icon: ReactNode; active: (f: RoundFixture) => boolean };
 
 export const Whistle = () => (
   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -26,7 +27,7 @@ export const Whistle = () => (
 
 /** Přidání další ikonky = jedna položka tady. Zbytek stránky se přizpůsobí. */
 const SIGNALS: SignalDef[] = [
-  { id: "referee", label: "Rozhodčí je delegovaný", icon: <Whistle />, active: (f) => !!f.signals?.referee },
+  { id: "referee", label: "list.legend.referee", icon: <Whistle />, active: (f) => !!f.signals?.referee },
 ];
 
 const activeIds = (f: RoundFixture): SignalId[] => SIGNALS.filter((s) => s.active(f)).map((s) => s.id);
@@ -93,8 +94,8 @@ const dayKey = (iso: string) => new Date(iso).toDateString();
 export function dayLabel(iso: string, now = new Date()): { main: string; rel: string | null } {
   const d = new Date(iso);
   const days = Math.round((new Date(d.toDateString()).getTime() - new Date(now.toDateString()).getTime()) / 86400e3);
-  const main = d.toLocaleDateString("cs-CZ", { weekday: "long", day: "numeric", month: "numeric" });
-  return { main: main.charAt(0).toUpperCase() + main.slice(1), rel: days === 0 ? "dnes" : days === 1 ? "zítra" : null };
+  const main = d.toLocaleDateString(intlTag(), { weekday: "long", day: "numeric", month: getLocale() === "en" ? "long" : "numeric" });
+  return { main: main.charAt(0).toUpperCase() + main.slice(1), rel: days === 0 ? t("list.today") : days === 1 ? t("list.tomorrow") : null };
 }
 
 function Signals({ f, isNew }: { f: RoundFixture; isNew: (f: RoundFixture, id: SignalId) => boolean }) {
@@ -107,9 +108,9 @@ function Signals({ f, isNew }: { f: RoundFixture; isNew: (f: RoundFixture, id: S
         return (
           <span
             key={s.id}
-            title={fresh ? `${s.label} (nové)` : s.label}
+            title={fresh ? `${t(s.label)} (${t("list.legend.new.suffix")})` : t(s.label)}
             role="img"
-            aria-label={fresh ? `${s.label}, nové od vaší poslední návštěvy` : s.label}
+            aria-label={fresh ? t("list.newAria", { label: t(s.label) }) : t(s.label)}
             className={`relative inline-flex h-7 w-7 items-center justify-center rounded-lg ${
               fresh ? "bg-(--c-accent)/15 text-(--c-accent) ring-1 ring-(--c-accent)/40" : "bg-(--c-raised) text-(--c-muted)"
             }`}
@@ -125,7 +126,7 @@ function Signals({ f, isNew }: { f: RoundFixture; isNew: (f: RoundFixture, id: S
 
 export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; home: RoundFixture["home"]; away: RoundFixture["away"]; isNew: (f: RoundFixture, id: SignalId) => boolean; onOpen: () => void }) {
   const ready = f.has_full_data !== false;
-  const time = new Date(f.starting_at).toLocaleTimeString("cs-CZ", { hour: "2-digit", minute: "2-digit" });
+  const time = new Date(f.starting_at).toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" });
   const live = kickoffLabel(f.starting_at).live;
   const probs = f.signals?.probs;
   const body = (
@@ -134,7 +135,7 @@ export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; ho
         <span aria-hidden />
         <div className="flex items-baseline justify-center gap-2">
           <span className="text-[17px] font-bold leading-none tabular-nums">{time}</span>
-          {live && <span className="text-[10px] font-semibold uppercase text-(--c-loss)">živě</span>}
+          {live && <span className="text-[10px] font-semibold uppercase text-(--c-loss)">{t("list.live")}</span>}
         </div>
         <div className="flex items-center justify-end gap-2">
           <Signals f={f} isNew={isNew} />
@@ -157,7 +158,7 @@ export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; ho
       </div>
 
       {probs && (
-        <div className="mt-2.5" title="Pravděpodobnost výhry domácích, remízy a výhry hostů podle modelu">
+        <div className="mt-2.5" title={t("list.probTitle")}>
           <ProbBar home={probs[0]} draw={probs[1]} away={probs[2]} height={6} />
           <div className="relative mt-1 h-4 text-[11px] tabular-nums">
             <span className="absolute left-0" style={{ color: "var(--c-home)" }}>
@@ -193,7 +194,7 @@ const NEUTRAL = "#6b7280";
 /** Karta zápasu: pruhy po stranách v primárních barvách týmů (domácí vlevo, hosté vpravo), čas vycentrovaný v pásu. */
 function MatchCard({ f, colors, isNew, onOpen }: { f: RoundFixture; colors: Record<string, string>; isNew: (f: RoundFixture, id: SignalId) => boolean; onOpen: () => void }) {
   const ready = f.has_full_data !== false;
-  const time = new Date(f.starting_at).toLocaleTimeString("cs-CZ", { hour: "2-digit", minute: "2-digit" });
+  const time = new Date(f.starting_at).toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" });
   const live = kickoffLabel(f.starting_at).live;
   const probs = f.signals?.probs;
   const homeColor = colors[f.home.id] ?? NEUTRAL;
@@ -207,7 +208,7 @@ function MatchCard({ f, colors, isNew, onOpen }: { f: RoundFixture; colors: Reco
         <span aria-hidden />
         <div className="flex items-baseline justify-center gap-2">
           <span className="text-[13px] font-bold tabular-nums">{time}</span>
-          {live && <span className="text-[10px] font-semibold uppercase text-(--c-loss)">živě</span>}
+          {live && <span className="text-[10px] font-semibold uppercase text-(--c-loss)">{t("list.live")}</span>}
         </div>
         <div className="flex justify-end">
           <Signals f={f} isNew={isNew} />
@@ -228,18 +229,18 @@ function MatchCard({ f, colors, isNew, onOpen }: { f: RoundFixture; colors: Reco
           </div>
         </div>
         {probs && (
-          <div className="mt-3" title="Pravděpodobnost výhry domácích, remízy a výhry hostů podle modelu">
+          <div className="mt-3" title={t("list.probTitle")}>
             <ProbBar home={probs[0]} draw={probs[1]} away={probs[2]} height={6} />
             <div className="mt-1 grid grid-cols-3 text-[11px] tabular-nums">
-              <span style={{ color: "var(--c-home)" }}>{probs[0]} %</span>
-              <span className="text-center text-(--c-faint)">{probs[1]} %</span>
+              <span style={{ color: "var(--c-home)" }}>{t("fmt.pct", { n: probs[0] })}</span>
+              <span className="text-center text-(--c-faint)">{t("fmt.pct", { n: probs[1] })}</span>
               <span className="text-right" style={{ color: "var(--c-away)" }}>
-                {probs[2]} %
+                {t("fmt.pct", { n: probs[2] })}
               </span>
             </div>
           </div>
         )}
-        {!ready && <div className="mt-2 text-center text-[12px] text-(--c-muted)">Rozbor zápasu se připravuje.</div>}
+        {!ready && <div className="mt-2 text-center text-[12px] text-(--c-muted)">{t("list.preparing")}</div>}
       </div>
     </>
   );
@@ -262,7 +263,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
   const colors = useTeamColors();
 
   useEffect(() => {
-    document.title = "Match Center";
+    document.title = t("list.title");
     if (live) rememberLeague(leagueId);
   }, [leagueId, live]);
 
@@ -282,9 +283,9 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
   return (
     <div className="mc2 mx-auto max-w-4xl px-4 pb-16 pt-20">
       <header className="pt-4">
-        <h1 className="text-2xl font-bold sm:text-3xl">Match Center</h1>
+        <h1 className="text-2xl font-bold sm:text-3xl">{t("list.title")}</h1>
         <p className="mt-1.5 text-[15px] text-(--c-muted)">
-          Zápasy na nejbližších {index?.window_days ?? 7} dní. Klepnutím na zápas otevřete rozbor.
+          {t("list.lead", { n: index?.window_days ?? 7 })}
         </p>
       </header>
 
@@ -293,12 +294,12 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
       </div>
 
       {(indexError || (error && live)) && (
-        <p className="mt-6 rounded-2xl border border-(--c-line) bg-(--c-surface) p-6 text-center text-(--c-loss)">Data se nepodařilo načíst. Zkuste to prosím za chvíli.</p>
+        <p className="mt-6 rounded-2xl border border-(--c-line) bg-(--c-surface) p-6 text-center text-(--c-loss)">{t("list.error")}</p>
       )}
 
       {stale && data && (
         <div className="mt-4 rounded-xl border border-(--c-warn)/40 bg-(--c-warn)/10 px-3 py-2 text-[13px] text-(--c-warn)">
-          Data jsou starší než denní interval (poslední kontrola {new Date(data.generated_at).toLocaleString("cs-CZ")}).
+          {t("list.stale", { when: new Date(data.generated_at).toLocaleString(intlTag()) })}
         </div>
       )}
 
@@ -309,19 +310,19 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
               <img src={league.logo ?? ""} alt="" className="h-14 w-14 object-contain opacity-35 grayscale" />
             </div>
           )}
-          <h2 className="text-lg font-semibold">{league?.name ?? "Tahle soutěž"}: připravujeme</h2>
-          <p className="mx-auto mt-2 max-w-sm text-sm text-(--c-muted)">Match Center pro tuhle soutěž právě stavíme. Zatím můžete sledovat Chance Ligu.</p>
+          <h2 className="text-lg font-semibold">{t("list.soonTitle", { league: league?.name ?? "—" })}</h2>
+          <p className="mx-auto mt-2 max-w-sm text-sm text-(--c-muted)">{t("list.soonText")}</p>
           <Link to={`${base}/262`} className="mt-5 inline-flex min-h-10 items-center rounded-xl bg-(--c-accent)/15 px-4 text-sm font-semibold text-(--c-accent) ring-1 ring-(--c-accent)/40">
-            Otevřít Chance Ligu
+            {t("list.soonCta")}
           </Link>
         </section>
       ) : (
         <>
-          {!data && !error && <p className="mt-8 text-center text-(--c-muted)">Načítám zápasy…</p>}
+          {!data && !error && <p className="mt-8 text-center text-(--c-muted)">{t("list.loading")}</p>}
 
           {data && groups.length === 0 && (
             <div className="mt-6">
-              <Empty>V následujících {index?.window_days ?? 7} dnech v {data.league.name} nic nehraje.</Empty>
+              <Empty>{t("list.empty", { n: index?.window_days ?? 7, league: data.league.name })}</Empty>
             </div>
           )}
 
@@ -334,7 +335,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
                     <span>{d.main}</span>
                     {d.rel && <span className="rounded-md bg-(--c-accent)/15 px-1.5 py-0.5 text-[11px] font-semibold text-(--c-accent)">{d.rel}</span>}
                     <span className="font-normal text-(--c-faint)">
-                      {g.length} {plural(g.length, "zápas", "zápasy", "zápasů")}
+                      {t("list.count", { n: g.length })}
                     </span>
                   </h2>
                   <div className="grid gap-3 sm:grid-cols-2">
@@ -349,23 +350,23 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
 
           {groups.length > 0 && (
             <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 rounded-2xl border border-(--c-line) bg-(--c-surface) px-4 py-3 text-[12px] text-(--c-muted)">
-              <span className="font-semibold uppercase tracking-[0.14em] text-(--c-faint) text-[11px]">Vysvětlivky</span>
+              <span className="font-semibold uppercase tracking-[0.14em] text-(--c-faint) text-[11px]">{t("list.legend")}</span>
               {SIGNALS.map((s) => (
                 <span key={s.id} className="inline-flex items-center gap-1.5">
                   <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-(--c-raised) text-(--c-muted)">{s.icon}</span>
-                  {s.label}
+                  {t(s.label)}
                 </span>
               ))}
               <span className="inline-flex items-center gap-1.5">
                 <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-(--c-warn)" />
-                nové od vaší poslední návštěvy
+                {t("list.legend.new")}
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <span aria-hidden className="flex h-4 w-4 justify-between rounded-sm border border-(--c-line)">
                   <span className="w-[3px] bg-rose-500" />
                   <span className="w-[3px] bg-sky-500" />
                 </span>
-                pruhy po stranách = barvy týmů (domácí vlevo)
+                {t("list.legend.stripes")}
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <span aria-hidden className="flex h-1.5 w-10 gap-px overflow-hidden rounded-full">
@@ -373,7 +374,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
                   <span className="w-1/4 opacity-60" style={{ background: "var(--c-draw)" }} />
                   <span className="w-1/4" style={{ background: "var(--c-away)" }} />
                 </span>
-                šance na výhru domácích, remíza, hosté
+                {t("list.legend.probs")}
               </span>
             </div>
           )}
@@ -382,7 +383,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
 
       {data && live && (
         <footer className="pt-10 text-center text-xs text-(--c-faint)">
-          Aktualizováno {formatDateTime(data.generated_at)}. Data se obnovují jednou denně.
+          {t("list.updated", { when: formatDateTime(data.generated_at) })}
         </footer>
       )}
     </div>

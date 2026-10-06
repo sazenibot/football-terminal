@@ -2,21 +2,24 @@ import { useState } from "react";
 import type { LeagueUniverse } from "../lib/useData";
 import { Card, Empty, Info, MirrorRow, Seg, SubTitle } from "../mc2/kit";
 import type { CatalogRefereeMatch } from "../types";
-import { csMatches } from "./kit";
-
-const fmtNum = (n: number, digits: number) => n.toLocaleString("cs-CZ", { minimumFractionDigits: digits, maximumFractionDigits: digits });
 import { METRICS, avg, combineAgg, othersAvg, refAgg, universeAgg, type Field, type Metric, type Venue } from "./refStats";
+import { intlTag, t, type Key } from "../i18n/locale";
+
+const fmtNum = (n: number, digits: number) => n.toLocaleString(intlTag(), { minimumFractionDigits: digits, maximumFractionDigits: digits });
 
 /* Dvě karty, které říkají, jak rozhodčí zachází s týmy: konkrétní tým (záložka Zápasy)
    a domácí proti hostům (Přehled). Vždy ve srovnání s ostatními rozhodčími téže ligy. */
 
 const SMALL = 3;
 
+const OWN_TITLE: Record<Metric, Key> = { fouls: "ct.ri.own.fouls", yellow: "ct.ri.own.yellow", red: "ct.ri.own.red" };
+const OPP_TITLE: Record<Metric, Key> = { fouls: "ct.ri.opp.fouls", yellow: "ct.ri.opp.yellow", red: "ct.ri.opp.red" };
+
 function Delta({ value, base, digits }: { value: number | null; base: number | null; digits: number }) {
   if (value == null || base == null) return null;
   const d = value - base;
   const rounded = Math.round(d * 10 ** digits) / 10 ** digits;
-  if (rounded === 0) return <span className="text-xs text-(--c-faint)">stejně jako ostatní</span>;
+  if (rounded === 0) return <span className="text-xs text-(--c-faint)">{t("ct.ri.same")}</span>;
   return (
     <span className="text-xs font-semibold tabular-nums text-(--c-muted)">
       {rounded > 0 ? "▲ +" : "▼ −"}
@@ -35,9 +38,9 @@ function Cell({ title, value, base, n, digits }: { title: string; value: number 
         {!small && <Delta value={value} base={base} digits={digits} />}
       </div>
       <div className="mt-1 text-[11px] text-(--c-faint)">
-        {n} {csMatches(n)}
-        {base != null && ` · ostatní rozhodčí ${fmtNum(base, digits)}`}
-        {small && " · malý vzorek"}
+        {t("ct.nMatches", { n })}
+        {base != null && ` · ${t("ct.ri.others", { v: fmtNum(base, digits) })}`}
+        {small && ` · ${t("ct.ri.small")}`}
       </div>
     </div>
   );
@@ -62,31 +65,32 @@ export function TeamTreatment({
   const possible = universe ? universeAgg(universe, seasonIds, "home", teamId).m + universeAgg(universe, seasonIds, "away", teamId).m : null;
 
   const blocks: { venue: Venue; title: string }[] = [
-    { venue: "home", title: "Když hraje doma" },
-    { venue: "away", title: "Když hraje venku" },
+    { venue: "home", title: t("ct.ri.venueHome") },
+    { venue: "away", title: t("ct.ri.venueAway") },
   ];
 
   return (
     <Card
-      title={`Jak rozhodčí zachází s týmem ${teamName}`}
+      title={t("ct.ri.ttTitle", { team: teamName })}
       lead={
         <>
-          Průměr na zápas v jeho zápasech tohoto týmu, rozdělený podle toho, kde tým hrál. Šipka ukazuje rozdíl proti ostatním rozhodčím ligy.
-          <Info>Ostatní rozhodčí = všechny zápasy týmu ve stejném období a na stejné straně hřiště bez zápasů tohoto rozhodčího. Při méně než třech zápasech rozdíl neukazujeme.</Info>
+          {t("ct.ri.ttLead")}
+          <Info>{t("ct.ri.ttInfo")}</Info>
         </>
       }
       aside={
         <Seg
-          label="Statistika"
+          label={t("ct.ri.statAria")}
           value={metric}
           onChange={setMetric}
-          options={(Object.keys(METRICS) as Metric[]).map((k) => ({ id: k, label: k === "fouls" ? "Fauly" : k === "yellow" ? "ŽK" : "ČK" }))}
+          options={(Object.keys(METRICS) as Metric[]).map((k) => ({ id: k, label: k === "fouls" ? t("ct.ri.mFouls") : k === "yellow" ? t("ct.ri.mYellow") : t("ct.ri.mRed") }))}
         />
       }
     >
       {possible != null && possible > 0 && (
         <p className="mb-4 text-[13px] text-(--c-muted)">
-          Odpískal <b className="text-(--c-text)">{rows.length}</b> z {possible} {csMatches(possible)} týmu ve vybraném období.
+          {t("ct.ri.officiatedPre")} <b className="text-(--c-text)">{rows.length}</b>
+          {t("ct.ri.officiatedPost", { n: possible })}
         </p>
       )}
       <div className="space-y-4">
@@ -98,14 +102,14 @@ export function TeamTreatment({
               <SubTitle>{b.title}</SubTitle>
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                 <Cell
-                  title={`${def.label} týmu`}
+                  title={t(OWN_TITLE[metric])}
                   value={avg(own[def.own])}
                   base={universe ? othersAvg(all, own, def.own) : null}
                   n={own[def.own].n}
                   digits={digits}
                 />
                 <Cell
-                  title={`${def.label} soupeře`}
+                  title={t(OPP_TITLE[metric])}
                   value={avg(own[def.opp])}
                   base={universe ? othersAvg(all, own, def.opp) : null}
                   n={own[def.opp].n}
@@ -129,15 +133,15 @@ export function HomeAwaySplit({ rows, universe, seasonIds }: { rows: CatalogRefe
   const line = (field: "f" | "y", digits: number) => {
     const hb = universe ? othersAvg(homeAll, homeOwn, field) : null;
     const ab = universe ? othersAvg(awayAll, awayOwn, field) : null;
-    return hb != null && ab != null ? `ostatní rozhodčí ${fmtNum(hb, digits)} : ${fmtNum(ab, digits)}` : undefined;
+    return hb != null && ab != null ? `${t("ct.ri.others", { v: `${fmtNum(hb, digits)} : ${fmtNum(ab, digits)}` })}` : undefined;
   };
   if (homeOwn[("f")].n === 0) return null;
   return (
-    <Card title="Domácí a hosté" lead="Kolik faulů a žlutých karet dostali v jeho zápasech domácí a kolik hosté.">
+    <Card title={t("ct.ri.haTitle")} lead={t("ct.ri.haLead")}>
       <SideCaption />
       <div className="divide-y divide-(--c-line)">
-        <MirrorRow label="Fauly" home={avg(homeOwn.f)} away={avg(awayOwn.f)} digits={1} note={line("f", 1)} />
-        <MirrorRow label="Žluté karty" home={avg(homeOwn.y)} away={avg(awayOwn.y)} digits={2} note={line("y", 2)} />
+        <MirrorRow label={t("ct.ri.fouls")} home={avg(homeOwn.f)} away={avg(awayOwn.f)} digits={1} note={line("f", 1)} />
+        <MirrorRow label={t("ct.ri.yellow")} home={avg(homeOwn.y)} away={avg(awayOwn.y)} digits={2} note={line("y", 2)} />
       </div>
     </Card>
   );
@@ -146,9 +150,9 @@ export function HomeAwaySplit({ rows, universe, seasonIds }: { rows: CatalogRefe
 function SideCaption() {
   return (
     <div className="mb-1 grid grid-cols-2 text-xs font-semibold">
-      <span style={{ color: "var(--c-home)" }}>Domácí</span>
+      <span style={{ color: "var(--c-home)" }}>{t("ct.ri.home")}</span>
       <span className="text-right" style={{ color: "var(--c-away)" }}>
-        Hosté
+        {t("ct.ri.away")}
       </span>
     </div>
   );
@@ -200,7 +204,7 @@ export function TeamLeaderboard({
       const delta = value != null && base != null ? value - base : null;
       return { id, name, n: own[field].n, value, base, delta, sort: effMode === "delta" ? delta : value };
     })
-    .filter((t) => t.n >= minMatches && t.sort != null)
+    .filter((row) => row.n >= minMatches && row.sort != null)
     .sort((a, b) => (b.sort as number) - (a.sort as number));
 
   const top = list.slice(0, Math.min(3, Math.ceil(list.length / 2)));
@@ -211,19 +215,19 @@ export function TeamLeaderboard({
     <section>
       <SubTitle>{title}</SubTitle>
       <ol className="divide-y divide-(--c-line) rounded-xl bg-(--c-raised)">
-        {items.map((t, i) => (
-          <li key={t.id} className="flex items-center gap-3 px-3.5 py-2.5">
+        {items.map((row, i) => (
+          <li key={row.id} className="flex items-center gap-3 px-3.5 py-2.5">
             <span className="w-4 shrink-0 text-xs font-semibold tabular-nums text-(--c-faint)">{i + 1}.</span>
             <div className="min-w-0 flex-1">
-              <div className="truncate text-[14px] font-semibold">{t.name}</div>
+              <div className="truncate text-[14px] font-semibold">{row.name}</div>
               <div className="text-[11px] text-(--c-faint)">
-                {t.n} {csMatches(t.n)}
-                {effMode === "delta" && t.value != null && ` · průměr ${fmtNum(t.value, digits)}`}
-                {effMode === "avg" && t.delta != null && ` · ${sign(t.delta)} proti ostatním`}
+                {t("ct.nMatches", { n: row.n })}
+                {effMode === "delta" && row.value != null && ` · ${t("ct.ri.lb.itemAvg", { v: fmtNum(row.value, digits) })}`}
+                {effMode === "avg" && row.delta != null && ` · ${t("ct.ri.lb.itemVs", { v: sign(row.delta) })}`}
               </div>
             </div>
             <span className="shrink-0 text-lg font-bold tabular-nums" style={{ color: tone }}>
-              {effMode === "delta" && t.delta != null ? sign(t.delta) : fmtNum(t.value as number, digits)}
+              {effMode === "delta" && row.delta != null ? sign(row.delta) : fmtNum(row.value as number, digits)}
             </span>
           </li>
         ))}
@@ -231,40 +235,39 @@ export function TeamLeaderboard({
     </section>
   );
 
-  const label = metric === "fouls" ? "faulů" : "žlutých karet";
   return (
     <Card
-      title="Týmy: komu píská nejvíc a nejmíň"
-      lead={`Průměrný počet ${label} na zápas, které dostal tým v jeho zápasech.${isCurrent ? " V aktuální sezoně je zápasů málo, proto se počítá jen průměr na zápas a stačí jeden zápas." : ` Jen týmy, kterým odpískal aspoň ${MIN_MATCHES} zápasy.`}`}
+      title={t("ct.ri.lb.title")}
+      lead={`${metric === "fouls" ? t("ct.ri.lb.leadFouls") : t("ct.ri.lb.leadYellow")}${isCurrent ? t("ct.ri.lb.leadCurrent") : t("ct.ri.lb.leadAll", { n: MIN_MATCHES })}`}
     >
       <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2">
         {currentSeasonId != null && (
-          <Seg label="Období" value={scope} onChange={setScope} options={[{ id: "current", label: "Aktuální sezona" }, { id: "all", label: "Všechny sezony" }]} />
+          <Seg label={t("ct.ri.lb.periodAria")} value={scope} onChange={setScope} options={[{ id: "current", label: t("ct.ri.lb.current") }, { id: "all", label: t("ct.ri.lb.all") }]} />
         )}
-        <Seg label="Statistika" value={metric} onChange={setMetric} options={[{ id: "fouls", label: "Fauly" }, { id: "yellow", label: "Žluté karty" }]} />
+        <Seg label={t("ct.ri.lb.statAria")} value={metric} onChange={setMetric} options={[{ id: "fouls", label: t("ct.ri.fouls") }, { id: "yellow", label: t("ct.ri.yellow") }]} />
         {canDelta && (
           <div className="flex items-center gap-2">
             <Seg
-              label="Řazení"
+              label={t("ct.ri.lb.sortAria")}
               value={mode}
               onChange={setMode}
               options={[
-                { id: "avg", label: "Průměr na zápas" },
-                { id: "delta", label: "Proti ostatním rozhodčím" },
+                { id: "avg", label: t("ct.ri.lb.avg") },
+                { id: "delta", label: t("ct.ri.lb.delta") },
               ]}
             />
             <Info>
-              Holý průměr hodně opisuje styl hry týmu: kdo faulí často, faulí často u každého rozhodčího. „Proti ostatním rozhodčím" odečte, kolik týmu běžně píská zbytek ligy, a ukáže skutečně rozdílné zacházení.
+              {t("ct.ri.lb.deltaInfo")}
             </Info>
           </div>
         )}
       </div>
       {list.length < 2 ? (
-        <Empty>Zatím málo týmů s dostatkem odpískaných zápasů. Zkuste vybrat všechny sezony.</Empty>
+        <Empty>{t("ct.ri.lb.empty")}</Empty>
       ) : (
         <div className="grid gap-4 md:grid-cols-2">
-          {column(effMode === "delta" ? "Nejvíc proti ostatním" : "Nejvíc", top, "var(--c-warn)")}
-          {column(effMode === "delta" ? "Nejmíň proti ostatním" : "Nejmíň", bottom, "var(--c-home)")}
+          {column(effMode === "delta" ? t("ct.ri.lb.topDelta") : t("ct.ri.lb.top"), top, "var(--c-warn)")}
+          {column(effMode === "delta" ? t("ct.ri.lb.bottomDelta") : t("ct.ri.lb.bottom"), bottom, "var(--c-home)")}
         </div>
       )}
     </Card>

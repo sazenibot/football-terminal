@@ -1,4 +1,5 @@
 import { isStale } from "../lib/useData";
+import { intlTag, t } from "../i18n/locale";
 
 export function StaleBanner({
   generatedAt,
@@ -8,10 +9,10 @@ export function StaleBanner({
   hours?: number;
 }) {
   if (!generatedAt || !isStale(generatedAt, hours)) return null;
-  const when = new Date(generatedAt).toLocaleString("cs-CZ");
+  const when = new Date(generatedAt).toLocaleString(intlTag());
   return (
     <div className="mb-4 rounded-lg border border-amber-500/40 bg-amber-500/10 px-3 py-2 text-sm text-amber-300 light:text-amber-800 light:bg-amber-50 light:border-amber-300">
-      Data jsou starší než denní interval (poslední aktualizace {when}). Dnešní běh ještě nedorazil.
+      {t("mx.stale.text", { when })}
     </div>
   );
 }

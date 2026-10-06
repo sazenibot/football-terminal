@@ -2,7 +2,9 @@ import { useMemo, useState, type ReactNode } from "react";
 import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer, Tooltip } from "recharts";
 import { Card, Chip, Empty, MirrorRow, SubTitle } from "../mc2/kit";
 import type { CatalogEra, CatalogEraSummary, CatalogExplorer, CatalogExplorerMatch, RadarAverages } from "../types";
-import { Select, csMatches, fmtNum } from "./kit";
+import { Select, fmtNum } from "./kit";
+import { t, type Key } from "../i18n/locale";
+import { pctSuffix } from "../lib/playerCatalog";
 
 /* Srovnání v detailu týmu: dvě záložky (Radar týmu, Trenéři) sdílí radar i tabulku.
    Strana A je v barvě domácích, strana B v barvě hostů, stejně jako v Match Center. */
@@ -80,16 +82,16 @@ function ppg(s: CatalogEraSummary): number | null {
 
 /* ---------- radar ---------- */
 
-const AXES: { key: keyof RadarAverages; label: string; range: [number, number]; digits: number }[] = [
-  { key: "goals_for", label: "Vstřelené góly", range: [0, 3.5], digits: 2 },
-  { key: "goals_against", label: "Obdržené góly", range: [0, 3.5], digits: 2 },
-  { key: "shots", label: "Střely", range: [5, 22], digits: 1 },
-  { key: "sot", label: "Na bránu", range: [1, 10], digits: 1 },
-  { key: "corners", label: "Rohy", range: [2, 10], digits: 1 },
-  { key: "possession", label: "Držení %", range: [30, 70], digits: 0 },
-  { key: "cards", label: "Karty", range: [0, 5], digits: 2 },
-  { key: "fouls_committed", label: "Fauly", range: [5, 20], digits: 1 },
-  { key: "fouls_received", label: "Fauly získané", range: [5, 20], digits: 1 },
+const AXES: { key: keyof RadarAverages; label: Key; range: [number, number]; digits: number }[] = [
+  { key: "goals_for", label: "ct.tc.ax.goalsFor", range: [0, 3.5], digits: 2 },
+  { key: "goals_against", label: "ct.tc.ax.goalsAgainst", range: [0, 3.5], digits: 2 },
+  { key: "shots", label: "ct.tc.ax.shots", range: [5, 22], digits: 1 },
+  { key: "sot", label: "ct.tc.ax.sot", range: [1, 10], digits: 1 },
+  { key: "corners", label: "ct.tc.ax.corners", range: [2, 10], digits: 1 },
+  { key: "possession", label: "ct.tc.ax.possessionPct", range: [30, 70], digits: 0 },
+  { key: "cards", label: "ct.tc.ax.cards", range: [0, 5], digits: 2 },
+  { key: "fouls_committed", label: "ct.tc.ax.fouls", range: [5, 20], digits: 1 },
+  { key: "fouls_received", label: "ct.tc.ax.foulsWon", range: [5, 20], digits: 1 },
 ];
 
 const norm = (v: number, [min, max]: [number, number]) => Math.max(0, Math.min(100, Math.round(((v - min) / (max - min)) * 100)));
@@ -97,7 +99,7 @@ const norm = (v: number, [min, max]: [number, number]) => Math.max(0, Math.min(1
 function CompareRadar({ a, b, nameA, nameB }: { a: RadarAverages; b?: RadarAverages | null; nameA: string; nameB?: string }) {
   const hasB = !!b && !!nameB;
   const data = AXES.map((ax) => ({
-    metric: ax.label,
+    metric: t(ax.label),
     a: norm(Number(a[ax.key] ?? 0), ax.range),
     b: hasB ? norm(Number(b?.[ax.key] ?? 0), ax.range) : 0,
     aRaw: Number(a[ax.key] ?? 0),
@@ -106,7 +108,7 @@ function CompareRadar({ a, b, nameA, nameB }: { a: RadarAverages; b?: RadarAvera
   }));
   return (
     <div>
-      <div className="h-[340px] w-full sm:h-[400px]" role="img" aria-label="Radar porovnání dvou výběrů">
+      <div className="h-[340px] w-full sm:h-[400px]" role="img" aria-label={t("ct.tc.radarAria")}>
         <ResponsiveContainer width="100%" height="100%">
           <RadarChart data={data} outerRadius="66%">
             <PolarGrid stroke="var(--c-line)" />
@@ -130,37 +132,37 @@ function CompareRadar({ a, b, nameA, nameB }: { a: RadarAverages; b?: RadarAvera
           </RadarChart>
         </ResponsiveContainer>
       </div>
-      <p className="mt-1 text-center text-[11px] text-(--c-faint)">Osy jsou pro čitelnost přepočtené na 0 až 100, skutečné hodnoty ukáže klepnutí na bod i tabulka níž. U obdržených gólů, karet a způsobených faulů je větší plocha horší.</p>
+      <p className="mt-1 text-center text-[11px] text-(--c-faint)">{t("ct.tc.radarNote")}</p>
     </div>
   );
 }
 
 /* ---------- tabulka pod radarem ---------- */
 
-type Row = { key: keyof CatalogEraSummary | "ppg"; label: string; digits: number; lowerBetter?: boolean; suffix?: string; hint?: ReactNode };
+type Row = { key: keyof CatalogEraSummary | "ppg"; label: Key; digits: number; lowerBetter?: boolean; pct?: boolean; hint?: Key };
 
-const GROUPS: { title: string; rows: Row[] }[] = [
+const GROUPS: { title: Key; rows: Row[] }[] = [
   {
-    title: "Výsledky",
-    rows: [{ key: "ppg", label: "Body / zápas", digits: 2, hint: "Výhra 3 body, remíza 1, prohra 0, vydělené počtem zápasů." }],
+    title: "ct.tc.g.results",
+    rows: [{ key: "ppg", label: "ct.tc.r.ppg", digits: 2, hint: "ct.tc.r.ppgHint" }],
   },
   {
-    title: "Zápas",
+    title: "ct.tc.g.match",
     rows: [
-      { key: "goals_for", label: "Góly", digits: 2 },
-      { key: "goals_against", label: "Obdržené góly", digits: 2, lowerBetter: true },
-      { key: "shots", label: "Střely", digits: 1 },
-      { key: "sot", label: "Na bránu", digits: 1 },
-      { key: "corners", label: "Rohy", digits: 1 },
-      { key: "possession", label: "Držení míče", digits: 0, suffix: " %" },
+      { key: "goals_for", label: "ct.tc.r.goals", digits: 2 },
+      { key: "goals_against", label: "ct.tc.ax.goalsAgainst", digits: 2, lowerBetter: true },
+      { key: "shots", label: "ct.tc.ax.shots", digits: 1 },
+      { key: "sot", label: "ct.tc.ax.sot", digits: 1 },
+      { key: "corners", label: "ct.tc.ax.corners", digits: 1 },
+      { key: "possession", label: "ct.tc.r.possession", digits: 0, pct: true },
     ],
   },
   {
-    title: "Disciplína",
+    title: "ct.tc.g.discipline",
     rows: [
-      { key: "fouls_committed", label: "Fauly", digits: 1, lowerBetter: true },
-      { key: "fouls_received", label: "Fauly získané", digits: 1 },
-      { key: "cards", label: "Karty (ŽK + ČK)", digits: 2, lowerBetter: true },
+      { key: "fouls_committed", label: "ct.tc.ax.fouls", digits: 1, lowerBetter: true },
+      { key: "fouls_received", label: "ct.tc.ax.foulsWon", digits: 1 },
+      { key: "cards", label: "ct.tc.r.cardsAll", digits: 2, lowerBetter: true },
     ],
   },
 ];
@@ -177,18 +179,18 @@ function CompareTable({ a, b }: { a: CatalogEraSummary; b?: CatalogEraSummary | 
     <div className="mt-6 space-y-4">
       {GROUPS.map((g) => (
         <section key={g.title}>
-          <SubTitle>{g.title}</SubTitle>
+          <SubTitle>{t(g.title)}</SubTitle>
           <div className="divide-y divide-(--c-line)">
             {g.rows.map((r) => (
               <MirrorRow
                 key={r.key}
-                label={r.label}
-                hint={r.hint}
+                label={t(r.label)}
+                hint={r.hint ? t(r.hint) : undefined}
                 home={valueOf(a, r.key)}
                 away={b ? valueOf(b, r.key) : null}
                 digits={r.digits}
                 lowerBetter={r.lowerBetter}
-                suffix={r.suffix}
+                suffix={r.pct ? pctSuffix() : undefined}
               />
             ))}
           </div>
@@ -213,10 +215,10 @@ function CaptionBlock({ tone, letter, cap, align }: { tone: string; letter: stri
         {align === "right" && <span className="h-2 w-2 shrink-0 rounded-full" style={{ background: tone }} />}
       </div>
       <div className="mt-0.5 truncate text-[15px] font-semibold">{cap.name}</div>
-      <div className="truncate text-xs text-(--c-muted)">{cap.sub || "vše"}</div>
+      <div className="truncate text-xs text-(--c-muted)">{cap.sub || t("ct.tc.capAll")}</div>
       <div className="mt-0.5 text-xs tabular-nums text-(--c-faint)">
-        {cap.pooled ? `${n} zápasů týmů dohromady` : `${n} ${csMatches(n)}`}
-        {!cap.pooled && s?.won != null && ` · ${s.won}V ${s.drawn ?? 0}R ${s.lost ?? 0}P`}
+        {cap.pooled ? t("ct.tc.capPooled", { n }) : t("ct.nMatches", { n })}
+        {!cap.pooled && s?.won != null && ` · ${t("ct.tc.wdl", { w: s.won, d: s.drawn ?? 0, l: s.lost ?? 0 })}`}
       </div>
     </div>
   );
@@ -246,7 +248,7 @@ function ComparePanel({
     <Card title={title} lead={lead}>
       {presets && presets.length > 0 && (
         <div className="mb-4 flex flex-wrap items-center gap-2">
-          <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-(--c-faint)">Rychlá volba</span>
+          <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-(--c-faint)">{t("ct.tc.quick")}</span>
           {presets.map((p) => (
             <Chip key={p.id} active={p.active} onClick={p.onPick}>
               {p.label}
@@ -260,7 +262,7 @@ function ComparePanel({
           <CaptionBlock tone={B_TONE} letter="B" cap={capB} align="right" />
         </div>
         <button type="button" aria-expanded={open} onClick={() => setOpen((o) => !o)} className="mt-3 min-h-9 text-[13px] font-medium text-(--c-accent)">
-          {open ? "Hotovo" : "Upravit výběr"}
+          {open ? t("ct.tc.done") : t("ct.tc.edit")}
           <span aria-hidden className={`ml-1 inline-block transition-transform ${open ? "rotate-90" : ""}`}>›</span>
         </button>
         {open && (
@@ -279,31 +281,33 @@ function SideEditor({ tone, letter, children }: { tone: string; letter: string; 
   return (
     <div className="rounded-xl border border-(--c-line) bg-(--c-surface) p-3" style={{ borderTop: `3px solid ${tone}` }}>
       <div className="mb-2 text-xs font-semibold" style={{ color: tone }}>
-        Výběr {letter}
+        {t("ct.tc.selection", { letter })}
       </div>
       <div className="grid grid-cols-2 gap-2.5">{children}</div>
     </div>
   );
 }
 
-const VENUE_OPTS = [
-  { id: "all", label: "Doma + venku" },
-  { id: "home", label: "Jen doma" },
-  { id: "away", label: "Jen venku" },
+const VENUE_OPTS: { id: string; label: Key }[] = [
+  { id: "all", label: "ct.tc.venue.all" },
+  { id: "home", label: "ct.tc.venue.home" },
+  { id: "away", label: "ct.tc.venue.away" },
 ];
-const HALF_OPTS = [
-  { id: "all", label: "Celá sezona" },
-  { id: "autumn", label: "Podzim" },
-  { id: "spring", label: "Jaro" },
+const HALF_OPTS: { id: string; label: Key }[] = [
+  { id: "all", label: "ct.tc.half.all" },
+  { id: "autumn", label: "ct.tc.half.autumn" },
+  { id: "spring", label: "ct.tc.half.spring" },
 ];
+const venueOpts = () => VENUE_OPTS.map((o) => ({ id: o.id, label: t(o.label) }));
+const halfOpts = () => HALF_OPTS.map((o) => ({ id: o.id, label: t(o.label) }));
 
 /* ---------- záložka Radar týmu ---------- */
 
 type TeamSide = { team: number; season: SeasonKey; venue: Venue; half: Half };
 
 export function TeamRadarPanel({ explorer, defaultTeamId, loading = false }: { explorer: CatalogExplorer | null; defaultTeamId: number; loading?: boolean }) {
-  if (loading) return <Empty>Načítám srovnání týmů…</Empty>;
-  if (!explorer || explorer.teams.length === 0) return <Empty>Srovnání týmů pro tuhle ligu zatím nemáme.</Empty>;
+  if (loading) return <Empty>{t("ct.tc.radarLoading")}</Empty>;
+  if (!explorer || explorer.teams.length === 0) return <Empty>{t("ct.tc.radarMissing")}</Empty>;
   return <TeamRadarInner explorer={explorer} defaultTeamId={defaultTeamId} />;
 }
 
@@ -318,7 +322,7 @@ function TeamRadarInner({ explorer, defaultTeamId }: { explorer: CatalogExplorer
   const [b, setB] = useState<TeamSide>({ team: LEAGUE, season: cur, venue: "all", half: "all" });
 
   const leagueRows = useMemo(() => teams.flatMap((t) => t.matches || []), [teams]);
-  const nameOf = (id: number) => (id === LEAGUE ? "Liga · průměr týmů" : teams.find((t) => t.id === id)?.name ?? "Tým");
+  const nameOf = (id: number) => (id === LEAGUE ? t("ct.tc.leagueAvg") : teams.find((tm) => tm.id === id)?.name ?? t("ct.tc.teamFallback"));
   const slice = (s: TeamSide) => {
     const base = s.team === LEAGUE ? leagueRows : teams.find((t) => t.id === s.team)?.matches || [];
     const summary = summarize(filterMatches(base, s.season, s.venue, s.half));
@@ -327,34 +331,34 @@ function TeamRadarInner({ explorer, defaultTeamId }: { explorer: CatalogExplorer
   const sa = useMemo(() => slice(a), [a, teams, leagueRows]); // eslint-disable-line react-hooks/exhaustive-deps
   const sb = useMemo(() => slice(b), [b, teams, leagueRows]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const seasonName = (k: SeasonKey) => (k === "all" ? "všechny sezony" : seasons.find((s) => s.id === k)?.name || String(k));
+  const seasonName = (k: SeasonKey) => (k === "all" ? t("ct.tc.seasonAll") : seasons.find((s) => s.id === k)?.name || String(k));
   const sub = (s: TeamSide) =>
-    [seasonName(s.season), s.venue === "home" ? "doma" : s.venue === "away" ? "venku" : "", s.half === "autumn" ? "podzim" : s.half === "spring" ? "jaro" : ""].filter(Boolean).join(" · ");
+    [seasonName(s.season), s.venue === "home" ? t("ct.tc.subHome") : s.venue === "away" ? t("ct.tc.subAway") : "", s.half === "autumn" ? t("ct.tc.subAutumn") : s.half === "spring" ? t("ct.tc.subSpring") : ""].filter(Boolean).join(" · ");
 
   const same = (x: TeamSide, y: TeamSide) => x.team === y.team && x.season === y.season && x.venue === y.venue && x.half === y.half;
   const base: TeamSide = { team: defaultTeamId, season: cur, venue: "all", half: "all" };
   const presets = [
-    { id: "league", label: "Tým × liga", a: base, b: { ...base, team: LEAGUE } },
-    { id: "venue", label: "Doma × venku", a: { ...base, venue: "home" as Venue }, b: { ...base, venue: "away" as Venue } },
-    ...(prev != null ? [{ id: "prev", label: "Letos × minule", a: base, b: { ...base, season: prev } }] : []),
+    { id: "league", label: t("ct.tc.preset.league"), a: base, b: { ...base, team: LEAGUE } },
+    { id: "venue", label: t("ct.tc.preset.venue"), a: { ...base, venue: "home" as Venue }, b: { ...base, venue: "away" as Venue } },
+    ...(prev != null ? [{ id: "prev", label: t("ct.tc.preset.prev"), a: base, b: { ...base, season: prev } }] : []),
   ].map((p) => ({ id: p.id, label: p.label, active: same(a, p.a) && same(b, p.b), onPick: () => { setA(p.a); setB(p.b); } }));
 
   const editor = (s: TeamSide, set: (v: TeamSide) => void, letter: string, tone: string, allowLeague: boolean) => (
     <SideEditor tone={tone} letter={letter}>
       <Select
-        label="Tým"
+        label={t("ct.tc.team")}
         value={String(s.team)}
         onChange={(v) => set({ ...s, team: Number(v) })}
-        options={[...(allowLeague ? [{ id: String(LEAGUE), label: "Liga · průměr týmů" }] : []), ...teams.map((t) => ({ id: String(t.id), label: t.name }))]}
+        options={[...(allowLeague ? [{ id: String(LEAGUE), label: t("ct.tc.leagueAvg") }] : []), ...teams.map((tm) => ({ id: String(tm.id), label: tm.name }))]}
       />
       <Select
-        label="Sezóna"
+        label={t("ct.tc.season")}
         value={String(s.season)}
         onChange={(v) => set({ ...s, season: v === "all" ? "all" : Number(v) })}
-        options={[{ id: "all", label: "Všechny sezony" }, ...seasons.map((x) => ({ id: String(x.id), label: x.name || String(x.id) }))]}
+        options={[{ id: "all", label: t("ct.tc.seasonAllOpt") }, ...seasons.map((x) => ({ id: String(x.id), label: x.name || String(x.id) }))]}
       />
-      <Select label="Doma / venku" value={s.venue} onChange={(v) => set({ ...s, venue: v as Venue })} options={VENUE_OPTS} />
-      <Select label="Část sezony" value={s.half} onChange={(v) => set({ ...s, half: v as Half })} options={HALF_OPTS} />
+      <Select label={t("ct.tc.venueLabel")} value={s.venue} onChange={(v) => set({ ...s, venue: v as Venue })} options={venueOpts()} />
+      <Select label={t("ct.tc.halfLabel")} value={s.half} onChange={(v) => set({ ...s, half: v as Half })} options={halfOpts()} />
     </SideEditor>
   );
 
@@ -363,8 +367,8 @@ function TeamRadarInner({ explorer, defaultTeamId }: { explorer: CatalogExplorer
 
   return (
     <ComparePanel
-      title="Radar týmu"
-      lead="Porovnej dva výběry zápasů: klub s ligou, domácí zápasy s venkovními, letošek s minulou sezónou, nebo dva různé kluby."
+      title={t("ct.tc.radarTitle")}
+      lead={t("ct.tc.radarLead")}
       presets={presets}
       capA={{ name: nameOf(a.team), sub: sub(a), summary: sa.summary }}
       capB={{ name: nameOf(b.team), sub: sub(b), summary: sb.summary, pooled: b.team === LEAGUE }}
@@ -377,7 +381,7 @@ function TeamRadarInner({ explorer, defaultTeamId }: { explorer: CatalogExplorer
           <CompareTable a={sa.summary} b={hasB ? sb.summary : null} />
         </>
       ) : (
-        <Empty>Pro výběr A nemáme žádný odehraný zápas.</Empty>
+        <Empty>{t("ct.tc.noMatchesA")}</Empty>
       )}
     </ComparePanel>
   );
@@ -389,8 +393,8 @@ type CoachSide = { team: number; coach: string; venue: Venue };
 const eraKey = (e: CatalogEra) => String(e.coach_id ?? e.coach_name);
 
 export function CoachComparePanel({ explorer, defaultTeamId, loading = false }: { explorer: CatalogExplorer | null; defaultTeamId: number; loading?: boolean }) {
-  if (loading) return <Empty>Načítám srovnání trenérů…</Empty>;
-  if (!explorer || explorer.teams.length === 0) return <Empty>Srovnání trenérů pro tuhle ligu zatím nemáme.</Empty>;
+  if (loading) return <Empty>{t("ct.tc.coachLoading")}</Empty>;
+  if (!explorer || explorer.teams.length === 0) return <Empty>{t("ct.tc.coachMissing")}</Empty>;
   return <CoachInner explorer={explorer} defaultTeamId={defaultTeamId} />;
 }
 
@@ -415,9 +419,9 @@ function CoachInner({ explorer, defaultTeamId }: { explorer: CatalogExplorer; de
   const eb = eraOf(b);
 
   const cap = (x: ReturnType<typeof eraOf>, s: CoachSide): Caption => {
-    if (!x.era || !x.rec) return { name: "Trenér", sub: "", summary: null };
-    const years = x.era.from ? `${x.era.from.slice(0, 4)}–${(x.era.to || "").slice(0, 4) || "dnes"}` : "";
-    const venue = s.venue === "home" ? "doma" : s.venue === "away" ? "venku" : "";
+    if (!x.era || !x.rec) return { name: t("ct.tc.coachFallback"), sub: "", summary: null };
+    const years = x.era.from ? `${x.era.from.slice(0, 4)}–${(x.era.to || "").slice(0, 4) || t("ct.tc.today")}` : "";
+    const venue = s.venue === "home" ? t("ct.tc.subHome") : s.venue === "away" ? t("ct.tc.subAway") : "";
     return { name: x.era.coach_name, sub: [x.rec.name, years, venue].filter(Boolean).join(" · "), summary: x.era[s.venue] };
   };
 
@@ -426,7 +430,7 @@ function CoachInner({ explorer, defaultTeamId }: { explorer: CatalogExplorer; de
       ? [
           {
             id: "prev",
-            label: "Současný × předchozí",
+            label: t("ct.tc.preset.coach"),
             active: a.team === defaultTeamId && b.team === defaultTeamId && a.coach === eraKey(ownEras[0]) && b.coach === eraKey(ownEras[1]),
             onPick: () => {
               setA({ team: defaultTeamId, coach: eraKey(ownEras[0]), venue: "all" });
@@ -441,34 +445,34 @@ function CoachInner({ explorer, defaultTeamId }: { explorer: CatalogExplorer; de
     return (
       <SideEditor tone={tone} letter={letter}>
         <Select
-          label="Tým"
+          label={t("ct.tc.team")}
           value={String(s.team)}
           onChange={(v) => {
-            const t = teams.find((x) => x.id === Number(v));
-            set({ ...s, team: Number(v), coach: t?.eras[0] ? eraKey(t.eras[0]) : "" });
+            const tm = teams.find((x) => x.id === Number(v));
+            set({ ...s, team: Number(v), coach: tm?.eras[0] ? eraKey(tm.eras[0]) : "" });
           }}
-          options={teams.map((t) => ({ id: String(t.id), label: t.name }))}
+          options={teams.map((tm) => ({ id: String(tm.id), label: tm.name }))}
         />
         <Select
-          label="Trenér"
+          label={t("ct.tc.coach")}
           value={s.coach}
           onChange={(v) => set({ ...s, coach: v })}
-          options={(rec?.eras || []).map((e) => ({ id: eraKey(e), label: `${e.coach_name} · ${e.matches} z.` }))}
+          options={(rec?.eras || []).map((e) => ({ id: eraKey(e), label: t("ct.tc.coachOpt", { name: e.coach_name, n: e.matches }) }))}
         />
-        <Select label="Doma / venku" value={s.venue} onChange={(v) => set({ ...s, venue: v as Venue })} options={VENUE_OPTS} />
+        <Select label={t("ct.tc.venueLabel")} value={s.venue} onChange={(v) => set({ ...s, venue: v as Venue })} options={venueOpts()} />
       </SideEditor>
     );
   };
 
-  if (!ea.era) return <Empty>Pro tento klub zatím nemáme zápasy s vyplněným trenérem.</Empty>;
+  if (!ea.era) return <Empty>{t("ct.tc.noCoach")}</Empty>;
   const capA = cap(ea, a);
   const capB = cap(eb, b);
   const hasB = !!eb.era && (capB.summary?.matches ?? 0) > 0;
 
   return (
     <ComparePanel
-      title="Srovnání trenérů"
-      lead="Zápasy seskupené podle trenéra na lavičce. Můžeš postavit vedle sebe trenéry z různých klubů. Čísla jsou z eventových dat, ne xG."
+      title={t("ct.tc.coachTitle")}
+      lead={t("ct.tc.coachLead")}
       presets={presets}
       capA={capA}
       capB={capB}
@@ -481,7 +485,7 @@ function CoachInner({ explorer, defaultTeamId }: { explorer: CatalogExplorer; de
           <CompareTable a={capA.summary!} b={hasB ? capB.summary : null} />
         </>
       ) : (
-        <Empty>Pro výběr A nemáme žádný zápas.</Empty>
+        <Empty>{t("ct.tc.noMatchesCoachA")}</Empty>
       )}
     </ComparePanel>
   );

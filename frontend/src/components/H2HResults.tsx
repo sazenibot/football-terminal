@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { H2HMatch, TeamBrief } from "../types";
 import { formatDate } from "../lib/format";
+import { t, type Key } from "../i18n/locale";
 import { Pill, Section } from "./ui";
 
 const RESULT_STYLE: Record<string, string> = {
@@ -9,7 +10,7 @@ const RESULT_STYLE: Record<string, string> = {
   P: "border-l-4 border-rose-500 bg-rose-500/10",
 };
 
-const RESULT_LABEL: Record<string, string> = { V: "Výhra", R: "Remíza", P: "Prohra" };
+const RESULT_LABEL: Record<string, Key> = { V: "mx.h2hr.win", R: "mx.h2hr.draw", P: "mx.h2hr.loss" };
 
 export function H2HResults({
   h2h,
@@ -32,8 +33,8 @@ export function H2HResults({
 
   return (
     <Section
-      title="1. Vzájemné zápasy — výsledkový přehled"
-      subtitle={`posledních ${h2h.length} z ${totalAvailable} dostupných`}
+      title={t("mx.h2hr.title")}
+      subtitle={t("mx.h2hr.subtitle", { n: h2h.length, total: totalAvailable })}
     >
       <div className="flex items-center gap-3 mb-4 flex-wrap">
         <div className="flex gap-2">
@@ -44,7 +45,7 @@ export function H2HResults({
               setExpanded(false);
             }}
           >
-            Všechny
+            {t("mx.common.allPl")}
           </Pill>
           <Pill
             active={filter === "home"}
@@ -53,7 +54,7 @@ export function H2HResults({
               setExpanded(false);
             }}
           >
-            {home.name} doma
+            {t("mx.h2hr.homeAt", { name: home.name })}
           </Pill>
           <Pill
             active={filter === "away"}
@@ -62,18 +63,18 @@ export function H2HResults({
               setExpanded(false);
             }}
           >
-            {home.name} venku
+            {t("mx.h2hr.awayAt", { name: home.name })}
           </Pill>
         </div>
         <div className="flex items-center gap-3 text-xs text-slate-400 light:text-slate-500 ml-auto">
           <span className="flex items-center gap-1">
-            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" /> výhra {home.name}
+            <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" /> {t("mx.h2hr.legendWin", { name: home.name })}
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-2.5 h-2.5 rounded-full bg-amber-500" /> remíza
+            <span className="w-2.5 h-2.5 rounded-full bg-amber-500" /> {t("mx.h2hr.legendDraw")}
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-2.5 h-2.5 rounded-full bg-rose-500" /> prohra {home.name}
+            <span className="w-2.5 h-2.5 rounded-full bg-rose-500" /> {t("mx.h2hr.legendLoss", { name: home.name })}
           </span>
         </div>
       </div>
@@ -84,7 +85,7 @@ export function H2HResults({
             className={`grid grid-cols-[100px_1fr_auto_1fr] items-center gap-3 text-base py-3 px-4 rounded-lg ${
               RESULT_STYLE[m.result_for_home_team]
             }`}
-            title={RESULT_LABEL[m.result_for_home_team]}
+            title={RESULT_LABEL[m.result_for_home_team] ? t(RESULT_LABEL[m.result_for_home_team]) : undefined}
           >
             <span className="text-slate-400 light:text-slate-500 text-sm">{formatDate(m.date)}</span>
             <span className="text-right font-medium text-slate-100 light:text-slate-800">{m.home.name}</span>
@@ -95,7 +96,7 @@ export function H2HResults({
           </div>
         ))}
         {filtered.length === 0 && (
-          <p className="text-slate-500 light:text-slate-400 text-sm">Žádné zápasy pro tento filtr.</p>
+          <p className="text-slate-500 light:text-slate-400 text-sm">{t("mx.h2hr.empty")}</p>
         )}
       </div>
       {hiddenCount > 0 && (
@@ -103,7 +104,7 @@ export function H2HResults({
           onClick={() => setExpanded(true)}
           className="mt-3 text-sm text-emerald-400 hover:text-emerald-300 transition-colors"
         >
-          Zobrazit dalších {hiddenCount} zápasů ↓
+          {t("mx.h2hr.more", { n: hiddenCount })}
         </button>
       )}
       {expanded && filtered.length > 5 && (
@@ -111,7 +112,7 @@ export function H2HResults({
           onClick={() => setExpanded(false)}
           className="mt-3 text-sm text-slate-500 hover:text-slate-300 light:hover:text-slate-700 transition-colors"
         >
-          Zobrazit méně ↑
+          {t("mx.h2hr.less")}
         </button>
       )}
     </Section>

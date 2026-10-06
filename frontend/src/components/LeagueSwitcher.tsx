@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
 import type { DataIndex, LeagueMeta } from "../types";
+import { t } from "../i18n/locale";
 
 const LAST_LEAGUE_KEY = "ft-league";
 
@@ -37,9 +38,7 @@ function LeagueLogo({ league, active }: { league: LeagueMeta; active: boolean })
 
 function matchLabel(n: number | undefined) {
   if (n == null) return null;
-  if (n === 1) return "1 zápas";
-  if (n >= 2 && n <= 4) return `${n} zápasy`;
-  return `${n} zápasů`;
+  return t("mx.switch.inWindow", { n });
 }
 
 export function LeagueSwitcher({
@@ -52,8 +51,8 @@ export function LeagueSwitcher({
   const enabled = index.leagues.filter((l) => l.enabled);
 
   return (
-    <nav aria-label="Soutěže" className="mb-6">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500 mb-2">Ligy</p>
+    <nav aria-label={t("picker.aria")} className="mb-6">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500 mb-2">{t("mx.switch.leagues")}</p>
       <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
         {enabled.map((l) => {
           const active = l.id === activeId;
@@ -77,7 +76,7 @@ export function LeagueSwitcher({
                 </p>
                 <p className="text-xs text-slate-500 truncate">
                   {l.country || l.short}
-                  {count ? ` · ${count} v okně` : ""}
+                  {count ? ` · ${count}` : ""}
                 </p>
               </div>
             </Link>

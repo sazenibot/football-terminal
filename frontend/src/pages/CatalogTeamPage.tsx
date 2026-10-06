@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import { Link, useParams, useSearchParams } from "../i18n/router";
 import { CoachComparePanel, TeamRadarPanel } from "../cat/TeamCompare";
-import { Avatar, Back, Crest, Frame, Hero, Loading, Meta, NotFound, Pill, RankCard, StatStrip, StickyTabs, fmtNum, rankColor } from "../cat/kit";
+import { Avatar, Back, Crest, Frame, Hero, Loading, Meta, NotFound, Pill, RankCard, StatStrip, StickyTabs, fmtNum, ord, rankColor } from "../cat/kit";
 import { pitchSeasonOpts, type MatchRow } from "../components/PitchCards";
 import { ShotMapCard, TrendCard } from "../cat/PitchViz";
 import { formatDate } from "../lib/format";
@@ -9,24 +9,26 @@ import { useCatalogExplorer, useCatalogTeam, usePitchTeam, useXgotIndex } from "
 import { last5BadgeForTeam, type XgotBadge } from "../lib/xgEfficiency";
 import { useTabLock } from "../access/catalogGate";
 import { Gate } from "../access/Gate";
-import { Card, Empty, FormDots, Info, ResBadge, Seg, Stat, VenueTag, plural, type Res } from "../mc2/kit";
+import { Card, Empty, FormDots, Info, ResBadge, Seg, Stat, VenueTag, type Res } from "../mc2/kit";
 import type { CatalogProfileStat, CatalogSquadPlayer, CatalogTeamCoach, CatalogTeamDetail, CatalogUpcoming } from "../types";
+import { intlTag, t, type Key } from "../i18n/locale";
+import { dataLabel } from "../i18n/dataText";
 
 const TABS = [
-  { id: "overview", label: "Přehled" },
-  { id: "stats", label: "Statistiky" },
-  { id: "squad", label: "Kádr" },
-  { id: "radar", label: "Radar týmu" },
-  { id: "coaches", label: "Trenéři" },
-] as const;
+  { id: "overview", label: "ct.team.tab.overview" },
+  { id: "stats", label: "ct.team.tab.stats" },
+  { id: "squad", label: "ct.team.tab.squad" },
+  { id: "radar", label: "ct.team.tab.radar" },
+  { id: "coaches", label: "ct.team.tab.coaches" },
+] as const satisfies readonly { id: string; label: Key }[];
 type TabId = (typeof TABS)[number]["id"];
 
 type Group = "attack" | "defense" | "discipline" | "setpiece";
-const GROUPS: { id: Group; label: string }[] = [
-  { id: "attack", label: "Útok" },
-  { id: "defense", label: "Obrana" },
-  { id: "discipline", label: "Disciplína" },
-  { id: "setpiece", label: "Standardky" },
+const GROUPS: { id: Group; label: Key }[] = [
+  { id: "attack", label: "ct.team.group.attack" },
+  { id: "defense", label: "ct.team.group.defense" },
+  { id: "discipline", label: "ct.team.group.discipline" },
+  { id: "setpiece", label: "ct.team.group.setpiece" },
 ];
 
 /** Údaje bez „lepší / horší“ (objem hry), do silných a slabých stránek je nepočítáme. */
@@ -59,14 +61,16 @@ function daysSince(start?: string | null): number | null {
   return Math.max(0, Math.round((Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(y, m - 1, d)) / 86_400_000));
 }
 
+/** Datum nástupu: česky „5. 10. 2025“, anglicky „05/10/2025“. */
+function startDate(start: string): string {
+  const [y, m, d] = start.slice(0, 10).split("-").map(Number);
+  return new Date(y, (m || 1) - 1, d || 1).toLocaleDateString(intlTag());
+}
+
 function tenure(days: number): string {
-  if (days < 60) return `${days} ${plural(days, "den", "dny", "dní")}`;
-  if (days < 730) {
-    const mo = Math.round(days / 30.4);
-    return `${mo} ${plural(mo, "měsíc", "měsíce", "měsíců")}`;
-  }
-  const y = Math.floor(days / 365.25);
-  return `${y} ${plural(y, "rok", "roky", "let")}`;
+  if (days < 60) return t("ct.team.tenureDays", { n: days });
+  if (days < 730) return t("ct.team.tenureMonths", { n: Math.round(days / 30.4) });
+  return t("ct.team.tenureYears", { n: Math.floor(days / 365.25) });
 }
 
 function statsOf(team: CatalogTeamDetail): CatalogProfileStat[] {
@@ -80,8 +84,8 @@ function LuckChip({ badge }: { badge: XgotBadge }) {
   const lucky = badge.id === "lucky_scoring_team";
   return (
     <Pill tone={lucky ? "var(--c-warn)" : "var(--c-loss)"}>
-      {lucky ? "Štěstí" : "Smolaři"}
-      <Info label="Co to znamená">{badge.tooltip}</Info>
+      {lucky ? t("ct.team.lucky") : t("ct.team.unlucky")}
+      <Info label={t("ct.team.luckInfo")}>{badge.tooltip}</Info>
     </Pill>
   );
 }
@@ -102,19 +106,19 @@ export function CatalogTeamPage() {
   const setTab = (t: TabId) => setParams(t === "overview" ? {} : { tab: t }, { replace: true });
 
   useEffect(() => {
-    document.title = team ? `${team.name} · tým · Katalog` : "Tým · Katalog";
+    document.title = team ? t("ct.team.docTitle", { name: team.name }) : t("ct.team.docTitleLoading");
   }, [team]);
 
-  const back = <Back to={team ? `/catalog?league=${team.league_id}` : "/catalog"}>{team?.league_name ?? "Katalog"}</Back>;
-  if (missing) return <NotFound kind="Tento tým" back={back} />;
+  const back = <Back to={team ? `/catalog?league=${team.league_id}` : "/catalog"}>{team?.league_name ?? t("ct.team.backFallback")}</Back>;
+  if (missing) return <NotFound kind={t("ct.team.kind")} back={back} />;
   if (error)
     return (
       <Frame>
         {back}
-        <p className="mt-4 text-(--c-loss)">Tým se nepodařilo načíst: {error}</p>
+        <p className="mt-4 text-(--c-loss)">{t("ct.team.loadError", { error })}</p>
       </Frame>
     );
-  if (!team) return <Loading>Načítám tým…</Loading>;
+  if (!team) return <Loading>{t("ct.team.loading")}</Loading>;
 
   const overlay = team.overlay;
   const table = overlay?.table;
@@ -133,7 +137,7 @@ export function CatalogTeamPage() {
       <div className="mt-3">
         <Hero
           media={<Crest src={team.image} name={team.name} size={72} />}
-          eyebrow="Profil týmu"
+          eyebrow={t("ct.team.eyebrow")}
           title={team.name}
           sub={
             <>
@@ -150,23 +154,23 @@ export function CatalogTeamPage() {
         >
           {table ? (
             <StatStrip>
-              <Stat value={table.position != null ? `${table.position}.` : "—"} label="Pozice v tabulce" />
-              <Stat value={table.points ?? "—"} label={`Body · ${table.played ?? 0} z.`} />
-              <Stat value={table.gf != null && table.ga != null ? `${table.gf}:${table.ga}` : "—"} label={table.won != null ? `Skóre · ${table.won}V ${table.drawn ?? 0}R ${table.lost ?? 0}P` : "Skóre"} />
+              <Stat value={table.position != null ? ord(table.position) : "—"} label={t("ct.team.tablePos")} />
+              <Stat value={table.points ?? "—"} label={t("ct.team.points", { n: table.played ?? 0 })} />
+              <Stat value={table.gf != null && table.ga != null ? `${table.gf}:${table.ga}` : "—"} label={table.won != null ? t("ct.team.scoreWdl", { w: table.won, d: table.drawn ?? 0, l: table.lost ?? 0 }) : t("ct.team.score")} />
               <div className="flex flex-col items-center justify-center rounded-xl bg-(--c-raised) px-3 py-3">
                 <FormDots results={form} />
-                <div className="mt-1.5 text-xs text-(--c-muted)">Forma</div>
+                <div className="mt-1.5 text-xs text-(--c-muted)">{t("ct.team.form")}</div>
               </div>
             </StatStrip>
           ) : (
-            <p className="text-[13px] text-(--c-muted)">Tabulku této sezóny zatím nemáme.</p>
+            <p className="text-[13px] text-(--c-muted)">{t("ct.team.noTable")}</p>
           )}
         </Hero>
       </div>
 
-      <StickyTabs tabs={lock.withLocks(tabs)} value={active} onChange={setTab} label="Sekce týmu" />
+      <StickyTabs tabs={lock.withLocks(tabs.map((x) => ({ ...x, label: t(x.label) })))} value={active} onChange={setTab} label={t("ct.team.tabsAria")} />
 
-      <Gate need={lock.need(active) ?? "account"} when={!!lock.need(active)} title="Celý profil týmu je pro registrované" text="Radar, trenéři i kádr odemkne bezplatná registrace. Přehled a statistiky jsou otevřené.">
+      <Gate need={lock.need(active) ?? "account"} when={!!lock.need(active)} title={t("ct.team.gateTitle")} text={t("ct.team.gateText")}>
       <div role="tabpanel" className="mt-4 space-y-5">
         {active === "overview" && <Overview team={team} stats={stats} onMore={() => setTab("stats")} />}
         {active === "stats" && (
@@ -181,7 +185,7 @@ export function CatalogTeamPage() {
       </div>
       </Gate>
 
-      <footer className="pt-8 text-center text-xs text-(--c-faint)">Informativní údaje, nejde o doporučení k sázce.</footer>
+      <footer className="pt-8 text-center text-xs text-(--c-faint)">{t("ct.c.disclaimer")}</footer>
     </Frame>
   );
 }
@@ -197,13 +201,13 @@ function Overview({ team, stats, onMore }: { team: CatalogTeamDetail; stats: Cat
       <Strengths stats={stats} onMore={onMore} />
 
       <div className="grid gap-5 md:grid-cols-2">
-        <Card title="Nadcházející zápasy" lead="Číslo vpravo je náročnost soupeře: 1 lehčí, 5 těžší." aside={<FdrLegend />}>
-          {upcoming.length === 0 ? <Empty>V kalendáři nic není.</Empty> : <ul className="-mx-1 divide-y divide-(--c-line)">{upcoming.map((fx) => <UpcomingRow key={fx.fixture_id} fx={fx} />)}</ul>}
+        <Card title={t("ct.team.upcoming")} lead={t("ct.team.upcomingLead")} aside={<FdrLegend />}>
+          {upcoming.length === 0 ? <Empty>{t("ct.team.noUpcoming")}</Empty> : <ul className="-mx-1 divide-y divide-(--c-line)">{upcoming.map((fx) => <UpcomingRow key={fx.fixture_id} fx={fx} />)}</ul>}
         </Card>
 
-        <Card title="Poslední zápasy" lead="Výsledky letošní sezóny.">
+        <Card title={t("ct.team.recent")} lead={t("ct.team.recentLead")}>
           {recent.length === 0 ? (
-            <Empty>Zatím žádný odehraný zápas.</Empty>
+            <Empty>{t("ct.team.noRecent")}</Empty>
           ) : (
             <ul className="-mx-1 divide-y divide-(--c-line)">
               {recent.map((r) => {
@@ -236,13 +240,13 @@ function Overview({ team, stats, onMore }: { team: CatalogTeamDetail; stats: Cat
         </Card>
       </div>
 
-      <Card title="Klub">
+      <Card title={t("ct.team.club")}>
         <div className="grid gap-5 md:grid-cols-2">
           <div className="grid grid-cols-2 gap-x-4 gap-y-4 content-start">
-            <Meta label="Stadion" value={team.venue?.name} />
-            <Meta label="Město" value={team.venue?.city} />
-            <Meta label="Kapacita" value={team.venue?.capacity != null ? team.venue.capacity.toLocaleString("cs-CZ") : null} />
-            <Meta label="Založeno" value={team.founded} />
+            <Meta label={t("ct.team.stadium")} value={team.venue?.name} />
+            <Meta label={t("ct.team.city")} value={team.venue?.city} />
+            <Meta label={t("ct.team.capacity")} value={team.venue?.capacity != null ? team.venue.capacity.toLocaleString(intlTag()) : null} />
+            <Meta label={t("ct.team.founded")} value={team.founded} />
           </div>
           <CoachCard coach={coach} />
         </div>
@@ -252,18 +256,20 @@ function Overview({ team, stats, onMore }: { team: CatalogTeamDetail; stats: Cat
 }
 
 function CoachCard({ coach }: { coach: CatalogTeamCoach | null }) {
-  if (!coach?.name) return <p className="self-center text-sm text-(--c-muted)">Hlavního trenéra u tohoto klubu zatím nemáme.</p>;
+  if (!coach?.name) return <p className="self-center text-sm text-(--c-muted)">{t("ct.team.noCoach")}</p>;
   const days = daysSince(coach.start);
   return (
     <div className="flex items-center gap-4 rounded-xl bg-(--c-raised) px-4 py-3">
       <Avatar src={coach.image} name={coach.name} size={64} />
       <div className="min-w-0">
-        <div className="text-[10px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">Hlavní trenér</div>
+        <div className="text-[10px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("ct.team.headCoach")}</div>
         <div className="mt-0.5 text-[17px] font-bold leading-tight">{coach.name}</div>
         <div className="mt-0.5 text-xs text-(--c-muted)">
           {coach.start
-            ? `ve funkci od ${coach.start.slice(0, 10).split("-").reverse().map(Number).join(". ")}${days != null ? ` · ${tenure(days)}` : ""}`
-            : "datum nástupu neznáme"}
+            ? days != null
+              ? t("ct.team.inPostTenure", { date: startDate(coach.start), tenure: tenure(days) })
+              : t("ct.team.inPost", { date: startDate(coach.start) })
+            : t("ct.team.noStart")}
         </div>
       </div>
     </div>
@@ -291,15 +297,15 @@ function UpcomingRow({ fx }: { fx: CatalogUpcoming }) {
       <div className="min-w-0 flex-1">
         <div className="truncate text-[13px] font-medium">{fx.opponent.name}</div>
         <div className="text-[11px] text-(--c-faint)">
-          {fx.starting_at ? new Date(fx.starting_at).toLocaleDateString("cs-CZ", { weekday: "short", day: "numeric", month: "numeric" }) : "—"}
-          {fx.opponent_position != null ? ` · soupeř ${fx.opponent_position}.` : ""}
+          {fx.starting_at ? new Date(fx.starting_at).toLocaleDateString(intlTag(), { weekday: "short", day: "numeric", month: "numeric" }) : "—"}
+          {fx.opponent_position != null ? ` · ${t("ct.team.oppPos", { n: fx.opponent_position })}` : ""}
         </div>
       </div>
       {rating > 0 && (
         <span
           className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md text-[13px] font-bold"
           style={{ background: FDR_STYLE[rating]?.bg, color: FDR_STYLE[rating]?.fg }}
-          title={`Náročnost soupeře ${rating} z 5`}
+          title={t("ct.team.fdrTitle", { n: rating })}
         >
           {rating}
         </span>
@@ -330,36 +336,36 @@ function Strengths({ stats, onMore }: { stats: CatalogProfileStat[]; onMore: () 
   const row = (s: CatalogProfileStat) => (
     <li key={s.key} className="flex items-center gap-3 py-2">
       <span className="min-w-0 flex-1">
-        <span className="block truncate text-[13px] font-medium">{s.label}</span>
+        <span className="block truncate text-[13px] font-medium">{dataLabel(s.label)}</span>
         <span className="text-[11px] text-(--c-faint)">
-          {fmtNum(s.value)} · liga {fmtNum(s.league_avg)}
+          {fmtNum(s.value)} · {t("ct.kit.leagueAvg", { v: fmtNum(s.league_avg) })}
         </span>
       </span>
       <span className="shrink-0 rounded-md px-2 py-0.5 text-[12px] font-bold tabular-nums" style={{ color: rankColor(s.rank!, s.league_size!), background: `color-mix(in oklab, ${rankColor(s.rank!, s.league_size!)} 15%, transparent)` }}>
-        {s.rank}. z {s.league_size}
+        {t("ct.kit.rankOf", { rank: s.rank!, size: s.league_size! })}
       </span>
     </li>
   );
   return (
     <Card
-      title="V čem je tým silný a slabý"
-      lead="Pořadí mezi týmy ligy v letošní sezóně, 1. je nejlepší."
+      title={t("ct.team.strengthTitle")}
+      lead={t("ct.team.strengthLead")}
       aside={
         <button type="button" onClick={onMore} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-          Všechna čísla →
+          {t("ct.c.allNumbers")}
         </button>
       }
     >
       <div className="grid gap-x-6 gap-y-3 md:grid-cols-2">
         <div>
           <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-win)" }}>
-            Nejsilnější stránky
+            {t("ct.c.best")}
           </h3>
           <ul className="divide-y divide-(--c-line)">{best.map(row)}</ul>
         </div>
         <div>
           <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-loss)" }}>
-            Nejslabší stránky
+            {t("ct.c.worst")}
           </h3>
           <ul className="divide-y divide-(--c-line)">{worst.map(row)}</ul>
         </div>
@@ -381,23 +387,23 @@ function StatsCard({ stats }: { stats: CatalogProfileStat[] }) {
 
   if (!stats.length) {
     return (
-      <Card title="Sezónní průměry">
-        <Empty>Sezónní průměry ještě nejsou spočtené.</Empty>
+      <Card title={t("ct.team.seasonAvg")}>
+        <Empty>{t("ct.team.noAvg")}</Empty>
       </Card>
     );
   }
   return (
-    <Card title="Sezónní průměry" lead="Na zápas, s pořadím mezi týmy ligy. Zelená je horní pětina, růžová dolní, 1. je nejlepší.">
-      <Seg label="Skupina statistik" value={group} onChange={setGroup} options={GROUPS.map((g) => ({ id: g.id, label: g.label }))} />
+    <Card title={t("ct.team.seasonAvg")} lead={t("ct.team.avgLead")}>
+      <Seg label={t("ct.team.groupAria")} value={group} onChange={setGroup} options={GROUPS.map((g) => ({ id: g.id, label: t(g.label) }))} />
       <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {shown.map((s) => (
-          <RankCard key={s.key || s.label} label={s.label} value={s.value} rank={s.rank} size={s.league_size} avg={s.league_avg} />
+          <RankCard key={s.key || s.label} label={dataLabel(s.label)} value={s.value} rank={s.rank} size={s.league_size} avg={s.league_avg} />
         ))}
       </div>
-      {rows.length === 0 && <Empty>Pro tuto skupinu zatím nemáme čísla.</Empty>}
+      {rows.length === 0 && <Empty>{t("ct.team.noGroup")}</Empty>}
       {rows.length > PREVIEW && (
         <button type="button" onClick={() => setOpen((o) => !o)} className="mt-3 min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-          {open ? "Méně" : `Zobrazit dalších ${rows.length - PREVIEW}`}
+          {open ? t("ct.team.less") : t("ct.c.showMore", { n: rows.length - PREVIEW })}
         </button>
       )}
     </Card>
@@ -410,8 +416,8 @@ function PitchBlock({ team, pitch }: { team: CatalogTeamDetail; pitch: NonNullab
     <div className="space-y-5">
       <TrendCard team={team.name} seasons={seasons} defaultSeason={pitch.season} />
       <ShotMapCard
-        title="Mapa střel týmu"
-        lead="Odkud tým střílí. Branka je nahoře, velikost tečky je xG střely."
+        title={t("ct.team.shotMapTitle")}
+        lead={t("ct.team.shotMapLead")}
         seasons={seasons}
         defaultSeason={pitch.season}
         shotsOf={shotsOfMatch}
@@ -424,7 +430,7 @@ const shotsOfMatch = (m: MatchRow) => m.shots;
 
 /* ---------- kádr ---------- */
 
-const SQUAD_GROUPS = ["Brankáři", "Obránci", "Záložníci", "Útočníci", "Ostatní"];
+const SQUAD_GROUPS = ["ct.team.sq.gk", "ct.team.sq.def", "ct.team.sq.mid", "ct.team.sq.att", "ct.team.sq.other"] as const satisfies readonly Key[];
 
 function SquadCard({ players }: { players: CatalogSquadPlayer[] }) {
   const active = players.filter((p) => p.status !== "loan" && p.status !== "left");
@@ -436,24 +442,24 @@ function SquadCard({ players }: { players: CatalogSquadPlayer[] }) {
       buckets[i].push(p);
     }
     for (const g of buckets) g.sort((a, b) => (b.season?.minutes ?? 0) - (a.season?.minutes ?? 0) || (a.number ?? 99) - (b.number ?? 99));
-    return buckets.map((g, i) => ({ label: SQUAD_GROUPS[i], players: g })).filter((g) => g.players.length);
+    return buckets.map((g, i) => ({ id: SQUAD_GROUPS[i], label: t(SQUAD_GROUPS[i]), players: g })).filter((g) => g.players.length);
   }, [active]);
-  const visible = groups.filter((g) => pos === "all" || g.label === pos);
+  const visible = groups.filter((g) => pos === "all" || g.id === pos);
   const anyStats = active.some((p) => p.season?.appearances != null);
 
   return (
-    <Card title={`Kádr · ${active.length} ${plural(active.length, "hráč", "hráči", "hráčů")}`} lead="Bez hráčů na hostování a bez těch, kteří už klub opustili. V rámci postu podle odehraných minut.">
-      <Seg label="Post" value={pos} onChange={setPos} options={[{ id: "all", label: "Všichni" }, ...groups.map((g) => ({ id: g.label, label: g.label }))]} />
+    <Card title={t("ct.team.squadTitle", { n: active.length })} lead={t("ct.team.squadLead")}>
+      <Seg label={t("ct.team.posAria")} value={pos} onChange={setPos} options={[{ id: "all", label: t("ct.team.all") }, ...groups.map((g) => ({ id: g.id, label: g.label }))]} />
       <div className="mt-4 space-y-5">
         {visible.map((g) => (
-          <section key={g.label}>
+          <section key={g.id}>
             <div className="mb-1 flex items-center justify-between px-1">
               <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">
                 {g.label} <span className="ml-1 tabular-nums">{g.players.length}</span>
               </h3>
               {anyStats && (
                 <div className="flex gap-3 pr-6 text-[10px] uppercase tracking-wide text-(--c-faint)">
-                  <span className="w-8 text-center">Záp.</span>
+                  <span className="w-8 text-center">{t("ct.team.colApps")}</span>
                   <span className="w-8 text-center">G</span>
                   <span className="w-8 text-center">A</span>
                 </div>

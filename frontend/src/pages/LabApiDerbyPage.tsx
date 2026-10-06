@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "../i18n/router";
 import { Pill, Section } from "../components/ui";
+import { intlTag } from "../i18n/locale";
 
 type Verdict = "same" | "diff" | "sm_only" | "ts_only" | "empty";
 type Side = "home" | "away";
@@ -128,7 +129,7 @@ type XiPlayer = {
 
 function fmt(n: number | null | undefined, d = 0): string {
   if (n === null || n === undefined) return "—";
-  return n.toLocaleString("cs-CZ", { minimumFractionDigits: d, maximumFractionDigits: d });
+  return n.toLocaleString(intlTag(), { minimumFractionDigits: d, maximumFractionDigits: d });
 }
 
 function ha(h: number | null | undefined, a: number | null | undefined, d = 0): string {

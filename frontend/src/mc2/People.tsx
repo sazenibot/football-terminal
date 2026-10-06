@@ -1,7 +1,8 @@
 import { useMemo, useState } from "react";
 import type { MatchData, PlayerBrief, RefereeInfo, RefereeTeamMatch, TeamBrief } from "../types";
 import { formatDate } from "../lib/format";
-import { Card, Empty, Info, ResBadge, Seg, Stat, TeamTitle, n2, plural, type Res } from "./kit";
+import { getLocale, intlTag, t, type Key } from "../i18n/locale";
+import { Card, Empty, Info, ResBadge, Seg, Stat, TeamTitle, n2, type Res } from "./kit";
 
 /* ---------- Absence ---------- */
 
@@ -16,7 +17,7 @@ export function AbsencesCard({ m }: { m: MatchData }) {
           <span className="shrink-0 text-xs text-(--c-muted)">{items.length}</span>
         </div>
         {items.length === 0 ? (
-          <p className="rounded-xl bg-(--c-raised) px-3 py-3 text-[13px] text-(--c-muted)">Žádné hlášené absence.</p>
+          <p className="rounded-xl bg-(--c-raised) px-3 py-3 text-[13px] text-(--c-muted)">{t("mc.pe.noAbsences")}</p>
         ) : (
           <ul className="space-y-1.5">
             {items.map((s) => (
@@ -24,8 +25,8 @@ export function AbsencesCard({ m }: { m: MatchData }) {
                 <div className="min-w-0">
                   <div className="truncate text-[13px] font-medium">{s.player_name}</div>
                   <div className="truncate text-[11px] text-(--c-muted)">
-                    {s.type_name_cs}
-                    {s.games_missed ? ` · vynechal ${s.games_missed} ${plural(s.games_missed, "zápas", "zápasy", "zápasů")}` : ""}
+                    {getLocale() === "en" ? s.type_name : s.type_name_cs}
+                    {s.games_missed ? ` · ${t("mc.pe.missed", { n: s.games_missed })}` : ""}
                   </div>
                 </div>
                 <span
@@ -35,7 +36,7 @@ export function AbsencesCard({ m }: { m: MatchData }) {
                     background: `color-mix(in oklab, ${s.likely_available ? "var(--c-warn)" : "var(--c-loss)"} 15%, transparent)`,
                   }}
                 >
-                  {s.likely_available ? "možný návrat" : "chybí"}
+                  {s.likely_available ? t("mc.pe.mayReturn") : t("mc.pe.out")}
                 </span>
               </li>
             ))}
@@ -48,14 +49,11 @@ export function AbsencesCard({ m }: { m: MatchData }) {
     <Card
       title={
         <>
-          Absence
-          <Info>
-            „Chybí“ = konec absence neznáme, nebo je až po zápase. „Možný návrat“ = čekáme, že hráč bude do zápasu k dispozici. Jde o odhad, data
-            se doplňují postupně, jak se zápas blíží.
-          </Info>
+          {t("mc.pe.abs.title")}
+          <Info>{t("mc.pe.abs.info")}</Info>
         </>
       }
-      lead="Zranění a tresty před zápasem."
+      lead={t("mc.pe.abs.lead")}
     >
       <div className="grid gap-5 md:grid-cols-2">
         {col(m.home, "home")}
@@ -69,32 +67,32 @@ export function AbsencesCard({ m }: { m: MatchData }) {
 
 type View = "season" | "last5" | "h2h";
 type SV = { appearances: number; stats: Record<string, number> };
-type Col = { key: string; label: string; title?: string; value: (v: SV) => number; digits?: number; group: string };
+type Col = { key: string; label: Key; title?: Key; value: (v: SV) => number; digits?: number; group: Key | "" };
 
 const perGame = (stat: string) => (v: SV) => (v.appearances > 0 ? (v.stats[stat] ?? 0) / v.appearances : 0);
 
 const OUT: Col[] = [
-  { key: "apps", label: "Zápasy", value: (v) => v.appearances, group: "" },
-  { key: "min", label: "Minuty", value: (v) => v.stats["Minutes Played"] ?? 0, group: "" },
-  { key: "g", label: "Góly", value: (v) => v.stats["Goals"] ?? 0, group: "Ofenzivní" },
-  { key: "a", label: "Asist.", title: "Asistence", value: (v) => v.stats["Assists"] ?? 0, group: "Ofenzivní" },
-  { key: "shT", label: "Střely", value: (v) => v.stats["Shots Total"] ?? 0, group: "Ofenzivní" },
-  { key: "sotT", label: "SnB", title: "Střely na bránu", value: (v) => v.stats["Shots On Target"] ?? 0, group: "Ofenzivní" },
-  { key: "sh", label: "Střely/z", title: "Střely na zápas", value: perGame("Shots Total"), digits: 1, group: "Ofenzivní" },
-  { key: "sot", label: "SnB/z", title: "Střely na bránu na zápas", value: perGame("Shots On Target"), digits: 1, group: "Ofenzivní" },
-  { key: "fT", label: "Fauly", value: (v) => v.stats["Fouls"] ?? 0, group: "Defenzivní" },
-  { key: "f", label: "Fauly/z", title: "Fauly na zápas", value: perGame("Fouls"), digits: 1, group: "Defenzivní" },
-  { key: "y", label: "Žluté", value: (v) => v.stats["Yellowcards"] ?? 0, group: "Defenzivní" },
-  { key: "r", label: "Červené", value: (v) => v.stats["Redcards"] ?? 0, group: "Defenzivní" },
+  { key: "apps", label: "mc.pe.col.apps", value: (v) => v.appearances, group: "" },
+  { key: "min", label: "mc.pe.col.min", value: (v) => v.stats["Minutes Played"] ?? 0, group: "" },
+  { key: "g", label: "mc.pe.col.g", value: (v) => v.stats["Goals"] ?? 0, group: "mc.pe.grp.off" },
+  { key: "a", label: "mc.pe.col.a", title: "mc.pe.col.a.t", value: (v) => v.stats["Assists"] ?? 0, group: "mc.pe.grp.off" },
+  { key: "shT", label: "mc.pe.col.shT", value: (v) => v.stats["Shots Total"] ?? 0, group: "mc.pe.grp.off" },
+  { key: "sotT", label: "mc.pe.col.sotT", title: "mc.pe.col.sotT.t", value: (v) => v.stats["Shots On Target"] ?? 0, group: "mc.pe.grp.off" },
+  { key: "sh", label: "mc.pe.col.sh", title: "mc.pe.col.sh.t", value: perGame("Shots Total"), digits: 1, group: "mc.pe.grp.off" },
+  { key: "sot", label: "mc.pe.col.sot", title: "mc.pe.col.sot.t", value: perGame("Shots On Target"), digits: 1, group: "mc.pe.grp.off" },
+  { key: "fT", label: "mc.pe.col.fT", value: (v) => v.stats["Fouls"] ?? 0, group: "mc.pe.grp.def" },
+  { key: "f", label: "mc.pe.col.f", title: "mc.pe.col.f.t", value: perGame("Fouls"), digits: 1, group: "mc.pe.grp.def" },
+  { key: "y", label: "mc.pe.col.y", value: (v) => v.stats["Yellowcards"] ?? 0, group: "mc.pe.grp.def" },
+  { key: "r", label: "mc.pe.col.r", value: (v) => v.stats["Redcards"] ?? 0, group: "mc.pe.grp.def" },
 ];
 const GK: Col[] = [
-  { key: "apps", label: "Zápasy", value: (v) => v.appearances, group: "" },
-  { key: "min", label: "Minuty", value: (v) => v.stats["Minutes Played"] ?? 0, group: "" },
-  { key: "sv", label: "Zákroky", value: (v) => v.stats["Saves"] ?? 0, group: "Brankář" },
-  { key: "gc", label: "Obdržené", title: "Obdržené góly", value: (v) => v.stats["Goals Conceded"] ?? 0, group: "Brankář" },
-  { key: "cs", label: "Čistá konta", value: (v) => v.stats["Cleansheets"] ?? 0, group: "Brankář" },
-  { key: "y", label: "Žluté", value: (v) => v.stats["Yellowcards"] ?? 0, group: "Disciplína" },
-  { key: "r", label: "Červené", value: (v) => v.stats["Redcards"] ?? 0, group: "Disciplína" },
+  { key: "apps", label: "mc.pe.col.apps", value: (v) => v.appearances, group: "" },
+  { key: "min", label: "mc.pe.col.min", value: (v) => v.stats["Minutes Played"] ?? 0, group: "" },
+  { key: "sv", label: "mc.pe.col.sv", value: (v) => v.stats["Saves"] ?? 0, group: "mc.pe.grp.gk" },
+  { key: "gc", label: "mc.pe.col.gc", title: "mc.pe.col.gc.t", value: (v) => v.stats["Goals Conceded"] ?? 0, group: "mc.pe.grp.gk" },
+  { key: "cs", label: "mc.pe.col.cs", value: (v) => v.stats["Cleansheets"] ?? 0, group: "mc.pe.grp.gk" },
+  { key: "y", label: "mc.pe.col.y", value: (v) => v.stats["Yellowcards"] ?? 0, group: "mc.pe.grp.disc" },
+  { key: "r", label: "mc.pe.col.r", value: (v) => v.stats["Redcards"] ?? 0, group: "mc.pe.grp.disc" },
 ];
 
 const viewOf = (p: PlayerBrief, v: View): SV =>
@@ -114,8 +112,8 @@ export function PlayersCard({ m }: { m: MatchData }) {
   const [dir, setDir] = useState<"asc" | "desc">("desc");
 
   const rows = useMemo(() => {
-    const pick = (list: PlayerBrief[], t: TeamBrief, side: "home" | "away") =>
-      list.filter((p) => (pos === "gk" ? p.is_gk : !p.is_gk)).map((p) => ({ p, t, side, v: viewOf(p, view) }));
+    const pick = (list: PlayerBrief[], tm: TeamBrief, side: "home" | "away") =>
+      list.filter((p) => (pos === "gk" ? p.is_gk : !p.is_gk)).map((p) => ({ p, tm, side, v: viewOf(p, view) }));
     const h = pick(m.players.home ?? [], m.home, "home");
     const a = pick(m.players.away ?? [], m.away, "away");
     return team === "home" ? h : team === "away" ? a : [...h, ...a];
@@ -123,7 +121,7 @@ export function PlayersCard({ m }: { m: MatchData }) {
 
   const defs = pos === "gk" ? GK : OUT;
   const cols = defs;
-  const groups = cols.reduce<{ name: string; span: number }[]>((acc, c) => {
+  const groups = cols.reduce<{ name: Key | ""; span: number }[]>((acc, c) => {
     const last = acc[acc.length - 1];
     if (last && last.name === c.group) last.span += 1;
     else acc.push({ name: c.group, span: 1 });
@@ -133,7 +131,7 @@ export function PlayersCard({ m }: { m: MatchData }) {
   const active = cols.find((c) => c.key === sortKey) ?? cols.find((c) => c.key === "min") ?? cols[0];
   const sorted = [...rows].sort((x, y) => (dir === "asc" ? 1 : -1) * (active.value(x.v) - active.value(y.v)));
   const shown = all ? sorted : sorted.slice(0, 12);
-  const fmt = (v: number, d = 0) => (d ? v.toFixed(d) : String(Math.round(v)));
+  const fmt = (v: number, d = 0) => (d ? v.toLocaleString(intlTag(), { minimumFractionDigits: d, maximumFractionDigits: d }) : String(Math.round(v)));
   const sort = (k: string) => {
     if (k === sortKey) setDir((d) => (d === "asc" ? "desc" : "asc"));
     else {
@@ -143,44 +141,44 @@ export function PlayersCard({ m }: { m: MatchData }) {
   };
 
   return (
-    <Card title="Hráči" lead="Klepnutím na název sloupce seřadíte tabulku.">
+    <Card title={t("mc.tab.people")} lead={t("mc.pe.pl.lead")}>
       <div className="mb-4 flex flex-wrap gap-2">
         <Seg
-          label="Tým"
+          label={t("mc.pe.pl.team")}
           value={team}
           onChange={setTeam}
           options={[
             { id: "home", label: m.home.name },
             { id: "away", label: m.away.name },
-            { id: "both", label: "Oba" },
+            { id: "both", label: t("mc.pe.pl.both") },
           ]}
         />
         <Seg
-          label="Post"
+          label={t("mc.pe.pl.pos")}
           value={pos}
           onChange={(v) => {
             setPos(v);
             setSortKey("min");
           }}
           options={[
-            { id: "out", label: "Hráči v poli" },
-            { id: "gk", label: "Brankáři" },
+            { id: "out", label: t("mc.pe.pl.out") },
+            { id: "gk", label: t("mc.pe.pl.gk") },
           ]}
         />
         <Seg
-          label="Období"
+          label={t("mc.pe.pl.period")}
           value={view}
           onChange={setView}
           options={[
-            { id: "season", label: "Sezóna" },
-            { id: "last5", label: "Posledních 5" },
-            { id: "h2h", label: "Vzájemné zápasy" },
+            { id: "season", label: t("mc.pe.pl.season") },
+            { id: "last5", label: t("mc.pe.pl.last5") },
+            { id: "h2h", label: t("mc.ov.h2h.title") },
           ]}
         />
       </div>
 
       {rows.length === 0 ? (
-        <Empty>Žádní hráči v téhle kategorii.</Empty>
+        <Empty>{t("mc.pe.pl.empty")}</Empty>
       ) : (
         <>
           <div className="overflow-x-auto rounded-xl border border-(--c-line)">
@@ -195,13 +193,13 @@ export function PlayersCard({ m }: { m: MatchData }) {
                       scope="colgroup"
                       className={`px-3 pb-0 pt-2 text-left font-semibold ${i > 0 ? "border-l border-(--c-line)" : ""}`}
                     >
-                      {g.name}
+                      {g.name ? t(g.name) : ""}
                     </th>
                   ))}
                 </tr>
                 <tr className="border-b border-(--c-line) bg-(--c-raised) text-xs text-(--c-muted)">
                   <th scope="col" className="sticky left-0 z-10 bg-(--c-raised) px-3 py-2 text-left font-medium">
-                    Hráč
+                    {t("mc.pe.pl.player")}
                   </th>
                   {cols.map((c, i) => (
                     <th
@@ -210,8 +208,8 @@ export function PlayersCard({ m }: { m: MatchData }) {
                       aria-sort={c.key === active.key ? (dir === "asc" ? "ascending" : "descending") : "none"}
                       className={`px-1 py-1 text-right font-medium ${startsGroup(i) ? "border-l border-(--c-line)" : ""}`}
                     >
-                      <button type="button" title={c.title} onClick={() => sort(c.key)} className={`min-h-8 rounded-md px-2 hover:text-(--c-text) ${c.key === active.key ? "text-(--c-accent)" : ""}`}>
-                        {c.label}
+                      <button type="button" title={c.title ? t(c.title) : undefined} onClick={() => sort(c.key)} className={`min-h-8 rounded-md px-2 hover:text-(--c-text) ${c.key === active.key ? "text-(--c-accent)" : ""}`}>
+                        {t(c.label)}
                         {c.key === active.key && <span aria-hidden> {dir === "asc" ? "↑" : "↓"}</span>}
                       </button>
                     </th>
@@ -219,14 +217,14 @@ export function PlayersCard({ m }: { m: MatchData }) {
                 </tr>
               </thead>
               <tbody>
-                {shown.map(({ p, t, side, v }) => (
-                  <tr key={`${t.id}-${p.id}`} className="border-b border-(--c-line)/60 last:border-0 hover:bg-(--c-raised)/60">
+                {shown.map(({ p, tm, side, v }) => (
+                  <tr key={`${tm.id}-${p.id}`} className="border-b border-(--c-line)/60 last:border-0 hover:bg-(--c-raised)/60">
                     <td className="sticky left-0 z-10 bg-(--c-surface) px-3 py-2">
                       <span className="mr-2 inline-block w-5 text-right text-xs text-(--c-faint)">{p.jersey_number ?? ""}</span>
                       <span className="font-medium">{shortName(p.name)}</span>
                       {team === "both" && (
                         <span className="ml-2 text-[10px]" style={{ color: side === "home" ? "var(--c-home)" : "var(--c-away)" }}>
-                          {t.name}
+                          {tm.name}
                         </span>
                       )}
                     </td>
@@ -246,11 +244,11 @@ export function PlayersCard({ m }: { m: MatchData }) {
           <div className="mt-2 flex flex-wrap items-center gap-x-4">
             {sorted.length > 12 && (
               <button type="button" onClick={() => setAll((a) => !a)} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
-                {all ? "Zobrazit méně" : `Zobrazit všech ${sorted.length}`}
+                {all ? t("home.news.less") : t("mc.pe.pl.showAll", { n: sorted.length })}
               </button>
             )}
             {view !== "season" && (
-              <span className="text-[11px] text-(--c-faint)">U hráčů, kteří v daném období nenastoupili, jsou nuly.</span>
+              <span className="text-[11px] text-(--c-faint)">{t("mc.pe.pl.zeros")}</span>
             )}
           </div>
         </>
@@ -276,14 +274,16 @@ function Played({ date, home, away, hs, as, result }: { date: string; home: stri
   );
 }
 
-export const REFEREE_PENDING = "Pro zápas zatím nebyl delegován rozhodčí, data se zobrazí po jeho delegaci.";
+export const refereePending = () => t("mc.pe.ref.pending");
+
+const fx = (v: unknown) => (typeof v === "number" ? v.toLocaleString(intlTag(), { maximumFractionDigits: 2 }) : "—");
 
 export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | null; home: TeamBrief; away: TeamBrief }) {
   const [tab, setTab] = useState<"season" | "teams" | "h2h" | "career">("season");
   if (!referee) {
     return (
-      <Card title="Rozhodčí">
-        <Empty>{REFEREE_PENDING}</Empty>
+      <Card title={t("mc.tab.referee")}>
+        <Empty>{refereePending()}</Empty>
       </Card>
     );
   }
@@ -296,13 +296,13 @@ export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | nu
         <TeamTitle team={team} side={side} />
       </div>
       {!summary ? (
-        <p className="rounded-xl bg-(--c-raised) px-3 py-3 text-[13px] text-(--c-muted)">Tenhle rozhodčí nepískal zápas týmu za poslední dvě sezóny.</p>
+        <p className="rounded-xl bg-(--c-raised) px-3 py-3 text-[13px] text-(--c-muted)">{t("mc.pe.ref.noTeamMatches")}</p>
       ) : (
         <>
           <div className="mb-3 grid grid-cols-3 gap-2">
-            <Stat value={summary.matches} label="zápasů" />
-            <Stat value={n2(summary.avg_fouls_by_team)} label="faulů týmu" />
-            <Stat value={n2(summary.avg_yellow_by_team)} label="žlutých týmu" />
+            <Stat value={summary.matches} label={t("mc.pe.ref.matches")} />
+            <Stat value={n2(summary.avg_fouls_by_team)} label={t("mc.pe.ref.teamFouls")} />
+            <Stat value={n2(summary.avg_yellow_by_team)} label={t("mc.pe.ref.teamYellows")} />
           </div>
           <ul className="space-y-0.5">
             {summary.recent_matches.map((x: RefereeTeamMatch) => (
@@ -316,18 +316,18 @@ export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | nu
 
   return (
     <Card
-      title={`Rozhodčí: ${referee.name}`}
-      lead="Jak moc píská, v porovnání s ligovým průměrem."
+      title={t("mc.ov.ref.title", { name: referee.name })}
+      lead={t("mc.pe.ref.lead")}
       aside={
         <Seg
-          label="Přehled rozhodčího"
+          label={t("mc.pe.ref.overview")}
           value={tab}
           onChange={setTab}
           options={[
-            { id: "season", label: "Sezóna" },
-            { id: "teams", label: "S těmito týmy" },
-            { id: "h2h", label: "Jejich souboje" },
-            { id: "career", label: "Kariéra" },
+            { id: "season", label: t("mc.pe.pl.season") },
+            { id: "teams", label: t("mc.pe.ref.tabTeams") },
+            { id: "h2h", label: t("mc.pe.ref.tabH2h") },
+            { id: "career", label: t("mc.pe.ref.tabCareer") },
           ]}
         />
       }
@@ -336,15 +336,15 @@ export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | nu
         (s ? (
           <>
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-              <Stat value={statCount(s["Season Matches"])} label="zápasů v sezóně" />
-              <Stat value={s["Fouls"]?.average ?? "—"} label="faulů na zápas" hint={lc ? `Ligový průměr: ${lc.fouls_per_match}` : undefined} />
-              <Stat value={statAvg(s["Yellowcards"])} label="žlutých na zápas" hint={lc ? `Ligový průměr: ${lc.yellow_per_match}` : undefined} />
-              <Stat value={statAvg(s["Redcards"])} label="červených na zápas" hint={lc ? `Ligový průměr: ${lc.red_per_match}` : undefined} />
+              <Stat value={statCount(s["Season Matches"])} label={t("mc.pe.ref.seasonMatches")} />
+              <Stat value={fx(s["Fouls"]?.average)} label={t("mc.pe.ref.foulsPer")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: fx(lc.fouls_per_match) }) : undefined} />
+              <Stat value={fx(statAvg(s["Yellowcards"]))} label={t("mc.pe.ref.yellowsPer")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: fx(lc.yellow_per_match) }) : undefined} />
+              <Stat value={fx(statAvg(s["Redcards"]))} label={t("mc.pe.ref.redsPer")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: fx(lc.red_per_match) }) : undefined} />
             </div>
-            {lc && <p className="mt-3 text-[11px] text-(--c-faint)">Ligový průměr z {lc.matches_sampled} odehraných zápasů soutěže. Ukáže, jestli je rozhodčí přísnější než ostatní.</p>}
+            {lc && <p className="mt-3 text-[11px] text-(--c-faint)">{t("mc.pe.ref.leagueNote", { n: lc.matches_sampled })}</p>}
           </>
         ) : (
-          <Empty>V téhle sezóně zatím žádný zápas neodpískal.</Empty>
+          <Empty>{t("mc.pe.ref.noSeason")}</Empty>
         ))}
 
       {tab === "teams" && (
@@ -356,7 +356,7 @@ export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | nu
 
       {tab === "h2h" &&
         (referee.h2h_matches_officiated.length === 0 ? (
-          <Empty>Souboje těchto dvou týmů zatím nepískal.</Empty>
+          <Empty>{t("mc.pe.ref.noH2h")}</Empty>
         ) : (
           <>
             <ul className="space-y-0.5">
@@ -364,16 +364,16 @@ export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | nu
                 <Played key={x.fixture_id} date={x.date} home={x.home} away={x.away} hs={x.home_score} as={x.away_score} result={x.result_for_home_team} />
               ))}
             </ul>
-            <p className="mt-2 text-[11px] text-(--c-faint)">Barva = výsledek z pohledu týmu {home.name}.</p>
+            <p className="mt-2 text-[11px] text-(--c-faint)">{t("mc.pe.ref.colorNote", { team: home.name })}</p>
           </>
         ))}
 
       {tab === "career" && (
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-          <Stat value={c.matches} label="odpískaných zápasů" />
-          <Stat value={c.total_seasons_tracked} label="sledovaných sezón" />
-          <Stat value={c.yellow_cards} label="žlutých celkem" />
-          <Stat value={c.avg_yellow_per_match ?? "—"} label="žlutých na zápas" />
+          <Stat value={c.matches} label={t("mc.pe.ref.careerMatches")} />
+          <Stat value={c.total_seasons_tracked} label={t("mc.pe.ref.careerSeasons")} />
+          <Stat value={c.yellow_cards} label={t("mc.pe.ref.yellowsTotal")} />
+          <Stat value={fx(c.avg_yellow_per_match)} label={t("mc.pe.ref.yellowsPer")} />
         </div>
       )}
     </Card>
