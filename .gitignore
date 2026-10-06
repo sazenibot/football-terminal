@@ -9,3 +9,6 @@ scripts/.cache/
 node_modules/
 frontend/dist/
 /package-lock.json
+
+# Katalog leží v Cloudflare R2 (ft-public/catalog), ne v gitu. Obnoví ho scripts/r2_sync.py down.
+frontend/public/data/catalog/

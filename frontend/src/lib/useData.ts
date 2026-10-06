@@ -15,9 +15,12 @@ import type {
   MatchData,
 } from "../types";
 
-/** Katalog (týmy, hráči, rozhodčí, historie) leží v R2, ne v gitu. Adresu bucketu dává VITE_CATALOG_BASE
-    (např. https://data.football-terminal.com/catalog). Bez ní se čte z /data/catalog u webu (lokální vývoj). */
-const CATALOG = ((import.meta.env.VITE_CATALOG_BASE as string | undefined) || "/data/catalog").replace(/\/$/, "");
+/** Katalog (týmy, hráči, rozhodčí, historie) leží v R2, ne v gitu. Adresu dává VITE_CATALOG_BASE
+    (produkce: https://data.football-terminal.com/catalog). Lokální vývoj bez ní čte veřejný bucket. */
+const CATALOG = (
+  (import.meta.env.VITE_CATALOG_BASE as string | undefined) ||
+  (import.meta.env.DEV ? "https://data.football-terminal.com/catalog" : "/data/catalog")
+).replace(/\/$/, "");
 
 export class DataMissingError extends Error {
   constructor(url: string) {

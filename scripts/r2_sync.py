@@ -118,8 +118,11 @@ def up(s3, root: Path, bucket: str, prefix: str, delete: bool) -> None:
         print(f"R2 up: {len(stale)} smazáno")
 
 
-def down(s3, root: Path, bucket: str, prefix: str) -> None:
+def down(s3, root: Path, bucket: str, prefix: str, require: bool) -> None:
     remote = remote_index(s3, bucket, prefix)
+    if not remote and require:
+        # Bez stavu by denní job začal od nuly a spálil kvótu API. Raději spadnout.
+        sys.exit(f"R2 down: {bucket}/{prefix} je prázdný, ale stav je povinný. Zastavuji.")
     if not remote:
         print(f"R2 down: {bucket}/{prefix} je prázdný, nechávám lokální soubory")
         return
@@ -149,6 +152,7 @@ def main() -> None:
     ap.add_argument("--bucket", required=True)
     ap.add_argument("--prefix", required=True, help="předpona v bucketu, např. catalog")
     ap.add_argument("--delete", action="store_true", help="u up: smaže v bucketu soubory, které lokálně nejsou")
+    ap.add_argument("--require-nonempty", action="store_true", help="u down: selže, pokud je v bucketu prázdno")
     a = ap.parse_args()
     root = Path(a.folder)
     prefix = a.prefix.strip("/")
@@ -163,7 +167,7 @@ def main() -> None:
         up(s3, root, a.bucket, prefix, a.delete)
     else:
         root.mkdir(parents=True, exist_ok=True)
-        down(s3, root, a.bucket, prefix)
+        down(s3, root, a.bucket, prefix, a.require_nonempty)
 
 
 if __name__ == "__main__":

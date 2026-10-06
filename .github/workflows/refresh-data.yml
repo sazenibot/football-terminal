@@ -11,6 +11,16 @@ on:
 permissions:
   contents: write
 
+# Dva běhy najednou by si přepsaly stav katalogu v R2.
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+env:
+  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -37,7 +47,13 @@ jobs:
 
       - name: Install deps
         if: steps.gate.outputs.run == 'true'
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt boto3
+
+      # Katalog (týmy, hráči, rozhodčí, historie) už není v gitu. Stav drží R2 (ft-public/catalog).
+      # Denní skripty ho čtou a doplňují přírůstkově, proto se musí obnovit před nimi. Prázdný stav = chyba.
+      - name: Stav katalogu z R2
+        if: steps.gate.outputs.run == 'true'
+        run: python scripts/r2_sync.py down frontend/public/data/catalog --bucket ft-public --prefix catalog --require-nonempty
 
       - name: Daily refresh
         if: steps.gate.outputs.run == 'true'
@@ -115,3 +131,8 @@ jobs:
             git commit -m "data: denní refresh"
             git push
           fi
+
+      # Až po commitu Match Center dat. Kdyby upload selhal, běh skončí chybou a nahraje se při dalším.
+      - name: Katalog do R2
+        if: steps.gate.outputs.run == 'true'
+        run: python scripts/r2_sync.py up frontend/public/data/catalog --bucket ft-public --prefix catalog
