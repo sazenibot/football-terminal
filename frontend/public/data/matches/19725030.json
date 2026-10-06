@@ -115,20 +115,6 @@
       "end_date": null,
       "games_missed": 6,
       "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 38200369,
-      "player_name": "Martin Kovar",
-      "type_id": 598,
-      "type_name": "Muscular problems",
-      "type_name_cs": "Muscular problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-03-07",
-      "end_date": null,
-      "games_missed": 25,
-      "likely_available": false
     }
   ],
   "predicted_lineups": {
@@ -1531,14 +1517,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.88
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.15
         },
         {
           "key": "yellow_under5",
@@ -1587,42 +1575,48 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.5
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.56
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.82
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.62
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.96
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 5.06
         },
         {
           "key": "more_corners",
@@ -1650,14 +1644,16 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 7.65
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 8.86
         },
         {
           "key": "corners_under95",
@@ -1673,14 +1669,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.28
         },
         {
           "key": "sot_over",
@@ -1701,7 +1699,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.5
         },
         {
           "key": "more_corners",
@@ -1764,7 +1763,8 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.96
         },
         {
           "key": "corners_over95",
@@ -1785,14 +1785,16 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.62
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.88
         },
         {
           "key": "corners_under95",
@@ -1813,21 +1815,24 @@
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.82
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.56
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 8.86
         },
         {
           "key": "red_card",
@@ -1841,7 +1846,8 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 7.65
         }
       ]
     },
@@ -1915,21 +1921,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.88
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.15
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.56
         },
         {
           "key": "yellow_under5",
@@ -1971,7 +1980,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.5
         },
         {
           "key": "yellow_5plus",
@@ -2057,7 +2067,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.15
         },
         {
           "key": "yellow_under5",
@@ -2099,14 +2110,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.88
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.5
         },
         {
           "key": "corners_under95",
@@ -2141,7 +2154,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.56
         },
         {
           "key": "corners_over95",
@@ -7814,5 +7828,33 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:18:09.494441Z"
+  "refreshed_at": "2026-10-06T01:57:19.775240Z",
+  "odds": {
+    "home": 9.45,
+    "draw": 5.91,
+    "away": 1.26,
+    "over15": 1.15,
+    "under25": 2.56,
+    "over25": 1.5,
+    "btts": 1.88,
+    "source": "chance",
+    "home_scoreless": 1.96,
+    "home_scored2plus": 5.06,
+    "home_clean_sheet": 8.86,
+    "home_ht_leading": 7.65,
+    "home_ht_draw": 2.82,
+    "home_ht_behind": 1.62,
+    "away_clean_sheet": 1.96,
+    "away_scoreless": 8.86,
+    "away_scored2plus": 1.28,
+    "away_ht_behind": 7.65,
+    "away_ht_draw": 2.82,
+    "away_ht_leading": 1.62
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Zlínem a Slavií Praha v rámci Chance Ligy slibuje zajímavé střetnutí, přičemž domácí tým Zlína se nachází v slabé formě. V posledních šesti zápasech zaznamenali pouze jednu remízu a pět porážek, což naznačuje, že se jim nedaří. Naopak Slavia Praha, která má za sebou čtyři vítězství a dvě remízy, se nachází v dobré formě a je favoritem tohoto utkání.\n\nHistorie vzájemných zápasů ukazuje, že Slavia má nad Zlínem jasnou převahu, když v posledních pěti zápasech získala čtyři vítězství a jednou remizovala. Zlín se snažil v posledních zápasech o zlepšení, ale s ohledem na aktuální formu a statistiky se očekává, že Slavia bude dominovat. Očekávané xG hodnoty (0.91 pro Zlín a 1.95 pro Slavii) potvrzují, že Slavia má výrazně vyšší šance na vstřelení gólů.\n\nZ pohledu pravděpodobnosti lze očekávat, že Slavia Praha vyhraje, přičemž šance na remízu se pohybují kolem 24.5 %. Vzhledem k formě obou týmů a historickým výsledkům by se mohlo jednat o zápas s několika góly, přičemž pravděpodobnost, že oba týmy skórují, se pohybuje kolem 51.7 %. Celkově lze očekávat, že Slavia Praha si odnese tři body a Zlín bude mít problém s efektivitou v útoku.",
+    "model": "gpt-4o-mini",
+    "input_hash": "6604eba87ab061cc",
+    "generated_at": "2026-10-05T23:57:24Z"
+  }
 }

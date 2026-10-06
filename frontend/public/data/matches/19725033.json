@@ -1385,7 +1385,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.23
         },
         {
           "key": "offsides_over",
@@ -1462,14 +1463,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.6
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.75
         },
         {
           "key": "team_2plus_yellow",
@@ -1483,14 +1486,16 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.08
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.04
         },
         {
           "key": "red_card",
@@ -1504,28 +1509,32 @@
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.2
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.41
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.27
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.1
         },
         {
           "key": "corners_over95",
@@ -1553,7 +1562,8 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.76
         }
       ],
       "away": [
@@ -1562,14 +1572,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.23
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.75
         },
         {
           "key": "corners_under95",
@@ -1660,21 +1672,24 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.76
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.6
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.27
         },
         {
           "key": "yellow_5plus",
@@ -1688,28 +1703,32 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.41
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.1
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.08
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.44
         },
         {
           "key": "corners_over95",
@@ -1730,7 +1749,8 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.2
         }
       ]
     },
@@ -1741,7 +1761,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 2.08
         },
         {
           "key": "corners_under95",
@@ -1853,7 +1874,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.23
         },
         {
           "key": "scored2plus",
@@ -1874,14 +1896,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.6
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.75
         },
         {
           "key": "corners_over95",
@@ -1925,7 +1949,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.08
         },
         {
           "key": "corners_under95",
@@ -2002,7 +2027,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.23
         },
         {
           "key": "more_corners",
@@ -2016,7 +2042,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.6
         },
         {
           "key": "clean_sheet",
@@ -2058,7 +2085,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.75
         },
         {
           "key": "corners_over95",
@@ -7230,5 +7258,33 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:18:22.944782Z"
+  "refreshed_at": "2026-10-06T01:57:40.112255Z",
+  "odds": {
+    "home": 2.25,
+    "draw": 3.55,
+    "away": 2.93,
+    "over15": 1.23,
+    "under25": 2.08,
+    "over25": 1.75,
+    "btts": 1.6,
+    "source": "chance",
+    "home_scoreless": 4.1,
+    "home_scored2plus": 2.04,
+    "home_clean_sheet": 3.27,
+    "home_ht_leading": 2.76,
+    "home_ht_draw": 2.2,
+    "home_ht_behind": 3.41,
+    "away_clean_sheet": 4.1,
+    "away_scoreless": 3.27,
+    "away_scored2plus": 2.44,
+    "away_ht_behind": 2.76,
+    "away_ht_draw": 2.2,
+    "away_ht_leading": 3.41
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Bohemians 1905 a Baníkem Ostrava, který se odehraje na Stadionu Dolíček, slibuje zajímavou podívanou. Domácí Bohemians mají v posledních zápasech smíšenou formu, s dvěma výhrami, dvěma remízami a jednou prohrou. Na druhé straně Baník Ostrava se prezentuje solidními výkony, přičemž v posledních šesti zápasech zaznamenal čtyři výhry a dvě remízy. Historie vzájemných zápasů naznačuje vyrovnanost, přičemž poslední tři střetnutí skončila vítězstvím Bohemians.\n\nPodle simulací očekáváme, že domácí tým bude mít mírnou převahu, s očekávanými góly (xG) 1.67 oproti 0.99 pro Baník. To naznačuje, že Bohemians by měli být schopni vytvořit více příležitostí ke skórování. Pravděpodobnost remízy se pohybuje kolem 25.8 %, což ukazuje, že vyrovnaný zápas je také na stole. Očekává se, že oba týmy budou mít šanci skórovat, přičemž pravděpodobnost, že oba týmy dají gól, je 51.2 %.\n\nCelkově lze očekávat, že zápas bude vyrovnaný s mírnou převahou domácích. Klíčovými faktory budou efektivita v zakončení a schopnost obrany udržet čisté konto. Pokud Bohemians dokážou využít domácí prostředí a Baník bude mít problémy s produktivitou, mohli by se radovat z dalšího vítězství. Na druhou stranu, pokud se Baník podaří udržet tlak a využít své šance, mohou překvapit a odvézt si bod nebo dokonce tři.",
+    "model": "gpt-4o-mini",
+    "input_hash": "9734eb47ea603064",
+    "generated_at": "2026-10-05T23:57:44Z"
+  }
 }

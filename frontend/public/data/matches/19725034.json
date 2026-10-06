@@ -1426,7 +1426,8 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.93
         },
         {
           "key": "shots_over",
@@ -1475,21 +1476,24 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.28
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.9
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.59
         },
         {
           "key": "corners_over95",
@@ -1524,14 +1528,16 @@
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.28
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.9
         },
         {
           "key": "corners_under95",
@@ -1552,21 +1558,24 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.94
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.02
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 5.92
         },
         {
           "key": "red_card",
@@ -1580,7 +1589,8 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 6.57
         }
       ],
       "away": [
@@ -1589,7 +1599,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.28
         },
         {
           "key": "corners_under95",
@@ -1666,14 +1677,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.02
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.9
         },
         {
           "key": "team_2plus_yellow",
@@ -1687,21 +1700,24 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.94
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.93
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.9
         },
         {
           "key": "more_corners",
@@ -1722,21 +1738,24 @@
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.28
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 5.92
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 5.19
         },
         {
           "key": "corners_over95",
@@ -1757,7 +1776,8 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 6.57
         }
       ]
     },
@@ -1768,14 +1788,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.28
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.9
         },
         {
           "key": "scored2plus",
@@ -1880,7 +1902,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.02
         },
         {
           "key": "corners_over95",
@@ -1922,7 +1945,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.9
         },
         {
           "key": "red_card",
@@ -1945,14 +1969,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.28
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.9
         },
         {
           "key": "scored2plus",
@@ -2064,7 +2090,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.02
         },
         {
           "key": "corners_over95",
@@ -2106,7 +2133,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.9
         },
         {
           "key": "ht_behind",
@@ -7124,5 +7152,33 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:18:26.184955Z"
+  "refreshed_at": "2026-10-06T01:57:44.160522Z",
+  "odds": {
+    "home": 1.45,
+    "draw": 4.29,
+    "away": 7.02,
+    "over15": 1.28,
+    "under25": 1.9,
+    "over25": 1.9,
+    "btts": 2.02,
+    "source": "chance",
+    "home_scoreless": 5.92,
+    "home_scored2plus": 1.59,
+    "home_clean_sheet": 1.93,
+    "home_ht_leading": 1.94,
+    "home_ht_draw": 2.28,
+    "home_ht_behind": 6.57,
+    "away_clean_sheet": 5.92,
+    "away_scoreless": 1.93,
+    "away_scored2plus": 5.19,
+    "away_ht_behind": 1.94,
+    "away_ht_draw": 2.28,
+    "away_ht_leading": 6.57
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Slovanem Liberec a Slováckem v rámci Chance Ligy se očekává jako souboj, ve kterém domácí tým vstupuje s výraznou výhodou. Slovan Liberec má v posledních zápasech solidní formu, s pěti výhrami a jednou remízou. Naopak Slovácko se potýká s problémy, když v posledních šesti utkáních zaznamenalo pouze dvě remízy a čtyři prohry. Historie vzájemných zápasů také hovoří jasně ve prospěch Liberce, který vyhrál všechny poslední čtyři duely.\n\nAnalýza očekávaných výkonů naznačuje, že Slovan Liberec by měl dominovat na hřišti. Podle simulací má domácí tým očekávané góly (xG) 1.72, zatímco Slovácko pouze 0.65. To naznačuje, že Liberec by měl mít více příležitostí ke skórování a pravděpodobně se dočká i více než jednoho gólu. Očekává se, že Slovácko bude mít potíže s prolomením obrany domácích.\n\nVzhledem k formě obou týmů a historickým výsledkům je pravděpodobné, že Slovan Liberec zvítězí, přičemž remíza je méně pravděpodobná. Očekává se, že zápas by mohl skončit s výsledkem 2:0 nebo 3:1 pro Liberec, s nízkou pravděpodobností, že by Slovácko dokázalo vstřelit více než jeden gól. Celkově by zápas měl být ve prospěch domácího týmu, který si bude chtít udržet svoji vítěznou sérii.",
+    "model": "gpt-4o-mini",
+    "input_hash": "a464ee9673623df8",
+    "generated_at": "2026-10-05T23:57:49Z"
+  }
 }

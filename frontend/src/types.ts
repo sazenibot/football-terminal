@@ -46,6 +46,8 @@ export interface TeamMatchStats {
   possession: number | null;
   yellow: number | null;
   red: number | null;
+  xgot?: number | null;
+  xgot_against?: number | null;
 }
 
 export interface H2HMatch {

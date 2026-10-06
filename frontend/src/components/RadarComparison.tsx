@@ -11,6 +11,7 @@ import {
 } from "recharts";
 import type { MatchData, RadarAverages, TeamBrief } from "../types";
 import { Pill, Section } from "./ui";
+import type { RadarView, RadarXgot } from "../lib/pitchMatch";
 
 const KEYS: (keyof RadarAverages)[] = [
   "goals_for",
@@ -36,6 +37,8 @@ const RANGE: Record<string, [number, number]> = {
   cards: [0, 5],
   fouls_committed: [5, 20],
   fouls_received: [5, 20],
+  xgot_for: [0, 2.5],
+  xgot_against: [0, 2.5],
 };
 
 function normalize(key: string, value: number): number {
@@ -47,25 +50,37 @@ export function RadarComparison({
   data,
   home,
   away,
+  xgot,
 }: {
   data: MatchData["radar"];
   home: TeamBrief;
   away: TeamBrief;
+  xgot?: RadarXgot;
 }) {
-  const [view, setView] = useState<"season" | "last5" | "last3_h2h" | "last3_h2h_home_venue">("season");
+  const [view, setView] = useState<RadarView>("season");
 
   const dataset = data[view];
+  const xgotView = xgot?.[view] ?? null;
   const hasData = !!dataset.home && !!dataset.away;
   const chartData = useMemo(() => {
     if (!hasData) return [];
-    return KEYS.map((k, i) => ({
+    const base = KEYS.map((k, i) => ({
       metric: data.categories[i],
       home: normalize(k, dataset.home![k]),
       away: normalize(k, dataset.away![k]),
       homeRaw: dataset.home![k],
       awayRaw: dataset.away![k],
     }));
-  }, [dataset, data.categories, hasData]);
+    if (!xgotView) return base;
+    const extra = (["xgot_for", "xgot_against"] as const).map((k) => ({
+      metric: k === "xgot_for" ? "xGOT" : "xGOT proti",
+      home: normalize(k, xgotView.home[k]),
+      away: normalize(k, xgotView.away[k]),
+      homeRaw: xgotView.home[k],
+      awayRaw: xgotView.away[k],
+    }));
+    return [base[0], extra[0], base[1], extra[1], ...base.slice(2)];
+  }, [dataset, data.categories, hasData, xgotView]);
 
   return (
     <Section title="4. Radarové srovnání týmů">
@@ -112,6 +127,13 @@ export function RadarComparison({
             Hodnoty jsou normalizované 0–100 pro čitelnost grafu; skutečné hodnoty viz tooltip.
             {view === "last3_h2h_home_venue" && ` (n=${data.last3_h2h_home_venue.sample_size})`}
           </p>
+          {xgot && (view === "last3_h2h" || view === "last3_h2h_home_venue") && (
+            <p className="text-xs text-slate-500 light:text-slate-400 mt-1">
+              {xgotView
+                ? `xGOT z ${xgotView.home.n} ${xgotView.home.n === 1 ? "zápasu" : "zápasů"} z těchto vzájemných, starší a pohárové ho nemají.`
+                : "xGOT u těchto vzájemných zápasů nemáme (starší sezony nebo pohár)."}
+            </p>
+          )}
         </>
       )}
     </Section>

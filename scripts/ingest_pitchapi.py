@@ -20,6 +20,7 @@ import re
 import subprocess
 import time
 import unicodedata
+from datetime import date
 import urllib.parse
 from collections import defaultdict
 from pathlib import Path
@@ -33,7 +34,9 @@ LEGACY = Path("/tmp/pitch/slavia-season")
 ENV = ROOT / ".env"
 BASE = "https://api.pitchapi.dev/v1"
 LEAGUE = "l_0F4I4F"
-SEASON = "2026/2027"
+_today = date.today()
+_start = _today.year if _today.month >= 7 else _today.year - 1
+SEASON = f"{_start}/{_start + 1}"  # PitchAPI formát sezony, mění se samo 1. července
 SM_LEAGUE = 262
 
 SET_SIT = {
@@ -164,9 +167,14 @@ def load_body(mid: str, kind: str, key: str) -> dict | None:
     return None
 
 
+def cache_fresh(path: Path, hours: float = 6) -> bool:
+    return path.exists() and (time.time() - path.stat().st_mtime) < hours * 3600
+
+
 def call_league(key: str) -> dict:
+    """Soupiska zápasů aktuální sezony. Cache starší než 6 h se obnoví (1 volání), ať denní job vidí nové zápasy."""
     dest = CACHE / "league-matches.json"
-    if dest.exists():
+    if cache_fresh(dest) or (dest.exists() and not key):
         return json.loads(dest.read_text())
     if not key:
         raise SystemExit("Chybí PITCHAPI_API_KEY i cache soupisky zápasů.")
@@ -174,6 +182,9 @@ def call_league(key: str) -> dict:
     url = f"{BASE}/leagues/{LEAGUE}/matches?{urllib.parse.urlencode(params)}"
     code, raw = http_get(url, key)
     if code != 200:
+        if dest.exists():
+            print(f"  PitchAPI league matches HTTP {code}, beru cache")
+            return json.loads(dest.read_text())
         raise SystemExit(f"PitchAPI league matches HTTP {code}: {raw[:240]}")
     body = json.loads(raw)
     dest.write_text(json.dumps(body, ensure_ascii=False))
@@ -347,6 +358,11 @@ def main() -> None:
         for side, info in sides.items():
             opp_side = "away" if side == "home" else "home"
             team_shots = [compact_shot(s) for s in raw_shots if s.get("team_id") == info["pitch_id"]]
+            opp_goals = sum(
+                1
+                for s in raw_shots
+                if s.get("team_id") == sides[opp_side]["pitch_id"] and s.get("event_type") == "Goal"
+            )
             row = {
                 "id": mid,
                 "date": m.get("date"),
@@ -355,6 +371,8 @@ def main() -> None:
                 "opponent_short": info["opp"].get("short") or info["opp"]["name"][:3].upper(),
                 "gf": info["gf"],
                 "ga": info["ga"],
+                "goals": sum(1 for s in team_shots if s["goal"]),
+                "goals_against": opp_goals,
                 "xg": round(stat_num(stats, "expected_goals", side), 2),
                 "xgot": round(stat_num(stats, "expected_goals_on_target", side), 2),
                 "xg_open": round(stat_num(stats, "expected_goals_open_play", side), 2),

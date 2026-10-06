@@ -14,6 +14,17 @@ export function LabPage() {
       <div className="grid gap-4 md:grid-cols-2 max-w-5xl">
         <div className="card p-6">
           <div className="text-xs font-mono text-amber-400 mb-2">PŘESUNUTO</div>
+          <h2 className="text-xl font-semibold text-white light:text-slate-900">Góly proti xGOT a Simulace 10 000</h2>
+          <p className="text-sm text-slate-400 light:text-slate-500 mt-2">
+            Karty, xGOT v radaru a H2H i nová simulace (síla soupeřů, střely, střely na branku) jsou v detailu zápasu Chance
+            Ligy v Match Center.
+          </p>
+          <Link to="/league/262" className="inline-block mt-4 text-sm text-emerald-400 hover:underline">
+            Otevřít Match Center →
+          </Link>
+        </div>
+        <div className="card p-6">
+          <div className="text-xs font-mono text-amber-400 mb-2">PŘESUNUTO</div>
           <h2 className="text-xl font-semibold text-white light:text-slate-900">Trendmetr</h2>
           <p className="text-sm text-slate-400 light:text-slate-500 mt-2">
             Karta je v detailu zápasu v Match Center. Linie se počítají z historie týmů.

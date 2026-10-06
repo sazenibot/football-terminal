@@ -6,6 +6,7 @@ Volá se z refresh_data po sestavení zápasu. Tokeny jen z env/.env — ne do f
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
@@ -467,6 +468,11 @@ def generate_ai_analysis(match: dict) -> dict | None:
         },
         "kurzy": odds,
     }
+    # Stejný vstup = stejná analýza, OpenAI se nevolá znovu.
+    input_hash = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
+    prev = match.get("ai_analysis") or {}
+    if prev.get("text") and prev.get("input_hash") == input_hash:
+        return prev
     body = {
         "model": "gpt-4o-mini",
         "temperature": 0.4,
@@ -497,6 +503,7 @@ def generate_ai_analysis(match: dict) -> dict | None:
     return {
         "text": text,
         "model": "gpt-4o-mini",
+        "input_hash": input_hash,
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
     }
 

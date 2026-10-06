@@ -1440,7 +1440,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.25
         },
         {
           "key": "sot_over",
@@ -1468,7 +1469,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.02
         },
         {
           "key": "shots_over",
@@ -1510,7 +1512,8 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.28
         },
         {
           "key": "corners_under95",
@@ -1545,14 +1548,16 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.47
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.56
         },
         {
           "key": "corners_over95",
@@ -1573,35 +1578,40 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.08
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.15
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.63
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.8
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.13
         },
         {
           "key": "red_card",
@@ -1631,14 +1641,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.25
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.8
         },
         {
           "key": "yellow_under5",
@@ -1694,7 +1706,8 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.3
         },
         {
           "key": "corners_over95",
@@ -1715,21 +1728,24 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 3.15
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.63
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.47
         },
         {
           "key": "corners_under95",
@@ -1750,21 +1766,24 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.08
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.56
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.02
         },
         {
           "key": "yellow_5plus",
@@ -1785,7 +1804,8 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.13
         }
       ]
     },
@@ -1866,7 +1886,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.02
         },
         {
           "key": "corners_over95",
@@ -1894,7 +1915,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.63
         },
         {
           "key": "scoreless",
@@ -1908,14 +1930,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.25
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.8
         },
         {
           "key": "corners_under95",
@@ -2057,14 +2081,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.25
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.02
         },
         {
           "key": "ht_draw",
@@ -2078,14 +2104,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.63
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.8
         },
         {
           "key": "red_card",
@@ -7427,5 +7455,33 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:18:31.185170Z"
+  "refreshed_at": "2026-10-06T01:57:49.483283Z",
+  "odds": {
+    "home": 2.56,
+    "draw": 3.41,
+    "away": 2.61,
+    "over15": 1.25,
+    "under25": 2.02,
+    "over25": 1.8,
+    "btts": 1.63,
+    "source": "chance",
+    "home_scoreless": 3.56,
+    "home_scored2plus": 2.28,
+    "home_clean_sheet": 3.47,
+    "home_ht_leading": 3.08,
+    "home_ht_draw": 2.13,
+    "home_ht_behind": 3.15,
+    "away_clean_sheet": 3.56,
+    "away_scoreless": 3.47,
+    "away_scored2plus": 2.3,
+    "away_ht_behind": 3.08,
+    "away_ht_draw": 2.13,
+    "away_ht_leading": 3.15
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Teplicemi a Sigmou Olomouc se odehraje na stadionu Na Stínadlech a slibuje zajímavou konfrontaci dvou týmů s odlišnou formou. Teplice v posledních šesti zápasech zaznamenaly tři výhry a tři prohry, což naznačuje nestabilní výkonnost. Na druhé straně Sigma Olomouc se může pochlubit lepšími výsledky, když vyhrála čtyři z posledních šesti zápasů, což jí dává mírnou výhodu před tímto utkáním.\n\nHistorie vzájemných zápasů ukazuje na vyrovnanost obou týmů, přičemž poslední zápas skončil výhrou Sigmy 3:1. Teplice však mají doma silnou podporu a mohou se spolehnout na to, že se jim daří lépe na vlastním hřišti. Očekává se, že zápas bude vyrovnaný, s mírně vyššími šancemi na výhru pro hosty, jak naznačují i simulace s xG hodnotami 1.73 pro Teplice a 1.55 pro Sigmu.\n\nStatistiky naznačují, že by mohlo padnout více než dvě branky, přičemž pravděpodobnost, že oba týmy skórují, je vysoká (64.5 %). Teplice se mohou spolehnout na domácí prostředí, ale Sigma Olomouc má formu, která je může posunout k úspěchu. Celkově lze očekávat napínavý zápas s vyrovnaným průběhem a šancemi na obě strany.",
+    "model": "gpt-4o-mini",
+    "input_hash": "e85fa189bd4b6963",
+    "generated_at": "2026-10-05T23:57:53Z"
+  }
 }

@@ -75,34 +75,6 @@
       "likely_available": false
     },
     {
-      "side": "home",
-      "player_id": 37341896,
-      "player_name": "Jhoanner Stalin Chávez Quintero",
-      "type_id": 533,
-      "type_name": "Thigh Problems",
-      "type_name_cs": "Problémy se stehnem",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-04-01",
-      "end_date": null,
-      "games_missed": 24,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37687998,
-      "player_name": "Ondřej Penxa",
-      "type_id": 557,
-      "type_name": "Cruciate Ligament Injury",
-      "type_name_cs": "Zranění zkříženého vazu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-01-15",
-      "end_date": null,
-      "games_missed": 29,
-      "likely_available": false
-    },
-    {
       "side": "away",
       "player_id": 8101004,
       "player_name": "Vojtěch Patrák",
@@ -1482,7 +1454,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "shots_over",
@@ -1517,7 +1490,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.5
         },
         {
           "key": "corners_over95",
@@ -1566,14 +1540,16 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.97
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.28
         },
         {
           "key": "more_corners",
@@ -1594,35 +1570,40 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.63
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 8.04
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.86
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 9.01
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.57
         },
         {
           "key": "corners_under95",
@@ -1650,7 +1631,8 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.74
         }
       ],
       "away": [
@@ -1673,21 +1655,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.86
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.5
         },
         {
           "key": "corners_under95",
@@ -1757,7 +1742,8 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 5.03
         },
         {
           "key": "more_corners",
@@ -1785,35 +1771,40 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 8.04
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.74
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 9.01
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.97
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.57
         },
         {
           "key": "corners_over95",
@@ -1827,7 +1818,8 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.63
         }
       ]
     },
@@ -1838,21 +1830,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.86
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.5
         },
         {
           "key": "scored2plus",
@@ -1999,7 +1994,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.57
         },
         {
           "key": "ht_draw",
@@ -2015,21 +2011,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.86
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.5
         },
         {
           "key": "scored2plus",
@@ -2183,7 +2182,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.57
         }
       ]
     }
@@ -7611,5 +7611,33 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:18:34.715681Z"
+  "refreshed_at": "2026-10-06T01:57:53.132007Z",
+  "odds": {
+    "home": 1.26,
+    "draw": 5.78,
+    "away": 9.81,
+    "over15": 1.15,
+    "under25": 2.57,
+    "over25": 1.5,
+    "btts": 1.86,
+    "source": "chance",
+    "home_scoreless": 9.01,
+    "home_scored2plus": 1.28,
+    "home_clean_sheet": 1.97,
+    "home_ht_leading": 1.63,
+    "home_ht_draw": 2.74,
+    "home_ht_behind": 8.04,
+    "away_clean_sheet": 9.01,
+    "away_scoreless": 1.97,
+    "away_scored2plus": 5.03,
+    "away_ht_behind": 1.63,
+    "away_ht_draw": 2.74,
+    "away_ht_leading": 8.04
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy slibuje zajímavou konfrontaci dvou týmů s odlišnou formou. Sparta Praha se nachází v dobré formě, když z posledních šesti zápasů vyhrála čtyři a dvakrát prohrála. Naopak Pardubice mají za sebou dva vítězné zápasy, ale také dvě prohry a remízu. Historie vzájemných zápasů ukazuje, že Sparta má mírnou převahu, ale Pardubice dokázaly v minulosti Spartě několikrát zdatně vzdorovat.\n\nPodle simulací a očekávaných gólových šancí (xG) je Sparta favoritem zápasu s průměrným xG 1.92 oproti 1.05 Pardubic. To naznačuje, že domácí tým by měl mít více příležitostí ke skórování. Pravděpodobnost výhry Sparty je odhadována na 49.9 %, zatímco šance na remízu a vítězství Pardubic se pohybují kolem 25 %. Vzhledem k formě a domácímu prostředí se očekává, že Sparta bude dominovat v držení míče a vytváření šancí.\n\nCo se týče gólů, statistiky naznačují, že je pravděpodobné, že oba týmy skórují (55.9 % pravděpodobnost), což by mohlo vést k atraktivnímu a dynamickému zápasu. S ohledem na to, že Sparta doma často skóruje více než dva góly, je také pravděpodobné, že zápas překročí hranici 2.5 gólů (57.3 %). Celkově lze očekávat, že Sparta Praha bude usilovat o zisk tří bodů, zatímco Pardubice se pokusí o překvapení a využití případných chyb domácích.",
+    "model": "gpt-4o-mini",
+    "input_hash": "f06fdaeaab2c4761",
+    "generated_at": "2026-10-05T23:57:57Z"
+  }
 }

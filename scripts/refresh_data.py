@@ -22,6 +22,7 @@ Použití:
 from __future__ import annotations
 
 import argparse
+import copy
 import json
 import sys
 from datetime import datetime, timezone
@@ -156,6 +157,12 @@ def summarize_round(fixtures: list, built_ids: set[int]) -> list:
     return round_out
 
 
+def _same_content(old: dict, new: dict) -> bool:
+    """Shoda bez časových razítek obnovy; ta se jinak mění při každém běhu."""
+    skip = {"refreshed_at"}
+    return {k: v for k, v in old.items() if k not in skip} == {k: v for k, v in new.items() if k not in skip}
+
+
 def process_league(league: dict, days: int, force_full: bool, max_new: int | None, new_counter: list[int]) -> dict:
     lid = league["id"]
     print(f"\n=== {league['name']} ({lid}) ===")
@@ -166,11 +173,13 @@ def process_league(league: dict, days: int, force_full: bool, max_new: int | Non
     errors = 0
     refreshed = 0
     created = 0
+    unchanged = 0
 
     for fx in fixtures:
         fid = fx["id"]
         dest = match_path(fid)
         existing = read_json(dest)
+        before = copy.deepcopy(existing)  # refresh_volatile upravuje slovník na místě
         try:
             if existing and not force_full:
                 print(f"  refresh {fid}")
@@ -189,7 +198,10 @@ def process_league(league: dict, days: int, force_full: bool, max_new: int | Non
                 payload = enrich_match(payload)
             except Exception as extra_exc:
                 print(f"  ⚠️ extras {fid}: {extra_exc}", file=sys.stderr)
-            write_json(dest, payload)
+            if before and not force_full and _same_content(before, payload):
+                unchanged += 1  # nic nového, soubor se nepřepisuje
+            else:
+                write_json(dest, payload)
             built_ids.add(fid)
         except Exception as exc:  # jeden zápas nesmí shodit ligu
             print(f"  ⚠️ {fid}: {exc}", file=sys.stderr)
@@ -209,7 +221,7 @@ def process_league(league: dict, days: int, force_full: bool, max_new: int | Non
             "errors": errors,
         },
     })
-    print(f"  -> {len(round_out)} v kole, +{created} full, {refreshed} refresh, {errors} chyb")
+    print(f"  -> {len(round_out)} v kole, +{created} full, {refreshed} refresh ({unchanged} beze změny), {errors} chyb")
     return league_public(league, {
         "match_count": sum(1 for r in round_out if r["has_full_data"]),
         "round_count": len(round_out),

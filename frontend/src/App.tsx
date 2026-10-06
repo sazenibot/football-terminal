@@ -19,6 +19,11 @@ function LeagueRoute() {
   return <RoundPage leagueId={Number(leagueId)} />;
 }
 
+function LabMatchRedirect() {
+  const { fixtureId } = useParams();
+  return <Navigate to={`/match/${fixtureId}`} replace />;
+}
+
 function App() {
   return (
     <BrowserRouter>
@@ -41,6 +46,8 @@ function App() {
         <Route path="/lab/api/sm-pitch" element={<Navigate to="/lab" replace />} />
         <Route path="/lab/api/pitch" element={<LabPitchVsTsPage />} />
         <Route path="/lab/pitch-models" element={<LabPitchModelsPage />} />
+        <Route path="/lab/match" element={<Navigate to="/league/262" replace />} />
+        <Route path="/lab/match/:fixtureId" element={<LabMatchRedirect />} />
       </Routes>
     </BrowserRouter>
   );

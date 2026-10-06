@@ -1,7 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import { XgotBadgeChip } from "../components/XgotBadge";
 import { last5BadgeForTeam } from "../lib/xgEfficiency";
-import { useDataIndex, useMatch, useXgotIndex } from "../lib/useData";
+import { useDataIndex, useMatch, usePitchH2H, usePitchTeam, useSimV2, useXgotIndex } from "../lib/useData";
+import { SimulationV2 } from "../components/SimulationV2";
+import { h2hWithXgot, hasPitchData, radarXgot } from "../lib/pitchMatch";
 import { StaleBanner } from "../components/StaleBanner";
 import { formatDateTimeLong } from "../lib/format";
 import { H2HResults } from "../components/H2HResults";
@@ -14,6 +16,7 @@ import { PlayersCompare } from "../components/PlayersCompare";
 import { RefereeSection } from "../components/RefereeAndAbsences";
 import { AiAnalysisSection } from "../components/AiAnalysis";
 import { TrendmetrCard } from "../components/TrendmetrCard";
+import { GoalsVsXgotCard } from "../components/GoalsVsXgotCard";
 
 export function MatchPage() {
   const { fixtureId } = useParams();
@@ -21,6 +24,11 @@ export function MatchPage() {
   const { index } = useDataIndex();
   const { match: m, error, missing } = useMatch(Number.isFinite(id) ? id : null);
   const xgotIndex = useXgotIndex();
+  const pitchOn = hasPitchData(m?.league_id);
+  const homePitch = usePitchTeam(pitchOn && m ? m.home.id : null);
+  const awayPitch = usePitchTeam(pitchOn && m ? m.away.id : null);
+  const pitchH2H = usePitchH2H(pitchOn);
+  const simV2 = useSimV2(pitchOn && Number.isFinite(id) ? id : null);
   const backTo = m?.league_id ? `/league/${m.league_id}` : "/";
 
   if (error) {
@@ -60,6 +68,10 @@ export function MatchPage() {
   const generatedAt = m.refreshed_at || m.built_at;
   const homeBadge = last5BadgeForTeam(xgotIndex, m.home.id);
   const awayBadge = last5BadgeForTeam(xgotIndex, m.away.id);
+  const pitchReady = pitchOn && !!homePitch && !!awayPitch && (!m.league_id || homePitch.league_id === m.league_id);
+  const h2hMap = pitchReady ? pitchH2H?.matches ?? null : null;
+  const h2h = pitchReady ? h2hWithXgot(m, h2hMap) : m.h2h;
+  const radarX = pitchReady && homePitch && awayPitch ? radarXgot(m, homePitch, awayPitch, h2hMap) : undefined;
 
   return (
     <div className="max-w-4xl mx-auto py-10 px-4 pt-20">
@@ -68,7 +80,7 @@ export function MatchPage() {
       </Link>
 
       <div className="mt-4">
-        <StaleBanner generatedAt={generatedAt} hours={index?.stale_after_hours ?? 26} />
+        <StaleBanner generatedAt={index?.generated_at ?? generatedAt} hours={index?.stale_after_hours ?? 26} />
       </div>
 
       <header className="card p-6 my-6 text-center">
@@ -100,9 +112,9 @@ export function MatchPage() {
       </header>
 
       <H2HResults h2h={m.h2h} home={m.home} totalAvailable={m.h2h_total_available} />
-      <H2HAggregateStats h2h={m.h2h} home={m.home} away={m.away} />
+      <H2HAggregateStats h2h={h2h} home={m.home} away={m.away} withXgot={pitchReady} />
       <FormLast6 home={m.home} away={m.away} formHome={m.form.home} formAway={m.form.away} />
-      <RadarComparison data={m.radar} home={m.home} away={m.away} />
+      <RadarComparison data={m.radar} home={m.home} away={m.away} xgot={radarX} />
       <TrendsTeamSection
         homeName={m.home.name}
         awayName={m.away.name}
@@ -117,7 +129,12 @@ export function MatchPage() {
         last5={m.trends.h2h.last5}
       />
       <TrendmetrCard match={m} />
-      <Simulation sim={m.simulation} home={m.home} away={m.away} />
+      {pitchReady && <GoalsVsXgotCard match={m} homeFile={homePitch} awayFile={awayPitch} />}
+      {simV2 ? (
+        <SimulationV2 sim={simV2} home={m.home} away={m.away} />
+      ) : (
+        <Simulation sim={m.simulation} home={m.home} away={m.away} />
+      )}
       <PlayersCompare
         home={m.home}
         away={m.away}

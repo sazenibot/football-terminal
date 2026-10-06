@@ -51,6 +51,8 @@ export type MatchRow = {
   opponent_short: string;
   gf: number;
   ga: number;
+  goals?: number;
+  goals_against?: number;
   xg: number;
   xgot: number;
   xg_open: number;
@@ -64,6 +66,7 @@ export type MatchRow = {
 
 export type PitchCatalogFile = {
   source: string;
+  league_id?: number;
   league?: string;
   season: string;
   team?: { id?: number; name: string; short?: string | null; image?: string | null };

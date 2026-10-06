@@ -1433,7 +1433,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.28
         },
         {
           "key": "yellow_under5",
@@ -1496,7 +1497,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.9
         },
         {
           "key": "corners_under95",
@@ -1517,28 +1519,32 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.67
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.52
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.9
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.32
         },
         {
           "key": "corners_over95",
@@ -1559,21 +1565,24 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.05
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.31
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.24
         },
         {
           "key": "yellow_5plus",
@@ -1594,7 +1603,8 @@
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.09
         }
       ],
       "away": [
@@ -1603,7 +1613,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.28
         },
         {
           "key": "sot_over",
@@ -1666,14 +1677,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.67
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.9
         },
         {
           "key": "corners_over95",
@@ -1701,7 +1714,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.9
         },
         {
           "key": "corners_under95",
@@ -1729,35 +1743,40 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.31
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.05
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.52
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.24
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.47
         },
         {
           "key": "red_card",
@@ -1771,7 +1790,8 @@
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.09
         }
       ]
     },
@@ -1838,21 +1858,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.67
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.28
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.9
         },
         {
           "key": "corners_over95",
@@ -1887,7 +1910,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.9
         },
         {
           "key": "corners_under95",
@@ -2022,21 +2046,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.67
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.28
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.9
         },
         {
           "key": "corners_over95",
@@ -2057,7 +2084,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.9
         },
         {
           "key": "corners_under95",
@@ -6499,5 +6527,33 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:18:17.224641Z"
+  "refreshed_at": "2026-10-06T01:57:29.049956Z",
+  "odds": {
+    "home": 2.5,
+    "draw": 3.3,
+    "away": 2.75,
+    "over15": 1.28,
+    "under25": 1.9,
+    "over25": 1.9,
+    "btts": 1.67,
+    "source": "chance",
+    "home_scoreless": 3.52,
+    "home_scored2plus": 2.32,
+    "home_clean_sheet": 3.24,
+    "home_ht_leading": 3.05,
+    "home_ht_draw": 2.09,
+    "home_ht_behind": 3.31,
+    "away_clean_sheet": 3.52,
+    "away_scoreless": 3.24,
+    "away_scored2plus": 2.47,
+    "away_ht_behind": 3.05,
+    "away_ht_draw": 2.09,
+    "away_ht_leading": 3.31
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Zbrojovkou Brno a Jabloncem, který se odehraje na Městském fotbalovém stadionu Srbská, slibuje být zajímavým duelem v rámci Chance Ligy. Domácí Zbrojovka se nachází v dobré formě, když v posledních šesti zápasech získala čtyři vítězství a dvě remízy. Naopak Jablonec má smíšené výsledky, s dvěma výhrami, dvěma remízami a dvěma porážkami. Historie vzájemných zápasů ukazuje, že Jablonec má mírnou převahu, když vyhrál čtyři z posledních pěti střetnutí, což může poskytnout psychologickou výhodu.\n\nOčekává se vyrovnaný zápas, přičemž simulace naznačují, že Zbrojovka má mírně vyšší očekávané góly (xG) s hodnotou 1.27 oproti 1.24 pro Jablonec. To naznačuje, že domácí tým by mohl mít více příležitostí ke skórování. Nicméně, s pravděpodobností 51.1 % na obě strany skórovat (BTTS) se dá očekávat, že obě mužstva budou mít šance na vstřelení gólu.\n\nCelkově se dá předpokládat, že zápas bude vyrovnaný, s možností remízy, která má pravděpodobnost 27.1 %. Pokud se Zbrojovce podaří udržet domácí formu a Jablonec se neprosadí tak, jak tomu bylo ve vzájemných zápasech, mohli bychom být svědky překvapení. Na druhou stranu, Jablonec má zkušenosti a může se opřít o historickou výhodu. Zápas tedy slibuje napínavou podívanou s otevřeným výsledkem.",
+    "model": "gpt-4o-mini",
+    "input_hash": "a24a5c06872545fd",
+    "generated_at": "2026-10-05T23:57:34Z"
+  }
 }

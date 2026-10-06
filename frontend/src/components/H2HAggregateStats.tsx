@@ -22,11 +22,16 @@ const ROWS: { key: keyof TeamMatchStats; label: string }[] = [
   { key: "possession", label: "Držení míče (%)" },
 ];
 
-function avg(nums: (number | null)[]): number | null {
+const XGOT_ROWS: { key: keyof TeamMatchStats; label: string }[] = [{ key: "xgot", label: "xGOT" }];
+
+function avg(nums: (number | null | undefined)[], digits = 1): number | null {
   const vals = nums.filter((n): n is number => n !== null && n !== undefined);
   if (vals.length === 0) return null;
-  return Math.round((vals.reduce((a, b) => a + b, 0) / vals.length) * 10) / 10;
+  const f = 10 ** digits;
+  return Math.round((vals.reduce((a, b) => a + b, 0) / vals.length) * f) / f;
 }
+
+const digitsOf = (key: keyof TeamMatchStats) => (key === "xgot" || key === "xgot_against" ? 2 : 1);
 
 // `home`/`away` v argumentech jsou fixní identity — domácí/hostující tým
 // NADCHÁZEJÍCÍHO zápasu. V historických H2H zápasech ale kdokoli z nich
@@ -43,11 +48,14 @@ export function H2HAggregateStats({
   h2h,
   home,
   away,
+  withXgot = false,
 }: {
   h2h: H2HMatch[];
   home: TeamBrief;
   away: TeamBrief;
+  withXgot?: boolean;
 }) {
+  const rows = withXgot ? [...ROWS.slice(0, 2), ...XGOT_ROWS, ...ROWS.slice(2)] : ROWS;
   const years = useMemo(
     () => Array.from(new Set(h2h.map((m) => new Date(m.date).getFullYear()))).sort((a, b) => b - a),
     [h2h]
@@ -85,11 +93,12 @@ export function H2HAggregateStats({
     return true;
   });
 
-  const chartData = ROWS.map((row) => ({
+  const chartData = rows.map((row) => ({
     metric: row.label,
-    [home.name]: avg(filtered.map((m) => m.team_home_stats[row.key])) ?? 0,
-    [away.name]: avg(filtered.map((m) => m.team_away_stats[row.key])) ?? 0,
+    [home.name]: avg(filtered.map((m) => m.team_home_stats[row.key]), digitsOf(row.key)) ?? 0,
+    [away.name]: avg(filtered.map((m) => m.team_away_stats[row.key]), digitsOf(row.key)) ?? 0,
   }));
+  const xgotCount = filtered.filter((m) => m.team_home_stats.xgot != null).length;
 
   return (
     <Section
@@ -174,9 +183,9 @@ export function H2HAggregateStats({
             <span className="text-center">průměr / zápas</span>
             <span className="text-right truncate">{away.name}</span>
           </div>
-          {ROWS.map((row) => {
-            const homeAvg = avg(filtered.map((m) => m.team_home_stats[row.key]));
-            const awayAvg = avg(filtered.map((m) => m.team_away_stats[row.key]));
+          {rows.map((row) => {
+            const homeAvg = avg(filtered.map((m) => m.team_home_stats[row.key]), digitsOf(row.key));
+            const awayAvg = avg(filtered.map((m) => m.team_away_stats[row.key]), digitsOf(row.key));
             const h = homeAvg ?? 0;
             const a = awayAvg ?? 0;
             const sum = h + a;
@@ -209,6 +218,11 @@ export function H2HAggregateStats({
               </div>
             );
           })}
+          {withXgot && (
+            <p className="text-xs text-slate-500 light:text-slate-400 pt-1">
+              xGOT máme u {xgotCount} z {filtered.length} zápasů ve výběru, starší sezony a poháry ho nemají.
+            </p>
+          )}
         </div>
       ) : (
         <div className="h-80">

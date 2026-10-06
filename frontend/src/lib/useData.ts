@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import type { PitchCatalogFile } from "../components/PitchCards";
 import type { XgotIndex } from "./xgEfficiency";
+import type { PitchH2HFile } from "./pitchMatch";
+import type { SimV2 } from "../components/SimulationV2";
 import type {
   CatalogExplorer,
   CatalogHub,
@@ -200,6 +202,14 @@ export function usePitchTeam(id: number | null) {
 
 export function usePitchPlayer(id: number | null) {
   return useOptionalJson<PitchCatalogFile>(id ? `/data/catalog/pitch/players/${id}.json` : null);
+}
+
+export function useSimV2(fixtureId: number | null) {
+  return useOptionalJson<SimV2>(fixtureId ? `/data/sim/${fixtureId}.json` : null);
+}
+
+export function usePitchH2H(enabled = true) {
+  return useOptionalJson<PitchH2HFile>(enabled ? "/data/catalog/pitch/h2h.json" : null);
 }
 
 function useOptionalJson<T>(url: string | null) {
