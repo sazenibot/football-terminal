@@ -43,12 +43,12 @@ P = {
     "rho": 0.0,  # Dixon-Coles korekce nízkých skóre; walk-forward na 2 sezonách ji nepotvrdil, proto 0
     "max_goals": 10,
     "promoted_bottom_n": 3,
-    "opp_k": 16,  # shrink aktuální sezony k loňským Maher ratingům
+    "opp_k": 24,  # shrink aktuální sezony k loňským Maher ratingům (v2.2: 16 → 24, rané kolo se míň přepisuje)
     "opp_xg_blend": 0.6,  # podíl xG ratingů ve finální λ
     "opp_xgot_blend": 0.0,  # podíl xGOT ratingů ve finální λ
-    "opp_k_def": 16,  # obrana je v sezoně nestabilnější než útok → silnější shrink k loňsku
+    "opp_k_def": 24,  # obrana je v sezoně nestabilnější než útok → silnější shrink k loňsku
     "opp_half_life": None,  # dny; None = všechny zápasy stejná váha
-    "opp_lam_shrink": 0.9,  # 1 = λ beze změny, <1 = λ stáhnout k ligovému průměru (geometricky)
+    "opp_lam_shrink": 1.0,  # v2.2: bez stlačení λ k průměru (favority jsou jinak podhodnocené). 1 = λ beze změny, <1 = λ stáhnout k ligovému průměru (geometricky)
     "opp_prior_reg": 1.0,  # 1 = loňské ratingy beze změny, <1 = stáhnout k průměru ligy
     "stat_k": 10,  # shrink střel/SOT/rohů k ligovému průměru
     "prior_xg_blend": 0.5,  # podíl xG ratingů v loňském prioru (0 = prior jen z gólů)

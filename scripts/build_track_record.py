@@ -6,7 +6,7 @@ Dvě části, které se nesmí míchat:
   backtest  zpětný test po ligách a sezónách: samostatné soubory track_record/{liga}/{sezóna}.json
             (scripts/build_backtest.py). Tady se jen vypíše, které existují.
 
-Model je ve všech částech tentýž (sim_v2, verze v2.1). Žádné API.
+Model je ve všech částech tentýž (sim_v2, verze v2.2). Žádné API.
 
     python scripts/build_track_record.py
 """
@@ -132,7 +132,7 @@ def main() -> None:
     for lid, slug, name in LEAGUES:
         mine = [e for e in entries if int(e.get("league_id") or 262) == lid]
         leagues.append({"id": lid, "slug": slug, "name": name, "seasons": seasons_of(slug), "live": build_live(mine, ledger.get("started_at"))})
-    payload = {"generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "model_version": "v2.1", "default_league": 262, "leagues": leagues}
+    payload = {"generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "model_version": "v2.2", "default_league": 262, "leagues": leagues}
     old = {k: v for k, v in prev.items() if k != "generated_at"}
     new = {k: v for k, v in payload.items() if k != "generated_at"}
     if old == new:

@@ -6,7 +6,7 @@ Pořadí:
   2. pitch_backfill_prev_stats.py   loňské stats jako prior (po prvním běhu už žádná volání)
   3. pitch_h2h_xgot.py        xGOT z H2H zápasů aktuálního kola
   4. sim_input.py             sezóny lig pro model (aktuální + 2 předchozí), přírůstkově: jen nové odehrané zápasy
-  5. sim_live.py              simulace v2.1 pro zápasy v okně kola, všech 5 lig
+  5. sim_live.py              simulace v2.2 pro zápasy v okně kola, všech 5 lig
   6. build_backtest.py --current   zpětný test aktuální sezóny po ligách (dřívější sezóny jsou hotové)
 
 Cache scripts/.cache/pitchapi drží GitHub Actions cache, ne git. První běh na prázdné cache

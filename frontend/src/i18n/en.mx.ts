@@ -145,7 +145,7 @@ export const enMx: Record<keyof typeof csMx, string> = {
 
   /* ---------- 7. Simulation V2 ---------- */
   "mx.simv2.subtitle": "opponent strength · goals + xG · shots",
-  "mx.simv2.note": "Model v2.1, PitchAPI data. The backtest across five leagues and the live book are on the Results page: the model is slightly behind bookmaker closing odds, so it is an independent estimate, not an edge. Still an estimate, not a guarantee. The Chance odds are only a comparison and do not feed into the model.",
+  "mx.simv2.note": "Model v2.2, PitchAPI data. The backtest across five leagues and the live book are on the Results page: the model is slightly behind bookmaker closing odds, so it is an independent estimate, not an edge. Still an estimate, not a guarantee. The Chance odds are only a comparison and do not feed into the model.",
   "mx.simv2.diff": "Chance {market} · {diff} pp",
   "mx.simv2.chanceOu": "Chance {over} / {under}",
   "mx.simv2.xg": "Expected goals",

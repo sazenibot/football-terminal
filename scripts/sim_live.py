@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Živá simulace v2.1 pro zápasy v okně kola, všech 5 lig: frontend/public/data/sim/{fixture_id}.json
+"""Živá simulace v2.2 pro zápasy v okně kola, všech 5 lig: frontend/public/data/sim/{fixture_id}.json
 
 Vstup: sim-input/{liga}.json (scripts/sim_input.py), kolo ligy (data/leagues/{id}.json) a zápas (data/matches/{fid}.json).
 Model je tentýž jako ve zpětném testu: sim_v2.lambdas_opp s parametry sim_v2.P a společnou kalibrací
@@ -25,7 +25,7 @@ from team_match import match_teams  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "frontend" / "public" / "data"
-MODEL_VERSION = "v2.1"
+MODEL_VERSION = "v2.2"
 
 
 def season_start_label(season: str) -> tuple[str, str]:

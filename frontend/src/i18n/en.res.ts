@@ -78,7 +78,7 @@ export const enRes: Record<keyof typeof csRes, string> = {
   "res.limits.2.b": "A backtest is not a live result.",
   "res.limits.2.t": "We tuned the model settings on the 2022/23 to 2024/25 seasons, and 2025/26 and 2026/27 serve as independent validation. Even so, it is a look back, which is why we keep a separate live book that cannot be edited.",
   "res.limits.3.b": "The market is still slightly sharper.",
-  "res.limits.3.t": "While tuning, we compared the model with Bet365 closing odds: the market comes out about 0.013 better on log loss. So the model is no edge against a bookmaker; it is an independent estimate. In the live book we store the odds together with the prediction.",
+  "res.limits.3.t": "While tuning, we compared the model with Bet365 closing odds: the market comes out about 0.012 better on log loss. So the model is no edge against a bookmaker; it is an independent estimate. In the live book we store the odds together with the prediction.",
   "res.limits.4.b": "Picking the winner doesn't mean making money.",
   "res.limits.4.t": "What matters is the ratio between probability and odds. That is why we also track log loss and calibration.",
   "res.tips.title": "Model picks: result and goals",

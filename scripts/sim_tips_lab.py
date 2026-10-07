@@ -16,7 +16,7 @@ from scipy.optimize import minimize
 sys.path.insert(0, str(Path(__file__).parent))
 import sim_lab as L  # noqa: E402
 
-CAND = {"hfa_k": 80, "prior_xg_blend": 0.5, "_prev_seasons": 2, "draw_boost": 0.10, "rho": 0.0, "opp_k": 16, "opp_lam_shrink": 0.9}
+CAND = {"hfa_k": 80, "prior_xg_blend": 0.5, "_prev_seasons": 2, "draw_boost": 0.10, "rho": 0.0, "opp_k": 24, "opp_k_def": 24, "opp_lam_shrink": 1.0}
 COLS = {k: 6 + i for i, k in enumerate(L.KEYS)}
 
 

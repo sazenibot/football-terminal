@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Zpětný test (walk-forward) simulace v2.1 pro stránku Výsledky: jeden soubor na ligu a sezónu.
+"""Zpětný test (walk-forward) simulace v2.2 pro stránku Výsledky: jeden soubor na ligu a sezónu.
 
 Výstup: frontend/public/data/track_record/{liga}/{sezóna}.json  (např. pl/2025-26.json)
 Každý zápas se predikuje jen z dat před ním: zápasy sezóny s dřívějším datem + dvě předchozí sezóny jako prior.
@@ -145,7 +145,7 @@ def shard(slug: str, lid: int, league_name: str, label: str, games: list[dict], 
         "league_id": lid,
         "slug": slug,
         "phase": "tuning" if label <= TUNED_UNTIL else "validation",
-        "model_version": "v2.1",
+        "model_version": "v2.2",
         "method": "walk-forward: jen zápasy před daným zápasem a dvě předchozí sezóny",
         "n": n,
         "from": min(g["date"] for g in games),

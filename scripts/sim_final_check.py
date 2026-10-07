@@ -17,7 +17,7 @@ import sim_lab as L  # noqa: E402
 from league_data import load_odds  # noqa: E402
 from sim_walk import implied  # noqa: E402
 
-FINAL = {"hfa_k": 80, "prior_xg_blend": 0.5, "_prev_seasons": 2, "draw_boost": 0.10, "rho": 0.0, "opp_k": 16, "opp_lam_shrink": 0.9}
+FINAL = {"hfa_k": 80, "prior_xg_blend": 0.5, "_prev_seasons": 2, "draw_boost": 0.10, "rho": 0.0, "opp_k": 24, "opp_k_def": 24, "opp_lam_shrink": 1.0}
 
 
 def prepare(rows: list) -> dict:

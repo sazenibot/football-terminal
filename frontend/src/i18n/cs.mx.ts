@@ -143,7 +143,7 @@ export const csMx = {
 
   /* ---------- 7. Simulace V2 ---------- */
   "mx.simv2.subtitle": "síla soupeřů · góly + xG · střely",
-  "mx.simv2.note": "Model v2.1, data PitchAPI. Zpětný test pěti lig a živou knihu najdete ve Výsledcích: model je o kousek za uzavíracími kurzy sázkových kanceláří, takže jde o nezávislý odhad, ne o náskok. Pořád odhad, ne záruka. Kurz Chance je jen srovnání, do modelu nevstupuje.",
+  "mx.simv2.note": "Model v2.2, data PitchAPI. Zpětný test pěti lig a živou knihu najdete ve Výsledcích: model je o kousek za uzavíracími kurzy sázkových kanceláří, takže jde o nezávislý odhad, ne o náskok. Pořád odhad, ne záruka. Kurz Chance je jen srovnání, do modelu nevstupuje.",
   "mx.simv2.diff": "Chance {market} · {diff} b.",
   "mx.simv2.chanceOu": "Chance {over} / {under}",
   "mx.simv2.xg": "Očekávané góly",

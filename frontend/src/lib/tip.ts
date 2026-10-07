@@ -6,7 +6,7 @@
    Jinak tipujeme Over 1,5, když model kloní k Over, nebo Under 3,5, když k Under.
    Tip dostane každý zápas.
 
-   Úspěšnosti níž jsou ze zpětného testu simulace v2.1 na ověřovacích sezónách 2025/26 a 2026/27
+   Úspěšnosti níž jsou ze zpětného testu simulace v2.2 na ověřovacích sezónách 2025/26 a 2026/27
    všech pěti lig (1 900+ zápasů, parametry modelu se na nich neladily), scripts/build_backtest.py.
    Hranice tipu (65 / 60) jsme zvolili dřív na starších datech, skutečná úspěšnost se může lišit. Po pár kolech ostrého provozu je potřeba čísla přepočítat
    z Knihy predikcí.
@@ -38,16 +38,16 @@ export type GoalsTip = {
 };
 
 const HISTORY = {
-  win: { hit: 78, n: 236 },
-  dcStrong: { hit: 78, n: 1134 }, // P(neprohra) ≥ 70 %
-  dcWeak: { hit: 72, n: 573 }, // P(neprohra) < 70 %
+  win: { hit: 76, n: 315 },
+  dcStrong: { hit: 77, n: 1113 }, // P(neprohra) ≥ 70 %
+  dcWeak: { hit: 72, n: 515 }, // P(neprohra) < 70 %
 } as const;
 
 const GOALS_HISTORY: Record<GoalsLine, { hit: number; n: number }> = {
-  o25: { hit: 64, n: 667 },
-  u25: { hit: 64, n: 50 },
-  o15: { hit: 81, n: 865 },
-  u35: { hit: 79, n: 361 },
+  o25: { hit: 64, n: 677 },
+  u25: { hit: 66, n: 47 },
+  o15: { hit: 81, n: 833 },
+  u35: { hit: 81, n: 386 },
 };
 
 export function computeTip(home: number, draw: number, away: number): Tip {

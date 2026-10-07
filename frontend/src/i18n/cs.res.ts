@@ -76,7 +76,7 @@ export const csRes = {
   "res.limits.2.b": "Zpětný test není živý výsledek.",
   "res.limits.2.t": "Nastavení modelu jsme ladili na sezónách 2022/23 až 2024/25, sezóny 2025/26 a 2026/27 slouží jako nezávislé ověření. I tak jde o zpětný pohled, proto vedeme zvlášť živou knihu, která se nedá upravit.",
   "res.limits.3.b": "Trh je pořád o kousek přesnější.",
-  "res.limits.3.t": "Při ladění jsme model porovnali s uzavíracími kurzy Bet365: trh vychází o zhruba 0,013 logloss lépe. Model proto nepředstavuje výhodu proti sázkové kanceláři, jde o nezávislý odhad. V živé knize si kurz ukládáme spolu s predikcí.",
+  "res.limits.3.t": "Při ladění jsme model porovnali s uzavíracími kurzy Bet365: trh vychází o zhruba 0,012 logloss lépe. Model proto nepředstavuje výhodu proti sázkové kanceláři, jde o nezávislý odhad. V živé knize si kurz ukládáme spolu s predikcí.",
   "res.limits.4.b": "Trefit vítěze neznamená vydělat.",
   "res.limits.4.t": "Rozhoduje poměr mezi pravděpodobností a kurzem. Proto sledujeme i logloss a kalibraci.",
   "res.tips.title": "Tipy modelu: výsledek a góly",
