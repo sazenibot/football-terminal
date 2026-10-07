@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Denní PitchAPI krok pro Chance Ligu (jen liga 262, přírůstkově).
+"""Denní PitchAPI krok: katalog Chance Ligy (262) + simulace všech pěti lig (přírůstkově).
 
 Pořadí:
   1. ingest_pitchapi.py       soupiska sezony (1 volání) + nové zápasy (shots, stats, lineups) → katalog týmů a hráčů
   2. pitch_backfill_prev_stats.py   loňské stats jako prior (po prvním běhu už žádná volání)
   3. pitch_h2h_xgot.py        xGOT z H2H zápasů aktuálního kola
-  4. sim_v2.py                simulace pro zápasy v okně kola
+  4. sim_input.py             sezóny lig pro model (aktuální + 2 předchozí), přírůstkově: jen nové odehrané zápasy
+  5. sim_live.py              simulace v2.1 pro zápasy v okně kola, všech 5 lig
+  6. build_backtest.py --current   zpětný test aktuální sezóny po ligách (dřívější sezóny jsou hotové)
 
 Cache scripts/.cache/pitchapi drží GitHub Actions cache, ne git. První běh na prázdné cache
 stáhne historii (stovky volání), další běhy jen včerejší zápasy.
@@ -23,7 +25,9 @@ STEPS = [
     ["ingest_pitchapi.py"],
     ["pitch_backfill_prev_stats.py"],
     ["pitch_h2h_xgot.py"],
-    ["sim_v2.py"],
+    ["sim_input.py"],
+    ["sim_live.py"],
+    ["build_backtest.py", "--current"],
 ]
 
 

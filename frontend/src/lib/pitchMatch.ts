@@ -106,6 +106,13 @@ export function isLiveLeague(leagues: { id: number; enabled: boolean }[] | undef
   return hasPitchData(leagueId) || !!leagues?.find((l) => l.id === leagueId)?.enabled;
 }
 
+/** Ligy se simulací v2.1 (SportMonks id): Chance Liga, Premier League, Bundesliga, La Liga, Eredivisie. */
+export const SIM_LEAGUE_IDS: number[] = [262, 8, 82, 564, 72];
+
+export function hasSimV2(leagueId: number | null | undefined): boolean {
+  return leagueId != null && SIM_LEAGUE_IDS.includes(leagueId);
+}
+
 export function hasPitchData(leagueId: number | null | undefined): boolean {
   return leagueId != null && PITCH_LEAGUE_IDS.includes(leagueId);
 }

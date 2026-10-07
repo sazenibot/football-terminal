@@ -128,7 +128,7 @@ export const csMc = {
   "mc.pr.tip.c.homeDc": "10",
   "mc.pr.tip.c.awayDc": "02",
   "mc.pr.tip.prob": "Model tomuto tipu dává {p} %.",
-  "mc.pr.tip.hist": "Podobné tipy se v testu na {n} zápasech Chance Ligy trefily v {hit} % případů.",
+  "mc.pr.tip.hist": "Podobné tipy se v testu na {n} zápasech pěti lig trefily v {hit} % případů.",
   "mc.pr.tip.info": "Výsledek: když je favorit jasný (výhra aspoň {from} %), tipujeme jeho výhru. Jinak tipujeme neprohru favorita, tedy jeho výhru nebo remízu. Góly: model vybere čáru Over nebo Under podle toho, jak jasně si u zápasu věří. Tip dostane každý zápas. Úspěšnost je z testu na odehraných zápasech, ne záruka. Nejde o doporučení k sázce.",
   "mc.pr.xg": "Očekávané góly",
   "mc.pr.topScore": "Nejčastější skóre",

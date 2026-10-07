@@ -130,7 +130,7 @@ export const enMc: Record<keyof typeof csMc, string> = {
   "mc.pr.tip.c.homeDc": "1X",
   "mc.pr.tip.c.awayDc": "X2",
   "mc.pr.tip.prob": "The model gives this pick {p}%.",
-  "mc.pr.tip.hist": "Similar picks were right {hit}% of the time in a test on {n} Czech First League matches.",
+  "mc.pr.tip.hist": "Similar picks were right {hit}% of the time in a test on {n} matches from five leagues.",
   "mc.pr.tip.info": "Result: when the favourite is clear (win chance of at least {from}%), we pick their win. Otherwise we pick the favourite not to lose, meaning a win or a draw. Goals: the model picks an Over or Under line depending on how confident it is about the match. Every match gets a pick. The hit rate comes from a test on past matches and is not a guarantee. This is not betting advice.",
   "mc.pr.xg": "Expected goals",
   "mc.pr.topScore": "Most likely score",

@@ -143,7 +143,7 @@ export const csMx = {
 
   /* ---------- 7. Simulace V2 ---------- */
   "mx.simv2.subtitle": "síla soupeřů · góly + xG · střely",
-  "mx.simv2.note": "Chance Liga, data PitchAPI. Zpětný test na 346 zápasech dvou sezon: o něco přesnější než model bez síly soupeřů a u střel i střel na branku přesnější než ligový průměr. Pořád odhad, ne záruka. Kurz Chance je jen srovnání, do modelu nevstupuje.",
+  "mx.simv2.note": "Model v2.1, data PitchAPI. Zpětný test pěti lig a živou knihu najdete ve Výsledcích: model je o kousek za uzavíracími kurzy sázkových kanceláří, takže jde o nezávislý odhad, ne o náskok. Pořád odhad, ne záruka. Kurz Chance je jen srovnání, do modelu nevstupuje.",
   "mx.simv2.diff": "Chance {market} · {diff} b.",
   "mx.simv2.chanceOu": "Chance {over} / {under}",
   "mx.simv2.xg": "Očekávané góly",
@@ -157,7 +157,7 @@ export const csMx = {
   "mx.simv2.odds": "Chance 1X2 kurz {home} / {draw} / {away}, marže {margin} odečtena.",
   "mx.simv2.hide": "Skrýt, jak číslo vzniklo",
   "mx.simv2.show": "Ukázat, jak číslo vzniklo",
-  "mx.simv2.method": "Góly: Maher ratingy útok/obrana se silou soupeře, {goalsFit} gólový fit + {xgFit} xG fit, loňská sezona jako prior, obrana se k loňsku stahuje víc než útok. Skóre se počítá přesně z Poissonovy mřížky 0–{maxGoals}. Oba dají gól a over jsou kalibrované (zpětně se ukázalo, že surové hodnoty byly příliš sebejisté). Střely, SOT a rohy: doma/venku rate týmu a soupeře stažený k loňsku ({prev} zápasů se stats), nováčci berou průměr spodních 3 týmů. Kurz Chance do modelu nevstupuje.",
+  "mx.simv2.method": "Góly: Maher ratingy útok/obrana se silou soupeře, {goalsFit} gólový fit + {xgFit} xG fit. Prior tvoří dvě předchozí sezony (stahuje se k ní i výhoda domácího hřiště), obrana se k priori stahuje víc než útok. Skóre se počítá přesně z Poissonovy mřížky 0–{maxGoals} s lehkým posílením remíz. Oba dají gól a over jsou kalibrované (surové hodnoty byly příliš sebejisté). Střely, SOT a rohy: doma/venku rate týmu a soupeře stažený k loňsku ({prev} zápasů se stats), nováčci berou průměr spodních 3 týmů. Kurz Chance do modelu nevstupuje.",
   "mx.simv2.ratingAttDef": "Útok / obrana (góly)",
   "mx.simv2.ratingLam": "λ góly → xG → finál",
   "mx.simv2.rest": "Odpočinek (dny)",

@@ -145,7 +145,7 @@ export const enMx: Record<keyof typeof csMx, string> = {
 
   /* ---------- 7. Simulation V2 ---------- */
   "mx.simv2.subtitle": "opponent strength · goals + xG · shots",
-  "mx.simv2.note": "Chance Liga, PitchAPI data. Backtest on 346 matches over two seasons: slightly more accurate than the model without opponent strength, and for shots and shots on target more accurate than the league average. Still an estimate, not a guarantee. The Chance odds are only a comparison and do not feed into the model.",
+  "mx.simv2.note": "Model v2.1, PitchAPI data. The backtest across five leagues and the live book are on the Results page: the model is slightly behind bookmaker closing odds, so it is an independent estimate, not an edge. Still an estimate, not a guarantee. The Chance odds are only a comparison and do not feed into the model.",
   "mx.simv2.diff": "Chance {market} · {diff} pp",
   "mx.simv2.chanceOu": "Chance {over} / {under}",
   "mx.simv2.xg": "Expected goals",
@@ -159,7 +159,7 @@ export const enMx: Record<keyof typeof csMx, string> = {
   "mx.simv2.odds": "Chance 1X2 odds {home} / {draw} / {away}, {margin} margin removed.",
   "mx.simv2.hide": "Hide how the number was derived",
   "mx.simv2.show": "Show how the number was derived",
-  "mx.simv2.method": "Goals: Maher attack/defence ratings adjusted for opponent strength, {goalsFit} goals fit + {xgFit} xG fit, last season as a prior, with defence pulled towards last season more than attack. Scores are computed exactly from a Poisson grid 0–{maxGoals}. Both teams to score and over are calibrated (a backtest showed the raw values were overconfident). Shots, SOT and corners: team and opponent home/away rate pulled towards last season ({prev} matches with stats), promoted teams take the average of the bottom 3 teams. The Chance odds do not feed into the model.",
+  "mx.simv2.method": "Goals: Maher attack/defence ratings adjusted for opponent strength, {goalsFit} goals fit + {xgFit} xG fit. The prior is built from the two previous seasons (home advantage is also pulled towards the previous season), with defence pulled towards the prior more than attack. Scores are computed exactly from a Poisson grid 0–{maxGoals} with a slight boost for draws. Both teams to score and over are calibrated (raw values were overconfident). Shots, SOT and corners: team and opponent home/away rate pulled towards last season ({prev} matches with stats), promoted teams take the average of the bottom 3 teams. The Chance odds do not feed into the model.",
   "mx.simv2.ratingAttDef": "Attack / defence (goals)",
   "mx.simv2.ratingLam": "λ goals → xG → final",
   "mx.simv2.rest": "Rest (days)",

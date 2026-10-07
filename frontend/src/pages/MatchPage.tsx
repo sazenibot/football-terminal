@@ -3,7 +3,7 @@ import { XgotBadgeChip } from "../components/XgotBadge";
 import { last5BadgeForTeam } from "../lib/xgEfficiency";
 import { useDataIndex, useMatch, usePitchH2H, usePitchTeam, useSimV2, useXgotIndex } from "../lib/useData";
 import { SimulationV2 } from "../components/SimulationV2";
-import { h2hWithXgot, hasPitchData, radarXgot } from "../lib/pitchMatch";
+import { h2hWithXgot, hasPitchData, hasSimV2, radarXgot } from "../lib/pitchMatch";
 import { StaleBanner } from "../components/StaleBanner";
 import { formatDateTimeLong } from "../lib/format";
 import { H2HResults } from "../components/H2HResults";
@@ -29,7 +29,7 @@ export function MatchPage() {
   const homePitch = usePitchTeam(pitchOn && m ? m.home.id : null);
   const awayPitch = usePitchTeam(pitchOn && m ? m.away.id : null);
   const pitchH2H = usePitchH2H(pitchOn);
-  const simV2 = useSimV2(pitchOn && Number.isFinite(id) ? id : null);
+  const simV2 = useSimV2(hasSimV2(m?.league_id) && Number.isFinite(id) ? id : null);
   const backTo = m?.league_id ? `/league/${m.league_id}` : "/";
 
   if (error) {

@@ -12,3 +12,4 @@ frontend/dist/
 
 # Katalog leží v Cloudflare R2 (ft-public/catalog), ne v gitu. Obnoví ho scripts/r2_sync.py down.
 frontend/public/data/catalog/
+data-archive/

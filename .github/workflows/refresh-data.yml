@@ -86,8 +86,9 @@ jobs:
           restore-keys: |
             pitchapi-
 
-      # Jen Chance Liga (262). Chyba tady nesmí zastavit commit dat ze SportMonks.
-      - name: PitchAPI katalog + simulace (Chance Liga)
+      # Katalog Chance Ligy + simulace všech 5 lig (sim-input v katalogu je přírůstkový, první běh ho jednou naplní).
+      # Chyba tady nesmí zastavit commit dat ze SportMonks.
+      - name: PitchAPI katalog + simulace (5 lig)
         continue-on-error: true
         env:
           PITCHAPI_API_KEY: ${{ secrets.PITCHAPI_API_KEY }}

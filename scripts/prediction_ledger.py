@@ -29,7 +29,8 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "frontend" / "public" / "data"
 SIM = DATA / "sim"
 LEDGER = DATA / "ledger" / "predictions.json"
-LEAGUE_ID = 262  # sim_v2 počítá zatím jen Chance Ligu
+LEAGUES = (262, 8, 82, 564, 72)  # SportMonks id lig, pro které běží simulace
+DEFAULT_LEAGUE = 262  # starší sim soubory bez league_id jsou z Chance Ligy
 
 
 def now() -> datetime:
@@ -54,7 +55,8 @@ def snapshot(sim: dict) -> dict | None:
         return None
     entry = {
         "fid": sim["fixture_id"],
-        "league_id": LEAGUE_ID,
+        "league_id": int(sim.get("league_id") or DEFAULT_LEAGUE),
+        "model_version": sim.get("model_version"),
         "kickoff": sim["starting_at"],
         "home": sim["home"],
         "away": sim["away"],
@@ -84,18 +86,20 @@ def snapshot(sim: dict) -> dict | None:
 
 
 def results_index() -> dict[tuple[int, str], tuple[int, int]]:
-    """(id domácího týmu, datum) -> (góly domácích, góly hostů) z explorer.json."""
-    path = DATA / "catalog" / "leagues" / f"{LEAGUE_ID}.explorer.json"
+    """(id domácího týmu, datum) -> (góly domácích, góly hostů) z explorer.json všech lig (id týmu je v SportMonks unikátní)."""
     out: dict[tuple[int, str], tuple[int, int]] = {}
-    for team in load(path, {}).get("teams", []):
-        for m in team.get("matches", []):
-            if m.get("h") == 1 and m.get("gf") is not None and m.get("ga") is not None:
-                out[(int(team["id"]), m["d"])] = (int(m["gf"]), int(m["ga"]))
+    for lid in LEAGUES:
+        path = DATA / "catalog" / "leagues" / f"{lid}.explorer.json"
+        for team in load(path, {}).get("teams", []):
+            for m in team.get("matches", []):
+                if m.get("h") == 1 and m.get("gf") is not None and m.get("ga") is not None:
+                    out[(int(team["id"]), m["d"])] = (int(m["gf"]), int(m["ga"]))
     return out
 
 
 def main() -> None:
-    ledger = load(LEDGER, {"league_id": LEAGUE_ID, "started_at": iso(now()), "entries": []})
+    ledger = load(LEDGER, {"started_at": iso(now()), "entries": []})
+    ledger.pop("league_id", None)
     by_fid = {e["fid"]: e for e in ledger["entries"]}
     t = now()
     added = updated = settled = 0

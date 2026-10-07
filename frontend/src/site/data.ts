@@ -34,34 +34,45 @@ export type BacktestMatch = {
   tip?: MatchTip;
 };
 
+export type LiveBook = {
+  since: string | null;
+  locked: number;
+  settled: number;
+  upcoming: { fid: number; kickoff: string; home: string; away: string; locked_at: string }[];
+  model?: { n: number; accuracy: number; logloss: number; brier: number };
+  market?: { n: number; accuracy: number; logloss: number; brier: number };
+  tips?: TipSummary;
+  calibration?: CalibrationBin[];
+  matches?: { kickoff: string; home: string; away: string; score: string; y: "home" | "draw" | "away" | "h" | "d" | "a"; p: [number, number, number]; tip?: MatchTip }[];
+};
+
+export type SeasonRef = { season: string; file: string; n: number; phase: "tuning" | "validation" | null };
+
+/** Rozcestník stránky Výsledky: ligy, dostupné sezóny zpětného testu a živá kniha každé ligy. */
 export type TrackRecord = {
   generated_at: string;
+  model_version: string;
+  default_league: number;
+  leagues: { id: number; slug: string; name: string; seasons: SeasonRef[]; live: LiveBook }[];
+};
+
+/** Zpětný test jedné ligy a sezóny (track_record/{liga}/{sezóna}.json). */
+export type Backtest = {
+  season: string;
   league: string;
-  live: {
-    since: string;
-    locked: number;
-    settled: number;
-    upcoming: { fid: number; kickoff: string; home: string; away: string; locked_at: string }[];
-    model?: { n: number; accuracy: number; logloss: number; brier: number };
-    market?: { n: number; accuracy: number; logloss: number; brier: number };
-    tips?: TipSummary;
-    matches?: { kickoff: string; home: string; away: string; score: string; y: "home" | "draw" | "away" | "h" | "d" | "a"; p: [number, number, number]; tip?: MatchTip }[];
-  };
-  backtest: {
-    season: string;
-    league: string;
-    method: string;
-    n: number;
-    from: string;
-    to: string;
-    actual_1x2: { home: number; draw: number; away: number };
-    model: { n: number; accuracy: number; logloss: number; brier: number };
-    baselines: { frequency_logloss: number; always_home_accuracy: number };
-    calibration: CalibrationBin[];
-    tips?: TipSummary | null;
-    tips_tuning?: (TipSummary & { season: string; n: number }) | null;
-    matches: BacktestMatch[];
-  };
+  slug: string;
+  phase: "tuning" | "validation" | null;
+  model_version?: string;
+  method: string;
+  n: number;
+  from: string;
+  to: string;
+  actual_1x2: { home: number; draw: number; away: number };
+  model: { n: number; accuracy: number; logloss: number; brier: number };
+  baselines: { frequency_logloss: number; always_home_accuracy: number };
+  calibration: CalibrationBin[];
+  tips?: TipSummary | null;
+  matches: BacktestMatch[];
 };
 
 export function useTrackRecord() {
@@ -74,6 +85,21 @@ export function useTrackRecord() {
     });
   }, []);
   return { data, done };
+}
+
+export function useBacktest(slug: string, file: string | undefined) {
+  const [state, setState] = useState<{ key: string; data: Backtest | null } | null>(null);
+  const key = file ? `${slug}/${file}` : "";
+  useEffect(() => {
+    if (!key) return;
+    let live = true;
+    getJson<Backtest>(`/data/track_record/${key}.json`).then((d) => live && setState({ key, data: d }));
+    return () => {
+      live = false;
+    };
+  }, [key]);
+  const ready = state?.key === key;
+  return { data: ready ? state.data : null, loading: !!key && !ready };
 }
 
 /** Ruční aktuality ze souborů + automatické signály z dat, nejnovější první. */

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useParams, useSearchParams } from "../i18n/router";
 import { last5BadgeForTeam, type XgotBadge } from "../lib/xgEfficiency";
-import { h2hWithXgot, hasPitchData, radarXgot } from "../lib/pitchMatch";
+import { h2hWithXgot, hasPitchData, hasSimV2, radarXgot } from "../lib/pitchMatch";
 import { isStale, useDataIndex, useMatch, usePitchH2H, usePitchTeam, useSimV2, useXgotIndex } from "../lib/useData";
 import { buildPrediction, kickoffLabel } from "../mc2/derive";
 import { FormCard, H2HCard, H2HStatsCard } from "../mc2/FormH2H";
@@ -95,7 +95,7 @@ export function MatchCenterPage() {
   const homePitch = usePitchTeam(pitchOn && m ? m.home.id : null);
   const awayPitch = usePitchTeam(pitchOn && m ? m.away.id : null);
   const pitchH2H = usePitchH2H(pitchOn);
-  const sim = useSimV2(pitchOn && Number.isFinite(id) ? id : null);
+  const sim = useSimV2(hasSimV2(m?.league_id) && Number.isFinite(id) ? id : null);
   const barRef = useRef<HTMLDivElement>(null);
   const [stuck, setStuck] = useState(false);
   useEffect(() => {

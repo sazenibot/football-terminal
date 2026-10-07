@@ -4,7 +4,7 @@ import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAx
 import { Gate } from "../access/Gate";
 import { Frame, Pill, TD, TH, TableWrap } from "../cat/kit";
 import { Card, Disclosure, Empty, Info, Stat, n1, n2 } from "../mc2/kit";
-import { fmtDate, fmtDateTime, useTrackRecord, type MatchTip, type TipCount, type TipOu, type TipSummary, type TipX, type TrackRecord } from "../site/data";
+import { fmtDate, fmtDateTime, useBacktest, useTrackRecord, type Backtest as BacktestData, type LiveBook, type MatchTip, type SeasonRef, type TipCount, type TipOu, type TipSummary, type TipX } from "../site/data";
 import { intlTag, t, type Key } from "../i18n/locale";
 
 const p1 = (x: number) => t("fmt.pct", { n: n1(x) });
@@ -32,8 +32,29 @@ function xLabel(x: TipX) {
   return { code, text: t(key) };
 }
 
+const seasonLabel = (s: string) => s;
+
+function Choice({ active, onClick, children }: { active: boolean; onClick: () => void; children: ReactNode }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-pressed={active}
+      className={`rounded-full border px-3 py-1.5 text-[13px] font-medium transition-colors ${
+        active ? "border-(--c-accent) bg-(--c-accent)/15 text-(--c-text)" : "border-(--c-line) text-(--c-muted) hover:text-(--c-text)"
+      }`}
+    >
+      {children}
+    </button>
+  );
+}
+
 export function ResultsPage() {
   const { data, done } = useTrackRecord();
+  const [leagueId, setLeagueId] = useState<number | null>(null);
+  const [season, setSeason] = useState<string | null>(null);
+  const league = data ? (data.leagues.find((l) => l.id === (leagueId ?? data.default_league)) ?? data.leagues[0]) : null;
+  const ref: SeasonRef | undefined = league ? (league.seasons.find((s) => s.file === season) ?? league.seasons[0]) : undefined;
   return (
     <Frame wide>
       <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-(--c-accent)">{t("res.eyebrow")}</p>
@@ -43,15 +64,29 @@ export function ResultsPage() {
         {t("res.lead.live")} <b className="text-(--c-text)">{t("res.lead.backBold")}</b>
         {t("res.lead.back")}
       </p>
-      {!data ? (
+      {!data || !league ? (
         <div className="mt-6">
           <Empty>{done ? t("res.loadError") : t("res.loading")}</Empty>
         </div>
       ) : (
         <div className="mt-6 space-y-6">
-          <Live data={data} />
-          <Backtest data={data} />
-          <Limits n={data.backtest.n} />
+          <div className="flex flex-wrap gap-2" role="group" aria-label={t("res.pick.league")}>
+            {data.leagues.map((l) => (
+              <Choice
+                key={l.id}
+                active={l.id === league.id}
+                onClick={() => {
+                  setLeagueId(l.id);
+                  setSeason(null);
+                }}
+              >
+                {l.name}
+              </Choice>
+            ))}
+          </div>
+          <Live live={league.live} />
+          <Backtest slug={league.slug} seasons={league.seasons} current={ref} onPick={setSeason} />
+          <Limits n={ref?.n ?? 0} />
         </div>
       )}
     </Frame>
@@ -60,11 +95,10 @@ export function ResultsPage() {
 
 /* ---------- živá kniha ---------- */
 
-function Live({ data }: { data: TrackRecord }) {
-  const live = data.live;
+function Live({ live }: { live: LiveBook }) {
   const title: ReactNode = (
     <>
-      {t("res.live.title")} <Pill>{t("res.live.since", { date: fmtDate(live.since) })}</Pill>
+      {t("res.live.title")} {live.since && <Pill>{t("res.live.since", { date: fmtDate(live.since) })}</Pill>}
     </>
   );
   return (
@@ -99,6 +133,8 @@ function Live({ data }: { data: TrackRecord }) {
       {live.matches && live.matches.length > 0 && (
         <Matches rows={live.matches.map((m) => ({ date: m.kickoff, home: m.home, away: m.away, score: m.score, p: m.p, y: toY(m.y), tip: m.tip }))} />
       )}
+      {live.upcoming.length > 0 && (
+      <>
       <h3 className="mb-2 mt-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("res.live.pendingTitle")}</h3>
       <TableWrap>
         <table className="w-full text-left">
@@ -124,21 +160,40 @@ function Live({ data }: { data: TrackRecord }) {
           </tbody>
         </table>
       </TableWrap>
+      </>
+      )}
     </Card>
   );
 }
 
 /* ---------- zpětný test ---------- */
 
-function Backtest({ data }: { data: TrackRecord }) {
-  const b = data.backtest;
+function Backtest({ slug, seasons, current, onPick }: { slug: string; seasons: SeasonRef[]; current: SeasonRef | undefined; onPick: (file: string) => void }) {
+  const { data: b, loading } = useBacktest(slug, current?.file);
+  return (
+    <Card title={t("res.bt.title")} lead={t("res.bt.intro")}>
+      <div className="mb-4 flex flex-wrap gap-2" role="group" aria-label={t("res.pick.season")}>
+        {seasons.map((s) => (
+          <Choice key={s.file} active={s.file === current?.file} onClick={() => onPick(s.file)}>
+            {seasonLabel(s.season)}
+            <span className="ml-1.5 text-[11px] text-(--c-faint)">{t(s.phase === "tuning" ? "res.bt.phase.tuning" : "res.bt.phase.validation")}</span>
+          </Choice>
+        ))}
+      </div>
+      {!b ? <Empty>{loading ? t("res.loading") : t("res.loadError")}</Empty> : <BacktestBody b={b} />}
+    </Card>
+  );
+}
+
+function BacktestBody({ b }: { b: BacktestData }) {
   const lift = b.model.accuracy - b.baselines.always_home_accuracy;
   const pm = Math.round(196 * Math.sqrt(((b.model.accuracy / 100) * (1 - b.model.accuracy / 100)) / b.n));
   return (
-    <Card
-      title={t("res.bt.title")}
-      lead={t("res.bt.lead", { league: b.league, season: b.season, from: fmtDate(b.from), to: fmtDate(b.to) })}
-    >
+    <>
+      <p className="mb-3 text-[13px] leading-snug text-(--c-muted)">
+        {t("res.bt.lead", { league: b.league, season: b.season, from: fmtDate(b.from), to: fmtDate(b.to) })}{" "}
+        <b className="text-(--c-text)">{t(b.phase === "tuning" ? "res.bt.note.tuning" : "res.bt.note.validation")}</b>
+      </p>
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
         <Stat
           value={p1(b.model.accuracy)}
@@ -153,13 +208,11 @@ function Backtest({ data }: { data: TrackRecord }) {
           hint={t("res.bt.matchesHint", { home: p1(b.actual_1x2.home), draw: p1(b.actual_1x2.draw), away: p1(b.actual_1x2.away) })}
         />
       </div>
-      <p className="mt-3 text-[12px] leading-snug text-(--c-faint)">
-        {t("res.bt.margin", { n: b.n, pm })}
-      </p>
+      <p className="mt-3 text-[12px] leading-snug text-(--c-faint)">{t("res.bt.margin", { n: b.n, pm })}</p>
 
       {b.tips?.goals && (
         <div className="mt-6">
-          <TipsBlock tips={b.tips} tuning={b.tips_tuning ?? undefined} retro />
+          <TipsBlock tips={b.tips} retro />
         </div>
       )}
 
@@ -169,11 +222,11 @@ function Backtest({ data }: { data: TrackRecord }) {
           <Matches rows={b.matches.map((m) => ({ ...m, y: toY(m.y) }))} />
         </Gate>
       </div>
-    </Card>
+    </>
   );
 }
 
-function Calibration({ bins }: { bins: TrackRecord["backtest"]["calibration"] }) {
+function Calibration({ bins }: { bins: BacktestData["calibration"] }) {
   const rows = bins.map((x) => ({ name: t("fmt.pct", { n: `${x.lo}–${x.hi}` }), n: x.n, model: x.predicted, real: x.actual }));
   return (
     <div className="mt-6">
@@ -296,7 +349,7 @@ function TipStat({ value, label, sub, hint }: { value: string; label: string; su
   );
 }
 
-function TipsBlock({ tips, tuning, retro = false }: { tips: TipSummary; tuning?: TipSummary & { season: string; n: number }; retro?: boolean }) {
+function TipsBlock({ tips, retro = false }: { tips: TipSummary; retro?: boolean }) {
   const { x12, goals } = tips;
   return (
     <div>
@@ -316,11 +369,6 @@ function TipsBlock({ tips, tuning, retro = false }: { tips: TipSummary; tuning?:
           sub={t("res.tips.goalsSub", { n: goals.n })}
         />
       </div>
-      {tuning && (
-        <p className="mt-2 text-[12px] leading-snug text-(--c-faint)">
-          {t("res.tips.tuning", { season: tuning.season, x: share(tuning.x12), ou: share(tuning.goals), n: tuning.n })}
-        </p>
-      )}
       {retro && <p className="mt-1 text-[12px] leading-snug text-(--c-faint)">{t("res.tips.retro")}</p>}
     </div>
   );

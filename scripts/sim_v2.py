@@ -43,14 +43,21 @@ P = {
     "rho": 0.0,  # Dixon-Coles korekce nízkých skóre; walk-forward na 2 sezonách ji nepotvrdil, proto 0
     "max_goals": 10,
     "promoted_bottom_n": 3,
-    "opp_k": 8,  # shrink aktuální sezony k loňským Maher ratingům
+    "opp_k": 16,  # shrink aktuální sezony k loňským Maher ratingům
     "opp_xg_blend": 0.6,  # podíl xG ratingů ve finální λ
     "opp_xgot_blend": 0.0,  # podíl xGOT ratingů ve finální λ
     "opp_k_def": 16,  # obrana je v sezoně nestabilnější než útok → silnější shrink k loňsku
     "opp_half_life": None,  # dny; None = všechny zápasy stejná váha
-    "opp_lam_shrink": 1.0,  # 1 = λ beze změny, <1 = λ stáhnout k ligovému průměru (geometricky)
+    "opp_lam_shrink": 0.9,  # 1 = λ beze změny, <1 = λ stáhnout k ligovému průměru (geometricky)
     "opp_prior_reg": 1.0,  # 1 = loňské ratingy beze změny, <1 = stáhnout k průměru ligy
     "stat_k": 10,  # shrink střel/SOT/rohů k ligovému průměru
+    "prior_xg_blend": 0.5,  # podíl xG ratingů v loňském prioru (0 = prior jen z gólů)
+    "prior_half_life": None,  # dny; None = loňská sezóna beze zbytku; s 2 sezónami se starší zápasy zeslabí
+    "draw_boost": 0.10,  # remízy: násobek diagonály mřížky (Poisson je nedoceňuje, ověřeno na 5 ligách)
+    "shock_sigma": 0.0,
+    "lam_scale": 1.0,
+    "opp_sot_blend": 0.0,
+    "hfa_k": 80.0,  # pseudo-zápasy, kterými se domácí výhoda stahuje k loňské hodnotě (0 = bez stažení)
 }
 
 
@@ -191,6 +198,7 @@ def maher(
     k_def: float | None = None,
     ref_date: str | None = None,
     half_life: float | None = None,
+    hfa_shrink: bool = False,
 ) -> tuple[dict[str, float], dict[str, float], float]:
     """Útok/obrana se silou soupeře. λ_home = att_h * def_a * hfa, λ_away = att_a * def_h.
 
@@ -253,7 +261,12 @@ def maher(
             num += w * x
             den += w * att[h] * de[a]
         if den:
-            hfa = num / den
+            hk = P["hfa_k"] if hfa_shrink else 0.0
+            if hk > 0:
+                per = den / len(rows)
+                hfa = (num + hk * per * hfa0) / (den + hk * per)
+            else:
+                hfa = num / den
     return att, de, hfa
 
 
@@ -335,13 +348,23 @@ def lambdas_opp(
     rest_a: int | None,
     league: set[str] | None = None,
     kick: str | None = None,
+    prev_last: list[dict] | None = None,
 ) -> tuple[float, float, dict]:
     """Maher att/def se sílou soupeřů na gólech + xG → očekávané góly.
 
     league = pitch id týmů letošní ligy. Loňští sestupující do normalizace nepatří.
     """
-    att_p, def_p, _ = maher(prev, "hg", "ag", k=0)
-    weak = bottom_ids(prev, P["promoted_bottom_n"])
+    last = prev_last if prev_last is not None else prev
+    ref = (cur[0]["date"] if cur else kick) if P["prior_half_life"] else None
+    att_p, def_p, hfa_p = maher(prev, "hg", "ag", k=0, ref_date=ref, half_life=P["prior_half_life"])
+    wpx = P["prior_xg_blend"]
+    if wpx > 0:
+        prev_xg = [m for m in prev if m.get("hxg") is not None and m.get("axg") is not None]
+        if len(prev_xg) > 0.5 * len(prev):
+            att_px, def_px, _ = maher(prev_xg, "hxg", "axg", k=0, ref_date=ref, half_life=P["prior_half_life"])
+            att_p = {t: (1 - wpx) * v + wpx * att_px.get(t, v) for t, v in att_p.items()}
+            def_p = {t: (1 - wpx) * v + wpx * def_px.get(t, v) for t, v in def_p.items()}
+    weak = bottom_ids(last, P["promoted_bottom_n"])
     prior_att_avg = sum(att_p.get(t, 1.3) for t in weak) / len(weak)
     prior_def_avg = sum(def_p.get(t, 1.0) for t in weak) / len(weak)
     ids = {home_pid, away_pid} | {m["home"] for m in cur} | {m["away"] for m in cur}
@@ -360,7 +383,7 @@ def lambdas_opp(
         prior_att_avg = m_att + reg * (prior_att_avg - m_att)
         prior_def_avg = m_def + reg * (prior_def_avg - m_def)
 
-    kw = {"k": P["opp_k"], "k_def": P["opp_k_def"], "ref_date": kick, "half_life": P["opp_half_life"]}
+    kw = {"k": P["opp_k"], "k_def": P["opp_k_def"], "ref_date": kick, "half_life": P["opp_half_life"], "hfa0": hfa_p if P["hfa_k"] > 0 else 1.22, "hfa_shrink": True}
     att_g, def_g, hfa_g = maher(cur, "hg", "ag", prior_att=prior_att, prior_def=prior_def, **kw)
     xg_rows = [m for m in cur if m.get("hxg") is not None and m.get("axg") is not None]
     att_x, def_x, hfa_x = maher(xg_rows, "hxg", "axg", prior_att=att_g, prior_def=def_g, **kw) if xg_rows else (att_g, def_g, hfa_g)
@@ -371,6 +394,14 @@ def lambdas_opp(
         scale = sum(m["hg"] + m["ag"] for m in xt_rows) / max(1e-9, sum(m["hxgot"] + m["axgot"] for m in xt_rows))
         xt_rows = [{**m, "hxgot": m["hxgot"] * scale, "axgot": m["axgot"] * scale} for m in xt_rows]
         att_t, def_t, hfa_t = maher(xt_rows, "hxgot", "axgot", prior_att=att_g, prior_def=def_g, **kw)
+
+    so_rows = [m for m in cur if m.get("hsot") is not None and m.get("asot") is not None]
+    use_so = P.get("opp_sot_blend", 0.0) > 0 and bool(so_rows)
+    if use_so:
+        # střely na bránu převedeme na škálu gólů ligovým průměrem (konverze) a vedeme jako další signál síly
+        sc = sum(m["hg"] + m["ag"] for m in so_rows) / max(1e-9, sum(m["hsot"] + m["asot"] for m in so_rows))
+        so_rows = [{**m, "hsot": m["hsot"] * sc, "asot": m["asot"] * sc} for m in so_rows]
+        att_s, def_s, hfa_s = maher(so_rows, "hsot", "asot", prior_att=att_g, prior_def=def_g, **kw)
 
     def g(d: dict[str, float], t: str, fb: float) -> float:
         return d.get(t, fb)
@@ -387,18 +418,23 @@ def lambdas_opp(
     if use_xt:
         lam_t_h = g(att_t, home_pid, prior_att_avg) * ah * (g(def_t, away_pid, prior_def_avg) * da) * hfa_t
         lam_t_a = g(att_t, away_pid, prior_att_avg) * aa * (g(def_t, home_pid, prior_def_avg) * dh)
-    wg = 1 - wx - wt
+    ws = P.get("opp_sot_blend", 0.0) if use_so else 0.0
+    wg = 1 - wx - wt - ws
     lam_h = wg * lam_g_h + wx * lam_x_h + wt * lam_t_h
     lam_a = wg * lam_g_a + wx * lam_x_a + wt * lam_t_a
+    if use_so:
+        lam_h += ws * g(att_s, home_pid, prior_att_avg) * ah * (g(def_s, away_pid, prior_def_avg) * da) * hfa_s
+        lam_a += ws * g(att_s, away_pid, prior_att_avg) * aa * (g(def_s, home_pid, prior_def_avg) * dh)
     sh = P["opp_lam_shrink"]
     if sh != 1.0:
-        mu_c, mu_p = league_mu(cur), league_mu(prev)
+        mu_c, mu_p = league_mu(cur), league_mu(last)
         mu_h = shrink(mu_c[0], mu_p[0], mu_c[2], P["k_league"])
         mu_a = shrink(mu_c[1], mu_p[1], mu_c[2], P["k_league"])
         lam_h = mu_h ** (1 - sh) * lam_h**sh
         lam_a = mu_a ** (1 - sh) * lam_a**sh
-    lam_h = max(0.3, min(4.0, lam_h))
-    lam_a = max(0.3, min(4.0, lam_a))
+    scale = P.get("lam_scale", 1.0)
+    lam_h = max(0.3, min(4.0, lam_h * scale))
+    lam_a = max(0.3, min(4.0, lam_a * scale))
     meta = {
         "hfa_goals": round(hfa_g, 3),
         "hfa_xg": round(hfa_x, 3),
@@ -532,7 +568,26 @@ def poisson(k: int, lam: float) -> float:
 
 
 def dixon_coles(lh: float, la: float, rho: float, max_goals: int) -> list[list[float]]:
-    grid = [[poisson(i, lh) * poisson(j, la) for j in range(max_goals + 1)] for i in range(max_goals + 1)]
+    sigma = P.get("shock_sigma", 0.0)
+    if sigma > 0:
+        # společný šok tempa zápasu (lognormální, střední hodnota 1): zvyšuje rozptyl součtu gólů a váhu remíz
+        from numpy.polynomial.hermite_e import hermegauss
+
+        nodes, weights = hermegauss(9)
+        weights = weights / weights.sum()
+        grid = [[0.0] * (max_goals + 1) for _ in range(max_goals + 1)]
+        for x, w in zip(nodes, weights):
+            g = math.exp(sigma * float(x) - sigma * sigma / 2)
+            for i in range(max_goals + 1):
+                pi = poisson(i, lh * g)
+                for j in range(max_goals + 1):
+                    grid[i][j] += float(w) * pi * poisson(j, la * g)
+    else:
+        grid = [[poisson(i, lh) * poisson(j, la) for j in range(max_goals + 1)] for i in range(max_goals + 1)]
+    boost = P.get("draw_boost", 0.0)
+    if boost:
+        for i in range(max_goals + 1):
+            grid[i][i] *= 1 + boost
     grid[0][0] *= 1 - lh * la * rho
     grid[0][1] *= 1 + lh * rho
     grid[1][0] *= 1 + la * rho
