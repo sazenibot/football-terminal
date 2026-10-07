@@ -2,7 +2,7 @@
   "fixture_id": 19722150,
   "league_id": 8,
   "league_name": "Premier League",
-  "built_at": "2026-10-05T11:21:52.410125Z",
+  "built_at": "2026-10-07T10:04:30.029336Z",
   "build_mode": "full",
   "starting_at": "2026-10-12T19:00:00Z",
   "venue": "The Coventry Building Society Arena",
@@ -16,7 +16,146 @@
     "name": "Newcastle United",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 13561,
+    "name": "John Brooks",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 2,
+          "average": 0.67
+        },
+        "home": {
+          "count": 1,
+          "average": 0.33,
+          "percentage": 50
+        },
+        "away": {
+          "count": 1,
+          "average": 0.33,
+          "percentage": 50
+        }
+      },
+      "Fouls": {
+        "count": 66,
+        "average": 22
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 19,
+          "average": 6.33,
+          "on_bench": 0,
+          "for_coach": 1,
+          "on_pitch": 18
+        },
+        "home": {
+          "count": 10,
+          "average": 3.33,
+          "percentage": 52.63
+        },
+        "away": {
+          "count": 9,
+          "average": 3,
+          "percentage": 47.37
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 1,
+          "average": 0.33,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 1
+        },
+        "home": {
+          "count": 1,
+          "average": 0.33,
+          "percentage": 100
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 3
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 23.4,
+      "yellow_per_match": 3.64,
+      "red_per_match": 0.04,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 6,
+      "matches": 77,
+      "yellow_cards": 359,
+      "red_cards": 5,
+      "avg_yellow_per_match": 4.66
+    },
+    "h2h_matches_officiated": [],
+    "home_team_matches_officiated": null,
+    "away_team_matches_officiated": {
+      "matches": 3,
+      "avg_fouls_by_team": 10.0,
+      "avg_fouls_total": 24.3,
+      "avg_yellow_by_team": 3.0,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19427653,
+          "date": "2026-01-04T15:00:00Z",
+          "home_name": "Newcastle United",
+          "away_name": "Crystal Palace",
+          "home_score": 2,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 17
+        },
+        {
+          "fixture_id": 19135024,
+          "date": "2025-05-11T11:00:00Z",
+          "home_name": "Newcastle United",
+          "away_name": "Chelsea",
+          "home_score": 2,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 22
+        },
+        {
+          "fixture_id": 19134874,
+          "date": "2024-11-02T12:30:00Z",
+          "home_name": "Newcastle United",
+          "away_name": "Arsenal",
+          "home_score": 1,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 34
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
@@ -28,9 +167,9 @@
       "category": "suspended",
       "category_cs": "Trest/disciplinární",
       "start_date": "2026-09-13",
-      "end_date": "2026-10-10",
+      "end_date": "2026-10-12",
       "games_missed": 3,
-      "likely_available": true
+      "likely_available": false
     },
     {
       "side": "home",
@@ -76,20 +215,6 @@
     },
     {
       "side": "away",
-      "player_id": 37559767,
-      "player_name": "Will Osula",
-      "type_id": 549,
-      "type_name": "Foot Injury",
-      "type_name_cs": "Zranění nohy (chodidlo)",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-23",
-      "end_date": null,
-      "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 33645,
       "player_name": "Joelinton Cassio Apolinário de Lira",
       "type_id": 587,
@@ -100,6 +225,20 @@
       "start_date": "2026-08-16",
       "end_date": null,
       "games_missed": 8,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37559767,
+      "player_name": "Will Osula",
+      "type_id": 549,
+      "type_name": "Foot Injury",
+      "type_name_cs": "Zranění nohy (chodidlo)",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-23",
+      "end_date": null,
+      "games_missed": 7,
       "likely_available": false
     },
     {
@@ -898,7 +1037,8 @@
           "label": "Tým nevstřelil gól",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 3.28
         },
         {
           "key": "corners_under95",
@@ -912,7 +1052,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.47
         },
         {
           "key": "shots_over",
@@ -975,7 +1116,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.27
         },
         {
           "key": "more_corners",
@@ -989,35 +1131,40 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.52
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.2
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.63
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.32
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.78
         },
         {
           "key": "corners_over95",
@@ -1031,42 +1178,48 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.48
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.14
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.64
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.55
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.45
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.55
         }
       ],
       "away": [
@@ -1075,7 +1228,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.2
         },
         {
           "key": "sot_over",
@@ -1103,28 +1257,32 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.55
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.63
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.82
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.45
         },
         {
           "key": "shots_over",
@@ -1173,7 +1331,8 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.48
         },
         {
           "key": "corners_under95",
@@ -1187,35 +1346,40 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.47
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.52
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.55
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.28
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.27
         },
         {
           "key": "more_corners",
@@ -1229,21 +1393,24 @@
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.32
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.78
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.14
         }
       ]
     },
@@ -1254,7 +1421,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 2,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.2
         },
         {
           "key": "corners_under95",
@@ -1268,7 +1436,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 2,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.47
         },
         {
           "key": "shots_over",
@@ -1331,7 +1500,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.55
         },
         {
           "key": "scoreless",
@@ -1345,14 +1515,16 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.63
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.27
         },
         {
           "key": "clean_sheet",
@@ -1387,14 +1559,16 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 0,
           "total": 2,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.48
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 2,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.14
         },
         {
           "key": "team_2plus_yellow",
@@ -1410,7 +1584,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 2,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.2
         },
         {
           "key": "corners_under95",
@@ -1424,7 +1599,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 2,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.47
         },
         {
           "key": "shots_over",
@@ -1487,7 +1663,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.55
         },
         {
           "key": "scoreless",
@@ -1501,14 +1678,16 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.63
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.27
         },
         {
           "key": "clean_sheet",
@@ -1543,14 +1722,16 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 0,
           "total": 2,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.48
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 2,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.14
         },
         {
           "key": "team_2plus_yellow",
@@ -5309,5 +5490,42 @@
         }
       }
     ]
+  },
+  "odds": {
+    "home": 3.21,
+    "draw": 3.75,
+    "away": 2.05,
+    "under15": 4.52,
+    "over15": 1.2,
+    "under25": 2.27,
+    "over25": 1.63,
+    "under35": 1.47,
+    "over35": 2.64,
+    "btts": 1.55,
+    "yellow_under5": 1.47,
+    "yellow_5plus": 2.48,
+    "red_card": 4.14,
+    "source": "chance",
+    "home_scoreless": 3.28,
+    "home_scored2plus": 2.45,
+    "home_clean_sheet": 4.78,
+    "home_ht_leading": 3.55,
+    "home_ht_draw": 2.32,
+    "home_ht_behind": 2.52,
+    "home_team_2plus_yellow": 1.64,
+    "away_clean_sheet": 3.28,
+    "away_scoreless": 4.78,
+    "away_scored2plus": 1.82,
+    "away_ht_behind": 3.55,
+    "away_ht_draw": 2.32,
+    "away_ht_leading": 2.52,
+    "away_team_2plus_yellow": 1.45
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Coventry City a Newcastle United, který se odehraje na stadionu The Coventry Building Society Arena, slibuje zajímavé střetnutí. Domácí tým Coventry se nachází v těžké formě, kdy v posledních pěti zápasech zaznamenal pouze jedno vítězství a čtyři prohry. Naopak Newcastle United vykazuje lepší výkonnost s jedním vítězstvím, dvěma remízami a jednou prohrou. Historie vzájemných zápasů také naznačuje, že Newcastle má navrch, když v posledních dvou utkáních proti Coventry zvítězil.\n\nPodle simulovaných očekávaných gólů (xG) má Newcastle výhodu s hodnotou 1.67 oproti Coventry s 1.12. To naznačuje, že hosté mají větší šanci na vstřelení gólů, což odpovídá i kurzům, které favorizují Newcastle. Sázkové kurzy ukazují na pravděpodobnost vítězství hostů, přičemž Newcastle má kurz 2.05, zatímco Coventry 3.21. Tento rozdíl v kurzech odráží aktuální formu a sílu obou týmů.\n\nVzhledem k těmto faktorům lze očekávat, že Newcastle United bude dominovat v ofenzivě a pravděpodobně se mu podaří vstřelit minimálně jeden gól. Na druhé straně, Coventry bude muset zlepšit svou defenzivu, aby se vyhnulo dalšímu debaklu. Očekává se také, že zápas bude vyrovnaný, ačkoliv Newcastle bude mít navrch, což by mohlo vést k výsledku s více než jedním gólem na obou stranách.",
+    "model": "gpt-4o-mini",
+    "input_hash": "d134ddcc4f496105",
+    "generated_at": "2026-10-07T10:04:41Z",
+    "text_en": "The upcoming match between Coventry City and Newcastle United in the Premier League is set to take place at The Coventry Building Society Arena. Coventry City enters the match with a challenging recent form, having lost four of their last five matches, which may impact their confidence and performance. In contrast, Newcastle United has shown a more resilient form, with two wins, two draws, and one loss in their last five outings, suggesting they are in better shape heading into this fixture.\n\nHistorically, Newcastle has had the upper hand in their previous encounters with Coventry, winning both of their last two meetings. The simulation data indicates that Newcastle is favored to win, with a 41.2% probability of victory compared to Coventry's 33.0% chance. The expected goals (xG) also favor the away side, with Newcastle projected to score 1.67 goals versus Coventry's 1.12, highlighting a potential disparity in offensive capabilities.\n\nAs for the match dynamics, Newcastle's stronger form and historical advantage could allow them to control possession and create more scoring opportunities. Coventry will need to tighten their defense and capitalize on any chances they create to stay competitive. The referee for the match, John Brooks, will play a crucial role in maintaining order, especially given the potential for cards, as indicated by the odds for yellow cards. Overall, if Newcastle can leverage their recent form and past success against Coventry, they are likely to emerge victorious in this encounter."
   }
 }

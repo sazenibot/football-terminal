@@ -34,28 +34,14 @@
     },
     {
       "side": "home",
-      "player_id": 37400407,
-      "player_name": "Johan Bakayoko",
-      "type_id": 531,
-      "type_name": "Knock",
-      "type_name_cs": "Knock",
+      "player_id": 37645043,
+      "player_name": "Forzan Assan Ouedraogo",
+      "type_id": 545,
+      "type_name": "Shoulder Injury",
+      "type_name_cs": "Zranění ramene",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-20",
-      "end_date": null,
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 24469115,
-      "player_name": "Castello Lukeba",
-      "type_id": 598,
-      "type_name": "Muscular problems",
-      "type_name_cs": "Muscular problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-19",
+      "start_date": "2026-09-14",
       "end_date": null,
       "games_missed": 1,
       "likely_available": false
@@ -76,14 +62,28 @@
     },
     {
       "side": "home",
-      "player_id": 37645043,
-      "player_name": "Forzan Assan Ouedraogo",
-      "type_id": 545,
-      "type_name": "Shoulder Injury",
-      "type_name_cs": "Zranění ramene",
+      "player_id": 24469115,
+      "player_name": "Castello Lukeba",
+      "type_id": 598,
+      "type_name": "Muscular problems",
+      "type_name_cs": "Muscular problems",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-14",
+      "start_date": "2026-09-19",
+      "end_date": null,
+      "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37400407,
+      "player_name": "Johan Bakayoko",
+      "type_id": 531,
+      "type_name": "Knock",
+      "type_name_cs": "Knock",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-20",
       "end_date": null,
       "games_missed": 1,
       "likely_available": false
@@ -1128,7 +1128,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 4,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.08
         },
         {
           "key": "shots_over",
@@ -1191,14 +1192,16 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.3
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.61
         },
         {
           "key": "yellow_under5",
@@ -1212,63 +1215,72 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 3.52
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.3
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.49
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.96
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 4.64
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 1.35
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 8.7
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 3.57
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.18
         },
         {
           "key": "yellow_5plus",
@@ -1296,7 +1308,8 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.83
         }
       ],
       "away": [
@@ -1305,28 +1318,32 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 4,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.35
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 4,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.08
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 4,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.3
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 4,
           "total": 4,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 4.64
         },
         {
           "key": "shots_over",
@@ -1389,14 +1406,16 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 2.32
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 2.18
         },
         {
           "key": "yellow_under5",
@@ -1417,14 +1436,16 @@
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 3.12
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 1.61
         },
         {
           "key": "yellow_5plus",
@@ -1438,21 +1459,24 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 8.7
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.52
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.57
         },
         {
           "key": "red_card",
@@ -1466,14 +1490,16 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.83
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.96
         }
       ]
     },
@@ -1484,14 +1510,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.08
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.3
         },
         {
           "key": "yellow_under5",
@@ -1568,7 +1596,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.61
         },
         {
           "key": "more_corners",
@@ -1582,7 +1611,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.35
         },
         {
           "key": "clean_sheet",
@@ -1603,7 +1633,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.18
         },
         {
           "key": "red_card",
@@ -1645,7 +1676,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.57
         },
         {
           "key": "yellow_5plus",
@@ -1661,14 +1693,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.08
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.3
         },
         {
           "key": "yellow_under5",
@@ -1696,7 +1730,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.61
         },
         {
           "key": "shots_over",
@@ -1752,7 +1787,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.35
         },
         {
           "key": "more_corners",
@@ -1801,7 +1837,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.18
         },
         {
           "key": "red_card",
@@ -1822,7 +1859,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.57
         },
         {
           "key": "yellow_5plus",
@@ -6720,5 +6758,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:22:27.183705Z"
+  "refreshed_at": "2026-10-07T10:05:58.282760Z",
+  "odds": {
+    "home": 1.56,
+    "draw": 4.91,
+    "away": 5.02,
+    "under15": 7.66,
+    "over15": 1.08,
+    "under25": 3.57,
+    "over25": 1.3,
+    "under35": 2.07,
+    "over35": 1.78,
+    "btts": 1.35,
+    "corners_under95": 2.18,
+    "corners_over95": 1.61,
+    "source": "chance",
+    "home_scoreless": 8.7,
+    "home_scored2plus": 1.3,
+    "home_clean_sheet": 3.52,
+    "home_ht_leading": 1.96,
+    "home_ht_draw": 2.83,
+    "home_ht_behind": 4.64,
+    "home_more_corners": 1.49,
+    "away_clean_sheet": 8.7,
+    "away_scoreless": 3.52,
+    "away_scored2plus": 2.32,
+    "away_ht_behind": 1.96,
+    "away_ht_draw": 2.83,
+    "away_ht_leading": 4.64,
+    "away_more_corners": 3.12
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi RB Leipzig a Eintracht Frankfurt, který se odehraje na Red Bull Areně, slibuje zajímavou konfrontaci. Domácí Leipzig se nachází v solidní formě, kdy z posledních čtyř zápasů zaznamenal dvě vítězství a dvě remízy. Naopak Frankfurt vykazuje nevyrovnané výkony, s jednou výhrou, dvěma remízami a jednou porážkou. Historie vzájemných zápasů naznačuje, že Leipzig má navrch, přičemž v posledních dvou utkáních proti Frankfurtu dokázal zvítězit s výrazným skóre.\n\nPodle simulací očekáváme, že Leipzig bude mít převahu v počtu očekávaných gólů (xG), s hodnotou 2.1 oproti 1.46 pro Frankfurt. To naznačuje, že domácí tým bude pravděpodobně více aktivní v útočné fázi a může se dočkat několika příležitostí ke skórování. Statistiky také ukazují vysokou pravděpodobnost, že oba týmy vstřelí gól (67.7 %), což by mohlo znamenat atraktivní a dynamický zápas.\n\nCo se týče celkového výsledku, simulace naznačují, že domácí Leipzig má 47.6% šanci na vítězství, zatímco Frankfurt má 28.1% šanci na úspěch. Remíza se jeví jako méně pravděpodobná (24.4%). Vzhledem k formě obou týmů a jejich vzájemným zápasům lze očekávat, že Leipzig se pokusí dominovat a udržet si kontrolu nad hrou, zatímco Frankfurt se bude snažit využít případné chyby soupeře.",
+    "model": "gpt-4o-mini",
+    "input_hash": "c0d092aabb8abc97",
+    "generated_at": "2026-10-07T10:07:03Z",
+    "text_en": "The upcoming Bundesliga match between RB Leipzig and Eintracht Frankfurt is set to take place at the Red Bull Arena on October 10, 2026. Historically, the two teams have had a competitive rivalry, with recent encounters showcasing a mix of results. Notably, Leipzig has had the upper hand in their last few meetings, including a dominant 6-0 victory in December 2025. However, Frankfurt has also secured significant wins, indicating that both teams are capable of performing at a high level.\n\nIn terms of recent form, RB Leipzig has experienced a mixed run, with two wins and two losses in their last four matches. Meanwhile, Eintracht Frankfurt has recorded one win, two draws, and one loss in the same period. The simulation data suggests that Leipzig is favored to score more, with an expected goals (xG) value of 2.1 compared to Frankfurt's 1.46. This indicates that Leipzig may create more scoring opportunities, which could play a crucial role in the outcome of the match.\n\nGiven the home advantage for Leipzig and their historical performance against Frankfurt, they are likely to push for an aggressive start. The simulation also indicates a high probability of both teams scoring (67.7%), suggesting that Frankfurt could find the back of the net despite their recent form. Overall, the match promises to be competitive, with Leipzig aiming to capitalize on their home ground advantage while Frankfurt will seek to disrupt their rhythm and secure points on the road."
+  }
 }

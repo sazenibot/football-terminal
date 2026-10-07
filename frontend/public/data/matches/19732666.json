@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37683780,
-      "player_name": "Lars Simon Albin Eriksson",
-      "type_id": 798,
-      "type_name": "Tendonitis",
-      "type_name_cs": "Tendonitis",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-08",
-      "end_date": "2026-11-02",
-      "games_missed": 3,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 3219728,
       "player_name": "Andrés Martín García",
       "type_id": 536,
@@ -44,6 +30,20 @@
       "start_date": "2026-08-29",
       "end_date": "2026-10-12",
       "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37683780,
+      "player_name": "Lars Simon Albin Eriksson",
+      "type_id": 798,
+      "type_name": "Tendonitis",
+      "type_name_cs": "Tendonitis",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-08",
+      "end_date": "2026-11-02",
+      "games_missed": 3,
       "likely_available": false
     },
     {
@@ -76,20 +76,6 @@
     },
     {
       "side": "away",
-      "player_id": 95680,
-      "player_name": "Dimitri Foulquier",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-05",
-      "end_date": "2026-10-19",
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 96887,
       "player_name": "Mouctar Diakhaby",
       "type_id": 554,
@@ -101,6 +87,20 @@
       "end_date": "2026-10-09",
       "games_missed": 3,
       "likely_available": true
+    },
+    {
+      "side": "away",
+      "player_id": 95680,
+      "player_name": "Dimitri Foulquier",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-05",
+      "end_date": "2026-10-19",
+      "games_missed": 4,
+      "likely_available": false
     },
     {
       "side": "away",
@@ -1388,14 +1388,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.21
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.66
         },
         {
           "key": "team_2plus_yellow",
@@ -1409,14 +1411,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.53
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.95
         },
         {
           "key": "corners_over95",
@@ -1500,21 +1504,24 @@
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.31
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.4
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.37
         },
         {
           "key": "corners_under95",
@@ -1535,21 +1542,24 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.79
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.52
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.25
         },
         {
           "key": "more_corners",
@@ -1621,14 +1631,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.21
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.66
         },
         {
           "key": "corners_over95",
@@ -1656,28 +1668,32 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.79
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.53
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.52
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.25
         },
         {
           "key": "corners_under95",
@@ -1712,28 +1728,32 @@
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.31
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.37
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.29
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.4
         }
       ]
     },
@@ -1744,14 +1764,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.53
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.21
         },
         {
           "key": "yellow_under5",
@@ -1828,7 +1850,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.66
         },
         {
           "key": "scored2plus",
@@ -1849,7 +1872,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.25
         },
         {
           "key": "corners_over95",
@@ -1991,21 +2015,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.53
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.21
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.25
         },
         {
           "key": "ht_leading",
@@ -2026,7 +2053,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.66
         },
         {
           "key": "scored2plus",
@@ -6479,5 +6507,37 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:23:06.993607Z"
+  "refreshed_at": "2026-10-07T10:08:58.035820Z",
+  "odds": {
+    "home": 2.29,
+    "draw": 3.7,
+    "away": 2.95,
+    "under15": 4.48,
+    "over15": 1.21,
+    "under25": 2.25,
+    "over25": 1.66,
+    "under35": 1.49,
+    "over35": 2.65,
+    "btts": 1.53,
+    "source": "chance",
+    "home_scoreless": 4.37,
+    "home_scored2plus": 1.95,
+    "home_clean_sheet": 3.52,
+    "home_ht_leading": 2.79,
+    "home_ht_draw": 2.31,
+    "home_ht_behind": 3.4,
+    "away_clean_sheet": 4.37,
+    "away_scoreless": 3.52,
+    "away_scored2plus": 2.29,
+    "away_ht_behind": 2.79,
+    "away_ht_draw": 2.31,
+    "away_ht_leading": 3.4
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Racingem Santander a Valencií se odehraje na stadionu Campos de Sport de El Sardinero v rámci La Ligy. Domácí tým Racing Santander v posledních šesti zápasech vykazuje smíšenou formu, se dvěma výhrami a čtyřmi remízami. Naopak Valencia se nachází v lepší formě, kdy z posledních šesti utkání vyhrála pětkrát a jednou remizovala. Historie vzájemných zápasů ukazuje vyrovnanost, přičemž poslední tři zápasy skončily remízou nebo těsným vítězstvím.\n\nPodle simulací očekáváme, že domácí Racing Santander by mohl mít mírně vyšší očekávaný počet gólů (1.96) oproti Valencii (1.53). To naznačuje, že domácí tým by mohl být nebezpečnější v útoku, i když Valencia má silnou defenzivu. Pravděpodobnost, že oba týmy skórují, je vysoká (66.9 %), což naznačuje, že zápas by mohl být vyrovnaný a bohatý na šance.\n\nCo se týče výsledku, simulace naznačují pravděpodobnost výhry domácích na úrovni 45.3 %, zatímco výhra hostů je odhadována na 30 %. Remíza má pravděpodobnost 24.7 %. Celkově lze očekávat vyrovnaný zápas s možností, že oba týmy přispějí k výsledku. Zápas by mohl být dramatický, s několika šancemi na obou stranách.",
+    "model": "gpt-4o-mini",
+    "input_hash": "30d9a2ca4c14b4a8",
+    "generated_at": "2026-10-07T10:09:08Z",
+    "text_en": "The upcoming La Liga match between Racing Santander and Valencia at the Campos de Sport de El Sardinero on October 11, 2026, presents an intriguing matchup. Racing Santander has struggled recently, with a form record of two wins and four losses in their last six matches. In contrast, Valencia has shown a stronger performance, securing four wins and two losses in the same timeframe. This disparity in recent form suggests that Valencia may enter the match as the favorites, although the home advantage for Racing Santander could play a crucial role.\n\nHistorically, the head-to-head encounters between these two teams have been quite competitive, with several matches ending in draws and high-scoring affairs. The last five meetings have seen a mix of results, indicating that both teams can find the back of the net. The simulation data suggests a likelihood of both teams scoring, with a probability of 66.9% for both teams to score (BTTS). Additionally, the expected goals (xG) indicate that Racing Santander may have a slight edge in creating chances, with an xG of 1.96 compared to Valencia's 1.53.\n\nGiven the current form and historical context, the match could unfold with Valencia looking to capitalize on their recent momentum, while Racing Santander will aim to leverage their home advantage to secure points. The odds reflect this uncertainty, with a home win at 2.29, a draw at 3.7, and an away win at 2.95. Overall, fans can expect a competitive encounter with the potential for goals from both sides."
+  }
 }

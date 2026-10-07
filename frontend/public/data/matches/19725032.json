@@ -75,6 +75,34 @@
       "likely_available": false
     },
     {
+      "side": "home",
+      "player_id": 37341896,
+      "player_name": "Jhoanner Stalin Chávez Quintero",
+      "type_id": 533,
+      "type_name": "Thigh Problems",
+      "type_name_cs": "Problémy se stehnem",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-04-01",
+      "end_date": null,
+      "games_missed": 24,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37687998,
+      "player_name": "Ondřej Penxa",
+      "type_id": 557,
+      "type_name": "Cruciate Ligament Injury",
+      "type_name_cs": "Zranění zkříženého vazu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-01-15",
+      "end_date": null,
+      "games_missed": 29,
+      "likely_available": false
+    },
+    {
       "side": "away",
       "player_id": 8101004,
       "player_name": "Vojtěch Patrák",
@@ -7611,7 +7639,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T15:49:23.073227Z",
+  "refreshed_at": "2026-10-07T10:00:42.448643Z",
   "odds": {
     "home": 1.26,
     "draw": 5.78,
@@ -7641,6 +7669,7 @@
     "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy slibuje zajímavé střetnutí, zejména s ohledem na aktuální formu obou týmů. Sparta se v posledních šesti zápasech prezentovala solidními výkony, když vyhrála čtyřikrát a dvakrát prohrála. Naopak Pardubice mají za sebou smíšené výsledky, s dvěma výhrami, jednou remízou a třemi prohrami. Historie vzájemných zápasů naznačuje, že Sparta má mírnou převahu, přičemž poslední vzájemný duel skončil výhrou Pardubic 4:2.\n\nAnalýza očekávaných gólů (xG) ukazuje, že Sparta by měla mít navrch v ofenzivě, s hodnotou 1.92 oproti Pardubicím, které mají xG pouze 1.05. To naznačuje, že domácí tým by měl být schopen vytvořit více vyložených šancí. Pravděpodobnost vítězství Sparty se odhaduje na 49.9 %, zatímco šance na remízu a výhru Pardubic jsou 25.1 % a 25.0 %.\n\nZ pohledu statistik je také zajímavé, že pravděpodobnost, že oba týmy skórují, je 55.9 %, což naznačuje, že by se mohlo jednat o vyrovnaný zápas s několika góly. Celkově se očekává, že Sparta Praha, jakožto favorit, bude dominovat v držení míče a vytváření šancí, zatímco Pardubice se budou snažit o efektivní brejky a využití standardních situací.",
     "model": "gpt-4o-mini",
     "input_hash": "30e5faddb1053817",
-    "generated_at": "2026-10-06T13:49:28Z"
+    "generated_at": "2026-10-07T10:00:52Z",
+    "text_en": "The upcoming match between Sparta Praha and Pardubice in the Chance Liga is set to take place at TC Strahov on October 11, 2026. Sparta Praha enters the match with a strong recent form, having won four of their last six matches (V, V, P, P, V, V), while Pardubice has shown a mixed performance with three wins, two losses, and a draw in their last six outings (V, V, R, P, P, R). Historically, Sparta has had the upper hand in their head-to-head encounters, winning four of the last five matches against Pardubice, which adds to their confidence ahead of this fixture.\n\nStatistical simulations suggest that Sparta Praha is favored to dominate the match, with an expected goals (xG) metric of 1.92 compared to Pardubice's 1.05. This indicates that Sparta is likely to create more scoring opportunities. The simulation also shows a high probability of both teams scoring (55.9%) and a reasonable chance of the match having over 2.5 goals (57.3%). With Sparta's home advantage and their recent scoring form, they are expected to control the game and apply pressure on the Pardubice defense.\n\nGiven the odds, which heavily favor a home win (1.26 for Sparta), it is anticipated that they will secure a victory, potentially by a margin of two goals or more. However, Pardubice's ability to score, as indicated by their recent form and past encounters, suggests that they could find the back of the net as well. Overall, the match is likely to be competitive, but Sparta Praha should emerge as the stronger side, leveraging their home advantage and superior recent performance."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T13:49:28Z",
+  "generated_at": "2026-10-07T10:01:44Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -200,10 +200,34 @@
           13
         ]
       }
+    },
+    {
+      "fixture_id": 19725068,
+      "starting_at": "2026-10-14T16:00:00Z",
+      "venue": "Stadion Dolícek",
+      "home": {
+        "id": 2488,
+        "name": "Bohemians 1905",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png"
+      },
+      "away": {
+        "id": 187,
+        "name": "Mladá Boleslav",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true,
+        "probs": [
+          48,
+          23,
+          29
+        ]
+      }
     }
   ],
   "stats": {
-    "created": 0,
+    "created": 1,
     "refreshed": 8,
     "errors": 0
   }

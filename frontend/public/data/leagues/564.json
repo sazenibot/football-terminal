@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T11:24:19Z",
+  "generated_at": "2026-10-07T10:09:17Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -69,7 +69,7 @@
     {
       "fixture_id": 19732669,
       "starting_at": "2026-10-10T16:30:00Z",
-      "venue": "Camp Nou",
+      "venue": "Spotify Camp Nou",
       "home": {
         "id": 83,
         "name": "FC Barcelona",
@@ -201,8 +201,8 @@
     }
   ],
   "stats": {
-    "created": 1,
-    "refreshed": 9,
+    "created": 0,
+    "refreshed": 10,
     "errors": 0
   }
 }

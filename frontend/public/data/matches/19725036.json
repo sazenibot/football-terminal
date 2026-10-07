@@ -7455,7 +7455,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T15:49:15.081546Z",
+  "refreshed_at": "2026-10-07T10:00:36.231148Z",
   "odds": {
     "home": 2.56,
     "draw": 3.41,
@@ -7485,6 +7485,7 @@
     "text": "Zápas mezi Teplicemi a Sigmou Olomouc v rámci Chance ligy slibuje vyrovnané a napínavé utkání. Domácí Teplice mají v posledních šesti zápasech smíšenou formu, s třemi výhrami a třemi prohrami. Na druhé straně Sigma Olomouc se prezentuje lepšími výkony, když vyhrála čtyři z posledních šesti zápasů. Historie vzájemných zápasů ukazuje, že Sigma má mírnou převahu, přičemž poslední vzájemné utkání skončilo výhrou pro Sigmu 3:1.\n\nPodle simulací očekáváme, že Teplice budou mít mírně vyšší očekávané góly (xG 1.73) než Sigma (xG 1.55). To naznačuje, že domácí mohou mít více příležitostí ke skórování, avšak Sigma má zkušenosti a formu, která jí může pomoci v obranné fázi. Očekává se, že zápas bude vyrovnaný, s pravděpodobností 41.9 % na výhru Teplic, 32.8 % na výhru Sigmy a 25.4 % na remízu.\n\nStatistiky také naznačují vysokou pravděpodobnost, že oba týmy skórují (64.5 %), což by mohlo přispět k atraktivnímu utkání. Vzhledem k formě obou týmů a jejich vzájemným zápasům je pravděpodobné, že zápas bude vyrovnaný a může rozhodnout jediný gól nebo individuální chyba. Na domácím stadionu Na Stínadlech mohou Teplice těžit z podpory fanoušků, což by mohlo hrát klíčovou roli v konečném výsledku.",
     "model": "gpt-4o-mini",
     "input_hash": "0ff9c272b5c4a138",
-    "generated_at": "2026-10-06T13:49:21Z"
+    "generated_at": "2026-10-07T10:00:42Z",
+    "text_en": "The upcoming match between Teplice and Sigma Olomouc in the Chance Liga promises to be an intriguing encounter, taking place at the Na Stínadlech stadium on October 11, 2026. Both teams have shown mixed recent form, with Teplice recording three wins and three losses in their last six matches, while Sigma Olomouc has achieved four wins and two losses. Historically, their head-to-head matches have been competitive, with Sigma Olomouc winning the last encounter 3-1 in February 2026, indicating a slight psychological edge.\n\nStatistically, the simulation suggests that Teplice has a marginally higher expected goals (xG) value of 1.73 compared to Sigma Olomouc's 1.55, hinting at a potentially more offensive approach from the home side. The likelihood of both teams scoring is relatively high, with a 64.5% probability for both teams to find the net. This could lead to an open game, especially considering that both teams have shown the ability to score multiple goals in recent outings.\n\nGiven the odds, Teplice is slightly favored at 2.56, with Sigma Olomouc close behind at 2.61, indicating a balanced matchup. The expectation is for a closely contested game, with the possibility of a high-scoring affair, particularly if both teams capitalize on their attacking opportunities. The outcome may hinge on key moments, such as set pieces or defensive errors, making it essential for both sides to maintain focus throughout the match."
   }
 }

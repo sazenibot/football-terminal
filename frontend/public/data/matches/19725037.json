@@ -7223,7 +7223,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T15:48:49.651544Z",
+  "refreshed_at": "2026-10-07T10:00:16.196007Z",
   "odds": {
     "home": 1.48,
     "draw": 4.67,
@@ -7253,6 +7253,7 @@
     "text": "Zápas mezi Viktorií Plzeň a Mladou Boleslaví v rámci Chance Ligy se odehraje na Doosan Aréně, kde domácí tým má výhodu. Plzeň se v posledních zápasech nachází v mírně kolísavé formě, s jednou výhrou, dvěma remízami a dvěma prohrami. Na druhou stranu, Mladá Boleslav se prezentuje stabilněji, s čtyřmi výhrami a jednou remízou v posledních šesti utkáních. Historie vzájemných zápasů ukazuje jasnou dominanci Plzně, která v posledních pěti střetnutích s Boleslaví neztratila ani bod.\n\nPodle simulací očekávaných gólů (xG) má Mladá Boleslav mírně vyšší hodnotu (1.8) oproti Plzni (1.52), což naznačuje, že hosté by mohli být nebezpečnější v ofenzivě. Nicméně, Plzeň má silnou domácí bilanci a pravděpodobnost, že oba týmy skórují, je vysoká (64.9 %). Vzhledem k formě obou týmů a historickým výsledkům lze očekávat vyrovnaný zápas, kde by Plzeň mohla mít mírnou výhodu.\n\nCo se týče očekávaného výsledku, podle simulací je pravděpodobnost výhry Plzně 36.8 %, remízy 24.9 % a výhry Boleslavi 38.4 %. To naznačuje, že zápas by mohl skončit těsným výsledkem, možná s výhodou pro hosty, pokud udrží svou aktuální formu. Celkově se očekává atraktivní zápas s možností několika gólů, přičemž šance na více než 2,5 góly je 65.1 %.",
     "model": "gpt-4o-mini",
     "input_hash": "8a992c425b8bc0ee",
-    "generated_at": "2026-10-06T13:48:59Z"
+    "generated_at": "2026-10-07T10:00:21Z",
+    "text_en": "The upcoming match between Viktoria Plzeň and Mladá Boleslav in the Chance Liga is set to take place at Doosan Aréna on October 10, 2026. Viktoria Plzeň has had a mixed recent form with two wins, two draws, and two losses in their last six matches. In contrast, Mladá Boleslav has shown stronger performance, securing four wins, one loss, and one draw in the same timeframe. Historically, Viktoria Plzeň has dominated their recent encounters, winning four out of the last five matches against Mladá Boleslav.\n\nStatistically, the simulation suggests a close contest, with expected goals (xG) indicating that Mladá Boleslav might have a slight edge with 1.8 compared to Viktoria Plzeň's 1.52. The probabilities for the match outcome show a slight inclination towards an away victory at 38.4%, while a home win stands at 36.8%. Both teams have a good chance of scoring, with a 64.9% likelihood of both teams finding the net, which suggests an engaging match.\n\nGiven the current form and historical context, Viktoria Plzeň will be looking to leverage their home advantage at Doosan Aréna, where they have been strong in the past. However, Mladá Boleslav's recent form indicates they are capable of challenging the home side. The match is likely to be competitive, with both teams aiming to secure valuable points in the league standings."
   }
 }

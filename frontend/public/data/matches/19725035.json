@@ -6527,7 +6527,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T15:48:38.283384Z",
+  "refreshed_at": "2026-10-07T10:00:01.616151Z",
   "odds": {
     "home": 2.5,
     "draw": 3.3,
@@ -6557,6 +6557,7 @@
     "text": "Zápas mezi Zbrojovkou Brno a Jabloncem se odehraje 10. října 2026 na Městském fotbalovém stadionu Srbská. Domácí Zbrojovka se v posledních zápasech prezentuje dobrou formou, když vyhrála čtyři z posledních šesti utkání. Na druhé straně Jablonec má smíšené výsledky, s dvěma remízami a dvěma výhrami ve stejném počtu zápasů. Historie vzájemných zápasů ukazuje, že Jablonec má mírnou převahu, když vyhrál čtyři z posledních pěti střetnutí.\n\nOčekávané statistiky naznačují, že zápas by mohl být vyrovnaný, s mírnou výhodou pro domácí tým. Odhadované xG (expected goals) ukazují na podobnou úroveň ofenzivní síly obou týmů, přičemž Zbrojovka má 1.27 a Jablonec 1.24. To naznačuje, že oba týmy budou mít šance na vstřelení gólů, přičemž pravděpodobnost, že oba týmy skórují, se pohybuje kolem 51.1 %.\n\nVzhledem k formě a historickým výsledkům lze očekávat, že zápas bude vyrovnaný, s možností remízy. Domácí Zbrojovka se může snažit využít výhody domácího prostředí, zatímco Jablonec bude chtít potvrdit svou dominanci v posledních vzájemných duelech. Celkově by se mohlo jednat o zajímavé a napínavé utkání s několika šancemi na obou stranách.",
     "model": "gpt-4o-mini",
     "input_hash": "1860e0deffcbd7bd",
-    "generated_at": "2026-10-06T13:48:48Z"
+    "generated_at": "2026-10-07T10:00:16Z",
+    "text_en": "The upcoming match between Zbrojovka Brno and Jablonec in the Chance Liga is set to take place at the Městský fotbalový stadion Srbská on October 10, 2026. Both teams have shown varying forms recently, with Zbrojovka Brno securing three wins in their last six matches but also suffering three losses. In contrast, Jablonec has had a mixed bag of results, with two wins, two draws, and two losses in their recent outings. Historically, Jablonec has had the upper hand in their head-to-head encounters, winning four of the last five matches against Brno.\n\nIn terms of expected performance, the simulation data suggests a close contest, with both teams having similar expected goals (xG) of 1.27 for Brno and 1.24 for Jablonec. This indicates that the match could be competitive, with opportunities for both sides to score. The likelihood of both teams finding the net is around 51.1%, suggesting that a goal from each side is a plausible outcome. Additionally, the odds reflect a relatively balanced matchup, with Zbrojovka Brno slightly favored at 2.5 for a win, while Jablonec is at 2.75.\n\nGiven the recent form and historical results, it is reasonable to anticipate a tightly contested match. Zbrojovka Brno will aim to leverage their home advantage, while Jablonec will look to continue their dominance in past encounters. The match could hinge on key moments, with both teams needing to capitalize on their chances to secure a vital three points in the league."
   }
 }

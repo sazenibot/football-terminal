@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 132577,
-      "player_name": "Luiz Felipe Ramos Marchi",
-      "type_id": 2011,
-      "type_name": "Muscle Tear",
-      "type_name_cs": "Muscle Tear",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-04-16",
-      "end_date": "2026-10-12",
-      "games_missed": 22,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 333778,
       "player_name": "Augusto Martín Batalla Barga",
       "type_id": 2063,
@@ -44,6 +30,20 @@
       "start_date": "2026-08-21",
       "end_date": "2026-12-07",
       "games_missed": 5,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 132577,
+      "player_name": "Luiz Felipe Ramos Marchi",
+      "type_id": 2011,
+      "type_name": "Muscle Tear",
+      "type_name_cs": "Muscle Tear",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-04-16",
+      "end_date": "2026-10-12",
+      "games_missed": 22,
       "likely_available": false
     },
     {
@@ -7509,5 +7509,12 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:22:43.682317Z"
+  "refreshed_at": "2026-10-07T10:07:42.223937Z",
+  "ai_analysis": {
+    "text": "Zápas mezi Rayo Vallecano a Athletic Club, který se odehraje na Estadio de Vallecas, slibuje být vyrovnaným střetnutím. Domácí Rayo má za sebou smíšené výsledky, s posledními dvěma zápasy, kdy vyhrálo a prohrálo. Na druhé straně Athletic Club vykazuje stabilnější formu, přičemž jejich poslední výsledky zahrnují dvě výhry a dvě prohry. Historie vzájemných zápasů ukazuje, že Athletic má v poslední době navrch, což může psychologicky ovlivnit výkon domácích.\n\nPodle simulací očekáváme, že Athletic Club bude mít mírnou výhodu, přičemž očekávané góly (xG) naznačují, že by mohli vstřelit o něco více než Rayo. S hodnotami xG 1.37 pro Rayo a 1.59 pro Athletic je pravděpodobné, že se zápas odehraje v aktivním tempu s několika šancemi na obou stranách. Statistika ukazuje, že pravděpodobnost, že oba týmy skórují, je vysoká (59.7 %), což naznačuje, že se můžeme dočkat atraktivního fotbalu.\n\nCelkově lze očekávat, že zápas bude vyrovnaný, s mírnou převahou hostujícího týmu. Klíčovými faktory pro úspěch Rayo bude jejich schopnost využít domácí prostředí a efektivně se bránit proti ofenzivním snahám Athleticu. Na druhé straně, pokud Athletic udrží svou formu, mohou se těšit na další tři body do tabulky La Ligy.",
+    "model": "gpt-4o-mini",
+    "input_hash": "6a0792c193b098a4",
+    "generated_at": "2026-10-07T10:07:49Z",
+    "text_en": "The upcoming match between Rayo Vallecano and Athletic Club in La Liga is set to take place at the Estadio de Vallecas on October 10, 2026. Both teams have shown mixed recent form, with Rayo Vallecano recording two wins, two losses, and two draws in their last six matches, while Athletic Club has achieved two wins, two draws, and two losses. This indicates that both sides may be looking to regain consistency as they head into this encounter.\n\nHistorically, the head-to-head results favor Athletic Club, who have won three of the last five encounters, with one draw and one win for Rayo Vallecano. The previous match in February 2026 ended in a 1-1 draw, suggesting that matches between these teams can be closely contested. The expected goals (xG) statistics show a slight advantage for Athletic Club with 1.59 compared to Rayo Vallecano's 1.37, indicating that Athletic Club may create more scoring opportunities.\n\nGiven the recent form and historical context, this match could be tightly contested. The simulation suggests a likelihood of both teams scoring (59.7%) and a reasonable chance of the total goals exceeding 2.5 (56.9%). As both teams strive for valuable points in the league, the match may hinge on defensive organization and the ability to capitalize on scoring chances."
+  }
 }

@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-10-07T10:10:55Z",
+  "league": {
+    "id": 72,
+    "name": "Eredivisie",
+    "short": "NED",
+    "country": "Nizozemsko",
+    "enabled": true,
+    "logo": "https://cdn.sportmonks.com/images/soccer/leagues/72.png"
+  },
+  "round": [
+    {
+      "fixture_id": 19714637,
+      "starting_at": "2026-10-09T18:00:00Z",
+      "venue": "Philips Stadion",
+      "home": {
+        "id": 682,
+        "name": "PSV",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/682.png"
+      },
+      "away": {
+        "id": 1053,
+        "name": "SC Heerenveen",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/29/1053.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true
+      }
+    },
+    {
+      "fixture_id": 19714635,
+      "starting_at": "2026-10-10T14:30:00Z",
+      "venue": "De Adelaarshorst",
+      "home": {
+        "id": 664,
+        "name": "Go Ahead Eagles",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/664.png"
+      },
+      "away": {
+        "id": 919,
+        "name": "Sparta Rotterdam",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/23/919.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true
+      }
+    },
+    {
+      "fixture_id": 19714636,
+      "starting_at": "2026-10-10T16:45:00Z",
+      "venue": "Stadion Feijenoord",
+      "home": {
+        "id": 73,
+        "name": "Feyenoord",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/9/73.png"
+      },
+      "away": {
+        "id": 61,
+        "name": "AZ Alkmaar",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/29/61.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true
+      }
+    },
+    {
+      "fixture_id": 19714633,
+      "starting_at": "2026-10-10T18:00:00Z",
+      "venue": "Fortuna Sittard Stadion",
+      "home": {
+        "id": 1459,
+        "name": "Fortuna Sittard",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/19/1459.png"
+      },
+      "away": {
+        "id": 593,
+        "name": "FC Twente",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/593.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true
+      }
+    },
+    {
+      "fixture_id": 19714634,
+      "starting_at": "2026-10-10T19:00:00Z",
+      "venue": "Johan Cruijff Arena",
+      "home": {
+        "id": 629,
+        "name": "Ajax",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/21/629.png"
+      },
+      "away": {
+        "id": 494,
+        "name": "NEC Nijmegen",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/14/494.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true
+      }
+    },
+    {
+      "fixture_id": 19714632,
+      "starting_at": "2026-10-11T10:15:00Z",
+      "venue": "Stadion Galgenwaard",
+      "home": {
+        "id": 750,
+        "name": "FC Utrecht",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/14/750.png"
+      },
+      "away": {
+        "id": 669,
+        "name": "Willem II",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/29/669.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true
+      }
+    },
+    {
+      "fixture_id": 19714630,
+      "starting_at": "2026-10-11T12:30:00Z",
+      "venue": "BUKO Stadion",
+      "home": {
+        "id": 1550,
+        "name": "Telstar",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/14/1550.png"
+      },
+      "away": {
+        "id": 1128,
+        "name": "ADO Den Haag",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/8/1128.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true
+      }
+    },
+    {
+      "fixture_id": 19714631,
+      "starting_at": "2026-10-11T12:30:00Z",
+      "venue": "MAC³PARK Stadion",
+      "home": {
+        "id": 1016,
+        "name": "PEC Zwolle",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/1016.png"
+      },
+      "away": {
+        "id": 1435,
+        "name": "SC Cambuur",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/1435.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true
+      }
+    },
+    {
+      "fixture_id": 19714629,
+      "starting_at": "2026-10-11T14:45:00Z",
+      "venue": "Van Donge & De Roo Stadion",
+      "home": {
+        "id": 1652,
+        "name": "Excelsior",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/20/1652.png"
+      },
+      "away": {
+        "id": 2345,
+        "name": "FC Groningen",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/9/2345.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": true
+      }
+    }
+  ],
+  "stats": {
+    "created": 9,
+    "refreshed": 0,
+    "errors": 0
+  }
+}

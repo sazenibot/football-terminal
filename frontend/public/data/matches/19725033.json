@@ -7258,7 +7258,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T15:49:00.502849Z",
+  "refreshed_at": "2026-10-07T10:00:21.629595Z",
   "odds": {
     "home": 2.25,
     "draw": 3.55,
@@ -7288,6 +7288,7 @@
     "text": "Zápas mezi Bohemians 1905 a Baníkem Ostrava, který se odehraje na Stadionu Dolíček, slibuje zajímavou konfrontaci dvou týmů s rozdílnou formou. Domácí Bohemians mají za sebou smíšené výsledky, přičemž poslední zápasy ukazují na určitou stabilitu s dvěma výhrami, ale také s několika remízami a prohrami. Naopak Baník Ostrava se může pyšnit lepší formou, když v posledních zápasech dokázal vybojovat několik vítězství, což by mohlo posílit jejich sebevědomí před tímto klíčovým střetnutím.\n\nHistorie vzájemných zápasů naznačuje vyrovnanost obou týmů, přičemž poslední čtyři duely skončily různými výsledky, včetně dvou výher pro Bohemians a jedné pro Baník. Statistiky ukazují na mírnou převahu domácího týmu, který má průměrné očekávané góly (xG) 1.67, zatímco Baník má xG pouze 0.99. To naznačuje, že Bohemians by měli mít více příležitostí ke skórování, což by mohlo hrát klíčovou roli v celkovém výsledku.\n\nPodle simulací je pravděpodobnost výhry domácího týmu 47.9 %, zatímco Baník má šanci na výhru 26.4 %. Také je zde 51.2 % pravděpodobnost, že oba týmy skórují. Z hlediska ofenzivní síly a domácího prostředí by Bohemians měli mít navrch, ale Baník může překvapit, pokud se mu podaří udržet defenzivu a využít příležitosti ke kontraútokům. Celkově lze očekávat vyrovnaný zápas s mírnou převahou domácího týmu.",
     "model": "gpt-4o-mini",
     "input_hash": "d1350d8d96e3d3f6",
-    "generated_at": "2026-10-06T13:49:07Z"
+    "generated_at": "2026-10-07T10:00:26Z",
+    "text_en": "The upcoming match between Bohemians 1905 and Baník Ostrava in the Chance Liga at Stadion Dolícek promises to be an intriguing encounter. Bohemians 1905 has shown mixed form recently, with two wins, two draws, and two losses in their last six matches. In contrast, Baník Ostrava has been slightly more consistent, recording two wins, three losses, and a draw in the same period. Historical head-to-head results indicate a competitive rivalry, with Bohemians having the upper hand in their last few meetings, winning three out of the last five encounters.\n\nStatistical analysis suggests that Bohemians 1905 may have a slight advantage going into this match. The expected goals (xG) metrics indicate that Bohemians are projected to score around 1.67 goals, compared to Baník Ostrava's 0.99. This suggests that Bohemians may create more scoring opportunities, potentially leading to a favorable outcome for the home side. The simulation indicates a 47.9% probability of a Bohemians win, while Baník has a 26.4% chance of winning, with a draw at 25.8%.\n\nGiven the recent forms and historical context, it is likely that Bohemians will aim to leverage their home advantage and maintain their strong record against Baník. However, Baník will be looking to improve their away performance and capitalize on any defensive lapses from the home side. The match could be closely contested, with the potential for both teams to find the net, as indicated by the 51.2% probability of both teams scoring. Overall, it sets the stage for an exciting match in the Chance Liga."
   }
 }

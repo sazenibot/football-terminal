@@ -2,8 +2,8 @@
   "fixture_id": 19722145,
   "league_id": 8,
   "league_name": "Premier League",
-  "built_at": "2026-10-03T10:04:27.064495Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T10:02:57.240620Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T16:30:00Z",
   "venue": "Old Trafford",
   "home": {
@@ -16,20 +16,231 @@
     "name": "Tottenham Hotspur",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/6/6.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 15835,
+    "name": "Stuart Attwell",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 1,
+          "average": 0.33
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.33,
+          "percentage": 100
+        }
+      },
+      "Fouls": {
+        "count": 74,
+        "average": 24.67
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 18,
+          "average": 6,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 18
+        },
+        "home": {
+          "count": 10,
+          "average": 3.33,
+          "percentage": 55.56
+        },
+        "away": {
+          "count": 8,
+          "average": 2.67,
+          "percentage": 44.44
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 1,
+          "average": 0.33,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 1
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.33,
+          "percentage": 100
+        }
+      },
+      "Season Matches": {
+        "count": 3
+      },
+      "VAR Moments": {
+        "count": 2,
+        "average": 0.67
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 23.4,
+      "yellow_per_match": 3.64,
+      "red_per_match": 0.04,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 16,
+      "matches": 242,
+      "yellow_cards": 937,
+      "red_cards": 22,
+      "avg_yellow_per_match": 3.87
+    },
+    "h2h_matches_officiated": [
+      {
+        "fixture_id": 18138749,
+        "date": "2021-10-30T16:30:00Z",
+        "home": "Tottenham Hotspur",
+        "away": "Manchester United",
+        "home_score": 0,
+        "away_score": 3,
+        "result_for_home_team": "V"
+      }
+    ],
+    "home_team_matches_officiated": {
+      "matches": 4,
+      "avg_fouls_by_team": 9.8,
+      "avg_fouls_total": 20.5,
+      "avg_yellow_by_team": 1.5,
+      "avg_red_by_team": 0.25,
+      "recent_matches": [
+        {
+          "fixture_id": 19427223,
+          "date": "2026-05-09T14:00:00Z",
+          "home_name": "Sunderland",
+          "away_name": "Manchester United",
+          "home_score": 0,
+          "away_score": 0,
+          "result": "R",
+          "total_fouls": 24
+        },
+        {
+          "fixture_id": 19427186,
+          "date": "2026-03-20T20:00:00Z",
+          "home_name": "AFC Bournemouth",
+          "away_name": "Manchester United",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 19
+        },
+        {
+          "fixture_id": 19427659,
+          "date": "2026-01-07T20:15:00Z",
+          "home_name": "Burnley",
+          "away_name": "Manchester United",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 17
+        },
+        {
+          "fixture_id": 19427522,
+          "date": "2025-10-04T14:00:00Z",
+          "home_name": "Manchester United",
+          "away_name": "Sunderland",
+          "home_score": 2,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 22
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 4,
+      "avg_fouls_by_team": 13.0,
+      "avg_fouls_total": 22.5,
+      "avg_yellow_by_team": 2.75,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19427230,
+          "date": "2026-05-19T19:15:00Z",
+          "home_name": "Chelsea",
+          "away_name": "Tottenham Hotspur",
+          "home_score": 2,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 29
+        },
+        {
+          "fixture_id": 19427737,
+          "date": "2026-04-18T16:30:00Z",
+          "home_name": "Tottenham Hotspur",
+          "away_name": "Brighton & Hove Albion",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 28
+        },
+        {
+          "fixture_id": 19427654,
+          "date": "2026-01-04T15:00:00Z",
+          "home_name": "Tottenham Hotspur",
+          "away_name": "Sunderland",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 15
+        },
+        {
+          "fixture_id": 19427584,
+          "date": "2025-11-29T20:00:00Z",
+          "home_name": "Tottenham Hotspur",
+          "away_name": "Fulham",
+          "home_score": 1,
+          "away_score": 2,
+          "result": "P",
+          "total_fouls": 18
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
-      "player_id": 893705,
-      "player_name": "Manuel Ugarte Ribeiro",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
+      "player_id": 37317015,
+      "player_name": "Amad Diallo Traoré",
+      "type_id": 531,
+      "type_name": "Knock",
+      "type_name_cs": "Knock",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-06-28",
-      "end_date": null,
-      "games_missed": 13,
+      "start_date": "2026-08-20",
+      "end_date": "2026-10-10",
+      "games_missed": 7,
       "likely_available": false
     },
     {
@@ -48,16 +259,30 @@
     },
     {
       "side": "home",
-      "player_id": 37317015,
-      "player_name": "Amad Diallo Traoré",
-      "type_id": 531,
-      "type_name": "Knock",
-      "type_name_cs": "Knock",
+      "player_id": 893705,
+      "player_name": "Manuel Ugarte Ribeiro",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-20",
-      "end_date": "2026-10-10",
-      "games_missed": 7,
+      "start_date": "2026-06-28",
+      "end_date": null,
+      "games_missed": 13,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 9938919,
+      "player_name": "Mykhailo Mudryk",
+      "type_id": 537,
+      "type_name": "Ankle Injury",
+      "type_name_cs": "Zranění kotníku",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-09",
+      "end_date": "2026-11-09",
+      "games_missed": 3,
       "likely_available": false
     },
     {
@@ -86,20 +311,6 @@
       "start_date": "2026-04-25",
       "end_date": "2027-02-20",
       "games_missed": 19,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 9938919,
-      "player_name": "Mykhailo Mudryk",
-      "type_id": 537,
-      "type_name": "Ankle Injury",
-      "type_name_cs": "Zranění kotníku",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-09",
-      "end_date": "2026-11-09",
-      "games_missed": 3,
       "likely_available": false
     }
   ],
@@ -1203,21 +1414,24 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.15
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.76
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.55
         },
         {
           "key": "shots_over",
@@ -1273,98 +1487,112 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.48
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.65
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.5
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.63
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 6.37
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.49
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.49
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.42
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.96
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.61
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.54
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.42
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.09
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.17
         }
       ],
       "away": [
@@ -1373,21 +1601,24 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.5
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.76
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 3.09
         },
         {
           "key": "shots_over",
@@ -1450,63 +1681,72 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.15
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.65
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.68
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.55
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 6.37
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.49
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.17
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.48
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.6
         },
         {
           "key": "team_2plus_yellow",
@@ -1520,28 +1760,32 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.42
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.96
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.61
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.42
         }
       ]
     },
@@ -1608,14 +1852,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.15
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.65
         },
         {
           "key": "scored2plus",
@@ -1629,14 +1875,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.42
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.76
         },
         {
           "key": "ht_leading",
@@ -1650,7 +1898,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.48
         },
         {
           "key": "clean_sheet",
@@ -1671,14 +1920,16 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.49
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.5
         },
         {
           "key": "more_corners",
@@ -1692,14 +1943,16 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.96
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 4.61
         },
         {
           "key": "team_2plus_yellow",
@@ -1743,7 +1996,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.15
         },
         {
           "key": "shots_over",
@@ -1792,7 +2046,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.49
         },
         {
           "key": "scored2plus",
@@ -1806,14 +2061,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.42
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.76
         },
         {
           "key": "team_2plus_yellow",
@@ -1834,7 +2091,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.48
         },
         {
           "key": "scoreless",
@@ -1848,14 +2106,16 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.65
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.5
         },
         {
           "key": "more_corners",
@@ -1869,14 +2129,16 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.96
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 4.61
         },
         {
           "key": "ht_behind",
@@ -7165,5 +7427,44 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:20:35.021539Z"
+  "odds": {
+    "home": 1.7,
+    "draw": 4.37,
+    "away": 4.42,
+    "under15": 5.57,
+    "over15": 1.15,
+    "under25": 2.65,
+    "over25": 1.49,
+    "under35": 1.66,
+    "over35": 2.25,
+    "btts": 1.48,
+    "corners_under95": 2.42,
+    "corners_over95": 1.5,
+    "yellow_under5": 1.76,
+    "yellow_5plus": 1.96,
+    "red_card": 4.61,
+    "source": "chance",
+    "home_scoreless": 6.37,
+    "home_scored2plus": 1.49,
+    "home_clean_sheet": 3.09,
+    "home_ht_leading": 2.17,
+    "home_ht_draw": 2.55,
+    "home_ht_behind": 4.42,
+    "home_more_corners": 1.63,
+    "home_team_2plus_yellow": 1.54,
+    "away_clean_sheet": 6.37,
+    "away_scoreless": 3.09,
+    "away_scored2plus": 2.6,
+    "away_ht_behind": 2.17,
+    "away_ht_draw": 2.55,
+    "away_ht_leading": 4.42,
+    "away_more_corners": 2.68
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Manchesterem United a Tottenhamem Hotspur na Old Trafford slibuje být napínavým soubojem, zejména s ohledem na aktuální formu obou týmů. Domácí Manchester United má za sebou smíšené výsledky, přičemž v posledních pěti zápasech zaznamenal dvě výhry, dvě remízy a jednu prohru. Na druhé straně Tottenham Hotspur se nachází v podobné situaci, s jednou výhrou, třemi remízami a jednou prohrou. Historie vzájemných zápasů ukazuje, že obě mužstva se často střetávají vyrovnaně, přičemž poslední zápas skončil vítězstvím United 2:0.\n\nAnalýza očekávaných gólových příležitostí naznačuje, že Manchester United má mírnou výhodu s očekávanými góly (xG) 1.69 oproti 0.91 pro Tottenham. To naznačuje, že domácí tým by mohl mít více šancí na skórování. Při pohledu na pravděpodobnost výsledků se zdá, že Manchester United má 49.5% šanci na výhru, zatímco Tottenham má 24.7% šanci na vítězství a 25.9% na remízu. \n\nZ hlediska dalších statistik je zajímavé, že pravděpodobnost obou týmů skórovat (BTTS) je 48.9%, což naznačuje, že by mohlo dojít k výměně gólů. Dále, s ohledem na poslední výkony obou týmů a jejich tendence, je pravděpodobné, že zápas bude vyrovnaný, s možností, že Manchester United využije domácí prostředí k zisku tří bodů.",
+    "model": "gpt-4o-mini",
+    "input_hash": "278bc3a0225b3082",
+    "generated_at": "2026-10-07T10:03:07Z",
+    "text_en": "The upcoming Premier League match between Manchester United and Tottenham Hotspur at Old Trafford is set to be an intriguing encounter. Both teams have shown mixed recent form, with Manchester United recording two wins, two draws, and one loss in their last five matches, while Tottenham has struggled with four losses and only one draw in the same period. This inconsistency could play a significant role in the match dynamics, especially as Manchester United looks to leverage their home advantage.\n\nHistorically, the head-to-head results show a competitive rivalry, with recent matches yielding varied outcomes. In their last encounter in February 2026, Manchester United secured a 2-0 victory, while Tottenham had previously triumphed 3-0 at Old Trafford in September 2024. The expected goals (xG) simulation suggests that Manchester United may have the upper hand, with an xG of 1.69 compared to Tottenham's 0.91. This indicates that Manchester United is likely to create more scoring opportunities, which could be pivotal in determining the match's outcome.\n\nReferee Stuart Attwell will oversee the match, and his officiating style may influence the flow of the game. With both teams having the potential to score, the likelihood of both teams finding the net stands at nearly 49%. Additionally, the odds reflect a stronger expectation for a Manchester United win at 1.7, while a draw and a Tottenham victory are less favored. Overall, if Manchester United can capitalize on their home advantage and maintain composure in front of goal, they may emerge victorious in this crucial fixture."
+  }
 }

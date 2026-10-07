@@ -5838,7 +5838,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T15:48:31.538354Z",
+  "refreshed_at": "2026-10-07T09:59:55.232477Z",
   "odds": {
     "home": 1.52,
     "draw": 4.08,
@@ -5868,6 +5868,7 @@
     "text": "Zápas mezi Hradcem Králové a SK Artis Brno, který se odehraje 10. října 2026 na Malšovické aréně, slibuje zajímavé střetnutí. Domácí tým Hradec Králové se nachází v mírně kolísající formě, přičemž v posledních šesti zápasech zaznamenal dvě výhry, dvě remízy a dvě prohry. Na druhé straně, SK Artis Brno má stabilnější výkon, s pěti zápasy bez prohry, což může posílit jejich sebevědomí před tímto utkáním.\n\nHistorie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž poslední čtyři zápasy skončily remízou nebo těsným vítězstvím. To naznačuje, že i tentokrát by se mohlo jednat o vyrovnaný duel. Podle simulací očekávaných gólů (xG) má Hradec Králové mírnou výhodu s hodnotou 1.48 oproti 0.8 pro Brno, což naznačuje, že domácí by mohli mít více příležitostí ke skórování.\n\nStatistiky také ukazují, že šance na remízu se pohybuje kolem 27.2 %, což je solidní pravděpodobnost. Hradec Králové má navíc slušné šance na vstřelení dvou a více gólů, což může být klíčové pro úspěch v tomto zápase. Celkově se očekává, že zápas bude vyrovnaný, s možností, že domácí tým využije výhodu domácího prostředí k zisku tří bodů.",
     "model": "gpt-4o-mini",
     "input_hash": "890f1a7851f42f6d",
-    "generated_at": "2026-10-06T13:48:36Z"
+    "generated_at": "2026-10-07T10:00:01Z",
+    "text_en": "The upcoming match between Hradec Králové and SK Artis Brno in the Chance Liga is set to take place at the Malšovická aréna on October 10, 2026. Both teams have had mixed recent forms, with Hradec Králové recording two wins, two losses, and a draw in their last six matches, while SK Artis Brno has managed one win, three losses, and two draws. Historically, their encounters have been closely contested, with several matches ending in draws or narrow victories for either side, indicating a competitive rivalry.\n\nStatistical simulations suggest that Hradec Králové holds a slight advantage with an expected goals (xG) value of 1.48 compared to SK Artis Brno's 0.8. This indicates that Hradec Králové is likely to create more scoring opportunities. Furthermore, the odds reflect this sentiment, with Hradec Králové favored to win at 1.52, while SK Artis Brno's odds stand at 6.06. The likelihood of both teams scoring (43.4%) and the potential for over 2.5 goals (40.5%) suggest that the match could be lively, with Hradec Králové expected to take the initiative.\n\nGiven the recent form and historical context, Hradec Králové may look to capitalize on their home advantage, while SK Artis Brno will aim to stabilize their performance away from home. If Hradec Králové can convert their expected chances into goals, they could secure a victory. However, if SK Artis Brno manages to disrupt their rhythm and capitalize on counter-attacks, they could pose a significant threat. Overall, the match promises to be an engaging contest with potential for both teams to showcase their strengths."
   }
 }

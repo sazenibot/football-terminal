@@ -20,6 +20,20 @@
   "sidelined": [
     {
       "side": "home",
+      "player_id": 37650987,
+      "player_name": "Andrik Markgraf",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-07-09",
+      "end_date": null,
+      "games_missed": 14,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 6286,
       "player_name": "Oliver Burke",
       "type_id": 603,
@@ -44,20 +58,6 @@
       "start_date": "2026-08-17",
       "end_date": null,
       "games_missed": 6,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37650987,
-      "player_name": "Andrik Markgraf",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-07-09",
-      "end_date": null,
-      "games_missed": 14,
       "likely_available": false
     },
     {
@@ -689,14 +689,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 4,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.17
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 4,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.55
         },
         {
           "key": "team_2plus_yellow",
@@ -710,7 +712,8 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 4,
           "total": 4,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 3.26
         },
         {
           "key": "shots_over",
@@ -780,14 +783,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.46
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 4.72
         },
         {
           "key": "corners_over95",
@@ -808,7 +813,8 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 1.84
         },
         {
           "key": "more_corners",
@@ -829,14 +835,16 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.89
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.47
         },
         {
           "key": "red_card",
@@ -850,14 +858,16 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.76
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.4
         }
       ],
       "away": [
@@ -922,21 +932,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.46
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.17
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.55
         },
         {
           "key": "yellow_under5",
@@ -957,7 +970,8 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.1
         },
         {
           "key": "corners_over95",
@@ -978,28 +992,32 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.76
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 4.72
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 3.89
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.47
         },
         {
           "key": "more_corners",
@@ -1020,14 +1038,16 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 3.26
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.4
         },
         {
           "key": "red_card",
@@ -4483,5 +4503,37 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:22:10.075684Z"
+  "refreshed_at": "2026-10-07T10:05:08.006167Z",
+  "odds": {
+    "home": 2.3,
+    "draw": 3.84,
+    "away": 2.86,
+    "under15": 5.13,
+    "over15": 1.17,
+    "under25": 2.47,
+    "over25": 1.55,
+    "under35": 1.59,
+    "over35": 2.39,
+    "btts": 1.46,
+    "source": "chance",
+    "home_scoreless": 4.72,
+    "home_scored2plus": 1.84,
+    "home_clean_sheet": 3.89,
+    "home_ht_leading": 2.76,
+    "home_ht_draw": 2.4,
+    "home_ht_behind": 3.26,
+    "away_clean_sheet": 4.72,
+    "away_scoreless": 3.89,
+    "away_scored2plus": 2.1,
+    "away_ht_behind": 2.76,
+    "away_ht_draw": 2.4,
+    "away_ht_leading": 3.26
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi FC Union Berlin a Elversberg se odehraje 10. října 2026 na stadionu An der Alten Försterei. Domácí tým, FC Union Berlin, má v posledních zápasech smíšenou formu, přičemž zaznamenal tři remízy a jednu prohru. Na druhé straně, Elversberg se v posledních čtyřech utkáních prezentoval lépe, když vyhrál dvakrát a jednou remizoval. Tato forma naznačuje, že hosté by mohli mít navrch, přičemž jejich útok se zdá být efektivnější.\n\nPodle simulovaných dat má FC Union Berlin očekávané xG (expected goals) 1.48, zatímco Elversberg 1.95, což naznačuje, že hosté mají větší šanci na vstřelení gólů. Vzhledem k tomu, že pravděpodobnost, že oba týmy skórují, je 66.1%, lze očekávat, že zápas bude vyrovnaný a oba týmy budou mít šance na gól. Navíc, pravděpodobnost, že padne více než 2.5 góly, je 66.8%, což naznačuje možnost ofenzivního fotbalu.\n\nCelkově se očekává, že zápas bude vyrovnaný, s mírnou převahou Elversbergu, který by mohl být nebezpečný v útoku. FC Union Berlin se bude snažit využít domácího prostředí, ale s ohledem na formu a statistiky je pravděpodobné, že zápas skončí buď remízou, nebo těsným vítězstvím pro hosty.",
+    "model": "gpt-4o-mini",
+    "input_hash": "0a687877922b0807",
+    "generated_at": "2026-10-07T10:05:22Z",
+    "text_en": "The upcoming Bundesliga match between FC Union Berlin and Elversberg at the Stadion An der Alten Försterei promises to be an intriguing contest. FC Union Berlin has struggled recently, recording three losses and a draw in their last four matches, indicating a dip in form. Conversely, Elversberg has shown signs of improvement, with two wins, a draw, and a loss in their last four fixtures. This contrast in recent performances suggests that Elversberg may enter the match with greater confidence.\n\nStatistical simulations indicate that Elversberg has a higher expected goals (xG) value of 1.95 compared to Union Berlin's 1.48, which could translate to a more potent attacking threat from the visitors. The simulation also suggests a likelihood of both teams scoring (66.1%) and a high chance of the total goals exceeding 2.5 (66.8%). These factors may lead to a dynamic match where both teams will seek to capitalize on defensive vulnerabilities.\n\nGiven the current form and statistical insights, Elversberg may have the edge in this matchup. However, playing at home could provide Union Berlin with an advantage, as they will look to leverage their familiar surroundings to turn their fortunes around. Overall, the match is expected to be competitive, with Elversberg potentially taking the initiative, while Union Berlin will aim to regain their form and secure a much-needed victory."
+  }
 }

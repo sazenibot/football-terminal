@@ -1318,14 +1318,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.25
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.77
         },
         {
           "key": "more_corners",
@@ -1402,28 +1404,32 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.71
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.67
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.27
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 5.52
         },
         {
           "key": "red_card",
@@ -1437,21 +1443,24 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.25
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.46
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.07
         },
         {
           "key": "yellow_under5",
@@ -1488,14 +1497,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.71
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.25
         },
         {
           "key": "yellow_under5",
@@ -1558,7 +1569,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.07
         },
         {
           "key": "corners_over95",
@@ -1572,21 +1584,24 @@
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.27
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.77
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.43
         },
         {
           "key": "corners_under95",
@@ -1621,7 +1636,8 @@
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.46
         },
         {
           "key": "yellow_5plus",
@@ -1642,14 +1658,16 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.25
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.52
         }
       ]
     },
@@ -1751,14 +1769,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.25
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.77
         },
         {
           "key": "scored2plus",
@@ -1772,14 +1792,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.71
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.07
         },
         {
           "key": "team_2plus_yellow",
@@ -1858,7 +1880,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.25
         },
         {
           "key": "more_corners",
@@ -1921,14 +1944,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.71
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.77
         },
         {
           "key": "ht_leading",
@@ -1949,7 +1974,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.07
         },
         {
           "key": "scored2plus",
@@ -6215,5 +6241,35 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:23:00.624058Z"
+  "refreshed_at": "2026-10-07T10:08:34.066138Z",
+  "odds": {
+    "home": 1.68,
+    "draw": 3.96,
+    "away": 5.07,
+    "under15": 4.0,
+    "over15": 1.25,
+    "under25": 2.07,
+    "over25": 1.77,
+    "under35": 1.4,
+    "over35": 2.94,
+    "btts": 1.71,
+    "source": "chance",
+    "home_scoreless": 5.52,
+    "home_scored2plus": 1.67,
+    "home_clean_sheet": 2.46,
+    "home_ht_leading": 2.25,
+    "home_ht_draw": 2.27,
+    "away_clean_sheet": 5.52,
+    "away_scoreless": 2.46,
+    "away_scored2plus": 3.43,
+    "away_ht_behind": 2.25,
+    "away_ht_draw": 2.27
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Realem Sociedad a Deportivem A Coruña se odehraje na stadionu Anoeta a očekává se, že domácí tým bude mít výhodu. Real Sociedad má v posledních šesti zápasech smíšenou formu, ale přesto vykazuje tendenci k vítězství, s třemi výhrami a dvěma prohrami. Deportivo A Coruña naopak ukazuje slabší výkony, kdy z posledních šesti zápasů vyhrálo pouze dvakrát a zbytek skončil remízou nebo prohrou. Historie vzájemných zápasů nahrává domácím, kteří v posledních střetnutích dominovali, například výhrou 5:0 v únoru 2018.\n\nPodle simulací očekávaných gólů (xG) je mírně favorizován hostující tým, který má hodnotu 1.5, zatímco domácí tým 1.39. To naznačuje, že zápas by mohl být vyrovnaný, přičemž šance na remízu se pohybuje kolem 25.9 %. Vzhledem k tomu, že oba týmy mají tendenci skórovat, je pravděpodobné, že zápas skončí s góly na obou stranách, což podporuje i pravděpodobnost 58.2 % na \"obě týmy skórují\".\n\nCelkově lze očekávat, že Real Sociedad využije domácí prostředí a pokusí se dominovat hře, zatímco Deportivo A Coruña se bude snažit o překvapení a využití případných chyb soupeře. Zápas by mohl být vyrovnaný, ale s mírnou převahou domácího týmu, což by mohlo vést k těsné výhře nebo remíze.",
+    "model": "gpt-4o-mini",
+    "input_hash": "c0f9d7254546309e",
+    "generated_at": "2026-10-07T10:08:48Z",
+    "text_en": "In the upcoming La Liga match between Real Sociedad and Deportivo A Coruña at the Anoeta Stadium, the home team, Real Sociedad, enters the match with a mixed recent form of three wins, one draw, and two losses. In contrast, Deportivo A Coruña has shown slightly better consistency with two wins, three draws, and one loss in their last six matches. Historically, Real Sociedad has had the upper hand in their head-to-head encounters, winning four out of the last five matches, which could give them a psychological advantage going into this fixture.\n\nThe expected goals (xG) statistics indicate a closely contested match, with Real Sociedad at 1.39 and Deportivo A Coruña at 1.5. This suggests that both teams are likely to create scoring opportunities, but Deportivo A Coruña's slightly higher xG could indicate a potential for them to capitalize on their chances. The simulation results suggest a probability of 38.5% for a home win, 25.9% for a draw, and 35.6% for an away victory, indicating that while Real Sociedad is favored, the match could still be competitive.\n\nGiven the recent form and historical context, it is plausible to expect Real Sociedad to dominate possession and create more chances, especially at home. However, Deportivo A Coruña's ability to secure draws and their recent form suggests they could pose a significant threat on the counter-attack. The likelihood of both teams scoring is relatively high at 58.2%, which aligns with the expectation of an engaging match with potential for multiple goals. Overall, the match could hinge on Real Sociedad's ability to convert their chances while remaining vigilant against Deportivo's counter-attacking threats."
+  }
 }

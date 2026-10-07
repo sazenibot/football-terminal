@@ -2,8 +2,8 @@
   "fixture_id": 19722152,
   "league_id": 8,
   "league_name": "Premier League",
-  "built_at": "2026-10-03T10:03:02.033127Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T10:02:36.928431Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T14:00:00Z",
   "venue": "Villa Park",
   "home": {
@@ -16,33 +16,274 @@
     "name": "Brentford",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 15293,
+    "name": "Craig Pawson",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 1,
+          "average": 0.5
+        },
+        "home": {
+          "count": 1,
+          "average": 0.5,
+          "percentage": 100
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 55,
+        "average": 27.5
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 8,
+          "average": 4,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 8
+        },
+        "home": {
+          "count": 3,
+          "average": 1.5,
+          "percentage": 37.5
+        },
+        "away": {
+          "count": 5,
+          "average": 2.5,
+          "percentage": 62.5
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 2
+      },
+      "VAR Moments": {
+        "count": 1,
+        "average": 0.5
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 23.4,
+      "yellow_per_match": 3.64,
+      "red_per_match": 0.04,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 15,
+      "matches": 286,
+      "yellow_cards": 1067,
+      "red_cards": 23,
+      "avg_yellow_per_match": 3.73
+    },
+    "h2h_matches_officiated": [
+      {
+        "fixture_id": 18138813,
+        "date": "2022-01-02T14:00:00Z",
+        "home": "Brentford",
+        "away": "Aston Villa",
+        "home_score": 2,
+        "away_score": 1,
+        "result_for_home_team": "P"
+      }
+    ],
+    "home_team_matches_officiated": {
+      "matches": 6,
+      "avg_fouls_by_team": 12.0,
+      "avg_fouls_total": 22.7,
+      "avg_yellow_by_team": 1.67,
+      "avg_red_by_team": 0.17,
+      "recent_matches": [
+        {
+          "fixture_id": 19427164,
+          "date": "2026-02-27T20:00:00Z",
+          "home_name": "Wolverhampton Wanderers",
+          "away_name": "Aston Villa",
+          "home_score": 2,
+          "away_score": 0,
+          "result": "P",
+          "total_fouls": 31
+        },
+        {
+          "fixture_id": 19427456,
+          "date": "2025-08-16T11:30:00Z",
+          "home_name": "Aston Villa",
+          "away_name": "Newcastle United",
+          "home_score": 0,
+          "away_score": 0,
+          "result": "R",
+          "total_fouls": 24
+        },
+        {
+          "fixture_id": 19135004,
+          "date": "2025-04-22T19:00:00Z",
+          "home_name": "Manchester City",
+          "away_name": "Aston Villa",
+          "home_score": 2,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 16
+        },
+        {
+          "fixture_id": 19134951,
+          "date": "2025-02-19T19:30:00Z",
+          "home_name": "Aston Villa",
+          "away_name": "Liverpool",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 14
+        },
+        {
+          "fixture_id": 19134909,
+          "date": "2024-12-30T19:45:00Z",
+          "home_name": "Aston Villa",
+          "away_name": "Brighton & Hove Albion",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 23
+        },
+        {
+          "fixture_id": 19134877,
+          "date": "2024-11-03T14:00:00Z",
+          "home_name": "Tottenham Hotspur",
+          "away_name": "Aston Villa",
+          "home_score": 4,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 28
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 5,
+      "avg_fouls_by_team": 9.6,
+      "avg_fouls_total": 19.8,
+      "avg_yellow_by_team": 1.0,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19427209,
+          "date": "2026-05-02T14:00:00Z",
+          "home_name": "Brentford",
+          "away_name": "West Ham United",
+          "home_score": 3,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 20
+        },
+        {
+          "fixture_id": 19427166,
+          "date": "2026-03-03T19:30:00Z",
+          "home_name": "AFC Bournemouth",
+          "away_name": "Brentford",
+          "home_score": 0,
+          "away_score": 0,
+          "result": "R",
+          "total_fouls": 19
+        },
+        {
+          "fixture_id": 19427506,
+          "date": "2025-09-27T11:30:00Z",
+          "home_name": "Brentford",
+          "away_name": "Manchester United",
+          "home_score": 3,
+          "away_score": 1,
+          "result": "V",
+          "total_fouls": 24
+        },
+        {
+          "fixture_id": 19135048,
+          "date": "2025-05-25T15:00:00Z",
+          "home_name": "Wolverhampton Wanderers",
+          "away_name": "Brentford",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 16
+        },
+        {
+          "fixture_id": 19134949,
+          "date": "2025-03-15T17:30:00Z",
+          "home_name": "AFC Bournemouth",
+          "away_name": "Brentford",
+          "home_score": 1,
+          "away_score": 2,
+          "result": "V",
+          "total_fouls": 20
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37921359,
-      "player_name": "Brian Djomeni Madjo",
+      "player_id": 23311159,
+      "player_name": "Ian Maatsen",
       "type_id": 537,
       "type_name": "Ankle Injury",
       "type_name_cs": "Zranění kotníku",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-14",
-      "end_date": null,
-      "games_missed": 9,
+      "start_date": "2026-09-12",
+      "end_date": "2026-11-20",
+      "games_missed": 4,
       "likely_available": false
     },
     {
       "side": "home",
       "player_id": 31824,
       "player_name": "Leon Goretzka",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
+      "type_id": 687,
+      "type_name": "Knee Problems",
+      "type_name_cs": "Knee Problems",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-07",
-      "end_date": "2026-10-06",
+      "end_date": "2026-10-09",
       "games_missed": 5,
       "likely_available": true
     },
@@ -56,50 +297,8 @@
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-07-07",
-      "end_date": null,
+      "end_date": "2027-06-01",
       "games_missed": 16,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 339093,
-      "player_name": "Pelenda Joshua Tunga Dasilva",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-31",
-      "end_date": "2026-10-06",
-      "games_missed": 4,
-      "likely_available": true
-    },
-    {
-      "side": "away",
-      "player_id": 37656906,
-      "player_name": "Kaye Iyowuna Furo",
-      "type_id": 608,
-      "type_name": "Surgery",
-      "type_name_cs": "Surgery",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-14",
-      "end_date": null,
-      "games_missed": 2,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 11705403,
-      "player_name": "Nathan Michael Collins",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-05",
-      "end_date": null,
-      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -111,9 +310,65 @@
       "type_name_cs": "Zranění třísla",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-07-31",
-      "end_date": "2026-10-06",
+      "start_date": "2026-07-30",
+      "end_date": "2026-10-09",
       "games_missed": 10,
+      "likely_available": true
+    },
+    {
+      "side": "away",
+      "player_id": 37575228,
+      "player_name": "Antoni-Djibu Milambo",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2025-10-10",
+      "end_date": "2026-09-17",
+      "games_missed": null,
+      "likely_available": true
+    },
+    {
+      "side": "away",
+      "player_id": 37575228,
+      "player_name": "Antoni-Djibu Milambo",
+      "type_id": 547,
+      "type_name": "Fitness",
+      "type_name_cs": "Kondiční důvody",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-17",
+      "end_date": null,
+      "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37656906,
+      "player_name": "Kaye Iyowuna Furo",
+      "type_id": 558,
+      "type_name": "Foot surgery",
+      "type_name_cs": "Foot surgery",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-14",
+      "end_date": null,
+      "games_missed": 2,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 11705403,
+      "player_name": "Nathan Michael Collins",
+      "type_id": 532,
+      "type_name": "Calf Injury",
+      "type_name_cs": "Zranění lýtka",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-05",
+      "end_date": "2026-10-09",
+      "games_missed": 4,
       "likely_available": true
     }
   ],
@@ -1231,14 +1486,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.06
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.64
         },
         {
           "key": "shots_over",
@@ -1280,105 +1537,120 @@
           "label": "Tým nevstřelil gól",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 3.75
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.23
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.71
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.45
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.26
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.56
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.17
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.71
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.56
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.77
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.18
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.68
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.61
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.13
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.11
         }
       ],
       "away": [
@@ -1387,7 +1659,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.23
         },
         {
           "key": "sot_over",
@@ -1450,112 +1723,128 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.56
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.71
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.15
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.68
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.53
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.45
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.5
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.26
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.75
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.17
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.06
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.56
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.11
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.77
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.61
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.13
         }
       ]
     },
@@ -1566,21 +1855,24 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 2.17
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.68
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.45
         },
         {
           "key": "shots_over",
@@ -1678,7 +1970,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 4.61
         },
         {
           "key": "ht_draw",
@@ -1692,21 +1985,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.56
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.23
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.71
         },
         {
           "key": "scored2plus",
@@ -1720,14 +2016,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.06
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.56
         },
         {
           "key": "ht_leading",
@@ -1743,14 +2041,16 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.68
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.45
         },
         {
           "key": "offsides_over",
@@ -1827,14 +2127,16 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.17
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.56
         },
         {
           "key": "scoreless",
@@ -1848,14 +2150,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.23
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.71
         },
         {
           "key": "scored2plus",
@@ -1890,7 +2194,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.61
         },
         {
           "key": "ht_draw",
@@ -1904,14 +2209,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.06
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.56
         }
       ]
     }
@@ -6845,5 +7152,45 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:20:33.355277Z"
+  "odds": {
+    "home": 2.63,
+    "draw": 3.57,
+    "away": 2.59,
+    "under15": 4.26,
+    "over15": 1.23,
+    "under25": 2.17,
+    "over25": 1.71,
+    "under35": 1.46,
+    "over35": 2.73,
+    "btts": 1.56,
+    "corners_under95": 2.06,
+    "corners_over95": 1.68,
+    "yellow_under5": 1.45,
+    "yellow_5plus": 2.56,
+    "red_card": 4.61,
+    "source": "chance",
+    "home_scoreless": 3.75,
+    "home_scored2plus": 2.18,
+    "home_clean_sheet": 3.77,
+    "home_ht_leading": 3.13,
+    "home_ht_draw": 2.26,
+    "home_ht_behind": 3.11,
+    "home_more_corners": 1.71,
+    "home_team_2plus_yellow": 1.64,
+    "away_clean_sheet": 3.75,
+    "away_scoreless": 3.77,
+    "away_scored2plus": 2.15,
+    "away_ht_behind": 3.13,
+    "away_ht_draw": 2.26,
+    "away_ht_leading": 3.11,
+    "away_more_corners": 2.53,
+    "away_team_2plus_yellow": 1.5
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Aston Villou a Brentfordem se odehraje na Villa Parku a slibuje vyrovnaný souboj. Domácí Aston Villa se nachází v mírně slabší formě, když z posledních pěti zápasů zaznamenala pouze jedno vítězství. Naopak Brentford, který se v posledních utkáních prezentoval solidně, má za sebou dvě vítězství a tři remízy. Historie vzájemných zápasů ukazuje na vyrovnanost, přičemž poslední dva zápasy skončily ve prospěch Brentfordu.\n\nPodle simulací se očekává, že Brentford bude mít mírnou převahu, s očekávanými góly (xG) 1.67 oproti Aston Ville, která má 1.05. To naznačuje, že Brentford bude pravděpodobně častěji ohrožovat bránu a může mít větší šanci na vstřelení gólu. Statistika \"both teams to score\" (BTTS) ukazuje na 52.5% pravděpodobnost, že oba týmy skórují, což naznačuje, že zápas by mohl být ofenzivně laděný.\n\nCo se týče dalších aspektů zápasu, pravděpodobnost remízy je 26%, což naznačuje, že vyrovnaný výsledek je také na stole. Vzhledem k formě obou týmů a jejich vzájemným zápasům se očekává, že zápas bude vyrovnaný a napínavý, s možností několika žlutých karet a možná i více rohů, což může ovlivnit celkový průběh hry.",
+    "model": "gpt-4o-mini",
+    "input_hash": "7e208a4a2efec563",
+    "generated_at": "2026-10-07T10:02:57Z",
+    "text_en": "The upcoming match between Aston Villa and Brentford at Villa Park is set to be an intriguing encounter in the Premier League. Aston Villa's recent form has been less than ideal, with only one win in their last five matches (V, P, R, P, P). In contrast, Brentford has shown a more consistent performance, securing three wins and two draws in their last five outings (V, R, R, R, V). This difference in form could play a crucial role in determining the outcome of the match.\n\nHistorically, the head-to-head record between these two teams has been competitive, with Brentford winning two of the last five encounters, while Aston Villa has secured one victory. The most recent encounter saw Brentford triumph 1-0 at Villa Park in February 2026. The simulation data indicates that Brentford may have the edge, with an expected goals (xG) of 1.67 compared to Aston Villa's 1.05, suggesting that Brentford is likely to create more scoring opportunities.\n\nThe match will be officiated by Craig Pawson, who is known for his ability to maintain control in high-stakes games. Given the current form and head-to-head statistics, Brentford may be favored to take points from this match, while Aston Villa will need to improve their attacking efficiency to secure a positive result. The likelihood of both teams scoring is relatively high, with a 52.5% chance according to the simulation, which indicates that fans can expect an engaging and competitive match at Villa Park."
+  }
 }

@@ -48,48 +48,6 @@
     },
     {
       "side": "away",
-      "player_id": 37650883,
-      "player_name": "Maximilian Tobias Herwerth",
-      "type_id": 598,
-      "type_name": "Muscular problems",
-      "type_name_cs": "Muscular problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-14",
-      "end_date": null,
-      "games_missed": 3,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37614088,
-      "player_name": "Jeremy Alberto Arévalo Mera",
-      "type_id": 1935,
-      "type_name": "Back Problems",
-      "type_name_cs": "Back Problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-07",
-      "end_date": null,
-      "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37771728,
-      "player_name": "Ertugrul Yigit",
-      "type_id": 1972,
-      "type_name": "Ligament Stretching",
-      "type_name_cs": "Ligament Stretching",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-17",
-      "end_date": null,
-      "games_missed": 3,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 37650895,
       "player_name": "Jarzinho Ataide Adriano de Nascimento Malanga",
       "type_id": 1958,
@@ -104,6 +62,34 @@
     },
     {
       "side": "away",
+      "player_id": 37771728,
+      "player_name": "Ertugrul Yigit",
+      "type_id": 1972,
+      "type_name": "Ligament Stretching",
+      "type_name_cs": "Ligament Stretching",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-17",
+      "end_date": null,
+      "games_missed": 2,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37650883,
+      "player_name": "Maximilian Tobias Herwerth",
+      "type_id": 598,
+      "type_name": "Muscular problems",
+      "type_name_cs": "Muscular problems",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-14",
+      "end_date": null,
+      "games_missed": 3,
+      "likely_available": false
+    },
+    {
+      "side": "away",
       "player_id": 24065388,
       "player_name": "Tiago Barreiros de Melo Tomás",
       "type_id": 554,
@@ -114,6 +100,20 @@
       "start_date": "2026-09-02",
       "end_date": null,
       "games_missed": 6,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37614088,
+      "player_name": "Jeremy Alberto Arévalo Mera",
+      "type_id": 1935,
+      "type_name": "Back Problems",
+      "type_name_cs": "Back Problems",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-07",
+      "end_date": null,
+      "games_missed": 7,
       "likely_available": false
     },
     {
@@ -928,7 +928,8 @@
           "label": "Tým nevstřelil gól",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 3.22
         },
         {
           "key": "corners_over95",
@@ -949,21 +950,24 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.1
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.37
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 3.13
         },
         {
           "key": "more_corners",
@@ -984,28 +988,32 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.02
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 1.42
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 7.54
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.49
         },
         {
           "key": "corners_under95",
@@ -1026,14 +1034,16 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 4.57
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.75
         },
         {
           "key": "red_card",
@@ -1105,21 +1115,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.42
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.1
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.37
         },
         {
           "key": "corners_over95",
@@ -1154,28 +1167,32 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 4.57
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 7.54
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 3.13
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 1.36
         },
         {
           "key": "corners_under95",
@@ -1196,21 +1213,24 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.02
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.75
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.22
         },
         {
           "key": "red_card",
@@ -1312,7 +1332,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.42
         },
         {
           "key": "clean_sheet",
@@ -1333,21 +1354,24 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.1
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.37
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 3.13
         },
         {
           "key": "scored2plus",
@@ -1489,7 +1513,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.42
         },
         {
           "key": "clean_sheet",
@@ -1510,21 +1535,24 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.1
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.37
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 2,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 3.13
         },
         {
           "key": "scored2plus",
@@ -5185,5 +5213,37 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:22:04.358149Z"
+  "refreshed_at": "2026-10-07T10:04:54.938115Z",
+  "odds": {
+    "home": 4.82,
+    "draw": 4.89,
+    "away": 1.58,
+    "under15": 6.65,
+    "over15": 1.1,
+    "under25": 3.13,
+    "over25": 1.37,
+    "under35": 1.89,
+    "over35": 1.94,
+    "btts": 1.42,
+    "source": "chance",
+    "home_scoreless": 3.22,
+    "home_scored2plus": 2.49,
+    "home_clean_sheet": 7.54,
+    "home_ht_leading": 4.57,
+    "home_ht_draw": 2.75,
+    "home_ht_behind": 2.02,
+    "away_clean_sheet": 3.22,
+    "away_scoreless": 7.54,
+    "away_scored2plus": 1.36,
+    "away_ht_behind": 4.57,
+    "away_ht_draw": 2.75,
+    "away_ht_leading": 2.02
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Paderbornem a VfB Stuttgartem se odehraje na domácím stadionu Paderbornu, což může hrát důležitou roli v celkovém výkonu domácího týmu. Paderborn se v posledních zápasech nachází ve smíšené formě s jednou výhrou, dvěma prohrami a jednou remízou. Na druhé straně Stuttgart má lepší formu, přičemž vyhrál jeden zápas a prohrál dva, což naznačuje, že jsou v mírně lepší kondici. Historie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž poslední zápas skončil vítězstvím Stuttgartu.\n\nPodle simulací očekáváme, že Paderborn bude mít mírně vyšší očekávané góly (xG) s hodnotou 1.53 oproti Stuttgartu, který má xG 1.21. To naznačuje, že domácí tým by mohl mít více příležitostí k zakončení. Nicméně, Stuttgart má silnější ofenzivní potenciál a větší šance na vítězství, což se odráží v kurzech, kde je Stuttgart favoritem s kurzem 1.58 na výhru.\n\nVzhledem k tomu, že pravděpodobnost, že oba týmy skórují, je 54.9 %, lze očekávat, že zápas bude vyrovnaný a může skončit remízou nebo těsným vítězstvím pro jednoho z týmů. Také je pravděpodobné, že zápas bude mít více než 2.5 góly, což je podpořeno hodnotou 51.4 % pro tuto možnost. Celkově se očekává dynamický zápas s několika šancemi na obou stranách.",
+    "model": "gpt-4o-mini",
+    "input_hash": "512a47969bac79e6",
+    "generated_at": "2026-10-07T10:05:07Z",
+    "text_en": "The upcoming Bundesliga match between Paderborn and VfB Stuttgart at the Home Deluxe Arena promises to be an intriguing encounter. Paderborn's recent form shows a mixed bag with one win, two losses, and one draw in their last four matches. In contrast, VfB Stuttgart has been more consistent, recording two wins and two losses in their recent outings. Historically, Stuttgart has had the upper hand in their previous meetings, which may give them a psychological advantage going into this match.\n\nStatistically, simulations suggest that Paderborn has a slight edge in expected goals (xG) with 1.53 compared to Stuttgart's 1.21. This indicates that Paderborn may create more quality chances, despite their overall form not being as strong as Stuttgart's. The likelihood of both teams scoring (54.9%) and the potential for over 2.5 goals (51.4%) suggests an open game where both sides may find the back of the net.\n\nGiven the odds, Stuttgart is favored to win, with a probability of 30.1% for a victory and 26.6% for a draw. Paderborn's home advantage may play a crucial role, but Stuttgart's stronger recent performances and historical success against them could tilt the match in their favor. Overall, this match could be competitive, with both teams having the potential to score, but Stuttgart may ultimately secure the points if they capitalize on their opportunities."
+  }
 }

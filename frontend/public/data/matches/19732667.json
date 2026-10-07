@@ -20,6 +20,20 @@
   "sidelined": [
     {
       "side": "home",
+      "player_id": 37336532,
+      "player_name": "Diego Murillo Dominguez",
+      "type_id": 2021,
+      "type_name": "Inner Knee Ligament Tear",
+      "type_name_cs": "Inner Knee Ligament Tear",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-06-20",
+      "end_date": "2026-12-01",
+      "games_missed": 13,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37723837,
       "player_name": "Aarón Ochoa Moloney",
       "type_id": 1543,
@@ -44,20 +58,6 @@
       "start_date": "2026-09-04",
       "end_date": "2027-06-30",
       "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37336532,
-      "player_name": "Diego Murillo Dominguez",
-      "type_id": 2021,
-      "type_name": "Inner Knee Ligament Tear",
-      "type_name_cs": "Inner Knee Ligament Tear",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-06-20",
-      "end_date": "2026-12-01",
-      "games_missed": 13,
       "likely_available": false
     },
     {
@@ -90,8 +90,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Ángel Recio",
+        "jersey_number": 15,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Rafita Garrido",
+        "jersey_number": 31,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Carlos Dotor",
+        "jersey_number": 8,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Alfonso Herrero",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Chupe",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "David Larrubia",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Pablo Martínez",
+        "jersey_number": 18,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Dani Lorenzo",
+        "jersey_number": 22,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Juan Berrocal",
+        "jersey_number": 25,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Joaquín Muñoz",
+        "jersey_number": 11,
+        "formation_field": "4:4"
+      },
+      {
+        "player_name": "José Salinas",
+        "jersey_number": 12,
+        "formation_field": "2:4"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Roger Hinojo",
+        "jersey_number": 21,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Álex Calatrava",
+        "jersey_number": 22,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Bryan Zaragoza",
+        "jersey_number": 15,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Omar El Hilali",
+        "jersey_number": 23,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Rafel Bauzà",
+        "jersey_number": 26,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Urko González de Zárate",
+        "jersey_number": 4,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Leandro Cabrera",
+        "jersey_number": 6,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Edu Expósito",
+        "jersey_number": 8,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Roberto Fernández",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Marko Dmitrovic",
+        "jersey_number": 13,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Unai Núñez",
+        "jersey_number": 14,
+        "formation_field": "2:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1353,7 +1465,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.07
         },
         {
           "key": "team_2plus_yellow",
@@ -1416,28 +1529,32 @@
           "label": "Tým nevstřelil gól",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 3.09
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.37
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.74
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.73
         },
         {
           "key": "yellow_5plus",
@@ -1451,21 +1568,24 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 3.33
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.77
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.12
         },
         {
           "key": "yellow_under5",
@@ -1479,28 +1599,32 @@
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.06
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.15
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.68
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.65
         },
         {
           "key": "red_card",
@@ -1514,7 +1638,8 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.4
         }
       ],
       "away": [
@@ -1523,7 +1648,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.37
         },
         {
           "key": "sot_over",
@@ -1551,14 +1677,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.77
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.68
         },
         {
           "key": "yellow_5plus",
@@ -1614,7 +1742,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.12
         },
         {
           "key": "red_card",
@@ -1628,49 +1757,56 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.74
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.53
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.06
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.4
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.09
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.57
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.07
         },
         {
           "key": "yellow_under5",
@@ -1684,14 +1820,16 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.33
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.15
         }
       ]
     },
@@ -1772,14 +1910,16 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.74
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.07
         },
         {
           "key": "more_corners",
@@ -1807,28 +1947,32 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.77
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.37
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.12
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.68
         },
         {
           "key": "yellow_under5",
@@ -1963,28 +2107,32 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.77
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.37
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.74
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.68
         },
         {
           "key": "scoreless",
@@ -1998,14 +2146,16 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.12
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.07
         },
         {
           "key": "scored2plus",
@@ -6000,5 +6150,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:22:38.516104Z"
+  "refreshed_at": "2026-10-07T10:07:30.181927Z",
+  "odds": {
+    "home": 2.8,
+    "draw": 3.13,
+    "away": 2.71,
+    "under15": 3.12,
+    "over15": 1.37,
+    "under25": 1.74,
+    "over25": 2.12,
+    "under35": 1.27,
+    "over35": 3.8,
+    "btts": 1.77,
+    "corners_under95": 1.68,
+    "corners_over95": 2.07,
+    "source": "chance",
+    "home_scoreless": 3.09,
+    "home_scored2plus": 2.65,
+    "home_clean_sheet": 3.15,
+    "home_ht_leading": 3.4,
+    "home_ht_draw": 2.06,
+    "home_ht_behind": 3.33,
+    "home_more_corners": 1.73,
+    "away_clean_sheet": 3.09,
+    "away_scoreless": 3.15,
+    "away_scored2plus": 2.57,
+    "away_ht_behind": 3.4,
+    "away_ht_draw": 2.06,
+    "away_ht_leading": 3.33,
+    "away_more_corners": 2.53
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Málagou a Espanyolem, který se odehraje na Estadio La Rosaleda, slibuje zajímavý souboj dvou týmů s odlišnou formou. Málaga se v posledních šesti zápasech potýká s problémy, když zaznamenala pouze jednu výhru a čtyři remízy. Naopak Espanyol se může pochlubit lepší formou, se čtyřmi výhrami a jednou remízou v posledních šesti utkáních. Historie vzájemných zápasů také nahrává Espanyolu, který v posledních třech střetnutích s Málagou vyhrál.\n\nPodle simulací očekáváme, že Espanyol bude mít mírně navrch, s očekávanými góly (xG) 1.41 oproti 1.06 pro Málagu. To naznačuje, že hosté budou častěji ohrožovat branku a mohou mít větší šanci na vstřelení více než jednoho gólu. S pravděpodobností 38.5 % se také zdá, že Espanyol má slušnou šanci na vítězství, zatímco remíza se jeví jako méně pravděpodobná (27 %).\n\nCo se týče statistiky, téměř 49 % simulací naznačuje, že oba týmy by mohly skórovat. Takticky se očekává, že Espanyol využije svou ofenzivní sílu, zatímco Málaga bude muset vsadit na pevnou obranu a rychlé protiútoky. Celkově lze očekávat vyrovnaný zápas, ale s mírnou převahou pro hosty.",
+    "model": "gpt-4o-mini",
+    "input_hash": "262061b4b64ace74",
+    "generated_at": "2026-10-07T10:07:42Z",
+    "text_en": "The upcoming match between Málaga and Espanyol in La Liga is set to take place at Estadio La Rosaleda. Analyzing the recent form of both teams, Málaga has struggled significantly, recording four losses and two draws in their last six matches. In contrast, Espanyol has shown slightly better form with two wins, three losses, and one draw in the same timeframe. This disparity in recent performance may give Espanyol a psychological edge heading into the match.\n\nHistorically, the head-to-head encounters favor Espanyol, who have won three of the last five meetings, with Málaga managing only one draw and one win. The last encounter saw Espanyol defeating Málaga 4-1, which could influence the confidence of the away team. The expected goals (xG) data suggests that Espanyol is likely to create more scoring opportunities, with an xG of 1.41 compared to Málaga's 1.06. This indicates that Espanyol may have a better chance of capitalizing on their chances during the match.\n\nBased on the simulations, there is a 38.5% probability of an away win for Espanyol, while the chances of a draw stand at 27%. The likelihood of both teams scoring is approximately 48.9%, suggesting that while Espanyol may dominate possession and create more chances, Málaga could still find opportunities to score, particularly at home. Overall, the match is expected to be competitive, but Espanyol's recent form and historical advantage may lead them to secure a vital three points."
+  }
 }

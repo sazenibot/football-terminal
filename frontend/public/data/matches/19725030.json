@@ -34,20 +34,6 @@
     },
     {
       "side": "away",
-      "player_id": 23697916,
-      "player_name": "David Zima",
-      "type_id": 537,
-      "type_name": "Ankle Injury",
-      "type_name_cs": "Zranění kotníku",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-10",
-      "end_date": null,
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 80194,
       "player_name": "Ondřej Kolář",
       "type_id": 1612,
@@ -76,6 +62,20 @@
     },
     {
       "side": "away",
+      "player_id": 23697916,
+      "player_name": "David Zima",
+      "type_id": 537,
+      "type_name": "Ankle Injury",
+      "type_name_cs": "Zranění kotníku",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-10",
+      "end_date": null,
+      "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "away",
       "player_id": 37706709,
       "player_name": "Brian Ouanda",
       "type_id": 587,
@@ -86,6 +86,20 @@
       "start_date": "2026-09-01",
       "end_date": null,
       "games_missed": 5,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 38205156,
+      "player_name": "Mubarak Emmanuel Suleiman",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-24",
+      "end_date": null,
+      "games_missed": 6,
       "likely_available": false
     },
     {
@@ -104,16 +118,16 @@
     },
     {
       "side": "away",
-      "player_id": 38205156,
-      "player_name": "Mubarak Emmanuel Suleiman",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
+      "player_id": 38200369,
+      "player_name": "Hráč #38200369",
+      "type_id": 598,
+      "type_name": "Muscular problems",
+      "type_name_cs": "Muscular problems",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-24",
+      "start_date": "2026-03-07",
       "end_date": null,
-      "games_missed": 6,
+      "games_missed": 25,
       "likely_available": false
     }
   ],
@@ -7828,7 +7842,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-06T15:48:22.045170Z",
+  "refreshed_at": "2026-10-07T09:59:46.506314Z",
   "odds": {
     "home": 9.45,
     "draw": 5.91,
@@ -7858,6 +7872,7 @@
     "text": "Zápas mezi Zlínem a Slavií Praha, který se odehraje na stadionu Letná, slibuje zajímavé střetnutí. Domácí Zlín se nachází v těžké formě, kdy posledních šest zápasů skončilo čtyřmi prohrami a dvěma remízami. Naopak Slavia Praha se může pyšnit pozitivními výsledky, když vyhrála čtyři z posledních šesti utkání a dvakrát remizovala. Historie vzájemných zápasů naznačuje, že Slavia má výraznou převahu, což se projevilo i v posledním utkání, kdy Zlín prohrál 1:3.\n\nAnalýza očekávaných gólů (xG) ukazuje, že Slavia má výrazně vyšší očekávané góly (1.95) než Zlín (0.91). To naznačuje, že Slavia má větší šanci na úspěch v ofenzivě, zatímco Zlín bude muset spoléhat na solidní obranu a efektivní využití šancí. Podle simulací je pravděpodobnost vítězství Slavie 47.4 %, zatímco remíza se odhaduje na 24.5 % a vítězství Zlína na 28.1 %.\n\nZ pohledu statistik se očekává, že zápas bude mít více než 2,5 gólu, což je podpořeno pravděpodobností 54.9 %. Také je zde šance na to, že oba týmy skórují, což má pravděpodobnost 51.7 %. Celkově se dá očekávat, že Slavia Praha bude dominovat v ofenzivě, zatímco Zlín se bude snažit udržet krok a překvapit domácí fanoušky.",
     "model": "gpt-4o-mini",
     "input_hash": "adac4c9eb082deb4",
-    "generated_at": "2026-10-06T13:48:30Z"
+    "generated_at": "2026-10-07T09:59:55Z",
+    "text_en": "The upcoming match between Zlín and Slavia Praha in the Chance Liga is set to take place at Stadion Letná on October 9, 2026. Analyzing the recent form of both teams, Zlín has struggled significantly, recording a series of poor results with five losses and a draw in their last six matches. In contrast, Slavia Praha has been in excellent form, achieving four consecutive wins followed by two draws. This stark contrast in performance suggests that Slavia Praha will enter the match as strong favorites.\n\nHistorically, Slavia Praha has dominated their encounters with Zlín, winning four of their last five meetings, with the most recent match ending in a 3-1 victory for Slavia. The head-to-head record indicates that Slavia has consistently found ways to score against Zlín, which is reflected in the expected goals (xG) simulation showing Slavia with an xG of 1.95 compared to Zlín's 0.91. This statistical evidence reinforces the expectation that Slavia will likely control the game and create more scoring opportunities.\n\nGiven the current form and historical context, it is reasonable to anticipate that Slavia Praha will assert their dominance in this match. The simulation suggests a high probability of Slavia winning, with a 47.4% chance of a victory, while Zlín's chances appear slim. The likelihood of both teams scoring is also present at 51.7%, indicating that while Zlín may struggle to secure a win, they could potentially find the net against a strong Slavia defense. Overall, a comprehensive performance from Slavia is expected, with Zlín fighting to avoid a heavy defeat."
   }
 }

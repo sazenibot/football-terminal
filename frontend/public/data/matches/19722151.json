@@ -2,8 +2,8 @@
   "fixture_id": 19722151,
   "league_id": 8,
   "league_name": "Premier League",
-  "built_at": "2026-10-03T10:01:35.248337Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T10:02:25.825016Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T14:00:00Z",
   "venue": "Stamford Bridge",
   "home": {
@@ -16,21 +16,236 @@
     "name": "AFC Bournemouth",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/20/52.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 39573,
+    "name": "Samuel Barrott",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 1,
+          "average": 0.33
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.33,
+          "percentage": 100
+        }
+      },
+      "Fouls": {
+        "count": 58,
+        "average": 19.33
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 10,
+          "average": 3.33,
+          "on_bench": 0,
+          "for_coach": 1,
+          "on_pitch": 9
+        },
+        "home": {
+          "count": 5,
+          "average": 1.67,
+          "percentage": 50
+        },
+        "away": {
+          "count": 5,
+          "average": 1.67,
+          "percentage": 50
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 3
+      },
+      "VAR Moments": {
+        "count": 3,
+        "average": 1
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 23.4,
+      "yellow_per_match": 3.64,
+      "red_per_match": 0.04,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 4,
+      "matches": 65,
+      "yellow_cards": 262,
+      "red_cards": 2,
+      "avg_yellow_per_match": 4.03
+    },
+    "h2h_matches_officiated": [
+      {
+        "fixture_id": 19427639,
+        "date": "2025-12-30T19:30:00Z",
+        "home": "Chelsea",
+        "away": "AFC Bournemouth",
+        "home_score": 2,
+        "away_score": 2,
+        "result_for_home_team": "R"
+      }
+    ],
+    "home_team_matches_officiated": {
+      "matches": 3,
+      "avg_fouls_by_team": 8.3,
+      "avg_fouls_total": 18.7,
+      "avg_yellow_by_team": 1.33,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19427188,
+          "date": "2026-03-21T17:30:00Z",
+          "home_name": "Everton",
+          "away_name": "Chelsea",
+          "home_score": 3,
+          "away_score": 0,
+          "result": "P",
+          "total_fouls": 13
+        },
+        {
+          "fixture_id": 19427639,
+          "date": "2025-12-30T19:30:00Z",
+          "home_name": "Chelsea",
+          "away_name": "AFC Bournemouth",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 17
+        },
+        {
+          "fixture_id": 19134902,
+          "date": "2024-12-26T15:00:00Z",
+          "home_name": "Chelsea",
+          "away_name": "Fulham",
+          "home_score": 1,
+          "away_score": 2,
+          "result": "P",
+          "total_fouls": 26
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 4,
+      "avg_fouls_by_team": 12.5,
+      "avg_fouls_total": 21.2,
+      "avg_yellow_by_team": 2.25,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19427154,
+          "date": "2026-02-21T17:30:00Z",
+          "home_name": "West Ham United",
+          "away_name": "AFC Bournemouth",
+          "home_score": 0,
+          "away_score": 0,
+          "result": "R",
+          "total_fouls": 21
+        },
+        {
+          "fixture_id": 19427639,
+          "date": "2025-12-30T19:30:00Z",
+          "home_name": "Chelsea",
+          "away_name": "AFC Bournemouth",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 17
+        },
+        {
+          "fixture_id": 19427538,
+          "date": "2025-10-26T14:00:00Z",
+          "home_name": "AFC Bournemouth",
+          "away_name": "Nottingham Forest",
+          "home_score": 2,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 24
+        },
+        {
+          "fixture_id": 19134991,
+          "date": "2025-04-19T14:00:00Z",
+          "home_name": "Crystal Palace",
+          "away_name": "AFC Bournemouth",
+          "home_score": 0,
+          "away_score": 0,
+          "result": "R",
+          "total_fouls": 23
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
       "player_id": 37653289,
       "player_name": "Marco Palestra",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-22",
-      "end_date": "2026-10-10",
+      "start_date": "2026-08-20",
+      "end_date": "2026-10-09",
       "games_missed": 7,
-      "likely_available": false
+      "likely_available": true
+    },
+    {
+      "side": "home",
+      "player_id": 37700784,
+      "player_name": "Aaron Anselmino",
+      "type_id": 533,
+      "type_name": "Thigh Problems",
+      "type_name_cs": "Problémy se stehnem",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-07",
+      "end_date": "2026-09-14",
+      "games_missed": null,
+      "likely_available": true
     },
     {
       "side": "home",
@@ -42,9 +257,9 @@
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-31",
-      "end_date": "2026-10-10",
+      "end_date": "2026-10-09",
       "games_missed": 4,
-      "likely_available": false
+      "likely_available": true
     },
     {
       "side": "home",
@@ -56,21 +271,7 @@
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-13",
-      "end_date": "2026-10-17",
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37400423,
-      "player_name": "Emanuel Esseh Emegha",
-      "type_id": 1939,
-      "type_name": "Torn Thigh Muscle",
-      "type_name_cs": "Torn Thigh Muscle",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-18",
-      "end_date": "2026-10-10",
+      "end_date": "2026-10-16",
       "games_missed": 1,
       "likely_available": false
     },
@@ -84,8 +285,36 @@
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-14",
-      "end_date": "2026-10-10",
+      "end_date": "2026-10-09",
       "games_missed": 1,
+      "likely_available": true
+    },
+    {
+      "side": "away",
+      "player_id": 26803,
+      "player_name": "Justin Kluivert",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-18",
+      "end_date": "2026-10-23",
+      "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 14004542,
+      "player_name": "Amine Adli",
+      "type_id": 532,
+      "type_name": "Calf Injury",
+      "type_name_cs": "Zranění lýtka",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-08",
+      "end_date": "2026-10-16",
+      "games_missed": 9,
       "likely_available": false
     },
     {
@@ -104,6 +333,34 @@
     },
     {
       "side": "away",
+      "player_id": 23260605,
+      "player_name": "Julian Araujo",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-07-24",
+      "end_date": "2026-11-20",
+      "games_missed": 12,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37659710,
+      "player_name": "Veljko Milosavljević",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-05-27",
+      "end_date": "2026-10-16",
+      "games_missed": 12,
+      "likely_available": false
+    },
+    {
+      "side": "away",
       "player_id": 37632336,
       "player_name": "Eli Junior Kroupi",
       "type_id": 549,
@@ -112,7 +369,7 @@
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-07-29",
-      "end_date": null,
+      "end_date": "2026-11-20",
       "games_missed": 11,
       "likely_available": false
     }
@@ -1210,14 +1467,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.48
         },
         {
           "key": "shots_over",
@@ -1238,14 +1497,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.47
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.51
         },
         {
           "key": "shots_under",
@@ -1294,91 +1555,104 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.5
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.78
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.49
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.39
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.88
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.17
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.53
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 6.4
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.39
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.44
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.12
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.65
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.02
         }
       ],
       "away": [
@@ -1387,21 +1661,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.47
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.15
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.45
         },
         {
           "key": "shots_over",
@@ -1464,98 +1741,112 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.48
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.39
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.78
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 4.44
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.65
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.57
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.51
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.11
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.39
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.53
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.12
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 6.4
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.02
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.17
         }
       ]
     },
@@ -1622,21 +1913,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.47
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.48
         },
         {
           "key": "scored2plus",
@@ -1650,7 +1944,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.51
         },
         {
           "key": "more_corners",
@@ -1664,7 +1959,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.39
         },
         {
           "key": "team_2plus_yellow",
@@ -1699,21 +1995,24 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.65
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.39
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.78
         },
         {
           "key": "ht_leading",
@@ -1727,7 +2026,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.02
         },
         {
           "key": "ht_behind",
@@ -1806,21 +2106,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.47
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.48
         },
         {
           "key": "scored2plus",
@@ -1834,7 +2137,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.51
         },
         {
           "key": "more_corners",
@@ -1848,7 +2152,8 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.78
         },
         {
           "key": "ht_draw",
@@ -1869,21 +2174,24 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.65
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.39
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.39
         },
         {
           "key": "ht_leading",
@@ -1904,7 +2212,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.02
         },
         {
           "key": "ht_behind",
@@ -4559,22 +4868,6 @@
         }
       },
       {
-        "id": 37549912,
-        "name": "B. Winterburn",
-        "position_id": 26,
-        "is_gk": false,
-        "jersey_number": null,
-        "season_stats": {},
-        "last5_stats": {
-          "appearances": 0,
-          "stats": {}
-        },
-        "h2h_stats": {
-          "appearances": 1,
-          "stats": {}
-        }
-      },
-      {
         "id": 37627749,
         "name": "Julio César Soler Barreto",
         "position_id": 25,
@@ -6658,5 +6951,45 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:20:29.319824Z"
+  "odds": {
+    "home": 1.72,
+    "draw": 4.23,
+    "away": 4.46,
+    "under15": 5.58,
+    "over15": 1.15,
+    "under25": 2.65,
+    "over25": 1.48,
+    "under35": 1.66,
+    "over35": 2.24,
+    "btts": 1.47,
+    "corners_under95": 2.39,
+    "corners_over95": 1.51,
+    "yellow_under5": 1.39,
+    "yellow_5plus": 2.78,
+    "red_card": 5.02,
+    "source": "chance",
+    "home_scoreless": 6.4,
+    "home_scored2plus": 1.5,
+    "home_clean_sheet": 3.12,
+    "home_ht_leading": 2.17,
+    "home_ht_draw": 2.53,
+    "home_ht_behind": 4.44,
+    "home_more_corners": 1.49,
+    "home_team_2plus_yellow": 1.88,
+    "away_clean_sheet": 6.4,
+    "away_scoreless": 3.12,
+    "away_scored2plus": 2.57,
+    "away_ht_behind": 2.17,
+    "away_ht_draw": 2.53,
+    "away_ht_leading": 4.44,
+    "away_more_corners": 3.11,
+    "away_team_2plus_yellow": 1.45
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Chelsea a AFC Bournemouth se odehraje na Stamford Bridge, kde domácí tým bude usilovat o zisk tří bodů. Chelsea má v posledních pěti zápasech smíšenou formu, přičemž zaznamenala dvě výhry, remízu a dvě prohry. Na druhé straně Bournemouth se nachází v podobné situaci, s jednou výhrou a čtyřmi remízami. Historie vzájemných zápasů ukazuje na vyrovnanost, přičemž poslední tři utkání skončila remízou, což naznačuje, že obě mužstva mají schopnost si vzájemně odolávat.\n\nPodle simulací očekává Chelsea mírnou převahu s očekávanými góly (xG) 1.87 oproti 1.54 pro Bournemouth. To naznačuje, že Chelsea by mohla mít více příležitostí ke skórování, avšak Bournemouth se může spolehnout na solidní obranu, která jim v minulých zápasech pomohla udržet remízové výsledky. Pravděpodobnost, že zápas skončí remízou, je 24.9 %, což ukazuje na možnost vyrovnaného boje.\n\nVzhledem k aktuálním formám a vzájemným zápasům se očekává, že zápas bude vyrovnaný s možností obou týmů skórovat, což potvrzuje i vysoká pravděpodobnost (65.8 %) na obě strany skórující. Chelsea by mohla mít mírnou výhodu díky domácímu prostředí, ale Bournemouth ukázal, že dokáže být nebezpečný i na hřišti soupeře. Celkově lze očekávat napínavý zápas s možnými šancemi na obou stranách.",
+    "model": "gpt-4o-mini",
+    "input_hash": "45abb363e6ef31f0",
+    "generated_at": "2026-10-07T10:02:36Z",
+    "text_en": "The upcoming Premier League match between Chelsea and AFC Bournemouth at Stamford Bridge is set to be an intriguing contest, given the recent form of both teams. Chelsea has struggled in their last five matches, recording two wins, one draw, and two losses. In contrast, Bournemouth has also faced difficulties, with one win, three draws, and one loss in their recent outings. The head-to-head record between these teams shows a competitive rivalry, with their last five encounters yielding two wins for Chelsea, two draws, and one win for Bournemouth.\n\nStatistical simulations suggest that Chelsea has a slight edge in expected goals (xG), with 1.87 compared to Bournemouth's 1.54. This indicates that Chelsea may create more goal-scoring opportunities during the match. The simulation also shows a 44.1% probability of a Chelsea win, a 24.9% chance of a draw, and a 31.0% likelihood of a Bournemouth victory. The likelihood of both teams scoring (BTTS) stands at 65.8%, suggesting that a high-scoring match could be on the cards.\n\nWith Samuel Barrott officiating, the match could see a fair number of yellow cards, as both teams have shown tendencies to accumulate cautions in their recent games. Chelsea's home advantage at Stamford Bridge may play a crucial role, and they will be looking to capitalize on this to secure a vital three points. However, Bournemouth will aim to exploit any defensive lapses from Chelsea, making this match a potentially thrilling encounter."
+  }
 }

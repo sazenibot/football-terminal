@@ -2,8 +2,8 @@
   "fixture_id": 19722147,
   "league_id": 8,
   "league_name": "Premier League",
-  "built_at": "2026-10-03T09:59:51.660953Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T10:02:15.680210Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T14:00:00Z",
   "venue": "Portman Road Stadium",
   "home": {
@@ -16,12 +16,84 @@
     "name": "Fulham",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 34113,
+    "name": "Lewis Smith",
+    "season_stats": null,
+    "league_context": {
+      "fouls_per_match": 23.4,
+      "yellow_per_match": 3.64,
+      "red_per_match": 0.04,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 3,
+      "matches": 10,
+      "yellow_cards": 43,
+      "red_cards": 1,
+      "avg_yellow_per_match": 4.3
+    },
+    "h2h_matches_officiated": [
+      {
+        "fixture_id": 19134477,
+        "date": "2024-08-31T14:00:00Z",
+        "home": "Ipswich Town",
+        "away": "Fulham",
+        "home_score": 1,
+        "away_score": 1,
+        "result_for_home_team": "R"
+      }
+    ],
+    "home_team_matches_officiated": {
+      "matches": 2,
+      "avg_fouls_by_team": 12.5,
+      "avg_fouls_total": 22.0,
+      "avg_yellow_by_team": 3.5,
+      "avg_red_by_team": 0.5,
+      "recent_matches": [
+        {
+          "fixture_id": 19135015,
+          "date": "2025-05-03T14:00:00Z",
+          "home_name": "Everton",
+          "away_name": "Ipswich Town",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 27
+        },
+        {
+          "fixture_id": 19134525,
+          "date": "2024-10-26T14:00:00Z",
+          "home_name": "Brentford",
+          "away_name": "Ipswich Town",
+          "home_score": 4,
+          "away_score": 3,
+          "result": "P",
+          "total_fouls": 17
+        }
+      ]
+    },
+    "away_team_matches_officiated": null
+  },
   "sidelined": [
     {
       "side": "home",
       "player_id": 29495,
       "player_name": "Azor Matusiwa",
+      "type_id": 540,
+      "type_name": "Knee Surgery",
+      "type_name_cs": "Operace kolena",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-05-11",
+      "end_date": null,
+      "games_missed": 13,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 13042,
+      "player_name": "Jack Taylor",
       "type_id": 540,
       "type_name": "Knee Surgery",
       "type_name_cs": "Operace kolena",
@@ -44,20 +116,6 @@
       "start_date": "2026-01-26",
       "end_date": null,
       "games_missed": 32,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 13042,
-      "player_name": "Jack Taylor",
-      "type_id": 540,
-      "type_name": "Knee Surgery",
-      "type_name_cs": "Operace kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-05-11",
-      "end_date": null,
-      "games_missed": 13,
       "likely_available": false
     },
     {
@@ -934,7 +992,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.24
         },
         {
           "key": "corners_under95",
@@ -948,7 +1007,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.67
         },
         {
           "key": "shots_over",
@@ -1011,63 +1071,72 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.59
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.75
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.32
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.45
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.48
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.11
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 4.61
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.24
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.99
         },
         {
           "key": "corners_over95",
@@ -1088,21 +1157,24 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.09
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.3
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.85
         }
       ],
       "away": [
@@ -1132,7 +1204,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.67
         },
         {
           "key": "shots_over",
@@ -1181,21 +1254,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.59
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.24
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.11
         },
         {
           "key": "corners_over95",
@@ -1209,35 +1285,40 @@
           "label": "Tým dostal 2+ žluté karty",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.39
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.24
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.85
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.75
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.11
         },
         {
           "key": "corners_under95",
@@ -1251,35 +1332,40 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.48
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.09
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.99
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.3
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.61
         }
       ]
     },
@@ -1346,21 +1432,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.59
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.24
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.11
         },
         {
           "key": "corners_over95",
@@ -1374,7 +1463,8 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.09
         },
         {
           "key": "team_2plus_yellow",
@@ -1409,7 +1499,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.75
         },
         {
           "key": "scored2plus",
@@ -1437,7 +1528,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.67
         },
         {
           "key": "scoreless",
@@ -1451,7 +1543,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.61
         },
         {
           "key": "ht_behind",
@@ -1523,21 +1616,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.59
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.24
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 2.11
         },
         {
           "key": "corners_over95",
@@ -1558,14 +1654,16 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.67
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.09
         },
         {
           "key": "team_2plus_yellow",
@@ -1600,7 +1698,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 1.75
         },
         {
           "key": "scored2plus",
@@ -1628,7 +1727,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.61
         },
         {
           "key": "ht_behind",
@@ -5825,5 +5925,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-05T11:20:24.821848Z"
+  "odds": {
+    "home": 2.8,
+    "draw": 3.58,
+    "away": 2.44,
+    "under15": 4.08,
+    "over15": 1.24,
+    "under25": 2.11,
+    "over25": 1.75,
+    "under35": 1.43,
+    "over35": 2.85,
+    "btts": 1.59,
+    "yellow_under5": 1.67,
+    "yellow_5plus": 2.09,
+    "red_card": 4.61,
+    "source": "chance",
+    "home_scoreless": 3.48,
+    "home_scored2plus": 2.32,
+    "home_clean_sheet": 3.85,
+    "home_ht_leading": 3.3,
+    "home_ht_draw": 2.24,
+    "home_ht_behind": 2.99,
+    "home_team_2plus_yellow": 1.45,
+    "away_clean_sheet": 3.48,
+    "away_scoreless": 3.85,
+    "away_scored2plus": 2.11,
+    "away_ht_behind": 3.3,
+    "away_ht_draw": 2.24,
+    "away_ht_leading": 2.99,
+    "away_team_2plus_yellow": 1.39
+  },
+  "ai_analysis": {
+    "text": "Zápas mezi Ipswich Town a Fulham, který se odehraje na Portman Road Stadium, slibuje být vyrovnaným střetnutím. Domácí Ipswich má v posledních pěti zápasech smíšenou formu, s dvěma výhrami a třemi remízami. Na druhé straně Fulham, který se nachází v podobné situaci, má také dvě výhry a tři remízy, což naznačuje, že oba týmy jsou schopny hrát vyrovnaně. Historie vzájemných zápasů ukazuje, že poslední čtyři souboje skončily remízou nebo těsným vítězstvím, což dále posiluje očekávání vyrovnaného průběhu.\n\nPodle simulací očekáváme, že Ipswich bude mít mírně vyšší očekávané góly (xG) s hodnotou 1.6 oproti 1.36 pro Fulham. To naznačuje, že domácí tým by mohl mít více příležitostí ke skórování, avšak vzhledem k formě obou týmů a vzájemným zápasům nelze vyloučit ani remízu. Odhady pravděpodobnosti ukazují, že remíza má šanci 25.8 %, což je celkem vysoké číslo, a výhra Ipswichu 42.4 %.\n\nCo se týče dalších aspektů zápasu, pravděpodobnost, že oba týmy skórují, je 59.2 %, což naznačuje, že by mohlo padnout více než jedno branky. Také je zajímavé sledovat, jak se týmy vyrovnají s tlakem na domácím hřišti Ipswiche, kde historicky dokázali být silní. Celkově se očekává vyrovnaný a napínavý zápas s možností několika branek.",
+    "model": "gpt-4o-mini",
+    "input_hash": "f23e555bdf518c7e",
+    "generated_at": "2026-10-07T10:02:25Z",
+    "text_en": "The upcoming match between Ipswich Town and Fulham at Portman Road Stadium in the Premier League promises to be an intriguing encounter. Ipswich Town has shown mixed form recently, with two wins and three losses in their last five matches. In contrast, Fulham has struggled as well, managing only two draws and three losses in their recent outings. The head-to-head record suggests a competitive rivalry, with the last four encounters resulting in draws or narrow victories, indicating that both teams are closely matched.\n\nStatistical simulations indicate that Ipswich Town has a slight edge in expected goals (xG), with a value of 1.6 compared to Fulham's 1.36. This suggests that Ipswich may create more quality chances during the match. The likelihood of both teams scoring is relatively high at 59.2%, and there is a 57.1% chance that the match will see over 2.5 goals. Given the recent form and the attacking potential of both sides, a high-scoring game could be on the cards.\n\nReferee Lewis Smith will oversee the match, which may influence the game's flow and discipline. With Ipswich playing at home, they will look to capitalize on their home advantage, while Fulham will aim to improve their away form. Overall, the match could be tightly contested, with both teams eager to secure crucial points in the Premier League standings."
+  }
 }
