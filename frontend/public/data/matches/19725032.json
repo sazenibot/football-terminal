@@ -2,8 +2,8 @@
   "fixture_id": 19725032,
   "league_id": 262,
   "league_name": "Chance Liga",
-  "built_at": "2026-10-04T10:33:08.890280Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T22:29:29.035471Z",
+  "build_mode": "full",
   "starting_at": "2026-10-11T16:00:00Z",
   "venue": "TC Strahov",
   "home": {
@@ -16,7 +16,258 @@
     "name": "Pardubice",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 841525,
+    "name": "Jan Beneš",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 1,
+          "average": 0.25
+        },
+        "home": {
+          "count": 1,
+          "average": 0.25,
+          "percentage": 100
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 108,
+        "average": 27
+      },
+      "Redcards": {
+        "all": {
+          "count": 3,
+          "average": 0.75,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 3
+        },
+        "home": {
+          "count": 1,
+          "average": 0.25,
+          "percentage": 33.33
+        },
+        "away": {
+          "count": 2,
+          "average": 0.5,
+          "percentage": 66.67
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 20,
+          "average": 5,
+          "on_bench": 1,
+          "for_coach": 1,
+          "on_pitch": 18
+        },
+        "home": {
+          "count": 8,
+          "average": 2,
+          "percentage": 40
+        },
+        "away": {
+          "count": 12,
+          "average": 3,
+          "percentage": 60
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 1,
+          "average": 0.25,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 1
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.25,
+          "percentage": 100
+        }
+      },
+      "Season Matches": {
+        "count": 4
+      },
+      "VAR Moments": {
+        "count": 1,
+        "average": 0.25
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 27.0,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.4,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 3,
+      "matches": 43,
+      "yellow_cards": 213,
+      "red_cards": 11,
+      "avg_yellow_per_match": 4.95
+    },
+    "h2h_matches_officiated": [],
+    "home_team_matches_officiated": {
+      "matches": 7,
+      "avg_fouls_by_team": 10.0,
+      "avg_fouls_total": 22.7,
+      "avg_yellow_by_team": 2.86,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19725102,
+          "date": "2026-07-25T18:00:00Z",
+          "home_name": "Zbrojovka Brno",
+          "away_name": "Sparta Praha",
+          "home_score": 3,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 17
+        },
+        {
+          "fixture_id": 19703893,
+          "date": "2026-05-12T18:00:00Z",
+          "home_name": "Sparta Praha",
+          "away_name": "Viktoria Plzeň",
+          "home_score": 0,
+          "away_score": 0,
+          "result": "R",
+          "total_fouls": 22
+        },
+        {
+          "fixture_id": 19439181,
+          "date": "2026-02-08T14:30:00Z",
+          "home_name": "Zlín",
+          "away_name": "Sparta Praha",
+          "home_score": 0,
+          "away_score": 3,
+          "result": "V",
+          "total_fouls": 22
+        },
+        {
+          "fixture_id": 19439069,
+          "date": "2025-09-14T16:00:00Z",
+          "home_name": "Hradec Králové",
+          "away_name": "Sparta Praha",
+          "home_score": 2,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 24
+        },
+        {
+          "fixture_id": 19439050,
+          "date": "2025-08-24T18:00:00Z",
+          "home_name": "Sparta Praha",
+          "away_name": "Dukla Praha",
+          "home_score": 3,
+          "away_score": 2,
+          "result": "V",
+          "total_fouls": 27
+        },
+        {
+          "fixture_id": 19416504,
+          "date": "2025-05-10T17:00:00Z",
+          "home_name": "Slavia Praha",
+          "away_name": "Sparta Praha",
+          "home_score": 2,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 27
+        },
+        {
+          "fixture_id": 19138342,
+          "date": "2024-11-23T15:00:00Z",
+          "home_name": "Sparta Praha",
+          "away_name": "Teplice",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 20
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 6,
+      "avg_fouls_by_team": 11.7,
+      "avg_fouls_total": 25.3,
+      "avg_yellow_by_team": 1.83,
+      "avg_red_by_team": 0.5,
+      "recent_matches": [
+        {
+          "fixture_id": 19439199,
+          "date": "2026-02-28T14:00:00Z",
+          "home_name": "Pardubice",
+          "away_name": "Teplice",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 28
+        },
+        {
+          "fixture_id": 19439117,
+          "date": "2025-11-01T14:00:00Z",
+          "home_name": "Pardubice",
+          "away_name": "Dukla Praha",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 21
+        },
+        {
+          "fixture_id": 19439046,
+          "date": "2025-10-01T16:00:00Z",
+          "home_name": "Pardubice",
+          "away_name": "Baník Ostrava",
+          "home_score": 0,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 26
+        },
+        {
+          "fixture_id": 19439078,
+          "date": "2025-09-20T13:00:00Z",
+          "home_name": "Pardubice",
+          "away_name": "Slovácko",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 25
+        },
+        {
+          "fixture_id": 19138443,
+          "date": "2025-04-13T11:00:00Z",
+          "home_name": "Jablonec",
+          "away_name": "Pardubice",
+          "home_score": 1,
+          "away_score": 0,
+          "result": "P",
+          "total_fouls": 25
+        },
+        {
+          "fixture_id": 19138317,
+          "date": "2024-10-26T14:00:00Z",
+          "home_name": "Pardubice",
+          "away_name": "Baník Ostrava",
+          "home_score": 2,
+          "away_score": 3,
+          "result": "P",
+          "total_fouls": 27
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
@@ -1482,8 +1733,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0,
-          "odds": 1.15
+          "pct": 100.0
         },
         {
           "key": "shots_over",
@@ -1518,8 +1768,7 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.5
+          "pct": 80.0
         },
         {
           "key": "corners_over95",
@@ -1568,16 +1817,14 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.97
+          "pct": 60.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.28
+          "pct": 60.0
         },
         {
           "key": "more_corners",
@@ -1598,40 +1845,35 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.63
+          "pct": 60.0
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 8.04
+          "pct": 40.0
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 1.86
+          "pct": 20.0
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 9.01
+          "pct": 20.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 2.57
+          "pct": 20.0
         },
         {
           "key": "corners_under95",
@@ -1659,8 +1901,7 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0,
-          "odds": 2.74
+          "pct": 0.0
         }
       ],
       "away": [
@@ -1683,24 +1924,21 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.86
+          "pct": 80.0
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.15
+          "pct": 80.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.5
+          "pct": 80.0
         },
         {
           "key": "corners_under95",
@@ -1770,8 +2008,7 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 5.03
+          "pct": 40.0
         },
         {
           "key": "more_corners",
@@ -1799,40 +2036,35 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 8.04
+          "pct": 40.0
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 2.74
+          "pct": 40.0
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 9.01
+          "pct": 20.0
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 1.97
+          "pct": 20.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 2.57
+          "pct": 20.0
         },
         {
           "key": "corners_over95",
@@ -1846,8 +2078,7 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 1.63
+          "pct": 20.0
         }
       ]
     },
@@ -1858,24 +2089,21 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 3,
-          "pct": 100.0,
-          "odds": 1.86
+          "pct": 100.0
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0,
-          "odds": 1.15
+          "pct": 100.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0,
-          "odds": 1.5
+          "pct": 100.0
         },
         {
           "key": "scored2plus",
@@ -2022,8 +2250,7 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0,
-          "odds": 2.57
+          "pct": 0.0
         },
         {
           "key": "ht_draw",
@@ -2039,24 +2266,21 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0,
-          "odds": 1.86
+          "pct": 100.0
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0,
-          "odds": 1.15
+          "pct": 100.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0,
-          "odds": 1.5
+          "pct": 100.0
         },
         {
           "key": "scored2plus",
@@ -2210,8 +2434,7 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0,
-          "odds": 2.57
+          "pct": 0.0
         }
       ]
     }
@@ -7639,37 +7862,11 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:00:42.448643Z",
-  "odds": {
-    "home": 1.26,
-    "draw": 5.78,
-    "away": 9.81,
-    "under15": 5.39,
-    "over15": 1.15,
-    "under25": 2.57,
-    "over25": 1.5,
-    "under35": 1.6,
-    "over35": 2.33,
-    "btts": 1.86,
-    "source": "chance",
-    "home_scoreless": 9.01,
-    "home_scored2plus": 1.28,
-    "home_clean_sheet": 1.97,
-    "home_ht_leading": 1.63,
-    "home_ht_draw": 2.74,
-    "home_ht_behind": 8.04,
-    "away_clean_sheet": 9.01,
-    "away_scoreless": 1.97,
-    "away_scored2plus": 5.03,
-    "away_ht_behind": 1.63,
-    "away_ht_draw": 2.74,
-    "away_ht_leading": 8.04
-  },
   "ai_analysis": {
-    "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy slibuje zajímavé střetnutí, zejména s ohledem na aktuální formu obou týmů. Sparta se v posledních šesti zápasech prezentovala solidními výkony, když vyhrála čtyřikrát a dvakrát prohrála. Naopak Pardubice mají za sebou smíšené výsledky, s dvěma výhrami, jednou remízou a třemi prohrami. Historie vzájemných zápasů naznačuje, že Sparta má mírnou převahu, přičemž poslední vzájemný duel skončil výhrou Pardubic 4:2.\n\nAnalýza očekávaných gólů (xG) ukazuje, že Sparta by měla mít navrch v ofenzivě, s hodnotou 1.92 oproti Pardubicím, které mají xG pouze 1.05. To naznačuje, že domácí tým by měl být schopen vytvořit více vyložených šancí. Pravděpodobnost vítězství Sparty se odhaduje na 49.9 %, zatímco šance na remízu a výhru Pardubic jsou 25.1 % a 25.0 %.\n\nZ pohledu statistik je také zajímavé, že pravděpodobnost, že oba týmy skórují, je 55.9 %, což naznačuje, že by se mohlo jednat o vyrovnaný zápas s několika góly. Celkově se očekává, že Sparta Praha, jakožto favorit, bude dominovat v držení míče a vytváření šancí, zatímco Pardubice se budou snažit o efektivní brejky a využití standardních situací.",
+    "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy se odehraje na stadionu TC Strahov 11. října 2026. Domácí Sparta, která se nachází v dobré formě s posledními šesti zápasy, z nichž čtyři vyhrála, bude chtít potvrdit svou dominanci na domácím hřišti. Na druhé straně Pardubice, které mají smíšené výsledky, budou usilovat o překvapení a zlepšení své výkonnosti, zejména po dvou porážkách v posledních zápasech.\n\nHistorie vzájemných zápasů naznačuje, že Sparta má mírnou převahu, když vyhrála tři ze čtyř posledních utkání. Nicméně Pardubice dokázaly v jednom z těchto zápasů zvítězit, což ukazuje, že mohou být nebezpečným protivníkem. Vzhledem k recentním výkonům obou týmů a jejich vzájemným zápasům lze očekávat vyrovnaný duel, přičemž Sparta bude favoritem.\n\nPodle simulací má Sparta vyšší očekávané góly (xG 1.92) v porovnání s Pardubicemi (xG 1.05), což naznačuje, že by měla mít více příležitostí ke skórování. Pravděpodobnost remízy se odhaduje na 25.1 %, což naznačuje, že domácí tým by měl mít navrch. Vysoká pravděpodobnost (55.9 %) obou týmů, které skórují, a také možnost, že padne více než 2.5 gólu (57.3 %), naznačuje, že zápas by mohl být atraktivní a plný šancí.",
     "model": "gpt-4o-mini",
-    "input_hash": "30e5faddb1053817",
-    "generated_at": "2026-10-07T10:00:52Z",
-    "text_en": "The upcoming match between Sparta Praha and Pardubice in the Chance Liga is set to take place at TC Strahov on October 11, 2026. Sparta Praha enters the match with a strong recent form, having won four of their last six matches (V, V, P, P, V, V), while Pardubice has shown a mixed performance with three wins, two losses, and a draw in their last six outings (V, V, R, P, P, R). Historically, Sparta has had the upper hand in their head-to-head encounters, winning four of the last five matches against Pardubice, which adds to their confidence ahead of this fixture.\n\nStatistical simulations suggest that Sparta Praha is favored to dominate the match, with an expected goals (xG) metric of 1.92 compared to Pardubice's 1.05. This indicates that Sparta is likely to create more scoring opportunities. The simulation also shows a high probability of both teams scoring (55.9%) and a reasonable chance of the match having over 2.5 goals (57.3%). With Sparta's home advantage and their recent scoring form, they are expected to control the game and apply pressure on the Pardubice defense.\n\nGiven the odds, which heavily favor a home win (1.26 for Sparta), it is anticipated that they will secure a victory, potentially by a margin of two goals or more. However, Pardubice's ability to score, as indicated by their recent form and past encounters, suggests that they could find the back of the net as well. Overall, the match is likely to be competitive, but Sparta Praha should emerge as the stronger side, leveraging their home advantage and superior recent performance."
+    "input_hash": "9720acc1c3f3039e",
+    "generated_at": "2026-10-07T22:29:38Z",
+    "text_en": "The upcoming match between Sparta Praha and Pardubice in the Chance Liga is set to take place at TC Strahov on October 11, 2026. Sparta Praha enters this match with a strong recent form, having won four of their last six matches, while Pardubice has had a mixed performance with two wins, two losses, and a draw in their last six outings. This disparity in form suggests that Sparta may have the upper hand going into the match.\n\nHistorically, the head-to-head encounters between these two teams have been competitive, with Sparta Praha winning three of the last five matches, while Pardubice secured two victories, including a notable win in November 2025. The simulation data indicates that Sparta is expected to generate more scoring opportunities, with an expected goals (xG) of 1.92 compared to Pardubice's 1.05. This suggests that Sparta is likely to dominate possession and create more chances during the match.\n\nGiven the current form and statistical analysis, it is reasonable to expect that Sparta Praha will control the game and create more goal-scoring opportunities. However, Pardubice has shown resilience in past encounters, which could lead to a competitive match. The likelihood of both teams scoring stands at 55.9%, indicating that while Sparta may take the lead, Pardubice could find a way to respond. Overall, the match promises to be an intriguing contest between two teams with contrasting recent performances."
   }
 }

@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37591023,
-      "player_name": "Mikel Rodriguez Ulacia",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-04",
-      "end_date": "2027-05-01",
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 522619,
       "player_name": "Facundo Tomás Garcés",
       "type_id": 1615,
@@ -44,6 +30,20 @@
       "start_date": "2026-03-05",
       "end_date": "2026-11-02",
       "games_missed": 24,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37591023,
+      "player_name": "Mikel Rodriguez Ulacia",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-04",
+      "end_date": "2027-05-01",
+      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -76,8 +76,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Lucas Boyé",
+        "jersey_number": 15,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Antonio Blanco",
+        "jersey_number": 8,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Abde Rebbach",
+        "jersey_number": 21,
+        "formation_field": "2:5"
+      },
+      {
+        "player_name": "Nicolás Valentini",
+        "jersey_number": 2,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Jonny Otto",
+        "jersey_number": 17,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Ville Koski",
+        "jersey_number": 16,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Mariano Díaz",
+        "jersey_number": 9,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Ander Guevara",
+        "jersey_number": 6,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Nahuel Tenaglia",
+        "jersey_number": 14,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Antonio Sivera",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Pablo Ibáñez",
+        "jersey_number": 19,
+        "formation_field": "3:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Kang-in Lee",
+        "jersey_number": 7,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Dávid Hancko",
+        "jersey_number": 17,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Marcos Llorente",
+        "jersey_number": 14,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Jan Oblak",
+        "jersey_number": 13,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Ademola Lookman",
+        "jersey_number": 11,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Johnny Cardoso",
+        "jersey_number": 5,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Cristian Romero",
+        "jersey_number": 21,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Marc Pubill",
+        "jersey_number": 18,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Álex Baena",
+        "jersey_number": 10,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Morten Hjulmand",
+        "jersey_number": 23,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Giuliano Simeone",
+        "jersey_number": 20,
+        "formation_field": "3:4"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1397,7 +1509,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.98
+          "odds": 1.97
         },
         {
           "key": "yellow_under5",
@@ -1420,7 +1532,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.72
+          "odds": 1.73
         },
         {
           "key": "clean_sheet",
@@ -1428,7 +1540,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.79
+          "odds": 4.88
         },
         {
           "key": "scoreless",
@@ -1436,7 +1548,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.59
+          "odds": 2.56
         },
         {
           "key": "over15",
@@ -1460,7 +1572,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.74
+          "odds": 1.75
         },
         {
           "key": "more_corners",
@@ -1490,7 +1602,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.49
+          "odds": 4.58
         },
         {
           "key": "scored2plus",
@@ -1498,7 +1610,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.21
+          "odds": 3.27
         },
         {
           "key": "red_card",
@@ -1513,7 +1625,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.42
+          "odds": 2.39
         }
       ],
       "away": [
@@ -1567,7 +1679,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.84
+          "odds": 1.82
         },
         {
           "key": "shots_over",
@@ -1610,7 +1722,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.98
+          "odds": 1.97
         },
         {
           "key": "more_corners",
@@ -1634,7 +1746,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.72
+          "odds": 1.73
         },
         {
           "key": "clean_sheet",
@@ -1642,7 +1754,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.59
+          "odds": 2.56
         },
         {
           "key": "corners_over95",
@@ -1650,7 +1762,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.74
+          "odds": 1.75
         },
         {
           "key": "team_2plus_yellow",
@@ -1665,7 +1777,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.42
+          "odds": 2.39
         },
         {
           "key": "scoreless",
@@ -1673,7 +1785,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.79
+          "odds": 4.88
         },
         {
           "key": "red_card",
@@ -1703,7 +1815,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.49
+          "odds": 4.58
         }
       ]
     },
@@ -1793,7 +1905,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.98
+          "odds": 1.97
         },
         {
           "key": "yellow_5plus",
@@ -1815,7 +1927,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.72
+          "odds": 1.73
         },
         {
           "key": "clean_sheet",
@@ -1838,7 +1950,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.74
+          "odds": 1.75
         },
         {
           "key": "yellow_under5",
@@ -1984,7 +2096,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.98
+          "odds": 1.97
         },
         {
           "key": "ht_draw",
@@ -1999,7 +2111,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.72
+          "odds": 1.73
         },
         {
           "key": "clean_sheet",
@@ -2021,7 +2133,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.74
+          "odds": 1.75
         },
         {
           "key": "ht_leading",
@@ -7079,41 +7191,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:07:49.873013Z",
+  "refreshed_at": "2026-10-07T22:44:24.472310Z",
   "odds": {
-    "home": 4.25,
-    "draw": 3.72,
-    "away": 1.86,
-    "under15": 3.7,
+    "home": 4.37,
+    "draw": 3.75,
+    "away": 1.83,
+    "under15": 3.71,
     "over15": 1.28,
     "under25": 1.97,
     "over25": 1.86,
     "under35": 1.36,
-    "over35": 3.16,
-    "btts": 1.72,
-    "corners_under95": 1.98,
-    "corners_over95": 1.74,
+    "over35": 3.15,
+    "btts": 1.73,
+    "corners_under95": 1.97,
+    "corners_over95": 1.75,
     "source": "chance",
-    "home_scoreless": 2.59,
-    "home_scored2plus": 3.21,
-    "home_clean_sheet": 4.79,
-    "home_ht_leading": 4.49,
+    "home_scoreless": 2.56,
+    "home_scored2plus": 3.27,
+    "home_clean_sheet": 4.88,
+    "home_ht_leading": 4.58,
     "home_ht_draw": 2.25,
-    "home_ht_behind": 2.42,
+    "home_ht_behind": 2.39,
     "home_more_corners": 2.17,
-    "away_clean_sheet": 2.59,
-    "away_scoreless": 4.79,
-    "away_scored2plus": 1.84,
-    "away_ht_behind": 4.49,
+    "away_clean_sheet": 2.56,
+    "away_scoreless": 4.88,
+    "away_scored2plus": 1.82,
+    "away_ht_behind": 4.58,
     "away_ht_draw": 2.25,
-    "away_ht_leading": 2.42,
+    "away_ht_leading": 2.39,
     "away_more_corners": 1.95
   },
   "ai_analysis": {
-    "text": "Zápas mezi Deportivo Alavés a Atlético de Madrid se odehraje na Estadio de Mendizorroza, kde se domácí tým v posledních zápasech potýká s nevyrovnanou formou. Z posledních šesti utkání mají na kontě dvě výhry, dvě remízy a dvě prohry. Naopak Atlético de Madrid se nachází v lepší formě, když vyhrálo čtyři z posledních šesti zápasů, což naznačuje jejich silnou pozici před tímto utkáním.\n\nHistorie vzájemných zápasů ukazuje, že Atlético má mírnou převahu, přičemž poslední duel skončil výhrou pro hosty 1:0. Vzhledem k tomu, že Deportivo Alavés se v posledních vzájemných zápasech dokázalo prosadit, ale i udržet bezbrankovou remízu, je pravděpodobné, že zápas bude vyrovnaný a napínavý. Očekává se, že oba týmy budou mít šance na vstřelení gólu, přičemž simulace ukazují na vyrovnané xG hodnoty (1.37 pro domácí a 1.4 pro hosty).\n\nVzhledem k formě obou týmů a statistikám je možné, že zápas skončí remízou nebo těsnou výhrou pro Atlético de Madrid. S pravděpodobností 56,2 % se také nabízí možnost, že oba týmy vstřelí gól, což by mohlo přispět k atraktivnímu a dynamickému zápasu. Celkově lze očekávat, že se na hřišti odehraje kvalitní fotbal s mnoha momenty, které mohou rozhodnout o výsledku.",
+    "text": "Zápas mezi Deportivo Alavés a Atlético de Madrid se odehraje na stadionu Estadio de Mendizorroza a očekává se, že bude vysoce konkurenční. Domácí Alavés se nachází v mírně slabší formě, s posledními výsledky, které zahrnují dvě prohry a remízu. Naopak Atlético de Madrid má za sebou silnou sérii, kdy vyhrálo tři ze čtyř posledních zápasů. Historie vzájemných zápasů naznačuje, že Atlético má mírnou převahu, i když Alavés dokázal v minulosti uhrát i pozitivní výsledky.\n\nPodle simulací očekávaných gólů (xG) jsou šance na skórování vyrovnané, s mírným náskokem pro Atlético (1.4 oproti 1.37 pro Alavés). To naznačuje, že zápas by mohl být vyrovnaný, ale s mírnou převahou hostujícího týmu. Pravděpodobnost remízy se pohybuje kolem 26,7 %, což ukazuje na možnost, že oba týmy se mohou snažit o opatrnější přístup, zejména v prvních minutách zápasu.\n\nZ hlediska ofenzivních statistik se očekává, že oba týmy budou mít šance na skórování, přičemž pravděpodobnost oboustranného skórování (BTTS) je 56,2 %. Vzhledem k formě a vzájemným zápasům by mohl být klíčovým faktorem výkon domácí obrany, která se bude muset postavit proti silné ofenzivě Atlética. Celkově se očekává vyrovnaný zápas, kde by mohlo hrát roli i štěstí a momentální forma jednotlivých hráčů.",
     "model": "gpt-4o-mini",
-    "input_hash": "21596bfdf3150f0a",
-    "generated_at": "2026-10-07T10:08:03Z",
-    "text_en": "The upcoming La Liga match between Deportivo Alavés and Atlético de Madrid at the Estadio de Mendizorroza promises to be an intriguing encounter. Deportivo Alavés has shown mixed form recently, with two wins, two draws, and two losses in their last six matches. In contrast, Atlético de Madrid has been in strong form, securing four wins, one loss, and one draw in the same period. This disparity in recent performance may give the visitors an edge heading into the match.\n\nHistorically, the results between these two teams have been closely contested, with several matches ending in draws or narrow victories. The most recent encounter saw Atlético Madrid win 1-0 at home, while their last visit to Mendizorroza ended in a 1-1 draw. The expected goals (xG) statistics indicate a slight advantage for Atlético, with an xG of 1.4 compared to Alavés's 1.37. This suggests that both teams have the potential to create scoring opportunities, but Atlético's recent form may translate into a more clinical performance.\n\nGiven the current statistics and form, it is likely that Atlético Madrid will dominate possession and create more chances. However, Deportivo Alavés will be keen to leverage their home advantage and could pose a threat on the counter-attack. The simulation suggests a probability of 39% for an Atlético win, 26.7% for a draw, and 34.3% for a Deportivo victory. With both teams capable of scoring, a match with goals from both sides seems plausible, as indicated by the 56.2% likelihood of both teams scoring (BTTS)."
+    "input_hash": "bf96e9ac6d98a156",
+    "generated_at": "2026-10-07T22:44:32Z",
+    "text_en": "The upcoming match between Deportivo Alavés and Atlético de Madrid at the Estadio de Mendizorroza in La Liga is set to be an intriguing encounter. Alavés has shown mixed form recently, with two wins, two losses, and two draws in their last six matches. In contrast, Atlético de Madrid has been more consistent, recording four wins, one loss, and one draw during the same period. This disparity in form suggests that Atlético may have the upper hand going into the match.\n\nHistorically, the head-to-head results indicate a competitive rivalry, with recent meetings yielding a mix of results. Atlético Madrid won the last encounter 1-0, and both teams have exchanged wins and draws over the past seasons. The expected goals (xG) simulation suggests a closely contested match, with Alavés projected to score 1.37 and Atlético 1.4. This indicates that both teams are likely to create chances, but Atlético's stronger recent form may allow them to capitalize on these opportunities more effectively.\n\nConsidering the statistics, there is a 56.2% likelihood that both teams will score, and a 52% chance that the match will see over 2.5 goals. Given Atlético's recent form and their ability to score, they may be favored to secure a victory, but Alavés will be keen to leverage their home advantage. The match could be pivotal for both teams, with Alavés looking to improve their standing and Atlético aiming to maintain momentum in the league."
   }
 }

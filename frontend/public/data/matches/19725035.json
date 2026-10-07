@@ -62,8 +62,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Filip Vedral",
+        "jersey_number": 26,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Stepan Langer",
+        "jersey_number": 7,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Tadeáš Vachoušek",
+        "jersey_number": 14,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Antonin Vanicek",
+        "jersey_number": 10,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Patrik Čavoš",
+        "jersey_number": 8,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Jakub Klíma",
+        "jersey_number": 39,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Kaka",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Amadou Dante",
+        "jersey_number": 44,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Daniel Vasulin",
+        "jersey_number": 15,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Jakub Janetzky",
+        "jersey_number": 68,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Adam Hrdina",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Vakhtang Chanturishvili",
+        "jersey_number": 7,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Dusan Pavlovic",
+        "jersey_number": 15,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Sebastian Nebyla",
+        "jersey_number": 25,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Lamin Jawo",
+        "jersey_number": 44,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Antonin Rusek",
+        "jersey_number": 9,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Hugo Ahl",
+        "jersey_number": 16,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Filip Novak",
+        "jersey_number": 57,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Martin Cedidla",
+        "jersey_number": 18,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Saidou Alioum Moubarak",
+        "jersey_number": 17,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Richard Sedlacek",
+        "jersey_number": 13,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Jan Hanus",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ]
   },
   "h2h": [
     {
@@ -6527,7 +6639,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:00:01.616151Z",
+  "refreshed_at": "2026-10-07T22:24:24.492946Z",
   "odds": {
     "home": 2.5,
     "draw": 3.3,

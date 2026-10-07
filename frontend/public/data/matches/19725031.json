@@ -2,8 +2,8 @@
   "fixture_id": 19725031,
   "league_id": 262,
   "league_name": "Chance Liga",
-  "built_at": "2026-10-03T09:47:11.301103Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T22:24:13.016869Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T13:00:00Z",
   "venue": "Malšovická aréna",
   "home": {
@@ -16,7 +16,27 @@
     "name": "SK Artis Brno",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 23736,
+    "name": "Tomáš Klíma",
+    "season_stats": null,
+    "league_context": {
+      "fouls_per_match": 27.0,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.4,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 6,
+      "matches": 62,
+      "yellow_cards": 253,
+      "red_cards": 10,
+      "avg_yellow_per_match": 4.08
+    },
+    "h2h_matches_officiated": [],
+    "home_team_matches_officiated": null,
+    "away_team_matches_officiated": null
+  },
   "sidelined": [
     {
       "side": "away",
@@ -34,168 +54,123 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Tomas Cvancara",
+        "jersey_number": 70,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Filip Mielke",
+        "jersey_number": 3,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Samuel Dancak",
+        "jersey_number": 11,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Adam Zadrazil",
+        "jersey_number": 12,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Daniel Trubac",
+        "jersey_number": 27,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Tom Slončík",
+        "jersey_number": 19,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Frantisek Cech",
+        "jersey_number": 25,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Filip Cihak",
+        "jersey_number": 5,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Jakub Uhrincat",
+        "jersey_number": 7,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Mick van Buren",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Vladimír Darida",
+        "jersey_number": 16,
+        "formation_field": "3:2"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Karel Pojezny",
+        "jersey_number": 34,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Alexis Alégué",
+        "jersey_number": 7,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Papalelé",
+        "jersey_number": 17,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Neil Glossoa",
+        "jersey_number": 33,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Vladimir Perišić",
+        "jersey_number": 87,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Dominik Plechaty",
+        "jersey_number": 4,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Michal Jerabek",
+        "jersey_number": 5,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Tadeas Stoppen",
+        "jersey_number": 32,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Sacha Komljenovic",
+        "jersey_number": 8,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Emmanuel Fully",
+        "jersey_number": 15,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Sebastian Bohac",
+        "jersey_number": 36,
+        "formation_field": "3:2"
+      }
+    ]
   },
-  "h2h": [
-    {
-      "fixture_id": 16839534,
-      "date": "2021-05-22T13:00:00Z",
-      "home": {
-        "id": 3552,
-        "name": "Hradec Králové",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
-      },
-      "away": {
-        "id": 22031,
-        "name": "SK Artis Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
-      },
-      "home_score": 1,
-      "away_score": 1,
-      "result_for_home_team": "R",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 20,
-        "sot": 4,
-        "corners": 8,
-        "fouls": 0,
-        "possession": 64,
-        "yellow": 3,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 9,
-        "sot": 3,
-        "corners": 3,
-        "fouls": 0,
-        "possession": 36,
-        "yellow": 5,
-        "red": 0
-      },
-      "coach_home": "Zdenko Frťala",
-      "coach_away": "Milan Valachovič",
-      "referee_id": 38367
-    },
-    {
-      "fixture_id": 16839454,
-      "date": "2021-03-06T13:30:00Z",
-      "home": {
-        "id": 22031,
-        "name": "SK Artis Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
-      },
-      "away": {
-        "id": 3552,
-        "name": "Hradec Králové",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
-      },
-      "home_score": 2,
-      "away_score": 1,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 4,
-        "corners": 6,
-        "fouls": 0,
-        "possession": 59,
-        "yellow": 3,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 5,
-        "corners": 2,
-        "fouls": 0,
-        "possession": 41,
-        "yellow": 3,
-        "red": 0
-      },
-      "coach_home": "Milan Valachovič",
-      "coach_away": "Zdenko Frťala",
-      "referee_id": 19230
-    },
-    {
-      "fixture_id": 11880366,
-      "date": "2020-03-08T13:30:00Z",
-      "home": {
-        "id": 3552,
-        "name": "Hradec Králové",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
-      },
-      "away": {
-        "id": 22031,
-        "name": "SK Artis Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
-      },
-      "home_score": 1,
-      "away_score": 1,
-      "result_for_home_team": "R",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 5,
-        "corners": 6,
-        "fouls": 0,
-        "possession": null,
-        "yellow": 1,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 1,
-        "corners": 4,
-        "fouls": 0,
-        "possession": null,
-        "yellow": 3,
-        "red": 0
-      },
-      "coach_home": "Zdenko Frťala",
-      "coach_away": "Milan Valachovič",
-      "referee_id": 19230
-    },
-    {
-      "fixture_id": 11880255,
-      "date": "2019-08-03T15:00:00Z",
-      "home": {
-        "id": 22031,
-        "name": "SK Artis Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
-      },
-      "away": {
-        "id": 3552,
-        "name": "Hradec Králové",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
-      },
-      "home_score": 3,
-      "away_score": 3,
-      "result_for_home_team": "R",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 6,
-        "corners": 6,
-        "fouls": 0,
-        "possession": 52,
-        "yellow": 4,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 9,
-        "corners": 2,
-        "fouls": 0,
-        "possession": 48,
-        "yellow": 3,
-        "red": 0
-      },
-      "coach_home": "Miroslav Machálek",
-      "coach_away": "Zdenko Frťala",
-      "referee_id": 17129
-    }
-  ],
-  "h2h_total_available": 4,
+  "h2h": [],
+  "h2h_total_available": 0,
   "form": {
     "home": {
       "matches": [
@@ -1108,52 +1083,32 @@
     },
     "last3_h2h": {
       "home": {
-        "goals_for": 1.0,
-        "goals_against": 1.33,
-        "shots": 6.7,
-        "sot": 4.3,
-        "corners": 6.7,
-        "possession": 61.5,
-        "cards": 2.33,
+        "goals_for": 0.0,
+        "goals_against": 0.0,
+        "shots": 0.0,
+        "sot": 0.0,
+        "corners": 0.0,
+        "possession": 50.0,
+        "cards": 0.0,
         "fouls_committed": 0.0,
         "fouls_received": 0.0
       },
       "away": {
-        "goals_for": 1.33,
-        "goals_against": 1.0,
-        "shots": 3.0,
-        "sot": 3.0,
-        "corners": 3.0,
-        "possession": 38.5,
-        "cards": 3.67,
+        "goals_for": 0.0,
+        "goals_against": 0.0,
+        "shots": 0.0,
+        "sot": 0.0,
+        "corners": 0.0,
+        "possession": 50.0,
+        "cards": 0.0,
         "fouls_committed": 0.0,
         "fouls_received": 0.0
       }
     },
     "last3_h2h_home_venue": {
-      "home": {
-        "goals_for": 1.0,
-        "goals_against": 1.0,
-        "shots": 10.0,
-        "sot": 4.5,
-        "corners": 7.0,
-        "possession": 64.0,
-        "cards": 2.0,
-        "fouls_committed": 0.0,
-        "fouls_received": 0.0
-      },
-      "away": {
-        "goals_for": 1.0,
-        "goals_against": 1.0,
-        "shots": 4.5,
-        "sot": 2.0,
-        "corners": 3.5,
-        "possession": 36.0,
-        "cards": 4.0,
-        "fouls_committed": 0.0,
-        "fouls_received": 0.0
-      },
-      "sample_size": 2
+      "home": null,
+      "away": null,
+      "sample_size": 0
     }
   },
   "trends": {
@@ -1227,24 +1182,21 @@
           "label": "Tým nevstřelil gól",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 5.78
+          "pct": 60.0
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.27
+          "pct": 60.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.95
+          "pct": 60.0
         },
         {
           "key": "more_corners",
@@ -1265,32 +1217,28 @@
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 2.26
+          "pct": 60.0
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.88
+          "pct": 40.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.85
+          "pct": 40.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.62
+          "pct": 40.0
         },
         {
           "key": "yellow_5plus",
@@ -1311,8 +1259,7 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 2.12
+          "pct": 20.0
         },
         {
           "key": "corners_under95",
@@ -1333,16 +1280,14 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 2.01
+          "pct": 20.0
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 5.87
+          "pct": 20.0
         }
       ],
       "away": [
@@ -1386,24 +1331,21 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.27
+          "pct": 80.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.85
+          "pct": 80.0
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 2.01
+          "pct": 80.0
         },
         {
           "key": "shots_over",
@@ -1445,8 +1387,7 @@
           "label": "Tým nevstřelil gól",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 2.12
+          "pct": 60.0
         },
         {
           "key": "more_corners",
@@ -1460,40 +1401,35 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.88
+          "pct": 40.0
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 5.78
+          "pct": 20.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 1.95
+          "pct": 20.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 4.4
+          "pct": 20.0
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 2.26
+          "pct": 20.0
         },
         {
           "key": "corners_over95",
@@ -1528,374 +1464,13 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0,
-          "odds": 5.87
+          "pct": 0.0
         }
       ]
     },
     "h2h": {
-      "last3": [
-        {
-          "key": "btts",
-          "label": "Oba týmy skórovaly (BTTS)",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0,
-          "odds": 1.88
-        },
-        {
-          "key": "over15",
-          "label": "Over 1.5 gólů v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0,
-          "odds": 1.27
-        },
-        {
-          "key": "more_corners",
-          "label": "Tým měl víc rohů než soupeř",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "shots_over",
-          "label": "Střely: -0.5+ v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "shots_under",
-          "label": "Střely: méně než 20.5 v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "sot_over",
-          "label": "Střely na branku: 3.5+ v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "sot_under",
-          "label": "Střely na branku: méně než 5.5 v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "fouls_over",
-          "label": "Fauly: -0.5+ v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "fouls_under",
-          "label": "Fauly: méně než 0.5 v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "offsides_over",
-          "label": "Ofsajdy: -0.5+ v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "offsides_under",
-          "label": "Ofsajdy: méně než 0.5 v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "under25",
-          "label": "Under 2.5 gólů v zápase",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7,
-          "odds": 1.95
-        },
-        {
-          "key": "corners_over95",
-          "label": "Over 9.5 rohů v zápase (celkem)",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7
-        },
-        {
-          "key": "yellow_5plus",
-          "label": "5+ žlutých karet v zápase (celkem)",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7
-        },
-        {
-          "key": "team_2plus_yellow",
-          "label": "Tým dostal 2+ žluté karty",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7
-        },
-        {
-          "key": "ht_behind",
-          "label": "Tým prohrával po 1. poločase",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7
-        },
-        {
-          "key": "over25",
-          "label": "Over 2.5 gólů v zápase",
-          "hits": 1,
-          "total": 3,
-          "pct": 33.3,
-          "odds": 1.85
-        },
-        {
-          "key": "corners_under95",
-          "label": "Under 9.5 rohů v zápase (celkem)",
-          "hits": 1,
-          "total": 3,
-          "pct": 33.3
-        },
-        {
-          "key": "yellow_under5",
-          "label": "Méně než 5 žlutých karet v zápase (celkem)",
-          "hits": 1,
-          "total": 3,
-          "pct": 33.3
-        },
-        {
-          "key": "ht_draw",
-          "label": "Remíza v poločase",
-          "hits": 1,
-          "total": 3,
-          "pct": 33.3
-        },
-        {
-          "key": "clean_sheet",
-          "label": "Čisté konto (0 obdržených gólů)",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0
-        },
-        {
-          "key": "scoreless",
-          "label": "Tým nevstřelil gól",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0
-        },
-        {
-          "key": "scored2plus",
-          "label": "Tým vstřelil 2+ gólů",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0
-        },
-        {
-          "key": "red_card",
-          "label": "Padla červená karta (kterýkoli tým)",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0
-        },
-        {
-          "key": "ht_leading",
-          "label": "Tým vedl po 1. poločase",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0
-        }
-      ],
-      "last5": [
-        {
-          "key": "btts",
-          "label": "Oba týmy skórovaly (BTTS)",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0,
-          "odds": 1.88
-        },
-        {
-          "key": "over15",
-          "label": "Over 1.5 gólů v zápase",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0,
-          "odds": 1.27
-        },
-        {
-          "key": "more_corners",
-          "label": "Tým měl víc rohů než soupeř",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0
-        },
-        {
-          "key": "shots_over",
-          "label": "Střely: -0.5+ v zápase",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0
-        },
-        {
-          "key": "shots_under",
-          "label": "Střely: méně než 20.5 v zápase",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0
-        },
-        {
-          "key": "sot_over",
-          "label": "Střely na branku: 3.5+ v zápase",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0
-        },
-        {
-          "key": "sot_under",
-          "label": "Střely na branku: méně než 6.5 v zápase",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0
-        },
-        {
-          "key": "fouls_over",
-          "label": "Fauly: -0.5+ v zápase",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0
-        },
-        {
-          "key": "fouls_under",
-          "label": "Fauly: méně než 0.5 v zápase",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0
-        },
-        {
-          "key": "offsides_over",
-          "label": "Ofsajdy: -0.5+ v zápase",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0
-        },
-        {
-          "key": "offsides_under",
-          "label": "Ofsajdy: méně než 0.5 v zápase",
-          "hits": 4,
-          "total": 4,
-          "pct": 100.0
-        },
-        {
-          "key": "yellow_5plus",
-          "label": "5+ žlutých karet v zápase (celkem)",
-          "hits": 3,
-          "total": 4,
-          "pct": 75.0
-        },
-        {
-          "key": "team_2plus_yellow",
-          "label": "Tým dostal 2+ žluté karty",
-          "hits": 3,
-          "total": 4,
-          "pct": 75.0
-        },
-        {
-          "key": "over25",
-          "label": "Over 2.5 gólů v zápase",
-          "hits": 2,
-          "total": 4,
-          "pct": 50.0,
-          "odds": 1.85
-        },
-        {
-          "key": "under25",
-          "label": "Under 2.5 gólů v zápase",
-          "hits": 2,
-          "total": 4,
-          "pct": 50.0,
-          "odds": 1.95
-        },
-        {
-          "key": "corners_over95",
-          "label": "Over 9.5 rohů v zápase (celkem)",
-          "hits": 2,
-          "total": 4,
-          "pct": 50.0
-        },
-        {
-          "key": "corners_under95",
-          "label": "Under 9.5 rohů v zápase (celkem)",
-          "hits": 2,
-          "total": 4,
-          "pct": 50.0
-        },
-        {
-          "key": "ht_behind",
-          "label": "Tým prohrával po 1. poločase",
-          "hits": 2,
-          "total": 4,
-          "pct": 50.0
-        },
-        {
-          "key": "scored2plus",
-          "label": "Tým vstřelil 2+ gólů",
-          "hits": 1,
-          "total": 4,
-          "pct": 25.0
-        },
-        {
-          "key": "yellow_under5",
-          "label": "Méně než 5 žlutých karet v zápase (celkem)",
-          "hits": 1,
-          "total": 4,
-          "pct": 25.0
-        },
-        {
-          "key": "ht_leading",
-          "label": "Tým vedl po 1. poločase",
-          "hits": 1,
-          "total": 4,
-          "pct": 25.0
-        },
-        {
-          "key": "ht_draw",
-          "label": "Remíza v poločase",
-          "hits": 1,
-          "total": 4,
-          "pct": 25.0
-        },
-        {
-          "key": "clean_sheet",
-          "label": "Čisté konto (0 obdržených gólů)",
-          "hits": 0,
-          "total": 4,
-          "pct": 0.0
-        },
-        {
-          "key": "scoreless",
-          "label": "Tým nevstřelil gól",
-          "hits": 0,
-          "total": 4,
-          "pct": 0.0
-        },
-        {
-          "key": "red_card",
-          "label": "Padla červená karta (kterýkoli tým)",
-          "hits": 0,
-          "total": 4,
-          "pct": 0.0
-        }
-      ]
+      "last3": [],
+      "last5": []
     }
   },
   "simulation": {
@@ -5838,37 +5413,11 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T09:59:55.232477Z",
-  "odds": {
-    "home": 1.52,
-    "draw": 4.08,
-    "away": 6.06,
-    "under15": 3.71,
-    "over15": 1.27,
-    "under25": 1.95,
-    "over25": 1.85,
-    "under35": 1.34,
-    "over35": 3.19,
-    "btts": 1.88,
-    "source": "chance",
-    "home_scoreless": 5.78,
-    "home_scored2plus": 1.62,
-    "home_clean_sheet": 2.12,
-    "home_ht_leading": 2.01,
-    "home_ht_draw": 2.26,
-    "home_ht_behind": 5.87,
-    "away_clean_sheet": 5.78,
-    "away_scoreless": 2.12,
-    "away_scored2plus": 4.4,
-    "away_ht_behind": 2.01,
-    "away_ht_draw": 2.26,
-    "away_ht_leading": 5.87
-  },
   "ai_analysis": {
-    "text": "Zápas mezi Hradcem Králové a SK Artis Brno, který se odehraje 10. října 2026 na Malšovické aréně, slibuje zajímavé střetnutí. Domácí tým Hradec Králové se nachází v mírně kolísající formě, přičemž v posledních šesti zápasech zaznamenal dvě výhry, dvě remízy a dvě prohry. Na druhé straně, SK Artis Brno má stabilnější výkon, s pěti zápasy bez prohry, což může posílit jejich sebevědomí před tímto utkáním.\n\nHistorie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž poslední čtyři zápasy skončily remízou nebo těsným vítězstvím. To naznačuje, že i tentokrát by se mohlo jednat o vyrovnaný duel. Podle simulací očekávaných gólů (xG) má Hradec Králové mírnou výhodu s hodnotou 1.48 oproti 0.8 pro Brno, což naznačuje, že domácí by mohli mít více příležitostí ke skórování.\n\nStatistiky také ukazují, že šance na remízu se pohybuje kolem 27.2 %, což je solidní pravděpodobnost. Hradec Králové má navíc slušné šance na vstřelení dvou a více gólů, což může být klíčové pro úspěch v tomto zápase. Celkově se očekává, že zápas bude vyrovnaný, s možností, že domácí tým využije výhodu domácího prostředí k zisku tří bodů.",
+    "text": "Zápas mezi Hradcem Králové a SK Artis Brno v rámci Chance Ligy se odehraje na stadionu Malšovická aréna a bude řízen rozhodčím Tomášem Klímou. Hradec Králové se nachází v mírně lepší formě, když z posledních šesti zápasů zaznamenal dvě výhry, jednu remízu a tři prohry. Na druhé straně, SK Artis Brno má na kontě tři výhry, dvě remízy a jednu prohru, což naznačuje, že hosté jsou v posledních zápasech silnější.\n\nPodle simulací očekávaných gólů (xG) má Hradec Králové výhodu s hodnotou 1.48, zatímco SK Artis Brno pouze 0.8. To naznačuje, že domácí tým by měl mít více příležitostí ke skórování. S pravděpodobností 47.8 % se očekává vítězství Hradce, zatímco šance na remízu je 27.2 % a na výhru Brna 24.9 %. Tyto statistiky ukazují, že Hradec je favoritem zápasu.\n\nDalší zajímavou statistikou je pravděpodobnost, že oba týmy skórují (BTTS) – ta se pohybuje kolem 43.4 %. To naznačuje, že i přes nižší očekávané góly pro Brno existuje šance, že se hosté dokážou prosadit. Celkově se očekává vyrovnaný zápas, ve kterém Hradec Králové bude usilovat o využití domácího prostředí k zisku tří bodů.",
     "model": "gpt-4o-mini",
-    "input_hash": "890f1a7851f42f6d",
-    "generated_at": "2026-10-07T10:00:01Z",
-    "text_en": "The upcoming match between Hradec Králové and SK Artis Brno in the Chance Liga is set to take place at the Malšovická aréna on October 10, 2026. Both teams have had mixed recent forms, with Hradec Králové recording two wins, two losses, and a draw in their last six matches, while SK Artis Brno has managed one win, three losses, and two draws. Historically, their encounters have been closely contested, with several matches ending in draws or narrow victories for either side, indicating a competitive rivalry.\n\nStatistical simulations suggest that Hradec Králové holds a slight advantage with an expected goals (xG) value of 1.48 compared to SK Artis Brno's 0.8. This indicates that Hradec Králové is likely to create more scoring opportunities. Furthermore, the odds reflect this sentiment, with Hradec Králové favored to win at 1.52, while SK Artis Brno's odds stand at 6.06. The likelihood of both teams scoring (43.4%) and the potential for over 2.5 goals (40.5%) suggest that the match could be lively, with Hradec Králové expected to take the initiative.\n\nGiven the recent form and historical context, Hradec Králové may look to capitalize on their home advantage, while SK Artis Brno will aim to stabilize their performance away from home. If Hradec Králové can convert their expected chances into goals, they could secure a victory. However, if SK Artis Brno manages to disrupt their rhythm and capitalize on counter-attacks, they could pose a significant threat. Overall, the match promises to be an engaging contest with potential for both teams to showcase their strengths."
+    "input_hash": "7232366e2b982cfe",
+    "generated_at": "2026-10-07T22:24:22Z",
+    "text_en": "The upcoming match between Hradec Králové and SK Artis Brno in the Chance Liga is set to take place at the Malšovická aréna on October 10, 2026. The referee for this encounter will be Tomáš Klíma. Analyzing the recent form of both teams, Hradec Králové has struggled, recording two wins, one draw, and three losses in their last six matches. In contrast, SK Artis Brno has shown slightly better form, with one win, three draws, and two losses during the same period.\n\nAccording to the simulation data, Hradec Králové is expected to have the upper hand in this match, with an expected goals (xG) value of 1.48 compared to SK Artis Brno's 0.8. This suggests that Hradec Králové may create more scoring opportunities and potentially dominate possession. The simulation indicates a probability of 47.8% for a home win, 27.2% for a draw, and 24.9% for an away victory. Additionally, there is a 43.4% chance that both teams will score, which indicates a possibility of an open match.\n\nGiven the context of both teams' recent performances and the statistical insights, Hradec Králové is likely to approach the game with a more aggressive strategy, aiming to capitalize on their home advantage. Meanwhile, SK Artis Brno may adopt a more defensive stance, looking to secure points away from home. Overall, fans can expect a competitive match, with Hradec Králové favored to take the initiative but SK Artis Brno having the potential to challenge them."
   }
 }

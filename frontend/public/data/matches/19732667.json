@@ -20,6 +20,20 @@
   "sidelined": [
     {
       "side": "home",
+      "player_id": 27797020,
+      "player_name": "Julen Lobete Cienfuegos",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-04",
+      "end_date": "2027-06-30",
+      "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37336532,
       "player_name": "Diego Murillo Dominguez",
       "type_id": 2021,
@@ -44,20 +58,6 @@
       "start_date": "2026-08-17",
       "end_date": "2027-01-01",
       "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 27797020,
-      "player_name": "Julen Lobete Cienfuegos",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-04",
-      "end_date": "2027-06-30",
-      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -6150,7 +6150,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:07:30.181927Z",
+  "refreshed_at": "2026-10-07T22:44:18.618278Z",
   "odds": {
     "home": 2.8,
     "draw": 3.13,

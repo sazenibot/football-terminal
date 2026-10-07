@@ -2,8 +2,8 @@
   "fixture_id": 19735160,
   "league_id": 82,
   "league_name": "Bundesliga",
-  "built_at": "2026-10-03T10:12:53.599966Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T22:41:13.543300Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T16:30:00Z",
   "venue": "Red Bull Arena",
   "home": {
@@ -16,7 +16,218 @@
     "name": "Eintracht Frankfurt",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/14/366.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 80234,
+    "name": "Daniel Siebert",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 0,
+          "average": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 47,
+        "average": 23.5
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 6,
+          "average": 3,
+          "on_bench": 0,
+          "for_coach": 2,
+          "on_pitch": 4
+        },
+        "home": {
+          "count": 3,
+          "average": 1.5,
+          "percentage": 50
+        },
+        "away": {
+          "count": 3,
+          "average": 1.5,
+          "percentage": 50
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 2
+      },
+      "VAR Moments": {
+        "count": 1,
+        "average": 0.5
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 22.6,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.12,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 4,
+      "matches": 46,
+      "yellow_cards": 198,
+      "red_cards": 4,
+      "avg_yellow_per_match": 4.3
+    },
+    "h2h_matches_officiated": [
+      {
+        "fixture_id": 19433589,
+        "date": "2025-12-06T17:30:00Z",
+        "home": "RB Leipzig",
+        "away": "Eintracht Frankfurt",
+        "home_score": 6,
+        "away_score": 0,
+        "result_for_home_team": "V"
+      }
+    ],
+    "home_team_matches_officiated": {
+      "matches": 5,
+      "avg_fouls_by_team": 9.2,
+      "avg_fouls_total": 21.0,
+      "avg_yellow_by_team": 1.2,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19433589,
+          "date": "2025-12-06T17:30:00Z",
+          "home_name": "RB Leipzig",
+          "away_name": "Eintracht Frankfurt",
+          "home_score": 6,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 26
+        },
+        {
+          "fixture_id": 19433542,
+          "date": "2025-10-25T13:30:00Z",
+          "home_name": "FC Augsburg",
+          "away_name": "RB Leipzig",
+          "home_score": 0,
+          "away_score": 6,
+          "result": "V",
+          "total_fouls": 19
+        },
+        {
+          "fixture_id": 19154842,
+          "date": "2025-05-17T13:30:00Z",
+          "home_name": "RB Leipzig",
+          "away_name": "VfB Stuttgart",
+          "home_score": 2,
+          "away_score": 3,
+          "result": "P",
+          "total_fouls": 18
+        },
+        {
+          "fixture_id": 19154753,
+          "date": "2025-03-01T14:30:00Z",
+          "home_name": "RB Leipzig",
+          "away_name": "FSV Mainz 05",
+          "home_score": 1,
+          "away_score": 2,
+          "result": "P",
+          "total_fouls": 23
+        },
+        {
+          "fixture_id": 19154673,
+          "date": "2024-12-20T19:30:00Z",
+          "home_name": "FC Bayern München",
+          "away_name": "RB Leipzig",
+          "home_score": 5,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 19
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 3,
+      "avg_fouls_by_team": 14.3,
+      "avg_fouls_total": 23.7,
+      "avg_yellow_by_team": 2.0,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19433589,
+          "date": "2025-12-06T17:30:00Z",
+          "home_name": "RB Leipzig",
+          "away_name": "Eintracht Frankfurt",
+          "home_score": 6,
+          "away_score": 0,
+          "result": "P",
+          "total_fouls": 26
+        },
+        {
+          "fixture_id": 19433523,
+          "date": "2025-10-04T16:30:00Z",
+          "home_name": "Eintracht Frankfurt",
+          "away_name": "FC Bayern München",
+          "home_score": 0,
+          "away_score": 3,
+          "result": "P",
+          "total_fouls": 22
+        },
+        {
+          "fixture_id": 19154790,
+          "date": "2025-04-05T16:30:00Z",
+          "home_name": "Werder Bremen",
+          "away_name": "Eintracht Frankfurt",
+          "home_score": 2,
+          "away_score": 0,
+          "result": "P",
+          "total_fouls": 23
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
@@ -146,8 +357,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Rômulo",
+        "jersey_number": 40,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Antonio Nusa",
+        "jersey_number": 7,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Nicolas Seiwald",
+        "jersey_number": 13,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "David Raum",
+        "jersey_number": 22,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Christopher Nkunku",
+        "jersey_number": 28,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Castello Lukeba",
+        "jersey_number": 23,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Willi Orbán",
+        "jersey_number": 4,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Neil El Aynaoui",
+        "jersey_number": 21,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Maarten Vandevoordt",
+        "jersey_number": 26,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Ezechiel Banzuzi",
+        "jersey_number": 6,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Maxime Estève",
+        "jersey_number": 3,
+        "formation_field": "2:2"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Raphael Onyedika",
+        "jersey_number": 25,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Noël Aséko",
+        "jersey_number": 15,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Can Uzun",
+        "jersey_number": 42,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Younes Ebnoutalib",
+        "jersey_number": 11,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Jonathan Burkardt",
+        "jersey_number": 9,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Keita Kosugi",
+        "jersey_number": 26,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Robin Koch",
+        "jersey_number": 4,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Ritsu Doan",
+        "jersey_number": 20,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Lilian Brassier",
+        "jersey_number": 3,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Elias Baum",
+        "jersey_number": 2,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Noah Atubolu",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1216,7 +1539,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 3.52
+          "odds": 3.51
         },
         {
           "key": "scored2plus",
@@ -1240,7 +1563,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.96
+          "odds": 1.97
         },
         {
           "key": "ht_behind",
@@ -1248,7 +1571,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 4.64
+          "odds": 4.58
         },
         {
           "key": "btts",
@@ -1264,7 +1587,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 8.7
+          "odds": 8.59
         },
         {
           "key": "under25",
@@ -1272,7 +1595,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.57
+          "odds": 3.56
         },
         {
           "key": "corners_under95",
@@ -1343,7 +1666,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 4.64
+          "odds": 4.58
         },
         {
           "key": "shots_over",
@@ -1407,7 +1730,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.32
+          "odds": 2.31
         },
         {
           "key": "corners_under95",
@@ -1460,7 +1783,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 8.7
+          "odds": 8.59
         },
         {
           "key": "scoreless",
@@ -1468,7 +1791,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.52
+          "odds": 3.51
         },
         {
           "key": "under25",
@@ -1476,7 +1799,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.57
+          "odds": 3.56
         },
         {
           "key": "red_card",
@@ -1499,7 +1822,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 1.96
+          "odds": 1.97
         }
       ]
     },
@@ -1677,7 +2000,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 3.57
+          "odds": 3.56
         },
         {
           "key": "yellow_5plus",
@@ -1860,7 +2183,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.57
+          "odds": 3.56
         },
         {
           "key": "yellow_5plus",
@@ -6758,14 +7081,13 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:05:58.282760Z",
   "odds": {
     "home": 1.56,
-    "draw": 4.91,
-    "away": 5.02,
-    "under15": 7.66,
+    "draw": 4.96,
+    "away": 4.93,
+    "under15": 7.64,
     "over15": 1.08,
-    "under25": 3.57,
+    "under25": 3.56,
     "over25": 1.3,
     "under35": 2.07,
     "over35": 1.78,
@@ -6773,26 +7095,26 @@
     "corners_under95": 2.18,
     "corners_over95": 1.61,
     "source": "chance",
-    "home_scoreless": 8.7,
+    "home_scoreless": 8.59,
     "home_scored2plus": 1.3,
-    "home_clean_sheet": 3.52,
-    "home_ht_leading": 1.96,
+    "home_clean_sheet": 3.51,
+    "home_ht_leading": 1.97,
     "home_ht_draw": 2.83,
-    "home_ht_behind": 4.64,
+    "home_ht_behind": 4.58,
     "home_more_corners": 1.49,
-    "away_clean_sheet": 8.7,
-    "away_scoreless": 3.52,
-    "away_scored2plus": 2.32,
-    "away_ht_behind": 1.96,
+    "away_clean_sheet": 8.59,
+    "away_scoreless": 3.51,
+    "away_scored2plus": 2.31,
+    "away_ht_behind": 1.97,
     "away_ht_draw": 2.83,
-    "away_ht_leading": 4.64,
+    "away_ht_leading": 4.58,
     "away_more_corners": 3.12
   },
   "ai_analysis": {
-    "text": "Zápas mezi RB Leipzig a Eintracht Frankfurt, který se odehraje na Red Bull Areně, slibuje zajímavou konfrontaci. Domácí Leipzig se nachází v solidní formě, kdy z posledních čtyř zápasů zaznamenal dvě vítězství a dvě remízy. Naopak Frankfurt vykazuje nevyrovnané výkony, s jednou výhrou, dvěma remízami a jednou porážkou. Historie vzájemných zápasů naznačuje, že Leipzig má navrch, přičemž v posledních dvou utkáních proti Frankfurtu dokázal zvítězit s výrazným skóre.\n\nPodle simulací očekáváme, že Leipzig bude mít převahu v počtu očekávaných gólů (xG), s hodnotou 2.1 oproti 1.46 pro Frankfurt. To naznačuje, že domácí tým bude pravděpodobně více aktivní v útočné fázi a může se dočkat několika příležitostí ke skórování. Statistiky také ukazují vysokou pravděpodobnost, že oba týmy vstřelí gól (67.7 %), což by mohlo znamenat atraktivní a dynamický zápas.\n\nCo se týče celkového výsledku, simulace naznačují, že domácí Leipzig má 47.6% šanci na vítězství, zatímco Frankfurt má 28.1% šanci na úspěch. Remíza se jeví jako méně pravděpodobná (24.4%). Vzhledem k formě obou týmů a jejich vzájemným zápasům lze očekávat, že Leipzig se pokusí dominovat a udržet si kontrolu nad hrou, zatímco Frankfurt se bude snažit využít případné chyby soupeře.",
+    "text": "Zápas mezi RB Leipzig a Eintracht Frankfurt se odehraje na Red Bull Areně a slibuje zajímavý souboj. Domácí tým, Leipzig, se nachází v solidní formě, když v posledních čtyřech zápasech zaznamenal dvě výhry a dvě remízy. Na druhé straně Frankfurt má mix výsledků, včetně jedné výhry a dvou remíz, což naznačuje, že se mu v poslední době nedaří tak dobře jako jeho soupeři. Historie vzájemných zápasů ukazuje, že Leipzig má navrch, přičemž vyhrál tři z posledních pěti utkání.\n\nPodle simulací očekáváme, že Leipzig bude mít převahu v počtu očekávaných gólů (xG), s hodnotou 2.1 oproti 1.46 pro Frankfurt. To naznačuje, že domácí tým by měl mít více příležitostí k ohrožení branky. Pravděpodobnost remízy je 24.4 %, což ukazuje, že většina analýz favorizuje domácí výhru. Zároveň je zde vysoká šance na to, že oba týmy skórují, s pravděpodobností 67.7 %.\n\nZ hlediska statistik se očekává, že Leipzig bude mít více rohů a bude mít také větší šanci na vedení v prvním poločase. Vzhledem k jejich schopnosti dávat góly a formě, kterou prokazují, se dá očekávat, že zápas skončí výhrou domácího týmu, avšak Frankfurt může být nebezpečný a pokusí se o překvapení. Celkově se tedy dá očekávat dynamický a vyrovnaný zápas s možným vítězstvím pro Leipzig.",
     "model": "gpt-4o-mini",
-    "input_hash": "c0d092aabb8abc97",
-    "generated_at": "2026-10-07T10:07:03Z",
-    "text_en": "The upcoming Bundesliga match between RB Leipzig and Eintracht Frankfurt is set to take place at the Red Bull Arena on October 10, 2026. Historically, the two teams have had a competitive rivalry, with recent encounters showcasing a mix of results. Notably, Leipzig has had the upper hand in their last few meetings, including a dominant 6-0 victory in December 2025. However, Frankfurt has also secured significant wins, indicating that both teams are capable of performing at a high level.\n\nIn terms of recent form, RB Leipzig has experienced a mixed run, with two wins and two losses in their last four matches. Meanwhile, Eintracht Frankfurt has recorded one win, two draws, and one loss in the same period. The simulation data suggests that Leipzig is favored to score more, with an expected goals (xG) value of 2.1 compared to Frankfurt's 1.46. This indicates that Leipzig may create more scoring opportunities, which could play a crucial role in the outcome of the match.\n\nGiven the home advantage for Leipzig and their historical performance against Frankfurt, they are likely to push for an aggressive start. The simulation also indicates a high probability of both teams scoring (67.7%), suggesting that Frankfurt could find the back of the net despite their recent form. Overall, the match promises to be competitive, with Leipzig aiming to capitalize on their home ground advantage while Frankfurt will seek to disrupt their rhythm and secure points on the road."
+    "input_hash": "7191aed966951607",
+    "generated_at": "2026-10-07T22:41:22Z",
+    "text_en": "The upcoming Bundesliga match between RB Leipzig and Eintracht Frankfurt at the Red Bull Arena promises to be an intriguing encounter. RB Leipzig's recent form shows a mixed bag of results with two wins and two losses in their last four matches. In contrast, Eintracht Frankfurt has managed to secure a win and a draw alongside two losses. Historically, Leipzig has had the upper hand in their recent head-to-head meetings, winning three of the last five encounters, including a dominant 6-0 victory at home in December 2025.\n\nStatistical simulations suggest that RB Leipzig is favored to score more goals, with an expected goals (xG) value of 2.1 compared to Frankfurt's 1.46. The likelihood of both teams scoring (67.7%) indicates that a competitive match is anticipated. Leipzig's attacking prowess, combined with their home advantage, positions them as strong contenders to take the lead early in the match. The referee for this match, Daniel Siebert, will play a crucial role in maintaining the flow and discipline of the game.\n\nGiven the current form and historical context, it is likely that RB Leipzig will dominate possession and create more scoring opportunities. However, Eintracht Frankfurt is capable of capitalizing on counter-attacks, which could lead to a tightly contested match. Fans can expect an engaging battle, with Leipzig aiming to secure a vital three points to bolster their position in the league."
   }
 }

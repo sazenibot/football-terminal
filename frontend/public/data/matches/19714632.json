@@ -3,7 +3,7 @@
   "league_id": 72,
   "league_name": "Eredivisie",
   "built_at": "2026-10-07T10:10:04.959549Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T10:15:00Z",
   "venue": "Stadion Galgenwaard",
   "home": {
@@ -248,6 +248,62 @@
       "likely_available": false
     },
     {
+      "side": "home",
+      "player_id": 37630140,
+      "player_name": "Miliano Jonathans",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-03-07",
+      "end_date": null,
+      "games_missed": 23,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 28912766,
+      "player_name": "Noah Ohio",
+      "type_id": 540,
+      "type_name": "Knee Surgery",
+      "type_name_cs": "Operace kolena",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-04-21",
+      "end_date": null,
+      "games_missed": 19,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 25490,
+      "player_name": "Justin Hoogma",
+      "type_id": 536,
+      "type_name": "Knee Injury",
+      "type_name_cs": "Zranění kolena",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-04",
+      "end_date": null,
+      "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37722932,
+      "player_name": "Kasper Boogaard",
+      "type_id": 537,
+      "type_name": "Ankle Injury",
+      "type_name_cs": "Zranění kotníku",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-14",
+      "end_date": null,
+      "games_missed": 2,
+      "likely_available": false
+    },
+    {
       "side": "away",
       "player_id": 65152,
       "player_name": "Thomas Didillon",
@@ -273,34 +329,6 @@
       "start_date": "2026-08-20",
       "end_date": null,
       "games_missed": 5,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37722932,
-      "player_name": "Kasper Boogaard",
-      "type_id": 537,
-      "type_name": "Ankle Injury",
-      "type_name_cs": "Zranění kotníku",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-14",
-      "end_date": null,
-      "games_missed": 2,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 25490,
-      "player_name": "Justin Hoogma",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-04",
-      "end_date": null,
-      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -6752,5 +6780,6 @@
     "input_hash": "cfef6ce1ff827cc8",
     "generated_at": "2026-10-07T10:10:17Z",
     "text_en": "The upcoming Eredivisie match between FC Utrecht and Willem II at Stadion Galgenwaard promises to be an engaging encounter, especially considering the recent form of both teams. FC Utrecht has struggled lately, recording three losses in their last six matches, alongside a win and two draws. In contrast, Willem II has shown slightly better form, with three wins and two draws in their last six games, although they also faced a defeat. This disparity in form may give Willem II a psychological edge heading into the match.\n\nHistorically, the head-to-head results between these two teams indicate a competitive rivalry, with both sides having secured victories in recent encounters. FC Utrecht has had the upper hand in their last few meetings, winning three out of the last five matches, including a close 3-2 victory in their most recent clash in March 2025. This trend suggests that while FC Utrecht may be struggling currently, they have the capability to perform well against Willem II, particularly at home.\n\nAccording to the simulation data, FC Utrecht is expected to generate slightly more expected goals (xG) at 2.1 compared to Willem II's 1.79. The high probability of both teams scoring (73.5%) and the likelihood of over 2.5 goals being scored (74.7%) suggest an entertaining match with potential for multiple goals. Given these factors, the match could see FC Utrecht aiming to leverage their home advantage to secure a crucial win, while Willem II will likely look to capitalize on their recent form and aim for points on the road."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:46:10.448331Z"
 }

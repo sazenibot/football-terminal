@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T10:09:17Z",
+  "generated_at": "2026-10-07T22:45:53Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -25,7 +25,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          34,
+          32,
+          35
+        ]
       }
     },
     {
@@ -44,7 +49,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          32,
+          30,
+          38
+        ]
       }
     },
     {
@@ -63,7 +73,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          28,
+          28,
+          44
+        ]
       }
     },
     {
@@ -82,7 +97,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          84,
+          11,
+          4
+        ]
       }
     },
     {
@@ -101,7 +121,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          65,
+          19,
+          17
+        ]
       }
     },
     {
@@ -120,7 +145,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          39,
+          27,
+          34
+        ]
       }
     },
     {
@@ -139,7 +169,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          48,
+          28,
+          24
+        ]
       }
     },
     {
@@ -158,7 +193,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          58,
+          24,
+          18
+        ]
       }
     },
     {
@@ -177,7 +217,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          44,
+          27,
+          29
+        ]
       }
     },
     {
@@ -196,7 +241,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": false,
+        "probs": [
+          44,
+          27,
+          30
+        ]
       }
     }
   ],

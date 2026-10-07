@@ -3,7 +3,7 @@
   "league_id": 72,
   "league_name": "Eredivisie",
   "built_at": "2026-10-07T10:09:17.188871Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-09T18:00:00Z",
   "venue": "Philips Stadion",
   "home": {
@@ -247,20 +247,6 @@
     },
     {
       "side": "home",
-      "player_id": 37688197,
-      "player_name": "Wessel Kuhn",
-      "type_id": 557,
-      "type_name": "Cruciate Ligament Injury",
-      "type_name_cs": "Zranění zkříženého vazu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-04-24",
-      "end_date": "2027-03-01",
-      "games_missed": 12,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37648056,
       "player_name": "Sami Ouaissa",
       "type_id": 535,
@@ -277,20 +263,6 @@
       "side": "home",
       "player_id": 37563059,
       "player_name": "Adamo Nagalo",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-07-01",
-      "end_date": null,
-      "games_missed": 14,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37563059,
-      "player_name": "Adamo Nagalo",
       "type_id": 1612,
       "type_name": "No Eligibility",
       "type_name_cs": "Nezpůsobilost k nasazení",
@@ -299,6 +271,20 @@
       "start_date": "2026-09-03",
       "end_date": "2027-01-28",
       "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37563059,
+      "player_name": "Adamo Nagalo",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-07-01",
+      "end_date": null,
+      "games_missed": 14,
       "likely_available": false
     },
     {
@@ -386,19 +372,9 @@
         "formation_field": "4:1"
       },
       {
-        "player_name": "Ruben van Bommel",
-        "jersey_number": 7,
-        "formation_field": "4:3"
-      },
-      {
         "player_name": "Sergiño Dest",
         "jersey_number": 8,
         "formation_field": "2:1"
-      },
-      {
-        "player_name": "Ricardo Pepi",
-        "jersey_number": 9,
-        "formation_field": "5:1"
       },
       {
         "player_name": "Guus Til",
@@ -414,6 +390,16 @@
         "player_name": "Matej Kovar",
         "jersey_number": 32,
         "formation_field": "1:1"
+      },
+      {
+        "player_name": "Ruben van Bommel",
+        "jersey_number": 7,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Ayoni Santos",
+        "jersey_number": 35,
+        "formation_field": "4:3"
       }
     ],
     "away": [
@@ -7578,5 +7564,6 @@
     "input_hash": "0de4f494e9d57b74",
     "generated_at": "2026-10-07T10:09:27Z",
     "text_en": "The upcoming Eredivisie match between PSV and SC Heerenveen at the Philips Stadion is set to be an intriguing encounter. PSV has shown strong recent form, winning their last six matches, while SC Heerenveen has had a mixed bag with two wins, two draws, and two losses in their last six games. Historically, PSV has dominated this fixture, winning four of the last five encounters, which adds to their confidence heading into this match.\n\nIn terms of expected performance, simulations suggest that PSV is likely to create more scoring opportunities, with an expected goals (xG) value of 2.1 compared to SC Heerenveen's 1.37. This indicates that PSV not only has a potent attack but also a solid defensive setup, which could limit Heerenveen's chances. The likelihood of both teams scoring is relatively high at 65.1%, suggesting that while PSV may control the game, SC Heerenveen could find the net if given the chance.\n\nWith Joey Kooij officiating the match, the dynamics on the pitch will also play a crucial role. Given PSV's home advantage and their current form, they are expected to take the initiative early on. If they can capitalize on their scoring opportunities, a comfortable win could be on the cards. However, SC Heerenveen's resilience and ability to counter could provide them with chances to upset the home side, making this match one to watch closely."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:45:57.071137Z"
 }

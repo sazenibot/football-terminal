@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-07T10:00:52.850364Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-14T16:00:00Z",
   "venue": "Stadion Dolícek",
   "home": {
@@ -7345,5 +7345,6 @@
     "input_hash": "9307260b3393717f",
     "generated_at": "2026-10-07T10:01:44Z",
     "text_en": "The upcoming match between Bohemians 1905 and Mladá Boleslav in the Chance Liga is set to take place at Stadion Dolícek on October 14, 2026. The home team, Bohemians 1905, has struggled recently, recording two wins, two draws, and two losses in their last six matches. In contrast, Mladá Boleslav has shown a stronger form with four wins, one draw, and one loss in the same period. This difference in recent performance suggests that Mladá Boleslav may have the upper hand going into this fixture.\n\nHistorically, matches between these two teams have been closely contested. Their last five encounters have seen a mix of draws and narrow victories, indicating a competitive rivalry. The most recent match ended in a 2-2 draw, while Bohemians managed to secure a win in March 2025. Given the current form of both teams, Mladá Boleslav's attacking prowess, reflected in their expected goals (xG) of 1.63 compared to Bohemians' 1.23, could play a crucial role in determining the outcome of this match.\n\nThe simulation data suggests that there is a 39.3% probability of a Mladá Boleslav victory, while a draw is estimated at 26.0%. Additionally, both teams have a 56.9% chance of scoring, indicating that fans can expect an engaging match with potential goal-scoring opportunities. With Karel Roucek officiating, the dynamics on the pitch will be interesting to watch, particularly how Bohemians respond to their recent struggles against a confident Mladá Boleslav side."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:29:40.471794Z"
 }

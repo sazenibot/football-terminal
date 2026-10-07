@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T10:10:55Z",
+  "generated_at": "2026-10-07T22:46:17Z",
   "league": {
     "id": 72,
     "name": "Eredivisie",
@@ -25,7 +25,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": true
+        "referee": true,
+        "probs": [
+          76,
+          14,
+          10
+        ]
       }
     },
     {
@@ -44,7 +49,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": true
+        "referee": true,
+        "probs": [
+          57,
+          22,
+          21
+        ]
       }
     },
     {
@@ -63,7 +73,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": true
+        "referee": true,
+        "probs": [
+          53,
+          24,
+          23
+        ]
       }
     },
     {
@@ -82,7 +97,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": true
+        "referee": true,
+        "probs": [
+          21,
+          24,
+          55
+        ]
       }
     },
     {
@@ -101,7 +121,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": true
+        "referee": true,
+        "probs": [
+          67,
+          19,
+          15
+        ]
       }
     },
     {
@@ -120,7 +145,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": true
+        "referee": true,
+        "probs": [
+          66,
+          20,
+          14
+        ]
       }
     },
     {
@@ -139,7 +169,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": true
+        "referee": true,
+        "probs": [
+          51,
+          26,
+          23
+        ]
       }
     },
     {
@@ -158,7 +193,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": true
+        "referee": true,
+        "probs": [
+          44,
+          26,
+          30
+        ]
       }
     },
     {
@@ -177,13 +217,18 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": true
+        "referee": true,
+        "probs": [
+          45,
+          26,
+          28
+        ]
       }
     }
   ],
   "stats": {
-    "created": 9,
-    "refreshed": 0,
+    "created": 0,
+    "refreshed": 9,
     "errors": 0
   }
 }

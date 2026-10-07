@@ -47,6 +47,20 @@
       "likely_available": false
     },
     {
+      "side": "home",
+      "player_id": 186560,
+      "player_name": "Raúl de Tomás Gómez",
+      "type_id": 547,
+      "type_name": "Fitness",
+      "type_name_cs": "Kondiční důvody",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-01-07",
+      "end_date": null,
+      "games_missed": 39,
+      "likely_available": false
+    },
+    {
       "side": "away",
       "player_id": 190168,
       "player_name": "Gorka Guruzeta Rodríguez",
@@ -76,8 +90,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Álvaro García",
+        "jersey_number": 18,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Rayane Belaid",
+        "jersey_number": 37,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Pathé Ciss",
+        "jersey_number": 6,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Adrià Pedrosa",
+        "jersey_number": 17,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Mujaid Sadick",
+        "jersey_number": 15,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Andrei Rațiu",
+        "jersey_number": 2,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Emil Audero",
+        "jersey_number": 25,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Unai López",
+        "jersey_number": 8,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Sergio Camello",
+        "jersey_number": 10,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Jorge de Frutos",
+        "jersey_number": 19,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Florian Lejeune",
+        "jersey_number": 24,
+        "formation_field": "2:2"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Unai Simón",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Iñaki Williams",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Nico Williams",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Iñigo Ruiz de Galarreta",
+        "jersey_number": 16,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Aymeric Laporte",
+        "jersey_number": 14,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Oihan Sancet",
+        "jersey_number": 8,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Robert Navarro",
+        "jersey_number": 23,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Yuri Berchiche",
+        "jersey_number": 17,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Aitor Paredes",
+        "jersey_number": 4,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Beñat Gerenabarrena",
+        "jersey_number": 24,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Jesús Areso",
+        "jersey_number": 12,
+        "formation_field": "2:4"
+      }
+    ]
   },
   "h2h": [
     {
@@ -7509,7 +7635,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:07:42.223937Z",
+  "refreshed_at": "2026-10-07T22:44:21.704887Z",
   "ai_analysis": {
     "text": "Zápas mezi Rayo Vallecano a Athletic Club, který se odehraje na Estadio de Vallecas, slibuje být vyrovnaným střetnutím. Domácí Rayo má za sebou smíšené výsledky, s posledními dvěma zápasy, kdy vyhrálo a prohrálo. Na druhé straně Athletic Club vykazuje stabilnější formu, přičemž jejich poslední výsledky zahrnují dvě výhry a dvě prohry. Historie vzájemných zápasů ukazuje, že Athletic má v poslední době navrch, což může psychologicky ovlivnit výkon domácích.\n\nPodle simulací očekáváme, že Athletic Club bude mít mírnou výhodu, přičemž očekávané góly (xG) naznačují, že by mohli vstřelit o něco více než Rayo. S hodnotami xG 1.37 pro Rayo a 1.59 pro Athletic je pravděpodobné, že se zápas odehraje v aktivním tempu s několika šancemi na obou stranách. Statistika ukazuje, že pravděpodobnost, že oba týmy skórují, je vysoká (59.7 %), což naznačuje, že se můžeme dočkat atraktivního fotbalu.\n\nCelkově lze očekávat, že zápas bude vyrovnaný, s mírnou převahou hostujícího týmu. Klíčovými faktory pro úspěch Rayo bude jejich schopnost využít domácí prostředí a efektivně se bránit proti ofenzivním snahám Athleticu. Na druhé straně, pokud Athletic udrží svou formu, mohou se těšit na další tři body do tabulky La Ligy.",
     "model": "gpt-4o-mini",

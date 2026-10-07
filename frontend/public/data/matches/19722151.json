@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-10-07T10:02:25.825016Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T14:00:00Z",
   "venue": "Stamford Bridge",
   "home": {
@@ -221,6 +221,20 @@
   "sidelined": [
     {
       "side": "home",
+      "player_id": 28931574,
+      "player_name": "João Pedro Junqueira de Jesus",
+      "type_id": 687,
+      "type_name": "Knee Problems",
+      "type_name_cs": "Knee Problems",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-13",
+      "end_date": "2026-10-16",
+      "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37653289,
       "player_name": "Marco Palestra",
       "type_id": 535,
@@ -231,20 +245,6 @@
       "start_date": "2026-08-20",
       "end_date": "2026-10-09",
       "games_missed": 7,
-      "likely_available": true
-    },
-    {
-      "side": "home",
-      "player_id": 37700784,
-      "player_name": "Aaron Anselmino",
-      "type_id": 533,
-      "type_name": "Thigh Problems",
-      "type_name_cs": "Problémy se stehnem",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-07",
-      "end_date": "2026-09-14",
-      "games_missed": null,
       "likely_available": true
     },
     {
@@ -260,20 +260,6 @@
       "end_date": "2026-10-09",
       "games_missed": 4,
       "likely_available": true
-    },
-    {
-      "side": "home",
-      "player_id": 28931574,
-      "player_name": "João Pedro Junqueira de Jesus",
-      "type_id": 687,
-      "type_name": "Knee Problems",
-      "type_name_cs": "Knee Problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-13",
-      "end_date": "2026-10-16",
-      "games_missed": 1,
-      "likely_available": false
     },
     {
       "side": "home",
@@ -375,8 +361,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Morgan Rogers",
+        "jersey_number": 17,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Jordan Henderson",
+        "jersey_number": 14,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Levi Colwill",
+        "jersey_number": 6,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Joshua Kofi Acheampong",
+        "jersey_number": 34,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Emiliano Martínez",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Pedro Neto",
+        "jersey_number": 7,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Maxence Lacroix",
+        "jersey_number": 5,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Danny Welbeck",
+        "jersey_number": 18,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Mahdi Nicoll-Jazuli",
+        "jersey_number": 32,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Cole Palmer",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Pep Chavarría",
+        "jersey_number": 29,
+        "formation_field": "3:4"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Rayan",
+        "jersey_number": 37,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Djordje Petrovic",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Marcus Tavernier",
+        "jersey_number": 16,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Ryan Christie",
+        "jersey_number": 10,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Evanilson",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Tyler Adams",
+        "jersey_number": 12,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Lewis Cook",
+        "jersey_number": 4,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Adrien Truffert",
+        "jersey_number": 3,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "António Silva",
+        "jersey_number": 14,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "James Hill",
+        "jersey_number": 5,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Adam Smith",
+        "jersey_number": 15,
+        "formation_field": "2:4"
+      }
+    ]
   },
   "h2h": [
     {
@@ -6991,5 +7089,6 @@
     "input_hash": "45abb363e6ef31f0",
     "generated_at": "2026-10-07T10:02:36Z",
     "text_en": "The upcoming Premier League match between Chelsea and AFC Bournemouth at Stamford Bridge is set to be an intriguing contest, given the recent form of both teams. Chelsea has struggled in their last five matches, recording two wins, one draw, and two losses. In contrast, Bournemouth has also faced difficulties, with one win, three draws, and one loss in their recent outings. The head-to-head record between these teams shows a competitive rivalry, with their last five encounters yielding two wins for Chelsea, two draws, and one win for Bournemouth.\n\nStatistical simulations suggest that Chelsea has a slight edge in expected goals (xG), with 1.87 compared to Bournemouth's 1.54. This indicates that Chelsea may create more goal-scoring opportunities during the match. The simulation also shows a 44.1% probability of a Chelsea win, a 24.9% chance of a draw, and a 31.0% likelihood of a Bournemouth victory. The likelihood of both teams scoring (BTTS) stands at 65.8%, suggesting that a high-scoring match could be on the cards.\n\nWith Samuel Barrott officiating, the match could see a fair number of yellow cards, as both teams have shown tendencies to accumulate cautions in their recent games. Chelsea's home advantage at Stamford Bridge may play a crucial role, and they will be looking to capitalize on this to secure a vital three points. However, Bournemouth will aim to exploit any defensive lapses from Chelsea, making this match a potentially thrilling encounter."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:30:14.846206Z"
 }

@@ -3,7 +3,7 @@
   "league_id": 72,
   "league_name": "Eredivisie",
   "built_at": "2026-10-07T10:09:27.345560Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T14:30:00Z",
   "venue": "De Adelaarshorst",
   "home": {
@@ -255,8 +255,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Mathis Suray",
+        "jersey_number": 17,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Joris Kramer",
+        "jersey_number": 4,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Evert Linthorst",
+        "jersey_number": 8,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Stefán Ingi Sigurdarson",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Melle Meulensteen",
+        "jersey_number": 21,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Tomas Galvez",
+        "jersey_number": 27,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Kjetil Haug",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Julius Dirksen",
+        "jersey_number": 26,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Søren Tengstedt",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Victor Edvardsen",
+        "jersey_number": 16,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Dean James",
+        "jersey_number": 5,
+        "formation_field": "2:4"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Marvin Young",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Bruno Martins Indi",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Cedric Hatenboer",
+        "jersey_number": 8,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Milan Zonneveld",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Rik Suur",
+        "jersey_number": 30,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Julian Baas",
+        "jersey_number": 6,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Shunsuke Mito",
+        "jersey_number": 10,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Mitchell van Bergen",
+        "jersey_number": 11,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Lushendry Martes",
+        "jersey_number": 2,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Bas Kuipers",
+        "jersey_number": 5,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Casper Terho",
+        "jersey_number": 7,
+        "formation_field": "4:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -7035,5 +7147,6 @@
     "input_hash": "974fcc4c9934569c",
     "generated_at": "2026-10-07T10:09:37Z",
     "text_en": "The upcoming Eredivisie match between Go Ahead Eagles and Sparta Rotterdam is set to take place at De Adelaarshorst on October 10, 2026. The referee for the match will be Jeroen Manschot. Analyzing the recent form of both teams, Go Ahead Eagles have had a mixed run with three draws, one loss, and one win in their last five matches, while Sparta Rotterdam has struggled, recording three losses and two draws in their last five outings. This suggests that both teams may be looking to improve their performances to secure vital points in the league.\n\nHistorically, the head-to-head encounters between these two teams have been competitive, with recent matches showing a balance in results. Go Ahead Eagles have won two of the last five meetings, while Sparta Rotterdam has also secured two victories, with one match ending in a draw. Given this context, the match is likely to be closely contested, with both sides aiming to exploit any defensive weaknesses from their opponent.\n\nAccording to the simulation data, Go Ahead Eagles have a slight advantage in expected goals (xG) with 2.1 compared to Sparta Rotterdam's 1.6, indicating that they may create more scoring opportunities. The likelihood of both teams scoring (69.9%) and the probability of over 2.5 goals (71.0%) suggests an entertaining match could be on the cards. Overall, while Go Ahead Eagles may have the edge based on recent form and xG, the competitive nature of their encounters means that the outcome remains uncertain."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:45:59.554539Z"
 }

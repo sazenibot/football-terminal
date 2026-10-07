@@ -3,7 +3,7 @@
   "league_id": 72,
   "league_name": "Eredivisie",
   "built_at": "2026-10-07T10:09:37.317847Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T16:45:00Z",
   "venue": "Stadion Feijenoord",
   "home": {
@@ -333,20 +333,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 23269680,
-      "player_name": "Gonçalo Oscar Albuquerque Borges",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-12",
-      "end_date": null,
-      "games_missed": 2,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37688208,
       "player_name": "Shaqueel van Persie",
       "type_id": 677,
@@ -371,6 +357,20 @@
       "start_date": "2026-07-01",
       "end_date": null,
       "games_missed": 13,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 23269680,
+      "player_name": "Gonçalo Oscar Albuquerque Borges",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-12",
+      "end_date": null,
+      "games_missed": 2,
       "likely_available": false
     },
     {
@@ -400,11 +400,137 @@
       "end_date": "2027-01-01",
       "games_missed": 13,
       "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37547506,
+      "player_name": "Stije Resink",
+      "type_id": 557,
+      "type_name": "Cruciate Ligament Injury",
+      "type_name_cs": "Zranění zkříženého vazu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-03-01",
+      "end_date": "2027-01-01",
+      "games_missed": 29,
+      "likely_available": false
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Jeremiah St. Juste",
+        "jersey_number": 6,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Givairo Read",
+        "jersey_number": 26,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Luciano Valente",
+        "jersey_number": 10,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Nacho Ferri",
+        "jersey_number": 19,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Anis Hadj Moussa",
+        "jersey_number": 23,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Charles Vanhoutte",
+        "jersey_number": 34,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Oussama Targhalline",
+        "jersey_number": 28,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Tsuyoshi Watanabe",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Gjivai Zechiël",
+        "jersey_number": 8,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Tjark Ernst",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Mika Mármol",
+        "jersey_number": 35,
+        "formation_field": "2:4"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Mexx Meerdink",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Hessel de Wit",
+        "jersey_number": 75,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Lewis Schouten",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Ro-Zangelo Daal",
+        "jersey_number": 11,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Peer Koopmeiners",
+        "jersey_number": 6,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Jari De Busser",
+        "jersey_number": 28,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Elijah Dijkstra",
+        "jersey_number": 22,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Kees Smit",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Dave Kwakman",
+        "jersey_number": 21,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Mateo Chávez",
+        "jersey_number": 5,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Wouter Goes",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -7660,5 +7786,6 @@
     "input_hash": "77f8712f0b32d540",
     "generated_at": "2026-10-07T10:09:46Z",
     "text_en": "The upcoming Eredivisie match between Feyenoord and AZ Alkmaar at Stadion Feijenoord promises to be an intriguing encounter, given both teams' current form and their head-to-head history. Feyenoord has shown strong performance at home recently, with three wins and two draws in their last six matches, while AZ Alkmaar has been equally impressive away, with five wins and one draw in the same timeframe. This sets the stage for a competitive match as both teams are in good form.\n\nHistorically, encounters between these two sides have been closely contested, with their last five meetings yielding a mix of results, including draws and narrow victories. The most recent match ended in a 1-1 draw, indicating that both teams are capable of scoring and maintaining pressure. The simulation data suggests that Feyenoord has a slight edge with an expected goals (xG) value of 2.1 compared to AZ Alkmaar's 1.54, hinting at a potentially higher scoring game for the home side.\n\nWith referee Danny Desmond Makkelie officiating, the match is likely to see a fair amount of action. The simulation indicates a high likelihood of both teams scoring (69.1%) and a strong chance of the total goals exceeding 2.5 (70.1%). Given the attacking capabilities of both teams and their recent form, fans can expect an engaging match filled with opportunities for both sides."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:46:02.465167Z"
 }

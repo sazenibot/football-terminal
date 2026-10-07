@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-10-07T10:04:30.029336Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-12T19:00:00Z",
   "venue": "The Coventry Building Society Arena",
   "home": {
@@ -173,15 +173,29 @@
     },
     {
       "side": "home",
-      "player_id": 37328095,
-      "player_name": "Aurele Amenda",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
+      "player_id": 17177173,
+      "player_name": "Milan van Ewijk",
+      "type_id": 533,
+      "type_name": "Thigh Problems",
+      "type_name_cs": "Problémy se stehnem",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-18",
-      "end_date": null,
+      "start_date": "2026-09-14",
+      "end_date": "2026-10-09",
+      "games_missed": 2,
+      "likely_available": true
+    },
+    {
+      "side": "home",
+      "player_id": 37328095,
+      "player_name": "Aurele Amenda",
+      "type_id": 532,
+      "type_name": "Calf Injury",
+      "type_name_cs": "Zranění lýtka",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-17",
+      "end_date": "2026-12-01",
       "games_missed": 1,
       "likely_available": false
     },
@@ -189,13 +203,69 @@
       "side": "home",
       "player_id": 263186,
       "player_name": "Haji Wright",
-      "type_id": 533,
-      "type_name": "Thigh Problems",
-      "type_name_cs": "Problémy se stehnem",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-19",
-      "end_date": "2026-11-11",
+      "start_date": "2026-08-12",
+      "end_date": "2026-10-30",
+      "games_missed": 8,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 2816063,
+      "player_name": "Luke Woolfenden",
+      "type_id": 536,
+      "type_name": "Knee Injury",
+      "type_name_cs": "Zranění kolena",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-01",
+      "end_date": "2026-10-09",
+      "games_missed": 9,
+      "likely_available": true
+    },
+    {
+      "side": "home",
+      "player_id": 28912779,
+      "player_name": "Kaine Kessler",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-17",
+      "end_date": "2026-10-09",
+      "games_missed": 7,
+      "likely_available": true
+    },
+    {
+      "side": "home",
+      "player_id": 23223363,
+      "player_name": "Josh Eccles",
+      "type_id": 532,
+      "type_name": "Calf Injury",
+      "type_name_cs": "Zranění lýtka",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-26",
+      "end_date": "2026-10-09",
+      "games_missed": 5,
+      "likely_available": true
+    },
+    {
+      "side": "away",
+      "player_id": 37559767,
+      "player_name": "Will Osula",
+      "type_id": 549,
+      "type_name": "Foot Injury",
+      "type_name_cs": "Zranění nohy (chodidlo)",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-23",
+      "end_date": null,
       "games_missed": 7,
       "likely_available": false
     },
@@ -225,20 +295,6 @@
       "start_date": "2026-08-16",
       "end_date": null,
       "games_missed": 8,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37559767,
-      "player_name": "Will Osula",
-      "type_id": 549,
-      "type_name": "Foot Injury",
-      "type_name_cs": "Zranění nohy (chodidlo)",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-23",
-      "end_date": null,
-      "games_missed": 7,
       "likely_available": false
     },
     {
@@ -1132,7 +1188,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.52
+          "odds": 2.57
         },
         {
           "key": "over15",
@@ -1140,7 +1196,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.2
+          "odds": 1.21
         },
         {
           "key": "over25",
@@ -1148,7 +1204,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.63
+          "odds": 1.65
         },
         {
           "key": "ht_draw",
@@ -1156,7 +1212,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.32
+          "odds": 2.37
         },
         {
           "key": "clean_sheet",
@@ -1219,7 +1275,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.55
+          "odds": 3.64
         }
       ],
       "away": [
@@ -1229,7 +1285,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.2
+          "odds": 1.21
         },
         {
           "key": "sot_over",
@@ -1266,7 +1322,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.63
+          "odds": 1.65
         },
         {
           "key": "scored2plus",
@@ -1355,7 +1411,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.52
+          "odds": 2.57
         },
         {
           "key": "ht_behind",
@@ -1363,7 +1419,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.55
+          "odds": 3.64
         },
         {
           "key": "clean_sheet",
@@ -1394,7 +1450,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.32
+          "odds": 2.37
         },
         {
           "key": "scoreless",
@@ -1422,7 +1478,7 @@
           "hits": 2,
           "total": 2,
           "pct": 100.0,
-          "odds": 1.2
+          "odds": 1.21
         },
         {
           "key": "corners_under95",
@@ -1516,7 +1572,7 @@
           "hits": 1,
           "total": 2,
           "pct": 50.0,
-          "odds": 1.63
+          "odds": 1.65
         },
         {
           "key": "under25",
@@ -1585,7 +1641,7 @@
           "hits": 2,
           "total": 2,
           "pct": 100.0,
-          "odds": 1.2
+          "odds": 1.21
         },
         {
           "key": "corners_under95",
@@ -1679,7 +1735,7 @@
           "hits": 1,
           "total": 2,
           "pct": 50.0,
-          "odds": 1.63
+          "odds": 1.65
         },
         {
           "key": "under25",
@@ -5492,14 +5548,14 @@
     ]
   },
   "odds": {
-    "home": 3.21,
-    "draw": 3.75,
-    "away": 2.05,
-    "under15": 4.52,
-    "over15": 1.2,
+    "home": 3.32,
+    "draw": 3.83,
+    "away": 2.08,
+    "under15": 4.53,
+    "over15": 1.21,
     "under25": 2.27,
-    "over25": 1.63,
-    "under35": 1.47,
+    "over25": 1.65,
+    "under35": 1.49,
     "over35": 2.64,
     "btts": 1.55,
     "yellow_under5": 1.47,
@@ -5509,23 +5565,24 @@
     "home_scoreless": 3.28,
     "home_scored2plus": 2.45,
     "home_clean_sheet": 4.78,
-    "home_ht_leading": 3.55,
-    "home_ht_draw": 2.32,
-    "home_ht_behind": 2.52,
+    "home_ht_leading": 3.64,
+    "home_ht_draw": 2.37,
+    "home_ht_behind": 2.57,
     "home_team_2plus_yellow": 1.64,
     "away_clean_sheet": 3.28,
     "away_scoreless": 4.78,
     "away_scored2plus": 1.82,
-    "away_ht_behind": 3.55,
-    "away_ht_draw": 2.32,
-    "away_ht_leading": 2.52,
+    "away_ht_behind": 3.64,
+    "away_ht_draw": 2.37,
+    "away_ht_leading": 2.57,
     "away_team_2plus_yellow": 1.45
   },
   "ai_analysis": {
-    "text": "Zápas mezi Coventry City a Newcastle United, který se odehraje na stadionu The Coventry Building Society Arena, slibuje zajímavé střetnutí. Domácí tým Coventry se nachází v těžké formě, kdy v posledních pěti zápasech zaznamenal pouze jedno vítězství a čtyři prohry. Naopak Newcastle United vykazuje lepší výkonnost s jedním vítězstvím, dvěma remízami a jednou prohrou. Historie vzájemných zápasů také naznačuje, že Newcastle má navrch, když v posledních dvou utkáních proti Coventry zvítězil.\n\nPodle simulovaných očekávaných gólů (xG) má Newcastle výhodu s hodnotou 1.67 oproti Coventry s 1.12. To naznačuje, že hosté mají větší šanci na vstřelení gólů, což odpovídá i kurzům, které favorizují Newcastle. Sázkové kurzy ukazují na pravděpodobnost vítězství hostů, přičemž Newcastle má kurz 2.05, zatímco Coventry 3.21. Tento rozdíl v kurzech odráží aktuální formu a sílu obou týmů.\n\nVzhledem k těmto faktorům lze očekávat, že Newcastle United bude dominovat v ofenzivě a pravděpodobně se mu podaří vstřelit minimálně jeden gól. Na druhé straně, Coventry bude muset zlepšit svou defenzivu, aby se vyhnulo dalšímu debaklu. Očekává se také, že zápas bude vyrovnaný, ačkoliv Newcastle bude mít navrch, což by mohlo vést k výsledku s více než jedním gólem na obou stranách.",
+    "text": "Zápas mezi Coventry City a Newcastle United, který se odehraje na stadionu The Coventry Building Society Arena, slibuje zajímavé střetnutí. Domácí tým Coventry se nachází v slabší formě, když v posledních pěti zápasech zaznamenal pouze jedno vítězství a čtyři porážky. Naopak Newcastle, i když také zažil několik neúspěchů, má na kontě dvě vítězství v posledních pěti zápasech, což naznačuje lepší herní pohodu. Historie vzájemných zápasů je v tomto případě na straně Newcastlu, který vyhrál poslední dvě utkání.\n\nPodle analýzy očekávaných gólů (xG) má Newcastle výrazně vyšší šance na vstřelení branek, s hodnotou 1.67 oproti 1.12 pro Coventry. To naznačuje, že Newcastle by měl mít větší příležitosti k úspěchu v ofenzivě. Vzhledem k tomu, že pravděpodobnost, že oba týmy vstřelí gól (BTTS), je 54.5%, lze očekávat, že se domácí pokusí o aktivní hru, aby zmírnili tlak na svou obranu.\n\nCelkově lze očekávat, že Newcastle United bude dominovat v držení míče a vytváření šancí, zatímco Coventry se pokusí o rychlé protiútoky. Výsledek zápasu se pravděpodobně přikloní k hostům, ale domácí by mohli překvapit, pokud se jim podaří využít své příležitosti. S ohledem na formu obou týmů a historické výsledky se zdá, že Newcastle má navrch, ale fotbal je nevyzpytatelný a Coventry může překvapit.",
     "model": "gpt-4o-mini",
-    "input_hash": "d134ddcc4f496105",
-    "generated_at": "2026-10-07T10:04:41Z",
-    "text_en": "The upcoming match between Coventry City and Newcastle United in the Premier League is set to take place at The Coventry Building Society Arena. Coventry City enters the match with a challenging recent form, having lost four of their last five matches, which may impact their confidence and performance. In contrast, Newcastle United has shown a more resilient form, with two wins, two draws, and one loss in their last five outings, suggesting they are in better shape heading into this fixture.\n\nHistorically, Newcastle has had the upper hand in their previous encounters with Coventry, winning both of their last two meetings. The simulation data indicates that Newcastle is favored to win, with a 41.2% probability of victory compared to Coventry's 33.0% chance. The expected goals (xG) also favor the away side, with Newcastle projected to score 1.67 goals versus Coventry's 1.12, highlighting a potential disparity in offensive capabilities.\n\nAs for the match dynamics, Newcastle's stronger form and historical advantage could allow them to control possession and create more scoring opportunities. Coventry will need to tighten their defense and capitalize on any chances they create to stay competitive. The referee for the match, John Brooks, will play a crucial role in maintaining order, especially given the potential for cards, as indicated by the odds for yellow cards. Overall, if Newcastle can leverage their recent form and past success against Coventry, they are likely to emerge victorious in this encounter."
-  }
+    "input_hash": "5b787e785c9d867d",
+    "generated_at": "2026-10-07T22:31:03Z",
+    "text_en": "The upcoming match between Coventry City and Newcastle United in the Premier League is set to take place at The Coventry Building Society Arena. Coventry City has struggled recently, with their last five matches resulting in one win and four losses, indicating a concerning form. In contrast, Newcastle United has shown more resilience, with two wins, two draws, and one loss in their recent outings. Historically, Newcastle has had the upper hand in their head-to-head encounters, winning both of their last two matches against Coventry.\n\nIn terms of expected performance, the simulation suggests that Newcastle is likely to dominate the match. The expected goals (xG) for Coventry is 1.12, while Newcastle's xG stands at 1.67, indicating that Newcastle is expected to create more scoring opportunities. The odds reflect this expectation, with Newcastle favored to win at 2.08 compared to Coventry's odds of 3.32. The likelihood of both teams scoring is also relatively high at 54.5%, suggesting that Coventry may find the net despite their recent struggles.\n\nWith John Brooks as the referee, the match could see a competitive edge, especially given Coventry's need to improve their form at home. However, considering Newcastle's stronger recent performances and historical dominance, they may capitalize on any defensive lapses from Coventry. Overall, a victory for Newcastle appears probable, but the possibility of a closely contested match remains, particularly if Coventry can leverage their home advantage effectively."
+  },
+  "refreshed_at": "2026-10-07T22:30:55.108584Z"
 }

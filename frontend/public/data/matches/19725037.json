@@ -2,8 +2,8 @@
   "fixture_id": 19725037,
   "league_id": 262,
   "league_name": "Chance Liga",
-  "built_at": "2026-10-03T09:49:56.848877Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T22:25:10.451142Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T13:00:00Z",
   "venue": "Doosan Aréna",
   "home": {
@@ -16,7 +16,276 @@
     "name": "Mladá Boleslav",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 17129,
+    "name": "Ondřej Berka",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 1,
+          "average": 0.25
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.25,
+          "percentage": 100
+        }
+      },
+      "Fouls": {
+        "count": 138,
+        "average": 34.5
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 19,
+          "average": 4.75,
+          "on_bench": 1,
+          "for_coach": 1,
+          "on_pitch": 17
+        },
+        "home": {
+          "count": 11,
+          "average": 2.75,
+          "percentage": 57.89
+        },
+        "away": {
+          "count": 8,
+          "average": 2,
+          "percentage": 42.11
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 4
+      },
+      "VAR Moments": {
+        "count": 2,
+        "average": 0.5
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 27.0,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.4,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 12,
+      "matches": 196,
+      "yellow_cards": 782,
+      "red_cards": 19,
+      "avg_yellow_per_match": 3.99
+    },
+    "h2h_matches_officiated": [
+      {
+        "fixture_id": 19138401,
+        "date": "2025-03-02T14:30:00Z",
+        "home": "Mladá Boleslav",
+        "away": "Viktoria Plzeň",
+        "home_score": 0,
+        "away_score": 2,
+        "result_for_home_team": "V"
+      },
+      {
+        "fixture_id": 18542832,
+        "date": "2023-04-01T14:00:00Z",
+        "home": "Mladá Boleslav",
+        "away": "Viktoria Plzeň",
+        "home_score": 0,
+        "away_score": 0,
+        "result_for_home_team": "R"
+      },
+      {
+        "fixture_id": 18140393,
+        "date": "2021-07-25T14:00:00Z",
+        "home": "Viktoria Plzeň",
+        "away": "Mladá Boleslav",
+        "home_score": 2,
+        "away_score": 1,
+        "result_for_home_team": "V"
+      }
+    ],
+    "home_team_matches_officiated": {
+      "matches": 5,
+      "avg_fouls_by_team": 10.0,
+      "avg_fouls_total": 22.0,
+      "avg_yellow_by_team": 0.4,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19703898,
+          "date": "2026-05-03T13:30:00Z",
+          "home_name": "Viktoria Plzeň",
+          "away_name": "Hradec Králové",
+          "home_score": 3,
+          "away_score": 1,
+          "result": "V",
+          "total_fouls": 19
+        },
+        {
+          "fixture_id": 19439073,
+          "date": "2025-09-13T13:00:00Z",
+          "home_name": "Viktoria Plzeň",
+          "away_name": "Sigma Olomouc",
+          "home_score": 1,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 24
+        },
+        {
+          "fixture_id": 19138416,
+          "date": "2025-03-16T14:30:00Z",
+          "home_name": "Viktoria Plzeň",
+          "away_name": "Baník Ostrava",
+          "home_score": 0,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 23
+        },
+        {
+          "fixture_id": 19138401,
+          "date": "2025-03-02T14:30:00Z",
+          "home_name": "Mladá Boleslav",
+          "away_name": "Viktoria Plzeň",
+          "home_score": 0,
+          "away_score": 2,
+          "result": "V",
+          "total_fouls": 19
+        },
+        {
+          "fixture_id": 19138304,
+          "date": "2024-10-19T14:00:00Z",
+          "home_name": "Baník Ostrava",
+          "away_name": "Viktoria Plzeň",
+          "home_score": 1,
+          "away_score": 3,
+          "result": "V",
+          "total_fouls": 25
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 7,
+      "avg_fouls_by_team": 11.1,
+      "avg_fouls_total": 22.3,
+      "avg_yellow_by_team": 1.71,
+      "avg_red_by_team": 0.29,
+      "recent_matches": [
+        {
+          "fixture_id": 19439123,
+          "date": "2025-11-08T14:00:00Z",
+          "home_name": "Dukla Praha",
+          "away_name": "Mladá Boleslav",
+          "home_score": 0,
+          "away_score": 1,
+          "result": "V",
+          "total_fouls": 28
+        },
+        {
+          "fixture_id": 19439048,
+          "date": "2025-08-16T15:00:00Z",
+          "home_name": "Mladá Boleslav",
+          "away_name": "Hradec Králové",
+          "home_score": 3,
+          "away_score": 2,
+          "result": "V",
+          "total_fouls": 24
+        },
+        {
+          "fixture_id": 19138428,
+          "date": "2025-03-30T13:30:00Z",
+          "home_name": "Karviná",
+          "away_name": "Mladá Boleslav",
+          "home_score": 3,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 23
+        },
+        {
+          "fixture_id": 19138401,
+          "date": "2025-03-02T14:30:00Z",
+          "home_name": "Mladá Boleslav",
+          "away_name": "Viktoria Plzeň",
+          "home_score": 0,
+          "away_score": 2,
+          "result": "P",
+          "total_fouls": 19
+        },
+        {
+          "fixture_id": 19138384,
+          "date": "2025-02-16T14:30:00Z",
+          "home_name": "Slovan Liberec",
+          "away_name": "Mladá Boleslav",
+          "home_score": 3,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 28
+        },
+        {
+          "fixture_id": 19138349,
+          "date": "2024-12-01T14:30:00Z",
+          "home_name": "Mladá Boleslav",
+          "away_name": "Hradec Králové",
+          "home_score": 3,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 18
+        },
+        {
+          "fixture_id": 19138316,
+          "date": "2024-10-27T14:30:00Z",
+          "home_name": "Mladá Boleslav",
+          "away_name": "Karviná",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 16
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "away",
@@ -34,8 +303,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Patrik Hrosovsky",
+        "jersey_number": 17,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Alexandr Sojka",
+        "jersey_number": 12,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Lukas Cerv",
+        "jersey_number": 6,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Merchas Doski",
+        "jersey_number": 14,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Sampson Dweh",
+        "jersey_number": 40,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Amar Memić",
+        "jersey_number": 99,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Filip Prebsl",
+        "jersey_number": 98,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Christophe Kabongo",
+        "jersey_number": 25,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Denis Vavro",
+        "jersey_number": 3,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Tobias Paliscak",
+        "jersey_number": 2,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Florian Wiegele",
+        "jersey_number": 44,
+        "formation_field": "1:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Marek Havran",
+        "jersey_number": 18,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Solomon John",
+        "jersey_number": 20,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Martin Šubert",
+        "jersey_number": 21,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "J. Zíka",
+        "jersey_number": 76,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Jiri Klima",
+        "jersey_number": 23,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Matej Hybs",
+        "jersey_number": 11,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Martin Kralik",
+        "jersey_number": 3,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Daniel Langhamer",
+        "jersey_number": 28,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Ondrej Karafiat",
+        "jersey_number": 44,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Filip Matousek",
+        "jersey_number": 32,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Jiri Floder",
+        "jersey_number": 59,
+        "formation_field": "1:1"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1378,8 +1759,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.13
+          "pct": 80.0
         },
         {
           "key": "shots_over",
@@ -1435,16 +1815,14 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.54
+          "pct": 60.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.45
+          "pct": 60.0
         },
         {
           "key": "corners_over95",
@@ -1472,32 +1850,28 @@
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 2.58
+          "pct": 60.0
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 2.67
+          "pct": 40.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 2.72
+          "pct": 40.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.37
+          "pct": 40.0
         },
         {
           "key": "corners_under95",
@@ -1532,24 +1906,21 @@
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 7.68
+          "pct": 20.0
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 1.88
+          "pct": 20.0
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 5.31
+          "pct": 20.0
         }
       ],
       "away": [
@@ -1558,8 +1929,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0,
-          "odds": 1.13
+          "pct": 100.0
         },
         {
           "key": "shots_over",
@@ -1636,48 +2006,42 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.45
+          "pct": 60.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 3.08
+          "pct": 60.0
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 5.31
+          "pct": 60.0
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.54
+          "pct": 40.0
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 7.68
+          "pct": 40.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 2.72
+          "pct": 40.0
         },
         {
           "key": "more_corners",
@@ -1698,16 +2062,14 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.88
+          "pct": 40.0
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 2.67
+          "pct": 20.0
         },
         {
           "key": "corners_under95",
@@ -1735,8 +2097,7 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0,
-          "odds": 2.58
+          "pct": 0.0
         }
       ]
     },
@@ -1747,8 +2108,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0,
-          "odds": 1.13
+          "pct": 100.0
         },
         {
           "key": "scored2plus",
@@ -1825,8 +2185,7 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7,
-          "odds": 1.45
+          "pct": 66.7
         },
         {
           "key": "corners_over95",
@@ -1868,16 +2227,14 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3,
-          "odds": 1.54
+          "pct": 33.3
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3,
-          "odds": 2.72
+          "pct": 33.3
         },
         {
           "key": "corners_under95",
@@ -1928,8 +2285,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0,
-          "odds": 1.13
+          "pct": 100.0
         },
         {
           "key": "scored2plus",
@@ -2013,8 +2369,7 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.45
+          "pct": 60.0
         },
         {
           "key": "corners_over95",
@@ -2042,16 +2397,14 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.54
+          "pct": 40.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 2.72
+          "pct": 40.0
         },
         {
           "key": "corners_under95",
@@ -7223,37 +7576,11 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:00:16.196007Z",
-  "odds": {
-    "home": 1.48,
-    "draw": 4.67,
-    "away": 5.76,
-    "under15": 5.68,
-    "over15": 1.13,
-    "under25": 2.72,
-    "over25": 1.45,
-    "under35": 1.67,
-    "over35": 2.2,
-    "btts": 1.54,
-    "source": "chance",
-    "home_scoreless": 7.68,
-    "home_scored2plus": 1.37,
-    "home_clean_sheet": 2.67,
-    "home_ht_leading": 1.88,
-    "home_ht_draw": 2.58,
-    "home_ht_behind": 5.31,
-    "away_clean_sheet": 7.68,
-    "away_scoreless": 2.67,
-    "away_scored2plus": 3.08,
-    "away_ht_behind": 1.88,
-    "away_ht_draw": 2.58,
-    "away_ht_leading": 5.31
-  },
   "ai_analysis": {
-    "text": "Zápas mezi Viktorií Plzeň a Mladou Boleslaví v rámci Chance Ligy se odehraje na Doosan Aréně, kde domácí tým má výhodu. Plzeň se v posledních zápasech nachází v mírně kolísavé formě, s jednou výhrou, dvěma remízami a dvěma prohrami. Na druhou stranu, Mladá Boleslav se prezentuje stabilněji, s čtyřmi výhrami a jednou remízou v posledních šesti utkáních. Historie vzájemných zápasů ukazuje jasnou dominanci Plzně, která v posledních pěti střetnutích s Boleslaví neztratila ani bod.\n\nPodle simulací očekávaných gólů (xG) má Mladá Boleslav mírně vyšší hodnotu (1.8) oproti Plzni (1.52), což naznačuje, že hosté by mohli být nebezpečnější v ofenzivě. Nicméně, Plzeň má silnou domácí bilanci a pravděpodobnost, že oba týmy skórují, je vysoká (64.9 %). Vzhledem k formě obou týmů a historickým výsledkům lze očekávat vyrovnaný zápas, kde by Plzeň mohla mít mírnou výhodu.\n\nCo se týče očekávaného výsledku, podle simulací je pravděpodobnost výhry Plzně 36.8 %, remízy 24.9 % a výhry Boleslavi 38.4 %. To naznačuje, že zápas by mohl skončit těsným výsledkem, možná s výhodou pro hosty, pokud udrží svou aktuální formu. Celkově se očekává atraktivní zápas s možností několika gólů, přičemž šance na více než 2,5 góly je 65.1 %.",
+    "text": "Zápas mezi Viktorií Plzeň a Mladou Boleslav v rámci Chance Ligy se odehraje na domácím stadionu Doosan Aréna 10. října 2026. Domácí Viktoria Plzeň se nachází v mírně slabší formě, když z posledních šesti zápasů zaznamenala tři výhry, dvě remízy a jednu prohru. Naopak Mladá Boleslav má za sebou úspěšnější období, s pěti výhrami a jednou remízou. Historie vzájemných zápasů naznačuje dominanci Plzně, která v posledních čtyřech utkáních proti Boleslavi neztratila ani bod.\n\nPodle simulací očekáváme vyrovnaný zápas, kde Mladá Boleslav může mít mírně vyšší očekávané góly (xG 1.8) ve srovnání s Plzní (xG 1.52). Pravděpodobnost vítězství hostů se pohybuje kolem 38.4 %, zatímco domácí mají šanci na výhru 36.8 %. Remíza se jeví jako méně pravděpodobná, s hodnotou 24.9 %. Obě týmy mají také vysokou pravděpodobnost, že vstřelí alespoň jeden gól, což činí 64.9 %.\n\nZápas by mohl být vysoce ofenzivní, s potenciálem na více než 2,5 gólu, což má pravděpodobnost 65.1 %. S ohledem na formu obou týmů a jejich vzájemné zápasy lze očekávat, že Plzeň se pokusí využít domácího prostředí a navázat na svou historickou dominanci, zatímco Boleslav bude usilovat o překvapení a prodloužení své vítězné série.",
     "model": "gpt-4o-mini",
-    "input_hash": "8a992c425b8bc0ee",
-    "generated_at": "2026-10-07T10:00:21Z",
-    "text_en": "The upcoming match between Viktoria Plzeň and Mladá Boleslav in the Chance Liga is set to take place at Doosan Aréna on October 10, 2026. Viktoria Plzeň has had a mixed recent form with two wins, two draws, and two losses in their last six matches. In contrast, Mladá Boleslav has shown stronger performance, securing four wins, one loss, and one draw in the same timeframe. Historically, Viktoria Plzeň has dominated their recent encounters, winning four out of the last five matches against Mladá Boleslav.\n\nStatistically, the simulation suggests a close contest, with expected goals (xG) indicating that Mladá Boleslav might have a slight edge with 1.8 compared to Viktoria Plzeň's 1.52. The probabilities for the match outcome show a slight inclination towards an away victory at 38.4%, while a home win stands at 36.8%. Both teams have a good chance of scoring, with a 64.9% likelihood of both teams finding the net, which suggests an engaging match.\n\nGiven the current form and historical context, Viktoria Plzeň will be looking to leverage their home advantage at Doosan Aréna, where they have been strong in the past. However, Mladá Boleslav's recent form indicates they are capable of challenging the home side. The match is likely to be competitive, with both teams aiming to secure valuable points in the league standings."
+    "input_hash": "08d9be1a35d27ce1",
+    "generated_at": "2026-10-07T22:25:31Z",
+    "text_en": "The upcoming match between Viktoria Plzeň and Mladá Boleslav in the Chance Liga is set to take place at the Doosan Aréna on October 10, 2026. Viktoria Plzeň has struggled recently, with a mixed record of two wins, two draws, and two losses in their last six matches. In contrast, Mladá Boleslav has shown a stronger form, securing four wins, one draw, and only one loss in the same period. This discrepancy in recent performance suggests that Mladá Boleslav may enter the match with greater confidence.\n\nHistorically, Viktoria Plzeň has had the upper hand in their encounters with Mladá Boleslav, winning four of their last five meetings. The most recent match saw Viktoria Plzeň triumph 2-1, indicating a competitive edge that they will look to maintain. However, Mladá Boleslav's recent form could challenge that trend, particularly given their ability to score goals, as indicated by their expected goals (xG) of 1.8 compared to Viktoria Plzeň's 1.52. This suggests that Mladá Boleslav may be more potent in attack during this fixture.\n\nThe simulation predicts a close contest, with a slight edge given to Mladá Boleslav, as they have a 38.4% chance of winning compared to Viktoria Plzeň's 36.8%. Additionally, there is a significant likelihood (64.9%) that both teams will score, indicating an expectation of an engaging match. With the referee Ondřej Berka officiating, the dynamics of the game could hinge on key moments, making it essential for both teams to capitalize on scoring opportunities while maintaining defensive solidity."
   }
 }

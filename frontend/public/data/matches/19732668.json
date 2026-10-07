@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37569279,
-      "player_name": "Hugo Sotelo",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-15",
-      "end_date": "2026-10-12",
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37646866,
       "player_name": "Karl Edouard Blaise Etta Eyong",
       "type_id": 535,
@@ -44,6 +30,20 @@
       "start_date": "2026-09-05",
       "end_date": "2026-10-12",
       "games_missed": 3,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37569279,
+      "player_name": "Hugo Sotelo",
+      "type_id": 536,
+      "type_name": "Knee Injury",
+      "type_name_cs": "Zranění kolena",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-15",
+      "end_date": "2026-10-12",
+      "games_missed": 1,
       "likely_available": false
     },
     {
@@ -1327,7 +1327,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.05
+          "odds": 2.1
         },
         {
           "key": "shots_over",
@@ -1385,7 +1385,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.32
+          "odds": 1.33
         },
         {
           "key": "over25",
@@ -1409,7 +1409,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.23
+          "odds": 3.15
         },
         {
           "key": "scoreless",
@@ -1417,7 +1417,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.22
+          "odds": 3.3
         },
         {
           "key": "under25",
@@ -1425,7 +1425,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "scored2plus",
@@ -1433,7 +1433,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.52
+          "odds": 2.46
         },
         {
           "key": "corners_under95",
@@ -1441,7 +1441,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.72
+          "odds": 1.71
         },
         {
           "key": "yellow_5plus",
@@ -1463,7 +1463,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.22
+          "odds": 3.39
         },
         {
           "key": "more_corners",
@@ -1486,7 +1486,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.23
+          "odds": 3.22
         }
       ],
       "away": [
@@ -1503,7 +1503,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.72
+          "odds": 1.71
         },
         {
           "key": "ht_draw",
@@ -1511,7 +1511,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.05
+          "odds": 2.1
         },
         {
           "key": "shots_over",
@@ -1576,7 +1576,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.32
+          "odds": 1.33
         },
         {
           "key": "under25",
@@ -1584,7 +1584,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "more_corners",
@@ -1614,7 +1614,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.22
+          "odds": 3.3
         },
         {
           "key": "over25",
@@ -1652,7 +1652,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.23
+          "odds": 3.22
         },
         {
           "key": "scoreless",
@@ -1660,7 +1660,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.23
+          "odds": 3.15
         },
         {
           "key": "scored2plus",
@@ -1668,7 +1668,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.5
+          "odds": 2.55
         },
         {
           "key": "ht_leading",
@@ -1676,7 +1676,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.22
+          "odds": 3.39
         }
       ]
     },
@@ -1688,7 +1688,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.32
+          "odds": 1.33
         },
         {
           "key": "scored2plus",
@@ -1781,7 +1781,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.72
+          "odds": 1.71
         },
         {
           "key": "team_2plus_yellow",
@@ -1811,7 +1811,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "corners_over95",
@@ -1885,7 +1885,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.32
+          "odds": 1.33
         },
         {
           "key": "scored2plus",
@@ -1964,7 +1964,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.72
+          "odds": 1.71
         },
         {
           "key": "btts",
@@ -1987,7 +1987,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "corners_over95",
@@ -6684,41 +6684,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:09:08.387867Z",
+  "refreshed_at": "2026-10-07T22:45:45.328186Z",
   "odds": {
-    "home": 2.65,
-    "draw": 3.22,
-    "away": 2.63,
-    "under15": 3.3,
-    "over15": 1.32,
-    "under25": 1.8,
+    "home": 2.62,
+    "draw": 3.29,
+    "away": 2.78,
+    "under15": 3.31,
+    "over15": 1.33,
+    "under25": 1.81,
     "over25": 2.02,
-    "under35": 1.29,
+    "under35": 1.3,
     "over35": 3.54,
     "btts": 1.73,
-    "corners_under95": 1.72,
+    "corners_under95": 1.71,
     "corners_over95": 2.01,
     "source": "chance",
-    "home_scoreless": 3.22,
-    "home_scored2plus": 2.52,
-    "home_clean_sheet": 3.23,
-    "home_ht_leading": 3.23,
-    "home_ht_draw": 2.05,
-    "home_ht_behind": 3.22,
+    "home_scoreless": 3.3,
+    "home_scored2plus": 2.46,
+    "home_clean_sheet": 3.15,
+    "home_ht_leading": 3.22,
+    "home_ht_draw": 2.1,
+    "home_ht_behind": 3.39,
     "home_more_corners": 1.91,
-    "away_clean_sheet": 3.22,
-    "away_scoreless": 3.23,
-    "away_scored2plus": 2.5,
-    "away_ht_behind": 3.23,
-    "away_ht_draw": 2.05,
-    "away_ht_leading": 3.22,
+    "away_clean_sheet": 3.3,
+    "away_scoreless": 3.15,
+    "away_scored2plus": 2.55,
+    "away_ht_behind": 3.22,
+    "away_ht_draw": 2.1,
+    "away_ht_leading": 3.39,
     "away_more_corners": 2.25
   },
   "ai_analysis": {
-    "text": "Zápas mezi Levante a Sevillou v rámci La Ligy se odehraje na stadionu Estadio Ciudad de Valencia. Domácí Levante se v posledních zápasech nachází ve slabší formě, s jednou výhrou a několika remízami a prohrami. Na druhé straně Sevilla vykazuje mírně lepší výkony, přičemž v posledních zápasech dokázala vyhrát a vyrovnat se. Historie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž Levante dokázalo v posledních dvou utkáních proti Seville zvítězit.\n\nPodle simulace očekávaných gólů (xG) je situace velmi vyrovnaná, s hodnotami 1.48 pro Levante a 1.45 pro Sevillu. To naznačuje, že obě mužstva mají podobné šance na vstřelení gólů. Vzhledem k tomu, že více než 59 % simulací naznačuje, že obě týmy skórují, je pravděpodobné, že zápas bude vyrovnaný a může skončit remízou nebo těsným vítězstvím jednoho z týmů.\n\nAnalýza také ukazuje, že více než polovina simulací (56,2 %) predikuje, že padne více než 2,5 gólu. To spolu s historickými výsledky, které často končily vysokými skóre, naznačuje, že zápas by mohl být dynamický a plný šancí. Celkově lze očekávat napínavý duel s vyrovnaným výkonem obou týmů a možností překvapení.",
+    "text": "Zápas mezi Levante a Sevillou se odehraje na Estadio Ciudad de Valencia a očekává se vyrovnaný duel. Domácí Levante v posledních šesti zápasech vykazuje smíšenou formu s dvěma výhrami, dvěma remízami a dvěma prohrami. Naopak Sevilla se může pochlubit lepšími výsledky, když z posledních šesti zápasů vyhrála čtyřikrát, což naznačuje, že mají momentálně silnější týmovou morálku.\n\nHistorie vzájemných zápasů ukazuje, že Levante má s Sevillou pozitivní bilanci, když vyhráli dva z posledních čtyř zápasů. To může hrát roli v psychologii obou týmů, přičemž Levante může mít výhodu domácího prostředí. Očekávané xG hodnoty naznačují, že obě strany mají podobné šance na vstřelení branek, což podporuje předpoklad vyrovnaného zápasu.\n\nStatistiky také naznačují, že pravděpodobnost, že oba týmy skórují, je vysoká (59,2 %), a šance na více než 2,5 branky v zápase je rovněž výrazná (56,2 %). To naznačuje, že zápas by mohl být dynamický s několika šancemi na obou stranách, což by mohlo vést k zajímavému a napínavému utkání.",
     "model": "gpt-4o-mini",
-    "input_hash": "5a13bfd0ab336b7d",
-    "generated_at": "2026-10-07T10:09:17Z",
-    "text_en": "The upcoming match between Levante and Sevilla in La Liga at the Estadio Ciudad de Valencia promises to be an intriguing contest. Levante has struggled in their recent form, recording two losses and a draw in their last six matches, suggesting difficulties in finding consistency. In contrast, Sevilla has shown a better performance with three wins and a draw in the same period, indicating a more stable form. Their head-to-head encounters have been competitive, with Levante having the upper hand in the last two meetings, winning both matches.\n\nThe simulation data indicates that both teams have similar expected goals (xG), with Levante at 1.48 and Sevilla at 1.45, suggesting a potentially balanced match in terms of offensive output. The probability of both teams scoring (59.2%) and the likelihood of over 2.5 goals (56.2%) further emphasize the potential for an engaging and high-scoring affair. Given the recent form of both teams, it is likely that Sevilla will aim to capitalize on their stronger performance to secure points, while Levante will seek to leverage their home advantage to break their losing streak.\n\nOverall, the match could see Sevilla pushing for an early advantage, while Levante may adopt a more cautious approach, looking to exploit counter-attacking opportunities. The outcome may hinge on key moments and individual performances, particularly in the midfield battle and defensive organization. As both teams have shown vulnerabilities, it is plausible that the match could end in a closely contested draw or a narrow victory for either side."
+    "input_hash": "f57689fede92d07d",
+    "generated_at": "2026-10-07T22:45:53Z",
+    "text_en": "The upcoming La Liga match between Levante and Sevilla at the Estadio Ciudad de Valencia promises to be an intriguing encounter. Levante's recent form shows a struggle, with two wins, three losses, and one draw in their last six matches. In contrast, Sevilla has displayed a more positive trend, securing three wins, two losses, and one draw in the same span. Historically, their head-to-head encounters have been competitive, with Levante winning two of the last five matches, including a convincing 3-0 victory earlier this year.\n\nStatistical simulations suggest a closely contested match, with expected goals (xG) for both teams being nearly equal at 1.48 for Levante and 1.45 for Sevilla. This indicates that both sides may create similar opportunities to score, which could lead to a balanced match. The probabilities also suggest a 40% chance of a home win for Levante, a 26% chance of a draw, and a 34% chance of an away victory for Sevilla. Additionally, there is a notable 59.2% likelihood that both teams will find the back of the net during the match.\n\nGiven the current form and the historical context, Levante will likely aim to leverage their home advantage to secure points, while Sevilla will be looking to maintain their upward trajectory. The match could hinge on key moments, such as defensive errors or standout performances from individual players. Overall, fans can expect a competitive match with potential for both teams to score, making it an exciting fixture in the La Liga calendar."
   }
 }

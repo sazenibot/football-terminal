@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T10:07:30Z",
+  "generated_at": "2026-10-07T22:44:15Z",
   "league": {
     "id": 82,
     "name": "Bundesliga",
@@ -25,7 +25,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": true,
+        "probs": [
+          67,
+          20,
+          13
+        ]
       }
     },
     {
@@ -44,7 +49,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": true,
+        "probs": [
+          29,
+          26,
+          45
+        ]
       }
     },
     {
@@ -63,7 +73,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": true,
+        "probs": [
+          34,
+          26,
+          40
+        ]
       }
     },
     {
@@ -82,7 +97,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": true,
+        "probs": [
+          31,
+          24,
+          45
+        ]
       }
     },
     {
@@ -101,7 +121,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": true,
+        "probs": [
+          10,
+          15,
+          75
+        ]
       }
     },
     {
@@ -120,7 +145,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": true,
+        "probs": [
+          61,
+          21,
+          18
+        ]
       }
     },
     {
@@ -139,7 +169,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": true,
+        "probs": [
+          54,
+          21,
+          25
+        ]
       }
     },
     {
@@ -158,7 +193,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": true,
+        "probs": [
+          55,
+          21,
+          24
+        ]
       }
     },
     {
@@ -177,7 +217,12 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false
+        "referee": true,
+        "probs": [
+          60,
+          24,
+          17
+        ]
       }
     }
   ],

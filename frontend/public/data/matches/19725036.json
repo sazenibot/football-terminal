@@ -2,8 +2,8 @@
   "fixture_id": 19725036,
   "league_id": 262,
   "league_name": "Chance Liga",
-  "built_at": "2026-10-04T10:31:52.042643Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T22:27:55.573061Z",
+  "build_mode": "full",
   "starting_at": "2026-10-11T13:00:00Z",
   "venue": "Na Stínadlech",
   "home": {
@@ -16,7 +16,316 @@
     "name": "Sigma Olomouc",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 69866,
+    "name": "D. Černý",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 0,
+          "average": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 109,
+        "average": 27.25
+      },
+      "Redcards": {
+        "all": {
+          "count": 2,
+          "average": 0.5,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 2
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 2,
+          "average": 0.5,
+          "percentage": 100
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 12,
+          "average": 3,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 12
+        },
+        "home": {
+          "count": 8,
+          "average": 2,
+          "percentage": 66.67
+        },
+        "away": {
+          "count": 4,
+          "average": 1,
+          "percentage": 33.33
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 4
+      },
+      "VAR Moments": {
+        "count": 1,
+        "average": 0.25
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 27.0,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.4,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 7,
+      "matches": 123,
+      "yellow_cards": 517,
+      "red_cards": 16,
+      "avg_yellow_per_match": 4.2
+    },
+    "h2h_matches_officiated": [
+      {
+        "fixture_id": 19439081,
+        "date": "2025-09-20T13:00:00Z",
+        "home": "Sigma Olomouc",
+        "away": "Teplice",
+        "home_score": 0,
+        "away_score": 0,
+        "result_for_home_team": "R"
+      },
+      {
+        "fixture_id": 18542855,
+        "date": "2023-04-22T14:00:00Z",
+        "home": "Sigma Olomouc",
+        "away": "Teplice",
+        "home_score": 1,
+        "away_score": 2,
+        "result_for_home_team": "V"
+      },
+      {
+        "fixture_id": 18140573,
+        "date": "2022-02-27T14:00:00Z",
+        "home": "Sigma Olomouc",
+        "away": "Teplice",
+        "home_score": 0,
+        "away_score": 0,
+        "result_for_home_team": "R"
+      }
+    ],
+    "home_team_matches_officiated": {
+      "matches": 10,
+      "avg_fouls_by_team": 14.9,
+      "avg_fouls_total": 27.9,
+      "avg_yellow_by_team": 1.2,
+      "avg_red_by_team": 0.4,
+      "recent_matches": [
+        {
+          "fixture_id": 19725083,
+          "date": "2026-08-15T15:00:00Z",
+          "home_name": "Sparta Praha",
+          "away_name": "Teplice",
+          "home_score": 4,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 23
+        },
+        {
+          "fixture_id": 19703877,
+          "date": "2026-05-12T15:30:00Z",
+          "home_name": "Zlín",
+          "away_name": "Teplice",
+          "home_score": 2,
+          "away_score": 4,
+          "result": "V",
+          "total_fouls": 35
+        },
+        {
+          "fixture_id": 19703882,
+          "date": "2026-05-03T11:00:00Z",
+          "home_name": "Teplice",
+          "away_name": "Slovácko",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 37
+        },
+        {
+          "fixture_id": 19439233,
+          "date": "2026-04-04T16:00:00Z",
+          "home_name": "Viktoria Plzeň",
+          "away_name": "Teplice",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 25
+        },
+        {
+          "fixture_id": 19439132,
+          "date": "2025-11-30T12:00:00Z",
+          "home_name": "Bohemians 1905",
+          "away_name": "Teplice",
+          "home_score": 0,
+          "away_score": 1,
+          "result": "V",
+          "total_fouls": 24
+        },
+        {
+          "fixture_id": 19439081,
+          "date": "2025-09-20T13:00:00Z",
+          "home_name": "Sigma Olomouc",
+          "away_name": "Teplice",
+          "home_score": 0,
+          "away_score": 0,
+          "result": "R",
+          "total_fouls": 43
+        },
+        {
+          "fixture_id": 19416516,
+          "date": "2025-05-11T11:00:00Z",
+          "home_name": "Teplice",
+          "away_name": "Slovácko",
+          "home_score": 1,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 23
+        },
+        {
+          "fixture_id": 19138447,
+          "date": "2025-04-13T11:00:00Z",
+          "home_name": "České Budějovice",
+          "away_name": "Teplice",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 25
+        },
+        {
+          "fixture_id": 19138274,
+          "date": "2024-12-05T19:00:00Z",
+          "home_name": "Viktoria Plzeň",
+          "away_name": "Teplice",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 16
+        },
+        {
+          "fixture_id": 19138315,
+          "date": "2024-10-27T12:00:00Z",
+          "home_name": "Teplice",
+          "away_name": "Bohemians 1905",
+          "home_score": 1,
+          "away_score": 2,
+          "result": "P",
+          "total_fouls": 28
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 6,
+      "avg_fouls_by_team": 13.0,
+      "avg_fouls_total": 27.2,
+      "avg_yellow_by_team": 2.67,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19439178,
+          "date": "2026-02-14T17:00:00Z",
+          "home_name": "Sigma Olomouc",
+          "away_name": "Viktoria Plzeň",
+          "home_score": 1,
+          "away_score": 2,
+          "result": "P",
+          "total_fouls": 29
+        },
+        {
+          "fixture_id": 19439104,
+          "date": "2025-10-18T13:00:00Z",
+          "home_name": "Karviná",
+          "away_name": "Sigma Olomouc",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 22
+        },
+        {
+          "fixture_id": 19439081,
+          "date": "2025-09-20T13:00:00Z",
+          "home_name": "Sigma Olomouc",
+          "away_name": "Teplice",
+          "home_score": 0,
+          "away_score": 0,
+          "result": "R",
+          "total_fouls": 43
+        },
+        {
+          "fixture_id": 19138405,
+          "date": "2025-03-01T15:00:00Z",
+          "home_name": "Sigma Olomouc",
+          "away_name": "Sparta Praha",
+          "home_score": 1,
+          "away_score": 2,
+          "result": "P",
+          "total_fouls": 23
+        },
+        {
+          "fixture_id": 19138371,
+          "date": "2025-02-03T17:00:00Z",
+          "home_name": "Sigma Olomouc",
+          "away_name": "Viktoria Plzeň",
+          "home_score": 2,
+          "away_score": 1,
+          "result": "V",
+          "total_fouls": 26
+        },
+        {
+          "fixture_id": 19138336,
+          "date": "2024-11-24T17:30:00Z",
+          "home_name": "Sigma Olomouc",
+          "away_name": "Slovan Liberec",
+          "home_score": 1,
+          "away_score": 4,
+          "result": "P",
+          "total_fouls": 20
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
@@ -1440,8 +1749,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0,
-          "odds": 1.25
+          "pct": 100.0
         },
         {
           "key": "sot_over",
@@ -1469,8 +1777,7 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 2.02
+          "pct": 80.0
         },
         {
           "key": "shots_over",
@@ -1512,8 +1819,7 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 2.28
+          "pct": 60.0
         },
         {
           "key": "corners_under95",
@@ -1548,16 +1854,14 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 3.47
+          "pct": 40.0
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 3.56
+          "pct": 40.0
         },
         {
           "key": "corners_over95",
@@ -1578,40 +1882,35 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 3.08
+          "pct": 40.0
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 3.15
+          "pct": 40.0
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 1.63
+          "pct": 20.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 1.8
+          "pct": 20.0
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 2.13
+          "pct": 20.0
         },
         {
           "key": "red_card",
@@ -1641,16 +1940,14 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.25
+          "pct": 80.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.8
+          "pct": 80.0
         },
         {
           "key": "yellow_under5",
@@ -1706,8 +2003,7 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 2.3
+          "pct": 60.0
         },
         {
           "key": "corners_over95",
@@ -1728,24 +2024,21 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 3.15
+          "pct": 60.0
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.63
+          "pct": 40.0
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 3.47
+          "pct": 40.0
         },
         {
           "key": "corners_under95",
@@ -1766,24 +2059,21 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 3.08
+          "pct": 40.0
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 3.56
+          "pct": 20.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0,
-          "odds": 2.02
+          "pct": 20.0
         },
         {
           "key": "yellow_5plus",
@@ -1804,8 +2094,7 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0,
-          "odds": 2.13
+          "pct": 0.0
         }
       ]
     },
@@ -1886,8 +2175,7 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7,
-          "odds": 2.02
+          "pct": 66.7
         },
         {
           "key": "corners_over95",
@@ -1915,8 +2203,7 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3,
-          "odds": 1.63
+          "pct": 33.3
         },
         {
           "key": "scoreless",
@@ -1930,16 +2217,14 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3,
-          "odds": 1.25
+          "pct": 33.3
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3,
-          "odds": 1.8
+          "pct": 33.3
         },
         {
           "key": "corners_under95",
@@ -2081,16 +2366,14 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.25
+          "pct": 60.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 2.02
+          "pct": 60.0
         },
         {
           "key": "ht_draw",
@@ -2104,16 +2387,14 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.63
+          "pct": 40.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.8
+          "pct": 40.0
         },
         {
           "key": "red_card",
@@ -7455,37 +7736,11 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:00:36.231148Z",
-  "odds": {
-    "home": 2.56,
-    "draw": 3.41,
-    "away": 2.61,
-    "under15": 3.85,
-    "over15": 1.25,
-    "under25": 2.02,
-    "over25": 1.8,
-    "under35": 1.38,
-    "over35": 2.99,
-    "btts": 1.63,
-    "source": "chance",
-    "home_scoreless": 3.56,
-    "home_scored2plus": 2.28,
-    "home_clean_sheet": 3.47,
-    "home_ht_leading": 3.08,
-    "home_ht_draw": 2.13,
-    "home_ht_behind": 3.15,
-    "away_clean_sheet": 3.56,
-    "away_scoreless": 3.47,
-    "away_scored2plus": 2.3,
-    "away_ht_behind": 3.08,
-    "away_ht_draw": 2.13,
-    "away_ht_leading": 3.15
-  },
   "ai_analysis": {
-    "text": "Zápas mezi Teplicemi a Sigmou Olomouc v rámci Chance ligy slibuje vyrovnané a napínavé utkání. Domácí Teplice mají v posledních šesti zápasech smíšenou formu, s třemi výhrami a třemi prohrami. Na druhé straně Sigma Olomouc se prezentuje lepšími výkony, když vyhrála čtyři z posledních šesti zápasů. Historie vzájemných zápasů ukazuje, že Sigma má mírnou převahu, přičemž poslední vzájemné utkání skončilo výhrou pro Sigmu 3:1.\n\nPodle simulací očekáváme, že Teplice budou mít mírně vyšší očekávané góly (xG 1.73) než Sigma (xG 1.55). To naznačuje, že domácí mohou mít více příležitostí ke skórování, avšak Sigma má zkušenosti a formu, která jí může pomoci v obranné fázi. Očekává se, že zápas bude vyrovnaný, s pravděpodobností 41.9 % na výhru Teplic, 32.8 % na výhru Sigmy a 25.4 % na remízu.\n\nStatistiky také naznačují vysokou pravděpodobnost, že oba týmy skórují (64.5 %), což by mohlo přispět k atraktivnímu utkání. Vzhledem k formě obou týmů a jejich vzájemným zápasům je pravděpodobné, že zápas bude vyrovnaný a může rozhodnout jediný gól nebo individuální chyba. Na domácím stadionu Na Stínadlech mohou Teplice těžit z podpory fanoušků, což by mohlo hrát klíčovou roli v konečném výsledku.",
+    "text": "Zápas mezi Teplicemi a Sigmou Olomouc se odehraje na stadionu Na Stínadlech v rámci Chance Ligy. Domácí Teplice mají smíšenou formu, s posledními výsledky, které zahrnují tři výhry a tři prohry. Na druhé straně Sigma Olomouc vykazuje stabilnější výkony, s pěti výhrami a jednou prohrou v posledních šesti zápasech. Historie vzájemných zápasů naznačuje vyrovnanost, přičemž poslední duel skončil výhrou Sigmy 3:1.\n\nAnalýza očekávaných gólů (xG) naznačuje, že Teplice mají mírně vyšší očekávaný počet gólů (1.73) než Sigma (1.55). To může naznačovat, že domácí tým bude mít více příležitostí ke skórování, avšak Sigma je schopná efektivně využívat své šance, což se ukázalo v předchozích vzájemných zápasech. Očekává se, že zápas bude vyrovnaný, s možností, že oba týmy dokážou skórovat, což potvrzuje i pravděpodobnost oboustranného vstřelení gólu (64.5 %).\n\nCelkově lze očekávat, že zápas bude vyrovnaný s možností několika gólů. Teplice budou chtít využít domácího prostředí, zatímco Sigma se pokusí navázat na svou dobrou formu a přerušit nepříznivou bilanci na hřišti soupeře. Výsledek může být ovlivněn i rozhodováním rozhodčího D. Černého, který bude mít klíčovou roli v průběhu zápasu.",
     "model": "gpt-4o-mini",
-    "input_hash": "0ff9c272b5c4a138",
-    "generated_at": "2026-10-07T10:00:42Z",
-    "text_en": "The upcoming match between Teplice and Sigma Olomouc in the Chance Liga promises to be an intriguing encounter, taking place at the Na Stínadlech stadium on October 11, 2026. Both teams have shown mixed recent form, with Teplice recording three wins and three losses in their last six matches, while Sigma Olomouc has achieved four wins and two losses. Historically, their head-to-head matches have been competitive, with Sigma Olomouc winning the last encounter 3-1 in February 2026, indicating a slight psychological edge.\n\nStatistically, the simulation suggests that Teplice has a marginally higher expected goals (xG) value of 1.73 compared to Sigma Olomouc's 1.55, hinting at a potentially more offensive approach from the home side. The likelihood of both teams scoring is relatively high, with a 64.5% probability for both teams to find the net. This could lead to an open game, especially considering that both teams have shown the ability to score multiple goals in recent outings.\n\nGiven the odds, Teplice is slightly favored at 2.56, with Sigma Olomouc close behind at 2.61, indicating a balanced matchup. The expectation is for a closely contested game, with the possibility of a high-scoring affair, particularly if both teams capitalize on their attacking opportunities. The outcome may hinge on key moments, such as set pieces or defensive errors, making it essential for both sides to maintain focus throughout the match."
+    "input_hash": "9202ff4166251338",
+    "generated_at": "2026-10-07T22:28:04Z",
+    "text_en": "The upcoming match between Teplice and Sigma Olomouc in the Chance Liga is set to take place at the Na Stínadlech stadium on October 11, 2026. The referee for this match will be D. Černý. Analyzing the recent form of both teams, Teplice has had a mixed performance with three wins and three losses in their last six matches, while Sigma Olomouc has shown a stronger form with four wins and two losses. This suggests that Sigma Olomouc may have the upper hand going into the match.\n\nHistorically, the head-to-head encounters between these two teams have been competitive. In their last five meetings, Sigma Olomouc has won twice, Teplice has won twice, and there has been one draw. The most recent match ended with Sigma Olomouc defeating Teplice 3-1, which could give them psychological confidence heading into this fixture. The expected goals (xG) analysis indicates that Teplice is projected to score 1.73 goals while Sigma Olomouc is projected to score 1.55, suggesting a closely contested match.\n\nBased on the simulation data, there is a 41.9% chance of a home win for Teplice, a 25.4% chance of a draw, and a 32.8% chance of an away win for Sigma Olomouc. Additionally, there is a high likelihood (64.5%) of both teams scoring and a significant chance (63.2%) of the match featuring over 2.5 goals. Given these factors, one can expect an engaging match with both teams likely to find the back of the net, and a potential for a close scoreline."
   }
 }

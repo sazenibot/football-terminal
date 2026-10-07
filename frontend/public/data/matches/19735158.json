@@ -2,8 +2,8 @@
   "fixture_id": 19735158,
   "league_id": 82,
   "league_name": "Bundesliga",
-  "built_at": "2026-10-04T10:40:17.373429Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T22:44:07.829201Z",
+  "build_mode": "full",
   "starting_at": "2026-10-11T15:30:00Z",
   "venue": "Europa-Park Stadion",
   "home": {
@@ -16,7 +16,136 @@
     "name": "Schalke 04",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/3/67.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 15399,
+    "name": "Martin Petersen",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 0,
+          "average": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 22,
+        "average": 22
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 5,
+          "average": 5,
+          "on_bench": 0,
+          "for_coach": 1,
+          "on_pitch": 4
+        },
+        "home": {
+          "count": 3,
+          "average": 3,
+          "percentage": 60
+        },
+        "away": {
+          "count": 2,
+          "average": 2,
+          "percentage": 40
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 1,
+          "average": 1,
+          "on_bench": 0,
+          "for_coach": 1,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 1,
+          "percentage": 100
+        }
+      },
+      "Season Matches": {
+        "count": 1
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 22.6,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.12,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 10,
+      "matches": 91,
+      "yellow_cards": 369,
+      "red_cards": 9,
+      "avg_yellow_per_match": 4.05
+    },
+    "h2h_matches_officiated": [
+      {
+        "fixture_id": 11886350,
+        "date": "2020-06-27T13:30:00Z",
+        "home": "SC Freiburg",
+        "away": "Schalke 04",
+        "home_score": 4,
+        "away_score": 0,
+        "result_for_home_team": "V"
+      }
+    ],
+    "home_team_matches_officiated": {
+      "matches": 1,
+      "avg_fouls_by_team": 14.0,
+      "avg_fouls_total": 25.0,
+      "avg_yellow_by_team": 2.0,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19433630,
+          "date": "2026-01-18T16:30:00Z",
+          "home_name": "FC Augsburg",
+          "away_name": "SC Freiburg",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 25
+        }
+      ]
+    },
+    "away_team_matches_officiated": null
+  },
   "sidelined": [
     {
       "side": "home",
@@ -1114,24 +1243,21 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 1.18
+          "pct": 75.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 1.59
+          "pct": 75.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 1.53
+          "pct": 75.0
         },
         {
           "key": "corners_under95",
@@ -1152,24 +1278,21 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 2.12
+          "pct": 75.0
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.58
+          "pct": 50.0
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 2.7
+          "pct": 50.0
         },
         {
           "key": "yellow_under5",
@@ -1197,8 +1320,7 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 2.38
+          "pct": 25.0
         },
         {
           "key": "corners_over95",
@@ -1219,24 +1341,21 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 4.92
+          "pct": 25.0
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 4,
-          "pct": 0.0,
-          "odds": 6.2
+          "pct": 0.0
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0,
-          "odds": 2.46
+          "pct": 0.0
         }
       ],
       "away": [
@@ -1308,40 +1427,35 @@
           "label": "Tým nevstřelil gól",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 2.7
+          "pct": 75.0
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 6.2
+          "pct": 50.0
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.18
+          "pct": 50.0
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.59
+          "pct": 50.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 2.38
+          "pct": 50.0
         },
         {
           "key": "corners_over95",
@@ -1362,24 +1476,21 @@
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 2.46
+          "pct": 50.0
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 1.58
+          "pct": 25.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 3.03
+          "pct": 25.0
         },
         {
           "key": "more_corners",
@@ -1407,16 +1518,14 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 4.92
+          "pct": 25.0
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 2.12
+          "pct": 25.0
         },
         {
           "key": "yellow_5plus",
@@ -1441,8 +1550,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0,
-          "odds": 1.18
+          "pct": 100.0
         },
         {
           "key": "scored2plus",
@@ -1519,8 +1627,7 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7,
-          "odds": 1.59
+          "pct": 66.7
         },
         {
           "key": "corners_over95",
@@ -1555,8 +1662,7 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3,
-          "odds": 2.38
+          "pct": 33.3
         },
         {
           "key": "corners_under95",
@@ -1577,8 +1683,7 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0,
-          "odds": 1.58
+          "pct": 0.0
         },
         {
           "key": "scoreless",
@@ -1622,8 +1727,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0,
-          "odds": 1.18
+          "pct": 100.0
         },
         {
           "key": "scored2plus",
@@ -1707,8 +1811,7 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.59
+          "pct": 60.0
         },
         {
           "key": "corners_under95",
@@ -1729,8 +1832,7 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 2.38
+          "pct": 40.0
         },
         {
           "key": "corners_over95",
@@ -1765,8 +1867,7 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0,
-          "odds": 1.58
+          "pct": 0.0
         },
         {
           "key": "scoreless",
@@ -5488,37 +5589,11 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:07:19.496051Z",
-  "odds": {
-    "home": 1.64,
-    "draw": 4.2,
-    "away": 5.08,
-    "under15": 4.88,
-    "over15": 1.18,
-    "under25": 2.38,
-    "over25": 1.59,
-    "under35": 1.54,
-    "over35": 2.5,
-    "btts": 1.58,
-    "source": "chance",
-    "home_scoreless": 6.2,
-    "home_scored2plus": 1.53,
-    "home_clean_sheet": 2.7,
-    "home_ht_leading": 2.12,
-    "home_ht_draw": 2.46,
-    "home_ht_behind": 4.92,
-    "away_clean_sheet": 6.2,
-    "away_scoreless": 2.7,
-    "away_scored2plus": 3.03,
-    "away_ht_behind": 2.12,
-    "away_ht_draw": 2.46,
-    "away_ht_leading": 4.92
-  },
   "ai_analysis": {
-    "text": "Zápas mezi SC Freiburg a Schalke 04, který se odehraje na stadionu Europa-Park, slibuje zajímavé souboje. Domácí Freiburg se nachází ve výborné formě, když v posledních čtyřech zápasech zaznamenal tři vítězství a jedno remízu. Naopak Schalke 04, i když se snaží zlepšit, má za sebou slabší výsledky, včetně jedné prohry a dvou remíz. Historie vzájemných zápasů také hovoří jasně ve prospěch Freiburgu, který v posledních čtyřech střetnutích s Schalke vyhrál s výrazným skóre 4:0.\n\nAnalýza očekávaných gólových příležitostí (xG) ukazuje, že Freiburg má výrazně vyšší šance na vstřelení branek (1.91 xG) ve srovnání se Schalke (0.81 xG). Tato statistika naznačuje, že domácí tým by měl mít převahu v ofenzivních akcích a pravděpodobně se dočkáme jejich gólů. Očekává se, že Freiburg bude mít větší kontrolu nad hrou a bude se snažit využít slabin obrany Schalke.\n\nCo se týče pravděpodobnosti výsledků, simulace naznačuje, že Freiburg má 53,3% šanci na vítězství, zatímco Schalke má jen 22,2% šanci na úspěch. Remíza se jeví jako méně pravděpodobná (24,5%). Vzhledem k tomu, že Freiburg má tendenci skórovat více než dvakrát, existuje i slušná šance na to, že zápas skončí s více než dvěma góly (51,5%). Celkově lze očekávat, že Freiburg bude dominantní a Schalke se bude snažit odolat tlaku.",
+    "text": "Zápas mezi SC Freiburg a Schalke 04 se odehraje na stadionu Europa-Park Stadion a vzhledem k aktuální formě obou týmů se dá očekávat, že domácí Freiburg bude favoritem. Freiburg má za sebou sérii tří vítězství a jednu remízu, zatímco Schalke se potýká s problémy, když v posledních čtyřech zápasech zaznamenalo pouze jedno vítězství a dvě prohry. Historie vzájemných zápasů také hovoří ve prospěch Freiburgu, který v posledních pěti střetnutích s Schalke vyhrál čtyřikrát a vždy s výrazným skóre.\n\nPodle simulovaných očekávaných gólů (xG) má Freiburg výraznou převahu s hodnotou 1.91 oproti 0.81 pro Schalke. To naznačuje, že Freiburg by měl mít více příležitostí ke skórování a mohl by dominovat v ofenzivě. Očekává se, že zápas bude mít vyšší pravděpodobnost na více než 2,5 góly (51.5 %) a také, že by mohlo padnout alespoň jedno branka z obou stran (48.3 %).\n\nCelkově lze očekávat, že Freiburg si udrží kontrolu nad zápasem a bude se snažit využít slabin Schalke v obraně. Pokud se Freiburgu podaří rychle vstřelit první gól, může to výrazně ovlivnit průběh zápasu a přinést jim další tři body do tabulky.",
     "model": "gpt-4o-mini",
-    "input_hash": "7fdb8d5c228f5397",
-    "generated_at": "2026-10-07T10:07:30Z",
-    "text_en": "The upcoming Bundesliga match between SC Freiburg and Schalke 04 at the Europa-Park Stadion is poised to be an intriguing encounter. SC Freiburg enters the match with a strong recent form, having recorded three wins and one draw in their last four matches. In contrast, Schalke 04 has shown some inconsistency, managing one win, two draws, and one loss in their recent outings. Historically, Freiburg has dominated this fixture, winning their last four encounters against Schalke by a significant margin, including a 4-0 victory in their most recent meeting.\n\nStatistical simulations suggest that SC Freiburg is likely to maintain their attacking momentum, with an expected goals (xG) value of 1.91 compared to Schalke's 0.81. This indicates a strong probability that Freiburg will create more scoring opportunities throughout the match. The simulations also show a 53.3% chance of Freiburg winning, while the likelihood of a draw stands at 24.5%, and Schalke's chances of victory are at 22.2%. Given these figures, Freiburg appears to be in a favorable position to secure another victory.\n\nDefensively, Freiburg has been solid, and there is a 48.3% chance that both teams will score, which suggests that while Freiburg is expected to dominate, Schalke may still find opportunities to test their defense. Overall, the match is likely to see Freiburg controlling possession and creating more chances, while Schalke will need to capitalize on any counter-attacking opportunities to stay competitive."
+    "input_hash": "2385ddd4e46ab994",
+    "generated_at": "2026-10-07T22:44:15Z",
+    "text_en": "The upcoming Bundesliga match between SC Freiburg and Schalke 04 at the Europa-Park Stadion is set to be an intriguing encounter, especially given the historical context and recent performances of both teams. SC Freiburg has shown strong form at home, with their recent results including three wins and a draw, while Schalke has had a mixed bag of results away from home, with one win, one draw, and two losses in their last four matches. This trend suggests that Freiburg will likely have the upper hand, particularly considering their dominant head-to-head record against Schalke in recent years.\n\nIn their last five encounters, Freiburg has consistently outperformed Schalke, winning all matches by a significant margin, including a 4-0 victory earlier this year. This historical dominance could play a psychological role as Freiburg prepares to host Schalke. The simulation data indicates that Freiburg is expected to create more scoring opportunities, with an expected goals (xG) value of 1.91 compared to Schalke's 0.81. This disparity suggests that Freiburg is more likely to capitalize on their chances and maintain pressure throughout the match.\n\nWith referee Martin Petersen officiating, the match could feature a balanced approach, but Freiburg's home advantage and superior form suggest they will control the game. The likelihood of both teams scoring is moderate at 48.3%, but given Freiburg's attacking prowess and Schalke's defensive vulnerabilities, a clean sheet for the visitors seems unlikely. Overall, a victory for SC Freiburg appears probable, with the possibility of multiple goals based on their recent scoring trends."
   }
 }

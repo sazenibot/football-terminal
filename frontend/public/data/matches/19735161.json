@@ -2,8 +2,8 @@
   "fixture_id": 19735161,
   "league_id": 82,
   "league_name": "Bundesliga",
-  "built_at": "2026-10-02T10:31:13.774978Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T22:32:31.487855Z",
+  "build_mode": "full",
   "starting_at": "2026-10-09T18:30:00Z",
   "venue": "Signal Iduna Park",
   "home": {
@@ -16,7 +16,164 @@
     "name": "Werder Bremen",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/18/82.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 16993,
+    "name": "Christian Dingert",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 0,
+          "average": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 9,
+        "average": 9
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 4,
+          "average": 4,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 4
+        },
+        "home": {
+          "count": 1,
+          "average": 1,
+          "percentage": 25
+        },
+        "away": {
+          "count": 3,
+          "average": 3,
+          "percentage": 75
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 1
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 22.6,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.12,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 17,
+      "matches": 212,
+      "yellow_cards": 883,
+      "red_cards": 7,
+      "avg_yellow_per_match": 4.17
+    },
+    "h2h_matches_officiated": [
+      {
+        "fixture_id": 19154708,
+        "date": "2025-01-25T14:30:00Z",
+        "home": "Borussia Dortmund",
+        "away": "Werder Bremen",
+        "home_score": 2,
+        "away_score": 2,
+        "result_for_home_team": "R"
+      }
+    ],
+    "home_team_matches_officiated": {
+      "matches": 1,
+      "avg_fouls_by_team": 11.0,
+      "avg_fouls_total": 26.0,
+      "avg_yellow_by_team": 1.0,
+      "avg_red_by_team": 1.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19154708,
+          "date": "2025-01-25T14:30:00Z",
+          "home_name": "Borussia Dortmund",
+          "away_name": "Werder Bremen",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 26
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 2,
+      "avg_fouls_by_team": 12.5,
+      "avg_fouls_total": 22.0,
+      "avg_yellow_by_team": 2.5,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19433752,
+          "date": "2026-04-26T13:30:00Z",
+          "home_name": "VfB Stuttgart",
+          "away_name": "Werder Bremen",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 18
+        },
+        {
+          "fixture_id": 19154708,
+          "date": "2025-01-25T14:30:00Z",
+          "home_name": "Borussia Dortmund",
+          "away_name": "Werder Bremen",
+          "home_score": 2,
+          "away_score": 2,
+          "result": "R",
+          "total_fouls": 26
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
@@ -205,24 +362,9 @@
         "formation_field": "3:4"
       },
       {
-        "player_name": "Ethan Chidiebere Nwaneri",
-        "jersey_number": 18,
-        "formation_field": "4:1"
-      },
-      {
         "player_name": "Joane Gadou",
         "jersey_number": 22,
         "formation_field": "2:1"
-      },
-      {
-        "player_name": "Joey Veerman",
-        "jersey_number": 25,
-        "formation_field": "4:2"
-      },
-      {
-        "player_name": "Mussa Kaba",
-        "jersey_number": 48,
-        "formation_field": "3:1"
       },
       {
         "player_name": "Gregor Kobel",
@@ -235,14 +377,29 @@
         "formation_field": "2:3"
       },
       {
-        "player_name": "Jobe Samuel Patrick Bellingham",
-        "jersey_number": 7,
-        "formation_field": "3:3"
-      },
-      {
         "player_name": "Serhou Guirassy",
         "jersey_number": 9,
         "formation_field": "5:1"
+      },
+      {
+        "player_name": "Joey Veerman",
+        "jersey_number": 25,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Jobe Samuel Patrick Bellingham",
+        "jersey_number": 7,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Mussa Kaba",
+        "jersey_number": 48,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Konstantinos Karetsas",
+        "jersey_number": 19,
+        "formation_field": "3:1"
       }
     ],
     "away": [
@@ -1338,24 +1495,21 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 2.47
+          "pct": 75.0
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 1.12
+          "pct": 75.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 1.28
+          "pct": 75.0
         },
         {
           "key": "team_2plus_yellow",
@@ -1369,40 +1523,35 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.4
+          "pct": 50.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 2.97
+          "pct": 50.0
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.85
+          "pct": 50.0
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.86
+          "pct": 50.0
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.29
+          "pct": 50.0
         },
         {
           "key": "yellow_under5",
@@ -1423,16 +1572,14 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.77
+          "pct": 50.0
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 1.58
+          "pct": 25.0
         },
         {
           "key": "red_card",
@@ -1446,24 +1593,21 @@
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 2.83
+          "pct": 25.0
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 6.2
+          "pct": 25.0
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 4,
-          "pct": 0.0,
-          "odds": 8.86
+          "pct": 0.0
         }
       ],
       "away": [
@@ -1472,16 +1616,14 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 4,
-          "pct": 100.0,
-          "odds": 1.58
+          "pct": 100.0
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 4,
-          "pct": 100.0,
-          "odds": 1.12
+          "pct": 100.0
         },
         {
           "key": "yellow_under5",
@@ -1551,48 +1693,42 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 1.4
+          "pct": 75.0
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0,
-          "odds": 1.77
+          "pct": 75.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 3.41
+          "pct": 50.0
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.85
+          "pct": 50.0
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0,
-          "odds": 1.86
+          "pct": 50.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 2.97
+          "pct": 25.0
         },
         {
           "key": "team_2plus_yellow",
@@ -1606,32 +1742,28 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0,
-          "odds": 6.2
+          "pct": 25.0
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 4,
-          "pct": 0.0,
-          "odds": 8.86
+          "pct": 0.0
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 4,
-          "pct": 0.0,
-          "odds": 2.47
+          "pct": 0.0
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 0,
           "total": 4,
-          "pct": 0.0,
-          "odds": 4.58
+          "pct": 0.0
         },
         {
           "key": "yellow_5plus",
@@ -1652,8 +1784,7 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0,
-          "odds": 2.83
+          "pct": 0.0
         }
       ]
     },
@@ -1664,8 +1795,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0,
-          "odds": 1.12
+          "pct": 100.0
         },
         {
           "key": "scored2plus",
@@ -1742,16 +1872,14 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7,
-          "odds": 1.4
+          "pct": 66.7
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7,
-          "odds": 1.86
+          "pct": 66.7
         },
         {
           "key": "yellow_under5",
@@ -1772,24 +1900,21 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3,
-          "odds": 1.58
+          "pct": 33.3
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3,
-          "odds": 2.97
+          "pct": 33.3
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3,
-          "odds": 1.85
+          "pct": 33.3
         },
         {
           "key": "more_corners",
@@ -1854,8 +1979,7 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0,
-          "odds": 1.12
+          "pct": 80.0
         },
         {
           "key": "scored2plus",
@@ -1925,16 +2049,14 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.4
+          "pct": 60.0
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0,
-          "odds": 1.85
+          "pct": 60.0
         },
         {
           "key": "yellow_under5",
@@ -1969,24 +2091,21 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.58
+          "pct": 40.0
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 2.97
+          "pct": 40.0
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0,
-          "odds": 1.86
+          "pct": 40.0
         },
         {
           "key": "more_corners",
@@ -6884,41 +7003,11 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:04:41.545549Z",
-  "odds": {
-    "home": 1.36,
-    "draw": 5.57,
-    "away": 7.55,
-    "under15": 6.31,
-    "over15": 1.12,
-    "under25": 2.97,
-    "over25": 1.4,
-    "under35": 1.82,
-    "over35": 2.02,
-    "btts": 1.58,
-    "corners_under95": 1.86,
-    "corners_over95": 1.85,
-    "source": "chance",
-    "home_scoreless": 8.86,
-    "home_scored2plus": 1.28,
-    "home_clean_sheet": 2.47,
-    "home_ht_leading": 1.77,
-    "home_ht_draw": 2.83,
-    "home_ht_behind": 6.2,
-    "home_more_corners": 1.29,
-    "away_clean_sheet": 8.86,
-    "away_scoreless": 2.47,
-    "away_scored2plus": 3.41,
-    "away_ht_behind": 1.77,
-    "away_ht_draw": 2.83,
-    "away_ht_leading": 6.2,
-    "away_more_corners": 4.58
-  },
   "ai_analysis": {
-    "text": "Zápas mezi Borussií Dortmund a Werderem Brémy se odehraje na domácím stadionu Signal Iduna Park, kde domácí tým v poslední době vykazuje výbornou formu se čtyřmi vítězstvími v řadě. Naopak Werder Brémy, ačkoliv také získal tři body v posledním zápase, má za sebou i remízu a prohru, což naznačuje, že jejich výkonnost není tak stabilní. Historie vzájemných zápasů ukazuje převahu Dortmundu, který v posledních pěti utkáních s Werderem neprohrál.\n\nPodle simulace očekávaných gólů (xG) má Borussia Dortmund výraznou výhodu s hodnotou 2.1 oproti 1.07 pro Werder. To naznačuje, že domácí tým by měl mít více příležitostí ke skórování. Pravděpodobnost vítězství Dortmundu je odhadována na 52.4 %, zatímco šance na remízu a výhru hostů jsou shodně 23.8 %. Také statistiky naznačují, že by mohlo padnout více než 2.5 góly, což je podpořeno i pravděpodobností, že oba týmy skórují (58.1 %).\n\nCelkově lze očekávat, že Borussia Dortmund bude dominovat hře a vytvářet si více šancí, zatímco Werder Brémy se bude snažit o solidní obranu a využití případných brejkových situací. Zápas by mohl být zajímavý i z hlediska ofenzivní hry, zejména pokud Dortmund udrží svou formu a agresivní styl.",
+    "text": "V nadcházejícím zápase Bundesligy mezi Borussií Dortmund a Werderem Brémy se očekává, že domácí tým, který se nachází v excelentní formě s čtyřmi po sobě jdoucími vítězstvími, bude favoritem. Borussia Dortmund má silnou ofenzivu, což potvrzují i simulace očekávaných gólů (xG), kde domácí tým vykazuje hodnotu 2.1, zatímco hosté pouze 1.07. Historie vzájemných zápasů také nahrává Dortmundským, kteří ve většině posledních střetnutí dominovali.\n\nWerder Bremen, ačkoliv má za sebou jedno vítězství a remízu, se potýká s nevyrovnanými výkony, což může být klíčovým faktorem v tomto zápase. Jejich poslední vzájemný zápas skončil prohrou 0:2, což může mít psychologický dopad na hráče. Navíc, pokud se podíváme na formu hostů, lze vidět, že mají tendenci mít potíže s udržením výkonnosti proti silnějším soupeřům.\n\nOčekává se, že zápas bude mít otevřený charakter, přičemž pravděpodobnost, že oba týmy skórují, je 58.1%. S ohledem na ofenzivní sílu Dortmundu a jejich domácí prostředí, je pravděpodobné, že se dočkáme více než dvou gólů, s pravděpodobností 61.4% na \"over 2.5\". Celkově lze tedy očekávat, že Borussia Dortmund bude dominovat a pravděpodobně si odnese tři body.",
     "model": "gpt-4o-mini",
-    "input_hash": "8499925c5d163ad9",
-    "generated_at": "2026-10-07T10:04:54Z",
-    "text_en": "The upcoming Bundesliga match between Borussia Dortmund and Werder Bremen is set to take place at Signal Iduna Park on October 9, 2026. Dortmund enters this match in strong form, having won their last four league games, while Werder Bremen's recent performances have been mixed, with three wins, one draw, and one loss in their last five matches. Historically, Dortmund has had the upper hand in their recent encounters, winning four of the last five meetings, which adds to their confidence heading into this fixture.\n\nStatistically, simulations suggest that Borussia Dortmund is expected to dominate the match, with an expected goals (xG) value of 2.1 compared to Werder Bremen's 1.07. This indicates that Dortmund is likely to create more goal-scoring opportunities. The odds reflect this expectation, with Dortmund favored at 1.36 to win, while Werder Bremen's odds are significantly higher at 7.55, further emphasizing the disparity in their current form and historical performance.\n\nGiven these factors, it is reasonable to anticipate a match where Borussia Dortmund controls possession and creates more chances. The likelihood of both teams scoring stands at 58.1%, suggesting that while Dortmund may secure a victory, Werder Bremen could also find the back of the net. Overall, the match is poised to showcase Dortmund's attacking prowess against Bremen's defense, with a potential scoreline reflecting Dortmund's recent scoring form."
+    "input_hash": "0cdebca5f1c07282",
+    "generated_at": "2026-10-07T22:32:41Z",
+    "text_en": "The upcoming Bundesliga match between Borussia Dortmund and Werder Bremen at Signal Iduna Park promises to be an intriguing encounter. Dortmund enters this match in excellent form, having won their last four league matches, which indicates a strong attacking and defensive performance. In contrast, Werder Bremen has shown mixed results with three wins, one draw, and one loss in their last five matches, suggesting they are capable of competing but may struggle against a high-flying Dortmund side.\n\nHistorically, Dortmund has had the upper hand in their recent head-to-head encounters, winning four out of the last five matches against Bremen, including a convincing 3-0 victory earlier this year. The expected goals (xG) statistics further favor Dortmund, with an xG of 2.1 compared to Bremen's 1.07. This suggests that Dortmund is likely to create more high-quality chances, which could lead to multiple goals.\n\nWith Christian Dingert officiating, the match may see a focus on maintaining discipline, which could impact the tempo of the game. Given the current forms and historical data, it is reasonable to expect Dortmund to dominate possession and create more scoring opportunities, while Bremen will need to rely on counter-attacks and set pieces to find the back of the net. Overall, a high-scoring match could be on the cards, with both teams having the potential to score, but Dortmund likely emerging victorious."
   }
 }

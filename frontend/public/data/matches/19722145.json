@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-10-07T10:02:57.240620Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T16:30:00Z",
   "venue": "Old Trafford",
   "home": {
@@ -231,20 +231,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37317015,
-      "player_name": "Amad Diallo Traoré",
-      "type_id": 531,
-      "type_name": "Knock",
-      "type_name_cs": "Knock",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-20",
-      "end_date": "2026-10-10",
-      "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 26768,
       "player_name": "Matthijs de Ligt",
       "type_id": 595,
@@ -272,17 +258,17 @@
       "likely_available": false
     },
     {
-      "side": "away",
-      "player_id": 9938919,
-      "player_name": "Mykhailo Mudryk",
-      "type_id": 537,
-      "type_name": "Ankle Injury",
-      "type_name_cs": "Zranění kotníku",
+      "side": "home",
+      "player_id": 37317015,
+      "player_name": "Amad Diallo Traoré",
+      "type_id": 531,
+      "type_name": "Knock",
+      "type_name_cs": "Knock",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-09",
-      "end_date": "2026-11-09",
-      "games_missed": 3,
+      "start_date": "2026-08-20",
+      "end_date": "2026-10-10",
+      "games_missed": 7,
       "likely_available": false
     },
     {
@@ -301,6 +287,20 @@
     },
     {
       "side": "away",
+      "player_id": 9938919,
+      "player_name": "Mykhailo Mudryk",
+      "type_id": 537,
+      "type_name": "Ankle Injury",
+      "type_name_cs": "Zranění kotníku",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-09",
+      "end_date": "2026-11-09",
+      "games_missed": 3,
+      "likely_available": false
+    },
+    {
+      "side": "away",
       "player_id": 37317392,
       "player_name": "Xavi Simons",
       "type_id": 1918,
@@ -315,8 +315,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Matheus Cunha",
+        "jersey_number": 10,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Marcus Rashford",
+        "jersey_number": 9,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Bruno Fernandes",
+        "jersey_number": 8,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Luke Shaw",
+        "jersey_number": 23,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Harry Maguire",
+        "jersey_number": 5,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Bryan Mbeumo",
+        "jersey_number": 19,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Youri Tielemans",
+        "jersey_number": 18,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Kobbie Mainoo",
+        "jersey_number": 37,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Lisandro Martínez",
+        "jersey_number": 6,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Noussair Mazraoui",
+        "jersey_number": 3,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Senne Lammens",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Omar Marmoush",
+        "jersey_number": 22,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Mateus Fernandes",
+        "jersey_number": 18,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Andrew Robertson",
+        "jersey_number": 3,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Micky van de Ven",
+        "jersey_number": 37,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Ben Davies",
+        "jersey_number": 33,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Archie James Francis Gray",
+        "jersey_number": 14,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Savinho",
+        "jersey_number": 17,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Mathys Henri Tel",
+        "jersey_number": 11,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Rodrigo Bentancur",
+        "jersey_number": 30,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Sandro Tonali",
+        "jersey_number": 16,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Antonín Kinský",
+        "jersey_number": 31,
+        "formation_field": "1:1"
+      }
+    ]
   },
   "h2h": [
     {
@@ -7466,5 +7578,6 @@
     "input_hash": "278bc3a0225b3082",
     "generated_at": "2026-10-07T10:03:07Z",
     "text_en": "The upcoming Premier League match between Manchester United and Tottenham Hotspur at Old Trafford is set to be an intriguing encounter. Both teams have shown mixed recent form, with Manchester United recording two wins, two draws, and one loss in their last five matches, while Tottenham has struggled with four losses and only one draw in the same period. This inconsistency could play a significant role in the match dynamics, especially as Manchester United looks to leverage their home advantage.\n\nHistorically, the head-to-head results show a competitive rivalry, with recent matches yielding varied outcomes. In their last encounter in February 2026, Manchester United secured a 2-0 victory, while Tottenham had previously triumphed 3-0 at Old Trafford in September 2024. The expected goals (xG) simulation suggests that Manchester United may have the upper hand, with an xG of 1.69 compared to Tottenham's 0.91. This indicates that Manchester United is likely to create more scoring opportunities, which could be pivotal in determining the match's outcome.\n\nReferee Stuart Attwell will oversee the match, and his officiating style may influence the flow of the game. With both teams having the potential to score, the likelihood of both teams finding the net stands at nearly 49%. Additionally, the odds reflect a stronger expectation for a Manchester United win at 1.7, while a draw and a Tottenham victory are less favored. Overall, if Manchester United can capitalize on their home advantage and maintain composure in front of goal, they may emerge victorious in this crucial fixture."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:30:20.159569Z"
 }

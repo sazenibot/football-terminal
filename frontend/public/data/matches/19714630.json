@@ -3,7 +3,7 @@
   "league_id": 72,
   "league_name": "Eredivisie",
   "built_at": "2026-10-07T10:10:17.712689Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T12:30:00Z",
   "venue": "BUKO Stadion",
   "home": {
@@ -5250,5 +5250,6 @@
     "input_hash": "2fbd0c1a2d5d464e",
     "generated_at": "2026-10-07T10:10:32Z",
     "text_en": "The upcoming match between Telstar and ADO Den Haag in the Eredivisie is set to take place at the BUKO Stadion. Telstar has been struggling recently, with a record of one win, two draws, and three losses in their last six matches, indicating a challenging period for the home side. Conversely, ADO Den Haag has shown slightly better form, with two wins, two draws, and two losses in their recent games, suggesting they may have a slight edge going into this fixture.\n\nStatistical simulations indicate that Telstar has an expected goals (xG) value of 1.48, while ADO Den Haag sits at 1.24. This suggests that Telstar may create more scoring opportunities, but the close xG values indicate that the match could be competitive. The simulation also shows a probability of 54.9% for both teams to score, which hints at a potentially open game where both sides could find the back of the net.\n\nWith Erwin Blank officiating the match, both teams will need to be disciplined to avoid unnecessary fouls that could lead to set-piece opportunities. Given the recent forms and xG statistics, a closely contested match is expected, with Telstar possibly benefiting from home advantage, while ADO Den Haag will aim to capitalize on their slightly better recent performance."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:46:13.064094Z"
 }

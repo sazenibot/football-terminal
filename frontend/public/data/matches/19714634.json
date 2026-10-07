@@ -3,7 +3,7 @@
   "league_id": 72,
   "league_name": "Eredivisie",
   "built_at": "2026-10-07T10:09:55.390038Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T19:00:00Z",
   "venue": "Johan Cruijff Arena",
   "home": {
@@ -309,20 +309,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 4230,
-      "player_name": "Steven Berghuis",
-      "type_id": 677,
-      "type_name": "Minor Knock",
-      "type_name_cs": "Minor Knock",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-18",
-      "end_date": null,
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 970,
       "player_name": "Daley Blind",
       "type_id": 595,
@@ -337,16 +323,30 @@
     },
     {
       "side": "home",
-      "player_id": 96870,
-      "player_name": "Yves Bissouma",
-      "type_id": 1618,
-      "type_name": "Visa Issues",
-      "type_name_cs": "Visa Issues",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-09-16",
+      "player_id": 4230,
+      "player_name": "Steven Berghuis",
+      "type_id": 677,
+      "type_name": "Minor Knock",
+      "type_name_cs": "Minor Knock",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-18",
       "end_date": null,
       "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 25739,
+      "player_name": "Philippe Sandler",
+      "type_id": 677,
+      "type_name": "Minor Knock",
+      "type_name_cs": "Minor Knock",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-17",
+      "end_date": null,
+      "games_missed": 2,
       "likely_available": false
     },
     {
@@ -379,14 +379,14 @@
     },
     {
       "side": "away",
-      "player_id": 25739,
-      "player_name": "Philippe Sandler",
-      "type_id": 677,
-      "type_name": "Minor Knock",
-      "type_name_cs": "Minor Knock",
+      "player_id": 25548537,
+      "player_name": "Gonzalo Alejandro Crettaz",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-17",
+      "start_date": "2026-09-13",
       "end_date": null,
       "games_missed": 2,
       "likely_available": false
@@ -404,25 +404,123 @@
       "end_date": null,
       "games_missed": 2,
       "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 25548537,
-      "player_name": "Gonzalo Alejandro Crettaz",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-13",
-      "end_date": null,
-      "games_missed": 2,
-      "likely_available": false
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Oscar Gloukh",
+        "jersey_number": 10,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Julian Brandt",
+        "jersey_number": 8,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Davy Klaassen",
+        "jersey_number": 18,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Thilo Kehrer",
+        "jersey_number": 6,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Tolu Arokodare",
+        "jersey_number": 99,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Jorthy Mokio",
+        "jersey_number": 24,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Marc ter Stegen",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Viktor Tsygankov",
+        "jersey_number": 11,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Anton Gaaei",
+        "jersey_number": 3,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Youri Baas",
+        "jersey_number": 15,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Caio Henrique",
+        "jersey_number": 12,
+        "formation_field": "2:4"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Gabriel Brás",
+        "jersey_number": 73,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Nikolas Polster",
+        "jersey_number": 12,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Kevin Kers",
+        "jersey_number": 34,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Tobias Storm",
+        "jersey_number": 21,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Bryan Linssen",
+        "jersey_number": 30,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Perr Schuurs",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Tjaronn Chery",
+        "jersey_number": 9,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Darko Nejasmic",
+        "jersey_number": 6,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Dusan Tadic",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Dele Thomas",
+        "jersey_number": 77,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Noé Lebreton",
+        "jersey_number": 20,
+        "formation_field": "3:2"
+      }
+    ]
   },
   "h2h": [
     {
@@ -8009,5 +8107,6 @@
     "input_hash": "1312f7262f8091c6",
     "generated_at": "2026-10-07T10:10:04Z",
     "text_en": "The upcoming Eredivisie match between Ajax and NEC Nijmegen at the Johan Cruijff Arena promises to be an intriguing encounter. Ajax, playing at home, has shown a mixed recent form with two wins, two draws, and one loss in their last six matches. In contrast, NEC Nijmegen has also had a fluctuating performance, with two wins, two losses, and two draws in their last six games. This sets the stage for a competitive match, as both teams will be looking to secure valuable points.\n\nHistorically, the head-to-head encounters between these two teams have been closely contested, with recent matches yielding draws and one notable victory for NEC Nijmegen. The last match in February 2026 ended in a 1-1 draw, indicating that both teams are capable of matching each other on the pitch. Given Ajax's home advantage and the expected higher expected goals (xG) of 2.1 compared to NEC's 1.34, they may be favored to dominate possession and create more scoring opportunities.\n\nThe simulation data suggests a strong likelihood of both teams scoring, with a 65% chance of both teams finding the net. Additionally, there is a 66.9% probability of more than 2.5 goals being scored in the match. This could lead to an exciting game with multiple chances and potentially a high scoreline, as Ajax aims to leverage their home ground advantage while NEC Nijmegen looks to capitalize on any defensive lapses. Overall, fans can expect a thrilling contest with the potential for drama and intensity."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:46:07.737877Z"
 }

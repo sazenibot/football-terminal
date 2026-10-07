@@ -2,8 +2,8 @@
   "fixture_id": 19735154,
   "league_id": 82,
   "league_name": "Bundesliga",
-  "built_at": "2026-10-04T10:39:11.305710Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-07T22:42:41.136976Z",
+  "build_mode": "full",
   "starting_at": "2026-10-11T13:30:00Z",
   "venue": "RheinEnergieStadion",
   "home": {
@@ -16,7 +16,164 @@
     "name": "Borussia Mönchengladbach",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/11/683.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 11719,
+    "name": "Florian Badstübner",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 1,
+          "average": 0.5
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.5,
+          "percentage": 100
+        }
+      },
+      "Fouls": {
+        "count": 49,
+        "average": 24.5
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 5,
+          "average": 2.5,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 5
+        },
+        "home": {
+          "count": 1,
+          "average": 0.5,
+          "percentage": 20
+        },
+        "away": {
+          "count": 4,
+          "average": 2,
+          "percentage": 80
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 2
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 22.6,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.12,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 7,
+      "matches": 80,
+      "yellow_cards": 272,
+      "red_cards": 4,
+      "avg_yellow_per_match": 3.4
+    },
+    "h2h_matches_officiated": [],
+    "home_team_matches_officiated": {
+      "matches": 2,
+      "avg_fouls_by_team": 8.5,
+      "avg_fouls_total": 18.0,
+      "avg_yellow_by_team": 0.0,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19735190,
+          "date": "2026-08-29T13:30:00Z",
+          "home_name": "FC Köln",
+          "away_name": "TSG Hoffenheim",
+          "home_score": 3,
+          "away_score": 2,
+          "result": "V",
+          "total_fouls": 25
+        },
+        {
+          "fixture_id": 19433566,
+          "date": "2025-11-22T17:30:00Z",
+          "home_name": "FC Köln",
+          "away_name": "Eintracht Frankfurt",
+          "home_score": 3,
+          "away_score": 4,
+          "result": "P",
+          "total_fouls": 11
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 2,
+      "avg_fouls_by_team": 10.5,
+      "avg_fouls_total": 24.0,
+      "avg_yellow_by_team": 1.5,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19433756,
+          "date": "2026-05-03T15:40:00Z",
+          "home_name": "Borussia Mönchengladbach",
+          "away_name": "Borussia Dortmund",
+          "home_score": 1,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 31
+        },
+        {
+          "fixture_id": 19154694,
+          "date": "2025-01-14T19:30:00Z",
+          "home_name": "VfL Wolfsburg",
+          "away_name": "Borussia Mönchengladbach",
+          "home_score": 5,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 17
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "away",
@@ -1147,7 +1304,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 3.57
+          "odds": 3.55
         },
         {
           "key": "more_corners",
@@ -1155,7 +1312,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.68
+          "odds": 1.69
         },
         {
           "key": "under25",
@@ -1171,7 +1328,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.63
+          "odds": 1.64
         },
         {
           "key": "corners_under95",
@@ -1194,7 +1351,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.46
+          "odds": 2.47
         },
         {
           "key": "clean_sheet",
@@ -1202,7 +1359,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.74
+          "odds": 3.75
         },
         {
           "key": "scoreless",
@@ -1210,7 +1367,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.58
+          "odds": 5.56
         },
         {
           "key": "red_card",
@@ -1225,7 +1382,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.51
+          "odds": 2.52
         }
       ],
       "away": [
@@ -1322,7 +1479,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.46
+          "odds": 2.47
         },
         {
           "key": "btts",
@@ -1338,7 +1495,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 3.74
+          "odds": 3.75
         },
         {
           "key": "scored2plus",
@@ -1346,7 +1503,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.18
+          "odds": 2.17
         },
         {
           "key": "more_corners",
@@ -1354,7 +1511,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.59
+          "odds": 2.56
         },
         {
           "key": "yellow_under5",
@@ -1391,7 +1548,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.57
+          "odds": 3.55
         },
         {
           "key": "clean_sheet",
@@ -1399,7 +1556,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.58
+          "odds": 5.56
         },
         {
           "key": "under25",
@@ -1415,7 +1572,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.51
+          "odds": 2.52
         }
       ]
     },
@@ -6344,11 +6501,10 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:07:03.435608Z",
   "odds": {
-    "home": 2.02,
-    "draw": 4.07,
-    "away": 3.29,
+    "home": 2.03,
+    "draw": 4.09,
+    "away": 3.27,
     "under15": 5.64,
     "over15": 1.14,
     "under25": 2.68,
@@ -6359,26 +6515,26 @@
     "corners_under95": 2.12,
     "corners_over95": 1.64,
     "source": "chance",
-    "home_scoreless": 5.58,
-    "home_scored2plus": 1.63,
-    "home_clean_sheet": 3.74,
-    "home_ht_leading": 2.46,
-    "home_ht_draw": 2.51,
-    "home_ht_behind": 3.57,
-    "home_more_corners": 1.68,
-    "away_clean_sheet": 5.58,
-    "away_scoreless": 3.74,
-    "away_scored2plus": 2.18,
-    "away_ht_behind": 2.46,
-    "away_ht_draw": 2.51,
-    "away_ht_leading": 3.57,
-    "away_more_corners": 2.59
+    "home_scoreless": 5.56,
+    "home_scored2plus": 1.64,
+    "home_clean_sheet": 3.75,
+    "home_ht_leading": 2.47,
+    "home_ht_draw": 2.52,
+    "home_ht_behind": 3.55,
+    "home_more_corners": 1.69,
+    "away_clean_sheet": 5.56,
+    "away_scoreless": 3.75,
+    "away_scored2plus": 2.17,
+    "away_ht_behind": 2.47,
+    "away_ht_draw": 2.52,
+    "away_ht_leading": 3.55,
+    "away_more_corners": 2.56
   },
   "ai_analysis": {
-    "text": "Zápas mezi FC Köln a Borussií Mönchengladbach slibuje být vyrovnaným a napínavým střetnutím. Domácí tým, FC Köln, se nachází v mírně lepší formě, když v posledních čtyřech zápasech zaznamenal jednu výhru, jednu remízu a dvě prohry. Naopak Borussia Mönchengladbach prochází těžkým obdobím, když v posledních čtyřech zápasech nezískala ani bod. Historie vzájemných zápasů ukazuje na vyrovnanost, přičemž poslední tři zápasy skončily remízou nebo těsným vítězstvím jednoho z týmů.\n\nPodle simulací očekáváme, že FC Köln bude mít mírnou výhodu v očekávaných gólech (xG) s hodnotou 2.1 oproti 1.57 pro Mönchengladbach. To naznačuje, že domácí tým by mohl být efektivnější v koncovce, což je důležité, zejména v kontextu jejich posledních výkonů. S pravděpodobností 69.3% se také zdá, že oba týmy by mohly skórovat, což by mohlo přispět k atraktivnímu zápasu pro fanoušky.\n\nZ pohledu statistik a kurzů se FC Köln jeví jako favorit, s kurzem 2.02 na výhru. Nicméně, remíza je stále pravděpodobná (24%) a s kurzem 4.07 by mohla být zajímavou možností. Celkově se očekává vyrovnaný zápas s potenciálem pro oba týmy, aby ukázaly své ofenzivní schopnosti, což by mohlo vést k zajímavému a dynamickému utkání.",
+    "text": "Zápas mezi FC Köln a Borussií Mönchengladbach slibuje být vyrovnaným a atraktivním utkáním, které se odehraje na RheinEnergieStadion. Domácí tým má za sebou smíšenou formu, s jednou výhrou, jednou remízou a dvěma prohrami v posledních čtyřech zápasech. Naopak hosté z Mönchengladbachu mají za sebou sérii čtyř remíz, což naznačuje, že se jim nedaří najít vítěznou formu. Historie vzájemných zápasů ukazuje, že oba týmy mají tendenci hrát vyrovnané zápasy, přičemž poslední vzájemný duel skončil remízou 3:3.\n\nPodle simulací se očekává, že FC Köln vytvoří více šancí, s očekávanými góly (xG) 2.1 oproti 1.57 pro Mönchengladbach. To naznačuje, že domácí tým by mohl mít navrch, ale s ohledem na předchozí výsledky a formu hostů je pravděpodobné, že se zápas vyvine v otevřenou bitvu s mnoha šancemi na obou stranách. Šance na to, že oba týmy skórují, jsou vysoké (69.3 %), což naznačuje, že diváci by se mohli dočkat atraktivního fotbalu.\n\nCo se týče statistických ukazatelů, pravděpodobnost remízy je 24 %, zatímco výhra domácích je vyhodnocena na 46.5 %. Vzhledem k tomu, že oba týmy mají tendenci skórovat, je také pravděpodobné, že zápas překročí hranici 2.5 gólů, což má pravděpodobnost 70.7 %. Rozhodujícími faktory by mohly být individuální výkony klíčových hráčů a schopnost týmů využít své šance.",
     "model": "gpt-4o-mini",
-    "input_hash": "a57a36cc6e8f3ffa",
-    "generated_at": "2026-10-07T10:07:19Z",
-    "text_en": "The upcoming Bundesliga match between FC Köln and Borussia Mönchengladbach at the RheinEnergieStadion promises to be an intriguing encounter. Both teams have had mixed recent performances, with FC Köln showing a form of one win, one draw, and two losses in their last four matches, while Borussia Mönchengladbach has struggled with four consecutive losses. Historically, their meetings have been closely contested, with several high-scoring draws and a mix of results, indicating that this match could go either way.\n\nThe simulation data suggests that FC Köln has a slight edge in expected goals (xG) with 2.1 compared to Mönchengladbach's 1.57. This could indicate that Köln is more likely to create better scoring opportunities, especially playing at home. The likelihood of both teams scoring (69.3%) is high, which aligns with their past encounters where goals have been plentiful. Given the attacking capabilities of both sides, fans can expect an open game with chances on both ends.\n\nIn terms of the match dynamics, Köln will likely look to capitalize on their home advantage and push for an early goal, while Mönchengladbach will need to find a way to break their losing streak and regain confidence. The odds reflect a competitive match, with Köln being favored slightly at 2.02 for a win. However, the potential for a draw (4.07) or a Mönchengladbach victory (3.29) remains significant, making this a crucial fixture for both teams as they aim to improve their standings in the Bundesliga."
+    "input_hash": "f1f5adc8426f6386",
+    "generated_at": "2026-10-07T22:42:49Z",
+    "text_en": "The upcoming Bundesliga match between FC Köln and Borussia Mönchengladbach at the RheinEnergieStadion is set to be an intriguing encounter. FC Köln has struggled recently, with a recent form of one win, one draw, and two losses, while Borussia Mönchengladbach has faced similar difficulties, losing their last four matches. This suggests that both teams are in a challenging phase, which could lead to a tightly contested match as they seek to regain form.\n\nHistorically, the head-to-head results between these two teams indicate a competitive rivalry. The last five encounters have produced a mix of high-scoring draws and wins for both sides, with the most recent match ending in a 3-3 draw. The simulation data suggests that FC Köln has a slight edge in expected goals (xG) with 2.1 compared to Mönchengladbach's 1.57, indicating that they may create more scoring opportunities. Additionally, there is a high likelihood of both teams scoring, with a 69.3% probability for both teams to find the net.\n\nWith Florian Badstübner officiating, the match could see a dynamic flow as both teams look to capitalize on their attacking strengths while addressing their defensive vulnerabilities. The odds reflect a close contest, with FC Köln favored to win at 2.03, while Mönchengladbach's odds stand at 3.27. Given the recent form and historical context, fans can expect an engaging match that could go either way, with the potential for goals from both sides."
   }
 }

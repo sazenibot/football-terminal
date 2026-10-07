@@ -47,20 +47,6 @@
       "likely_available": false
     },
     {
-      "side": "home",
-      "player_id": 37743776,
-      "player_name": "Hráč #37743776",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-02-06",
-      "end_date": "2026-11-01",
-      "games_missed": 25,
-      "likely_available": false
-    },
-    {
       "side": "away",
       "player_id": 130120,
       "player_name": "Umar Sadiq Mesbah",
@@ -73,20 +59,6 @@
       "end_date": "2026-11-02",
       "games_missed": 4,
       "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 96887,
-      "player_name": "Mouctar Diakhaby",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-09",
-      "end_date": "2026-10-09",
-      "games_missed": 3,
-      "likely_available": true
     },
     {
       "side": "away",
@@ -114,6 +86,34 @@
       "start_date": "2026-05-23",
       "end_date": "2027-03-01",
       "games_missed": 14,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 96887,
+      "player_name": "Mouctar Diakhaby",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-09",
+      "end_date": "2026-10-09",
+      "games_missed": 3,
+      "likely_available": true
+    },
+    {
+      "side": "away",
+      "player_id": 5007,
+      "player_name": "Sergi Canós Tenes",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-04-04",
+      "end_date": "2027-01-01",
+      "games_missed": 22,
       "likely_available": false
     },
     {
@@ -1389,7 +1389,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.21
+          "odds": 1.22
         },
         {
           "key": "over25",
@@ -1397,7 +1397,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.66
+          "odds": 1.69
         },
         {
           "key": "team_2plus_yellow",
@@ -1412,7 +1412,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.53
+          "odds": 1.55
         },
         {
           "key": "scored2plus",
@@ -1420,7 +1420,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.95
+          "odds": 1.97
         },
         {
           "key": "corners_over95",
@@ -1505,7 +1505,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.31
+          "odds": 2.29
         },
         {
           "key": "ht_behind",
@@ -1513,7 +1513,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.4
+          "odds": 3.43
         },
         {
           "key": "scoreless",
@@ -1521,7 +1521,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.37
+          "odds": 4.27
         },
         {
           "key": "corners_under95",
@@ -1543,7 +1543,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.79
+          "odds": 2.82
         },
         {
           "key": "clean_sheet",
@@ -1551,7 +1551,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.52
+          "odds": 3.45
         },
         {
           "key": "under25",
@@ -1559,7 +1559,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.25
+          "odds": 2.2
         },
         {
           "key": "more_corners",
@@ -1632,7 +1632,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.21
+          "odds": 1.22
         },
         {
           "key": "over25",
@@ -1640,7 +1640,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.66
+          "odds": 1.69
         },
         {
           "key": "corners_over95",
@@ -1669,7 +1669,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.79
+          "odds": 2.82
         },
         {
           "key": "btts",
@@ -1677,7 +1677,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.53
+          "odds": 1.55
         },
         {
           "key": "scoreless",
@@ -1685,7 +1685,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.52
+          "odds": 3.45
         },
         {
           "key": "under25",
@@ -1693,7 +1693,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.25
+          "odds": 2.2
         },
         {
           "key": "corners_under95",
@@ -1729,7 +1729,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.31
+          "odds": 2.29
         },
         {
           "key": "clean_sheet",
@@ -1737,7 +1737,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.37
+          "odds": 4.27
         },
         {
           "key": "scored2plus",
@@ -1745,7 +1745,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.29
+          "odds": 2.32
         },
         {
           "key": "ht_leading",
@@ -1753,7 +1753,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.4
+          "odds": 3.43
         }
       ]
     },
@@ -1765,7 +1765,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.53
+          "odds": 1.55
         },
         {
           "key": "over15",
@@ -1773,7 +1773,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.21
+          "odds": 1.22
         },
         {
           "key": "yellow_under5",
@@ -1851,7 +1851,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.66
+          "odds": 1.69
         },
         {
           "key": "scored2plus",
@@ -1873,7 +1873,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.25
+          "odds": 2.2
         },
         {
           "key": "corners_over95",
@@ -2016,7 +2016,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.53
+          "odds": 1.55
         },
         {
           "key": "over15",
@@ -2024,7 +2024,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.21
+          "odds": 1.22
         },
         {
           "key": "under25",
@@ -2032,7 +2032,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.25
+          "odds": 2.2
         },
         {
           "key": "ht_leading",
@@ -2054,7 +2054,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.66
+          "odds": 1.69
         },
         {
           "key": "scored2plus",
@@ -6507,37 +6507,37 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:08:58.035820Z",
+  "refreshed_at": "2026-10-07T22:45:33.315486Z",
   "odds": {
-    "home": 2.29,
-    "draw": 3.7,
-    "away": 2.95,
-    "under15": 4.48,
-    "over15": 1.21,
-    "under25": 2.25,
-    "over25": 1.66,
-    "under35": 1.49,
-    "over35": 2.65,
-    "btts": 1.53,
+    "home": 2.3,
+    "draw": 3.67,
+    "away": 2.96,
+    "under15": 4.34,
+    "over15": 1.22,
+    "under25": 2.2,
+    "over25": 1.69,
+    "under35": 1.47,
+    "over35": 2.71,
+    "btts": 1.55,
     "source": "chance",
-    "home_scoreless": 4.37,
-    "home_scored2plus": 1.95,
-    "home_clean_sheet": 3.52,
-    "home_ht_leading": 2.79,
-    "home_ht_draw": 2.31,
-    "home_ht_behind": 3.4,
-    "away_clean_sheet": 4.37,
-    "away_scoreless": 3.52,
-    "away_scored2plus": 2.29,
-    "away_ht_behind": 2.79,
-    "away_ht_draw": 2.31,
-    "away_ht_leading": 3.4
+    "home_scoreless": 4.27,
+    "home_scored2plus": 1.97,
+    "home_clean_sheet": 3.45,
+    "home_ht_leading": 2.82,
+    "home_ht_draw": 2.29,
+    "home_ht_behind": 3.43,
+    "away_clean_sheet": 4.27,
+    "away_scoreless": 3.45,
+    "away_scored2plus": 2.32,
+    "away_ht_behind": 2.82,
+    "away_ht_draw": 2.29,
+    "away_ht_leading": 3.43
   },
   "ai_analysis": {
-    "text": "Zápas mezi Racingem Santander a Valencií se odehraje na stadionu Campos de Sport de El Sardinero v rámci La Ligy. Domácí tým Racing Santander v posledních šesti zápasech vykazuje smíšenou formu, se dvěma výhrami a čtyřmi remízami. Naopak Valencia se nachází v lepší formě, kdy z posledních šesti utkání vyhrála pětkrát a jednou remizovala. Historie vzájemných zápasů ukazuje vyrovnanost, přičemž poslední tři zápasy skončily remízou nebo těsným vítězstvím.\n\nPodle simulací očekáváme, že domácí Racing Santander by mohl mít mírně vyšší očekávaný počet gólů (1.96) oproti Valencii (1.53). To naznačuje, že domácí tým by mohl být nebezpečnější v útoku, i když Valencia má silnou defenzivu. Pravděpodobnost, že oba týmy skórují, je vysoká (66.9 %), což naznačuje, že zápas by mohl být vyrovnaný a bohatý na šance.\n\nCo se týče výsledku, simulace naznačují pravděpodobnost výhry domácích na úrovni 45.3 %, zatímco výhra hostů je odhadována na 30 %. Remíza má pravděpodobnost 24.7 %. Celkově lze očekávat vyrovnaný zápas s možností, že oba týmy přispějí k výsledku. Zápas by mohl být dramatický, s několika šancemi na obou stranách.",
+    "text": "Zápas mezi Racingem Santander a Valencií se odehraje na stadionu Campos de Sport de El Sardinero v rámci La Ligy. Domácí tým Racing Santander má v posledních šesti zápasech smíšenou formu, s dvěma výhrami a čtyřmi remízami. Naopak Valencia se prezentuje lepšími výkony, když v posledních šesti utkáních zaznamenala čtyři výhry a dvě remízy. Historie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž poslední čtyři zápasy skončily remízou nebo těsným vítězstvím.\n\nPodle simulací a očekávaných gólových šancí (xG) má Racing Santander mírnou výhodu s 1.96 xG oproti Valencii, která má 1.53 xG. To naznačuje, že domácí tým může mít šance na skórování, ale Valencia je stále silným protivníkem, který má potenciál zápas vyhrát. Očekává se, že zápas by mohl skončit remízou, což je pravděpodobné podle statistik, přičemž šance na remízu je 24.7 %.\n\nVzhledem k výše uvedeným faktorům se zdá, že zápas bude vyrovnaný, s možností obou týmů skórovat. S pravděpodobností 66.9 % je velmi pravděpodobné, že oba týmy vstřelí branku. Dále je zde také vysoká pravděpodobnost, že padne více než 2,5 gólu, což činí 67.3 %. Celkově lze očekávat napínavý zápas s několika šancemi na obou stranách.",
     "model": "gpt-4o-mini",
-    "input_hash": "30d9a2ca4c14b4a8",
-    "generated_at": "2026-10-07T10:09:08Z",
-    "text_en": "The upcoming La Liga match between Racing Santander and Valencia at the Campos de Sport de El Sardinero on October 11, 2026, presents an intriguing matchup. Racing Santander has struggled recently, with a form record of two wins and four losses in their last six matches. In contrast, Valencia has shown a stronger performance, securing four wins and two losses in the same timeframe. This disparity in recent form suggests that Valencia may enter the match as the favorites, although the home advantage for Racing Santander could play a crucial role.\n\nHistorically, the head-to-head encounters between these two teams have been quite competitive, with several matches ending in draws and high-scoring affairs. The last five meetings have seen a mix of results, indicating that both teams can find the back of the net. The simulation data suggests a likelihood of both teams scoring, with a probability of 66.9% for both teams to score (BTTS). Additionally, the expected goals (xG) indicate that Racing Santander may have a slight edge in creating chances, with an xG of 1.96 compared to Valencia's 1.53.\n\nGiven the current form and historical context, the match could unfold with Valencia looking to capitalize on their recent momentum, while Racing Santander will aim to leverage their home advantage to secure points. The odds reflect this uncertainty, with a home win at 2.29, a draw at 3.7, and an away win at 2.95. Overall, fans can expect a competitive encounter with the potential for goals from both sides."
+    "input_hash": "ae2b5c91b58dd9ee",
+    "generated_at": "2026-10-07T22:45:42Z",
+    "text_en": "The upcoming La Liga match between Racing Santander and Valencia at the Campos de Sport de El Sardinero is set to be an intriguing encounter. Racing Santander has struggled recently, with a mixed form of two wins and four losses in their last six matches. In contrast, Valencia has shown a more consistent performance, securing four wins and two losses in their recent outings. The historical head-to-head results indicate a competitive rivalry, with both teams having had their share of draws and close contests over the years.\n\nStatistical simulations suggest that Racing Santander may have a slight edge in expected goals (xG) with a figure of 1.96 compared to Valencia's 1.53. This indicates that while Racing may create more goal-scoring opportunities, their recent form raises concerns about their ability to convert these chances into goals. The likelihood of both teams scoring (66.9%) is relatively high, suggesting an open game where both sides could find the back of the net.\n\nGiven the current form and the venue advantage, the match could see a closely contested battle. Valencia's recent winning streak may give them the confidence needed to perform well away from home, while Racing will aim to leverage their home support to turn their fortunes around. Overall, the match is likely to be competitive, with a potential for goals from both teams, but Valencia may have the upper hand based on their recent performances."
   }
 }

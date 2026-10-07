@@ -3,7 +3,7 @@
   "league_id": 8,
   "league_name": "Premier League",
   "built_at": "2026-10-07T10:02:36.928431Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T14:00:00Z",
   "venue": "Villa Park",
   "home": {
@@ -261,20 +261,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 23311159,
-      "player_name": "Ian Maatsen",
-      "type_id": 537,
-      "type_name": "Ankle Injury",
-      "type_name_cs": "Zranění kotníku",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-12",
-      "end_date": "2026-11-20",
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 31824,
       "player_name": "Leon Goretzka",
       "type_id": 687,
@@ -289,6 +275,20 @@
     },
     {
       "side": "home",
+      "player_id": 23311159,
+      "player_name": "Ian Maatsen",
+      "type_id": 537,
+      "type_name": "Ankle Injury",
+      "type_name_cs": "Zranění kotníku",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-12",
+      "end_date": "2026-11-20",
+      "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 22878573,
       "player_name": "Amadou Zeund Georges Mvom Onana",
       "type_id": 1918,
@@ -299,6 +299,20 @@
       "start_date": "2026-07-07",
       "end_date": "2027-06-01",
       "games_missed": 16,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37656906,
+      "player_name": "Kaye Iyowuna Furo",
+      "type_id": 558,
+      "type_name": "Foot surgery",
+      "type_name_cs": "Foot surgery",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-14",
+      "end_date": null,
+      "games_missed": 2,
       "likely_available": false
     },
     {
@@ -319,20 +333,6 @@
       "side": "away",
       "player_id": 37575228,
       "player_name": "Antoni-Djibu Milambo",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2025-10-10",
-      "end_date": "2026-09-17",
-      "games_missed": null,
-      "likely_available": true
-    },
-    {
-      "side": "away",
-      "player_id": 37575228,
-      "player_name": "Antoni-Djibu Milambo",
       "type_id": 547,
       "type_name": "Fitness",
       "type_name_cs": "Kondiční důvody",
@@ -341,20 +341,6 @@
       "start_date": "2026-09-17",
       "end_date": null,
       "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37656906,
-      "player_name": "Kaye Iyowuna Furo",
-      "type_id": 558,
-      "type_name": "Foot surgery",
-      "type_name_cs": "Foot surgery",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-14",
-      "end_date": null,
-      "games_missed": 2,
       "likely_available": false
     },
     {
@@ -373,8 +359,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Nicolas Jackson",
+        "jersey_number": 11,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Alejandro Garnacho",
+        "jersey_number": 17,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Ibrahim Mbaye",
+        "jersey_number": 19,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Victor Lindelöf",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Aaron Wan-Bissaka",
+        "jersey_number": 29,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Zion Suzuki",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "John McGinn",
+        "jersey_number": 7,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Ross Barkley",
+        "jersey_number": 6,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "João Gomes",
+        "jersey_number": 35,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Taylor Harwood-Bellis",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Matteo Ruggeri",
+        "jersey_number": 13,
+        "formation_field": "2:4"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Igor Thiago",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Keane Lewis-Potter",
+        "jersey_number": 23,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Michael Kayode",
+        "jersey_number": 33,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Caoimhín Kelleher",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Kevin Schade",
+        "jersey_number": 7,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Jaidon Anthony",
+        "jersey_number": 19,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Mamadou Sangaré",
+        "jersey_number": 18,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Mikkel Damsgaard",
+        "jersey_number": 24,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Vitaly Janelt",
+        "jersey_number": 27,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Benjamin Fredrick",
+        "jersey_number": 48,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Kristoffer Ajer",
+        "jersey_number": 20,
+        "formation_field": "2:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -7192,5 +7290,6 @@
     "input_hash": "7e208a4a2efec563",
     "generated_at": "2026-10-07T10:02:57Z",
     "text_en": "The upcoming match between Aston Villa and Brentford at Villa Park is set to be an intriguing encounter in the Premier League. Aston Villa's recent form has been less than ideal, with only one win in their last five matches (V, P, R, P, P). In contrast, Brentford has shown a more consistent performance, securing three wins and two draws in their last five outings (V, R, R, R, V). This difference in form could play a crucial role in determining the outcome of the match.\n\nHistorically, the head-to-head record between these two teams has been competitive, with Brentford winning two of the last five encounters, while Aston Villa has secured one victory. The most recent encounter saw Brentford triumph 1-0 at Villa Park in February 2026. The simulation data indicates that Brentford may have the edge, with an expected goals (xG) of 1.67 compared to Aston Villa's 1.05, suggesting that Brentford is likely to create more scoring opportunities.\n\nThe match will be officiated by Craig Pawson, who is known for his ability to maintain control in high-stakes games. Given the current form and head-to-head statistics, Brentford may be favored to take points from this match, while Aston Villa will need to improve their attacking efficiency to secure a positive result. The likelihood of both teams scoring is relatively high, with a 52.5% chance according to the simulation, which indicates that fans can expect an engaging and competitive match at Villa Park."
-  }
+  },
+  "refreshed_at": "2026-10-07T22:30:17.666078Z"
 }
