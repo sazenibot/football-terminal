@@ -260,8 +260,8 @@ def fetch_league(league_id: int) -> dict:
 
 
 # Vzájemné zápasy starší než tohle okno nejsou o dnešních týmech (jiné kádry, trenéři, liga).
-# Počítají se jen zápasy z posledních H2H_MAX_YEARS let před výkopem. Při změně okna nebo logiky zvýšit
-# BUILD_VERSION: denní refresh pak starší soubory zápasů znovu postaví (viz refresh_data.py).
+# Počítají se jen zápasy z posledních H2H_MAX_YEARS let před výkopem. Platí pro nově sestavené zápasy. Při změně zvýšit
+# BUILD_VERSION: jen značka verze v souboru zápasu; starší soubory se zpětně nepřestavují (zápas z okna stárne sám).
 H2H_MAX_YEARS = 5
 BUILD_VERSION = 2
 
