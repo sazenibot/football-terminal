@@ -64,6 +64,8 @@ def snapshot(sim: dict) -> dict | None:
             "d": model["draw_pct"],
             "a": model["away_win_pct"],
             "over25": model.get("over25_pct"),
+            "over15": model.get("over15_pct"),
+            "over35": model.get("over35_pct"),
             "xg": model.get("expected_goals"),
         },
     }

@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import type { TeamBrief } from "../types";
 import type { Prediction } from "./derive";
 import { t } from "../i18n/locale";
-import { TIP_WIN_FROM, computeTip } from "../lib/tip";
+import { TIP_GOALS_MAIN_FROM, TIP_WIN_FROM, computeGoalsTip, computeTip } from "../lib/tip";
 import { Card, Info, MeterBar, MirrorRow, ProbBar, SideHeads, SubTitle, ValueTag, n1, n2, pct } from "./kit";
 
 /* ---------- Kdo vyhraje ---------- */
@@ -45,16 +45,19 @@ function OutcomeCol({
   );
 }
 
+const LINE_KEY = { o15: "mc.pr.line.over15", o25: "mc.pr.line.over25", o35: "mc.pr.line.over35", u25: "mc.pr.line.under25", u35: "mc.pr.line.under35" } as const;
+
 function TipRow({ p, home, away }: { p: Prediction; home: TeamBrief; away: TeamBrief }) {
   const tip = computeTip(p.home, p.draw, p.away);
   const team = (tip.side === "home" ? home : away).name;
   const code = t(`mc.pr.tip.c.${tip.side}${tip.kind === "dc" ? "Dc" : ""}` as "mc.pr.tip.c.home");
+  const goals = computeGoalsTip(p.over25, p.over15, p.over35);
   return (
     <div className="mt-4 rounded-xl border border-(--c-line) bg-(--c-raised)/60 px-3 py-3 sm:px-4">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
         <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">
           {t("mc.pr.tip.title")}
-          <Info>{t("mc.pr.tip.info", { from: TIP_WIN_FROM })}</Info>
+          <Info>{t("mc.pr.tip.info", { from: TIP_WIN_FROM, goalsFrom: TIP_GOALS_MAIN_FROM })}</Info>
         </span>
         <span className="inline-flex min-w-0 items-center gap-2 text-[15px] font-bold">
           <span className="rounded-md bg-(--c-accent)/15 px-1.5 py-0.5 text-[12px] tabular-nums text-(--c-accent)">{code}</span>
@@ -64,6 +67,15 @@ function TipRow({ p, home, away }: { p: Prediction; home: TeamBrief; away: TeamB
       </div>
       <p className="mt-1.5 text-[12px] leading-snug text-(--c-muted)">
         {t("mc.pr.tip.prob", { p: Math.round(tip.prob) })} {t("mc.pr.tip.hist", { n: tip.n, hit: tip.hit })}
+      </p>
+      <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-(--c-line) pt-3">
+        <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("mc.pr.tip.goals")}</span>
+        <span className="inline-flex min-w-0 items-center gap-2 text-[15px] font-bold">
+          <span className="rounded-md bg-(--c-accent)/15 px-1.5 py-0.5 text-[13px] text-(--c-accent)">{t(LINE_KEY[goals.line])}</span>
+        </span>
+      </div>
+      <p className="mt-1.5 text-[12px] leading-snug text-(--c-muted)">
+        {t("mc.pr.tip.goalsProb", { p: Math.round(goals.prob) })} {t("mc.pr.tip.goalsHist", { n: goals.n, hit: goals.hit })}
       </p>
     </div>
   );
@@ -149,22 +161,28 @@ function LineRow({
   market,
   odd,
   emphasize = false,
+  badge,
 }: {
   label: string;
   value: number;
   market?: number;
   odd?: number;
   emphasize?: boolean;
+  /** štítek „Tip" u řádku, který model doporučuje */
+  badge?: string;
 }) {
   return (
     <div className="py-1.5">
-      <div className="grid grid-cols-[5.5rem_1fr_3.25rem] items-center gap-3">
-        <span className={`text-sm ${emphasize ? "font-semibold" : "text-(--c-muted)"}`}>{label}</span>
+      <div className="grid grid-cols-[7rem_1fr_3.25rem] items-center gap-3">
+        <span className={`text-sm ${emphasize ? "font-semibold" : "text-(--c-muted)"}`}>
+          {label}
+          {badge && <span className="ml-1.5 rounded bg-(--c-accent)/15 px-1 py-px align-middle text-[10px] font-bold uppercase text-(--c-accent)">{badge}</span>}
+        </span>
         <MeterBar value={value} color={emphasize ? "var(--c-accent)" : "var(--c-faint)"} height={8} />
         <span className={`text-right text-sm tabular-nums ${emphasize ? "font-bold" : "text-(--c-muted)"}`}>{pct(value)}</span>
       </div>
       {market != null && (
-        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 pl-[6.25rem] text-[11px] text-(--c-faint)">
+        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 pl-[7.75rem] text-[11px] text-(--c-faint)">
           <span className="tabular-nums">
             {t("mc.pr.bookmaker", { p: pct(market) })}
             {odd != null && <> · {t("mc.pr.odds", { v: n2(odd) })}</>}
@@ -178,6 +196,17 @@ function LineRow({
 
 export function GoalsBlock({ p }: { p: Prediction }) {
   const mk = p.market;
+  /* Doporučená čára je zelená, ostatní šedé. Tip se počítá jen u nového modelu (v2). */
+  const goals = computeGoalsTip(p.over25, p.over15, p.over35);
+  const lines = (
+    [
+      p.over15 != null && { key: "o15" as const, value: p.over15, market: mk?.over15_pct, odd: mk?.odds.over15 },
+      { key: "o25" as const, value: p.over25, market: mk?.over25_pct, odd: mk?.odds.over25 },
+      p.over35 != null && { key: "o35" as const, value: p.over35, market: mk?.over35_pct, odd: mk?.odds.over35 },
+      { key: "u25" as const, value: p.under25, market: mk?.under25_pct, odd: mk?.odds.under25 },
+      p.over35 != null && { key: "u35" as const, value: 100 - p.over35, market: mk?.over35_pct != null ? 100 - mk.over35_pct : undefined, odd: mk?.odds.under35 },
+    ].filter(Boolean) as { key: "o15" | "o25" | "o35" | "u25" | "u35"; value: number; market?: number; odd?: number }[]
+  ).map((l) => ({ ...l, key: l.key }));
   return (
     <div>
       <div className="mb-4 flex items-end justify-center gap-3 text-center">
@@ -199,10 +228,9 @@ export function GoalsBlock({ p }: { p: Prediction }) {
       </div>
 
       <SubTitle>{t("mc.pr.howManyGoals")}</SubTitle>
-      {p.over15 != null && <LineRow label={t("mc.pr.line.over15")} value={p.over15} market={mk?.over15_pct} odd={mk?.odds.over15} />}
-      <LineRow label={t("mc.pr.line.over25")} value={p.over25} emphasize market={mk?.over25_pct} odd={mk?.odds.over25} />
-      {p.over35 != null && <LineRow label={t("mc.pr.line.over35")} value={p.over35} market={mk?.over35_pct} odd={mk?.odds.over35} />}
-      <LineRow label={t("mc.pr.line.under25")} value={p.under25} market={mk?.under25_pct} odd={mk?.odds.under25} />
+      {lines.map((l) => (
+        <LineRow key={l.key} label={t(LINE_KEY[l.key])} value={l.value} market={l.market} odd={l.odd} emphasize={l.key === goals.line} badge={l.key === goals.line ? t("mc.pr.tip.badge") : undefined} />
+      ))}
 
       <div className="mt-4 flex items-center justify-between gap-3 rounded-xl bg-(--c-raised) px-3 py-2.5">
         <span className="text-[13px] text-(--c-muted)">

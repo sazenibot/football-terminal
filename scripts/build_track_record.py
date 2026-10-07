@@ -62,17 +62,14 @@ def tip_summary(items: list[dict]) -> dict:
     x_dc = [tip_rule.hit_1x2(i["x"], i["hg"], i["ag"]) for i in items if i["x"]["k"] == "dc"]
     ou_items = [i for i in items if i.get("ou")]
     ou_all = [tip_rule.hit_ou(i["ou"], i["hg"], i["ag"]) for i in ou_items]
-    ou_over = [tip_rule.hit_ou(i["ou"], i["hg"], i["ag"]) for i in ou_items if i["ou"]["k"] == "over"]
-    ou_under = [tip_rule.hit_ou(i["ou"], i["hg"], i["ag"]) for i in ou_items if i["ou"]["k"] == "under"]
-    ou_strong = [tip_rule.hit_ou(i["ou"], i["hg"], i["ag"]) for i in ou_items if i["ou"]["p"] >= 60]
+    by_line = {k: [] for k in ("o15", "o25", "u25", "u35")}
+    for i in ou_items:
+        by_line.setdefault(tip_rule.ou_key(i["ou"]), []).append(tip_rule.hit_ou(i["ou"], i["hg"], i["ag"]))
     return {
         "x12": {**cnt(x_all), "win": cnt(x_win), "dc": cnt(x_dc)},
-        "ou25": {
+        "goals": {
             **cnt(ou_all),
-            "over": cnt(ou_over),
-            "under": cnt(ou_under),
-            "strong": cnt(ou_strong),
-            "actual_over": sum(1 for i in ou_items if i["hg"] + i["ag"] > tip_rule.OU_LINE),
+            "by_line": {k: cnt(v) for k, v in by_line.items()},
         },
     }
 
@@ -123,7 +120,7 @@ def build_backtest(prev: dict | None) -> dict | None:
         if not src:
             return None
         o, c = src["opp"], src["opp_cal"]
-        model = {"h": o["home_win_pct"], "d": o["draw_pct"], "a": o["away_win_pct"], "over25": c.get("over25_pct")}
+        model = {"h": o["home_win_pct"], "d": o["draw_pct"], "a": o["away_win_pct"], "over25": c.get("over25_pct"), "over15": c.get("over15_pct"), "over35": c.get("over35_pct")}
         tip = tip_rule.make_tip(model)
         tip["hg"], tip["ag"] = src["hg"], src["ag"]
         return tip

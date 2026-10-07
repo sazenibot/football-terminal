@@ -5,11 +5,9 @@ import { Gate } from "../access/Gate";
 import { Frame, Pill, TD, TH, TableWrap } from "../cat/kit";
 import { Card, Disclosure, Empty, Info, Stat, n1, n2 } from "../mc2/kit";
 import { fmtDate, fmtDateTime, useTrackRecord, type MatchTip, type TipCount, type TipOu, type TipSummary, type TipX, type TrackRecord } from "../site/data";
-import { t, type Key } from "../i18n/locale";
+import { intlTag, t, type Key } from "../i18n/locale";
 
-const WORD: Record<"home" | "draw" | "away", Key> = { home: "res.word.home", draw: "res.word.draw", away: "res.word.away" };
 const p1 = (x: number) => t("fmt.pct", { n: n1(x) });
-const IDX = { home: 0, draw: 1, away: 2 } as const;
 
 type Y = "h" | "d" | "a";
 type Row = { date: string; home: string; away: string; score: string; p: number[]; y: Y; tip?: MatchTip };
@@ -17,8 +15,12 @@ type Row = { date: string; home: string; away: string; score: string; p: number[
 const toY = (y: string): Y => (y === "home" || y === "h" ? "h" : y === "away" || y === "a" ? "a" : "d");
 const hitX = (x: TipX, y: Y) => (x.k === "win" ? y === x.s : y === x.s || y === "d");
 const goalsOf = (score: string) => score.split("-").reduce((a, b) => a + Number(b), 0);
-const hitOu = (ou: TipOu, score: string) => (goalsOf(score) > 2.5) === (ou.k === "over");
+const ouLine = (ou: TipOu) => ou.l ?? 2.5;
+const hitOu = (ou: TipOu, score: string) => (ou.k === "over" ? goalsOf(score) > ouLine(ou) : goalsOf(score) < ouLine(ou));
+const ouKey = (ou: TipOu) => `res.tip.${ou.k === "over" ? "o" : "u"}${String(ouLine(ou)).replace(".", "")}` as Key;
 const share = (c: TipCount) => (c.n ? p1((100 * c.hits) / c.n) : "–");
+
+const fmtDay = (iso: string) => new Date(iso).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
 
 function Mark({ ok }: { ok: boolean }) {
   return <span style={{ color: ok ? "var(--c-win)" : "var(--c-loss)" }}>{ok ? "✓" : "✗"}</span>;
@@ -89,7 +91,7 @@ function Live({ data }: { data: TrackRecord }) {
           </div>
         )
       )}
-      {live.tips && live.tips.x12.n > 0 && (
+      {live.tips?.goals && live.tips.x12.n > 0 && (
         <div className="mt-4">
           <TipsBlock tips={live.tips} />
         </div>
@@ -155,7 +157,7 @@ function Backtest({ data }: { data: TrackRecord }) {
         {t("res.bt.margin", { n: b.n, pm })}
       </p>
 
-      {b.tips && (
+      {b.tips?.goals && (
         <div className="mt-6">
           <TipsBlock tips={b.tips} tuning={b.tips_tuning ?? undefined} retro />
         </div>
@@ -220,10 +222,10 @@ function Matches({ rows }: { rows: Row[] }) {
             <tr className="border-b border-(--c-line)">
               <th className={TH}>{t("res.list.date")}</th>
               <th className={TH}>{t("res.list.match")}</th>
-              <th className={TH}>{t("res.list.score")}</th>
-              <th className={TH}>{t("res.list.probs")}</th>
               <th className={TH}>{t("res.list.tip")}</th>
               <th className={TH}>{t("res.list.goalsTip")}</th>
+              <th className={TH}>{t("res.list.score")}</th>
+              <th className={TH}>{t("res.list.eval")}</th>
             </tr>
           </thead>
           <tbody>
@@ -231,37 +233,37 @@ function Matches({ rows }: { rows: Row[] }) {
               const x = m.tip?.x;
               const ou = m.tip?.ou;
               const lbl = x ? xLabel(x) : null;
-              const pick = m.p.indexOf(Math.max(...m.p));
               return (
                 <tr key={i} className="border-b border-(--c-line) last:border-0">
-                  <td className={`${TD} text-(--c-muted)`}>{fmtDate(m.date)}</td>
+                  <td className={`${TD} whitespace-nowrap text-(--c-muted)`}>{fmtDay(m.date)}</td>
                   <td className={`${TD} font-medium`}>
                     {m.home} – {m.away}
                   </td>
-                  <td className={TD}>{m.score.replace("-", ":")}</td>
-                  <td className={`${TD} text-(--c-muted)`}>{m.p.map((v) => Math.round(v)).join(" / ")}</td>
                   <td className={TD}>
                     {x && lbl ? (
-                      <>
-                        <Mark ok={hitX(x, m.y)} />{" "}
-                        <span className="rounded bg-(--c-raised) px-1 text-[11px] font-semibold tabular-nums">{lbl.code}</span> {lbl.text}{" "}
-                        <span className="text-(--c-faint)">{p1(x.p)}</span>
-                      </>
+                      <span title={p1(x.p)}>
+                        <span className="rounded bg-(--c-raised) px-1 text-[11px] font-semibold tabular-nums">{lbl.code}</span> {lbl.text}
+                      </span>
                     ) : (
-                      <>
-                        <Mark ok={pick === IDX[m.y === "h" ? "home" : m.y === "a" ? "away" : "draw"]} /> {t(WORD[(["home", "draw", "away"] as const)[pick]])}
-                      </>
+                      <span className="text-(--c-faint)">–</span>
                     )}
                   </td>
                   <td className={TD}>
                     {ou ? (
-                      <>
-                        <Mark ok={hitOu(ou, m.score)} /> {t(ou.k === "over" ? "res.tip.over" : "res.tip.under")} <span className="text-(--c-faint)">{p1(ou.p)}</span>
-                        <span className="text-(--c-muted)"> · {t("res.tip.goals", { n: goalsOf(m.score) })}</span>
-                      </>
+                      <span title={p1(ou.p)} className="font-semibold">
+                        {t(ouKey(ou))}
+                      </span>
                     ) : (
                       <span className="text-(--c-faint)">–</span>
                     )}
+                  </td>
+                  <td className={`${TD} whitespace-nowrap`}>
+                    <span title={t("res.tip.goals", { n: goalsOf(m.score) })}>{m.score.replace("-", ":")}</span>
+                  </td>
+                  <td className={`${TD} whitespace-nowrap`}>
+                    {x ? <Mark ok={hitX(x, m.y)} /> : "–"}
+                    <span className="mx-1.5 text-(--c-faint)">/</span>
+                    {ou ? <Mark ok={hitOu(ou, m.score)} /> : "–"}
                   </td>
                 </tr>
               );
@@ -269,6 +271,7 @@ function Matches({ rows }: { rows: Row[] }) {
           </tbody>
         </table>
       </TableWrap>
+      <p className="mt-2 text-[12px] text-(--c-faint)">{t("res.list.evalNote")}</p>
       {rows.length > 12 && (
         <button type="button" onClick={() => setAll((v) => !v)} className="mt-2 text-[13px] text-(--c-accent) hover:underline">
           {all ? t("res.list.less") : t("res.list.all", { n: rows.length })}
@@ -294,12 +297,12 @@ function TipStat({ value, label, sub, hint }: { value: string; label: string; su
 }
 
 function TipsBlock({ tips, tuning, retro = false }: { tips: TipSummary; tuning?: TipSummary & { season: string; n: number }; retro?: boolean }) {
-  const { x12, ou25 } = tips;
+  const { x12, goals } = tips;
   return (
     <div>
       <h3 className="text-[15px] font-semibold">{t("res.tips.title")}</h3>
       <p className="mb-3 mt-0.5 text-[13px] leading-snug text-(--c-muted)">{t("res.tips.lead")}</p>
-      <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
         <TipStat
           value={share(x12)}
           label={t("res.tips.x12")}
@@ -307,16 +310,15 @@ function TipsBlock({ tips, tuning, retro = false }: { tips: TipSummary; tuning?:
           sub={t("res.tips.x12Sub", { win: x12.win.n, winPct: share(x12.win), dc: x12.dc.n, dcPct: share(x12.dc) })}
         />
         <TipStat
-          value={share(ou25)}
-          label={t("res.tips.ou")}
-          hint={t("res.tips.ouHint")}
-          sub={t("res.tips.ouSub", { actual: ou25.actual_over, over: ou25.over.n })}
+          value={share(goals)}
+          label={t("res.tips.goals")}
+          hint={t("res.tips.goalsHint")}
+          sub={t("res.tips.goalsSub", { n: goals.n })}
         />
-        <TipStat value={share(ou25.strong)} label={t("res.tips.ouStrong")} sub={t("res.tips.ouStrongSub", { n: ou25.strong.n })} />
       </div>
       {tuning && (
         <p className="mt-2 text-[12px] leading-snug text-(--c-faint)">
-          {t("res.tips.tuning", { season: tuning.season, x: share(tuning.x12), ou: share(tuning.ou25), n: tuning.n })}
+          {t("res.tips.tuning", { season: tuning.season, x: share(tuning.x12), ou: share(tuning.goals), n: tuning.n })}
         </p>
       )}
       {retro && <p className="mt-1 text-[12px] leading-snug text-(--c-faint)">{t("res.tips.retro")}</p>}
