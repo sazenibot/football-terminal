@@ -259,6 +259,22 @@ def fetch_league(league_id: int) -> dict:
     return data.get("data") or {}
 
 
+# Vzájemné zápasy starší než tohle okno nejsou o dnešních týmech (jiné kádry, trenéři, liga).
+# Počítají se jen zápasy z posledních H2H_MAX_YEARS let před výkopem. Při změně okna nebo logiky zvýšit
+# BUILD_VERSION: denní refresh pak starší soubory zápasů znovu postaví (viz refresh_data.py).
+H2H_MAX_YEARS = 5
+BUILD_VERSION = 2
+
+
+def h2h_cutoff(kickoff: str | None) -> str:
+    """Nejstarší datum (ISO), které se do H2H ještě počítá."""
+    start = date.fromisoformat((kickoff or date.today().isoformat())[:10])
+    try:
+        return start.replace(year=start.year - H2H_MAX_YEARS).isoformat()
+    except ValueError:  # 29. 2.
+        return start.replace(year=start.year - H2H_MAX_YEARS, day=28).isoformat()
+
+
 def fetch_h2h(team_a: int, team_b: int) -> list:
     data = call(
         f"/fixtures/head-to-head/{team_a}/{team_b}",
@@ -756,8 +772,11 @@ def build_match(fixture_id: int, league_id: int | None = None) -> dict:
     print(f"    -> {home_p['name']} vs {away_p['name']} ({fixture.get('starting_at')}), sezóna od {season_start}")
 
     print("[3] H2H historie (statistiky + trenéři + rozhodčí)…")
-    h2h_fixtures_all = fetch_h2h(home_id, away_id)
-    print(f"    -> {len(h2h_fixtures_all)} vzájemných zápasů celkem v datech, berem posledních 10")
+    h2h_raw = fetch_h2h(home_id, away_id)
+    cutoff = h2h_cutoff(fixture.get("starting_at"))
+    h2h_fixtures_all = [f for f in h2h_raw if (f.get("starting_at") or "")[:10] >= cutoff]
+    h2h_excluded_older = len(h2h_raw) - len(h2h_fixtures_all)
+    print(f"    -> {len(h2h_raw)} vzájemných zápasů v datech, {len(h2h_fixtures_all)} z posledních {H2H_MAX_YEARS} let (od {cutoff}), berem posledních 10")
     h2h_fixtures = h2h_fixtures_all[:10]
 
     h2h_out = []
@@ -854,8 +873,8 @@ def build_match(fixture_id: int, league_id: int | None = None) -> dict:
         "season": {l: radar_averages(team_matches[l][:15]) for l in ("home", "away")},
         "last5": {l: radar_averages(facts_last5[l]) for l in ("home", "away")},
         "last3_h2h": {
-            "home": radar_averages(h2h_facts_home[:3]),
-            "away": radar_averages(h2h_facts_away[:3]),
+            "home": radar_averages(h2h_facts_home[:3]) if h2h_facts_home else None,
+            "away": radar_averages(h2h_facts_away[:3]) if h2h_facts_away else None,
         },
         "last3_h2h_home_venue": {
             "home": radar_averages(h2h_facts_home_venue_home) if h2h_facts_home_venue_home else None,
@@ -1131,6 +1150,9 @@ def build_match(fixture_id: int, league_id: int | None = None) -> dict:
         "predicted_lineups": predicted_lineups_out,
         "h2h": h2h_out,
         "h2h_total_available": len(h2h_fixtures_all),
+        "h2h_window_years": H2H_MAX_YEARS,
+        "h2h_excluded_older": h2h_excluded_older,
+        "build_version": BUILD_VERSION,
         "form": form_out,
         "radar": radar_out,
         "trends": trends_out,

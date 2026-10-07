@@ -110,7 +110,12 @@ export function H2HCard({ m }: { m: MatchData }) {
   return (
     <Card
       title={t("mc.ov.h2h.title")}
-      lead={t("mc.fh.h2hLead", { n: m.h2h.length, total: m.h2h_total_available })}
+      lead={
+        <>
+          {m.h2h.length > 0 && t("mc.fh.h2hLead", { n: m.h2h.length, total: m.h2h_total_available })}
+          {!!m.h2h_excluded_older && <> {t("mc.fh.h2hWindow", { years: m.h2h_window_years ?? 5, n: m.h2h_excluded_older })}</>}
+        </>
+      }
       aside={
         <Seg
           label={t("mc.fh.filter")}
@@ -127,7 +132,7 @@ export function H2HCard({ m }: { m: MatchData }) {
       }
     >
       {m.h2h.length === 0 ? (
-        <Empty>{t("mc.ov.h2h.none")}</Empty>
+        <Empty>{t("mc.ov.h2h.none", { years: m.h2h_window_years ?? 5 })}</Empty>
       ) : (
         <>
           <H2HRecordBar m={m} />

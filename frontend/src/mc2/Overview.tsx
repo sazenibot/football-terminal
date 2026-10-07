@@ -76,7 +76,7 @@ function H2HMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
       }
     >
       {r.n === 0 ? (
-        <p className="text-sm text-(--c-muted)">{t("mc.ov.h2h.none")}</p>
+        <p className="text-sm text-(--c-muted)">{t("mc.ov.h2h.none", { years: m.h2h_window_years ?? 5 })}</p>
       ) : (
         <>
           <H2HRecordBar m={m} />

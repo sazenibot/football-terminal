@@ -37,7 +37,7 @@ export const enMx: Record<keyof typeof csMx, string> = {
 
   /* ---------- 1. H2HResults ---------- */
   "mx.h2hr.title": "1. Head-to-head matches — results overview",
-  "mx.h2hr.subtitle": "last {n} of {total} available",
+  "mx.h2hr.subtitle": "last {n} of {total} in the last 5 years",
   "mx.h2hr.homeAt": "{name} at home",
   "mx.h2hr.awayAt": "{name} away",
   "mx.h2hr.legendWin": "{name} win",

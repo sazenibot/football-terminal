@@ -32,6 +32,7 @@ ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(Path(__file__).parent))
 
 from build_match_data import (  # noqa: E402
+    BUILD_VERSION,
     build_match,
     call_stats,
     fetch_league,
@@ -163,7 +164,7 @@ def _same_content(old: dict, new: dict) -> bool:
     return {k: v for k, v in old.items() if k not in skip} == {k: v for k, v in new.items() if k not in skip}
 
 
-def process_league(league: dict, days: int, force_full: bool, max_new: int | None, new_counter: list[int]) -> dict:
+def process_league(league: dict, days: int, force_full: bool, max_new: int | None, new_counter: list[int], rebuilt: list[int], max_rebuild: int) -> dict:
     lid = league["id"]
     print(f"\n=== {league['name']} ({lid}) ===")
     fixtures = fetch_round_fixtures(league_id=lid, days_ahead=days)
@@ -181,7 +182,13 @@ def process_league(league: dict, days: int, force_full: bool, max_new: int | Non
         existing = read_json(dest)
         before = copy.deepcopy(existing)  # refresh_volatile upravuje slovník na místě
         try:
-            if existing and not force_full:
+            stale_build = bool(existing) and (existing.get("build_version") or 1) < BUILD_VERSION
+            if stale_build and rebuilt[0] >= max_rebuild:
+                stale_build = False  # limit na běh, zbytek přijde příště
+            if stale_build:
+                rebuilt[0] += 1
+                print(f"  přestavba {fid} (verze sestavení {(existing.get('build_version') or 1)} < {BUILD_VERSION})")
+            if existing and not force_full and not stale_build:
                 print(f"  refresh {fid}")
                 payload = refresh_volatile(existing)
                 refreshed += 1
@@ -291,6 +298,7 @@ def main() -> None:
     parser.add_argument("--days", type=int, help="Okno dopředu (default z leagues.json)")
     parser.add_argument("--full", action="store_true", help="Vynutit plný rebuild všech zápasů v okně")
     parser.add_argument("--migrate-only", action="store_true", help="Jen rozdělit starý match.json")
+    parser.add_argument("--max-rebuild", type=int, default=30, help="Max. přestaveb starších souborů zápasů za běh (po změně BUILD_VERSION)")
     parser.add_argument("--max-new", type=int, default=None, help="Max. nových full buildů za běh")
     parser.add_argument("--catalog-only", action="store_true", help="Jen datový katalog (týmy/hráči/sudí)")
     parser.add_argument("--skip-catalog", action="store_true", help="Přeskočit ingest katalogu")
@@ -370,9 +378,10 @@ def main() -> None:
             print(f"⚠️ liga {args.league} je v katalogu vypnutá — stahuju ji jen kvůli --league", file=sys.stderr)
 
     new_counter = [0]
+    rebuilt_counter = [0]
     summaries = []
     for league in wanted:
-        summaries.append(process_league(league, days, args.full, args.max_new, new_counter))
+        summaries.append(process_league(league, days, args.full, args.max_new, new_counter, rebuilt_counter, args.max_rebuild))
 
     for league in cfg["leagues"]:
         if league.get("enabled"):

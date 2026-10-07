@@ -257,12 +257,15 @@ export interface MatchData {
   predicted_lineups: Record<string, PredictedLineupPlayer[]>;
   h2h: H2HMatch[];
   h2h_total_available: number;
+  /** okno vzájemných zápasů v letech a počet starších, které se nepočítají (od verze sestavení 2) */
+  h2h_window_years?: number;
+  h2h_excluded_older?: number;
   form: { home: FormSide; away: FormSide };
   radar: {
     categories: string[];
     season: { home: RadarAverages; away: RadarAverages };
     last5: { home: RadarAverages; away: RadarAverages };
-    last3_h2h: { home: RadarAverages; away: RadarAverages };
+    last3_h2h: { home: RadarAverages | null; away: RadarAverages | null };
     last3_h2h_home_venue: { home: RadarAverages | null; away: RadarAverages | null; sample_size: number };
   };
   trends: {

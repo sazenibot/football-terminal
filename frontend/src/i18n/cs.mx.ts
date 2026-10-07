@@ -35,7 +35,7 @@ export const csMx = {
 
   /* ---------- 1. H2HResults ---------- */
   "mx.h2hr.title": "1. Vzájemné zápasy — výsledkový přehled",
-  "mx.h2hr.subtitle": "posledních {n} z {total} dostupných",
+  "mx.h2hr.subtitle": "posledních {n} z {total} za posledních 5 let",
   "mx.h2hr.homeAt": "{name} doma",
   "mx.h2hr.awayAt": "{name} venku",
   "mx.h2hr.legendWin": "výhra {name}",
