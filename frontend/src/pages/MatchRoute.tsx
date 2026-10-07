@@ -5,26 +5,27 @@ import { Paywall } from "../access/Gate";
 import { Back, Frame } from "../cat/kit";
 import { t } from "../i18n/locale";
 import type { MatchData } from "../types";
-import { hasPitchData } from "../lib/pitchMatch";
-import { useMatch } from "../lib/useData";
+import { isLiveLeague } from "../lib/pitchMatch";
+import { useDataIndex, useMatch } from "../lib/useData";
 import { MatchCenterPage } from "./MatchCenterPage";
 import { MatchPage } from "./MatchPage";
 import { intlTag } from "../i18n/locale";
 
 /**
- * Nový Match Center dostávají ligy, pro které máme nový model a PitchAPI (zatím Chance Liga).
- * Ostatní ligy zůstávají na původním detailu. `?classic=1` otevře původní detail i pro Chance Ligu.
+ * Nový Match Center dostávají všechny zapnuté ligy. Chance Liga má navíc nový model a PitchAPI,
+ * ostatní ligy mají predikci ze SportMonks simulace. `?classic=1` otevře původní detail i pro Chance Ligu.
  */
 export function MatchRoute() {
   const { fixtureId } = useParams();
   const [params] = useSearchParams();
   const id = Number(fixtureId);
   const { match, error, missing } = useMatch(Number.isFinite(id) ? id : null);
+  const { index, error: indexError } = useDataIndex();
 
   if (params.get("classic") === "1") return <MatchPage />;
   if (error || missing) return <MatchPage />;
-  if (!match) return <div className="flex min-h-[60vh] items-center justify-center text-slate-400">{t("future.loading")}</div>;
-  const page = hasPitchData(match.league_id) ? <MatchCenterPage /> : <MatchPage />;
+  if (!match || (!index && !indexError)) return <div className="flex min-h-[60vh] items-center justify-center text-slate-400">{t("future.loading")}</div>;
+  const page = isLiveLeague(index?.leagues, match.league_id) ? <MatchCenterPage /> : <MatchPage />;
   return <FutureGuard match={match}>{page}</FutureGuard>;
 }
 

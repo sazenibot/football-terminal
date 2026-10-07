@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link } from "../i18n/router";
 import { formatDateTime } from "../lib/format";
-import { hasPitchData } from "../lib/pitchMatch";
+import { isLiveLeague } from "../lib/pitchMatch";
 import { LeaguePicker } from "../components/LeaguePicker";
 import { isStale, useDataIndex, useLeagueRound, useTeamColors } from "../lib/useData";
 import { rememberLeague } from "../components/LeagueSwitcher";
@@ -257,7 +257,7 @@ function MatchCard({ f, colors, isNew, onOpen }: { f: RoundFixture; colors: Reco
 export function MatchListPage({ leagueId, base }: { leagueId: number; base: string }) {
   const { index, error: indexError } = useDataIndex();
   const { data, error } = useLeagueRound(leagueId);
-  const live = hasPitchData(leagueId);
+  const live = isLiveLeague(index?.leagues, leagueId);
   const fixtures = live ? data?.round : undefined;
   const { isNew, markSeen } = useSeen(fixtures);
   const colors = useTeamColors();

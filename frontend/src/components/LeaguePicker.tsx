@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "../i18n/router";
-import { hasPitchData } from "../lib/pitchMatch";
+import { isLiveLeague } from "../lib/pitchMatch";
 import type { LeagueMeta } from "../types";
 import { intlTag, t } from "../i18n/locale";
 import { Flag, countryName } from "./Flag";
@@ -61,7 +61,7 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
 
   // pořadí čipů: otevřená, oblíbené, naposledy otevřená, pak ostatní živé, nakonec zbytek
   const chips = useMemo(() => {
-    const live = leagues.filter((l) => hasPitchData(l.id)).map((l) => l.id);
+    const live = leagues.filter((l) => isLiveLeague(leagues, l.id)).map((l) => l.id);
     const order = [activeId, ...pins, lastLeagueId() ?? -1, ...live, ...leagues.map((l) => l.id)];
     return [...new Set(order)].filter((id) => byId.has(id)).slice(0, MAX_CHIPS).map((id) => byId.get(id)!);
   }, [leagues, activeId, pins, byId]);
@@ -84,7 +84,7 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
     <nav aria-label={t("picker.aria")}>
       <div className="flex flex-wrap items-center gap-2">
         {chips.map((l) => {
-          const live = hasPitchData(l.id);
+          const live = isLiveLeague(leagues, l.id);
           const active = l.id === activeId;
           const inner = (
             <>
@@ -154,7 +154,7 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
                   {country ? countryName(country) : t("picker.other")}
                 </p>
                 {ls.map((l) => {
-                  const live = hasPitchData(l.id);
+                  const live = isLiveLeague(leagues, l.id);
                   const n = l.round_count ?? l.match_count ?? 0;
                   const row = (
                     <>

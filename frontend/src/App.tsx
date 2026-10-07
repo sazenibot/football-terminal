@@ -24,7 +24,7 @@ import { SiteFooter, SiteNav, TopRight } from "./site/shell";
 import { useEffect } from "react";
 import { lastLeagueId } from "./components/LeagueSwitcher";
 import { useDataIndex } from "./lib/useData";
-import { hasPitchData } from "./lib/pitchMatch";
+import { isLiveLeague } from "./lib/pitchMatch";
 import { LocaleProvider, seg, useLocale } from "./i18n";
 
 function LeagueRoute() {
@@ -34,7 +34,7 @@ function LeagueRoute() {
   // ?classic=1 = nouzový návrat ke starému výpisu kola
   if (sp.get("classic") === "1" && leagueId) return <RoundPage leagueId={Number(leagueId)} />;
   const saved = lastLeagueId();
-  const fallback = saved && hasPitchData(saved) ? saved : (index?.default_league_id ?? 262);
+  const fallback = saved && isLiveLeague(index?.leagues, saved) ? saved : (index?.default_league_id ?? 262);
   const id = Number(leagueId) || fallback;
   return <MatchListPage leagueId={id} base="/league" />;
 }

@@ -109,6 +109,11 @@ jobs:
         continue-on-error: true
         run: python scripts/catalog_player_shards.py
 
+      # Hráčské trendy pro Match Center (série střel a střel na bránu). Čte shardy výše, žádné API.
+      - name: Hráčské trendy
+        continue-on-error: true
+        run: python scripts/player_trends.py
+
       # Kniha predikcí: před výkopem se zamkne predikce a kurz, po dohrání se doplní výsledek.
       # Musí běžet po výpočtu simulací (pitch_daily) a po doplnění explorer.json (refresh_data).
       # Bez API. Z ledgeru se pak skládá stránka Výsledky a automatické aktuality na homepage.

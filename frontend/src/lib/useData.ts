@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import type { PitchCatalogFile } from "../components/PitchCards";
 import type { XgotIndex } from "./xgEfficiency";
 import type { PitchH2HFile } from "./pitchMatch";
+import type { PlayerTrendsFile } from "./playerTrends";
 import type { SimV2 } from "../components/SimulationV2";
 import type {
   CatalogExplorer,
@@ -242,6 +243,10 @@ export function usePitchPlayer(id: number | null) {
 
 export function useSimV2(fixtureId: number | null) {
   return useOptionalJson<SimV2>(fixtureId ? `/data/sim/${fixtureId}.json` : null);
+}
+
+export function usePlayerTrends(leagueId: number | null | undefined) {
+  return useOptionalJson<PlayerTrendsFile>(leagueId ? `/data/player_trends/${leagueId}.json` : null);
 }
 
 export function usePitchH2H(enabled = true) {

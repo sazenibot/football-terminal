@@ -100,6 +100,12 @@ export function h2hWithXgot(match: MatchData, h2hMap: PitchH2HFile["matches"] | 
 /** Ligy (SportMonks id), pro které máme data z PitchAPI: katalog týmů, H2H xGOT a simulaci. */
 export const PITCH_LEAGUE_IDS: number[] = [262];
 
+/** Soutěž má živý Match Center: Chance Liga (nový model + PitchAPI) nebo jakákoli zapnutá liga z indexu dat. */
+export function isLiveLeague(leagues: { id: number; enabled: boolean }[] | undefined, leagueId: number | null | undefined): boolean {
+  if (leagueId == null) return false;
+  return hasPitchData(leagueId) || !!leagues?.find((l) => l.id === leagueId)?.enabled;
+}
+
 export function hasPitchData(leagueId: number | null | undefined): boolean {
   return leagueId != null && PITCH_LEAGUE_IDS.includes(leagueId);
 }

@@ -5,6 +5,7 @@ import { buildInsights, formRows, formSummary, h2hRecord, resOf, type Prediction
 import { H2HRecordBar } from "./FormH2H";
 import { refereePending } from "./People";
 import { PredictionSummary } from "./Prediction";
+import { PlayerTrendsCard } from "./PlayerTrends";
 import { Card, FormDots, Info, ResBadge, Stat, TeamTitle, type Res } from "./kit";
 import { intlTag, t } from "../i18n/locale";
 import { aiText } from "../components/AiAnalysis";
@@ -163,6 +164,7 @@ export function OverviewTab({
     <>
       <PredictionSummary p={p} home={m.home} away={m.away} onMore={() => go("prediction")} />
       <InsightsCard m={m} p={p} badges={badges} />
+      <PlayerTrendsCard m={m} />
       <div className="grid gap-5 md:grid-cols-2">
         <FormMini m={m} onMore={() => go("form")} />
         <H2HMini m={m} onMore={() => go("form")} />
