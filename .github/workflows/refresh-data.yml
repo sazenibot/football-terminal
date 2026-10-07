@@ -11,20 +11,19 @@ on:
 permissions:
   contents: write
 
-# Dva běhy najednou by si přepsaly stav katalogu v R2.
-concurrency:
-  group: refresh-data
-  cancel-in-progress: false
-
 env:
   R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
   R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
   R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
 
 jobs:
-  refresh:
+  # Gate je zvlášť a bez zámku. Kdyby byl ve stejné skupině jako refresh, druhý (prázdný) cron by ve frontě
+  # vytlačil ten správný: GitHub drží ve frontě jen jeden čekající běh.
+  gate:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 2
+    outputs:
+      run: ${{ steps.gate.outputs.run }}
     steps:
       - name: Gate (02:00 Praha)
         id: gate
@@ -37,26 +36,41 @@ jobs:
             echo "run=true" >> "$GITHUB_OUTPUT"
           fi
 
+  refresh:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    # Dva běhy najednou by si přepsaly stav katalogu v R2 (stejná skupina má League backfill).
+    concurrency:
+      group: refresh-data
+      cancel-in-progress: false
+    steps:
       - uses: actions/checkout@v5
-        if: steps.gate.outputs.run == 'true'
 
       - uses: actions/setup-python@v6
-        if: steps.gate.outputs.run == 'true'
         with:
           python-version: "3.12"
 
       - name: Install deps
-        if: steps.gate.outputs.run == 'true'
         run: pip install -r requirements.txt boto3
 
       # Katalog (týmy, hráči, rozhodčí, historie) už není v gitu. Stav drží R2 (ft-public/catalog).
       # Denní skripty ho čtou a doplňují přírůstkově, proto se musí obnovit před nimi. Prázdný stav = chyba.
       - name: Stav katalogu z R2
-        if: steps.gate.outputs.run == 'true'
         run: python scripts/r2_sync.py down frontend/public/data/catalog --bucket ft-public --prefix catalog --require-nonempty
 
+      # Odpovědi SportMonks na disku. Když běh spadne nebo vyprší čas (první běh po zapnutí ligy je dlouhý),
+      # další pokus je nevolá znovu a navazuje.
+      - name: Cache API odpovědí
+        uses: actions/cache@v4
+        with:
+          path: scripts/.cache/api
+          key: sm-api-daily-${{ github.run_id }}
+          restore-keys: |
+            sm-api-daily-
+
       - name: Daily refresh
-        if: steps.gate.outputs.run == 'true'
         env:
           SPORTMONKS_API_TOKEN: ${{ secrets.SPORTMONKS_API_TOKEN }}
           PULSESCORE_API_TOKEN: ${{ secrets.PULSESCORE_API_TOKEN }}
@@ -65,7 +79,6 @@ jobs:
 
       # PitchAPI cache (stovky malých JSON) drží Actions cache, ne git. První běh ji naplní, další jen včerejší zápasy.
       - name: Restore PitchAPI cache
-        if: steps.gate.outputs.run == 'true'
         uses: actions/cache@v4
         with:
           path: scripts/.cache/pitchapi
@@ -75,7 +88,6 @@ jobs:
 
       # Jen Chance Liga (262). Chyba tady nesmí zastavit commit dat ze SportMonks.
       - name: PitchAPI katalog + simulace (Chance Liga)
-        if: steps.gate.outputs.run == 'true'
         continue-on-error: true
         env:
           PITCHAPI_API_KEY: ${{ secrets.PITCHAPI_API_KEY }}
@@ -83,20 +95,17 @@ jobs:
 
       # Signály pro rozcestník Match Center (ikonky, mini predikce). Čte jen uložené JSON, žádné API.
       - name: Signály pro výpis kola
-        if: steps.gate.outputs.run == 'true'
         continue-on-error: true
         run: python scripts/round_signals.py
 
       # Vyhledávací index katalogu (jeden malý JSON z uložených dat, žádné API).
       - name: Vyhledávací index katalogu
-        if: steps.gate.outputs.run == 'true'
         continue-on-error: true
         run: python scripts/catalog_search.py
 
       # Shardy zápasů hráčů + pooly pro pořadí (z uloženého players.json, žádné API).
       # Stránka hráče si stáhne jeden shard a jeden pool místo 8MB indexu.
       - name: Shardy a pooly hráčů
-        if: steps.gate.outputs.run == 'true'
         continue-on-error: true
         run: python scripts/catalog_player_shards.py
 
@@ -104,7 +113,6 @@ jobs:
       # Musí běžet po výpočtu simulací (pitch_daily) a po doplnění explorer.json (refresh_data).
       # Bez API. Z ledgeru se pak skládá stránka Výsledky a automatické aktuality na homepage.
       - name: Kniha predikcí, výsledky, aktuality
-        if: steps.gate.outputs.run == 'true'
         continue-on-error: true
         run: |
           python scripts/prediction_ledger.py
@@ -113,14 +121,12 @@ jobs:
 
       # Barvy týmů pro pruhy v Match Center. Přírůstkově: stahuje jen loga týmů, které ještě nemají barvu.
       - name: Barvy týmů z log
-        if: steps.gate.outputs.run == 'true'
         continue-on-error: true
         run: |
           pip install pillow
           python scripts/build_team_colors.py
 
       - name: Commit data
-        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -134,5 +140,4 @@ jobs:
 
       # Až po commitu Match Center dat. Kdyby upload selhal, běh skončí chybou a nahraje se při dalším.
       - name: Katalog do R2
-        if: steps.gate.outputs.run == 'true'
         run: python scripts/r2_sync.py up frontend/public/data/catalog --bucket ft-public --prefix catalog
