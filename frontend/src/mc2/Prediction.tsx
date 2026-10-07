@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import type { TeamBrief } from "../types";
 import type { Prediction } from "./derive";
 import { t } from "../i18n/locale";
+import { TIP_WIN_FROM, computeTip } from "../lib/tip";
 import { Card, Info, MeterBar, MirrorRow, ProbBar, SideHeads, SubTitle, ValueTag, n1, n2, pct } from "./kit";
 
 /* ---------- Kdo vyhraje ---------- */
@@ -44,6 +45,30 @@ function OutcomeCol({
   );
 }
 
+function TipRow({ p, home, away }: { p: Prediction; home: TeamBrief; away: TeamBrief }) {
+  const tip = computeTip(p.home, p.draw, p.away);
+  const team = (tip.side === "home" ? home : away).name;
+  const code = t(`mc.pr.tip.c.${tip.side}${tip.kind === "dc" ? "Dc" : ""}` as "mc.pr.tip.c.home");
+  return (
+    <div className="mt-4 rounded-xl border border-(--c-line) bg-(--c-raised)/60 px-3 py-3 sm:px-4">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+        <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">
+          {t("mc.pr.tip.title")}
+          <Info>{t("mc.pr.tip.info", { from: TIP_WIN_FROM })}</Info>
+        </span>
+        <span className="inline-flex min-w-0 items-center gap-2 text-[15px] font-bold">
+          <span className="rounded-md bg-(--c-accent)/15 px-1.5 py-0.5 text-[12px] tabular-nums text-(--c-accent)">{code}</span>
+          <span className="truncate">{t(tip.kind === "win" ? "mc.pr.tip.win" : "mc.pr.tip.dc", { team })}</span>
+          {tip.kind === "dc" && <span className="text-[12px] font-medium text-(--c-muted)">({t("mc.pr.tip.dcSub")})</span>}
+        </span>
+      </div>
+      <p className="mt-1.5 text-[12px] leading-snug text-(--c-muted)">
+        {t("mc.pr.tip.prob", { p: Math.round(tip.prob) })} {t("mc.pr.tip.hist", { n: tip.n, hit: tip.hit })}
+      </p>
+    </div>
+  );
+}
+
 export function OutcomeBlock({ p, home, away }: { p: Prediction; home: TeamBrief; away: TeamBrief }) {
   const mk = p.market;
   return (
@@ -61,6 +86,7 @@ export function OutcomeBlock({ p, home, away }: { p: Prediction; home: TeamBrief
           {t("mc.pr.bookmakerNote")}
         </p>
       )}
+      {p.kind === "v2" && <TipRow p={p} home={home} away={away} />}
     </div>
   );
 }

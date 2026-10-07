@@ -15,7 +15,24 @@ async function getJson<T>(url: string): Promise<T | null> {
 
 export type CalibrationBin = { lo: number; hi: number; n: number; predicted: number; actual: number };
 
-export type BacktestMatch = { date: string; home: string; away: string; score: string; y: "home" | "draw" | "away"; p: [number, number, number] };
+export type TipX = { k: "win" | "dc"; s: "h" | "a"; p: number };
+export type TipOu = { k: "over" | "under"; p: number };
+export type MatchTip = { x: TipX; ou?: TipOu | null };
+export type TipCount = { n: number; hits: number };
+export type TipSummary = {
+  x12: TipCount & { win: TipCount; dc: TipCount };
+  ou25: TipCount & { over: TipCount; under: TipCount; strong: TipCount; actual_over: number };
+};
+
+export type BacktestMatch = {
+  date: string;
+  home: string;
+  away: string;
+  score: string;
+  y: "home" | "draw" | "away";
+  p: [number, number, number];
+  tip?: MatchTip;
+};
 
 export type TrackRecord = {
   generated_at: string;
@@ -27,7 +44,8 @@ export type TrackRecord = {
     upcoming: { fid: number; kickoff: string; home: string; away: string; locked_at: string }[];
     model?: { n: number; accuracy: number; logloss: number; brier: number };
     market?: { n: number; accuracy: number; logloss: number; brier: number };
-    matches?: { date: string; home: string; away: string; score: string; y: string; p: number[]; q?: number[] }[];
+    tips?: TipSummary;
+    matches?: { kickoff: string; home: string; away: string; score: string; y: "home" | "draw" | "away" | "h" | "d" | "a"; p: [number, number, number]; tip?: MatchTip }[];
   };
   backtest: {
     season: string;
@@ -40,6 +58,8 @@ export type TrackRecord = {
     model: { n: number; accuracy: number; logloss: number; brier: number };
     baselines: { frequency_logloss: number; always_home_accuracy: number };
     calibration: CalibrationBin[];
+    tips?: TipSummary | null;
+    tips_tuning?: (TipSummary & { season: string; n: number }) | null;
     matches: BacktestMatch[];
   };
 };

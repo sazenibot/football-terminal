@@ -13,6 +13,7 @@ import { LabPitchVsTsPage } from "./pages/LabPitchVsTsPage";
 import { MatchListPage } from "./pages/MatchListPage";
 import { LabMatchListPage } from "./pages/LabMatchListPage";
 import { LabPitchModelsPage } from "./pages/LabPitchModelsPage";
+import { LabNeprohraPage } from "./pages/LabNeprohraPage";
 import { ArticlePage, ArticlesPage } from "./pages/ArticlesPage";
 import { PricingPage } from "./pages/PricingPage";
 import { ResultsPage } from "./pages/ResultsPage";
@@ -85,6 +86,7 @@ function AppRoutes() {
       <Route path="/lab/api/pitch" element={<LabPitchVsTsPage />} />
       <Route path="/lab/match-list" element={<LabMatchListPage />} />
       <Route path="/lab/pitch-models" element={<LabPitchModelsPage />} />
+      <Route path="/lab/neprohra" element={<LabNeprohraPage />} />
       <Route path="/lab/match-center-list" element={<Navigate to="/league" replace />} />
       <Route path="/lab/match-center-list/:leagueId" element={<LabListRedirect />} />
       <Route path="/lab/match-center-2" element={<MatchCenterLabRedirect />} />

@@ -23,6 +23,8 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from tip_rule import make_tip
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "frontend" / "public" / "data"
 SIM = DATA / "sim"
@@ -65,6 +67,9 @@ def snapshot(sim: dict) -> dict | None:
             "xg": model.get("expected_goals"),
         },
     }
+    tip = make_tip(entry["model"])
+    if tip:
+        entry["tip"] = tip  # tip platný v okamžiku zamčení, po výkopu se nemění
     if market.get("home_win_pct") is not None:
         entry["market"] = {
             "h": market["home_win_pct"],

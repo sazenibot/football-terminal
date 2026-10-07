@@ -18,11 +18,14 @@ import math
 from datetime import datetime, timezone
 from pathlib import Path
 
+import tip_rule
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "frontend" / "public" / "data"
 OUT = DATA / "track_record.json"
 LEDGER = DATA / "ledger" / "predictions.json"
 BACKTEST = ROOT / "scripts" / ".cache" / "sim-v2-backtest.json"
+BACKTEST_FULL = ROOT / "scripts" / ".cache" / "sim-backtest-full.json"  # góly + kalibrované trhy, dvě sezóny
 BINS = [0, 10, 20, 30, 40, 50, 60, 70, 80, 100]
 KEYS = ("h", "d", "a")
 
@@ -48,6 +51,30 @@ def score(probs: dict, y: str) -> dict:
 
 def mean(rows: list[dict], key: str) -> float:
     return sum(r[key] for r in rows) / len(rows)
+
+
+def tip_summary(items: list[dict]) -> dict:
+    """items: {"x": tip 1X2, "ou": tip gólů nebo None, "hg", "ag"} -> počty trefených tipů."""
+    def cnt(sel):
+        return {"n": len(sel), "hits": sum(sel)}
+    x_all = [tip_rule.hit_1x2(i["x"], i["hg"], i["ag"]) for i in items]
+    x_win = [tip_rule.hit_1x2(i["x"], i["hg"], i["ag"]) for i in items if i["x"]["k"] == "win"]
+    x_dc = [tip_rule.hit_1x2(i["x"], i["hg"], i["ag"]) for i in items if i["x"]["k"] == "dc"]
+    ou_items = [i for i in items if i.get("ou")]
+    ou_all = [tip_rule.hit_ou(i["ou"], i["hg"], i["ag"]) for i in ou_items]
+    ou_over = [tip_rule.hit_ou(i["ou"], i["hg"], i["ag"]) for i in ou_items if i["ou"]["k"] == "over"]
+    ou_under = [tip_rule.hit_ou(i["ou"], i["hg"], i["ag"]) for i in ou_items if i["ou"]["k"] == "under"]
+    ou_strong = [tip_rule.hit_ou(i["ou"], i["hg"], i["ag"]) for i in ou_items if i["ou"]["p"] >= 60]
+    return {
+        "x12": {**cnt(x_all), "win": cnt(x_win), "dc": cnt(x_dc)},
+        "ou25": {
+            **cnt(ou_all),
+            "over": cnt(ou_over),
+            "under": cnt(ou_under),
+            "strong": cnt(ou_strong),
+            "actual_over": sum(1 for i in ou_items if i["hg"] + i["ag"] > tip_rule.OU_LINE),
+        },
+    }
 
 
 def block(scored: list[dict]) -> dict:
@@ -88,6 +115,26 @@ def build_backtest(prev: dict | None) -> dict | None:
             pairs.append((p[key], r["y"] == {"h": "home", "d": "draw", "a": "away"}[k]))
         always_home += r["y"] == "home"
     n = len(rows)
+    full = json.loads(BACKTEST_FULL.read_text(encoding="utf-8"))["rows"] if BACKTEST_FULL.exists() else []
+    full_idx = {(r["date"], r["home"]): r for r in full if r["season"] == "2026/27"}
+
+    def tipped(r: dict, src: dict | None) -> dict | None:
+        """Tip podle stejného pravidla jako v živé knize; goly a Over 2,5 z kalibrovaného modelu (opp_cal)."""
+        if not src:
+            return None
+        o, c = src["opp"], src["opp_cal"]
+        model = {"h": o["home_win_pct"], "d": o["draw_pct"], "a": o["away_win_pct"], "over25": c.get("over25_pct")}
+        tip = tip_rule.make_tip(model)
+        tip["hg"], tip["ag"] = src["hg"], src["ag"]
+        return tip
+
+    tips_by_key = {(r["date"], r["home"]): tipped(r, full_idx.get((r["date"], r["home"]))) for r in rows}
+    tuning = None
+    prev_season = [r for r in full if r["season"] == "2025/26"]
+    if prev_season:
+        pt = [tipped(r, r) for r in prev_season]
+        tuning = {"season": "2025/26", "n": len(pt), **tip_summary(pt)}
+    cur_tips = [t for t in tips_by_key.values() if t]
     return {
         "season": raw.get("season"),
         "league": raw.get("league"),
@@ -102,6 +149,8 @@ def build_backtest(prev: dict | None) -> dict | None:
             "always_home_accuracy": round(100 * always_home / n, 1),
         },
         "calibration": calibration(pairs),
+        "tips": tip_summary(cur_tips) if cur_tips else None,
+        "tips_tuning": tuning,
         "matches": [
             {
                 "date": r["date"],
@@ -110,6 +159,7 @@ def build_backtest(prev: dict | None) -> dict | None:
                 "score": r["score"],
                 "y": r["y"],
                 "p": [r["opp"]["home_win_pct"], r["opp"]["draw_pct"], r["opp"]["away_win_pct"]],
+                **({"tip": {"x": tips_by_key[(r["date"], r["home"])]["x"], "ou": tips_by_key[(r["date"], r["home"])].get("ou")}} if tips_by_key.get((r["date"], r["home"])) else {}),
             }
             for r in sorted(rows, key=lambda r: r["date"], reverse=True)
         ],
@@ -133,7 +183,7 @@ def build_live() -> dict:
     if not done:
         return out
     model, market, pairs = [], [], []
-    rows = []
+    rows, tip_items = [], []
     for e in done:
         y = outcome(e["result"]["hg"], e["result"]["ag"])
         model.append(score(e["model"], y))
@@ -141,6 +191,9 @@ def build_live() -> dict:
             market.append(score(e["market"], y))
         for k in KEYS:
             pairs.append((e["model"][k], y == k))
+        tip = e.get("tip") or tip_rule.make_tip(e["model"])
+        if tip:
+            tip_items.append({"x": tip["x"], "ou": tip.get("ou"), "hg": e["result"]["hg"], "ag": e["result"]["ag"]})
         rows.append({
             "kickoff": e["kickoff"],
             "home": e["home"]["name"],
@@ -150,7 +203,10 @@ def build_live() -> dict:
             "p": [e["model"]["h"], e["model"]["d"], e["model"]["a"]],
             "market": [e["market"]["h"], e["market"]["d"], e["market"]["a"]] if e.get("market") else None,
             "locked_at": e.get("locked_at"),
+            **({"tip": {"x": tip["x"], "ou": tip.get("ou")}} if tip else {}),
         })
+    if tip_items:
+        out["tips"] = tip_summary(tip_items)
     out["model"] = block(model)
     if len(market) == len(model):
         out["market"] = block(market)

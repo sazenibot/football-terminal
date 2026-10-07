@@ -50,6 +50,13 @@ export function LabPage() {
             Otevřít katalog Slavia →
           </Link>
         </div>
+        <Link to="/lab/neprohra" className="card catalog-tile p-6 block hover:border-amber-400">
+          <div className="text-xs font-mono text-amber-400 mb-2">NÁVRH</div>
+          <h2 className="text-xl font-semibold text-white light:text-slate-900">Tip: výhra, nebo neprohra</h2>
+          <p className="text-sm text-slate-400 light:text-slate-500 mt-2">
+            Hranice tipu 1 / 2 a 10 / 02 podle úspěšnosti. Tip je v Match Center.
+          </p>
+        </Link>
         <Link to="/lab/match-list" className="card catalog-tile p-6 block hover:border-amber-400">
           <div className="text-xs font-mono text-amber-400 mb-2">NÁVRH</div>
           <h2 className="text-xl font-semibold text-white light:text-slate-900">Rozcestník Match Center</h2>
