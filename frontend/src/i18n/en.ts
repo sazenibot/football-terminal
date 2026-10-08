@@ -3,6 +3,7 @@ import { enMc } from "./en.mc";
 import { enCat } from "./en.cat";
 import { enRes } from "./en.res";
 import { enMx } from "./en.mx";
+import { enTd } from "./en.td";
 
 /* Anglické texty. Typ Record<Key, string> hlídá, že tu nechybí žádný klíč z cs.ts. */
 
@@ -222,6 +223,9 @@ const enBase: Record<keyof typeof csBase, string> = {
   "home.cat.referees": "Referees",
   "home.cat.refereesText": "How they whistle, how many cards they show and how they treat a specific team.",
   "home.cat.refereesNote": "Overview free",
+  "home.soon.trends": "Trend Detector",
+  "home.soon.trendsText": "One table of every team. Form, corners, fouls and the xGOT vs goals gap.",
+  "home.soon.trendsLink": "Open the detector →",
   "home.soon.finder": "Value finder",
   "home.soon.finderText": "A page listing the matches where we found the most value: the gap between the model simulation and the odds.",
   "home.soon.picks": "System picks",
@@ -307,4 +311,4 @@ const enBase: Record<keyof typeof csBase, string> = {
   "cat.notFound": "{kind} is not in the catalog. We do not substitute someone else's profile or a mock.",
 };
 
-export const en: Record<Key, string> = { ...enBase, ...enMc, ...enCat, ...enRes, ...enMx };
+export const en: Record<Key, string> = { ...enBase, ...enMc, ...enCat, ...enRes, ...enMx, ...enTd };

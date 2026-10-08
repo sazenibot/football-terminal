@@ -49,7 +49,15 @@ export function HomePage() {
             <CatalogCard to={`/catalog?league=${defaultId}&tab=referees`} title={t("home.cat.referees")} text={t("home.cat.refereesText")} note={t("home.cat.refereesNote")} motif={<CardsMotif />} />
             </div>
           </section>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-3">
+            <Link
+              to="/detektor-trendu"
+              className="group flex flex-col rounded-2xl border border-(--c-line) bg-(--c-surface) p-5 transition-all hover:-translate-y-0.5 hover:border-(--c-accent)/60"
+            >
+              <h3 className="text-[17px] font-bold">{t("home.soon.trends")}</h3>
+              <p className="mt-1.5 text-[13px] leading-snug text-(--c-muted)">{t("home.soon.trendsText")}</p>
+              <p className="mt-auto pt-3 text-[13px] font-semibold text-(--c-accent) group-hover:underline">{t("home.soon.trendsLink")}</p>
+            </Link>
             <Soon title={t("home.soon.finder")} text={t("home.soon.finderText")} />
             <Soon title={t("home.soon.picks")} text={t("home.soon.picksText")} />
           </div>

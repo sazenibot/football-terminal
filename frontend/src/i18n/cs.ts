@@ -217,6 +217,9 @@ const csBase = {
   "home.cat.referees": "Rozhodčí",
   "home.cat.refereesText": "Jak píská, kolik karet rozdává a jak zachází s konkrétním týmem.",
   "home.cat.refereesNote": "Přehled zdarma",
+  "home.soon.trends": "Detektor trendů",
+  "home.soon.trendsText": "Jedna tabulka všech týmů. Forma, rohy, fauly a odchylka xGOT od vstřelených gólů.",
+  "home.soon.trendsLink": "Otevřít detektor →",
   "home.soon.finder": "Value finder",
   "home.soon.finderText": "Stránka s přehledem zápasů, kde jsme našli největší hodnotu: rozdíl v modelové simulaci oproti kurzu.",
   "home.soon.picks": "System picks",
@@ -306,7 +309,8 @@ import { csMc } from "./cs.mc";
 import { csCat } from "./cs.cat";
 import { csRes } from "./cs.res";
 import { csMx } from "./cs.mx";
+import { csTd } from "./cs.td";
 
 export { csBase };
-export const cs = { ...csBase, ...csMc, ...csCat, ...csRes, ...csMx } as const;
+export const cs = { ...csBase, ...csMc, ...csCat, ...csRes, ...csMx, ...csTd } as const;
 export type Key = keyof typeof cs;

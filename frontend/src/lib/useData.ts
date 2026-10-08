@@ -158,6 +158,45 @@ export function useCatalogTeam(id: number | null) {
   return useCatalogEntity<CatalogTeamDetail>("teams", id);
 }
 
+/** Explorer všech zadaných lig najednou (detektor trendů). Chybějící soubor ligy se přeskočí. */
+export function useCatalogExplorers(leagueIds: number[], enabled = true) {
+  const key = leagueIds.join(",");
+  const [data, setData] = useState<CatalogExplorer[] | null>(null);
+
+  useEffect(() => {
+    if (!enabled) {
+      setData(null);
+      return;
+    }
+    if (!leagueIds.length) {
+      setData([]);
+      return;
+    }
+    let live = true;
+    setData(null);
+    const bases = [...new Set([CATALOG, import.meta.env.DEV ? "/data/catalog" : ""])].filter(Boolean);
+    Promise.all(
+      leagueIds.map(async (id) => {
+        for (const base of bases) {
+          try {
+            return await fetchJson<CatalogExplorer>(`${base}/leagues/${id}.explorer.json`);
+          } catch {
+            /* zkus další adresu */
+          }
+        }
+        return null;
+      }),
+    ).then((rows) => {
+      if (live) setData(rows.filter((row): row is CatalogExplorer => row != null));
+    });
+    return () => {
+      live = false;
+    };
+  }, [key, enabled]);
+
+  return data;
+}
+
 export function useCatalogExplorer(leagueId: number | null) {
   const [data, setData] = useState<CatalogExplorer | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -251,6 +290,41 @@ export function useXgotIndex() {
 
 export function usePitchTeam(id: number | null) {
   return useOptionalJson<PitchCatalogFile>(id ? `${CATALOG}/pitch/teams/${id}.json` : null);
+}
+
+/** Všechny Pitch týmy jedné ligy (kvůli inkasovaným gólům a ligovému průměru). Chance Liga, ~16 malých JSON. */
+export function usePitchLeague(leagueId: number | null) {
+  const [files, setFiles] = useState<PitchCatalogFile[] | null>(null);
+
+  useEffect(() => {
+    if (leagueId == null) {
+      setFiles(null);
+      return;
+    }
+    let live = true;
+    const bases = [...new Set([CATALOG, import.meta.env.DEV ? "/data/catalog" : ""])].filter(Boolean);
+    (async () => {
+      for (const base of bases) {
+        try {
+          const idx = await fetchJson<{ league_id?: number; teams: Record<string, unknown> }>(`${base}/pitch/index.json`);
+          if (idx.league_id != null && idx.league_id !== leagueId) continue;
+          const ids = Object.keys(idx.teams || {});
+          if (!ids.length) continue;
+          const loaded = await Promise.all(ids.map((id) => fetchJson<PitchCatalogFile>(`${base}/pitch/teams/${id}.json`)));
+          if (live) setFiles(loaded);
+          return;
+        } catch {
+          /* zkus další adresu */
+        }
+      }
+      if (live) setFiles(null);
+    })();
+    return () => {
+      live = false;
+    };
+  }, [leagueId]);
+
+  return files;
 }
 
 export function usePitchPlayer(id: number | null) {

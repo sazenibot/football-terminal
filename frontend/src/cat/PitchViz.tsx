@@ -1,4 +1,4 @@
-import { useId, useMemo, useState, type ReactNode } from "react";
+import { useEffect, useId, useMemo, useState, type ReactNode } from "react";
 import { Bar, Cell, ComposedChart, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis, BarChart } from "recharts";
 import type { MatchRow, SeasonOpt, Shot } from "../components/PitchCards";
 import { finishingLead, xgotEfficiencyBadge } from "../lib/xgEfficiency";
@@ -57,6 +57,34 @@ function SeasonSelect({ seasons, value, onChange }: { seasons: SeasonOpt[]; valu
         {seasons.map((s) => (
           <option key={s.id} value={s.id} disabled={s.disabled}>
             {s.label}
+          </option>
+        ))}
+      </select>
+    </label>
+  );
+}
+
+function MatchSelect({ matches, value, onChange }: { matches: MatchRow[]; value: string; onChange: (id: string) => void }) {
+  const newest = [...matches].sort((a, b) => b.date.localeCompare(a.date) || b.id.localeCompare(a.id));
+  return (
+    <label className="inline-flex min-w-0 max-w-full items-center gap-2 text-xs text-(--c-muted)">
+      {t("ct.pv.matchAria")}
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        aria-label={t("ct.pv.matchAria")}
+        className="min-h-9 min-w-0 max-w-full rounded-xl border border-(--c-line) bg-(--c-raised) px-3 text-xs font-medium text-(--c-text)"
+      >
+        <option value="all">{t("ct.pv.fullSeason")}</option>
+        {newest.map((m) => (
+          <option key={m.id} value={m.id}>
+            {t("ct.pv.matchOpt", {
+              date: czDate(m.date),
+              opp: m.opponent,
+              side: m.home ? t("ct.pv.tickHome") : t("ct.pv.tickAway"),
+              gf: m.gf,
+              ga: m.ga,
+            })}
           </option>
         ))}
       </select>
@@ -363,14 +391,28 @@ export function ShotMapCard({
   showSeason?: boolean;
 }) {
   const { seasonId, setSeasonId, matches } = useSeason(seasons, defaultSeason);
-  const [recency, setRecency] = useState<Recency>("all");
+  const [matchId, setMatchId] = useState("all");
   const [venue, setVenue] = useState<Venue>("all");
   const [cut, setCut] = useState<Cut>("all");
   const [kind, setKind] = useState<Kind>("all");
   const [hover, setHover] = useState<ShotView | null>(null);
   const [pinned, setPinned] = useState<ShotView | null>(null);
 
-  const rows = useMemo(() => pick(matches, recency, venue), [matches, recency, venue]);
+  useEffect(() => {
+    if (matchId !== "all" && !matches.some((m) => m.id === matchId)) setMatchId("all");
+  }, [matches, matchId]);
+  useEffect(() => {
+    setHover(null);
+    setPinned(null);
+  }, [matchId, venue, seasonId, cut, kind]);
+
+  const rows = useMemo(() => {
+    if (matchId !== "all") {
+      const one = matches.find((m) => m.id === matchId);
+      return one ? [one] : [];
+    }
+    return pick(matches, "all", venue);
+  }, [matches, matchId, venue]);
   const all: ShotView[] = useMemo(() => rows.flatMap((m) => shotsOf(m).map((s) => ({ ...s, date: m.date, home: m.home, opponent_short: m.opponent_short }))), [rows, shotsOf]);
   const shots = all.filter((s) => {
     if (cut === "goal" && !s.goal) return false;
@@ -386,7 +428,22 @@ export function ShotMapCard({
 
   return (
     <Card title={title} lead={lead}>
-      <Controls recency={recency} setRecency={setRecency} venue={venue} setVenue={setVenue} season={showSeason ? { seasons, value: seasonId, onChange: setSeasonId } : undefined} />
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+        {showSeason && <SeasonSelect seasons={seasons} value={seasonId} onChange={setSeasonId} />}
+        <MatchSelect matches={matches} value={matchId} onChange={setMatchId} />
+        {matchId === "all" && (
+          <Seg
+            label={t("ct.pv.venueAria")}
+            value={venue}
+            onChange={setVenue}
+            options={[
+              { id: "all", label: t("ct.pv.homeAway") },
+              { id: "home", label: t("ct.pv.home") },
+              { id: "away", label: t("ct.pv.away") },
+            ]}
+          />
+        )}
+      </div>
       {!rows.length ? (
         <div className="mt-4">
           <Empty>{t("ct.pv.noMatches")}</Empty>

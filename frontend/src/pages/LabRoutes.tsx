@@ -7,6 +7,7 @@ import { LabMatchListPage } from "./LabMatchListPage";
 import { LabPitchModelsPage } from "./LabPitchModelsPage";
 import { LabNeprohraPage } from "./LabNeprohraPage";
 import { LabUxPreviewPage } from "./LabUxPreviewPage";
+import { LabGoalDistributionPage } from "./LabGoalDistributionPage";
 
 /** Experimentální stránky. Načítají se jen ve vývoji (`npm run dev`), produkční build je neobsahuje. */
 export default function LabRoutes() {
@@ -22,6 +23,7 @@ export default function LabRoutes() {
       <Route path="pitch-models" element={<LabPitchModelsPage />} />
       <Route path="neprohra" element={<LabNeprohraPage />} />
       <Route path="ux-preview" element={<LabUxPreviewPage />} />
+      <Route path="goal-distribution" element={<LabGoalDistributionPage />} />
     </Routes>
   );
 }

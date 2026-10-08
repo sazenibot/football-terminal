@@ -83,7 +83,7 @@ export const enMc: Record<keyof typeof csMc, string> = {
   "mc.pt.sh": "Shots 2+",
   "mc.pt.sot": "On target 1+",
   "mc.pt.holds": "On a run of “{stat}” in the last {n} matches.",
-  "mc.pt.perMatch": "{what}, latest match on the right:",
+  "mc.pt.perMatch": "{what}:",
   "mc.pt.what.sh": "shots",
   "mc.pt.what.sot": "shots on target",
   "mc.pt.len": "{n, plural, one {# match} other {# matches}}",

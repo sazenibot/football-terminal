@@ -81,7 +81,7 @@ export const csMc = {
   "mc.pt.sh": "Střely 2+",
   "mc.pt.sot": "Na bránu 1+",
   "mc.pt.holds": "Drží sérii „{stat}“ v posledních {n} zápasech.",
-  "mc.pt.perMatch": "{what}, nejnovější zápas vpravo:",
+  "mc.pt.perMatch": "{what}:",
   "mc.pt.what.sh": "střely",
   "mc.pt.what.sot": "střely na bránu",
   "mc.pt.len": "{n, plural, one {# zápas} few {# zápasy} other {# zápasů}}",

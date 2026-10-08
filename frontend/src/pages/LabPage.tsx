@@ -57,6 +57,13 @@ export function LabPage() {
             Hranice tipu 1 / 2 a 10 / 02 podle úspěšnosti. Tip je v Match Center.
           </p>
         </Link>
+        <Link to="/lab/goal-distribution" className="card catalog-tile p-6 block hover:border-amber-400">
+          <div className="text-xs font-mono text-amber-400 mb-2">NÁVRH</div>
+          <h2 className="text-xl font-semibold text-white light:text-slate-900">Distribuce gólů</h2>
+          <p className="text-sm text-slate-400 light:text-slate-500 mt-2">
+            Kdy tým skóruje a inkasuje po čtvrthodinách, ze hry vs. standardky, první a poslední gól. Šablona do katalogu.
+          </p>
+        </Link>
         <Link to="/lab/ux-preview" className="card catalog-tile p-6 block hover:border-amber-400">
           <div className="text-xs font-mono text-amber-400 mb-2">NÁHLED</div>
           <h2 className="text-xl font-semibold text-white light:text-slate-900">Audit ID 10 a 26</h2>

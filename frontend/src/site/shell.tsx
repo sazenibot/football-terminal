@@ -68,6 +68,7 @@ export function SiteNav() {
   const secondary = [
     { to: "/clanky", label: t("nav.articles"), on: is("/clanky") },
     { to: "/vysledky", label: t("nav.results"), on: is("/vysledky") },
+    { to: "/detektor-trendu", label: t("nav.trends"), on: is("/detektor-trendu") },
     ...(PRICING_OPEN ? [{ to: "/tarify", label: t("nav.pricing"), on: is("/tarify") }] : []),
     ...(import.meta.env.DEV ? [{ to: "/lab", label: t("nav.lab"), on: is("/lab") }] : []),
   ];
@@ -143,6 +144,7 @@ export function SiteFooter() {
           <Link className={link} to="/league">{t("footer.matchCenter")}</Link>
           <Link className={link} to="/catalog">{t("footer.catalog")}</Link>
           <Link className={link} to="/vysledky">{t("footer.results")}</Link>
+          <Link className={link} to="/detektor-trendu">{t("footer.trends")}</Link>
         </FooterCol>
         <FooterCol title={t("footer.service")}>
           <Link className={link} to="/clanky">{t("footer.articles")}</Link>

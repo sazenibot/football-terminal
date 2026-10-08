@@ -26,7 +26,7 @@ export const CS_PREFIX = "cs";
 const LEGACY_EN_PREFIX = "en";
 
 /** Segmenty adres, které se liší mezi jazyky (česky → anglicky). Ostatní jsou stejné. */
-const SEG_EN: Record<string, string> = { clanky: "articles", tarify: "pricing", vysledky: "results", prihlaseni: "login", "obchodni-podminky": "terms", "ochrana-udaju": "privacy", kontakt: "contact" };
+const SEG_EN: Record<string, string> = { clanky: "articles", tarify: "pricing", vysledky: "results", prihlaseni: "login", "obchodni-podminky": "terms", "ochrana-udaju": "privacy", kontakt: "contact", "detektor-trendu": "trend-detector" };
 const SEG_CS: Record<string, string> = Object.fromEntries(Object.entries(SEG_EN).map(([a, b]) => [b, a]));
 
 /** Český název segmentu v adrese routy pro daný jazyk. */

@@ -4,8 +4,9 @@ import { CoachComparePanel, TeamRadarPanel } from "../cat/TeamCompare";
 import { Avatar, Back, Crest, Frame, Hero, Loading, Meta, NotFound, Pill, RankCard, StatStrip, StickyTabs, fmtNum, ord, rankColor } from "../cat/kit";
 import { pitchSeasonOpts, type MatchRow } from "../components/PitchCards";
 import { ShotMapCard, TrendCard } from "../cat/PitchViz";
+import { GoalDistributionCard } from "../cat/GoalDistributionCard";
 import { formatDate } from "../lib/format";
-import { useCatalogExplorer, useCatalogTeam, usePitchTeam, useXgotIndex } from "../lib/useData";
+import { useCatalogExplorer, useCatalogTeam, usePitchLeague, usePitchTeam, useXgotIndex } from "../lib/useData";
 import { last5BadgeForTeam, type XgotBadge } from "../lib/xgEfficiency";
 import { useTabLock } from "../access/catalogGate";
 import { Gate } from "../access/Gate";
@@ -413,6 +414,8 @@ function StatsCard({ stats }: { stats: CatalogProfileStat[] }) {
 
 function PitchBlock({ team, pitch }: { team: CatalogTeamDetail; pitch: NonNullable<ReturnType<typeof usePitchTeam>> }) {
   const seasons = pitchSeasonOpts(pitch.season, pitch.matches);
+  const league = usePitchLeague(pitch.league_id ?? team.league_id);
+  const self = league?.find((f) => f.team?.id === team.id) ?? pitch;
   return (
     <div className="space-y-5">
       <TrendCard team={team.name} seasons={seasons} defaultSeason={pitch.season} />
@@ -423,6 +426,7 @@ function PitchBlock({ team, pitch }: { team: CatalogTeamDetail; pitch: NonNullab
         defaultSeason={pitch.season}
         shotsOf={shotsOfMatch}
       />
+      {league && <GoalDistributionCard team={self} league={league} />}
     </div>
   );
 }

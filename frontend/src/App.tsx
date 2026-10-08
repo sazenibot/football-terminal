@@ -11,6 +11,7 @@ import { ArticlePage, ArticlesPage } from "./pages/ArticlesPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { PricingPage } from "./pages/PricingPage";
 import { ResultsPage } from "./pages/ResultsPage";
+import { TrendDetectorPage } from "./pages/TrendDetectorPage";
 import { LoginPage } from "./pages/LoginPage";
 import { LegalPage } from "./pages/LegalPage";
 import { AccessProvider } from "./access/AccessContext";
@@ -79,6 +80,7 @@ function AppRoutes() {
       <Route path={`${p("clanky")}/:slug`} element={<ArticlePage />} />
       <Route path={p("tarify")} element={PRICING_OPEN ? <PricingPage /> : <Navigate to="/" replace />} />
       <Route path={p("vysledky")} element={<ResultsPage />} />
+      <Route path={p("detektor-trendu")} element={<TrendDetectorPage />} />
       <Route path={p("prihlaseni")} element={<LoginPage />} />
       <Route path={p("obchodni-podminky")} element={<LegalPage slug="obchodni-podminky" />} />
       <Route path={p("ochrana-udaju")} element={<LegalPage slug="ochrana-udaju" />} />
@@ -149,7 +151,7 @@ function App() {
           <Route path="/cs/*" element={<Localized locale="cs" />} />
           <Route path="/en/*" element={<LegacyEn />} />
           <Route path="/en" element={<LegacyEn />} />
-          {["clanky", "tarify", "vysledky", "prihlaseni", "obchodni-podminky", "ochrana-udaju", "kontakt"].flatMap((s) => [
+          {["clanky", "tarify", "vysledky", "detektor-trendu", "prihlaseni", "obchodni-podminky", "ochrana-udaju", "kontakt"].flatMap((s) => [
             <Route key={s} path={`/${s}`} element={<LegacyCs />} />,
             <Route key={`${s}/*`} path={`/${s}/*`} element={<LegacyCs />} />,
           ])}
