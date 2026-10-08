@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
-import { Link } from "../i18n/router";
+import { Link, useSearchParams } from "../i18n/router";
 import { formatDateTime } from "../lib/format";
 import { isLiveLeague } from "../lib/pitchMatch";
 import { LeaguePicker } from "../components/LeaguePicker";
-import { isStale, useDataIndex, useLeagueRound, useTeamColors } from "../lib/useData";
+import { isStale, useDataIndex, useLeagueRound, useTeamColors, useUpcoming } from "../lib/useData";
 import { rememberLeague } from "../components/LeagueSwitcher";
 import { kickoffLabel } from "../mc2/derive";
-import { Empty, ProbBar, TeamLogo } from "../mc2/kit";
-import type { RoundFixture } from "../types";
+import { Empty, ProbBar, Seg, TeamLogo } from "../mc2/kit";
+import type { LeagueMeta, RoundFixture, UpcomingFixture } from "../types";
 import { getLocale, intlTag, t, type Key } from "../i18n/locale";
 
 /* ---------- ikonky u zápasů ---------- */
@@ -192,9 +192,26 @@ export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; ho
 const NEUTRAL = "#6b7280";
 
 /** Karta zápasu: pruhy po stranách v primárních barvách týmů (domácí vlevo, hosté vpravo), čas vycentrovaný v pásu. */
-function MatchCard({ f, colors, isNew, onOpen }: { f: RoundFixture; colors: Record<string, string>; isNew: (f: RoundFixture, id: SignalId) => boolean; onOpen: () => void }) {
+function MatchCard({
+  f,
+  colors,
+  isNew,
+  onOpen,
+  league,
+  withDate,
+}: {
+  f: RoundFixture;
+  colors: Record<string, string>;
+  isNew: (f: RoundFixture, id: SignalId) => boolean;
+  onOpen: () => void;
+  /** V pohledu „Všechny zápasy“: soutěž vlevo v horním pruhu. */
+  league?: LeagueMeta;
+  /** Řazení podle šance mísí dny, takže u času je i datum. */
+  withDate?: boolean;
+}) {
   const ready = f.has_full_data !== false;
-  const time = new Date(f.starting_at).toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" });
+  const clock = new Date(f.starting_at).toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" });
+  const time = withDate ? `${new Date(f.starting_at).toLocaleDateString(intlTag(), { weekday: "short", day: "numeric", month: "numeric" })} ${clock}` : clock;
   const live = kickoffLabel(f.starting_at).live;
   const probs = f.signals?.probs;
   const homeColor = colors[f.home.id] ?? NEUTRAL;
@@ -204,8 +221,15 @@ function MatchCard({ f, colors, isNew, onOpen }: { f: RoundFixture; colors: Reco
     <>
       <span aria-hidden className="absolute inset-y-0 left-0 w-1.5" style={{ background: homeColor }} />
       <span aria-hidden className="absolute inset-y-0 right-0 w-1.5" style={{ background: awayColor }} />
-      <div className="grid grid-cols-[1fr_auto_1fr] items-center bg-(--c-raised)/70 px-4 py-1.5">
-        <span aria-hidden />
+      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 bg-(--c-raised)/70 px-4 py-1.5">
+        {league ? (
+          <span className="flex min-w-0 items-center gap-1.5 text-[11px] font-medium text-(--c-muted)">
+            {league.logo && <img src={league.logo} alt="" className="h-4 w-4 shrink-0 object-contain" />}
+            <span className="truncate">{league.name}</span>
+          </span>
+        ) : (
+          <span aria-hidden />
+        )}
         <div className="flex items-baseline justify-center gap-2">
           <span className="text-[13px] font-bold tabular-nums">{time}</span>
           {live && <span className="text-[10px] font-semibold uppercase text-(--c-loss)">{t("list.live")}</span>}
@@ -385,6 +409,133 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
         <footer className="pt-10 text-center text-xs text-(--c-faint)">
           {t("list.updated", { when: formatDateTime(data.generated_at) })}
         </footer>
+      )}
+    </div>
+  );
+}
+
+/* ---------- všechny zápasy napříč ligami ---------- */
+
+type SortMode = "time" | "prob";
+
+/** Síla favorita: vyšší z šancí na výhru domácích a hostů. Bez predikce -1 (na konec). */
+const favouriteStrength = (f: RoundFixture) => (f.signals?.probs ? Math.max(f.signals.probs[0], f.signals.probs[2]) : -1);
+
+/** Zápas se ještě hraje nebo začne později (tři hodiny po výkopu ještě počítáme jako aktuální). */
+const LIVE_WINDOW_MS = 3 * 3600e3;
+
+function sortFixtures<T extends RoundFixture>(list: T[], mode: SortMode): T[] {
+  const byTime = (a: T, b: T) => a.starting_at.localeCompare(b.starting_at) || a.fixture_id - b.fixture_id;
+  return [...list].sort(mode === "prob" ? (a, b) => favouriteStrength(b) - favouriteStrength(a) || byTime(a, b) : byTime);
+}
+
+export function AllMatchesPage({ base }: { base: string }) {
+  const { index, error: indexError } = useDataIndex();
+  const { data, error } = useUpcoming();
+  const [sp, setSp] = useSearchParams();
+  const mode: SortMode = sp.get("sort") === "prob" ? "prob" : "time";
+  const colors = useTeamColors();
+  const enabled = (index?.leagues ?? []).filter((l) => l.enabled);
+  const leagueById = useMemo(() => new Map((index?.leagues ?? []).map((l) => [l.id, l])), [index]);
+
+  const upcoming = useMemo(() => {
+    const from = Date.now() - LIVE_WINDOW_MS;
+    return (data?.fixtures ?? []).filter((f) => new Date(f.starting_at).getTime() >= from);
+  }, [data]);
+  const { isNew, markSeen } = useSeen(upcoming);
+
+  useEffect(() => {
+    document.title = `${t("list.all")} | ${t("list.title")}`;
+  }, []);
+
+  const sorted = useMemo(() => sortFixtures<UpcomingFixture>(upcoming, mode), [upcoming, mode]);
+  const groups = useMemo(() => {
+    const map = new Map<string, UpcomingFixture[]>();
+    for (const f of sorted) {
+      const k = dayKey(f.starting_at);
+      map.set(k, [...(map.get(k) ?? []), f]);
+    }
+    return [...map.values()];
+  }, [sorted]);
+
+  const stale = data && index ? isStale(data.generated_at, index.stale_after_hours) : false;
+  const days = index?.window_days ?? 7;
+  const card = (f: UpcomingFixture, withDate: boolean) => (
+    <MatchCard key={f.fixture_id} f={f} colors={colors} isNew={isNew} onOpen={() => markSeen(f)} league={leagueById.get(f.league_id)} withDate={withDate} />
+  );
+
+  return (
+    <div className="mc2 mx-auto max-w-4xl px-4 pb-16 pt-20">
+      <header className="pt-4">
+        <h1 className="text-2xl font-bold sm:text-3xl">{t("list.title")}</h1>
+        <p className="mt-1.5 text-[15px] text-(--c-muted)">{t("list.allLead", { n: days })}</p>
+      </header>
+
+      <div className="mt-5">{index && <LeaguePicker leagues={enabled} activeId="all" base={base} />}</div>
+
+      <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1.5">
+        <span className="text-[12px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("list.sort.label")}</span>
+        <Seg<SortMode>
+          label={t("list.sort.label")}
+          value={mode}
+          onChange={(v) =>
+            setSp(
+              (prev) => {
+                const next = new URLSearchParams(prev);
+                if (v === "time") next.delete("sort");
+                else next.set("sort", v);
+                return next;
+              },
+              { replace: true },
+            )
+          }
+          options={[
+            { id: "time", label: t("list.sort.time") },
+            { id: "prob", label: t("list.sort.prob") },
+          ]}
+        />
+      </div>
+      {mode === "prob" && <p className="mt-2 text-[12px] text-(--c-muted)">{t("list.sort.probNote")}</p>}
+
+      {(indexError || error) && (
+        <p className="mt-6 rounded-2xl border border-(--c-line) bg-(--c-surface) p-6 text-center text-(--c-loss)">{t("list.error")}</p>
+      )}
+
+      {stale && data && (
+        <div className="mt-4 rounded-xl border border-(--c-warn)/40 bg-(--c-warn)/10 px-3 py-2 text-[13px] text-(--c-warn)">
+          {t("list.stale", { when: new Date(data.generated_at).toLocaleString(intlTag()) })}
+        </div>
+      )}
+
+      {!data && !error && <p className="mt-8 text-center text-(--c-muted)">{t("list.loading")}</p>}
+      {data && sorted.length === 0 && (
+        <div className="mt-6">
+          <Empty>{t("list.allEmpty", { n: days })}</Empty>
+        </div>
+      )}
+
+      {mode === "prob" ? (
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">{sorted.map((f) => card(f, true))}</div>
+      ) : (
+        <div className="mt-6 space-y-6">
+          {groups.map((g) => {
+            const d = dayLabel(g[0].starting_at);
+            return (
+              <section key={g[0].starting_at} aria-label={d.main}>
+                <h2 className="mb-2 flex items-baseline gap-2 px-1 text-[13px] font-semibold">
+                  <span>{d.main}</span>
+                  {d.rel && <span className="rounded-md bg-(--c-accent)/15 px-1.5 py-0.5 text-[11px] font-semibold text-(--c-accent)">{d.rel}</span>}
+                  <span className="font-normal text-(--c-faint)">{t("list.count", { n: g.length })}</span>
+                </h2>
+                <div className="grid gap-3 sm:grid-cols-2">{g.map((f) => card(f, false))}</div>
+              </section>
+            );
+          })}
+        </div>
+      )}
+
+      {data && (
+        <footer className="pt-10 text-center text-xs text-(--c-faint)">{t("list.updated", { when: formatDateTime(data.generated_at) })}</footer>
       )}
     </div>
   );

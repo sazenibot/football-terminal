@@ -13,6 +13,7 @@ import type {
   CatalogTeamDetail,
   DataIndex,
   LeagueRoundData,
+  UpcomingData,
   MatchData,
 } from "../types";
 
@@ -65,6 +66,21 @@ export function useLeagueRound(leagueId: number | null) {
       .then(setData)
       .catch((e) => setError(String(e)));
   }, [leagueId]);
+
+  return { data, error };
+}
+
+/** Zápasy všech zapnutých lig v jednom malém souboru (pohled „Všechny zápasy“). */
+export function useUpcoming(enabled = true) {
+  const [data, setData] = useState<UpcomingData | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!enabled) return;
+    fetchJson<UpcomingData>("/data/upcoming.json")
+      .then(setData)
+      .catch((e) => setError(String(e)));
+  }, [enabled]);
 
   return { data, error };
 }

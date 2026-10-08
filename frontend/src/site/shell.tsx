@@ -68,7 +68,7 @@ export function SiteNav() {
     { to: "/clanky", label: t("nav.articles"), on: is("/clanky") },
     { to: "/vysledky", label: t("nav.results"), on: is("/vysledky") },
     { to: "/tarify", label: t("nav.pricing"), on: is("/tarify") },
-    { to: "/lab", label: t("nav.lab"), on: is("/lab") },
+    ...(import.meta.env.DEV ? [{ to: "/lab", label: t("nav.lab"), on: is("/lab") }] : []),
   ];
 
   return (

@@ -6,14 +6,7 @@ import { CatalogPage } from "./pages/CatalogPage";
 import { CatalogTeamPage } from "./pages/CatalogTeamPage";
 import { CatalogPlayerPage } from "./pages/CatalogPlayerPage";
 import { CatalogRefereePage } from "./pages/CatalogRefereePage";
-import { LabPage } from "./pages/LabPage";
-import { LabTrendmetrPage } from "./pages/LabTrendmetrPage";
-import { LabXDataPage } from "./pages/LabXDataPage";
-import { LabPitchVsTsPage } from "./pages/LabPitchVsTsPage";
-import { MatchListPage } from "./pages/MatchListPage";
-import { LabMatchListPage } from "./pages/LabMatchListPage";
-import { LabPitchModelsPage } from "./pages/LabPitchModelsPage";
-import { LabNeprohraPage } from "./pages/LabNeprohraPage";
+import { AllMatchesPage, MatchListPage } from "./pages/MatchListPage";
 import { ArticlePage, ArticlesPage } from "./pages/ArticlesPage";
 import { PricingPage } from "./pages/PricingPage";
 import { ResultsPage } from "./pages/ResultsPage";
@@ -21,18 +14,22 @@ import { LoginPage } from "./pages/LoginPage";
 import { AccessProvider } from "./access/AccessContext";
 import { ViewAsSwitcher } from "./access/ViewAsSwitcher";
 import { SiteFooter, SiteNav, TopRight } from "./site/shell";
-import { useEffect } from "react";
+import { Suspense, lazy, useEffect } from "react";
 import { Navigate as RawNavigate } from "react-router-dom";
 import { lastLeagueId } from "./components/LeagueSwitcher";
 import { useDataIndex } from "./lib/useData";
 import { isLiveLeague } from "./lib/pitchMatch";
 import { LocaleProvider, seg, useLocale } from "./i18n";
 
+/** Lab je jen pro vývoj. Dynamický import pod `import.meta.env.DEV` se v produkčním buildu odstraní celý. */
+const LabRoutes = import.meta.env.DEV ? lazy(() => import("./pages/LabRoutes")) : null;
+
 function LeagueRoute() {
   const { leagueId } = useParams();
   const [sp] = useSearchParams();
   const { index } = useDataIndex();
   // ?classic=1 = nouzový návrat ke starému výpisu kola
+  if (leagueId === "all") return <AllMatchesPage base="/league" />;
   if (sp.get("classic") === "1" && leagueId) return <RoundPage leagueId={Number(leagueId)} />;
   const saved = lastLeagueId();
   const fallback = saved && isLiveLeague(index?.leagues, saved) ? saved : (index?.default_league_id ?? 262);
@@ -79,15 +76,18 @@ function AppRoutes() {
       <Route path="/catalog/referees/:id" element={<CatalogRefereePage />} />
       <Route path="/katalog" element={<Navigate to="/catalog" replace />} />
       <Route path="/katalog/*" element={<Navigate to="/catalog" replace />} />
-      <Route path="/lab" element={<LabPage />} />
-      <Route path="/lab/trendmetr" element={<LabTrendmetrPage />} />
-      <Route path="/lab/xdata" element={<LabXDataPage />} />
-      <Route path="/lab/api" element={<Navigate to="/lab" replace />} />
-      <Route path="/lab/api/sm-pitch" element={<Navigate to="/lab" replace />} />
-      <Route path="/lab/api/pitch" element={<LabPitchVsTsPage />} />
-      <Route path="/lab/match-list" element={<LabMatchListPage />} />
-      <Route path="/lab/pitch-models" element={<LabPitchModelsPage />} />
-      <Route path="/lab/neprohra" element={<LabNeprohraPage />} />
+      {LabRoutes ? (
+        <Route
+          path="/lab/*"
+          element={
+            <Suspense fallback={null}>
+              <LabRoutes />
+            </Suspense>
+          }
+        />
+      ) : (
+        <Route path="/lab/*" element={<Navigate to="/" replace />} />
+      )}
       <Route path="/lab/match-center-list" element={<Navigate to="/league" replace />} />
       <Route path="/lab/match-center-list/:leagueId" element={<LabListRedirect />} />
       <Route path="/lab/match-center-2" element={<MatchCenterLabRedirect />} />

@@ -5,7 +5,7 @@
    Proměnné prostředí:
      SITE_URL        např. https://football-terminal.com  (canonical, og:url, sitemap.xml)
      SITE_INDEXABLE  "1" povolí indexaci. Bez něj je všude noindex, dokud web není veřejný. */
-import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { marked } from "marked";
@@ -123,6 +123,13 @@ function pagesFor(loc) {
       html: `<article><h1>${esc(a.title)}</h1>${marked.parse(a.tier && a.tier !== "anon" ? teaser(a.body) : a.body.replace("<!-- gate -->", ""))}</article>`,
     })),
   ];
+}
+
+// Lab (experimenty) do produkce nepatří. Zůstává jen to, co používá veřejná aplikace.
+const LAB_KEEP = new Set(["xgot-efficiency.json"]);
+const labDir = join(dist, "data", "lab");
+if (existsSync(labDir)) {
+  for (const f of readdirSync(labDir)) if (!LAB_KEEP.has(f)) rmSync(join(labDir, f), { recursive: true, force: true });
 }
 
 const pages = [...pagesFor("en"), ...pagesFor("cs")];

@@ -38,6 +38,16 @@ export interface RoundFixture {
   };
 }
 
+/** Zápas v souhrnu všech lig (`upcoming.json`, skládá ho scripts/round_signals.py). */
+export interface UpcomingFixture extends RoundFixture {
+  league_id: number;
+}
+
+export interface UpcomingData {
+  generated_at: string;
+  fixtures: UpcomingFixture[];
+}
+
 export interface LeagueRoundData {
   generated_at: string;
   league: LeagueMeta;

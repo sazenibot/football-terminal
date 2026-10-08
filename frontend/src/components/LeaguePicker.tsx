@@ -44,7 +44,7 @@ const Soon = () => (
   <span className="rounded-md bg-(--c-raised) px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-(--c-muted)">{t("common.soon")}</span>
 );
 
-export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[]; activeId: number; base: string }) {
+export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[]; activeId: number | "all"; base: string }) {
   const [open, setOpen] = useState(false);
   const [q, setQ] = useState("");
   const [pins, setPins] = useState<number[]>(loadPins);
@@ -62,7 +62,7 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
   // pořadí čipů: otevřená, oblíbené, naposledy otevřená, pak ostatní živé, nakonec zbytek
   const chips = useMemo(() => {
     const live = leagues.filter((l) => isLiveLeague(leagues, l.id)).map((l) => l.id);
-    const order = [activeId, ...pins, lastLeagueId() ?? -1, ...live, ...leagues.map((l) => l.id)];
+    const order = [activeId === "all" ? -1 : activeId, ...pins, lastLeagueId() ?? -1, ...live, ...leagues.map((l) => l.id)];
     return [...new Set(order)].filter((id) => byId.has(id)).slice(0, MAX_CHIPS).map((id) => byId.get(id)!);
   }, [leagues, activeId, pins, byId]);
 
@@ -83,6 +83,15 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
   return (
     <nav aria-label={t("picker.aria")}>
       <div className="flex flex-wrap items-center gap-2">
+        <Link
+          to={`${base}/all`}
+          aria-current={activeId === "all" ? "page" : undefined}
+          className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+            activeId === "all" ? "border-(--c-accent) bg-(--c-accent)/12 text-(--c-accent)" : "border-(--c-line) bg-(--c-surface) hover:border-(--c-faint)"
+          }`}
+        >
+          {t("list.all")}
+        </Link>
         {chips.map((l) => {
           const live = isLiveLeague(leagues, l.id);
           const active = l.id === activeId;
