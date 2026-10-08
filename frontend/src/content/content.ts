@@ -3,10 +3,12 @@ import type { Tier } from "../access/tiers";
 import { getLocale, type Locale } from "../i18n/locale";
 import operatorData from "../../content/legal/operator.json";
 
-/* Obsah webu jsou markdown soubory ve frontend/content/. Vzniká se v repu, žádné CMS.
+/* Obsah webu jsou markdown soubory ve frontend/content/. Vzniká se v repu, žádné CMS. Postup psaní: content/README.md.
    news/*.md      krátké aktuality (feed na homepage)
    articles/*.md  články a návody
-   Hlavička souboru mezi --- řádky: title, date, tag/category, link, excerpt, tier, minutes. */
+   drafts/…       koncepty (stejná struktura). Vidět jsou jen ve vývoji, do produkčního buildu se nedostanou.
+   Hlavička souboru mezi --- řádky: title, date, tag/category, link, excerpt, tier, minutes.
+   Plánované vydání: článek s datem v budoucnosti se na webu objeví až od tohoto okamžiku. */
 
 export type NewsItem = {
   id: string;
@@ -46,18 +48,36 @@ export function parseFrontmatter(raw: string): { meta: Record<string, string>; b
 const slugOf = (path: string) => path.split("/").pop()!.replace(/\.md$/, "");
 
 type Files = Record<string, string>;
+
+/** Koncepty se načítají jen ve vývoji. V produkci se větev odstraní a texty konceptů v buildu nejsou. */
+const DRAFTS = import.meta.env.DEV;
+const noFiles: Files = {};
+const drafts = {
+  news: {
+    cs: (DRAFTS ? import.meta.glob("../../content/drafts/news/*.md", { query: "?raw", import: "default", eager: true }) : noFiles) as Files,
+    en: (DRAFTS ? import.meta.glob("../../content/drafts/news/en/*.md", { query: "?raw", import: "default", eager: true }) : noFiles) as Files,
+  },
+  articles: {
+    cs: (DRAFTS ? import.meta.glob("../../content/drafts/articles/*.md", { query: "?raw", import: "default", eager: true }) : noFiles) as Files,
+    en: (DRAFTS ? import.meta.glob("../../content/drafts/articles/en/*.md", { query: "?raw", import: "default", eager: true }) : noFiles) as Files,
+  },
+};
+
+/** Zveřejněno = datum už nastalo. Ve vývoji je vidět i budoucí vydání. */
+export const isPublished = (date: string | undefined) => import.meta.env.DEV || !date || new Date(date).getTime() <= Date.now();
+
 const glob = {
   news: {
-    cs: import.meta.glob("../../content/news/*.md", { query: "?raw", import: "default", eager: true }) as Files,
-    en: import.meta.glob("../../content/news/en/*.md", { query: "?raw", import: "default", eager: true }) as Files,
+    cs: { ...import.meta.glob("../../content/news/*.md", { query: "?raw", import: "default", eager: true }), ...drafts.news.cs } as Files,
+    en: { ...import.meta.glob("../../content/news/en/*.md", { query: "?raw", import: "default", eager: true }), ...drafts.news.en } as Files,
   },
   legal: {
     cs: import.meta.glob("../../content/legal/*.md", { query: "?raw", import: "default", eager: true }) as Files,
     en: import.meta.glob("../../content/legal/en/*.md", { query: "?raw", import: "default", eager: true }) as Files,
   },
   articles: {
-    cs: import.meta.glob("../../content/articles/*.md", { query: "?raw", import: "default", eager: true }) as Files,
-    en: import.meta.glob("../../content/articles/en/*.md", { query: "?raw", import: "default", eager: true }) as Files,
+    cs: { ...import.meta.glob("../../content/articles/*.md", { query: "?raw", import: "default", eager: true }), ...drafts.articles.cs } as Files,
+    en: { ...import.meta.glob("../../content/articles/en/*.md", { query: "?raw", import: "default", eager: true }), ...drafts.articles.en } as Files,
   },
 };
 
@@ -73,7 +93,7 @@ export const getManualNews = (locale: Locale = getLocale()): NewsItem[] =>
   bySlug(glob.news, locale).map(([id, raw]) => {
     const { meta, body } = parseFrontmatter(raw);
     return { id, date: meta.date, tag: meta.tag || (locale === "en" ? "News" : "Novinka"), title: meta.title, text: body, link: meta.link || undefined };
-  });
+  }).filter((n) => isPublished(n.date));
 
 export const getArticles = (locale: Locale = getLocale()): Article[] =>
   bySlug(glob.articles, locale)
@@ -91,6 +111,7 @@ export const getArticles = (locale: Locale = getLocale()): Article[] =>
         body,
       };
     })
+    .filter((a) => isPublished(a.date))
     .sort((a, b) => b.date.localeCompare(a.date));
 
 export const articleBySlug = (slug: string | undefined) => getArticles().find((a) => a.slug === slug);
