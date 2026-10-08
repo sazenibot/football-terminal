@@ -1,10 +1,9 @@
 import { useState, type ReactNode } from "react";
 import { Link } from "../i18n/router";
-import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { Gate } from "../access/Gate";
 import { Frame, Pill, TD, TH, TableWrap } from "../cat/kit";
-import { Card, Disclosure, Empty, Info, Stat, n1, n2 } from "../mc2/kit";
-import { fmtDate, fmtDateTime, useBacktest, useTrackRecord, type Backtest as BacktestData, type LiveBook, type MatchTip, type SeasonRef, type TipCount, type TipOu, type TipSummary, type TipX } from "../site/data";
+import { Card, Empty, Info, Stat, n1, n2 } from "../mc2/kit";
+import { fmtDate, fmtDateTime, useBacktest, useTrackRecord, type LiveBook, type MatchTip, type SeasonRef, type TipCount, type TipOu, type TipSummary, type TipX } from "../site/data";
 import { t, type Key } from "../i18n/locale";
 import { fmtDayMonth } from "../lib/format";
 
@@ -87,7 +86,6 @@ export function ResultsPage() {
           </div>
           <Live live={league.live} />
           <Backtest slug={league.slug} seasons={league.seasons} current={ref} onPick={setSeason} />
-          <Limits n={ref?.n ?? 0} />
         </div>
       )}
     </Frame>
@@ -96,47 +94,11 @@ export function ResultsPage() {
 
 /* ---------- živá kniha ---------- */
 
-function Live({ live }: { live: LiveBook }) {
-  const title: ReactNode = (
-    <>
-      {t("res.live.title")} {live.since && <Pill>{t("res.live.since", { date: fmtDate(live.since) })}</Pill>}
-    </>
-  );
+function UpcomingTable({ live }: { live: LiveBook }) {
   return (
-    <Card
-      title={title}
-      lead={t("res.live.lead")}
-    >
-      <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-        <Stat value={live.locked} label={t("res.live.locked")} />
-        <Stat value={live.settled} label={t("res.live.settled")} />
-        <Stat value={live.upcoming.length} label={t("res.live.upcoming")} />
-      </div>
-      {live.settled === 0 ? (
-        <p className="mt-3 rounded-xl bg-(--c-raised)/60 px-4 py-3 text-[13px] leading-snug text-(--c-muted)">
-          {t("res.live.empty")}
-        </p>
-      ) : (
-        live.model && (
-          <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4">
-            <Stat value={p1(live.model.accuracy)} label={t("res.live.hitModel")} />
-            <Stat value={n2(live.model.logloss)} label={t("res.live.loglossModel")} />
-            {live.market && <Stat value={p1(live.market.accuracy)} label={t("res.live.hitMarket")} />}
-            {live.market && <Stat value={n2(live.market.logloss)} label={t("res.live.loglossMarket")} />}
-          </div>
-        )
-      )}
-      {live.tips?.goals && live.tips.x12.n > 0 && (
-        <div className="mt-4">
-          <TipsBlock tips={live.tips} />
-        </div>
-      )}
-      {live.matches && live.matches.length > 0 && (
-        <Matches rows={live.matches.map((m) => ({ date: m.kickoff, home: m.home, away: m.away, score: m.score, p: m.p, y: toY(m.y), tip: m.tip }))} />
-      )}
-      {live.upcoming.length > 0 && (
-      <>
+    <>
       <h3 className="mb-2 mt-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("res.live.pendingTitle")}</h3>
+      <div className="hidden sm:block">
       <TableWrap>
         <table className="w-full text-left">
           <thead>
@@ -161,8 +123,74 @@ function Live({ live }: { live: LiveBook }) {
           </tbody>
         </table>
       </TableWrap>
-      </>
+      </div>
+      <ul className="mt-2 space-y-2 sm:hidden">
+        {live.upcoming.map((u) => (
+          <li key={u.fid} className="rounded-xl bg-(--c-raised) px-3 py-2.5">
+            <Link to={`/match/${u.fid}`} className="font-medium hover:text-(--c-accent)">
+              {u.home} – {u.away}
+            </Link>
+            <p className="mt-0.5 text-[13px] text-(--c-muted)">
+              {fmtDateTime(u.kickoff)} · {t("res.col.locked")} {fmtDateTime(u.locked_at)}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+}
+
+function Live({ live }: { live: LiveBook }) {
+  const title: ReactNode = (
+    <>
+      {t("res.live.title")} {live.since && <Pill>{t("res.live.since", { date: fmtDate(live.since) })}</Pill>}
+    </>
+  );
+  const empty = live.settled === 0;
+  return (
+    <Card
+      title={title}
+      lead={t("res.live.lead")}
+    >
+      {empty ? (
+        <p className="text-[14px] leading-snug text-(--c-muted)">
+          {live.upcoming[0]
+            ? t("res.live.waitingDate", { n: live.locked, date: fmtDate(live.upcoming[0].kickoff) })
+            : t("res.live.waiting", { n: live.locked })}
+        </p>
+      ) : (
+        <>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+            <Stat value={live.locked} label={t("res.live.locked")} />
+            <Stat value={live.settled} label={t("res.live.settled")} />
+            <Stat value={live.upcoming.length} label={t("res.live.upcoming")} />
+          </div>
+          {live.model && (
+            <div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-4">
+              <Stat value={p1(live.model.accuracy)} label={t("res.live.hitModel")} />
+              <Stat value={n2(live.model.logloss)} label={t("res.live.loglossModel")} />
+              {live.market && <Stat value={p1(live.market.accuracy)} label={t("res.live.hitMarket")} />}
+              {live.market && <Stat value={n2(live.market.logloss)} label={t("res.live.loglossMarket")} />}
+            </div>
+          )}
+          {live.tips?.goals && live.tips.x12.n > 0 && (
+            <div className="mt-4">
+              <TipsBlock tips={live.tips} />
+            </div>
+          )}
+          {live.matches && live.matches.length > 0 && (
+            <Matches rows={live.matches.map((m) => ({ date: m.kickoff, home: m.home, away: m.away, score: m.score, p: m.p, y: toY(m.y), tip: m.tip }))} />
+          )}
+        </>
       )}
+      {live.upcoming.length > 0 && (empty ? (
+        <details className="mt-3">
+          <summary className="cursor-pointer text-[13px] font-medium text-(--c-accent)">{t("res.live.showLocked", { n: live.upcoming.length })}</summary>
+          <UpcomingTable live={live} />
+        </details>
+      ) : (
+        <UpcomingTable live={live} />
+      ))}
     </Card>
   );
 }
@@ -172,7 +200,7 @@ function Live({ live }: { live: LiveBook }) {
 function Backtest({ slug, seasons, current, onPick }: { slug: string; seasons: SeasonRef[]; current: SeasonRef | undefined; onPick: (file: string) => void }) {
   const { data: b, loading } = useBacktest(slug, current?.file);
   return (
-    <Card title={t("res.bt.title")} lead={t("res.bt.intro")}>
+    <Card title={t("res.bt.title")}>
       <div className="mb-4 flex flex-wrap gap-2" role="group" aria-label={t("res.pick.season")}>
         {seasons.map((s) => (
           <Choice key={s.file} active={s.file === current?.file} onClick={() => onPick(s.file)}>
@@ -181,85 +209,17 @@ function Backtest({ slug, seasons, current, onPick }: { slug: string; seasons: S
           </Choice>
         ))}
       </div>
-      {!b ? <Empty>{loading ? t("res.loading") : t("res.loadError")}</Empty> : <BacktestBody b={b} />}
-    </Card>
-  );
-}
-
-function BacktestBody({ b }: { b: BacktestData }) {
-  const lift = b.model.accuracy - b.baselines.always_home_accuracy;
-  const pm = Math.round(196 * Math.sqrt(((b.model.accuracy / 100) * (1 - b.model.accuracy / 100)) / b.n));
-  return (
-    <>
-      <p className="mb-3 text-[13px] leading-snug text-(--c-muted)">
-        {t("res.bt.lead", { league: b.league, season: b.season, from: fmtDate(b.from), to: fmtDate(b.to) })}{" "}
-        <b className="text-(--c-text)">{t(b.phase === "tuning" ? "res.bt.note.tuning" : "res.bt.note.validation")}</b>
-      </p>
-      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-        <Stat
-          value={p1(b.model.accuracy)}
-          label={t("res.bt.accuracy")}
-          hint={t("res.bt.accuracyHint", { pct: p1(b.baselines.always_home_accuracy), lift: n1(lift) })}
-        />
-        <Stat value={n2(b.model.logloss)} label={t("res.bt.logloss")} hint={t("res.bt.loglossHint", { v: n2(b.baselines.frequency_logloss) })} />
-        <Stat value={n2(b.model.brier)} label={t("res.bt.brier")} />
-        <Stat
-          value={b.n}
-          label={t("res.bt.matches")}
-          hint={t("res.bt.matchesHint", { home: p1(b.actual_1x2.home), draw: p1(b.actual_1x2.draw), away: p1(b.actual_1x2.away) })}
-        />
-      </div>
-      <p className="mt-3 text-[12px] leading-snug text-(--c-faint)">{t("res.bt.margin", { n: b.n, pm })}</p>
-
-      {b.tips?.goals && (
-        <div className="mt-6">
-          <TipsBlock tips={b.tips} retro />
-        </div>
+      {current && (
+        <p className="mb-3 text-[13px] leading-snug text-(--c-muted)">
+          {t(current.phase === "tuning" ? "res.bt.note.tuning" : "res.bt.note.validation")}
+        </p>
       )}
-
-      <div className="mt-2">
+      {!b ? <Empty>{loading ? t("res.loading") : t("res.loadError")}</Empty> : (
         <Gate feature="results.detail" mode="blur" title={t("res.bt.gateTitle")} text={t("res.bt.gateText")}>
-          <Calibration bins={b.calibration} />
           <Matches rows={b.matches.map((m) => ({ ...m, y: toY(m.y) }))} />
         </Gate>
-      </div>
-    </>
-  );
-}
-
-function Calibration({ bins }: { bins: BacktestData["calibration"] }) {
-  const rows = bins.map((x) => ({ name: t("fmt.pct", { n: `${x.lo}–${x.hi}` }), n: x.n, model: x.predicted, real: x.actual }));
-  return (
-    <div className="mt-6">
-      <h3 className="mb-1 text-[15px] font-semibold">{t("res.cal.title")}</h3>
-      <p className="mb-3 text-[13px] leading-snug text-(--c-muted)">
-        {t("res.cal.lead")}
-      </p>
-      <div className="h-64 w-full">
-        <ResponsiveContainer>
-          <BarChart data={rows} margin={{ top: 4, right: 8, left: -12, bottom: 4 }}>
-            <CartesianGrid stroke="var(--c-line)" vertical={false} />
-            <XAxis dataKey="name" tick={{ fill: "var(--c-muted)", fontSize: 11 }} stroke="var(--c-line)" />
-            <YAxis tick={{ fill: "var(--c-muted)", fontSize: 11 }} stroke="var(--c-line)" tickFormatter={(v) => t("fmt.pct", { n: v })} domain={[0, 100]} />
-            <Tooltip
-              contentStyle={{ background: "var(--c-surface)", border: "1px solid var(--c-line)", borderRadius: 12, fontSize: 12 }}
-              formatter={(v, name) => [p1(Number(v)), String(name)]}
-              labelFormatter={(l, p) => `${l} · ${t("res.cal.count", { n: p?.[0]?.payload?.n ?? 0 })}`}
-            />
-            <Legend wrapperStyle={{ fontSize: 12 }} />
-            <Bar dataKey="model" name={t("res.cal.model")} fill="var(--c-accent)" radius={[4, 4, 0, 0]} isAnimationActive={false} />
-            <Bar dataKey="real" name={t("res.cal.real")} fill="var(--c-away)" radius={[4, 4, 0, 0]} isAnimationActive={false} />
-          </BarChart>
-        </ResponsiveContainer>
-      </div>
-      <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-xs text-(--c-faint)">
-        {rows.map((r) => (
-          <span key={r.name}>
-            {r.name}: {t("res.cal.count", { n: r.n })}
-          </span>
-        ))}
-      </div>
-    </div>
+      )}
+    </Card>
   );
 }
 
@@ -270,6 +230,7 @@ function Matches({ rows }: { rows: Row[] }) {
   return (
     <div className="mt-6">
       <h3 className="mb-2 text-[15px] font-semibold">{t("res.list.title")}</h3>
+      <div className="hidden sm:block">
       <TableWrap>
         <table className="w-full text-left">
           <thead>
@@ -279,7 +240,8 @@ function Matches({ rows }: { rows: Row[] }) {
               <th className={TH}>{t("res.list.tip")}</th>
               <th className={TH}>{t("res.list.goalsTip")}</th>
               <th className={TH}>{t("res.list.score")}</th>
-              <th className={TH}>{t("res.list.eval")}</th>
+              <th className={TH}>{t("res.eval.result")}</th>
+              <th className={TH}>{t("res.eval.goals")}</th>
             </tr>
           </thead>
           <tbody>
@@ -295,8 +257,8 @@ function Matches({ rows }: { rows: Row[] }) {
                   </td>
                   <td className={TD}>
                     {x && lbl ? (
-                      <span title={p1(x.p)}>
-                        <span className="rounded bg-(--c-raised) px-1 text-xs font-semibold tabular-nums">{lbl.code}</span> {lbl.text}
+                      <span>
+                        {lbl.text} <span className="tabular-nums text-(--c-muted)">{p1(x.p)}</span>
                       </span>
                     ) : (
                       <span className="text-(--c-faint)">–</span>
@@ -304,27 +266,58 @@ function Matches({ rows }: { rows: Row[] }) {
                   </td>
                   <td className={TD}>
                     {ou ? (
-                      <span title={p1(ou.p)} className="font-semibold">
-                        {t(ouKey(ou))}
+                      <span className="font-semibold">
+                        {t(ouKey(ou))} <span className="font-normal tabular-nums text-(--c-muted)">{p1(ou.p)}</span>
                       </span>
                     ) : (
                       <span className="text-(--c-faint)">–</span>
                     )}
                   </td>
-                  <td className={`${TD} whitespace-nowrap`}>
-                    <span title={t("res.tip.goals", { n: goalsOf(m.score) })}>{m.score.replace("-", ":")}</span>
-                  </td>
-                  <td className={`${TD} whitespace-nowrap`}>
-                    {x ? <Mark ok={hitX(x, m.y)} /> : "–"}
-                    <span className="mx-1.5 text-(--c-faint)">/</span>
-                    {ou ? <Mark ok={hitOu(ou, m.score)} /> : "–"}
-                  </td>
+                  <td className={`${TD} whitespace-nowrap`}>{m.score.replace("-", ":")}</td>
+                  <td className={TD}>{x ? <Mark ok={hitX(x, m.y)} /> : "–"}</td>
+                  <td className={TD}>{ou ? <Mark ok={hitOu(ou, m.score)} /> : "–"}</td>
                 </tr>
               );
             })}
           </tbody>
         </table>
       </TableWrap>
+      </div>
+      <ul className="space-y-2 sm:hidden">
+        {shown.map((m, i) => {
+          const x = m.tip?.x;
+          const ou = m.tip?.ou;
+          const lbl = x ? xLabel(x) : null;
+          return (
+            <li key={i} className="rounded-xl bg-(--c-raised) px-3 py-2.5">
+              <div className="text-[12px] text-(--c-muted)">{fmtDay(m.date)}</div>
+              <div className="mt-0.5 font-medium">
+                {m.home} – {m.away} <span className="tabular-nums text-(--c-muted)">{m.score.replace("-", ":")}</span>
+              </div>
+              <div className="mt-1.5 space-y-0.5 text-[13px]">
+                <div>
+                  {x && lbl ? (
+                    <>
+                      <Mark ok={hitX(x, m.y)} /> {lbl.text} <span className="tabular-nums text-(--c-muted)">{p1(x.p)}</span>
+                    </>
+                  ) : (
+                    <span className="text-(--c-faint)">–</span>
+                  )}
+                </div>
+                <div>
+                  {ou ? (
+                    <>
+                      <Mark ok={hitOu(ou, m.score)} /> {t(ouKey(ou))} <span className="tabular-nums text-(--c-muted)">{p1(ou.p)}</span>
+                    </>
+                  ) : (
+                    <span className="text-(--c-faint)">–</span>
+                  )}
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
       <p className="mt-2 text-[12px] text-(--c-faint)">{t("res.list.evalNote")}</p>
       {rows.length > 12 && (
         <button type="button" onClick={() => setAll((v) => !v)} className="mt-2 text-[13px] text-(--c-accent) hover:underline">
@@ -375,39 +368,3 @@ function TipsBlock({ tips, retro = false }: { tips: TipSummary; retro?: boolean 
   );
 }
 
-/* ---------- omezení ---------- */
-
-function Limits({ n }: { n: number }) {
-  return (
-    <Card title={t("res.limits.title")}>
-      <ul className="space-y-2 text-[13px] leading-relaxed text-(--c-muted)">
-        <li>
-          <b className="text-(--c-text)">{t("res.limits.1.b", { n })}</b> {t("res.limits.1.t")}
-        </li>
-        <li>
-          <b className="text-(--c-text)">{t("res.limits.2.b")}</b> {t("res.limits.2.t")}
-        </li>
-        <li>
-          <b className="text-(--c-text)">{t("res.limits.3.b")}</b> {t("res.limits.3.t")}
-        </li>
-        <li>
-          <b className="text-(--c-text)">{t("res.limits.4.b")}</b> {t("res.limits.4.t")}
-        </li>
-        <li>
-          <b className="text-(--c-text)">{t("res.limits.5.b")}</b> {t("res.limits.5.t")}
-        </li>
-      </ul>
-      <div className="mt-3">
-        <Disclosure summary={t("res.limits.how")}>
-          <p className="text-[13px] leading-relaxed text-(--c-muted)">
-            {t("res.limits.howText")}{" "}
-            <Link to="/clanky/jak-funguje-simulace" className="text-(--c-accent) hover:underline">
-              {t("res.limits.howLink")}
-            </Link>
-            .
-          </p>
-        </Disclosure>
-      </div>
-    </Card>
-  );
-}

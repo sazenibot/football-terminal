@@ -78,10 +78,7 @@ export type PitchCatalogFile = {
 };
 
 export function pitchSeasonOpts(season: string, matches: MatchRow[]): SeasonOpt[] {
-  return [
-    { id: season, label: season, matches, disabled: false },
-    { id: "2025/2026", label: t("mc.pc.seasonSoon"), matches: [], disabled: true },
-  ];
+  return [{ id: season, label: season, matches, disabled: false }];
 }
 
 const C = {

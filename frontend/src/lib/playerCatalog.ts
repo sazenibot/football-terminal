@@ -124,7 +124,7 @@ export function metricValue(rows: CatalogPlayerMatch[], def: PlayerStatDef): num
 }
 
 export function minuteThreshold(games: number) {
-  return 0.2 * 90 * games;
+  return Math.max(450, 0.2 * 90 * games);
 }
 
 export function gamesPerTeam(fixtureCount: number, teamCount = 16) {

@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { buildH2hTrends, type H2hScope } from "../lib/h2hTrends";
-import {
-  buildTrendmetr,
-  overLabel,
-  teamShort,
-  TRENDMETR_METRICS,
-} from "../lib/trendmetr";
+import { buildTrendmetr, overLabel, TRENDMETR_METRICS } from "../lib/trendmetr";
 import type { MatchData, TrendItem } from "../types";
 import { getLocale, t, type Key } from "../i18n/locale";
 import { Card, Empty, Info, Seg, TeamTitle, n2 } from "./kit";
@@ -93,23 +88,23 @@ function TrendRows({ items, min, scopeOf, fromData = false }: { items: TrendItem
           return (
             <li key={it.key} className="py-2">
               <div className="flex items-start justify-between gap-3">
-                <span className="text-[13px] leading-snug">
+                <span className="min-w-0 text-[13px] leading-snug">
                   {sc && (
                     <span
-                      className="mr-2 inline-block rounded-md px-1.5 py-0.5 align-middle text-xs font-semibold leading-tight"
+                      className="mb-1 block w-fit rounded-md px-1.5 py-0.5 text-xs font-semibold leading-tight"
                       style={{ color: sc.color, background: `color-mix(in oklab, ${sc.color} 16%, transparent)` }}
                     >
                       {sc.text}
                     </span>
                   )}
-                  <span className="align-middle">{czNum(fromData ? dataLabel(it) : it.label)}</span>
+                  <span className="block">{czNum(fromData ? dataLabel(it) : it.label)}</span>
                 </span>
                 {it.odds != null && (
                   <span
                     className="shrink-0 rounded-md bg-(--c-raised) px-1.5 py-0.5 text-xs font-semibold tabular-nums text-(--c-muted)"
                     title={t("mc.tr.oddsTitle")}
                   >
-                    {n2(it.odds)}
+                    {t("mc.tr.oddsLabel", { v: n2(it.odds) })}
                   </span>
                 )}
               </div>
@@ -186,7 +181,7 @@ export function TrendsCard({ m }: { m: MatchData }) {
       }
     >
       <div className="mb-4 flex flex-wrap items-center gap-2">
-        <span className="text-xs text-(--c-muted)">{t("mc.tr.showFrom")}</span>
+        <span className="text-xs text-(--c-muted)">{t("mc.tr.minFreq")}</span>
         <Seg
           label={t("mc.tr.minFreq")}
           value={String(min) as "0" | "60" | "80" | "100"}
@@ -255,15 +250,7 @@ export function TrendsCard({ m }: { m: MatchData }) {
 
 export function BetbuilderCard({ m }: { m: MatchData }) {
   const rows = buildTrendmetr(m);
-  const [picked, setPicked] = useState<{ key: string; text: string }[]>([]);
   if (!rows.some((r) => Object.keys(r.lines).length)) return null;
-
-  const toggle = (key: string, text: string) =>
-    setPicked((prev) =>
-      prev.some((p) => p.key === key)
-        ? prev.filter((p) => p.key !== key)
-        : [...prev, { key, text }],
-    );
 
   return (
     <Card
@@ -285,68 +272,21 @@ export function BetbuilderCard({ m }: { m: MatchData }) {
             <div className="grid grid-cols-5 gap-1.5">
               {TRENDMETR_METRICS.map((col) => {
                 const line = row.lines[col.key] ?? null;
-                const key = `${row.team.id}-${col.key}`;
-                const on = picked.some((p) => p.key === key);
                 return (
-                  <button
+                  <div
                     key={col.key}
-                    type="button"
-                    disabled={line == null}
-                    aria-pressed={on}
-                    onClick={() =>
-                      line != null &&
-                      toggle(
-                        key,
-                        `${teamShort(row.team.name)} ${col.name.toLowerCase()} ${overLabel(line)}`,
-                      )
-                    }
-                    className={`flex min-h-[3.75rem] flex-col items-center justify-center rounded-xl border px-1 py-2 text-center transition-colors ${
-                      line == null
-                        ? "cursor-default border-dashed border-(--c-line) text-(--c-faint)"
-                        : on
-                          ? "border-(--c-accent) bg-(--c-accent)/15"
-                          : "border-(--c-line) bg-(--c-raised) hover:border-(--c-faint)"
+                    className={`flex min-h-[3.75rem] flex-col items-center justify-center rounded-xl border px-1 py-2 text-center ${
+                      line == null ? "border-dashed border-(--c-line) text-(--c-faint)" : "border-(--c-line) bg-(--c-raised)"
                     }`}
                   >
-                    <span className="text-xs leading-tight text-(--c-muted)">
-                      {col.short}
-                    </span>
-                    <span className="mt-0.5 text-sm font-bold tabular-nums">
-                      {line == null ? "—" : overLabel(line)}
-                    </span>
-                  </button>
+                    <span className="text-xs leading-tight text-(--c-muted)">{col.short}</span>
+                    <span className="mt-0.5 text-sm font-bold tabular-nums">{line == null ? "—" : overLabel(line)}</span>
+                  </div>
                 );
               })}
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="mt-4 rounded-xl bg-(--c-raised) px-3 py-2.5">
-        {picked.length === 0 ? (
-          <p className="text-xs text-(--c-muted)">{t("mc.bb.nothing")}</p>
-        ) : (
-          <div className="flex flex-wrap items-center gap-1.5">
-            {picked.map((p) => (
-              <button
-                key={p.key}
-                type="button"
-                onClick={() => toggle(p.key, p.text)}
-                className="inline-flex min-h-8 items-center gap-1.5 rounded-full border border-(--c-accent)/50 bg-(--c-accent)/10 px-2.5 text-xs text-(--c-accent)"
-                aria-label={t("mc.bb.remove", { text: p.text })}
-              >
-                {p.text} <span aria-hidden>×</span>
-              </button>
-            ))}
-            <button
-              type="button"
-              onClick={() => setPicked([])}
-              className="ml-auto min-h-8 px-2 text-xs text-(--c-muted) hover:text-(--c-text)"
-            >
-              {t("mc.bb.clear")}
-            </button>
-          </div>
-        )}
       </div>
     </Card>
   );

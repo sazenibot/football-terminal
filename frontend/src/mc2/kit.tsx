@@ -130,8 +130,9 @@ export function Seg<T extends string>({
   /** Dlouhé popisky se zalomí do více řádků místo posouvání do strany. */
   wrap?: boolean;
 }) {
+  const fade = useScrollFade('[aria-checked="true"]', value);
   return (
-    <div role="radiogroup" aria-label={label} className={`max-w-full gap-0.5 rounded-xl bg-(--c-raised) p-1 ${wrap ? "flex flex-wrap" : "inline-flex overflow-x-auto"}`}>
+    <div ref={fade.ref} style={wrap ? undefined : fade.style} role="radiogroup" aria-label={label} className={`max-w-full gap-0.5 rounded-xl bg-(--c-raised) p-1 ${wrap ? "flex flex-wrap" : "inline-flex overflow-x-auto"}`}>
       {options.map((o) => {
         const active = o.id === value;
         return (
@@ -153,6 +154,39 @@ export function Seg<T extends string>({
       })}
     </div>
   );
+}
+
+/** Vodorovně posuvná lišta: stín na straně, kam jde ještě posouvat, a aktivní položka se sama posune do zorného pole. */
+export function useScrollFade(activeSelector: string, dep: unknown) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [edge, setEdge] = useState({ left: false, right: false });
+  const measure = () => {
+    const el = ref.current;
+    if (!el) return;
+    setEdge({ left: el.scrollLeft > 4, right: el.scrollLeft + el.clientWidth < el.scrollWidth - 4 });
+  };
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const a = el.querySelector<HTMLElement>(activeSelector);
+    if (a) el.scrollTo({ left: a.offsetLeft - (el.clientWidth - a.offsetWidth) / 2, behavior: "smooth" });
+    measure();
+    el.addEventListener("scroll", measure, { passive: true });
+    window.addEventListener("resize", measure);
+    return () => {
+      el.removeEventListener("scroll", measure);
+      window.removeEventListener("resize", measure);
+    };
+  }, [dep, activeSelector]);
+  const mask =
+    edge.left && edge.right
+      ? "linear-gradient(to right, transparent, black 24px, black calc(100% - 24px), transparent)"
+      : edge.right
+        ? "linear-gradient(to right, black calc(100% - 24px), transparent)"
+        : edge.left
+          ? "linear-gradient(to right, transparent, black 24px)"
+          : undefined;
+  return { ref, style: mask ? { maskImage: mask, WebkitMaskImage: mask } : undefined };
 }
 
 export function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: ReactNode }) {
@@ -278,10 +312,8 @@ export function ValueTag({ model, market, className = "" }: { model: number; mar
   return (
     <span
       className={`inline-flex items-center rounded-md px-1.5 py-0.5 text-xs font-semibold leading-tight ${className}`}
-      style={{
-        background: `color-mix(in oklab, ${pos ? "var(--c-accent)" : "var(--c-warn)"} 16%, transparent)`,
-        color: pos ? "var(--c-accent)" : "var(--c-warn)",
-      }}
+      style={{ background: "var(--c-raised)", color: "var(--c-muted)" }}
+      data-direction={pos ? "model" : "market"}
     >
       {pos ? t("mc.kit.value") : t("mc.kit.marketHigher")}
     </span>
@@ -392,7 +424,7 @@ export function SideHeads({ home, away }: { home: TeamBrief; away: TeamBrief }) 
   );
 }
 
-export function Stat({ value, label, tone, hint }: { value: ReactNode; label: ReactNode; tone?: string; hint?: ReactNode }) {
+export function Stat({ value, label, tone, hint, sub }: { value: ReactNode; label: ReactNode; tone?: string; hint?: ReactNode; sub?: ReactNode }) {
   return (
     <div className="rounded-xl bg-(--c-raised) px-3 py-3 text-center">
       <div className="text-xl font-bold leading-none tabular-nums" style={tone ? { color: tone } : undefined}>
@@ -402,6 +434,7 @@ export function Stat({ value, label, tone, hint }: { value: ReactNode; label: Re
         {label}
         {hint && <Info>{hint}</Info>}
       </div>
+      {sub && <div className="mt-0.5 text-xs tabular-nums text-(--c-muted)">{sub}</div>}
     </div>
   );
 }

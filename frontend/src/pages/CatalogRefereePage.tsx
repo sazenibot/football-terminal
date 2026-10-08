@@ -153,6 +153,7 @@ export function CatalogRefereePage() {
   const fouls = avgSum(seasonMatches, "fouls");
   const penalties = avgSum(seasonMatches, "penalties");
   const strict = strictness(disc.yellow);
+  const rankSize = disc.yellow?.size ?? disc.fouls?.size;
 
   const filters = (
     <div className="mt-4 rounded-2xl border border-(--c-line) bg-(--c-surface) p-3 sm:p-4">
@@ -166,7 +167,7 @@ export function CatalogRefereePage() {
           }}
           options={[
             { id: "all", label: t("ct.season.all") },
-            ...seasons.map((s) => ({ id: String(s.id), label: `${s.name || s.id}${s.id === currentSeasonId ? t("ct.ref.nowTag") : ""} · ${s.matches}×` })),
+            ...seasons.map((s) => ({ id: String(s.id), label: `${s.name || s.id}${s.id === currentSeasonId ? t("ct.ref.nowTag") : ""} · ${t("ct.nMatches", { n: s.matches })}` })),
           ]}
         />
       </div>
@@ -204,8 +205,8 @@ export function CatalogRefereePage() {
               {possible >= n && possible > 0 ? (
                 <Stat
                   value={t("ct.ref.ofPossible", { n, possible })}
-                  label={t("ct.ref.ofPossibleLabel", { pct: t("fmt.pct", { n: Math.round((100 * n) / possible) }) })}
-                  hint={t("ct.ref.ofPossibleHint")}
+                  label={t("ct.ref.ofPossibleLabel")}
+                  hint={t("ct.ref.ofPossibleHint", { n, possible })}
                 />
               ) : (
                 <Stat value={n} label={t("ct.ref.officiated")} />
@@ -229,27 +230,27 @@ export function CatalogRefereePage() {
           <>
             <Card
               title={t("ct.ref.howTitle")}
-              lead={t("ct.ref.howLead")}
+              lead={<>{t("ct.ref.howLead")} {t("ct.kit.rankBarLead")}</>}
             >
               <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                <RankCard label={t("ct.ref.yellow")} value={yellow} rank={disc.yellow?.rank} size={disc.yellow?.size} avg={disc.yellow?.league_avg} neutralRank />
-                <RankCard label={t("ct.ref.red")} value={avgSum(seasonMatches, "red")} rank={disc.red?.rank} size={disc.red?.size} avg={disc.red?.league_avg} neutralRank />
+                <RankCard label={t("ct.ref.yellow")} value={yellow} rank={disc.yellow?.rank} size={rankSize} avg={disc.yellow?.league_avg} neutralRank />
+                <RankCard label={t("ct.ref.red")} value={avgSum(seasonMatches, "red")} rank={disc.red?.rank} size={rankSize} avg={disc.red?.league_avg} neutralRank />
                 <RankCard
                   label={t("ct.ref.secondYellow")}
                   value={avgSum(seasonMatches, "yellowred") ?? sm.yellowred ?? null}
                   rank={disc.yellowred?.rank}
-                  size={disc.yellowred?.size}
+                  size={rankSize}
                   avg={disc.yellowred?.league_avg}
                   neutralRank
                 />
-                <RankCard label={t("ct.ref.fouls")} value={fouls} digits={1} rank={disc.fouls?.rank} size={disc.fouls?.size} avg={disc.fouls?.league_avg} neutralRank />
-                <RankCard label={t("ct.ref.penalties")} value={penalties} rank={disc.penalties?.rank} size={disc.penalties?.size} avg={disc.penalties?.league_avg} neutralRank />
+                <RankCard label={t("ct.ref.fouls")} value={fouls} digits={1} rank={disc.fouls?.rank} size={rankSize} avg={disc.fouls?.league_avg} neutralRank />
+                <RankCard label={t("ct.ref.penalties")} value={penalties} rank={disc.penalties?.rank} size={rankSize} avg={disc.penalties?.league_avg} neutralRank />
                 <RankCard
                   label={t("ct.ref.var")}
                   hint={t("ct.ref.varHint")}
                   value={avgSum(seasonMatches, "var") ?? sm.var ?? null}
                   rank={disc.var?.rank}
-                  size={disc.var?.size}
+                  size={rankSize}
                   avg={disc.var?.league_avg}
                   neutralRank
                 />
@@ -343,7 +344,7 @@ function MatchRows({ rows, pageSize = 25 }: { rows: CatalogRefereeMatch[]; pageS
             <div className="mt-1.5 flex justify-center gap-1 sm:mt-0 sm:justify-end">
               <Mini label={t("ct.ref.miniFouls")} pair={m.st?.fouls} />
               <Mini label={t("ct.ref.miniYc")} pair={m.st?.yellow} tone="var(--c-warn)" />
-              <Mini label={t("ct.ref.miniRc")} total={pairSum(m.st?.red) ?? (m.st?.fouls || m.st?.yellow ? 0 : null)} tone="var(--c-loss)" />
+              <Mini label={t("ct.ref.miniRc")} pair={m.st?.red ?? (m.st?.fouls || m.st?.yellow ? [0, 0] : null)} tone="var(--c-loss)" />
             </div>
           </div>
         );

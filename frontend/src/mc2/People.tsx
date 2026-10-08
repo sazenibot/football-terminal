@@ -3,11 +3,13 @@ import type { MatchData, PlayerBrief, RefereeInfo, RefereeTeamMatch, TeamBrief }
 import { formatDate } from "../lib/format";
 import { getLocale, intlTag, t, type Key } from "../i18n/locale";
 import { Card, Empty, Info, ResBadge, Seg, Stat, TeamTitle, n2, type Res } from "./kit";
+import { Link } from "../i18n/router";
+import { injuryCs } from "../i18n/dataText";
 
 /* ---------- Absence ---------- */
 
 export function AbsencesCard({ m }: { m: MatchData }) {
-  const list = (side: "home" | "away") => m.sidelined.filter((s) => s.side === side).sort((a, b) => Number(a.likely_available) - Number(b.likely_available));
+  const list = (side: "home" | "away") => m.sidelined.filter((s) => s.side === side && !!s.player_name && !/^Hráč #/.test(s.player_name)).sort((a, b) => Number(a.likely_available) - Number(b.likely_available));
   const col = (team: TeamBrief, side: "home" | "away") => {
     const items = list(side);
     return (
@@ -25,7 +27,7 @@ export function AbsencesCard({ m }: { m: MatchData }) {
                 <div className="min-w-0">
                   <div className="truncate text-[13px] font-medium">{s.player_name}</div>
                   <div className="truncate text-xs text-(--c-muted)">
-                    {getLocale() === "en" ? s.type_name : s.type_name_cs}
+                    {getLocale() === "en" ? s.type_name : injuryCs(s.type_name, s.type_name_cs)}
                     {s.games_missed ? ` · ${t("mc.pe.missed", { n: s.games_missed })}` : ""}
                   </div>
                 </div>
@@ -108,6 +110,7 @@ export function PlayersCard({ m }: { m: MatchData }) {
   const [pos, setPos] = useState<"out" | "gk">("out");
   const [view, setView] = useState<View>("season");
   const [all, setAll] = useState(false);
+  const [fullCols, setFullCols] = useState(false);
   const [sortKey, setSortKey] = useState("min");
   const [dir, setDir] = useState<"asc" | "desc">("desc");
 
@@ -120,7 +123,9 @@ export function PlayersCard({ m }: { m: MatchData }) {
   }, [m, team, pos, view]);
 
   const defs = pos === "gk" ? GK : OUT;
-  const cols = defs;
+  /* Výchozí je kompaktní tabulka (hlavní ukazatele), zbytek po rozbalení. */
+  const compactKeys = pos === "gk" ? defs.slice(0, 4).map((c) => c.key) : ["min", "g", "a", "sh"];
+  const cols = fullCols ? defs : defs.filter((c) => compactKeys.includes(c.key));
   const groups = cols.reduce<{ name: Key | ""; span: number }[]>((acc, c) => {
     const last = acc[acc.length - 1];
     if (last && last.name === c.group) last.span += 1;
@@ -247,10 +252,18 @@ export function PlayersCard({ m }: { m: MatchData }) {
                 {all ? t("home.news.less") : t("mc.pe.pl.showAll", { n: sorted.length })}
               </button>
             )}
+            <button type="button" onClick={() => setFullCols((v) => !v)} className="min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
+              {fullCols ? t("mc.pe.pl.compact") : t("mc.pe.pl.fullStats")}
+            </button>
             {view !== "season" && (
               <span className="text-xs text-(--c-faint)">{t("mc.pe.pl.zeros")}</span>
             )}
           </div>
+          {fullCols && (
+            <p className="mt-1 text-xs leading-relaxed text-(--c-muted)">
+              {cols.filter((c) => c.title).map((c) => `${t(c.label)} = ${t(c.title as Key)}`).join(" · ")}
+            </p>
+          )}
         </>
       )}
     </Card>
@@ -337,9 +350,9 @@ export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | nu
           <>
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
               <Stat value={statCount(s["Season Matches"])} label={t("mc.pe.ref.seasonMatches")} />
-              <Stat value={fx(s["Fouls"]?.average)} label={t("mc.pe.ref.foulsPer")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: fx(lc.fouls_per_match) }) : undefined} />
-              <Stat value={fx(statAvg(s["Yellowcards"]))} label={t("mc.pe.ref.yellowsPer")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: fx(lc.yellow_per_match) }) : undefined} />
-              <Stat value={fx(statAvg(s["Redcards"]))} label={t("mc.pe.ref.redsPer")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: fx(lc.red_per_match) }) : undefined} />
+              <Stat value={fx(s["Fouls"]?.average)} label={t("mc.pe.ref.foulsPer")} sub={lc ? t("mc.ov.ref.leagueShort", { v: fx(lc.fouls_per_match) }) : undefined} />
+              <Stat value={fx(statAvg(s["Yellowcards"]))} label={t("mc.pe.ref.yellowsPer")} sub={lc ? t("mc.ov.ref.leagueShort", { v: fx(lc.yellow_per_match) }) : undefined} />
+              <Stat value={fx(statAvg(s["Redcards"]))} label={t("mc.pe.ref.redsPer")} sub={lc ? t("mc.ov.ref.leagueShort", { v: fx(lc.red_per_match) }) : undefined} />
             </div>
             {lc && <p className="mt-3 text-xs text-(--c-faint)">{t("mc.pe.ref.leagueNote", { n: lc.matches_sampled })}</p>}
           </>
@@ -376,6 +389,9 @@ export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | nu
           <Stat value={fx(c.avg_yellow_per_match)} label={t("mc.pe.ref.yellowsPer")} />
         </div>
       )}
+      <Link to={`/catalog/referees/${referee.id}`} className="mt-4 inline-flex min-h-9 items-center text-[13px] font-medium text-(--c-accent) hover:underline">
+        {t("mc.pe.ref.profile")}
+      </Link>
     </Card>
   );
 }

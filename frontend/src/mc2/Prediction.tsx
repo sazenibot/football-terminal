@@ -1,4 +1,3 @@
-import type { ReactNode } from "react";
 import type { TeamBrief } from "../types";
 import type { Prediction } from "./derive";
 import { t } from "../i18n/locale";
@@ -81,8 +80,9 @@ function TipRow({ p, home, away }: { p: Prediction; home: TeamBrief; away: TeamB
   );
 }
 
-export function OutcomeBlock({ p, home, away }: { p: Prediction; home: TeamBrief; away: TeamBrief }) {
-  const mk = p.market;
+export function OutcomeBlock({ p, home, away, compact = false }: { p: Prediction; home: TeamBrief; away: TeamBrief; compact?: boolean }) {
+  /* compact = Přehled: jen pravděpodobnosti a hlavní tip. Srovnání s trhem a podrobnosti jsou v záložce Predikce. */
+  const mk = compact ? undefined : p.market;
   return (
     <div>
       <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-3">
@@ -98,7 +98,7 @@ export function OutcomeBlock({ p, home, away }: { p: Prediction; home: TeamBrief
           {t("mc.pr.bookmakerNote")}
         </p>
       )}
-      {p.kind === "v2" && <TipRow p={p} home={home} away={away} />}
+      {compact && p.kind === "v2" && <TipRow p={p} home={home} away={away} />}
     </div>
   );
 }
@@ -106,7 +106,6 @@ export function OutcomeBlock({ p, home, away }: { p: Prediction; home: TeamBrief
 /* ---------- Shrnutí na Přehledu ---------- */
 
 export function PredictionSummary({ p, home, away, onMore }: { p: Prediction; home: TeamBrief; away: TeamBrief; onMore: () => void }) {
-  const top = p.scorelines[0];
   return (
     <Card
       title={t("mc.pr.sum.title")}
@@ -117,39 +116,8 @@ export function PredictionSummary({ p, home, away, onMore }: { p: Prediction; ho
         </button>
       }
     >
-      <OutcomeBlock p={p} home={home} away={away} />
-
-      <div className="mt-5 grid grid-cols-3 gap-2">
-        <MiniFact
-          label={t("mc.pr.xg")}
-          value={
-            <>
-              <span style={{ color: "var(--c-home)" }}>{n2(p.xg.home)}</span>
-              <span className="mx-1 text-(--c-faint)">:</span>
-              <span style={{ color: "var(--c-away)" }}>{n2(p.xg.away)}</span>
-            </>
-          }
-        />
-        <MiniFact label={t("mc.pr.topScore")} value={top ? top.score.replace("-", ":") : "—"} sub={top ? pct(top.pct, 1) : undefined} />
-        <MiniFact
-          label={t("mc.pr.over25goals")}
-          value={pct(p.over25)}
-          sub={p.market?.over25_pct != null ? t("mc.pr.bookmaker", { p: pct(p.market.over25_pct) }) : undefined}
-          tag={<ValueTag model={p.over25} market={p.market?.over25_pct} />}
-        />
-      </div>
+      <OutcomeBlock p={p} home={home} away={away} compact />
     </Card>
-  );
-}
-
-function MiniFact({ label, value, sub, tag }: { label: string; value: ReactNode; sub?: string; tag?: ReactNode }) {
-  return (
-    <div className="rounded-xl bg-(--c-raised) px-2 py-3 text-center">
-      <div className="text-lg font-bold leading-none tabular-nums sm:text-xl">{value}</div>
-      <div className="mt-1.5 text-xs leading-tight text-(--c-muted)">{label}</div>
-      {sub && <div className="mt-0.5 text-xs text-(--c-faint)">{sub}</div>}
-      {tag && <div className="mt-1 flex justify-center">{tag}</div>}
-    </div>
   );
 }
 
@@ -176,7 +144,7 @@ function LineRow({
       <div className="grid grid-cols-[7rem_1fr_3.25rem] items-center gap-3">
         <span className={`text-sm ${emphasize ? "font-semibold" : "text-(--c-muted)"}`}>
           {label}
-          {badge && <span className="ml-1.5 rounded bg-(--c-accent)/15 px-1 py-px align-middle text-[11px] font-bold uppercase text-(--c-accent)">{badge}</span>}
+          {badge && <span className="ml-2 rounded bg-(--c-accent)/15 px-1.5 py-px align-middle text-[11px] font-bold uppercase text-(--c-accent)">{badge}</span>}
         </span>
         <MeterBar value={value} color={emphasize ? "var(--c-accent)" : "var(--c-faint)"} height={8} />
         <span className={`text-right text-sm tabular-nums ${emphasize ? "font-bold" : "text-(--c-muted)"}`}>{pct(value)}</span>

@@ -6,6 +6,7 @@ import { Card, Chip, Disclosure, Empty, Info, Seg, Stat, VenueTag, n1, n2 } from
 import { Pill } from "./kit";
 import { intlTag, t } from "../i18n/locale";
 import { fmtDayMonth } from "../lib/format";
+import { uniqueTeamCodes } from "../lib/teamCode";
 
 /* Grafy z PitchAPI v jazyce Match Center: barvy z témat (světlý i tmavý režim), ovládání z mc2/kit,
    čísla nahoře, graf pod nimi. Jedna sezóna na kartu, výběr sezóny řeší stránka. */
@@ -147,10 +148,11 @@ function MatchTick({ x, y, payload, rows }: { x?: number; y?: number; payload?: 
   const m = payload ? rows[payload.value] : null;
   if (x == null || y == null || !m) return null;
   const dense = rows.length > 14;
+  const code = uniqueTeamCodes(rows.map((r) => r.opponent)).get(m.opponent) || m.opponent_short;
   return (
     <g transform={`translate(${x},${y})`}>
       <text textAnchor="middle" dy={14} fontSize={dense ? 10 : 11} fontWeight={600} fill="var(--c-text)">
-        {m.opponent_short}
+        {code}
       </text>
       {!dense && (
         <text textAnchor="middle" dy={28} fontSize={10} fontWeight={600} fill={m.home ? "var(--c-home)" : "var(--c-away)"}>
@@ -162,6 +164,7 @@ function MatchTick({ x, y, payload, rows }: { x?: number; y?: number; payload?: 
 }
 
 function MatchTable({ head, rows }: { head: string[]; rows: { m: MatchRow; cells: ReactNode[] }[] }) {
+  const codes = uniqueTeamCodes(rows.map((r) => r.m.opponent));
   return (
     <div className="overflow-x-auto">
       <table className="w-full min-w-[30rem] text-sm">
@@ -182,7 +185,7 @@ function MatchTable({ head, rows }: { head: string[]; rows: { m: MatchRow; cells
                 <span className="inline-flex items-center gap-2 text-(--c-text)">
                   <span className="tabular-nums text-(--c-muted)">{czDate(m.date)}</span>
                   <VenueTag home={m.home} />
-                  <span>{m.opponent_short}</span>
+                  <span>{codes.get(m.opponent) || m.opponent_short}</span>
                   <span className="text-xs text-(--c-faint)">
                     {m.gf}:{m.ga}
                   </span>

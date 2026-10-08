@@ -142,7 +142,7 @@ export function StickyTabs<T extends string>({
                 }
               }}
               className={`min-h-10 flex-1 shrink-0 whitespace-nowrap rounded-xl px-3.5 text-[13px] font-semibold transition-colors ${
-                on ? "bg-(--c-accent) text-black" : "text-(--c-muted) hover:text-(--c-text)"
+                on ? "bg-(--c-accent) text-(--c-on-accent)" : "text-(--c-muted) hover:text-(--c-text)"
               }`}
             >
               {t.label}
@@ -277,8 +277,9 @@ export function RankCard({
         {hint && <Info>{hint}</Info>}
       </div>
       {hasRank && (
-        <div className="mt-2.5 h-1.5 overflow-hidden rounded-full bg-(--c-line)">
+        <div className="relative mt-2.5 h-1.5 overflow-hidden rounded-full bg-(--c-line)">
           <div className="h-full rounded-full" style={{ width: `${fill}%`, background: color }} />
+          {avg != null && <div className="absolute top-0 h-full w-0.5 bg-(--c-text)/70" style={{ left: "50%" }} title={t("ct.kit.leagueAvg", { v: `${fmtNum(avg, digits)}${suffix}` })} />}
         </div>
       )}
       {avg != null && <div className="mt-1.5 text-xs text-(--c-faint)">{t("ct.kit.leagueAvg", { v: `${fmtNum(avg, digits)}${suffix}` })}</div>}

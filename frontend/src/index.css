@@ -157,6 +157,7 @@ html.light .stat-table-scroll::-webkit-scrollbar-thumb:hover {
 /* Match Center 2.0 (lab): vlastní sada barev, která funguje v tmavém i světlém režimu.
    Domácí = modrá, hosté = fialová. Zelená/šedá/růžová patří jen výsledkům (výhra/remíza/prohra). */
 .mc2 {
+  --c-on-accent: #04110b;
   --c-page: #0b0e14;
   --c-surface: #12161f;
   --c-raised: #1a2030;
@@ -175,6 +176,7 @@ html.light .stat-table-scroll::-webkit-scrollbar-thumb:hover {
   font-variant-numeric: tabular-nums;
 }
 html.light .mc2 {
+  --c-on-accent: #ffffff;
   --c-page: #f4f5f7;
   --c-surface: #ffffff;
   --c-raised: #eef1f6;

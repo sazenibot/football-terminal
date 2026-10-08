@@ -221,8 +221,8 @@ function MatchCard({
   const cls = "group relative block overflow-hidden rounded-2xl border border-(--c-line) bg-(--c-surface) shadow-sm";
   const body = (
     <>
-      <span aria-hidden className="absolute inset-y-0 left-0 w-1 opacity-50" style={{ background: homeColor }} />
-      <span aria-hidden className="absolute inset-y-0 right-0 w-1 opacity-50" style={{ background: awayColor }} />
+      <span aria-hidden className="absolute inset-y-0 left-0 w-0.5 opacity-25" style={{ background: homeColor }} />
+      <span aria-hidden className="absolute inset-y-0 right-0 w-0.5 opacity-25" style={{ background: awayColor }} />
       <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 bg-(--c-raised)/70 px-4 py-1.5">
         {league ? (
           <span className="flex min-w-0 items-center gap-1.5 text-xs font-medium text-(--c-muted)">

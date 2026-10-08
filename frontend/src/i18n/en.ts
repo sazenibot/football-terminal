@@ -24,7 +24,7 @@ const enBase: Record<keyof typeof csBase, string> = {
   "nav.matchCenter": "Match Center",
   "nav.catalog": "Catalog",
   "nav.articles": "Articles",
-  "nav.results": "Results",
+  "nav.results": "Model accuracy",
   "nav.pricing": "Pricing",
   "nav.lab": "Lab",
   "nav.more": "More ▾",
@@ -43,7 +43,7 @@ const enBase: Record<keyof typeof csBase, string> = {
   "footer.legal": "Legal",
   "footer.matchCenter": "Match Center",
   "footer.catalog": "Data catalog",
-  "footer.results": "Results",
+  "footer.results": "Model accuracy",
   "footer.articles": "Articles and guides",
   "footer.methodology": "Model methodology",
   "footer.pricing": "Pricing",
@@ -133,6 +133,9 @@ const enBase: Record<keyof typeof csBase, string> = {
 
   /* ---------- upcoming match ---------- */
   "future.loading": "Loading match…",
+  "future.unlock.1": "Model probabilities for a win, draw or loss",
+  "future.unlock.2": "The model pick, expected goals and most likely scores",
+  "future.unlock.3": "Form, head-to-head, referee and absences",
   "future.banner": "This is your one free upcoming match. The others are locked and Unlimited unlocks them.",
   "future.back": "Back to matches",
   "future.eyebrow": "Upcoming match",

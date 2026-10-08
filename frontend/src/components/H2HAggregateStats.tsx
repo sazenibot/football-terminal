@@ -70,23 +70,14 @@ export function H2HAggregateStats({
     [h2h]
   );
 
-  const [selectedYears, setSelectedYears] = useState<Set<number>>(new Set());
+  const [year, setYear] = useState<string>("all");
   const [homeCoach, setHomeCoach] = useState<string>("all");
   const [awayCoach, setAwayCoach] = useState<string>("all");
   const [venueFilter, setVenueFilter] = useState<"all" | "home" | "away">("all");
   const [view, setView] = useState<"table" | "chart">("table");
 
-  const toggleYear = (y: number) => {
-    setSelectedYears((prev) => {
-      const next = new Set(prev);
-      if (next.has(y)) next.delete(y);
-      else next.add(y);
-      return next;
-    });
-  };
-
   const filtered = h2h.filter((m) => {
-    if (selectedYears.size > 0 && !selectedYears.has(new Date(m.date).getFullYear())) return false;
+    if (year !== "all" && new Date(m.date).getFullYear() !== Number(year)) return false;
     if (homeCoach !== "all" && coachOfReferenceTeam(m, true) !== homeCoach) return false;
     if (awayCoach !== "all" && coachOfReferenceTeam(m, false) !== awayCoach) return false;
     if (venueFilter === "home" && !m.is_home_team_at_home) return false;
@@ -110,21 +101,18 @@ export function H2HAggregateStats({
       <div className="flex flex-col gap-3 mb-4 text-sm">
         <div className="flex gap-3 flex-wrap items-center">
           <span className="text-slate-400 light:text-slate-500 text-xs">{t("mx.h2hs.years")}</span>
-          <div className="flex gap-1.5">
+          <select
+            value={year}
+            onChange={(e) => setYear(e.target.value)}
+            className="min-h-9 rounded-lg border border-slate-700 bg-slate-900 px-2 py-1 text-sm light:bg-white light:border-slate-300 light:text-slate-800"
+          >
+            <option value="all">{t("mx.common.allPl")}</option>
             {years.map((y) => (
-              <Pill key={y} active={selectedYears.has(y)} onClick={() => toggleYear(y)}>
+              <option key={y} value={y}>
                 {y}
-              </Pill>
+              </option>
             ))}
-            {selectedYears.size > 0 && (
-              <button
-                onClick={() => setSelectedYears(new Set())}
-                className="text-xs text-slate-400 light:text-slate-500 hover:text-slate-300 light:hover:text-slate-700 underline"
-              >
-                {t("mx.h2hs.clear")}
-              </button>
-            )}
-          </div>
+          </select>
         </div>
         <div className="flex gap-3 flex-wrap items-center">
           <span className="text-slate-400 light:text-slate-500 text-xs">{t("mx.h2hs.coaches")}</span>

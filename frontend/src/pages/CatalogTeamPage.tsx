@@ -156,11 +156,12 @@ export function CatalogTeamPage() {
           {table ? (
             <StatStrip>
               <Stat value={table.position != null ? ord(table.position) : "—"} label={t("ct.team.tablePos")} />
-              <Stat value={table.points ?? "—"} label={t("ct.team.points", { n: table.played ?? 0 })} />
+              <Stat value={table.points ?? "—"} label={t("ct.team.points")} sub={t("ct.team.played", { n: table.played ?? 0 })} />
               <Stat value={table.gf != null && table.ga != null ? `${table.gf}:${table.ga}` : "—"} label={table.won != null ? t("ct.team.scoreWdl", { w: table.won, d: table.drawn ?? 0, l: table.lost ?? 0 }) : t("ct.team.score")} />
               <div className="flex flex-col items-center justify-center rounded-xl bg-(--c-raised) px-3 py-3">
                 <FormDots results={form} />
                 <div className="mt-1.5 text-xs text-(--c-muted)">{t("ct.team.form")}</div>
+                <div className="text-[11px] text-(--c-faint)">{t("ct.team.formNewest")}</div>
               </div>
             </StatStrip>
           ) : (
@@ -460,6 +461,7 @@ function SquadCard({ players }: { players: CatalogSquadPlayer[] }) {
               {anyStats && (
                 <div className="flex gap-3 pr-6 text-[11px] uppercase tracking-wide text-(--c-faint)">
                   <span className="w-8 text-center">{t("ct.team.colApps")}</span>
+                  <span className="w-10 text-center">{t("ct.team.colMin")}</span>
                   <span className="w-8 text-center">G</span>
                   <span className="w-8 text-center">A</span>
                 </div>
@@ -478,6 +480,7 @@ function SquadCard({ players }: { players: CatalogSquadPlayer[] }) {
                     {anyStats && (
                       <span className="flex gap-3 text-[13px] tabular-nums text-(--c-muted)">
                         <span className="w-8 text-center">{p.season?.appearances ?? "–"}</span>
+                        <span className="w-10 text-center">{p.season?.minutes ?? "–"}</span>
                         <span className="w-8 text-center">{p.season?.goals ?? "–"}</span>
                         <span className="w-8 text-center">{p.season?.assists ?? "–"}</span>
                       </span>

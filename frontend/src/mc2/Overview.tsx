@@ -7,7 +7,7 @@ import { refereePending } from "./People";
 import { PredictionSummary } from "./Prediction";
 import { PlayerTrendsCard } from "./PlayerTrends";
 import { Card, FormDots, Info, ResBadge, Stat, TeamTitle, type Res } from "./kit";
-import { intlTag, t } from "../i18n/locale";
+import { getLocale, intlTag, t } from "../i18n/locale";
 import { aiText } from "../components/AiAnalysis";
 
 const TONE = { pos: "var(--c-win)", neutral: "var(--c-faint)", warn: "var(--c-warn)" };
@@ -120,18 +120,27 @@ function RefereeMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
   return (
     <Card title={t("mc.ov.ref.title", { name: r.name })} lead={t("mc.ov.ref.lead")} aside={more}>
       <div className="grid grid-cols-3 gap-2">
-        <Stat value={f(fouls)} label={t("mc.ov.ref.fouls")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: f(lc.fouls_per_match) }) : undefined} />
-        <Stat value={f(yellow)} label={t("mc.ov.ref.yellows")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: f(lc.yellow_per_match) }) : undefined} />
-        <Stat value={f(red)} label={t("mc.ov.ref.reds")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: f(lc.red_per_match) }) : undefined} />
+        <Stat value={f(fouls)} label={t("mc.ov.ref.fouls")} sub={lc ? t("mc.ov.ref.leagueShort", { v: f(lc.fouls_per_match) }) : undefined} />
+        <Stat value={f(yellow)} label={t("mc.ov.ref.yellows")} sub={lc ? t("mc.ov.ref.leagueShort", { v: f(lc.yellow_per_match) }) : undefined} />
+        <Stat value={f(red)} label={t("mc.ov.ref.reds")} sub={lc ? t("mc.ov.ref.leagueShort", { v: f(lc.red_per_match) }) : undefined} />
       </div>
     </Card>
   );
 }
 
+/** Čísla v textu od AI formátujeme jako zbytek webu: desetinná čárka (česky) a mezera před procentem. */
+function formatAiNumbers(text: string): string {
+  const cs = getLocale() === "cs";
+  let out = text;
+  if (cs) out = out.replace(/(\d+)\.(\d{1,2})(?![\d.])/g, "$1,$2");
+  return out.replace(/(\d)\s?%/g, cs ? "$1\u00a0%" : "$1%");
+}
+
 function AiCard({ m }: { m: MatchData }) {
   const [open, setOpen] = useState(false);
-  const text = aiText(m.ai_analysis);
-  if (!text) return null;
+  const raw = aiText(m.ai_analysis);
+  if (!raw) return null;
+  const text = formatAiNumbers(raw);
   return (
     <Card
       title={
@@ -142,6 +151,7 @@ function AiCard({ m }: { m: MatchData }) {
       }
     >
       <div className={`whitespace-pre-line text-[14px] leading-relaxed text-(--c-muted) ${open ? "" : "clamp-4"}`}>{text}</div>
+      <p className="mt-1 text-xs text-(--c-faint)">{t("mc.ov.ai.auto")}</p>
       <button type="button" onClick={() => setOpen((o) => !o)} className="mt-1 min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
         {open ? t("mc.ov.ai.hide") : t("mc.ov.ai.more")}
       </button>

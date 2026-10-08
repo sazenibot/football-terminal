@@ -2,8 +2,9 @@ import { useMemo, useState } from "react";
 import type { H2HMatch, MatchData, MatchFacts, TeamBrief, TeamMatchStats } from "../types";
 import { formatDate } from "../lib/format";
 import { formRows, formSummary, h2hRecord, resOf } from "./derive";
-import { Card, Chip, Empty, MirrorRow, ResBadge, Seg, SideHeads, TeamTitle, VenueTag, n1, pct, resLetter, type Res } from "./kit";
+import { Card, Empty, MirrorRow, ResBadge, Seg, SideHeads, TeamTitle, VenueTag, n1, pct, resLetter, type Res } from "./kit";
 import { t, type Key } from "../i18n/locale";
+import { displayName } from "../i18n/dataText";
 import { fmtDayMonth } from "../lib/format";
 
 const short = (iso: string) => fmtDayMonth(iso);
@@ -208,7 +209,7 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
   const years = useMemo(() => Array.from(new Set(h2h.map((x) => new Date(x.date).getFullYear()))).sort((a, b) => b - a), [h2h]);
   const homeCoaches = useMemo(() => Array.from(new Set(h2h.map((x) => coachOf(x, true)).filter((c): c is string => !!c))), [h2h]);
   const awayCoaches = useMemo(() => Array.from(new Set(h2h.map((x) => coachOf(x, false)).filter((c): c is string => !!c))), [h2h]);
-  const [sel, setSel] = useState<Set<number>>(new Set());
+  const [year, setYear] = useState("all");
   const [venue, setVenue] = useState<"all" | "home">("all");
   const [hc, setHc] = useState("all");
   const [ac, setAc] = useState("all");
@@ -216,17 +217,11 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
   const rows = ROWS.filter((r) => r.key !== "xgot" || withXgot);
   const f = h2h.filter(
     (x) =>
-      (!sel.size || sel.has(new Date(x.date).getFullYear())) &&
+      (year === "all" || new Date(x.date).getFullYear() === Number(year)) &&
       (venue === "all" || x.is_home_team_at_home) &&
       (hc === "all" || coachOf(x, true) === hc) &&
       (ac === "all" || coachOf(x, false) === ac),
   );
-  const toggleYear = (y: number) =>
-    setSel((p) => {
-      const n = new Set(p);
-      n.has(y) ? n.delete(y) : n.add(y);
-      return n;
-    });
   const xgotN = f.filter((x) => x.team_home_stats.xgot != null).length;
   const selectCls = "min-h-9 rounded-lg border border-(--c-line) bg-(--c-raised) px-2 text-xs text-(--c-text)";
 
@@ -250,16 +245,14 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
     >
       <div className="mb-3 flex flex-wrap items-center gap-1.5">
         <span className="mr-1 text-xs text-(--c-muted)">{t("mc.fh.years")}</span>
-        {years.map((y) => (
-          <Chip key={y} active={sel.has(y)} onClick={() => toggleYear(y)}>
-            {y}
-          </Chip>
-        ))}
-        {sel.size > 0 && (
-          <button type="button" onClick={() => setSel(new Set())} className="min-h-8 px-2 text-xs text-(--c-muted) underline">
-            {t("mc.fh.clear")}
-          </button>
-        )}
+        <select aria-label={t("mc.fh.years")} value={year} onChange={(e) => setYear(e.target.value)} className={selectCls}>
+          <option value="all">{t("mc.fh.all")}</option>
+          {years.map((y) => (
+            <option key={y} value={y}>
+              {y}
+            </option>
+          ))}
+        </select>
       </div>
       {(homeCoaches.length > 1 || awayCoaches.length > 1) && (
         <div className="mb-3 flex flex-wrap items-center gap-2">
@@ -268,7 +261,7 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
             <select aria-label={t("mc.fh.coachOf", { team: m.home.name })} value={hc} onChange={(e) => setHc(e.target.value)} className={selectCls}>
               <option value="all">{t("mc.fh.allCoaches", { team: m.home.name })}</option>
               {homeCoaches.map((c) => (
-                <option key={c}>{c}</option>
+                <option key={c} value={c}>{displayName(c)}</option>
               ))}
             </select>
           )}
@@ -276,7 +269,7 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
             <select aria-label={t("mc.fh.coachOf", { team: m.away.name })} value={ac} onChange={(e) => setAc(e.target.value)} className={selectCls}>
               <option value="all">{t("mc.fh.allCoaches", { team: m.away.name })}</option>
               {awayCoaches.map((c) => (
-                <option key={c}>{c}</option>
+                <option key={c} value={c}>{displayName(c)}</option>
               ))}
             </select>
           )}

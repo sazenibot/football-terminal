@@ -19,7 +19,7 @@ const csBase = {
   "nav.matchCenter": "Match Center",
   "nav.catalog": "Katalog",
   "nav.articles": "Články",
-  "nav.results": "Výsledky",
+  "nav.results": "Úspěšnost modelu",
   "nav.pricing": "Tarify",
   "nav.lab": "Lab",
   "nav.more": "Více ▾",
@@ -38,7 +38,7 @@ const csBase = {
   "footer.legal": "Právní",
   "footer.matchCenter": "Match Center",
   "footer.catalog": "Datový katalog",
-  "footer.results": "Výsledky",
+  "footer.results": "Úspěšnost modelu",
   "footer.articles": "Články a návody",
   "footer.methodology": "Metodika modelu",
   "footer.pricing": "Tarify",
@@ -128,6 +128,9 @@ const csBase = {
 
   /* ---------- budoucí zápas ---------- */
   "future.loading": "Načítám zápas…",
+  "future.unlock.1": "Pravděpodobnosti výhry, remízy a prohry z modelu",
+  "future.unlock.2": "Tip modelu, očekávané góly a nejpravděpodobnější výsledky",
+  "future.unlock.3": "Forma, vzájemné zápasy, rozhodčí a absence",
   "future.banner": "Tohle je váš jeden bezplatný budoucí zápas. Další se zamknou, odemkne je Unlimited.",
   "future.back": "Zpět na zápasy",
   "future.eyebrow": "Budoucí zápas",

@@ -105,3 +105,45 @@ export function dataPosition(pos: string | null | undefined): string {
   if (!pos) return "";
   return getLocale() === "en" ? (POSITION[pos] ?? pos) : pos;
 }
+
+/** Důvody absencí, které v už vygenerovaných zápasech zůstaly anglicky. Nové zápasy je mají přeložené při ingestu. */
+const INJURY_EXTRA: Record<string, string> = {
+  "Back Problems": "Problémy se zády",
+  "Muscular problems": "Svalové problémy",
+  "Knock": "Menší zranění",
+  "Suspension Through Sports Court": "Trest od disciplinární komise",
+  "Knee Problems": "Problémy s kolenem",
+  "Tendon Rupture": "Přetržená šlacha",
+  "Muscle Tear": "Natržený sval",
+  "Meniscus Tear": "Poškozený meniskus",
+  "Ill": "Nemoc",
+  "Outer Ligament Problems": "Problémy s vnějším vazem",
+  "Achilles tendon problems": "Problémy s Achillovou šlachou",
+  "Syndesmosis Ligament Tear": "Natržený vaz (syndesmóza)",
+  "Meniscus Injury": "Zranění menisku",
+  "Adductor Injury": "Zranění adduktoru",
+  "Minor Knock": "Drobné zranění",
+  "Surgery": "Operace",
+  "Inner Knee Ligament Tear": "Natržený vnitřní vaz kolena",
+  "Ankle Problems": "Problémy s kotníkem",
+  "Torn Muscle Bundle": "Natržený svalový snop",
+  "Food Poisoning": "Otrava jídlem",
+};
+
+/** Jména, u kterých zdroj posílá podobu bez diakritiky. */
+const NAME_FIXES: Record<string, string> = {
+  "Tomas Chory": "Tomáš Chorý",
+  "Jindrich Stanek": "Jindřich Staněk",
+  "Stepan Chaloupek": "Štěpán Chaloupek",
+  "Zdenek Houstecky": "Zdeněk Houštěcký",
+};
+
+export function displayName(name: string): string {
+  return NAME_FIXES[name] ?? name;
+}
+
+/** Český důvod absence: z dat, a když tam zůstala angličtina, z doplňkového slovníku. */
+export function injuryCs(en: string, cs?: string | null): string {
+  if (cs && cs !== en) return cs;
+  return INJURY_EXTRA[en] ?? cs ?? en;
+}

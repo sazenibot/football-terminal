@@ -5,7 +5,7 @@ import { h2hWithXgot, hasPitchData, hasSimV2, radarXgot } from "../lib/pitchMatc
 import { isStale, useDataIndex, useMatch, usePitchH2H, usePitchTeam, useSimV2, useXgotIndex } from "../lib/useData";
 import { buildPrediction, kickoffLabel } from "../mc2/derive";
 import { FormCard, H2HCard, H2HStatsCard } from "../mc2/FormH2H";
-import { Card, Info, TeamLogo } from "../mc2/kit";
+import { Card, Info, TeamLogo, useScrollFade } from "../mc2/kit";
 import { OverviewTab } from "../mc2/Overview";
 import { AbsencesCard, PlayersCard, RefereeCard } from "../mc2/People";
 import { GoalsBlock, OutcomeBlock, ScorelinesBlock, VolumeBlock } from "../mc2/Prediction";
@@ -114,9 +114,7 @@ export function MatchCenterPage() {
       if (el && el.getBoundingClientRect().top < 70) window.scrollTo({ top: el.offsetTop - 64, behavior: "smooth" });
     });
   };
-  useEffect(() => {
-    document.getElementById(`tab-${tab}`)?.scrollIntoView({ inline: "center", block: "nearest" });
-  }, [tab, m]);
+  const tabFade = useScrollFade('[aria-selected="true"]', tab);
   useEffect(() => {
     document.title = m ? `${m.home.name} – ${m.away.name} · Match Center` : "Match Center";
   }, [m]);
@@ -169,7 +167,7 @@ export function MatchCenterPage() {
       <div ref={barRef} data-stuck={stuck}
         className="sticky top-14 z-30 -mx-4 mt-4 bg-(--c-page)/95 px-4 py-2 backdrop-blur before:pointer-events-none before:absolute before:inset-x-0 before:-top-14 before:h-14 before:bg-(--c-page) before:opacity-0 data-[stuck=true]:before:opacity-100"
       >
-        <div role="tablist" aria-label={t("mc.tabs.aria")} className="no-scrollbar flex gap-1 overflow-x-auto rounded-2xl border border-(--c-line) bg-(--c-surface) p-1">
+        <div ref={tabFade.ref} style={tabFade.style} role="tablist" aria-label={t("mc.tabs.aria")} className="no-scrollbar flex gap-1 overflow-x-auto rounded-2xl border border-(--c-line) bg-(--c-surface) p-1">
           {TABS.map((tb, i) => {
             const on = tb.id === tab;
             return (
@@ -190,7 +188,7 @@ export function MatchCenterPage() {
                   }
                 }}
                 className={`relative min-h-10 flex-1 shrink-0 whitespace-nowrap rounded-xl px-3.5 text-[13px] font-semibold transition-colors ${
-                  on ? "bg-(--c-accent) text-black" : "text-(--c-muted) hover:text-(--c-text)"
+                  on ? "bg-(--c-accent) text-(--c-on-accent)" : "text-(--c-muted) hover:text-(--c-text)"
                 }`}
               >
                 {t(tb.label)}

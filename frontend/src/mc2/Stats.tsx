@@ -7,6 +7,7 @@ import { pickWindow, rowsBefore, type RadarView, type RadarXgot } from "../lib/p
 import { Card, Empty, Info, MirrorRow, Seg, SideHeads, SubTitle, TeamTitle, n2 } from "./kit";
 import { t, type Key } from "../i18n/locale";
 import { fmtDayMonth } from "../lib/format";
+import { uniqueTeamCodes } from "../lib/teamCode";
 
 /* ---------- Srovnání týmů ---------- */
 
@@ -105,6 +106,11 @@ export function TeamCompareCard({ m, xgot }: { m: MatchData; xgot?: RadarXgot })
     >
       <div className="mb-4">
         <Seg wrap label={t("mc.pe.pl.period")} value={view} onChange={setView} options={viewsFor(m.home.name)} />
+        {(view === "last3_h2h" || view === "last3_h2h_home_venue") && (
+          <p className="mt-2 text-xs text-(--c-muted)">
+            {t(view === "last3_h2h" ? "mc.st.view.h2h3note" : "mc.st.view.h2h3homeNote", { team: m.home.name })}
+          </p>
+        )}
       </div>
       {!hasData ? (
         <Empty>{t("mc.st.cmp.notEnough", { team: m.home.name })}</Empty>
@@ -226,8 +232,9 @@ type Bar1 = { label: string; goals: number; xgot: number; row: MatchRow };
 
 function TeamChart({ team, side, rows, mode, total }: { team: TeamBrief; side: "home" | "away"; rows: MatchRow[]; mode: "attack" | "keeper"; total: Tot }) {
   const color = side === "home" ? "var(--c-home)" : "var(--c-away)";
+  const codes = uniqueTeamCodes(rows.map((r) => r.opponent));
   const data: Bar1[] = rows.map((r) => ({
-    label: r.opponent.replace(/^(FC|FK|SK|MFK|AC)\s+/i, "").slice(0, 3).toUpperCase(),
+    label: codes.get(r.opponent) || r.opponent_short,
     goals: mode === "attack" ? goalsOf(r) : againstOf(r),
     xgot: mode === "attack" ? r.xgot : r.xgot_faced,
     row: r,

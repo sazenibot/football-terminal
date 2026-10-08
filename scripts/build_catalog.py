@@ -44,6 +44,23 @@ POSITION_CS = {
     28: "Neuvedeno",
 }
 
+NAME_FIXES = {
+    "Tomas Chory": "Tomáš Chorý",
+    "Jindrich Stanek": "Jindřich Staněk",
+    "Stepan Chaloupek": "Štěpán Chaloupek",
+    "Zdenek Houstecky": "Zdeněk Houštěcký",
+}
+
+
+def pick_name(*cands: str | None) -> str:
+    filled = [c for c in cands if c]
+    if not filled:
+        return ""
+    for c in filled:
+        if c in NAME_FIXES:
+            return NAME_FIXES[c]
+    return max(filled, key=lambda s: sum(ord(ch) > 127 for ch in s))
+
 
 def now_iso() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -286,7 +303,7 @@ def build_league_catalog(league_cfg: dict) -> dict:
             number = row.get("jersey_number")
             entry = {
                 "id": pid,
-                "name": player.get("display_name") or player.get("name") or f"Hráč #{pid}",
+                "name": pick_name(player.get("display_name"), player.get("common_name"), player.get("name")) or f"Hráč #{pid}",
                 "common_name": player.get("common_name"),
                 "image": player.get("image_path"),
                 "number": number,

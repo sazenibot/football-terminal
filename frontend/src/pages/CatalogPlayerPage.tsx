@@ -36,7 +36,7 @@ import { t, type Key } from "../i18n/locale";
 import { useCatalogHub, useCatalogPlayer, usePitchPlayer, usePlayerPool, usePlayerShard } from "../lib/useData";
 import { Card, Chip, Empty, Info, ResBadge, Seg, VenueTag, type Res } from "../mc2/kit";
 import type { CatalogPlayerClub, CatalogPlayerMatch, CatalogPlayerOverlay, CatalogPlayerRole } from "../types";
-import { dataPosition } from "../i18n/dataText";
+import { dataPosition, displayName } from "../i18n/dataText";
 
 const TABS = [
   { id: "overview", label: "ct.pl.tab.overview" },
@@ -123,6 +123,7 @@ export function CatalogPlayerPage() {
   const [group, setGroup] = useState<ProfileGroup>("attack");
   const [compareTeamId, setCompareTeamId] = useState<number | "">("");
   const [compareId, setCompareId] = useState<number | "">("");
+  const [comparePrefill, setComparePrefill] = useState(false);
 
   // Soubor hráče nemusí nést zápasy. Pak je bereme z ligového indexu, kde je má každý hráč.
   const indexRow = useMemo(() => shard?.players.find((p) => p.id === id), [shard, id]);
@@ -191,6 +192,23 @@ export function CatalogPlayerPage() {
   const compare = compareId !== "" ? teamPeers.find((p) => p.id === compareId) ?? null : null;
 
   useEffect(() => {
+    if (role === "gk") {
+      setScope("role");
+      setGroup((g) => (g === "attack" ? "defense" : g));
+    }
+  }, [role]);
+
+  useEffect(() => {
+    if (comparePrefill || !peers.length) return;
+    const mine = minutesOf(slice);
+    const best = [...peers].sort((a, b) => Math.abs(minutesOf(a.rows) - mine) - Math.abs(minutesOf(b.rows) - mine))[0];
+    if (!best) return;
+    setCompareTeamId(best.team_id);
+    setCompareId(best.id);
+    setComparePrefill(true);
+  }, [peers, slice, comparePrefill]);
+
+  useEffect(() => {
     document.title = player ? t("ct.pl.docTitle", { name: player.name }) : t("ct.pl.docTitleLoading");
   }, [player]);
 
@@ -205,7 +223,7 @@ export function CatalogPlayerPage() {
     );
   if (!player) return <Loading>{t("ct.pl.loading")}</Loading>;
 
-  const kpi = kpiFor(role, slice, pools.league);
+  const kpi = kpiFor(role, slice, role === "gk" ? pools.role : pools.league);
   const buckets = fdrBuckets(slice);
   const pitchClubOk = club === "all" || club === "current" || club === player.team_id;
   const pitchRows = pitchClubOk ? pitchMatchesForHeader(pitch?.matches || [], resolvedSeason, currentSeasonId) : [];
@@ -215,7 +233,6 @@ export function CatalogPlayerPage() {
   const hasShots = shotCount > 0 || hasKeeper;
   const tabs = TABS.filter((t) => (t.id !== "shots" || hasShots) && (t.id !== "compare" || !!shard));
   const active = tabs.some((t) => t.id === tab) ? tab : "overview";
-  const total = overlay?.career_matches ?? matches.length;
 
   return (
     <Frame>
@@ -224,7 +241,7 @@ export function CatalogPlayerPage() {
         <Hero
           media={<Avatar src={player.image} name={player.name} size={80} />}
           eyebrow={t("ct.pl.eyebrow")}
-          title={player.name}
+          title={displayName(player.name)}
           sub={
             <>
               <Link to={`/catalog/teams/${player.team_id}`} className="inline-flex items-center gap-1.5 font-medium text-(--c-text) hover:underline">
@@ -251,11 +268,15 @@ export function CatalogPlayerPage() {
             </>
           }
         >
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-            {kpi.map((k) => (
-              <Kpi key={k.label} {...k} />
-            ))}
-          </div>
+          {slice.length > 0 ? (
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+              {kpi.map((k) => (
+                <Kpi key={k.label} {...k} among={role === "gk" ? "role" : "league"} />
+              ))}
+            </div>
+          ) : (
+            <p className="text-[13px] text-(--c-muted)">{role === "gk" ? t("ct.pl.noAppearances") : t("ct.pl.noMatches")}</p>
+          )}
         </Hero>
       </div>
 
@@ -270,7 +291,7 @@ export function CatalogPlayerPage() {
         ]
           .filter(Boolean)
           .join(" · ")}
-        note={!shard && !matches.length ? undefined : t("ct.pl.note", { n: slice.length, total })}
+        note={!shard && !matches.length ? undefined : resolvedSeason === "all" ? t("ct.pl.inSelection", { n: slice.length }) : t("ct.pl.note", { n: slice.length })}
       >
         <Select
           label={t("ct.pl.season")}
@@ -299,13 +320,13 @@ export function CatalogPlayerPage() {
         {!shard && !matches.length ? (
           <p className="py-10 text-center text-sm text-(--c-muted)">{t("ct.pl.loadingStats")}</p>
         ) : slice.length === 0 && active !== "shots" ? (
-          <Empty>{t("ct.pl.noMatches")}</Empty>
+          <Empty>{role === "gk" ? t("ct.pl.noAppearances") : t("ct.pl.noMatches")}</Empty>
         ) : (
           <>
             {active === "overview" && (
               <>
                 <Strengths slice={slice} role={role} pool={pools.role} onMore={() => setTab("stats")} />
-                <Card title={t("ct.pl.fdrTitle")} lead={t("ct.pl.fdrLead")}>
+                <Card title={t("ct.pl.fdrTitle")} lead={<>{t("ct.pl.fdrLead")} <Info>{t("ct.pl.fdrHint")}</Info></>}>
                   <div className="grid gap-3 md:grid-cols-3">
                     <FdrCard title={t("ct.pl.fdrHard")} color="var(--c-loss)" role={role} rows={buckets.hard} />
                     <FdrCard title={t("ct.pl.fdrMid")} color="var(--c-warn)" role={role} rows={buckets.mid} />
@@ -388,7 +409,6 @@ function BadgeChip({ badge }: { badge: Badge }) {
   const tone = badge.tone === "warning" ? "var(--c-loss)" : badge.tone === "value" ? "var(--c-accent)" : "var(--c-muted)";
   return (
     <Pill tone={tone}>
-      <span aria-hidden className="mr-1">{badge.emoji}</span>
       {badge.label}
     </Pill>
   );
@@ -428,13 +448,13 @@ function kpiCell(label: string, value: number | null, digits: number, pool: Arra
   return { label, value, digits, rank: size >= 2 ? rank : null, size };
 }
 
-function Kpi({ label, value, digits, rank, size }: { label: string; value: number | null; digits: number; rank: number | null; size: number }) {
+function Kpi({ label, value, digits, rank, size, among }: { label: string; value: number | null; digits: number; rank: number | null; size: number; among: "league" | "role" }) {
   return (
     <div className="rounded-xl bg-(--c-raised) px-3 py-3 text-center">
       <div className="text-xl font-bold leading-none tabular-nums">{fmtNum(value, digits)}</div>
       <div className="mt-1.5 text-xs text-(--c-muted)">{label}</div>
       <div className="mt-0.5 h-4 text-xs font-semibold tabular-nums" style={rank != null ? { color: rankColor(rank, size) } : undefined}>
-        {rank != null ? t("ct.kit.rankOf", { rank, size }) : ""}
+        {rank != null ? t(among === "role" ? "ct.kit.rankOfRole" : "ct.kit.rankOfLeague", { rank, size }) : ""}
       </div>
     </div>
   );
@@ -458,7 +478,7 @@ function Strengths({ slice, role, pool, onMore }: { slice: CatalogPlayerMatch[];
   if (rows.length < 4) return null;
   const sorted = [...rows].sort((a, b) => a.rank! / a.size - b.rank! / b.size);
   const best = sorted.slice(0, 3);
-  const worst = sorted.slice(-3).reverse();
+  const worst = role === "gk" ? [] : sorted.slice(-3).reverse();
   const item = (r: (typeof rows)[number]) => (
     <li key={r.def.key} className="flex items-center gap-3 py-2">
       <span className="min-w-0 flex-1">
@@ -483,15 +503,17 @@ function Strengths({ slice, role, pool, onMore }: { slice: CatalogPlayerMatch[];
         </button>
       }
     >
-      <div className="grid gap-x-6 gap-y-3 md:grid-cols-2">
+      <div className={`grid gap-x-6 gap-y-3 ${worst.length ? "md:grid-cols-2" : ""}`}>
         <div>
           <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-win)" }}>{t("ct.c.best")}</h3>
           <ul className="divide-y divide-(--c-line)">{best.map(item)}</ul>
         </div>
-        <div>
-          <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-loss)" }}>{t("ct.c.worst")}</h3>
-          <ul className="divide-y divide-(--c-line)">{worst.map(item)}</ul>
-        </div>
+        {worst.length > 0 && (
+          <div>
+            <h3 className="text-[11px] font-semibold uppercase tracking-[0.14em]" style={{ color: "var(--c-loss)" }}>{t("ct.c.worst")}</h3>
+            <ul className="divide-y divide-(--c-line)">{worst.map(item)}</ul>
+          </div>
+        )}
       </div>
     </Card>
   );
@@ -571,13 +593,13 @@ function StatsCard({
       </div>
       <div className="mt-3 flex flex-wrap items-center gap-2">
         <span className="mr-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-(--c-faint)">{t("ct.pl.groupLabel")}</span>
-        {GROUPS.map((g) => (
+        {GROUPS.filter((g) => role !== "gk" || g.id !== "attack").map((g) => (
           <Chip key={g.id} active={g.id === group} onClick={() => setGroup(g.id)}>
             {t(g.label)}
           </Chip>
         ))}
       </div>
-      {group === "attack" && (
+      {group === "attack" && role !== "gk" && (
         <p className="mt-3 text-xs text-(--c-faint)">
           {t("ct.pl.attackNote")}
         </p>
@@ -587,7 +609,7 @@ function StatsCard({
           {stats.map((def) => {
             const value = metricValue(slice, def);
             const values = pool.map((rows) => metricValue(rows, def));
-            const { rank, size } = rankDesc(value, values, def.higherBetter);
+            const { rank, size } = def.key === "ps" ? { rank: null as number | null, size: 0 } : rankDesc(value, values, def.higherBetter);
             return <RankCard key={def.key} label={def.label} value={value} rank={rank} size={size} avg={mean(values)} suffix={def.asPct ? pctSuffix() : ""} hint={!def.higherBetter ? t("ct.pl.lowerBetter") : undefined} />;
           })}
         </div>

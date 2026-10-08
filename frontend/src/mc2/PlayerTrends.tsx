@@ -7,6 +7,7 @@ import { t, type Key } from "../i18n/locale";
 import { Card, Info, TeamTitle } from "./kit";
 
 const LABEL: Record<TrendStat, Key> = { sh: "mc.pt.sh", sot: "mc.pt.sot" };
+const WHAT: Record<TrendStat, Key> = { sh: "mc.pt.what.sh", sot: "mc.pt.what.sot" };
 
 const POS: Record<string, Key> = { att: "mc.pt.pos.att", mid: "mc.pt.pos.mid", def: "mc.pt.pos.def" };
 
@@ -36,19 +37,21 @@ function Side({ m, s }: { m: MatchData; s: SideTrends }) {
                 const run = p[k];
                 if (!run) return null;
                 return (
-                  <div key={k} className="mt-1.5 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[13px] text-(--c-muted)">
-                    <span className="inline-flex min-w-[4.2rem] justify-center rounded-full border border-(--c-line) px-2 py-0.5 text-[12px] font-medium tabular-nums text-(--c-muted)">
-                      {t("mc.pt.len", { n: run.len })}
-                    </span>
-                    <span className="text-(--c-text)">{t(LABEL[k])}</span>
-                    <span className="sr-only">{run.v.join(", ")}</span>
-                    <span className="inline-flex gap-0.5" aria-hidden>
-                      {run.v.map((v, i) => (
-                        <span key={i} className="min-w-[1.3rem] rounded-md bg-(--c-raised) px-0.5 text-center text-[12px] font-semibold tabular-nums text-(--c-text)">
-                          {v}
-                        </span>
-                      ))}
-                    </span>
+                  <div key={k} className="mt-1.5 rounded-xl bg-(--c-raised)/60 px-3 py-2 text-[13px] leading-snug text-(--c-muted)">
+                    <p>
+                      {t("mc.pt.holds", { stat: t(LABEL[k]), n: run.len })}
+                    </p>
+                    <p className="mt-1.5 flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <span className="text-xs">{t("mc.pt.perMatch", { what: t(WHAT[k]) })}</span>
+                      <span className="sr-only">{run.v.join(", ")}</span>
+                      <span className="inline-flex gap-1" aria-hidden>
+                        {run.v.map((v, i) => (
+                          <span key={i} className="min-w-[1.6rem] rounded-md bg-(--c-surface) px-1 py-0.5 text-center text-[13px] font-semibold tabular-nums text-(--c-text)">
+                            {v}
+                          </span>
+                        ))}
+                      </span>
+                    </p>
                   </div>
                 );
               })}

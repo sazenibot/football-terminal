@@ -37,6 +37,13 @@ LEAGUE = "l_0F4I4F"
 _today = date.today()
 _start = _today.year if _today.month >= 7 else _today.year - 1
 SEASON = f"{_start}/{_start + 1}"  # PitchAPI formát sezony, mění se samo 1. července
+SHORT_FIX = {
+    "1. FC Slovácko": "SLK",
+    "FC Slovácko": "SLK",
+    "Slovácko": "SLK",
+    "FC Slovan Liberec": "SLL",
+    "Slovan Liberec": "SLL",
+}
 SM_LEAGUE = 262
 
 SET_SIT = {
@@ -368,7 +375,7 @@ def main() -> None:
                 "date": m.get("date"),
                 "home": side == "home",
                 "opponent": info["opp"]["name"],
-                "opponent_short": info["opp"].get("short") or info["opp"]["name"][:3].upper(),
+                "opponent_short": SHORT_FIX.get(info["opp"]["name"]) or info["opp"].get("short") or info["opp"]["name"][:3].upper(),
                 "gf": info["gf"],
                 "ga": info["ga"],
                 "goals": sum(1 for s in team_shots if s["goal"]),

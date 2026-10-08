@@ -10,6 +10,7 @@ import { useDataIndex, useMatch } from "../lib/useData";
 import { MatchCenterPage } from "./MatchCenterPage";
 import { MatchPage } from "./MatchPage";
 import { fmtDayLong, fmtTime } from "../lib/format";
+import { ProbBar } from "../mc2/kit";
 
 /**
  * Nový Match Center dostávají všechny zapnuté ligy. Chance Liga má navíc nový model a PitchAPI,
@@ -70,6 +71,32 @@ function FutureGuard({ match, children }: { match: MatchData; children: ReactNod
           {fmtDayLong(match.starting_at) + " " + fmtTime(match.starting_at)}
         </p>
       </div>
+      {/* Ukázka bez skutečných dat: jen rozmazaná kostra, aby bylo vidět, co se odemkne. */}
+      <div aria-hidden className="pointer-events-none mt-4 select-none rounded-2xl border border-(--c-line) bg-(--c-surface) p-5 blur-[6px]">
+        <div className="grid grid-cols-3 text-center text-3xl font-bold tabular-nums">
+          <span style={{ color: "var(--c-home)" }}>45 %</span>
+          <span style={{ color: "var(--c-muted)" }}>27 %</span>
+          <span style={{ color: "var(--c-away)" }}>28 %</span>
+        </div>
+        <div className="mt-3">
+          <ProbBar home={45} draw={27} away={28} />
+        </div>
+        <div className="mt-4 grid grid-cols-3 gap-2 text-center">
+          {[0, 1, 2].map((i) => (
+            <div key={i} className="rounded-xl bg-(--c-raised) px-2 py-4 text-lg font-bold">
+              1,5 : 1,2
+            </div>
+          ))}
+        </div>
+      </div>
+      <ul className="mx-auto mt-4 max-w-md space-y-1.5 text-[13px] text-(--c-muted)">
+        {(["future.unlock.1", "future.unlock.2", "future.unlock.3"] as const).map((k) => (
+          <li key={k} className="flex gap-2">
+            <span className="text-(--c-accent)">✓</span>
+            <span>{t(k)}</span>
+          </li>
+        ))}
+      </ul>
       <div className="mt-4">
         <Paywall
           need={usedUp ? "unlimited" : "account"}
