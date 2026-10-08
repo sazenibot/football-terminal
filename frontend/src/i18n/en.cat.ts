@@ -545,6 +545,10 @@ export const enCat: Record<keyof typeof csCat, string> = {
   "ct.cs.noKpi": "We don't have season KPIs for this player yet.",
   "ct.rad.avg": "League average",
   "ct.rad.note": "The league average sits in the middle of the axis (50). Above average grows outwards, below average inwards. The tooltip shows per-90 figures (clean sheets in %).",
+  "nf.title": "Page not found",
+  "nf.text": "This address does not exist or is no longer available.",
+  "nf.home": "← back to the home page",
+  "nf.league": "We do not cover this league yet.",
   "ct.nf.back": "← back to the catalog",
   "ct.nf.text": "This {kind} is not in the catalog. We do not substitute another club or a mock profile.",
 };

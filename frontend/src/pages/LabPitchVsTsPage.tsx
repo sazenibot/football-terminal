@@ -115,7 +115,7 @@ export function LabPitchVsTsPage() {
     );
   }
   if (!data) {
-    return <div className="max-w-6xl mx-auto py-12 px-4 pt-20 text-slate-400">Načítám srovnání…</div>;
+    return <div className="max-w-6xl mx-auto py-12 px-4 pt-20 text-slate-400 light:text-slate-500">Načítám srovnání…</div>;
   }
 
   const { match: m, summary: s } = data;
@@ -135,7 +135,7 @@ export function LabPitchVsTsPage() {
           30. 8. 2026, Chance Liga, {m.league_pitch} {m.season_pitch}, kolo {m.round_pitch}. Stejný zápas jako
           v testu SportMonks vs TheStatsAPI. Tady jsou proti sobě TheStatsAPI a PitchAPI, hlavně střely, xG a xGOT.
         </p>
-        <p className="text-[11px] font-mono text-slate-500 mt-2">PitchAPI {m.pitch_id}</p>
+        <p className="text-[11px] font-mono text-slate-400 light:text-slate-500 mt-2">PitchAPI {m.pitch_id}</p>
       </header>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
@@ -151,11 +151,11 @@ export function LabPitchVsTsPage() {
         note="Obě osy jsou metry. TheStatsAPI má y otočené, po otočení střely sedí na stejné místo. Velikost je xG."
       >
         <ShotPitch pitch={data.shots_pitch} ts={data.shots_ts} hover={hover} onHover={setHover} />
-        <p className="text-xs text-slate-500 mt-2">
+        <p className="text-xs text-slate-400 light:text-slate-500 mt-2">
           {hover || "Najetím na střelu uvidíš hráče."} Nespárované: PitchAPI {data.unmatched.pitch.join(", ") || "—"},
           TheStatsAPI {data.unmatched.ts.join(", ") || "—"}.
         </p>
-        <div className="flex gap-4 text-xs text-slate-400 mt-2">
+        <div className="flex gap-4 text-xs text-slate-400 light:text-slate-500 mt-2">
           <span><i className="inline-block w-2.5 h-2.5 rounded-full bg-rose-500 mr-1" />Sparta</span>
           <span><i className="inline-block w-2.5 h-2.5 rounded-full bg-sky-400 mr-1" />Slavia</span>
         </div>
@@ -177,7 +177,7 @@ export function LabPitchVsTsPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-left text-[11px] uppercase tracking-wide text-slate-500">
+              <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500">
                 <th className="py-2 pr-3">Metrika</th>
                 <th className="py-2 px-3 text-center">SportMonks</th>
                 <th className="py-2 px-3 text-center">TheStatsAPI</th>
@@ -188,7 +188,7 @@ export function LabPitchVsTsPage() {
               {data.rows.map((row) => (
                 <tr key={row.label} className="border-t border-slate-800 light:border-slate-200">
                   <td className="py-2 pr-3 text-slate-200 light:text-slate-800">{row.label}</td>
-                  <td className="py-2 px-3 text-center tabular-nums text-slate-400">{pairText(row.sm, digitsFor(row.label))}</td>
+                  <td className="py-2 px-3 text-center tabular-nums text-slate-400 light:text-slate-500">{pairText(row.sm, digitsFor(row.label))}</td>
                   <td className="py-2 px-3 text-center tabular-nums">{pairText(row.ts, digitsFor(row.label))}</td>
                   <td className="py-2 px-3 text-center tabular-nums text-amber-300 light:text-amber-800">
                     {pairText(row.pitch, digitsFor(row.label))}
@@ -204,7 +204,7 @@ export function LabPitchVsTsPage() {
         <div className="overflow-x-auto max-h-[28rem]">
           <table className="w-full text-sm">
             <thead className="sticky top-0 bg-[#12161f] light:bg-white">
-              <tr className="text-left text-[11px] uppercase tracking-wide text-slate-500">
+              <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500">
                 <th className="py-2 pr-2">Min</th>
                 <th className="py-2 pr-2">Hráč</th>
                 <th className="py-2 pr-2">Výsledek</th>
@@ -217,11 +217,11 @@ export function LabPitchVsTsPage() {
             <tbody>
               {data.shots.map((shot) => (
                 <tr key={`${shot.minute}-${shot.player}-${shot.xg_pitch}`} className="border-t border-slate-800/80 light:border-slate-200">
-                  <td className="py-1.5 pr-2 tabular-nums text-slate-500">{shot.minute}'</td>
+                  <td className="py-1.5 pr-2 tabular-nums text-slate-400 light:text-slate-500">{shot.minute}'</td>
                   <td className="py-1.5 pr-2">
                     <span className={shot.side === "home" ? "text-rose-300" : "text-sky-300"}>{shot.player}</span>
                   </td>
-                  <td className="py-1.5 pr-2 text-slate-400">{shot.result_pitch}</td>
+                  <td className="py-1.5 pr-2 text-slate-400 light:text-slate-500">{shot.result_pitch}</td>
                   <td className="py-1.5 px-2 text-right tabular-nums">{fmt(shot.xg_ts, 3)}</td>
                   <td className="py-1.5 px-2 text-right tabular-nums">{fmt(shot.xg_pitch, 3)}</td>
                   <td className={`py-1.5 px-2 text-right tabular-nums ${deltaTone(shot.xg_delta)}`}>
@@ -241,7 +241,7 @@ export function LabPitchVsTsPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-left text-[11px] uppercase tracking-wide text-slate-500">
+              <tr className="text-left text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500">
                 <th className="py-2">Hráč</th>
                 <th className="py-2 text-right">Střely</th>
                 <th className="py-2 text-right">Góly</th>
@@ -290,7 +290,7 @@ function digitsFor(label: string): number {
 }
 
 function deltaTone(delta: number | null): string {
-  if (delta == null) return "text-slate-500";
+  if (delta == null) return "text-slate-400 light:text-slate-500";
   if (Math.abs(delta) < 0.03) return "text-emerald-400";
   if (Math.abs(delta) < 0.08) return "text-amber-300";
   return "text-rose-400";
@@ -299,9 +299,9 @@ function deltaTone(delta: number | null): string {
 function Stat({ label, value, hint }: { label: string; value: string; hint: string }) {
   return (
     <div className="card p-3">
-      <p className="text-[11px] uppercase tracking-wide text-slate-500">{label}</p>
+      <p className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500">{label}</p>
       <p className="text-2xl font-semibold tabular-nums mt-1 text-amber-300 light:text-amber-800">{value}</p>
-      <p className="text-[11px] text-slate-500 mt-1">{hint}</p>
+      <p className="text-[11px] text-slate-400 light:text-slate-500 mt-1">{hint}</p>
     </div>
   );
 }
@@ -309,7 +309,7 @@ function Stat({ label, value, hint }: { label: string; value: string; hint: stri
 function Fact({ k, v }: { k: string; v: string }) {
   return (
     <div className="flex justify-between gap-4 border-b border-slate-800/70 light:border-slate-200 py-1">
-      <dt className="text-slate-500">{k}</dt>
+      <dt className="text-slate-400 light:text-slate-500">{k}</dt>
       <dd className="text-right text-slate-200 light:text-slate-800">{v}</dd>
     </div>
   );

@@ -31,7 +31,7 @@ function Logo({ league, size, soon }: { league: LeagueMeta; size: number; soon?:
     return (
       <span
         style={{ width: size, height: size }}
-        className={`flex shrink-0 items-center justify-center rounded-full bg-(--c-raised) text-[10px] font-bold text-(--c-muted) ${dim}`}
+        className={`flex shrink-0 items-center justify-center rounded-full bg-(--c-raised) text-xs font-bold text-(--c-muted) ${dim}`}
       >
         {(league.short || league.name).slice(0, 2)}
       </span>
@@ -41,7 +41,7 @@ function Logo({ league, size, soon }: { league: LeagueMeta; size: number; soon?:
 }
 
 const Soon = () => (
-  <span className="rounded-md bg-(--c-raised) px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-(--c-muted)">{t("common.soon")}</span>
+  <span className="rounded-md bg-(--c-raised) px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-(--c-muted)">{t("common.soon")}</span>
 );
 
 export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[]; activeId: number | "all"; base: string }) {
@@ -138,7 +138,7 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
             className="ml-auto flex items-center gap-2 rounded-full border border-(--c-line) bg-(--c-surface) px-4 py-2 text-sm font-medium hover:border-(--c-faint)"
           >
             {t("picker.all")}
-            <span className="rounded-md bg-(--c-raised) px-1.5 text-[11px] tabular-nums text-(--c-muted)">{leagues.length}</span>
+            <span className="rounded-md bg-(--c-raised) px-1.5 text-xs tabular-nums text-(--c-muted)">{leagues.length}</span>
             <span aria-hidden>{open ? "▴" : "▾"}</span>
           </button>
         )}
@@ -170,7 +170,7 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
                       <Logo league={l} size={26} soon={!live} />
                       <span className={`min-w-0 flex-1 truncate text-sm font-medium ${live ? "" : "text-(--c-faint)"}`}>{l.name}</span>
                       {live ? (
-                        <span className="text-[11px] tabular-nums text-(--c-muted)">
+                        <span className="text-xs tabular-nums text-(--c-muted)">
                           {t("list.count", { n })}
                         </span>
                       ) : (

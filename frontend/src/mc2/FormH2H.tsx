@@ -3,9 +3,10 @@ import type { H2HMatch, MatchData, MatchFacts, TeamBrief, TeamMatchStats } from 
 import { formatDate } from "../lib/format";
 import { formRows, formSummary, h2hRecord, resOf } from "./derive";
 import { Card, Chip, Empty, MirrorRow, ResBadge, Seg, SideHeads, TeamTitle, VenueTag, n1, pct, resLetter, type Res } from "./kit";
-import { intlTag, t, type Key } from "../i18n/locale";
+import { t, type Key } from "../i18n/locale";
+import { fmtDayMonth } from "../lib/format";
 
-const short = (iso: string) => new Date(iso).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
+const short = (iso: string) => fmtDayMonth(iso);
 
 /* ---------- Forma ---------- */
 
@@ -36,7 +37,7 @@ function FormColumn({ team, side, rows }: { team: TeamBrief; side: "home" | "awa
             <span className="min-w-0 truncate text-(--c-muted)">
               {r.opponent}
               {!r.is_league_match && (
-                <span className="ml-1.5 rounded bg-(--c-raised) px-1 py-0.5 text-[10px] text-(--c-faint)">{r.league_name ?? t("mc.fh.cup")}</span>
+                <span className="ml-1.5 rounded bg-(--c-raised) px-1 py-0.5 text-xs text-(--c-faint)">{r.league_name ?? t("mc.fh.cup")}</span>
               )}
             </span>
             <VenueTag home={r.is_home} />
@@ -69,7 +70,7 @@ export function FormCard({ m }: { m: MatchData }) {
         <FormColumn team={m.home} side="home" rows={formRows(m.form.home, venueOnly, true)} />
         <FormColumn team={m.away} side="away" rows={formRows(m.form.away, venueOnly, false)} />
       </div>
-      {venueOnly && <p className="mt-3 text-[11px] text-(--c-faint)">{t("mc.fh.venueNote")}</p>}
+      {venueOnly && <p className="mt-3 text-xs text-(--c-faint)">{t("mc.fh.venueNote")}</p>}
     </Card>
   );
 }
@@ -157,7 +158,7 @@ export function H2HCard({ m }: { m: MatchData }) {
               {all ? t("home.news.less") : t("mc.fh.showMore", { n: list.length - 5 })}
             </button>
           )}
-          <p className="mt-2 text-[11px] text-(--c-faint)">{t("mc.fh.letterNote", { team: m.home.name })}</p>
+          <p className="mt-2 text-xs text-(--c-faint)">{t("mc.fh.letterNote", { team: m.home.name })}</p>
         </>
       )}
     </Card>
@@ -169,7 +170,7 @@ function H2HRow({ x }: { x: H2HMatch }) {
   const aw = (x.home_score ?? 0) < (x.away_score ?? 0);
   return (
     <li className="grid grid-cols-[1.5rem_1fr_auto_1fr] items-center gap-x-2 gap-y-0.5 rounded-lg px-1 py-1.5 text-[13px] hover:bg-(--c-raised) sm:grid-cols-[4.75rem_1.5rem_1fr_auto_1fr]">
-      <span className="col-span-4 whitespace-nowrap text-[11px] text-(--c-faint) sm:col-span-1 sm:text-xs">{formatDate(x.date).replace(/\s/g, "")}</span>
+      <span className="col-span-4 whitespace-nowrap text-xs text-(--c-faint) sm:col-span-1 sm:text-xs">{formatDate(x.date).replace(/\s/g, "")}</span>
       <ResBadge r={x.result_for_home_team as Res} />
       <span className={`truncate text-right ${hw ? "font-semibold" : "text-(--c-muted)"}`}>{x.home.name}</span>
       <span className="min-w-[3.25rem] rounded-md bg-(--c-raised) px-2 py-0.5 text-center font-bold tabular-nums">
@@ -286,7 +287,7 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
         <Empty>{t("mc.fh.noSelection")}</Empty>
       ) : (
         <>
-          <div className="mb-1 flex items-center justify-between text-[11px] text-(--c-faint)">
+          <div className="mb-1 flex items-center justify-between text-xs text-(--c-faint)">
             <span>
               {t("mc.fh.inSelection", { n: f.length })}
             </span>
@@ -306,7 +307,7 @@ export function H2HStatsCard({ m, h2h, withXgot }: { m: MatchData; h2h: H2HMatch
               />
             );
           })}
-          {withXgot && <p className="mt-1 text-[11px] text-(--c-faint)">{t("mc.fh.xgotNote", { n: xgotN, total: f.length })}</p>}
+          {withXgot && <p className="mt-1 text-xs text-(--c-faint)">{t("mc.fh.xgotNote", { n: xgotN, total: f.length })}</p>}
         </>
       )}
     </Card>

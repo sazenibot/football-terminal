@@ -38,7 +38,7 @@ export function PricingPage() {
           <article key={x.id} className={`flex flex-col rounded-2xl border bg-(--c-surface) p-5 ${x.featured ? "border-(--c-accent)" : "border-(--c-line)"}`}>
             <div className="flex items-center justify-between gap-2">
               <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-(--c-accent)">{x.name}</p>
-              {x.featured && <span className="rounded-full bg-(--c-accent)/15 px-2 py-0.5 text-[10px] font-semibold text-(--c-accent)">{t("pricing.recommended")}</span>}
+              {x.featured && <span className="rounded-full bg-(--c-accent)/15 px-2 py-0.5 text-xs font-semibold text-(--c-accent)">{t("pricing.recommended")}</span>}
             </div>
             <p className="mt-2 text-3xl font-bold">{x.price}</p>
             <p className="text-[12px] text-(--c-faint)">{x.period}</p>
@@ -117,7 +117,7 @@ function GroupRows({ group }: { group: FeatureGroup }) {
           <tr key={k} className="border-t border-(--c-line)">
             <td className="px-4 py-2.5">
               {featureLabel(k)}
-              {note && <span className="block text-[11px] text-(--c-faint)">{note}</span>}
+              {note && <span className="block text-xs text-(--c-faint)">{note}</span>}
             </td>
             {TIER_ORDER.map((id) => (
               <td key={id} className="px-3 py-2.5 text-center">

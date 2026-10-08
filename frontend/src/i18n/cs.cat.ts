@@ -439,7 +439,7 @@ export const csCat = {
   "ct.tc.venueLabel": "Doma / venku",
   "ct.tc.halfLabel": "Část sezony",
   "ct.tc.radarTitle": "Radar týmu",
-  "ct.tc.radarLead": "Porovnej dva výběry zápasů: klub s ligou, domácí zápasy s venkovními, letošek s minulou sezónou, nebo dva různé kluby.",
+  "ct.tc.radarLead": "Porovnání dvou výběrů zápasů: klub s ligou, domácí zápasy s venkovními, letošek s minulou sezónou, nebo dva různé kluby.",
   "ct.tc.noMatchesA": "Pro výběr A nemáme žádný odehraný zápas.",
   "ct.tc.coachLoading": "Načítám srovnání trenérů…",
   "ct.tc.coachMissing": "Srovnání trenérů pro tuhle ligu zatím nemáme.",
@@ -450,7 +450,7 @@ export const csCat = {
   "ct.tc.coachOpt": "{name} · {n} z.",
   "ct.tc.noCoach": "Pro tento klub zatím nemáme zápasy s vyplněným trenérem.",
   "ct.tc.coachTitle": "Srovnání trenérů",
-  "ct.tc.coachLead": "Zápasy seskupené podle trenéra na lavičce. Můžeš postavit vedle sebe trenéry z různých klubů. Čísla jsou z eventových dat, ne xG.",
+  "ct.tc.coachLead": "Zápasy seskupené podle trenéra na lavičce. Vedle sebe můžete porovnat trenéry z různých klubů. Čísla jsou z eventových dat, ne xG.",
   "ct.tc.noMatchesCoachA": "Pro výběr A nemáme žádný zápas.",
 
   /* ---------- cat/PitchViz ---------- */
@@ -495,7 +495,7 @@ export const csCat = {
   "ct.pv.tipSet": "standardka",
   "ct.pv.tipOpen": "ze hry",
   "ct.pv.fromGoal": "{v} m od branky",
-  "ct.pv.hoverHint": "Najeďte na tečku nebo na ni klepněte. Velikost tečky je xG střely.",
+  "ct.pv.hoverHint": "Detail střely zobrazíte najetím myší nebo klepnutím na tečku. Velikost tečky odpovídá xG střely.",
   "ct.pv.cutLabel": "Střely",
   "ct.pv.cutAll": "Všechny",
   "ct.pv.cutOff": "Mimo",
@@ -543,6 +543,10 @@ export const csCat = {
   "ct.cs.noKpi": "Sezónní KPI u tohoto hráče zatím nemáme.",
   "ct.rad.avg": "Ligový průměr",
   "ct.rad.note": "Ligový průměr je na ose uprostřed (50). Nadprůměr roste ven, podprůměr dovnitř. Tooltip ukazuje /90 (čistá konta v %).",
+  "nf.title": "Stránka nenalezena",
+  "nf.text": "Tato adresa neexistuje nebo už není dostupná.",
+  "nf.home": "← zpět na úvodní stránku",
+  "nf.league": "Tuto ligu zatím nemáme.",
   "ct.nf.back": "← zpět do katalogu",
   "ct.nf.text": "Tento {kind} v katalogu není. Nepodstrkáváme cizí klub ani mock profil.",
 } as const;

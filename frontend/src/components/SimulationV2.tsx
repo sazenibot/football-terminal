@@ -57,9 +57,9 @@ const x1 = (n: number) => n.toLocaleString(intlTag(), { minimumFractionDigits: 1
 function Diff({ model, market }: { model: number; market?: number }) {
   if (market == null) return null;
   const d = model - market;
-  const tone = Math.abs(d) < 3 ? "text-slate-500" : d > 0 ? "text-emerald-400" : "text-rose-400";
+  const tone = Math.abs(d) < 3 ? "text-slate-400 light:text-slate-500" : d > 0 ? "text-emerald-400" : "text-rose-400";
   return (
-    <div className={`text-[11px] mt-0.5 ${tone}`}>
+    <div className={`text-xs mt-0.5 ${tone}`}>
       {t("mx.simv2.diff", {
         market: pct(market),
         diff: `${d > 0 ? "+" : ""}${d.toLocaleString(intlTag(), { maximumFractionDigits: 1 })}`,
@@ -95,8 +95,8 @@ function VolumeRow({
       <div className="text-sm text-slate-300 light:text-slate-700">{label}</div>
       <div className="font-mono text-sm text-emerald-400 text-right min-w-[3rem]">{x1(side.home)}</div>
       <div className="font-mono text-sm text-amber-400 text-right min-w-[3rem]">{x1(side.away)}</div>
-      <div className="font-mono text-sm text-slate-400 text-right min-w-[3.5rem]">{x1(side.total ?? side.home + side.away)}</div>
-      <div className="text-[11px] text-slate-500 col-span-4">
+      <div className="font-mono text-sm text-slate-400 light:text-slate-500 text-right min-w-[3.5rem]">{x1(side.total ?? side.home + side.away)}</div>
+      <div className="text-xs text-slate-400 light:text-slate-500 col-span-4">
         {t("mx.simv2.volumeSides", { home: homeName, away: awayName })}
         {side.league_avg != null ? t("mx.simv2.volumeLeague", { n: x1(side.league_avg) }) : ""}
       </div>
@@ -120,7 +120,7 @@ function Breakdown({ sim, home, away }: { sim: SimV2; home: TeamBrief; away: Tea
       {meta && (
         <table className="w-full text-sm">
           <thead>
-            <tr className="text-xs text-slate-500">
+            <tr className="text-xs text-slate-400 light:text-slate-500">
               <th className="text-left font-normal pb-1">Rating</th>
               <th className="text-right font-normal pb-1 px-2">{home.name}</th>
               <th className="text-right font-normal pb-1 pl-2">{away.name}</th>
@@ -128,7 +128,7 @@ function Breakdown({ sim, home, away }: { sim: SimV2; home: TeamBrief; away: Tea
           </thead>
           <tbody>
             <tr className="border-t border-slate-800 light:border-slate-200">
-              <td className="py-1.5 text-slate-400">{t("mx.simv2.ratingAttDef")}</td>
+              <td className="py-1.5 text-slate-400 light:text-slate-500">{t("mx.simv2.ratingAttDef")}</td>
               <td className="py-1.5 px-2 text-right font-mono text-emerald-300">
                 {x2(meta.att_goals ?? 0)} / {x2(meta.def_goals_home ?? 0)}
               </td>
@@ -137,7 +137,7 @@ function Breakdown({ sim, home, away }: { sim: SimV2; home: TeamBrief; away: Tea
               </td>
             </tr>
             <tr className="border-t border-slate-800 light:border-slate-200">
-              <td className="py-1.5 text-slate-400">{t("mx.simv2.ratingLam")}</td>
+              <td className="py-1.5 text-slate-400 light:text-slate-500">{t("mx.simv2.ratingLam")}</td>
               <td className="py-1.5 px-2 text-right font-mono text-emerald-300">
                 {x2(meta.lam_goals?.[0] ?? 0)} → {x2(meta.lam_xg?.[0] ?? 0)} → {x2(m.expected_goals.home)}
               </td>
@@ -146,14 +146,14 @@ function Breakdown({ sim, home, away }: { sim: SimV2; home: TeamBrief; away: Tea
               </td>
             </tr>
             <tr className="border-t border-slate-800 light:border-slate-200">
-              <td className="py-1.5 text-slate-400">{t("mx.simv2.rest")}</td>
+              <td className="py-1.5 text-slate-400 light:text-slate-500">{t("mx.simv2.rest")}</td>
               <td className="py-1.5 px-2 text-right font-mono">{meta.rest?.home ?? "—"}</td>
               <td className="py-1.5 pl-2 text-right font-mono">{meta.rest?.away ?? "—"}</td>
             </tr>
           </tbody>
         </table>
       )}
-      <p className="text-xs text-slate-500">
+      <p className="text-xs text-slate-400 light:text-slate-500">
         {t("mx.simv2.hfa", {
           goals: x2(meta?.hfa_goals ?? 0),
           xg: x2(meta?.hfa_xg ?? 0),
@@ -187,15 +187,15 @@ export function SimulationV2({ sim, home, away }: { sim: SimV2; home: TeamBrief;
           <div className="font-mono text-lg">
             {x2(m.expected_goals.home)} : {x2(m.expected_goals.away)}
           </div>
-          <div className="text-xs text-slate-500 light:text-slate-400">{t("mx.simv2.xg")}</div>
+          <div className="text-xs text-slate-400 light:text-slate-500">{t("mx.simv2.xg")}</div>
         </div>
         <div>
           <div className="font-mono text-lg">
             {pct(m.over25_pct)} / {pct(m.under25_pct)}
           </div>
-          <div className="text-xs text-slate-500 light:text-slate-400">Over / Under 2.5</div>
+          <div className="text-xs text-slate-400 light:text-slate-500">Over / Under 2.5</div>
           {mk?.over25_pct != null && (
-            <div className="text-[11px] text-slate-500 mt-0.5">
+            <div className="text-xs text-slate-400 light:text-slate-500 mt-0.5">
               {t("mx.simv2.chanceOu", { over: pct(mk.over25_pct), under: pct(mk.under25_pct ?? 0) })}
             </div>
           )}
@@ -204,7 +204,7 @@ export function SimulationV2({ sim, home, away }: { sim: SimV2; home: TeamBrief;
 
       {hasVolume && (
         <div className="mb-4 rounded-lg bg-slate-900/40 light:bg-slate-50 px-3 py-1">
-          <div className="text-xs uppercase tracking-wide text-slate-500 pt-2 pb-1">{t("mx.simv2.volumeTitle")}</div>
+          <div className="text-xs uppercase tracking-wide text-slate-400 light:text-slate-500 pt-2 pb-1">{t("mx.simv2.volumeTitle")}</div>
           <VolumeRow label={t("mx.simv2.shots")} side={m.expected_shots} homeName={home.name} awayName={away.name} />
           <VolumeRow label={t("mx.simv2.sot")} side={m.expected_sot} homeName={home.name} awayName={away.name} />
         </div>
@@ -215,12 +215,12 @@ export function SimulationV2({ sim, home, away }: { sim: SimV2; home: TeamBrief;
         {m.top_scorelines.map((s) => (
           <div key={s.score} className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-2 text-center">
             <div className="font-mono font-bold light:text-slate-800">{s.score}</div>
-            <div className="text-xs text-slate-500 light:text-slate-400">{pct(s.pct)}</div>
+            <div className="text-xs text-slate-400 light:text-slate-500">{pct(s.pct)}</div>
           </div>
         ))}
       </div>
 
-      <div className="mt-4 text-xs text-slate-500 space-y-0.5">
+      <div className="mt-4 text-xs text-slate-400 light:text-slate-500 space-y-0.5">
         <div>
           {t("mx.simv2.rough", {
             btts: pct(m.btts_pct),

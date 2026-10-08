@@ -24,13 +24,13 @@ export function AbsencesCard({ m }: { m: MatchData }) {
               <li key={`${s.player_id}-${s.type_id}`} className="flex items-center justify-between gap-3 rounded-xl bg-(--c-raised) px-3 py-2">
                 <div className="min-w-0">
                   <div className="truncate text-[13px] font-medium">{s.player_name}</div>
-                  <div className="truncate text-[11px] text-(--c-muted)">
+                  <div className="truncate text-xs text-(--c-muted)">
                     {getLocale() === "en" ? s.type_name : s.type_name_cs}
                     {s.games_missed ? ` · ${t("mc.pe.missed", { n: s.games_missed })}` : ""}
                   </div>
                 </div>
                 <span
-                  className="shrink-0 rounded-full px-2 py-0.5 text-[11px] font-semibold"
+                  className="shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold"
                   style={{
                     color: s.likely_available ? "var(--c-warn)" : "var(--c-loss)",
                     background: `color-mix(in oklab, ${s.likely_available ? "var(--c-warn)" : "var(--c-loss)"} 15%, transparent)`,
@@ -184,7 +184,7 @@ export function PlayersCard({ m }: { m: MatchData }) {
           <div className="overflow-x-auto rounded-xl border border-(--c-line)">
             <table className="w-full whitespace-nowrap text-[13px]">
               <thead>
-                <tr className="bg-(--c-raised) text-[10px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">
+                <tr className="bg-(--c-raised) text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">
                   <th aria-hidden className="sticky left-0 z-10 bg-(--c-raised)" />
                   {groups.map((g, i) => (
                     <th
@@ -223,7 +223,7 @@ export function PlayersCard({ m }: { m: MatchData }) {
                       <span className="mr-2 inline-block w-5 text-right text-xs text-(--c-faint)">{p.jersey_number ?? ""}</span>
                       <span className="font-medium">{shortName(p.name)}</span>
                       {team === "both" && (
-                        <span className="ml-2 text-[10px]" style={{ color: side === "home" ? "var(--c-home)" : "var(--c-away)" }}>
+                        <span className="ml-2 text-xs" style={{ color: side === "home" ? "var(--c-home)" : "var(--c-away)" }}>
                           {tm.name}
                         </span>
                       )}
@@ -248,7 +248,7 @@ export function PlayersCard({ m }: { m: MatchData }) {
               </button>
             )}
             {view !== "season" && (
-              <span className="text-[11px] text-(--c-faint)">{t("mc.pe.pl.zeros")}</span>
+              <span className="text-xs text-(--c-faint)">{t("mc.pe.pl.zeros")}</span>
             )}
           </div>
         </>
@@ -341,7 +341,7 @@ export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | nu
               <Stat value={fx(statAvg(s["Yellowcards"]))} label={t("mc.pe.ref.yellowsPer")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: fx(lc.yellow_per_match) }) : undefined} />
               <Stat value={fx(statAvg(s["Redcards"]))} label={t("mc.pe.ref.redsPer")} hint={lc ? t("mc.ov.ref.leagueAvg", { v: fx(lc.red_per_match) }) : undefined} />
             </div>
-            {lc && <p className="mt-3 text-[11px] text-(--c-faint)">{t("mc.pe.ref.leagueNote", { n: lc.matches_sampled })}</p>}
+            {lc && <p className="mt-3 text-xs text-(--c-faint)">{t("mc.pe.ref.leagueNote", { n: lc.matches_sampled })}</p>}
           </>
         ) : (
           <Empty>{t("mc.pe.ref.noSeason")}</Empty>
@@ -364,7 +364,7 @@ export function RefereeCard({ referee, home, away }: { referee: RefereeInfo | nu
                 <Played key={x.fixture_id} date={x.date} home={x.home} away={x.away} hs={x.home_score} as={x.away_score} result={x.result_for_home_team} />
               ))}
             </ul>
-            <p className="mt-2 text-[11px] text-(--c-faint)">{t("mc.pe.ref.colorNote", { team: home.name })}</p>
+            <p className="mt-2 text-xs text-(--c-faint)">{t("mc.pe.ref.colorNote", { team: home.name })}</p>
           </>
         ))}
 

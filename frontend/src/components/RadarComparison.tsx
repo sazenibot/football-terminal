@@ -115,7 +115,7 @@ export function RadarComparison({
         </Pill>
       </div>
       {!hasData ? (
-        <p className="text-slate-500 light:text-slate-400 text-sm py-8 text-center">
+        <p className="text-slate-400 light:text-slate-500 text-sm py-8 text-center">
           {t("mx.radar.noData", { name: home.name })}
         </p>
       ) : (
@@ -139,12 +139,12 @@ export function RadarComparison({
               </RadarChart>
             </ResponsiveContainer>
           </div>
-          <p className="text-xs text-slate-500 light:text-slate-400 mt-2">
+          <p className="text-xs text-slate-400 light:text-slate-500 mt-2">
             {t("mx.radar.normalised")}
             {view === "last3_h2h_home_venue" && ` (n=${data.last3_h2h_home_venue.sample_size})`}
           </p>
           {xgot && (view === "last3_h2h" || view === "last3_h2h_home_venue") && (
-            <p className="text-xs text-slate-500 light:text-slate-400 mt-1">
+            <p className="text-xs text-slate-400 light:text-slate-500 mt-1">
               {xgotView ? t("mx.radar.xgotFrom", { n: xgotView.home.n }) : t("mx.radar.xgotNone")}
             </p>
           )}

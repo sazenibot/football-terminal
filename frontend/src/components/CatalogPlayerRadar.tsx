@@ -96,7 +96,7 @@ export function CatalogPlayerRadar({
           </RadarChart>
         </ResponsiveContainer>
       </div>
-      <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-sm text-slate-400">
+      <ul className="mt-2 flex flex-wrap gap-x-5 gap-y-1 text-sm text-slate-400 light:text-slate-500">
         <li className="flex items-center gap-2">
           <span className="h-2.5 w-2.5 rounded-full bg-emerald-400" />
           {nameA}
@@ -114,7 +114,7 @@ export function CatalogPlayerRadar({
           </li>
         ) : null}
       </ul>
-      <p className="text-xs text-slate-500 mt-2">
+      <p className="text-xs text-slate-400 light:text-slate-500 mt-2">
         {t("ct.rad.note")}
       </p>
     </div>

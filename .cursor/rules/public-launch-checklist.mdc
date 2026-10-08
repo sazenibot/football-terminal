@@ -1,0 +1,31 @@
+---
+description: Před veřejným startem (SITE_INDEXABLE=1, indexace, platby, registrace) projít kontrolní seznam.
+alwaysApply: true
+---
+
+# Veřejný start — kontrolní seznam
+
+Až Petr řekne, že chce web zveřejnit, zapnout indexaci (`SITE_INDEXABLE=1`), spustit registrace, platby nebo placené tarify, **projdi tento seznam a pro každou položku řekni stav (hotovo / chybí), než se cokoli zapne.** Web je do té doby záměrně `noindex` (bez `SITE_INDEXABLE` je `robots.txt` `Disallow: /` a nevzniká `sitemap.xml`). Nikdy `SITE_INDEXABLE=1` nenavrhuj ani nenastavuj dřív, než je seznam splněný.
+
+## Musí být hotové
+
+1. **Provozovatel.** `frontend/content/legal/operator.json` vyplněný aspoň o `name`, `address`, `ico` (jinak se na webu zobrazuje „Na vyžádání“). DIČ jen pokud je plátce DPH.
+2. **Právní texty.** Obchodní podmínky a ochranu údajů (`frontend/content/legal/`) zkontroloval právník. Po výběru platební brány a e-mailové služby je v textech uvést jmenovitě.
+3. **SEO.** Dynamické titulky, popisky, `og:` a strukturovaná data pro zápasy, týmy, hráče a rozhodčí (Cloudflare Worker s HTML pro boty), kanonické adresy, `hreflang`, `sitemap.xml` včetně těchto stránek.
+4. **Zamčení tarifů.** Přepínač „Zobrazit jako“ (`ViewAsSwitcher`, tarif v `localStorage`) skrytý nebo zabezpečený. Prémiová data musí být chráněná na serveru (Worker + ověření tarifu), ne jen vizuálně. Statické `matches/*.json`, `sim/*` a katalog jsou jinak veřejně stažitelné.
+5. **Lab.** Lab jen ve vývoji (hotovo: `import.meta.env.DEV`, `data/lab/*` se při buildu maže kromě `xgot-efficiency.json`). Zkontrolovat, že se to nevrátilo.
+6. **Licence dat.** Ověřené podmínky SportMonks a PitchAPI pro komerční zobrazení dat a odvozených statistik. TheStatsAPI přístup skončil, kurzy z něj nezobrazovat.
+7. **Proměnné v Cloudflare Pages.** `SITE_URL=https://football-terminal.com`, `VITE_CATALOG_BASE=https://data.football-terminal.com/catalog`, `NODE_VERSION=22`.
+8. **Monitoring denního běhu.** Upozornění při selhání workflow „Refresh data“ a na webu viditelné „data aktualizována před X h“.
+9. **Analytika.** Cloudflare Web Analytics zapnuté. Při registraci/platbách přidat měření událostí (Plausible/Umami) a zmínit v zásadách ochrany údajů.
+10. **Záloha.** `data-archive/` zálohovaný do soukromého R2 bucketu.
+11. **Kontrola copywritingu.** Projít všechny texty webu (CZ i EN, UI, články, právní stránky, chybové a prázdné stavy, meta popisky): srozumitelnost pro koncového uživatele, tón, překlepy, konzistence názvosloví, žádné interní/technické formulace, shoda CZ a EN.
+12. **UX/UI revize.** Schválená tabulka nálezů z UX/UI analýzy (homepage, Match Center, detail zápasu, katalog a podstránky) je opravená.
+
+## Postup zapnutí
+
+1. V Cloudflare Pages přidat proměnnou `SITE_INDEXABLE=1` (Production).
+2. Spustit nový build (Retry deployment).
+3. Ověřit `https://football-terminal.com/robots.txt` (`Allow: /`, odkaz na sitemap) a `sitemap.xml`.
+4. V Google Search Console přidat web a odeslat `sitemap.xml`.
+5. Přesměrování `fotbal-terminal.cz` na `https://football-terminal.com/cs` už běží (Cloudflare Redirect Rule).

@@ -132,7 +132,7 @@ export const csMx = {
   "mx.tm.fouls.name": "Fauly způsobené",
   "mx.tm.offsides.short": "Ofsajdy",
   "mx.tm.offsides.name": "Ofsajdy",
-  "mx.tm.hint": "Klikni na nohu. Skládá se builder.",
+  "mx.tm.hint": "Klepnutím na nohu ji přidáte do builderu.",
 
   /* ---------- 7. Simulace ---------- */
   "mx.sim.title": "7. Simulace 10 000 zápasů",
@@ -173,7 +173,7 @@ export const csMx = {
   "mx.pl.both": "Oba týmy",
   "mx.pl.player": "Hráč",
   "mx.pl.empty": "Žádní hráči v této kategorii.",
-  "mx.pl.hint": "↔ táhni posuvník nahoře nad tabulkou pro další statistiky · klikni na název sloupce pro seřazení",
+  "mx.pl.hint": "↔ Další statistiky zobrazíte posunem tabulky do strany · seřadit ji můžete klepnutím na název sloupce",
   "mx.pl.col.apps": "Zápasy",
   "mx.pl.col.minutes": "Minuty",
   "mx.pl.col.goals": "Góly",

@@ -39,17 +39,17 @@ export function Simulation({
           <div className="font-mono text-lg">
             {sim.expected_goals.home} : {sim.expected_goals.away}
           </div>
-          <div className="text-xs text-slate-500 light:text-slate-400">{t("mx.sim.xgModel")}</div>
+          <div className="text-xs text-slate-400 light:text-slate-500">{t("mx.sim.xgModel")}</div>
         </div>
         <div>
           <div className="font-mono text-lg">{pct(sim.btts_pct)}</div>
-          <div className="text-xs text-slate-500 light:text-slate-400">{t("mx.sim.btts")}</div>
+          <div className="text-xs text-slate-400 light:text-slate-500">{t("mx.sim.btts")}</div>
         </div>
         <div>
           <div className="font-mono text-lg">
             {pct(sim.over25_pct)} / {pct(sim.under25_pct)}
           </div>
-          <div className="text-xs text-slate-500 light:text-slate-400">Over / Under 2.5</div>
+          <div className="text-xs text-slate-400 light:text-slate-500">Over / Under 2.5</div>
         </div>
       </div>
 
@@ -58,7 +58,7 @@ export function Simulation({
         {sim.top_scorelines.map((s) => (
           <div key={s.score} className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-2 text-center">
             <div className="font-mono font-bold light:text-slate-800">{s.score}</div>
-            <div className="text-xs text-slate-500 light:text-slate-400">{pct(s.pct)}</div>
+            <div className="text-xs text-slate-400 light:text-slate-500">{pct(s.pct)}</div>
           </div>
         ))}
       </div>

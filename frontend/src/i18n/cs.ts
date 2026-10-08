@@ -10,8 +10,7 @@ const csBase = {
 
   "theme.toDark": "Přepnout na tmavý režim",
   "theme.toLight": "Přepnout na světlý režim",
-  "theme.light": "Světlý",
-  "theme.dark": "Tmavý",
+  "theme.toAuto": "Přepnout na automatický režim (podle systému)",
 
   /* ---------- menu a patička ---------- */
   "nav.aria": "Hlavní menu",
@@ -184,7 +183,7 @@ const csBase = {
   "home.hero.accent": "data",
   "home.hero.post": ".",
   "home.hero.text":
-    "Vidíme v datech to, co ostatním uniká. Zapomeňte na obyčejné výsledkové tabulky. Jdeme daleko za hranice čísel – odkrýváme skryté vzorce v herních stylech, vlivech rozhodčích i historických liniích, ze kterých můžete získat skutečnou výhodu.",
+    "Pravděpodobnosti z modelu, trendy a katalog týmů, hráčů i rozhodčích na jednom místě. Uvidíte, co stojí za výsledky zápasů.",
   "home.cta.mc": "Otevřít Match Center",
   "home.cta.mcSub": "Detailní rozbor zápasů v dalších 7 dnech",
   "home.cta.catalog": "Datový katalog",
@@ -231,7 +230,7 @@ const csBase = {
   "home.guides.minutes": "{n} min čtení",
   "home.pricing.title": "Tarify",
   "home.pricing.more": "Podrobné srovnání →",
-  "home.pricing.note": "Ceny a rozdělení funkcí jsou zatím ilustrativní.",
+  "home.pricing.note": "Tarify připravujeme. Rozsah funkcí se ještě může změnit.",
   "home.pricing.anon.1": "Match Center od včerejška do minulosti",
   "home.pricing.anon.2": "V katalogu první dvě části každého profilu",
   "home.pricing.anon.3": "Základní články",
@@ -247,7 +246,7 @@ const csBase = {
 
   /* ---------- Match Center: rozcestník ---------- */
   "list.title": "Match Center",
-  "list.lead": "Zápasy na nejbližších {n, plural, one {# den} few {# dny} other {# dní}}. Klepnutím na zápas otevřete rozbor.",
+  "list.lead": "Zápasy na nejbližších {n, plural, one {# den} few {# dny} other {# dní}}. Vyberte zápas pro rozbor.",
   "list.error": "Data se nepodařilo načíst. Zkuste to prosím za chvíli.",
   "list.stale": "Data jsou starší než denní interval (poslední kontrola {when}).",
   "list.soonTitle": "{league}: připravujeme",
@@ -258,7 +257,7 @@ const csBase = {
   "list.today": "dnes",
   "list.tomorrow": "zítra",
   "list.all": "Všechny zápasy",
-  "list.allLead": "Zápasy všech soutěží na nejbližších {n, plural, one {# den} few {# dny} other {# dní}}. Klepnutím na zápas otevřete rozbor.",
+  "list.allLead": "Zápasy všech soutěží na nejbližších {n, plural, one {# den} few {# dny} other {# dní}}. Vyberte zápas pro rozbor.",
   "list.sort.label": "Řazení",
   "list.sort.time": "Podle času",
   "list.sort.prob": "Podle šance na výhru",

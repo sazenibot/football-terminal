@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { Link, useNavigate, useSearchParams } from "../i18n/router";
-import { Avatar, Crest, Field, Frame, Pill, csMatches } from "../cat/kit";
+import { Avatar, Crest, Frame, csMatches } from "../cat/kit";
 import { t, type Key } from "../i18n/locale";
 import {
   useCatalogDirectory,
@@ -12,6 +12,8 @@ import {
 import { Chip, Empty, Seg } from "../mc2/kit";
 import type { CatalogHub, CatalogPlayerCard, CatalogRefereeCard, CatalogTeamCard } from "../types";
 import { dataPosition } from "../i18n/dataText";
+import { countryName } from "../components/Flag";
+import { orderedLeagues } from "../lib/leagues";
 
 type Tab = "teams" | "players" | "referees";
 const LAST_LEAGUE_KEY = "ft-catalog-league";
@@ -50,7 +52,7 @@ export function CatalogPage() {
   const [params, setParams] = useSearchParams();
   const navigate = useNavigate();
   const dir = useCatalogDirectory();
-  const leagues = dir?.leagues ?? [];
+  const leagues = useMemo(() => orderedLeagues(dir?.leagues ?? []), [dir]);
 
   const leagueParam = Number(params.get("league")) || null;
   const league = leagueParam && leagues.some((l) => l.id === leagueParam) ? leagueParam : null;
@@ -128,7 +130,7 @@ export function CatalogPage() {
       {global ? (
         <GlobalResults q={input} index={index} leagues={leagues} onLeague={(id) => update({ league: id, q: input })} />
       ) : league && current ? (
-        <LeagueView league={current} leagues={leagues} tab={tab} q={input} onTab={(t) => update({ tab: t })} onLeague={pick} onAll={() => update({ league: null })} />
+        <LeagueView league={current} tab={tab} q={input} onTab={(t) => update({ tab: t })} onAll={() => update({ league: null })} />
       ) : (
         <LeagueGrid leagues={leagues} loaded={!!dir} onPick={pick} hint={norm(input).trim().length === 1 ? t("ct.hub.minChars") : null} />
       )}
@@ -209,8 +211,6 @@ function LeagueGrid({
       ) : (
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {leagues
-            .slice()
-            .sort((a, b) => Number(b.full) - Number(a.full))
             .map((l) => (
               <button
                 key={l.id}
@@ -223,16 +223,13 @@ function LeagueGrid({
                   <div className="min-w-0 flex-1">
                     <div className="truncate text-[16px] font-bold leading-tight">{l.name}</div>
                     <div className="mt-0.5 truncate text-xs text-(--c-muted)">
-                      {l.country}
+                      {l.country ? countryName(l.country) : ""}
                       {l.season ? ` · ${l.season}` : ""}
                     </div>
                   </div>
                   <span aria-hidden className="text-lg leading-none text-(--c-faint) transition-transform group-hover:translate-x-0.5 group-hover:text-(--c-accent)">
                     ›
                   </span>
-                </div>
-                <div className="mt-3">
-                  <Pill tone={l.full ? "var(--c-accent)" : "var(--c-faint)"}>{l.full ? t("ct.hub.full") : t("ct.hub.basic")}</Pill>
                 </div>
                 <dl className="mt-auto grid grid-cols-3 gap-2 border-t border-(--c-line) pt-3 text-center">
                   {(
@@ -243,7 +240,7 @@ function LeagueGrid({
                     ] as const
                   ).map(([n, label]) => (
                     <div key={label}>
-                      <dt className="text-[10px] uppercase tracking-wider text-(--c-faint)">{t(label)}</dt>
+                      <dt className="text-[11px] uppercase tracking-wider text-(--c-faint)">{t(label)}</dt>
                       <dd className="text-[17px] font-bold leading-tight tabular-nums">{n}</dd>
                     </div>
                   ))}
@@ -345,7 +342,7 @@ function GlobalResults({
           <div className="truncate text-[14px] font-semibold">{h.name}</div>
           {h.sub && <div className="truncate text-xs text-(--c-muted)">{h.sub}</div>}
         </div>
-        <span className="hidden shrink-0 text-[11px] text-(--c-faint) sm:block">{leagueName(h.lid)}</span>
+        <span className="hidden shrink-0 text-xs text-(--c-faint) sm:block">{leagueName(h.lid)}</span>
         <span aria-hidden className="text-lg leading-none text-(--c-faint)">›</span>
       </Link>
     );
@@ -412,19 +409,15 @@ const POS: { id: string; label: Key; test: (p: string) => boolean }[] = [
 
 function LeagueView({
   league,
-  leagues,
   tab,
   q,
   onTab,
-  onLeague,
   onAll,
 }: {
   league: CatalogDirectoryLeague;
-  leagues: CatalogDirectoryLeague[];
   tab: Tab;
   q: string;
   onTab: (t: Tab) => void;
-  onLeague: (id: number) => void;
   onAll: () => void;
 }) {
   const { data, error, missing } = useCatalogHub(league.id);
@@ -452,40 +445,16 @@ function LeagueView({
         <div className="min-w-0 flex-1">
           <h2 className="text-lg font-bold leading-tight">{league.name}</h2>
           <p className="mt-0.5 text-xs text-(--c-muted)">
-            {league.country}
+            {league.country ? countryName(league.country) : ""}
             {league.season ? ` · ${league.season}` : ""}
           </p>
-          <div className="mt-2">
-            <Pill tone={league.full ? "var(--c-accent)" : "var(--c-faint)"}>{league.full ? t("ct.hub.full") : t("ct.hub.basic")}</Pill>
-          </div>
         </div>
         <div className="flex w-full items-end gap-2 sm:w-auto">
-          <div className="min-w-0 flex-1 sm:w-56">
-            <Field label={t("ct.hub.leagueLabel")}>
-              <select
-                value={league.id}
-                onChange={(e) => onLeague(Number(e.target.value))}
-                className="min-h-10 w-full rounded-xl border border-(--c-line) bg-(--c-raised) px-3 text-[13px] text-(--c-text)"
-              >
-                {leagues.map((l) => (
-                  <option key={l.id} value={l.id}>
-                    {l.name}
-                  </option>
-                ))}
-              </select>
-            </Field>
-          </div>
           <button type="button" onClick={onAll} className="min-h-10 shrink-0 rounded-xl px-3 text-[13px] font-medium text-(--c-accent) hover:bg-(--c-raised)">
             {t("ct.hub.allLeagues")}
           </button>
         </div>
       </div>
-
-      {!league.full && (
-        <p className="mt-3 rounded-xl border border-(--c-line) bg-(--c-surface) px-3.5 py-2.5 text-[13px] leading-snug text-(--c-muted)">
-          {t("ct.hub.notFullNote")}
-        </p>
-      )}
 
       <div className="mt-4 flex items-center justify-between gap-3">
         <Seg
@@ -526,7 +495,6 @@ function TeamList({ items, q }: { items: CatalogTeamCard[]; q: string }) {
             <Crest src={t.image} name={t.name} size={40} />
             <div className="min-w-0 flex-1">
               <div className="truncate text-[15px] font-semibold">{t.name}</div>
-              {t.short && <div className="text-xs text-(--c-faint)">{t.short}</div>}
             </div>
             <span aria-hidden className="text-lg leading-none text-(--c-faint)">›</span>
           </Link>
@@ -644,12 +612,10 @@ function RefereeList({ items, leagueId, q }: { items: CatalogRefereeCard[]; leag
                 <Avatar src={r.image} name={r.name} size={36} />
                 <div className="min-w-0 flex-1">
                   <div className="truncate text-[14px] font-semibold">{r.name}</div>
-                  {r.country && <div className="truncate text-xs text-(--c-muted)">{r.country}</div>}
                 </div>
-                {r.season_matches == null && <span className="shrink-0 text-xs text-(--c-faint)">{t("ct.hub.refInLeague")}</span>}
-                {r.season_matches != null && (
+                {(r.season_matches ?? r.league_matches) != null && (
                   <div className="shrink-0 text-right text-xs text-(--c-muted)">
-                    <b className="text-[15px] tabular-nums text-(--c-text)">{r.season_matches}</b> {csMatches(r.season_matches)}
+                    <b className="text-[15px] tabular-nums text-(--c-text)">{r.season_matches ?? r.league_matches}</b> {csMatches((r.season_matches ?? r.league_matches) as number)}
                   </div>
                 )}
                 <span aria-hidden className="text-lg leading-none text-(--c-faint)">›</span>

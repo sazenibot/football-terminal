@@ -1,6 +1,8 @@
 import { Link } from "../i18n/router";
 import type { DataIndex, LeagueMeta } from "../types";
 import { t } from "../i18n/locale";
+import { countryName } from "./Flag";
+import { orderedLeagues } from "../lib/leagues";
 
 const LAST_LEAGUE_KEY = "ft-league";
 
@@ -48,11 +50,11 @@ export function LeagueSwitcher({
   index: DataIndex;
   activeId: number;
 }) {
-  const enabled = index.leagues.filter((l) => l.enabled);
+  const enabled = orderedLeagues(index.leagues.filter((l) => l.enabled));
 
   return (
     <nav aria-label={t("picker.aria")} className="mb-6">
-      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500 mb-2">{t("mx.switch.leagues")}</p>
+      <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400 light:text-slate-500 mb-2">{t("mx.switch.leagues")}</p>
       <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-5">
         {enabled.map((l) => {
           const active = l.id === activeId;
@@ -74,8 +76,8 @@ export function LeagueSwitcher({
                 <p className={`font-medium truncate ${active ? "text-emerald-300 light:text-emerald-700" : "text-white light:text-slate-900"}`}>
                   {l.name}
                 </p>
-                <p className="text-xs text-slate-500 truncate">
-                  {l.country || l.short}
+                <p className="text-xs text-slate-400 light:text-slate-500 truncate">
+                  {l.country ? countryName(l.country) : l.short}
                   {count ? ` · ${count}` : ""}
                 </p>
               </div>

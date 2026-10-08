@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getManualNews, type NewsItem } from "../content/content";
 import { getLocale } from "../i18n/locale";
-import { intlTag } from "../i18n/locale";
 
 async function getJson<T>(url: string): Promise<T | null> {
   try {
@@ -114,6 +113,4 @@ export function useFeed() {
   return items;
 }
 
-export const fmtDate = (iso: string) => new Date(iso).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric", year: "numeric" });
-export const fmtDateTime = (iso: string) =>
-  new Date(iso).toLocaleString(intlTag(), { weekday: "short", day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" });
+export { fmtDate, fmtDateTime } from "../lib/format";

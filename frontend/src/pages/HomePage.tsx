@@ -6,6 +6,7 @@ import { getTiers, tierName, type Tier } from "../access/tiers";
 import { t, type Key } from "../i18n/locale";
 import { Pill } from "../cat/kit";
 import { getArticles } from "../content/content";
+import { PRICING_OPEN } from "../lib/flags";
 import { lastLeagueId } from "../components/LeagueSwitcher";
 import { useDataIndex, useLeagueRound } from "../lib/useData";
 import { ProbBar, TeamLogo } from "../mc2/kit";
@@ -142,7 +143,7 @@ function HeroPreview({ next, leagueName }: { next?: RoundFixture; leagueName?: s
   return (
     <div className="relative mx-auto w-full max-w-sm lg:ml-auto">
       <div aria-hidden className="absolute -inset-3 rounded-[2rem] bg-(--c-accent)/10 blur-2xl" />
-      <div className="relative rounded-2xl border border-(--c-line) bg-(--c-surface)/90 p-5 shadow-2xl backdrop-blur lg:rotate-1">
+      <div className="relative rounded-2xl border border-(--c-line) bg-(--c-surface)/90 p-5 shadow-2xl backdrop-blur">
         <div className="flex items-center justify-between text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">
           <span>{t("home.preview.next")}</span>
           <span>{leagueName ?? "Chance Liga"}</span>
@@ -165,7 +166,7 @@ function HeroPreview({ next, leagueName }: { next?: RoundFixture; leagueName?: s
               <div className="mt-4">
                 <div className={open ? "" : "blur-[5px]"} aria-hidden={!open}>
                   <ProbBar home={p[0]} draw={p[1]} away={p[2]} height={10} />
-                  <div className="mt-1.5 flex justify-between text-[11px] tabular-nums text-(--c-muted)">
+                  <div className="mt-1.5 flex justify-between text-xs tabular-nums text-(--c-muted)">
                     <span>{t("fmt.pct", { n: Math.round(p[0]) })}</span>
                     <span>{t("fmt.pct", { n: Math.round(p[1]) })}</span>
                     <span>{t("fmt.pct", { n: Math.round(p[2]) })}</span>
@@ -216,7 +217,7 @@ function MatchCenterCard({ leagueId, matches }: { leagueId: number; matches: Rou
                 <span className="min-w-0 flex-1 truncate text-[13px] font-medium">
                   {f.home.name} – {f.away.name}
                 </span>
-                <span className="shrink-0 text-[11px] text-(--c-muted)">{fmtDateTime(f.starting_at)}</span>
+                <span className="shrink-0 text-xs text-(--c-muted)">{fmtDateTime(f.starting_at)}</span>
               </Link>
             </li>
           ))}
@@ -233,7 +234,7 @@ function CatalogCard({ to, title, text, note, motif }: { to: string; title: stri
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-[18px] font-bold">{title}</h3>
         <p className="mt-1 text-[13px] leading-snug text-(--c-muted)">{text}</p>
-        <p className="mt-auto pt-3 text-[11px] text-(--c-faint)">{note}</p>
+        <p className="mt-auto pt-3 text-xs text-(--c-faint)">{note}</p>
       </div>
     </Link>
   );
@@ -244,7 +245,7 @@ function Soon({ title, text }: { title: string; text: string }) {
     <div aria-disabled className="relative cursor-not-allowed select-none rounded-2xl border border-dashed border-(--c-line) bg-(--c-surface)/40 p-5 opacity-80 grayscale">
       <div className="flex items-center justify-between gap-2">
         <h3 className="text-[17px] font-bold">{title}</h3>
-        <span className="rounded-full border border-(--c-line) px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-(--c-muted)">{t("common.soon")}</span>
+        <span className="rounded-full border border-(--c-line) px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-(--c-muted)">{t("common.soon")}</span>
       </div>
       <p className="mt-1.5 text-[13px] leading-snug text-(--c-muted)">{text}</p>
       <div className="mt-3">
@@ -319,14 +320,14 @@ function NewsColumn() {
             <span className="absolute -left-[4.5px] top-1.5 h-2 w-2 rounded-full bg-(--c-accent)" aria-hidden />
             <div className="flex flex-wrap items-center gap-2">
               <Pill>{n.tag}</Pill>
-              <time className="text-[11px] text-(--c-faint)" dateTime={n.date}>
+              <time className="text-xs text-(--c-faint)" dateTime={n.date}>
                 {fmtDate(n.date)}
               </time>
             </div>
             <h3 className="mt-1.5 text-[13px] font-semibold leading-snug">{n.title}</h3>
             <p className="mt-0.5 text-[12px] leading-snug text-(--c-muted)">{n.text}</p>
             {n.link && (
-              <Link to={n.link} className="mt-1 inline-block text-[12px] text-(--c-accent) hover:underline">
+              <Link to={n.link} className="-mb-2 mt-1 inline-block py-2 text-[12px] text-(--c-accent) hover:underline">
                 {n.link.includes("/clanky") || n.link.includes("/articles") ? t("home.news.readArticle") : t("home.news.open")} →
               </Link>
             )}
@@ -363,7 +364,7 @@ function Guides() {
             <Pill>{a.category}</Pill>
             <h3 className="mt-2 text-[15px] font-semibold leading-snug">{a.title}</h3>
             <p className="mt-1 text-[13px] leading-snug text-(--c-muted)">{a.excerpt}</p>
-            <p className="mt-2 text-[11px] text-(--c-faint)">{t("home.guides.minutes", { n: a.minutes })}</p>
+            <p className="mt-2 text-xs text-(--c-faint)">{t("home.guides.minutes", { n: a.minutes })}</p>
           </Link>
         ))}
       </div>
@@ -386,16 +387,23 @@ function PricingTeaser() {
     <section className="mt-12">
       <div className="flex items-baseline justify-between gap-3">
         <h2 className="text-2xl font-bold">{t("home.pricing.title")}</h2>
-        <Link to="/tarify" className="text-[13px] text-(--c-accent) hover:underline">
-          {t("home.pricing.more")}
-        </Link>
+        {PRICING_OPEN && (
+          <Link to="/tarify" className="text-[13px] text-(--c-accent) hover:underline">
+            {t("home.pricing.more")}
+          </Link>
+        )}
       </div>
-      <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      {/* Tarify zatím nejsou veřejné: ukázka funkcí je zašedlá, bez cen a bez prokliku. */}
+      <div aria-disabled className={`mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 ${PRICING_OPEN ? "" : "pointer-events-none select-none opacity-60 grayscale"}`}>
         {getTiers().map((x) => (
           <article key={x.id} className={`flex flex-col rounded-2xl border bg-(--c-surface) p-5 ${x.featured ? "border-(--c-accent)" : "border-(--c-line)"} ${tier === x.id ? "ring-1 ring-(--c-accent)" : ""}`}>
             <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-(--c-accent)">{x.name}</p>
-            <p className="mt-2 text-2xl font-bold">{x.price}</p>
-            <p className="text-[12px] text-(--c-faint)">{x.period}</p>
+            {PRICING_OPEN && (
+              <>
+                <p className="mt-2 text-2xl font-bold">{x.price}</p>
+                <p className="text-[12px] text-(--c-faint)">{x.period}</p>
+              </>
+            )}
             <ul className="mt-3 flex-1 space-y-1.5 text-[13px] text-(--c-muted)">
               {POINTS[x.id].map((k) => (
                 <li key={k} className="flex gap-2">

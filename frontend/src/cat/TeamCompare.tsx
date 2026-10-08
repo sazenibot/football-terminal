@@ -132,7 +132,7 @@ function CompareRadar({ a, b, nameA, nameB }: { a: RadarAverages; b?: RadarAvera
           </RadarChart>
         </ResponsiveContainer>
       </div>
-      <p className="mt-1 text-center text-[11px] text-(--c-faint)">{t("ct.tc.radarNote")}</p>
+      <p className="mt-1 text-center text-xs text-(--c-faint)">{t("ct.tc.radarNote")}</p>
     </div>
   );
 }

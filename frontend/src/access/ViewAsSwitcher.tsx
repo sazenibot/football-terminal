@@ -37,7 +37,7 @@ export function ViewAsSwitcher() {
             ))}
           </div>
           {tier === "account" && (
-            <p className="mt-2 text-[11px] text-(--c-muted)">
+            <p className="mt-2 text-xs text-(--c-muted)">
               {t("view.freeFixture", { state: freeFixture ? t("view.used", { id: freeFixture }) : t("view.unused") })}
               {freeFixture && (
                 <button type="button" onClick={resetFreeFixture} className="ml-2 text-(--c-accent) hover:underline">
@@ -46,7 +46,7 @@ export function ViewAsSwitcher() {
               )}
             </p>
           )}
-          <p className="mt-2 max-w-xs text-[11px] leading-snug text-(--c-faint)">{t("view.note")}</p>
+          <p className="mt-2 max-w-xs text-xs leading-snug text-(--c-faint)">{t("view.note")}</p>
         </div>
       ) : (
         <button

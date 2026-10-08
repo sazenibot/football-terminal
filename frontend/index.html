@@ -8,7 +8,7 @@
       // Téma se nastaví před prvním vykreslením, ať stránka při načtení neprobliká.
       try {
         var t = localStorage.getItem("football-terminal-theme");
-        var light = t ? t === "light" : window.matchMedia("(prefers-color-scheme: light)").matches;
+        var light = t === "light" || t === "dark" ? t === "light" : window.matchMedia("(prefers-color-scheme: light)").matches;
         if (light) document.documentElement.classList.add("light");
       } catch (e) {}
     </script>

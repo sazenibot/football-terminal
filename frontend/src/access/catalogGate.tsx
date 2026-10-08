@@ -31,7 +31,7 @@ export function useTabLock(kind: Kind) {
       ...tab,
       label: need(tab.id) ? (
         <>
-          {tab.label} <span aria-label={t("gate.locked")} className="text-[10px] opacity-70">🔒</span>
+          {tab.label} <span aria-label={t("gate.locked")} className="text-xs opacity-70">🔒</span>
         </>
       ) : (
         tab.label

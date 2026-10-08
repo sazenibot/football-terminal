@@ -281,7 +281,7 @@ export function RankCard({
           <div className="h-full rounded-full" style={{ width: `${fill}%`, background: color }} />
         </div>
       )}
-      {avg != null && <div className="mt-1.5 text-[11px] text-(--c-faint)">{t("ct.kit.leagueAvg", { v: `${fmtNum(avg, digits)}${suffix}` })}</div>}
+      {avg != null && <div className="mt-1.5 text-xs text-(--c-faint)">{t("ct.kit.leagueAvg", { v: `${fmtNum(avg, digits)}${suffix}` })}</div>}
     </div>
   );
 }
@@ -300,7 +300,7 @@ export const TD = "px-2.5 py-2 text-[13px] tabular-nums whitespace-nowrap";
 export function Pill({ children, tone = "var(--c-accent)" }: { children: ReactNode; tone?: string }) {
   return (
     <span
-      className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold"
+      className="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold"
       style={{ color: tone, background: `color-mix(in oklab, ${tone} 14%, transparent)` }}
     >
       {children}
@@ -311,7 +311,7 @@ export function Pill({ children, tone = "var(--c-accent)" }: { children: ReactNo
 export function Meta({ label, value }: { label: string; value?: ReactNode }) {
   return (
     <div className="min-w-0">
-      <div className="text-[10px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{label}</div>
+      <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{label}</div>
       <div className="mt-0.5 truncate text-[13px] font-semibold">{value ?? "—"}</div>
     </div>
   );

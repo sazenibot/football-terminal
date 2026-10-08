@@ -13,7 +13,7 @@ export function AiAnalysisSection({ analysis }: { analysis?: AiAnalysis | null }
       note={t("mx.ai.note")}
     >
       {!aiText(analysis) ? (
-        <p className="text-slate-500 light:text-slate-400 text-sm">{t("mx.ai.empty")}</p>
+        <p className="text-slate-400 light:text-slate-500 text-sm">{t("mx.ai.empty")}</p>
       ) : (
         <div className="text-sm leading-relaxed text-slate-300 light:text-slate-700 whitespace-pre-wrap">
           {aiText(analysis)}

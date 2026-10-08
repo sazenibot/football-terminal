@@ -12,7 +12,8 @@ import { GoalsBlock, OutcomeBlock, ScorelinesBlock, VolumeBlock } from "../mc2/P
 import { GoalsXgotCard, TeamCompareCard } from "../mc2/Stats";
 import { BetbuilderCard, TrendsCard } from "../mc2/Trends";
 import type { MatchData } from "../types";
-import { intlTag, t, type Key } from "../i18n/locale";
+import { t, type Key } from "../i18n/locale";
+import { fmtStamp, fmtTime, fmtWeekdayDate } from "../lib/format";
 
 const TABS: readonly { id: "overview" | "prediction" | "form" | "stats" | "people" | "referee"; label: Key }[] = [
   { id: "overview", label: "mc.tab.overview" },
@@ -31,7 +32,7 @@ function LuckChip({ badge }: { badge: XgotBadge }) {
   const c = lucky ? "var(--c-warn)" : "var(--c-loss)";
   return (
     <span
-      className="inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold"
+      className="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold"
       style={{ color: c, background: `color-mix(in oklab, ${c} 14%, transparent)` }}
     >
       {lucky ? t("mc.luck.lucky") : t("mc.luck.unlucky")}
@@ -64,10 +65,10 @@ function Hero({ m, badges }: { m: MatchData; badges: { home: XgotBadge | null; a
       <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-3 sm:gap-6">
         {team(m.home, "home", badges.home)}
         <div className="flex flex-col items-center gap-1.5 pt-1 text-center">
-          <div className="text-xs capitalize text-(--c-muted)">{d.toLocaleDateString(intlTag(), { weekday: "short", day: "numeric", month: "numeric" })}</div>
-          <div className="text-2xl font-bold leading-none tabular-nums sm:text-3xl">{d.toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" })}</div>
+          <div className="text-xs capitalize text-(--c-muted)">{fmtWeekdayDate(d)}</div>
+          <div className="text-2xl font-bold leading-none tabular-nums sm:text-3xl">{fmtTime(d)}</div>
           <span
-            className="mt-1 rounded-full px-2.5 py-1 text-[11px] font-semibold"
+            className="mt-1 rounded-full px-2.5 py-1 text-xs font-semibold"
             style={{
               color: k.live ? "var(--c-loss)" : "var(--c-accent)",
               background: `color-mix(in oklab, ${k.live ? "var(--c-loss)" : "var(--c-accent)"} 14%, transparent)`,
@@ -158,7 +159,7 @@ export function MatchCenterPage() {
       {back}
       {stale && checkedAt && (
         <div className="mt-3 rounded-xl border border-(--c-warn)/40 bg-(--c-warn)/10 px-3 py-2 text-[13px] text-(--c-warn)">
-          {t("list.stale", { when: new Date(checkedAt).toLocaleString(intlTag()) })}
+          {t("list.stale", { when: fmtStamp(checkedAt) })}
         </div>
       )}
       <div className="mt-3">
@@ -251,8 +252,7 @@ export function MatchCenterPage() {
       </div>
 
       <footer className="space-y-1 pt-8 text-center text-xs text-(--c-faint)">
-        <p>{t("mc.page.disclaimer")}</p>
-        {checkedAt && <p>{t("mc.page.checked", { when: new Date(checkedAt).toLocaleString(intlTag()) })}</p>}
+        {checkedAt && <p>{t("mc.page.checked", { when: fmtStamp(checkedAt) })}</p>}
       </footer>
     </div>
   );

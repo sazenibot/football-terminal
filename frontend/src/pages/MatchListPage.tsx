@@ -8,7 +8,9 @@ import { rememberLeague } from "../components/LeagueSwitcher";
 import { kickoffLabel } from "../mc2/derive";
 import { Empty, ProbBar, Seg, TeamLogo } from "../mc2/kit";
 import type { LeagueMeta, RoundFixture, UpcomingFixture } from "../types";
-import { getLocale, intlTag, t, type Key } from "../i18n/locale";
+import { t, type Key } from "../i18n/locale";
+import { fmtDayLong, fmtStamp, fmtTime, fmtWeekdayDate } from "../lib/format";
+import { orderedLeagues } from "../lib/leagues";
 
 /* ---------- ikonky u zápasů ---------- */
 
@@ -94,7 +96,7 @@ const dayKey = (iso: string) => new Date(iso).toDateString();
 export function dayLabel(iso: string, now = new Date()): { main: string; rel: string | null } {
   const d = new Date(iso);
   const days = Math.round((new Date(d.toDateString()).getTime() - new Date(now.toDateString()).getTime()) / 86400e3);
-  const main = d.toLocaleDateString(intlTag(), { weekday: "long", day: "numeric", month: getLocale() === "en" ? "long" : "numeric" });
+  const main = fmtDayLong(d);
   return { main: main.charAt(0).toUpperCase() + main.slice(1), rel: days === 0 ? t("list.today") : days === 1 ? t("list.tomorrow") : null };
 }
 
@@ -126,7 +128,7 @@ function Signals({ f, isNew }: { f: RoundFixture; isNew: (f: RoundFixture, id: S
 
 export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; home: RoundFixture["home"]; away: RoundFixture["away"]; isNew: (f: RoundFixture, id: SignalId) => boolean; onOpen: () => void }) {
   const ready = f.has_full_data !== false;
-  const time = new Date(f.starting_at).toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" });
+  const time = fmtTime(f.starting_at);
   const live = kickoffLabel(f.starting_at).live;
   const probs = f.signals?.probs;
   const body = (
@@ -135,7 +137,7 @@ export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; ho
         <span aria-hidden />
         <div className="flex items-baseline justify-center gap-2">
           <span className="text-[17px] font-bold leading-none tabular-nums">{time}</span>
-          {live && <span className="text-[10px] font-semibold uppercase text-(--c-loss)">{t("list.live")}</span>}
+          {live && <span className="text-[11px] font-semibold uppercase text-(--c-loss)">{t("list.live")}</span>}
         </div>
         <div className="flex items-center justify-end gap-2">
           <Signals f={f} isNew={isNew} />
@@ -148,7 +150,7 @@ export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; ho
           <TeamLogo team={home} size={22} />
           <span className="truncate text-[14px] font-semibold sm:text-[15px]">{home.name}</span>
         </div>
-        <span aria-hidden className="w-1 text-center text-[11px] text-(--c-faint) sm:w-auto">
+        <span aria-hidden className="w-1 text-center text-xs text-(--c-faint) sm:w-auto">
           <span className="hidden sm:inline">vs</span>
         </span>
         <div className="flex min-w-0 items-center justify-end gap-2">
@@ -160,7 +162,7 @@ export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; ho
       {probs && (
         <div className="mt-2.5" title={t("list.probTitle")}>
           <ProbBar home={probs[0]} draw={probs[1]} away={probs[2]} height={6} />
-          <div className="relative mt-1 h-4 text-[11px] tabular-nums">
+          <div className="relative mt-1 h-4 text-xs tabular-nums">
             <span className="absolute left-0" style={{ color: "var(--c-home)" }}>
               {probs[0]} %
             </span>
@@ -210,8 +212,8 @@ function MatchCard({
   withDate?: boolean;
 }) {
   const ready = f.has_full_data !== false;
-  const clock = new Date(f.starting_at).toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" });
-  const time = withDate ? `${new Date(f.starting_at).toLocaleDateString(intlTag(), { weekday: "short", day: "numeric", month: "numeric" })} ${clock}` : clock;
+  const clock = fmtTime(f.starting_at);
+  const time = withDate ? `${fmtWeekdayDate(f.starting_at)} ${clock}` : clock;
   const live = kickoffLabel(f.starting_at).live;
   const probs = f.signals?.probs;
   const homeColor = colors[f.home.id] ?? NEUTRAL;
@@ -219,11 +221,11 @@ function MatchCard({
   const cls = "group relative block overflow-hidden rounded-2xl border border-(--c-line) bg-(--c-surface) shadow-sm";
   const body = (
     <>
-      <span aria-hidden className="absolute inset-y-0 left-0 w-1.5" style={{ background: homeColor }} />
-      <span aria-hidden className="absolute inset-y-0 right-0 w-1.5" style={{ background: awayColor }} />
+      <span aria-hidden className="absolute inset-y-0 left-0 w-1 opacity-50" style={{ background: homeColor }} />
+      <span aria-hidden className="absolute inset-y-0 right-0 w-1 opacity-50" style={{ background: awayColor }} />
       <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2 bg-(--c-raised)/70 px-4 py-1.5">
         {league ? (
-          <span className="flex min-w-0 items-center gap-1.5 text-[11px] font-medium text-(--c-muted)">
+          <span className="flex min-w-0 items-center gap-1.5 text-xs font-medium text-(--c-muted)">
             {league.logo && <img src={league.logo} alt="" className="h-4 w-4 shrink-0 object-contain" />}
             <span className="truncate">{league.name}</span>
           </span>
@@ -232,7 +234,7 @@ function MatchCard({
         )}
         <div className="flex items-baseline justify-center gap-2">
           <span className="text-[13px] font-bold tabular-nums">{time}</span>
-          {live && <span className="text-[10px] font-semibold uppercase text-(--c-loss)">{t("list.live")}</span>}
+          {live && <span className="text-[11px] font-semibold uppercase text-(--c-loss)">{t("list.live")}</span>}
         </div>
         <div className="flex justify-end">
           <Signals f={f} isNew={isNew} />
@@ -244,7 +246,7 @@ function MatchCard({
             <TeamLogo team={f.home} size={32} />
             <span className="w-full truncate text-[14px] font-semibold">{f.home.name}</span>
           </div>
-          <span aria-hidden className="text-[11px] font-semibold text-(--c-faint)">
+          <span aria-hidden className="text-xs font-semibold text-(--c-faint)">
             vs
           </span>
           <div className="flex min-w-0 flex-col items-center gap-1.5 text-center">
@@ -255,7 +257,7 @@ function MatchCard({
         {probs && (
           <div className="mt-3" title={t("list.probTitle")}>
             <ProbBar home={probs[0]} draw={probs[1]} away={probs[2]} height={6} />
-            <div className="mt-1 grid grid-cols-3 text-[11px] tabular-nums">
+            <div className="mt-1 grid grid-cols-3 text-xs tabular-nums">
               <span style={{ color: "var(--c-home)" }}>{t("fmt.pct", { n: probs[0] })}</span>
               <span className="text-center text-(--c-faint)">{t("fmt.pct", { n: probs[1] })}</span>
               <span className="text-right" style={{ color: "var(--c-away)" }}>
@@ -301,7 +303,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
   }, [fixtures]);
 
   const league = index?.leagues.find((l) => l.id === leagueId) ?? data?.league;
-  const enabled = (index?.leagues ?? []).filter((l) => l.enabled);
+  const enabled = orderedLeagues((index?.leagues ?? []).filter((l) => l.enabled));
   const stale = live && data && index ? isStale(data.generated_at, index.stale_after_hours) : false;
 
   return (
@@ -323,7 +325,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
 
       {stale && data && (
         <div className="mt-4 rounded-xl border border-(--c-warn)/40 bg-(--c-warn)/10 px-3 py-2 text-[13px] text-(--c-warn)">
-          {t("list.stale", { when: new Date(data.generated_at).toLocaleString(intlTag()) })}
+          {t("list.stale", { when: fmtStamp(data.generated_at) })}
         </div>
       )}
 
@@ -357,7 +359,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
                 <section key={g[0].starting_at} aria-label={d.main}>
                   <h2 className="mb-2 flex items-baseline gap-2 px-1 text-[13px] font-semibold">
                     <span>{d.main}</span>
-                    {d.rel && <span className="rounded-md bg-(--c-accent)/15 px-1.5 py-0.5 text-[11px] font-semibold text-(--c-accent)">{d.rel}</span>}
+                    {d.rel && <span className="rounded-md bg-(--c-accent)/15 px-1.5 py-0.5 text-xs font-semibold text-(--c-accent)">{d.rel}</span>}
                     <span className="font-normal text-(--c-faint)">
                       {t("list.count", { n: g.length })}
                     </span>
@@ -435,7 +437,7 @@ export function AllMatchesPage({ base }: { base: string }) {
   const [sp, setSp] = useSearchParams();
   const mode: SortMode = sp.get("sort") === "prob" ? "prob" : "time";
   const colors = useTeamColors();
-  const enabled = (index?.leagues ?? []).filter((l) => l.enabled);
+  const enabled = orderedLeagues((index?.leagues ?? []).filter((l) => l.enabled));
   const leagueById = useMemo(() => new Map((index?.leagues ?? []).map((l) => [l.id, l])), [index]);
 
   const upcoming = useMemo(() => {
@@ -503,7 +505,7 @@ export function AllMatchesPage({ base }: { base: string }) {
 
       {stale && data && (
         <div className="mt-4 rounded-xl border border-(--c-warn)/40 bg-(--c-warn)/10 px-3 py-2 text-[13px] text-(--c-warn)">
-          {t("list.stale", { when: new Date(data.generated_at).toLocaleString(intlTag()) })}
+          {t("list.stale", { when: fmtStamp(data.generated_at) })}
         </div>
       )}
 
@@ -524,7 +526,7 @@ export function AllMatchesPage({ base }: { base: string }) {
               <section key={g[0].starting_at} aria-label={d.main}>
                 <h2 className="mb-2 flex items-baseline gap-2 px-1 text-[13px] font-semibold">
                   <span>{d.main}</span>
-                  {d.rel && <span className="rounded-md bg-(--c-accent)/15 px-1.5 py-0.5 text-[11px] font-semibold text-(--c-accent)">{d.rel}</span>}
+                  {d.rel && <span className="rounded-md bg-(--c-accent)/15 px-1.5 py-0.5 text-xs font-semibold text-(--c-accent)">{d.rel}</span>}
                   <span className="font-normal text-(--c-faint)">{t("list.count", { n: g.length })}</span>
                 </h2>
                 <div className="grid gap-3 sm:grid-cols-2">{g.map((f) => card(f, false))}</div>

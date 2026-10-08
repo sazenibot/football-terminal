@@ -41,11 +41,21 @@ const EN_NAMES: Record<string, string> = {
   Srbsko: "Serbia", Španělsko: "Spain", Švédsko: "Sweden", Švýcarsko: "Switzerland", Turecko: "Türkiye", Ukrajina: "Ukraine", USA: "USA", Evropa: "Europe",
 };
 
-/** Název země v aktuálním jazyce (data/index.json je má česky). */
-export const countryName = (cz: string) => (getLocale() === "en" ? (EN_NAMES[cz] ?? cz) : cz);
+/** Další anglické tvary, které se objevují v datech katalogu (SportMonks). */
+const ALIASES: Record<string, string> = { "Czech Republic": "Česko", Czechia: "Česko", Turkey: "Turecko", "United States": "USA", "United States of America": "USA", "Türkiye": "Turecko" };
+const EN_TO_CS: Record<string, string> = { ...Object.fromEntries(Object.entries(EN_NAMES).map(([cz, en]) => [en, cz])), ...ALIASES };
+
+/** Převede název země v češtině i angličtině na český klíč. */
+const toCz = (name: string) => (CODES[name] ? name : (EN_TO_CS[name] ?? name));
+
+/** Název země v aktuálním jazyce. Vstup může být česky (index.json) i anglicky (katalog). */
+export const countryName = (name: string) => {
+  const cz = toCz(name);
+  return getLocale() === "en" ? (EN_NAMES[cz] ?? cz) : cz;
+};
 
 export function Flag({ country, width = 18 }: { country?: string | null; width?: number }) {
-  const code = country ? CODES[country] : undefined;
+  const code = country ? CODES[toCz(country)] : undefined;
   if (!code) return null;
   return (
     <img

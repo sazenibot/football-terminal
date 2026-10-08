@@ -46,7 +46,7 @@ export function TrendmetrCard({ match }: { match: MatchData }) {
       <div className="overflow-x-auto">
         <table className="w-full min-w-[36rem] text-sm">
           <thead>
-            <tr className="text-[11px] uppercase tracking-wide text-slate-500 border-y border-slate-800 light:border-slate-200">
+            <tr className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500 border-y border-slate-800 light:border-slate-200">
               <th className="text-left font-medium pl-4 md:pl-5 pr-3 py-2 w-[11rem]">{t("mx.tm.team")}</th>
               {TRENDMETR_METRICS.map((col) => (
                 <th key={col.key} className="font-medium text-center px-1.5 py-2">
@@ -65,7 +65,7 @@ export function TrendmetrCard({ match }: { match: MatchData }) {
                     ) : null}
                     <div className="min-w-0">
                       <p className="font-semibold text-white light:text-slate-900 truncate">{row.team.name}</p>
-                      <p className="text-[11px] text-slate-500">{row.role === "doma" ? t("mx.tm.roleHome") : t("mx.tm.roleAway")}</p>
+                      <p className="text-xs text-slate-400 light:text-slate-500">{row.role === "doma" ? t("mx.tm.roleHome") : t("mx.tm.roleAway")}</p>
                     </div>
                   </div>
                 </td>
@@ -75,7 +75,7 @@ export function TrendmetrCard({ match }: { match: MatchData }) {
                   if (line == null) {
                     return (
                       <td key={col.key} className="px-1.5 py-3 text-center align-middle">
-                        <div className="mx-auto w-[5rem] rounded-lg border border-dashed border-slate-800 light:border-slate-200 px-2 py-2 text-slate-600 light:text-slate-400">
+                        <div className="mx-auto w-[5rem] rounded-lg border border-dashed border-slate-800 light:border-slate-200 px-2 py-2 text-slate-400 light:text-slate-500">
                           —
                         </div>
                       </td>
@@ -113,10 +113,10 @@ export function TrendmetrCard({ match }: { match: MatchData }) {
 
       <div className="px-4 md:px-5 py-3 border-t border-slate-800 light:border-slate-200 bg-slate-950/40 light:bg-slate-50">
         {picked.length === 0 ? (
-          <p className="text-xs text-slate-500">{t("mx.tm.hint")}</p>
+          <p className="text-xs text-slate-400 light:text-slate-500">{t("mx.tm.hint")}</p>
         ) : (
           <div className="flex flex-wrap items-center gap-2">
-            <p className="text-[11px] uppercase tracking-wide text-slate-500 mr-1">Builder</p>
+            <p className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500 mr-1">Builder</p>
             {picked.map((leg) => (
               <button
                 key={`${leg.sideKey}-${leg.metricKey}`}

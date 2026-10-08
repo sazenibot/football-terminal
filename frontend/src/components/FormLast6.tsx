@@ -58,7 +58,7 @@ function TeamForm({ team, form }: { team: TeamBrief; form: FormSide }) {
       <div className="text-sm text-slate-400 light:text-slate-500 mb-2">
         {t("mx.form.summary", { n: source.length, pts, gf, ga })}
       </div>
-      {source.length === 0 && <span className="text-slate-500 light:text-slate-400 text-sm">{t("mx.common.noData")}</span>}
+      {source.length === 0 && <span className="text-slate-400 light:text-slate-500 text-sm">{t("mx.common.noData")}</span>}
       <div className="space-y-1">
         {source.map((m) => (
           <div key={m.fixture_id} className="flex items-center gap-2">
@@ -69,7 +69,7 @@ function TeamForm({ team, form }: { team: TeamBrief; form: FormSide }) {
             </span>
             <span className="truncate text-xs text-slate-400 light:text-slate-500">vs {m.opponent}</span>
             {!m.is_league_match && (
-              <span className="badge bg-purple-500/20 text-purple-300 light:bg-purple-100 light:text-purple-700 text-[10px] px-1.5 py-0 shrink-0">
+              <span className="badge bg-purple-500/20 text-purple-300 light:bg-purple-100 light:text-purple-700 text-xs px-1.5 py-0 shrink-0">
                 {m.league_name ?? t("mx.form.cup")}
               </span>
             )}

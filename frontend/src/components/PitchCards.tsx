@@ -14,6 +14,7 @@ import {
   YAxis,
 } from "recharts";
 import { intlTag, t } from "../i18n/locale";
+import { fmtDayMonth } from "../lib/format";
 
 type Venue = "all" | "home" | "away";
 type Recency = "all" | "5";
@@ -99,7 +100,7 @@ function fmt(n: number, d = 2): string {
 
 function czDate(iso: string): string {
   const [y, m, d] = iso.split("-");
-  return new Date(Number(y), Number(m) - 1, Number(d)).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
+  return fmtDayMonth(new Date(Number(y), Number(m) - 1, Number(d)));
 }
 
 function filterMatches(matches: MatchRow[], recency: Recency, venue: Venue): MatchRow[] {
@@ -250,7 +251,7 @@ export function TeamTrend({
         <div className="mt-3 overflow-x-auto">
           <table className="w-full min-w-[36rem] text-sm">
             <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-slate-500">
+              <tr className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500">
                 <th className="text-left py-1.5 font-medium">{t("mc.pc.match")}</th>
                 <th className="text-right font-medium">{t("mc.pe.col.g")}</th>
                 <th className="text-right font-medium">xGOT</th>
@@ -275,7 +276,7 @@ export function TeamTrend({
                     <td className="text-right tabular-nums" style={{ color: C.xg }}>
                       {fmt(m.xg)}
                     </td>
-                    <td className={`text-right tabular-nums ${d > 0.15 ? "text-emerald-400" : d < -0.15 ? "text-rose-400" : "text-slate-400"}`}>
+                    <td className={`text-right tabular-nums ${d > 0.15 ? "text-emerald-400" : d < -0.15 ? "text-rose-400" : "text-slate-400 light:text-slate-500"}`}>
                       {d > 0 ? "+" : ""}
                       {fmt(d)}
                     </td>
@@ -387,7 +388,7 @@ export function ShotMap({
           />
         </Field>
       </div>
-      <p className="mt-3 text-[11px] text-slate-500">
+      <p className="mt-3 text-xs text-slate-400 light:text-slate-500">
         {wide
           ? t("mc.pc.summary", { shots: shots.length, rows: rows.length, box: boxEdge, wide })
           : t("mc.pc.summaryNoWide", { shots: shots.length, rows: rows.length, box: boxEdge })}
@@ -506,7 +507,7 @@ export function KeeperCard({
         <div className="mt-3 overflow-x-auto">
           <table className="w-full min-w-[36rem] text-sm">
             <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-slate-500">
+              <tr className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500">
                 <th className="text-left py-1.5 font-medium">{t("mc.pc.match")}</th>
                 <th className="text-right font-medium">{t("mc.pc.concededCap")}</th>
                 <th className="text-right font-medium">{t("mc.st.xgotAgainst")}</th>
@@ -526,7 +527,7 @@ export function KeeperCard({
                     <td className="text-right tabular-nums" style={{ color: C.xgot }}>
                       {fmt(m.xgot_faced)}
                     </td>
-                    <td className={`text-right tabular-nums ${d > 0.15 ? "text-emerald-400" : d < -0.15 ? "text-rose-400" : "text-slate-400"}`}>
+                    <td className={`text-right tabular-nums ${d > 0.15 ? "text-emerald-400" : d < -0.15 ? "text-rose-400" : "text-slate-400 light:text-slate-500"}`}>
                       {d > 0 ? "+" : ""}
                       {fmt(d)}
                     </td>
@@ -572,7 +573,7 @@ function CardHead({
         <p className="text-sm text-slate-400 light:text-slate-500 mt-1">{lead}</p>
       </div>
       {seasons && seasonId && onSeason ? (
-        <label className="shrink-0 text-[11px] uppercase tracking-wide text-slate-500">
+        <label className="shrink-0 text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500">
           {t("mc.pe.pl.season")}
           <SeasonSelect seasons={seasons} value={seasonId} onChange={onSeason} className="mt-1 block min-w-[9.5rem]" />
         </label>
@@ -626,7 +627,7 @@ function TableToggle({ open, onToggle }: { open: boolean; onToggle: () => void }
 function MatchName({ date, home, opponent, score }: { date: string; home: boolean; opponent: string; score?: string }) {
   return (
     <span className="inline-flex items-center gap-2">
-      <span className="tabular-nums text-slate-400">{czDate(date)}</span>
+      <span className="tabular-nums text-slate-400 light:text-slate-500">{czDate(date)}</span>
       <VenueMark home={home} />
       {score ? <span className="font-mono text-xs text-slate-300 light:text-slate-700">{score}</span> : null}
       <span>{opponent}</span>
@@ -656,19 +657,19 @@ function Ticker({ hover }: { hover: ShotView | null }) {
       {hover ? (
         <p className="leading-snug">
           {hover.minute}′ {hover.player}
-          <span className="text-slate-500"> · </span>
+          <span className="text-slate-400 light:text-slate-500"> · </span>
           {hover.kind === "set" ? t("mc.pc.setPieceLc") : t("mc.pc.openPlayLc")}
-          <span className="text-slate-500"> · </span>
+          <span className="text-slate-400 light:text-slate-500"> · </span>
           {outcomeOf(hover)}
-          <span className="text-slate-500"> · </span>
+          <span className="text-slate-400 light:text-slate-500"> · </span>
           xG {fmt(hover.xg)}
-          <span className="text-slate-500"> · </span>
+          <span className="text-slate-400 light:text-slate-500"> · </span>
           {t("mc.pc.fromGoal", { d: fmt(hover.depth, 1) })}
-          <span className="text-slate-500"> · </span>
+          <span className="text-slate-400 light:text-slate-500"> · </span>
           {czDate(hover.date)} {hover.home ? "🏠" : "✈️"} {hover.opponent_short}
         </p>
       ) : (
-        <p className="text-slate-500">{t("mc.pc.hover")}</p>
+        <p className="text-slate-400 light:text-slate-500">{t("mc.pc.hover")}</p>
       )}
     </div>
   );
@@ -687,7 +688,7 @@ function TrendPlot({ data, mode }: { data: ChartPoint[]; mode: TrendMode }) {
     />
   );
 
-  if (!data.length) return <p className="mt-4 text-sm text-slate-500">{t("mc.pc.noMatches")}</p>;
+  if (!data.length) return <p className="mt-4 text-sm text-slate-400 light:text-slate-500">{t("mc.pc.noMatches")}</p>;
 
   const dots =
     mode === "compare"
@@ -883,7 +884,7 @@ function MiniStat({
         {label}
       </p>
       <p className="text-lg font-semibold tabular-nums text-white light:text-slate-900">{value}</p>
-      {hint ? <p className="mt-1 text-[11px] leading-snug text-slate-500">{hint}</p> : null}
+      {hint ? <p className="mt-1 text-xs leading-snug text-slate-400 light:text-slate-500">{hint}</p> : null}
     </div>
   );
 }
@@ -891,7 +892,7 @@ function MiniStat({
 function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-lg border border-slate-800 light:border-slate-200 px-3 py-2">
-      <p className="text-[11px] uppercase tracking-wide text-slate-500">{label}</p>
+      <p className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500">{label}</p>
       <p className="text-lg font-semibold tabular-nums text-white light:text-slate-900">{value}</p>
     </div>
   );
@@ -900,7 +901,7 @@ function Stat({ label, value }: { label: string; value: string }) {
 function Field({ label, children, className = "" }: { label: string; children: ReactNode; className?: string }) {
   return (
     <div className={`min-w-0 ${className}`.trim()}>
-      <p className="text-[11px] uppercase tracking-wide text-slate-500 mb-1">{label}</p>
+      <p className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500 mb-1">{label}</p>
       {children}
     </div>
   );

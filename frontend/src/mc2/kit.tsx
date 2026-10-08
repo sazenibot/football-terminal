@@ -54,7 +54,9 @@ export function Info({ children, label }: { children: ReactNode; label?: string 
         aria-label={label ?? t("mc.kit.info")}
         aria-expanded={!!pos}
         onClick={() => (pos ? setPos(null) : show())}
-        className="ml-1.5 inline-flex h-[18px] w-[18px] shrink-0 items-center justify-center rounded-full border border-(--c-faint) text-[10px] font-bold normal-case leading-none text-(--c-muted) hover:border-(--c-text) hover:text-(--c-text)"
+        onFocus={(e) => e.currentTarget.matches(":focus-visible") && show()}
+        onBlur={() => setPos(null)}
+        className="relative ml-1.5 inline-flex h-[18px] w-[18px] before:absolute before:-inset-3 before:content-[''] shrink-0 items-center justify-center rounded-full border border-(--c-faint) text-xs font-bold normal-case leading-none text-(--c-muted) hover:border-(--c-text) hover:text-(--c-text)"
       >
         i
       </button>
@@ -198,7 +200,7 @@ export function TeamLogo({ team, size = 24 }: { team: TeamBrief; size?: number }
       <span
         aria-hidden
         style={{ width: size, height: size }}
-        className="inline-flex shrink-0 items-center justify-center rounded-full bg-(--c-raised) text-[10px] font-bold text-(--c-muted)"
+        className="inline-flex shrink-0 items-center justify-center rounded-full bg-(--c-raised) text-xs font-bold text-(--c-muted)"
       >
         {team.name.slice(0, 1)}
       </span>
@@ -235,7 +237,7 @@ export function ResBadge({ r, title }: { r: Res; title?: string }) {
       title={title ?? t(RES_WORD_KEY[r])}
       aria-label={t(RES_WORD_KEY[r])}
       style={{ background: `color-mix(in oklab, ${RES_COLOR[r]} 18%, transparent)`, color: RES_COLOR[r] }}
-      className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[11px] font-bold"
+      className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-xs font-bold"
     >
       {t(RES_LETTER_KEY[r])}
     </span>
@@ -258,7 +260,7 @@ export function VenueTag({ home }: { home: boolean }) {
   return (
     <span
       style={{ background: `color-mix(in oklab, ${c} 16%, transparent)`, color: c }}
-      className="inline-flex w-12 shrink-0 justify-center rounded-md py-0.5 text-[10px] font-semibold uppercase tracking-wide"
+      className="inline-flex w-12 shrink-0 justify-center rounded-md py-0.5 text-[11px] font-semibold uppercase tracking-wide"
     >
       {home ? t("mc.kit.home") : t("mc.kit.away")}
     </span>
@@ -275,7 +277,7 @@ export function ValueTag({ model, market, className = "" }: { model: number; mar
   const pos = d > 0;
   return (
     <span
-      className={`inline-flex items-center rounded-md px-1.5 py-0.5 text-[11px] font-semibold leading-tight ${className}`}
+      className={`inline-flex items-center rounded-md px-1.5 py-0.5 text-xs font-semibold leading-tight ${className}`}
       style={{
         background: `color-mix(in oklab, ${pos ? "var(--c-accent)" : "var(--c-warn)"} 16%, transparent)`,
         color: pos ? "var(--c-accent)" : "var(--c-warn)",
@@ -370,7 +372,7 @@ export function MirrorRow({
           <div className="h-full rounded-full" style={{ width: `${w(a)}%`, background: "var(--c-away)", opacity: lead === "home" ? 0.45 : 1 }} />
         </div>
       </div>
-      {note && <div className="mt-1 text-center text-[11px] text-(--c-faint)">{note}</div>}
+      {note && <div className="mt-1 text-center text-xs text-(--c-faint)">{note}</div>}
     </div>
   );
 }

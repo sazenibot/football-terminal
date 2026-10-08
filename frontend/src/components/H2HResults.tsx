@@ -96,7 +96,7 @@ export function H2HResults({
           </div>
         ))}
         {filtered.length === 0 && (
-          <p className="text-slate-500 light:text-slate-400 text-sm">{t("mx.h2hr.empty")}</p>
+          <p className="text-slate-400 light:text-slate-500 text-sm">{t("mx.h2hr.empty")}</p>
         )}
       </div>
       {hiddenCount > 0 && (
@@ -110,7 +110,7 @@ export function H2HResults({
       {expanded && filtered.length > 5 && (
         <button
           onClick={() => setExpanded(false)}
-          className="mt-3 text-sm text-slate-500 hover:text-slate-300 light:hover:text-slate-700 transition-colors"
+          className="mt-3 text-sm text-slate-400 light:text-slate-500 hover:text-slate-300 light:hover:text-slate-700 transition-colors"
         >
           {t("mx.h2hr.less")}
         </button>

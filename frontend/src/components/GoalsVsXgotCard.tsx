@@ -6,6 +6,7 @@ import { goalUnit } from "../lib/xgEfficiency";
 import { XGOT_WINDOW, pickWindow, rowsBefore, type SideWindow } from "../lib/pitchMatch";
 import { Pill, Section } from "./ui";
 import { intlTag, t } from "../i18n/locale";
+import { fmtDayMonth } from "../lib/format";
 
 const GAP = 0.15;
 const HOME_COLOR = "#34d399";
@@ -76,11 +77,11 @@ function Pair({ a, aLabel, b, bLabel }: { a: string; aLabel: string; b: string; 
     <div className="grid grid-cols-2 gap-2 text-center">
       <div className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-2">
         <div className="font-mono text-lg font-bold text-white light:text-slate-900">{a}</div>
-        <div className="text-xs text-slate-500 light:text-slate-400">{aLabel}</div>
+        <div className="text-xs text-slate-400 light:text-slate-500">{aLabel}</div>
       </div>
       <div className="bg-slate-900/50 light:bg-slate-100 rounded-lg py-2">
         <div className="font-mono text-lg font-bold text-sky-400 light:text-sky-600">{b}</div>
-        <div className="text-xs text-slate-500 light:text-slate-400">{bLabel}</div>
+        <div className="text-xs text-slate-400 light:text-slate-500">{bLabel}</div>
       </div>
     </div>
   );
@@ -93,7 +94,7 @@ function SideColumn({ team, label, w }: { team: TeamBrief; label: string; w: Win
       <div className="flex items-center gap-2">
         {team.image && <img src={team.image} alt="" className="h-6 w-6 object-contain" />}
         <span className="font-semibold text-white light:text-slate-900">{team.name}</span>
-        <span className="text-xs text-slate-500">
+        <span className="text-xs text-slate-400 light:text-slate-500">
           {label} · {windowLabel(w)}
         </span>
       </div>
@@ -102,15 +103,15 @@ function SideColumn({ team, label, w }: { team: TeamBrief; label: string; w: Win
       ) : (
         <>
           <div>
-            <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">{t("mc.st.grp.attack")}</div>
+            <div className="text-xs uppercase tracking-wide text-slate-400 light:text-slate-500 mb-1">{t("mc.st.grp.attack")}</div>
             <Pair a={String(tt.goals)} aLabel={t("mc.gx.goalsScored")} b={x2(tt.xgot)} bLabel="xGOT" />
             <p className="text-sm text-slate-300 light:text-slate-700 mt-2">{attackLine(team.name, w, tt)}</p>
           </div>
           <div>
-            <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">{t("mc.gx.goal")}</div>
+            <div className="text-xs uppercase tracking-wide text-slate-400 light:text-slate-500 mb-1">{t("mc.gx.goal")}</div>
             <Pair a={x2(tt.xgotFaced)} aLabel={t("mc.st.xgotAgainst")} b={String(tt.against)} bLabel={t("mc.gx.conceded")} />
             <p className="text-sm text-slate-300 light:text-slate-700 mt-2">{keeperLine(tt)}</p>
-            <p className="text-xs text-slate-500 mt-1">{savesLine(tt)}</p>
+            <p className="text-xs text-slate-400 light:text-slate-500 mt-1">{savesLine(tt)}</p>
           </div>
           {w.fallback && (
             <p className="text-xs text-amber-400/80 light:text-amber-700">
@@ -138,7 +139,7 @@ function chartPoints(hw: Window, aw: Window, mode: ChartMode): ChartPoint[] {
 }
 
 function rowLine(r: MatchRow, mode: ChartMode): string {
-  const day = new Date(r.date).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
+  const day = fmtDayMonth(r.date);
   const vs = `${r.home ? "vs" : "@"} ${r.opponent}`;
   return mode === "attack"
     ? t("mc.gx.row.attack", { day, vs, xgot: x2(r.xgot), goals: goalsOf(r), unit: goalUnit(goalsOf(r)) })
@@ -164,7 +165,7 @@ function XgotTrend({ home, away, hw, aw }: { home: TeamBrief; away: TeamBrief; h
   return (
     <div>
       <div className="flex items-center justify-between flex-wrap gap-2 mb-2">
-        <span className="text-xs text-slate-500">
+        <span className="text-xs text-slate-400 light:text-slate-500">
           {home.name} {windowLabel(hw)} · {away.name} {windowLabel(aw)}
         </span>
         <div className="flex gap-2">
@@ -198,7 +199,7 @@ function XgotTrend({ home, away, hw, aw }: { home: TeamBrief; away: TeamBrief; h
           </LineChart>
         </ResponsiveContainer>
       </div>
-      <p className="text-xs text-slate-500 mt-1">
+      <p className="text-xs text-slate-400 light:text-slate-500 mt-1">
         {mode === "attack"
           ? t("mc.gx.cap.attack")
           : t("mc.gx.cap.keeper")}

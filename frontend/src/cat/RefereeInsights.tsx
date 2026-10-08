@@ -37,7 +37,7 @@ function Cell({ title, value, base, n, digits }: { title: string; value: number 
         <span className="text-xl font-bold tabular-nums">{value == null ? "—" : fmtNum(value, digits)}</span>
         {!small && <Delta value={value} base={base} digits={digits} />}
       </div>
-      <div className="mt-1 text-[11px] text-(--c-faint)">
+      <div className="mt-1 text-xs text-(--c-faint)">
         {t("ct.nMatches", { n })}
         {base != null && ` · ${t("ct.ri.others", { v: fmtNum(base, digits) })}`}
         {small && ` · ${t("ct.ri.small")}`}
@@ -220,7 +220,7 @@ export function TeamLeaderboard({
             <span className="w-4 shrink-0 text-xs font-semibold tabular-nums text-(--c-faint)">{i + 1}.</span>
             <div className="min-w-0 flex-1">
               <div className="truncate text-[14px] font-semibold">{row.name}</div>
-              <div className="text-[11px] text-(--c-faint)">
+              <div className="text-xs text-(--c-faint)">
                 {t("ct.nMatches", { n: row.n })}
                 {effMode === "delta" && row.value != null && ` · ${t("ct.ri.lb.itemAvg", { v: fmtNum(row.value, digits) })}`}
                 {effMode === "avg" && row.delta != null && ` · ${t("ct.ri.lb.itemVs", { v: sign(row.delta) })}`}

@@ -29,7 +29,7 @@ function Side({ m, s }: { m: MatchData; s: SideTrends }) {
                   {p.name}
                 </Link>
                 {p.r && POS[p.r] && (
-                  <span className="shrink-0 rounded-md bg-(--c-raised) px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-(--c-muted)">{t(POS[p.r])}</span>
+                  <span className="shrink-0 rounded-md bg-(--c-raised) px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-(--c-muted)">{t(POS[p.r])}</span>
                 )}
               </div>
               {TREND_STATS.map((k) => {

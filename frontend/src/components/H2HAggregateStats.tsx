@@ -109,7 +109,7 @@ export function H2HAggregateStats({
     >
       <div className="flex flex-col gap-3 mb-4 text-sm">
         <div className="flex gap-3 flex-wrap items-center">
-          <span className="text-slate-500 light:text-slate-400 text-xs">{t("mx.h2hs.years")}</span>
+          <span className="text-slate-400 light:text-slate-500 text-xs">{t("mx.h2hs.years")}</span>
           <div className="flex gap-1.5">
             {years.map((y) => (
               <Pill key={y} active={selectedYears.has(y)} onClick={() => toggleYear(y)}>
@@ -119,7 +119,7 @@ export function H2HAggregateStats({
             {selectedYears.size > 0 && (
               <button
                 onClick={() => setSelectedYears(new Set())}
-                className="text-xs text-slate-500 hover:text-slate-300 light:hover:text-slate-700 underline"
+                className="text-xs text-slate-400 light:text-slate-500 hover:text-slate-300 light:hover:text-slate-700 underline"
               >
                 {t("mx.h2hs.clear")}
               </button>
@@ -127,7 +127,7 @@ export function H2HAggregateStats({
           </div>
         </div>
         <div className="flex gap-3 flex-wrap items-center">
-          <span className="text-slate-500 light:text-slate-400 text-xs">{t("mx.h2hs.coaches")}</span>
+          <span className="text-slate-400 light:text-slate-500 text-xs">{t("mx.h2hs.coaches")}</span>
           <select
             value={homeCoach}
             onChange={(e) => setHomeCoach(e.target.value)}
@@ -176,10 +176,10 @@ export function H2HAggregateStats({
         </div>
       </div>
       {filtered.length === 0 ? (
-        <p className="text-slate-500 light:text-slate-400 text-sm">{t("mx.h2hs.empty")}</p>
+        <p className="text-slate-400 light:text-slate-500 text-sm">{t("mx.h2hs.empty")}</p>
       ) : view === "table" ? (
         <div className="space-y-3">
-          <div className="grid grid-cols-[4.5rem_1fr_4.5rem] items-center text-[11px] uppercase tracking-wide text-slate-500 light:text-slate-400 px-1">
+          <div className="grid grid-cols-[4.5rem_1fr_4.5rem] items-center text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500 px-1">
             <span className="text-left truncate">{home.name}</span>
             <span className="text-center">{t("mx.h2hs.avgPerMatch")}</span>
             <span className="text-right truncate">{away.name}</span>
@@ -220,7 +220,7 @@ export function H2HAggregateStats({
             );
           })}
           {withXgot && (
-            <p className="text-xs text-slate-500 light:text-slate-400 pt-1">
+            <p className="text-xs text-slate-400 light:text-slate-500 pt-1">
               {t("mx.h2hs.xgotNote", { n: xgotCount, total: filtered.length })}
             </p>
           )}

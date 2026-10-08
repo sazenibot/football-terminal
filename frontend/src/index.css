@@ -162,8 +162,8 @@ html.light .stat-table-scroll::-webkit-scrollbar-thumb:hover {
   --c-raised: #1a2030;
   --c-line: #252c3d;
   --c-text: #e8eaf0;
-  --c-muted: #9aa3b8;
-  --c-faint: #667088;
+  --c-muted: #a9b1c5;
+  --c-faint: #838da3;
   --c-home: #38bdf8;
   --c-away: #c084fc;
   --c-win: #34d399;
@@ -180,14 +180,14 @@ html.light .mc2 {
   --c-raised: #eef1f6;
   --c-line: #dde2ea;
   --c-text: #131722;
-  --c-muted: #566074;
-  --c-faint: #8a93a6;
+  --c-muted: #4a5468;
+  --c-faint: #5f6a7e;
   --c-home: #0284c7;
   --c-away: #9333ea;
   --c-win: #059669;
   --c-draw: #64748b;
   --c-loss: #e11d48;
-  --c-accent: #059669;
+  --c-accent: #047857;
   --c-warn: #b45309;
 }
 .mc2 .clamp-4 {

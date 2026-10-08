@@ -10,6 +10,7 @@ import { formatDate } from "../lib/format";
 import { useCatalogReferee, useLeagueUniverse } from "../lib/useData";
 import { Card, Empty, Info, ProbBar, Stat } from "../mc2/kit";
 import type { CatalogRefereeDiscStat, CatalogRefereeMatch, CatalogRefereeSeason } from "../types";
+import { countryName } from "../components/Flag";
 
 type SeasonKey = "all" | number;
 const TABS = [
@@ -183,7 +184,7 @@ export function CatalogRefereePage() {
           sub={
             <>
               {primary.name}
-              {ref.country ? ` · ${ref.country}` : ""}
+              {ref.country ? ` · ${countryName(ref.country)}` : ""}
             </>
           }
           chips={
@@ -330,7 +331,7 @@ function MatchRows({ rows, pageSize = 25 }: { rows: CatalogRefereeMatch[]; pageS
         const body = (
           <div className="px-1 py-2.5 sm:flex sm:items-center sm:gap-3">
             <div className="min-w-0 flex-1">
-              <div className="text-[11px] text-(--c-faint)">{m.d ? formatDate(m.d) : "—"}</div>
+              <div className="text-xs text-(--c-faint)">{m.d ? formatDate(m.d) : "—"}</div>
               <div className="mt-0.5 grid grid-cols-[1fr_auto_1fr] items-center gap-2 text-[13px] sm:text-sm">
                 <span className="truncate text-right font-medium">{m.hn}</span>
                 <span className="rounded-md bg-(--c-raised) px-2 py-0.5 text-[13px] font-bold tabular-nums">
@@ -373,7 +374,7 @@ function Mini({ label, pair, total, tone }: { label: string; pair?: Array<number
   const sum = has ? (pair![0] as number) + (pair![1] as number) : total ?? null;
   return (
     <div className={`flex shrink-0 items-baseline justify-center gap-1.5 sm:block sm:text-center ${total === undefined ? "w-24 sm:w-[4.5rem]" : "w-16 sm:w-11"}`}>
-      <div className="text-[10px] uppercase tracking-wide text-(--c-faint)">{label}</div>
+      <div className="text-[11px] uppercase tracking-wide text-(--c-faint)">{label}</div>
       <div className="text-[14px] font-semibold tabular-nums" style={tone && sum ? { color: tone } : undefined}>
         {has ? (
           <>

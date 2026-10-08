@@ -9,7 +9,7 @@ import { isLiveLeague } from "../lib/pitchMatch";
 import { useDataIndex, useMatch } from "../lib/useData";
 import { MatchCenterPage } from "./MatchCenterPage";
 import { MatchPage } from "./MatchPage";
-import { intlTag } from "../i18n/locale";
+import { fmtDayLong, fmtTime } from "../lib/format";
 
 /**
  * Nový Match Center dostávají všechny zapnuté ligy. Chance Liga má navíc nový model a PitchAPI,
@@ -24,7 +24,7 @@ export function MatchRoute() {
 
   if (params.get("classic") === "1") return <MatchPage />;
   if (error || missing) return <MatchPage />;
-  if (!match || (!index && !indexError)) return <div className="flex min-h-[60vh] items-center justify-center text-slate-400">{t("future.loading")}</div>;
+  if (!match || (!index && !indexError)) return <div className="flex min-h-[60vh] items-center justify-center text-slate-400 light:text-slate-500">{t("future.loading")}</div>;
   const page = isLiveLeague(index?.leagues, match.league_id) ? <MatchCenterPage /> : <MatchPage />;
   return <FutureGuard match={match}>{page}</FutureGuard>;
 }
@@ -67,7 +67,7 @@ function FutureGuard({ match, children }: { match: MatchData; children: ReactNod
           {match.home.name} – {match.away.name}
         </h1>
         <p className="mt-1 text-sm text-(--c-muted)">
-          {new Date(match.starting_at).toLocaleString(intlTag(), { weekday: "long", day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" })}
+          {fmtDayLong(match.starting_at) + " " + fmtTime(match.starting_at)}
         </p>
       </div>
       <div className="mt-4">

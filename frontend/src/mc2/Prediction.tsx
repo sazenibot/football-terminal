@@ -31,7 +31,7 @@ function OutcomeCol({
         {pct(value)}
       </div>
       {market != null && (
-        <div className="mt-2 text-[11px] leading-snug text-(--c-muted)">
+        <div className="mt-2 text-xs leading-snug text-(--c-muted)">
           <div className="tabular-nums">
             {t("mc.pr.bookmaker", { p: pct(market) })}
             {odd != null && <span className="text-(--c-faint)"> · {t("mc.pr.odds", { v: n2(odd) })}</span>}
@@ -94,7 +94,7 @@ export function OutcomeBlock({ p, home, away }: { p: Prediction; home: TeamBrief
         <ProbBar home={p.home} draw={p.draw} away={p.away} />
       </div>
       {mk && (
-        <p className="mt-2 text-[11px] text-(--c-faint)">
+        <p className="mt-2 text-xs text-(--c-faint)">
           {t("mc.pr.bookmakerNote")}
         </p>
       )}
@@ -146,8 +146,8 @@ function MiniFact({ label, value, sub, tag }: { label: string; value: ReactNode;
   return (
     <div className="rounded-xl bg-(--c-raised) px-2 py-3 text-center">
       <div className="text-lg font-bold leading-none tabular-nums sm:text-xl">{value}</div>
-      <div className="mt-1.5 text-[11px] leading-tight text-(--c-muted)">{label}</div>
-      {sub && <div className="mt-0.5 text-[11px] text-(--c-faint)">{sub}</div>}
+      <div className="mt-1.5 text-xs leading-tight text-(--c-muted)">{label}</div>
+      {sub && <div className="mt-0.5 text-xs text-(--c-faint)">{sub}</div>}
       {tag && <div className="mt-1 flex justify-center">{tag}</div>}
     </div>
   );
@@ -176,13 +176,13 @@ function LineRow({
       <div className="grid grid-cols-[7rem_1fr_3.25rem] items-center gap-3">
         <span className={`text-sm ${emphasize ? "font-semibold" : "text-(--c-muted)"}`}>
           {label}
-          {badge && <span className="ml-1.5 rounded bg-(--c-accent)/15 px-1 py-px align-middle text-[10px] font-bold uppercase text-(--c-accent)">{badge}</span>}
+          {badge && <span className="ml-1.5 rounded bg-(--c-accent)/15 px-1 py-px align-middle text-[11px] font-bold uppercase text-(--c-accent)">{badge}</span>}
         </span>
         <MeterBar value={value} color={emphasize ? "var(--c-accent)" : "var(--c-faint)"} height={8} />
         <span className={`text-right text-sm tabular-nums ${emphasize ? "font-bold" : "text-(--c-muted)"}`}>{pct(value)}</span>
       </div>
       {market != null && (
-        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 pl-[7.75rem] text-[11px] text-(--c-faint)">
+        <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 pl-[7.75rem] text-xs text-(--c-faint)">
           <span className="tabular-nums">
             {t("mc.pr.bookmaker", { p: pct(market) })}
             {odd != null && <> · {t("mc.pr.odds", { v: n2(odd) })}</>}
@@ -295,7 +295,7 @@ export function ScorelinesBlock({ p }: { p: Prediction }) {
           <span className="text-right text-xs tabular-nums text-(--c-muted)">{pct(s.pct, 1)}</span>
         </div>
       ))}
-      <p className="pt-1 text-[11px] text-(--c-faint)">{t("mc.pr.scoreNote")}</p>
+      <p className="pt-1 text-xs text-(--c-faint)">{t("mc.pr.scoreNote")}</p>
     </div>
   );
 }

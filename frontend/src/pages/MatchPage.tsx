@@ -17,7 +17,8 @@ import { RefereeSection } from "../components/RefereeAndAbsences";
 import { AiAnalysisSection } from "../components/AiAnalysis";
 import { TrendmetrCard } from "../components/TrendmetrCard";
 import { GoalsVsXgotCard } from "../components/GoalsVsXgotCard";
-import { intlTag, t } from "../i18n/locale";
+import { t } from "../i18n/locale";
+import { fmtStamp } from "../lib/format";
 
 export function MatchPage() {
   const { fixtureId } = useParams();
@@ -83,7 +84,7 @@ export function MatchPage() {
       </div>
 
       <header className="card p-6 my-6 text-center">
-        <div className="text-xs text-slate-500 light:text-slate-500 mb-2">
+        <div className="text-xs text-slate-400 light:text-slate-500 mb-2">
           {m.league_name ? `${m.league_name} · ` : ""}
           {formatDateTimeLong(m.starting_at)} · {m.venue}
         </div>
@@ -97,7 +98,7 @@ export function MatchPage() {
             </span>
             {homeBadge ? <XgotBadgeChip badge={homeBadge} /> : null}
           </span>
-          <span className="text-slate-500 text-base font-normal shrink-0 mt-2">vs</span>
+          <span className="text-slate-400 light:text-slate-500 text-base font-normal shrink-0 mt-2">vs</span>
           <span className="flex flex-col items-start gap-1.5 min-w-0">
             <span className="flex items-center gap-2.5 min-w-0">
               {m.away.image && (
@@ -144,7 +145,7 @@ export function MatchPage() {
       <AiAnalysisSection analysis={m.ai_analysis} />
 
       <footer className="text-xs text-slate-600 text-center py-6">
-        {generatedAt ? t("mx.match.updated", { when: new Date(generatedAt).toLocaleString(intlTag()) }) : ""}
+        {generatedAt ? t("mx.match.updated", { when: fmtStamp(generatedAt) }) : ""}
       </footer>
     </div>
   );

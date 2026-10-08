@@ -2,7 +2,8 @@ import type { SimV2 } from "../components/SimulationV2";
 import type { XgotBadge } from "../lib/xgEfficiency";
 import type { FormSide, MatchData, MatchFacts } from "../types";
 import { n1, n2, pct, VALUE_THRESHOLD, type Res } from "./kit";
-import { intlTag, t } from "../i18n/locale";
+import { t } from "../i18n/locale";
+import { fmtTime } from "../lib/format";
 
 /* ---------- jednotná predikce (nový model nebo starší simulace jiných lig) ---------- */
 
@@ -107,7 +108,7 @@ export function kickoffLabel(iso: string, now = new Date()): { text: string; liv
   const k = new Date(iso);
   const diffMs = k.getTime() - now.getTime();
   const sameDay = k.toDateString() === now.toDateString();
-  const time = k.toLocaleTimeString(intlTag(), { hour: "2-digit", minute: "2-digit" });
+  const time = fmtTime(k);
   if (diffMs < -2.5 * 3600e3) return { text: t("mc.kick.played"), live: false };
   if (diffMs < 0) return { text: t("mc.kick.live"), live: true };
   if (sameDay) return { text: t("mc.kick.today", { time }), live: false };

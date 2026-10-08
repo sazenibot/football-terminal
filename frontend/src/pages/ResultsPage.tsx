@@ -5,7 +5,8 @@ import { Gate } from "../access/Gate";
 import { Frame, Pill, TD, TH, TableWrap } from "../cat/kit";
 import { Card, Disclosure, Empty, Info, Stat, n1, n2 } from "../mc2/kit";
 import { fmtDate, fmtDateTime, useBacktest, useTrackRecord, type Backtest as BacktestData, type LiveBook, type MatchTip, type SeasonRef, type TipCount, type TipOu, type TipSummary, type TipX } from "../site/data";
-import { intlTag, t, type Key } from "../i18n/locale";
+import { t, type Key } from "../i18n/locale";
+import { fmtDayMonth } from "../lib/format";
 
 const p1 = (x: number) => t("fmt.pct", { n: n1(x) });
 
@@ -20,7 +21,7 @@ const hitOu = (ou: TipOu, score: string) => (ou.k === "over" ? goalsOf(score) > 
 const ouKey = (ou: TipOu) => `res.tip.${ou.k === "over" ? "o" : "u"}${String(ouLine(ou)).replace(".", "")}` as Key;
 const share = (c: TipCount) => (c.n ? p1((100 * c.hits) / c.n) : "–");
 
-const fmtDay = (iso: string) => new Date(iso).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
+const fmtDay = (iso: string) => fmtDayMonth(iso);
 
 function Mark({ ok }: { ok: boolean }) {
   return <span style={{ color: ok ? "var(--c-win)" : "var(--c-loss)" }}>{ok ? "✓" : "✗"}</span>;
@@ -176,7 +177,7 @@ function Backtest({ slug, seasons, current, onPick }: { slug: string; seasons: S
         {seasons.map((s) => (
           <Choice key={s.file} active={s.file === current?.file} onClick={() => onPick(s.file)}>
             {seasonLabel(s.season)}
-            <span className="ml-1.5 text-[11px] text-(--c-faint)">{t(s.phase === "tuning" ? "res.bt.phase.tuning" : "res.bt.phase.validation")}</span>
+            <span className="ml-1.5 text-xs text-(--c-faint)">{t(s.phase === "tuning" ? "res.bt.phase.tuning" : "res.bt.phase.validation")}</span>
           </Choice>
         ))}
       </div>
@@ -251,7 +252,7 @@ function Calibration({ bins }: { bins: BacktestData["calibration"] }) {
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-(--c-faint)">
+      <div className="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-xs text-(--c-faint)">
         {rows.map((r) => (
           <span key={r.name}>
             {r.name}: {t("res.cal.count", { n: r.n })}
@@ -295,7 +296,7 @@ function Matches({ rows }: { rows: Row[] }) {
                   <td className={TD}>
                     {x && lbl ? (
                       <span title={p1(x.p)}>
-                        <span className="rounded bg-(--c-raised) px-1 text-[11px] font-semibold tabular-nums">{lbl.code}</span> {lbl.text}
+                        <span className="rounded bg-(--c-raised) px-1 text-xs font-semibold tabular-nums">{lbl.code}</span> {lbl.text}
                       </span>
                     ) : (
                       <span className="text-(--c-faint)">–</span>
@@ -344,7 +345,7 @@ function TipStat({ value, label, sub, hint }: { value: string; label: string; su
         {label}
         {hint && <Info>{hint}</Info>}
       </div>
-      {sub && <div className="mt-1 text-[11px] leading-snug text-(--c-faint)">{sub}</div>}
+      {sub && <div className="mt-1 text-xs leading-snug text-(--c-faint)">{sub}</div>}
     </div>
   );
 }

@@ -8,12 +8,14 @@ import { CatalogPlayerPage } from "./pages/CatalogPlayerPage";
 import { CatalogRefereePage } from "./pages/CatalogRefereePage";
 import { AllMatchesPage, MatchListPage } from "./pages/MatchListPage";
 import { ArticlePage, ArticlesPage } from "./pages/ArticlesPage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 import { PricingPage } from "./pages/PricingPage";
 import { ResultsPage } from "./pages/ResultsPage";
 import { LoginPage } from "./pages/LoginPage";
 import { LegalPage } from "./pages/LegalPage";
 import { AccessProvider } from "./access/AccessContext";
 import { ViewAsSwitcher } from "./access/ViewAsSwitcher";
+import { DEV_TOOLS, PRICING_OPEN } from "./lib/flags";
 import { SiteFooter, SiteNav, TopRight } from "./site/shell";
 import { Suspense, lazy, useEffect } from "react";
 import { Navigate as RawNavigate } from "react-router-dom";
@@ -21,6 +23,7 @@ import { lastLeagueId } from "./components/LeagueSwitcher";
 import { useDataIndex } from "./lib/useData";
 import { isLiveLeague } from "./lib/pitchMatch";
 import { LocaleProvider, seg, useLocale } from "./i18n";
+import { localizePath, t } from "./i18n/locale";
 
 /** Lab je jen pro vývoj. Dynamický import pod `import.meta.env.DEV` se v produkčním buildu odstraní celý. */
 const LabRoutes = import.meta.env.DEV ? lazy(() => import("./pages/LabRoutes")) : null;
@@ -35,6 +38,7 @@ function LeagueRoute() {
   const saved = lastLeagueId();
   const fallback = saved && isLiveLeague(index?.leagues, saved) ? saved : (index?.default_league_id ?? 262);
   const id = Number(leagueId) || fallback;
+  if (index && leagueId && !index.leagues.some((l) => l.id === id)) return <NotFoundPage text={t("nf.league")} />;
   return <MatchListPage leagueId={id} base="/league" />;
 }
 
@@ -46,6 +50,15 @@ function LabListRedirect() {
 function LabMatchRedirect() {
   const { fixtureId } = useParams();
   return <Navigate to={`/match/${fixtureId}`} replace />;
+}
+
+/** Neznámá adresa: když jen míchá jazyky (např. /cs/results), přesměruje na správný tvar, jinak 404. */
+function Fallback() {
+  const { pathname, search, hash } = useLocation();
+  const { locale } = useLocale();
+  const target = localizePath(pathname, locale);
+  if (target !== pathname) return <RawNavigate to={target + search + hash} replace />;
+  return <NotFoundPage />;
 }
 
 function ScrollTop() {
@@ -64,7 +77,7 @@ function AppRoutes() {
     <Routes>
       <Route path={p("clanky")} element={<ArticlesPage />} />
       <Route path={`${p("clanky")}/:slug`} element={<ArticlePage />} />
-      <Route path={p("tarify")} element={<PricingPage />} />
+      <Route path={p("tarify")} element={PRICING_OPEN ? <PricingPage /> : <Navigate to="/" replace />} />
       <Route path={p("vysledky")} element={<ResultsPage />} />
       <Route path={p("prihlaseni")} element={<LoginPage />} />
       <Route path={p("obchodni-podminky")} element={<LegalPage slug="obchodni-podminky" />} />
@@ -98,6 +111,7 @@ function AppRoutes() {
       <Route path="/lab/match-center-2/:fixtureId" element={<MatchCenterLabRedirect />} />
       <Route path="/lab/match" element={<Navigate to="/league/262" replace />} />
       <Route path="/lab/match/:fixtureId" element={<LabMatchRedirect />} />
+      <Route path="*" element={<Fallback />} />
     </Routes>
   );
 }
@@ -122,7 +136,7 @@ function Localized({ locale }: { locale: "cs" | "en" }) {
       <TopRight />
       <AppRoutes />
       <SiteFooter />
-      <ViewAsSwitcher />
+      {DEV_TOOLS && <ViewAsSwitcher />}
     </LocaleProvider>
   );
 }

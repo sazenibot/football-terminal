@@ -5,7 +5,8 @@ import type { MatchRow, PitchCatalogFile } from "../components/PitchCards";
 import { goalUnit } from "../lib/xgEfficiency";
 import { pickWindow, rowsBefore, type RadarView, type RadarXgot } from "../lib/pitchMatch";
 import { Card, Empty, Info, MirrorRow, Seg, SideHeads, SubTitle, TeamTitle, n2 } from "./kit";
-import { intlTag, t, type Key } from "../i18n/locale";
+import { t, type Key } from "../i18n/locale";
+import { fmtDayMonth } from "../lib/format";
 
 /* ---------- Srovnání týmů ---------- */
 
@@ -129,9 +130,9 @@ export function TeamCompareCard({ m, xgot }: { m: MatchData; xgot?: RadarXgot })
               </div>
             </div>
           ))}
-          {xgot && !xv && <p className="mt-3 text-[11px] text-(--c-faint)">{t("mc.st.cmp.noXgot")}</p>}
+          {xgot && !xv && <p className="mt-3 text-xs text-(--c-faint)">{t("mc.st.cmp.noXgot")}</p>}
           {xv && (view === "last3_h2h" || view === "last3_h2h_home_venue") && (
-            <p className="mt-3 text-[11px] text-(--c-faint)">{t("mc.st.cmp.xgotFrom", { n: xv.home.n })}</p>
+            <p className="mt-3 text-xs text-(--c-faint)">{t("mc.st.cmp.xgotFrom", { n: xv.home.n })}</p>
           )}
         </div>
       ) : (
@@ -161,7 +162,7 @@ export function TeamCompareCard({ m, xgot }: { m: MatchData; xgot?: RadarXgot })
               </RadarChart>
             </ResponsiveContainer>
           </div>
-          <p className="text-[11px] text-(--c-faint)">{t("mc.st.cmp.radarNote")}</p>
+          <p className="text-xs text-(--c-faint)">{t("mc.st.cmp.radarNote")}</p>
         </div>
       )}
     </Card>
@@ -257,7 +258,7 @@ function TeamChart({ team, side, rows, mode, total }: { team: TeamBrief; side: "
                   const p = active ? (payload?.[0]?.payload as Bar1 | undefined) : undefined;
                   if (!p) return null;
                   const r = p.row;
-                  const day = new Date(r.date).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
+                  const day = fmtDayMonth(r.date);
                   return (
                     <div className="rounded-lg border border-(--c-line) bg-(--c-raised) px-3 py-2 text-xs shadow-xl">
                       <div className="mb-1 font-semibold">
@@ -303,7 +304,7 @@ export function GoalsXgotCard({ m, homeFile, awayFile }: { m: MatchData; homeFil
         {verdicts(team.name, tt).map((v, i) => (
           <li key={i} className="flex flex-col items-start gap-1 text-[13px] leading-snug text-(--c-muted)">
             <span
-              className="rounded-md px-1.5 py-0.5 text-[11px] font-semibold leading-tight"
+              className="rounded-md px-1.5 py-0.5 text-xs font-semibold leading-tight"
               style={{ color: toneColor[v.tone], background: `color-mix(in oklab, ${toneColor[v.tone]} 16%, transparent)` }}
             >
               {verdictChip(i, v.tone)}
@@ -354,7 +355,7 @@ export function GoalsXgotCard({ m, homeFile, awayFile }: { m: MatchData; homeFil
           <TeamChart team={m.home} side="home" rows={hw.rows} mode={mode} total={ht} />
           <TeamChart team={m.away} side="away" rows={aw.rows} mode={mode} total={at} />
         </div>
-        <p className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-[11px] text-(--c-muted)">
+        <p className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-(--c-muted)">
           <span className="inline-flex items-center gap-1.5">
             <span aria-hidden className="inline-block h-2.5 w-2.5 rounded-sm bg-(--c-faint)" />
             {mode === "attack" ? t("mc.st.gx.actualFor") : t("mc.st.gx.actualAgainst")}

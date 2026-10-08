@@ -46,7 +46,7 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
       <header className="mb-4 pt-8">
         <div className="text-emerald-400 text-sm font-mono mb-1">MATCH CENTER</div>
         <h1 className="text-2xl font-bold text-white light:text-slate-900">Match Center</h1>
-        <p className="text-sm text-slate-500 light:text-slate-400 mt-1">{t("mx.round.lead", { n: index.window_days })}</p>
+        <p className="text-sm text-slate-400 light:text-slate-500 mt-1">{t("mx.round.lead", { n: index.window_days })}</p>
       </header>
       <LeagueSwitcher index={index} activeId={leagueId} />
       <StaleBanner generatedAt={data.generated_at} hours={index.stale_after_hours} />
@@ -75,7 +75,7 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
                     <img src={fx.home.image} alt="" className="h-6 w-6 object-contain shrink-0" />
                   )}
                 </div>
-                <div className="text-slate-500 text-xs px-1 shrink-0">vs</div>
+                <div className="text-slate-400 light:text-slate-500 text-xs px-1 shrink-0">vs</div>
                 <div className="flex-1 flex items-center gap-2 min-w-0">
                   {fx.away.image && (
                     <img src={fx.away.image} alt="" className="h-6 w-6 object-contain shrink-0" />
@@ -87,7 +87,7 @@ export function RoundPage({ leagueId }: { leagueId: number }) {
           })}
         </div>
       )}
-      <p className="text-xs text-slate-500 light:text-slate-400 mt-6">{t("mx.round.refresh")}</p>
+      <p className="text-xs text-slate-400 light:text-slate-500 mt-6">{t("mx.round.refresh")}</p>
     </div>
   );
 }

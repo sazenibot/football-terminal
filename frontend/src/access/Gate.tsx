@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Link } from "../i18n/router";
 import { t } from "../i18n/locale";
 import { useAccess } from "./AccessContext";
+import { PRICING_OPEN } from "../lib/flags";
 import { FEATURES, allows as tierAllows, tierName, type Feature, type Tier } from "./tiers";
 
 /** Odznak "kde to patří" u zamčených věcí. */
@@ -10,7 +11,7 @@ export function TierBadge({ tier, className = "" }: { tier: Tier; className?: st
   const pro = tier === "pro";
   return (
     <span
-      className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ${className}`}
+      className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide ${className}`}
       style={{
         color: pro ? "var(--c-away)" : "var(--c-accent)",
         background: `color-mix(in oklab, ${pro ? "var(--c-away)" : "var(--c-accent)"} 14%, transparent)`,
@@ -42,11 +43,15 @@ export function Paywall({ need, title, text, compact = false }: { need: Tier; ti
             {t("gate.register")}
           </Link>
         ) : (
-          <Link to="/tarify" className="inline-flex min-h-9 items-center rounded-xl btn-accent px-4 text-[13px] font-semibold hover:opacity-90">
-            {t("gate.seePlans")}
-          </Link>
+          PRICING_OPEN ? (
+            <Link to="/tarify" className="inline-flex min-h-9 items-center rounded-xl btn-accent px-4 text-[13px] font-semibold hover:opacity-90">
+              {t("gate.seePlans")}
+            </Link>
+          ) : (
+            <span className="inline-flex min-h-9 items-center rounded-xl border border-dashed border-(--c-line) px-4 text-[13px] text-(--c-muted)">{t("pricing.paymentsSoon")}</span>
+          )
         )}
-        {wantsAccount && tier === "anon" && (
+        {PRICING_OPEN && wantsAccount && tier === "anon" && (
           <Link to="/tarify" className="inline-flex min-h-9 items-center rounded-xl border border-(--c-line) px-4 text-[13px] font-medium text-(--c-text) hover:border-(--c-faint)">
             {t("gate.comparePlans")}
           </Link>

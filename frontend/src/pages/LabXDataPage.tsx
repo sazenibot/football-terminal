@@ -153,7 +153,7 @@ export function LabXDataPage() {
     );
   }
   if (!data) {
-    return <p className="max-w-5xl mx-auto py-16 px-4 pt-20 text-slate-400">Načítám xData…</p>;
+    return <p className="max-w-5xl mx-auto py-16 px-4 pt-20 text-slate-400 light:text-slate-500">Načítám xData…</p>;
   }
 
   const { match, xg, xgot, npxg } = data;
@@ -173,7 +173,7 @@ export function LabXDataPage() {
           {match.home.name} – {match.away.name} · {data.league} · {match.round}. kolo · {czDate(match.date)}
         </p>
         <p className="mt-3 text-sm text-slate-300 light:text-slate-600 max-w-2xl">{data.note}</p>
-        <p className="mt-1 text-[11px] font-mono text-slate-500">
+        <p className="mt-1 text-[11px] font-mono text-slate-400 light:text-slate-500">
           {data.source} {match.id} · {match.season} · {match.stadium}
         </p>
       </header>
@@ -185,7 +185,7 @@ export function LabXDataPage() {
             <p className="text-3xl font-bold tabular-nums text-white light:text-slate-900">
               {match.score.home}:{match.score.away}
             </p>
-            <p className="text-[11px] text-slate-500 mt-1">
+            <p className="text-[11px] text-slate-400 light:text-slate-500 mt-1">
               xG {fmt(xg.home)} – {fmt(xg.away)} · xGOT {fmt(xgot.home)} – {fmt(xgot.away)}
             </p>
           </div>
@@ -233,7 +233,7 @@ export function LabXDataPage() {
           <FilterPills value={filter} onChange={setFilter} />
         </div>
         <ShotPitch shots={visibleShots} hover={hover} onHover={setHover} />
-        <div className="mt-3 flex flex-wrap items-center gap-4 text-[11px] text-slate-500">
+        <div className="mt-3 flex flex-wrap items-center gap-4 text-[11px] text-slate-400 light:text-slate-500">
           <span className="inline-flex items-center gap-1.5">
             <i className="h-2.5 w-2.5 rounded-full bg-rose-500 inline-block" /> {match.home.short}
           </span>
@@ -255,14 +255,14 @@ export function LabXDataPage() {
       <section className="grid gap-3 lg:grid-cols-2">
         <article className="card p-4">
           <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-amber-400">Průchod brankou</p>
-          <p className="text-xs text-slate-500 mt-1 mb-3">
+          <p className="text-xs text-slate-400 light:text-slate-500 mt-1 mb-3">
             Kam míč mířil. Jen střely s xGOT nad nulou, góly a tyče. {mouth.length} z {data.shots.length}.
           </p>
           <GoalFrame shots={mouth} home={match.home.short} away={match.away.short} />
         </article>
         <article className="card p-4">
           <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-amber-400">Brankáři</p>
-          <p className="text-xs text-slate-500 mt-1 mb-3">xGOT, kterému čelili, mínus inkasované góly.</p>
+          <p className="text-xs text-slate-400 light:text-slate-500 mt-1 mb-3">xGOT, kterému čelili, mínus inkasované góly.</p>
           <KeeperRow side={data.keepers.home} team={match.home.short} />
           <KeeperRow side={data.keepers.away} team={match.away.short} />
         </article>
@@ -278,7 +278,7 @@ export function LabXDataPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-slate-500 border-y border-slate-800 light:border-slate-200">
+              <tr className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500 border-y border-slate-800 light:border-slate-200">
                 <th className="text-left font-medium pl-5 pr-2 py-2">Hráč</th>
                 <th className="font-medium text-center px-2">xG</th>
                 <th className="font-medium text-center px-2">G</th>
@@ -299,10 +299,10 @@ export function LabXDataPage() {
                   </td>
                   <td className="text-center tabular-nums px-2 text-white light:text-slate-900">{fmt(p.xg)}</td>
                   <td className="text-center tabular-nums px-2">{p.goals || "—"}</td>
-                  <td className="text-center tabular-nums px-2 text-slate-400">{p.shots || "—"}</td>
+                  <td className="text-center tabular-nums px-2 text-slate-400 light:text-slate-500">{p.shots || "—"}</td>
                   <td className="text-center tabular-nums px-2 text-slate-300 light:text-slate-700">{p.chances || "—"}</td>
-                  <td className="text-center tabular-nums px-2 text-slate-400">{p.touches_box || "—"}</td>
-                  <td className="text-center tabular-nums pr-5 text-slate-500">{p.minutes ?? "—"}</td>
+                  <td className="text-center tabular-nums px-2 text-slate-400 light:text-slate-500">{p.touches_box || "—"}</td>
+                  <td className="text-center tabular-nums pr-5 text-slate-400 light:text-slate-500">{p.minutes ?? "—"}</td>
                 </tr>
               ))}
             </tbody>
@@ -346,7 +346,7 @@ export function LabXDataPage() {
                 <tr key={row.key} className="border-t border-slate-800/70 light:border-slate-200">
                   <td className="px-5 py-1.5">
                     <span className="text-slate-200 light:text-slate-800">{row.label}</span>
-                    <span className="ml-2 text-[11px] text-slate-500">{row.group}</span>
+                    <span className="ml-2 text-[11px] text-slate-400 light:text-slate-500">{row.group}</span>
                   </td>
                   <td className="px-3 py-1.5 text-center tabular-nums text-rose-300 light:text-rose-700">{cellText(row.home)}</td>
                   <td className="px-5 py-1.5 text-center tabular-nums text-sky-300 light:text-sky-700">{cellText(row.away)}</td>
@@ -396,7 +396,7 @@ export function LabXDataPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="text-[11px] uppercase tracking-wide text-slate-500 border-y border-slate-800 light:border-slate-200">
+              <tr className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500 border-y border-slate-800 light:border-slate-200">
                 <th className="text-left font-medium pl-5 py-2">Min</th>
                 <th className="text-left font-medium px-2">Hráč</th>
                 <th className="font-medium text-center px-2">xG</th>
@@ -408,14 +408,14 @@ export function LabXDataPage() {
             <tbody>
               {data.shots.map((s, i) => (
                 <tr key={`${s.minute}-${s.player}-${i}`} className="border-b border-slate-800/60 light:border-slate-100 last:border-0">
-                  <td className="pl-5 py-1.5 tabular-nums text-slate-400">{s.minute}′</td>
+                  <td className="pl-5 py-1.5 tabular-nums text-slate-400 light:text-slate-500">{s.minute}′</td>
                   <td className="px-2 py-1.5">
                     <span className={`mr-2 inline-block h-2 w-2 rounded-full ${s.team === "home" ? "bg-rose-500" : "bg-sky-400"}`} />
                     <span className="text-white light:text-slate-900">{s.player}</span>
                   </td>
                   <td className="text-center tabular-nums px-2">{fmt(s.xg, 3)}</td>
                   <td className="text-center tabular-nums px-2">{fmt(s.xgot, 3)}</td>
-                  <td className="px-2 text-slate-400">
+                  <td className="px-2 text-slate-400 light:text-slate-500">
                     {s.situation} · {s.body}
                     {s.inside_box ? "" : " · mimo vápno"}
                   </td>
@@ -466,7 +466,7 @@ function TeamBlock({ team, align }: { team: Team; align: "left" | "right" }) {
       {team.image ? <img src={team.image} alt="" className="h-10 w-10 object-contain shrink-0" /> : null}
       <div className="min-w-0">
         <p className="font-semibold text-white light:text-slate-900 truncate">{team.name}</p>
-        <p className="text-[11px] text-slate-500">{team.formation}</p>
+        <p className="text-[11px] text-slate-400 light:text-slate-500">{team.formation}</p>
       </div>
     </div>
   );
@@ -490,13 +490,13 @@ function MetricCard({
   const max = Math.max(h, a, 0.01);
   return (
     <div className="card p-4">
-      <p className="text-[11px] uppercase tracking-wide text-slate-500">
+      <p className="text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500">
         {label}
         {hint ? <span className="normal-case tracking-normal"> · {hint}</span> : null}
       </p>
       <p className="mt-1 text-xl font-bold tabular-nums text-white light:text-slate-900">
         {fmt(home)}
-        <span className="text-slate-500 font-medium"> – </span>
+        <span className="text-slate-400 light:text-slate-500 font-medium"> – </span>
         {fmt(away)}
       </p>
       <div className="mt-2 space-y-1">
@@ -507,7 +507,7 @@ function MetricCard({
           <div className="h-full bg-sky-400" style={{ width: `${(a / max) * 100}%` }} />
         </div>
       </div>
-      {sub ? <p className="mt-2 text-[11px] text-slate-500">{sub}</p> : null}
+      {sub ? <p className="mt-2 text-[11px] text-slate-400 light:text-slate-500">{sub}</p> : null}
     </div>
   );
 }
@@ -524,7 +524,7 @@ function KeeperRow({
     <div className="flex items-center justify-between py-2 border-b border-slate-800/60 light:border-slate-100 last:border-0">
       <div>
         <p className="text-sm font-medium text-white light:text-slate-900">{side.name}</p>
-        <p className="text-[11px] text-slate-500">
+        <p className="text-[11px] text-slate-400 light:text-slate-500">
           {team} · xGOT {fmt(side.xgot_faced)} · inkasované {side.goals_conceded} · {side.saves ?? "—"} zákroky
         </p>
       </div>
@@ -628,7 +628,7 @@ function HeatPitch({
   const ch = H / grid.width;
   return (
     <div>
-      <p className="text-[11px] text-slate-500 mb-2">{team.actions} akcí</p>
+      <p className="text-[11px] text-slate-400 light:text-slate-500 mb-2">{team.actions} akcí</p>
       <svg viewBox={`0 0 ${W} ${H}`} className="w-full h-auto rounded-lg bg-emerald-950/80 light:bg-emerald-900" role="img" aria-label="Heatmapa">
         {team.cells.map(([x, y, n]) => (
           <rect

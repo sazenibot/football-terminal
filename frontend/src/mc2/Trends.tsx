@@ -96,7 +96,7 @@ function TrendRows({ items, min, scopeOf, fromData = false }: { items: TrendItem
                 <span className="text-[13px] leading-snug">
                   {sc && (
                     <span
-                      className="mr-2 inline-block rounded-md px-1.5 py-0.5 align-middle text-[10px] font-semibold leading-tight"
+                      className="mr-2 inline-block rounded-md px-1.5 py-0.5 align-middle text-xs font-semibold leading-tight"
                       style={{ color: sc.color, background: `color-mix(in oklab, ${sc.color} 16%, transparent)` }}
                     >
                       {sc.text}
@@ -106,7 +106,7 @@ function TrendRows({ items, min, scopeOf, fromData = false }: { items: TrendItem
                 </span>
                 {it.odds != null && (
                   <span
-                    className="shrink-0 rounded-md bg-(--c-raised) px-1.5 py-0.5 text-[11px] font-semibold tabular-nums text-(--c-muted)"
+                    className="shrink-0 rounded-md bg-(--c-raised) px-1.5 py-0.5 text-xs font-semibold tabular-nums text-(--c-muted)"
                     title={t("mc.tr.oddsTitle")}
                   >
                     {n2(it.odds)}
@@ -280,7 +280,7 @@ export function BetbuilderCard({ m }: { m: MatchData }) {
           <div key={row.team.id}>
             <div className="mb-2 flex items-center gap-2">
               <TeamTitle team={row.team} side={i === 0 ? "home" : "away"} />
-              <span className="text-[11px] text-(--c-faint)">{row.role === "doma" ? t("mc.kit.home") : t("mc.kit.away")}</span>
+              <span className="text-xs text-(--c-faint)">{row.role === "doma" ? t("mc.kit.home") : t("mc.kit.away")}</span>
             </div>
             <div className="grid grid-cols-5 gap-1.5">
               {TRENDMETR_METRICS.map((col) => {
@@ -308,7 +308,7 @@ export function BetbuilderCard({ m }: { m: MatchData }) {
                           : "border-(--c-line) bg-(--c-raised) hover:border-(--c-faint)"
                     }`}
                   >
-                    <span className="text-[10px] leading-tight text-(--c-muted)">
+                    <span className="text-xs leading-tight text-(--c-muted)">
                       {col.short}
                     </span>
                     <span className="mt-0.5 text-sm font-bold tabular-nums">

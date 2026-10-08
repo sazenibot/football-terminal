@@ -378,7 +378,6 @@ export function CatalogPlayerPage() {
       </div>
       </Gate>
 
-      <footer className="pt-8 text-center text-xs text-(--c-faint)">{t("ct.c.disclaimer")}</footer>
     </Frame>
   );
 }
@@ -434,7 +433,7 @@ function Kpi({ label, value, digits, rank, size }: { label: string; value: numbe
     <div className="rounded-xl bg-(--c-raised) px-3 py-3 text-center">
       <div className="text-xl font-bold leading-none tabular-nums">{fmtNum(value, digits)}</div>
       <div className="mt-1.5 text-xs text-(--c-muted)">{label}</div>
-      <div className="mt-0.5 h-4 text-[11px] font-semibold tabular-nums" style={rank != null ? { color: rankColor(rank, size) } : undefined}>
+      <div className="mt-0.5 h-4 text-xs font-semibold tabular-nums" style={rank != null ? { color: rankColor(rank, size) } : undefined}>
         {rank != null ? t("ct.kit.rankOf", { rank, size }) : ""}
       </div>
     </div>
@@ -464,7 +463,7 @@ function Strengths({ slice, role, pool, onMore }: { slice: CatalogPlayerMatch[];
     <li key={r.def.key} className="flex items-center gap-3 py-2">
       <span className="min-w-0 flex-1">
         <span className="block truncate text-[13px] font-medium">{r.def.label}</span>
-        <span className="text-[11px] text-(--c-faint)">
+        <span className="text-xs text-(--c-faint)">
           {fmtNum(r.value)}
           {r.def.asPct ? pctSuffix() : ""} · {t("ct.pl.roleAvg", { v: fmtNum(r.avg) })}
         </span>
@@ -522,11 +521,11 @@ function FdrCard({ title, color, role, rows }: { title: string; color: string; r
         {pair.map((p) => (
           <div key={p.label}>
             <div className="text-xl font-bold tabular-nums">{fmtNum(p.value)}</div>
-            <div className="text-[11px] text-(--c-muted)">{p.label}</div>
+            <div className="text-xs text-(--c-muted)">{p.label}</div>
           </div>
         ))}
       </div>
-      <div className="mt-2 text-[11px] text-(--c-faint)">
+      <div className="mt-2 text-xs text-(--c-faint)">
         {rows.length} {csMatches(rows.length)} · {fmtNum(mn, 0)} min
       </div>
     </div>
@@ -719,7 +718,7 @@ function MatchRows({ rows, role, teamId }: { rows: CatalogPlayerMatch[]; role: C
             <div className="flex items-center gap-2">
               <ResBadge r={res} />
               <div className="min-w-0 flex-1">
-                <div className="flex items-center gap-1.5 text-[11px] text-(--c-faint)">
+                <div className="flex items-center gap-1.5 text-xs text-(--c-faint)">
                   <span>{m.d ? formatDate(m.d) : "—"}</span>
                   <VenueTag home={!!m.h} />
                   {m.tn && m.tid !== teamId && <span className="truncate">{t("ct.pl.for", { team: m.tn })}</span>}
@@ -733,12 +732,12 @@ function MatchRows({ rows, role, teamId }: { rows: CatalogPlayerMatch[]; role: C
               </div>
               {cols.map((c) => (
                 <div key={c.key} className={`w-8 shrink-0 text-center ${c.key === "f" ? "sm:w-11" : "sm:w-10"} ${c.inline ? "" : "hidden sm:block"}`}>
-                  <div className="text-[10px] uppercase tracking-wide text-(--c-faint)">{c.label}</div>
+                  <div className="text-[11px] uppercase tracking-wide text-(--c-faint)">{c.label}</div>
                   <div className={`text-[14px] tabular-nums ${val(m, c.key) ? "font-semibold" : "text-(--c-faint)"}`}>{val(m, c.key) ?? "–"}</div>
                 </div>
               ))}
             </div>
-              <div className="mt-1 flex flex-wrap gap-x-2.5 gap-y-0.5 pl-9 text-[11px] text-(--c-faint) sm:hidden">
+              <div className="mt-1 flex flex-wrap gap-x-2.5 gap-y-0.5 pl-9 text-xs text-(--c-faint) sm:hidden">
                 {cols
                   .filter((c) => !c.inline)
                   .map((c) => (

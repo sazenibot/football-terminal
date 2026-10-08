@@ -34,7 +34,7 @@ function oddsLabel(odds?: number | null): string | null {
 function TrendList({ items, threshold }: { items: TrendItem[]; threshold: number }) {
   const shown = items.filter((i) => i.pct >= threshold);
   if (shown.length === 0) {
-    return <p className="text-slate-500 light:text-slate-400 text-sm">{t("mx.trend.none", { n: threshold })}</p>;
+    return <p className="text-slate-400 light:text-slate-500 text-sm">{t("mx.trend.none", { n: threshold })}</p>;
   }
   return (
     <div className="divide-y divide-slate-800 light:divide-slate-200">
@@ -49,7 +49,7 @@ function TrendList({ items, threshold }: { items: TrendItem[]; threshold: number
         return (
           <div key={item.key} className="flex items-center gap-3 py-2 text-sm">
             <span className="flex-1 text-slate-200 light:text-slate-800">{dataLabel(item.label)}</span>
-            <span className="font-mono text-xs text-slate-500 light:text-slate-500 w-12 text-right">
+            <span className="font-mono text-xs text-slate-400 light:text-slate-500 w-12 text-right">
               {item.hits}/{item.total}
             </span>
             <span className={`badge w-12 justify-center ${tone}`}>{item.pct.toLocaleString(intlTag())}%</span>
@@ -81,7 +81,7 @@ export function TrendsTeamSection({
       note={t("mx.trend.teamNote")}
     >
       <ThresholdPills threshold={threshold} setThreshold={setThreshold} />
-      <div className="grid grid-cols-[1fr_3rem_3.25rem_3.5rem] text-[11px] uppercase tracking-wide text-slate-500 px-0 mb-1">
+      <div className="grid grid-cols-[1fr_3rem_3.25rem_3.5rem] text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500 px-0 mb-1">
         <span />
         <span className="text-right">{t("mx.trend.hits")}</span>
         <span className="text-center">%</span>
@@ -145,7 +145,7 @@ export function TrendsH2HSection({
         </Pill>
       </div>
       <ThresholdPills threshold={threshold} setThreshold={setThreshold} />
-      <div className="grid grid-cols-[1fr_3rem_3.25rem_3.5rem] text-[11px] uppercase tracking-wide text-slate-500 mb-1">
+      <div className="grid grid-cols-[1fr_3rem_3.25rem_3.5rem] text-[11px] uppercase tracking-wide text-slate-400 light:text-slate-500 mb-1">
         <span />
         <span className="text-right">{t("mx.trend.hits")}</span>
         <span className="text-center">%</span>

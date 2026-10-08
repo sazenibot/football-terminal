@@ -10,7 +10,7 @@ export function XgotBadgeChip({ badge, showWindow = false }: { badge: XgotBadge;
   return (
     <span
       title={badge.tooltip}
-      className={`inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold ring-1 ${tone}`}
+      className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-semibold ring-1 ${tone}`}
     >
       {badge.label}
       {showWindow ? <span className="ml-1 font-medium opacity-70">· {windowHint}</span> : null}

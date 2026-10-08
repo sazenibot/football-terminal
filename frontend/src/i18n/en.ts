@@ -15,8 +15,7 @@ const enBase: Record<keyof typeof csBase, string> = {
 
   "theme.toDark": "Switch to dark mode",
   "theme.toLight": "Switch to light mode",
-  "theme.light": "Light",
-  "theme.dark": "Dark",
+  "theme.toAuto": "Switch to automatic mode (follows your system)",
 
   /* ---------- menu and footer ---------- */
   "nav.aria": "Main menu",
@@ -189,7 +188,7 @@ const enBase: Record<keyof typeof csBase, string> = {
   "home.hero.accent": "data",
   "home.hero.post": " sees it.",
   "home.hero.text":
-    "We see in the data what others miss. Forget ordinary results tables. We go far beyond the numbers, uncovering hidden patterns in playing styles, referee influence and long-running historical trends that can give you a real edge.",
+    "Model probabilities, trends and a catalog of teams, players and referees in one place. See what is behind the results.",
   "home.cta.mc": "Open Match Center",
   "home.cta.mcSub": "Detailed match analysis for the next 7 days",
   "home.cta.catalog": "Data catalog",
@@ -236,7 +235,7 @@ const enBase: Record<keyof typeof csBase, string> = {
   "home.guides.minutes": "{n} min read",
   "home.pricing.title": "Pricing",
   "home.pricing.more": "Detailed comparison →",
-  "home.pricing.note": "Prices and the split of features are illustrative for now.",
+  "home.pricing.note": "Plans are coming soon. The feature split may still change.",
   "home.pricing.anon.1": "Match Center from yesterday backwards",
   "home.pricing.anon.2": "The first two sections of each catalog profile",
   "home.pricing.anon.3": "Basic articles",
@@ -252,7 +251,7 @@ const enBase: Record<keyof typeof csBase, string> = {
 
   /* ---------- Match Center: match list ---------- */
   "list.title": "Match Center",
-  "list.lead": "Matches in the next {n, plural, one {# day} other {# days}}. Click a match to open the analysis.",
+  "list.lead": "Matches in the next {n, plural, one {# day} other {# days}}. Select a match for the analysis.",
   "list.error": "We could not load the data. Please try again in a moment.",
   "list.stale": "The data is older than the daily interval (last checked {when}).",
   "list.soonTitle": "{league}: coming soon",
@@ -263,7 +262,7 @@ const enBase: Record<keyof typeof csBase, string> = {
   "list.today": "today",
   "list.tomorrow": "tomorrow",
   "list.all": "All matches",
-  "list.allLead": "Matches from all competitions in the next {n, plural, one {# day} other {# days}}. Click a match to open the analysis.",
+  "list.allLead": "Matches from all competitions in the next {n, plural, one {# day} other {# days}}. Select a match for the analysis.",
   "list.sort.label": "Sort",
   "list.sort.time": "By kick-off",
   "list.sort.prob": "By win chance",

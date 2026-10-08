@@ -18,8 +18,8 @@ export function Metric({
   return (
     <div className="rounded-lg bg-slate-900/40 light:bg-slate-100 px-3 py-3 text-center">
       <div className="text-xl font-semibold text-white light:text-slate-900">{shown}</div>
-      <div className="text-xs text-slate-500 mt-1">{label}</div>
-      {sub && <div className="text-[11px] text-slate-500 mt-0.5">{sub}</div>}
+      <div className="text-xs text-slate-400 light:text-slate-500 mt-1">{label}</div>
+      {sub && <div className="text-xs text-slate-400 light:text-slate-500 mt-0.5">{sub}</div>}
     </div>
   );
 }
@@ -49,13 +49,13 @@ export function UpcomingList({ items }: { items: CatalogUpcoming[] }) {
       {items.map((fx) => {
         const inner = (
           <div className="flex items-center gap-3 text-sm">
-            <span className="text-slate-500 w-32 shrink-0">
+            <span className="text-slate-400 light:text-slate-500 w-32 shrink-0">
               {fx.starting_at ? formatDateTime(fx.starting_at) : "—"}
             </span>
-            <span className="text-slate-400 w-12">{fx.is_home ? t("ct.cs.home") : t("ct.cs.away")}</span>
+            <span className="text-slate-400 light:text-slate-500 w-12">{fx.is_home ? t("ct.cs.home") : t("ct.cs.away")}</span>
             <span className="text-white light:text-slate-900 flex-1">{fx.opponent.name}</span>
             {fx.opponent_position != null && (
-              <span className={`text-xs ${FDR_CLASS[fx.fdr || ""] || "text-slate-500"}`}>
+              <span className={`text-xs ${FDR_CLASS[fx.fdr || ""] || "text-slate-400 light:text-slate-500"}`}>
                 {ord(fx.opponent_position)}
                 {fx.fdr ? ` · ${t(FDR_LABEL[fx.fdr])}` : ""}
               </span>
@@ -90,10 +90,10 @@ export function RecentList({ items }: { items: CatalogRecentMatch[] }) {
         const inner = (
           <div className="flex items-center gap-3 text-sm">
             <ResultBadge result={fx.result} />
-            <span className="text-slate-500 w-24 shrink-0">
+            <span className="text-slate-400 light:text-slate-500 w-24 shrink-0">
               {fx.starting_at ? formatDate(fx.starting_at) : "—"}
             </span>
-            <span className="text-slate-400 w-12">{fx.is_home ? t("ct.cs.home") : t("ct.cs.away")}</span>
+            <span className="text-slate-400 light:text-slate-500 w-12">{fx.is_home ? t("ct.cs.home") : t("ct.cs.away")}</span>
             <span className="flex-1 text-white light:text-slate-900">{fx.opponent.name}</span>
             <span className="font-mono text-white light:text-slate-900">
               {fx.gf}:{fx.ga}

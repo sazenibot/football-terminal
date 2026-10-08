@@ -5,6 +5,7 @@ import { finishingLead, xgotEfficiencyBadge } from "../lib/xgEfficiency";
 import { Card, Chip, Disclosure, Empty, Info, Seg, Stat, VenueTag, n1, n2 } from "../mc2/kit";
 import { Pill } from "./kit";
 import { intlTag, t } from "../i18n/locale";
+import { fmtDayMonth } from "../lib/format";
 
 /* Grafy z PitchAPI v jazyce Match Center: barvy z témat (světlý i tmavý režim), ovládání z mc2/kit,
    čísla nahoře, graf pod nimi. Jedna sezóna na kartu, výběr sezóny řeší stránka. */
@@ -24,7 +25,7 @@ const signed = (n: number) => `${n > 0 ? "+" : n < 0 ? "−" : ""}${n2(Math.abs(
 /** Datum bez roku: česky „6. 10.“, anglicky „06/10“. */
 const czDate = (iso: string) => {
   const [, m, d] = iso.split("-");
-  return new Date(2000, Number(m) - 1, Number(d)).toLocaleDateString(intlTag(), { day: "numeric", month: "numeric" });
+  return fmtDayMonth(new Date(2000, Number(m) - 1, Number(d)));
 };
 const side = (home: boolean) => (home ? t("ct.pv.atHome") : t("ct.pv.atAway"));
 const tone = (d: number, eps = 0.15) => (d > eps ? "var(--c-win)" : d < -eps ? "var(--c-loss)" : "var(--c-muted)");

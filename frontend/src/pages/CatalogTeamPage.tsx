@@ -13,6 +13,8 @@ import { Card, Empty, FormDots, Info, ResBadge, Seg, Stat, VenueTag, type Res } 
 import type { CatalogProfileStat, CatalogSquadPlayer, CatalogTeamCoach, CatalogTeamDetail, CatalogUpcoming } from "../types";
 import { intlTag, t, type Key } from "../i18n/locale";
 import { dataLabel } from "../i18n/dataText";
+import { fmtWeekdayDate } from "../lib/format";
+import { fmtDate } from "../lib/format";
 
 const TABS = [
   { id: "overview", label: "ct.team.tab.overview" },
@@ -64,7 +66,7 @@ function daysSince(start?: string | null): number | null {
 /** Datum nástupu: česky „5. 10. 2025“, anglicky „05/10/2025“. */
 function startDate(start: string): string {
   const [y, m, d] = start.slice(0, 10).split("-").map(Number);
-  return new Date(y, (m || 1) - 1, d || 1).toLocaleDateString(intlTag());
+  return fmtDate(new Date(y, (m || 1) - 1, d || 1));
 }
 
 function tenure(days: number): string {
@@ -147,7 +149,6 @@ export function CatalogTeamPage() {
           }
           chips={
             <>
-              {team.short && <Pill tone="var(--c-muted)">{team.short}</Pill>}
               {badge && <LuckChip badge={badge} />}
             </>
           }
@@ -185,7 +186,6 @@ export function CatalogTeamPage() {
       </div>
       </Gate>
 
-      <footer className="pt-8 text-center text-xs text-(--c-faint)">{t("ct.c.disclaimer")}</footer>
     </Frame>
   );
 }
@@ -220,7 +220,7 @@ function Overview({ team, stats, onMore }: { team: CatalogTeamDetail; stats: Cat
                     <span className="shrink-0 text-[13px] font-bold tabular-nums">
                       {r.gf}:{r.ga}
                     </span>
-                    <span className="hidden w-16 shrink-0 text-right text-[11px] text-(--c-faint) sm:block">{r.starting_at ? formatDate(r.starting_at) : ""}</span>
+                    <span className="hidden w-16 shrink-0 text-right text-xs text-(--c-faint) sm:block">{r.starting_at ? formatDate(r.starting_at) : ""}</span>
                   </div>
                 );
                 return (
@@ -262,7 +262,7 @@ function CoachCard({ coach }: { coach: CatalogTeamCoach | null }) {
     <div className="flex items-center gap-4 rounded-xl bg-(--c-raised) px-4 py-3">
       <Avatar src={coach.image} name={coach.name} size={64} />
       <div className="min-w-0">
-        <div className="text-[10px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("ct.team.headCoach")}</div>
+        <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("ct.team.headCoach")}</div>
         <div className="mt-0.5 text-[17px] font-bold leading-tight">{coach.name}</div>
         <div className="mt-0.5 text-xs text-(--c-muted)">
           {coach.start
@@ -280,7 +280,7 @@ function FdrLegend() {
   return (
     <div className="flex items-center gap-1" aria-hidden>
       {[1, 2, 3, 4, 5].map((n) => (
-        <span key={n} className="flex h-5 w-5 items-center justify-center rounded text-[10px] font-bold" style={{ background: FDR_STYLE[n].bg, color: FDR_STYLE[n].fg }}>
+        <span key={n} className="flex h-5 w-5 items-center justify-center rounded text-xs font-bold" style={{ background: FDR_STYLE[n].bg, color: FDR_STYLE[n].fg }}>
           {n}
         </span>
       ))}
@@ -296,8 +296,8 @@ function UpcomingRow({ fx }: { fx: CatalogUpcoming }) {
       <Crest src={fx.opponent.image} name={fx.opponent.name} size={22} />
       <div className="min-w-0 flex-1">
         <div className="truncate text-[13px] font-medium">{fx.opponent.name}</div>
-        <div className="text-[11px] text-(--c-faint)">
-          {fx.starting_at ? new Date(fx.starting_at).toLocaleDateString(intlTag(), { weekday: "short", day: "numeric", month: "numeric" }) : "—"}
+        <div className="text-xs text-(--c-faint)">
+          {fx.starting_at ? fmtWeekdayDate(fx.starting_at) : "—"}
           {fx.opponent_position != null ? ` · ${t("ct.team.oppPos", { n: fx.opponent_position })}` : ""}
         </div>
       </div>
@@ -337,7 +337,7 @@ function Strengths({ stats, onMore }: { stats: CatalogProfileStat[]; onMore: () 
     <li key={s.key} className="flex items-center gap-3 py-2">
       <span className="min-w-0 flex-1">
         <span className="block truncate text-[13px] font-medium">{dataLabel(s.label)}</span>
-        <span className="text-[11px] text-(--c-faint)">
+        <span className="text-xs text-(--c-faint)">
           {fmtNum(s.value)} · {t("ct.kit.leagueAvg", { v: fmtNum(s.league_avg) })}
         </span>
       </span>
@@ -458,7 +458,7 @@ function SquadCard({ players }: { players: CatalogSquadPlayer[] }) {
                 {g.label} <span className="ml-1 tabular-nums">{g.players.length}</span>
               </h3>
               {anyStats && (
-                <div className="flex gap-3 pr-6 text-[10px] uppercase tracking-wide text-(--c-faint)">
+                <div className="flex gap-3 pr-6 text-[11px] uppercase tracking-wide text-(--c-faint)">
                   <span className="w-8 text-center">{t("ct.team.colApps")}</span>
                   <span className="w-8 text-center">G</span>
                   <span className="w-8 text-center">A</span>
@@ -473,7 +473,7 @@ function SquadCard({ players }: { players: CatalogSquadPlayer[] }) {
                     <Avatar src={p.image} name={p.name} size={32} />
                     <span className="min-w-0 flex-1 truncate text-[14px] font-medium">
                       {p.name}
-                      {p.captain && <span className="ml-1.5 text-[10px] font-bold" style={{ color: "var(--c-warn)" }}>C</span>}
+                      {p.captain && <span className="ml-1.5 text-xs font-bold" style={{ color: "var(--c-warn)" }}>C</span>}
                     </span>
                     {anyStats && (
                       <span className="flex gap-3 text-[13px] tabular-nums text-(--c-muted)">

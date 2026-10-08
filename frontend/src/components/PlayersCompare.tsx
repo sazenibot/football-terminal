@@ -195,7 +195,7 @@ function PlayerTable({
     return (
       <div>
         <h3 className="font-medium text-white light:text-slate-900 mb-2">{teamLabel}</h3>
-        <p className="text-slate-500 light:text-slate-400 text-sm py-4">{t("mx.pl.empty")}</p>
+        <p className="text-slate-400 light:text-slate-500 text-sm py-4">{t("mx.pl.empty")}</p>
       </div>
     );
   }
@@ -225,10 +225,10 @@ function PlayerTable({
             {sortedRows.map(({ p, team, v }) => (
               <tr key={`${team.id}-${p.id}`} className="border-b border-slate-900 light:border-slate-100 hover:bg-slate-900/40 light:hover:bg-slate-50">
                 <td className="py-1.5 pl-3 pr-3 sticky left-0 bg-[#12161f] light:bg-white text-slate-100 light:text-slate-800">
-                  <span className="text-slate-500 mr-1.5">{p.jersey_number ?? "—"}</span>
+                  <span className="text-slate-400 light:text-slate-500 mr-1.5">{p.jersey_number ?? "—"}</span>
                   {shortName(p.name)}
                   {showTeamTag && (
-                    <span className="ml-2 inline-flex items-center gap-1 text-[10px] font-light text-slate-500 light:text-slate-400">
+                    <span className="ml-2 inline-flex items-center gap-1 text-xs font-light text-slate-400 light:text-slate-500">
                       {team.image && (
                         <img src={team.image} alt="" className="w-3.5 h-3.5 object-contain inline-block" />
                       )}
@@ -246,7 +246,7 @@ function PlayerTable({
           </tbody>
         </table>
       </ScrollSyncTable>
-      <p className="text-[11px] text-slate-600 light:text-slate-400 mt-1">
+      <p className="text-xs text-slate-400 light:text-slate-500 mt-1">
         {t("mx.pl.hint")}
       </p>
     </div>
