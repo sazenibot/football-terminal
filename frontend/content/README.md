@@ -64,3 +64,7 @@ Dvě až tři věty. Odkaz `link` je volitelný.
 - Piště česky bez zbytečných anglicismů, krátké věty, mezititulky `##`.
 - Čísla z modelu vždy s kontextem (velikost vzorku, období). Nic neslibujeme, nejde o sázkové doporučení.
 - Obrázky zatím nepoužíváme. Až přibudou, patří do `frontend/public/content/` a odkazují se jako `/content/nazev.png`.
+
+## RSS
+
+Při buildu se z publikovaných článků vytváří RSS kanály `/rss.xml` (angličtina) a `/cs/rss.xml` (čeština). Odkaz na ně je v `<head>` každé stránky. U článků se zámkem jde do kanálu jen perex (`excerpt`). Nic dalšího není potřeba dělat.

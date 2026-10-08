@@ -180,6 +180,7 @@ function render(page) {
     url ? `<link rel="canonical" href="${url}" />` : "",
     url ? `<meta property="og:url" content="${url}" />` : "",
     ...alternates,
+    SITE ? `<link rel="alternate" type="application/rss+xml" title="${esc(COPY[page.loc].brand)}" href="${SITE}${prefix(page.loc)}/rss.xml" />` : "",
   ]
     .filter(Boolean)
     .join("\n    ");
@@ -195,6 +196,28 @@ for (const page of pages) {
   const out = page.path === "/" ? join(dist, "index.html") : join(dist, `${page.path.replace(/\/$/, "")}.html`);
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, render(page));
+}
+
+/* RSS kanál článků (jeden na jazyk): /rss.xml (angličtina) a /cs/rss.xml (čeština). U článků se zámkem jen perex. */
+const rfc822 = (d) => new Date(d).toUTCString();
+function rssFor(loc) {
+  const P = prefix(loc);
+  const arts = articlesFor(loc);
+  const items = arts
+    .map((a) => {
+      const url = `${SITE}${P}/${seg(loc, "clanky")}/${a.slug}`;
+      return `    <item>\n      <title>${esc(a.title)}</title>\n      <link>${url}</link>\n      <guid isPermaLink="true">${url}</guid>\n      <pubDate>${rfc822(a.date)}</pubDate>\n      <category>${esc(a.category || "")}</category>\n      <description>${esc(a.excerpt || a.title)}</description>\n    </item>`;
+    })
+    .join("\n");
+  const c = COPY[loc];
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n  <channel>\n    <title>${esc(c.brand)}: ${esc(c.articles.title)}</title>\n    <link>${SITE}${P || "/"}</link>\n    <description>${esc(c.articles.description)}</description>\n    <language>${loc === "cs" ? "cs-cz" : "en-gb"}</language>\n    <lastBuildDate>${rfc822(arts[0]?.date ?? Date.now())}</lastBuildDate>\n    <atom:link href="${SITE}${P}/rss.xml" rel="self" type="application/rss+xml" />\n${items}\n  </channel>\n</rss>\n`;
+}
+if (SITE) {
+  for (const loc of ["en", "cs"]) {
+    const out = join(dist, loc === "cs" ? "cs" : "", "rss.xml");
+    mkdirSync(dirname(out), { recursive: true });
+    writeFileSync(out, rssFor(loc));
+  }
 }
 
 if (SITE && INDEXABLE) {
