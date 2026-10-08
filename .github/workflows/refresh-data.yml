@@ -2,10 +2,14 @@ name: Refresh data
 
 on:
   schedule:
-    # Cíl: 02:00 středoevropského času. GitHub cron jde jen v UTC, tak spouštíme ve 00:00 i 01:00 UTC
-    # a krok "Gate" nechá projít jen běh, který je v Praze právě v 02:xx (léto 00:00 UTC, zima 01:00 UTC).
+    # Cíl: co nejdřív po 02:00 středoevropského času. GitHub cron jde jen v UTC a plánované běhy často startují
+    # s hodinami zpoždění (v říjnu 2026 o 3 až 7 hodin), proto je spouštíme každou hodinu mezi 00:00 a 08:00 UTC
+    # a krok "Gate" pustí první běh po 02:00 Praha, pokud dnes (pražský den) ještě neproběhl refresh.
     - cron: "0 0 * * *"
     - cron: "0 1 * * *"
+    - cron: "0 3 * * *"
+    - cron: "0 5 * * *"
+    - cron: "0 7 * * *"
   workflow_dispatch:
 
 permissions:
@@ -25,14 +29,26 @@ jobs:
     outputs:
       run: ${{ steps.gate.outputs.run }}
     steps:
-      - name: Gate (02:00 Praha)
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 200
+      - name: Gate (první běh po 02:00 Praha, jednou denně)
         id: gate
         run: |
           hour=$(TZ=Europe/Prague date +%H)
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$hour" != "02" ]; then
-            echo "Praha $hour:xx, tohle není 02:00, přeskakuju"
+          today=$(TZ=Europe/Prague date +%F)
+          last=$(TZ=Europe/Prague git log -1 --grep='^data: denní refresh' --format=%cd --date=format-local:%F || true)
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "ruční spuštění, běží"
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "$hour" -lt 2 ]; then
+            echo "Praha $hour:xx, ještě není 02:00, přeskakuju"
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          elif [ "$last" = "$today" ]; then
+            echo "Dnešní refresh ($today) už proběhl, přeskakuju"
             echo "run=false" >> "$GITHUB_OUTPUT"
           else
+            echo "Praha $hour:xx, poslední refresh $last, spouštím"
             echo "run=true" >> "$GITHUB_OUTPUT"
           fi
 
