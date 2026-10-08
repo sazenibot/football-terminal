@@ -179,8 +179,23 @@ def _do_call(base: str, path: str, params: dict, cache_ttl: int | None = DEFAULT
                 time.sleep(wait_s)
                 retries += 1
                 continue
+            if e.code >= 500 and retries < 4:
+                wait_s = 5 * (retries + 1)
+                print(f"  ⏳ HTTP {e.code} na {path}, zkouším znovu za {wait_s}s…", file=sys.stderr)
+                time.sleep(wait_s)
+                retries += 1
+                continue
             print(f"  ⚠️ HTTP {e.code} on {path}: {err[:150]}", file=sys.stderr)
             return {"data": None}
+        except (TimeoutError, urllib.error.URLError, ConnectionError, OSError, json.JSONDecodeError) as e:
+            # síťový výpadek / read timeout — jednorázová chyba nesmí shodit celý denní běh
+            if retries < 5:
+                wait_s = min(60, 5 * (retries + 1) ** 2)
+                print(f"  ⏳ síťová chyba na {path} ({type(e).__name__}), zkouším znovu za {wait_s}s…", file=sys.stderr)
+                time.sleep(wait_s)
+                retries += 1
+                continue
+            raise
     if cache_ttl and cache_ttl > 0:
         try:
             CACHE_DIR.mkdir(parents=True, exist_ok=True)
