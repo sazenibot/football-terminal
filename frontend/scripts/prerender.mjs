@@ -47,11 +47,11 @@ const readArticles = (dir) =>
 const csArticles = readArticles(join(root, "content", "articles"));
 const enBySlug = new Map(readArticles(join(root, "content", "articles", "en")).map((a) => [a.slug, a]));
 const byDate = (a, b) => String(b.date).localeCompare(String(a.date));
-/* Právní stránky: content/legal/*.md (cs) a content/legal/en/*.md. Údaje provozovatele z operator.json, prázdné = [doplnit]. */
+/* Právní stránky: content/legal/*.md (cs) a content/legal/en/*.md. Údaje provozovatele z operator.json, prázdné = „Na vyžádání“. */
 const operator = JSON.parse(readFileSync(join(root, "content", "legal", "operator.json"), "utf8"));
 const LEGAL = ["obchodni-podminky", "ochrana-udaju", "kontakt"];
 function legalFor(loc) {
-  const gap = loc === "en" ? "[to be completed]" : "[doplnit]";
+  const gap = loc === "en" ? "On request" : "Na vyžádání";
   return LEGAL.map((slug) => {
     const file = join(root, "content", "legal", loc === "en" ? "en" : "", `${slug}.md`);
     const { meta, body } = frontmatter(readFileSync(existsSync(file) ? file : join(root, "content", "legal", `${slug}.md`), "utf8"));

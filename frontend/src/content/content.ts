@@ -110,9 +110,9 @@ export function articleTeaser(body: string): string {
 
 export type LegalPage = { slug: string; title: string; description: string; updated: string; body: string };
 
-/** Údaje o provozovateli jsou v content/legal/operator.json. Prázdná hodnota se zobrazí jako [doplnit]. */
+/** Údaje o provozovateli jsou v content/legal/operator.json. Prázdná hodnota se zobrazí jako „Na vyžádání“. */
 export function fillOperator(md: string, locale: Locale): string {
-  const gap = locale === "en" ? "[to be completed]" : "[doplnit]";
+  const gap = locale === "en" ? "On request" : "Na vyžádání";
   const data = operatorData as Record<string, string>;
   return md.replace(/\{\{(\w+)\}\}/g, (_, k: string) => (data[k] ?? "").trim() || gap);
 }

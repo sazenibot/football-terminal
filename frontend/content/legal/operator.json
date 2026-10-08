@@ -1,5 +1,5 @@
 {
-  "_poznamka": "Údaje o provozovateli. Doplňte hodnoty a uložte. Projeví se ve všech právních stránkách (obchodní podmínky, ochrana údajů, kontakt). Prázdná hodnota se na webu zobrazí jako [doplnit].",
+  "_poznamka": "Údaje o provozovateli. Doplňte hodnoty a uložte. Projeví se ve všech právních stránkách (obchodní podmínky, ochrana údajů, kontakt). Prázdná hodnota se na webu zobrazí jako „Na vyžádání“ (anglicky „On request“). Před veřejným startem vyplňte aspoň jméno/název, sídlo a IČO.",
   "name": "",
   "address": "",
   "ico": "",
