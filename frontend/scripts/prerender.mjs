@@ -47,11 +47,27 @@ const readArticles = (dir) =>
 const csArticles = readArticles(join(root, "content", "articles"));
 const enBySlug = new Map(readArticles(join(root, "content", "articles", "en")).map((a) => [a.slug, a]));
 const byDate = (a, b) => String(b.date).localeCompare(String(a.date));
+/* Právní stránky: content/legal/*.md (cs) a content/legal/en/*.md. Údaje provozovatele z operator.json, prázdné = [doplnit]. */
+const operator = JSON.parse(readFileSync(join(root, "content", "legal", "operator.json"), "utf8"));
+const LEGAL = ["obchodni-podminky", "ochrana-udaju", "kontakt"];
+function legalFor(loc) {
+  const gap = loc === "en" ? "[to be completed]" : "[doplnit]";
+  return LEGAL.map((slug) => {
+    const file = join(root, "content", "legal", loc === "en" ? "en" : "", `${slug}.md`);
+    const { meta, body } = frontmatter(readFileSync(existsSync(file) ? file : join(root, "content", "legal", `${slug}.md`), "utf8"));
+    return { slug, ...meta, body: body.replace(/\{\{(\w+)\}\}/g, (_, k) => String(operator[k] ?? "").trim() || gap) };
+  });
+}
+/** Odkazy v textu napsané česky (/tarify) převede na adresu daného jazyka (/pricing, /cs/tarify). */
+function localizeLinks(html, loc) {
+  return html.replace(/href="\/(clanky|tarify|vysledky|prihlaseni|obchodni-podminky|ochrana-udaju|kontakt)(?=["\/#?])/g, (_, s) => `href="${prefix(loc)}/${seg(loc, s)}`);
+}
+
 // Anglická verze, a když chybí, česká (stejně jako v aplikaci).
 const articlesFor = (loc) => (loc === "en" ? csArticles.map((a) => enBySlug.get(a.slug) ?? a) : csArticles).slice().sort(byDate);
 
 /* Texty stránek pro prerender. Cesty jsou české (klíč) a anglické podle SEG. */
-const SEG = { clanky: "articles", tarify: "pricing", vysledky: "results" };
+const SEG = { clanky: "articles", tarify: "pricing", vysledky: "results", "obchodni-podminky": "terms", "ochrana-udaju": "privacy", kontakt: "contact" };
 const seg = (loc, cz) => (loc === "en" ? SEG[cz] : cz);
 // Angličtina je výchozí (kořen), čeština pod /cs.
 const prefix = (loc) => (loc === "cs" ? "/cs" : "");
@@ -114,6 +130,14 @@ function pagesFor(loc) {
     },
     { key: "/tarify", path: `${P}/${seg(loc, "tarify")}`, loc, title: `${c.pricing.title} | ${c.brand}`, description: c.pricing.description, html: c.pricing.html },
     { key: "/vysledky", path: `${P}/${seg(loc, "vysledky")}`, loc, title: `${c.results.title} | ${c.brand}`, description: c.results.description, html: c.results.html },
+    ...legalFor(loc).map((l) => ({
+      key: `/${l.slug}`,
+      path: `${P}/${seg(loc, l.slug)}`,
+      loc,
+      title: `${l.title} | ${c.brand}`,
+      description: l.description || l.title,
+      html: `<article><h1>${esc(l.title)}</h1>${localizeLinks(marked.parse(l.body), loc)}</article>`,
+    })),
     ...arts.map((a) => ({
       key: `/clanky/${a.slug}`,
       path: `${P}/${seg(loc, "clanky")}/${a.slug}`,

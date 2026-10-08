@@ -141,9 +141,9 @@ export function SiteFooter() {
           <Link className={link} to="/tarify">{t("footer.pricing")}</Link>
         </FooterCol>
         <FooterCol title={t("footer.legal")}>
-          <span className="text-(--c-faint)">{t("footer.terms")}</span>
-          <span className="text-(--c-faint)">{t("footer.privacy")}</span>
-          <span className="text-(--c-faint)">{t("footer.contact")}</span>
+          <Link className={link} to="/obchodni-podminky">{t("footer.terms")}</Link>
+          <Link className={link} to="/ochrana-udaju">{t("footer.privacy")}</Link>
+          <Link className={link} to="/kontakt">{t("footer.contact")}</Link>
         </FooterCol>
       </div>
       <p className="mt-8 text-[12px] leading-relaxed text-(--c-faint)">

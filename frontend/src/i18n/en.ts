@@ -48,9 +48,11 @@ const enBase: Record<keyof typeof csBase, string> = {
   "footer.articles": "Articles and guides",
   "footer.methodology": "Model methodology",
   "footer.pricing": "Pricing",
-  "footer.terms": "Terms of service (coming soon)",
-  "footer.privacy": "Privacy policy (coming soon)",
-  "footer.contact": "Contact (coming soon)",
+  "footer.terms": "Terms and conditions",
+  "footer.privacy": "Privacy policy",
+  "footer.contact": "Contact",
+  "legal.updated": "Updated {date}",
+  "legal.notFound": "Page",
   "footer.disclaimer":
     "This service is intended for persons aged 18 and over. The information is for general purposes only and is not betting advice or a promise of winnings. Model probabilities are estimates and past performance does not guarantee future results. Gambling can be addictive.",
 

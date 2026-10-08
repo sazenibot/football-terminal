@@ -1,6 +1,7 @@
 import { marked } from "marked";
 import type { Tier } from "../access/tiers";
 import { getLocale, type Locale } from "../i18n/locale";
+import operatorData from "../../content/legal/operator.json";
 
 /* Obsah webu jsou markdown soubory ve frontend/content/. Vzniká se v repu, žádné CMS.
    news/*.md      krátké aktuality (feed na homepage)
@@ -49,6 +50,10 @@ const glob = {
   news: {
     cs: import.meta.glob("../../content/news/*.md", { query: "?raw", import: "default", eager: true }) as Files,
     en: import.meta.glob("../../content/news/en/*.md", { query: "?raw", import: "default", eager: true }) as Files,
+  },
+  legal: {
+    cs: import.meta.glob("../../content/legal/*.md", { query: "?raw", import: "default", eager: true }) as Files,
+    en: import.meta.glob("../../content/legal/en/*.md", { query: "?raw", import: "default", eager: true }) as Files,
   },
   articles: {
     cs: import.meta.glob("../../content/articles/*.md", { query: "?raw", import: "default", eager: true }) as Files,
@@ -99,4 +104,22 @@ export function articleTeaser(body: string): string {
   const cut = body.indexOf("<!-- gate -->");
   if (cut > -1) return body.slice(0, cut).trim();
   return body.split(/\n{2,}/).slice(0, 3).join("\n\n");
+}
+
+/* ---------- právní stránky (obchodní podmínky, ochrana údajů, kontakt) ---------- */
+
+export type LegalPage = { slug: string; title: string; description: string; updated: string; body: string };
+
+/** Údaje o provozovateli jsou v content/legal/operator.json. Prázdná hodnota se zobrazí jako [doplnit]. */
+export function fillOperator(md: string, locale: Locale): string {
+  const gap = locale === "en" ? "[to be completed]" : "[doplnit]";
+  const data = operatorData as Record<string, string>;
+  return md.replace(/\{\{(\w+)\}\}/g, (_, k: string) => (data[k] ?? "").trim() || gap);
+}
+
+export function getLegal(slug: string | undefined, locale: Locale = getLocale()): LegalPage | undefined {
+  const entry = bySlug(glob.legal, locale).find(([s]) => s === slug);
+  if (!entry) return undefined;
+  const { meta, body } = parseFrontmatter(entry[1]);
+  return { slug: entry[0], title: meta.title, description: meta.description || "", updated: meta.updated || "", body: fillOperator(body, locale) };
 }

@@ -236,3 +236,8 @@ html.light .mc2 {
 .btn-accent-sub { color: rgb(4 17 11 / 0.8); }
 html.light .btn-accent { background: #047857; color: #fff; }
 html.light .btn-accent-sub { color: rgb(255 255 255 / 0.9); }
+
+.prose-ft table { margin: 1rem 0; width: 100%; border-collapse: collapse; font-size: 14px; }
+.prose-ft th, .prose-ft td { border: 1px solid var(--c-line); padding: 0.5rem 0.65rem; text-align: left; vertical-align: top; }
+.prose-ft th { background: var(--c-raised); font-weight: 650; }
+@media (max-width: 640px) { .prose-ft table { display: block; overflow-x: auto; } }

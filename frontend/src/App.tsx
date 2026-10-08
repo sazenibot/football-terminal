@@ -11,6 +11,7 @@ import { ArticlePage, ArticlesPage } from "./pages/ArticlesPage";
 import { PricingPage } from "./pages/PricingPage";
 import { ResultsPage } from "./pages/ResultsPage";
 import { LoginPage } from "./pages/LoginPage";
+import { LegalPage } from "./pages/LegalPage";
 import { AccessProvider } from "./access/AccessContext";
 import { ViewAsSwitcher } from "./access/ViewAsSwitcher";
 import { SiteFooter, SiteNav, TopRight } from "./site/shell";
@@ -66,6 +67,9 @@ function AppRoutes() {
       <Route path={p("tarify")} element={<PricingPage />} />
       <Route path={p("vysledky")} element={<ResultsPage />} />
       <Route path={p("prihlaseni")} element={<LoginPage />} />
+      <Route path={p("obchodni-podminky")} element={<LegalPage slug="obchodni-podminky" />} />
+      <Route path={p("ochrana-udaju")} element={<LegalPage slug="ochrana-udaju" />} />
+      <Route path={p("kontakt")} element={<LegalPage slug="kontakt" />} />
       <Route path="/" element={<HomePage />} />
       <Route path="/league" element={<LeagueRoute />} />
       <Route path="/league/:leagueId" element={<LeagueRoute />} />
@@ -131,7 +135,7 @@ function App() {
           <Route path="/cs/*" element={<Localized locale="cs" />} />
           <Route path="/en/*" element={<LegacyEn />} />
           <Route path="/en" element={<LegacyEn />} />
-          {["clanky", "tarify", "vysledky", "prihlaseni"].flatMap((s) => [
+          {["clanky", "tarify", "vysledky", "prihlaseni", "obchodni-podminky", "ochrana-udaju", "kontakt"].flatMap((s) => [
             <Route key={s} path={`/${s}`} element={<LegacyCs />} />,
             <Route key={`${s}/*`} path={`/${s}/*`} element={<LegacyCs />} />,
           ])}

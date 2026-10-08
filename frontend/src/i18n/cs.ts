@@ -43,9 +43,11 @@ const csBase = {
   "footer.articles": "Články a návody",
   "footer.methodology": "Metodika modelu",
   "footer.pricing": "Tarify",
-  "footer.terms": "Obchodní podmínky (připravujeme)",
-  "footer.privacy": "Ochrana osobních údajů (připravujeme)",
-  "footer.contact": "Kontakt (připravujeme)",
+  "footer.terms": "Obchodní podmínky",
+  "footer.privacy": "Ochrana osobních údajů",
+  "footer.contact": "Kontakt",
+  "legal.updated": "Aktualizováno {date}",
+  "legal.notFound": "Stránka",
   "footer.disclaimer":
     "Služba je určena osobám starším 18 let. Informativní údaje, nejde o doporučení k sázce ani o příslib výhry. Modelové pravděpodobnosti jsou odhad a minulá úspěšnost nezaručuje budoucí výsledky. Hazard může způsobit závislost.",
 
