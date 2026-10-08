@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-07T22:44:07.829201Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T15:30:00Z",
   "venue": "Europa-Park Stadion",
   "home": {
@@ -1243,21 +1243,24 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.18
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.59
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.54
         },
         {
           "key": "corners_under95",
@@ -1278,21 +1281,24 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 2.14
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.57
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.74
         },
         {
           "key": "yellow_under5",
@@ -1320,7 +1326,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.39
         },
         {
           "key": "corners_over95",
@@ -1341,21 +1348,24 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 4.83
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 6.16
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.45
         }
       ],
       "away": [
@@ -1427,35 +1437,40 @@
           "label": "Tým nevstřelil gól",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 2.74
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 6.16
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.18
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.59
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.39
         },
         {
           "key": "corners_over95",
@@ -1476,21 +1491,24 @@
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.45
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 1.57
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.98
         },
         {
           "key": "more_corners",
@@ -1518,14 +1536,16 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 4.83
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.14
         },
         {
           "key": "yellow_5plus",
@@ -1550,7 +1570,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.18
         },
         {
           "key": "scored2plus",
@@ -1627,7 +1648,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.59
         },
         {
           "key": "corners_over95",
@@ -1662,7 +1684,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.39
         },
         {
           "key": "corners_under95",
@@ -1683,7 +1706,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.57
         },
         {
           "key": "scoreless",
@@ -1727,7 +1751,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.18
         },
         {
           "key": "scored2plus",
@@ -1811,7 +1836,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.59
         },
         {
           "key": "corners_under95",
@@ -1832,7 +1858,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.39
         },
         {
           "key": "corners_over95",
@@ -1867,7 +1894,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.57
         },
         {
           "key": "scoreless",
@@ -5590,10 +5618,36 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi SC Freiburg a Schalke 04 se odehraje na stadionu Europa-Park Stadion a vzhledem k aktuální formě obou týmů se dá očekávat, že domácí Freiburg bude favoritem. Freiburg má za sebou sérii tří vítězství a jednu remízu, zatímco Schalke se potýká s problémy, když v posledních čtyřech zápasech zaznamenalo pouze jedno vítězství a dvě prohry. Historie vzájemných zápasů také hovoří ve prospěch Freiburgu, který v posledních pěti střetnutích s Schalke vyhrál čtyřikrát a vždy s výrazným skóre.\n\nPodle simulovaných očekávaných gólů (xG) má Freiburg výraznou převahu s hodnotou 1.91 oproti 0.81 pro Schalke. To naznačuje, že Freiburg by měl mít více příležitostí ke skórování a mohl by dominovat v ofenzivě. Očekává se, že zápas bude mít vyšší pravděpodobnost na více než 2,5 góly (51.5 %) a také, že by mohlo padnout alespoň jedno branka z obou stran (48.3 %).\n\nCelkově lze očekávat, že Freiburg si udrží kontrolu nad zápasem a bude se snažit využít slabin Schalke v obraně. Pokud se Freiburgu podaří rychle vstřelit první gól, může to výrazně ovlivnit průběh zápasu a přinést jim další tři body do tabulky.",
+    "text": "Zápas mezi SC Freiburg a Schalke 04 se odehraje na stadionu Europa-Park Stadion a očekává se, že domácí tým bude favoritem. Freiburg má v posledních čtyřech zápasech dobrou formu, kdy třikrát vyhrál a jednou remizoval. Naopak Schalke, které se nachází v obtížnější situaci, zaznamenalo jednu výhru, jednu remízu a dvě prohry. Historie vzájemných zápasů je pro Freiburg příznivá, když v posledních čtyřech utkáních s Schalke zvítězil s výrazným skóre 4:0.\n\nPodle simulací a očekávaných gólů (xG) má Freiburg výraznou výhodu, s průměrným očekávaným počtem gólů 1.91 oproti 0.81 pro Schalke. To naznačuje, že Freiburg by měl mít více příležitostí ke skórování. S pravděpodobností 53.3 % se očekává výhra domácího týmu, zatímco šance na remízu činí 24.5 % a na výhru hostů pouze 22.2 %. \n\nZ pohledu statistiky je také zajímavé, že Freiburg má slušné šance na to, že vstřelí více než 2 góly (51.5 %). Na druhé straně, šance na to, že oba týmy skórují, je 48.3 %, což naznačuje, že Schalke by mohlo mít šanci na čestný gól. Celkově lze očekávat, že Freiburg bude dominovat hře a pravděpodobně se dočkáme jejich vítězství s několika vstřelenými góly.",
     "model": "gpt-4o-mini",
-    "input_hash": "2385ddd4e46ab994",
-    "generated_at": "2026-10-07T22:44:15Z",
-    "text_en": "The upcoming Bundesliga match between SC Freiburg and Schalke 04 at the Europa-Park Stadion is set to be an intriguing encounter, especially given the historical context and recent performances of both teams. SC Freiburg has shown strong form at home, with their recent results including three wins and a draw, while Schalke has had a mixed bag of results away from home, with one win, one draw, and two losses in their last four matches. This trend suggests that Freiburg will likely have the upper hand, particularly considering their dominant head-to-head record against Schalke in recent years.\n\nIn their last five encounters, Freiburg has consistently outperformed Schalke, winning all matches by a significant margin, including a 4-0 victory earlier this year. This historical dominance could play a psychological role as Freiburg prepares to host Schalke. The simulation data indicates that Freiburg is expected to create more scoring opportunities, with an expected goals (xG) value of 1.91 compared to Schalke's 0.81. This disparity suggests that Freiburg is more likely to capitalize on their chances and maintain pressure throughout the match.\n\nWith referee Martin Petersen officiating, the match could feature a balanced approach, but Freiburg's home advantage and superior form suggest they will control the game. The likelihood of both teams scoring is moderate at 48.3%, but given Freiburg's attacking prowess and Schalke's defensive vulnerabilities, a clean sheet for the visitors seems unlikely. Overall, a victory for SC Freiburg appears probable, with the possibility of multiple goals based on their recent scoring trends."
+    "input_hash": "a08da71d231c7bc1",
+    "generated_at": "2026-10-08T09:39:32Z",
+    "text_en": "The upcoming Bundesliga match between SC Freiburg and Schalke 04 at the Europa-Park Stadion is shaping up to be an intriguing encounter. Freiburg enters the match with a solid recent form, having won three of their last four matches and drawn one. In contrast, Schalke has had a mixed run, with one win, two draws, and one loss in their last four outings. Historically, Freiburg has dominated this fixture, winning all of their last five encounters against Schalke, including a resounding 4-0 victory in their last meeting in April 2023.\n\nStatistically, the simulation data suggests that Freiburg is favored to win, with an expected goals (xG) value of 1.91 compared to Schalke's 0.81. This indicates that Freiburg is likely to create more scoring opportunities during the match. The odds reflect this expectation, with Freiburg being the favorites at 1.66 to win, while Schalke's odds stand at 4.94, indicating a significant disparity in perceived strength. The likelihood of both teams scoring (48.3%) and the potential for over 2.5 goals (51.5%) further suggest that this match could see multiple goals, especially given Freiburg's attacking prowess.\n\nReferee Martin Petersen will oversee the match, and his officiating style could influence the game's flow. Given Freiburg's strong home form and Schalke's struggles away from home, it is reasonable to expect Freiburg to assert dominance early on. If they can capitalize on their scoring chances, they may secure a comfortable victory, while Schalke will need to improve their performance significantly to challenge Freiburg effectively. Overall, the match appears to favor Freiburg, who will be looking to extend their winning streak against a Schalke side that is still searching for consistency."
+  },
+  "refreshed_at": "2026-10-08T09:39:22.496871Z",
+  "odds": {
+    "home": 1.66,
+    "draw": 4.22,
+    "away": 4.94,
+    "under15": 4.9,
+    "over15": 1.18,
+    "under25": 2.39,
+    "over25": 1.59,
+    "under35": 1.54,
+    "over35": 2.5,
+    "btts": 1.57,
+    "source": "chance",
+    "home_scoreless": 6.16,
+    "home_scored2plus": 1.54,
+    "home_clean_sheet": 2.74,
+    "home_ht_leading": 2.14,
+    "home_ht_draw": 2.45,
+    "home_ht_behind": 4.83,
+    "away_clean_sheet": 6.16,
+    "away_scoreless": 2.74,
+    "away_scored2plus": 2.98,
+    "away_ht_behind": 2.14,
+    "away_ht_draw": 2.45,
+    "away_ht_leading": 4.83
   }
 }

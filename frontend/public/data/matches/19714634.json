@@ -337,30 +337,30 @@
     },
     {
       "side": "away",
-      "player_id": 25739,
-      "player_name": "Philippe Sandler",
-      "type_id": 677,
-      "type_name": "Minor Knock",
-      "type_name_cs": "Minor Knock",
+      "player_id": 25548537,
+      "player_name": "Gonzalo Alejandro Crettaz",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-17",
+      "start_date": "2026-09-13",
       "end_date": null,
       "games_missed": 2,
       "likely_available": false
     },
     {
       "side": "away",
-      "player_id": 37720742,
-      "player_name": "Clement Bischoff",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
+      "player_id": 25739,
+      "player_name": "Philippe Sandler",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-18",
+      "start_date": "2026-09-17",
       "end_date": null,
-      "games_missed": 1,
+      "games_missed": 2,
       "likely_available": false
     },
     {
@@ -379,16 +379,16 @@
     },
     {
       "side": "away",
-      "player_id": 25548537,
-      "player_name": "Gonzalo Alejandro Crettaz",
+      "player_id": 37720742,
+      "player_name": "Clement Bischoff",
       "type_id": 535,
       "type_name": "Hamstring Injury",
       "type_name_cs": "Zranění hamstringu",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-13",
+      "start_date": "2026-09-18",
       "end_date": null,
-      "games_missed": 2,
+      "games_missed": 1,
       "likely_available": false
     },
     {
@@ -8108,5 +8108,5 @@
     "generated_at": "2026-10-07T10:10:04Z",
     "text_en": "The upcoming Eredivisie match between Ajax and NEC Nijmegen at the Johan Cruijff Arena promises to be an intriguing encounter. Ajax, playing at home, has shown a mixed recent form with two wins, two draws, and one loss in their last six matches. In contrast, NEC Nijmegen has also had a fluctuating performance, with two wins, two losses, and two draws in their last six games. This sets the stage for a competitive match, as both teams will be looking to secure valuable points.\n\nHistorically, the head-to-head encounters between these two teams have been closely contested, with recent matches yielding draws and one notable victory for NEC Nijmegen. The last match in February 2026 ended in a 1-1 draw, indicating that both teams are capable of matching each other on the pitch. Given Ajax's home advantage and the expected higher expected goals (xG) of 2.1 compared to NEC's 1.34, they may be favored to dominate possession and create more scoring opportunities.\n\nThe simulation data suggests a strong likelihood of both teams scoring, with a 65% chance of both teams finding the net. Additionally, there is a 66.9% probability of more than 2.5 goals being scored in the match. This could lead to an exciting game with multiple chances and potentially a high scoreline, as Ajax aims to leverage their home ground advantage while NEC Nijmegen looks to capitalize on any defensive lapses. Overall, fans can expect a thrilling contest with the potential for drama and intensity."
   },
-  "refreshed_at": "2026-10-07T22:46:07.737877Z"
+  "refreshed_at": "2026-10-08T09:40:58.764928Z"
 }

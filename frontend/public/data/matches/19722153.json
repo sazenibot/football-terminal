@@ -220,20 +220,6 @@
       "end_date": "2026-11-08",
       "games_missed": 4,
       "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37568967,
-      "player_name": "Mateo Joseph Fernández Regatillo",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-04-08",
-      "end_date": "2027-02-01",
-      "games_missed": 21,
-      "likely_available": false
     }
   ],
   "predicted_lineups": {
@@ -1525,7 +1511,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.79
+          "odds": 1.78
         },
         {
           "key": "scored2plus",
@@ -1557,7 +1543,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.46
+          "odds": 2.45
         },
         {
           "key": "under25",
@@ -1605,7 +1591,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 6.62
+          "odds": 6.65
         },
         {
           "key": "red_card",
@@ -1629,7 +1615,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 7.45
+          "odds": 7.49
         }
       ],
       "away": [
@@ -1735,7 +1721,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 6.62
+          "odds": 6.65
         },
         {
           "key": "corners_under95",
@@ -1767,7 +1753,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 7.45
+          "odds": 7.49
         },
         {
           "key": "ht_draw",
@@ -1775,7 +1761,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.46
+          "odds": 2.45
         },
         {
           "key": "scoreless",
@@ -1791,7 +1777,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.79
+          "odds": 1.78
         },
         {
           "key": "scored2plus",
@@ -1799,7 +1785,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 5.48
+          "odds": 5.49
         },
         {
           "key": "more_corners",
@@ -1843,7 +1829,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.79
+          "odds": 1.78
         },
         {
           "key": "scored2plus",
@@ -2061,7 +2047,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.79
+          "odds": 1.78
         },
         {
           "key": "scored2plus",
@@ -6823,15 +6809,15 @@
     ]
   },
   "odds": {
-    "home": 1.37,
-    "draw": 5.0,
-    "away": 8.76,
-    "under15": 3.97,
+    "home": 1.36,
+    "draw": 5.02,
+    "away": 8.81,
+    "under15": 3.98,
     "over15": 1.25,
     "under25": 2.06,
-    "over25": 1.79,
+    "over25": 1.78,
     "under35": 1.4,
-    "over35": 2.97,
+    "over35": 2.96,
     "btts": 2.07,
     "corners_under95": 1.92,
     "corners_over95": 1.79,
@@ -6839,29 +6825,29 @@
     "yellow_5plus": 3.03,
     "red_card": 5.02,
     "source": "chance",
-    "home_scoreless": 6.62,
+    "home_scoreless": 6.65,
     "home_scored2plus": 1.46,
     "home_clean_sheet": 1.84,
     "home_ht_leading": 1.86,
-    "home_ht_draw": 2.46,
-    "home_ht_behind": 7.45,
+    "home_ht_draw": 2.45,
+    "home_ht_behind": 7.49,
     "home_more_corners": 1.19,
     "home_team_2plus_yellow": 2.1,
-    "away_clean_sheet": 6.62,
+    "away_clean_sheet": 6.65,
     "away_scoreless": 1.84,
-    "away_scored2plus": 5.48,
+    "away_scored2plus": 5.49,
     "away_ht_behind": 1.86,
-    "away_ht_draw": 2.46,
-    "away_ht_leading": 7.45,
+    "away_ht_draw": 2.45,
+    "away_ht_leading": 7.49,
     "away_more_corners": 6.04,
     "away_team_2plus_yellow": 1.45
   },
   "ai_analysis": {
-    "text": "Zápas mezi Arsenalem a Leeds United se odehraje na Emirates Stadium a vzhledem k aktuální formě obou týmů se očekává, že domácí Arsenal bude favoritem. Arsenal má za sebou sérii čtyř vítězství a jedno remízu, zatímco Leeds United se potýká s nevyrovnanými výsledky, kdy vyhráli jen dvakrát z posledních pěti zápasů. Historie vzájemných zápasů také nahrává Arsenalu, který v posledních utkáních s Leeds United dominoval, když vyhrál všechny poslední čtyři zápasy.\n\nPodle simulovaných očekávaných gólů (xG) má Arsenal hodnotu 1.24, zatímco Leeds 1.01. To naznačuje, že Arsenal by měl mít větší šanci na vstřelení gólů. S pravděpodobností 41.5 % se očekává, že Arsenal vyhraje, zatímco remíza má pravděpodobnost 28.6 % a vítězství Leeds United 30 %. Také pravděpodobnost, že obě mužstva vstřelí gól, je 46.1 %, což ukazuje na možnost, že by se Leeds mohl prosadit, pokud využije šancí.\n\nVzhledem k tomu, že Arsenal hraje doma, je pravděpodobné, že budou mít více ze hry a budou se snažit kontrolovat tempo zápasu. Sázkové kurzy také naznačují silnou pozici Arsenalu, s kurzem 1.37 na jejich vítězství. V případě, že Arsenal vstřelí první gól, mohou se Leeds United ocitnout pod tlakem a budou muset riskovat, což by mohlo vést k otevřenějšímu zápasu a více šancím na obou stranách.",
+    "text": "Zápas mezi Arsenalem a Leeds United se odehraje na Emirates Stadium a očekává se, že domácí tým bude favoritem. Arsenal se nachází v dobré formě, když vyhrál posledních pět zápasů, zatímco Leeds má za sebou smíšené výsledky s několika remízami a porážkami. Historie vzájemných zápasů ukazuje jasnou dominanci Arsenalu, který v posledních pěti utkáních s Leedsem vyhrál čtyřikrát a jednou remizoval. \n\nPodle simulací očekáváme, že Arsenal vytvoří více šancí, s hodnotou očekávaných gólů (xG) 1.24 oproti 1.01 pro Leeds. Pravděpodobnost výhry domácích je odhadována na 41.5 %, zatímco remíza a výhra Leedsu mají nižší pravděpodobnosti 28.6 % a 30.0 %. Zajímavé je také, že obě mužstva mají slušnou šanci na to, že oba týmy skórují, s pravděpodobností 46.1 %.\n\nCo se týče disciplinárních záležitostí, Arsenal má pravděpodobnost 1.19 na více rohů než Leeds, což naznačuje, že by mohli mít více ofenzivních akcí. Na druhou stranu, Leeds se může spolehnout na svou schopnost bránit, ale s ohledem na formu Arsenalu a jejich historické výkony proti Leedsu se očekává, že domácí tým si udrží kontrolu nad zápasem a pravděpodobně se mu podaří vyhrát.",
     "model": "gpt-4o-mini",
-    "input_hash": "1fefe4af957694a2",
-    "generated_at": "2026-10-07T22:29:52Z",
-    "text_en": "The upcoming match between Arsenal and Leeds United at the Emirates Stadium on October 10, 2026, promises to be an intriguing encounter in the Premier League. Arsenal has shown strong recent form, winning four of their last five matches, while Leeds United has been more inconsistent, managing two wins and three draws in their last five outings. Historically, Arsenal has dominated this fixture, winning the last five encounters with a significant goal difference, including a 4-0 victory earlier in the year.\n\nIn terms of expected performance, simulations suggest that Arsenal is likely to have the upper hand, with an expected goals (xG) of 1.24 compared to Leeds' 1.01. This indicates that Arsenal is expected to create more scoring opportunities. The odds reflect this sentiment, with Arsenal being favored at 1.37 to win, while Leeds is seen as the underdog at 8.76. The likelihood of both teams scoring is estimated at 46.1%, suggesting that while Arsenal may dominate possession and chances, Leeds could still find opportunities to score.\n\nThe match will be officiated by Paul Tierney, who will play a crucial role in maintaining control of the game. Given Arsenal's attacking prowess and Leeds' tendency to concede goals, it is reasonable to anticipate a high-scoring affair, with the possibility of Arsenal scoring two or more goals being quite favorable. Overall, while Leeds will aim to put up a fight, Arsenal's recent form and historical dominance in this matchup position them as the likely victors in this Premier League clash."
+    "input_hash": "65d5aec7c1de161f",
+    "generated_at": "2026-10-08T09:36:45Z",
+    "text_en": "The upcoming match between Arsenal and Leeds United at the Emirates Stadium in the Premier League promises to be an intriguing encounter. Arsenal enters the match with strong recent form, having won four of their last five matches, with only one loss. In contrast, Leeds United has shown a mixed bag of results, with two wins, two draws, and one loss in their last five outings. Historically, Arsenal has dominated this fixture, winning their last five encounters against Leeds, which could weigh heavily on the visitors' confidence.\n\nIn terms of expected performance, simulations suggest Arsenal has a slight edge with an expected goals (xG) value of 1.24 compared to Leeds' 1.01. This indicates that Arsenal is likely to create more scoring opportunities. The odds reflect this sentiment, with Arsenal favored to win at 1.36, while Leeds is positioned at 8.81. The likelihood of both teams scoring (46.1%) suggests that while Arsenal may dominate possession and create chances, Leeds could also find opportunities to counterattack.\n\nReferee Paul Tierney will oversee the match, and the game could see a moderate number of yellow cards, with a probability of 1.33 for fewer than five yellow cards. Given Arsenal's attacking prowess and Leeds' potential for counterattacks, fans can expect a competitive match that may see Arsenal controlling the game but with Leeds looking to capitalize on any defensive lapses. Overall, Arsenal is expected to maintain their strong home form and secure a victory, but Leeds cannot be underestimated, especially if they can leverage their counterattacking strengths effectively."
   },
-  "refreshed_at": "2026-10-07T22:29:44.003835Z"
+  "refreshed_at": "2026-10-08T09:36:35.806962Z"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T22:29:40Z",
+  "generated_at": "2026-10-08T09:36:35Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -73,7 +73,7 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false,
+        "referee": true,
         "probs": [
           31,
           29,
@@ -145,7 +145,7 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false,
+        "referee": true,
         "probs": [
           69,
           21,

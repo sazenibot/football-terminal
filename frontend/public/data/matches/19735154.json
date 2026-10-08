@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-07T22:42:41.136976Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T13:30:00Z",
   "venue": "RheinEnergieStadion",
   "home": {
@@ -177,20 +177,6 @@
   "sidelined": [
     {
       "side": "away",
-      "player_id": 37528761,
-      "player_name": "Jens Castrop",
-      "type_id": 545,
-      "type_name": "Shoulder Injury",
-      "type_name_cs": "Zranění ramene",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-06",
-      "end_date": null,
-      "games_missed": 8,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 3862358,
       "player_name": "Enzo Leopold",
       "type_id": 1918,
@@ -201,6 +187,20 @@
       "start_date": "2026-09-02",
       "end_date": null,
       "games_missed": 5,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37528761,
+      "player_name": "Jens Castrop",
+      "type_id": 545,
+      "type_name": "Shoulder Injury",
+      "type_name_cs": "Zranění ramene",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-06",
+      "end_date": null,
+      "games_missed": 8,
       "likely_available": false
     },
     {
@@ -1312,7 +1312,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.69
+          "odds": 1.68
         },
         {
           "key": "under25",
@@ -1336,7 +1336,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.12
+          "odds": 2.13
         },
         {
           "key": "yellow_5plus",
@@ -1359,7 +1359,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.75
+          "odds": 3.76
         },
         {
           "key": "scoreless",
@@ -1367,7 +1367,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.56
+          "odds": 5.55
         },
         {
           "key": "red_card",
@@ -1382,7 +1382,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.52
+          "odds": 2.51
         }
       ],
       "away": [
@@ -1495,7 +1495,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 3.75
+          "odds": 3.76
         },
         {
           "key": "scored2plus",
@@ -1511,7 +1511,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.56
+          "odds": 2.58
         },
         {
           "key": "yellow_under5",
@@ -1533,7 +1533,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.12
+          "odds": 2.13
         },
         {
           "key": "red_card",
@@ -1556,7 +1556,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.56
+          "odds": 5.55
         },
         {
           "key": "under25",
@@ -1572,7 +1572,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.52
+          "odds": 2.51
         }
       ]
     },
@@ -1685,7 +1685,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.12
+          "odds": 2.13
         },
         {
           "key": "more_corners",
@@ -1890,7 +1890,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.12
+          "odds": 2.13
         },
         {
           "key": "red_card",
@@ -6503,7 +6503,7 @@
   },
   "odds": {
     "home": 2.03,
-    "draw": 4.09,
+    "draw": 4.08,
     "away": 3.27,
     "under15": 5.64,
     "over15": 1.14,
@@ -6512,29 +6512,30 @@
     "under35": 1.68,
     "over35": 2.22,
     "btts": 1.42,
-    "corners_under95": 2.12,
+    "corners_under95": 2.13,
     "corners_over95": 1.64,
     "source": "chance",
-    "home_scoreless": 5.56,
+    "home_scoreless": 5.55,
     "home_scored2plus": 1.64,
-    "home_clean_sheet": 3.75,
+    "home_clean_sheet": 3.76,
     "home_ht_leading": 2.47,
-    "home_ht_draw": 2.52,
+    "home_ht_draw": 2.51,
     "home_ht_behind": 3.55,
-    "home_more_corners": 1.69,
-    "away_clean_sheet": 5.56,
-    "away_scoreless": 3.75,
+    "home_more_corners": 1.68,
+    "away_clean_sheet": 5.55,
+    "away_scoreless": 3.76,
     "away_scored2plus": 2.17,
     "away_ht_behind": 2.47,
-    "away_ht_draw": 2.52,
+    "away_ht_draw": 2.51,
     "away_ht_leading": 3.55,
-    "away_more_corners": 2.56
+    "away_more_corners": 2.58
   },
   "ai_analysis": {
-    "text": "Zápas mezi FC Köln a Borussií Mönchengladbach slibuje být vyrovnaným a atraktivním utkáním, které se odehraje na RheinEnergieStadion. Domácí tým má za sebou smíšenou formu, s jednou výhrou, jednou remízou a dvěma prohrami v posledních čtyřech zápasech. Naopak hosté z Mönchengladbachu mají za sebou sérii čtyř remíz, což naznačuje, že se jim nedaří najít vítěznou formu. Historie vzájemných zápasů ukazuje, že oba týmy mají tendenci hrát vyrovnané zápasy, přičemž poslední vzájemný duel skončil remízou 3:3.\n\nPodle simulací se očekává, že FC Köln vytvoří více šancí, s očekávanými góly (xG) 2.1 oproti 1.57 pro Mönchengladbach. To naznačuje, že domácí tým by mohl mít navrch, ale s ohledem na předchozí výsledky a formu hostů je pravděpodobné, že se zápas vyvine v otevřenou bitvu s mnoha šancemi na obou stranách. Šance na to, že oba týmy skórují, jsou vysoké (69.3 %), což naznačuje, že diváci by se mohli dočkat atraktivního fotbalu.\n\nCo se týče statistických ukazatelů, pravděpodobnost remízy je 24 %, zatímco výhra domácích je vyhodnocena na 46.5 %. Vzhledem k tomu, že oba týmy mají tendenci skórovat, je také pravděpodobné, že zápas překročí hranici 2.5 gólů, což má pravděpodobnost 70.7 %. Rozhodujícími faktory by mohly být individuální výkony klíčových hráčů a schopnost týmů využít své šance.",
+    "text": "Zápas mezi FC Köln a Borussií Mönchengladbach se odehraje na RheinEnergieStadion a slibuje zajímavé střetnutí dvou rivalů. Domácí tým FC Köln se nachází v mírně lepší formě, přičemž v posledních čtyřech zápasech zaznamenal jednu výhru, jednu remízu a dvě prohry. Naopak Borussia Mönchengladbach má za sebou sérii čtyř remíz, což naznačuje, že se snaží najít stabilitu, ale zatím se jim nedaří vyhrávat.\n\nHistorie vzájemných zápasů ukazuje na vyrovnanost obou týmů, přičemž poslední tři duely skončily remízou a oba týmy si vyměnily výhry. To naznačuje, že se můžeme těšit na vyrovnanou bitvu, kde by mohly padnout góly na obou stranách. Očekávané xG hodnoty naznačují, že FC Köln má mírnou výhodu s 2.1, zatímco Borussia Mönchengladbach má 1.57, což by mohlo znamenat, že domácí tým bude mít více příležitostí ke skórování.\n\nPodle simulací a aktuálních statistik je pravděpodobné, že zápas skončí remízou, což je vyhodnoceno na 24 %. Vzhledem k vysoké pravděpodobnosti, že oba týmy skórují (69.3 %), a také k očekávanému počtu gólů (70.7 % pro over 2.5), se dá očekávat ofenzivní fotbal s mnoha šancemi na obou stranách. Celkově se dá říci, že zápas by mohl být vyrovnaný a divácky atraktivní.",
     "model": "gpt-4o-mini",
-    "input_hash": "f1f5adc8426f6386",
-    "generated_at": "2026-10-07T22:42:49Z",
-    "text_en": "The upcoming Bundesliga match between FC Köln and Borussia Mönchengladbach at the RheinEnergieStadion is set to be an intriguing encounter. FC Köln has struggled recently, with a recent form of one win, one draw, and two losses, while Borussia Mönchengladbach has faced similar difficulties, losing their last four matches. This suggests that both teams are in a challenging phase, which could lead to a tightly contested match as they seek to regain form.\n\nHistorically, the head-to-head results between these two teams indicate a competitive rivalry. The last five encounters have produced a mix of high-scoring draws and wins for both sides, with the most recent match ending in a 3-3 draw. The simulation data suggests that FC Köln has a slight edge in expected goals (xG) with 2.1 compared to Mönchengladbach's 1.57, indicating that they may create more scoring opportunities. Additionally, there is a high likelihood of both teams scoring, with a 69.3% probability for both teams to find the net.\n\nWith Florian Badstübner officiating, the match could see a dynamic flow as both teams look to capitalize on their attacking strengths while addressing their defensive vulnerabilities. The odds reflect a close contest, with FC Köln favored to win at 2.03, while Mönchengladbach's odds stand at 3.27. Given the recent form and historical context, fans can expect an engaging match that could go either way, with the potential for goals from both sides."
-  }
+    "input_hash": "0475e031004fb5f8",
+    "generated_at": "2026-10-08T09:39:22Z",
+    "text_en": "The upcoming Bundesliga match between FC Köln and Borussia Mönchengladbach at the RheinEnergieStadion promises to be an intriguing contest. Both teams have had mixed recent performances, with FC Köln struggling with two losses and a draw in their last four matches, while Borussia Mönchengladbach has also faced difficulties, suffering four consecutive losses. This context suggests a tense encounter, as both teams will be eager to secure points to improve their standings.\n\nHistorically, matches between these two sides have been closely contested, with several high-scoring draws and a mix of results in their recent head-to-head encounters. The simulation data indicates that FC Köln has a slight advantage in expected goals (xG) with 2.1 compared to Mönchengladbach's 1.57. This suggests that Köln may create more scoring opportunities, but given both teams' struggles, the match could still be unpredictable.\n\nThe referee for this match, Florian Badstübner, will play a crucial role in maintaining order, especially considering the pressure both teams will face. With a high likelihood of both teams scoring (69.3% chance according to the simulation), fans can expect an engaging match with potential for excitement. Overall, while FC Köln might be favored to secure a win based on recent form and expected goals, the unpredictable nature of derby matches means that anything can happen on the day."
+  },
+  "refreshed_at": "2026-10-08T09:39:14.681176Z"
 }

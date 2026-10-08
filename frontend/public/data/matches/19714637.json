@@ -219,6 +219,20 @@
     },
     {
       "side": "home",
+      "player_id": 37688197,
+      "player_name": "Wessel Kuhn",
+      "type_id": 557,
+      "type_name": "Cruciate Ligament Injury",
+      "type_name_cs": "Zranění zkříženého vazu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-04-24",
+      "end_date": "2027-03-01",
+      "games_missed": 12,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 26786,
       "player_name": "Jerdy Schouten",
       "type_id": 1918,
@@ -289,20 +303,6 @@
     },
     {
       "side": "away",
-      "player_id": 37529953,
-      "player_name": "Mees Hilgers",
-      "type_id": 547,
-      "type_name": "Fitness",
-      "type_name_cs": "Kondiční důvody",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-31",
-      "end_date": null,
-      "games_missed": 3,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 23661356,
       "player_name": "Dirk Proper",
       "type_id": 535,
@@ -313,6 +313,20 @@
       "start_date": "2026-09-07",
       "end_date": null,
       "games_missed": 2,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37529953,
+      "player_name": "Mees Hilgers",
+      "type_id": 547,
+      "type_name": "Fitness",
+      "type_name_cs": "Kondiční důvody",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-31",
+      "end_date": null,
+      "games_missed": 3,
       "likely_available": false
     },
     {
@@ -7565,5 +7579,5 @@
     "generated_at": "2026-10-07T10:09:27Z",
     "text_en": "The upcoming Eredivisie match between PSV and SC Heerenveen at the Philips Stadion is set to be an intriguing encounter. PSV has shown strong recent form, winning their last six matches, while SC Heerenveen has had a mixed bag with two wins, two draws, and two losses in their last six games. Historically, PSV has dominated this fixture, winning four of the last five encounters, which adds to their confidence heading into this match.\n\nIn terms of expected performance, simulations suggest that PSV is likely to create more scoring opportunities, with an expected goals (xG) value of 2.1 compared to SC Heerenveen's 1.37. This indicates that PSV not only has a potent attack but also a solid defensive setup, which could limit Heerenveen's chances. The likelihood of both teams scoring is relatively high at 65.1%, suggesting that while PSV may control the game, SC Heerenveen could find the net if given the chance.\n\nWith Joey Kooij officiating the match, the dynamics on the pitch will also play a crucial role. Given PSV's home advantage and their current form, they are expected to take the initiative early on. If they can capitalize on their scoring opportunities, a comfortable win could be on the cards. However, SC Heerenveen's resilience and ability to counter could provide them with chances to upset the home side, making this match one to watch closely."
   },
-  "refreshed_at": "2026-10-07T22:45:57.071137Z"
+  "refreshed_at": "2026-10-08T09:40:58.651599Z"
 }

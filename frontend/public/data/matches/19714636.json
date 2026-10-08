@@ -333,20 +333,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37688208,
-      "player_name": "Shaqueel van Persie",
-      "type_id": 677,
-      "type_name": "Minor Knock",
-      "type_name_cs": "Minor Knock",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-19",
-      "end_date": null,
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 4977576,
       "player_name": "Gijs Smal",
       "type_id": 537,
@@ -375,6 +361,20 @@
     },
     {
       "side": "home",
+      "player_id": 37688208,
+      "player_name": "Shaqueel van Persie",
+      "type_id": 677,
+      "type_name": "Minor Knock",
+      "type_name_cs": "Minor Knock",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-19",
+      "end_date": null,
+      "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37582530,
       "player_name": "Thomas Beelen",
       "type_id": 1612,
@@ -399,20 +399,6 @@
       "start_date": "2026-07-04",
       "end_date": "2027-01-01",
       "games_missed": 13,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37547506,
-      "player_name": "Stije Resink",
-      "type_id": 557,
-      "type_name": "Cruciate Ligament Injury",
-      "type_name_cs": "Zranění zkříženého vazu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-03-01",
-      "end_date": "2027-01-01",
-      "games_missed": 29,
       "likely_available": false
     }
   ],
@@ -7787,5 +7773,5 @@
     "generated_at": "2026-10-07T10:09:46Z",
     "text_en": "The upcoming Eredivisie match between Feyenoord and AZ Alkmaar at Stadion Feijenoord promises to be an intriguing encounter, given both teams' current form and their head-to-head history. Feyenoord has shown strong performance at home recently, with three wins and two draws in their last six matches, while AZ Alkmaar has been equally impressive away, with five wins and one draw in the same timeframe. This sets the stage for a competitive match as both teams are in good form.\n\nHistorically, encounters between these two sides have been closely contested, with their last five meetings yielding a mix of results, including draws and narrow victories. The most recent match ended in a 1-1 draw, indicating that both teams are capable of scoring and maintaining pressure. The simulation data suggests that Feyenoord has a slight edge with an expected goals (xG) value of 2.1 compared to AZ Alkmaar's 1.54, hinting at a potentially higher scoring game for the home side.\n\nWith referee Danny Desmond Makkelie officiating, the match is likely to see a fair amount of action. The simulation indicates a high likelihood of both teams scoring (69.1%) and a strong chance of the total goals exceeding 2.5 (70.1%). Given the attacking capabilities of both teams and their recent form, fans can expect an engaging match filled with opportunities for both sides."
   },
-  "refreshed_at": "2026-10-07T22:46:02.465167Z"
+  "refreshed_at": "2026-10-08T09:40:58.709183Z"
 }

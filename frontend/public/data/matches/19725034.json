@@ -2,8 +2,8 @@
   "fixture_id": 19725034,
   "league_id": 262,
   "league_name": "Chance Liga",
-  "built_at": "2026-10-04T10:30:37.057929Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-08T09:36:04.187649Z",
+  "build_mode": "full",
   "starting_at": "2026-10-11T11:00:00Z",
   "venue": "Stadion u Nisy",
   "home": {
@@ -16,7 +16,188 @@
     "name": "Slovácko",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 1158755,
+    "name": "Jakub Wulkan",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 3,
+          "average": 0.75
+        },
+        "home": {
+          "count": 3,
+          "average": 0.75,
+          "percentage": 100
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 112,
+        "average": 28
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 14,
+          "average": 3.5,
+          "on_bench": 1,
+          "for_coach": 0,
+          "on_pitch": 13
+        },
+        "home": {
+          "count": 3,
+          "average": 0.75,
+          "percentage": 21.43
+        },
+        "away": {
+          "count": 11,
+          "average": 2.75,
+          "percentage": 78.57
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 4
+      },
+      "VAR Moments": {
+        "count": 1,
+        "average": 0.25
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 27.0,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.4,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 3,
+      "matches": 23,
+      "yellow_cards": 88,
+      "red_cards": 3,
+      "avg_yellow_per_match": 3.83
+    },
+    "h2h_matches_officiated": [],
+    "home_team_matches_officiated": {
+      "matches": 3,
+      "avg_fouls_by_team": 12.7,
+      "avg_fouls_total": 28.3,
+      "avg_yellow_by_team": 3.33,
+      "avg_red_by_team": 0.33,
+      "recent_matches": [
+        {
+          "fixture_id": 19703899,
+          "date": "2026-05-02T16:00:00Z",
+          "home_name": "Slovan Liberec",
+          "away_name": "Slavia Praha",
+          "home_score": 1,
+          "away_score": 2,
+          "result": "P",
+          "total_fouls": 35
+        },
+        {
+          "fixture_id": 19439137,
+          "date": "2025-12-06T14:00:00Z",
+          "home_name": "Dukla Praha",
+          "away_name": "Slovan Liberec",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 34
+        },
+        {
+          "fixture_id": 19416328,
+          "date": "2025-05-11T13:00:00Z",
+          "home_name": "Slovan Liberec",
+          "away_name": "Bohemians 1905",
+          "home_score": 1,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 16
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 3,
+      "avg_fouls_by_team": 15.0,
+      "avg_fouls_total": 29.7,
+      "avg_yellow_by_team": 2.33,
+      "avg_red_by_team": 0.33,
+      "recent_matches": [
+        {
+          "fixture_id": 19725076,
+          "date": "2026-08-22T15:00:00Z",
+          "home_name": "Mladá Boleslav",
+          "away_name": "Slovácko",
+          "home_score": 2,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 40
+        },
+        {
+          "fixture_id": 19439198,
+          "date": "2026-03-01T12:00:00Z",
+          "home_name": "Karviná",
+          "away_name": "Slovácko",
+          "home_score": 0,
+          "away_score": 2,
+          "result": "V",
+          "total_fouls": 26
+        },
+        {
+          "fixture_id": 19439041,
+          "date": "2025-08-09T15:00:00Z",
+          "home_name": "Viktoria Plzeň",
+          "away_name": "Slovácko",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 23
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
@@ -402,48 +583,12 @@
       "coach_home": "Martin Svědík",
       "coach_away": "Luboš Kozel",
       "referee_id": 72901
-    },
-    {
-      "fixture_id": 18140398,
-      "date": "2021-07-25T14:00:00Z",
-      "home": {
-        "id": 463,
-        "name": "Slovan Liberec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png"
-      },
-      "away": {
-        "id": 234,
-        "name": "Slovácko",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/234.png"
-      },
-      "home_score": 0,
-      "away_score": 1,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 4,
-        "sot": 2,
-        "corners": 5,
-        "fouls": 13,
-        "possession": 0,
-        "yellow": 3,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 3,
-        "sot": 1,
-        "corners": 0,
-        "fouls": 19,
-        "possession": 0,
-        "yellow": 3,
-        "red": 1
-      },
-      "coach_home": "Pavel Hoftych",
-      "coach_away": "Martin Svědík",
-      "referee_id": 15436
     }
   ],
-  "h2h_total_available": 38,
+  "h2h_total_available": 9,
+  "h2h_window_years": 5,
+  "h2h_excluded_older": 29,
+  "build_version": 2,
   "form": {
     "home": {
       "matches": [
@@ -3115,10 +3260,10 @@
           }
         },
         "h2h_stats": {
-          "appearances": 9,
+          "appearances": 8,
           "stats": {
             "Passes": 165.0,
-            "Minutes Played": 628.0,
+            "Minutes Played": 538.0,
             "Fouls Drawn": 6.0,
             "Big Chances Created": 3.0,
             "Touches": 94.0,
@@ -3155,7 +3300,7 @@
             "Aerials": 2.0,
             "Aerials Won Percentage": 50.0,
             "Assists": 2.0,
-            "Goals Conceded": 6.0,
+            "Goals Conceded": 5.0,
             "Blocked Shots": 1.0,
             "Interceptions": 3.0,
             "Yellowcards": 1.0
@@ -4964,10 +5109,10 @@
           }
         },
         "h2h_stats": {
-          "appearances": 10,
+          "appearances": 9,
           "stats": {
             "Dispossessed": 4.0,
-            "Minutes Played": 822.0,
+            "Minutes Played": 788.0,
             "Touches": 168.0,
             "Accurate Passes Percentage": 78.4,
             "Rating": 7.3,
@@ -6982,7 +7127,7 @@
           "stats": {}
         },
         "h2h_stats": {
-          "appearances": 5,
+          "appearances": 4,
           "stats": {
             "Possession Lost": 15.0,
             "Dribbled Past": 3.0,
@@ -7002,14 +7147,14 @@
             "Long Balls": 7.0,
             "Passes In Final Third": 9.0,
             "Interceptions": 4.0,
-            "Minutes Played": 247.0,
+            "Minutes Played": 157.0,
             "Ball Recovery": 3.0,
             "Fouls Drawn": 3.0,
             "Duels Won": 6.0,
             "Cumulative Minutes Played": 74.0,
             "Aerials Won": 2.0,
-            "Goals Conceded": 7.0,
-            "Yellowcards": 2.0,
+            "Goals Conceded": 6.0,
+            "Yellowcards": 1.0,
             "Shots Total": 1.0,
             "Penalties Committed": 1.0,
             "Fouls": 1.0,
@@ -7152,7 +7297,6 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T10:00:26.837754Z",
   "odds": {
     "home": 1.45,
     "draw": 4.29,
@@ -7179,10 +7323,10 @@
     "away_ht_leading": 6.57
   },
   "ai_analysis": {
-    "text": "Zápas mezi Slovanem Liberec a Slováckem v rámci Chance Ligy slibuje zajímavé střetnutí, zejména s ohledem na aktuální formu obou týmů. Domácí Slovan se nachází v dobré formě, když z posledních šesti zápasů zaznamenal čtyři vítězství a dvě remízy. Naopak Slovácko zažívá těžší období, kdy se mu podařilo vyhrát pouze jednou a dvakrát remizovalo, což naznačuje, že budou mít problémy s udržením tempa proti silnému soupeři.\n\nHistorie vzájemných zápasů ukazuje jasnou dominanci Slovanu Liberec, který v posledních pěti utkáních proti Slovácku vyhrál se skóre 15:2. Tento trend se pravděpodobně promítne i do nadcházejícího zápasu, kde Slovan bude chtít potvrdit svou nadvládu a získat tři body na domácím stadionu. Očekává se, že domácí tým bude mít výraznou převahu v držení míče a šancích, což potvrzují i simulace s očekávanými góly (xG), kde Slovan vykazuje 1.72 oproti 0.65 pro Slovácko.\n\nNa základě těchto faktorů se dá předpokládat, že Slovan Liberec vstoupí do zápasu jako favorit a bude usilovat o rychlé otevření skóre. Slovácko bude muset zlepšit svou defenzivu, aby se vyhnulo vysoké porážce. Vzhledem k formě a historickým výsledkům se očekává, že zápas skončí vítězstvím domácího týmu, přičemž šance na to, že oba týmy skórují, jsou relativně nízké.",
+    "text": "Zápas mezi Slovanem Liberec a Slováckem v rámci Chance Ligy se odehraje na Stadionu u Nisy a očekává se, že domácí tým bude favoritem. Liberec má v posledních zápasech dobrou formu, kdy zaznamenal čtyři vítězství a jednu remízu. Naopak Slovácko se potýká s problémy, když v posledních šesti zápasech vyhrálo pouze jednou a dvakrát prohrálo. Historie vzájemných zápasů také nahrává Liberci, který v posledních pěti střetnutích se Slováckem zvítězil vždy s výrazným rozdílem.\n\nPodle simulace očekávaných gólů (xG) má Slovan Liberec výraznou převahu s hodnotou 1.72 oproti 0.65 pro Slovácko. Tato čísla naznačují, že domácí tým by měl mít více příležitostí ke skórování. Pravděpodobnost vítězství domácích je odhadována na 53.3 %, zatímco šance na remízu je 25.7 % a na vítězství hostů pouze 21.0 %. To ukazuje, že Liberec by měl být schopen kontrolovat hru a vytvářet více šancí.\n\nCo se týče dalších statistik, domácí tým má také vyšší pravděpodobnost, že vstřelí více než dva góly, což je odhadováno na 1.59. Na druhou stranu, Slovácko má potíže s udržením čistého konta, což může naznačovat, že se jim bude obtížně bránit proti ofenzivnímu tlaku Liberce. Celkově lze očekávat, že Slovan Liberec bude dominovat v zápase a pravděpodobně si odnese tři body.",
     "model": "gpt-4o-mini",
-    "input_hash": "6247fd51a1a3baff",
-    "generated_at": "2026-10-07T10:00:36Z",
-    "text_en": "The upcoming match between Slovan Liberec and Slovácko in the Chance Liga is set to take place at Stadion u Nisy on October 11, 2026. Slovan Liberec enters this match with a strong recent form, having secured four wins and two draws in their last six matches. In contrast, Slovácko has struggled, managing only one win and suffering four losses in the same period. Historically, Liberec has dominated their encounters with Slovácko, winning the last five meetings, which adds to their confidence heading into this fixture.\n\nStatistical analysis suggests that Slovan Liberec is likely to control the game, with an expected goals (xG) value of 1.72 compared to Slovácko's 0.65. This indicates that Liberec not only has a better recent form but also creates more scoring opportunities. The simulation results show a 53.3% probability of a home win, while Slovácko has only a 21.0% chance of winning away. Additionally, the odds reflect a strong favoritism towards Liberec, with home odds at 1.45, suggesting that bookmakers also anticipate a home victory.\n\nGiven the current form and historical performance, it is expected that Slovan Liberec will take the initiative early in the match, likely leading to a goal in the first half. Slovácko will need to adopt a more aggressive approach to compete effectively, but their recent struggles may hinder their ability to capitalize on any chances. Overall, Liberec is favored to secure a comfortable win, potentially extending their unbeaten streak against Slovácko."
+    "input_hash": "1800c5197870a90b",
+    "generated_at": "2026-10-08T09:36:15Z",
+    "text_en": "The upcoming match between Slovan Liberec and Slovácko in the Chance Liga is set to take place at Stadion u Nisy on October 11, 2026. Slovan Liberec enters this match with a strong recent form, having recorded four wins and two draws in their last six matches. In contrast, Slovácko has struggled, with only one win and five losses in their last six outings. This disparity in form suggests that Slovan Liberec will have the upper hand going into the match.\n\nHistorically, Slovan Liberec has had a dominant record against Slovácko, winning their last five encounters with an aggregate score of 15-2. This trend is supported by the expected goals (xG) simulation, which indicates that Slovan Liberec is projected to score 1.72 goals compared to Slovácko's 0.65. The simulation also suggests a high likelihood of a home win at 53.3%, with a draw at 25.7% and an away win at 21.0%. These statistics further reinforce the expectation that Slovan Liberec will control the match.\n\nThe referee for this match, Jakub Wulkan, will oversee a contest that could see Slovan Liberec capitalize on their home advantage. With odds favoring the home side at 1.45, it is anticipated that they will not only aim for a victory but may also look to secure a clean sheet, given Slovácko's recent scoring difficulties. Overall, the combination of current form, historical performance, and statistical projections points towards a likely win for Slovan Liberec in this matchup."
   }
 }

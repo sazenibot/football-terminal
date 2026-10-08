@@ -2,8 +2,8 @@
   "fixture_id": 19725035,
   "league_id": 262,
   "league_name": "Chance Liga",
-  "built_at": "2026-10-03T09:48:33.541899Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-08T09:35:34.998431Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T13:00:00Z",
   "venue": "Městský fotbalový stadion Srbská",
   "home": {
@@ -16,7 +16,130 @@
     "name": "Jablonec",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 75580,
+    "name": "Daniel Vokoun",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 0,
+          "average": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 76,
+        "average": 25.33
+      },
+      "Redcards": {
+        "all": {
+          "count": 2,
+          "average": 0.67,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 2
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 2,
+          "average": 0.67,
+          "percentage": 100
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 8,
+          "average": 2.67,
+          "on_bench": 1,
+          "for_coach": 0,
+          "on_pitch": 7
+        },
+        "home": {
+          "count": 3,
+          "average": 1,
+          "percentage": 37.5
+        },
+        "away": {
+          "count": 5,
+          "average": 1.67,
+          "percentage": 62.5
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 3
+      },
+      "VAR Moments": {
+        "count": 1,
+        "average": 0.33
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 27.0,
+      "yellow_per_match": 3.24,
+      "red_per_match": 0.4,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 4,
+      "matches": 22,
+      "yellow_cards": 88,
+      "red_cards": 5,
+      "avg_yellow_per_match": 4.0
+    },
+    "h2h_matches_officiated": [],
+    "home_team_matches_officiated": null,
+    "away_team_matches_officiated": {
+      "matches": 1,
+      "avg_fouls_by_team": 11.0,
+      "avg_fouls_total": 23.0,
+      "avg_yellow_by_team": 1.0,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19416505,
+          "date": "2025-05-10T14:00:00Z",
+          "home_name": "Jablonec",
+          "away_name": "Sigma Olomouc",
+          "home_score": 4,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 23
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
@@ -294,282 +417,12 @@
       "coach_home": "David Horejs",
       "coach_away": "Richard Dostalek",
       "referee_id": 75583
-    },
-    {
-      "fixture_id": 16839753,
-      "date": "2021-03-14T15:00:00Z",
-      "home": {
-        "id": 3350,
-        "name": "Zbrojovka Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
-      },
-      "away": {
-        "id": 3643,
-        "name": "Jablonec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
-      },
-      "home_score": 1,
-      "away_score": 2,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 8,
-        "sot": 5,
-        "corners": 4,
-        "fouls": 21,
-        "possession": 0,
-        "yellow": 2,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 8,
-        "sot": 3,
-        "corners": 4,
-        "fouls": 22,
-        "possession": 0,
-        "yellow": 1,
-        "red": 0
-      },
-      "coach_home": "Richard Dostalek",
-      "coach_away": "Petr Rada",
-      "referee_id": 19230
-    },
-    {
-      "fixture_id": 16839606,
-      "date": "2020-11-06T17:00:00Z",
-      "home": {
-        "id": 3643,
-        "name": "Jablonec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
-      },
-      "away": {
-        "id": 3350,
-        "name": "Zbrojovka Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
-      },
-      "home_score": 0,
-      "away_score": 1,
-      "result_for_home_team": "V",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 6,
-        "sot": 2,
-        "corners": 5,
-        "fouls": 14,
-        "possession": 0,
-        "yellow": 1,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 5,
-        "sot": 4,
-        "corners": 6,
-        "fouls": 20,
-        "possession": 0,
-        "yellow": 2,
-        "red": 0
-      },
-      "coach_home": "Petr Rada",
-      "coach_away": "Miloslav Machálek",
-      "referee_id": 17129
-    },
-    {
-      "fixture_id": 1867791,
-      "date": "2018-05-05T14:00:00Z",
-      "home": {
-        "id": 3350,
-        "name": "Zbrojovka Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
-      },
-      "away": {
-        "id": 3643,
-        "name": "Jablonec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
-      },
-      "home_score": 0,
-      "away_score": 3,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 4,
-        "corners": 1,
-        "fouls": 0,
-        "possession": 52,
-        "yellow": 2,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 5,
-        "corners": 2,
-        "fouls": 0,
-        "possession": 48,
-        "yellow": 0,
-        "red": 0
-      },
-      "coach_home": "Roman Pivarník",
-      "coach_away": "Petr Rada",
-      "referee_id": 18292
-    },
-    {
-      "fixture_id": 1867679,
-      "date": "2017-11-05T13:00:00Z",
-      "home": {
-        "id": 3643,
-        "name": "Jablonec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
-      },
-      "away": {
-        "id": 3350,
-        "name": "Zbrojovka Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
-      },
-      "home_score": 1,
-      "away_score": 0,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 4,
-        "corners": 6,
-        "fouls": 0,
-        "possession": 54,
-        "yellow": 5,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 1,
-        "corners": 11,
-        "fouls": 0,
-        "possession": 46,
-        "yellow": 1,
-        "red": 0
-      },
-      "coach_home": null,
-      "coach_away": "Roman Pivarník",
-      "referee_id": 16465
-    },
-    {
-      "fixture_id": 215508,
-      "date": "2017-04-15T13:00:00Z",
-      "home": {
-        "id": 3350,
-        "name": "Zbrojovka Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
-      },
-      "away": {
-        "id": 3643,
-        "name": "Jablonec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
-      },
-      "home_score": 2,
-      "away_score": 0,
-      "result_for_home_team": "V",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 11,
-        "sot": 6,
-        "corners": 8,
-        "fouls": 0,
-        "possession": 50,
-        "yellow": 3,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 10,
-        "sot": 2,
-        "corners": 7,
-        "fouls": 0,
-        "possession": 50,
-        "yellow": 1,
-        "red": 0
-      },
-      "coach_home": "Svatopluk Habanec",
-      "coach_away": null,
-      "referee_id": 16468
-    },
-    {
-      "fixture_id": 214342,
-      "date": "2016-10-15T15:00:00Z",
-      "home": {
-        "id": 3643,
-        "name": "Jablonec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
-      },
-      "away": {
-        "id": 3350,
-        "name": "Zbrojovka Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
-      },
-      "home_score": 1,
-      "away_score": 2,
-      "result_for_home_team": "V",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 13,
-        "sot": 4,
-        "corners": 5,
-        "fouls": 0,
-        "possession": 41,
-        "yellow": 2,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 16,
-        "sot": 6,
-        "corners": 9,
-        "fouls": 0,
-        "possession": 59,
-        "yellow": 2,
-        "red": 0
-      },
-      "coach_home": "Zdenko Frťala",
-      "coach_away": "Svatopluk Habanec",
-      "referee_id": 15426
-    },
-    {
-      "fixture_id": 215080,
-      "date": "2016-02-27T14:00:00Z",
-      "home": {
-        "id": 3643,
-        "name": "Jablonec",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/3643.png"
-      },
-      "away": {
-        "id": 3350,
-        "name": "Zbrojovka Brno",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/3350.png"
-      },
-      "home_score": 3,
-      "away_score": 0,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 0,
-        "corners": 0,
-        "fouls": 0,
-        "possession": null,
-        "yellow": 0,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 0,
-        "corners": 0,
-        "fouls": 0,
-        "possession": null,
-        "yellow": 0,
-        "red": 0
-      },
-      "coach_home": "Zdenko Frťala",
-      "coach_away": "Václav Kotal",
-      "referee_id": 19230
     }
   ],
-  "h2h_total_available": 29,
+  "h2h_total_available": 3,
+  "h2h_window_years": 5,
+  "h2h_excluded_older": 26,
+  "build_version": 2,
   "form": {
     "home": {
       "matches": [
@@ -1506,28 +1359,28 @@
     },
     "last3_h2h_home_venue": {
       "home": {
-        "goals_for": 0.67,
-        "goals_against": 2.33,
-        "shots": 7.7,
-        "sot": 4.7,
-        "corners": 3.3,
-        "possession": 34.0,
-        "cards": 2.67,
-        "fouls_committed": 11.0,
-        "fouls_received": 10.3
+        "goals_for": 1.0,
+        "goals_against": 2.0,
+        "shots": 15.0,
+        "sot": 5.0,
+        "corners": 5.0,
+        "possession": 50.0,
+        "cards": 4.0,
+        "fouls_committed": 12.0,
+        "fouls_received": 9.0
       },
       "away": {
-        "goals_for": 2.33,
-        "goals_against": 0.67,
-        "shots": 7.3,
-        "sot": 4.7,
-        "corners": 4.0,
-        "possession": 32.7,
-        "cards": 1.33,
-        "fouls_committed": 10.3,
-        "fouls_received": 11.0
+        "goals_for": 2.0,
+        "goals_against": 1.0,
+        "shots": 14.0,
+        "sot": 6.0,
+        "corners": 6.0,
+        "possession": 50.0,
+        "cards": 3.0,
+        "fouls_committed": 9.0,
+        "fouls_received": 12.0
       },
-      "sample_size": 3
+      "sample_size": 1
     }
   },
   "trends": {
@@ -1546,7 +1399,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.28
+          "odds": 1.32
         },
         {
           "key": "yellow_under5",
@@ -1610,7 +1463,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.9
+          "odds": 2.02
         },
         {
           "key": "corners_under95",
@@ -1632,7 +1485,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.67
+          "odds": 1.74
         },
         {
           "key": "scoreless",
@@ -1640,7 +1493,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.52
+          "odds": 3.35
         },
         {
           "key": "under25",
@@ -1648,7 +1501,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.9
+          "odds": 1.8
         },
         {
           "key": "scored2plus",
@@ -1656,7 +1509,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.32
+          "odds": 2.42
         },
         {
           "key": "corners_over95",
@@ -1678,7 +1531,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.05
+          "odds": 3.09
         },
         {
           "key": "ht_behind",
@@ -1686,7 +1539,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.31
+          "odds": 3.34
         },
         {
           "key": "clean_sheet",
@@ -1694,7 +1547,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.24
+          "odds": 3.11
         },
         {
           "key": "yellow_5plus",
@@ -1716,7 +1569,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.09
+          "odds": 2.06
         }
       ],
       "away": [
@@ -1726,7 +1579,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.28
+          "odds": 1.32
         },
         {
           "key": "sot_over",
@@ -1790,7 +1643,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.67
+          "odds": 1.74
         },
         {
           "key": "under25",
@@ -1798,7 +1651,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.9
+          "odds": 1.8
         },
         {
           "key": "corners_over95",
@@ -1827,7 +1680,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.9
+          "odds": 2.02
         },
         {
           "key": "corners_under95",
@@ -1856,7 +1709,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.31
+          "odds": 3.34
         },
         {
           "key": "ht_behind",
@@ -1864,7 +1717,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.05
+          "odds": 3.09
         },
         {
           "key": "clean_sheet",
@@ -1872,7 +1725,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.52
+          "odds": 3.35
         },
         {
           "key": "scoreless",
@@ -1880,7 +1733,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.24
+          "odds": 3.11
         },
         {
           "key": "scored2plus",
@@ -1888,7 +1741,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.47
+          "odds": 2.59
         },
         {
           "key": "red_card",
@@ -1903,7 +1756,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.09
+          "odds": 2.06
         }
       ]
     },
@@ -1971,7 +1824,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.67
+          "odds": 1.74
         },
         {
           "key": "over15",
@@ -1979,7 +1832,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.28
+          "odds": 1.32
         },
         {
           "key": "over25",
@@ -1987,7 +1840,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.9
+          "odds": 2.02
         },
         {
           "key": "corners_over95",
@@ -2023,7 +1876,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.9
+          "odds": 1.8
         },
         {
           "key": "corners_under95",
@@ -2091,182 +1944,182 @@
       ],
       "last5": [
         {
-          "key": "offsides_over",
-          "label": "Ofsajdy: -0.5+ v zápase",
-          "hits": 5,
-          "total": 5,
+          "key": "shots_over",
+          "label": "Střely: 12.5+ v zápase",
+          "hits": 3,
+          "total": 3,
           "pct": 100.0
         },
         {
-          "key": "yellow_under5",
-          "label": "Méně než 5 žlutých karet v zápase (celkem)",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
-          "key": "shots_over",
-          "label": "Střely: 7.5+ v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
           "key": "shots_under",
-          "label": "Střely: méně než 15.5 v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
+          "label": "Střely: méně než 18.5 v zápase",
+          "hits": 3,
+          "total": 3,
+          "pct": 100.0
         },
         {
           "key": "sot_over",
           "label": "Střely na branku: 4.5+ v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
+          "hits": 3,
+          "total": 3,
+          "pct": 100.0
         },
         {
           "key": "sot_under",
-          "label": "Střely na branku: méně než 5.5 v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
+          "label": "Střely na branku: méně než 6.5 v zápase",
+          "hits": 3,
+          "total": 3,
+          "pct": 100.0
         },
         {
           "key": "fouls_over",
-          "label": "Fauly: 8.5+ v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
+          "label": "Fauly: 7.5+ v zápase",
+          "hits": 3,
+          "total": 3,
+          "pct": 100.0
         },
         {
           "key": "fouls_under",
-          "label": "Fauly: méně než 14.5 v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
+          "label": "Fauly: méně než 12.5 v zápase",
+          "hits": 3,
+          "total": 3,
+          "pct": 100.0
+        },
+        {
+          "key": "offsides_over",
+          "label": "Ofsajdy: -0.5+ v zápase",
+          "hits": 3,
+          "total": 3,
+          "pct": 100.0
         },
         {
           "key": "offsides_under",
-          "label": "Ofsajdy: méně než 0.5 v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
+          "label": "Ofsajdy: méně než 3.5 v zápase",
+          "hits": 3,
+          "total": 3,
+          "pct": 100.0
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
-          "hits": 3,
-          "total": 5,
-          "pct": 60.0,
-          "odds": 1.67
+          "hits": 2,
+          "total": 3,
+          "pct": 66.7,
+          "odds": 1.74
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
-          "hits": 3,
-          "total": 5,
-          "pct": 60.0,
-          "odds": 1.28
+          "hits": 2,
+          "total": 3,
+          "pct": 66.7,
+          "odds": 1.32
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
-          "hits": 3,
-          "total": 5,
-          "pct": 60.0,
-          "odds": 1.9
+          "hits": 2,
+          "total": 3,
+          "pct": 66.7,
+          "odds": 2.02
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
-          "hits": 3,
-          "total": 5,
-          "pct": 60.0
+          "hits": 2,
+          "total": 3,
+          "pct": 66.7
+        },
+        {
+          "key": "yellow_under5",
+          "label": "Méně než 5 žlutých karet v zápase (celkem)",
+          "hits": 2,
+          "total": 3,
+          "pct": 66.7
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
-          "hits": 3,
-          "total": 5,
-          "pct": 60.0
-        },
-        {
-          "key": "under25",
-          "label": "Under 2.5 gólů v zápase",
           "hits": 2,
-          "total": 5,
-          "pct": 40.0,
-          "odds": 1.9
-        },
-        {
-          "key": "corners_under95",
-          "label": "Under 9.5 rohů v zápase (celkem)",
-          "hits": 2,
-          "total": 5,
-          "pct": 40.0
-        },
-        {
-          "key": "team_2plus_yellow",
-          "label": "Tým dostal 2+ žluté karty",
-          "hits": 2,
-          "total": 5,
-          "pct": 40.0
-        },
-        {
-          "key": "clean_sheet",
-          "label": "Čisté konto (0 obdržených gólů)",
-          "hits": 1,
-          "total": 5,
-          "pct": 20.0
+          "total": 3,
+          "pct": 66.7
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
-          "total": 5,
-          "pct": 20.0
+          "total": 3,
+          "pct": 33.3
+        },
+        {
+          "key": "under25",
+          "label": "Under 2.5 gólů v zápase",
+          "hits": 1,
+          "total": 3,
+          "pct": 33.3,
+          "odds": 1.8
+        },
+        {
+          "key": "corners_under95",
+          "label": "Under 9.5 rohů v zápase (celkem)",
+          "hits": 1,
+          "total": 3,
+          "pct": 33.3
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
-          "total": 5,
-          "pct": 20.0
+          "total": 3,
+          "pct": 33.3
+        },
+        {
+          "key": "team_2plus_yellow",
+          "label": "Tým dostal 2+ žluté karty",
+          "hits": 1,
+          "total": 3,
+          "pct": 33.3
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
-          "total": 5,
-          "pct": 20.0
+          "total": 3,
+          "pct": 33.3
         },
         {
-          "key": "ht_draw",
-          "label": "Remíza v poločase",
-          "hits": 1,
-          "total": 5,
-          "pct": 20.0
+          "key": "clean_sheet",
+          "label": "Čisté konto (0 obdržených gólů)",
+          "hits": 0,
+          "total": 3,
+          "pct": 0.0
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 0,
-          "total": 5,
+          "total": 3,
           "pct": 0.0
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 0,
-          "total": 5,
+          "total": 3,
           "pct": 0.0
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
-          "total": 5,
+          "total": 3,
+          "pct": 0.0
+        },
+        {
+          "key": "ht_draw",
+          "label": "Remíza v poločase",
+          "hits": 0,
+          "total": 3,
           "pct": 0.0
         }
       ]
@@ -3410,10 +3263,8 @@
           }
         },
         "h2h_stats": {
-          "appearances": 1,
-          "stats": {
-            "Minutes Played": 2.0
-          }
+          "appearances": 0,
+          "stats": {}
         }
       },
       {
@@ -5252,7 +5103,7 @@
           }
         },
         "h2h_stats": {
-          "appearances": 6,
+          "appearances": 3,
           "stats": {
             "Rating": 7.6,
             "Passes": 81.0,
@@ -5265,13 +5116,13 @@
             "Shots Total": 7.0,
             "Shots On Target": 4.0,
             "Long Balls": 1.0,
-            "Minutes Played": 278.0,
+            "Minutes Played": 246.0,
             "Total Crosses": 1.0,
             "Tackles": 1.0,
             "Fouls": 3.0,
             "Duels Lost": 5.0,
             "Shots Blocked": 1.0,
-            "Goals Conceded": 3.0,
+            "Goals Conceded": 2.0,
             "Goals": 3.0
           }
         }
@@ -5443,7 +5294,7 @@
           }
         },
         "h2h_stats": {
-          "appearances": 5,
+          "appearances": 3,
           "stats": {
             "Clearances": 3.0,
             "Passes": 67.0,
@@ -5458,7 +5309,7 @@
             "Long Balls Won": 7.0,
             "Long Balls": 17.0,
             "Aerials Won": 1.0,
-            "Goals Conceded": 3.0,
+            "Goals Conceded": 2.0,
             "Goalkeeper Goals Conceded": 2.0,
             "Total Crosses": 1.0
           }
@@ -6348,11 +6199,8 @@
           }
         },
         "h2h_stats": {
-          "appearances": 3,
-          "stats": {
-            "Goals Conceded": 5.0,
-            "Minutes Played": 180.0
-          }
+          "appearances": 0,
+          "stats": {}
         }
       },
       {
@@ -6639,37 +6487,36 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T22:24:24.492946Z",
   "odds": {
     "home": 2.5,
     "draw": 3.3,
     "away": 2.75,
-    "under15": 3.56,
-    "over15": 1.28,
-    "under25": 1.9,
-    "over25": 1.9,
-    "under35": 1.33,
-    "over35": 3.25,
-    "btts": 1.67,
+    "under15": 3.31,
+    "over15": 1.32,
+    "under25": 1.8,
+    "over25": 2.02,
+    "under35": 1.29,
+    "over35": 3.54,
+    "btts": 1.74,
     "source": "chance",
-    "home_scoreless": 3.52,
-    "home_scored2plus": 2.32,
-    "home_clean_sheet": 3.24,
-    "home_ht_leading": 3.05,
-    "home_ht_draw": 2.09,
-    "home_ht_behind": 3.31,
-    "away_clean_sheet": 3.52,
-    "away_scoreless": 3.24,
-    "away_scored2plus": 2.47,
-    "away_ht_behind": 3.05,
-    "away_ht_draw": 2.09,
-    "away_ht_leading": 3.31
+    "home_scoreless": 3.35,
+    "home_scored2plus": 2.42,
+    "home_clean_sheet": 3.11,
+    "home_ht_leading": 3.09,
+    "home_ht_draw": 2.06,
+    "home_ht_behind": 3.34,
+    "away_clean_sheet": 3.35,
+    "away_scoreless": 3.11,
+    "away_scored2plus": 2.59,
+    "away_ht_behind": 3.09,
+    "away_ht_draw": 2.06,
+    "away_ht_leading": 3.34
   },
   "ai_analysis": {
-    "text": "Zápas mezi Zbrojovkou Brno a Jabloncem se odehraje 10. října 2026 na Městském fotbalovém stadionu Srbská. Domácí Zbrojovka se v posledních zápasech prezentuje dobrou formou, když vyhrála čtyři z posledních šesti utkání. Na druhé straně Jablonec má smíšené výsledky, s dvěma remízami a dvěma výhrami ve stejném počtu zápasů. Historie vzájemných zápasů ukazuje, že Jablonec má mírnou převahu, když vyhrál čtyři z posledních pěti střetnutí.\n\nOčekávané statistiky naznačují, že zápas by mohl být vyrovnaný, s mírnou výhodou pro domácí tým. Odhadované xG (expected goals) ukazují na podobnou úroveň ofenzivní síly obou týmů, přičemž Zbrojovka má 1.27 a Jablonec 1.24. To naznačuje, že oba týmy budou mít šance na vstřelení gólů, přičemž pravděpodobnost, že oba týmy skórují, se pohybuje kolem 51.1 %.\n\nVzhledem k formě a historickým výsledkům lze očekávat, že zápas bude vyrovnaný, s možností remízy. Domácí Zbrojovka se může snažit využít výhody domácího prostředí, zatímco Jablonec bude chtít potvrdit svou dominanci v posledních vzájemných duelech. Celkově by se mohlo jednat o zajímavé a napínavé utkání s několika šancemi na obou stranách.",
+    "text": "Zápas mezi Zbrojovkou Brno a Jabloncem se odehraje na Městském fotbalovém stadionu Srbská 10. října 2026. Domácí Zbrojovka se nachází v dobré formě, když v posledních šesti zápasech zaznamenala čtyři vítězství a dvě remízy. Naopak Jablonec má za sebou smíšené výsledky, kdy se mu podařilo vyhrát pouze dva z posledních šesti zápasů. Historie vzájemných zápasů hovoří ve prospěch Jablonce, který vyhrál poslední tři střetnutí.\n\nPodle simulací očekáváme vyrovnaný zápas s mírným náskokem domácích v očekávaných gólech (xG 1.27 vs. 1.24). Pravděpodobnost na vítězství Zbrojovky je 39.5 %, zatímco Jablonec má šanci na výhru 33.4 %. Remíza se jeví jako méně pravděpodobná (27.1 %). Zajímavým faktorem je také pravděpodobnost, že oba týmy vstřelí gól (51.1 %), což naznačuje, že zápas by mohl být ofenzivně laděný.\n\nVzhledem k aktuální formě a vzájemné historii by se dalo očekávat, že Jablonec se pokusí využít své zkušenosti a agresivně napadat, zatímco Zbrojovka se bude snažit potvrdit svou domácí sílu. Klíčové momenty zápasu mohou rozhodnout individuální výkony hráčů v útoku, přičemž obě strany mají potenciál skórovat. Celkově se dá očekávat vyrovnaný a dramatický zápas, který může přinést zajímavé momenty.",
     "model": "gpt-4o-mini",
-    "input_hash": "1860e0deffcbd7bd",
-    "generated_at": "2026-10-07T10:00:16Z",
-    "text_en": "The upcoming match between Zbrojovka Brno and Jablonec in the Chance Liga is set to take place at the Městský fotbalový stadion Srbská on October 10, 2026. Both teams have shown varying forms recently, with Zbrojovka Brno securing three wins in their last six matches but also suffering three losses. In contrast, Jablonec has had a mixed bag of results, with two wins, two draws, and two losses in their recent outings. Historically, Jablonec has had the upper hand in their head-to-head encounters, winning four of the last five matches against Brno.\n\nIn terms of expected performance, the simulation data suggests a close contest, with both teams having similar expected goals (xG) of 1.27 for Brno and 1.24 for Jablonec. This indicates that the match could be competitive, with opportunities for both sides to score. The likelihood of both teams finding the net is around 51.1%, suggesting that a goal from each side is a plausible outcome. Additionally, the odds reflect a relatively balanced matchup, with Zbrojovka Brno slightly favored at 2.5 for a win, while Jablonec is at 2.75.\n\nGiven the recent form and historical results, it is reasonable to anticipate a tightly contested match. Zbrojovka Brno will aim to leverage their home advantage, while Jablonec will look to continue their dominance in past encounters. The match could hinge on key moments, with both teams needing to capitalize on their chances to secure a vital three points in the league."
+    "input_hash": "0b7fa64a4ea31c52",
+    "generated_at": "2026-10-08T09:35:44Z",
+    "text_en": "The upcoming match between Zbrojovka Brno and Jablonec in the Chance Liga is set to take place at the Městský fotbalový stadion Srbská on October 10, 2026. Both teams have had mixed recent performances, with Zbrojovka Brno showing a slightly better form, having won three out of their last six matches, while Jablonec has struggled with only two wins in the same period. Historically, Jablonec has had the upper hand in their recent encounters, winning all three of their last meetings against Brno.\n\nIn terms of expected performance, the simulation data suggests a closely contested match, with Zbrojovka Brno having an expected goals (xG) of 1.27 compared to Jablonec's 1.24. This indicates that both teams are likely to create similar levels of scoring opportunities. The probability of both teams scoring (BTTS) stands at 51.1%, hinting at a potential for an entertaining match with goals from both sides. \n\nThe referee for the match, Daniel Vokoun, will play a crucial role in maintaining the flow of the game. With the odds reflecting a competitive matchup, Zbrojovka Brno is slightly favored to win at 2.5, while Jablonec's odds are at 2.75. Given the recent form and head-to-head results, it is likely that Jablonec will aim to exploit their historical advantage, while Brno will look to leverage their home advantage to secure a vital win in the competition."
   }
 }

@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 522619,
-      "player_name": "Facundo Tomás Garcés",
-      "type_id": 1615,
-      "type_name": "Suspension Through Sports Court",
-      "type_name_cs": "Suspension Through Sports Court",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-03-05",
-      "end_date": "2026-11-02",
-      "games_missed": 24,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37591023,
       "player_name": "Mikel Rodriguez Ulacia",
       "type_id": 1918,
@@ -44,6 +30,20 @@
       "start_date": "2026-09-04",
       "end_date": "2027-05-01",
       "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 522619,
+      "player_name": "Facundo Tomás Garcés",
+      "type_id": 1615,
+      "type_name": "Suspension Through Sports Court",
+      "type_name_cs": "Suspension Through Sports Court",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-03-05",
+      "end_date": "2026-11-02",
+      "games_missed": 24,
       "likely_available": false
     },
     {
@@ -1501,7 +1501,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.97
+          "odds": 1.96
         },
         {
           "key": "corners_under95",
@@ -1540,7 +1540,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.88
+          "odds": 4.81
         },
         {
           "key": "scoreless",
@@ -1548,7 +1548,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.56
+          "odds": 2.58
         },
         {
           "key": "over15",
@@ -1564,7 +1564,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.86
+          "odds": 1.87
         },
         {
           "key": "corners_over95",
@@ -1602,7 +1602,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.58
+          "odds": 4.53
         },
         {
           "key": "scored2plus",
@@ -1610,7 +1610,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.27
+          "odds": 3.24
         },
         {
           "key": "red_card",
@@ -1625,7 +1625,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.39
+          "odds": 2.41
         }
       ],
       "away": [
@@ -1643,7 +1643,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.86
+          "odds": 1.87
         },
         {
           "key": "yellow_under5",
@@ -1679,7 +1679,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.82
+          "odds": 1.83
         },
         {
           "key": "shots_over",
@@ -1754,7 +1754,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.56
+          "odds": 2.58
         },
         {
           "key": "corners_over95",
@@ -1777,7 +1777,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.39
+          "odds": 2.41
         },
         {
           "key": "scoreless",
@@ -1785,7 +1785,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.88
+          "odds": 4.81
         },
         {
           "key": "red_card",
@@ -1800,7 +1800,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 1.97
+          "odds": 1.96
         },
         {
           "key": "yellow_5plus",
@@ -1815,7 +1815,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.58
+          "odds": 4.53
         }
       ]
     },
@@ -1827,7 +1827,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.97
+          "odds": 1.96
         },
         {
           "key": "ht_draw",
@@ -1965,7 +1965,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.86
+          "odds": 1.87
         },
         {
           "key": "scored2plus",
@@ -2024,7 +2024,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.97
+          "odds": 1.96
         },
         {
           "key": "yellow_5plus",
@@ -2148,7 +2148,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.86
+          "odds": 1.87
         },
         {
           "key": "scored2plus",
@@ -7191,41 +7191,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T22:44:24.472310Z",
+  "refreshed_at": "2026-10-08T09:39:44.583160Z",
   "odds": {
-    "home": 4.37,
-    "draw": 3.75,
-    "away": 1.83,
-    "under15": 3.71,
+    "home": 4.29,
+    "draw": 3.73,
+    "away": 1.85,
+    "under15": 3.7,
     "over15": 1.28,
-    "under25": 1.97,
-    "over25": 1.86,
+    "under25": 1.96,
+    "over25": 1.87,
     "under35": 1.36,
-    "over35": 3.15,
+    "over35": 3.17,
     "btts": 1.73,
     "corners_under95": 1.97,
     "corners_over95": 1.75,
     "source": "chance",
-    "home_scoreless": 2.56,
-    "home_scored2plus": 3.27,
-    "home_clean_sheet": 4.88,
-    "home_ht_leading": 4.58,
+    "home_scoreless": 2.58,
+    "home_scored2plus": 3.24,
+    "home_clean_sheet": 4.81,
+    "home_ht_leading": 4.53,
     "home_ht_draw": 2.25,
-    "home_ht_behind": 2.39,
+    "home_ht_behind": 2.41,
     "home_more_corners": 2.17,
-    "away_clean_sheet": 2.56,
-    "away_scoreless": 4.88,
-    "away_scored2plus": 1.82,
-    "away_ht_behind": 4.58,
+    "away_clean_sheet": 2.58,
+    "away_scoreless": 4.81,
+    "away_scored2plus": 1.83,
+    "away_ht_behind": 4.53,
     "away_ht_draw": 2.25,
-    "away_ht_leading": 2.39,
+    "away_ht_leading": 2.41,
     "away_more_corners": 1.95
   },
   "ai_analysis": {
-    "text": "Zápas mezi Deportivo Alavés a Atlético de Madrid se odehraje na stadionu Estadio de Mendizorroza a očekává se, že bude vysoce konkurenční. Domácí Alavés se nachází v mírně slabší formě, s posledními výsledky, které zahrnují dvě prohry a remízu. Naopak Atlético de Madrid má za sebou silnou sérii, kdy vyhrálo tři ze čtyř posledních zápasů. Historie vzájemných zápasů naznačuje, že Atlético má mírnou převahu, i když Alavés dokázal v minulosti uhrát i pozitivní výsledky.\n\nPodle simulací očekávaných gólů (xG) jsou šance na skórování vyrovnané, s mírným náskokem pro Atlético (1.4 oproti 1.37 pro Alavés). To naznačuje, že zápas by mohl být vyrovnaný, ale s mírnou převahou hostujícího týmu. Pravděpodobnost remízy se pohybuje kolem 26,7 %, což ukazuje na možnost, že oba týmy se mohou snažit o opatrnější přístup, zejména v prvních minutách zápasu.\n\nZ hlediska ofenzivních statistik se očekává, že oba týmy budou mít šance na skórování, přičemž pravděpodobnost oboustranného skórování (BTTS) je 56,2 %. Vzhledem k formě a vzájemným zápasům by mohl být klíčovým faktorem výkon domácí obrany, která se bude muset postavit proti silné ofenzivě Atlética. Celkově se očekává vyrovnaný zápas, kde by mohlo hrát roli i štěstí a momentální forma jednotlivých hráčů.",
+    "text": "Zápas mezi Deportivo Alavés a Atlético de Madrid se odehraje na Estadio de Mendizorroza, a to 10. října 2026. Domácí Alavés se nachází v průměrné formě, kdy z posledních šesti zápasů zaznamenali dvě vítězství, dvě remízy a dvě prohry. Naopak Atlético de Madrid prožívá úspěšnou sérii, kdy vyhráli čtyři z posledních šesti utkání, což naznačuje jejich silnou výkonnost a větší sebevědomí před tímto zápasem.\n\nHistorie vzájemných zápasů ukazuje, že Atlético má mírnou převahu, přičemž poslední zápas skončil jejich vítězstvím 1:0. Z pohledu očekávaných gólů (xG) se předpokládá vyrovnaný duel, přičemž Alavés má xG 1.37 a Atlético 1.4. To naznačuje, že by mohlo být k vidění několik šancí na obou stranách, avšak s možností, že se zápas rozhodne v těsném skóre.\n\nPodle simulací je pravděpodobnost remízy 26.7 %, zatímco vítězství hostů je odhadováno na 34.3 %. Také je zde slušná šance na to, že oba týmy skórují, s pravděpodobností 56.2 %. Celkově lze očekávat vyrovnaný a napínavý zápas, kde Atlético bude chtít potvrdit svou dominanci, zatímco Alavés se pokusí překvapit a získat cenné body na domácím hřišti.",
     "model": "gpt-4o-mini",
-    "input_hash": "bf96e9ac6d98a156",
-    "generated_at": "2026-10-07T22:44:32Z",
-    "text_en": "The upcoming match between Deportivo Alavés and Atlético de Madrid at the Estadio de Mendizorroza in La Liga is set to be an intriguing encounter. Alavés has shown mixed form recently, with two wins, two losses, and two draws in their last six matches. In contrast, Atlético de Madrid has been more consistent, recording four wins, one loss, and one draw during the same period. This disparity in form suggests that Atlético may have the upper hand going into the match.\n\nHistorically, the head-to-head results indicate a competitive rivalry, with recent meetings yielding a mix of results. Atlético Madrid won the last encounter 1-0, and both teams have exchanged wins and draws over the past seasons. The expected goals (xG) simulation suggests a closely contested match, with Alavés projected to score 1.37 and Atlético 1.4. This indicates that both teams are likely to create chances, but Atlético's stronger recent form may allow them to capitalize on these opportunities more effectively.\n\nConsidering the statistics, there is a 56.2% likelihood that both teams will score, and a 52% chance that the match will see over 2.5 goals. Given Atlético's recent form and their ability to score, they may be favored to secure a victory, but Alavés will be keen to leverage their home advantage. The match could be pivotal for both teams, with Alavés looking to improve their standing and Atlético aiming to maintain momentum in the league."
+    "input_hash": "60d4aa8e5717752c",
+    "generated_at": "2026-10-08T09:39:53Z",
+    "text_en": "The upcoming match between Deportivo Alavés and Atlético de Madrid in La Liga is set to take place at the Estadio de Mendizorroza on October 10, 2026. Analyzing the recent form of both teams, Alavés has had a mixed performance with two wins, two losses, and two draws in their last six matches. In contrast, Atlético de Madrid has been in strong form, winning four of their last six games, which positions them as the favorites for this encounter.\n\nHistorically, the head-to-head record shows a competitive rivalry, with Atlético Madrid holding a slight edge. In their last five meetings, Atlético has won two matches, Alavés has won one, and two ended in draws. The expected goals (xG) from the simulation indicate a closely contested match, with Alavés projected to score 1.37 and Atlético Madrid 1.4. This suggests that both teams are likely to create scoring opportunities, making a draw or a narrow win for either side plausible.\n\nGiven the current form and historical context, Atlético Madrid may look to control the game and capitalize on their attacking prowess, while Alavés will aim to leverage their home advantage. The simulation indicates a 39% chance of an Atlético win, a 26.7% chance of a draw, and a 34.3% chance of an Alavés victory, suggesting that while Atlético is favored, the match could be tightly contested with the potential for both teams to find the net."
   }
 }

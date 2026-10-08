@@ -1438,7 +1438,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.07
+          "odds": 1.08
         },
         {
           "key": "over25",
@@ -1454,7 +1454,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.24
+          "odds": 1.23
         },
         {
           "key": "shots_over",
@@ -1511,7 +1511,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.45
+          "odds": 1.46
         },
         {
           "key": "scored2plus",
@@ -1557,7 +1557,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.41
+          "odds": 2.42
         },
         {
           "key": "yellow_5plus",
@@ -1580,7 +1580,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.81
+          "odds": 2.78
         },
         {
           "key": "scoreless",
@@ -1596,7 +1596,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.69
+          "odds": 3.67
         },
         {
           "key": "red_card",
@@ -1611,7 +1611,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 6.06
+          "odds": 6.11
         }
       ],
       "away": [
@@ -1621,7 +1621,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 5.08
+          "odds": 5.26
         },
         {
           "key": "btts",
@@ -1629,7 +1629,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.45
+          "odds": 1.46
         },
         {
           "key": "over15",
@@ -1637,7 +1637,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.07
+          "odds": 1.08
         },
         {
           "key": "over25",
@@ -1716,7 +1716,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.9
+          "odds": 2.93
         },
         {
           "key": "corners_over95",
@@ -1732,7 +1732,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.41
+          "odds": 2.42
         },
         {
           "key": "ht_draw",
@@ -1756,7 +1756,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.81
+          "odds": 2.78
         },
         {
           "key": "under25",
@@ -1764,7 +1764,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.69
+          "odds": 3.67
         },
         {
           "key": "yellow_5plus",
@@ -1786,7 +1786,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 6.06
+          "odds": 6.11
         },
         {
           "key": "clean_sheet",
@@ -1813,7 +1813,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.07
+          "odds": 1.08
         },
         {
           "key": "scored2plus",
@@ -1884,7 +1884,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.45
+          "odds": 1.46
         },
         {
           "key": "over25",
@@ -1929,7 +1929,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 3.69
+          "odds": 3.67
         },
         {
           "key": "corners_under95",
@@ -1937,7 +1937,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.41
+          "odds": 2.42
         },
         {
           "key": "more_corners",
@@ -1996,7 +1996,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.07
+          "odds": 1.08
         },
         {
           "key": "scored2plus",
@@ -2074,7 +2074,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.45
+          "odds": 1.46
         },
         {
           "key": "over25",
@@ -2090,7 +2090,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.41
+          "odds": 2.42
         },
         {
           "key": "ht_leading",
@@ -2112,7 +2112,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.69
+          "odds": 3.67
         },
         {
           "key": "corners_over95",
@@ -7418,41 +7418,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T22:44:46.747622Z",
+  "refreshed_at": "2026-10-08T09:40:03.142308Z",
   "odds": {
-    "home": 1.34,
-    "draw": 5.91,
-    "away": 7.66,
-    "under15": 7.98,
-    "over15": 1.07,
-    "under25": 3.69,
+    "home": 1.33,
+    "draw": 5.93,
+    "away": 7.75,
+    "under15": 7.93,
+    "over15": 1.08,
+    "under25": 3.67,
     "over25": 1.28,
-    "under35": 2.13,
-    "over35": 1.73,
-    "btts": 1.45,
-    "corners_under95": 2.41,
+    "under35": 2.12,
+    "over35": 1.74,
+    "btts": 1.46,
+    "corners_under95": 2.42,
     "corners_over95": 1.5,
     "source": "chance",
     "home_scoreless": 10.2,
     "home_scored2plus": 1.2,
-    "home_clean_sheet": 2.81,
+    "home_clean_sheet": 2.78,
     "home_ht_leading": 1.71,
     "home_ht_draw": 3.02,
-    "home_ht_behind": 6.06,
-    "home_more_corners": 1.24,
+    "home_ht_behind": 6.11,
+    "home_more_corners": 1.23,
     "away_clean_sheet": 10.2,
-    "away_scoreless": 2.81,
-    "away_scored2plus": 2.9,
+    "away_scoreless": 2.78,
+    "away_scored2plus": 2.93,
     "away_ht_behind": 1.71,
     "away_ht_draw": 3.02,
-    "away_ht_leading": 6.06,
-    "away_more_corners": 5.08
+    "away_ht_leading": 6.11,
+    "away_more_corners": 5.26
   },
   "ai_analysis": {
-    "text": "Zápas mezi Realem Madrid a Villarrealem, který se odehraje na Estadio Santiago Bernabéu, slibuje být zajímavým soubojem. Real Madrid se nachází v dobré formě, s posledními výsledky, které zahrnují čtyři vítězství a dvě prohry. Na druhé straně Villarreal zažívá smíšené výsledky, přičemž v posledních šesti zápasech vyhráli pouze dvakrát. Historie vzájemných zápasů naznačuje dominanci Realu, který v posledních pěti zápasech s Villarrealem vyhrál čtyřikrát.\n\nPodle simulací očekáváme, že Real Madrid bude mít na hřišti převahu. Odhadované očekávané góly (xG) pro domácí tým jsou 2.1, zatímco pro hosty pouze 1.35. To naznačuje, že Real by mohl mít šanci na více než jeden gól. Také pravděpodobnost, že oba týmy skórují, je vysoká (65.1 %), což může znamenat, že Villarreal by mohl být schopen vstřelit alespoň jeden gól, přestože se očekává, že Real Madrid zvítězí.\n\nKromě toho, s ohledem na statistiky, Real Madrid má také dobrou šanci na vedení v prvním poločase (49.2 %). Villarreal se však může snažit o překvapení, i když jejich šance na vítězství jsou nižší (26.8 %). Celkově se očekává, že zápas bude vyrovnaný, ale s mírnou převahou pro domácí tým, což by mohlo vést k výhře Realu Madrid.",
+    "text": "Zápas mezi Realem Madrid a Villarrealem se odehraje na domácím hřišti Realu, Estadio Santiago Bernabéu, což může hrát klíčovou roli v průběhu utkání. Domácí tým vykazuje solidní formu s posledními třemi vítězstvími a jednou remízou, zatímco Villarreal má za sebou smíšené výsledky, včetně několika porážek. Historie vzájemných zápasů ukazuje jasnou převahu Realu, který v posledních pěti utkáních s Villarrealem neztratil ani bod.\n\nNa základě simulací očekáváme, že Real Madrid vytvoří více šancí, s očekávanými góly (xG) 2.1 oproti 1.35 pro Villarreal. S pravděpodobností 67% se dá očekávat, že v zápase padnou více než 2.5 góly, což naznačuje ofenzivní styl hry ze strany domácích. Také statistika \"obě týmy skórují\" (BTTS) na úrovni 65.1% naznačuje, že Villarreal by mohl mít šanci na vstřelení branky, zejména pokud se mu podaří využít případné chyby v obraně Realu.\n\nCelkově lze očekávat, že Real Madrid bude dominovat v držení míče a vytvářet si více příležitostí, zatímco Villarreal se bude snažit o rychlé protiútoky. Klíčovým faktorem pro úspěch hostů bude schopnost efektivně bránit a využít případné šance. Pokud Real Madrid udrží svou formu, pravděpodobně se dočkáme jejich vítězství, ale Villarreal by mohl překvapit, pokud se jim podaří vstřelit první branku.",
     "model": "gpt-4o-mini",
-    "input_hash": "4f6f5fdf5a303899",
-    "generated_at": "2026-10-07T22:44:55Z",
-    "text_en": "The upcoming match between Real Madrid and Villarreal at the Estadio Santiago Bernabéu promises to be an intriguing encounter in La Liga. Real Madrid has shown a mixed form recently, with three wins and three losses in their last six matches. In contrast, Villarreal has been slightly more consistent, securing four wins but struggling with three losses in their recent outings. Historically, Real Madrid has had the upper hand in their head-to-head meetings, winning the last four encounters, which could provide them with a psychological advantage heading into this match.\n\nStatistical simulations suggest that Real Madrid is expected to dominate the game, with an expected goals (xG) metric of 2.1 compared to Villarreal's 1.35. This indicates that Real Madrid is likely to create more scoring opportunities and could be favored to secure a win. The odds reflect this sentiment, with Real Madrid being the clear favorites at 1.34, while Villarreal's odds stand at 7.66, suggesting a significant disparity in expectations for the match outcome.\n\nGiven the attacking prowess of Real Madrid and their home advantage, it is reasonable to predict that they will control possession and create several chances throughout the match. Villarreal will need to be defensively solid and capitalize on any counter-attacking opportunities to challenge Real Madrid effectively. The simulation also indicates a high likelihood of both teams scoring, with a 65.1% chance of both teams finding the net, which suggests an entertaining match could be on the cards."
+    "input_hash": "40f08a4e51fa2f24",
+    "generated_at": "2026-10-08T09:40:12Z",
+    "text_en": "The upcoming match between Real Madrid and Villarreal in La Liga is set to take place at the Estadio Santiago Bernabéu on October 10, 2026. Real Madrid has shown a mixed bag of recent form, with three wins and three losses in their last six matches. In contrast, Villarreal has had a slightly better run, securing four wins but also suffering two losses and one draw in the same timeframe. Historically, Real Madrid has dominated their recent encounters with Villarreal, winning four out of their last five meetings.\n\nStatistical simulations suggest that Real Madrid is favored to win, with an expected goals (xG) value of 2.1 compared to Villarreal's 1.35. The likelihood of a home victory stands at 49.2%, while the chances of a draw and an away win are 24.0% and 26.8%, respectively. Additionally, the data indicates a high probability of both teams scoring (65.1%) and a strong likelihood of over 2.5 goals in the match (67.0%). This suggests that while Real Madrid is expected to control the game, Villarreal may still find opportunities to score.\n\nGiven the venue and Real Madrid's historical performance against Villarreal, it is reasonable to expect a competitive match. However, Real Madrid's attacking prowess and home advantage could tilt the match in their favor. Villarreal will need to be defensively solid and capitalize on any counter-attacking opportunities to challenge the home side effectively. Overall, fans can anticipate an engaging encounter with potential for multiple goals."
   }
 }

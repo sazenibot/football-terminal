@@ -183,16 +183,16 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 16838270,
-      "player_name": "Filip Yavorov Krastev",
-      "type_id": 603,
-      "type_name": "Achilles tendon problems",
-      "type_name_cs": "Achilles tendon problems",
+      "player_id": 37616262,
+      "player_name": "Jan Faberski",
+      "type_id": 1929,
+      "type_name": "Torn Lateral Knee Ligament",
+      "type_name_cs": "Torn Lateral Knee Ligament",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-05-11",
-      "end_date": "2026-11-01",
-      "games_missed": 11,
+      "start_date": "2026-04-03",
+      "end_date": null,
+      "games_missed": 15,
       "likely_available": false
     },
     {
@@ -5957,5 +5957,5 @@
     "generated_at": "2026-10-07T10:10:43Z",
     "text_en": "The upcoming Eredivisie match between PEC Zwolle and SC Cambuur at the MAC³PARK Stadion promises to be an intriguing encounter. Both teams have shown mixed form recently, with PEC Zwolle struggling, having recorded four losses in their last six matches, alongside a win and a draw. In contrast, SC Cambuur has fared slightly better, achieving two wins and two draws in their last six games, though they too have faced their share of defeats. This disparity in recent performance may give SC Cambuur a psychological edge heading into the match.\n\nHistorically, the head-to-head encounters between these two teams have been closely contested, with both sides having their fair share of victories. The last five matches have seen a mix of results, indicating that either team can come out on top. The simulation data suggests a slight advantage for SC Cambuur, with an expected goals (xG) figure of 1.95 compared to PEC Zwolle's 1.77. This may indicate that SC Cambuur is more likely to create higher-quality scoring opportunities during the match.\n\nWith a high probability of both teams scoring (70.9%) and a strong likelihood of the match featuring over 2.5 goals (71.7%), fans can expect an exciting and action-packed game. The referee for the match, Sander van der Eijk, will play a crucial role in maintaining control, especially given the stakes for both teams. Overall, while SC Cambuur may enter as slight favorites based on recent form and statistical analysis, PEC Zwolle will be eager to leverage home advantage and turn their fortunes around."
   },
-  "refreshed_at": "2026-10-07T22:46:15.503999Z"
+  "refreshed_at": "2026-10-08T09:40:58.844907Z"
 }

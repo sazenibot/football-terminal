@@ -1362,7 +1362,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.29
+          "odds": 3.28
         },
         {
           "key": "scored2plus",
@@ -1370,7 +1370,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.45
+          "odds": 2.46
         },
         {
           "key": "corners_over95",
@@ -1500,7 +1500,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.29
+          "odds": 3.28
         },
         {
           "key": "corners_over95",
@@ -6791,10 +6791,10 @@
     ]
   },
   "odds": {
-    "home": 2.98,
+    "home": 2.99,
     "draw": 3.56,
     "away": 2.33,
-    "under15": 3.94,
+    "under15": 3.93,
     "over15": 1.25,
     "under25": 2.05,
     "over25": 1.79,
@@ -6807,15 +6807,15 @@
     "yellow_5plus": 2.45,
     "red_card": 4.61,
     "source": "chance",
-    "home_scoreless": 3.29,
-    "home_scored2plus": 2.45,
+    "home_scoreless": 3.28,
+    "home_scored2plus": 2.46,
     "home_clean_sheet": 3.95,
     "home_ht_leading": 3.45,
     "home_ht_draw": 2.24,
     "home_ht_behind": 2.87,
     "home_more_corners": 2.32,
     "home_team_2plus_yellow": 1.55,
-    "away_clean_sheet": 3.29,
+    "away_clean_sheet": 3.28,
     "away_scoreless": 3.95,
     "away_scored2plus": 2.08,
     "away_ht_behind": 3.45,
@@ -6825,11 +6825,11 @@
     "away_team_2plus_yellow": 1.51
   },
   "ai_analysis": {
-    "text": "Zápas mezi Sunderlandem a Brightonem se odehraje na stadionu Stadium of Light a bude důležitým testem pro oba týmy. Sunderland se nachází v mírně slabší formě s posledními výsledky, které zahrnují dvě prohry a jednu remízu. Naproti tomu Brighton má za sebou silnější výkony, včetně tří vítězství v posledních pěti zápasech. Historie vzájemných zápasů ukazuje, že Brighton má navrch, což může psychologicky ovlivnit domácí tým.\n\nPodle simulací očekáváme, že Brighton bude mít převahu v ofenzivě, s očekávanými góly (xG) 1.95 oproti 1.27 pro Sunderland. To naznačuje, že hosté budou pravděpodobně častěji ohrožovat branku a mohou mít větší šanci na vstřelení více než jednoho gólu. Na druhé straně Sunderland bude muset zlepšit svou defenzivu, aby se vyhnul dalšímu zklamání.\n\nCo se týče pravděpodobnosti výsledků, simulace naznačují, že Brighton má 43,1% šanci na vítězství, zatímco remíza je méně pravděpodobná (24,5%). Navíc existuje 61,2% pravděpodobnost, že oba týmy skórují, což naznačuje, že zápas by mohl být vyrovnaný a dramatický. Celkově lze očekávat, že zápas nabídne zajímavý fotbal s možností několika gólů.",
+    "text": "Zápas mezi Sunderlandem a Brighton & Hove Albion se odehraje na stadionu Stadium of Light a očekává se, že bude vyrovnaný. Sunderland v posledních pěti zápasech zaznamenal dvě prohry, jednu remízu a jednu výhru, což ukazuje na jistou nevyrovnanost formy. Na druhé straně Brighton má lepší formu, s třemi výhrami, jednou remízou a jednou prohrou, což naznačuje, že hosté vstupují do zápasu s větší sebedůvěrou.\n\nStatistiky ukazují na mírnou převahu Brighton v očekávaných gólech (xG), kde mají hodnotu 1.95 oproti 1.27 Sunderlandu. To naznačuje, že Brighton by mohl mít více příležitostí k vstřelení gólů. Historie vzájemných zápasů ukazuje, že poslední dvě utkání skončila těsným výsledkem, přičemž Brighton vyhrál 1:0 v jednom z nich a druhé utkání skončilo bez branek. Tato statistika může naznačovat, že zápas bude opět vyrovnaný a defenzivy obou týmů mohou hrát klíčovou roli.\n\nPodle simulací je pravděpodobnost výhry Brightonu 43.1 %, zatímco Sunderland má šanci na vítězství 32.4 %. Také je zde vysoká pravděpodobnost, že oba týmy skórují (61.2 %), což naznačuje, že diváci by mohli být svědky atraktivního zápasu s několika brankami. Celkově se očekává, že Brighton využije své lepší formy a zkušeností, ale Sunderland na domácím hřišti může překvapit.",
     "model": "gpt-4o-mini",
-    "input_hash": "144b7d2951acdd88",
-    "generated_at": "2026-10-07T22:30:01Z",
-    "text_en": "The upcoming Premier League match between Sunderland and Brighton & Hove Albion, set to take place at the Stadium of Light, presents an intriguing clash. Sunderland has struggled recently, with their last five matches yielding only one win, alongside three losses and one draw. In contrast, Brighton has shown stronger form, recording three wins, one draw, and one loss in their recent outings. This disparity in form could give Brighton a psychological edge going into the match.\n\nHistorically, the head-to-head encounters between these two teams have been tightly contested, with their last meeting resulting in a narrow 1-0 victory for Brighton. The expected goals (xG) simulation suggests that Brighton may have a slight advantage in terms of offensive output, with an xG of 1.95 compared to Sunderland's 1.27. This indicates that Brighton is likely to create more scoring opportunities, which could be crucial in determining the outcome of the match.\n\nReferee Thomas Bramall will oversee the match, and the odds reflect a favoring of the away side, with Brighton being the more likely victor at 2.33 compared to Sunderland's 2.98. The simulation also indicates a 43.1% chance of an away win, while both teams have a 61.2% likelihood of scoring at least one goal. Given the current form and statistical insights, Brighton appears poised to capitalize on Sunderland's vulnerabilities, making them favorites to secure a positive result."
+    "input_hash": "85aa5d754a0ae650",
+    "generated_at": "2026-10-08T09:36:59Z",
+    "text_en": "The upcoming match between Sunderland and Brighton & Hove Albion at the Stadium of Light is set to be an intriguing encounter in the Premier League. Sunderland has struggled recently, with a recent form of two losses, one draw, and one win in their last five matches. In contrast, Brighton has shown stronger performance, securing three wins, one draw, and one loss in the same period. This discrepancy in form suggests that Brighton may have the upper hand going into this match.\n\nHistorically, the head-to-head results indicate a slight advantage for Brighton, having won their last encounter 1-0 in March 2026 and drawing 0-0 in December 2025. The expected goals (xG) simulation further supports Brighton's potential dominance, with an xG of 1.95 compared to Sunderland's 1.27. This suggests that Brighton is likely to create more scoring opportunities, which could translate into goals during the match.\n\nReferee Thomas Bramall will oversee the match, and with the statistics indicating a likelihood of both teams scoring (61.2% chance for both teams to score), fans can expect an engaging contest. The odds reflect this competitive nature, with Brighton favored to win at 2.33, while Sunderland's odds stand at 2.99. Overall, if Brighton maintains their current form, they are likely to emerge victorious, but Sunderland will be eager to capitalize on home advantage and turn their fortunes around."
   },
-  "refreshed_at": "2026-10-07T22:29:54.640170Z"
+  "refreshed_at": "2026-10-08T09:36:45.538561Z"
 }

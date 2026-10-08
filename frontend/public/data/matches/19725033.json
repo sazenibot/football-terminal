@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-07T22:26:18.066647Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T16:00:00Z",
   "venue": "Stadion Dolícek",
   "home": {
@@ -1602,7 +1602,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.23
         },
         {
           "key": "offsides_over",
@@ -1679,14 +1680,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.6
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.75
         },
         {
           "key": "team_2plus_yellow",
@@ -1700,14 +1703,16 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.08
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.04
         },
         {
           "key": "red_card",
@@ -1721,28 +1726,32 @@
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.2
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.41
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.27
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.1
         },
         {
           "key": "corners_over95",
@@ -1770,7 +1779,8 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.76
         }
       ],
       "away": [
@@ -1779,14 +1789,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.23
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.75
         },
         {
           "key": "corners_under95",
@@ -1877,21 +1889,24 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.76
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.6
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.27
         },
         {
           "key": "yellow_5plus",
@@ -1905,28 +1920,32 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.41
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.1
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.08
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.44
         },
         {
           "key": "corners_over95",
@@ -1947,7 +1966,8 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.2
         }
       ]
     },
@@ -1958,7 +1978,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 2.08
         },
         {
           "key": "corners_under95",
@@ -2070,7 +2091,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.23
         },
         {
           "key": "scored2plus",
@@ -2091,14 +2113,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.6
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.75
         },
         {
           "key": "corners_over95",
@@ -2142,7 +2166,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.08
         },
         {
           "key": "corners_under95",
@@ -2219,7 +2244,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.23
         },
         {
           "key": "more_corners",
@@ -2233,7 +2259,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.6
         },
         {
           "key": "clean_sheet",
@@ -2275,7 +2302,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.75
         },
         {
           "key": "corners_over95",
@@ -7464,10 +7492,36 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Bohemians 1905 a Baníkem Ostrava v rámci Chance Ligy se odehraje na stadionu Dolíček. Domácí tým, Bohemians, se nachází v solidní formě s posledními výsledky, které zahrnují dvě výhry, dva remízy a jednu prohru. Na druhé straně Baník Ostrava má rovněž pozitivní trend, přičemž v posledních šesti zápasech zaznamenal tři výhry a tři remízy. Historie vzájemných zápasů ukazuje vyrovnanost, přičemž Bohemians mají mírnou výhodu s dvěma výhrami v posledních pěti utkáních.\n\nPodle simulací očekávané hodnoty xG naznačují, že Bohemians by měli mít větší šanci na vstřelení gólu (1.67) v porovnání s Baníkem Ostrava (0.99). To naznačuje, že domácí tým by mohl dominovat v ofenzivě, zatímco hosté budou muset spoléhat na efektivní obranu a případné brejky. Pravděpodobnost vítězství Bohemians je odhadována na 47.9 %, zatímco šance na remízu je 25.8 % a výhra Baníku 26.4 %.\n\nZ pohledu celkového skóre se očekává, že zápas by mohl být vyrovnaný, přičemž šance na oba týmy, že skórují, je 51.2 %. Také je téměř vyrovnaná pravděpodobnost, že padnou více než dva góly (49.6 %). Zápas tedy slibuje být napínavý s možností, že se oba týmy pokusí o útočné akce, což by mohlo vést k atraktivnímu fotbalu.",
+    "text": "Zápas mezi Bohemians 1905 a Baníkem Ostrava, který se odehraje na stadionu Dolíček, slibuje zajímavé střetnutí. Domácí tým se nachází v solidní formě, kdy z posledních šesti zápasů zaznamenal tři vítězství, dvě remízy a jednu prohru. Na druhé straně Baník Ostrava má také pozitivní výsledky, s pěti zápasy bez prohry, což naznačuje, že oba týmy budou mít motivaci utkání vyhrát.\n\nHistorie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž Bohemians 1905 mají mírnou převahu s dvěma vítězstvími v posledních pěti duelech. Očekává se, že domácí tým se pokusí využít výhodu domácího prostředí a aktivně útočit, zatímco Baník se pravděpodobně zaměří na pevnou obranu a rychlé protiútoky. Analýza očekávaných gólů (xG) naznačuje, že Bohemians mají vyšší pravděpodobnost vstřelení branek (1.67) než Baník (0.99), což může hrát klíčovou roli v průběhu zápasu.\n\nPodle simulací je pravděpodobnost vítězství domácích 47.9 %, remízy 25.8 % a výhry hostů 26.4 %. Také je zde 51.2 % šance, že oba týmy dají gól. Taktika a forma obou týmů naznačují, že zápas by mohl být vyrovnaný, s možností několika gólů. Celkově se očekává napínavé utkání, které může rozhodnout o důležitých bodech v rámci Chance Ligy.",
     "model": "gpt-4o-mini",
-    "input_hash": "48eaae6a5efe0e88",
-    "generated_at": "2026-10-07T22:26:26Z",
-    "text_en": "The upcoming match between Bohemians 1905 and Baník Ostrava in the Chance Liga is set to take place at Stadion Dolícek on October 10, 2026. Both teams have shown varying forms recently, with Bohemians experiencing a mixed run of results, including two wins, two draws, and two losses in their last six matches. In contrast, Baník Ostrava has struggled, with three losses and only two wins in their recent outings. This disparity in form could give Bohemians a psychological edge heading into the match.\n\nHistorically, the head-to-head encounters between these two teams have been closely contested, with Bohemians winning three of the last five meetings. Their recent victory in April 2026, where they won 2-0 against Baník Ostrava, could further bolster their confidence. The simulations suggest that Bohemians have a higher expected goals (xG) of 1.67 compared to Baník's 0.99, indicating that they are likely to create more scoring opportunities during the match.\n\nReferee Adam Trska will oversee the match, and given the current form and historical context, Bohemians may be favored to secure a positive result. The likelihood of both teams scoring is estimated at 51.2%, and there is a nearly even chance of the match featuring over 2.5 goals. Overall, if Bohemians can capitalize on their home advantage and maintain their attacking momentum, they could emerge victorious against Baník Ostrava."
+    "input_hash": "c4a7c38f7575df68",
+    "generated_at": "2026-10-08T09:36:04Z",
+    "text_en": "The upcoming match between Bohemians 1905 and Baník Ostrava in the Chance Liga is set to take place at Stadion Dolícek on October 10, 2026. Bohemians 1905 has shown a mixed recent form, with two wins, two draws, and two losses in their last six matches. In contrast, Baník Ostrava has also struggled, recording two wins, three losses, and a draw in their recent outings. The historical head-to-head results indicate a competitive rivalry, with Bohemians having a slight edge in the most recent encounters.\n\nFrom the simulation data, Bohemians 1905 is expected to have a better chance of scoring, with an expected goals (xG) value of 1.67 compared to Baník Ostrava's 0.99. This suggests that Bohemians may create more goal-scoring opportunities during the match. The probabilities indicate a 47.9% chance of a home win, a 25.8% chance of a draw, and a 26.4% chance of an away victory. Additionally, both teams have a reasonable likelihood of scoring, with a 51.2% chance for both teams to find the net.\n\nReferee Adam Trska will oversee the match, which could play a role in how the game unfolds, particularly in terms of discipline and decision-making. Given the recent forms and the historical context, Bohemians 1905 may look to capitalize on their home advantage, while Baník Ostrava will aim to improve their away performance. Overall, the match is expected to be closely contested, with both teams having opportunities to secure points."
+  },
+  "refreshed_at": "2026-10-08T09:35:54.812842Z",
+  "odds": {
+    "home": 2.25,
+    "draw": 3.55,
+    "away": 2.93,
+    "under15": 4.02,
+    "over15": 1.23,
+    "under25": 2.08,
+    "over25": 1.75,
+    "under35": 1.4,
+    "over35": 2.91,
+    "btts": 1.6,
+    "source": "chance",
+    "home_scoreless": 4.1,
+    "home_scored2plus": 2.04,
+    "home_clean_sheet": 3.27,
+    "home_ht_leading": 2.76,
+    "home_ht_draw": 2.2,
+    "home_ht_behind": 3.41,
+    "away_clean_sheet": 4.1,
+    "away_scoreless": 3.27,
+    "away_scored2plus": 2.44,
+    "away_ht_behind": 2.76,
+    "away_ht_draw": 2.2,
+    "away_ht_leading": 3.41
   }
 }

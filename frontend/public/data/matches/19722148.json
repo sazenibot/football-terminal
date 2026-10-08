@@ -187,20 +187,6 @@
     },
     {
       "side": "home",
-      "player_id": 32796077,
-      "player_name": "Darko Gyabi",
-      "type_id": 339,
-      "type_name": "Groin Injury",
-      "type_name_cs": "Zranění třísla",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-01-13",
-      "end_date": null,
-      "games_missed": 37,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37645082,
       "player_name": "Ilyas Ansah",
       "type_id": 1935,
@@ -214,17 +200,17 @@
       "likely_available": false
     },
     {
-      "side": "away",
-      "player_id": 37266009,
-      "player_name": "Merlin Röhl",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
+      "side": "home",
+      "player_id": 32796077,
+      "player_name": "Darko Gyabi",
+      "type_id": 339,
+      "type_name": "Groin Injury",
+      "type_name_cs": "Zranění třísla",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-12",
+      "start_date": "2026-01-13",
       "end_date": null,
-      "games_missed": 3,
+      "games_missed": 37,
       "likely_available": false
     },
     {
@@ -239,6 +225,20 @@
       "start_date": "2026-08-20",
       "end_date": null,
       "games_missed": 7,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37266009,
+      "player_name": "Merlin Röhl",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-12",
+      "end_date": null,
+      "games_missed": 3,
       "likely_available": false
     }
   ],
@@ -1400,7 +1400,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 4.1
+          "odds": 4.12
         },
         {
           "key": "over15",
@@ -1416,7 +1416,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.84
+          "odds": 1.85
         },
         {
           "key": "corners_under95",
@@ -1447,7 +1447,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.99
+          "odds": 1.98
         },
         {
           "key": "scored2plus",
@@ -1455,7 +1455,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.11
+          "odds": 3.09
         },
         {
           "key": "corners_over95",
@@ -1478,7 +1478,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.19
+          "odds": 4.18
         },
         {
           "key": "ht_draw",
@@ -1486,7 +1486,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.14
+          "odds": 2.15
         },
         {
           "key": "scoreless",
@@ -1494,7 +1494,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.67
+          "odds": 2.68
         },
         {
           "key": "more_corners",
@@ -1509,7 +1509,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.67
+          "odds": 2.66
         },
         {
           "key": "red_card",
@@ -1534,7 +1534,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.84
+          "odds": 1.85
         },
         {
           "key": "team_2plus_yellow",
@@ -1601,7 +1601,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.67
+          "odds": 2.68
         },
         {
           "key": "over15",
@@ -1647,7 +1647,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.06
+          "odds": 2.05
         },
         {
           "key": "corners_over95",
@@ -1670,7 +1670,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.67
+          "odds": 2.66
         },
         {
           "key": "ht_draw",
@@ -1678,7 +1678,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.14
+          "odds": 2.15
         },
         {
           "key": "scoreless",
@@ -1686,7 +1686,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.1
+          "odds": 4.12
         },
         {
           "key": "over25",
@@ -1694,7 +1694,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.99
+          "odds": 1.98
         },
         {
           "key": "red_card",
@@ -1710,7 +1710,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.19
+          "odds": 4.18
         }
       ]
     },
@@ -1793,7 +1793,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.99
+          "odds": 1.98
         },
         {
           "key": "scored2plus",
@@ -1853,7 +1853,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.84
+          "odds": 1.85
         },
         {
           "key": "more_corners",
@@ -1987,7 +1987,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.84
+          "odds": 1.85
         },
         {
           "key": "ht_behind",
@@ -2017,7 +2017,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.99
+          "odds": 1.98
         },
         {
           "key": "scored2plus",
@@ -5879,40 +5879,40 @@
   },
   "odds": {
     "home": 3.75,
-    "draw": 3.45,
+    "draw": 3.46,
     "away": 2.05,
-    "under15": 3.38,
+    "under15": 3.4,
     "over15": 1.32,
-    "under25": 1.84,
-    "over25": 1.99,
+    "under25": 1.85,
+    "over25": 1.98,
     "under35": 1.31,
-    "over35": 3.49,
+    "over35": 3.45,
     "btts": 1.75,
     "yellow_under5": 1.6,
     "yellow_5plus": 2.2,
     "red_card": 4.14,
     "source": "chance",
-    "home_scoreless": 2.67,
-    "home_scored2plus": 3.11,
-    "home_clean_sheet": 4.1,
-    "home_ht_leading": 4.19,
-    "home_ht_draw": 2.14,
-    "home_ht_behind": 2.67,
+    "home_scoreless": 2.68,
+    "home_scored2plus": 3.09,
+    "home_clean_sheet": 4.12,
+    "home_ht_leading": 4.18,
+    "home_ht_draw": 2.15,
+    "home_ht_behind": 2.66,
     "home_team_2plus_yellow": 1.37,
-    "away_clean_sheet": 2.67,
-    "away_scoreless": 4.1,
-    "away_scored2plus": 2.06,
-    "away_ht_behind": 4.19,
-    "away_ht_draw": 2.14,
-    "away_ht_leading": 2.67,
+    "away_clean_sheet": 2.68,
+    "away_scoreless": 4.12,
+    "away_scored2plus": 2.05,
+    "away_ht_behind": 4.18,
+    "away_ht_draw": 2.15,
+    "away_ht_leading": 2.66,
     "away_team_2plus_yellow": 1.56
   },
   "ai_analysis": {
-    "text": "Zápas mezi Hull City a Evertonem, který se odehraje na MKM Stadium, slibuje být zajímavým střetnutím. Domácí tým Hull City se nachází v solidní formě, s posledními dvěma výhrami a jednou remízou. Na druhé straně Everton také ukazuje silné výkony, s dvěma výhrami a třemi remízami v posledních pěti zápasech. Historie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž oba týmy mají své silné momenty, přičemž Everton má v posledních letech mírně lepší bilanci.\n\nPodle simulací očekáváme, že Hull City bude mít mírně vyšší očekávané góly (xG 1.11) než Everton (xG 0.95). To naznačuje, že domácí tým by mohl být aktivnější v útočné fázi, i když šance na remízu jsou také významné (29.2%). Vzhledem k tomu, že oba týmy mají tendenci skórovat, je pravděpodobné, že zápas přinese alespoň jeden gól na obou stranách, což je podpořeno pravděpodobností \"both teams to score\" (41.3%).\n\nCo se týče disciplinárních aspektů, kurzy naznačují, že by mohlo dojít k několika žlutým kartám, přičemž pravděpodobnost více než pěti žlutých karet je 2.2. Rozhodčí Michael Salisbury má tendenci udělovat karty, což by mohlo ovlivnit tempo zápasu. Celkově se očekává vyrovnaný duel, který by mohl skončit remízou nebo těsným vítězstvím pro jeden z týmů.",
+    "text": "Zápas mezi Hull City a Evertonem, který se odehraje na MKM Stadium, slibuje zajímavou konfrontaci. Domácí Hull City se nachází v solidní formě, když z posledních pěti zápasů zaznamenal dvě vítězství a dvě remízy. Na druhé straně Everton také ukazuje stabilní výkony, přičemž v posledních pěti zápasech má dvě vítězství a tři remízy. Historie vzájemných zápasů naznačuje, že Everton má mírnou převahu, ale výsledky jsou vyrovnané, což může naznačovat vyrovnaný duel.\n\nPodle simulace očekávaných gólů (xG) má Hull City mírnou výhodu s hodnotou 1.11 oproti Evertonu s 0.95. To naznačuje, že domácí tým by mohl mít více šancí na vstřelení gólu, ale celkově je pravděpodobnost remízy (29.2 %) a výhry hostů (30.8 %) velmi vyrovnaná. Také statistiky ukazují na slušnou šanci na oba týmy, že skórují (41.3 %), což by mohlo znamenat atraktivní fotbal pro diváky.\n\nVzhledem k aktuální formě obou týmů a historickým výsledkům lze očekávat vyrovnaný zápas, kde by Hull City mohl využít domácího prostředí. Na druhou stranu Everton, s jeho zkušenostmi a stabilními výkony, by mohl být nebezpečný v protiútocích. Celkově se dá očekávat, že zápas bude vyrovnaný a může skončit remízou nebo těsným vítězstvím jednoho z týmů.",
     "model": "gpt-4o-mini",
-    "input_hash": "93a6846d6365dbeb",
-    "generated_at": "2026-10-07T22:30:30Z",
-    "text_en": "The upcoming match between Hull City and Everton in the Premier League is set to take place at the MKM Stadium on October 11, 2026. Both teams have had contrasting recent forms, with Hull City experiencing a mix of results, including two wins but also two draws and a loss in their last five matches. In contrast, Everton has shown a more consistent performance, securing two wins and three draws in the same period. This suggests that Everton may enter the match with a slight psychological advantage.\n\nHistorically, the head-to-head encounters between these two clubs have favored Everton, with a notable 4-0 victory in their last meeting back in March 2017. This trend could influence the players' confidence and tactics on the pitch. The expected goals (xG) statistics indicate that Hull City is projected to have a marginally better chance of scoring (1.11) compared to Everton (0.95), although the overall simulation suggests a competitive match with a probability of a draw at 29.2%.\n\nThe referee for the match, Michael Salisbury, will play a crucial role in maintaining discipline and flow during the game. With odds favoring an Everton victory at 2.05, the match is anticipated to be closely contested, with both teams likely to push for a win. The simulation also indicates a 41.3% chance for both teams to score, which could lead to an exciting encounter for the fans at the MKM Stadium."
+    "input_hash": "e56a7bc06f19e1e8",
+    "generated_at": "2026-10-08T09:37:44Z",
+    "text_en": "The upcoming match between Hull City and Everton in the Premier League is set to take place at the MKM Stadium on October 11, 2026. Both teams have had mixed recent form, with Hull City recording two wins, two draws, and one loss in their last five matches, while Everton has managed two wins and three draws in the same timeframe. Historically, Everton has had the upper hand in their head-to-head encounters, winning four out of the last five matches against Hull City, which may give them a psychological advantage heading into this fixture.\n\nIn terms of expected performance, simulations suggest that Hull City has a slight edge in expected goals (xG) with 1.11 compared to Everton's 0.95. This indicates that Hull may create more goal-scoring opportunities, despite their recent struggles. However, with Everton's more consistent form and their ability to secure draws, the match could be tightly contested. The odds reflect this uncertainty, with Everton favored to win at 2.05, while Hull City sits at 3.75, indicating a competitive matchup.\n\nReferee Michael Salisbury will oversee the match, and discipline could play a role, as odds suggest a likelihood of yellow cards being issued. With both teams vying for crucial points in the Premier League, the match is expected to be intense, with both sides aiming to capitalize on their chances. The outcome could hinge on Hull City's ability to convert their opportunities and Everton's resilience in defense, making for an intriguing encounter."
   },
-  "refreshed_at": "2026-10-07T22:30:22.954027Z"
+  "refreshed_at": "2026-10-08T09:37:34.371497Z"
 }

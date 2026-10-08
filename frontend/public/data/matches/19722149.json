@@ -207,6 +207,20 @@
   "sidelined": [
     {
       "side": "home",
+      "player_id": 96950,
+      "player_name": "Jean-Philippe Mateta",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-26",
+      "end_date": "2026-10-09",
+      "games_missed": 7,
+      "likely_available": true
+    },
+    {
+      "side": "home",
       "player_id": 100385,
       "player_name": "Axel Disasi",
       "type_id": 1608,
@@ -221,11 +235,11 @@
     },
     {
       "side": "home",
-      "player_id": 96950,
-      "player_name": "Jean-Philippe Mateta",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
+      "player_id": 37537937,
+      "player_name": "Chadi Riad",
+      "type_id": 536,
+      "type_name": "Knee Injury",
+      "type_name_cs": "Zranění kolena",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-23",
@@ -246,34 +260,6 @@
       "end_date": "2026-10-09",
       "games_missed": 5,
       "likely_available": true
-    },
-    {
-      "side": "home",
-      "player_id": 37537937,
-      "player_name": "Chadi Riad",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-23",
-      "end_date": null,
-      "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37537937,
-      "player_name": "Chadi Riad",
-      "type_id": 540,
-      "type_name": "Knee Surgery",
-      "type_name_cs": "Operace kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-22",
-      "end_date": null,
-      "games_missed": 8,
-      "likely_available": false
     },
     {
       "side": "away",
@@ -1337,7 +1323,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 3.23
+          "odds": 3.22
         },
         {
           "key": "shots_over",
@@ -1437,7 +1423,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.34
+          "odds": 3.33
         },
         {
           "key": "more_corners",
@@ -1493,7 +1479,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.26
+          "odds": 3.25
         }
       ],
       "away": [
@@ -1583,7 +1569,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.34
+          "odds": 3.33
         },
         {
           "key": "under25",
@@ -1671,7 +1657,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.23
+          "odds": 3.22
         },
         {
           "key": "red_card",
@@ -1687,7 +1673,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.26
+          "odds": 3.25
         }
       ]
     },
@@ -7109,12 +7095,12 @@
     "home": 2.71,
     "draw": 3.32,
     "away": 2.66,
-    "under15": 3.48,
+    "under15": 3.47,
     "over15": 1.31,
     "under25": 1.88,
     "over25": 1.95,
     "under35": 1.33,
-    "over35": 3.33,
+    "over35": 3.35,
     "btts": 1.69,
     "corners_under95": 1.76,
     "corners_over95": 1.95,
@@ -7124,27 +7110,27 @@
     "source": "chance",
     "home_scoreless": 3.31,
     "home_scored2plus": 2.45,
-    "home_clean_sheet": 3.34,
-    "home_ht_leading": 3.26,
+    "home_clean_sheet": 3.33,
+    "home_ht_leading": 3.25,
     "home_ht_draw": 2.15,
-    "home_ht_behind": 3.23,
+    "home_ht_behind": 3.22,
     "home_more_corners": 1.94,
     "home_team_2plus_yellow": 1.59,
     "away_clean_sheet": 3.31,
-    "away_scoreless": 3.34,
+    "away_scoreless": 3.33,
     "away_scored2plus": 2.41,
-    "away_ht_behind": 3.26,
+    "away_ht_behind": 3.25,
     "away_ht_draw": 2.15,
-    "away_ht_leading": 3.23,
+    "away_ht_leading": 3.22,
     "away_more_corners": 2.21,
     "away_team_2plus_yellow": 1.41
   },
   "ai_analysis": {
-    "text": "Zápas mezi Crystal Palace a Nottingham Forest, který se odehraje na Selhurst Park, slibuje vyrovnané a dramatické střetnutí. Domácí Crystal Palace se nachází v mírně lepší formě s jednou výhrou, zatímco Nottingham Forest má na kontě dvě vítězství v posledních pěti zápasech. Historie vzájemných zápasů ukazuje na vyrovnanost, kdy posledních pět utkání skončilo třikrát remízou a jednou výhrou pro Nottingham. To naznačuje, že i tentokrát může být výsledek velmi těsný.\n\nPodle simulací očekáváme, že obě mužstva vytvoří podobný počet šancí, s očekávanými góly (xG) kolem 1.27 pro každé z nich. Pravděpodobnost remízy se pohybuje kolem 27.2 %, což naznačuje, že vyrovnaný zápas je velmi pravděpodobný. Také statistiky ukazují na slušnou šanci na to, že obě mužstva skórují, s pravděpodobností 51.6 % pro \"obě týmy skórují\" (BTTS).\n\nCo se týče disciplinárních aspektů, zápas by mohl přinést několik žlutých karet, přičemž pravděpodobnost, že některý z týmů obdrží více než pět žlutých karet, je 2.32. Celkově se očekává, že zápas bude vyrovnaný, s možností nečekaných zvratů a napínavých momentů, které by mohly rozhodnout o vítězi.",
+    "text": "Zápas mezi Crystal Palace a Nottingham Forest se odehraje na Selhurst Park a očekává se vyrovnaná bitva. Domácí tým má v posledních pěti zápasech smíšenou formu s jednou výhrou, dvěma remízami a dvěma prohrami. Hosté naopak vykazují mírně lepší formu, s jednou výhrou a třemi remízami. Historie vzájemných zápasů naznačuje, že se týmy často dělí o body, přičemž posledních pět duelů skončilo třikrát remízou a jednou výhrou Nottinghamu.\n\nPodle simulací očekáváme vyrovnanou ofenzivu obou týmů, přičemž očekávané góly (xG) jsou pro oba týmy shodně 1.27. Pravděpodobnost remízy je 27.2 %, což naznačuje, že zápas může skončit bez vítěze. Statistika \"oba týmy skórují\" (51.6 %) ukazuje, že je pravděpodobné, že oba celky se prosadí v útoku.\n\nVzhledem k tomu, že se zápas odehraje v rámci Premier League, můžeme očekávat vysokou intenzitu a možná i více žlutých karet, přičemž pravděpodobnost, že v zápase padne více než 5 žlutých karet, je 2.32. Celkově se dá očekávat vyrovnaný a napínavý zápas, kde by mohly rozhodovat detaily a individuální výkony hráčů.",
     "model": "gpt-4o-mini",
-    "input_hash": "24bbc261d3156ed0",
-    "generated_at": "2026-10-07T22:30:40Z",
-    "text_en": "The upcoming Premier League match between Crystal Palace and Nottingham Forest at Selhurst Park promises to be a closely contested affair. Both teams have shown a tendency for draws in their recent encounters, with their last five head-to-head matches resulting in three draws and one win each. Crystal Palace's recent form includes two losses, a win, and two draws, while Nottingham Forest has also experienced mixed results with two wins, two draws, and one loss. This suggests that both teams may struggle to find consistent form leading into the match.\n\nStatistical simulations indicate that both teams have an expected goals (xG) value of 1.27, reflecting a balanced attacking threat. The odds suggest a relatively even matchup, with Crystal Palace slightly favored at 2.71 to Nottingham Forest's 2.66 for a win. The probability of a draw stands at 27.2%, indicating that a stalemate could be a likely outcome. Additionally, both teams have a 51.6% chance of scoring, which points to a potential for both teams to find the back of the net.\n\nWith Peter Bankes officiating, the match could see a competitive atmosphere, especially given the stakes in the Premier League. The recent form of both teams suggests that they may prioritize defensive solidity, which could lead to a lower-scoring game. However, given their historical tendency to draw, a 1-1 result could be a realistic expectation, mirroring their past encounters. Overall, the match is set to be a tactical battle, with both teams aiming to secure crucial points in the league."
+    "input_hash": "510d2be169a08268",
+    "generated_at": "2026-10-08T09:37:54Z",
+    "text_en": "The upcoming match between Crystal Palace and Nottingham Forest at Selhurst Park in the Premier League promises to be closely contested. Both teams have had mixed recent form, with Crystal Palace recording two wins, two losses, and a draw in their last five matches, while Nottingham Forest has managed two wins, two draws, and one loss. Historically, their encounters have been tight, with their last five meetings resulting in four draws and one win for Nottingham Forest, indicating a competitive rivalry.\n\nIn terms of expected performance, the simulation data suggests that both teams have an equal chance of scoring, with an expected goals (xG) value of 1.27 for each side. This balance indicates that the match could be low-scoring, with a likelihood of a draw being around 27.2%. The odds reflect this uncertainty, with Crystal Palace slightly favored at 2.71 for a home win, while Nottingham Forest's odds stand at 2.66 for an away victory. Both teams will likely focus on solid defensive structures, given the low xG values.\n\nThe referee for this match, Peter Bankes, may play a crucial role in managing the game's flow, especially if tensions rise. With both teams showing the potential to score but also the tendency to draw, the match could hinge on set pieces or individual moments of quality. The likelihood of both teams scoring (51.6%) suggests that while a stalemate is possible, the attacking players on both sides have the capability to make a significant impact. Overall, fans can expect a tightly contested fixture with moments of drama, but perhaps not a flurry of goals."
   },
-  "refreshed_at": "2026-10-07T22:30:32.826566Z"
+  "refreshed_at": "2026-10-08T09:37:44.095309Z"
 }

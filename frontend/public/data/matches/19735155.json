@@ -3,7 +3,7 @@
   "league_id": 82,
   "league_name": "Bundesliga",
   "built_at": "2026-10-07T22:35:22.477881Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-10T13:30:00Z",
   "venue": "Stadion An der Alten Försterei",
   "home": {
@@ -173,20 +173,6 @@
     },
     {
       "side": "home",
-      "player_id": 6286,
-      "player_name": "Oliver Burke",
-      "type_id": 603,
-      "type_name": "Achilles tendon problems",
-      "type_name_cs": "Achilles tendon problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-07-20",
-      "end_date": null,
-      "games_missed": 10,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37721450,
       "player_name": "Mekhi Gray",
       "type_id": 587,
@@ -211,6 +197,20 @@
       "start_date": "2026-07-15",
       "end_date": null,
       "games_missed": 12,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 6286,
+      "player_name": "Oliver Burke",
+      "type_id": 603,
+      "type_name": "Achilles tendon problems",
+      "type_name_cs": "Achilles tendon problems",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-07-20",
+      "end_date": null,
+      "games_missed": 10,
       "likely_available": false
     },
     {
@@ -949,7 +949,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.56
+          "odds": 1.55
         },
         {
           "key": "team_2plus_yellow",
@@ -1043,7 +1043,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 4.72
+          "odds": 4.73
         },
         {
           "key": "corners_over95",
@@ -1098,7 +1098,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.46
+          "odds": 2.47
         },
         {
           "key": "red_card",
@@ -1203,7 +1203,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.56
+          "odds": 1.55
         },
         {
           "key": "yellow_under5",
@@ -1257,7 +1257,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 4.72
+          "odds": 4.73
         },
         {
           "key": "scoreless",
@@ -1273,7 +1273,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.46
+          "odds": 2.47
         },
         {
           "key": "more_corners",
@@ -4763,25 +4763,25 @@
   "odds": {
     "home": 2.3,
     "draw": 3.84,
-    "away": 2.87,
-    "under15": 5.11,
+    "away": 2.86,
+    "under15": 5.12,
     "over15": 1.17,
-    "under25": 2.46,
-    "over25": 1.56,
-    "under35": 1.58,
+    "under25": 2.47,
+    "over25": 1.55,
+    "under35": 1.59,
     "over35": 2.4,
     "btts": 1.46,
     "corners_under95": 1.78,
     "corners_over95": 1.94,
     "source": "chance",
-    "home_scoreless": 4.72,
+    "home_scoreless": 4.73,
     "home_scored2plus": 1.84,
     "home_clean_sheet": 3.87,
     "home_ht_leading": 2.75,
     "home_ht_draw": 2.4,
     "home_ht_behind": 3.27,
     "home_more_corners": 1.76,
-    "away_clean_sheet": 4.72,
+    "away_clean_sheet": 4.73,
     "away_scoreless": 3.87,
     "away_scored2plus": 2.11,
     "away_ht_behind": 2.75,
@@ -4790,10 +4790,11 @@
     "away_more_corners": 2.46
   },
   "ai_analysis": {
-    "text": "Zápas mezi FC Union Berlin a Elversberg, který se odehraje na stadionu An der Alten Försterei, slibuje zajímavé střetnutí. Domácí tým má v posledních zápasech smíšenou formu, kdy zaznamenal tři remízy a jednu prohru. Naopak Elversberg se může pochlubit lepšími výsledky, se dvěma výhrami a jednou remízou v posledních čtyřech utkáních. Tato forma naznačuje, že hosté by mohli mít mírnou výhodu, ale domácí prostředí může hrát klíčovou roli.\n\nPodle simulovaných očekávaných gólů (xG) se předpokládá, že Elversberg vytvoří více šancí, s hodnotou xG 1.95 oproti 1.48 pro Union Berlin. To naznačuje, že hosté by mohli být nebezpečnější v ofenzivě. Statistika \"obě týmy skórují\" (BTTS) je na úrovni 66.1 %, což ukazuje na vysokou pravděpodobnost, že obě mužstva se prosadí. Zároveň je pravděpodobné, že zápas bude vyrovnaný, s možností remízy, která má šanci 24.5 %.\n\nCelkově lze očekávat, že zápas bude vyrovnaný s mnoha šancemi na obou stranách. S ohledem na formu obou týmů a statistiky se zdá, že Elversberg by mohl mít mírnou převahu, ale domácí tým se bude snažit využít výhody domácího prostředí. Vzhledem k vysoké pravděpodobnosti, že obě mužstva skórují, by fanoušci mohli být svědky atraktivního a dynamického zápasu.",
+    "text": "Zápas mezi FC Union Berlin a Elversberg v rámci Bundesligy slibuje zajímavou konfrontaci. Domácí tým, FC Union Berlin, se nachází v solidní formě s posledními třemi zápasy bez porážky (P, P, P, R). Na druhé straně Elversberg, i když má také pozitivní výsledky, se potýká s většími výkyvy ve výkonech (R, P, V, V). Tato situace naznačuje, že domácí tým by mohl mít mírnou výhodu, zejména vzhledem k domácímu prostředí na Stadion An der Alten Försterei.\n\nPodle simulací očekávaných gólů (xG) se předpokládá, že Elversberg by mohl mít mírně vyšší šance na skórování s hodnotou 1.95 oproti Union Berlin s 1.48. To naznačuje, že hosté by mohli být nebezpeční v ofenzivě, ačkoli domácí tým má silnou obranu. S pravděpodobností 66,1 % se také očekává, že oba týmy skórují, což by mohlo přispět k dynamickému a atraktivnímu zápasu.\n\nCo se týče statistik a kurzů, favoritem na vítězství jsou mírně domácí, s kurzem 2.3, zatímco Elversberg má kurz 2.86. Vzhledem k tomu, že obě mužstva mají tendenci k ofenzivní hře, je pravděpodobné, že zápas přinese více než 2,5 gólu, což má pravděpodobnost 66,8 %. Celkově lze očekávat vyrovnaný a napínavý duel, kde může rozhodnout každý detail.",
     "model": "gpt-4o-mini",
-    "input_hash": "fdbce7058cce11e0",
-    "generated_at": "2026-10-07T22:35:31Z",
-    "text_en": "The upcoming Bundesliga match between FC Union Berlin and Elversberg at the Stadion An der Alten Försterei promises to be an intriguing encounter. FC Union Berlin has struggled recently, recording three losses and one draw in their last four matches. In contrast, Elversberg has shown a more positive trend, with two wins, one draw, and one loss in their recent form. This disparity in recent performances could give Elversberg a psychological edge going into the match.\n\nStatistical simulations suggest that Elversberg has a higher expected goals (xG) value of 1.95 compared to Union Berlin's 1.48, indicating that they may create more scoring opportunities. The likelihood of both teams scoring (66.1%) is high, which suggests that fans can expect an open game with chances for both sides. Additionally, the odds reflect a competitive matchup, with Elversberg slightly favored to win at 40.8%, while Union Berlin stands at 34.7% for a victory.\n\nReferee Tobias Reichel will oversee the match, and his officiating style could play a role in the game's flow. Given the recent form of both teams and their attacking capabilities, it is reasonable to anticipate a dynamic match with potential for goals. If Union Berlin can capitalize on home advantage, they may find a way to turn their fortunes around, but Elversberg's recent form suggests they will be a formidable opponent."
-  }
+    "input_hash": "7ee4162facc26621",
+    "generated_at": "2026-10-08T09:38:38Z",
+    "text_en": "The upcoming Bundesliga match between FC Union Berlin and Elversberg at the Stadion An der Alten Försterei promises to be an intriguing encounter. FC Union Berlin has struggled recently, with a form record of three losses and one draw in their last four matches, indicating potential vulnerabilities in their gameplay. In contrast, Elversberg has shown a more positive trend, with two wins, one draw, and one loss in their recent outings, suggesting they may come into the match with greater confidence.\n\nStatistical simulations indicate that Elversberg is expected to have a slight edge in terms of expected goals (xG), with 1.95 compared to Union Berlin's 1.48. This suggests that Elversberg may create more scoring opportunities during the match. Additionally, the simulation predicts a high likelihood of both teams scoring (66.1%) and a significant chance of the total goals exceeding 2.5 (66.8%). These factors could lead to a dynamic and competitive match, with both teams likely to push for goals.\n\nReferee Tobias Reichel will oversee the match, and with both teams' recent forms and the attacking potential suggested by the simulations, fans can expect an engaging contest. The odds reflect a relatively balanced matchup, with Union Berlin at 2.3, a draw at 3.84, and Elversberg at 2.86. This indicates that while Elversberg may be favored slightly, the match could go either way, depending on how well each team capitalizes on their chances."
+  },
+  "refreshed_at": "2026-10-08T09:38:29.225994Z"
 }

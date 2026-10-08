@@ -170,6 +170,20 @@
   },
   "sidelined": [
     {
+      "side": "home",
+      "player_id": 37630140,
+      "player_name": "Miliano Jonathans",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-03-07",
+      "end_date": null,
+      "games_missed": 23,
+      "likely_available": false
+    },
+    {
       "side": "away",
       "player_id": 38208413,
       "player_name": "Ryan Metu",
@@ -195,6 +209,20 @@
       "start_date": "2026-09-11",
       "end_date": null,
       "games_missed": 2,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37547506,
+      "player_name": "Stije Resink",
+      "type_id": 557,
+      "type_name": "Cruciate Ligament Injury",
+      "type_name_cs": "Zranění zkříženého vazu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-03-01",
+      "end_date": "2027-01-01",
+      "games_missed": 29,
       "likely_available": false
     },
     {
@@ -6651,5 +6679,5 @@
     "generated_at": "2026-10-07T10:10:55Z",
     "text_en": "The upcoming Eredivisie match between Excelsior and FC Groningen at the Van Donge & De Roo Stadion is expected to be a competitive encounter. Excelsior's recent form shows a mix of results with two wins, two draws, and two losses in their last six matches. In contrast, FC Groningen has a slightly better record, with two wins, three draws, and one loss in the same period. This suggests that both teams are capable of scoring, as indicated by the high likelihood of both teams finding the net, with a probability of 68.7% for both teams to score.\n\nHistorically, the head-to-head encounters between these two sides have been closely contested, with each team having periods of dominance. In their last five meetings, FC Groningen has won three times, while Excelsior has secured two victories. This trend may give FC Groningen a psychological edge going into the match, but Excelsior will be eager to capitalize on their home advantage and recent positive performances.\n\nSimulation data indicates that Excelsior is expected to create more goal-scoring opportunities with an expected goals (xG) value of 2.1 compared to FC Groningen's 1.53. This suggests that while FC Groningen may have had the upper hand in previous encounters, Excelsior could be more potent in attack during this match. With a 47.1% chance of a home win and a 29% chance of an away victory, the match is likely to be closely contested, with both teams having the potential to secure points."
   },
-  "refreshed_at": "2026-10-07T22:46:17.833453Z"
+  "refreshed_at": "2026-10-08T09:40:58.870738Z"
 }

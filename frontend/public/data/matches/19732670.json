@@ -19,20 +19,6 @@
   "referee": null,
   "sidelined": [
     {
-      "side": "home",
-      "player_id": 37316864,
-      "player_name": "Yago de Santiago",
-      "type_id": 1980,
-      "type_name": "Arthroscopy",
-      "type_name_cs": "Arthroscopy",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-05-25",
-      "end_date": "2026-11-01",
-      "games_missed": 12,
-      "likely_available": false
-    },
-    {
       "side": "away",
       "player_id": 800,
       "player_name": "Iago Aspas Juncal",
@@ -1305,7 +1291,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.71
+          "odds": 1.7
         },
         {
           "key": "over15",
@@ -1342,7 +1328,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.0
+          "odds": 1.98
         },
         {
           "key": "scored2plus",
@@ -1400,7 +1386,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.52
+          "odds": 1.53
         },
         {
           "key": "yellow_5plus",
@@ -1415,7 +1401,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.2
+          "odds": 3.18
         },
         {
           "key": "corners_over95",
@@ -1423,7 +1409,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.36
+          "odds": 2.35
         },
         {
           "key": "yellow_under5",
@@ -1445,7 +1431,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.83
+          "odds": 1.85
         },
         {
           "key": "more_corners",
@@ -1461,7 +1447,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.32
+          "odds": 3.35
         },
         {
           "key": "ht_draw",
@@ -1477,7 +1463,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.32
+          "odds": 3.37
         },
         {
           "key": "scoreless",
@@ -1510,7 +1496,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.83
+          "odds": 1.85
         },
         {
           "key": "shots_over",
@@ -1567,7 +1553,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.52
+          "odds": 1.53
         },
         {
           "key": "yellow_5plus",
@@ -1589,7 +1575,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.71
+          "odds": 1.7
         },
         {
           "key": "clean_sheet",
@@ -1605,7 +1591,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.32
+          "odds": 3.37
         },
         {
           "key": "corners_over95",
@@ -1613,7 +1599,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.36
+          "odds": 2.35
         },
         {
           "key": "yellow_under5",
@@ -1628,7 +1614,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.2
+          "odds": 3.18
         },
         {
           "key": "ht_behind",
@@ -1636,7 +1622,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.32
+          "odds": 3.35
         },
         {
           "key": "over25",
@@ -1644,7 +1630,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.0
+          "odds": 1.98
         },
         {
           "key": "scored2plus",
@@ -1652,7 +1638,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.43
+          "odds": 2.39
         },
         {
           "key": "more_corners",
@@ -1743,7 +1729,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.71
+          "odds": 1.7
         },
         {
           "key": "over15",
@@ -1759,7 +1745,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.0
+          "odds": 1.98
         },
         {
           "key": "corners_under95",
@@ -1767,7 +1753,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.52
+          "odds": 1.53
         },
         {
           "key": "yellow_under5",
@@ -1796,7 +1782,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.83
+          "odds": 1.85
         },
         {
           "key": "scored2plus",
@@ -1811,7 +1797,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.36
+          "odds": 2.35
         },
         {
           "key": "more_corners",
@@ -1940,7 +1926,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.83
+          "odds": 1.85
         },
         {
           "key": "corners_over95",
@@ -1948,7 +1934,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.36
+          "odds": 2.35
         },
         {
           "key": "team_2plus_yellow",
@@ -1970,7 +1956,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.71
+          "odds": 1.7
         },
         {
           "key": "over15",
@@ -1986,7 +1972,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.0
+          "odds": 1.98
         },
         {
           "key": "corners_under95",
@@ -1994,7 +1980,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.52
+          "odds": 1.53
         },
         {
           "key": "more_corners",
@@ -7298,41 +7284,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T22:44:58.489571Z",
+  "refreshed_at": "2026-10-08T09:40:12.074236Z",
   "odds": {
-    "home": 2.78,
-    "draw": 3.27,
-    "away": 2.63,
-    "under15": 3.36,
+    "home": 2.8,
+    "draw": 3.3,
+    "away": 2.59,
+    "under15": 3.41,
     "over15": 1.32,
-    "under25": 1.83,
-    "over25": 2.0,
-    "under35": 1.31,
-    "over35": 3.48,
-    "btts": 1.71,
-    "corners_under95": 1.52,
-    "corners_over95": 2.36,
+    "under25": 1.85,
+    "over25": 1.98,
+    "under35": 1.32,
+    "over35": 3.42,
+    "btts": 1.7,
+    "corners_under95": 1.53,
+    "corners_over95": 2.35,
     "source": "chance",
     "home_scoreless": 3.21,
     "home_scored2plus": 2.53,
-    "home_clean_sheet": 3.32,
-    "home_ht_leading": 3.32,
+    "home_clean_sheet": 3.37,
+    "home_ht_leading": 3.35,
     "home_ht_draw": 2.13,
-    "home_ht_behind": 3.2,
+    "home_ht_behind": 3.18,
     "home_more_corners": 1.78,
     "away_clean_sheet": 3.21,
-    "away_scoreless": 3.32,
-    "away_scored2plus": 2.43,
-    "away_ht_behind": 3.32,
+    "away_scoreless": 3.37,
+    "away_scored2plus": 2.39,
+    "away_ht_behind": 3.35,
     "away_ht_draw": 2.13,
-    "away_ht_leading": 3.2,
+    "away_ht_leading": 3.18,
     "away_more_corners": 2.46
   },
   "ai_analysis": {
-    "text": "Zápas mezi Elche a Celta de Vigo, který se odehraje na Estadio Manuel Martínez Valero, slibuje zajímavou konfrontaci. Domácí Elche se nachází v těžké formě, když v posledních šesti zápasech zaznamenali pouze jedno vítězství a pět porážek. Naopak Celta de Vigo vykazuje lepší výkonnost, s jedním vítězstvím a třemi remízami v posledních šesti utkáních. Historie vzájemných zápasů naznačuje, že Celta má mírnou převahu, když vyhrála tři z posledních pěti duelů.\n\nAnalýza očekávaných gólů (xG) naznačuje, že Celta de Vigo má mírně vyšší pravděpodobnost vstřelení gólů (1.61) ve srovnání s Elche (1.36). To podtrhuje i fakt, že Celta má v posledních vzájemných zápasech lepší ofenzivní výkon. Očekává se, že zápas bude vyrovnaný, přičemž šance na remízu se pohybuje kolem 25.9 %. Přestože Elche hraje doma, jejich nedávné výsledky mohou ovlivnit jejich sebevědomí.\n\nCo se týče dalších statistik, existuje vysoká pravděpodobnost, že oba týmy vstřelí gól (59.4 %), což naznačuje, že zápas by mohl být dynamický a plný šancí. Vzhledem k formě obou týmů a historickým výsledkům se očekává, že Celta de Vigo bude mírným favoritem, ale Elche by mohlo překvapit, pokud se jim podaří zlepšit svou hru na domácím hřišti.",
+    "text": "Zápas mezi Elche a Celta de Vigo se odehraje na stadionu Estadio Manuel Martínez Valero a obě mužstva mají v poslední době smíšenou formu. Domácí Elche v posledních šesti zápasech zaznamenalo pouze jednu výhru, zatímco Celta de Vigo se může pochlubit dvěma výhrami a čtyřmi remízami. Historie vzájemných zápasů naznačuje, že Celta má mírnou převahu, když vyhrála tři z posledních pěti duelů.\n\nPodle simulací očekáváme vyrovnaný zápas s mírnou převahou hostujícího týmu. Očekávané xG (expected goals) ukazuje na 1.36 pro Elche a 1.61 pro Celtu, což naznačuje, že Celta má o něco větší šanci na vstřelení gólů. Pravděpodobnost remízy je 25.9 %, což ukazuje, že vyrovnaný výsledek je také reálnou možností. Vzhledem k formě obou týmů a vzájemným zápasům se dá očekávat, že zápas bude vyrovnaný a rozhodnou detaily.\n\nCo se týče pravděpodobnosti, že oba týmy vstřelí gól, je to 59.4 %. To naznačuje, že zápas by mohl nabídnout několik gólových příležitostí na obou stranách. Celkově lze očekávat, že zápas bude napínavý, s možností, že se oba týmy pokusí o ofenzivní hru, což může vést k zajímavému a dynamickému fotbalu.",
     "model": "gpt-4o-mini",
-    "input_hash": "cf7bca4857e4ccdd",
-    "generated_at": "2026-10-07T22:45:07Z",
-    "text_en": "The upcoming match between Elche and Celta de Vigo in La Liga is set to take place at the Estadio Manuel Martínez Valero. Both teams have shown inconsistent form leading up to this fixture. Elche's recent form includes one win, four losses, and one draw, indicating struggles in securing points. In contrast, Celta de Vigo has recorded two wins, three draws, and one loss, suggesting a slightly more stable performance. Historical encounters also favor Celta, who have won three of the last five meetings, which could give them a psychological edge.\n\nStatistical simulations indicate that Celta de Vigo has a marginally higher expected goals (xG) figure of 1.61 compared to Elche's 1.36. This suggests that Celta may create more scoring opportunities during the match. The odds reflect a competitive matchup, with Celta slightly favored at 2.63 compared to Elche's 2.78. The simulation also indicates a 59.4% probability of both teams scoring, which aligns with their recent offensive outputs.\n\nGiven the home advantage for Elche, they may look to capitalize on their familiar surroundings, but their recent form does not inspire confidence. Celta de Vigo, with their better overall performance and historical success against Elche, will likely aim to control the match and exploit defensive weaknesses. Fans can expect a closely contested game, but Celta de Vigo may emerge as the favorites to secure a positive result."
+    "input_hash": "d8813ce710cbee19",
+    "generated_at": "2026-10-08T09:40:21Z",
+    "text_en": "The upcoming La Liga match between Elche and Celta de Vigo at the Estadio Manuel Martínez Valero on October 11, 2026, presents an intriguing clash. Elche has struggled recently, recording only one win in their last six matches (V, P, R, P, P, P), while Celta de Vigo has fared slightly better with two wins and three draws in the same timeframe (V, R, R, R, P, P). Historically, Celta de Vigo has had the upper hand in their recent encounters, winning four of the last five head-to-head matches, which could give them a psychological advantage going into this fixture.\n\nStatistical analysis suggests that both teams may find it challenging to score, with expected goals (xG) showing Elche at 1.36 and Celta de Vigo at 1.61. The simulation indicates a close contest, with a probability of 36.8% for a Celta de Vigo win, 25.9% for a draw, and 37.3% for an Elche victory. The likelihood of both teams scoring (BTTS) stands at 59.4%, suggesting a reasonable chance for goals from both sides, but the overall match dynamics may favor a low-scoring affair.\n\nGiven the recent form and historical results, Celta de Vigo may approach the match with confidence, looking to exploit Elche's defensive vulnerabilities. Elche will need to capitalize on their home advantage and improve their performance to secure a positive result. The match could hinge on key moments and individual performances, particularly in midfield and defense, making it a critical encounter for both teams in their pursuit of points in La Liga."
   }
 }

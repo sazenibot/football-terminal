@@ -235,20 +235,6 @@
     },
     {
       "side": "home",
-      "player_id": 37653289,
-      "player_name": "Marco Palestra",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-20",
-      "end_date": "2026-10-09",
-      "games_missed": 7,
-      "likely_available": true
-    },
-    {
-      "side": "home",
       "player_id": 37261500,
       "player_name": "Moisés Isaac Caicedo Corozo",
       "type_id": 532,
@@ -259,6 +245,20 @@
       "start_date": "2026-08-31",
       "end_date": "2026-10-09",
       "games_missed": 4,
+      "likely_available": true
+    },
+    {
+      "side": "home",
+      "player_id": 37653289,
+      "player_name": "Marco Palestra",
+      "type_id": 535,
+      "type_name": "Hamstring Injury",
+      "type_name_cs": "Zranění hamstringu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-20",
+      "end_date": "2026-10-09",
+      "games_missed": 7,
       "likely_available": true
     },
     {
@@ -291,20 +291,6 @@
     },
     {
       "side": "away",
-      "player_id": 14004542,
-      "player_name": "Amine Adli",
-      "type_id": 532,
-      "type_name": "Calf Injury",
-      "type_name_cs": "Zranění lýtka",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-08",
-      "end_date": "2026-10-16",
-      "games_missed": 9,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 37325112,
       "player_name": "Will Dennis",
       "type_id": 537,
@@ -329,6 +315,20 @@
       "start_date": "2026-07-24",
       "end_date": "2026-11-20",
       "games_missed": 12,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 14004542,
+      "player_name": "Amine Adli",
+      "type_id": 532,
+      "type_name": "Calf Injury",
+      "type_name_cs": "Zranění lýtka",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-08",
+      "end_date": "2026-10-16",
+      "games_missed": 9,
       "likely_available": false
     },
     {
@@ -1618,14 +1618,16 @@
           "label": "Střely na branku: 4.5+ v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.49
         },
         {
           "key": "sot_under",
           "label": "Střely na branku: méně než 6.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.34
         },
         {
           "key": "fouls_over",
@@ -1646,7 +1648,8 @@
           "label": "Ofsajdy: méně než 2.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.94
         },
         {
           "key": "scored2plus",
@@ -1654,7 +1657,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.5
+          "odds": 1.49
         },
         {
           "key": "yellow_5plus",
@@ -1694,7 +1697,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.17
+          "odds": 2.16
         },
         {
           "key": "ht_draw",
@@ -1702,7 +1705,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.53
+          "odds": 2.54
         },
         {
           "key": "scoreless",
@@ -1710,7 +1713,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 6.4
+          "odds": 6.46
         },
         {
           "key": "corners_under95",
@@ -1726,7 +1729,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.44
+          "odds": 4.48
         },
         {
           "key": "clean_sheet",
@@ -1734,7 +1737,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.12
+          "odds": 3.11
         },
         {
           "key": "under25",
@@ -1742,7 +1745,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.65
+          "odds": 2.66
         },
         {
           "key": "red_card",
@@ -1864,7 +1867,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 4.44
+          "odds": 4.48
         },
         {
           "key": "under25",
@@ -1872,7 +1875,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.65
+          "odds": 2.66
         },
         {
           "key": "scored2plus",
@@ -1880,7 +1883,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.57
+          "odds": 2.58
         },
         {
           "key": "corners_over95",
@@ -1896,7 +1899,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.11
+          "odds": 3.12
         },
         {
           "key": "yellow_under5",
@@ -1912,7 +1915,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.53
+          "odds": 2.54
         },
         {
           "key": "scoreless",
@@ -1920,7 +1923,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.12
+          "odds": 3.11
         },
         {
           "key": "clean_sheet",
@@ -1928,7 +1931,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 6.4
+          "odds": 6.46
         },
         {
           "key": "red_card",
@@ -1944,7 +1947,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.17
+          "odds": 2.16
         }
       ]
     },
@@ -1976,7 +1979,8 @@
           "label": "Střely na branku: méně než 10.5 v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.41
         },
         {
           "key": "fouls_over",
@@ -2004,7 +2008,8 @@
           "label": "Ofsajdy: méně než 2.5 v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.94
         },
         {
           "key": "btts",
@@ -2094,7 +2099,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.65
+          "odds": 2.66
         },
         {
           "key": "corners_under95",
@@ -2190,14 +2195,16 @@
           "label": "Fauly: méně než 13.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.34
         },
         {
           "key": "offsides_under",
           "label": "Ofsajdy: méně než 2.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.94
         },
         {
           "key": "btts",
@@ -2273,7 +2280,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.65
+          "odds": 2.66
         },
         {
           "key": "corners_under95",
@@ -7050,15 +7057,15 @@
     ]
   },
   "odds": {
-    "home": 1.72,
-    "draw": 4.23,
-    "away": 4.46,
-    "under15": 5.58,
+    "home": 1.71,
+    "draw": 4.26,
+    "away": 4.52,
+    "under15": 5.61,
     "over15": 1.15,
-    "under25": 2.65,
+    "under25": 2.66,
     "over25": 1.48,
-    "under35": 1.66,
-    "over35": 2.24,
+    "under35": 1.67,
+    "over35": 2.23,
     "btts": 1.47,
     "corners_under95": 2.39,
     "corners_over95": 1.51,
@@ -7066,29 +7073,29 @@
     "yellow_5plus": 2.78,
     "red_card": 5.02,
     "source": "chance",
-    "home_scoreless": 6.4,
-    "home_scored2plus": 1.5,
-    "home_clean_sheet": 3.12,
-    "home_ht_leading": 2.17,
-    "home_ht_draw": 2.53,
-    "home_ht_behind": 4.44,
+    "home_scoreless": 6.46,
+    "home_scored2plus": 1.49,
+    "home_clean_sheet": 3.11,
+    "home_ht_leading": 2.16,
+    "home_ht_draw": 2.54,
+    "home_ht_behind": 4.48,
     "home_more_corners": 1.49,
     "home_team_2plus_yellow": 1.88,
-    "away_clean_sheet": 6.4,
-    "away_scoreless": 3.12,
-    "away_scored2plus": 2.57,
-    "away_ht_behind": 2.17,
-    "away_ht_draw": 2.53,
-    "away_ht_leading": 4.44,
-    "away_more_corners": 3.11,
+    "away_clean_sheet": 6.46,
+    "away_scoreless": 3.11,
+    "away_scored2plus": 2.58,
+    "away_ht_behind": 2.16,
+    "away_ht_draw": 2.54,
+    "away_ht_leading": 4.48,
+    "away_more_corners": 3.12,
     "away_team_2plus_yellow": 1.45
   },
   "ai_analysis": {
-    "text": "Zápas mezi Chelsea a AFC Bournemouth se odehraje na Stamford Bridge, kde domácí tým bude usilovat o zisk tří bodů. Chelsea má v posledních pěti zápasech smíšenou formu, přičemž zaznamenala dvě výhry, remízu a dvě prohry. Na druhé straně Bournemouth se nachází v podobné situaci, s jednou výhrou a čtyřmi remízami. Historie vzájemných zápasů ukazuje na vyrovnanost, přičemž poslední tři utkání skončila remízou, což naznačuje, že obě mužstva mají schopnost si vzájemně odolávat.\n\nPodle simulací očekává Chelsea mírnou převahu s očekávanými góly (xG) 1.87 oproti 1.54 pro Bournemouth. To naznačuje, že Chelsea by mohla mít více příležitostí ke skórování, avšak Bournemouth se může spolehnout na solidní obranu, která jim v minulých zápasech pomohla udržet remízové výsledky. Pravděpodobnost, že zápas skončí remízou, je 24.9 %, což ukazuje na možnost vyrovnaného boje.\n\nVzhledem k aktuálním formám a vzájemným zápasům se očekává, že zápas bude vyrovnaný s možností obou týmů skórovat, což potvrzuje i vysoká pravděpodobnost (65.8 %) na obě strany skórující. Chelsea by mohla mít mírnou výhodu díky domácímu prostředí, ale Bournemouth ukázal, že dokáže být nebezpečný i na hřišti soupeře. Celkově lze očekávat napínavý zápas s možnými šancemi na obou stranách.",
+    "text": "Zápas mezi Chelsea a AFC Bournemouth, který se odehraje na Stamford Bridge, slibuje zajímavé střetnutí. Chelsea se nachází v lepší formě, když v posledních pěti zápasech zaznamenala dvě vítězství, remízu a dvě prohry. Naopak Bournemouth má za sebou obdobné výsledky, ale s větším počtem remíz, což naznačuje, že se mu v posledních zápasech nedaří vyhrávat. Historie vzájemných zápasů ukazuje, že obě mužstva se často potkávají v vyrovnaných utkáních, přičemž poslední čtyři zápasy skončily remízou nebo těsným vítězstvím.\n\nPodle simulací očekáváme, že Chelsea bude mít mírnou převahu v očekávaných gólech (xG 1.87 vs. 1.54 pro Bournemouth). To naznačuje, že domácí tým bude mít více příležitostí ke skórování. Statistika ukazuje vysokou pravděpodobnost, že oba týmy vstřelí branku (65.8 %), což je podpořeno i jejich vzájemnými zápasy, kde se často obě mužstva prosadila. Chelsea by mohla využít domácího prostředí a snažit se dominovat hře, zatímco Bournemouth bude pravděpodobně spoléhat na rychlé protiútoky.\n\nZ pohledu taktiky se očekává, že Chelsea se pokusí kontrolovat hru a vytvářet si šance, zatímco Bournemouth se zaměří na pevnou obranu a efektivní přechody do útoku. Rozhodujícími faktory mohou být individuální výkony klíčových hráčů a schopnost týmu reagovat na tlak. Celkově lze očekávat vyrovnané a dynamické utkání, které by mohlo skončit těsným vítězstvím pro Chelsea, ale s možností remízy, vzhledem k historickým výsledkům obou týmů.",
     "model": "gpt-4o-mini",
-    "input_hash": "45abb363e6ef31f0",
-    "generated_at": "2026-10-07T10:02:36Z",
-    "text_en": "The upcoming Premier League match between Chelsea and AFC Bournemouth at Stamford Bridge is set to be an intriguing contest, given the recent form of both teams. Chelsea has struggled in their last five matches, recording two wins, one draw, and two losses. In contrast, Bournemouth has also faced difficulties, with one win, three draws, and one loss in their recent outings. The head-to-head record between these teams shows a competitive rivalry, with their last five encounters yielding two wins for Chelsea, two draws, and one win for Bournemouth.\n\nStatistical simulations suggest that Chelsea has a slight edge in expected goals (xG), with 1.87 compared to Bournemouth's 1.54. This indicates that Chelsea may create more goal-scoring opportunities during the match. The simulation also shows a 44.1% probability of a Chelsea win, a 24.9% chance of a draw, and a 31.0% likelihood of a Bournemouth victory. The likelihood of both teams scoring (BTTS) stands at 65.8%, suggesting that a high-scoring match could be on the cards.\n\nWith Samuel Barrott officiating, the match could see a fair number of yellow cards, as both teams have shown tendencies to accumulate cautions in their recent games. Chelsea's home advantage at Stamford Bridge may play a crucial role, and they will be looking to capitalize on this to secure a vital three points. However, Bournemouth will aim to exploit any defensive lapses from Chelsea, making this match a potentially thrilling encounter."
+    "input_hash": "69d85b2a4d2225c6",
+    "generated_at": "2026-10-08T09:37:16Z",
+    "text_en": "The upcoming Premier League match between Chelsea and AFC Bournemouth at Stamford Bridge on October 10, 2026, presents an intriguing matchup. Chelsea's recent form has been inconsistent, with two wins, one draw, and two losses in their last five matches. Meanwhile, Bournemouth has struggled as well, managing only one win and four draws in their last five outings. Historical encounters between the two teams have been closely contested, with several matches ending in draws, indicating a potential for a tight game.\n\nStatistical simulations suggest that Chelsea has a slight edge in expected goals (xG), with a value of 1.87 compared to Bournemouth's 1.54. This implies that Chelsea may create more goal-scoring opportunities, but the close xG values indicate that Bournemouth could also pose a threat. The likelihood of both teams scoring is high, with a probability of 65.8%, which aligns with their recent scoring patterns. Chelsea's home advantage at Stamford Bridge could play a crucial role, as they typically perform better in front of their fans.\n\nReferee Samuel Barrott will oversee the match, and his officiating style could influence the game's flow. Both teams may need to be cautious, as the odds suggest a potential for multiple yellow cards, particularly for Bournemouth. Overall, while Chelsea may be favored to win based on their home ground and recent form, Bournemouth's resilience and historical performance against Chelsea could lead to a competitive and unpredictable match."
   },
-  "refreshed_at": "2026-10-07T22:30:14.846206Z"
+  "refreshed_at": "2026-10-08T09:37:07.528859Z"
 }

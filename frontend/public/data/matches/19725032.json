@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-07T22:29:29.035471Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T16:00:00Z",
   "venue": "TC Strahov",
   "home": {
@@ -271,20 +271,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 458507,
-      "player_name": "Magnus Andersen",
-      "type_id": 1612,
-      "type_name": "No Eligibility",
-      "type_name_cs": "Nezpůsobilost k nasazení",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-09-03",
-      "end_date": "2027-01-29",
-      "games_missed": 6,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 32490407,
       "player_name": "Sivert Heggheim Mannsverk",
       "type_id": 536,
@@ -295,6 +281,20 @@
       "start_date": "2026-07-12",
       "end_date": null,
       "games_missed": 16,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 458507,
+      "player_name": "Magnus Andersen",
+      "type_id": 1612,
+      "type_name": "No Eligibility",
+      "type_name_cs": "Nezpůsobilost k nasazení",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-09-03",
+      "end_date": "2027-01-29",
+      "games_missed": 6,
       "likely_available": false
     },
     {
@@ -336,7 +336,7 @@
       "category_cs": "Zranění",
       "start_date": "2026-04-01",
       "end_date": null,
-      "games_missed": 24,
+      "games_missed": 23,
       "likely_available": false
     },
     {
@@ -1733,7 +1733,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "shots_over",
@@ -1768,7 +1769,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.5
         },
         {
           "key": "corners_over95",
@@ -1817,14 +1819,16 @@
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.97
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.28
         },
         {
           "key": "more_corners",
@@ -1845,35 +1849,40 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.63
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 8.04
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.86
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 9.01
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.57
         },
         {
           "key": "corners_under95",
@@ -1901,7 +1910,8 @@
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.74
         }
       ],
       "away": [
@@ -1924,21 +1934,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.86
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.5
         },
         {
           "key": "corners_under95",
@@ -2008,7 +2021,8 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 5.03
         },
         {
           "key": "more_corners",
@@ -2036,35 +2050,40 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 8.04
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.74
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 9.01
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.97
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.57
         },
         {
           "key": "corners_over95",
@@ -2078,7 +2097,8 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.63
         }
       ]
     },
@@ -2089,21 +2109,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.86
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.5
         },
         {
           "key": "scored2plus",
@@ -2250,7 +2273,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.57
         },
         {
           "key": "ht_draw",
@@ -2266,21 +2290,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.86
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.5
         },
         {
           "key": "scored2plus",
@@ -2434,7 +2461,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.57
         }
       ]
     }
@@ -7863,10 +7891,36 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy se odehraje na stadionu TC Strahov 11. října 2026. Domácí Sparta, která se nachází v dobré formě s posledními šesti zápasy, z nichž čtyři vyhrála, bude chtít potvrdit svou dominanci na domácím hřišti. Na druhé straně Pardubice, které mají smíšené výsledky, budou usilovat o překvapení a zlepšení své výkonnosti, zejména po dvou porážkách v posledních zápasech.\n\nHistorie vzájemných zápasů naznačuje, že Sparta má mírnou převahu, když vyhrála tři ze čtyř posledních utkání. Nicméně Pardubice dokázaly v jednom z těchto zápasů zvítězit, což ukazuje, že mohou být nebezpečným protivníkem. Vzhledem k recentním výkonům obou týmů a jejich vzájemným zápasům lze očekávat vyrovnaný duel, přičemž Sparta bude favoritem.\n\nPodle simulací má Sparta vyšší očekávané góly (xG 1.92) v porovnání s Pardubicemi (xG 1.05), což naznačuje, že by měla mít více příležitostí ke skórování. Pravděpodobnost remízy se odhaduje na 25.1 %, což naznačuje, že domácí tým by měl mít navrch. Vysoká pravděpodobnost (55.9 %) obou týmů, které skórují, a také možnost, že padne více než 2.5 gólu (57.3 %), naznačuje, že zápas by mohl být atraktivní a plný šancí.",
+    "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy slibuje zajímavou konfrontaci. Sparta se nachází v solidní formě, když v posledních šesti zápasech zaznamenala čtyři vítězství a dvě prohry. Naopak Pardubice mají smíšené výsledky, s dvěma vítězstvími, jednou remízou a třemi prohrami. Historie vzájemných zápasů ukazuje, že Sparta má mírnou převahu, avšak Pardubice dokázaly v minulosti Spartu porazit, což může naznačovat, že se jedná o vyrovnaný duel.\n\nPodle simulací a očekávaných gólů (xG) má Sparta výrazně vyšší pravděpodobnost na vstřelení gólů (1.92) oproti Pardubicím (1.05). To naznačuje, že domácí tým by měl mít navrch v ofenzivě. Vzhledem k tomu, že Sparta hraje doma, lze očekávat, že budou mít větší kontrolu nad hrou a více příležitostí k ohrožení branky soupeře. Zároveň je pravděpodobné, že obě mužstva dokáží skórovat, což potvrzuje i vysoká pravděpodobnost na \"obě týmy skórují\" (55.9%).\n\nCelkově se očekává, že Sparta Praha bude dominovat v zápase, přičemž Pardubice se budou snažit o překvapení. Pokud se domácím podaří využít své šance, mohou se těšit na tři body. Na druhé straně, pokud Pardubice zúročí své protiútoky, mohou zápas ještě více zdramatizovat. Vzhledem k formě obou týmů a vzájemným zápasům je pravděpodobné, že se diváci dočkají zajímavého a vyrovnaného zápasu.",
     "model": "gpt-4o-mini",
-    "input_hash": "9720acc1c3f3039e",
-    "generated_at": "2026-10-07T22:29:38Z",
-    "text_en": "The upcoming match between Sparta Praha and Pardubice in the Chance Liga is set to take place at TC Strahov on October 11, 2026. Sparta Praha enters this match with a strong recent form, having won four of their last six matches, while Pardubice has had a mixed performance with two wins, two losses, and a draw in their last six outings. This disparity in form suggests that Sparta may have the upper hand going into the match.\n\nHistorically, the head-to-head encounters between these two teams have been competitive, with Sparta Praha winning three of the last five matches, while Pardubice secured two victories, including a notable win in November 2025. The simulation data indicates that Sparta is expected to generate more scoring opportunities, with an expected goals (xG) of 1.92 compared to Pardubice's 1.05. This suggests that Sparta is likely to dominate possession and create more chances during the match.\n\nGiven the current form and statistical analysis, it is reasonable to expect that Sparta Praha will control the game and create more goal-scoring opportunities. However, Pardubice has shown resilience in past encounters, which could lead to a competitive match. The likelihood of both teams scoring stands at 55.9%, indicating that while Sparta may take the lead, Pardubice could find a way to respond. Overall, the match promises to be an intriguing contest between two teams with contrasting recent performances."
+    "input_hash": "74aa83c2eecf7ebc",
+    "generated_at": "2026-10-08T09:36:35Z",
+    "text_en": "In the upcoming Chance Liga match between Sparta Praha and Pardubice at TC Strahov, the home team, Sparta Praha, enters the game with a strong recent form, having won four of their last six matches, with two losses. In contrast, Pardubice has had a mixed performance, securing three wins, two losses, and one draw in their last six outings. The historical head-to-head encounters show a competitive rivalry, with Sparta winning three of the last five matches, while Pardubice managed to win one, indicating that both teams have had their moments against each other.\n\nThe match simulation suggests that Sparta Praha is favored to win, with an expected goals (xG) metric of 1.92 compared to Pardubice's 1.05. This indicates that Sparta is likely to create more scoring opportunities. The probabilities from the simulation show a 49.9% chance for a home win, while the draw and away win probabilities are significantly lower at 25.1% and 25.0%, respectively. Additionally, there is a 55.9% chance that both teams will score, which could suggest an entertaining match with potential for goals from both sides.\n\nReferee Jan Beneš will oversee the match, and with Sparta's strong home advantage, they are expected to control the game. The odds reflect this expectation, with Sparta being the clear favorites at 1.26 to win. If Sparta maintains their form and capitalizes on their home advantage, they are likely to secure a victory, although Pardubice will aim to exploit any defensive lapses to challenge for points. Overall, this match promises to be a crucial encounter in the Chance Liga, with Sparta looking to solidify their position in the league."
+  },
+  "refreshed_at": "2026-10-08T09:36:24.401488Z",
+  "odds": {
+    "home": 1.26,
+    "draw": 5.78,
+    "away": 9.81,
+    "under15": 5.39,
+    "over15": 1.15,
+    "under25": 2.57,
+    "over25": 1.5,
+    "under35": 1.6,
+    "over35": 2.33,
+    "btts": 1.86,
+    "source": "chance",
+    "home_scoreless": 9.01,
+    "home_scored2plus": 1.28,
+    "home_clean_sheet": 1.97,
+    "home_ht_leading": 1.63,
+    "home_ht_draw": 2.74,
+    "home_ht_behind": 8.04,
+    "away_clean_sheet": 9.01,
+    "away_scoreless": 1.97,
+    "away_scored2plus": 5.03,
+    "away_ht_behind": 1.63,
+    "away_ht_draw": 2.74,
+    "away_ht_leading": 8.04
   }
 }

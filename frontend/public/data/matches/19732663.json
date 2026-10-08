@@ -1327,7 +1327,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.74
+          "odds": 1.75
         },
         {
           "key": "more_corners",
@@ -1405,7 +1405,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.72
+          "odds": 1.71
         },
         {
           "key": "scored2plus",
@@ -1413,7 +1413,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.61
+          "odds": 1.62
         },
         {
           "key": "ht_draw",
@@ -1421,7 +1421,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.3
+          "odds": 2.29
         },
         {
           "key": "scoreless",
@@ -1429,7 +1429,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 5.8
+          "odds": 5.76
         },
         {
           "key": "red_card",
@@ -1444,7 +1444,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.17
+          "odds": 2.19
         },
         {
           "key": "clean_sheet",
@@ -1452,7 +1452,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.4
+          "odds": 2.41
         },
         {
           "key": "under25",
@@ -1460,7 +1460,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.12
+          "odds": 2.11
         },
         {
           "key": "yellow_under5",
@@ -1498,7 +1498,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.72
+          "odds": 1.71
         },
         {
           "key": "over15",
@@ -1570,7 +1570,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.12
+          "odds": 2.11
         },
         {
           "key": "corners_over95",
@@ -1585,7 +1585,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.3
+          "odds": 2.29
         },
         {
           "key": "over25",
@@ -1593,7 +1593,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.74
+          "odds": 1.75
         },
         {
           "key": "scored2plus",
@@ -1601,7 +1601,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.58
+          "odds": 3.55
         },
         {
           "key": "corners_under95",
@@ -1637,7 +1637,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.4
+          "odds": 2.41
         },
         {
           "key": "yellow_5plus",
@@ -1659,7 +1659,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.17
+          "odds": 2.19
         },
         {
           "key": "clean_sheet",
@@ -1667,7 +1667,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 5.8
+          "odds": 5.76
         }
       ]
     },
@@ -1778,7 +1778,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.74
+          "odds": 1.75
         },
         {
           "key": "scored2plus",
@@ -1793,7 +1793,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.72
+          "odds": 1.71
         },
         {
           "key": "under25",
@@ -1801,7 +1801,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.12
+          "odds": 2.11
         },
         {
           "key": "team_2plus_yellow",
@@ -1945,7 +1945,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.72
+          "odds": 1.71
         },
         {
           "key": "over25",
@@ -1953,7 +1953,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.74
+          "odds": 1.75
         },
         {
           "key": "ht_leading",
@@ -1975,7 +1975,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.12
+          "odds": 2.11
         },
         {
           "key": "scored2plus",
@@ -6241,35 +6241,35 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-07T22:45:10.254032Z",
+  "refreshed_at": "2026-10-08T09:40:21.176320Z",
   "odds": {
-    "home": 1.62,
-    "draw": 4.08,
-    "away": 5.51,
-    "under15": 4.11,
+    "home": 1.63,
+    "draw": 4.06,
+    "away": 5.43,
+    "under15": 4.1,
     "over15": 1.24,
-    "under25": 2.12,
-    "over25": 1.74,
+    "under25": 2.11,
+    "over25": 1.75,
     "under35": 1.42,
     "over35": 2.88,
-    "btts": 1.72,
+    "btts": 1.71,
     "source": "chance",
-    "home_scoreless": 5.8,
-    "home_scored2plus": 1.61,
-    "home_clean_sheet": 2.4,
-    "home_ht_leading": 2.17,
-    "home_ht_draw": 2.3,
-    "away_clean_sheet": 5.8,
-    "away_scoreless": 2.4,
-    "away_scored2plus": 3.58,
-    "away_ht_behind": 2.17,
-    "away_ht_draw": 2.3
+    "home_scoreless": 5.76,
+    "home_scored2plus": 1.62,
+    "home_clean_sheet": 2.41,
+    "home_ht_leading": 2.19,
+    "home_ht_draw": 2.29,
+    "away_clean_sheet": 5.76,
+    "away_scoreless": 2.41,
+    "away_scored2plus": 3.55,
+    "away_ht_behind": 2.19,
+    "away_ht_draw": 2.29
   },
   "ai_analysis": {
-    "text": "Zápas mezi Realem Sociedad a Deportivem A Coruña se odehraje na stadionu Anoeta a bude zajímavým střetem dvou týmů s odlišnými formami. Real Sociedad má za sebou smíšené výsledky, přičemž vyhrál tři z posledních šesti zápasů, zatímco Deportivo A Coruña se nachází v podobné situaci, ale s mírně lepšími výkony, když vyhrálo dva z posledních šesti. Historie vzájemných zápasů ukazuje, že Real Sociedad má nad Deportivem převahu, což může mít vliv na psychologii obou týmů.\n\nPodle simulací očekáváme vyrovnaný zápas, přičemž očekávané góly (xG) naznačují, že Deportivo A Coruña by mohlo mít mírně vyšší šanci na skórování (1.5) v porovnání s Realem Sociedad (1.39). Vzhledem k tomu, že oba týmy mají schopnost skórovat, je pravděpodobné, že zápas skončí s brankami na obou stranách, což potvrzuje i pravděpodobnost \"btts\" (58.2 %). \n\nCo se týče výsledku, podle kurzů a simulací je favorit na vítězství Real Sociedad, s pravděpodobností výhry kolem 38.5 %. Naopak Deportivo A Coruña má šanci na překvapení, ale s nižší pravděpodobností (35.6 %). Celkově lze očekávat, že zápas bude vyrovnaný, s možností několika gólů, a Real Sociedad by měl mít mírnou výhodu díky domácímu prostředí a historické dominanci.",
+    "text": "Zápas mezi Real Sociedad a Deportivo A Coruña se odehraje na stadionu Anoeta a očekává se vyrovnaný duel. Domácí tým má v posledních šesti zápasech smíšenou formu, přičemž vyhrál tři a prohrál dvě utkání. Na druhé straně Deportivo A Coruña, které se potýká s nevyrovnanými výkony, má v posledních šesti zápasech také tři výhry, ale i tři remízy. Historie vzájemných zápasů naznačuje, že Real Sociedad má nad Deportivo převahu, což může hrát roli v psychologii obou týmů.\n\nPodle simulovaných očekávaných gólů (xG) mají oba týmy relativně vyrovnané šance, přičemž Real Sociedad má xG 1.39 a Deportivo 1.5. To naznačuje, že zápas by mohl být vyrovnaný, ale s mírnou výhodou pro hosty, pokud se podíváme na jejich poslední výkony. Pravděpodobnost, že oba týmy skórují, je 58.2 %, což naznačuje, že se dá očekávat ofenzivní hra s šancemi na obou stranách.\n\nVzhledem k formě obou týmů a historickým výsledkům se dá očekávat, že Real Sociedad bude chtít využít domácího prostředí a získat tři body. Na druhé straně Deportivo A Coruña se pokusí o překvapení a zlepšení své formy. Celkově se dá očekávat vyrovnaný zápas, kde by mohly padnout góly na obou stranách, a výsledek by mohl být těsný, s mírnou převahou domácího celku.",
     "model": "gpt-4o-mini",
-    "input_hash": "a054be6a909a084e",
-    "generated_at": "2026-10-07T22:45:19Z",
-    "text_en": "The upcoming match between Real Sociedad and Deportivo A Coruña in La Liga is set to take place at the Anoeta Stadium on October 11, 2026. Analyzing the recent form of both teams, Real Sociedad has had a mixed performance with three wins, two losses, and one draw in their last six matches. In contrast, Deportivo A Coruña has shown resilience with two wins, three draws, and one loss. Historically, Real Sociedad has dominated this fixture, winning four of their last five encounters against Deportivo, which may give them a psychological edge heading into this match.\n\nThe expected goals (xG) statistics suggest a closely contested match, with Real Sociedad projected to have an xG of 1.39 compared to Deportivo's 1.5. This indicates that both teams are likely to create scoring opportunities, but the slight advantage in xG for Deportivo might suggest they could be more effective in front of goal. Additionally, the simulation shows a high likelihood of both teams scoring (58.2%), which points to an entertaining match with potential for multiple goals.\n\nGiven the odds, Real Sociedad is favored to win at 1.62, while Deportivo A Coruña is at 5.51, reflecting their underdog status. The likelihood of over 2.5 goals is also significant at 55.1%, suggesting that fans can expect an action-packed game. Overall, while Real Sociedad will look to leverage their home advantage and historical success against Deportivo, the away side's recent form and ability to score could make for a competitive encounter."
+    "input_hash": "fa06f235f7c03c1c",
+    "generated_at": "2026-10-08T09:40:29Z",
+    "text_en": "In the upcoming La Liga match between Real Sociedad and Deportivo A Coruña at the Anoeta Stadium, the recent form of both teams suggests an intriguing contest. Real Sociedad has shown a mixed bag of results, with three wins, two losses, and one draw in their last six matches. Conversely, Deportivo A Coruña has had a slightly better run, with two wins, three draws, and one loss. This indicates that while Sociedad may have the home advantage, Deportivo has been more consistent in securing points.\n\nHistorically, Real Sociedad has had the upper hand in their head-to-head encounters, winning four out of the last five matches against Deportivo A Coruña. Notably, their last meeting in February 2018 ended in a commanding 5-0 victory for Sociedad. The expected goals (xG) statistics also favor Deportivo slightly, with an xG of 1.5 compared to Sociedad's 1.39, suggesting that both teams could create scoring opportunities. The simulation indicates a likelihood of both teams scoring, with a probability of 58.2% for both teams to find the net.\n\nGiven the home advantage for Real Sociedad, coupled with their historical dominance over Deportivo, they are expected to control the match tempo. However, Deportivo's recent form suggests they could pose a challenge, especially if they can capitalize on counter-attacking opportunities. The match could see a competitive edge, with Sociedad likely aiming for a victory to strengthen their position in the league, while Deportivo will be looking to secure crucial points on the road."
   }
 }

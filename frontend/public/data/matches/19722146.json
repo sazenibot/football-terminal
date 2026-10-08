@@ -1499,7 +1499,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.11
+          "odds": 2.1
         },
         {
           "key": "team_2plus_yellow",
@@ -1552,7 +1552,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 4.24
+          "odds": 4.3
         },
         {
           "key": "over15",
@@ -1576,7 +1576,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.99
+          "odds": 2.01
         },
         {
           "key": "yellow_under5",
@@ -1624,7 +1624,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.99
+          "odds": 2.96
         },
         {
           "key": "scoreless",
@@ -1632,7 +1632,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.21
+          "odds": 4.16
         },
         {
           "key": "corners_over95",
@@ -1640,7 +1640,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.65
+          "odds": 1.66
         },
         {
           "key": "more_corners",
@@ -1648,7 +1648,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.15
+          "odds": 2.13
         },
         {
           "key": "ht_leading",
@@ -1656,7 +1656,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.02
+          "odds": 3.06
         },
         {
           "key": "red_card",
@@ -1682,7 +1682,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.96
+          "odds": 1.97
         },
         {
           "key": "shots_over",
@@ -1773,7 +1773,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.96
+          "odds": 1.94
         },
         {
           "key": "corners_over95",
@@ -1781,7 +1781,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.65
+          "odds": 1.66
         },
         {
           "key": "ht_leading",
@@ -1789,7 +1789,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.99
+          "odds": 2.96
         },
         {
           "key": "clean_sheet",
@@ -1797,7 +1797,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.21
+          "odds": 4.16
         },
         {
           "key": "under25",
@@ -1813,7 +1813,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.11
+          "odds": 2.1
         },
         {
           "key": "team_2plus_yellow",
@@ -1845,7 +1845,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.02
+          "odds": 3.06
         },
         {
           "key": "scoreless",
@@ -1853,7 +1853,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.24
+          "odds": 4.3
         },
         {
           "key": "yellow_5plus",
@@ -1945,7 +1945,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.65
+          "odds": 1.66
         },
         {
           "key": "yellow_5plus",
@@ -2005,7 +2005,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.11
+          "odds": 2.1
         },
         {
           "key": "more_corners",
@@ -2074,7 +2074,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.65
+          "odds": 1.66
         },
         {
           "key": "shots_over",
@@ -2220,7 +2220,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.11
+          "odds": 2.1
         },
         {
           "key": "red_card",
@@ -7079,9 +7079,9 @@
     ]
   },
   "odds": {
-    "home": 2.59,
-    "draw": 3.79,
-    "away": 2.53,
+    "home": 2.63,
+    "draw": 3.78,
+    "away": 2.49,
     "under15": 5.07,
     "over15": 1.17,
     "under25": 2.45,
@@ -7089,35 +7089,35 @@
     "under35": 1.58,
     "over35": 2.4,
     "btts": 1.47,
-    "corners_under95": 2.11,
-    "corners_over95": 1.65,
+    "corners_under95": 2.1,
+    "corners_over95": 1.66,
     "yellow_under5": 2.03,
     "yellow_5plus": 1.7,
     "red_card": 4.61,
     "source": "chance",
-    "home_scoreless": 4.21,
-    "home_scored2plus": 1.99,
-    "home_clean_sheet": 4.24,
-    "home_ht_leading": 3.02,
+    "home_scoreless": 4.16,
+    "home_scored2plus": 2.01,
+    "home_clean_sheet": 4.3,
+    "home_ht_leading": 3.06,
     "home_ht_draw": 2.38,
-    "home_ht_behind": 2.99,
-    "home_more_corners": 2.15,
+    "home_ht_behind": 2.96,
+    "home_more_corners": 2.13,
     "home_team_2plus_yellow": 1.31,
-    "away_clean_sheet": 4.21,
-    "away_scoreless": 4.24,
-    "away_scored2plus": 1.96,
-    "away_ht_behind": 3.02,
+    "away_clean_sheet": 4.16,
+    "away_scoreless": 4.3,
+    "away_scored2plus": 1.94,
+    "away_ht_behind": 3.06,
     "away_ht_draw": 2.38,
-    "away_ht_leading": 2.99,
-    "away_more_corners": 1.96,
+    "away_ht_leading": 2.96,
+    "away_more_corners": 1.97,
     "away_team_2plus_yellow": 1.28
   },
   "ai_analysis": {
-    "text": "Zápas mezi Liverpoolem a Manchesterem City se odehraje na Anfieldu, kde domácí tým bude chtít využít výhodu domácího prostředí. Liverpool se v posledních pěti zápasech nachází ve slabší formě, když zaznamenal pouze dvě výhry a tři remízy. Naopak Manchester City je v excelentní formě, když vyhrál všech pět posledních utkání. Historie vzájemných zápasů naznačuje vyrovnanost, přičemž poslední zápas skončil vítězstvím City 2:1.\n\nPodle simulací očekáváme vyrovnanou bitvu, přičemž pravděpodobnost výhry domácího týmu je 38,8 %, zatímco hosté mají šanci na vítězství 34,7 %. Remíza se jeví jako pravděpodobná s 26,5 %. Očekávané xG hodnoty naznačují, že oba týmy mají podobné šance na vstřelení gólů, což naznačuje, že zápas by mohl být vyrovnaný a plný šancí.\n\nZ hlediska statistiky by mohlo být zajímavé sledovat, zda oba týmy dokáží skórovat, přičemž pravděpodobnost, že oba týmy dají gól, je 55,7 %. Dále je možné, že zápas bude obsahovat více než 2,5 gólu s pravděpodobností 51,4 %. Celkově se očekává napínavý duel, kde se budou oba týmy snažit prosadit a udržet si dobré postavení v tabulce Premier League.",
+    "text": "Zápas mezi Liverpoolem a Manchesterem City se odehraje na Anfieldu a slibuje být vysoce atraktivním střetnutím. Domácí Liverpool v posledních pěti zápasech vykazuje smíšenou formu s dvěma výhrami a třemi remízami, zatímco Manchester City je v excelentní formě s pěti po sobě jdoucími vítězstvími. Historie vzájemných zápasů naznačuje vyrovnanost, přičemž poslední zápas skončil vítězstvím City 2:1. \n\nPodle simulací očekáváme vyrovnaný duel s mírnou převahou hostů, kteří mají lehce vyšší očekávané góly (xG) 1.39 oproti 1.34 pro Liverpool. Pravděpodobnost remízy se pohybuje kolem 26.5 %, což naznačuje, že obě strany by mohly být opatrné, zejména v prvním poločase. Očekává se, že zápas bude vyrovnaný, ačkoliv City mají tendenci dominovat v ofenzivě.\n\nStatistiky také ukazují na vysokou pravděpodobnost obou týmů, že skórují (55.7 %), a možnost, že padne více než 2,5 gólu (51.4 %). S ohledem na to, že Liverpool hraje doma, mohou mít mírnou výhodu, ale City se budou snažit využít své formy a útočné síly. Rozhodujícími faktory mohou být individuální výkony klíčových hráčů a taktické nastavení obou trenérů.",
     "model": "gpt-4o-mini",
-    "input_hash": "a7f5db4c9340df23",
-    "generated_at": "2026-10-07T22:30:52Z",
-    "text_en": "The upcoming Premier League match between Liverpool and Manchester City at Anfield promises to be a highly competitive encounter. Liverpool's recent form shows a mixed bag with two wins, two draws, and a loss in their last five matches, indicating some inconsistency. In contrast, Manchester City has been in impressive form, winning all five of their recent fixtures. This difference in form could play a crucial role in determining the outcome of the match.\n\nHistorically, the head-to-head encounters between these two teams have been closely contested, with recent results showing a mix of victories for both sides. The last match in February 2026 saw Manchester City narrowly defeat Liverpool 2-1. Given the current form and the attacking prowess of both teams, the simulation indicates a slight edge for Manchester City, with expected goals (xG) being very close at 1.34 for Liverpool and 1.39 for City. This suggests that both teams are likely to create scoring opportunities.\n\nWith Chris Kavanagh officiating, the match could see a fair number of fouls and potentially yellow cards, reflecting the intensity of the rivalry. The simulation also suggests a high probability for both teams to score (55.7%) and a 51.4% chance of more than 2.5 goals being scored. Overall, fans can expect an engaging match with both teams pushing for a crucial three points in the race for the Premier League title."
+    "input_hash": "0096e83846dffe7e",
+    "generated_at": "2026-10-08T09:38:02Z",
+    "text_en": "The upcoming Premier League match between Liverpool and Manchester City at Anfield promises to be an exciting encounter, given the historical rivalry between the two clubs. Liverpool's recent form shows a mixed bag of results with two wins, two draws, and a loss in their last five matches. In contrast, Manchester City has been in impressive form, boasting five consecutive victories. This discrepancy in form could give City a psychological edge going into the match.\n\nIn terms of head-to-head encounters, the recent matches have been closely contested, with both teams having their share of victories. The last meeting in February 2026 saw Manchester City narrowly triumph over Liverpool, which could influence the home side's approach to this match. The expected goals (xG) statistics suggest a slight advantage for City (1.39) over Liverpool (1.34), indicating that both teams are likely to create scoring opportunities, but the match could also be tightly contested.\n\nReferee Chris Kavanagh will oversee the match, and with both teams known for their attacking prowess, there is a likelihood of a high-scoring game. The simulations indicate a 38.8% chance of a Manchester City win, a 34.7% chance for Liverpool, and a 26.5% chance of a draw. With both teams capable of finding the back of the net, the probability of both teams scoring is relatively high at 55.7%. Overall, fans can expect a thrilling match filled with intensity and skill, reflective of the fierce competition in the Premier League."
   },
-  "refreshed_at": "2026-10-07T22:30:42.700603Z"
+  "refreshed_at": "2026-10-08T09:37:54.214359Z"
 }
