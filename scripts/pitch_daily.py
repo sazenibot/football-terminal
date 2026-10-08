@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Denní PitchAPI krok: katalog Chance Ligy (262) + simulace všech pěti lig (přírůstkově).
+"""Denní PitchAPI krok: katalog (shotmapy/xGOT) + simulace všech pěti zapnutých lig (přírůstkově).
 
 Pořadí:
-  1. ingest_pitchapi.py       soupiska sezony (1 volání) + nové zápasy (shots, stats, lineups) → katalog týmů a hráčů
+  1. ingest_pitchapi.py       soupiska sezony (1 volání / ligu) + nové zápasy (shots, stats, lineups) → katalog týmů a hráčů
   2. pitch_backfill_prev_stats.py   loňské stats jako prior (po prvním běhu už žádná volání)
   3. pitch_h2h_xgot.py        xGOT z H2H zápasů aktuálního kola
   4. sim_input.py             sezóny lig pro model (aktuální + 2 předchozí), přírůstkově: jen nové odehrané zápasy

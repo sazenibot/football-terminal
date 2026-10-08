@@ -26,7 +26,8 @@ export type XgotTeamRow = {
 };
 
 export type XgotIndex = {
-  league_id: number;
+  league_id?: number;
+  leagues?: number[];
   season: string;
   source: string;
   teams: Record<string, XgotTeamRow>;

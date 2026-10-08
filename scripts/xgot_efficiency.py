@@ -69,7 +69,6 @@ def from_catalog_pitch() -> dict | None:
             "last5": window_totals(matches, 5),
         }
     return {
-        "league_id": 262,
         "season": season,
         "source": "PitchAPI",
         "teams": teams,

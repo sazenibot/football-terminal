@@ -40,6 +40,7 @@ CHANCE_LEAGUE_BY_ID: dict[int, tuple[str, ...]] = {
     8: ("1. anglická liga",),
     82: ("1. německá liga",),
     564: ("1. španělská liga",),
+    72: ("1. nizozemská liga",),
 }
 
 LINE_OVER_RE = re.compile(r":\s*([0-9]+(?:[.,][0-9]+)?)\+")

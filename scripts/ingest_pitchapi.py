@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""PitchAPI ingest — jen Chance Liga (262).
+"""PitchAPI ingest — shotmapy, xG a xGOT pro zapnuté ligy (5, ne × 30).
 
-Stáhne dohrané zápasy sezóny, spočte góly/xG/xGOT a střely, namapuje na
+Stáhne dohrané zápasy aktuální sezóny, spočte góly/xG/xGOT a střely, namapuje na
 SportMonks id a zapíše:
   frontend/public/data/catalog/pitch/teams/{sm_id}.json
   frontend/public/data/catalog/pitch/players/{sm_id}.json
@@ -9,7 +9,8 @@ SportMonks id a zapíše:
   frontend/public/data/lab/xgot-efficiency.json
 
 Klíč: PITCHAPI_API_KEY v env nebo .env. Do gitu nepatří.
-Denní cron sem zatím nedávej — jen Chance Liga, přírůstek, ne × 5 / × 30.
+Denně přírůstkově (cache v scripts/.cache/pitchapi). Cold backfill = jen aktuální
+sezóna po lize, ne 5 let od nuly a ne všech 30 soutěží.
 """
 
 from __future__ import annotations
@@ -18,6 +19,7 @@ import json
 import os
 import re
 import subprocess
+import sys
 import time
 import unicodedata
 from datetime import date
@@ -27,13 +29,22 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "frontend/public/data/catalog/pitch"
-HUB = ROOT / "frontend/public/data/catalog/leagues/262.json"
+CATALOG = ROOT / "frontend/public/data/catalog"
 XGOT_OUT = ROOT / "frontend/public/data/lab/xgot-efficiency.json"
 CACHE = ROOT / "scripts/.cache/pitchapi"
 LEGACY = Path("/tmp/pitch/slavia-season")
 ENV = ROOT / ".env"
 BASE = "https://api.pitchapi.dev/v1"
-LEAGUE = "l_0F4I4F"
+# SportMonks id → (slug, PitchAPI id, název, první sezóna v PitchAPI)
+PITCH_LEAGUES = {
+    262: ("chance", "l_0F4I4F", "Chance Liga", 2024),
+    8: ("pl", "l_4WFCIZ", "Premier League", 2021),
+    82: ("bl", "l_1Isor4", "Bundesliga", 2021),
+    564: ("ll", "l_0ErfuF", "La Liga", 2021),
+    72: ("ere", "l_4H43wr", "Eredivisie", 2021),
+}
+LEAGUE = PITCH_LEAGUES[262][1]  # zpětná kompatibilita (starší skripty)
+SM_LEAGUE = 262
 _today = date.today()
 _start = _today.year if _today.month >= 7 else _today.year - 1
 SEASON = f"{_start}/{_start + 1}"  # PitchAPI formát sezony, mění se samo 1. července
@@ -44,7 +55,6 @@ SHORT_FIX = {
     "FC Slovan Liberec": "SLL",
     "Slovan Liberec": "SLL",
 }
-SM_LEAGUE = 262
 
 SET_SIT = {
     "setpiece",
@@ -64,7 +74,20 @@ TEAM_ALIAS = {
     "slavia prague": "slavia praha",
     "sparta prague": "sparta praha",
     "artis brno": "sk artis brno",
+    "psv eindhoven": "psv",
+    "cambuur": "sc cambuur",
+    "bayern munchen": "fc bayern munchen",
+    "bayer leverkusen": "bayer 04 leverkusen",
+    "1 fc koln": "fc koln",
+    "hoffenheim": "tsg hoffenheim",
+    "union berlin": "fc union berlin",
+    "mainz 05": "fsv mainz 05",
+    "atletico madrid": "atletico de madrid",
+    "celta vigo": "celta de vigo",
+    "barcelona": "fc barcelona",
 }
+
+TEAM_NOISE = {"fc", "cf", "afc", "sc", "sv", "vfl", "vfb", "rb", "tsg", "fsv", "1", "04", "05", "de", "the"}
 
 
 def load_key() -> str:
@@ -178,21 +201,24 @@ def cache_fresh(path: Path, hours: float = 6) -> bool:
     return path.exists() and (time.time() - path.stat().st_mtime) < hours * 3600
 
 
-def call_league(key: str) -> dict:
+def call_league(key: str, pitch_id: str = LEAGUE) -> dict:
     """Soupiska zápasů aktuální sezony. Cache starší než 6 h se obnoví (1 volání), ať denní job vidí nové zápasy."""
-    dest = CACHE / "league-matches.json"
+    dest = CACHE / f"league-matches-{pitch_id}.json"
+    legacy = CACHE / "league-matches.json"
+    if pitch_id == LEAGUE and not dest.exists() and legacy.exists():
+        dest.write_text(legacy.read_text())
     if cache_fresh(dest) or (dest.exists() and not key):
         return json.loads(dest.read_text())
     if not key:
         raise SystemExit("Chybí PITCHAPI_API_KEY i cache soupisky zápasů.")
     params = {"season": SEASON}
-    url = f"{BASE}/leagues/{LEAGUE}/matches?{urllib.parse.urlencode(params)}"
+    url = f"{BASE}/leagues/{pitch_id}/matches?{urllib.parse.urlencode(params)}"
     code, raw = http_get(url, key)
     if code != 200:
         if dest.exists():
-            print(f"  PitchAPI league matches HTTP {code}, beru cache")
+            print(f"  PitchAPI {pitch_id} matches HTTP {code}, beru cache")
             return json.loads(dest.read_text())
-        raise SystemExit(f"PitchAPI league matches HTTP {code}: {raw[:240]}")
+        raise SystemExit(f"PitchAPI {pitch_id} matches HTTP {code}: {raw[:240]}")
     body = json.loads(raw)
     dest.write_text(json.dumps(body, ensure_ascii=False))
     return body
@@ -218,8 +244,11 @@ def is_set(situation: str | None) -> bool:
     return folded in SET_SIT or "set" in folded
 
 
-def load_sm() -> tuple[dict[str, dict], list[dict], dict[int, dict]]:
-    hub = json.loads(HUB.read_text())
+def load_sm(league_id: int = SM_LEAGUE) -> tuple[dict[str, dict], list[dict], dict[int, dict]]:
+    hub_path = CATALOG / "leagues" / f"{league_id}.json"
+    if not hub_path.exists():
+        raise SystemExit(f"Chybí katalog ligy {league_id} ({hub_path}). Nejdřív r2_sync down.")
+    hub = json.loads(hub_path.read_text())
     teams: dict[str, dict] = {}
     unique: dict[int, dict] = {}
     for t in hub.get("teams") or []:
@@ -233,9 +262,28 @@ def load_sm() -> tuple[dict[str, dict], list[dict], dict[int, dict]]:
     return teams, hub.get("players") or [], unique
 
 
+def core_name(name: str | None) -> str:
+    return " ".join(t for t in tokens(name) if t not in TEAM_NOISE and not t.isdigit())
+
+
 def map_team(name: str, teams: dict[str, dict]) -> dict | None:
     folded = fold(name)
-    return teams.get(folded) or teams.get(fold(TEAM_ALIAS.get(folded, name)))
+    hit = teams.get(folded) or teams.get(fold(TEAM_ALIAS.get(folded, name)))
+    if hit:
+        return hit
+    want = core_name(name)
+    if not want:
+        return None
+    unique: dict[int, dict] = {}
+    for t in teams.values():
+        unique[t["id"]] = t
+    exact = [t for t in unique.values() if core_name(t.get("name")) == want]
+    if len(exact) == 1:
+        return exact[0]
+    loose = [t for t in unique.values() if want in core_name(t.get("name")) or core_name(t.get("name")) in want]
+    if len(loose) == 1:
+        return loose[0]
+    return None
 
 
 def map_player(name: str, team_id: int, players: list[dict]) -> dict | None:
@@ -301,14 +349,12 @@ def match_shell(row: dict) -> dict:
     return {k: row[k] for k in row if k != "shots"}
 
 
-def main() -> None:
-    seed_legacy_cache()
-    key = load_key()
-    teams_sm, players_sm, sm_by_id = load_sm()
-    league_body = call_league(key)
+def ingest_league(key: str, league_id: int, pitch_id: str, league_name: str) -> None:
+    teams_sm, players_sm, sm_by_id = load_sm(league_id)
+    league_body = call_league(key, pitch_id)
     matches = (league_body.get("data") or {}).get("matches") or []
     finished = [m for m in matches if m.get("status") == "finished"]
-    print(f"Chance Liga {SEASON}: {len(finished)} dohraných zápasů" + ("" if key else " (bez klíče — jen cache)"))
+    print(f"{league_name} {SEASON}: {len(finished)} dohraných zápasů" + ("" if key else " (bez klíče — jen cache)"))
 
     needed: dict[int, int] = defaultdict(int)
     for m in finished:
@@ -420,13 +466,8 @@ def main() -> None:
 
     (OUT / "teams").mkdir(parents=True, exist_ok=True)
     (OUT / "players").mkdir(parents=True, exist_ok=True)
-    for old in OUT.glob("teams/*.json"):
-        old.unlink()
-    for old in OUT.glob("players/*.json"):
-        old.unlink()
 
-    index_teams = {}
-    xgot_teams = {}
+    written_teams: set[int] = set()
     incomplete = []
     for sm_id, expect in sorted(needed.items()):
         rows = sorted(team_rows.get(sm_id) or [], key=lambda r: r["date"] or "")
@@ -436,38 +477,19 @@ def main() -> None:
             continue
         payload = {
             "source": "PitchAPI",
-            "league_id": SM_LEAGUE,
-            "league": "Chance Liga",
+            "league_id": league_id,
+            "league": league_name,
             "season": SEASON,
             "team": {"id": sm_id, "name": sm["name"], "short": sm.get("short"), "image": sm.get("image")},
             "matches": rows,
         }
         write_json(OUT / "teams" / f"{sm_id}.json", payload)
-        last5 = rows[-5:]
-        index_teams[str(sm_id)] = {
-            "name": sm["name"],
-            "matches": len(rows),
-            "shots": sum(len(r["shots"]) for r in rows),
-        }
-        xgot_teams[str(sm_id)] = {
-            "name": sm["name"],
-            "season": {
-                "goals": sum(r["gf"] for r in rows),
-                "xgot": round(sum(r["xgot"] for r in rows), 2),
-                "matches": len(rows),
-            },
-            "last5": {
-                "goals": sum(r["gf"] for r in last5),
-                "xgot": round(sum(r["xgot"] for r in last5), 2),
-                "matches": len(last5),
-            },
-        }
+        written_teams.add(sm_id)
 
-    complete_teams = {int(tid) for tid in index_teams}
-    index_players = {}
+    written_players: set[int] = set()
     for sm_id, rows in sorted(player_rows.items()):
         meta = player_meta[sm_id]
-        if meta["team_id"] not in complete_teams:
+        if meta["team_id"] not in written_teams:
             continue
         by_id: dict[str, dict] = {}
         for row in rows:
@@ -482,39 +504,98 @@ def main() -> None:
         merged = sorted(by_id.values(), key=lambda r: r["date"] or "")
         payload = {
             "source": "PitchAPI",
-            "league_id": SM_LEAGUE,
+            "league_id": league_id,
             "season": SEASON,
             "player": {"id": sm_id, "name": meta["name"], "team_id": meta["team_id"]},
             "keeper": bool(meta.get("keeper")),
             "matches": merged,
         }
         write_json(OUT / "players" / f"{sm_id}.json", payload)
-        index_players[str(sm_id)] = {
-            "name": meta["name"],
-            "team_id": meta["team_id"],
-            "shots": sum(len(r.get("shots") or []) for r in merged),
-            "keeper": bool(meta.get("keeper")),
-        }
+        written_players.add(sm_id)
 
+    for old in (OUT / "teams").glob("*.json"):
+        body = json.loads(old.read_text())
+        if body.get("league_id") == league_id and int(old.stem) not in written_teams:
+            old.unlink()
+    for old in (OUT / "players").glob("*.json"):
+        body = json.loads(old.read_text())
+        if body.get("league_id") == league_id and int(old.stem) not in written_players:
+            old.unlink()
+
+    print(f"  {league_name}: týmy {len(written_teams)}, hráči {len(written_players)}, přeskočeno zápasů {skipped}")
+    if incomplete:
+        print("  neúplné týmy (soubor nezapsán):")
+        for line in incomplete:
+            print("   ", line)
+        if not key:
+            print("  Doplň PITCHAPI_API_KEY do .env a spusť znovu scripts/ingest_pitchapi.py")
+    if unmatched_players:
+        print(f"  nenamapovaní hráči ({len(unmatched_players)}):")
+        for line in sorted(unmatched_players)[:40]:
+            print("   ", line)
+
+
+def rebuild_indexes() -> None:
+    index_teams: dict[str, dict] = {}
+    index_players: dict[str, dict] = {}
+    xgot_teams: dict[str, dict] = {}
+    for path in sorted((OUT / "teams").glob("*.json")):
+        payload = json.loads(path.read_text())
+        team = payload.get("team") or {}
+        rows = payload.get("matches") or []
+        tid = str(team.get("id") or path.stem)
+        last5 = rows[-5:]
+        index_teams[tid] = {
+            "name": team.get("name"),
+            "league_id": payload.get("league_id"),
+            "matches": len(rows),
+            "shots": sum(len(r.get("shots") or []) for r in rows),
+        }
+        xgot_teams[tid] = {
+            "name": team.get("name"),
+            "season": {
+                "goals": sum(r.get("gf") or 0 for r in rows),
+                "xgot": round(sum(float(r.get("xgot") or 0) for r in rows), 2),
+                "matches": len(rows),
+            },
+            "last5": {
+                "goals": sum(r.get("gf") or 0 for r in last5),
+                "xgot": round(sum(float(r.get("xgot") or 0) for r in last5), 2),
+                "matches": len(last5),
+            },
+        }
+    for path in sorted((OUT / "players").glob("*.json")):
+        payload = json.loads(path.read_text())
+        player = payload.get("player") or {}
+        rows = payload.get("matches") or []
+        pid = str(player.get("id") or path.stem)
+        index_players[pid] = {
+            "name": player.get("name"),
+            "team_id": player.get("team_id"),
+            "league_id": payload.get("league_id"),
+            "shots": sum(len(r.get("shots") or []) for r in rows),
+            "keeper": bool(payload.get("keeper")),
+        }
     write_json(
         OUT / "index.json",
-        {"league_id": SM_LEAGUE, "season": SEASON, "source": "PitchAPI", "teams": index_teams, "players": index_players},
+        {"season": SEASON, "source": "PitchAPI", "leagues": sorted(PITCH_LEAGUES), "teams": index_teams, "players": index_players},
     )
     write_json(
         XGOT_OUT,
-        {"league_id": SM_LEAGUE, "season": SEASON, "source": "PitchAPI", "teams": xgot_teams},
+        {"season": SEASON, "source": "PitchAPI", "leagues": sorted(PITCH_LEAGUES), "teams": xgot_teams},
     )
-    print(f"týmy {len(index_teams)}, hráči {len(index_players)}, přeskočeno zápasů {skipped}")
-    if incomplete:
-        print("neúplné týmy (soubor nezapsán):")
-        for line in incomplete:
-            print(" ", line)
-        if not key:
-            print("Doplň PITCHAPI_API_KEY do .env a spusť znovu scripts/ingest_pitchapi.py")
-    if unmatched_players:
-        print(f"nenamapovaní hráči ({len(unmatched_players)}):")
-        for line in sorted(unmatched_players)[:40]:
-            print(" ", line)
+    print(f"index: týmy {len(index_teams)}, hráči {len(index_players)}")
+
+
+def main() -> None:
+    seed_legacy_cache()
+    key = load_key()
+    wanted = {a for a in sys.argv[1:] if not a.startswith("-")}
+    for lid, (slug, pitch_id, name, _first) in PITCH_LEAGUES.items():
+        if wanted and slug not in wanted and str(lid) not in wanted:
+            continue
+        ingest_league(key, lid, pitch_id, name)
+    rebuild_indexes()
 
 
 if __name__ == "__main__":

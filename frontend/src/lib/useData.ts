@@ -292,8 +292,10 @@ export function usePitchTeam(id: number | null) {
   return useOptionalJson<PitchCatalogFile>(id ? `${CATALOG}/pitch/teams/${id}.json` : null);
 }
 
-/** Všechny Pitch týmy jedné ligy (kvůli inkasovaným gólům a ligovému průměru). Chance Liga, ~16 malých JSON. */
-export function usePitchLeague(leagueId: number | null) {
+type PitchIndexTeam = { league_id?: number };
+
+/** Pitch týmy. `leagueId` vybere jednu ligu; `null` po startu nic; `"all"` všechny zapnuté ligy. */
+export function usePitchLeague(leagueId: number | "all" | null) {
   const [files, setFiles] = useState<PitchCatalogFile[] | null>(null);
 
   useEffect(() => {
@@ -306,9 +308,14 @@ export function usePitchLeague(leagueId: number | null) {
     (async () => {
       for (const base of bases) {
         try {
-          const idx = await fetchJson<{ league_id?: number; teams: Record<string, unknown> }>(`${base}/pitch/index.json`);
-          if (idx.league_id != null && idx.league_id !== leagueId) continue;
-          const ids = Object.keys(idx.teams || {});
+          const idx = await fetchJson<{ league_id?: number; teams: Record<string, PitchIndexTeam> }>(`${base}/pitch/index.json`);
+          const ids = Object.entries(idx.teams || {})
+            .filter(([, row]) => {
+              if (leagueId === "all") return true;
+              const lid = row?.league_id ?? idx.league_id;
+              return lid == null || lid === leagueId;
+            })
+            .map(([id]) => id);
           if (!ids.length) continue;
           const loaded = await Promise.all(ids.map((id) => fetchJson<PitchCatalogFile>(`${base}/pitch/teams/${id}.json`)));
           if (live) setFiles(loaded);

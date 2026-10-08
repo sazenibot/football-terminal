@@ -1727,21 +1727,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.34
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.03
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "scored2plus",
@@ -1755,14 +1758,16 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.54
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.39
         },
         {
           "key": "shots_over",
@@ -1825,7 +1830,8 @@
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.13
         },
         {
           "key": "yellow_under5",
@@ -1853,49 +1859,56 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.75
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.16
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 12.9
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.59
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.5
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.53
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 7.01
         }
       ],
       "away": [
@@ -1925,14 +1938,16 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.03
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 7.41
         },
         {
           "key": "shots_over",
@@ -1981,77 +1996,88 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.15
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.57
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.75
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 3.53
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.34
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 12.9
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.16
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 5.59
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.39
         },
         {
           "key": "ht_leading",
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 7.01
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.26
         },
         {
           "key": "yellow_5plus",
@@ -2065,14 +2091,16 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.5
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.54
         }
       ]
     },
@@ -2083,7 +2111,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.03
         },
         {
           "key": "scored2plus",
@@ -2097,7 +2126,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.39
         },
         {
           "key": "yellow_under5",
@@ -2167,14 +2197,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.34
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.15
         },
         {
           "key": "more_corners",
@@ -2209,7 +2241,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 5.59
         },
         {
           "key": "ht_draw",
@@ -2230,7 +2263,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.75
         },
         {
           "key": "yellow_5plus",
@@ -2244,7 +2278,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.5
         },
         {
           "key": "ht_behind",
@@ -2288,7 +2323,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.03
         },
         {
           "key": "scored2plus",
@@ -2302,7 +2338,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.39
         },
         {
           "key": "shots_over",
@@ -2344,7 +2381,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.15
         },
         {
           "key": "ht_leading",
@@ -2358,7 +2396,8 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.34
         },
         {
           "key": "clean_sheet",
@@ -2372,7 +2411,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 5.59
         },
         {
           "key": "more_corners",
@@ -2407,7 +2447,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.75
         },
         {
           "key": "yellow_5plus",
@@ -2421,7 +2462,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.5
         },
         {
           "key": "ht_behind",
@@ -7579,5 +7621,35 @@
     "generated_at": "2026-10-07T10:09:27Z",
     "text_en": "The upcoming Eredivisie match between PSV and SC Heerenveen at the Philips Stadion is set to be an intriguing encounter. PSV has shown strong recent form, winning their last six matches, while SC Heerenveen has had a mixed bag with two wins, two draws, and two losses in their last six games. Historically, PSV has dominated this fixture, winning four of the last five encounters, which adds to their confidence heading into this match.\n\nIn terms of expected performance, simulations suggest that PSV is likely to create more scoring opportunities, with an expected goals (xG) value of 2.1 compared to SC Heerenveen's 1.37. This indicates that PSV not only has a potent attack but also a solid defensive setup, which could limit Heerenveen's chances. The likelihood of both teams scoring is relatively high at 65.1%, suggesting that while PSV may control the game, SC Heerenveen could find the net if given the chance.\n\nWith Joey Kooij officiating the match, the dynamics on the pitch will also play a crucial role. Given PSV's home advantage and their current form, they are expected to take the initiative early on. If they can capitalize on their scoring opportunities, a comfortable win could be on the cards. However, SC Heerenveen's resilience and ability to counter could provide them with chances to upset the home side, making this match one to watch closely."
   },
-  "refreshed_at": "2026-10-08T09:40:58.651599Z"
+  "refreshed_at": "2026-10-08T09:40:58.651599Z",
+  "odds": {
+    "home": 1.23,
+    "draw": 7.29,
+    "away": 10.1,
+    "under15": 12.1,
+    "over15": 1.03,
+    "under25": 5.59,
+    "over25": 1.15,
+    "under35": 2.89,
+    "over35": 1.42,
+    "btts": 1.34,
+    "corners_under95": 2.75,
+    "corners_over95": 1.39,
+    "red_card": 5.5,
+    "source": "chance",
+    "home_scoreless": 12.9,
+    "home_clean_sheet": 3.16,
+    "home_ht_leading": 1.54,
+    "home_ht_draw": 3.53,
+    "home_ht_behind": 7.01,
+    "home_more_corners": 1.13,
+    "away_clean_sheet": 12.9,
+    "away_scoreless": 3.16,
+    "away_scored2plus": 2.57,
+    "away_ht_behind": 1.54,
+    "away_ht_draw": 3.53,
+    "away_ht_leading": 7.01,
+    "away_more_corners": 7.41,
+    "away_team_2plus_yellow": 2.26
+  }
 }

@@ -5,7 +5,8 @@ export const XGOT_WINDOW = 5;
 export const XGOT_MIN_SIDE = 3;
 
 export type PitchH2HFile = {
-  league_id: number;
+  league_id?: number;
+  leagues?: number[];
   source: string;
   matches: Record<string, Record<string, number>>;
 };
@@ -97,8 +98,8 @@ export function h2hWithXgot(match: MatchData, h2hMap: PitchH2HFile["matches"] | 
   });
 }
 
-/** Ligy (SportMonks id), pro které máme data z PitchAPI: katalog týmů, H2H xGOT a simulaci. */
-export const PITCH_LEAGUE_IDS: number[] = [262];
+/** Ligy (SportMonks id), pro které máme data z PitchAPI: katalog týmů, H2H xGOT a shotmapy. */
+export const PITCH_LEAGUE_IDS: number[] = [262, 8, 82, 564, 72];
 
 /** Soutěž má živý Match Center: Chance Liga (nový model + PitchAPI) nebo jakákoli zapnutá liga z indexu dat. */
 export function isLiveLeague(leagues: { id: number; enabled: boolean }[] | undefined, leagueId: number | null | undefined): boolean {

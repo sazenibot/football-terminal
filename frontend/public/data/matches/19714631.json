@@ -1389,7 +1389,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "yellow_under5",
@@ -1410,7 +1411,8 @@
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.49
         },
         {
           "key": "corners_over95",
@@ -1480,49 +1482,56 @@
           "label": "Tým prohrával po 1. poločase",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 3.6
         },
         {
           "key": "btts",
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.45
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 5.55
         },
         {
           "key": "scored2plus",
           "label": "Tým vstřelil 2+ gólů",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.64
         },
         {
           "key": "ht_draw",
           "label": "Remíza v poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.42
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.54
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.58
         },
         {
           "key": "corners_under95",
@@ -1557,7 +1566,8 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.38
         }
       ],
       "away": [
@@ -1566,7 +1576,8 @@
           "label": "Over 1.5 gólů v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.15
         },
         {
           "key": "shots_over",
@@ -1594,14 +1605,16 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.45
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.49
         },
         {
           "key": "shots_under",
@@ -1643,7 +1656,8 @@
           "label": "Tým vstřelil 2+ gólů",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.28
         },
         {
           "key": "corners_under95",
@@ -1685,28 +1699,32 @@
           "label": "Tým vedl po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.6
         },
         {
           "key": "ht_behind",
           "label": "Tým prohrával po 1. poločase",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.38
         },
         {
           "key": "clean_sheet",
           "label": "Čisté konto (0 obdržených gólů)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 5.55
         },
         {
           "key": "under25",
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.58
         },
         {
           "key": "red_card",
@@ -1720,14 +1738,16 @@
           "label": "Remíza v poločase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.42
         },
         {
           "key": "scoreless",
           "label": "Tým nevstřelil gól",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.54
         },
         {
           "key": "more_corners",
@@ -1801,21 +1821,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.45
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.49
         },
         {
           "key": "corners_under95",
@@ -1857,7 +1880,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.58
         },
         {
           "key": "scored2plus",
@@ -1936,21 +1960,24 @@
           "label": "Oba týmy skórovaly (BTTS)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.45
         },
         {
           "key": "over15",
           "label": "Over 1.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.15
         },
         {
           "key": "over25",
           "label": "Over 2.5 gólů v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.49
         },
         {
           "key": "yellow_under5",
@@ -2062,7 +2089,8 @@
           "label": "Under 2.5 gólů v zápase",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.58
         },
         {
           "key": "yellow_5plus",
@@ -5957,5 +5985,30 @@
     "generated_at": "2026-10-07T10:10:43Z",
     "text_en": "The upcoming Eredivisie match between PEC Zwolle and SC Cambuur at the MAC³PARK Stadion promises to be an intriguing encounter. Both teams have shown mixed form recently, with PEC Zwolle struggling, having recorded four losses in their last six matches, alongside a win and a draw. In contrast, SC Cambuur has fared slightly better, achieving two wins and two draws in their last six games, though they too have faced their share of defeats. This disparity in recent performance may give SC Cambuur a psychological edge heading into the match.\n\nHistorically, the head-to-head encounters between these two teams have been closely contested, with both sides having their fair share of victories. The last five matches have seen a mix of results, indicating that either team can come out on top. The simulation data suggests a slight advantage for SC Cambuur, with an expected goals (xG) figure of 1.95 compared to PEC Zwolle's 1.77. This may indicate that SC Cambuur is more likely to create higher-quality scoring opportunities during the match.\n\nWith a high probability of both teams scoring (70.9%) and a strong likelihood of the match featuring over 2.5 goals (71.7%), fans can expect an exciting and action-packed game. The referee for the match, Sander van der Eijk, will play a crucial role in maintaining control, especially given the stakes for both teams. Overall, while SC Cambuur may enter as slight favorites based on recent form and statistical analysis, PEC Zwolle will be eager to leverage home advantage and turn their fortunes around."
   },
-  "refreshed_at": "2026-10-08T09:40:58.844907Z"
+  "refreshed_at": "2026-10-08T09:40:58.844907Z",
+  "odds": {
+    "home": 1.96,
+    "draw": 3.97,
+    "away": 3.31,
+    "under15": 5.4,
+    "over15": 1.15,
+    "under25": 2.58,
+    "over25": 1.49,
+    "under35": 1.61,
+    "over35": 2.32,
+    "btts": 1.45,
+    "source": "chance",
+    "home_scoreless": 5.55,
+    "home_scored2plus": 1.64,
+    "home_clean_sheet": 3.54,
+    "home_ht_leading": 2.38,
+    "home_ht_draw": 2.42,
+    "home_ht_behind": 3.6,
+    "away_clean_sheet": 5.55,
+    "away_scoreless": 3.54,
+    "away_scored2plus": 2.28,
+    "away_ht_behind": 2.38,
+    "away_ht_draw": 2.42,
+    "away_ht_leading": 3.6
+  }
 }

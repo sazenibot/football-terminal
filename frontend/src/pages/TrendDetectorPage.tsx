@@ -77,7 +77,7 @@ export function TrendDetectorPage() {
     leagues.map((l) => l.id),
     dir != null,
   );
-  const pitch = usePitchLeague(leagues.some((l) => l.id === 262) ? 262 : null);
+  const pitch = usePitchLeague(leagues.length ? "all" : null);
   const upcoming = useUpcoming();
   const [params, setParams] = useSearchParams();
 
