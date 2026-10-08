@@ -12,7 +12,7 @@ import { aiText } from "../components/AiAnalysis";
 
 const TONE = { pos: "var(--c-win)", neutral: "var(--c-faint)", warn: "var(--c-warn)" };
 
-function InsightsCard({ m, p, badges }: { m: MatchData; p: Prediction; badges: { home: XgotBadge | null; away: XgotBadge | null } }) {
+export function InsightsCard({ m, p, badges }: { m: MatchData; p: Prediction; badges: { home: XgotBadge | null; away: XgotBadge | null } }) {
   const list = buildInsights(m, p, badges);
   return (
     <Card title={t("mc.ov.insights.title")} lead={t("mc.ov.insights.lead")}>
@@ -28,7 +28,7 @@ function InsightsCard({ m, p, badges }: { m: MatchData; p: Prediction; badges: {
   );
 }
 
-function FormMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
+export function FormMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
   const side = (team: MatchData["home"], form: MatchData["form"]["home"], s: "home" | "away") => {
     const rows = formRows(form, false, s === "home");
     const sum = formSummary(rows);
@@ -63,7 +63,7 @@ function FormMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
   );
 }
 
-function H2HMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
+export function H2HMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
   const r = h2hRecord(m);
   return (
     <Card
@@ -96,7 +96,7 @@ function H2HMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
   );
 }
 
-function RefereeMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
+export function RefereeMini({ m, onMore }: { m: MatchData; onMore: () => void }) {
   const r = m.referee;
   const lc = r?.league_context;
   const more = (
@@ -136,7 +136,7 @@ function formatAiNumbers(text: string): string {
   return out.replace(/(\d)\s?%/g, cs ? "$1\u00a0%" : "$1%");
 }
 
-function AiCard({ m }: { m: MatchData }) {
+export function AiCard({ m }: { m: MatchData }) {
   const [open, setOpen] = useState(false);
   const raw = aiText(m.ai_analysis);
   if (!raw) return null;

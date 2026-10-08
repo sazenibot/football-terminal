@@ -6,6 +6,7 @@ import { LabPitchVsTsPage } from "./LabPitchVsTsPage";
 import { LabMatchListPage } from "./LabMatchListPage";
 import { LabPitchModelsPage } from "./LabPitchModelsPage";
 import { LabNeprohraPage } from "./LabNeprohraPage";
+import { LabUxPreviewPage } from "./LabUxPreviewPage";
 
 /** Experimentální stránky. Načítají se jen ve vývoji (`npm run dev`), produkční build je neobsahuje. */
 export default function LabRoutes() {
@@ -20,6 +21,7 @@ export default function LabRoutes() {
       <Route path="match-list" element={<LabMatchListPage />} />
       <Route path="pitch-models" element={<LabPitchModelsPage />} />
       <Route path="neprohra" element={<LabNeprohraPage />} />
+      <Route path="ux-preview" element={<LabUxPreviewPage />} />
     </Routes>
   );
 }

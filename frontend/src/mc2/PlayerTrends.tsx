@@ -68,7 +68,7 @@ function Side({ m, s }: { m: MatchData; s: SideTrends }) {
   );
 }
 
-export function PlayerTrendsCard({ m }: { m: MatchData }) {
+export function PlayerTrendsCard({ m, stack }: { m: MatchData; stack?: boolean }) {
   const file = usePlayerTrends(m.league_id);
   const sides = trendsForMatch(file, m);
   if (!file || !sides) return null;
@@ -82,7 +82,7 @@ export function PlayerTrendsCard({ m }: { m: MatchData }) {
       }
       lead={t("mc.pt.lead")}
     >
-      <div className="grid gap-5 sm:grid-cols-2">
+      <div className={stack ? "space-y-5" : "grid gap-5 sm:grid-cols-2"}>
         {sides.map((s) => (
           <Side key={s.side} m={m} s={s} />
         ))}

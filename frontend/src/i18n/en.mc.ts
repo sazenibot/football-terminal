@@ -79,7 +79,7 @@ export const enMc: Record<keyof typeof csMc, string> = {
   "mc.ov.insights.title": "Worth noting",
   "mc.ov.insights.lead": "An automatic summary of the data we have for this match.",
   "mc.pt.title": "Player trends",
-  "mc.pt.lead": "Players' streaks over the team's latest league matches. Most recent match on the right.",
+  "mc.pt.lead": "Players' streaks over the team's latest league matches.",
   "mc.pt.sh": "Shots 2+",
   "mc.pt.sot": "On target 1+",
   "mc.pt.holds": "On a run of “{stat}” in the last {n} matches.",

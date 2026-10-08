@@ -77,7 +77,7 @@ export const csMc = {
   "mc.ov.insights.title": "Co stojí za povšimnutí",
   "mc.ov.insights.lead": "Automatický souhrn z dat, která máme k zápasu.",
   "mc.pt.title": "Hráčské trendy",
-  "mc.pt.lead": "Série hráčů v posledních ligových zápasech týmu. Nejnovější zápas vpravo.",
+  "mc.pt.lead": "Série hráčů v posledních ligových zápasech týmu.",
   "mc.pt.sh": "Střely 2+",
   "mc.pt.sot": "Na bránu 1+",
   "mc.pt.holds": "Drží sérii „{stat}“ v posledních {n} zápasech.",
