@@ -22,6 +22,7 @@ import { AccessProvider } from "./access/AccessContext";
 import { ViewAsSwitcher } from "./access/ViewAsSwitcher";
 import { SiteFooter, SiteNav, TopRight } from "./site/shell";
 import { useEffect } from "react";
+import { Navigate as RawNavigate } from "react-router-dom";
 import { lastLeagueId } from "./components/LeagueSwitcher";
 import { useDataIndex } from "./lib/useData";
 import { isLiveLeague } from "./lib/pitchMatch";
@@ -57,7 +58,7 @@ function ScrollTop() {
   return null;
 }
 
-/** Všechny stránky. Adresy se liší jen u pár segmentů (clanky/articles apod.), jazykovou předponu /en řeší nadřazená routa. */
+/** Všechny stránky. Adresy se liší jen u pár segmentů (clanky/articles apod.), jazykovou předponu /cs řeší nadřazená routa. */
 function AppRoutes() {
   const { locale } = useLocale();
   const p = (cz: string) => `/${seg(cz, locale)}`;
@@ -97,6 +98,18 @@ function AppRoutes() {
   );
 }
 
+/** Staré adresy: /en/… (dřívější anglická verze) jde na kořen, české segmenty v kořeni (/clanky…) pod /cs.
+    Na hostingu to dělá 301 `public/_redirects`, tohle je záloha pro dev a SPA navigaci. */
+function LegacyEn() {
+  const { pathname, search, hash } = useLocation();
+  return <RawNavigate to={(pathname.replace(/^\/en/, "") || "/") + search + hash} replace />;
+}
+
+function LegacyCs() {
+  const { pathname, search, hash } = useLocation();
+  return <RawNavigate to={"/cs" + pathname + search + hash} replace />;
+}
+
 function Localized({ locale }: { locale: "cs" | "en" }) {
   return (
     <LocaleProvider locale={locale}>
@@ -115,8 +128,14 @@ function App() {
     <AccessProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/en/*" element={<Localized locale="en" />} />
-          <Route path="*" element={<Localized locale="cs" />} />
+          <Route path="/cs/*" element={<Localized locale="cs" />} />
+          <Route path="/en/*" element={<LegacyEn />} />
+          <Route path="/en" element={<LegacyEn />} />
+          {["clanky", "tarify", "vysledky", "prihlaseni"].flatMap((s) => [
+            <Route key={s} path={`/${s}`} element={<LegacyCs />} />,
+            <Route key={`${s}/*`} path={`/${s}/*`} element={<LegacyCs />} />,
+          ])}
+          <Route path="*" element={<Localized locale="en" />} />
         </Routes>
       </BrowserRouter>
     </AccessProvider>

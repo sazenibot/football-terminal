@@ -2,7 +2,7 @@ import { cs, type Key } from "./cs";
 import { en } from "./en";
 
 /* Jádro překladů bez Reactu: aktuální jazyk, funkce t() a formátování.
-   Jazyk se mění jen přechodem mezi / a /en (celý strom se tím přemontuje), proto stačí modulová proměnná
+   Jazyk se mění jen přechodem mezi / a /cs (celý strom se tím přemontuje), proto stačí modulová proměnná
    a t() se dá volat i mimo komponenty (data, konstanty, pomocné funkce). */
 
 export type Locale = "cs" | "en";
@@ -11,7 +11,7 @@ type Vars = Record<string, string | number>;
 
 const DICTS: Record<Locale, Record<string, string>> = { cs, en };
 
-let current: Locale = "cs";
+let current: Locale = "en";
 export const getLocale = (): Locale => current;
 export const setLocale = (l: Locale) => {
   current = l;
@@ -20,8 +20,10 @@ export const setLocale = (l: Locale) => {
 /** Značka pro Intl (data, čísla). Angličtina je britská: 24hodinový čas a „6 Oct“. */
 export const intlTag = (l: Locale = current) => (l === "cs" ? "cs-CZ" : "en-GB");
 
-/** Předpona adresy ve druhém jazyce: české adresy jsou v kořeni, anglické pod /en. */
-export const EN_PREFIX = "en";
+/** Předpona adresy: anglické adresy jsou v kořeni (výchozí jazyk), české pod /cs.
+    Stará předpona /en se ještě rozpozná (staré odkazy), ale už se nevyrábí. */
+export const CS_PREFIX = "cs";
+const LEGACY_EN_PREFIX = "en";
 
 /** Segmenty adres, které se liší mezi jazyky (česky → anglicky). Ostatní jsou stejné. */
 const SEG_EN: Record<string, string> = { clanky: "articles", tarify: "pricing", vysledky: "results", prihlaseni: "login" };
@@ -38,14 +40,14 @@ export function localizePath(to: string, l: Locale = current): string {
   if (!to.startsWith("/") || to.startsWith("//")) return to;
   const m = to.match(/^([^?#]*)(.*)$/)!;
   const parts = m[1].split("/").filter(Boolean);
-  if (parts[0] === EN_PREFIX) parts.shift();
+  if (parts[0] === CS_PREFIX || parts[0] === LEGACY_EN_PREFIX) parts.shift();
   if (parts[0]) parts[0] = l === "en" ? (SEG_EN[parts[0]] ?? parts[0]) : (SEG_CS[parts[0]] ?? parts[0]);
-  if (l === "en") parts.unshift(EN_PREFIX);
+  if (l === "cs") parts.unshift(CS_PREFIX);
   return "/" + parts.join("/") + m[2];
 }
 
 /** Adresa bez jazykové předpony a s českými názvy segmentů, pro porovnávání aktivní položky menu apod. */
-export const barePath = (pathname: string) => localizePath(pathname, "cs");
+export const barePath = (pathname: string) => localizePath(pathname, "cs").replace(/^\/cs(?=\/|$)/, "") || "/";
 
 function plural(msg: string, vars: Vars | undefined, l: Locale): string {
   // {n, plural, one {# zápas} few {# zápasy} other {# zápasů}}

@@ -1,0 +1,10 @@
+# Cloudflare Pages: 301 přesměrování (první shoda vyhrává).
+# Dřívější anglická verze /en/… je teď v kořeni.
+/en            /          301
+/en/*          /:splat    301
+# Dřívější české adresy v kořeni (segmenty, které se liší mezi jazyky) jsou teď pod /cs.
+/clanky        /cs/clanky        301
+/clanky/*      /cs/clanky/:splat 301
+/tarify        /cs/tarify        301
+/vysledky      /cs/vysledky      301
+/prihlaseni    /cs/prihlaseni    301

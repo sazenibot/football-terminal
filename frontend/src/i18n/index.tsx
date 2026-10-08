@@ -6,11 +6,11 @@ export { getLocale, intlTag, localizePath, seg, t, type Key, type Locale } from 
 
 type Ctx = { locale: Locale; path: (to: string) => string };
 
-const LocaleCtx = createContext<Ctx>({ locale: "cs", path: (to) => to });
+const LocaleCtx = createContext<Ctx>({ locale: "en", path: (to) => to });
 
 export const LANG_KEY = "ft.lang";
 
-/** Nastaví jazyk pro celý podstrom. Volá se z routy /en/* a /*. */
+/** Nastaví jazyk pro celý podstrom. Volá se z routy /cs/* a /*. */
 export function LocaleProvider({ locale, children }: { locale: Locale; children: ReactNode }) {
   setLocale(locale); // musí proběhnout před vykreslením potomků, kteří volají t()
   useEffect(() => {

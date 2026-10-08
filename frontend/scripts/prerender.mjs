@@ -3,7 +3,7 @@
    React si obsah po načtení převezme.
 
    Proměnné prostředí:
-     SITE_URL        např. https://football-terminal.cz  (canonical, og:url, sitemap.xml)
+     SITE_URL        např. https://football-terminal.com  (canonical, og:url, sitemap.xml)
      SITE_INDEXABLE  "1" povolí indexaci. Bez něj je všude noindex, dokud web není veřejný. */
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -53,7 +53,8 @@ const articlesFor = (loc) => (loc === "en" ? csArticles.map((a) => enBySlug.get(
 /* Texty stránek pro prerender. Cesty jsou české (klíč) a anglické podle SEG. */
 const SEG = { clanky: "articles", tarify: "pricing", vysledky: "results" };
 const seg = (loc, cz) => (loc === "en" ? SEG[cz] : cz);
-const prefix = (loc) => (loc === "en" ? "/en" : "");
+// Angličtina je výchozí (kořen), čeština pod /cs.
+const prefix = (loc) => (loc === "cs" ? "/cs" : "");
 
 const COPY = {
   cs: {
@@ -124,17 +125,17 @@ function pagesFor(loc) {
   ];
 }
 
-const pages = [...pagesFor("cs"), ...pagesFor("en")];
+const pages = [...pagesFor("en"), ...pagesFor("cs")];
 const pathOf = (key, loc) => pages.find((p) => p.key === key && p.loc === loc)?.path;
 
 function render(page) {
   const url = SITE ? SITE + page.path : "";
-  const alternates = ["cs", "en"]
+  const alternates = ["en", "cs"]
     .map((l) => [l, pathOf(page.key, l)])
     .filter(([, p]) => p)
     .map(([l, p]) => (SITE ? `<link rel="alternate" hreflang="${l}" href="${SITE}${p}" />` : ""))
     .filter(Boolean);
-  if (SITE && pathOf(page.key, "cs")) alternates.push(`<link rel="alternate" hreflang="x-default" href="${SITE}${pathOf(page.key, "cs")}" />`);
+  if (SITE && pathOf(page.key, "en")) alternates.push(`<link rel="alternate" hreflang="x-default" href="${SITE}${pathOf(page.key, "en")}" />`);
   const head = [
     `<meta name="description" content="${esc(page.description)}" />`,
     `<meta name="robots" content="${INDEXABLE ? "index, follow" : "noindex, nofollow"}" />`,
@@ -149,13 +150,13 @@ function render(page) {
     .filter(Boolean)
     .join("\n    ");
   return template
-    .replace('<html lang="cs">', `<html lang="${page.loc}">`)
+    .replace('<html lang="en">', `<html lang="${page.loc}">`)
     .replace(/<title>.*?<\/title>/, `<title>${esc(page.title)}</title>\n    ${head}`)
     .replace('<div id="root"></div>', `<div id="root">${page.html}</div>`);
 }
 
 for (const page of pages) {
-  // /en/pricing → en/pricing.html. Hosting (Cloudflare) ho vydá na adrese bez lomítka, shodné s canonical.
+  // /cs/tarify → cs/tarify.html. Hosting (Cloudflare) ho vydá na adrese bez lomítka, shodné s canonical.
   // Varianta pricing/index.html by přesměrovala na /pricing/ a canonical by neseděl.
   const out = page.path === "/" ? join(dist, "index.html") : join(dist, `${page.path.replace(/\/$/, "")}.html`);
   mkdirSync(dirname(out), { recursive: true });
@@ -165,7 +166,7 @@ for (const page of pages) {
 if (SITE && INDEXABLE) {
   const urls = pages
     .map((p) => {
-      const alts = ["cs", "en"]
+      const alts = ["en", "cs"]
         .map((l) => [l, pathOf(p.key, l)])
         .filter(([, path]) => path)
         .map(([l, path]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE}${path}"/>`)
