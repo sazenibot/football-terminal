@@ -239,20 +239,6 @@
     },
     {
       "side": "away",
-      "player_id": 37974187,
-      "player_name": "Zadok Yohanna",
-      "type_id": 531,
-      "type_name": "Knock",
-      "type_name_cs": "Knock",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-28",
-      "end_date": "2026-10-09",
-      "games_missed": 5,
-      "likely_available": true
-    },
-    {
-      "side": "away",
       "player_id": 2461,
       "player_name": "Lewis Dunk",
       "type_id": 745,
@@ -263,20 +249,6 @@
       "start_date": "2026-09-18",
       "end_date": "2026-10-09",
       "games_missed": 1,
-      "likely_available": true
-    },
-    {
-      "side": "away",
-      "player_id": 37561625,
-      "player_name": "Jack Hinshelwood",
-      "type_id": 531,
-      "type_name": "Knock",
-      "type_name_cs": "Knock",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-26",
-      "end_date": "2026-10-09",
-      "games_missed": 6,
       "likely_available": true
     },
     {
@@ -295,6 +267,20 @@
     },
     {
       "side": "away",
+      "player_id": 37974187,
+      "player_name": "Zadok Yohanna",
+      "type_id": 531,
+      "type_name": "Knock",
+      "type_name_cs": "Menší zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-28",
+      "end_date": "2026-10-09",
+      "games_missed": 5,
+      "likely_available": true
+    },
+    {
+      "side": "away",
       "player_id": 26715260,
       "player_name": "Femi Azeez",
       "type_id": 629,
@@ -305,6 +291,20 @@
       "start_date": "2026-08-15",
       "end_date": "2026-10-09",
       "games_missed": 9,
+      "likely_available": true
+    },
+    {
+      "side": "away",
+      "player_id": 37561625,
+      "player_name": "Jack Hinshelwood",
+      "type_id": 531,
+      "type_name": "Knock",
+      "type_name_cs": "Menší zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-26",
+      "end_date": "2026-10-09",
+      "games_missed": 6,
       "likely_available": true
     },
     {
@@ -328,11 +328,6 @@
         "player_name": "Noah Sadiki",
         "jersey_number": 27,
         "formation_field": "3:2"
-      },
-      {
-        "player_name": "Dan Ballard",
-        "jersey_number": 5,
-        "formation_field": "2:3"
       },
       {
         "player_name": "Nordi Mukiele",
@@ -370,13 +365,18 @@
         "formation_field": "3:1"
       },
       {
-        "player_name": "Trai Hume",
-        "jersey_number": 32,
+        "player_name": "Reinildo Mandava",
+        "jersey_number": 17,
         "formation_field": "2:4"
       },
       {
         "player_name": "Kevin Danso",
         "jersey_number": 4,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Trai Hume",
+        "jersey_number": 32,
         "formation_field": "2:2"
       }
     ],
@@ -1232,7 +1232,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.24
+          "odds": 2.25
         },
         {
           "key": "shots_over",
@@ -1338,7 +1338,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.32
+          "odds": 2.34
         },
         {
           "key": "yellow_5plus",
@@ -1354,7 +1354,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.95
+          "odds": 3.96
         },
         {
           "key": "scoreless",
@@ -1394,7 +1394,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.87
+          "odds": 2.86
         },
         {
           "key": "ht_leading",
@@ -1516,7 +1516,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.85
+          "odds": 1.83
         },
         {
           "key": "yellow_5plus",
@@ -1532,7 +1532,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.87
+          "odds": 2.86
         },
         {
           "key": "btts",
@@ -1588,7 +1588,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.95
+          "odds": 3.96
         },
         {
           "key": "ht_draw",
@@ -1596,7 +1596,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.24
+          "odds": 2.25
         }
       ]
     },
@@ -6791,10 +6791,10 @@
     ]
   },
   "odds": {
-    "home": 2.99,
+    "home": 3.0,
     "draw": 3.56,
-    "away": 2.33,
-    "under15": 3.93,
+    "away": 2.32,
+    "under15": 3.94,
     "over15": 1.25,
     "under25": 2.05,
     "over25": 1.79,
@@ -6809,27 +6809,27 @@
     "source": "chance",
     "home_scoreless": 3.28,
     "home_scored2plus": 2.46,
-    "home_clean_sheet": 3.95,
+    "home_clean_sheet": 3.96,
     "home_ht_leading": 3.45,
-    "home_ht_draw": 2.24,
-    "home_ht_behind": 2.87,
-    "home_more_corners": 2.32,
+    "home_ht_draw": 2.25,
+    "home_ht_behind": 2.86,
+    "home_more_corners": 2.34,
     "home_team_2plus_yellow": 1.55,
     "away_clean_sheet": 3.28,
-    "away_scoreless": 3.95,
+    "away_scoreless": 3.96,
     "away_scored2plus": 2.08,
     "away_ht_behind": 3.45,
-    "away_ht_draw": 2.24,
-    "away_ht_leading": 2.87,
-    "away_more_corners": 1.85,
+    "away_ht_draw": 2.25,
+    "away_ht_leading": 2.86,
+    "away_more_corners": 1.83,
     "away_team_2plus_yellow": 1.51
   },
   "ai_analysis": {
-    "text": "Zápas mezi Sunderlandem a Brighton & Hove Albion se odehraje na stadionu Stadium of Light a očekává se, že bude vyrovnaný. Sunderland v posledních pěti zápasech zaznamenal dvě prohry, jednu remízu a jednu výhru, což ukazuje na jistou nevyrovnanost formy. Na druhé straně Brighton má lepší formu, s třemi výhrami, jednou remízou a jednou prohrou, což naznačuje, že hosté vstupují do zápasu s větší sebedůvěrou.\n\nStatistiky ukazují na mírnou převahu Brighton v očekávaných gólech (xG), kde mají hodnotu 1.95 oproti 1.27 Sunderlandu. To naznačuje, že Brighton by mohl mít více příležitostí k vstřelení gólů. Historie vzájemných zápasů ukazuje, že poslední dvě utkání skončila těsným výsledkem, přičemž Brighton vyhrál 1:0 v jednom z nich a druhé utkání skončilo bez branek. Tato statistika může naznačovat, že zápas bude opět vyrovnaný a defenzivy obou týmů mohou hrát klíčovou roli.\n\nPodle simulací je pravděpodobnost výhry Brightonu 43.1 %, zatímco Sunderland má šanci na vítězství 32.4 %. Také je zde vysoká pravděpodobnost, že oba týmy skórují (61.2 %), což naznačuje, že diváci by mohli být svědky atraktivního zápasu s několika brankami. Celkově se očekává, že Brighton využije své lepší formy a zkušeností, ale Sunderland na domácím hřišti může překvapit.",
+    "text": "Zápas mezi Sunderlandem a Brightonem se odehraje na Stadium of Light a slibuje zajímavé střetnutí, zejména vzhledem k aktuální formě obou týmů. Sunderland v posledních pěti zápasech zaznamenal pouze jednu výhru, což naznačuje, že se nachází v obtížné situaci. Na druhé straně Brighton prokazuje lepší výkonnost, když vyhrál tři z posledních pěti zápasů a je v lepší psychické kondici. Historie vzájemných zápasů ukazuje, že Brighton má mírnou převahu, což může hrát roli v psychologii hráčů.\n\nPodle simulací se očekává, že Brighton bude mít více šancí na vstřelení gólu, s očekávanými góly (xG) 1.95 oproti Sunderlandovým 1.27. To naznačuje, že hosté by mohli dominovat v ofenzivě a vytvářet více příležitostí. Na druhou stranu Sunderland bude muset zlepšit svou produktivitu, aby se vyhnul dalšímu zklamání na domácím hřišti. Očekává se, že zápas bude vyrovnaný, ale s mírnou převahou pro Brighton.\n\nCo se týče pravděpodobnosti výsledků, simulace naznačují, že Brighton má 43.1% šanci na výhru, zatímco Sunderland má 32.4% šanci. Možnost remízy je vyhodnocena na 24.5%. S ohledem na výkonnost obou týmů a statistiky je pravděpodobné, že zápas přinese góly, přičemž šance na obě strany skórovat (BTTS) je 61.2%. Celkově se očekává, že zápas bude dynamický s možností více než dvou gólů.",
     "model": "gpt-4o-mini",
-    "input_hash": "85aa5d754a0ae650",
-    "generated_at": "2026-10-08T09:36:59Z",
-    "text_en": "The upcoming match between Sunderland and Brighton & Hove Albion at the Stadium of Light is set to be an intriguing encounter in the Premier League. Sunderland has struggled recently, with a recent form of two losses, one draw, and one win in their last five matches. In contrast, Brighton has shown stronger performance, securing three wins, one draw, and one loss in the same period. This discrepancy in form suggests that Brighton may have the upper hand going into this match.\n\nHistorically, the head-to-head results indicate a slight advantage for Brighton, having won their last encounter 1-0 in March 2026 and drawing 0-0 in December 2025. The expected goals (xG) simulation further supports Brighton's potential dominance, with an xG of 1.95 compared to Sunderland's 1.27. This suggests that Brighton is likely to create more scoring opportunities, which could translate into goals during the match.\n\nReferee Thomas Bramall will oversee the match, and with the statistics indicating a likelihood of both teams scoring (61.2% chance for both teams to score), fans can expect an engaging contest. The odds reflect this competitive nature, with Brighton favored to win at 2.33, while Sunderland's odds stand at 2.99. Overall, if Brighton maintains their current form, they are likely to emerge victorious, but Sunderland will be eager to capitalize on home advantage and turn their fortunes around."
+    "input_hash": "0e7f43a8c77f3bdc",
+    "generated_at": "2026-10-08T23:17:08Z",
+    "text_en": "The upcoming Premier League match between Sunderland and Brighton & Hove Albion at the Stadium of Light is set to be an intriguing contest. Sunderland has struggled recently, with their last five matches resulting in two wins, two losses, and a draw. In contrast, Brighton has shown stronger form with three wins, a draw, and a loss in their last five games. The historical head-to-head encounters indicate a slight edge for Brighton, having won the last match and drawn the previous one, which may give them confidence going into this fixture.\n\nStatistically, the simulation suggests that Brighton is favored to secure a victory, with an expected goals (xG) metric of 1.95 compared to Sunderland's 1.27. This indicates that Brighton is likely to create more scoring opportunities. The odds reflect this sentiment, with Brighton being the favorites at 2.32 for an away win. The likelihood of both teams scoring (61.2%) and the potential for over 2.5 goals (62.8%) suggests an open match with chances on both ends.\n\nReferee Thomas Bramall will oversee the match, and with Sunderland's recent form, they will need to improve significantly to challenge Brighton effectively. Given the statistics and current form, it is reasonable to expect Brighton to dominate possession and create more chances, while Sunderland will rely on a solid defensive performance and quick counter-attacks to secure a positive result at home."
   },
-  "refreshed_at": "2026-10-08T09:36:45.538561Z"
+  "refreshed_at": "2026-10-08T23:17:00.122598Z"
 }

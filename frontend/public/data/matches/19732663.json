@@ -38,7 +38,7 @@
       "player_name": "Lorenzo Amatucci",
       "type_id": 1952,
       "type_name": "Adductor Injury",
-      "type_name_cs": "Adductor Injury",
+      "type_name_cs": "Zranění adduktoru",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-19",
@@ -48,8 +48,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Jon Aramburu",
+        "jersey_number": 2,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Mikel Oyarzabal",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Gonçalo Guedes",
+        "jersey_number": 11,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Carlos Soler",
+        "jersey_number": 18,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Jon Martín Vicente",
+        "jersey_number": 6,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Álex Remiro",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Sergio Gómez",
+        "jersey_number": 17,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Yangel Herrera",
+        "jersey_number": 21,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Alex Marchal",
+        "jersey_number": 29,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Luken Beitia",
+        "jersey_number": 34,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Luka Sucic",
+        "jersey_number": 24,
+        "formation_field": "3:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Diego Villares",
+        "jersey_number": 8,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "David Mella",
+        "jersey_number": 11,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Giacomo Quagliata",
+        "jersey_number": 12,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Leo Román",
+        "jersey_number": 13,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Mario Soriano",
+        "jersey_number": 21,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Lucas Noubi",
+        "jersey_number": 4,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Bil Nsongo",
+        "jersey_number": 32,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Riki Rodríguez",
+        "jersey_number": 14,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Jonathan Asp Jensen",
+        "jersey_number": 18,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Bright Ede",
+        "jersey_number": 22,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Ximo Navarro",
+        "jersey_number": 23,
+        "formation_field": "2:4"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1304,7 +1416,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.75
         },
         {
           "key": "offsides_under",
@@ -1327,14 +1440,15 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.75
+          "odds": 1.74
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.42
         },
         {
           "key": "yellow_5plus",
@@ -1405,7 +1519,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.71
+          "odds": 1.72
         },
         {
           "key": "scored2plus",
@@ -1413,7 +1527,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.62
+          "odds": 1.6
         },
         {
           "key": "ht_draw",
@@ -1421,7 +1535,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.29
+          "odds": 2.31
         },
         {
           "key": "scoreless",
@@ -1429,7 +1543,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 5.76
+          "odds": 5.79
         },
         {
           "key": "red_card",
@@ -1444,7 +1558,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.19
+          "odds": 2.17
         },
         {
           "key": "clean_sheet",
@@ -1452,7 +1566,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.41
+          "odds": 2.4
         },
         {
           "key": "under25",
@@ -1460,7 +1574,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.11
+          "odds": 2.12
         },
         {
           "key": "yellow_under5",
@@ -1474,7 +1588,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.97
         },
         {
           "key": "ht_behind",
@@ -1498,7 +1613,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.71
+          "odds": 1.72
         },
         {
           "key": "over15",
@@ -1570,14 +1685,15 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.11
+          "odds": 2.12
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.75
         },
         {
           "key": "ht_draw",
@@ -1585,7 +1701,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.29
+          "odds": 2.31
         },
         {
           "key": "over25",
@@ -1593,7 +1709,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.75
+          "odds": 1.74
         },
         {
           "key": "scored2plus",
@@ -1601,14 +1717,15 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.55
+          "odds": 3.57
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.97
         },
         {
           "key": "more_corners",
@@ -1637,7 +1754,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.41
+          "odds": 2.4
         },
         {
           "key": "yellow_5plus",
@@ -1659,7 +1776,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.19
+          "odds": 2.17
         },
         {
           "key": "clean_sheet",
@@ -1667,7 +1784,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 5.76
+          "odds": 5.79
         }
       ]
     },
@@ -1678,7 +1795,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.75
         },
         {
           "key": "more_corners",
@@ -1778,7 +1896,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.75
+          "odds": 1.74
         },
         {
           "key": "scored2plus",
@@ -1793,7 +1911,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.71
+          "odds": 1.72
         },
         {
           "key": "under25",
@@ -1801,7 +1919,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.11
+          "odds": 2.12
         },
         {
           "key": "team_2plus_yellow",
@@ -1822,7 +1940,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.97
         },
         {
           "key": "yellow_5plus",
@@ -1859,7 +1978,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.75
         },
         {
           "key": "sot_over",
@@ -1945,7 +2065,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.71
+          "odds": 1.72
         },
         {
           "key": "over25",
@@ -1953,7 +2073,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.75
+          "odds": 1.74
         },
         {
           "key": "ht_leading",
@@ -1975,7 +2095,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.11
+          "odds": 2.12
         },
         {
           "key": "scored2plus",
@@ -2017,7 +2137,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.97
         },
         {
           "key": "red_card",
@@ -6241,35 +6362,38 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T09:40:21.176320Z",
+  "refreshed_at": "2026-10-08T23:21:29.522236Z",
   "odds": {
-    "home": 1.63,
-    "draw": 4.06,
-    "away": 5.43,
-    "under15": 4.1,
+    "home": 1.61,
+    "draw": 4.17,
+    "away": 5.41,
+    "under15": 4.13,
     "over15": 1.24,
-    "under25": 2.11,
-    "over25": 1.75,
+    "under25": 2.12,
+    "over25": 1.74,
     "under35": 1.42,
-    "over35": 2.88,
-    "btts": 1.71,
+    "over35": 2.87,
+    "btts": 1.72,
+    "corners_under95": 1.97,
+    "corners_over95": 1.75,
     "source": "chance",
-    "home_scoreless": 5.76,
-    "home_scored2plus": 1.62,
-    "home_clean_sheet": 2.41,
-    "home_ht_leading": 2.19,
-    "home_ht_draw": 2.29,
-    "away_clean_sheet": 5.76,
-    "away_scoreless": 2.41,
-    "away_scored2plus": 3.55,
-    "away_ht_behind": 2.19,
-    "away_ht_draw": 2.29
+    "home_scoreless": 5.79,
+    "home_scored2plus": 1.6,
+    "home_clean_sheet": 2.4,
+    "home_ht_leading": 2.17,
+    "home_ht_draw": 2.31,
+    "home_more_corners": 1.42,
+    "away_clean_sheet": 5.79,
+    "away_scoreless": 2.4,
+    "away_scored2plus": 3.57,
+    "away_ht_behind": 2.17,
+    "away_ht_draw": 2.31
   },
   "ai_analysis": {
-    "text": "Zápas mezi Real Sociedad a Deportivo A Coruña se odehraje na stadionu Anoeta a očekává se vyrovnaný duel. Domácí tým má v posledních šesti zápasech smíšenou formu, přičemž vyhrál tři a prohrál dvě utkání. Na druhé straně Deportivo A Coruña, které se potýká s nevyrovnanými výkony, má v posledních šesti zápasech také tři výhry, ale i tři remízy. Historie vzájemných zápasů naznačuje, že Real Sociedad má nad Deportivo převahu, což může hrát roli v psychologii obou týmů.\n\nPodle simulovaných očekávaných gólů (xG) mají oba týmy relativně vyrovnané šance, přičemž Real Sociedad má xG 1.39 a Deportivo 1.5. To naznačuje, že zápas by mohl být vyrovnaný, ale s mírnou výhodou pro hosty, pokud se podíváme na jejich poslední výkony. Pravděpodobnost, že oba týmy skórují, je 58.2 %, což naznačuje, že se dá očekávat ofenzivní hra s šancemi na obou stranách.\n\nVzhledem k formě obou týmů a historickým výsledkům se dá očekávat, že Real Sociedad bude chtít využít domácího prostředí a získat tři body. Na druhé straně Deportivo A Coruña se pokusí o překvapení a zlepšení své formy. Celkově se dá očekávat vyrovnaný zápas, kde by mohly padnout góly na obou stranách, a výsledek by mohl být těsný, s mírnou převahou domácího celku.",
+    "text": "Zápas mezi Real Sociedad a Deportivo A Coruña, který se odehraje na stadionu Anoeta, slibuje zajímavou konfrontaci. Real Sociedad v posledních šesti zápasech vykazuje solidní formu s třemi vítězstvími a dvěma porážkami, zatímco Deportivo A Coruña má za sebou smíšené výsledky, včetně dvou výher a čtyř remíz. Historie vzájemných zápasů naznačuje, že Real Sociedad má jasnou převahu, což může ovlivnit psychologii hráčů na hřišti.\n\nPodle simulací očekávaných gólů (xG) se předpokládá vyrovnaný zápas, přičemž Real Sociedad má xG 1.39 a Deportivo A Coruña 1.5. To naznačuje, že oba týmy by měly mít šance na vstřelení gólů, přičemž pravděpodobnost, že oba týmy skórují, je 58.2 %. Vzhledem k tomu, že Real Sociedad hraje doma, lze očekávat, že budou mít mírnou výhodu, což se odráží i v kurzech, kde jsou favoritem.\n\nZ pohledu statistik je také zajímavé sledovat, jak se týmy vyrovnají s tlakem. Real Sociedad má poměrně dobrou šanci na udržení čistého konta (2.4), zatímco Deportivo A Coruña má vyšší pravděpodobnost, že neuspěje v ofenzivě (5.79). Celkově lze očekávat vyrovnaný zápas, ale s mírnou převahou domácího týmu, který by mohl využít své domácí prostředí k zisku tří bodů.",
     "model": "gpt-4o-mini",
-    "input_hash": "fa06f235f7c03c1c",
-    "generated_at": "2026-10-08T09:40:29Z",
-    "text_en": "In the upcoming La Liga match between Real Sociedad and Deportivo A Coruña at the Anoeta Stadium, the recent form of both teams suggests an intriguing contest. Real Sociedad has shown a mixed bag of results, with three wins, two losses, and one draw in their last six matches. Conversely, Deportivo A Coruña has had a slightly better run, with two wins, three draws, and one loss. This indicates that while Sociedad may have the home advantage, Deportivo has been more consistent in securing points.\n\nHistorically, Real Sociedad has had the upper hand in their head-to-head encounters, winning four out of the last five matches against Deportivo A Coruña. Notably, their last meeting in February 2018 ended in a commanding 5-0 victory for Sociedad. The expected goals (xG) statistics also favor Deportivo slightly, with an xG of 1.5 compared to Sociedad's 1.39, suggesting that both teams could create scoring opportunities. The simulation indicates a likelihood of both teams scoring, with a probability of 58.2% for both teams to find the net.\n\nGiven the home advantage for Real Sociedad, coupled with their historical dominance over Deportivo, they are expected to control the match tempo. However, Deportivo's recent form suggests they could pose a challenge, especially if they can capitalize on counter-attacking opportunities. The match could see a competitive edge, with Sociedad likely aiming for a victory to strengthen their position in the league, while Deportivo will be looking to secure crucial points on the road."
+    "input_hash": "77f8b05d4ed9306c",
+    "generated_at": "2026-10-08T23:21:35Z",
+    "text_en": "In the upcoming La Liga match between Real Sociedad and Deportivo A Coruña at the Anoeta Stadium, the home team, Real Sociedad, comes into the match with a mixed recent form, having won three of their last six matches but also suffered two losses. In contrast, Deportivo A Coruña has shown a slightly better away form, with two wins and three draws in their last six games. Historically, Real Sociedad has had the upper hand in their encounters, winning the last three matches against Deportivo, including a decisive 5-0 victory in February 2018.\n\nThe expected performance metrics from simulation suggest a closely contested match, with Real Sociedad having an expected goals (xG) of 1.39 compared to Deportivo's 1.5. This indicates that while Real Sociedad may be favored due to their home advantage and historical performance, Deportivo A Coruña could pose a significant threat, especially given their recent ability to secure points away from home. The likelihood of both teams scoring is relatively high, with a 58.2% chance according to the simulation.\n\nOverall, the match is likely to be competitive, with Real Sociedad looking to capitalize on their home advantage while Deportivo A Coruña aims to continue their positive trend away from home. The outcome could hinge on key moments, with both teams having the potential to find the back of the net. Fans can expect an engaging match, with tactical battles likely playing a crucial role in determining the final result."
   }
 }

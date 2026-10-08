@@ -19,6 +19,20 @@
   "referee": null,
   "sidelined": [
     {
+      "side": "home",
+      "player_id": 37316864,
+      "player_name": "Yago de Santiago",
+      "type_id": 1980,
+      "type_name": "Arthroscopy",
+      "type_name_cs": "Arthroscopy",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-05-25",
+      "end_date": "2026-11-01",
+      "games_missed": 12,
+      "likely_available": false
+    },
+    {
       "side": "away",
       "player_id": 800,
       "player_name": "Iago Aspas Juncal",
@@ -34,8 +48,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Germán Valera",
+        "jersey_number": 11,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Fer Niño",
+        "jersey_number": 14,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Thomas Lemar",
+        "jersey_number": 18,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Roy Revivo",
+        "jersey_number": 3,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Víctor Chust",
+        "jersey_number": 23,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Rubén Sánchez",
+        "jersey_number": 22,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Gonzalo Villar",
+        "jersey_number": 12,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Javi Morcillo",
+        "jersey_number": 47,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Lucas Cepeda",
+        "jersey_number": 21,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Kevin Lomónaco",
+        "jersey_number": 15,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Matías Dituro",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Pablo Durán",
+        "jersey_number": 11,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Ferran Jutglà",
+        "jersey_number": 9,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Hugo Álvarez",
+        "jersey_number": 23,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Sergio Carreira",
+        "jersey_number": 5,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Ilaix Moriba",
+        "jersey_number": 6,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Ionuț Radu",
+        "jersey_number": 13,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Hugo González",
+        "jersey_number": 16,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Álvaro Núñez",
+        "jersey_number": 15,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Marcos Alonso",
+        "jersey_number": 3,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Yoel Lago",
+        "jersey_number": 18,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Carl Starfelt",
+        "jersey_number": 2,
+        "formation_field": "2:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1291,7 +1417,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.7
+          "odds": 1.71
         },
         {
           "key": "over15",
@@ -1328,7 +1454,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.98
+          "odds": 1.99
         },
         {
           "key": "scored2plus",
@@ -1336,7 +1462,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.53
+          "odds": 2.54
         },
         {
           "key": "team_2plus_yellow",
@@ -1386,7 +1512,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.53
+          "odds": 1.52
         },
         {
           "key": "yellow_5plus",
@@ -1401,7 +1527,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.18
+          "odds": 3.19
         },
         {
           "key": "corners_over95",
@@ -1409,7 +1535,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.35
+          "odds": 2.36
         },
         {
           "key": "yellow_under5",
@@ -1431,7 +1557,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.85
+          "odds": 1.84
         },
         {
           "key": "more_corners",
@@ -1447,7 +1573,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.35
+          "odds": 3.37
         },
         {
           "key": "ht_draw",
@@ -1455,7 +1581,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.13
+          "odds": 2.12
         },
         {
           "key": "clean_sheet",
@@ -1463,7 +1589,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.37
+          "odds": 3.36
         },
         {
           "key": "scoreless",
@@ -1471,7 +1597,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.21
+          "odds": 3.2
         }
       ],
       "away": [
@@ -1496,7 +1622,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.85
+          "odds": 1.84
         },
         {
           "key": "shots_over",
@@ -1553,7 +1679,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.53
+          "odds": 1.52
         },
         {
           "key": "yellow_5plus",
@@ -1575,7 +1701,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.7
+          "odds": 1.71
         },
         {
           "key": "clean_sheet",
@@ -1583,7 +1709,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.21
+          "odds": 3.2
         },
         {
           "key": "scoreless",
@@ -1591,7 +1717,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.37
+          "odds": 3.36
         },
         {
           "key": "corners_over95",
@@ -1599,7 +1725,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.35
+          "odds": 2.36
         },
         {
           "key": "yellow_under5",
@@ -1614,7 +1740,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.18
+          "odds": 3.19
         },
         {
           "key": "ht_behind",
@@ -1622,7 +1748,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.35
+          "odds": 3.37
         },
         {
           "key": "over25",
@@ -1630,7 +1756,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.98
+          "odds": 1.99
         },
         {
           "key": "scored2plus",
@@ -1638,7 +1764,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.39
+          "odds": 2.4
         },
         {
           "key": "more_corners",
@@ -1661,7 +1787,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.13
+          "odds": 2.12
         }
       ]
     },
@@ -1729,7 +1855,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.7
+          "odds": 1.71
         },
         {
           "key": "over15",
@@ -1745,7 +1871,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.98
+          "odds": 1.99
         },
         {
           "key": "corners_under95",
@@ -1753,7 +1879,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.53
+          "odds": 1.52
         },
         {
           "key": "yellow_under5",
@@ -1782,7 +1908,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.85
+          "odds": 1.84
         },
         {
           "key": "scored2plus",
@@ -1797,7 +1923,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.35
+          "odds": 2.36
         },
         {
           "key": "more_corners",
@@ -1926,7 +2052,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.85
+          "odds": 1.84
         },
         {
           "key": "corners_over95",
@@ -1934,7 +2060,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.35
+          "odds": 2.36
         },
         {
           "key": "team_2plus_yellow",
@@ -1956,7 +2082,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.7
+          "odds": 1.71
         },
         {
           "key": "over15",
@@ -1972,7 +2098,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.98
+          "odds": 1.99
         },
         {
           "key": "corners_under95",
@@ -1980,7 +2106,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.53
+          "odds": 1.52
         },
         {
           "key": "more_corners",
@@ -7284,41 +7410,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T09:40:12.074236Z",
+  "refreshed_at": "2026-10-08T23:21:20.747859Z",
   "odds": {
-    "home": 2.8,
-    "draw": 3.3,
+    "home": 2.81,
+    "draw": 3.29,
     "away": 2.59,
-    "under15": 3.41,
+    "under15": 3.39,
     "over15": 1.32,
-    "under25": 1.85,
-    "over25": 1.98,
-    "under35": 1.32,
-    "over35": 3.42,
-    "btts": 1.7,
-    "corners_under95": 1.53,
-    "corners_over95": 2.35,
+    "under25": 1.84,
+    "over25": 1.99,
+    "under35": 1.31,
+    "over35": 3.45,
+    "btts": 1.71,
+    "corners_under95": 1.52,
+    "corners_over95": 2.36,
     "source": "chance",
-    "home_scoreless": 3.21,
-    "home_scored2plus": 2.53,
-    "home_clean_sheet": 3.37,
-    "home_ht_leading": 3.35,
-    "home_ht_draw": 2.13,
-    "home_ht_behind": 3.18,
+    "home_scoreless": 3.2,
+    "home_scored2plus": 2.54,
+    "home_clean_sheet": 3.36,
+    "home_ht_leading": 3.37,
+    "home_ht_draw": 2.12,
+    "home_ht_behind": 3.19,
     "home_more_corners": 1.78,
-    "away_clean_sheet": 3.21,
-    "away_scoreless": 3.37,
-    "away_scored2plus": 2.39,
-    "away_ht_behind": 3.35,
-    "away_ht_draw": 2.13,
-    "away_ht_leading": 3.18,
+    "away_clean_sheet": 3.2,
+    "away_scoreless": 3.36,
+    "away_scored2plus": 2.4,
+    "away_ht_behind": 3.37,
+    "away_ht_draw": 2.12,
+    "away_ht_leading": 3.19,
     "away_more_corners": 2.46
   },
   "ai_analysis": {
-    "text": "Zápas mezi Elche a Celta de Vigo se odehraje na stadionu Estadio Manuel Martínez Valero a obě mužstva mají v poslední době smíšenou formu. Domácí Elche v posledních šesti zápasech zaznamenalo pouze jednu výhru, zatímco Celta de Vigo se může pochlubit dvěma výhrami a čtyřmi remízami. Historie vzájemných zápasů naznačuje, že Celta má mírnou převahu, když vyhrála tři z posledních pěti duelů.\n\nPodle simulací očekáváme vyrovnaný zápas s mírnou převahou hostujícího týmu. Očekávané xG (expected goals) ukazuje na 1.36 pro Elche a 1.61 pro Celtu, což naznačuje, že Celta má o něco větší šanci na vstřelení gólů. Pravděpodobnost remízy je 25.9 %, což ukazuje, že vyrovnaný výsledek je také reálnou možností. Vzhledem k formě obou týmů a vzájemným zápasům se dá očekávat, že zápas bude vyrovnaný a rozhodnou detaily.\n\nCo se týče pravděpodobnosti, že oba týmy vstřelí gól, je to 59.4 %. To naznačuje, že zápas by mohl nabídnout několik gólových příležitostí na obou stranách. Celkově lze očekávat, že zápas bude napínavý, s možností, že se oba týmy pokusí o ofenzivní hru, což může vést k zajímavému a dynamickému fotbalu.",
+    "text": "Zápas mezi Elche a Celta de Vigo, který se odehraje na stadionu Estadio Manuel Martínez Valero, slibuje zajímavé střetnutí. Domácí Elche se nachází v těžké formě, kdy v posledních šesti zápasech zaznamenalo pouze jedno vítězství a pět porážek. Naopak Celta de Vigo má stabilnější výkony, s jedním vítězstvím a čtyřmi remízami v posledních zápasech. Historie vzájemných zápasů ukazuje, že Celta má mírnou převahu, což může psychologicky hrát do karet hostům.\n\nPodle simulací očekáváme vyrovnaný zápas, přičemž Celta de Vigo má mírně vyšší očekávané góly (xG 1.61) oproti Elche (xG 1.36). S pravděpodobností 37.3 % se očekává vítězství hostů a 36.8 % na výhru domácích. Remíza má pravděpodobnost 25.9 %. Statistika také naznačuje, že by mohlo padnout více než 2,5 gólu, což je podpořeno i vysokou pravděpodobností, že oba týmy skórují (59.4 %).\n\nVzhledem k formě a historickým výsledkům se očekává, že Celta de Vigo bude aktivněji hledat cesty k brance, zatímco Elche se bude snažit využít domácího prostředí. Klíčovým faktorem bude efektivita v zakončení a schopnost Elche ustát tlak ze strany hostů. Zápas může přinést zajímavé momenty, ale výsledek bude pravděpodobně těsný a vyrovnaný.",
     "model": "gpt-4o-mini",
-    "input_hash": "d8813ce710cbee19",
-    "generated_at": "2026-10-08T09:40:21Z",
-    "text_en": "The upcoming La Liga match between Elche and Celta de Vigo at the Estadio Manuel Martínez Valero on October 11, 2026, presents an intriguing clash. Elche has struggled recently, recording only one win in their last six matches (V, P, R, P, P, P), while Celta de Vigo has fared slightly better with two wins and three draws in the same timeframe (V, R, R, R, P, P). Historically, Celta de Vigo has had the upper hand in their recent encounters, winning four of the last five head-to-head matches, which could give them a psychological advantage going into this fixture.\n\nStatistical analysis suggests that both teams may find it challenging to score, with expected goals (xG) showing Elche at 1.36 and Celta de Vigo at 1.61. The simulation indicates a close contest, with a probability of 36.8% for a Celta de Vigo win, 25.9% for a draw, and 37.3% for an Elche victory. The likelihood of both teams scoring (BTTS) stands at 59.4%, suggesting a reasonable chance for goals from both sides, but the overall match dynamics may favor a low-scoring affair.\n\nGiven the recent form and historical results, Celta de Vigo may approach the match with confidence, looking to exploit Elche's defensive vulnerabilities. Elche will need to capitalize on their home advantage and improve their performance to secure a positive result. The match could hinge on key moments and individual performances, particularly in midfield and defense, making it a critical encounter for both teams in their pursuit of points in La Liga."
+    "input_hash": "44e591e9f0d293db",
+    "generated_at": "2026-10-08T23:21:27Z",
+    "text_en": "The upcoming La Liga match between Elche and Celta de Vigo at the Estadio Manuel Martínez Valero promises to be an intriguing encounter. Elche has struggled recently, with a form line of one win and five losses in their last six matches, which suggests they may be low on confidence. In contrast, Celta de Vigo has shown slightly better form with two wins and three draws in their last six games, indicating a more stable performance. Historically, Celta has had the upper hand in their recent head-to-head encounters, winning four of the last five matches against Elche.\n\nStatistical analysis indicates that Celta de Vigo may have the edge in this matchup, with expected goals (xG) of 1.61 compared to Elche's 1.36. This suggests that Celta is likely to create more scoring opportunities. The simulation results show a probability of 37.3% for a Celta win and 36.8% for an Elche victory, indicating a closely contested match. The likelihood of both teams scoring (59.4%) also points towards a potentially high-scoring affair.\n\nGiven the current form and historical performance, Celta de Vigo may enter the match as favorites, especially if they can capitalize on their attacking chances. Elche will need to improve their defensive organization and find a way to convert their limited opportunities into goals to secure a positive result. The match is likely to be competitive, with both teams eager to gain crucial points in the league."
   }
 }

@@ -170,17 +170,17 @@
   },
   "sidelined": [
     {
-      "side": "home",
-      "player_id": 37630140,
-      "player_name": "Miliano Jonathans",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
+      "side": "away",
+      "player_id": 37749130,
+      "player_name": "Elvis van der Laan",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-03-07",
+      "start_date": "2026-09-17",
       "end_date": null,
-      "games_missed": 23,
+      "games_missed": 1,
       "likely_available": false
     },
     {
@@ -209,34 +209,6 @@
       "start_date": "2026-09-11",
       "end_date": null,
       "games_missed": 2,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37547506,
-      "player_name": "Stije Resink",
-      "type_id": 557,
-      "type_name": "Cruciate Ligament Injury",
-      "type_name_cs": "Zranění zkříženého vazu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-03-01",
-      "end_date": "2027-01-01",
-      "games_missed": 29,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37749130,
-      "player_name": "Elvis van der Laan",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-17",
-      "end_date": null,
-      "games_missed": 1,
       "likely_available": false
     },
     {
@@ -283,8 +255,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Lennard Hartjes",
+        "jersey_number": 20,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Ágúst Orri Þorsteinsson",
+        "jersey_number": 30,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "David Garden",
+        "jersey_number": 19,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Aymen Sliti",
+        "jersey_number": 7,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Rick Meissen",
+        "jersey_number": 3,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Irakli Yegoian",
+        "jersey_number": 8,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Simon Janssen",
+        "jersey_number": 15,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Stijn van Gassel",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Eric da Silva Moreira",
+        "jersey_number": 2,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Jan Plug",
+        "jersey_number": 14,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Casper Widell",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Pelle Clement",
+        "jersey_number": 24,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Marco Rente",
+        "jersey_number": 5,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Jorg Schreuders",
+        "jersey_number": 14,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Thom van Bergen",
+        "jersey_number": 26,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Brynjólfur Willumsson",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Tygo Land",
+        "jersey_number": 18,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Tika de Jonge",
+        "jersey_number": 8,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Márk Csinger",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Thijmen Blokzijl",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Etienne Vaessen",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "David van der Werff",
+        "jersey_number": 17,
+        "formation_field": "4:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -6701,13 +6785,13 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Excelsiorem a FC Groningen se odehraje na stadionu Van Donge & De Roo, kde domácí tým bude usilovat o zlepšení své formy. Domácí mají za sebou smíšené výsledky, s posledními dvěma výhrami, ale také s několika remízami a porážkami. Na druhé straně, FC Groningen se v posledních zápasech prezentuje stabilněji, s několika výhrami a remízami, což naznačuje, že mají lepší momentální formu.\n\nHistorie vzájemných zápasů ukazuje, že oba týmy si v minulosti vyměnily výhry, což naznačuje vyrovnanost jejich soubojů. Poslední zápas skončil vítězstvím Excelsioru 3:2, ale v předchozích utkáních dominoval Groningen. Tato rivalita může přinést napínavý zápas, ve kterém se očekává, že oba týmy budou mít šance na vstřelení gólů.\n\nPodle simulací se očekává, že domácí tým Excelsior vytvoří více očekávaných gólů (xG) než Groningen, což naznačuje, že budou mít více ofenzivních příležitostí. S pravděpodobností 68,7 % se také očekává, že oba týmy skórují. Celkově lze očekávat vyrovnaný zápas, ve kterém se rozhodující faktory mohou ukázat jako efektivita v koncovce a schopnost využívat standardní situace.",
+    "text": "Zápas mezi Excelsiorem a FC Groningen v Eredivisie slibuje být zajímavým střetnutím, které se odehraje na stadionu Van Donge & De Roo. Domácí tým Excelsior v posledních šesti zápasech vykazuje smíšenou formu s dvěma výhrami, dvěma remízami a dvěma prohrami. Naopak FC Groningen se může pochlubit stabilnějšími výkony, přičemž v posledních šesti utkáních zaznamenal tři výhry, dvě remízy a jednu prohru. Historie vzájemných zápasů ukazuje vyrovnanost, přičemž poslední zápas skončil těsným vítězstvím Excelsioru 3:2.\n\nPodle simulací a očekávaných gólů (xG) má Excelsior mírnou výhodu s hodnotou 2.1 oproti 1.53 pro Groningen. To naznačuje, že domácí tým by mohl mít větší šance na vstřelení gólů, což se odráží i v pravděpodobnostech, kde je šance na výhru domácích 47.1 %, remízu 24 % a výhru hostů 29 %. Dále je pravděpodobné, že oba týmy vstřelí gól, což ukazuje vysoká pravděpodobnost 68.7 % pro \"obě týmy skórují\".\n\nCelkově lze očekávat vyrovnaný zápas, kde domácí tým bude chtít využít výhodu domácího prostředí, zatímco Groningen se pokusí potvrdit svou lepší formu. Klíčovými faktory budou efektivita v koncovce a schopnost obran obou týmů udržet čisté konto. Zápas by mohl nabídnout atraktivní fotbal s mnoha šancemi na obou stranách.",
     "model": "gpt-4o-mini",
-    "input_hash": "f337663eac07d52a",
-    "generated_at": "2026-10-07T10:10:55Z",
-    "text_en": "The upcoming Eredivisie match between Excelsior and FC Groningen at the Van Donge & De Roo Stadion is expected to be a competitive encounter. Excelsior's recent form shows a mix of results with two wins, two draws, and two losses in their last six matches. In contrast, FC Groningen has a slightly better record, with two wins, three draws, and one loss in the same period. This suggests that both teams are capable of scoring, as indicated by the high likelihood of both teams finding the net, with a probability of 68.7% for both teams to score.\n\nHistorically, the head-to-head encounters between these two sides have been closely contested, with each team having periods of dominance. In their last five meetings, FC Groningen has won three times, while Excelsior has secured two victories. This trend may give FC Groningen a psychological edge going into the match, but Excelsior will be eager to capitalize on their home advantage and recent positive performances.\n\nSimulation data indicates that Excelsior is expected to create more goal-scoring opportunities with an expected goals (xG) value of 2.1 compared to FC Groningen's 1.53. This suggests that while FC Groningen may have had the upper hand in previous encounters, Excelsior could be more potent in attack during this match. With a 47.1% chance of a home win and a 29% chance of an away victory, the match is likely to be closely contested, with both teams having the potential to secure points."
+    "input_hash": "c53104ec7371689f",
+    "generated_at": "2026-10-08T23:23:20Z",
+    "text_en": "The upcoming match between Excelsior and FC Groningen in the Eredivisie is set to take place at the Van Donge & De Roo Stadion on October 11, 2026. Both teams have shown mixed recent form, with Excelsior recording two wins, two draws, and two losses in their last six matches, while FC Groningen has a slightly better record with three wins, two draws, and one loss. Historical head-to-head results indicate a competitive rivalry, with both teams having periods of success against each other.\n\nStatistical simulations suggest that Excelsior may have a slight edge in expected goals (xG) with 2.1 compared to FC Groningen's 1.53. This could indicate that Excelsior is likely to create more goal-scoring opportunities during the match. The simulation also shows a high probability of both teams scoring (68.7%) and a strong likelihood of the total goals exceeding 2.5 (70.5%). This suggests an expectation for an open game with chances on both sides.\n\nThe match will be officiated by referee Richard Martens, and with both teams looking to secure points, the atmosphere at the stadium is likely to be intense. Given the current form and the attacking potential indicated by the statistics, fans can anticipate a closely contested encounter, potentially with goals from both sides. The balance of recent performances and historical context adds intrigue to this matchup in the Eredivisie."
   },
-  "refreshed_at": "2026-10-08T09:40:58.870738Z",
+  "refreshed_at": "2026-10-08T23:23:14.257277Z",
   "odds": {
     "home": 2.52,
     "draw": 3.7,

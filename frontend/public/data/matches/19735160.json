@@ -259,6 +259,20 @@
     },
     {
       "side": "home",
+      "player_id": 24469115,
+      "player_name": "Castello Lukeba",
+      "type_id": 598,
+      "type_name": "Muscular problems",
+      "type_name_cs": "Svalové problémy",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-19",
+      "end_date": null,
+      "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37266099,
       "player_name": "Rocco Reitz",
       "type_id": 535,
@@ -273,25 +287,11 @@
     },
     {
       "side": "home",
-      "player_id": 24469115,
-      "player_name": "Castello Lukeba",
-      "type_id": 598,
-      "type_name": "Muscular problems",
-      "type_name_cs": "Muscular problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-19",
-      "end_date": null,
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37400407,
       "player_name": "Johan Bakayoko",
       "type_id": 531,
       "type_name": "Knock",
-      "type_name_cs": "Knock",
+      "type_name_cs": "Menší zranění",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-20",
@@ -325,20 +325,6 @@
       "start_date": "2026-06-01",
       "end_date": "2026-10-31",
       "games_missed": 11,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37645047,
-      "player_name": "Jeremiaha Maluze",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-13",
-      "end_date": null,
-      "games_missed": 1,
       "likely_available": false
     },
     {
@@ -1516,7 +1502,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.3
+          "odds": 1.28
         },
         {
           "key": "corners_over95",
@@ -1539,7 +1525,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 3.51
+          "odds": 3.62
         },
         {
           "key": "scored2plus",
@@ -1547,7 +1533,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.3
+          "odds": 1.29
         },
         {
           "key": "more_corners",
@@ -1571,7 +1557,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 4.58
+          "odds": 4.56
         },
         {
           "key": "btts",
@@ -1579,7 +1565,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.35
+          "odds": 1.34
         },
         {
           "key": "scoreless",
@@ -1587,7 +1573,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 8.57
+          "odds": 8.77
         },
         {
           "key": "under25",
@@ -1595,7 +1581,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.55
+          "odds": 3.68
         },
         {
           "key": "corners_under95",
@@ -1632,7 +1618,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.83
+          "odds": 2.85
         }
       ],
       "away": [
@@ -1642,7 +1628,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.35
+          "odds": 1.34
         },
         {
           "key": "over15",
@@ -1658,7 +1644,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.3
+          "odds": 1.28
         },
         {
           "key": "ht_leading",
@@ -1666,7 +1652,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 4.58
+          "odds": 4.56
         },
         {
           "key": "shots_over",
@@ -1730,7 +1716,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.32
+          "odds": 2.26
         },
         {
           "key": "corners_under95",
@@ -1783,7 +1769,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 8.57
+          "odds": 8.77
         },
         {
           "key": "scoreless",
@@ -1791,7 +1777,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.51
+          "odds": 3.62
         },
         {
           "key": "under25",
@@ -1799,7 +1785,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.55
+          "odds": 3.68
         },
         {
           "key": "red_card",
@@ -1814,7 +1800,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.83
+          "odds": 2.85
         },
         {
           "key": "ht_behind",
@@ -1842,7 +1828,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.3
+          "odds": 1.28
         },
         {
           "key": "yellow_under5",
@@ -1935,7 +1921,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.35
+          "odds": 1.34
         },
         {
           "key": "clean_sheet",
@@ -2000,7 +1986,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 3.55
+          "odds": 3.68
         },
         {
           "key": "yellow_5plus",
@@ -2025,7 +2011,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.3
+          "odds": 1.28
         },
         {
           "key": "yellow_under5",
@@ -2111,7 +2097,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.35
+          "odds": 1.34
         },
         {
           "key": "more_corners",
@@ -2183,7 +2169,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.55
+          "odds": 3.68
         },
         {
           "key": "yellow_5plus",
@@ -7082,40 +7068,40 @@
     ]
   },
   "odds": {
-    "home": 1.56,
-    "draw": 4.96,
+    "home": 1.57,
+    "draw": 4.95,
     "away": 4.93,
-    "under15": 7.62,
+    "under15": 7.93,
     "over15": 1.08,
-    "under25": 3.55,
-    "over25": 1.3,
-    "under35": 2.07,
-    "over35": 1.78,
-    "btts": 1.35,
+    "under25": 3.68,
+    "over25": 1.28,
+    "under35": 2.12,
+    "over35": 1.74,
+    "btts": 1.34,
     "corners_under95": 2.18,
     "corners_over95": 1.61,
     "source": "chance",
-    "home_scoreless": 8.57,
-    "home_scored2plus": 1.3,
-    "home_clean_sheet": 3.51,
+    "home_scoreless": 8.77,
+    "home_scored2plus": 1.29,
+    "home_clean_sheet": 3.62,
     "home_ht_leading": 1.97,
-    "home_ht_draw": 2.83,
-    "home_ht_behind": 4.58,
+    "home_ht_draw": 2.85,
+    "home_ht_behind": 4.56,
     "home_more_corners": 1.49,
-    "away_clean_sheet": 8.57,
-    "away_scoreless": 3.51,
-    "away_scored2plus": 2.32,
+    "away_clean_sheet": 8.77,
+    "away_scoreless": 3.62,
+    "away_scored2plus": 2.26,
     "away_ht_behind": 1.97,
-    "away_ht_draw": 2.83,
-    "away_ht_leading": 4.58,
+    "away_ht_draw": 2.85,
+    "away_ht_leading": 4.56,
     "away_more_corners": 3.12
   },
   "ai_analysis": {
-    "text": "Zápas mezi RB Leipzig a Eintracht Frankfurt se odehraje na Red Bull Areně a slibuje zajímavou konfrontaci dvou týmů, které mají odlišnou formu. Domácí Leipzig má za sebou smíšené výsledky s dvěma výhrami a dvěma remízami, zatímco Frankfurt se potýká s nevyrovnanými výkony, které zahrnují jednu výhru, dvě remízy a jednu porážku. Historie vzájemných zápasů naznačuje, že Leipzig má nad Frankfurtom převahu, což může hrát klíčovou roli v psychologii obou týmů.\n\nAnalýza očekávaných gólů (xG) ukazuje, že Leipzig má mírnou výhodu s hodnotou 2.1 oproti 1.46 pro Frankfurt. To naznačuje, že domácí tým by měl mít více příležitostí ke skórování, což se odráží i v pravděpodobnostech výsledků: vítězství Leipzig je odhadováno na 47.6 %, zatímco výhra Frankfurtu na 28.1 %. Kromě toho je vysoká pravděpodobnost, že oba týmy skórují (67.7 %), což by mohlo znamenat atraktivní a dynamický zápas.\n\nVzhledem k aktuální formě a historickým výsledkům se očekává, že Leipzig bude dominovat v držení míče a vytváření šancí. Frankfurt by se mohl spoléhat na rychlé protiútoky, aby využil slabin obrany domácích. Zápas by mohl být vyrovnaný, ale s mírnou převahou Leipzig, který se pokusí potvrdit svou dominanci na domácím hřišti.",
+    "text": "Zápas mezi RB Leipzig a Eintracht Frankfurt se odehraje na Red Bull Areně a očekává se, že domácí tým bude favoritem. Forma RB Leipzig, která zahrnuje dvě vítězství a dvě remízy, naznačuje, že se nacházejí v dobrém rozpoložení. Naopak Eintracht Frankfurt má za sebou jednu remízu, dvě vítězství a jednu prohru, což může naznačovat určité výkyvy v jejich výkonu. Historie vzájemných zápasů ukazuje na variabilitu výsledků, přičemž Leipzig vyhrál poslední dva zápasy, ale Frankfurt má také silné výkony na svém kontě.\n\nPodle simulací očekáváme, že RB Leipzig vytvoří více šancí, s očekávanými góly (xG) 2.1 oproti 1.46 pro Frankfurt. To naznačuje, že domácí tým by měl mít převahu v ofenzivě, a pravděpodobnost, že oba týmy skórují, je vysoká (67.7 %). Vzhledem k tomu, že Leipzig má tendenci skórovat více než dva góly v zápasech, je pravděpodobné, že se zápas vyvine v ofenzivní podívanou.\n\nRozhodčí Daniel Siebert bude mít na starosti řízení zápasu, což může ovlivnit dynamiku hry. Očekává se, že Leipzig bude mít více rohových kopů, což může být důležité pro jejich ofenzivní strategii. Celkově lze očekávat, že zápas bude vyrovnaný, ale s mírnou převahou domácího týmu, který by mohl využít své formy a domácího prostředí k zisku tří bodů.",
     "model": "gpt-4o-mini",
-    "input_hash": "66f40b0957aec0e1",
-    "generated_at": "2026-10-08T09:39:14Z",
-    "text_en": "The upcoming Bundesliga match between RB Leipzig and Eintracht Frankfurt at the Red Bull Arena promises to be an intriguing contest. Leipzig enters the match with a mixed recent form, having won two of their last four matches but also suffering two losses. In contrast, Frankfurt's recent form shows a similar trend with one win, two draws, and one loss in their last four outings. Historically, Leipzig has had the upper hand in their recent head-to-head encounters, winning three of the last five matches, including a significant 6-0 victory in December 2025.\n\nStatistical simulations suggest that Leipzig is favored to win, with an expected goals (xG) metric of 2.1 compared to Frankfurt's 1.46. This indicates that Leipzig is likely to create more scoring opportunities during the match. The simulation also shows a 67.7% chance of both teams scoring, suggesting that while Leipzig may dominate possession and chances, Frankfurt could still find the back of the net. The odds reflect Leipzig's status as the home favorite, with a home win priced at 1.56.\n\nWith Daniel Siebert officiating, the match could see a competitive atmosphere, especially given the stakes in the Bundesliga. Leipzig's recent home performances have been strong, and they will look to capitalize on their attacking prowess against a Frankfurt side that has struggled defensively at times. Expect a dynamic match with Leipzig pushing for dominance early, while Frankfurt will aim to exploit any defensive lapses. Overall, Leipzig is expected to control the game, but Frankfurt's resilience could keep the match competitive."
+    "input_hash": "2019e686ca3bf03f",
+    "generated_at": "2026-10-08T23:19:17Z",
+    "text_en": "The upcoming Bundesliga match between RB Leipzig and Eintracht Frankfurt at the Red Bull Arena is set to be an intriguing encounter. Leipzig enters the match with a mixed recent form, having won two of their last four matches but also suffering two losses. In contrast, Frankfurt has managed to secure a draw and a win in their last four games, with a loss also in the mix. Historically, the head-to-head record shows a competitive rivalry, with Leipzig winning decisively in some recent encounters, including a 6-0 victory in December 2025.\n\nIn terms of expected performance, the simulation suggests that Leipzig has the upper hand with an expected goals (xG) value of 2.1 compared to Frankfurt's 1.46. This indicates that Leipzig is likely to create more scoring opportunities. The odds reflect this expectation, with Leipzig favored to win at 1.57, while Frankfurt's odds stand at 4.93. The likelihood of both teams scoring is relatively high at 67.7%, suggesting an entertaining match with potential for goals from both sides.\n\nGiven the venue advantage and Leipzig's attacking capabilities, they may dominate possession and dictate the pace of the game. However, Frankfurt's recent form indicates they can be resilient, particularly in away fixtures. If Leipzig can convert their chances effectively, they are likely to secure a victory, but Frankfurt's ability to counterattack could also lead to a tightly contested match, making it essential for both teams to capitalize on their scoring opportunities."
   },
-  "refreshed_at": "2026-10-08T09:39:06.988533Z"
+  "refreshed_at": "2026-10-08T23:19:11.034828Z"
 }

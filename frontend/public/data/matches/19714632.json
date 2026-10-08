@@ -248,6 +248,34 @@
       "likely_available": false
     },
     {
+      "side": "home",
+      "player_id": 37630140,
+      "player_name": "Miliano Jonathans",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-03-07",
+      "end_date": null,
+      "games_missed": 23,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 28912766,
+      "player_name": "Noah Ohio",
+      "type_id": 540,
+      "type_name": "Knee Surgery",
+      "type_name_cs": "Operace kolena",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-04-21",
+      "end_date": null,
+      "games_missed": 19,
+      "likely_available": false
+    },
+    {
       "side": "away",
       "player_id": 65152,
       "player_name": "Thomas Didillon",
@@ -259,20 +287,6 @@
       "start_date": "2026-08-09",
       "end_date": null,
       "games_missed": 6,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 25490,
-      "player_name": "Justin Hoogma",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-04",
-      "end_date": null,
-      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -305,6 +319,20 @@
     },
     {
       "side": "away",
+      "player_id": 25490,
+      "player_name": "Justin Hoogma",
+      "type_id": 536,
+      "type_name": "Knee Injury",
+      "type_name_cs": "Zranění kolena",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-04",
+      "end_date": null,
+      "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "away",
       "player_id": 37687845,
       "player_name": "Armin Culum",
       "type_id": 549,
@@ -319,8 +347,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Davy van den Berg",
+        "jersey_number": 34,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Joris van Overeem",
+        "jersey_number": 8,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Per Kloosterboer",
+        "jersey_number": 32,
+        "formation_field": "2:5"
+      },
+      {
+        "player_name": "Niklas Vesterlund",
+        "jersey_number": 23,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Ángel Alarcón",
+        "jersey_number": 11,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Matisse Didden",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Arthur Zagré",
+        "jersey_number": 92,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Dani de Wit",
+        "jersey_number": 20,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Nikolas Panagiotou",
+        "jersey_number": 5,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Siebe Horemans",
+        "jersey_number": 2,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Vasilios Barkas",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Eser Gürbüz",
+        "jersey_number": 50,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Calvin Twigt",
+        "jersey_number": 6,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Nathan Tjoe-A-On",
+        "jersey_number": 24,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Maxim Dekker",
+        "jersey_number": 23,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Finn Stam",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Jaden Slory",
+        "jersey_number": 7,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Tonny Vilhena",
+        "jersey_number": 52,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Uriël van Aalst",
+        "jersey_number": 19,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Hidde ter Avest",
+        "jersey_number": 5,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Maxime Delanghe",
+        "jersey_number": 26,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Devin Haen",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      }
+    ]
   },
   "h2h": [
     {
@@ -6775,13 +6915,13 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi FC Utrecht a Willem II, který se odehraje na stadionu Galgenwaard, slibuje být zajímavým střetnutím. Domácí FC Utrecht se nachází v solidní formě, když v posledních šesti zápasech zaznamenali tři výhry, dvě remízy a jednu prohru. Na druhé straně Willem II také ukazuje dobrou výkonnost, přičemž jejich poslední výsledky zahrnují tři výhry, dvě remízy a jednu prohru. Historie vzájemných zápasů naznačuje, že obě mužstva mají tendenci střílet góly, což zvyšuje očekávání na atraktivní duel.\n\nPodle simulací se očekává, že FC Utrecht bude mít mírnou výhodu, s očekávanými góly (xG) 2.1 oproti 1.79 pro Willem II. S pravděpodobností 44 % na výhru domácích a 31.6 % na výhru hostů je jasné, že Utrecht je favoritem, ale Willem II může překvapit, zejména vzhledem k jejich předchozím výhrám v posledních vzájemných zápasech. \n\nDalším zajímavým faktorem je vysoká pravděpodobnost, že oba týmy skórují (73.5 %) a že padne více než 2,5 gólu (74.7 %). To naznačuje, že zápas by mohl být dynamický a plný šancí. Rozhodčí Jannick van der Laan bude mít klíčovou roli v udržení hry pod kontrolou, což může ovlivnit tempo a styl zápasu. Celkově lze očekávat vyrovnaný a atraktivní duel s mnoha gólovými příležitostmi.",
+    "text": "Zápas mezi FC Utrecht a Willem II se odehraje na stadionu Galgenwaard a slibuje zajímavou podívanou. Domácí Utrecht má v posledních zápasech lepší formu, s bilancí dvou výher, dvou remíz a jedné prohry. Na druhé straně Willem II také ukazuje solidní výkony, avšak jejich forma je o něco méně stabilní. Historie vzájemných zápasů naznačuje, že obě mužstva mají tendenci střílet góly, což se potvrzuje i v posledních pěti utkáních, kde Utrecht vyhrál čtyřikrát a jednou prohrál.\n\nPodle simulací se očekává, že Utrecht vytvoří více šancí, s očekávanými góly (xG) 2.1 oproti 1.79 pro Willem II. To naznačuje, že domácí tým by měl mít převahu v ofenzivě, což může vést k vyššímu počtu gólů. S pravděpodobností 73.5 % se také očekává, že obě mužstva vstřelí alespoň jeden gól, což by mohlo přispět k atraktivnímu zápasu.\n\nZ pohledu kurzů je Utrecht favoritem s kurzem 1.48 na výhru, zatímco Willem II má kurz 5.71. Tyto hodnoty reflektují aktuální formu a vzájemné zápasy. Pokud se Utrechtu podaří udržet tlak a efektivně využít své šance, mohou si připsat důležité tři body do tabulky Eredivisie.",
     "model": "gpt-4o-mini",
-    "input_hash": "cfef6ce1ff827cc8",
-    "generated_at": "2026-10-07T10:10:17Z",
-    "text_en": "The upcoming Eredivisie match between FC Utrecht and Willem II at Stadion Galgenwaard promises to be an engaging encounter, especially considering the recent form of both teams. FC Utrecht has struggled lately, recording three losses in their last six matches, alongside a win and two draws. In contrast, Willem II has shown slightly better form, with three wins and two draws in their last six games, although they also faced a defeat. This disparity in form may give Willem II a psychological edge heading into the match.\n\nHistorically, the head-to-head results between these two teams indicate a competitive rivalry, with both sides having secured victories in recent encounters. FC Utrecht has had the upper hand in their last few meetings, winning three out of the last five matches, including a close 3-2 victory in their most recent clash in March 2025. This trend suggests that while FC Utrecht may be struggling currently, they have the capability to perform well against Willem II, particularly at home.\n\nAccording to the simulation data, FC Utrecht is expected to generate slightly more expected goals (xG) at 2.1 compared to Willem II's 1.79. The high probability of both teams scoring (73.5%) and the likelihood of over 2.5 goals being scored (74.7%) suggest an entertaining match with potential for multiple goals. Given these factors, the match could see FC Utrecht aiming to leverage their home advantage to secure a crucial win, while Willem II will likely look to capitalize on their recent form and aim for points on the road."
+    "input_hash": "08c25c050add88b0",
+    "generated_at": "2026-10-08T23:22:54Z",
+    "text_en": "The upcoming Eredivisie match between FC Utrecht and Willem II at Stadion Galgenwaard is set to be an intriguing encounter. FC Utrecht enters the match with a mixed recent form, having recorded two wins, three losses, and one draw in their last six matches. In contrast, Willem II has shown slightly better form, with four wins, one draw, and one loss in the same timeframe. Historical head-to-head results indicate a competitive rivalry, with both teams having won their fair share of encounters, suggesting that the match could go either way.\n\nStatistical simulations favor FC Utrecht, with an expected goals (xG) value of 2.1 compared to Willem II's 1.79. This suggests that FC Utrecht may have the upper hand in terms of creating scoring opportunities. Additionally, the probability of both teams scoring (BTTS) stands at a high 73.5%, indicating that a high-scoring match could be on the cards. The odds reflect this sentiment, with FC Utrecht being the favorites at 1.48, while Willem II is priced at 5.71, suggesting a notable disparity in expectations.\n\nGiven the current form and statistical insights, FC Utrecht is likely to dominate possession and create more chances, while Willem II will aim to capitalize on counter-attacks. The match could see multiple goals, particularly given the teams' recent scoring patterns and the high likelihood of both sides finding the net. As the referee, Jannick van der Laan, takes charge, fans can expect an exciting and competitive match as both teams vie for crucial points in the Eredivisie standings."
   },
-  "refreshed_at": "2026-10-08T09:40:58.792883Z",
+  "refreshed_at": "2026-10-08T23:22:47.861334Z",
   "odds": {
     "home": 1.48,
     "draw": 4.7,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T09:40:58Z",
+  "generated_at": "2026-10-08T23:22:02Z",
   "league": {
     "id": 564,
     "name": "La Liga",
@@ -25,7 +25,7 @@
       },
       "has_full_data": true,
       "signals": {
-        "referee": false,
+        "referee": true,
         "probs": [
           34,
           32,

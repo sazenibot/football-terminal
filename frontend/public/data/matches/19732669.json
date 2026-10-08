@@ -24,7 +24,7 @@
       "player_name": "Joan García Pons",
       "type_id": 687,
       "type_name": "Knee Problems",
-      "type_name_cs": "Knee Problems",
+      "type_name_cs": "Problémy s kolenem",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-16",
@@ -75,26 +75,12 @@
       "likely_available": false
     },
     {
-      "side": "home",
-      "player_id": 37696525,
-      "player_name": "Juan Hernández Torres",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-04-23",
-      "end_date": "2027-04-01",
-      "games_missed": 10,
-      "likely_available": false
-    },
-    {
       "side": "away",
       "player_id": 21781710,
       "player_name": "Abdelkabir Abqar",
       "type_id": 2011,
       "type_name": "Muscle Tear",
-      "type_name_cs": "Muscle Tear",
+      "type_name_cs": "Natržený sval",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-08",
@@ -1509,7 +1495,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.26
+          "odds": 1.27
         },
         {
           "key": "scored2plus",
@@ -1547,7 +1533,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.11
+          "odds": 2.15
         },
         {
           "key": "yellow_under5",
@@ -1635,7 +1621,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.68
+          "odds": 1.65
         },
         {
           "key": "yellow_5plus",
@@ -1650,7 +1636,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.14
+          "odds": 4.09
         },
         {
           "key": "scoreless",
@@ -1658,7 +1644,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 12.9
+          "odds": 13.2
         },
         {
           "key": "under25",
@@ -1666,7 +1652,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.83
+          "odds": 3.77
         },
         {
           "key": "red_card",
@@ -1681,7 +1667,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 14.2
+          "odds": 14.9
         }
       ],
       "away": [
@@ -1691,7 +1677,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 3.83
+          "odds": 3.77
         },
         {
           "key": "team_2plus_yellow",
@@ -1777,7 +1763,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.11
+          "odds": 2.15
         },
         {
           "key": "scoreless",
@@ -1785,7 +1771,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.68
+          "odds": 1.65
         },
         {
           "key": "over15",
@@ -1816,7 +1802,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.14
+          "odds": 4.09
         },
         {
           "key": "ht_behind",
@@ -1832,7 +1818,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 12.9
+          "odds": 13.2
         },
         {
           "key": "more_corners",
@@ -1855,7 +1841,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 14.2
+          "odds": 14.9
         },
         {
           "key": "over25",
@@ -1863,7 +1849,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 1.26
+          "odds": 1.27
         },
         {
           "key": "scored2plus",
@@ -1871,7 +1857,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 6.44
+          "odds": 6.68
         }
       ]
     },
@@ -1961,7 +1947,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 3.83
+          "odds": 3.77
         },
         {
           "key": "scored2plus",
@@ -2005,7 +1991,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.11
+          "odds": 2.15
         },
         {
           "key": "over25",
@@ -2013,7 +1999,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.26
+          "odds": 1.27
         },
         {
           "key": "corners_over95",
@@ -2144,7 +2130,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.83
+          "odds": 3.77
         },
         {
           "key": "scored2plus",
@@ -2188,7 +2174,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.26
+          "odds": 1.27
         },
         {
           "key": "corners_under95",
@@ -2211,7 +2197,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.11
+          "odds": 2.15
         },
         {
           "key": "ht_draw",
@@ -7232,41 +7218,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T09:39:53.695291Z",
+  "refreshed_at": "2026-10-08T23:21:02.366895Z",
   "odds": {
     "home": 1.09,
-    "draw": 11.6,
-    "away": 25.8,
-    "under15": 8.4,
+    "draw": 11.9,
+    "away": 27.5,
+    "under15": 8.27,
     "over15": 1.07,
-    "under25": 3.83,
-    "over25": 1.26,
-    "under35": 2.19,
-    "over35": 1.7,
-    "btts": 2.11,
+    "under25": 3.77,
+    "over25": 1.27,
+    "under35": 2.16,
+    "over35": 1.71,
+    "btts": 2.15,
     "corners_under95": 2.51,
     "corners_over95": 1.46,
     "source": "chance",
-    "home_scoreless": 12.9,
+    "home_scoreless": 13.2,
     "home_scored2plus": 1.1,
-    "home_clean_sheet": 1.68,
+    "home_clean_sheet": 1.65,
     "home_ht_leading": 1.32,
-    "home_ht_draw": 4.14,
-    "home_ht_behind": 14.2,
+    "home_ht_draw": 4.09,
+    "home_ht_behind": 14.9,
     "home_more_corners": 1.07,
-    "away_clean_sheet": 12.9,
-    "away_scoreless": 1.68,
-    "away_scored2plus": 6.44,
+    "away_clean_sheet": 13.2,
+    "away_scoreless": 1.65,
+    "away_scored2plus": 6.68,
     "away_ht_behind": 1.32,
-    "away_ht_draw": 4.14,
-    "away_ht_leading": 14.2,
+    "away_ht_draw": 4.09,
+    "away_ht_leading": 14.9,
     "away_more_corners": 11.1
   },
   "ai_analysis": {
-    "text": "Zápas mezi FC Barcelonou a Getafe se odehraje na stadionu Spotify Camp Nou a očekává se, že domácí tým vstoupí do utkání jako jasný favorit. Barcelona má vynikající formu, když vyhrála posledních šest zápasů, což naznačuje silnou morálku a stabilní výkonnost. Na druhé straně Getafe se nachází v rozporuplné formě, s posledními výsledky zahrnujícími několik remíz a porážek. Historie vzájemných zápasů rovněž ukazuje na dominanci Barcelony, která v posledních pěti utkáních s Getafe neztratila ani bod.\n\nPodle simulací očekáváme, že Barcelona vytvoří více šancí a má vyšší pravděpodobnost vstřelení gólů, s očekávanými góly (xG) na úrovni 2.1 oproti 0.81 pro Getafe. Sázkové kurzy potvrzují tuto predikci, kdy je kurz na vítězství Barcelony velmi nízký (1.09), což odráží vysokou pravděpodobnost jejího úspěchu. Naopak, kurzy na výhru Getafe jsou značně vysoké (25.8), což naznačuje, že by byl velký překvapení, pokud by se jim podařilo zvítězit.\n\nZ pohledu statistiky je pravděpodobné, že Barcelona vstřelí více než dva góly, přičemž šance na to, že se zápas skončí s více než 2.5 góly, je 56.1 %. Na druhé straně existuje téměř 50% pravděpodobnost, že oba týmy skórují. Zápas se tedy pravděpodobně vyvine ve prospěch Barcelony, která by měla dominovat na hřišti a snažit se o přesvědčivé vítězství.",
+    "text": "Zápas mezi FC Barcelonou a Getafe, který se odehraje na stadionu Spotify Camp Nou, slibuje zajímavé a vyrovnané střetnutí. FC Barcelona se nachází v excelentní formě, když vyhrála posledních šest zápasů. Naopak Getafe má smíšené výsledky, přičemž v posledních šesti zápasech zaznamenalo tři výhry, dvě remízy a jednu prohru. Historie vzájemných zápasů ukazuje jasnou dominanci Barcelony, která v posledních pěti střetnutích s Getafe neztratila ani bod.\n\nPodle simulací očekáváme, že Barcelona bude mít výraznou převahu v počtu očekávaných gólů (xG), kdy se odhaduje, že vstřelí přibližně 2.1 gólu, zatímco Getafe pouze 0.81. To naznačuje, že Barcelona by měla mít více příležitostí k zakončení, což se odráží i v kurzech, které favorizují domácí tým. Sázkové kanceláře vypsaly kurz na výhru Barcelony 1.09, což potvrzuje její roli favorita v tomto zápase.\n\nZ pohledu statistiky by se mohlo očekávat, že zápas skončí s více než dvěma góly, přičemž pravděpodobnost takového výsledku je 56.1 %. Také je možné, že se oba týmy dostanou do šancí, což naznačuje 49.4% šanci na to, že oba celky vstřelí gól. Pokud Barcelona udrží svůj standard a dokáže využít své šance, měla by být schopna zvítězit a prodloužit svou vítěznou sérii.",
     "model": "gpt-4o-mini",
-    "input_hash": "c5ea809359f3345a",
-    "generated_at": "2026-10-08T09:40:03Z",
-    "text_en": "The upcoming match between FC Barcelona and Getafe in La Liga is set to take place at the iconic Spotify Camp Nou. Barcelona enters this fixture in exceptional form, having won their last six matches, showcasing their attacking prowess and solid defense. In contrast, Getafe's recent form has been mixed, with three wins, two draws, and one loss in their last six games, indicating some inconsistency. Historically, Barcelona has had the upper hand in their encounters, winning four of the last five meetings, which adds to the pressure on Getafe as they face a formidable opponent.\n\nStatistical simulations suggest that Barcelona is expected to dominate the match, with an expected goals (xG) figure of 2.1 compared to Getafe's 0.81. This disparity indicates that Barcelona is likely to create significantly more scoring opportunities. The simulation also indicates a high probability of a Barcelona victory at 55.6%, with a draw at 23.3% and a Getafe win at 21.1%. This further emphasizes Barcelona's status as the favorites going into the match.\n\nGiven the current form and historical context, it is reasonable to anticipate that Barcelona will control the game, utilizing their home advantage to apply pressure on Getafe's defense. With a strong likelihood of Barcelona scoring multiple goals, the match could see them extend their winning streak, while Getafe will need to focus on defensive resilience to avoid a heavy defeat."
+    "input_hash": "567743105567a83c",
+    "generated_at": "2026-10-08T23:21:08Z",
+    "text_en": "The upcoming La Liga match between FC Barcelona and Getafe at Spotify Camp Nou on October 10, 2026, presents an intriguing scenario. FC Barcelona enters the match in exceptional form, having won their last six games consecutively. In contrast, Getafe's recent performances show a mixed bag, with two wins, two draws, and two losses in their last six fixtures. Historically, Barcelona has dominated their encounters with Getafe, winning four of the last five matches, which adds to their confidence heading into this fixture.\n\nStatistical simulations suggest a strong likelihood of a Barcelona victory, with an expected goals (xG) metric of 2.1 for the home side compared to just 0.81 for Getafe. The simulation indicates a 55.6% chance of Barcelona winning, while a draw is estimated at 23.3%, and a Getafe victory at 21.1%. This data aligns with Barcelona's attacking prowess and Getafe's struggles to contain high-caliber offenses, making it plausible for the home team to score multiple goals.\n\nIn terms of match dynamics, Barcelona is expected to dominate possession and create numerous scoring opportunities, leveraging their home advantage. Getafe may adopt a defensive strategy, attempting to absorb pressure and capitalize on counter-attacks. However, given Barcelona's ability to score and Getafe's inconsistent form, it is likely that Barcelona will secure a comfortable win, potentially with a scoreline reflecting their recent scoring capabilities."
   }
 }

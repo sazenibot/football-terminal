@@ -3,7 +3,7 @@
   "league_id": 262,
   "league_name": "Chance Liga",
   "built_at": "2026-10-08T09:36:04.187649Z",
-  "build_mode": "full",
+  "build_mode": "refresh",
   "starting_at": "2026-10-11T11:00:00Z",
   "venue": "Stadion u Nisy",
   "home": {
@@ -229,8 +229,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Haris Berbic",
+        "jersey_number": 23,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Aziz Kayondo",
+        "jersey_number": 27,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Tomas Koubek",
+        "jersey_number": 40,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Lukáš Mašek",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Fallou Faye",
+        "jersey_number": 60,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Patrik Dulay",
+        "jersey_number": 24,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Vojtech Stransky",
+        "jersey_number": 12,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Vénuste Baboula",
+        "jersey_number": 94,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Vasil Kusej",
+        "jersey_number": 19,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "David Hamansenya",
+        "jersey_number": 30,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Lukas Hulka",
+        "jersey_number": 29,
+        "formation_field": "2:2"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "David Puskac",
+        "jersey_number": 30,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Milan Heca",
+        "jersey_number": 29,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Lukas Vorlicky",
+        "jersey_number": 72,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Patrik Blahut",
+        "jersey_number": 15,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Jocelin Behiratche",
+        "jersey_number": 22,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Marek Havlík",
+        "jersey_number": 20,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Michal Travnik",
+        "jersey_number": 10,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Gigli Ndefe",
+        "jersey_number": 2,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Andrej Stojcevski",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Tihomir Kostadinov",
+        "jersey_number": 26,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Simon Sloncik",
+        "jersey_number": 21,
+        "formation_field": "2:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1622,7 +1734,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.28
+          "odds": 1.29
         },
         {
           "key": "under25",
@@ -1630,7 +1742,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.9
+          "odds": 1.91
         },
         {
           "key": "scored2plus",
@@ -1674,7 +1786,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.28
+          "odds": 2.33
         },
         {
           "key": "over25",
@@ -1682,7 +1794,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.9
+          "odds": 1.91
         },
         {
           "key": "corners_under95",
@@ -1704,7 +1816,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.94
+          "odds": 1.99
         },
         {
           "key": "btts",
@@ -1735,7 +1847,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 6.57
+          "odds": 6.74
         }
       ],
       "away": [
@@ -1745,7 +1857,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.28
+          "odds": 1.29
         },
         {
           "key": "corners_under95",
@@ -1831,7 +1943,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.9
+          "odds": 1.91
         },
         {
           "key": "team_2plus_yellow",
@@ -1846,7 +1958,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.94
+          "odds": 1.99
         },
         {
           "key": "scoreless",
@@ -1862,7 +1974,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.9
+          "odds": 1.91
         },
         {
           "key": "more_corners",
@@ -1884,7 +1996,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.28
+          "odds": 2.33
         },
         {
           "key": "clean_sheet",
@@ -1922,7 +2034,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 6.57
+          "odds": 6.74
         }
       ]
     },
@@ -1934,7 +2046,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.28
+          "odds": 1.29
         },
         {
           "key": "over25",
@@ -1942,7 +2054,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.9
+          "odds": 1.91
         },
         {
           "key": "scored2plus",
@@ -2091,7 +2203,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.9
+          "odds": 1.91
         },
         {
           "key": "red_card",
@@ -2115,7 +2227,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.28
+          "odds": 1.29
         },
         {
           "key": "over25",
@@ -2123,7 +2235,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.9
+          "odds": 1.91
         },
         {
           "key": "scored2plus",
@@ -2279,7 +2391,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 1.9
+          "odds": 1.91
         },
         {
           "key": "ht_behind",
@@ -7298,35 +7410,36 @@
     ]
   },
   "odds": {
-    "home": 1.45,
-    "draw": 4.29,
-    "away": 7.02,
-    "under15": 3.57,
-    "over15": 1.28,
-    "under25": 1.9,
-    "over25": 1.9,
-    "under35": 1.32,
+    "home": 1.46,
+    "draw": 4.38,
+    "away": 7.52,
+    "under15": 3.58,
+    "over15": 1.29,
+    "under25": 1.91,
+    "over25": 1.91,
+    "under35": 1.33,
     "over35": 3.31,
     "btts": 2.02,
     "source": "chance",
     "home_scoreless": 5.92,
     "home_scored2plus": 1.59,
     "home_clean_sheet": 1.93,
-    "home_ht_leading": 1.94,
-    "home_ht_draw": 2.28,
-    "home_ht_behind": 6.57,
+    "home_ht_leading": 1.99,
+    "home_ht_draw": 2.33,
+    "home_ht_behind": 6.74,
     "away_clean_sheet": 5.92,
     "away_scoreless": 1.93,
     "away_scored2plus": 5.19,
-    "away_ht_behind": 1.94,
-    "away_ht_draw": 2.28,
-    "away_ht_leading": 6.57
+    "away_ht_behind": 1.99,
+    "away_ht_draw": 2.33,
+    "away_ht_leading": 6.74
   },
   "ai_analysis": {
-    "text": "Zápas mezi Slovanem Liberec a Slováckem v rámci Chance Ligy se odehraje na Stadionu u Nisy a očekává se, že domácí tým bude favoritem. Liberec má v posledních zápasech dobrou formu, kdy zaznamenal čtyři vítězství a jednu remízu. Naopak Slovácko se potýká s problémy, když v posledních šesti zápasech vyhrálo pouze jednou a dvakrát prohrálo. Historie vzájemných zápasů také nahrává Liberci, který v posledních pěti střetnutích se Slováckem zvítězil vždy s výrazným rozdílem.\n\nPodle simulace očekávaných gólů (xG) má Slovan Liberec výraznou převahu s hodnotou 1.72 oproti 0.65 pro Slovácko. Tato čísla naznačují, že domácí tým by měl mít více příležitostí ke skórování. Pravděpodobnost vítězství domácích je odhadována na 53.3 %, zatímco šance na remízu je 25.7 % a na vítězství hostů pouze 21.0 %. To ukazuje, že Liberec by měl být schopen kontrolovat hru a vytvářet více šancí.\n\nCo se týče dalších statistik, domácí tým má také vyšší pravděpodobnost, že vstřelí více než dva góly, což je odhadováno na 1.59. Na druhou stranu, Slovácko má potíže s udržením čistého konta, což může naznačovat, že se jim bude obtížně bránit proti ofenzivnímu tlaku Liberce. Celkově lze očekávat, že Slovan Liberec bude dominovat v zápase a pravděpodobně si odnese tři body.",
+    "text": "Zápas mezi Slovanem Liberec a Slováckem v rámci Chance Ligy slibuje zajímavé střetnutí, zejména vzhledem k aktuální formě obou týmů. Domácí Slovan se nachází v dobré formě, když z posledních šesti zápasů zaznamenal čtyři výhry a dvě remízy. Naopak Slovácko má za sebou slabší období, kdy vyhrálo pouze jednou a třikrát prohrálo. Historie vzájemných zápasů také nahrává Liberci, který v posledních pěti utkáních se Slováckem zvítězil.\n\nAnalýza očekávaných gólových šancí naznačuje, že Slovan Liberec má výrazně vyšší očekávané góly (xG 1.72) oproti Slovácku (xG 0.65). To ukazuje na to, že domácí tým by měl mít více příležitostí k zakončení a větší šanci na vstřelení gólů. Vzhledem k tomu, že Slovan v posledních vzájemných zápasech dominoval, lze očekávat, že se pokusí o rychlý nástup a tlak na obranu hostů.\n\nZ pohledu pravděpodobnosti výsledků se zdá, že nejvíce pravděpodobné je vítězství domácího týmu, s pravděpodobností 53.3 %. Remíza má šanci 25.7 % a výhra hostů 21.0 %. S ohledem na statistiky a formu obou týmů se dá očekávat, že Slovan Liberec by mohl zápas vyhrát a pravděpodobně také vstřelit více než jeden gól, přičemž šance na to, že oba týmy skórují, je kolem 39.8 %.",
     "model": "gpt-4o-mini",
-    "input_hash": "1800c5197870a90b",
-    "generated_at": "2026-10-08T09:36:15Z",
-    "text_en": "The upcoming match between Slovan Liberec and Slovácko in the Chance Liga is set to take place at Stadion u Nisy on October 11, 2026. Slovan Liberec enters this match with a strong recent form, having recorded four wins and two draws in their last six matches. In contrast, Slovácko has struggled, with only one win and five losses in their last six outings. This disparity in form suggests that Slovan Liberec will have the upper hand going into the match.\n\nHistorically, Slovan Liberec has had a dominant record against Slovácko, winning their last five encounters with an aggregate score of 15-2. This trend is supported by the expected goals (xG) simulation, which indicates that Slovan Liberec is projected to score 1.72 goals compared to Slovácko's 0.65. The simulation also suggests a high likelihood of a home win at 53.3%, with a draw at 25.7% and an away win at 21.0%. These statistics further reinforce the expectation that Slovan Liberec will control the match.\n\nThe referee for this match, Jakub Wulkan, will oversee a contest that could see Slovan Liberec capitalize on their home advantage. With odds favoring the home side at 1.45, it is anticipated that they will not only aim for a victory but may also look to secure a clean sheet, given Slovácko's recent scoring difficulties. Overall, the combination of current form, historical performance, and statistical projections points towards a likely win for Slovan Liberec in this matchup."
-  }
+    "input_hash": "024c63022e745125",
+    "generated_at": "2026-10-08T23:16:31Z",
+    "text_en": "The upcoming match between Slovan Liberec and Slovácko in the Chance Liga is set to take place at Stadion u Nisy on October 11, 2026. Slovan Liberec enters this fixture with strong recent form, having recorded four wins and two draws in their last six matches. In contrast, Slovácko has struggled, managing only one win and suffering four losses during the same period. Historical head-to-head performances also favor Slovan Liberec, who have consistently outperformed Slovácko in their previous encounters.\n\nStatistical analysis indicates that Slovan Liberec is likely to dominate the match. The expected goals (xG) for Slovan Liberec is 1.72 compared to just 0.65 for Slovácko, suggesting a significant disparity in attacking potential. The simulation results further highlight a 53.3% probability of a home victory, with a draw at 25.7% and an away win for Slovácko at only 21.0%. This data points to Slovan Liberec's offensive strength and Slovácko's defensive vulnerabilities.\n\nGiven the current form and historical context, it is reasonable to anticipate that Slovan Liberec will control the match, likely leading to multiple scoring opportunities. The odds reflect this expectation, with Slovan Liberec favored at 1.46 to win. If Slovan Liberec maintains their recent performance levels, they could secure a convincing victory, potentially scoring two or more goals, while Slovácko will need to significantly improve their form to compete effectively."
+  },
+  "refreshed_at": "2026-10-08T23:16:24.015290Z"
 }

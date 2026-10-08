@@ -346,20 +346,6 @@
       "end_date": null,
       "games_missed": 5,
       "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 38200369,
-      "player_name": "Hráč #38200369",
-      "type_id": 598,
-      "type_name": "Muscular problems",
-      "type_name_cs": "Muscular problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-03-07",
-      "end_date": null,
-      "games_missed": 25,
-      "likely_available": false
     }
   ],
   "predicted_lineups": {
@@ -1764,7 +1750,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.96
+          "odds": 2.08
         },
         {
           "key": "over15",
@@ -1779,14 +1765,16 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.43
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.43
         },
         {
           "key": "shots_over",
@@ -1814,7 +1802,8 @@
           "label": "Fauly: 13.5+ v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.45
         },
         {
           "key": "over25",
@@ -1822,7 +1811,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.61
+          "odds": 1.62
         },
         {
           "key": "under25",
@@ -1830,7 +1819,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.35
+          "odds": 2.33
         },
         {
           "key": "ht_draw",
@@ -1838,7 +1827,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.78
+          "odds": 2.8
         },
         {
           "key": "ht_behind",
@@ -1846,7 +1835,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.7
+          "odds": 1.66
         },
         {
           "key": "scoreless",
@@ -1854,7 +1843,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.9
+          "odds": 1.78
         },
         {
           "key": "scored2plus",
@@ -1862,7 +1851,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 5.27
+          "odds": 5.76
         },
         {
           "key": "more_corners",
@@ -1877,14 +1866,16 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.63
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 5.0
         },
         {
           "key": "ht_leading",
@@ -1892,7 +1883,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 7.62
+          "odds": 8.46
         },
         {
           "key": "clean_sheet",
@@ -1900,7 +1891,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 8.11
+          "odds": 8.37
         },
         {
           "key": "corners_under95",
@@ -1926,7 +1917,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.34
+          "odds": 1.33
         },
         {
           "key": "sot_over",
@@ -1940,7 +1931,8 @@
           "label": "Střely na branku: méně než 7.5 v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.35
         },
         {
           "key": "over25",
@@ -1948,7 +1940,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.61
+          "odds": 1.62
         },
         {
           "key": "more_corners",
@@ -1963,7 +1955,8 @@
           "label": "Tým dostal 2+ žluté karty",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.8
         },
         {
           "key": "shots_over",
@@ -1984,7 +1977,8 @@
           "label": "Fauly: 13.5+ v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.03
         },
         {
           "key": "fouls_under",
@@ -2005,7 +1999,8 @@
           "label": "Ofsajdy: méně než 2.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.84
         },
         {
           "key": "clean_sheet",
@@ -2013,7 +2008,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.9
+          "odds": 1.78
         },
         {
           "key": "corners_over95",
@@ -2028,7 +2023,8 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.63
         },
         {
           "key": "ht_leading",
@@ -2036,7 +2032,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.7
+          "odds": 1.66
         },
         {
           "key": "btts",
@@ -2044,7 +2040,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.96
+          "odds": 2.08
         },
         {
           "key": "corners_under95",
@@ -2059,7 +2055,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.43
         },
         {
           "key": "ht_draw",
@@ -2067,7 +2064,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.78
+          "odds": 2.8
         },
         {
           "key": "under25",
@@ -2075,7 +2072,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.35
+          "odds": 2.33
         },
         {
           "key": "scoreless",
@@ -2083,14 +2080,15 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 8.11
+          "odds": 8.37
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.0
         },
         {
           "key": "ht_behind",
@@ -2098,7 +2096,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 7.62
+          "odds": 8.46
         }
       ]
     },
@@ -2174,7 +2172,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.96
+          "odds": 2.08
         },
         {
           "key": "over15",
@@ -2190,14 +2188,15 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.35
+          "odds": 2.33
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.43
         },
         {
           "key": "team_2plus_yellow",
@@ -2233,21 +2232,23 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.61
+          "odds": 1.62
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.63
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 5.0
         },
         {
           "key": "ht_draw",
@@ -2328,7 +2329,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.43
         },
         {
           "key": "shots_over",
@@ -2364,7 +2366,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.96
+          "odds": 2.08
         },
         {
           "key": "over25",
@@ -2372,7 +2374,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.61
+          "odds": 1.62
         },
         {
           "key": "corners_under95",
@@ -2409,7 +2411,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.35
+          "odds": 2.33
         },
         {
           "key": "corners_over95",
@@ -2445,14 +2447,16 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.63
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 5.0
         },
         {
           "key": "scored2plus",
@@ -8100,40 +8104,45 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Zlínem a Slavií Praha v rámci Chance ligy se odehraje na Stadionu Letná a bude řízen rozhodčím Markem Radinou. Domácí Zlín se nachází v nepříliš dobré formě, kdy v posledních šesti zápasech zaznamenal pouze jednu remízu a pět porážek. Naopak Slavia Praha se nachází v silné formě, kdy vyhrála čtyři z posledních šesti zápasů a dvakrát remizovala. Historie vzájemných zápasů ukazuje jasnou převahu Slavie, která v posledních pěti utkáních Zlín porazila čtyřikrát.\n\nPodle simulací se očekává, že Slavia Praha bude mít výraznou převahu v počtu očekávaných gólů (xG), kde je odhad na 1.95 pro hosty a pouze 0.91 pro domácí. To naznačuje, že Slavia by měla dominovat v útočné hře a pravděpodobně vytvoří více šancí než Zlín. Vzhledem k formě obou týmů a historickým výsledkům se dá očekávat, že Slavia bude mít kontrolu nad hrou.\n\nCo se týče pravděpodobnosti výsledků, Slavia má 47.4% šanci na vítězství, zatímco remíza je pravděpodobná v 24.5% případů. Domácí Zlín má minimální šanci na úspěch s 28.1%. Také je zde 51.7% pravděpodobnost, že oba týmy skórují, což naznačuje, že Zlín by mohl alespoň jednou překonat obranu Slavie. Celkově se očekává, že Slavia Praha si odnese tři body, pokud nezklame v realizaci svých šancí.",
+    "text": "Zápas mezi Zlínem a Slavií Praha v rámci Chance Ligy se odehraje na stadionu Letná a očekává se, že Slavia bude favoritem. Domácí Zlín se nachází v špatné formě, kdy v posledních šesti zápasech zaznamenal pouze jednu remízu a pět porážek. Naopak Slavia má za sebou čtyři vítězství a dvě remízy, což naznačuje jejich silný výkon a vysokou motivaci v nadcházejícím utkání.\n\nHistorie vzájemných zápasů ukazuje, že Slavia byla v posledních soubojích dominantní, s několika přesvědčivými výhrami nad Zlínem. Poslední vzájemný zápas skončil výhrou Slavie 3:1, což podtrhuje jejich převahu. Očekává se, že Slavia bude mít v zápase více šancí, přičemž simulace ukazují na očekávané xG 1.95 pro hosty a 0.91 pro domácí, což naznačuje, že Slavia pravděpodobně vytvoří více ofenzivních příležitostí.\n\nZ pohledu statistiky a formy je pravděpodobné, že Slavia vstřelí alespoň dva góly, což potvrzuje i vyšší pravděpodobnost na \"over 2.5\" (54.9 %). Zlín bude mít obtížnou úlohu, a pokud se mu podaří skórovat, bude to pravděpodobně za cenu vysoké defenzivní zátěže. Celkově lze očekávat, že Slavia si udrží kontrolu nad zápasem a bude usilovat o další tři body v boji o přední příčky tabulky.",
     "model": "gpt-4o-mini",
-    "input_hash": "52c081b679664502",
-    "generated_at": "2026-10-08T09:35:22Z",
-    "text_en": "The upcoming match between Zlín and Slavia Praha in the Chance Liga is set to take place at Stadion Letná on October 9, 2026. Zlín enters the match with a concerning recent form, having not secured a win in their last six matches (R, P, P, P, P, P). In contrast, Slavia Praha has been in excellent form, winning four of their last six games and drawing the other two. Historically, Slavia Praha has had the upper hand in their encounters, winning the last four matches against Zlín, including a decisive 4-0 victory in November 2022.\n\nStatistical simulations suggest a significant advantage for Slavia Praha, with an expected goals (xG) of 1.95 compared to Zlín's 0.91. This indicates that Slavia is likely to create more scoring opportunities throughout the match. The odds reflect this disparity, with Slavia being favored at 1.29 for a win, while Zlín's odds stand at 9.85. The likelihood of Slavia scoring two or more goals is also higher, with simulations indicating a 54.9% chance of the match having over 2.5 goals.\n\nGiven the current form and historical performance, it is reasonable to expect Slavia Praha to dominate the match. Zlín will need to improve significantly to challenge their opponents effectively. If Slavia maintains their recent performance levels, they are likely to secure a comfortable victory, potentially with multiple goals scored, while Zlín may struggle to find the back of the net."
+    "input_hash": "4383d3d8c30371e4",
+    "generated_at": "2026-10-08T23:15:40Z",
+    "text_en": "The upcoming match between Zlín and Slavia Praha in the Chance Liga is set to take place at Stadion Letná on October 9, 2026. Zlín enters the match struggling with a recent form of one draw and five consecutive losses, indicating significant difficulties in securing points. In contrast, Slavia Praha has demonstrated strong performance, with four wins and two draws in their last six matches. This disparity in form suggests that Slavia Praha is likely to dominate the match, given their recent success and historical head-to-head advantage.\n\nIn their previous encounters, Slavia Praha has consistently outperformed Zlín, winning four of the last five matches, including a decisive 4-0 victory in November 2022. The expected goals (xG) simulation further supports this outlook, with Zlín projected to generate only 0.91 xG compared to Slavia Praha's 1.95 xG. This indicates that Slavia is expected to create more scoring opportunities, and their attacking prowess could lead to a comfortable win.\n\nConsidering the current form and historical context, it's reasonable to anticipate that Slavia Praha will take control early in the match. The odds reflect this, with Slavia being favored at 1.26 for a win. While Zlín may attempt to defend and capitalize on any counter-attacks, their recent struggles suggest that they will find it challenging to keep up with Slavia's offensive capabilities. Overall, a victory for Slavia Praha seems likely, with a potential scoreline reflecting their recent dominance over Zlín."
   },
-  "refreshed_at": "2026-10-08T09:35:12.885323Z",
+  "refreshed_at": "2026-10-08T23:15:29.839443Z",
   "odds": {
-    "home": 9.85,
-    "draw": 5.76,
-    "away": 1.29,
-    "under15": 4.78,
+    "home": 11.2,
+    "draw": 6.05,
+    "away": 1.26,
+    "under15": 4.74,
     "over15": 1.19,
-    "under25": 2.35,
-    "over25": 1.61,
+    "under25": 2.33,
+    "over25": 1.62,
     "under35": 1.52,
-    "over35": 2.55,
-    "btts": 1.96,
+    "over35": 2.56,
+    "btts": 2.08,
     "corners_under95": 2.0,
     "corners_over95": 1.72,
+    "yellow_under5": 1.43,
+    "yellow_5plus": 2.63,
+    "red_card": 5.0,
     "source": "chance",
-    "home_scoreless": 1.9,
-    "home_scored2plus": 5.27,
-    "home_clean_sheet": 8.11,
-    "home_ht_leading": 7.62,
-    "home_ht_draw": 2.78,
-    "home_ht_behind": 1.7,
+    "home_scoreless": 1.78,
+    "home_scored2plus": 5.76,
+    "home_clean_sheet": 8.37,
+    "home_ht_leading": 8.46,
+    "home_ht_draw": 2.8,
+    "home_ht_behind": 1.66,
     "home_more_corners": 5.33,
-    "away_clean_sheet": 1.9,
-    "away_scoreless": 8.11,
-    "away_scored2plus": 1.34,
-    "away_ht_behind": 7.62,
-    "away_ht_draw": 2.78,
-    "away_ht_leading": 1.7,
-    "away_more_corners": 1.23
+    "home_team_2plus_yellow": 1.43,
+    "away_clean_sheet": 1.78,
+    "away_scoreless": 8.37,
+    "away_scored2plus": 1.33,
+    "away_ht_behind": 8.46,
+    "away_ht_draw": 2.8,
+    "away_ht_leading": 1.66,
+    "away_more_corners": 1.23,
+    "away_team_2plus_yellow": 1.8
   }
 }

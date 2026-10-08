@@ -173,6 +173,20 @@
     },
     {
       "side": "home",
+      "player_id": 32258,
+      "player_name": "Marvin Friedrich",
+      "type_id": 531,
+      "type_name": "Knock",
+      "type_name_cs": "Menší zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-23",
+      "end_date": null,
+      "games_missed": 6,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37721450,
       "player_name": "Mekhi Gray",
       "type_id": 587,
@@ -205,7 +219,7 @@
       "player_name": "Oliver Burke",
       "type_id": 603,
       "type_name": "Achilles tendon problems",
-      "type_name_cs": "Achilles tendon problems",
+      "type_name_cs": "Problémy s Achillovou šlachou",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-07-20",
@@ -219,7 +233,7 @@
       "player_name": "Andrej Ilić",
       "type_id": 757,
       "type_name": "Food Poisoning",
-      "type_name_cs": "Food Poisoning",
+      "type_name_cs": "Otrava jídlem",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-07-27",
@@ -233,7 +247,7 @@
       "player_name": "Tom Zimmerschied",
       "type_id": 1935,
       "type_name": "Back Problems",
-      "type_name_cs": "Back Problems",
+      "type_name_cs": "Problémy se zády",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-07-18",
@@ -247,7 +261,7 @@
       "player_name": "Luis Seifert",
       "type_id": 1999,
       "type_name": "Syndesmosis Ligament Tear",
-      "type_name_cs": "Syndesmosis Ligament Tear",
+      "type_name_cs": "Natržený vaz (syndesmóza)",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-07-10",
@@ -941,7 +955,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.17
+          "odds": 1.16
         },
         {
           "key": "over25",
@@ -949,7 +963,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.55
+          "odds": 1.53
         },
         {
           "key": "team_2plus_yellow",
@@ -964,7 +978,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 3.27
+          "odds": 3.21
         },
         {
           "key": "shots_over",
@@ -1035,7 +1049,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.46
+          "odds": 1.45
         },
         {
           "key": "scoreless",
@@ -1043,7 +1057,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 4.73
+          "odds": 4.77
         },
         {
           "key": "corners_over95",
@@ -1051,7 +1065,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.94
+          "odds": 1.92
         },
         {
           "key": "corners_under95",
@@ -1059,7 +1073,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.78
+          "odds": 1.79
         },
         {
           "key": "scored2plus",
@@ -1067,7 +1081,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.84
+          "odds": 1.83
         },
         {
           "key": "more_corners",
@@ -1090,7 +1104,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.87
+          "odds": 4.02
         },
         {
           "key": "under25",
@@ -1098,7 +1112,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.47
+          "odds": 2.53
         },
         {
           "key": "red_card",
@@ -1113,7 +1127,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.75
+          "odds": 2.77
         },
         {
           "key": "ht_draw",
@@ -1121,7 +1135,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.4
+          "odds": 2.42
         }
       ],
       "away": [
@@ -1187,7 +1201,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.46
+          "odds": 1.45
         },
         {
           "key": "over15",
@@ -1195,7 +1209,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.17
+          "odds": 1.16
         },
         {
           "key": "over25",
@@ -1203,7 +1217,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.55
+          "odds": 1.53
         },
         {
           "key": "yellow_under5",
@@ -1225,7 +1239,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.11
+          "odds": 2.05
         },
         {
           "key": "corners_over95",
@@ -1233,7 +1247,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.94
+          "odds": 1.92
         },
         {
           "key": "corners_under95",
@@ -1241,7 +1255,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.78
+          "odds": 1.79
         },
         {
           "key": "ht_behind",
@@ -1249,7 +1263,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.75
+          "odds": 2.77
         },
         {
           "key": "clean_sheet",
@@ -1257,7 +1271,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 4.73
+          "odds": 4.77
         },
         {
           "key": "scoreless",
@@ -1265,7 +1279,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.87
+          "odds": 4.02
         },
         {
           "key": "under25",
@@ -1273,7 +1287,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.47
+          "odds": 2.53
         },
         {
           "key": "more_corners",
@@ -1296,7 +1310,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.27
+          "odds": 3.21
         },
         {
           "key": "ht_draw",
@@ -1304,7 +1318,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.4
+          "odds": 2.42
         },
         {
           "key": "red_card",
@@ -4761,40 +4775,40 @@
     ]
   },
   "odds": {
-    "home": 2.3,
-    "draw": 3.84,
-    "away": 2.86,
-    "under15": 5.12,
-    "over15": 1.17,
-    "under25": 2.47,
-    "over25": 1.55,
-    "under35": 1.59,
-    "over35": 2.4,
-    "btts": 1.46,
-    "corners_under95": 1.78,
-    "corners_over95": 1.94,
+    "home": 2.33,
+    "draw": 3.86,
+    "away": 2.8,
+    "under15": 5.3,
+    "over15": 1.16,
+    "under25": 2.53,
+    "over25": 1.53,
+    "under35": 1.61,
+    "over35": 2.34,
+    "btts": 1.45,
+    "corners_under95": 1.79,
+    "corners_over95": 1.92,
     "source": "chance",
-    "home_scoreless": 4.73,
-    "home_scored2plus": 1.84,
-    "home_clean_sheet": 3.87,
-    "home_ht_leading": 2.75,
-    "home_ht_draw": 2.4,
-    "home_ht_behind": 3.27,
+    "home_scoreless": 4.77,
+    "home_scored2plus": 1.83,
+    "home_clean_sheet": 4.02,
+    "home_ht_leading": 2.77,
+    "home_ht_draw": 2.42,
+    "home_ht_behind": 3.21,
     "home_more_corners": 1.76,
-    "away_clean_sheet": 4.73,
-    "away_scoreless": 3.87,
-    "away_scored2plus": 2.11,
-    "away_ht_behind": 2.75,
-    "away_ht_draw": 2.4,
-    "away_ht_leading": 3.27,
+    "away_clean_sheet": 4.77,
+    "away_scoreless": 4.02,
+    "away_scored2plus": 2.05,
+    "away_ht_behind": 2.77,
+    "away_ht_draw": 2.42,
+    "away_ht_leading": 3.21,
     "away_more_corners": 2.46
   },
   "ai_analysis": {
-    "text": "Zápas mezi FC Union Berlin a Elversberg v rámci Bundesligy slibuje zajímavou konfrontaci. Domácí tým, FC Union Berlin, se nachází v solidní formě s posledními třemi zápasy bez porážky (P, P, P, R). Na druhé straně Elversberg, i když má také pozitivní výsledky, se potýká s většími výkyvy ve výkonech (R, P, V, V). Tato situace naznačuje, že domácí tým by mohl mít mírnou výhodu, zejména vzhledem k domácímu prostředí na Stadion An der Alten Försterei.\n\nPodle simulací očekávaných gólů (xG) se předpokládá, že Elversberg by mohl mít mírně vyšší šance na skórování s hodnotou 1.95 oproti Union Berlin s 1.48. To naznačuje, že hosté by mohli být nebezpeční v ofenzivě, ačkoli domácí tým má silnou obranu. S pravděpodobností 66,1 % se také očekává, že oba týmy skórují, což by mohlo přispět k dynamickému a atraktivnímu zápasu.\n\nCo se týče statistik a kurzů, favoritem na vítězství jsou mírně domácí, s kurzem 2.3, zatímco Elversberg má kurz 2.86. Vzhledem k tomu, že obě mužstva mají tendenci k ofenzivní hře, je pravděpodobné, že zápas přinese více než 2,5 gólu, což má pravděpodobnost 66,8 %. Celkově lze očekávat vyrovnaný a napínavý duel, kde může rozhodnout každý detail.",
+    "text": "Zápas mezi FC Union Berlin a Elversbergem se odehraje na stadionu An der Alten Försterei a slibuje zajímavé střetnutí. Domácí tým, FC Union Berlin, má v posledních čtyřech zápasech smíšenou formu s jednou remízou a třemi prohrami, což naznačuje, že se nachází v krizi. Naopak Elversberg vykazuje lepší výkony, když v posledních dvou zápasech zvítězil, což by mohlo posílit jejich sebevědomí před tímto utkáním.\n\nPodle simulací očekáváme, že Elversberg bude mít mírně vyšší očekávané góly (xG 1.95) než domácí tým (xG 1.48). To naznačuje, že hosté mají potenciál být ofenzivně nebezpečnější. Vzhledem k formě obou týmů a statistice, která ukazuje na vysokou pravděpodobnost, že oba týmy skórují (66.1 %), by mohlo být očekáváno, že zápas bude vyrovnaný a plný šancí.\n\nCo se týče dalších statistik, domácí tým má 4.77% šanci odehrát zápas bez vstřeleného gólu, což naznačuje, že by mohli mít problémy s koncovkou. Na druhou stranu, Elversberg má 4.02% šanci na čisté konto, což ukazuje na možnost, že se jim podaří udržet obranu. Celkově se očekává, že zápas bude vyrovnaný, s možností, že hosté z Elversbergu mohou překvapit a přivést si domů tři body.",
     "model": "gpt-4o-mini",
-    "input_hash": "7ee4162facc26621",
-    "generated_at": "2026-10-08T09:38:38Z",
-    "text_en": "The upcoming Bundesliga match between FC Union Berlin and Elversberg at the Stadion An der Alten Försterei promises to be an intriguing encounter. FC Union Berlin has struggled recently, with a form record of three losses and one draw in their last four matches, indicating potential vulnerabilities in their gameplay. In contrast, Elversberg has shown a more positive trend, with two wins, one draw, and one loss in their recent outings, suggesting they may come into the match with greater confidence.\n\nStatistical simulations indicate that Elversberg is expected to have a slight edge in terms of expected goals (xG), with 1.95 compared to Union Berlin's 1.48. This suggests that Elversberg may create more scoring opportunities during the match. Additionally, the simulation predicts a high likelihood of both teams scoring (66.1%) and a significant chance of the total goals exceeding 2.5 (66.8%). These factors could lead to a dynamic and competitive match, with both teams likely to push for goals.\n\nReferee Tobias Reichel will oversee the match, and with both teams' recent forms and the attacking potential suggested by the simulations, fans can expect an engaging contest. The odds reflect a relatively balanced matchup, with Union Berlin at 2.3, a draw at 3.84, and Elversberg at 2.86. This indicates that while Elversberg may be favored slightly, the match could go either way, depending on how well each team capitalizes on their chances."
+    "input_hash": "8655dc2f444a90e7",
+    "generated_at": "2026-10-08T23:18:42Z",
+    "text_en": "The upcoming Bundesliga match between FC Union Berlin and Elversberg at the Stadion An der Alten Försterei is set to take place on October 10, 2026. FC Union Berlin has struggled recently, recording three losses and one draw in their last four matches, indicating a challenging period for the home side. In contrast, Elversberg's recent form has been more positive, with two wins, one draw, and one loss in their last four outings, suggesting they are building momentum as they approach this fixture.\n\nStatistical simulations suggest that Elversberg may have the upper hand in terms of expected goals (xG), with a projected 1.95 compared to Union Berlin's 1.48. The likelihood of Elversberg winning is estimated at 40.8%, while a home victory for Union Berlin stands at 34.7%, and a draw at 24.5%. Additionally, there is a high probability (66.1%) that both teams will score during the match, which aligns with the attacking capabilities shown by Elversberg in their recent games.\n\nThe match will be officiated by referee Tobias Reichel, and the dynamics of the game could be influenced by the home crowd at Union Berlin's stadium. Given the contrasting recent performances, Elversberg may look to capitalize on Union's defensive vulnerabilities, while the home side will aim to regain form and secure vital points. Overall, the match promises to be competitive, with both teams having the potential to impact the outcome significantly."
   },
-  "refreshed_at": "2026-10-08T09:38:29.225994Z"
+  "refreshed_at": "2026-10-08T23:18:36.219002Z"
 }

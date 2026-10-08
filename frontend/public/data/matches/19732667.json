@@ -2,8 +2,8 @@
   "fixture_id": 19732667,
   "league_id": 564,
   "league_name": "La Liga",
-  "built_at": "2026-10-02T10:32:28.264346Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-08T23:20:41.277632Z",
+  "build_mode": "full",
   "starting_at": "2026-10-09T19:00:00Z",
   "venue": "Estadio La Rosaleda",
   "home": {
@@ -16,7 +16,150 @@
     "name": "Espanyol",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 13604,
+    "name": "Francisco José Hernández Maeso",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 0,
+          "average": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Fouls": {
+        "count": 78,
+        "average": 19.5
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 9,
+          "average": 2.25,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 9
+        },
+        "home": {
+          "count": 4,
+          "average": 1,
+          "percentage": 44.44
+        },
+        "away": {
+          "count": 5,
+          "average": 1.25,
+          "percentage": 55.56
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 4
+      },
+      "VAR Moments": {
+        "count": 2,
+        "average": 0.5
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 26.4,
+      "yellow_per_match": 4.4,
+      "red_per_match": 0.2,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 4,
+      "matches": 61,
+      "yellow_cards": 258,
+      "red_cards": 4,
+      "avg_yellow_per_match": 4.23
+    },
+    "h2h_matches_officiated": [],
+    "home_team_matches_officiated": null,
+    "away_team_matches_officiated": {
+      "matches": 3,
+      "avg_fouls_by_team": 8.3,
+      "avg_fouls_total": 19.7,
+      "avg_yellow_by_team": 0.67,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19439602,
+          "date": "2026-05-13T17:00:00Z",
+          "home_name": "Espanyol",
+          "away_name": "Athletic Club",
+          "home_score": 2,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 23
+        },
+        {
+          "fixture_id": 19439314,
+          "date": "2025-09-26T19:00:00Z",
+          "home_name": "Girona",
+          "away_name": "Espanyol",
+          "home_score": 0,
+          "away_score": 0,
+          "result": "R",
+          "total_fouls": 20
+        },
+        {
+          "fixture_id": 19135662,
+          "date": "2025-05-18T17:00:00Z",
+          "home_name": "Osasuna",
+          "away_name": "Espanyol",
+          "home_score": 2,
+          "away_score": 0,
+          "result": "P",
+          "total_fouls": 16
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
@@ -38,7 +181,7 @@
       "player_name": "Diego Murillo Dominguez",
       "type_id": 2021,
       "type_name": "Inner Knee Ligament Tear",
-      "type_name_cs": "Inner Knee Ligament Tear",
+      "type_name_cs": "Natržený vnitřní vaz kolena",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-06-20",
@@ -52,7 +195,7 @@
       "player_name": "Aarón Ochoa Moloney",
       "type_id": 1543,
       "type_name": "Meniscus Tear",
-      "type_name_cs": "Meniscus Tear",
+      "type_name_cs": "Poškozený meniskus",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-17",
@@ -205,399 +348,11 @@
       }
     ]
   },
-  "h2h": [
-    {
-      "fixture_id": 4194330,
-      "date": "2018-05-13T14:15:00Z",
-      "home": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "away": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "home_score": 4,
-      "away_score": 1,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 9,
-        "sot": 3,
-        "corners": 3,
-        "fouls": 19,
-        "possession": 43,
-        "yellow": 2,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 19,
-        "sot": 7,
-        "corners": 5,
-        "fouls": 11,
-        "possession": 57,
-        "yellow": 0,
-        "red": 0
-      },
-      "coach_home": "David Gallego Rodríguez",
-      "coach_away": "José Manuel González López",
-      "referee_id": 15712
-    },
-    {
-      "fixture_id": 4194146,
-      "date": "2018-01-08T20:00:00Z",
-      "home": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "away": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "home_score": 0,
-      "away_score": 1,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 17,
-        "sot": 3,
-        "corners": 6,
-        "fouls": 19,
-        "possession": 61,
-        "yellow": 2,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 6,
-        "sot": 3,
-        "corners": 5,
-        "fouls": 11,
-        "possession": 39,
-        "yellow": 3,
-        "red": 0
-      },
-      "coach_home": "José Miguel González Martín del Campo",
-      "coach_away": "Enrique Sánchez Flores",
-      "referee_id": 11710
-    },
-    {
-      "fixture_id": 404965,
-      "date": "2017-02-04T12:00:00Z",
-      "home": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "away": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "home_score": 0,
-      "away_score": 1,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 20,
-        "sot": 6,
-        "corners": 17,
-        "fouls": 9,
-        "possession": 58,
-        "yellow": 1,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 4,
-        "sot": 3,
-        "corners": 2,
-        "fouls": 18,
-        "possession": 42,
-        "yellow": 4,
-        "red": 0
-      },
-      "coach_home": "Sergio Pellicer García",
-      "coach_away": "Enrique Sánchez Flores",
-      "referee_id": 237
-    },
-    {
-      "fixture_id": 401591,
-      "date": "2016-08-26T20:00:00Z",
-      "home": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "away": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "home_score": 2,
-      "away_score": 2,
-      "result_for_home_team": "R",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 9,
-        "sot": 3,
-        "corners": 4,
-        "fouls": 17,
-        "possession": 50,
-        "yellow": 4,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 7,
-        "sot": 2,
-        "corners": 3,
-        "fouls": 20,
-        "possession": 50,
-        "yellow": 2,
-        "red": 0
-      },
-      "coach_home": "José Manuel González Álvarez",
-      "coach_away": "Sergio Pellicer García",
-      "referee_id": 838433
-    },
-    {
-      "fixture_id": 405821,
-      "date": "2016-04-03T14:00:00Z",
-      "home": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "away": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "home_score": 1,
-      "away_score": 1,
-      "result_for_home_team": "R",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 11,
-        "sot": 5,
-        "corners": 5,
-        "fouls": 0,
-        "possession": 63,
-        "yellow": 2,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 5,
-        "sot": 1,
-        "corners": 1,
-        "fouls": 0,
-        "possession": 37,
-        "yellow": 3,
-        "red": 0
-      },
-      "coach_home": "Sergio Pellicer García",
-      "coach_away": "José Manuel González Álvarez",
-      "referee_id": 15712
-    },
-    {
-      "fixture_id": 403782,
-      "date": "2015-11-21T19:30:00Z",
-      "home": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "away": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "home_score": 2,
-      "away_score": 0,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 14,
-        "sot": 5,
-        "corners": 8,
-        "fouls": 0,
-        "possession": 59,
-        "yellow": 2,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 7,
-        "sot": 3,
-        "corners": 3,
-        "fouls": 0,
-        "possession": 41,
-        "yellow": 5,
-        "red": 0
-      },
-      "coach_home": "José Manuel González Álvarez",
-      "coach_away": "Sergio Pellicer García",
-      "referee_id": 15712
-    },
-    {
-      "fixture_id": 401499,
-      "date": "2015-02-14T21:00:00Z",
-      "home": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "away": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "home_score": 0,
-      "away_score": 2,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 5,
-        "corners": 10,
-        "fouls": 11,
-        "possession": 64,
-        "yellow": 0,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 2,
-        "corners": 3,
-        "fouls": 16,
-        "possession": 36,
-        "yellow": 0,
-        "red": 0
-      },
-      "coach_home": "Javier Gracia Carlos",
-      "coach_away": "Sergio González Soriano",
-      "referee_id": null
-    },
-    {
-      "fixture_id": 399702,
-      "date": "2014-09-20T20:00:00Z",
-      "home": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "away": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "home_score": 2,
-      "away_score": 2,
-      "result_for_home_team": "R",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 3,
-        "corners": 2,
-        "fouls": 16,
-        "possession": 56,
-        "yellow": 0,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 6,
-        "corners": 7,
-        "fouls": 16,
-        "possession": 44,
-        "yellow": 0,
-        "red": 0
-      },
-      "coach_home": "Sergio González Soriano",
-      "coach_away": "Javier Gracia Carlos",
-      "referee_id": 17924
-    },
-    {
-      "fixture_id": 403355,
-      "date": "2014-03-25T19:00:00Z",
-      "home": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "away": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "home_score": 1,
-      "away_score": 2,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 5,
-        "corners": 3,
-        "fouls": 9,
-        "possession": 62,
-        "yellow": 0,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 5,
-        "corners": 8,
-        "fouls": 10,
-        "possession": 38,
-        "yellow": 0,
-        "red": 0
-      },
-      "coach_home": null,
-      "coach_away": null,
-      "referee_id": null
-    },
-    {
-      "fixture_id": 400133,
-      "date": "2013-10-29T19:00:00Z",
-      "home": {
-        "id": 528,
-        "name": "Espanyol",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/16/528.png"
-      },
-      "away": {
-        "id": 126,
-        "name": "Málaga",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/30/126.png"
-      },
-      "home_score": 0,
-      "away_score": 0,
-      "result_for_home_team": "R",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 0,
-        "sot": 7,
-        "corners": 6,
-        "fouls": 11,
-        "possession": 56,
-        "yellow": 0,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 0,
-        "sot": 3,
-        "corners": 8,
-        "fouls": 21,
-        "possession": 44,
-        "yellow": 0,
-        "red": 0
-      },
-      "coach_home": null,
-      "coach_away": null,
-      "referee_id": null
-    }
-  ],
-  "h2h_total_available": 22,
+  "h2h": [],
+  "h2h_total_available": 0,
+  "h2h_window_years": 5,
+  "h2h_excluded_older": 22,
+  "build_version": 2,
   "form": {
     "home": {
       "matches": [
@@ -1401,53 +1156,13 @@
       }
     },
     "last3_h2h": {
-      "home": {
-        "goals_for": 0.33,
-        "goals_against": 2.0,
-        "shots": 15.3,
-        "sot": 4.0,
-        "corners": 8.7,
-        "possession": 54.0,
-        "cards": 1.67,
-        "fouls_committed": 15.7,
-        "fouls_received": 13.3
-      },
-      "away": {
-        "goals_for": 2.0,
-        "goals_against": 0.33,
-        "shots": 9.7,
-        "sot": 4.3,
-        "corners": 4.0,
-        "possession": 46.0,
-        "cards": 2.33,
-        "fouls_committed": 13.3,
-        "fouls_received": 15.7
-      }
+      "home": null,
+      "away": null
     },
     "last3_h2h_home_venue": {
-      "home": {
-        "goals_for": 0.33,
-        "goals_against": 1.0,
-        "shots": 16.0,
-        "sot": 4.7,
-        "corners": 9.3,
-        "possession": 60.7,
-        "cards": 1.67,
-        "fouls_committed": 9.3,
-        "fouls_received": 9.7
-      },
-      "away": {
-        "goals_for": 1.0,
-        "goals_against": 0.33,
-        "shots": 5.0,
-        "sot": 2.3,
-        "corners": 2.7,
-        "possession": 39.3,
-        "cards": 3.33,
-        "fouls_committed": 9.7,
-        "fouls_received": 9.3
-      },
-      "sample_size": 3
+      "home": null,
+      "away": null,
+      "sample_size": 0
     }
   },
   "trends": {
@@ -1466,14 +1181,15 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.06
+          "odds": 2.07
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.37
         },
         {
           "key": "shots_over",
@@ -1530,7 +1246,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.15
+          "odds": 3.22
         },
         {
           "key": "over15",
@@ -1538,7 +1254,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.35
+          "odds": 1.36
         },
         {
           "key": "under25",
@@ -1546,7 +1262,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.77
+          "odds": 1.78
         },
         {
           "key": "more_corners",
@@ -1554,14 +1270,15 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.74
+          "odds": 1.73
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.91
         },
         {
           "key": "ht_behind",
@@ -1569,7 +1286,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.31
+          "odds": 3.44
         },
         {
           "key": "btts",
@@ -1585,14 +1302,15 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.08
+          "odds": 2.11
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.8
         },
         {
           "key": "ht_draw",
@@ -1600,7 +1318,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.08
+          "odds": 2.06
         },
         {
           "key": "clean_sheet",
@@ -1608,7 +1326,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.19
+          "odds": 3.26
         },
         {
           "key": "corners_under95",
@@ -1616,7 +1334,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.68
+          "odds": 1.67
         },
         {
           "key": "scored2plus",
@@ -1624,7 +1342,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.59
+          "odds": 2.67
         },
         {
           "key": "red_card",
@@ -1640,7 +1358,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.36
+          "odds": 3.5
         }
       ],
       "away": [
@@ -1650,7 +1368,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.35
+          "odds": 1.36
         },
         {
           "key": "sot_over",
@@ -1687,21 +1405,23 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.68
+          "odds": 1.67
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.91
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.36
         },
         {
           "key": "shots_over",
@@ -1744,7 +1464,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.08
+          "odds": 2.11
         },
         {
           "key": "red_card",
@@ -1760,7 +1480,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.77
+          "odds": 1.78
         },
         {
           "key": "more_corners",
@@ -1768,7 +1488,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.51
+          "odds": 2.52
         },
         {
           "key": "ht_draw",
@@ -1776,7 +1496,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.08
+          "odds": 2.06
         },
         {
           "key": "ht_behind",
@@ -1784,7 +1504,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.36
+          "odds": 3.5
         },
         {
           "key": "clean_sheet",
@@ -1792,7 +1512,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.15
+          "odds": 3.22
         },
         {
           "key": "scored2plus",
@@ -1800,7 +1520,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.53
+          "odds": 2.61
         },
         {
           "key": "corners_over95",
@@ -1808,14 +1528,15 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.06
+          "odds": 2.07
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.8
         },
         {
           "key": "ht_leading",
@@ -1823,7 +1544,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.31
+          "odds": 3.44
         },
         {
           "key": "scoreless",
@@ -1831,379 +1552,13 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.19
+          "odds": 3.26
         }
       ]
     },
     "h2h": {
-      "last3": [
-        {
-          "key": "ht_behind",
-          "label": "Tým prohrával po 1. poločase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "shots_over",
-          "label": "Střely: 8.5+ v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "shots_under",
-          "label": "Střely: méně než 20.5 v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "sot_over",
-          "label": "Střely na branku: 2.5+ v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "sot_under",
-          "label": "Střely na branku: méně než 6.5 v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "fouls_over",
-          "label": "Fauly: 8.5+ v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "fouls_under",
-          "label": "Fauly: méně než 19.5 v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "offsides_over",
-          "label": "Ofsajdy: 1.5+ v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "offsides_under",
-          "label": "Ofsajdy: méně než 4.5 v zápase",
-          "hits": 3,
-          "total": 3,
-          "pct": 100.0
-        },
-        {
-          "key": "scoreless",
-          "label": "Tým nevstřelil gól",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7
-        },
-        {
-          "key": "under25",
-          "label": "Under 2.5 gólů v zápase",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7,
-          "odds": 1.77
-        },
-        {
-          "key": "corners_over95",
-          "label": "Over 9.5 rohů v zápase (celkem)",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7,
-          "odds": 2.06
-        },
-        {
-          "key": "more_corners",
-          "label": "Tým měl víc rohů než soupeř",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7
-        },
-        {
-          "key": "yellow_5plus",
-          "label": "5+ žlutých karet v zápase (celkem)",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7
-        },
-        {
-          "key": "team_2plus_yellow",
-          "label": "Tým dostal 2+ žluté karty",
-          "hits": 2,
-          "total": 3,
-          "pct": 66.7
-        },
-        {
-          "key": "btts",
-          "label": "Oba týmy skórovaly (BTTS)",
-          "hits": 1,
-          "total": 3,
-          "pct": 33.3,
-          "odds": 1.75
-        },
-        {
-          "key": "over15",
-          "label": "Over 1.5 gólů v zápase",
-          "hits": 1,
-          "total": 3,
-          "pct": 33.3,
-          "odds": 1.35
-        },
-        {
-          "key": "over25",
-          "label": "Over 2.5 gólů v zápase",
-          "hits": 1,
-          "total": 3,
-          "pct": 33.3,
-          "odds": 2.08
-        },
-        {
-          "key": "corners_under95",
-          "label": "Under 9.5 rohů v zápase (celkem)",
-          "hits": 1,
-          "total": 3,
-          "pct": 33.3,
-          "odds": 1.68
-        },
-        {
-          "key": "yellow_under5",
-          "label": "Méně než 5 žlutých karet v zápase (celkem)",
-          "hits": 1,
-          "total": 3,
-          "pct": 33.3
-        },
-        {
-          "key": "clean_sheet",
-          "label": "Čisté konto (0 obdržených gólů)",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0
-        },
-        {
-          "key": "scored2plus",
-          "label": "Tým vstřelil 2+ gólů",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0
-        },
-        {
-          "key": "red_card",
-          "label": "Padla červená karta (kterýkoli tým)",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0,
-          "odds": 3.7
-        },
-        {
-          "key": "ht_leading",
-          "label": "Tým vedl po 1. poločase",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0
-        },
-        {
-          "key": "ht_draw",
-          "label": "Remíza v poločase",
-          "hits": 0,
-          "total": 3,
-          "pct": 0.0
-        }
-      ],
-      "last5": [
-        {
-          "key": "shots_over",
-          "label": "Střely: 8.5+ v zápase",
-          "hits": 5,
-          "total": 5,
-          "pct": 100.0
-        },
-        {
-          "key": "sot_over",
-          "label": "Střely na branku: 2.5+ v zápase",
-          "hits": 5,
-          "total": 5,
-          "pct": 100.0
-        },
-        {
-          "key": "fouls_under",
-          "label": "Fauly: méně než 19.5 v zápase",
-          "hits": 5,
-          "total": 5,
-          "pct": 100.0
-        },
-        {
-          "key": "offsides_over",
-          "label": "Ofsajdy: 1.5+ v zápase",
-          "hits": 5,
-          "total": 5,
-          "pct": 100.0
-        },
-        {
-          "key": "more_corners",
-          "label": "Tým měl víc rohů než soupeř",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
-          "key": "yellow_5plus",
-          "label": "5+ žlutých karet v zápase (celkem)",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
-          "key": "team_2plus_yellow",
-          "label": "Tým dostal 2+ žluté karty",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
-          "key": "ht_behind",
-          "label": "Tým prohrával po 1. poločase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
-          "key": "shots_under",
-          "label": "Střely: méně než 17.5 v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
-          "key": "sot_under",
-          "label": "Střely na branku: méně než 5.5 v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
-          "key": "fouls_over",
-          "label": "Fauly: 8.5+ v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
-          "key": "offsides_under",
-          "label": "Ofsajdy: méně než 4.5 v zápase",
-          "hits": 4,
-          "total": 5,
-          "pct": 80.0
-        },
-        {
-          "key": "btts",
-          "label": "Oba týmy skórovaly (BTTS)",
-          "hits": 3,
-          "total": 5,
-          "pct": 60.0,
-          "odds": 1.75
-        },
-        {
-          "key": "over15",
-          "label": "Over 1.5 gólů v zápase",
-          "hits": 3,
-          "total": 5,
-          "pct": 60.0,
-          "odds": 1.35
-        },
-        {
-          "key": "under25",
-          "label": "Under 2.5 gólů v zápase",
-          "hits": 3,
-          "total": 5,
-          "pct": 60.0,
-          "odds": 1.77
-        },
-        {
-          "key": "corners_under95",
-          "label": "Under 9.5 rohů v zápase (celkem)",
-          "hits": 3,
-          "total": 5,
-          "pct": 60.0,
-          "odds": 1.68
-        },
-        {
-          "key": "scoreless",
-          "label": "Tým nevstřelil gól",
-          "hits": 2,
-          "total": 5,
-          "pct": 40.0
-        },
-        {
-          "key": "over25",
-          "label": "Over 2.5 gólů v zápase",
-          "hits": 2,
-          "total": 5,
-          "pct": 40.0,
-          "odds": 2.08
-        },
-        {
-          "key": "corners_over95",
-          "label": "Over 9.5 rohů v zápase (celkem)",
-          "hits": 2,
-          "total": 5,
-          "pct": 40.0,
-          "odds": 2.06
-        },
-        {
-          "key": "scored2plus",
-          "label": "Tým vstřelil 2+ gólů",
-          "hits": 1,
-          "total": 5,
-          "pct": 20.0
-        },
-        {
-          "key": "yellow_under5",
-          "label": "Méně než 5 žlutých karet v zápase (celkem)",
-          "hits": 1,
-          "total": 5,
-          "pct": 20.0
-        },
-        {
-          "key": "ht_draw",
-          "label": "Remíza v poločase",
-          "hits": 1,
-          "total": 5,
-          "pct": 20.0
-        },
-        {
-          "key": "clean_sheet",
-          "label": "Čisté konto (0 obdržených gólů)",
-          "hits": 0,
-          "total": 5,
-          "pct": 0.0
-        },
-        {
-          "key": "red_card",
-          "label": "Padla červená karta (kterýkoli tým)",
-          "hits": 0,
-          "total": 5,
-          "pct": 0.0,
-          "odds": 3.7
-        },
-        {
-          "key": "ht_leading",
-          "label": "Tým vedl po 1. poločase",
-          "hits": 0,
-          "total": 5,
-          "pct": 0.0
-        }
-      ]
+      "last3": [],
+      "last5": []
     }
   },
   "simulation": {
@@ -6154,42 +5509,45 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T09:39:32.238344Z",
   "odds": {
-    "home": 2.77,
-    "draw": 3.18,
-    "away": 2.7,
-    "under15": 3.2,
-    "over15": 1.35,
-    "under25": 1.77,
-    "over25": 2.08,
+    "home": 2.83,
+    "draw": 3.22,
+    "away": 2.75,
+    "under15": 3.26,
+    "over15": 1.36,
+    "under25": 1.78,
+    "over25": 2.11,
     "under35": 1.28,
-    "over35": 3.68,
+    "over35": 3.78,
     "btts": 1.75,
-    "corners_under95": 1.68,
-    "corners_over95": 2.06,
+    "corners_under95": 1.67,
+    "corners_over95": 2.07,
+    "yellow_under5": 1.8,
+    "yellow_5plus": 1.91,
     "red_card": 3.7,
     "source": "chance",
-    "home_scoreless": 3.15,
-    "home_scored2plus": 2.59,
-    "home_clean_sheet": 3.19,
-    "home_ht_leading": 3.36,
-    "home_ht_draw": 2.08,
-    "home_ht_behind": 3.31,
-    "home_more_corners": 1.74,
-    "away_clean_sheet": 3.15,
-    "away_scoreless": 3.19,
-    "away_scored2plus": 2.53,
-    "away_ht_behind": 3.36,
-    "away_ht_draw": 2.08,
-    "away_ht_leading": 3.31,
-    "away_more_corners": 2.51
+    "home_scoreless": 3.22,
+    "home_scored2plus": 2.67,
+    "home_clean_sheet": 3.26,
+    "home_ht_leading": 3.5,
+    "home_ht_draw": 2.06,
+    "home_ht_behind": 3.44,
+    "home_more_corners": 1.73,
+    "home_team_2plus_yellow": 1.37,
+    "away_clean_sheet": 3.22,
+    "away_scoreless": 3.26,
+    "away_scored2plus": 2.61,
+    "away_ht_behind": 3.5,
+    "away_ht_draw": 2.06,
+    "away_ht_leading": 3.44,
+    "away_more_corners": 2.52,
+    "away_team_2plus_yellow": 1.36
   },
   "ai_analysis": {
-    "text": "Zápas mezi Málagou a Espanyolem, který se odehraje na Estadio La Rosaleda, slibuje zajímavé střetnutí. Domácí Málaga se nachází v těžké formě, se třemi remízami a dvěma porážkami v posledních šesti zápasech. Naopak Espanyol vykazuje lepší výkonnost, když vyhrál čtyři z posledních šesti utkání. Historie vzájemných zápasů také naznačuje dominanci Espanyolu, který vyhrál tři z posledních pěti střetnutí.\n\nPodle simulací se očekává, že Espanyol bude mít mírnou převahu, s očekávanými góly (xG) 1.41 oproti 1.06 pro Málagu. To naznačuje, že hosté budou pravděpodobně více nebezpeční v ofenzivě. Šance na výhru Espanyolu se pohybují kolem 38.5 %, zatímco remíza má pravděpodobnost 27 %. Málaga má šanci na výhru 34.4 %, což ukazuje na vyrovnanost, ale s mírným favoritem v podobě hostů.\n\nCo se týče dalších aspektů zápasu, pravděpodobnost, že oba týmy skórují, je 48.9 %, což naznačuje, že by mohly padnout minimálně dva góly. Také je zde šance 44.8 % na to, že zápas skončí s více než 2.5 góly. Celkově lze očekávat vyrovnaný duel, kde bude mít Espanyol mírnou výhodu, ale Málaga může překvapit, zejména na domácím hřišti.",
+    "text": "Zápas mezi Málagou a Espanyolem, který se odehraje na Estadio La Rosaleda, slibuje být vyrovnaným střetnutím. Domácí tým se nachází ve formě, kdy z posledních šesti zápasů zaznamenal dvě výhry, dvě remízy a dvě prohry. Hosté, na druhé straně, mají o něco lepší formu s čtyřmi výhrami a jednou remízou v posledních šesti zápasech. To naznačuje, že Espanyol bude mít mírnou výhodu, ale domácí prostředí může hrát klíčovou roli.\n\nPodle simulovaných očekávaných gólů (xG) má Espanyol mírně vyšší hodnotu 1.41 oproti Málaze s 1.06. To naznačuje, že hosté by mohli mít více příležitostí ke skórování. Pravděpodobnost výhry pro hosty je 38.5 %, zatímco pro domácí tým je to 34.4 %. Remíza se jeví jako méně pravděpodobná s hodnotou 27 %. Taktika obou týmů bude klíčová, přičemž očekáváme, že Espanyol se pokusí využít svých ofenzivních schopností.\n\nCo se týče dalších statistik, pravděpodobnost, že oba týmy skórují, je 48.9 %, což naznačuje, že zápas by mohl být vyrovnaný a plný šancí. Očekává se také, že zápas bude mít více než 2.5 gólu s pravděpodobností 44.8 %. Zápas by mohl být dramatický, a pokud se týmy dostanou do rychlého tempa, mohli bychom být svědky zajímavého utkání.",
     "model": "gpt-4o-mini",
-    "input_hash": "b0849e1f6ddced48",
-    "generated_at": "2026-10-08T09:39:44Z",
-    "text_en": "The upcoming match between Málaga and Espanyol in La Liga is set to take place at Estadio La Rosaleda on October 9, 2026. Both teams have shown contrasting recent forms, with Málaga struggling to secure wins, recording five losses and two draws in their last seven matches. In contrast, Espanyol has managed to find some form, achieving two wins, one draw, and four losses in the same period. This disparity in form suggests that Espanyol may enter the match with greater confidence.\n\nHistorically, the head-to-head encounters favor Espanyol, who have won three of the last five meetings against Málaga, with the most recent match resulting in a convincing 4-1 victory for Espanyol. The expected goals (xG) statistics indicate that Espanyol is likely to create more scoring opportunities, with an xG of 1.41 compared to Málaga's 1.06. This could translate into a higher likelihood of goals for the away team, especially considering their recent scoring form.\n\nGiven the current trends and statistical analysis, it is reasonable to anticipate that Espanyol will dominate possession and create more chances throughout the match. The simulation suggests a probability of 38.5% for an away win, while the likelihood of both teams scoring stands at 48.9%. With Málaga's defensive struggles and Espanyol's ability to capitalize on opportunities, the match may see Espanyol emerging victorious, potentially with a scoreline that reflects their attacking prowess."
+    "input_hash": "392d429c5eb8ce09",
+    "generated_at": "2026-10-08T23:20:49Z",
+    "text_en": "The upcoming La Liga match between Málaga and Espanyol at Estadio La Rosaleda promises to be an intriguing encounter, especially considering the recent form of both teams. Málaga has struggled lately, with their last six matches yielding only one draw and five losses (P, P, R, R, P, R). In contrast, Espanyol has shown a more positive trend, securing two wins, three losses, and one draw in their recent fixtures (P, P, V, R, P, P). This disparity in form suggests that Espanyol may enter the match with greater confidence.\n\nStatistical simulations indicate that Espanyol is favored to perform better, with an expected goals (xG) tally of 1.41 compared to Málaga's 1.06. The likelihood of an away victory stands at 38.5%, while a home win is estimated at 34.4%, suggesting a competitive matchup. Additionally, there is a 48.9% chance that both teams will score, indicating that the match could be open and entertaining, with opportunities for both sides to find the back of the net.\n\nThe match will be officiated by referee Francisco José Hernández Maeso, which could play a role in the game's dynamics, particularly regarding discipline and the awarding of set pieces. With Espanyol's recent form and statistical advantages, they may look to control possession and create more goal-scoring opportunities, while Málaga will need to focus on solidifying their defense and capitalizing on any chances that arise. Overall, the match is set to be a critical one for both teams as they navigate the challenges of La Liga."
   }
 }

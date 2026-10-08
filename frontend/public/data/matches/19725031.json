@@ -1191,7 +1191,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.27
+          "odds": 1.28
         },
         {
           "key": "under25",
@@ -1199,7 +1199,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.95
+          "odds": 1.96
         },
         {
           "key": "more_corners",
@@ -1221,7 +1221,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.26
+          "odds": 2.32
         },
         {
           "key": "btts",
@@ -1237,7 +1237,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.85
+          "odds": 1.86
         },
         {
           "key": "scored2plus",
@@ -1289,7 +1289,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.01
+          "odds": 2.07
         },
         {
           "key": "ht_behind",
@@ -1297,7 +1297,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 5.87
+          "odds": 6.03
         }
       ],
       "away": [
@@ -1342,7 +1342,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.27
+          "odds": 1.28
         },
         {
           "key": "over25",
@@ -1350,7 +1350,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.85
+          "odds": 1.86
         },
         {
           "key": "ht_behind",
@@ -1358,7 +1358,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.01
+          "odds": 2.07
         },
         {
           "key": "shots_over",
@@ -1432,7 +1432,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.95
+          "odds": 1.96
         },
         {
           "key": "scored2plus",
@@ -1448,7 +1448,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.26
+          "odds": 2.32
         },
         {
           "key": "corners_over95",
@@ -1484,7 +1484,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 5.87
+          "odds": 6.03
         }
       ]
     },
@@ -5434,36 +5434,36 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Hradcem Králové a SK Artis Brno, který se odehraje v Malšovické aréně, slibuje zajímavou konfrontaci. Domácí tým se nachází ve smíšené formě, kdy z posledních šesti zápasů zaznamenal dvě výhry, jednu remízu a tři prohry. Na druhé straně hosté z Brna mají stabilnější výkony s jednou prohrou a čtyřmi remízami a výhrami. Statistiky ukazují, že Hradec má mírnou výhodu, pokud jde o očekávané góly (xG), s hodnotou 1.48 oproti 0.8 pro Brno.\n\nVzhledem k formě obou týmů a jejich vzájemným statistikám se očekává, že domácí Hradec bude mít více příležitostí k zakončení, což by mohlo vést k jejich vítězství. Simulace naznačuje, že pravděpodobnost výhry domácích je 47.8 %, zatímco šance na remízu se pohybuje kolem 27.2 %. Hosté by se mohli spolehnout na defenzivní strategii a snažit se o překvapení, avšak jejich šance na vítězství jsou odhadovány na 24.9 %.\n\nCo se týče dalších aspektů zápasu, pravděpodobnost, že oba týmy skórují, je 43.4 %, což naznačuje, že defenzivní řady obou celků mohou být zranitelné. Z pohledu gólů by mohlo být zajímavé sledovat, zda padne více než 2.5 gólů, což má pravděpodobnost 40.5 %. Celkově lze očekávat vyrovnaný zápas, kde domácí tým bude usilovat o tři body, zatímco hosté se pokusí o cenný bod ze hřiště soupeře.",
+    "text": "Zápas mezi Hradcem Králové a SK Artis Brno v rámci Chance Ligy se odehraje na stadionu Malšovická aréna. Domácí tým Hradec Králové se nachází v mírně lepší formě, přičemž posledních šest zápasů vykazuje dvě výhry, dvě remízy a dvě prohry. Naopak hosté z Brna mají stabilnější výkony, s jednou prohrou a čtyřmi remízami a výhrami. Tato forma naznačuje, že zápas by mohl být vyrovnaný, ale Hradec má mírnou výhodu díky domácímu prostředí.\n\nPodle simulovaných dat se očekává, že Hradec Králové vytvoří více šancí, s očekávanými góly (xG) 1.48 oproti 0.8 pro Brno. To naznačuje, že domácí tým by měl mít navrch v ofenzivě. Pravděpodobnost vítězství Hradce je odhadována na 47.8 %, zatímco šance na remízu je 27.2 % a na výhru Brna 24.9 %. Tato čísla ukazují na to, že Hradec je favoritem, ale Brno může překvapit, zejména pokud se mu podaří udržet defenzivu.\n\nCo se týče dalších statistik, pravděpodobnost, že oba týmy skórují, je 43.4 %, což naznačuje, že by mohlo dojít k otevřenému zápasu. Vzhledem k formě obou týmů a jejich schopnosti skórovat, by se dalo očekávat, že zápas bude vyrovnaný, ale s mírnou převahou domácího týmu. Vzhledem k těmto faktorům se dá předpokládat, že Hradec Králové by měl mít dobrou šanci na zisk tří bodů.",
     "model": "gpt-4o-mini",
-    "input_hash": "a486d9dbbb8bd0a3",
-    "generated_at": "2026-10-08T09:35:34Z",
-    "text_en": "The upcoming match between Hradec Králové and SK Artis Brno in the Chance Liga is set to take place at the Malšovická aréna on October 10, 2026. Hradec Králové enters the match with a mixed recent form, having recorded two wins, three losses, and one draw in their last six matches. In contrast, SK Artis Brno has shown slightly better form, with one win, three draws, and two losses in the same timeframe. This suggests that while both teams have struggled for consistency, Hradec Králové may have a slight edge playing at home.\n\nStatistical simulations indicate that Hradec Králové has a higher expected goals (xG) value of 1.48 compared to SK Artis Brno's 0.8. This suggests that Hradec Králové is likely to create more scoring opportunities during the match. The simulation also shows a probability of 47.8% for a home win, 27.2% for a draw, and 24.9% for an away victory. Given these figures, Hradec Králové may be favored to secure the three points, particularly with the support of their home crowd.\n\nThe match referee, Tomáš Klíma, will oversee the game, which could play a role in the flow and discipline of the match. With both teams having shown vulnerabilities in defense, there is a reasonable chance for both teams to score, as indicated by the 43.4% probability for both teams to find the net. Overall, while Hradec Králové may be expected to dominate possession and create more chances, SK Artis Brno could capitalize on any defensive lapses, making for an intriguing contest."
+    "input_hash": "0270deb657dbd82b",
+    "generated_at": "2026-10-08T23:15:50Z",
+    "text_en": "The upcoming match between Hradec Králové and SK Artis Brno in the Chance Liga is set to take place at the Malšovická aréna on October 10, 2026. Hradec Králové enters the match with a mixed recent form, recording two wins, three losses, and one draw in their last six matches. In contrast, SK Artis Brno has shown slightly better form, with one win, four draws, and one loss in the same period. This disparity in recent performance could give Hradec Králové a slight edge at home.\n\nStatistical simulations suggest that Hradec Králové is favored to score more goals, with an expected goals (xG) value of 1.48 compared to SK Artis Brno's 0.8. The odds reflect this sentiment, with Hradec Králové being the favorites at 1.54 to win, while SK Artis Brno's odds stand at 6.46. The likelihood of both teams scoring is estimated at 43.4%, indicating a potential for a competitive match, though Hradec Králové's home advantage may play a crucial role in their performance.\n\nReferee Tomáš Klíma will oversee the match, and his officiating style could impact the flow of the game. Given Hradec Králové's home ground advantage and their slightly higher xG, they are expected to dominate possession and create more scoring opportunities. However, if SK Artis Brno can capitalize on counter-attacks and maintain solid defensive organization, they could pose a threat and potentially secure a draw or even a surprise win. Overall, Hradec Králové is likely to come out on top, but the match could still be closely contested."
   },
-  "refreshed_at": "2026-10-08T09:35:22.879389Z",
+  "refreshed_at": "2026-10-08T23:15:42.772739Z",
   "odds": {
-    "home": 1.52,
-    "draw": 4.08,
-    "away": 6.06,
+    "home": 1.54,
+    "draw": 4.17,
+    "away": 6.46,
     "under15": 3.71,
-    "over15": 1.27,
-    "under25": 1.95,
-    "over25": 1.85,
-    "under35": 1.34,
+    "over15": 1.28,
+    "under25": 1.96,
+    "over25": 1.86,
+    "under35": 1.35,
     "over35": 3.19,
     "btts": 1.88,
     "source": "chance",
     "home_scoreless": 5.78,
     "home_scored2plus": 1.62,
     "home_clean_sheet": 2.12,
-    "home_ht_leading": 2.01,
-    "home_ht_draw": 2.26,
-    "home_ht_behind": 5.87,
+    "home_ht_leading": 2.07,
+    "home_ht_draw": 2.32,
+    "home_ht_behind": 6.03,
     "away_clean_sheet": 5.78,
     "away_scoreless": 2.12,
     "away_scored2plus": 4.4,
-    "away_ht_behind": 2.01,
-    "away_ht_draw": 2.26,
-    "away_ht_leading": 5.87
+    "away_ht_behind": 2.07,
+    "away_ht_draw": 2.32,
+    "away_ht_leading": 6.03
   }
 }

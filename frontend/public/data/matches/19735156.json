@@ -195,7 +195,7 @@
       "player_name": "Paul Nebel",
       "type_id": 1952,
       "type_name": "Adductor Injury",
-      "type_name_cs": "Adductor Injury",
+      "type_name_cs": "Zranění adduktoru",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-06",
@@ -237,7 +237,7 @@
       "player_name": "Eliesse Ben Seghir",
       "type_id": 531,
       "type_name": "Knock",
-      "type_name_cs": "Knock",
+      "type_name_cs": "Menší zranění",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-19",
@@ -279,7 +279,7 @@
       "player_name": "Kennet Eichhorn",
       "type_id": 336,
       "type_name": "Ill",
-      "type_name_cs": "Ill",
+      "type_name_cs": "Nemoc",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-01",
@@ -1448,7 +1448,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.44
+          "odds": 1.45
         },
         {
           "key": "yellow_under5",
@@ -1463,7 +1463,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.39
+          "odds": 1.4
         },
         {
           "key": "clean_sheet",
@@ -1471,7 +1471,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 5.39
+          "odds": 5.37
         },
         {
           "key": "scored2plus",
@@ -1518,7 +1518,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 3.29
+          "odds": 3.27
         },
         {
           "key": "scoreless",
@@ -1526,7 +1526,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 4.16
+          "odds": 4.15
         },
         {
           "key": "under25",
@@ -1534,7 +1534,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.79
+          "odds": 2.78
         },
         {
           "key": "yellow_5plus",
@@ -1549,7 +1549,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.54
+          "odds": 2.55
         },
         {
           "key": "ht_behind",
@@ -1557,7 +1557,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.59
+          "odds": 2.58
         },
         {
           "key": "red_card",
@@ -1582,7 +1582,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.66
+          "odds": 1.67
         },
         {
           "key": "shots_over",
@@ -1646,7 +1646,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.44
+          "odds": 1.45
         },
         {
           "key": "corners_over95",
@@ -1677,7 +1677,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.59
+          "odds": 2.58
         },
         {
           "key": "btts",
@@ -1685,7 +1685,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.39
+          "odds": 1.4
         },
         {
           "key": "clean_sheet",
@@ -1693,7 +1693,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 4.16
+          "odds": 4.15
         },
         {
           "key": "yellow_under5",
@@ -1715,7 +1715,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.79
+          "odds": 2.78
         },
         {
           "key": "corners_under95",
@@ -1731,7 +1731,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.29
+          "odds": 3.27
         },
         {
           "key": "scoreless",
@@ -1739,7 +1739,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.39
+          "odds": 5.37
         },
         {
           "key": "red_card",
@@ -1754,7 +1754,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.54
+          "odds": 2.55
         }
       ]
     },
@@ -1766,7 +1766,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.39
+          "odds": 1.4
         },
         {
           "key": "over15",
@@ -1845,7 +1845,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.44
+          "odds": 1.45
         },
         {
           "key": "scored2plus",
@@ -1875,7 +1875,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.79
+          "odds": 2.78
         },
         {
           "key": "corners_over95",
@@ -1963,7 +1963,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.39
+          "odds": 1.4
         },
         {
           "key": "over15",
@@ -2035,7 +2035,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.44
+          "odds": 1.45
         },
         {
           "key": "corners_over95",
@@ -2058,7 +2058,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.79
+          "odds": 2.78
         },
         {
           "key": "scored2plus",
@@ -7079,40 +7079,40 @@
     ]
   },
   "odds": {
-    "home": 2.99,
-    "draw": 4.09,
+    "home": 2.98,
+    "draw": 4.08,
     "away": 2.15,
-    "under15": 5.87,
+    "under15": 5.85,
     "over15": 1.13,
-    "under25": 2.79,
-    "over25": 1.44,
+    "under25": 2.78,
+    "over25": 1.45,
     "under35": 1.73,
     "over35": 2.14,
-    "btts": 1.39,
+    "btts": 1.4,
     "corners_under95": 2.04,
     "corners_over95": 1.7,
     "source": "chance",
-    "home_scoreless": 4.16,
+    "home_scoreless": 4.15,
     "home_scored2plus": 2.01,
-    "home_clean_sheet": 5.39,
-    "home_ht_leading": 3.29,
-    "home_ht_draw": 2.54,
-    "home_ht_behind": 2.59,
+    "home_clean_sheet": 5.37,
+    "home_ht_leading": 3.27,
+    "home_ht_draw": 2.55,
+    "home_ht_behind": 2.58,
     "home_more_corners": 2.09,
-    "away_clean_sheet": 4.16,
-    "away_scoreless": 5.39,
-    "away_scored2plus": 1.66,
-    "away_ht_behind": 3.29,
-    "away_ht_draw": 2.54,
-    "away_ht_leading": 2.59,
+    "away_clean_sheet": 4.15,
+    "away_scoreless": 5.37,
+    "away_scored2plus": 1.67,
+    "away_ht_behind": 3.27,
+    "away_ht_draw": 2.55,
+    "away_ht_leading": 2.58,
     "away_more_corners": 2.02
   },
   "ai_analysis": {
-    "text": "Zápas mezi FSV Mainz 05 a Bayer 04 Leverkusen, který se uskuteční 10. října 2026 na Mewa Areně, slibuje zajímavou konfrontaci. Domácí Mainz se nachází v rozporuplné formě, kdy vyhráli dva z posledních čtyř zápasů, ale také zaznamenali jednu remízu a jednu prohru. Na druhé straně Leverkusen vykazuje stabilnější výkony, s dvěma výhrami a jednou remízou v posledních čtyřech utkáních. Historie vzájemných zápasů ukazuje vyrovnanost, přičemž poslední tři zápasy skončily remízou nebo těsným vítězstvím.\n\nPodle simulací má Mainz lehkou převahu v očekávaných gólech (xG 1.86 vs. 1.66 pro Leverkusen), což naznačuje, že by mohli mít více příležitostí k ohrožení branky. Vysoký procentuální podíl (67.7%) na možnost, že oba týmy skórují, naznačuje, že zápas by mohl být ofenzivně laděný. Očekává se, že Leverkusen se pokusí využít své rychlé protiútoky, zatímco Mainz by měl hledat příležitosti v kombinacích na útočné polovině.\n\nVzhledem k aktuální formě a vzájemným zápasům lze očekávat vyrovnaný duel, kde by remíza nebyla překvapením. Nicméně, pokud se Leverkusen podaří udržet tlak a využít své šance, mohou si odvézt tři body. Klíčovými faktory budou efektivita v koncovce a schopnost obran obou týmů udržet čisté konto.",
+    "text": "Zápas mezi FSV Mainz 05 a Bayer 04 Leverkusen, který se odehraje na Mewa Areně, slibuje zajímavou konfrontaci. Domácí Mainz se nachází v mírně lepší formě, když z posledních čtyř zápasů zaznamenal dvě vítězství, jednu remízu a jednu prohru. Na druhé straně Leverkusen má také solidní výkonnost, s podobným poměrem, ale s jednou remízou navíc. Historie vzájemných zápasů ukazuje na vyrovnané souboje, což naznačuje, že i tento duel by mohl být těsný.\n\nPodle simulací očekáváme, že Mainz by mohl mít mírně vyšší očekávané góly (xG) s hodnotou 1.86 oproti 1.66 Leverkusenu, což naznačuje, že domácí by mohli mít více příležitostí ke skórování. Statistika \"oba týmy skórují\" (BTTS) je na úrovni 67.7 %, což ukazuje na vysokou pravděpodobnost, že oba celky se prosadí. Zároveň je zde i značná šance na více než 2.5 góly v zápase (68.2 %), což může naznačovat otevřenější styl hry.\n\nCo se týče rozhodčích, Max Burda bude mít na starosti řízení zápasu, což může ovlivnit dynamiku hry. S ohledem na formu obou týmů a historické výsledky se očekává vyrovnaný zápas, kde by klíčovými faktory mohly být efektivita v útoku a schopnost obrany udržet čisté konto. Vzhledem k vyrovnanosti obou celků je pravděpodobné, že zápas skončí remízou nebo těsným vítězstvím jednoho z týmů.",
     "model": "gpt-4o-mini",
-    "input_hash": "b3fb589a04770b87",
-    "generated_at": "2026-10-08T09:38:48Z",
-    "text_en": "The upcoming Bundesliga match between FSV Mainz 05 and Bayer 04 Leverkusen at Mewa Arena promises to be an intriguing encounter. Both teams have shown mixed recent form, with Mainz recording two wins, one draw, and one loss in their last four matches, while Leverkusen has secured two wins, one draw, and one loss. Historically, their head-to-head matches have been closely contested, with recent games often featuring high-scoring outcomes, indicating a potential for an exciting match.\n\nIn terms of statistical analysis, the expected goals (xG) suggest a slight advantage for Mainz with 1.86 compared to Leverkusen's 1.66. This indicates that Mainz could create more quality chances during the match. The simulation results show a probability of 42.5% for a home win, 24.8% for a draw, and 32.7% for an away victory. The likelihood of both teams scoring (67.7%) and the possibility of over 2.5 goals (68.2%) further highlight the potential for an action-packed game.\n\nWith referee Max Burda officiating, the match could see a dynamic flow, influenced by the attacking styles of both teams. Mainz will look to capitalize on their home advantage, while Leverkusen will aim to leverage their recent successes to secure an away victory. Given the recent form and the attacking capabilities of both sides, fans can expect a competitive match that could go either way."
+    "input_hash": "279cb82112996e6f",
+    "generated_at": "2026-10-08T23:18:50Z",
+    "text_en": "The upcoming Bundesliga match between FSV Mainz 05 and Bayer 04 Leverkusen at the Mewa Arena promises to be an intriguing contest. Both teams have shown mixed form recently, with Mainz securing two wins, one draw, and one loss in their last four matches. Leverkusen, on the other hand, has recorded two wins, one draw, and one loss in the same timeframe. The head-to-head encounters between these two sides have been closely contested, with recent matches often resulting in high-scoring draws, indicating that both teams are capable of finding the back of the net.\n\nStatistical analysis suggests that the match could be competitive, with Mainz having an expected goals (xG) of 1.86 compared to Leverkusen's 1.66. This indicates that both teams are likely to create scoring opportunities. The simulation data indicates a 42.5% chance of a home win for Mainz, a 24.8% chance of a draw, and a 32.7% chance of an away victory for Leverkusen. Furthermore, there is a high probability (67.7%) that both teams will score, which aligns with their recent offensive performances.\n\nThe referee for the match, Max Burda, will play a crucial role in managing the game, especially given the attacking nature of both teams. With the potential for a dynamic and open match, fans can expect an exciting encounter that may feature several goals. Overall, the combination of current form, historical matchups, and statistical insights suggests that this match could be a thrilling display of Bundesliga football."
   },
-  "refreshed_at": "2026-10-08T09:38:38.537493Z"
+  "refreshed_at": "2026-10-08T23:18:44.148275Z"
 }

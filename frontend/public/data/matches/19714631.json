@@ -183,16 +183,16 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37616262,
-      "player_name": "Jan Faberski",
-      "type_id": 1929,
-      "type_name": "Torn Lateral Knee Ligament",
-      "type_name_cs": "Torn Lateral Knee Ligament",
+      "player_id": 16838270,
+      "player_name": "Filip Yavorov Krastev",
+      "type_id": 603,
+      "type_name": "Achilles tendon problems",
+      "type_name_cs": "Problémy s Achillovou šlachou",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-04-03",
-      "end_date": null,
-      "games_missed": 15,
+      "start_date": "2026-05-11",
+      "end_date": "2026-11-01",
+      "games_missed": 11,
       "likely_available": false
     },
     {
@@ -211,8 +211,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Koen Kostons",
+        "jersey_number": 10,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Ibrahim Cissoko",
+        "jersey_number": 22,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Thijs Oosting",
+        "jersey_number": 25,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Dylan Mbayo",
+        "jersey_number": 11,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Tobias Sommer",
+        "jersey_number": 8,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Nick Fichtinger",
+        "jersey_number": 34,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Nick Viergever",
+        "jersey_number": 24,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Simon Graves",
+        "jersey_number": 28,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Jasper Schendelaar",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Sherel Floranus",
+        "jersey_number": 2,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Olivier Aertssen",
+        "jersey_number": 3,
+        "formation_field": "2:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Ilyes Hamache",
+        "jersey_number": 11,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Rafik El Arguioui",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Devid Eugene Bouah",
+        "jersey_number": 2,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Fabian Kvam",
+        "jersey_number": 15,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Jamal Amofa",
+        "jersey_number": 6,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Mathieu Maertens",
+        "jersey_number": 33,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Nicky Souren",
+        "jersey_number": 8,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Morgan Costarelli",
+        "jersey_number": 28,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Billy van Duijl",
+        "jersey_number": 14,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Ismaël Baouf",
+        "jersey_number": 4,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Thijs Jansen",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ]
   },
   "h2h": [
     {
@@ -5979,13 +6091,13 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi PEC Zwolle a SC Cambuur v rámci Eredivisie slibuje být vyrovnaným střetnutím, zejména vzhledem k formě obou týmů. Domácí PEC Zwolle má za sebou solidní sérii výsledků, přičemž posledních pět zápasů skončilo čtyřmi výhrami a jednou remízou. Na druhé straně SC Cambuur se nachází v podobné situaci, s několika remízami a jednou výhrou, což naznačuje, že oba týmy budou chtít získat tři body.\n\nHistorie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž poslední tři duely skončily různými výsledky. Zápasy jsou často vyrovnané s vysokým počtem gólů, což naznačuje, že i tentokrát bychom mohli být svědky ofenzivního fotbalu. Statistiky očekávaných gólů (xG) naznačují, že SC Cambuur má mírně vyšší šanci na skórování, což může hrát klíčovou roli v průběhu utkání.\n\nAnalýza také ukazuje na vysokou pravděpodobnost, že oba týmy vstřelí gól (70,9 %) a na to, že padne více než 2,5 gólu (71,7 %). To by mohlo znamenat, že diváci se mohou těšit na atraktivní a dynamický zápas, ve kterém se očekává aktivní hra na obou stranách. Rozhodujícími faktory mohou být individuální výkony klíčových hráčů a taktika, kterou oba trenéři zvolí.",
+    "text": "Zápas mezi PEC Zwolle a SC Cambuur se odehraje na stadionu MAC³PARK Stadion v rámci Eredivisie. Domácí tým, PEC Zwolle, vykazuje v posledních zápasech solidní formu, přičemž v posledních pěti utkáních zaznamenal čtyři výhry a jednu remízu. Na druhé straně SC Cambuur má smíšené výsledky, s jednou výhrou, dvěma remízami a dvěma prohrami v posledních pěti zápasech. Historie vzájemných zápasů ukazuje na vyrovnanost, s mírnou převahou SC Cambuur v posledních utkáních.\n\nPodle simulací očekávaných gólů (xG) mají oba týmy podobné šance na vstřelení branek, přičemž PEC Zwolle má xG 1.77 a SC Cambuur 1.95. To naznačuje, že zápas by mohl být vyrovnaný, s možností, že oba týmy skórují, což je podpořeno i vysokou pravděpodobností 70.9 % na obě strany skórující. Očekává se tedy, že zápas bude dynamický a ofenzivně laděný.\n\nNa základě aktuální formy a historických výsledků se dá předpokládat, že zápas skončí remízou nebo těsným vítězstvím jednoho z týmů. Vzhledem k tomu, že oba týmy mají tendenci skórovat, lze očekávat, že se diváci dočkají atraktivního fotbalu s několika brankami. Rozhodčí Sander van der Eijk bude mít důležitou roli v udržení fair play a plynulosti hry.",
     "model": "gpt-4o-mini",
-    "input_hash": "52e112e49a4446dd",
-    "generated_at": "2026-10-07T10:10:43Z",
-    "text_en": "The upcoming Eredivisie match between PEC Zwolle and SC Cambuur at the MAC³PARK Stadion promises to be an intriguing encounter. Both teams have shown mixed form recently, with PEC Zwolle struggling, having recorded four losses in their last six matches, alongside a win and a draw. In contrast, SC Cambuur has fared slightly better, achieving two wins and two draws in their last six games, though they too have faced their share of defeats. This disparity in recent performance may give SC Cambuur a psychological edge heading into the match.\n\nHistorically, the head-to-head encounters between these two teams have been closely contested, with both sides having their fair share of victories. The last five matches have seen a mix of results, indicating that either team can come out on top. The simulation data suggests a slight advantage for SC Cambuur, with an expected goals (xG) figure of 1.95 compared to PEC Zwolle's 1.77. This may indicate that SC Cambuur is more likely to create higher-quality scoring opportunities during the match.\n\nWith a high probability of both teams scoring (70.9%) and a strong likelihood of the match featuring over 2.5 goals (71.7%), fans can expect an exciting and action-packed game. The referee for the match, Sander van der Eijk, will play a crucial role in maintaining control, especially given the stakes for both teams. Overall, while SC Cambuur may enter as slight favorites based on recent form and statistical analysis, PEC Zwolle will be eager to leverage home advantage and turn their fortunes around."
+    "input_hash": "74781cbb08b4b3a1",
+    "generated_at": "2026-10-08T23:23:12Z",
+    "text_en": "The upcoming match between PEC Zwolle and SC Cambuur in the Eredivisie is set to take place at the MAC³PARK Stadion on October 11, 2026. Both teams have shown inconsistent form leading up to this encounter. PEC Zwolle has recorded one win, three losses, and one draw in their last five matches, while SC Cambuur has managed two wins, three losses, and one draw. Historical head-to-head results indicate a competitive rivalry, with both teams having won matches against each other in recent years.\n\nIn terms of expected performance, statistical simulations suggest a closely contested match, with expected goals (xG) indicating a slight advantage for SC Cambuur (1.95) over PEC Zwolle (1.77). The likelihood of both teams scoring is high, with a 70.9% probability of both teams finding the back of the net. This could lead to an exciting match with end-to-end action, as both teams have shown vulnerabilities in defense, particularly in their recent outings.\n\nThe referee for this match, Sander van der Eijk, will play a crucial role in maintaining discipline and ensuring a fair contest. Given the recent form and the attacking potential of both sides, fans can expect a dynamic game that could swing either way, with the possibility of a high-scoring affair. The odds reflect this uncertainty, with PEC Zwolle slightly favored at 1.96 to win, while Cambuur's odds sit at 3.31. Overall, this match promises to be an engaging fixture in the Eredivisie."
   },
-  "refreshed_at": "2026-10-08T09:40:58.844907Z",
+  "refreshed_at": "2026-10-08T23:23:05.207306Z",
   "odds": {
     "home": 1.96,
     "draw": 3.97,

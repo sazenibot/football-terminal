@@ -209,7 +209,7 @@
       "player_name": "Nicolas-Gerrit Kühn",
       "type_id": 667,
       "type_name": "Torn Muscle Bundle",
-      "type_name_cs": "Torn Muscle Bundle",
+      "type_name_cs": "Natržený svalový snop",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-08",
@@ -219,8 +219,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Linton Maina",
+        "jersey_number": 37,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Jahmai Simpson-Pusey",
+        "jersey_number": 22,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Marvin Schwäbe",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Sebastian Sebulonsen",
+        "jersey_number": 28,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Mikey Moore",
+        "jersey_number": 47,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Saïd El Mala",
+        "jersey_number": 10,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Gideon Mensah",
+        "jersey_number": 14,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Tom Krauß",
+        "jersey_number": 5,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Ísak Jóhannesson",
+        "jersey_number": 8,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Ellyes Skhiri",
+        "jersey_number": 6,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Luka Lochoshvili",
+        "jersey_number": 24,
+        "formation_field": "2:3"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Hugo Bolin",
+        "jersey_number": 38,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Franck Honorat",
+        "jersey_number": 9,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Jan Leszczyński",
+        "jersey_number": 5,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Kevin Diks",
+        "jersey_number": 4,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Moritz Nicolas",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Philipp Sander",
+        "jersey_number": 16,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Zento Uno",
+        "jersey_number": 47,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Isac Lidberg",
+        "jersey_number": 3,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Florian Neuhaus",
+        "jersey_number": 10,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Lukas Ullrich",
+        "jersey_number": 26,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Ko Itakura",
+        "jersey_number": 6,
+        "formation_field": "2:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1202,7 +1314,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.42
+          "odds": 1.44
         },
         {
           "key": "over15",
@@ -1210,7 +1322,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.14
+          "odds": 1.15
         },
         {
           "key": "shots_over",
@@ -1274,7 +1386,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.48
+          "odds": 1.5
         },
         {
           "key": "corners_over95",
@@ -1304,7 +1416,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 3.55
+          "odds": 3.52
         },
         {
           "key": "more_corners",
@@ -1320,7 +1432,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.68
+          "odds": 2.6
         },
         {
           "key": "scored2plus",
@@ -1328,7 +1440,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.64
+          "odds": 1.68
         },
         {
           "key": "corners_under95",
@@ -1336,7 +1448,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.13
+          "odds": 2.12
         },
         {
           "key": "yellow_5plus",
@@ -1351,7 +1463,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.47
+          "odds": 2.52
         },
         {
           "key": "clean_sheet",
@@ -1359,7 +1471,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.76
+          "odds": 3.73
         },
         {
           "key": "scoreless",
@@ -1367,7 +1479,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.55
+          "odds": 5.39
         },
         {
           "key": "red_card",
@@ -1382,7 +1494,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.51
+          "odds": 2.48
         }
       ],
       "away": [
@@ -1392,7 +1504,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.14
+          "odds": 1.15
         },
         {
           "key": "over25",
@@ -1400,7 +1512,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.48
+          "odds": 1.5
         },
         {
           "key": "shots_over",
@@ -1479,7 +1591,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.47
+          "odds": 2.52
         },
         {
           "key": "btts",
@@ -1487,7 +1599,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.42
+          "odds": 1.44
         },
         {
           "key": "scoreless",
@@ -1495,7 +1607,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 3.76
+          "odds": 3.73
         },
         {
           "key": "scored2plus",
@@ -1503,7 +1615,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.17
+          "odds": 2.18
         },
         {
           "key": "more_corners",
@@ -1511,7 +1623,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.58
+          "odds": 2.57
         },
         {
           "key": "yellow_under5",
@@ -1533,7 +1645,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.13
+          "odds": 2.12
         },
         {
           "key": "red_card",
@@ -1548,7 +1660,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.55
+          "odds": 3.52
         },
         {
           "key": "clean_sheet",
@@ -1556,7 +1668,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.55
+          "odds": 5.39
         },
         {
           "key": "under25",
@@ -1564,7 +1676,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.68
+          "odds": 2.6
         },
         {
           "key": "ht_draw",
@@ -1572,7 +1684,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.51
+          "odds": 2.48
         }
       ]
     },
@@ -1584,7 +1696,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.42
+          "odds": 1.44
         },
         {
           "key": "over15",
@@ -1592,7 +1704,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.14
+          "odds": 1.15
         },
         {
           "key": "over25",
@@ -1600,7 +1712,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.48
+          "odds": 1.5
         },
         {
           "key": "yellow_5plus",
@@ -1685,7 +1797,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.13
+          "odds": 2.12
         },
         {
           "key": "more_corners",
@@ -1743,7 +1855,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 2.68
+          "odds": 2.6
         },
         {
           "key": "yellow_under5",
@@ -1781,7 +1893,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.42
+          "odds": 1.44
         },
         {
           "key": "over15",
@@ -1789,7 +1901,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.14
+          "odds": 1.15
         },
         {
           "key": "over25",
@@ -1797,7 +1909,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.48
+          "odds": 1.5
         },
         {
           "key": "more_corners",
@@ -1890,7 +2002,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.13
+          "odds": 2.12
         },
         {
           "key": "red_card",
@@ -1919,7 +2031,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.68
+          "odds": 2.6
         },
         {
           "key": "yellow_under5",
@@ -6502,40 +6614,40 @@
     ]
   },
   "odds": {
-    "home": 2.03,
-    "draw": 4.08,
-    "away": 3.27,
-    "under15": 5.64,
-    "over15": 1.14,
-    "under25": 2.68,
-    "over25": 1.48,
-    "under35": 1.68,
-    "over35": 2.22,
-    "btts": 1.42,
-    "corners_under95": 2.13,
+    "home": 2.07,
+    "draw": 4.01,
+    "away": 3.2,
+    "under15": 5.47,
+    "over15": 1.15,
+    "under25": 2.6,
+    "over25": 1.5,
+    "under35": 1.64,
+    "over35": 2.29,
+    "btts": 1.44,
+    "corners_under95": 2.12,
     "corners_over95": 1.64,
     "source": "chance",
-    "home_scoreless": 5.55,
-    "home_scored2plus": 1.64,
-    "home_clean_sheet": 3.76,
-    "home_ht_leading": 2.47,
-    "home_ht_draw": 2.51,
-    "home_ht_behind": 3.55,
+    "home_scoreless": 5.39,
+    "home_scored2plus": 1.68,
+    "home_clean_sheet": 3.73,
+    "home_ht_leading": 2.52,
+    "home_ht_draw": 2.48,
+    "home_ht_behind": 3.52,
     "home_more_corners": 1.68,
-    "away_clean_sheet": 5.55,
-    "away_scoreless": 3.76,
-    "away_scored2plus": 2.17,
-    "away_ht_behind": 2.47,
-    "away_ht_draw": 2.51,
-    "away_ht_leading": 3.55,
-    "away_more_corners": 2.58
+    "away_clean_sheet": 5.39,
+    "away_scoreless": 3.73,
+    "away_scored2plus": 2.18,
+    "away_ht_behind": 2.52,
+    "away_ht_draw": 2.48,
+    "away_ht_leading": 3.52,
+    "away_more_corners": 2.57
   },
   "ai_analysis": {
-    "text": "Zápas mezi FC Köln a Borussií Mönchengladbach se odehraje na RheinEnergieStadion a slibuje zajímavé střetnutí dvou rivalů. Domácí tým FC Köln se nachází v mírně lepší formě, přičemž v posledních čtyřech zápasech zaznamenal jednu výhru, jednu remízu a dvě prohry. Naopak Borussia Mönchengladbach má za sebou sérii čtyř remíz, což naznačuje, že se snaží najít stabilitu, ale zatím se jim nedaří vyhrávat.\n\nHistorie vzájemných zápasů ukazuje na vyrovnanost obou týmů, přičemž poslední tři duely skončily remízou a oba týmy si vyměnily výhry. To naznačuje, že se můžeme těšit na vyrovnanou bitvu, kde by mohly padnout góly na obou stranách. Očekávané xG hodnoty naznačují, že FC Köln má mírnou výhodu s 2.1, zatímco Borussia Mönchengladbach má 1.57, což by mohlo znamenat, že domácí tým bude mít více příležitostí ke skórování.\n\nPodle simulací a aktuálních statistik je pravděpodobné, že zápas skončí remízou, což je vyhodnoceno na 24 %. Vzhledem k vysoké pravděpodobnosti, že oba týmy skórují (69.3 %), a také k očekávanému počtu gólů (70.7 % pro over 2.5), se dá očekávat ofenzivní fotbal s mnoha šancemi na obou stranách. Celkově se dá říci, že zápas by mohl být vyrovnaný a divácky atraktivní.",
+    "text": "Zápas mezi FC Köln a Borussií Mönchengladbach se odehraje na RheinEnergieStadion a očekává se vyrovnaný duel. Domácí tým má smíšenou formu s jednou výhrou, jednou remízou a dvěma porážkami v posledních čtyřech zápasech. Naopak Borussia Mönchengladbach se nachází v horší situaci, když ve všech čtyřech posledních utkáních nezvítězila. Historie vzájemných zápasů naznačuje, že oba týmy mají tendenci hrát vyrovnané duely, přičemž poslední čtyři zápasy skončily s minimálně třemi góly.\n\nPodle simulací očekáváme, že FC Köln bude mít mírnou výhodu, s očekávanými góly (xG) 2.1 oproti 1.57 pro hosty. Pravděpodobnost, že zápas skončí remízou, je 24%, což naznačuje, že i tentokrát by se mohlo jednat o vyrovnaný souboj. Na základě historických výsledků je také vysoká šance na to, že oba týmy skórují, s pravděpodobností 69.3%.\n\nCo se týče herních stylů, FC Köln by mohl mít více příležitostí k útočení a dominaci v zápase, zejména vzhledem k domácímu prostředí. Na druhé straně Borussia Mönchengladbach bude muset zlepšit svou obranu, aby se vyhnula dalšímu neúspěchu. Celkově lze očekávat atraktivní zápas s možností mnoha gólových šancí na obou stranách.",
     "model": "gpt-4o-mini",
-    "input_hash": "0475e031004fb5f8",
-    "generated_at": "2026-10-08T09:39:22Z",
-    "text_en": "The upcoming Bundesliga match between FC Köln and Borussia Mönchengladbach at the RheinEnergieStadion promises to be an intriguing contest. Both teams have had mixed recent performances, with FC Köln struggling with two losses and a draw in their last four matches, while Borussia Mönchengladbach has also faced difficulties, suffering four consecutive losses. This context suggests a tense encounter, as both teams will be eager to secure points to improve their standings.\n\nHistorically, matches between these two sides have been closely contested, with several high-scoring draws and a mix of results in their recent head-to-head encounters. The simulation data indicates that FC Köln has a slight advantage in expected goals (xG) with 2.1 compared to Mönchengladbach's 1.57. This suggests that Köln may create more scoring opportunities, but given both teams' struggles, the match could still be unpredictable.\n\nThe referee for this match, Florian Badstübner, will play a crucial role in maintaining order, especially considering the pressure both teams will face. With a high likelihood of both teams scoring (69.3% chance according to the simulation), fans can expect an engaging match with potential for excitement. Overall, while FC Köln might be favored to secure a win based on recent form and expected goals, the unpredictable nature of derby matches means that anything can happen on the day."
+    "input_hash": "4b3e7f0f01efbbad",
+    "generated_at": "2026-10-08T23:19:26Z",
+    "text_en": "The upcoming Bundesliga match between FC Köln and Borussia Mönchengladbach at the RheinEnergieStadion promises to be an intriguing encounter. Both teams have shown mixed recent form, with FC Köln struggling, having recorded one win, one draw, and two losses in their last four matches. In contrast, Borussia Mönchengladbach has faced a tougher stretch, losing all four of their recent games. This context suggests that Köln may have a slight advantage playing at home, where they will look to capitalize on their opponents' poor run.\n\nHistorically, matches between these two teams have been high-scoring and competitive, with their last five encounters yielding a mix of draws and wins for both sides. The expected goals (xG) from simulations indicate that FC Köln is projected to create more chances (2.1 xG) compared to Mönchengladbach (1.57 xG), which could translate into a more dominant performance for the home side. Additionally, the simulation suggests a high likelihood of both teams scoring, with a 69.3% chance of \"both teams to score\" (BTTS), indicating that defensive lapses could be a factor in the match.\n\nReferee Florian Badstübner will oversee the match, and with the stakes high for both teams, the atmosphere at the RheinEnergieStadion is expected to be intense. Given the recent trends and statistical insights, FC Köln may be favored to secure a victory, but Borussia Mönchengladbach will be eager to turn their fortunes around. The match could see plenty of goals, making it an exciting fixture for fans and analysts alike."
   },
-  "refreshed_at": "2026-10-08T09:39:14.681176Z"
+  "refreshed_at": "2026-10-08T23:19:19.616925Z"
 }

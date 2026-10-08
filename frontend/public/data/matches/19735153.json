@@ -179,11 +179,25 @@
   "sidelined": [
     {
       "side": "home",
+      "player_id": 459011,
+      "player_name": "Sebastian Reinhard Klaas",
+      "type_id": 533,
+      "type_name": "Thigh Problems",
+      "type_name_cs": "Problémy se stehnem",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-10-07",
+      "end_date": null,
+      "games_missed": 0,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37767366,
       "player_name": "Lasse Eickel",
       "type_id": 1935,
       "type_name": "Back Problems",
-      "type_name_cs": "Back Problems",
+      "type_name_cs": "Problémy se zády",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-12",
@@ -193,11 +207,25 @@
     },
     {
       "side": "home",
+      "player_id": 20691915,
+      "player_name": "Marcel Hoffmeier",
+      "type_id": 598,
+      "type_name": "Muscular problems",
+      "type_name_cs": "Svalové problémy",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-21",
+      "end_date": null,
+      "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 37640392,
       "player_name": "Nyamekye Awortwie-Grant",
       "type_id": 2020,
       "type_name": "Outer Ligament Problems",
-      "type_name_cs": "Outer Ligament Problems",
+      "type_name_cs": "Problémy s vnějším vazem",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-07-14",
@@ -206,45 +234,17 @@
       "likely_available": false
     },
     {
-      "side": "away",
-      "player_id": 37614088,
-      "player_name": "Jeremy Alberto Arévalo Mera",
-      "type_id": 1935,
-      "type_name": "Back Problems",
-      "type_name_cs": "Back Problems",
+      "side": "home",
+      "player_id": 20693596,
+      "player_name": "Timo Gayret",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-07",
+      "start_date": "2026-04-18",
       "end_date": null,
-      "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 3862694,
-      "player_name": "Stefan Drljača",
-      "type_id": 1612,
-      "type_name": "No Eligibility",
-      "type_name_cs": "Nezpůsobilost k nasazení",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-09-03",
-      "end_date": "2027-01-28",
-      "games_missed": 6,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 432767,
-      "player_name": "Dan-Axel Zagadou",
-      "type_id": 1612,
-      "type_name": "No Eligibility",
-      "type_name_cs": "Nezpůsobilost k nasazení",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-09-03",
-      "end_date": "2027-01-28",
-      "games_missed": 6,
+      "games_missed": 17,
       "likely_available": false
     },
     {
@@ -263,8 +263,8 @@
     },
     {
       "side": "away",
-      "player_id": 24817462,
-      "player_name": "Leonidas Stergiou",
+      "player_id": 3862694,
+      "player_name": "Stefan Drljača",
       "type_id": 1612,
       "type_name": "No Eligibility",
       "type_name_cs": "Nezpůsobilost k nasazení",
@@ -273,20 +273,6 @@
       "start_date": "2026-09-03",
       "end_date": "2027-01-28",
       "games_missed": 6,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37650883,
-      "player_name": "Maximilian Tobias Herwerth",
-      "type_id": 598,
-      "type_name": "Muscular problems",
-      "type_name_cs": "Muscular problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-14",
-      "end_date": null,
-      "games_missed": 3,
       "likely_available": false
     },
     {
@@ -300,7 +286,35 @@
       "category_cs": "Zranění",
       "start_date": "2026-09-17",
       "end_date": null,
-      "games_missed": 2,
+      "games_missed": 3,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 432767,
+      "player_name": "Dan-Axel Zagadou",
+      "type_id": 1612,
+      "type_name": "No Eligibility",
+      "type_name_cs": "Nezpůsobilost k nasazení",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-09-03",
+      "end_date": "2027-01-28",
+      "games_missed": 6,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 24817462,
+      "player_name": "Leonidas Stergiou",
+      "type_id": 1612,
+      "type_name": "No Eligibility",
+      "type_name_cs": "Nezpůsobilost k nasazení",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-09-03",
+      "end_date": "2027-01-28",
+      "games_missed": 6,
       "likely_available": false
     },
     {
@@ -1200,7 +1214,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 3.24
+          "odds": 3.25
         },
         {
           "key": "corners_over95",
@@ -1239,7 +1253,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 3.14
+          "odds": 3.13
         },
         {
           "key": "more_corners",
@@ -1247,7 +1261,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.74
+          "odds": 2.69
         },
         {
           "key": "team_2plus_yellow",
@@ -1262,7 +1276,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.01
+          "odds": 2.02
         },
         {
           "key": "btts",
@@ -1270,7 +1284,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.42
+          "odds": 1.41
         },
         {
           "key": "clean_sheet",
@@ -1309,7 +1323,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 4.56
+          "odds": 4.58
         },
         {
           "key": "ht_draw",
@@ -1317,7 +1331,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.76
+          "odds": 2.74
         },
         {
           "key": "red_card",
@@ -1390,7 +1404,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.42
+          "odds": 1.41
         },
         {
           "key": "over15",
@@ -1422,7 +1436,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.62
+          "odds": 1.64
         },
         {
           "key": "yellow_under5",
@@ -1444,7 +1458,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 4.56
+          "odds": 4.58
         },
         {
           "key": "scoreless",
@@ -1460,7 +1474,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.14
+          "odds": 3.13
         },
         {
           "key": "scored2plus",
@@ -1491,7 +1505,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.01
+          "odds": 2.02
         },
         {
           "key": "ht_draw",
@@ -1499,7 +1513,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.76
+          "odds": 2.74
         },
         {
           "key": "clean_sheet",
@@ -1507,7 +1521,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.24
+          "odds": 3.25
         },
         {
           "key": "red_card",
@@ -1611,7 +1625,7 @@
           "hits": 1,
           "total": 2,
           "pct": 50.0,
-          "odds": 1.42
+          "odds": 1.41
         },
         {
           "key": "clean_sheet",
@@ -1649,7 +1663,7 @@
           "hits": 1,
           "total": 2,
           "pct": 50.0,
-          "odds": 3.14
+          "odds": 3.13
         },
         {
           "key": "scored2plus",
@@ -1794,7 +1808,7 @@
           "hits": 1,
           "total": 2,
           "pct": 50.0,
-          "odds": 1.42
+          "odds": 1.41
         },
         {
           "key": "clean_sheet",
@@ -1832,7 +1846,7 @@
           "hits": 1,
           "total": 2,
           "pct": 50.0,
-          "odds": 3.14
+          "odds": 3.13
         },
         {
           "key": "scored2plus",
@@ -5495,40 +5509,40 @@
     ]
   },
   "odds": {
-    "home": 4.85,
-    "draw": 4.87,
-    "away": 1.58,
-    "under15": 6.67,
+    "home": 4.88,
+    "draw": 4.81,
+    "away": 1.59,
+    "under15": 6.65,
     "over15": 1.1,
-    "under25": 3.14,
+    "under25": 3.13,
     "over25": 1.36,
     "under35": 1.89,
     "over35": 1.94,
-    "btts": 1.42,
+    "btts": 1.41,
     "corners_under95": 1.96,
     "corners_over95": 1.76,
     "source": "chance",
-    "home_scoreless": 3.24,
+    "home_scoreless": 3.25,
     "home_scored2plus": 2.48,
     "home_clean_sheet": 7.6,
-    "home_ht_leading": 4.56,
-    "home_ht_draw": 2.76,
-    "home_ht_behind": 2.01,
-    "home_more_corners": 2.74,
-    "away_clean_sheet": 3.24,
+    "home_ht_leading": 4.58,
+    "home_ht_draw": 2.74,
+    "home_ht_behind": 2.02,
+    "home_more_corners": 2.69,
+    "away_clean_sheet": 3.25,
     "away_scoreless": 7.6,
     "away_scored2plus": 1.36,
-    "away_ht_behind": 4.56,
-    "away_ht_draw": 2.76,
-    "away_ht_leading": 2.01,
-    "away_more_corners": 1.62
+    "away_ht_behind": 4.58,
+    "away_ht_draw": 2.74,
+    "away_ht_leading": 2.02,
+    "away_more_corners": 1.64
   },
   "ai_analysis": {
-    "text": "Zápas mezi Paderbornem a VfB Stuttgartem se odehraje 10. října 2026 na stadionu Home Deluxe Arena. Domácí tým Paderborn se nachází v mírně slabší formě, když z posledních čtyř zápasů zaznamenal jednu výhru, jednu remízu a dvě prohry. Na druhé straně Stuttgart vykazuje lepší výkonnost, s jednou výhrou a třemi porážkami v posledních čtyřech utkáních. Historie vzájemných zápasů ukazuje vyrovnanost, přičemž poslední zápas skončil těsným vítězstvím Stuttgartu 2:1.\n\nPodle simulací očekáváme, že Paderborn bude mít mírně vyšší očekávané góly (xG) s hodnotou 1.53 oproti Stuttgartu s 1.21. To naznačuje, že domácí tým může být nebezpečnější v ofenzivě, ale zároveň je třeba brát v úvahu, že Stuttgart má silnější defenzivu a větší šance na vítězství, což potvrzují i kurzy, které favorizují hosty.\n\nVzhledem k výše uvedenému se dá očekávat, že zápas bude vyrovnaný, přičemž šance na remízu se pohybují kolem 26.6 %. Možné scénáře zahrnují i variantu, že oba týmy skórují, což má pravděpodobnost 54.9 %. Celkově se dá očekávat, že zápas nabídne zajímavé momenty a může být rozhodnut v posledních minutách, zejména pokud se Paderbornu podaří využít domácí prostředí.",
+    "text": "Zápas mezi Paderbornem a VfB Stuttgartem, který se odehraje 10. října 2026 na stadionu Home Deluxe Arena, slibuje být zajímavým střetnutím. Domácí Paderborn se nachází v mírně slabší formě s jednou výhrou, jednou remízou a dvěma prohrami v posledních čtyřech zápasech. Na druhé straně Stuttgart, ačkoliv také nezáří, má za sebou dvě prohry, jednu výhru a jednu remízu, což naznačuje, že se snaží o zlepšení. Historie vzájemných zápasů ukazuje, že Stuttgart má navrch, přičemž poslední zápas skončil výhrou pro Stuttgart 2:1.\n\nPodle simulací očekáváme, že Paderborn bude mít mírně vyšší očekávané góly (xG) s hodnotou 1.53 oproti Stuttgartu, jehož xG činí 1.21. To naznačuje, že domácí tým by mohl být nebezpečnější v ofenzivě, avšak Stuttgart má zkušenější tým, což může hrát klíčovou roli. Pravděpodobnost, že zápas skončí remízou, je 26.6 %, což ukazuje na vyrovnanost obou týmů, přičemž Stuttgart má 30.1 % šanci na výhru.\n\nZ hlediska statistik je pravděpodobné, že oba týmy vstřelí gól, s pravděpodobností 54.9 % pro \"both teams to score\" (BTTS). Dále, možnost, že zápas skončí s více než 2,5 góly, je 51.4 %, což naznačuje, že by mohlo být vidět několik branek. Rozhodčí Felix Zwayer bude mít na starosti řízení zápasu, což může ovlivnit dynamiku hry, zejména pokud se budou objevovat sporné situace. Celkově se očekává napínavý zápas, kde by obě strany mohly mít své šance na úspěch.",
     "model": "gpt-4o-mini",
-    "input_hash": "c5358c37aa004d0d",
-    "generated_at": "2026-10-08T09:38:29Z",
-    "text_en": "The upcoming Bundesliga match between Paderborn and VfB Stuttgart at the Home Deluxe Arena promises to be an intriguing encounter. Paderborn enters the match with a mixed recent form, having secured one win, one draw, and two losses in their last four matches. In contrast, VfB Stuttgart has shown more consistency with three wins and one loss in their recent outings. Historically, Stuttgart has had the upper hand in their previous encounters, winning the last match-up in May 2015 and drawing another in December 2014.\n\nStatistical simulations suggest that Paderborn may have a slight edge in expected goals (xG) with a value of 1.53 compared to Stuttgart's 1.21. This indicates that while Paderborn may create more goal-scoring opportunities, the overall likelihood of Stuttgart winning the match is supported by their stronger recent form and higher odds of 1.58 for an away victory. The simulation also shows a 54.9% chance for both teams to score, indicating a potentially competitive match with opportunities at both ends.\n\nReferee Felix Zwayer will oversee the match, which could play a role in the game's dynamics. Paderborn's home advantage may be a factor, but Stuttgart's ability to secure points away from home will be crucial. Given the statistics and recent performances, Stuttgart is favored to win, but Paderborn's resilience and home support could lead to a closely contested game."
+    "input_hash": "51f718768c6fc450",
+    "generated_at": "2026-10-08T23:18:34Z",
+    "text_en": "The upcoming Bundesliga match between Paderborn and VfB Stuttgart is set to take place at the Home Deluxe Arena on October 10, 2026. Paderborn enters the match with a mixed recent form, having won one, drawn one, and lost two of their last four matches. In contrast, VfB Stuttgart has shown a stronger performance with two wins, one draw, and one loss in their last four games. Historically, Stuttgart has had the upper hand in their encounters, winning the most recent match in May 2015 and drawing another in December 2014.\n\nStatistical simulations suggest that Paderborn may have a slight advantage in expected goals (xG), with a value of 1.53 compared to Stuttgart's 1.21. This indicates that while Paderborn may create more goal-scoring opportunities, the overall likelihood of winning the match leans towards Stuttgart, with a simulation probability of 43.3% for an away win compared to 30.1% for a home victory. The odds reflect this sentiment, with Stuttgart being favored at 1.59 to win, while Paderborn's odds stand at 4.88.\n\nThe match is officiated by referee Felix Zwayer, known for maintaining control in high-stakes games. With both teams having the potential to score, the likelihood of both teams finding the net is estimated at 54.9%. Given the recent form and head-to-head history, Stuttgart is expected to dominate possession and create more clear-cut chances, while Paderborn will aim to capitalize on any defensive lapses. Overall, the match promises to be competitive, with Stuttgart likely to secure a narrow victory."
   },
-  "refreshed_at": "2026-10-08T09:38:20.450628Z"
+  "refreshed_at": "2026-10-08T23:18:25.509412Z"
 }

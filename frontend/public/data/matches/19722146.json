@@ -385,8 +385,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Dominik Szoboszlai",
+        "jersey_number": 8,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Federico Chiesa",
+        "jersey_number": 14,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Milos Kerkez",
+        "jersey_number": 6,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Jérémy Jacquet",
+        "jersey_number": 5,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Trey Nyoni",
+        "jersey_number": 42,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Alexander Isak",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Florian Wirtz",
+        "jersey_number": 7,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Ronald Araujo",
+        "jersey_number": 33,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Virgil van Dijk",
+        "jersey_number": 4,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Alexis Mac Allister",
+        "jersey_number": 10,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Alisson",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Erling Haaland",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Enzo Fernández",
+        "jersey_number": 17,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Elliot Anderson",
+        "jersey_number": 5,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Rayan Cherki",
+        "jersey_number": 10,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Marc Guéhi",
+        "jersey_number": 6,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Rúben Dias",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Antoine Semenyo",
+        "jersey_number": 42,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Iliman Ndiaye",
+        "jersey_number": 7,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Josko Gvardiol",
+        "jersey_number": 24,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Matheus Nunes",
+        "jersey_number": 27,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Gianluigi Donnarumma",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1552,7 +1664,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 4.3
+          "odds": 4.34
         },
         {
           "key": "over15",
@@ -1560,7 +1672,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.17
+          "odds": 1.18
         },
         {
           "key": "under25",
@@ -1568,7 +1680,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.45
+          "odds": 2.44
         },
         {
           "key": "scored2plus",
@@ -1576,7 +1688,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.01
+          "odds": 2.03
         },
         {
           "key": "yellow_under5",
@@ -1616,7 +1728,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.38
+          "odds": 2.39
         },
         {
           "key": "ht_behind",
@@ -1624,7 +1736,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.96
+          "odds": 2.92
         },
         {
           "key": "scoreless",
@@ -1632,7 +1744,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.16
+          "odds": 4.1
         },
         {
           "key": "corners_over95",
@@ -1656,7 +1768,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.06
+          "odds": 3.08
         },
         {
           "key": "red_card",
@@ -1757,7 +1869,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.17
+          "odds": 1.18
         },
         {
           "key": "over25",
@@ -1773,7 +1885,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.94
+          "odds": 1.93
         },
         {
           "key": "corners_over95",
@@ -1789,7 +1901,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.96
+          "odds": 2.92
         },
         {
           "key": "clean_sheet",
@@ -1797,7 +1909,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.16
+          "odds": 4.1
         },
         {
           "key": "under25",
@@ -1805,7 +1917,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.45
+          "odds": 2.44
         },
         {
           "key": "corners_under95",
@@ -1837,7 +1949,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.38
+          "odds": 2.39
         },
         {
           "key": "ht_behind",
@@ -1845,7 +1957,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.06
+          "odds": 3.08
         },
         {
           "key": "scoreless",
@@ -1853,7 +1965,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.3
+          "odds": 4.34
         },
         {
           "key": "yellow_5plus",
@@ -1873,7 +1985,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.17
+          "odds": 1.18
         },
         {
           "key": "shots_over",
@@ -1990,7 +2102,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.45
+          "odds": 2.44
         },
         {
           "key": "scored2plus",
@@ -2059,7 +2171,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.17
+          "odds": 1.18
         },
         {
           "key": "offsides_over",
@@ -2131,7 +2243,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.45
+          "odds": 2.44
         },
         {
           "key": "more_corners",
@@ -7079,15 +7191,15 @@
     ]
   },
   "odds": {
-    "home": 2.63,
-    "draw": 3.78,
-    "away": 2.49,
-    "under15": 5.07,
-    "over15": 1.17,
-    "under25": 2.45,
+    "home": 2.66,
+    "draw": 3.79,
+    "away": 2.46,
+    "under15": 5.05,
+    "over15": 1.18,
+    "under25": 2.44,
     "over25": 1.56,
     "under35": 1.58,
-    "over35": 2.4,
+    "over35": 2.41,
     "btts": 1.47,
     "corners_under95": 2.1,
     "corners_over95": 1.66,
@@ -7095,29 +7207,29 @@
     "yellow_5plus": 1.7,
     "red_card": 4.61,
     "source": "chance",
-    "home_scoreless": 4.16,
-    "home_scored2plus": 2.01,
-    "home_clean_sheet": 4.3,
-    "home_ht_leading": 3.06,
-    "home_ht_draw": 2.38,
-    "home_ht_behind": 2.96,
+    "home_scoreless": 4.1,
+    "home_scored2plus": 2.03,
+    "home_clean_sheet": 4.34,
+    "home_ht_leading": 3.08,
+    "home_ht_draw": 2.39,
+    "home_ht_behind": 2.92,
     "home_more_corners": 2.13,
     "home_team_2plus_yellow": 1.31,
-    "away_clean_sheet": 4.16,
-    "away_scoreless": 4.3,
-    "away_scored2plus": 1.94,
-    "away_ht_behind": 3.06,
-    "away_ht_draw": 2.38,
-    "away_ht_leading": 2.96,
+    "away_clean_sheet": 4.1,
+    "away_scoreless": 4.34,
+    "away_scored2plus": 1.93,
+    "away_ht_behind": 3.08,
+    "away_ht_draw": 2.39,
+    "away_ht_leading": 2.92,
     "away_more_corners": 1.97,
     "away_team_2plus_yellow": 1.28
   },
   "ai_analysis": {
-    "text": "Zápas mezi Liverpoolem a Manchesterem City se odehraje na Anfieldu a slibuje být vysoce atraktivním střetnutím. Domácí Liverpool v posledních pěti zápasech vykazuje smíšenou formu s dvěma výhrami a třemi remízami, zatímco Manchester City je v excelentní formě s pěti po sobě jdoucími vítězstvími. Historie vzájemných zápasů naznačuje vyrovnanost, přičemž poslední zápas skončil vítězstvím City 2:1. \n\nPodle simulací očekáváme vyrovnaný duel s mírnou převahou hostů, kteří mají lehce vyšší očekávané góly (xG) 1.39 oproti 1.34 pro Liverpool. Pravděpodobnost remízy se pohybuje kolem 26.5 %, což naznačuje, že obě strany by mohly být opatrné, zejména v prvním poločase. Očekává se, že zápas bude vyrovnaný, ačkoliv City mají tendenci dominovat v ofenzivě.\n\nStatistiky také ukazují na vysokou pravděpodobnost obou týmů, že skórují (55.7 %), a možnost, že padne více než 2,5 gólu (51.4 %). S ohledem na to, že Liverpool hraje doma, mohou mít mírnou výhodu, ale City se budou snažit využít své formy a útočné síly. Rozhodujícími faktory mohou být individuální výkony klíčových hráčů a taktické nastavení obou trenérů.",
+    "text": "Zápas mezi Liverpoolem a Manchesterem City na Anfieldu slibuje být vysoce atraktivní a vyrovnaný. Domácí Liverpool se nachází v mírně slabší formě s jednou výhrou a čtyřmi remízami v posledních pěti zápasech, zatímco Manchester City je v excelentní formě s pěti po sobě jdoucími vítězstvími. Historie vzájemných zápasů ukazuje, že oba týmy si často vyměňují výhry, což naznačuje, že tento duel by mohl být opět velmi vyrovnaný.\n\nPodle simulací se očekává, že Liverpool vytvoří 1.34 očekávaného gólu (xG), zatímco Manchester City 1.39. To naznačuje, že obě strany mají šanci na vstřelení gólů, přičemž pravděpodobnost, že oba týmy skórují, je 55.7 %. S ohledem na formu a vzájemné zápasy by mohlo být pravděpodobné, že zápas skončí remízou nebo těsným vítězstvím jednoho z týmů.\n\nRozhodčí Chris Kavanagh bude mít na starosti řízení zápasu, což může ovlivnit dynamiku hry. Vzhledem k rivalitě mezi těmito týmy a jejich tendenci k fyzickému stylu hry lze očekávat, že zápas bude vysoce intenzivní, což by mohlo vést k vyššímu počtu žlutých karet. Celkově lze očekávat napínavý duel, který by mohl mít klíčový vliv na boj o titul v Premier League.",
     "model": "gpt-4o-mini",
-    "input_hash": "0096e83846dffe7e",
-    "generated_at": "2026-10-08T09:38:02Z",
-    "text_en": "The upcoming Premier League match between Liverpool and Manchester City at Anfield promises to be an exciting encounter, given the historical rivalry between the two clubs. Liverpool's recent form shows a mixed bag of results with two wins, two draws, and a loss in their last five matches. In contrast, Manchester City has been in impressive form, boasting five consecutive victories. This discrepancy in form could give City a psychological edge going into the match.\n\nIn terms of head-to-head encounters, the recent matches have been closely contested, with both teams having their share of victories. The last meeting in February 2026 saw Manchester City narrowly triumph over Liverpool, which could influence the home side's approach to this match. The expected goals (xG) statistics suggest a slight advantage for City (1.39) over Liverpool (1.34), indicating that both teams are likely to create scoring opportunities, but the match could also be tightly contested.\n\nReferee Chris Kavanagh will oversee the match, and with both teams known for their attacking prowess, there is a likelihood of a high-scoring game. The simulations indicate a 38.8% chance of a Manchester City win, a 34.7% chance for Liverpool, and a 26.5% chance of a draw. With both teams capable of finding the back of the net, the probability of both teams scoring is relatively high at 55.7%. Overall, fans can expect a thrilling match filled with intensity and skill, reflective of the fierce competition in the Premier League."
+    "input_hash": "67fa3a5d10e26205",
+    "generated_at": "2026-10-08T23:18:05Z",
+    "text_en": "The upcoming match between Liverpool and Manchester City at Anfield promises to be a highly competitive fixture in the Premier League. Liverpool's recent form shows a mixed bag with two wins, two draws, and one loss in their last five matches, indicating they are struggling to find consistent momentum. In contrast, Manchester City is in excellent form, having won all of their last five matches, which suggests they are operating at a high level and could pose a significant challenge to the home side.\n\nHistorically, the head-to-head encounters between these two teams have been closely contested, with recent results indicating a slight edge for Manchester City. They have won two of the last five meetings, while Liverpool has managed to secure two victories as well. The expected goals (xG) from simulations indicate a closely matched game, with Liverpool at 1.34 and Manchester City at 1.39. This suggests that both teams are likely to create scoring opportunities, making a high-scoring affair plausible.\n\nWith Chris Kavanagh as the referee, the match could see a fair number of cards, as both teams are known for their aggressive playing styles. The odds reflect a competitive matchup, with Manchester City slightly favored to win. However, Liverpool's home advantage at Anfield cannot be underestimated, as they tend to perform well in front of their fans. Overall, the match is likely to be tightly contested, with both teams having the potential to secure a victory."
   },
-  "refreshed_at": "2026-10-08T09:37:54.214359Z"
+  "refreshed_at": "2026-10-08T23:17:59.693025Z"
 }

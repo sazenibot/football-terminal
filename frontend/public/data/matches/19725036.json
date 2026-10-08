@@ -347,7 +347,7 @@
       "player_name": "Jan Kliment",
       "type_id": 336,
       "type_name": "Ill",
-      "type_name_cs": "Ill",
+      "type_name_cs": "Nemoc",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-12",
@@ -361,7 +361,7 @@
       "player_name": "Fabijan Krivak",
       "type_id": 687,
       "type_name": "Knee Problems",
-      "type_name_cs": "Knee Problems",
+      "type_name_cs": "Problémy s kolenem",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-15",
@@ -385,8 +385,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Jan Fortelny",
+        "jersey_number": 8,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Matej Riznic",
+        "jersey_number": 25,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Oskars Vientiess",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Michal Bilek",
+        "jersey_number": 6,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Marcel Cermak",
+        "jersey_number": 12,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Matej Radosta",
+        "jersey_number": 35,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Lukas Marecek",
+        "jersey_number": 23,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Dalibor Vecerka",
+        "jersey_number": 28,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Matous Trmal",
+        "jersey_number": 29,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Matej Pulkrab",
+        "jersey_number": 10,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "John Auta",
+        "jersey_number": 17,
+        "formation_field": "4:3"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Léo Borges",
+        "jersey_number": 4,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Marko Soldo",
+        "jersey_number": 14,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Jan Koutný",
+        "jersey_number": 91,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "David Tkac",
+        "jersey_number": 24,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Matus Maly",
+        "jersey_number": 33,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Vaclav Sejk",
+        "jersey_number": 10,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Dominik Janosek",
+        "jersey_number": 39,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Michal Beran",
+        "jersey_number": 7,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Ahmad Ghali",
+        "jersey_number": 70,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Louis Lurvink",
+        "jersey_number": 3,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Abdoulaye Sylla",
+        "jersey_number": 2,
+        "formation_field": "2:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1750,7 +1862,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.25
+          "odds": 1.26
         },
         {
           "key": "sot_over",
@@ -1888,7 +2000,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.1
+          "odds": 3.18
         },
         {
           "key": "ht_behind",
@@ -1896,7 +2008,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.12
+          "odds": 3.2
         },
         {
           "key": "btts",
@@ -1912,7 +2024,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "ht_draw",
@@ -1920,7 +2032,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.14
+          "odds": 2.19
         },
         {
           "key": "red_card",
@@ -1951,7 +2063,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.25
+          "odds": 1.26
         },
         {
           "key": "over25",
@@ -1959,7 +2071,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "yellow_under5",
@@ -2038,7 +2150,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.12
+          "odds": 3.2
         },
         {
           "key": "btts",
@@ -2076,7 +2188,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.1
+          "odds": 3.18
         },
         {
           "key": "clean_sheet",
@@ -2114,7 +2226,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.14
+          "odds": 2.19
         }
       ]
     },
@@ -2240,7 +2352,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.25
+          "odds": 1.26
         },
         {
           "key": "over25",
@@ -2248,7 +2360,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "corners_under95",
@@ -2391,7 +2503,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.25
+          "odds": 1.26
         },
         {
           "key": "under25",
@@ -2422,7 +2534,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "red_card",
@@ -7765,36 +7877,36 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Teplicemi a Sigmou Olomouc se odehraje na stadionu Na Stínadlech a slibuje zajímavé souboje. Domácí Teplice mají v posledních šesti zápasech smíšenou formu, s třemi výhrami a třemi prohrami. Naopak Sigma Olomouc se prezentuje stabilnějšími výkony, když vyhrála čtyři z posledních šesti zápasů. Historie vzájemných zápasů ukazuje na vyrovnanost, přičemž poslední duel skončil výhrou Sigmy 3:1.\n\nPodle simulací má Teplice mírnou výhodu s očekávanými góly (xG) 1.73 oproti 1.55 pro Sigmu. To naznačuje, že domácí tým má potenciál vytvářet více šancí, avšak Sigma se může spolehnout na svou efektivitu v útoku. Pravděpodobnost remízy je 25.4 %, což ukazuje na možnost vyrovnaného zápasu. Také vysoké procento (64.5 %) naznačuje, že by mohly padnout branky na obou stranách.\n\nZ pohledu statistik a kurzů se očekává, že zápas bude vyrovnaný, s možností, že obě mužstva skórují. Teplice by mohly mít výhodu domácího prostředí, ale Sigma Olomouc má silnou formu, což může hrát klíčovou roli. Celkově se očekává napínavý duel s možností překvapení na obou stranách.",
+    "text": "Zápas mezi Teplicemi a Sigmou Olomouc se odehraje na stadionu Na Stínadlech a slibuje zajímavou podívanou. Domácí Teplice mají smíšenou formu s posledními výsledky, kde vyhrály tři z posledních šesti zápasů, zatímco Sigma Olomouc se prezentuje stabilněji, s pěti výhrami v posledních šesti utkáních. Historie vzájemných zápasů ukazuje vyrovnanost, přičemž poslední duel skončil vítězstvím Sigmy 3:1.\n\nPodle simulací mají Teplice mírně vyšší očekávané góly (xG 1.73) než Sigma (xG 1.55), což naznačuje, že domácí tým by mohl mít více šancí na skórování. Nicméně, s ohledem na formu hostů a jejich schopnost se prosadit, je pravděpodobné, že zápas bude vyrovnaný. Statistika naznačuje vysokou pravděpodobnost, že oba týmy skórují (64.5 %), což by mohlo přispět k atraktivnímu utkání.\n\nCo se týče celkového výsledku, simulace ukazují na vyrovnané šance na vítězství pro oba týmy (41.9 % pro domácí, 32.8 % pro hosty). Zápas by mohl skončit remízou, což má pravděpodobnost 25.4 %. Vzhledem k historickým výsledkům a aktuální formě obou týmů se dá očekávat, že se diváci dočkají napínavého zápasu, kde bude klíčová efektivita v koncovce.",
     "model": "gpt-4o-mini",
-    "input_hash": "0d9761a51efcc8e3",
-    "generated_at": "2026-10-08T09:36:24Z",
-    "text_en": "The upcoming match between Teplice and Sigma Olomouc in the Chance Liga is set to take place at the Na Stínadlech stadium on October 11, 2026. Both teams have shown varying forms in their recent matches; Teplice has recorded three wins and three losses in their last six games, while Sigma Olomouc has managed four wins and two losses. Historically, the head-to-head encounters have been competitive, with Sigma Olomouc winning the last match 3-1 in February 2026, indicating a slight edge in their rivalry.\n\nIn terms of expected performance, the simulation suggests that Teplice has a marginally higher expected goals (xG) rating of 1.73 compared to Sigma Olomouc's 1.55. This could imply that Teplice may create more scoring opportunities during the match. However, the likelihood of both teams scoring is relatively high, with a probability of 64.5% for both teams to find the back of the net. The match could see a balanced contest, with both teams capable of capitalizing on defensive lapses.\n\nGiven the recent form and statistical analysis, it is reasonable to anticipate a closely contested match. The odds reflect a balanced expectation, with both teams at 2.58 for a win. With Teplice playing at home, they may have a slight advantage, but Sigma Olomouc's recent success could level the playing field. Overall, fans can expect an engaging match with potential for goals from both sides."
+    "input_hash": "f41e94c4e7058306",
+    "generated_at": "2026-10-08T23:16:38Z",
+    "text_en": "The upcoming match between Teplice and Sigma Olomouc in the Chance Liga is set to take place at the Na Stínadlech stadium on October 11, 2026. Both teams are coming off varied recent performances, with Teplice showing a mixed form of three wins and three losses in their last six matches, while Sigma Olomouc has been more consistent, with four wins and two losses. Historically, the head-to-head encounters have been competitive, with both teams having their moments, although Sigma Olomouc won their last encounter 3-1.\n\nIn terms of expected performance, the simulation indicates that Teplice has a slight edge in expected goals (xG) with 1.73 compared to Sigma Olomouc's 1.55. This suggests that Teplice may create more scoring opportunities, but Sigma Olomouc's recent form could counterbalance this advantage. The simulations also show a 41.9% chance of a home win, a 25.4% chance of a draw, and a 32.8% chance of an away victory, indicating a relatively balanced matchup.\n\nThe match could see both teams finding the back of the net, as the \"both teams to score\" probability stands at 64.5%. Given the attacking capabilities and the defensive vulnerabilities of both sides, fans can expect an engaging match with potential for goals. The referee, D. Černý, will play a crucial role in maintaining the flow of the game, and how well each team adapts to the match conditions will be key in determining the outcome."
   },
-  "refreshed_at": "2026-10-08T09:36:15.227780Z",
+  "refreshed_at": "2026-10-08T23:16:33.017029Z",
   "odds": {
-    "home": 2.58,
-    "draw": 3.42,
-    "away": 2.58,
-    "under15": 3.85,
-    "over15": 1.25,
+    "home": 2.63,
+    "draw": 3.5,
+    "away": 2.63,
+    "under15": 3.86,
+    "over15": 1.26,
     "under25": 2.02,
-    "over25": 1.8,
-    "under35": 1.38,
+    "over25": 1.81,
+    "under35": 1.39,
     "over35": 2.99,
     "btts": 1.63,
     "source": "chance",
     "home_scoreless": 3.53,
     "home_scored2plus": 2.29,
     "home_clean_sheet": 3.5,
-    "home_ht_leading": 3.1,
-    "home_ht_draw": 2.14,
-    "home_ht_behind": 3.12,
+    "home_ht_leading": 3.18,
+    "home_ht_draw": 2.19,
+    "home_ht_behind": 3.2,
     "away_clean_sheet": 3.53,
     "away_scoreless": 3.5,
     "away_scored2plus": 2.28,
-    "away_ht_behind": 3.1,
-    "away_ht_draw": 2.14,
-    "away_ht_leading": 3.12
+    "away_ht_behind": 3.18,
+    "away_ht_draw": 2.19,
+    "away_ht_leading": 3.2
   }
 }

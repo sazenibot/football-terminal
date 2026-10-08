@@ -127,10 +127,10 @@
       "type_name_cs": "Operace kolena",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-05",
-      "end_date": "2026-10-09",
+      "start_date": "2026-08-03",
+      "end_date": "2026-10-16",
       "games_missed": 10,
-      "likely_available": true
+      "likely_available": false
     }
   ],
   "predicted_lineups": {
@@ -1121,7 +1121,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.67
+          "odds": 1.54
         },
         {
           "key": "shots_over",
@@ -1201,7 +1201,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.32
+          "odds": 2.33
         },
         {
           "key": "team_2plus_yellow",
@@ -1209,7 +1209,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.45
+          "odds": 1.54
         },
         {
           "key": "scoreless",
@@ -1217,7 +1217,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.49
+          "odds": 3.47
         },
         {
           "key": "under25",
@@ -1225,7 +1225,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.11
+          "odds": 2.1
         },
         {
           "key": "red_card",
@@ -1249,7 +1249,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.0
+          "odds": 2.99
         },
         {
           "key": "corners_over95",
@@ -1265,7 +1265,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.92
+          "odds": 1.94
         },
         {
           "key": "yellow_5plus",
@@ -1273,7 +1273,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.09
+          "odds": 2.32
         },
         {
           "key": "ht_leading",
@@ -1281,7 +1281,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.29
+          "odds": 3.3
         },
         {
           "key": "clean_sheet",
@@ -1289,7 +1289,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.84
+          "odds": 3.85
         }
       ],
       "away": [
@@ -1313,7 +1313,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.21
+          "odds": 2.19
         },
         {
           "key": "yellow_under5",
@@ -1321,7 +1321,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.67
+          "odds": 1.54
         },
         {
           "key": "shots_over",
@@ -1389,7 +1389,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.11
+          "odds": 2.1
         },
         {
           "key": "corners_over95",
@@ -1405,7 +1405,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.39
+          "odds": 1.44
         },
         {
           "key": "ht_draw",
@@ -1421,7 +1421,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.84
+          "odds": 3.85
         },
         {
           "key": "over25",
@@ -1437,7 +1437,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.12
+          "odds": 2.11
         },
         {
           "key": "corners_under95",
@@ -1453,7 +1453,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.49
+          "odds": 3.47
         },
         {
           "key": "yellow_5plus",
@@ -1461,7 +1461,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.09
+          "odds": 2.32
         },
         {
           "key": "ht_leading",
@@ -1469,7 +1469,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.0
+          "odds": 2.99
         },
         {
           "key": "ht_behind",
@@ -1477,7 +1477,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.29
+          "odds": 3.3
         },
         {
           "key": "red_card",
@@ -1571,7 +1571,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.11
+          "odds": 2.1
         },
         {
           "key": "corners_over95",
@@ -1587,7 +1587,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.09
+          "odds": 2.32
         },
         {
           "key": "team_2plus_yellow",
@@ -1653,7 +1653,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.67
+          "odds": 1.54
         },
         {
           "key": "scoreless",
@@ -1759,7 +1759,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.11
+          "odds": 2.1
         },
         {
           "key": "corners_over95",
@@ -1783,7 +1783,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.67
+          "odds": 1.54
         },
         {
           "key": "yellow_5plus",
@@ -1791,7 +1791,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.09
+          "odds": 2.32
         },
         {
           "key": "team_2plus_yellow",
@@ -6054,45 +6054,45 @@
     ]
   },
   "odds": {
-    "home": 2.8,
+    "home": 2.81,
     "draw": 3.58,
-    "away": 2.45,
-    "under15": 4.08,
+    "away": 2.44,
+    "under15": 4.07,
     "over15": 1.24,
-    "under25": 2.11,
+    "under25": 2.1,
     "over25": 1.75,
-    "under35": 1.43,
-    "over35": 2.85,
+    "under35": 1.42,
+    "over35": 2.86,
     "btts": 1.59,
     "corners_under95": 1.96,
     "corners_over95": 1.75,
-    "yellow_under5": 1.67,
-    "yellow_5plus": 2.09,
+    "yellow_under5": 1.54,
+    "yellow_5plus": 2.32,
     "red_card": 4.61,
     "source": "chance",
-    "home_scoreless": 3.49,
-    "home_scored2plus": 2.32,
-    "home_clean_sheet": 3.84,
-    "home_ht_leading": 3.29,
+    "home_scoreless": 3.47,
+    "home_scored2plus": 2.33,
+    "home_clean_sheet": 3.85,
+    "home_ht_leading": 3.3,
     "home_ht_draw": 2.24,
-    "home_ht_behind": 3.0,
-    "home_more_corners": 1.92,
-    "home_team_2plus_yellow": 1.45,
-    "away_clean_sheet": 3.49,
-    "away_scoreless": 3.84,
-    "away_scored2plus": 2.12,
-    "away_ht_behind": 3.29,
+    "home_ht_behind": 2.99,
+    "home_more_corners": 1.94,
+    "home_team_2plus_yellow": 1.54,
+    "away_clean_sheet": 3.47,
+    "away_scoreless": 3.85,
+    "away_scored2plus": 2.11,
+    "away_ht_behind": 3.3,
     "away_ht_draw": 2.24,
-    "away_ht_leading": 3.0,
-    "away_more_corners": 2.21,
-    "away_team_2plus_yellow": 1.39
+    "away_ht_leading": 2.99,
+    "away_more_corners": 2.19,
+    "away_team_2plus_yellow": 1.44
   },
   "ai_analysis": {
-    "text": "Zápas mezi Ipswich Town a Fulham se odehraje na Portman Road Stadium a slibuje zajímavý souboj. Domácí Ipswich Town se nachází v solidní formě, s posledními výsledky, které zahrnují dvě výhry a tři remízy. Naopak Fulham, ačkoliv má také své silné momenty, v posledních zápasech spíše remizoval, což naznačuje, že se jim nedaří najít vítěznou formu. Historie vzájemných zápasů ukazuje vyrovnané souboje, přičemž poslední čtyři zápasy skončily remízou nebo těsným vítězstvím.\n\nAnalýza očekávaných gólů (xG) naznačuje, že Ipswich má mírně vyšší šanci na vstřelení gólů (1.6) ve srovnání s Fulhamem (1.36). To by mohlo naznačovat, že domácí tým bude mít více příležitostí ke skórování, což by mohlo být klíčové v jejich snaze získat tři body. Pravděpodobnost, že oba týmy skórují, je vysoká (59.2 %), což naznačuje, že zápas by mohl být otevřený a plný šancí.\n\nZ pohledu statistik a kurzů se očekává vyrovnaný duel, přičemž Ipswich je mírným favoritem na domácím hřišti. Kurzy naznačují, že remíza (3.58) je také velmi pravděpodobná. Celkově lze očekávat, že zápas bude vyrovnaný, s možností, že se oba týmy prosadí v ofenzivě, a na základě formy a vzájemných zápasů by mohlo být zajímavé sledovat, jak se situace na hřišti vyvine.",
+    "text": "Zápas mezi Ipswich Town a Fulham, který se odehraje na Portman Road Stadium, slibuje být zajímavým střetnutím v rámci Premier League. Domácí Ipswich Town se nachází v mírné formě, přičemž v posledních pěti zápasech zaznamenali dvě výhry a tři remízy. Na druhé straně Fulham, který má za sebou také smíšené výkony, se pokusí zlepšit svou situaci, jelikož v posledních zápasech měli více remíz než vítězství. Historie vzájemných zápasů naznačuje vyrovnanost, přičemž poslední čtyři duely skončily remízou nebo těsným vítězstvím.\n\nPodle simulace očekávaných gólů (xG) se dá předpokládat, že Ipswich Town bude mít mírnou výhodu, s očekáváním 1.6 gólů oproti 1.36 gólům Fulhamu. To naznačuje, že domácí by mohli mít více příležitostí ke skórování. Pravděpodobnost remízy je 25.8%, což ukazuje na vyrovnaný zápas, kde by mohly rozhodnout detaily. Očekává se také, že obě mužstva by mohla skórovat, jelikož pravděpodobnost \"obě týmy skórují\" (BTTS) činí 59.2%.\n\nVzhledem k formě obou týmů a historickým výsledkům by se dalo očekávat, že zápas bude vyrovnaný a dramatický. Klíčovými faktory mohou být efektivita v útoku Ipswichu a schopnost Fulhamu bránit se proti domácímu tlaku. Rozhodujícími momenty by mohly být standardní situace nebo individuální výkony hráčů, které by mohly zápas rozhodnout.",
     "model": "gpt-4o-mini",
-    "input_hash": "0124a2ef987d6e6f",
-    "generated_at": "2026-10-08T09:37:07Z",
-    "text_en": "The upcoming match between Ipswich Town and Fulham at Portman Road Stadium promises to be an intriguing encounter in the Premier League. Ipswich Town's recent form shows a mixed bag with two wins and three losses in their last five matches, while Fulham has managed to secure two draws but has struggled with three losses in the same period. This disparity in form suggests that Ipswich may have a slight edge, particularly playing at home, where they will look to capitalize on their supporters.\n\nHistorically, the head-to-head results between these two teams indicate a closely contested rivalry, with their last four encounters yielding two draws and one win each. The simulations suggest that Ipswich has a marginally higher expected goals (xG) of 1.6 compared to Fulham's 1.36, indicating that Ipswich may create more scoring opportunities. Additionally, the likelihood of both teams scoring (59.2%) suggests that we could see an open match with chances at both ends.\n\nWith referee Lewis Smith officiating, the match could also see a fair number of yellow cards given the teams' disciplinary records. Given the odds, Ipswich is slightly favored to win at home, but the unpredictability of the Premier League means that Fulham could also pose a significant threat, especially if they can find their form. Overall, a competitive match is expected, with both teams eager to secure vital points in the league standings."
+    "input_hash": "e0663645bdf0d143",
+    "generated_at": "2026-10-08T23:17:16Z",
+    "text_en": "The upcoming match between Ipswich Town and Fulham at Portman Road Stadium in the Premier League promises to be an intriguing encounter. Ipswich Town's recent form shows a mixed bag with two wins and three losses in their last five matches, while Fulham has struggled as well, managing only two draws and three losses in the same period. This suggests that both teams are looking to regain their footing in the league, making the match crucial for their aspirations.\n\nHistorically, the head-to-head encounters between these two sides have been closely contested, with their last four meetings resulting in two draws and one win each. The expected goals (xG) simulation indicates that Ipswich Town may have a slight edge with an xG of 1.6 compared to Fulham's 1.36. This could suggest that Ipswich might create more scoring opportunities, but the close nature of their previous matches implies that a draw could also be a likely outcome.\n\nWith the referee Lewis Smith overseeing the match, players will need to be disciplined, particularly given the odds indicating a potential for multiple yellow cards. The simulation also suggests a 59.2% chance for both teams to score, hinting at an open game. Overall, the match could be decided by fine margins, with both teams eager to capitalize on any defensive lapses from their opponents."
   },
-  "refreshed_at": "2026-10-08T09:36:59.039898Z"
+  "refreshed_at": "2026-10-08T23:17:10.179225Z"
 }

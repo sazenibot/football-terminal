@@ -38,12 +38,26 @@
       "player_name": "Luiz Felipe Ramos Marchi",
       "type_id": 2011,
       "type_name": "Muscle Tear",
-      "type_name_cs": "Muscle Tear",
+      "type_name_cs": "Natržený sval",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-04-16",
       "end_date": "2026-10-12",
       "games_missed": 22,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 186560,
+      "player_name": "Raúl de Tomás Gómez",
+      "type_id": 547,
+      "type_name": "Fitness",
+      "type_name_cs": "Kondiční důvody",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-01-07",
+      "end_date": null,
+      "games_missed": 39,
       "likely_available": false
     },
     {
@@ -145,11 +159,6 @@
         "formation_field": "5:1"
       },
       {
-        "player_name": "Nico Williams",
-        "jersey_number": 10,
-        "formation_field": "4:1"
-      },
-      {
         "player_name": "Iñigo Ruiz de Galarreta",
         "jersey_number": 16,
         "formation_field": "3:2"
@@ -188,6 +197,11 @@
         "player_name": "Jesús Areso",
         "jersey_number": 12,
         "formation_field": "2:4"
+      },
+      {
+        "player_name": "Álex Berenguer",
+        "jersey_number": 7,
+        "formation_field": "4:1"
       }
     ]
   },
@@ -7621,7 +7635,7 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T09:39:44.553336Z",
+  "refreshed_at": "2026-10-08T23:20:51.509595Z",
   "ai_analysis": {
     "text": "Zápas mezi Rayo Vallecano a Athletic Club, který se odehraje na Estadio de Vallecas, slibuje být vyrovnaným střetnutím. Domácí Rayo má za sebou smíšené výsledky, s posledními dvěma zápasy, kdy vyhrálo a prohrálo. Na druhé straně Athletic Club vykazuje stabilnější formu, přičemž jejich poslední výsledky zahrnují dvě výhry a dvě prohry. Historie vzájemných zápasů ukazuje, že Athletic má v poslední době navrch, což může psychologicky ovlivnit výkon domácích.\n\nPodle simulací očekáváme, že Athletic Club bude mít mírnou výhodu, přičemž očekávané góly (xG) naznačují, že by mohli vstřelit o něco více než Rayo. S hodnotami xG 1.37 pro Rayo a 1.59 pro Athletic je pravděpodobné, že se zápas odehraje v aktivním tempu s několika šancemi na obou stranách. Statistika ukazuje, že pravděpodobnost, že oba týmy skórují, je vysoká (59.7 %), což naznačuje, že se můžeme dočkat atraktivního fotbalu.\n\nCelkově lze očekávat, že zápas bude vyrovnaný, s mírnou převahou hostujícího týmu. Klíčovými faktory pro úspěch Rayo bude jejich schopnost využít domácí prostředí a efektivně se bránit proti ofenzivním snahám Athleticu. Na druhé straně, pokud Athletic udrží svou formu, mohou se těšit na další tři body do tabulky La Ligy.",
     "model": "gpt-4o-mini",

@@ -191,48 +191,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 95844,
-      "player_name": "Alassane Pléa",
-      "type_id": 608,
-      "type_name": "Surgery",
-      "type_name_cs": "Surgery",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-14",
-      "end_date": "2027-01-01",
-      "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 26579,
-      "player_name": "Sam Lammers",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-26",
-      "end_date": null,
-      "games_missed": 5,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37688197,
-      "player_name": "Wessel Kuhn",
-      "type_id": 557,
-      "type_name": "Cruciate Ligament Injury",
-      "type_name_cs": "Zranění zkříženého vazu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-04-24",
-      "end_date": "2027-03-01",
-      "games_missed": 12,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 26786,
       "player_name": "Jerdy Schouten",
       "type_id": 1918,
@@ -251,11 +209,39 @@
       "player_name": "Kiliann Sildillia",
       "type_id": 608,
       "type_name": "Surgery",
-      "type_name_cs": "Surgery",
+      "type_name_cs": "Operace",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-29",
       "end_date": "2027-01-01",
+      "games_missed": 5,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 95844,
+      "player_name": "Alassane Pléa",
+      "type_id": 608,
+      "type_name": "Surgery",
+      "type_name_cs": "Operace",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-14",
+      "end_date": "2027-01-01",
+      "games_missed": 7,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 26579,
+      "player_name": "Sam Lammers",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-26",
+      "end_date": null,
       "games_missed": 5,
       "likely_available": false
     },
@@ -7615,13 +7601,13 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi PSV a SC Heerenveen, který se odehraje na Philips Stadionu, slibuje zajímavou konfrontaci. PSV se nachází v excelentní formě, když vyhrálo posledních šest zápasů, což naznačuje silnou ofenzivní sílu a stabilitu v defenzivě. Naopak SC Heerenveen má za sebou smíšené výsledky, s několika remízami a porážkami, což může ovlivnit jejich sebevědomí před tímto náročným utkáním.\n\nHistorie vzájemných zápasů ukazuje, že PSV má nad Heerenveenem výraznou převahu, s posledními čtyřmi zápasy, ve kterých dokázalo zvítězit. Tento trend by mohl pokračovat, zejména s ohledem na očekávané statistiky, které ukazují na vyšší očekávané góly pro domácí tým (2.1 xG) v porovnání s hosty (1.37 xG). To naznačuje, že PSV by mělo mít více příležitostí ke skórování.\n\nPodle simulací je pravděpodobné, že zápas skončí vítězstvím PSV, přičemž šance na remízu je relativně nízká. S více než 65% pravděpodobností, že oba týmy skórují, a s 67% pravděpodobností, že padne více než 2,5 gólu, lze očekávat ofenzivní hru ze strany domácích a snahu hostů o zisk alespoň jednoho bodu. Celkově se dá očekávat, že PSV potvrdí svou dominanci a pokusí se získat další tři body do tabulky Eredivisie.",
+    "text": "Zápas mezi PSV a SC Heerenveen, který se odehraje na Philips Stadionu, slibuje být zajímavým soubojem. PSV se nachází v excelentní formě, když vyhrálo posledních šest zápasů. Naopak SC Heerenveen má za sebou smíšené výsledky, přičemž v posledních dvou zápasech zaznamenali remízu a porážku. Historie vzájemných zápasů ukazuje, že PSV má výraznou převahu, což posiluje jejich pozici favorita v nadcházejícím utkání.\n\nPodle simulací očekáváme, že PSV bude dominovat v ofenzivě s průměrným očekávaným gólem (xG) 2.1, zatímco SC Heerenveen má xG 1.37. S ohledem na formu obou týmů a statistiky je pravděpodobné, že PSV se pokusí kontrolovat hru a vytvářet šance, zatímco Heerenveen se bude snažit o rychlé protiútoky. Očekává se také, že zápas bude bohatý na góly, s pravděpodobností 67.1 % na překročení hranice 2.5 gólů.\n\nVzhledem k tomu, že PSV hraje doma a má silnou podporu fanoušků, je pravděpodobné, že se ujme vedení už v prvním poločase. Statistiky naznačují, že PSV má 1.54 šanci na to, že bude v poločase v čele. Na druhé straně Heerenveen se bude muset bránit a pokusit se o vyrovnání, což by mohlo vést k otevřenější hře a více šancím na obou stranách. Celkově se očekává, že PSV potvrdí svou dominanci a získá tři body.",
     "model": "gpt-4o-mini",
-    "input_hash": "0de4f494e9d57b74",
-    "generated_at": "2026-10-07T10:09:27Z",
-    "text_en": "The upcoming Eredivisie match between PSV and SC Heerenveen at the Philips Stadion is set to be an intriguing encounter. PSV has shown strong recent form, winning their last six matches, while SC Heerenveen has had a mixed bag with two wins, two draws, and two losses in their last six games. Historically, PSV has dominated this fixture, winning four of the last five encounters, which adds to their confidence heading into this match.\n\nIn terms of expected performance, simulations suggest that PSV is likely to create more scoring opportunities, with an expected goals (xG) value of 2.1 compared to SC Heerenveen's 1.37. This indicates that PSV not only has a potent attack but also a solid defensive setup, which could limit Heerenveen's chances. The likelihood of both teams scoring is relatively high at 65.1%, suggesting that while PSV may control the game, SC Heerenveen could find the net if given the chance.\n\nWith Joey Kooij officiating the match, the dynamics on the pitch will also play a crucial role. Given PSV's home advantage and their current form, they are expected to take the initiative early on. If they can capitalize on their scoring opportunities, a comfortable win could be on the cards. However, SC Heerenveen's resilience and ability to counter could provide them with chances to upset the home side, making this match one to watch closely."
+    "input_hash": "25950ea302c6fce4",
+    "generated_at": "2026-10-08T23:22:12Z",
+    "text_en": "The upcoming match between PSV and SC Heerenveen in the Eredivisie is set to take place at the Philips Stadion on October 9, 2026. PSV enters this match with a strong recent form, having won their last six matches, while SC Heerenveen has had a mixed performance with two wins, two draws, and two losses in their last six outings. This disparity in form suggests that PSV will likely dominate the match, leveraging their home advantage and current momentum.\n\nHistorically, PSV has had the upper hand in their recent encounters with SC Heerenveen, winning four of the last five matches, including a convincing 8-0 victory in April 2024. The simulation data supports this expectation, with PSV having an expected goals (xG) of 2.1 compared to Heerenveen's 1.37. The likelihood of both teams scoring is relatively high at 65.1%, indicating that while PSV is expected to control the match, SC Heerenveen may still find opportunities to score.\n\nReferee Joey Kooij will oversee the match, and the odds reflect a strong favoritism towards PSV, with home odds at 1.23 compared to 10.1 for an away win. Given the current form of both teams and their historical head-to-head results, it is reasonable to anticipate a victory for PSV, potentially with multiple goals scored, while SC Heerenveen may struggle to keep pace but could still manage to find the back of the net."
   },
-  "refreshed_at": "2026-10-08T09:40:58.651599Z",
+  "refreshed_at": "2026-10-08T23:22:05.600339Z",
   "odds": {
     "home": 1.23,
     "draw": 7.29,

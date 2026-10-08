@@ -199,8 +199,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Abdelnour Soualhia",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Rui Mendes",
+        "jersey_number": 7,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Tyrone Owusu",
+        "jersey_number": 30,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Jelani Seedorf",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Patrick Brouwer",
+        "jersey_number": 27,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Jeff Hardeveld",
+        "jersey_number": 2,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Nils Rossen",
+        "jersey_number": 17,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Gerald Alders",
+        "jersey_number": 3,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Marvin Peersman",
+        "jersey_number": 43,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Sem Valk",
+        "jersey_number": 16,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Ronald Koeman Jr.",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Álex Pozo",
+        "jersey_number": 24,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Kilian Nikièma",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Matteo Waem",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Pascal Mulder",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Milan Hokke",
+        "jersey_number": 15,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Yannick Ferreira Eduardo",
+        "jersey_number": 46,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Jalen Hawkins",
+        "jersey_number": 17,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Matěj Šín",
+        "jersey_number": 33,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Juho Kilo",
+        "jersey_number": 25,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Sekou Sylla",
+        "jersey_number": 18,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Evan Rottier",
+        "jersey_number": 11,
+        "formation_field": "4:2"
+      }
+    ]
   },
   "h2h": [],
   "h2h_total_available": 0,
@@ -5265,13 +5377,13 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Telstarem a ADO Den Haag se odehraje na BUKO Stadionu a očekává se, že bude vyrovnaným střetnutím. Domácí tým Telstar má v posledních šesti zápasech smíšenou formu s pěti remízami a jednou prohrou, což naznačuje, že se jim daří udržovat vyrovnané výkony, ale nedokáží přetavit šance na vítězství. Na druhé straně ADO Den Haag také předvádí podobné výkony, přičemž v posledních šesti zápasech získali tři remízy a tři výhry.\n\nPodle simulací očekávaných gólů (xG) má Telstar mírnou výhodu s 1.48 xG oproti 1.24 xG pro ADO Den Haag. To naznačuje, že domácí tým by mohl být o něco nebezpečnější v ofenzivě, avšak rozdíl není výrazný, což může znamenat, že zápas bude vyrovnaný a může skončit remízou. Pravděpodobnost remízy je 26.6 %, což ukazuje na vyrovnanou situaci na hřišti.\n\nCo se týče dalších statistik, pravděpodobnost, že oba týmy skórují (BTTS), je 54.9 %, což naznačuje, že se dá očekávat, že oba celky by mohly najít cestu do sítě. Celkově lze očekávat, že zápas bude vyrovnaný, s možností několika šancí na obou stranách, a potenciálně dramatickým závěrem.",
+    "text": "Zápas mezi Telstarem a ADO Den Haag, který se odehraje v BUKO Stadionu, slibuje zajímavé vyústění. Domácí tým Telstar má v posledních zápasech smíšenou formu, přičemž z posledních šesti utkání získal pouze dvě vítězství. Na druhé straně ADO Den Haag vykazuje stabilnější výkony, přičemž v posledních šesti zápasech také dvakrát zvítězil. Tato forma může naznačovat, že hosté budou mít mírnou výhodu.\n\nPodle simulací očekáváme, že Telstar by mohl mít mírně vyšší očekávané góly (xG 1.48) ve srovnání s ADO Den Haag (xG 1.24). To naznačuje, že domácí tým může být v ofenzivě nebezpečnější, ale zároveň je pravděpodobné, že zápas skončí vyrovnaně, s pravděpodobností remízy 26.6 %. Statistiky také ukazují, že šance na obě strany skórovat (BTTS) je 54.9 %, což naznačuje, že oba týmy by mohly najít cestu k brance.\n\nCelkově lze očekávat vyrovnaný zápas, kde se rozhodující faktory mohou ukázat v defenzivní stabilitě a schopnosti proměňovat šance. Pokud se Telstar podaří využít domácí prostředí a ADO Den Haag udrží svou formu, můžeme se těšit na zajímavé a napínavé utkání.",
     "model": "gpt-4o-mini",
-    "input_hash": "2fbd0c1a2d5d464e",
-    "generated_at": "2026-10-07T10:10:32Z",
-    "text_en": "The upcoming match between Telstar and ADO Den Haag in the Eredivisie is set to take place at the BUKO Stadion. Telstar has been struggling recently, with a record of one win, two draws, and three losses in their last six matches, indicating a challenging period for the home side. Conversely, ADO Den Haag has shown slightly better form, with two wins, two draws, and two losses in their recent games, suggesting they may have a slight edge going into this fixture.\n\nStatistical simulations indicate that Telstar has an expected goals (xG) value of 1.48, while ADO Den Haag sits at 1.24. This suggests that Telstar may create more scoring opportunities, but the close xG values indicate that the match could be competitive. The simulation also shows a probability of 54.9% for both teams to score, which hints at a potentially open game where both sides could find the back of the net.\n\nWith Erwin Blank officiating the match, both teams will need to be disciplined to avoid unnecessary fouls that could lead to set-piece opportunities. Given the recent forms and xG statistics, a closely contested match is expected, with Telstar possibly benefiting from home advantage, while ADO Den Haag will aim to capitalize on their slightly better recent performance."
+    "input_hash": "b15a1d78e8e67afc",
+    "generated_at": "2026-10-08T23:23:03Z",
+    "text_en": "The upcoming Eredivisie match between Telstar and ADO Den Haag at the BUKO Stadion is set to be an intriguing encounter. Telstar comes into this match with a recent form that shows a struggle, having recorded multiple losses and draws in their last six games (P, R, P, R, P, P). In contrast, ADO Den Haag has shown slightly better form with a mix of draws and losses (R, P, P, R, P, P). This suggests that both teams are experiencing challenges, but ADO Den Haag might have a slight edge in confidence heading into this fixture.\n\nStatistical simulations indicate that Telstar has a marginally higher expected goals (xG) value of 1.48 compared to ADO Den Haag's 1.24. This suggests that Telstar may create more scoring opportunities, but their recent form raises questions about their ability to convert these chances into goals. The simulation also shows a 54.9% likelihood of both teams scoring, which points to a potentially competitive match where defensive frailties could be exposed.\n\nIn terms of match dynamics, the referee for this encounter, Erwin Blank, will play a crucial role in maintaining control. Given the recent form of both teams, it is plausible that the match could see a few goals, with the odds indicating a balanced contest. The expectation is for a closely fought game, with a draw being a likely outcome, but Telstar may be able to leverage their home advantage to secure a victory if they can overcome their recent struggles."
   },
-  "refreshed_at": "2026-10-07T22:46:13.064094Z",
+  "refreshed_at": "2026-10-08T23:22:56.727800Z",
   "odds": {
     "home": 2.04,
     "draw": 3.85,

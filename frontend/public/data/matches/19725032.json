@@ -326,34 +326,6 @@
       "likely_available": false
     },
     {
-      "side": "home",
-      "player_id": 37341896,
-      "player_name": "Jhoanner Stalin Chávez Quintero",
-      "type_id": 533,
-      "type_name": "Thigh Problems",
-      "type_name_cs": "Problémy se stehnem",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-04-01",
-      "end_date": null,
-      "games_missed": 23,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37687998,
-      "player_name": "Ondřej Penxa",
-      "type_id": 557,
-      "type_name": "Cruciate Ligament Injury",
-      "type_name_cs": "Zranění zkříženého vazu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-01-15",
-      "end_date": null,
-      "games_missed": 29,
-      "likely_available": false
-    },
-    {
       "side": "away",
       "player_id": 8101004,
       "player_name": "Vojtěch Patrák",
@@ -369,8 +341,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Adam Karabec",
+        "jersey_number": 10,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Loïc Mbe Soh",
+        "jersey_number": 22,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Jonatan Braut Brunes",
+        "jersey_number": 14,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Josimar Alcócer",
+        "jersey_number": 7,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Matej Rynes",
+        "jersey_number": 11,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Adam Ševínský",
+        "jersey_number": 19,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Tobias Guddal",
+        "jersey_number": 6,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Jakub Surovcik",
+        "jersey_number": 44,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Santiago Eneme",
+        "jersey_number": 5,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "John Mercado",
+        "jersey_number": 17,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Roman Macek",
+        "jersey_number": 28,
+        "formation_field": "3:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "David Krcik",
+        "jersey_number": 37,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Vladimir Neuman",
+        "jersey_number": 46,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Tomáš Jelínek",
+        "jersey_number": 16,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Tobias Boledovic",
+        "jersey_number": 40,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Michal Hlavaty",
+        "jersey_number": 19,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Denis Halinsky",
+        "jersey_number": 33,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Abdullahi Tanko",
+        "jersey_number": 20,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Vaclav Drchal",
+        "jersey_number": 17,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Samuel Simek",
+        "jersey_number": 8,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Emmanuel Godwin",
+        "jersey_number": 15,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Jason Noslin",
+        "jersey_number": 43,
+        "formation_field": "2:1"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1734,7 +1818,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.15
+          "odds": 1.16
         },
         {
           "key": "shots_over",
@@ -1770,7 +1854,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.5
+          "odds": 1.51
         },
         {
           "key": "corners_over95",
@@ -1828,7 +1912,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.28
+          "odds": 1.29
         },
         {
           "key": "more_corners",
@@ -1850,7 +1934,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.63
+          "odds": 1.67
         },
         {
           "key": "ht_behind",
@@ -1858,7 +1942,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 8.04
+          "odds": 8.25
         },
         {
           "key": "btts",
@@ -1911,7 +1995,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.74
+          "odds": 2.8
         }
       ],
       "away": [
@@ -1943,7 +2027,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.15
+          "odds": 1.16
         },
         {
           "key": "over25",
@@ -1951,7 +2035,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.5
+          "odds": 1.51
         },
         {
           "key": "corners_under95",
@@ -2051,7 +2135,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 8.04
+          "odds": 8.25
         },
         {
           "key": "ht_draw",
@@ -2059,7 +2143,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.74
+          "odds": 2.8
         },
         {
           "key": "clean_sheet",
@@ -2098,7 +2182,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.63
+          "odds": 1.67
         }
       ]
     },
@@ -2118,7 +2202,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.15
+          "odds": 1.16
         },
         {
           "key": "over25",
@@ -2126,7 +2210,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.5
+          "odds": 1.51
         },
         {
           "key": "scored2plus",
@@ -2299,7 +2383,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.15
+          "odds": 1.16
         },
         {
           "key": "over25",
@@ -2307,7 +2391,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.5
+          "odds": 1.51
         },
         {
           "key": "scored2plus",
@@ -7891,36 +7975,36 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy slibuje zajímavou konfrontaci. Sparta se nachází v solidní formě, když v posledních šesti zápasech zaznamenala čtyři vítězství a dvě prohry. Naopak Pardubice mají smíšené výsledky, s dvěma vítězstvími, jednou remízou a třemi prohrami. Historie vzájemných zápasů ukazuje, že Sparta má mírnou převahu, avšak Pardubice dokázaly v minulosti Spartu porazit, což může naznačovat, že se jedná o vyrovnaný duel.\n\nPodle simulací a očekávaných gólů (xG) má Sparta výrazně vyšší pravděpodobnost na vstřelení gólů (1.92) oproti Pardubicím (1.05). To naznačuje, že domácí tým by měl mít navrch v ofenzivě. Vzhledem k tomu, že Sparta hraje doma, lze očekávat, že budou mít větší kontrolu nad hrou a více příležitostí k ohrožení branky soupeře. Zároveň je pravděpodobné, že obě mužstva dokáží skórovat, což potvrzuje i vysoká pravděpodobnost na \"obě týmy skórují\" (55.9%).\n\nCelkově se očekává, že Sparta Praha bude dominovat v zápase, přičemž Pardubice se budou snažit o překvapení. Pokud se domácím podaří využít své šance, mohou se těšit na tři body. Na druhé straně, pokud Pardubice zúročí své protiútoky, mohou zápas ještě více zdramatizovat. Vzhledem k formě obou týmů a vzájemným zápasům je pravděpodobné, že se diváci dočkají zajímavého a vyrovnaného zápasu.",
+    "text": "Zápas mezi Spartou Praha a Pardubicemi v rámci Chance Ligy slibuje zajímavé souboje, zejména s ohledem na aktuální formu obou týmů. Sparta se nachází v dobré formě, s posledními šesti zápasy, ve kterých získala čtyři vítězství a dvě prohry. Naopak Pardubice mají za sebou smíšené výsledky, kdy vyhrály tři zápasy, ale také dvakrát prohrály a jednou remizovaly. Historie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž obě mužstva si v posledních vzájemných střetnutích vyměnila výhry.\n\nPodle simulací a očekávaných gólových šancí (xG) se očekává, že Sparta bude mít převahu v ofenzivě, s průměrným xG 1.92 oproti 1.05 Pardubic. To naznačuje, že domácí tým by mohl mít více příležitostí k dosažení branky. Pravděpodobnost výhry Sparty je vysoká, s 49.9 % a s 25.1 % na remízu, zatímco výhra Pardubic je odhadována na 25 %. \n\nDále je zajímavé sledovat, jak se oba týmy vyrovnají s defenzivními výzvami. Sparta má slušnou šanci na to, že udrží čisté konto, což je podpořeno jejich statistikou. Na druhé straně Pardubice se potýkají s problémy v obraně, což by mohlo znamenat, že Sparta bude schopna skórovat více než jednou. Očekává se také, že zápas bude mít více než 2.5 gólu, což je podpořeno pravděpodobností 57.3 %. Celkově tedy zápas slibuje dynamický fotbal s převahou domácího týmu.",
     "model": "gpt-4o-mini",
-    "input_hash": "74aa83c2eecf7ebc",
-    "generated_at": "2026-10-08T09:36:35Z",
-    "text_en": "In the upcoming Chance Liga match between Sparta Praha and Pardubice at TC Strahov, the home team, Sparta Praha, enters the game with a strong recent form, having won four of their last six matches, with two losses. In contrast, Pardubice has had a mixed performance, securing three wins, two losses, and one draw in their last six outings. The historical head-to-head encounters show a competitive rivalry, with Sparta winning three of the last five matches, while Pardubice managed to win one, indicating that both teams have had their moments against each other.\n\nThe match simulation suggests that Sparta Praha is favored to win, with an expected goals (xG) metric of 1.92 compared to Pardubice's 1.05. This indicates that Sparta is likely to create more scoring opportunities. The probabilities from the simulation show a 49.9% chance for a home win, while the draw and away win probabilities are significantly lower at 25.1% and 25.0%, respectively. Additionally, there is a 55.9% chance that both teams will score, which could suggest an entertaining match with potential for goals from both sides.\n\nReferee Jan Beneš will oversee the match, and with Sparta's strong home advantage, they are expected to control the game. The odds reflect this expectation, with Sparta being the clear favorites at 1.26 to win. If Sparta maintains their form and capitalizes on their home advantage, they are likely to secure a victory, although Pardubice will aim to exploit any defensive lapses to challenge for points. Overall, this match promises to be a crucial encounter in the Chance Liga, with Sparta looking to solidify their position in the league."
+    "input_hash": "dc8b3c66ec5b2413",
+    "generated_at": "2026-10-08T23:16:47Z",
+    "text_en": "In the upcoming Chance Liga match between Sparta Praha and Pardubice at TC Strahov, Sparta Praha enters the game with a strong recent form, having won four out of their last six matches, including two consecutive victories. In contrast, Pardubice has had a mixed performance, with two wins, two losses, and one draw in their last six outings. This disparity in form suggests that Sparta Praha may have the upper hand going into the match.\n\nHistorically, the head-to-head encounters between these two teams have shown a competitive edge, with Sparta Praha winning three out of the last five meetings. However, Pardubice managed to secure a notable 4-2 victory in their last encounter, indicating that they can pose a threat. The expected goals (xG) simulation indicates that Sparta is likely to dominate the offensive play with an xG of 1.92 compared to Pardubice's 1.05, further supporting the notion that Sparta will create more scoring opportunities.\n\nGiven the odds, which heavily favor Sparta Praha at 1.27 for a home win, it is anticipated that they will control the match, especially in front of their home crowd. The simulation also suggests a likelihood of both teams scoring (55.9%) and a reasonable chance of the match exceeding 2.5 goals (57.3%). Overall, while Sparta Praha is expected to perform strongly, Pardubice's previous victory over them cannot be overlooked, making this match an intriguing contest."
   },
-  "refreshed_at": "2026-10-08T09:36:24.401488Z",
+  "refreshed_at": "2026-10-08T23:16:40.728546Z",
   "odds": {
-    "home": 1.26,
-    "draw": 5.78,
-    "away": 9.81,
-    "under15": 5.39,
-    "over15": 1.15,
+    "home": 1.27,
+    "draw": 5.94,
+    "away": 10.9,
+    "under15": 5.42,
+    "over15": 1.16,
     "under25": 2.57,
-    "over25": 1.5,
-    "under35": 1.6,
+    "over25": 1.51,
+    "under35": 1.62,
     "over35": 2.33,
     "btts": 1.86,
     "source": "chance",
     "home_scoreless": 9.01,
-    "home_scored2plus": 1.28,
+    "home_scored2plus": 1.29,
     "home_clean_sheet": 1.97,
-    "home_ht_leading": 1.63,
-    "home_ht_draw": 2.74,
-    "home_ht_behind": 8.04,
+    "home_ht_leading": 1.67,
+    "home_ht_draw": 2.8,
+    "home_ht_behind": 8.25,
     "away_clean_sheet": 9.01,
     "away_scoreless": 1.97,
     "away_scored2plus": 5.03,
-    "away_ht_behind": 1.63,
-    "away_ht_draw": 2.74,
-    "away_ht_leading": 8.04
+    "away_ht_behind": 1.67,
+    "away_ht_draw": 2.8,
+    "away_ht_leading": 8.25
   }
 }

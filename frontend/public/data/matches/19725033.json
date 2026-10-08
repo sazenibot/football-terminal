@@ -1603,7 +1603,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.23
+          "odds": 1.24
         },
         {
           "key": "offsides_over",
@@ -1689,7 +1689,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.75
+          "odds": 1.76
         },
         {
           "key": "team_2plus_yellow",
@@ -1704,7 +1704,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.08
+          "odds": 2.09
         },
         {
           "key": "scored2plus",
@@ -1727,7 +1727,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.2
+          "odds": 2.26
         },
         {
           "key": "ht_behind",
@@ -1735,7 +1735,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.41
+          "odds": 3.49
         },
         {
           "key": "clean_sheet",
@@ -1780,7 +1780,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.76
+          "odds": 2.82
         }
       ],
       "away": [
@@ -1790,7 +1790,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.23
+          "odds": 1.24
         },
         {
           "key": "over25",
@@ -1798,7 +1798,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.75
+          "odds": 1.76
         },
         {
           "key": "corners_under95",
@@ -1890,7 +1890,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.76
+          "odds": 2.82
         },
         {
           "key": "btts",
@@ -1921,7 +1921,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.41
+          "odds": 3.49
         },
         {
           "key": "clean_sheet",
@@ -1937,7 +1937,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.08
+          "odds": 2.09
         },
         {
           "key": "scored2plus",
@@ -1967,7 +1967,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.2
+          "odds": 2.26
         }
       ]
     },
@@ -1979,7 +1979,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 2.08
+          "odds": 2.09
         },
         {
           "key": "corners_under95",
@@ -2092,7 +2092,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.23
+          "odds": 1.24
         },
         {
           "key": "scored2plus",
@@ -2122,7 +2122,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.75
+          "odds": 1.76
         },
         {
           "key": "corners_over95",
@@ -2167,7 +2167,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.08
+          "odds": 2.09
         },
         {
           "key": "corners_under95",
@@ -2245,7 +2245,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.23
+          "odds": 1.24
         },
         {
           "key": "more_corners",
@@ -2303,7 +2303,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.75
+          "odds": 1.76
         },
         {
           "key": "corners_over95",
@@ -7492,36 +7492,36 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Bohemians 1905 a Baníkem Ostrava, který se odehraje na stadionu Dolíček, slibuje zajímavé střetnutí. Domácí tým se nachází v solidní formě, kdy z posledních šesti zápasů zaznamenal tři vítězství, dvě remízy a jednu prohru. Na druhé straně Baník Ostrava má také pozitivní výsledky, s pěti zápasy bez prohry, což naznačuje, že oba týmy budou mít motivaci utkání vyhrát.\n\nHistorie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž Bohemians 1905 mají mírnou převahu s dvěma vítězstvími v posledních pěti duelech. Očekává se, že domácí tým se pokusí využít výhodu domácího prostředí a aktivně útočit, zatímco Baník se pravděpodobně zaměří na pevnou obranu a rychlé protiútoky. Analýza očekávaných gólů (xG) naznačuje, že Bohemians mají vyšší pravděpodobnost vstřelení branek (1.67) než Baník (0.99), což může hrát klíčovou roli v průběhu zápasu.\n\nPodle simulací je pravděpodobnost vítězství domácích 47.9 %, remízy 25.8 % a výhry hostů 26.4 %. Také je zde 51.2 % šance, že oba týmy dají gól. Taktika a forma obou týmů naznačují, že zápas by mohl být vyrovnaný, s možností několika gólů. Celkově se očekává napínavé utkání, které může rozhodnout o důležitých bodech v rámci Chance Ligy.",
+    "text": "Zápas mezi Bohemians 1905 a Baníkem Ostrava, který se odehraje na Stadionu Dolíček, slibuje být vyrovnaným a zajímavým střetnutím. Domácí Bohemians se nacházejí v solidní formě s posledními výsledky, které zahrnují tři výhry a dvě remízy, což naznačuje jejich schopnost udržet tlak na soupeře. Na druhé straně Baník Ostrava také ukazuje zlepšení, přičemž v posledních zápasech zaznamenal dvě výhry a tři remízy. Historie vzájemných zápasů ukazuje, že oba týmy si často vyměňují výhry, což naznačuje, že zápas může být velmi vyrovnaný.\n\nPodle simulací a očekávaných gólových šancí (xG) mají Bohemians mírnou výhodu s hodnotou 1.67 oproti 0.99 pro Baník. Pravděpodobnost výhry domácích je 47.9%, zatímco šance na remízu se odhaduje na 25.8% a výhru hostů na 26.4%. To naznačuje, že Bohemians by mohli mít navrch, ale Baník má také šanci na úspěch, zejména pokud dokáže využít příležitosti, které se mu naskytnou.\n\nZ pohledu statistiky je zajímavé, že pravděpodobnost, že oba týmy skórují, je 51.2%, což naznačuje, že by mohlo padnout více než jedno branky. Zároveň je téměř 50% šance na to, že zápas skončí s více než 2,5 góly. Celkově lze očekávat dynamický zápas, ve kterém budou mít oba týmy příležitosti, a výsledek by mohl být ovlivněn efektivitou v koncovce a případnými chybami v obraně.",
     "model": "gpt-4o-mini",
-    "input_hash": "c4a7c38f7575df68",
-    "generated_at": "2026-10-08T09:36:04Z",
-    "text_en": "The upcoming match between Bohemians 1905 and Baník Ostrava in the Chance Liga is set to take place at Stadion Dolícek on October 10, 2026. Bohemians 1905 has shown a mixed recent form, with two wins, two draws, and two losses in their last six matches. In contrast, Baník Ostrava has also struggled, recording two wins, three losses, and a draw in their recent outings. The historical head-to-head results indicate a competitive rivalry, with Bohemians having a slight edge in the most recent encounters.\n\nFrom the simulation data, Bohemians 1905 is expected to have a better chance of scoring, with an expected goals (xG) value of 1.67 compared to Baník Ostrava's 0.99. This suggests that Bohemians may create more goal-scoring opportunities during the match. The probabilities indicate a 47.9% chance of a home win, a 25.8% chance of a draw, and a 26.4% chance of an away victory. Additionally, both teams have a reasonable likelihood of scoring, with a 51.2% chance for both teams to find the net.\n\nReferee Adam Trska will oversee the match, which could play a role in how the game unfolds, particularly in terms of discipline and decision-making. Given the recent forms and the historical context, Bohemians 1905 may look to capitalize on their home advantage, while Baník Ostrava will aim to improve their away performance. Overall, the match is expected to be closely contested, with both teams having opportunities to secure points."
+    "input_hash": "2b0cc670e7584b00",
+    "generated_at": "2026-10-08T23:16:22Z",
+    "text_en": "The upcoming match between Bohemians 1905 and Baník Ostrava in the Chance Liga is set to take place at Stadion Dolícek on October 10, 2026. Both teams have had contrasting recent forms, with Bohemians 1905 recording two wins, two draws, and two losses in their last six matches, while Baník Ostrava has shown slightly better form with two wins, one draw, and three losses. Historically, Bohemians have had the upper hand in their recent encounters, winning three of the last five matches against Baník Ostrava, which could provide them with a psychological advantage heading into this fixture.\n\nThe simulation data suggests that Bohemians 1905 has a higher expected goals (xG) value of 1.67 compared to Baník Ostrava's 0.99, indicating that the home side is likely to create more scoring opportunities. The probabilities from the simulation show a 47.9% chance of a home victory, 25.8% for a draw, and 26.4% for an away win. Additionally, there is a 51.2% chance that both teams will score, suggesting that the match could be competitive with potential goal-scoring opportunities for both sides.\n\nWith Adam Trska officiating the match, the dynamics on the pitch could be influenced by the referee's style of managing the game. Given the recent form and historical context, Bohemians 1905 might be favored to secure a positive result at home, but Baník Ostrava will be looking to capitalize on any defensive lapses. Fans can expect a closely contested match, potentially with a few goals, as both teams will aim to improve their standings in the league."
   },
-  "refreshed_at": "2026-10-08T09:35:54.812842Z",
+  "refreshed_at": "2026-10-08T23:16:11.963508Z",
   "odds": {
-    "home": 2.25,
-    "draw": 3.55,
-    "away": 2.93,
-    "under15": 4.02,
-    "over15": 1.23,
-    "under25": 2.08,
-    "over25": 1.75,
-    "under35": 1.4,
+    "home": 2.29,
+    "draw": 3.63,
+    "away": 3.01,
+    "under15": 4.03,
+    "over15": 1.24,
+    "under25": 2.09,
+    "over25": 1.76,
+    "under35": 1.41,
     "over35": 2.91,
     "btts": 1.6,
     "source": "chance",
     "home_scoreless": 4.1,
     "home_scored2plus": 2.04,
     "home_clean_sheet": 3.27,
-    "home_ht_leading": 2.76,
-    "home_ht_draw": 2.2,
-    "home_ht_behind": 3.41,
+    "home_ht_leading": 2.82,
+    "home_ht_draw": 2.26,
+    "home_ht_behind": 3.49,
     "away_clean_sheet": 4.1,
     "away_scoreless": 3.27,
     "away_scored2plus": 2.44,
-    "away_ht_behind": 2.76,
-    "away_ht_draw": 2.2,
-    "away_ht_leading": 3.41
+    "away_ht_behind": 2.82,
+    "away_ht_draw": 2.26,
+    "away_ht_leading": 3.49
   }
 }

@@ -191,20 +191,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37703671,
-      "player_name": "Faik Sakar",
-      "type_id": 672,
-      "type_name": "Ankle Problems",
-      "type_name_cs": "Ankle Problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-10",
-      "end_date": null,
-      "games_missed": 5,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 96201,
       "player_name": "Steve Mounié",
       "type_id": 587,
@@ -246,17 +232,17 @@
       "likely_available": false
     },
     {
-      "side": "away",
-      "player_id": 38207306,
-      "player_name": "Maycon Douglas Normanha Cardozo",
-      "type_id": 1953,
-      "type_name": "Broken Shoulder",
-      "type_name_cs": "Broken Shoulder",
+      "side": "home",
+      "player_id": 37703671,
+      "player_name": "Faik Sakar",
+      "type_id": 672,
+      "type_name": "Ankle Problems",
+      "type_name_cs": "Problémy s kotníkem",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-29",
+      "start_date": "2026-09-10",
       "end_date": null,
-      "games_missed": 7,
+      "games_missed": 3,
       "likely_available": false
     }
   ],
@@ -1364,7 +1350,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.14
+          "odds": 1.15
         },
         {
           "key": "scored2plus",
@@ -1372,7 +1358,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 2.88
+          "odds": 2.99
         },
         {
           "key": "yellow_under5",
@@ -1443,7 +1429,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.41
+          "odds": 1.44
         },
         {
           "key": "corners_over95",
@@ -1451,7 +1437,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.51
+          "odds": 1.53
         },
         {
           "key": "ht_leading",
@@ -1459,7 +1445,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 7.44
+          "odds": 7.58
         },
         {
           "key": "ht_behind",
@@ -1475,7 +1461,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 13.2
+          "odds": 12.8
         },
         {
           "key": "corners_under95",
@@ -1483,7 +1469,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.39
+          "odds": 2.35
         },
         {
           "key": "more_corners",
@@ -1491,7 +1477,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 5.53
+          "odds": 5.56
         },
         {
           "key": "red_card",
@@ -1513,7 +1499,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.8
+          "odds": 2.72
         },
         {
           "key": "under25",
@@ -1521,7 +1507,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.68
+          "odds": 5.53
         },
         {
           "key": "yellow_5plus",
@@ -1536,7 +1522,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.76
+          "odds": 3.75
         }
       ],
       "away": [
@@ -1546,7 +1532,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.51
+          "odds": 1.53
         },
         {
           "key": "more_corners",
@@ -1633,7 +1619,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.14
+          "odds": 1.15
         },
         {
           "key": "scored2plus",
@@ -1657,7 +1643,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.41
+          "odds": 1.44
         },
         {
           "key": "clean_sheet",
@@ -1665,7 +1651,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.8
+          "odds": 2.72
         },
         {
           "key": "scoreless",
@@ -1673,7 +1659,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 13.2
+          "odds": 12.8
         },
         {
           "key": "under25",
@@ -1681,7 +1667,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 5.68
+          "odds": 5.53
         },
         {
           "key": "team_2plus_yellow",
@@ -1696,7 +1682,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.76
+          "odds": 3.75
         },
         {
           "key": "corners_under95",
@@ -1704,7 +1690,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.39
+          "odds": 2.35
         },
         {
           "key": "yellow_5plus",
@@ -1726,7 +1712,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 7.44
+          "odds": 7.58
         }
       ]
     },
@@ -1738,7 +1724,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.41
+          "odds": 1.44
         },
         {
           "key": "over15",
@@ -1754,7 +1740,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.14
+          "odds": 1.15
         },
         {
           "key": "shots_over",
@@ -1825,7 +1811,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.51
+          "odds": 1.53
         },
         {
           "key": "yellow_under5",
@@ -1854,7 +1840,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.39
+          "odds": 2.35
         },
         {
           "key": "more_corners",
@@ -1904,7 +1890,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 5.68
+          "odds": 5.53
         },
         {
           "key": "ht_leading",
@@ -1929,7 +1915,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.14
+          "odds": 1.15
         },
         {
           "key": "offsides_over",
@@ -1951,7 +1937,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.41
+          "odds": 1.44
         },
         {
           "key": "team_2plus_yellow",
@@ -2015,7 +2001,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.39
+          "odds": 2.35
         },
         {
           "key": "yellow_under5",
@@ -2037,7 +2023,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.51
+          "odds": 1.53
         },
         {
           "key": "yellow_5plus",
@@ -2087,7 +2073,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 5.68
+          "odds": 5.53
         },
         {
           "key": "ht_leading",
@@ -6801,40 +6787,40 @@
     ]
   },
   "odds": {
-    "home": 11.1,
-    "draw": 8.6,
+    "home": 11.3,
+    "draw": 8.65,
     "away": 1.19,
-    "under15": 12.3,
+    "under15": 11.9,
     "over15": 1.03,
-    "under25": 5.68,
-    "over25": 1.14,
-    "under35": 2.97,
-    "over35": 1.4,
-    "btts": 1.41,
-    "corners_under95": 2.39,
-    "corners_over95": 1.51,
+    "under25": 5.53,
+    "over25": 1.15,
+    "under35": 2.9,
+    "over35": 1.41,
+    "btts": 1.44,
+    "corners_under95": 2.35,
+    "corners_over95": 1.53,
     "source": "chance",
-    "home_scoreless": 2.8,
-    "home_scored2plus": 2.88,
-    "home_clean_sheet": 13.2,
-    "home_ht_leading": 7.44,
-    "home_ht_draw": 3.76,
+    "home_scoreless": 2.72,
+    "home_scored2plus": 2.99,
+    "home_clean_sheet": 12.8,
+    "home_ht_leading": 7.58,
+    "home_ht_draw": 3.75,
     "home_ht_behind": 1.48,
-    "home_more_corners": 5.53,
-    "away_clean_sheet": 2.8,
-    "away_scoreless": 13.2,
+    "home_more_corners": 5.56,
+    "away_clean_sheet": 2.72,
+    "away_scoreless": 12.8,
     "away_scored2plus": 1.09,
-    "away_ht_behind": 7.44,
-    "away_ht_draw": 3.76,
+    "away_ht_behind": 7.58,
+    "away_ht_draw": 3.75,
     "away_ht_leading": 1.48,
     "away_more_corners": 1.21
   },
   "ai_analysis": {
-    "text": "Zápas mezi FC Augsburg a FC Bayern München se odehraje 10. října 2026 na stadionu WWK Arena. Domácí Augsburg se nachází v solidní formě, s výsledky posledních čtyř zápasů, kde zaznamenal jednu prohru, jednu remízu a dvě vítězství. Na druhé straně Bayern München, jakožto favorit, má za sebou tři vítězství a jednu remízu, což naznačuje jejich silnou výkonnost. Historie vzájemných zápasů ukazuje, že Augsburg dokázal Bayern v posledních letech potrápit, ale většinou se prosadil silnější tým.\n\nPodle simulací očekáváme, že Bayern München bude mít mírně vyšší očekávané góly (xG) s hodnotou 1.95 oproti Augsburgu s 1.57. To naznačuje, že Bayern by měl mít více příležitostí k zakončení, což se odráží i v kurzech, kde je Bayern jasným favoritem s kurzem 1.19 na vítězství. Na druhou stranu, Augsburg má šanci na skórování, což potvrzuje pravděpodobnost, že oba týmy dají gól (67.8%).\n\nCelkově lze očekávat, že Bayern bude dominovat v držení míče a vytváření šancí, zatímco Augsburg se pokusí o rychlé protiútoky a využití standardních situací. Pokud se Augsburgovi podaří udržet zápas vyrovnaný, může to vést k dramatickému závěru, ale s ohledem na aktuální formu a vzájemné zápasy se zdá, že Bayern by měl mít navrch.",
+    "text": "Zápas mezi FC Augsburg a FC Bayern München, který se odehraje na WWK Areně, slibuje zajímavé souboje. Domácí Augsburg se nachází v solidní formě, když v posledních čtyřech zápasech zaznamenal dvě výhry a jednu remízu. Na druhé straně Bayern, ačkoliv je favoritem, má za sebou také úspěšné období, kdy získal tři výhry a jednu remízu. Historie vzájemných zápasů ukazuje, že Augsburg dokáže s Bayernem občas překvapit, což naznačuje i poslední vzájemný duel, kde Augsburg vyhrál 2:1.\n\nPodle simulací očekáváme, že Bayern bude mít mírně navrch, s očekávanými góly (xG) 1.95 oproti 1.57 pro Augsburg. To naznačuje, že Bayern by mohl mít více příležitostí k zakončení, ale Augsburg má také šanci na úspěch, zejména pokud využije domácího prostředí. Očekává se, že zápas bude vyrovnaný, přičemž pravděpodobnost výhry Bayernu je 39.6 %, zatímco remíza má šanci 24.8 %.\n\nVzhledem k výše uvedeným faktorům je také pravděpodobné, že oba týmy skórují, což je podpořeno 67.8 % pravděpodobností na \"both teams to score\". Zápas by mohl být dynamický s mnoha šancemi na obou stranách, což by mohlo vést k vysokému počtu rohů a gólů. Celkově se očekává napínavý duel, kde Augsburg bude chtít potvrdit svou sílu na domácím hřišti, zatímco Bayern se pokusí udržet svou dominanci v bundeslize.",
     "model": "gpt-4o-mini",
-    "input_hash": "181d5adaa56ed75a",
-    "generated_at": "2026-10-08T09:38:56Z",
-    "text_en": "The upcoming match between FC Augsburg and FC Bayern München, set to take place at the WWK Arena on October 10, 2026, promises to be an intriguing encounter in the Bundesliga. Augsburg's recent form shows a mixed bag with one win, one draw, and two losses in their last four matches. In contrast, Bayern München has been performing strongly, securing three wins and one draw in the same timeframe. Historically, the head-to-head results favor Bayern, although Augsburg managed to pull off a surprising victory earlier this year.\n\nStatistical analysis indicates that Bayern München is expected to dominate the match, with an expected goals (xG) metric of 1.95 compared to Augsburg's 1.57. This suggests that Bayern is likely to create more high-quality scoring opportunities. Furthermore, simulations indicate a 39.6% chance of Bayern winning, while Augsburg has a 35.7% chance of taking all three points. The likelihood of both teams scoring is relatively high at 67.8%, which points to a potentially competitive match.\n\nThe referee for this match will be Sven Jablonski, who will need to maintain control as both teams vie for crucial points. Given Bayern's strong recent performances and their historical advantage over Augsburg, they will likely approach the game with confidence. However, Augsburg's home advantage and their ability to perform well against top teams could lead to an exciting contest, where both teams will be eager to secure a positive result."
+    "input_hash": "61e3c02f308de5e1",
+    "generated_at": "2026-10-08T23:19:00Z",
+    "text_en": "The upcoming Bundesliga match between FC Augsburg and FC Bayern München at the WWK Arena promises to be an intriguing encounter. FC Augsburg has shown mixed form recently, with two wins, one draw, and a loss in their last four matches. In contrast, FC Bayern München has been in strong form, winning three of their last four matches and drawing one. Historically, the head-to-head record shows a competitive rivalry, with Augsburg managing to secure a win against Bayern earlier this year, which could boost their confidence going into this match.\n\nIn terms of expected performance, the simulation indicates that Bayern München is favored, with a 39.6% chance of winning compared to Augsburg's 35.7%. The expected goals (xG) metrics also suggest that Bayern is likely to create more scoring opportunities, with an xG of 1.95 compared to Augsburg's 1.57. This aligns with Bayern's reputation for offensive prowess and their ability to capitalize on chances, making them the likely favorites to dominate the match.\n\nThe match will be officiated by referee Sven Jablonski, and with both teams having the potential to score, the likelihood of both teams finding the net stands at 67.8%. Given Bayern's attacking strength and Augsburg's recent struggles defensively, it is plausible to expect a high-scoring affair. The odds reflect Bayern's status as the clear favorite, but Augsburg's ability to pull off surprises in previous encounters cannot be overlooked, making this match one to watch closely."
   },
-  "refreshed_at": "2026-10-08T09:38:48.699121Z"
+  "refreshed_at": "2026-10-08T23:18:52.378943Z"
 }

@@ -185,7 +185,7 @@
       "player_name": "Bernardo Fernandes da Silva Junior",
       "type_id": 603,
       "type_name": "Achilles tendon problems",
-      "type_name_cs": "Achilles tendon problems",
+      "type_name_cs": "Problémy s Achillovou šlachou",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-11",
@@ -1318,7 +1318,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.54
+          "odds": 1.52
         },
         {
           "key": "over15",
@@ -1406,7 +1406,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.3
+          "odds": 1.31
         },
         {
           "key": "yellow_under5",
@@ -1421,7 +1421,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.84
+          "odds": 1.83
         },
         {
           "key": "more_corners",
@@ -1451,7 +1451,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 5.67
+          "odds": 5.62
         },
         {
           "key": "clean_sheet",
@@ -1459,7 +1459,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.63
+          "odds": 2.68
         },
         {
           "key": "scoreless",
@@ -1467,7 +1467,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 8.47
+          "odds": 8.46
         },
         {
           "key": "under25",
@@ -1498,7 +1498,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.77
+          "odds": 2.82
         }
       ],
       "away": [
@@ -1572,7 +1572,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.63
+          "odds": 2.68
         },
         {
           "key": "over25",
@@ -1603,7 +1603,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.84
+          "odds": 1.83
         },
         {
           "key": "team_2plus_yellow",
@@ -1618,7 +1618,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.54
+          "odds": 1.52
         },
         {
           "key": "under25",
@@ -1634,7 +1634,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.12
+          "odds": 3.06
         },
         {
           "key": "corners_over95",
@@ -1664,7 +1664,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 5.67
+          "odds": 5.62
         },
         {
           "key": "clean_sheet",
@@ -1672,7 +1672,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 8.47
+          "odds": 8.46
         },
         {
           "key": "more_corners",
@@ -1688,7 +1688,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.77
+          "odds": 2.82
         }
       ]
     },
@@ -1778,7 +1778,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.54
+          "odds": 1.52
         },
         {
           "key": "over25",
@@ -1963,7 +1963,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.54
+          "odds": 1.52
         },
         {
           "key": "scored2plus",
@@ -6599,40 +6599,40 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi TSG Hoffenheim a Hamburger SV, který se odehraje na PreZero Areně, slibuje zajímavou podívanou. Domácí Hoffenheim se nachází v solidní formě, když v posledních čtyřech zápasech zaznamenali dvě výhry a dvě remízy. Naopak Hamburger SV má rovněž pozitivní trend, s třemi výhrami a jednou remízou v posledních čtyřech utkáních. Historie vzájemných zápasů naznačuje, že Hoffenheim má mírnou převahu, když vyhrál tři z posledních pěti duelů.\n\nPodle simulací očekáváme, že Hoffenheim bude mít převahu v počtu očekávaných gólů (xG 2.1 oproti 1.2 pro Hamburg). To naznačuje, že domácí tým by měl mít více příležitostí ke skórování. Statistika ukazuje, že Hoffenheim má 61.5% pravděpodobnost, že oba týmy skórují, a 64.1% pravděpodobnost, že padne více než 2.5 gólu. Tato čísla ukazují na ofenzivní potenciál obou týmů, což by mohlo vést k dynamickému zápasu.\n\nHlavní rozhodčí Harm Osmers bude mít na starosti tento duel, což může ovlivnit průběh hry. S ohledem na formu obou týmů a historické výsledky se zdá, že Hoffenheim má výhodu, ale Hamburger SV rozhodně nebude snadným soupeřem. Očekáváme vyrovnaný zápas, kde by domácí mohli využít svou formu a domácí prostředí k dosažení tří bodů.",
+    "text": "Zápas mezi TSG Hoffenheim a Hamburger SV, který se odehraje 10. října 2026 na stadionu PreZero Arena, slibuje zajímavou podívanou. Domácí Hoffenheim se nachází v solidní formě, přičemž v posledních čtyřech zápasech zaznamenali dvě výhry a dvě remízy. Na druhé straně Hamburger SV má také pozitivní trend, když vyhráli tři z posledních čtyř utkání. Historie vzájemných zápasů naznačuje, že Hoffenheim má mírnou převahu, když v posledních dvou utkáních s HSV zvítězil.\n\nPodle simulací se očekává, že Hoffenheim bude mít větší šanci na výhru, s očekávanými góly (xG) 2.1 oproti 1.2 pro Hamburger SV. Pravděpodobnost vítězství domácích je odhadována na 50.7 %, zatímco šance na remízu je 24 % a na vítězství hostů 25.3 %. Zajímavé je, že pravděpodobnost, že oba týmy vstřelí gól, se pohybuje kolem 61.5 %, což naznačuje, že zápas by mohl být vyrovnaný a plný příležitostí.\n\nCo se týče statistik, Hoffenheim má vysokou pravděpodobnost, že vstřelí více než 2.5 gólu, což je odhadováno na 64.1 %. Naopak Hamburger SV bude muset čelit silné ofenzivě domácích a bude zajímavé sledovat, jak se s tímto tlakem vyrovnají. Celkově lze očekávat dynamický zápas s mnoha šancemi na obou stranách, přičemž Hoffenheim bude chtít potvrdit svou domácí dominanci.",
     "model": "gpt-4o-mini",
-    "input_hash": "1b73233e79097310",
-    "generated_at": "2026-10-08T09:39:06Z",
-    "text_en": "The upcoming Bundesliga match between TSG Hoffenheim and Hamburger SV at the PreZero Arena on October 10, 2026, promises to be an intriguing encounter. Hoffenheim has struggled in their recent matches, with a record of one win and three losses in their last four games. In contrast, Hamburger SV has shown better form, securing three draws and one win in their previous outings. This disparity in recent performance could give the visitors a psychological edge going into the match.\n\nHistorically, Hoffenheim has had the upper hand in their head-to-head encounters, winning three of the last five matches against Hamburger SV. The simulations indicate that Hoffenheim is expected to create more scoring opportunities, with an expected goals (xG) value of 2.1 compared to Hamburger SV's 1.2. This suggests that Hoffenheim may dominate possession and create more chances, which could translate into goals if they capitalize on their opportunities.\n\nThe referee for the match, Harm Osmers, will oversee what could be a tightly contested game. The odds reflect Hoffenheim as the favorites to win, with a home victory priced at 1.42. However, the likelihood of both teams scoring (61.5%) and the potential for over 2.5 goals (64.1%) suggests that fans can expect an exciting match with plenty of action. If Hoffenheim can convert their chances effectively, they may secure a crucial victory at home, while Hamburger SV will need to rely on their resilience to challenge for points."
+    "input_hash": "3b0742269b3bbba0",
+    "generated_at": "2026-10-08T23:19:08Z",
+    "text_en": "The upcoming Bundesliga match between TSG Hoffenheim and Hamburger SV at the PreZero Arena promises to be an intriguing encounter. Hoffenheim has had a mixed recent form, with two wins and two losses in their last four matches, while Hamburger SV comes into the game with a stronger record, having secured three draws and one win in their last four outings. Historically, Hoffenheim has had the upper hand in their recent head-to-head encounters, winning three of the last five matches against Hamburger SV.\n\nIn terms of expected performance, simulations suggest that Hoffenheim is likely to dominate the match with an expected goals (xG) tally of 2.1 compared to Hamburger SV's 1.2. This indicates that Hoffenheim may create more and better-quality chances throughout the game. The odds reflect this expectation, with Hoffenheim favored to win at 1.43, while Hamburger SV's odds stand at 6.52. Given these statistics, it is reasonable to anticipate that Hoffenheim will control possession and create more scoring opportunities.\n\nThe match could see both teams scoring, as indicated by the 61.5% probability of both teams finding the net. With Hoffenheim's recent home form and their ability to score, they may take an early lead, putting pressure on Hamburger SV. However, the away team has shown resilience, which could lead to a competitive contest. Overall, the match is likely to be dynamic, with Hoffenheim aiming to capitalize on their home advantage while Hamburger SV will look to exploit any defensive weaknesses."
   },
-  "refreshed_at": "2026-10-08T09:38:56.768551Z",
+  "refreshed_at": "2026-10-08T23:19:02.725581Z",
   "odds": {
-    "home": 1.42,
-    "draw": 5.27,
-    "away": 6.58,
+    "home": 1.43,
+    "draw": 5.16,
+    "away": 6.52,
     "under15": 6.28,
     "over15": 1.12,
     "under25": 2.96,
     "over25": 1.4,
     "under35": 1.81,
-    "over35": 2.02,
-    "btts": 1.54,
+    "over35": 2.03,
+    "btts": 1.52,
     "corners_under95": 2.33,
     "corners_over95": 1.54,
     "source": "chance",
-    "home_scoreless": 8.47,
-    "home_scored2plus": 1.3,
-    "home_clean_sheet": 2.63,
-    "home_ht_leading": 1.84,
-    "home_ht_draw": 2.77,
-    "home_ht_behind": 5.67,
+    "home_scoreless": 8.46,
+    "home_scored2plus": 1.31,
+    "home_clean_sheet": 2.68,
+    "home_ht_leading": 1.83,
+    "home_ht_draw": 2.82,
+    "home_ht_behind": 5.62,
     "home_more_corners": 1.25,
-    "away_clean_sheet": 8.47,
-    "away_scoreless": 2.63,
-    "away_scored2plus": 3.12,
-    "away_ht_behind": 1.84,
-    "away_ht_draw": 2.77,
-    "away_ht_leading": 5.67,
+    "away_clean_sheet": 8.46,
+    "away_scoreless": 2.68,
+    "away_scored2plus": 3.06,
+    "away_ht_behind": 1.83,
+    "away_ht_draw": 2.82,
+    "away_ht_leading": 5.62,
     "away_more_corners": 4.98
   }
 }

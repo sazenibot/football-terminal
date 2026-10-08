@@ -173,34 +173,6 @@
     },
     {
       "side": "home",
-      "player_id": 21412837,
-      "player_name": "Eliot Matazo",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-04-25",
-      "end_date": "2026-11-30",
-      "games_missed": 17,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37645082,
-      "player_name": "Ilyas Ansah",
-      "type_id": 1935,
-      "type_name": "Back Problems",
-      "type_name_cs": "Back Problems",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-01",
-      "end_date": null,
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 32796077,
       "player_name": "Darko Gyabi",
       "type_id": 339,
@@ -214,6 +186,34 @@
       "likely_available": false
     },
     {
+      "side": "home",
+      "player_id": 37645082,
+      "player_name": "Ilyas Ansah",
+      "type_id": 1935,
+      "type_name": "Back Problems",
+      "type_name_cs": "Problémy se zády",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-01",
+      "end_date": null,
+      "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 21412837,
+      "player_name": "Eliot Matazo",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-04-25",
+      "end_date": "2026-11-30",
+      "games_missed": 17,
+      "likely_available": false
+    },
+    {
       "side": "away",
       "player_id": 31609,
       "player_name": "Christian Nørgaard",
@@ -223,28 +223,140 @@
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-20",
-      "end_date": null,
+      "end_date": "2026-10-09",
       "games_missed": 7,
-      "likely_available": false
+      "likely_available": true
     },
     {
       "side": "away",
       "player_id": 37266009,
       "player_name": "Merlin Röhl",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
+      "type_id": 531,
+      "type_name": "Knock",
+      "type_name_cs": "Menší zranění",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-12",
-      "end_date": null,
+      "start_date": "2026-09-07",
+      "end_date": "2026-10-09",
       "games_missed": 3,
-      "likely_available": false
+      "likely_available": true
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Oli McBurnie",
+        "jersey_number": 9,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Sorba Thomas",
+        "jersey_number": 7,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Ryan Giles",
+        "jersey_number": 3,
+        "formation_field": "2:5"
+      },
+      {
+        "player_name": "Regan Slater",
+        "jersey_number": 27,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Matt Crooks",
+        "jersey_number": 25,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Mohamed Belloumi",
+        "jersey_number": 10,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "John Egan",
+        "jersey_number": 15,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Lewie Coyle",
+        "jersey_number": 2,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Konstantinos Tzolakis",
+        "jersey_number": 19,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Lucas Herrington",
+        "jersey_number": 22,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Semi Ajayi",
+        "jersey_number": 6,
+        "formation_field": "2:2"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Kiernan Dewsbury-Hall",
+        "jersey_number": 8,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Brennan Johnson",
+        "jersey_number": 22,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Harrison Armstrong",
+        "jersey_number": 45,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Vitaliy Mykolenko",
+        "jersey_number": 16,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Ainsley Maitland-Niles",
+        "jersey_number": 2,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Jordan Pickford",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Thierno Barry",
+        "jersey_number": 11,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Jack Grealish",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "James Garner",
+        "jersey_number": 37,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Jarrad Branthwaite",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "James Tarkowski",
+        "jersey_number": 6,
+        "formation_field": "2:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1336,7 +1448,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.37
+          "odds": 1.42
         },
         {
           "key": "offsides_over",
@@ -1400,7 +1512,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 4.12
+          "odds": 4.18
         },
         {
           "key": "over15",
@@ -1408,7 +1520,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.32
+          "odds": 1.31
         },
         {
           "key": "under25",
@@ -1416,14 +1528,15 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.85
+          "odds": 1.87
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.95
         },
         {
           "key": "yellow_5plus",
@@ -1431,7 +1544,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.2
+          "odds": 2.42
         },
         {
           "key": "btts",
@@ -1439,7 +1552,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.75
+          "odds": 1.74
         },
         {
           "key": "over25",
@@ -1447,7 +1560,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.98
+          "odds": 1.95
         },
         {
           "key": "scored2plus",
@@ -1455,14 +1568,15 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.09
+          "odds": 3.06
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.77
         },
         {
           "key": "yellow_under5",
@@ -1470,7 +1584,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.6
+          "odds": 1.5
         },
         {
           "key": "ht_leading",
@@ -1478,7 +1592,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.18
+          "odds": 4.16
         },
         {
           "key": "ht_draw",
@@ -1486,7 +1600,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.15
+          "odds": 2.16
         },
         {
           "key": "scoreless",
@@ -1494,14 +1608,15 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.68
+          "odds": 2.7
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.38
         },
         {
           "key": "ht_behind",
@@ -1509,7 +1624,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.66
+          "odds": 2.65
         },
         {
           "key": "red_card",
@@ -1534,7 +1649,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.85
+          "odds": 1.87
         },
         {
           "key": "team_2plus_yellow",
@@ -1542,7 +1657,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.56
+          "odds": 1.64
         },
         {
           "key": "shots_over",
@@ -1601,7 +1716,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.68
+          "odds": 2.7
         },
         {
           "key": "over15",
@@ -1609,21 +1724,23 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.32
+          "odds": 1.31
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.95
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.8
         },
         {
           "key": "yellow_5plus",
@@ -1631,7 +1748,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.2
+          "odds": 2.42
         },
         {
           "key": "btts",
@@ -1639,7 +1756,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.75
+          "odds": 1.74
         },
         {
           "key": "scored2plus",
@@ -1647,14 +1764,15 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.05
+          "odds": 2.02
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.77
         },
         {
           "key": "yellow_under5",
@@ -1662,7 +1780,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.6
+          "odds": 1.5
         },
         {
           "key": "ht_leading",
@@ -1670,7 +1788,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.66
+          "odds": 2.65
         },
         {
           "key": "ht_draw",
@@ -1678,7 +1796,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.15
+          "odds": 2.16
         },
         {
           "key": "scoreless",
@@ -1686,7 +1804,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.12
+          "odds": 4.18
         },
         {
           "key": "over25",
@@ -1694,7 +1812,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.98
+          "odds": 1.95
         },
         {
           "key": "red_card",
@@ -1710,7 +1828,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.18
+          "odds": 4.16
         }
       ]
     },
@@ -1722,14 +1840,15 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.32
+          "odds": 1.31
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.77
         },
         {
           "key": "shots_over",
@@ -1793,7 +1912,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.98
+          "odds": 1.95
         },
         {
           "key": "scored2plus",
@@ -1808,7 +1927,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.6
+          "odds": 1.5
         },
         {
           "key": "red_card",
@@ -1831,7 +1950,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.75
+          "odds": 1.74
         },
         {
           "key": "clean_sheet",
@@ -1853,7 +1972,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.85
+          "odds": 1.87
         },
         {
           "key": "more_corners",
@@ -1868,7 +1987,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.2
+          "odds": 2.42
         },
         {
           "key": "ht_leading",
@@ -1896,7 +2015,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.95
         }
       ],
       "last5": [
@@ -1906,14 +2026,15 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.32
+          "odds": 1.31
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.77
         },
         {
           "key": "shots_over",
@@ -1935,7 +2056,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.6
+          "odds": 1.5
         },
         {
           "key": "shots_under",
@@ -1987,7 +2108,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.85
+          "odds": 1.87
         },
         {
           "key": "ht_behind",
@@ -2002,7 +2123,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.75
+          "odds": 1.74
         },
         {
           "key": "scoreless",
@@ -2017,7 +2138,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.98
+          "odds": 1.95
         },
         {
           "key": "scored2plus",
@@ -2061,7 +2182,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.2
+          "odds": 2.42
         },
         {
           "key": "ht_leading",
@@ -2082,7 +2203,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.95
         }
       ]
     }
@@ -5878,41 +6000,45 @@
     ]
   },
   "odds": {
-    "home": 3.75,
-    "draw": 3.46,
-    "away": 2.05,
-    "under15": 3.4,
-    "over15": 1.32,
-    "under25": 1.85,
-    "over25": 1.98,
-    "under35": 1.31,
-    "over35": 3.45,
-    "btts": 1.75,
-    "yellow_under5": 1.6,
-    "yellow_5plus": 2.2,
+    "home": 3.73,
+    "draw": 3.5,
+    "away": 2.04,
+    "under15": 3.46,
+    "over15": 1.31,
+    "under25": 1.87,
+    "over25": 1.95,
+    "under35": 1.32,
+    "over35": 3.4,
+    "btts": 1.74,
+    "corners_under95": 1.95,
+    "corners_over95": 1.77,
+    "yellow_under5": 1.5,
+    "yellow_5plus": 2.42,
     "red_card": 4.14,
     "source": "chance",
-    "home_scoreless": 2.68,
-    "home_scored2plus": 3.09,
-    "home_clean_sheet": 4.12,
-    "home_ht_leading": 4.18,
-    "home_ht_draw": 2.15,
-    "home_ht_behind": 2.66,
-    "home_team_2plus_yellow": 1.37,
-    "away_clean_sheet": 2.68,
-    "away_scoreless": 4.12,
-    "away_scored2plus": 2.05,
-    "away_ht_behind": 4.18,
-    "away_ht_draw": 2.15,
-    "away_ht_leading": 2.66,
-    "away_team_2plus_yellow": 1.56
+    "home_scoreless": 2.7,
+    "home_scored2plus": 3.06,
+    "home_clean_sheet": 4.18,
+    "home_ht_leading": 4.16,
+    "home_ht_draw": 2.16,
+    "home_ht_behind": 2.65,
+    "home_more_corners": 2.38,
+    "home_team_2plus_yellow": 1.42,
+    "away_clean_sheet": 2.7,
+    "away_scoreless": 4.18,
+    "away_scored2plus": 2.02,
+    "away_ht_behind": 4.16,
+    "away_ht_draw": 2.16,
+    "away_ht_leading": 2.65,
+    "away_more_corners": 1.8,
+    "away_team_2plus_yellow": 1.64
   },
   "ai_analysis": {
-    "text": "Zápas mezi Hull City a Evertonem, který se odehraje na MKM Stadium, slibuje zajímavou konfrontaci. Domácí Hull City se nachází v solidní formě, když z posledních pěti zápasů zaznamenal dvě vítězství a dvě remízy. Na druhé straně Everton také ukazuje stabilní výkony, přičemž v posledních pěti zápasech má dvě vítězství a tři remízy. Historie vzájemných zápasů naznačuje, že Everton má mírnou převahu, ale výsledky jsou vyrovnané, což může naznačovat vyrovnaný duel.\n\nPodle simulace očekávaných gólů (xG) má Hull City mírnou výhodu s hodnotou 1.11 oproti Evertonu s 0.95. To naznačuje, že domácí tým by mohl mít více šancí na vstřelení gólu, ale celkově je pravděpodobnost remízy (29.2 %) a výhry hostů (30.8 %) velmi vyrovnaná. Také statistiky ukazují na slušnou šanci na oba týmy, že skórují (41.3 %), což by mohlo znamenat atraktivní fotbal pro diváky.\n\nVzhledem k aktuální formě obou týmů a historickým výsledkům lze očekávat vyrovnaný zápas, kde by Hull City mohl využít domácího prostředí. Na druhou stranu Everton, s jeho zkušenostmi a stabilními výkony, by mohl být nebezpečný v protiútocích. Celkově se dá očekávat, že zápas bude vyrovnaný a může skončit remízou nebo těsným vítězstvím jednoho z týmů.",
+    "text": "Zápas mezi Hull City a Evertonem se odehraje na MKM Stadium a očekává se vyrovnané utkání. Domácí Hull City má v posledních pěti zápasech mix výsledků, včetně dvou vítězství, což naznačuje, že se tým nachází v solidní formě. Everton naopak také ukazuje stabilní výkony s třemi remízami a dvěma vítězstvími, což by mohlo přinést výhodu v psychologické stránce zápasu. Historie vzájemných zápasů ukazuje, že Everton má v posledních letech převahu, což může hrát roli v motivaci obou týmů.\n\nPodle simulací očekávaných gólů (xG) má Hull City mírnou výhodu s 1.11 oproti Evertonu s 0.95. To naznačuje, že domácí tým by mohl mít více příležitostí ke skórování, ale zároveň je důležité vzít v úvahu, že Everton má schopnost efektivně bránit a využívat protiútoky. Statistika naznačuje, že pravděpodobnost remízy je 29.2 %, což je celkem vysoké číslo, a může naznačovat, že obě strany budou opatrné, zejména v prvních minutách.\n\nCo se týče dalších aspektů zápasu, pravděpodobnost, že oba týmy vstřelí gól, je 41.3 %, což ukazuje na možnost vyrovnaného průběhu. Vzhledem k formě obou týmů a historickým výsledkům se dá očekávat, že zápas bude vyrovnaný s možnými šancemi na skórování na obou stranách. Celkově se tedy dá očekávat napínavé utkání, kde každý tým bude usilovat o zisk tří bodů.",
     "model": "gpt-4o-mini",
-    "input_hash": "e56a7bc06f19e1e8",
-    "generated_at": "2026-10-08T09:37:44Z",
-    "text_en": "The upcoming match between Hull City and Everton in the Premier League is set to take place at the MKM Stadium on October 11, 2026. Both teams have had mixed recent form, with Hull City recording two wins, two draws, and one loss in their last five matches, while Everton has managed two wins and three draws in the same timeframe. Historically, Everton has had the upper hand in their head-to-head encounters, winning four out of the last five matches against Hull City, which may give them a psychological advantage heading into this fixture.\n\nIn terms of expected performance, simulations suggest that Hull City has a slight edge in expected goals (xG) with 1.11 compared to Everton's 0.95. This indicates that Hull may create more goal-scoring opportunities, despite their recent struggles. However, with Everton's more consistent form and their ability to secure draws, the match could be tightly contested. The odds reflect this uncertainty, with Everton favored to win at 2.05, while Hull City sits at 3.75, indicating a competitive matchup.\n\nReferee Michael Salisbury will oversee the match, and discipline could play a role, as odds suggest a likelihood of yellow cards being issued. With both teams vying for crucial points in the Premier League, the match is expected to be intense, with both sides aiming to capitalize on their chances. The outcome could hinge on Hull City's ability to convert their opportunities and Everton's resilience in defense, making for an intriguing encounter."
+    "input_hash": "7aa8c907693b6f2c",
+    "generated_at": "2026-10-08T23:17:49Z",
+    "text_en": "The upcoming Premier League match between Hull City and Everton at the MKM Stadium promises to be an intriguing encounter, especially considering the recent form of both teams. Hull City has struggled lately, recording two draws and a loss in their last five matches, with a recent victory that may boost their confidence. In contrast, Everton has shown a more consistent performance, with two wins and three draws in their last five games, indicating a stronger form heading into this fixture.\n\nHistorically, Everton has had the upper hand in their encounters with Hull City, winning convincingly in previous matches, including a 4-0 victory in March 2017. The simulations suggest a slight advantage for Hull City in terms of expected goals (xG), with 1.11 compared to Everton's 0.95. However, the odds reflect a belief in Everton's ability to secure a win, with odds of 2.04 for an away victory, compared to 3.73 for Hull City at home.\n\nReferee Michael Salisbury will oversee the match, and with both teams having a mix of attacking and defensive capabilities, the game could see a few goals. The simulation indicates a 40.1% chance of a home win, a 29.2% chance of a draw, and a 30.8% chance of an away win. The likelihood of both teams scoring stands at 41.3%, suggesting that fans can expect an engaging match with potential for goals from both sides."
   },
-  "refreshed_at": "2026-10-08T09:37:34.371497Z"
+  "refreshed_at": "2026-10-08T23:17:43.339068Z"
 }

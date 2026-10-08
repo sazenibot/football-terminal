@@ -1760,7 +1760,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.13
+          "odds": 1.14
         },
         {
           "key": "shots_over",
@@ -1825,7 +1825,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.45
+          "odds": 1.46
         },
         {
           "key": "corners_over95",
@@ -1854,7 +1854,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.58
+          "odds": 2.64
         },
         {
           "key": "clean_sheet",
@@ -1922,7 +1922,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.88
+          "odds": 1.93
         },
         {
           "key": "ht_behind",
@@ -1930,7 +1930,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 5.31
+          "odds": 5.46
         }
       ],
       "away": [
@@ -1940,7 +1940,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.13
+          "odds": 1.14
         },
         {
           "key": "shots_over",
@@ -2018,7 +2018,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.45
+          "odds": 1.46
         },
         {
           "key": "scored2plus",
@@ -2034,7 +2034,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 5.31
+          "odds": 5.46
         },
         {
           "key": "btts",
@@ -2080,7 +2080,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.88
+          "odds": 1.93
         },
         {
           "key": "scoreless",
@@ -2117,7 +2117,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.58
+          "odds": 2.64
         }
       ]
     },
@@ -2129,7 +2129,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.13
+          "odds": 1.14
         },
         {
           "key": "scored2plus",
@@ -2207,7 +2207,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.45
+          "odds": 1.46
         },
         {
           "key": "corners_over95",
@@ -2310,7 +2310,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.13
+          "odds": 1.14
         },
         {
           "key": "scored2plus",
@@ -2395,7 +2395,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.45
+          "odds": 1.46
         },
         {
           "key": "corners_over95",
@@ -7605,36 +7605,36 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Viktorií Plzeň a Mladou Boleslaví, který se odehraje 10. října 2026 na Doosan Aréně, slibuje zajímavou konfrontaci. Domácí Viktoria Plzeň se nachází v solidní formě, kdy z posledních šesti zápasů zaznamenala tři výhry, dvě remízy a jednu prohru. Na druhé straně Mladá Boleslav má lepší bilanci, s čtyřmi výhrami, jednou remízou a jednou prohrou. Historie vzájemných zápasů hovoří ve prospěch Plzně, která v posledních pěti střetnutích s Boleslaví vyhrála čtyřikrát.\n\nPodle simulací se očekává vyrovnaný zápas s mírnou převahou pro hosty, kteří mají vyšší hodnotu očekávaných gólů (xG) 1.8 oproti 1.52 domácího týmu. Pravděpodobnost vítězství Plzně se odhaduje na 36.8 %, zatímco šance na výhru Boleslavi je 38.4 %. Remíza má pravděpodobnost 24.9 %. Vzhledem k formě obou týmů a jejich vzájemným zápasům lze očekávat, že zápas bude vyrovnaný a může skončit i remízou.\n\nZ pohledu statistik je zajímavé, že více než 64 % simulací naznačuje, že oba týmy by mohly skórovat (btts), což naznačuje otevřenou hru. Plzeň má také solidní šance na vstřelení více než dvou gólů, což je podpořeno jejich schopností skórovat v posledních zápasech. Celkově se dá očekávat, že zápas bude atraktivní, s možností několika gólů na obou stranách.",
+    "text": "Zápas mezi Viktorií Plzeň a Mladou Boleslav, který se odehraje na Doosan Aréně, slibuje zajímavou podívanou. Domácí Plzeň se nachází v mírně kolísavé formě, kdy z posledních šesti zápasů zaznamenala dvě vítězství, dvě remízy a dvě prohry. Naopak Mladá Boleslav má lepší výkonnost, když vyhrála čtyři z posledních šesti utkání a je v dobrém rozpoložení. Historie vzájemných zápasů hovoří ve prospěch Plzně, která vyhrála poslední čtyři duely.\n\nPodle simulací je pravděpodobné, že zápas skončí vítězstvím Plzně, přičemž šance na výhru domácích se pohybuje kolem 36.8 %, zatímco Mladá Boleslav má šanci na výhru 38.4 %. Očekává se také, že obě mužstva vstřelí branku, což potvrzuje pravděpodobnost 64.9 % pro \"obě týmy skórují\". Vzhledem k výkonnosti obou týmů a jejich ofenzivní síle se dá očekávat, že zápas bude vyrovnaný a plný šancí.\n\nCo se týče očekávaného počtu gólů, simulace naznačují, že by mohlo padnout více než 2.5 gólu, s pravděpodobností 65.1 %. Plzeň má tendenci hrát ofenzivně, což může vést k vysokému skóre, zatímco Mladá Boleslav se také prezentuje jako silný protivník. Rozhodčí Ondřej Berka bude mít klíčovou roli v řízení zápasu, a jeho rozhodnutí mohou ovlivnit konečný výsledek. Celkově lze očekávat napínavý a dynamický zápas.",
     "model": "gpt-4o-mini",
-    "input_hash": "cc428916dad12018",
-    "generated_at": "2026-10-08T09:35:54Z",
-    "text_en": "The upcoming match between Viktoria Plzeň and Mladá Boleslav in the Chance Liga is set to take place at Doosan Aréna on October 10, 2026. Viktoria Plzeň has shown inconsistent form recently, with two wins, two draws, and two losses in their last six matches. In contrast, Mladá Boleslav has been performing better, with four wins, one draw, and one loss in the same period. This disparity in recent form could give the away team a psychological edge heading into the match.\n\nHistorically, Viktoria Plzeň has dominated their encounters with Mladá Boleslav, winning four of their last five meetings, including a decisive 5-0 victory in August 2025. The head-to-head record suggests that Plzeň has the capability to score multiple goals against their opponents. However, Mladá Boleslav's recent form indicates they can be competitive, as reflected in their higher expected goals (xG) of 1.8 compared to Plzeň's 1.52. This could lead to a closely contested match, with both teams likely to create scoring opportunities.\n\nThe match simulation suggests a fairly even contest, with a slight advantage for Mladá Boleslav in terms of overall goal-scoring potential. The probabilities indicate a 36.8% chance of a home win for Plzeň, a 24.9% chance of a draw, and a 38.4% chance of an away win for Mladá Boleslav. With both teams capable of scoring, the likelihood of both teams finding the net is estimated at 64.9%. Given these factors, fans can expect an engaging match with potential for goals from both sides."
+    "input_hash": "a2aa446af6309aac",
+    "generated_at": "2026-10-08T23:16:09Z",
+    "text_en": "The upcoming match between Viktoria Plzeň and Mladá Boleslav in the Chance Liga is set to take place at Doosan Aréna on October 10, 2026. Viktoria Plzeň has had a mixed recent form with two wins, two draws, and two losses in their last six matches. In contrast, Mladá Boleslav has shown stronger performance, securing four wins, one draw, and one loss in the same period. This disparity in form suggests that Mladá Boleslav may enter the match with greater confidence.\n\nHistorically, Viktoria Plzeň has dominated their recent encounters with Mladá Boleslav, winning four of the last five meetings, including a significant 5-0 victory in August 2025. The head-to-head record indicates a psychological edge for the home side, which could play a role in the match dynamics. However, Mladá Boleslav's current form and ability to score, as indicated by their expected goals (xG) of 1.8, suggest they could pose a serious threat to Plzeň's defense.\n\nAccording to the simulation data, the likelihood of both teams scoring (64.9%) and the probability of over 2.5 goals (65.1%) indicates an expectation for an entertaining match with multiple goal-scoring opportunities. The odds reflect a strong favor towards a home victory, but given Mladá Boleslav's recent form, it would not be surprising to see a competitive match that could potentially end in a draw or a narrow victory for either side. The referee for the match, Ondřej Berka, will play a crucial role in maintaining control and ensuring fair play throughout the encounter."
   },
-  "refreshed_at": "2026-10-08T09:35:44.543817Z",
+  "refreshed_at": "2026-10-08T23:16:02.483524Z",
   "odds": {
-    "home": 1.48,
-    "draw": 4.67,
-    "away": 5.76,
-    "under15": 5.68,
-    "over15": 1.13,
+    "home": 1.49,
+    "draw": 4.78,
+    "away": 6.13,
+    "under15": 5.73,
+    "over15": 1.14,
     "under25": 2.72,
-    "over25": 1.45,
-    "under35": 1.67,
+    "over25": 1.46,
+    "under35": 1.69,
     "over35": 2.2,
     "btts": 1.54,
     "source": "chance",
     "home_scoreless": 7.68,
     "home_scored2plus": 1.37,
     "home_clean_sheet": 2.67,
-    "home_ht_leading": 1.88,
-    "home_ht_draw": 2.58,
-    "home_ht_behind": 5.31,
+    "home_ht_leading": 1.93,
+    "home_ht_draw": 2.64,
+    "home_ht_behind": 5.46,
     "away_clean_sheet": 7.68,
     "away_scoreless": 2.67,
     "away_scored2plus": 3.08,
-    "away_ht_behind": 1.88,
-    "away_ht_draw": 2.58,
-    "away_ht_leading": 5.31
+    "away_ht_behind": 1.93,
+    "away_ht_draw": 2.64,
+    "away_ht_leading": 5.46
   }
 }

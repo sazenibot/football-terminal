@@ -347,6 +347,20 @@
     },
     {
       "side": "home",
+      "player_id": 37688208,
+      "player_name": "Shaqueel van Persie",
+      "type_id": 677,
+      "type_name": "Minor Knock",
+      "type_name_cs": "Drobné zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-19",
+      "end_date": null,
+      "games_missed": 1,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 23269680,
       "player_name": "Gonçalo Oscar Albuquerque Borges",
       "type_id": 587,
@@ -357,20 +371,6 @@
       "start_date": "2026-09-12",
       "end_date": null,
       "games_missed": 2,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37688208,
-      "player_name": "Shaqueel van Persie",
-      "type_id": 677,
-      "type_name": "Minor Knock",
-      "type_name_cs": "Minor Knock",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-19",
-      "end_date": null,
-      "games_missed": 1,
       "likely_available": false
     },
     {
@@ -399,6 +399,20 @@
       "start_date": "2026-07-04",
       "end_date": "2027-01-01",
       "games_missed": 13,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37547506,
+      "player_name": "Stije Resink",
+      "type_id": 557,
+      "type_name": "Cruciate Ligament Injury",
+      "type_name_cs": "Zranění zkříženého vazu",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-03-01",
+      "end_date": "2027-01-01",
+      "games_missed": 29,
       "likely_available": false
     }
   ],
@@ -477,11 +491,6 @@
         "formation_field": "2:2"
       },
       {
-        "player_name": "Ro-Zangelo Daal",
-        "jersey_number": 11,
-        "formation_field": "4:3"
-      },
-      {
         "player_name": "Peer Koopmeiners",
         "jersey_number": 6,
         "formation_field": "3:1"
@@ -497,11 +506,6 @@
         "formation_field": "2:4"
       },
       {
-        "player_name": "Kees Smit",
-        "jersey_number": 10,
-        "formation_field": "4:1"
-      },
-      {
         "player_name": "Dave Kwakman",
         "jersey_number": 21,
         "formation_field": "3:2"
@@ -515,6 +519,16 @@
         "player_name": "Wouter Goes",
         "jersey_number": 3,
         "formation_field": "2:3"
+      },
+      {
+        "player_name": "Ro-Zangelo Daal",
+        "jersey_number": 11,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Valdemar Byskov Andreasen",
+        "jersey_number": 17,
+        "formation_field": "4:3"
       }
     ]
   },
@@ -7795,13 +7809,13 @@
     ]
   },
   "ai_analysis": {
-    "text": "Zápas mezi Feyenoordem a AZ Alkmaarem slibuje být vysoce konkurenceschopným střetnutím v rámci Eredivisie. Feyenoord, hrající na domácím stadionu Feijenoord, má v posledních zápasech velmi dobrou formu, když vyhráli tři z posledních šesti utkání a pouze dvakrát remizovali. Na druhé straně AZ Alkmaar také prokazuje silnou výkonnost, když vyhráli pět z posledních šesti zápasů, což naznačuje, že oba týmy budou chtít pokračovat v dobrých výkonech.\n\nHistorie vzájemných zápasů ukazuje vyrovnanost, přičemž poslední čtyři zápasy skončily remízou nebo vítězstvím pro Feyenoord. To naznačuje, že Feyenoord má mírnou psychologickou výhodu, ačkoli AZ Alkmaar se také může opřít o silnou formu a motivaci získat důležité body na hřišti soupeře. \n\nPodle simulací se očekává, že Feyenoord vytvoří více šancí, s očekávanými góly (xG) 2.1 oproti 1.54 pro AZ Alkmaar. S pravděpodobností 69.1 % se také očekává, že oba týmy skórují, a 70.1 % pravděpodobnost, že padne více než 2.5 gólu. To naznačuje, že zápas by mohl být dynamický s mnoha ofenzivními akcemi a příležitostmi na obou stranách.",
+    "text": "Zápas mezi Feyenoordem a AZ Alkmaarem se odehraje na stadionu Feijenoord a slibuje být vyrovnaným a atraktivním střetnutím. Domácí tým, Feyenoord, vykazuje solidní formu s posledními třemi vítězstvími, zatímco AZ Alkmaar také předvádí dobrou hru, s pěti výhrami v posledních šesti zápasech. Historie vzájemných zápasů naznačuje, že oba týmy jsou vyrovnané, přičemž poslední zápas skončil remízou 1:1.\n\nPodle simulací očekáváme, že Feyenoord bude mít mírnou převahu, s očekávanými góly (xG) 2.1 oproti 1.54 pro AZ Alkmaar. Vzhledem k tomu, že pravděpodobnost, že oba týmy skórují, je vysoká (69.1 %), je pravděpodobné, že diváci uvidí gólové momenty na obou stranách. Také statistiky naznačují, že Feyenoord má slušnou šanci na to, aby skóroval alespoň dvakrát, což by mohlo přispět k celkovému počtu gólů.\n\nRozhodčí Danny Desmond Makkelie bude mít důležitou roli v udržení hry pod kontrolou. S ohledem na vyrovnanou formu obou týmů a jejich vzájemné zápasy, se očekává napínavý duel, kde by mohly rozhodnout detaily, jako jsou standardní situace nebo individuální výkony klíčových hráčů. Celkově lze očekávat atraktivní fotbal s mnoha šancemi na obou stranách.",
     "model": "gpt-4o-mini",
-    "input_hash": "77f8712f0b32d540",
-    "generated_at": "2026-10-07T10:09:46Z",
-    "text_en": "The upcoming Eredivisie match between Feyenoord and AZ Alkmaar at Stadion Feijenoord promises to be an intriguing encounter, given both teams' current form and their head-to-head history. Feyenoord has shown strong performance at home recently, with three wins and two draws in their last six matches, while AZ Alkmaar has been equally impressive away, with five wins and one draw in the same timeframe. This sets the stage for a competitive match as both teams are in good form.\n\nHistorically, encounters between these two sides have been closely contested, with their last five meetings yielding a mix of results, including draws and narrow victories. The most recent match ended in a 1-1 draw, indicating that both teams are capable of scoring and maintaining pressure. The simulation data suggests that Feyenoord has a slight edge with an expected goals (xG) value of 2.1 compared to AZ Alkmaar's 1.54, hinting at a potentially higher scoring game for the home side.\n\nWith referee Danny Desmond Makkelie officiating, the match is likely to see a fair amount of action. The simulation indicates a high likelihood of both teams scoring (69.1%) and a strong chance of the total goals exceeding 2.5 (70.1%). Given the attacking capabilities of both teams and their recent form, fans can expect an engaging match filled with opportunities for both sides."
+    "input_hash": "1d9b743d2fd203b5",
+    "generated_at": "2026-10-08T23:22:29Z",
+    "text_en": "The upcoming Eredivisie match between Feyenoord and AZ Alkmaar at Stadion Feijenoord promises to be a competitive encounter. Feyenoord enters the match in strong form, having won four of their last six games, with one draw and one loss. Meanwhile, AZ Alkmaar has also been performing well, recording five wins and one draw in their recent matches. This suggests that both teams are in good shape, which could lead to an exciting and closely contested match.\n\nHistorically, the head-to-head encounters between these two teams have been high-scoring and competitive. Their last five meetings have seen a mix of results, including draws and narrow wins for both sides. The simulations indicate that Feyenoord has a slight edge with an expected goals (xG) score of 2.1 compared to AZ Alkmaar's 1.54. This could suggest that Feyenoord may create more scoring opportunities, particularly playing at home, where they tend to perform well.\n\nWith the referee for the match being Danny Desmond Makkelie, who is known for his ability to manage high-pressure situations, the match is likely to be intense but fair. The simulations also suggest a high likelihood of both teams scoring, with a 69.1% probability of both teams finding the net. Given the attacking prowess of both sides and their current forms, fans can expect an engaging match with plenty of action."
   },
-  "refreshed_at": "2026-10-08T09:40:58.709183Z",
+  "refreshed_at": "2026-10-08T23:22:22.659193Z",
   "odds": {
     "home": 1.79,
     "draw": 4.17,

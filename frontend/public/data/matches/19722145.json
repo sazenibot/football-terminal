@@ -231,25 +231,11 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 893705,
-      "player_name": "Manuel Ugarte Ribeiro",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-06-28",
-      "end_date": null,
-      "games_missed": 13,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37317015,
       "player_name": "Amad Diallo Traoré",
       "type_id": 531,
       "type_name": "Knock",
-      "type_name_cs": "Knock",
+      "type_name_cs": "Menší zranění",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-20",
@@ -269,6 +255,20 @@
       "start_date": "2026-09-15",
       "end_date": "2026-10-10",
       "games_missed": 2,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 893705,
+      "player_name": "Manuel Ugarte Ribeiro",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-06-28",
+      "end_date": null,
+      "games_missed": 13,
       "likely_available": false
     },
     {
@@ -1543,7 +1543,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.54
+          "odds": 2.55
         },
         {
           "key": "shots_over",
@@ -1611,7 +1611,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.62
+          "odds": 2.63
         },
         {
           "key": "corners_over95",
@@ -1635,7 +1635,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 6.35
+          "odds": 6.37
         },
         {
           "key": "over25",
@@ -1643,7 +1643,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.5
+          "odds": 1.49
         },
         {
           "key": "scored2plus",
@@ -1651,7 +1651,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.5
+          "odds": 1.49
         },
         {
           "key": "corners_under95",
@@ -1691,7 +1691,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.47
+          "odds": 4.45
         },
         {
           "key": "clean_sheet",
@@ -1699,7 +1699,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.05
+          "odds": 3.06
         },
         {
           "key": "ht_leading",
@@ -1733,7 +1733,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 3.05
+          "odds": 3.06
         },
         {
           "key": "shots_over",
@@ -1805,7 +1805,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.62
+          "odds": 2.63
         },
         {
           "key": "more_corners",
@@ -1813,7 +1813,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.67
+          "odds": 2.68
         },
         {
           "key": "ht_draw",
@@ -1821,7 +1821,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.54
+          "odds": 2.55
         },
         {
           "key": "clean_sheet",
@@ -1829,7 +1829,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 6.35
+          "odds": 6.37
         },
         {
           "key": "over25",
@@ -1837,7 +1837,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.5
+          "odds": 1.49
         },
         {
           "key": "ht_behind",
@@ -1861,7 +1861,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.63
+          "odds": 2.62
         },
         {
           "key": "team_2plus_yellow",
@@ -1900,7 +1900,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.47
+          "odds": 4.45
         }
       ]
     },
@@ -1978,7 +1978,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.62
+          "odds": 2.63
         },
         {
           "key": "scored2plus",
@@ -2038,7 +2038,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.5
+          "odds": 1.49
         },
         {
           "key": "corners_over95",
@@ -2166,7 +2166,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.5
+          "odds": 1.49
         },
         {
           "key": "scored2plus",
@@ -2226,7 +2226,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.62
+          "odds": 2.63
         },
         {
           "key": "corners_over95",
@@ -7548,12 +7548,12 @@
   },
   "odds": {
     "home": 1.7,
-    "draw": 4.31,
-    "away": 4.49,
-    "under15": 5.51,
+    "draw": 4.35,
+    "away": 4.47,
+    "under15": 5.53,
     "over15": 1.15,
-    "under25": 2.62,
-    "over25": 1.5,
+    "under25": 2.63,
+    "over25": 1.49,
     "under35": 1.65,
     "over35": 2.27,
     "btts": 1.49,
@@ -7563,28 +7563,28 @@
     "yellow_5plus": 1.7,
     "red_card": 4.61,
     "source": "chance",
-    "home_scoreless": 6.35,
-    "home_scored2plus": 1.5,
-    "home_clean_sheet": 3.05,
+    "home_scoreless": 6.37,
+    "home_scored2plus": 1.49,
+    "home_clean_sheet": 3.06,
     "home_ht_leading": 2.16,
-    "home_ht_draw": 2.54,
-    "home_ht_behind": 4.47,
+    "home_ht_draw": 2.55,
+    "home_ht_behind": 4.45,
     "home_more_corners": 1.63,
     "home_team_2plus_yellow": 1.42,
-    "away_clean_sheet": 6.35,
-    "away_scoreless": 3.05,
-    "away_scored2plus": 2.63,
+    "away_clean_sheet": 6.37,
+    "away_scoreless": 3.06,
+    "away_scored2plus": 2.62,
     "away_ht_behind": 2.16,
-    "away_ht_draw": 2.54,
-    "away_ht_leading": 4.47,
-    "away_more_corners": 2.67
+    "away_ht_draw": 2.55,
+    "away_ht_leading": 4.45,
+    "away_more_corners": 2.68
   },
   "ai_analysis": {
-    "text": "Zápas mezi Manchesterem United a Tottenhamem Hotspur, který se odehraje na Old Trafford, slibuje být napínavým soubojem. Domácí Manchester United se nachází v průměrné formě s jednou výhrou, dvěma remízami a dvěma prohrami v posledních pěti zápasech. Na druhé straně Tottenham Hotspur má také slabší výkony, přičemž ve stejném období zaznamenal pouze jednu výhru a čtyři remízy. Historie vzájemných zápasů ukazuje vyrovnanost, přičemž poslední zápas skončil vítězstvím United 2:0, což může poskytnout domácím hráčům potřebnou motivaci.\n\nAnalýza očekávaných gólů (xG) naznačuje, že Manchester United má mírnou výhodu s hodnotou 1.69 oproti 0.91 pro Tottenham. To naznačuje, že domácí tým by mohl mít více příležitostí ke skórování. Vzhledem k formě obou týmů a jejich vzájemným zápasům lze očekávat, že Manchester United bude usilovat o kontrolu hry a pokusí se využít domácího prostředí, zatímco Tottenham se pravděpodobně zaměří na rychlé protiútoky.\n\nStatistiky naznačují, že pravděpodobnost remízy je 25.9 %, což ukazuje na vyrovnanost obou týmů. S ohledem na výkonnost obou celků a jejich tendence k remízám v posledních zápasech je možné, že zápas skončí s minimálním rozdílem, nebo dokonce remízou. Očekává se také, že obě mužstva budou mít šance na vstřelení gólů, přičemž pravděpodobnost, že oba týmy skórují, je 48.9 %.",
+    "text": "Zápas mezi Manchesterem United a Tottenhamem Hotspur, který se odehraje na Old Trafford, slibuje být zajímavým střetnutím v rámci Premier League. Domácí tým se nachází ve smíšené formě, s jednou výhrou, dvěma remízami a dvěma prohrami v posledních pěti zápasech. Na druhé straně Tottenham také nezáří, s jednou výhrou a čtyřmi remízami v posledních pěti utkáních. Historie vzájemných zápasů ukazuje, že oba týmy si jsou velmi blízké, přičemž Manchester vyhrál poslední vzájemný duel 2:0, ale předtím Tottenham dominoval s výhrou 3:0.\n\nPodle simulovaných očekávaných gólů (xG) má Manchester United mírnou výhodu s hodnotou 1.69 oproti 0.91 pro Tottenham. To naznačuje, že domácí tým by měl mít více příležitostí k vstřelení gólů. S pravděpodobností 49.5 % je nejvíce očekávaným výsledkem výhra Manchesteru, zatímco remíza má pravděpodobnost 25.9 % a výhra Tottenhamu 24.7 %. Takticky se dá očekávat, že Manchester se pokusí využít domácího prostředí a tlak na soupeře, zatímco Tottenham se může soustředit na pevnou obranu a rychlé protiútoky.\n\nCo se týče dalších aspektů zápasu, pravděpodobnost, že oba týmy vstřelí gól, je 48.9 %, což naznačuje, že by mohlo dojít k otevřenému zápasu. Vzhledem k formě obou týmů a historickým výsledkům se dá očekávat vyrovnaný duel, ve kterém by Manchester mohl těžit z domácího prostředí a snahy o zlepšení své formy. Na druhou stranu, Tottenham bude chtít potvrdit svou konkurenceschopnost a pokusit se o překvapení.",
     "model": "gpt-4o-mini",
-    "input_hash": "a31c9d3aadb1d44f",
-    "generated_at": "2026-10-08T09:37:34Z",
-    "text_en": "The upcoming match between Manchester United and Tottenham Hotspur at Old Trafford promises to be an intriguing contest in the Premier League. Manchester United's recent form shows a mixed bag with two wins, two draws, and a loss in their last five games. In contrast, Tottenham has struggled, managing only one win and four losses in their last five outings. This discrepancy in form suggests that Manchester United may have the upper hand going into the match.\n\nHistorically, the head-to-head encounters between these two teams have been competitive. Manchester United won the last match 2-0 in February 2026, while Tottenham secured a 3-0 victory in September 2024. The simulations indicate that Manchester United has a higher expected goals (xG) tally of 1.69 compared to Tottenham's 0.91, which further supports the notion that they are likely to create more scoring opportunities during the match. \n\nThe referee for this match, Stuart Attwell, will be crucial in managing the game's flow, particularly given the potential for physical play. The odds reflect Manchester United as the favorites, with a home win priced at 1.7. With both teams needing points for different reasons—Manchester United looking to solidify their position and Tottenham aiming to halt their poor run—the match could be tightly contested, but Manchester United's home advantage and current form might see them emerge victorious."
+    "input_hash": "f93e4f890737a9cc",
+    "generated_at": "2026-10-08T23:17:41Z",
+    "text_en": "The upcoming match between Manchester United and Tottenham Hotspur at Old Trafford promises to be an intriguing clash in the Premier League. Manchester United's recent form shows a mixed bag with two wins, two draws, and one loss in their last five matches. In contrast, Tottenham has struggled, recording four losses and only one draw in their last five games. This suggests that Manchester United may have the upper hand heading into this encounter, particularly given their home advantage.\n\nHistorically, the head-to-head results indicate a competitive rivalry, with Manchester United winning the last encounter 2-0 in February 2026. However, Tottenham has also had its successes, including a 3-0 victory at Old Trafford the previous season. The expected goals (xG) simulation favors Manchester United with an xG of 1.69 compared to Tottenham's 0.91, suggesting that United is likely to create more scoring opportunities. The simulation also indicates a 49.5% chance of a home win, further supporting the notion that they are favored in this matchup.\n\nReferee Stuart Attwell will oversee the match, and with both teams under pressure to perform, the game could be tightly contested. The likelihood of both teams scoring (48.9%) suggests that while Manchester United may dominate possession and create chances, Tottenham could still pose a threat on the counterattack. Overall, the match is expected to be competitive, with Manchester United likely to edge it if they can capitalize on their home advantage and recent form."
   },
-  "refreshed_at": "2026-10-08T09:37:25.078339Z"
+  "refreshed_at": "2026-10-08T23:17:34.739583Z"
 }

@@ -20,34 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 3219728,
-      "player_name": "Andrés Martín García",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-29",
-      "end_date": "2026-10-12",
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37743776,
-      "player_name": "Hráč #37743776",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-02-06",
-      "end_date": "2026-11-01",
-      "games_missed": 25,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37683780,
       "player_name": "Lars Simon Albin Eriksson",
       "type_id": 798,
@@ -58,6 +30,20 @@
       "start_date": "2026-09-08",
       "end_date": "2026-11-02",
       "games_missed": 3,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 3219728,
+      "player_name": "Andrés Martín García",
+      "type_id": 536,
+      "type_name": "Knee Injury",
+      "type_name_cs": "Zranění kolena",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-29",
+      "end_date": "2026-10-12",
+      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -73,6 +59,20 @@
       "end_date": "2026-11-02",
       "games_missed": 4,
       "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 96887,
+      "player_name": "Mouctar Diakhaby",
+      "type_id": 554,
+      "type_name": "Muscle Injury",
+      "type_name_cs": "Svalové zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-09",
+      "end_date": "2026-10-09",
+      "games_missed": 3,
+      "likely_available": true
     },
     {
       "side": "away",
@@ -104,17 +104,17 @@
     },
     {
       "side": "away",
-      "player_id": 96887,
-      "player_name": "Mouctar Diakhaby",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
+      "player_id": 5007,
+      "player_name": "Sergi Canós Tenes",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-09",
-      "end_date": "2026-10-09",
-      "games_missed": 3,
-      "likely_available": true
+      "start_date": "2026-04-04",
+      "end_date": "2027-01-01",
+      "games_missed": 22,
+      "likely_available": false
     },
     {
       "side": "away",
@@ -122,7 +122,7 @@
       "player_name": "José Manuel Arias Copete",
       "type_id": 1971,
       "type_name": "Meniscus Injury",
-      "type_name_cs": "Meniscus Injury",
+      "type_name_cs": "Zranění menisku",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-07-01",
@@ -132,8 +132,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Pablo García Fernández",
+        "jersey_number": 15,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Sergio Canales",
+        "jersey_number": 20,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Iván Martín",
+        "jersey_number": 23,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Jorge Salinas",
+        "jersey_number": 17,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Yassir Zabiri",
+        "jersey_number": 21,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Iñigo Vicente",
+        "jersey_number": 10,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Jeanuël Merick Belocian",
+        "jersey_number": 24,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Pablo Ramón",
+        "jersey_number": 5,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Álvaro Mantilla",
+        "jersey_number": 2,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Julen Agirrezabala",
+        "jersey_number": 13,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "André Almeida",
+        "jersey_number": 8,
+        "formation_field": "3:2"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Filip Ugrinic",
+        "jersey_number": 23,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Stole Dimitrievski",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Arnaut Danjuma",
+        "jersey_number": 7,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Hugo Duro",
+        "jersey_number": 9,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Javi Guerra",
+        "jersey_number": 8,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Guido Rodríguez",
+        "jersey_number": 2,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "José Gayà",
+        "jersey_number": 14,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Justin de Haas",
+        "jersey_number": 12,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Pepelu",
+        "jersey_number": 18,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Pablo Maffeo",
+        "jersey_number": 24,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Aaron Ndive Mayol de la Cueva",
+        "jersey_number": 33,
+        "formation_field": "3:3"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1420,14 +1532,15 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.97
+          "odds": 1.98
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.7
         },
         {
           "key": "yellow_5plus",
@@ -1513,7 +1626,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.43
+          "odds": 3.42
         },
         {
           "key": "scoreless",
@@ -1521,14 +1634,15 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.29
+          "odds": 4.26
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.03
         },
         {
           "key": "yellow_under5",
@@ -1543,7 +1657,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.81
+          "odds": 2.82
         },
         {
           "key": "clean_sheet",
@@ -1551,7 +1665,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.46
+          "odds": 3.47
         },
         {
           "key": "under25",
@@ -1566,7 +1680,8 @@
           "label": "Tým měl víc rohů než soupeř",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 1.8
         }
       ],
       "away": [
@@ -1647,7 +1762,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.7
         },
         {
           "key": "yellow_under5",
@@ -1669,7 +1785,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.81
+          "odds": 2.82
         },
         {
           "key": "btts",
@@ -1685,7 +1801,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.46
+          "odds": 3.47
         },
         {
           "key": "under25",
@@ -1700,14 +1816,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.03
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.37
         },
         {
           "key": "yellow_5plus",
@@ -1737,7 +1855,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.29
+          "odds": 4.26
         },
         {
           "key": "scored2plus",
@@ -1745,7 +1863,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.32
+          "odds": 2.31
         },
         {
           "key": "ht_leading",
@@ -1753,7 +1871,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.43
+          "odds": 3.42
         }
       ]
     },
@@ -1865,7 +1983,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.03
         },
         {
           "key": "under25",
@@ -1880,7 +1999,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.7
         },
         {
           "key": "clean_sheet",
@@ -1987,7 +2107,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.03
         },
         {
           "key": "shots_under",
@@ -2075,7 +2196,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.7
         },
         {
           "key": "ht_draw",
@@ -6507,37 +6629,41 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T09:40:40.743560Z",
+  "refreshed_at": "2026-10-08T23:21:47.554166Z",
   "odds": {
-    "home": 2.3,
+    "home": 2.31,
     "draw": 3.67,
-    "away": 2.96,
+    "away": 2.95,
     "under15": 4.36,
     "over15": 1.22,
     "under25": 2.21,
     "over25": 1.69,
     "under35": 1.47,
-    "over35": 2.71,
+    "over35": 2.7,
     "btts": 1.55,
+    "corners_under95": 2.03,
+    "corners_over95": 1.7,
     "source": "chance",
-    "home_scoreless": 4.29,
-    "home_scored2plus": 1.97,
-    "home_clean_sheet": 3.46,
-    "home_ht_leading": 2.81,
+    "home_scoreless": 4.26,
+    "home_scored2plus": 1.98,
+    "home_clean_sheet": 3.47,
+    "home_ht_leading": 2.82,
     "home_ht_draw": 2.29,
-    "home_ht_behind": 3.43,
-    "away_clean_sheet": 4.29,
-    "away_scoreless": 3.46,
-    "away_scored2plus": 2.32,
-    "away_ht_behind": 2.81,
+    "home_ht_behind": 3.42,
+    "home_more_corners": 1.8,
+    "away_clean_sheet": 4.26,
+    "away_scoreless": 3.47,
+    "away_scored2plus": 2.31,
+    "away_ht_behind": 2.82,
     "away_ht_draw": 2.29,
-    "away_ht_leading": 3.43
+    "away_ht_leading": 3.42,
+    "away_more_corners": 2.37
   },
   "ai_analysis": {
-    "text": "Zápas mezi Racingem Santander a Valencii v La Lize slibuje být zajímavým střetnutím, zejména vzhledem k aktuální formě obou týmů. Domácí Racing se nachází v mírně slabší formě, s posledními výsledky, které zahrnují několik proher a jen dvě vítězství. Naopak Valencia, která má na kontě sérii pozitivních výsledků, se jeví jako favorit. Historie vzájemných zápasů naznačuje vyrovnanost, přičemž poslední utkání skončilo remízou 2:2.\n\nPodle simulací očekáváme, že Racing Santander by mohl mít mírně vyšší očekávané góly (xG 1.96) oproti Valencii (xG 1.53), což naznačuje, že domácí by mohli být schopní vytvořit více šancí. Vysoká pravděpodobnost, že oba týmy skórují (66.9 %), naznačuje, že utkání by mohlo být dynamické s několika brankovými příležitostmi na obou stranách. \n\nCo se týče sázkových kurzů, Valencia je lehkým favoritem, ale kurz na domácí vítězství (2.3) naznačuje, že Racing má šanci překvapit. Očekává se, že zápas bude vyrovnaný, a pokud se domácím podaří využít své šance, mohli by se dostat k bodovému zisku. Celkově lze očekávat atraktivní fotbal s možností několika branek.",
+    "text": "Zápas mezi Racingem Santander a Valencií, který se odehraje na stadionu Campos de Sport de El Sardinero, slibuje zajímavou konfrontaci. Domácí tým se nachází v mírně slabší formě, s posledními výsledky, které zahrnují několik remíz a výher. Naopak Valencia, která má na kontě sérii pozitivních výsledků, včetně několika výher, působí jako favorit. Historie vzájemných zápasů ukazuje vyrovnanost, přičemž poslední utkání skončilo remízou 2:2.\n\nPodle simulací očekáváme, že Racing Santander bude mít mírně vyšší očekávané góly (xG 1.96) než Valencia (xG 1.53), což naznačuje, že domácí tým může být nebezpečný v ofenzivě. Vzhledem k formě obou týmů a historickým výsledkům je pravděpodobné, že zápas skončí remízou, přičemž pravděpodobnost remízy činí 24.7 %. Na druhou stranu, Valencia má šanci na vítězství s pravděpodobností 30 %.\n\nStatistiky také naznačují vysokou pravděpodobnost, že oba týmy skórují (66.9 %), což by mohlo přispět k atraktivnímu zápasu s mnoha šancemi. Celkově lze očekávat vyrovnaný duel, ve kterém se obě strany pokusí uplatnit své silné stránky, přičemž klíčovými faktory budou efektivita v útoku a schopnost bránit se proti protiútokům.",
     "model": "gpt-4o-mini",
-    "input_hash": "d91fea263ba5cd66",
-    "generated_at": "2026-10-08T09:40:49Z",
-    "text_en": "The upcoming La Liga match between Racing Santander and Valencia at Campos de Sport de El Sardinero promises to be an intriguing encounter. Racing Santander has struggled in their recent form, with three losses in their last six matches (P, P, V, P, V, P). In contrast, Valencia has shown a more consistent performance, with four wins in their last six games (P, V, P, P, P, P). This disparity in form suggests that Valencia may have the upper hand going into the match.\n\nHistorically, the head-to-head record between the two teams indicates a competitive rivalry, with matches often being closely contested. The last five encounters have produced a mix of draws and narrow victories, highlighting the potential for a tightly fought match. The expected goals (xG) simulation indicates that Racing Santander has a slight edge with 1.96 xG compared to Valencia's 1.53, suggesting that while they may have struggled recently, they could create more scoring opportunities at home.\n\nGiven the statistics, there is a high likelihood of both teams finding the net, with a 66.9% chance of both teams scoring (BTTS). Additionally, the simulation suggests a reasonable chance for the match to exceed 2.5 goals, with a 67.3% probability. Overall, while Valencia’s recent form may position them as favorites, Racing Santander's home advantage and potential for attacking play could lead to a competitive match with chances for both sides."
+    "input_hash": "e54e03bf8aff0c8c",
+    "generated_at": "2026-10-08T23:21:53Z",
+    "text_en": "In the upcoming La Liga match between Racing Santander and Valencia at the Campos de Sport de El Sardinero, the recent form of both teams suggests an intriguing contest. Racing Santander has struggled lately, with a record of just two wins in their last six matches (V, P, P, V, P, P), indicating they may be lacking confidence. In contrast, Valencia has shown a much stronger performance, winning four of their last six games (P, V, P, P, P, P), which could give them a psychological edge heading into this fixture.\n\nHistorically, the head-to-head encounters between these two sides have been competitive, with several matches ending in draws and close scores. Recent simulations indicate that while Racing Santander may generate slightly more expected goals (1.96) compared to Valencia (1.53), the overall likelihood of both teams scoring is high, with a 66.9% chance of both teams finding the net. This suggests that the match could be open and entertaining, with both teams likely to create scoring opportunities.\n\nGiven the current dynamics, Valencia may be favored to secure a victory, particularly considering their recent form and consistency. However, Racing Santander will be keen to leverage their home advantage and could pose a threat if they can capitalize on their scoring chances. The match promises to be competitive, with the potential for a close scoreline, especially considering the historical context of their encounters."
   }
 }

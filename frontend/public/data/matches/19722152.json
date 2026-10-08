@@ -279,7 +279,7 @@
       "player_name": "Leon Goretzka",
       "type_id": 687,
       "type_name": "Knee Problems",
-      "type_name_cs": "Knee Problems",
+      "type_name_cs": "Problémy s kolenem",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-07",
@@ -303,17 +303,17 @@
     },
     {
       "side": "away",
-      "player_id": 37656906,
-      "player_name": "Kaye Iyowuna Furo",
-      "type_id": 558,
-      "type_name": "Foot surgery",
-      "type_name_cs": "Foot surgery",
+      "player_id": 11658171,
+      "player_name": "Sepp van den Berg",
+      "type_id": 339,
+      "type_name": "Groin Injury",
+      "type_name_cs": "Zranění třísla",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-14",
-      "end_date": null,
-      "games_missed": 2,
-      "likely_available": false
+      "start_date": "2026-07-30",
+      "end_date": "2026-10-09",
+      "games_missed": 10,
+      "likely_available": true
     },
     {
       "side": "away",
@@ -331,17 +331,17 @@
     },
     {
       "side": "away",
-      "player_id": 11658171,
-      "player_name": "Sepp van den Berg",
-      "type_id": 339,
-      "type_name": "Groin Injury",
-      "type_name_cs": "Zranění třísla",
+      "player_id": 37656906,
+      "player_name": "Kaye Iyowuna Furo",
+      "type_id": 558,
+      "type_name": "Foot surgery",
+      "type_name_cs": "Foot surgery",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-07-30",
-      "end_date": "2026-10-09",
-      "games_missed": 10,
-      "likely_available": true
+      "start_date": "2026-09-14",
+      "end_date": null,
+      "games_missed": 2,
+      "likely_available": false
     },
     {
       "side": "away",
@@ -1585,7 +1585,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.05
+          "odds": 2.0
         },
         {
           "key": "team_2plus_yellow",
@@ -1637,7 +1637,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.75
+          "odds": 3.78
         },
         {
           "key": "over15",
@@ -1653,7 +1653,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.71
+          "odds": 1.7
         },
         {
           "key": "yellow_under5",
@@ -1677,7 +1677,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.56
+          "odds": 1.55
         },
         {
           "key": "under25",
@@ -1685,7 +1685,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.17
+          "odds": 2.19
         },
         {
           "key": "more_corners",
@@ -1709,7 +1709,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.78
+          "odds": 3.81
         },
         {
           "key": "scored2plus",
@@ -1717,7 +1717,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.18
+          "odds": 2.17
         },
         {
           "key": "corners_over95",
@@ -1725,7 +1725,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.69
+          "odds": 1.72
         },
         {
           "key": "red_card",
@@ -1824,7 +1824,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.56
+          "odds": 1.55
         },
         {
           "key": "over25",
@@ -1832,7 +1832,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.71
+          "odds": 1.7
         },
         {
           "key": "scored2plus",
@@ -1840,7 +1840,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.14
+          "odds": 2.13
         },
         {
           "key": "corners_over95",
@@ -1848,7 +1848,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.69
+          "odds": 1.72
         },
         {
           "key": "more_corners",
@@ -1856,7 +1856,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.53
+          "odds": 2.54
         },
         {
           "key": "yellow_under5",
@@ -1888,7 +1888,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.75
+          "odds": 3.78
         },
         {
           "key": "under25",
@@ -1896,7 +1896,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.17
+          "odds": 2.19
         },
         {
           "key": "corners_under95",
@@ -1904,7 +1904,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.05
+          "odds": 2.0
         },
         {
           "key": "yellow_5plus",
@@ -1928,7 +1928,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.78
+          "odds": 3.81
         },
         {
           "key": "red_card",
@@ -1956,7 +1956,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 2.17
+          "odds": 2.19
         },
         {
           "key": "corners_over95",
@@ -1964,7 +1964,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.69
+          "odds": 1.72
         },
         {
           "key": "yellow_under5",
@@ -2087,7 +2087,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.56
+          "odds": 1.55
         },
         {
           "key": "over15",
@@ -2103,7 +2103,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.71
+          "odds": 1.7
         },
         {
           "key": "scored2plus",
@@ -2118,7 +2118,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 2.05
+          "odds": 2.0
         },
         {
           "key": "yellow_5plus",
@@ -2143,7 +2143,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.69
+          "odds": 1.72
         },
         {
           "key": "yellow_under5",
@@ -2229,7 +2229,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.17
+          "odds": 2.19
         },
         {
           "key": "btts",
@@ -2237,7 +2237,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.56
+          "odds": 1.55
         },
         {
           "key": "scoreless",
@@ -2260,7 +2260,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.71
+          "odds": 1.7
         },
         {
           "key": "scored2plus",
@@ -2311,7 +2311,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.05
+          "odds": 2.0
         },
         {
           "key": "yellow_5plus",
@@ -7257,42 +7257,42 @@
     "home": 2.64,
     "draw": 3.59,
     "away": 2.58,
-    "under15": 4.27,
+    "under15": 4.31,
     "over15": 1.22,
-    "under25": 2.17,
-    "over25": 1.71,
-    "under35": 1.46,
-    "over35": 2.73,
-    "btts": 1.56,
-    "corners_under95": 2.05,
-    "corners_over95": 1.69,
+    "under25": 2.19,
+    "over25": 1.7,
+    "under35": 1.47,
+    "over35": 2.71,
+    "btts": 1.55,
+    "corners_under95": 2.0,
+    "corners_over95": 1.72,
     "yellow_under5": 1.45,
     "yellow_5plus": 2.56,
     "red_card": 4.61,
     "source": "chance",
-    "home_scoreless": 3.75,
-    "home_scored2plus": 2.18,
-    "home_clean_sheet": 3.78,
+    "home_scoreless": 3.78,
+    "home_scored2plus": 2.17,
+    "home_clean_sheet": 3.81,
     "home_ht_leading": 3.13,
     "home_ht_draw": 2.26,
     "home_ht_behind": 3.1,
     "home_more_corners": 1.71,
     "home_team_2plus_yellow": 1.64,
-    "away_clean_sheet": 3.75,
-    "away_scoreless": 3.78,
-    "away_scored2plus": 2.14,
+    "away_clean_sheet": 3.78,
+    "away_scoreless": 3.81,
+    "away_scored2plus": 2.13,
     "away_ht_behind": 3.13,
     "away_ht_draw": 2.26,
     "away_ht_leading": 3.1,
-    "away_more_corners": 2.53,
+    "away_more_corners": 2.54,
     "away_team_2plus_yellow": 1.5
   },
   "ai_analysis": {
-    "text": "Zápas mezi Aston Villou a Brentfordem se odehraje na Villa Parku 10. října 2026 a slibuje zajímavou podívanou. Aston Villa se nachází v mírně slabší formě, s jednou výhrou, jednou remízou a třemi prohrami v posledních pěti zápasech. Naopak Brentford má lepší výsledky, když vybojoval dvě výhry a tři remízy ve stejném období. Historie vzájemných zápasů ukazuje na vyrovnané souboje, přičemž poslední tři zápasy skončily těsnými výsledky, což naznačuje, že i tento duel by mohl být vyrovnaný.\n\nPodle simulací se očekává, že Brentford bude mít mírně vyšší očekávané góly (xG) s hodnotou 1.67 oproti Aston Ville s 1.05. To naznačuje, že hosté mohou být nebezpečnější v ofenzivě. Pravděpodobnost remízy se pohybuje kolem 26 %, což ukazuje na možnost vyrovnaného výsledku. Na druhou stranu, šance na to, že oba týmy skórují, je 52.5 %, což naznačuje, že zápas by mohl být dynamický a plný šancí.\n\nCo se týče disciplinárních aspektů, statistiky naznačují, že by mohlo padnout několik žlutých karet, s pravděpodobností 2.56 na to, že obě mužstva obdrží více než pět žlutých karet. Celkově se dá očekávat vyrovnaný zápas, ve kterém by mohli mít hosté mírně navrch, ale domácí tým má také šanci na úspěch, zejména s podporou domácího publika.",
+    "text": "Zápas mezi Aston Villou a Brentfordem, který se odehraje na Villa Parku, slibuje být vyrovnaným střetnutím. Domácí Aston Villa má v posledních pěti zápasech smíšenou formu s jednou výhrou, dvěma remízami a dvěma prohrami, zatímco Brentford se může pyšnit lepšími výsledky, kdy vyhráli dva a remizovali tři z posledních pěti utkání. Historie vzájemných zápasů ukazuje na vyrovnaný poměr, přičemž Brentford vyhrál poslední dva zápasy proti Aston Ville.\n\nPodle simulací očekáváme, že Brentford bude mít mírně vyšší očekávané góly (xG 1.67) ve srovnání s Aston Villou (xG 1.05). To naznačuje, že hosté mohou být nebezpečnější v ofenzivě. Pravděpodobnost remízy je 26 %, což ukazuje na vyrovnanost obou týmů. Vzhledem k formě a historickým výsledkům se dá očekávat, že zápas bude vyrovnaný a může skončit jakýmkoliv výsledkem.\n\nStatistiky také naznačují, že je vysoká pravděpodobnost, že oba týmy skórují (52.5 %), což podtrhuje potenciál pro atraktivní fotbal. Co se týče karet, Aston Villa má šanci na více než dvě žluté karty s pravděpodobností 1.64. Zápas bude řídit rozhodčí Craig Pawson, což může mít vliv na celkovou dynamiku a disciplinovanost obou týmů. Celkově se očekává napínavý duel s otevřeným koncem.",
     "model": "gpt-4o-mini",
-    "input_hash": "4eb1afa3006dccc0",
-    "generated_at": "2026-10-08T09:37:25Z",
-    "text_en": "The upcoming Premier League match between Aston Villa and Brentford at Villa Park is set to be an intriguing encounter. Aston Villa has struggled in recent matches, recording two wins, three losses, and a draw in their last five games. In contrast, Brentford has shown better form, with three wins and two draws in the same period. Historically, Brentford has had the upper hand in their recent head-to-head encounters, winning two of the last three matches, which could provide them with a psychological advantage going into this fixture.\n\nStatistically, the expected goals (xG) suggest that Brentford may have the edge in terms of offensive output, with an xG of 1.67 compared to Aston Villa's 1.05. This indicates that Brentford could be more efficient in creating scoring opportunities. The simulation also highlights a higher probability of Brentford winning (42.2%) compared to Aston Villa's chances (31.8%), with a draw at 26%. The likelihood of both teams scoring is relatively high at 52.5%, suggesting that a competitive match with goals from both sides is plausible.\n\nCraig Pawson will officiate the match, and his decisions could play a crucial role in the game's dynamics. With both teams having the potential to earn corners and cards, the match may also feature tactical fouls and set pieces that could influence the outcome. Overall, the combination of Brentford's current form and their historical success against Aston Villa suggests that they may be favored to secure points in this matchup, although Aston Villa will be keen to leverage their home advantage to turn their fortunes around."
+    "input_hash": "4c9c482013f8a632",
+    "generated_at": "2026-10-08T23:17:33Z",
+    "text_en": "The upcoming match between Aston Villa and Brentford at Villa Park in the Premier League promises to be an intriguing contest. Aston Villa enters the match with a mixed recent form, having recorded two wins, three losses, and a draw in their last five matches. In contrast, Brentford has shown a more consistent performance, with three wins and two draws in their last five outings. The historical head-to-head results indicate a competitive rivalry, with Brentford having won the last two encounters, suggesting they may have a psychological edge going into this match.\n\nStatistically, the expected goals (xG) for Aston Villa stands at 1.05, while Brentford's xG is higher at 1.67, indicating that Brentford may create more scoring opportunities. The simulation suggests a 42.2% chance of a Brentford victory, compared to 31.8% for Aston Villa, with a draw at 26%. Both teams have shown the capability to score, as reflected in the 52.5% likelihood of both teams finding the net. This could lead to an open and entertaining match, especially given the attacking prowess both sides possess.\n\nWith Craig Pawson as the referee, the match dynamics could also be influenced by his officiating style. The odds suggest a closely contested match, with Aston Villa slightly favored at home but not by a significant margin. Given Brentford's recent form and their success in past encounters, they may look to capitalize on any defensive lapses from Villa. Overall, the match is likely to be competitive, with both teams eager to secure crucial points in the Premier League standings."
   },
-  "refreshed_at": "2026-10-08T09:37:16.527064Z"
+  "refreshed_at": "2026-10-08T23:17:26.066168Z"
 }
