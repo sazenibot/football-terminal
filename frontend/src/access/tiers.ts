@@ -1,13 +1,14 @@
 /* Tarify a pravidla přístupu na jednom místě.
    Obsah se nezamyká podle "natvrdo" napsaných tarifů v komponentách, ale přes klíč funkce:
-   <Gate feature="catalog.players">. Změna toho, co patří do kterého tarifu, je úprava jednoho řádku v FEATURES.
-   Ceny a texty tarifů jsou zatím mockup k diskusi. */
+   <Gate feature="catalog.players"> nebo <Gate need={LOCK.mcForm}>.
+   Zdroj pravdy pro nové zámky je canvas Strom webu + LOCK v locks.ts.
+   Unlimited je nejvyšší tarif (bez limitů). */
 
 import { t, type Key } from "../i18n/locale";
 
-export type Tier = "anon" | "account" | "unlimited" | "pro";
+export type Tier = "anon" | "account" | "pro" | "unlimited";
 
-export const TIER_ORDER: Tier[] = ["anon", "account", "unlimited", "pro"];
+export const TIER_ORDER: Tier[] = ["anon", "account", "pro", "unlimited"];
 export const tierRank = (t: Tier) => TIER_ORDER.indexOf(t);
 
 export type TierInfo = {
@@ -24,8 +25,8 @@ export type TierInfo = {
 const TIER_META: Record<Tier, { mock?: boolean; featured?: boolean }> = {
   anon: {},
   account: {},
-  unlimited: { featured: true },
   pro: { mock: true },
+  unlimited: { featured: true },
 };
 
 /** Texty tarifů se berou z překladů, takže seznam se skládá až při vykreslení (v aktuálním jazyce). */
@@ -49,19 +50,25 @@ export type FeatureDef = { group: FeatureGroup; min: Tier; note?: boolean };
 export const FEATURES = {
   "mc.past": { group: "mc", min: "anon" },
   "mc.future.one": { group: "mc", min: "account", note: true },
-  "mc.future.all": { group: "mc", min: "unlimited" },
+  "mc.future.all": { group: "mc", min: "pro" },
+  "mc.list.probs": { group: "mc", min: "unlimited" },
+  "mc.list.sort": { group: "mc", min: "pro" },
   "catalog.teams.basic": { group: "catalog", min: "anon" },
   "catalog.teams": { group: "catalog", min: "account" },
+  "catalog.teams.plus": { group: "catalog", min: "pro" },
   "catalog.players.basic": { group: "catalog", min: "anon" },
-  "catalog.players": { group: "catalog", min: "unlimited" },
+  "catalog.players": { group: "catalog", min: "account" },
+  "catalog.players.plus": { group: "catalog", min: "pro" },
   "catalog.referees.basic": { group: "catalog", min: "anon" },
-  "catalog.referees": { group: "catalog", min: "unlimited" },
+  "catalog.referees": { group: "catalog", min: "account" },
+  "catalog.referees.plus": { group: "catalog", min: "pro" },
   "articles.free": { group: "content", min: "anon" },
   "articles.premium": { group: "content", min: "account" },
   "results.live": { group: "content", min: "anon" },
   "results.detail": { group: "content", min: "account" },
-  "value.finder": { group: "tools", min: "pro" },
-  "system.picks": { group: "tools", min: "pro" },
+  "td.table": { group: "content", min: "pro" },
+  "value.finder": { group: "tools", min: "account" },
+  "system.picks": { group: "tools", min: "account" },
 } as const satisfies Record<string, FeatureDef>;
 
 export type Feature = keyof typeof FEATURES;

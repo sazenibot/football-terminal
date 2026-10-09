@@ -1,17 +1,17 @@
 ---
-description: Odložené úkoly z UX/UI auditu. Připomenout před SEO a před body 6–8.
+description: Odložené úkoly z UX/UI auditu. Připomenout před SEO.
 alwaysApply: true
 ---
 
 # Odložené z UX/UI auditu (8. 10. 2026)
 
-**Před zahájením SEO (Worker pro boty, titulky, strukturovaná data) připomeň Petrovi tyto dvě věci a nezačínej SEO, dokud nejsou vyřešené:**
+**Před zahájením SEO (Worker pro boty, titulky, strukturovaná data) připomeň Petrovi a nezačínej SEO, dokud není hotové:**
 
-1. **Revize zadání pro OpenAI (slovní shrnutí zápasu).** Shrnutí se dřív generovalo na staré simulaci a může protiřečit modelu (např. Zlín–Slavia: shrnutí 47,4 % vs. model 79 %). Od 7. 10. běží všude nová simulace. Je potřeba přepsat zadání (prompt), hlídat shodu čísel s modelem, určit délku textu a tón (bez sázkových formulací) a pak shrnutí přegenerovat. Audit ID 30, 31.
-2. **Databáze štítků napříč webem.** Sestavit jednotný seznam štítků/odznaků (např. „Vidíme hodnotu“, „Sázková kancelář tomu věří víc“, „Tip modelu“, „Průměrná přísnost“, „Smolaři“/„Štěstí“, odznaky hráčů) s definicí hodnot a copywritingem, aby se používaly stejně na všech podstránkách. Petr to chce probrat souhrnně (copywriting, bod 10). Audit ID 33, 44, 79 (štítek „Průměrná přísnost“).
+1. **Přegenerovat slovní shrnutí zápasů.** Zadání (prompt `2026-10-09-v2`) je přepsané, čísla berou novou simulaci. Hromadné přegenerování Petr odložil — bez něj zůstanou stará shrnutí (ID 30, 31).
+2. **Copywriting štítků (bod 10).** Pravidla štítků Petr schválil 9. 10. (hodnota 8 pp místo 5). Sjednocení zkratek a tónu napříč podstránkami zůstává (ID 33, 44, 79).
 
-**Zamykání a oprávnění (body 6–8), řešit komplexně:** viditelnost pravděpodobností hostovi ve výpisu Match Center (audit ID 27), zamčené záložky hráče a „Celý profil hráče“ (ID 73), skrytí „Zobrazit jako“ a štítku „Účet“. Petr to chce rozhodnout až v bodech 6–8, nic se kvůli tomu teď nemění.
+**Hotovo (neměnit bez nového zadání):** body 6–8 / ID 27 a 73 — host na produkci je `anon`, výpis 1X2 jen Unlimited, „Zobrazit jako“ jen v DEV. Zámky obsahu bere canvas Strom webu + `LOCK` (9. 10.: Pro je tier 1, Unlimited nejvyšší). ID 10 a 26 jsou na webu.
 
-**Čeká na vizuální návrh (nemá se implementovat bez schválení náhledu):** ID 10 (dvousloupcové rozvržení detailu zápasu na desktopu) a ID 26 (zvýraznění favorita a popisky D/R/H na kartě zápasu). Petr chce vidět vizuál (klidně v Labu lokálně), teprve pak schválí.
+**Petrova rozhodnutí (neměnit):** aktuality na homepage zatím beze změny (ID 21), karty „Value finder“ a „System picks“ ponechat (ID 22), sázkový jazyk v Predikci ponechat (ID 34), malý vzorek rozhodčího ponechat (ID 41, 80 jen sjednotit jmenovatele), statistiky na kartách lig ponechat (ID 53), malý vzorek hráče ponechat (ID 66), tipy ve Výsledcích ponechat (ID 87, 88).
 
-**Petrova rozhodnutí (neměnit):** aktuality na homepage zatím beze změny (ID 21), karty „Value finder“ a „System picks“ ponechat (ID 22), sázkový jazyk v Predikci ponechat (ID 34), malý vzorek rozhodčího ponechat (ID 41, 80 jen sjednotit jmenovatele), statistiky na kartách lig ponechat (ID 53), malý vzorek hráče ponechat (ID 66), tipy ve Výsledcích ponechat (ID 87, 88), zkratky copywritingu (ID 44) řešit později.
+Serverový paywall JSON (checklist bod 4) je zvlášť — statické `matches/*.json`, `sim/*` a katalog jdou pořád stáhnout.

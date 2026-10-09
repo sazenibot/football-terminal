@@ -109,7 +109,7 @@ export const csMc = {
   "mc.ov.ref.leagueShort": "liga {v}",
   "mc.ov.ai.auto": "Shrnutí vygenerované automaticky.",
   "mc.ov.ai.title": "Slovní shrnutí",
-  "mc.ov.ai.info": "Text napsal jazykový model z našich dat (forma, vzájemné zápasy, simulace, kurzy). Není to sázková rada a může se mýlit.",
+  "mc.ov.ai.info": "Text napsal jazykový model z našich dat (model, forma, vzájemné zápasy, rozhodčí). Není to sázková rada a může se mýlit.",
   "mc.ov.ai.hide": "Skrýt",
   "mc.ov.ai.more": "Číst celé",
 

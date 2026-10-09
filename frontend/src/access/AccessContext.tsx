@@ -1,8 +1,9 @@
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
+import { DEV_TOOLS } from "../lib/flags";
 import { FEATURES, allows, type Feature, type Tier } from "./tiers";
 
-/* Zatím bez backendu: tarif se bere z přepínače "Zobrazit jako" (localStorage).
-   Až bude přihlášení, nahradí se zdroj `tier` (uživatel z Supabase), zbytek aplikace zůstane stejný. */
+/* Bez přihlášení: na produkci je každý host (anon). Přepínač „Zobrazit jako“ a localStorage
+   platí jen ve vývoji. Až bude účet, nahradí se zdroj `tier`, zbytek aplikace zůstane stejný. */
 
 const KEY = "ft.viewAs";
 const FREE_KEY = "ft.freeFixture";
@@ -20,6 +21,7 @@ type Ctx = {
 const AccessCtx = createContext<Ctx | null>(null);
 
 function readTier(): Tier {
+  if (!DEV_TOOLS) return "anon";
   const v = typeof localStorage !== "undefined" ? localStorage.getItem(KEY) : null;
   return v === "anon" || v === "account" || v === "unlimited" || v === "pro" ? v : "unlimited";
 }

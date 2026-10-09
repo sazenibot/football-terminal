@@ -111,7 +111,7 @@ export const enMc: Record<keyof typeof csMc, string> = {
   "mc.ov.ref.leagueShort": "league {v}",
   "mc.ov.ai.auto": "Summary generated automatically.",
   "mc.ov.ai.title": "Written summary",
-  "mc.ov.ai.info": "The text was written by a language model from our data (form, head-to-head, simulations, odds). It isn't betting advice and may be wrong.",
+  "mc.ov.ai.info": "The text was written by a language model from our data (the model, form, head-to-head, referee). It isn't betting advice and may be wrong.",
   "mc.ov.ai.hide": "Hide",
   "mc.ov.ai.more": "Read more",
 

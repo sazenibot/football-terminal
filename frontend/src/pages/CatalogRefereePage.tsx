@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { Link, useParams, useSearchParams } from "../i18n/router";
 import { useTabLock } from "../access/catalogGate";
 import { Gate } from "../access/Gate";
+import { LOCK } from "../access/locks";
 import { Avatar, Back, Frame, Hero, Loading, NotFound, Pill, RankCard, Select, StatStrip, StickyTabs, fmtNum } from "../cat/kit";
 import { t, type Key } from "../i18n/locale";
 import { HomeAwaySplit, TeamLeaderboard, TeamTreatment } from "../cat/RefereeInsights";
@@ -258,6 +259,7 @@ export function CatalogRefereePage() {
               <p className="mt-3 text-xs text-(--c-faint)">{t("ct.ref.leagueAvgNote")}</p>
             </Card>
 
+            <Gate need={LOCK.refResults}>
             <Card title={t("ct.ref.resTitle")} lead={t("ct.ref.resLead")}>
               <ProbBar home={split.home} draw={split.draw} away={split.away} height={10} />
               <div className="mt-2 grid grid-cols-3 text-xs tabular-nums">
@@ -272,12 +274,19 @@ export function CatalogRefereePage() {
                 <Info>{t("ct.ref.smallSampleInfo")}</Info>
               </p>
             </Card>
+            </Gate>
 
-            <HomeAwaySplit rows={seasonMatches} universe={universe} seasonIds={seasonIds} />
+            <Gate need={LOCK.refHomeAway}>
+              <HomeAwaySplit rows={seasonMatches} universe={universe} seasonIds={seasonIds} />
+            </Gate>
 
-            <TeamLeaderboard rows={matches} universe={universe} currentSeasonId={currentSeasonId} allSeasonIds={seasons.filter((x) => (x.matches ?? 0) > 0).map((x) => x.id)} />
+            <Gate need={LOCK.refTeams}>
+              <TeamLeaderboard rows={matches} universe={universe} currentSeasonId={currentSeasonId} allSeasonIds={seasons.filter((x) => (x.matches ?? 0) > 0).map((x) => x.id)} />
+            </Gate>
 
-            <RecentPreview rows={seasonMatches} onMore={() => setTab("matches")} />
+            <Gate need={LOCK.refRecent}>
+              <RecentPreview rows={seasonMatches} onMore={() => setTab("matches")} />
+            </Gate>
           </>
         ) : (
           <>

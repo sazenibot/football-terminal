@@ -10,6 +10,7 @@ import { useCatalogExplorer, useCatalogTeam, usePitchLeague, usePitchTeam, useXg
 import { last5BadgeForTeam, type XgotBadge } from "../lib/xgEfficiency";
 import { useTabLock } from "../access/catalogGate";
 import { Gate } from "../access/Gate";
+import { LOCK } from "../access/locks";
 import { Card, Empty, FormDots, Info, ResBadge, Seg, Stat, VenueTag, type Res } from "../mc2/kit";
 import type { CatalogProfileStat, CatalogSquadPlayer, CatalogTeamCoach, CatalogTeamDetail, CatalogUpcoming } from "../types";
 import { intlTag, t, type Key } from "../i18n/locale";
@@ -426,7 +427,11 @@ function PitchBlock({ team, pitch }: { team: CatalogTeamDetail; pitch: NonNullab
         defaultSeason={pitch.season}
         shotsOf={shotsOfMatch}
       />
-      {league && <GoalDistributionCard team={self} league={league} />}
+      {league && (
+        <Gate need={LOCK.teamGoals}>
+          <GoalDistributionCard team={self} league={league} />
+        </Gate>
+      )}
     </div>
   );
 }

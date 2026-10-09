@@ -2,6 +2,7 @@ import { useEffect, type ReactNode } from "react";
 import { Navigate, useParams, useSearchParams } from "../i18n/router";
 import { useAccess } from "../access/AccessContext";
 import { Paywall } from "../access/Gate";
+import { allows } from "../access/tiers";
 import { Back, Frame } from "../cat/kit";
 import { t } from "../i18n/locale";
 import type { MatchData } from "../types";
@@ -30,12 +31,12 @@ export function MatchRoute() {
   return <FutureGuard match={match}>{page}</FutureGuard>;
 }
 
-/** Odehrané zápasy jsou otevřené všem. Budoucí: účet dostane jeden, Unlimited všechny. */
+/** Odehrané zápasy jsou otevřené všem. Budoucí: účet dostane jeden, Pro a Unlimited všechny. */
 function FutureGuard({ match, children }: { match: MatchData; children: ReactNode }) {
   const { tier, freeFixture, claimFreeFixture } = useAccess();
   const future = new Date(match.starting_at).getTime() > Date.now();
   const id = match.fixture_id;
-  const full = tier === "unlimited" || tier === "pro";
+  const full = allows(tier, "pro");
   const freeSlotOpen = tier === "account" && freeFixture === null;
   const mine = tier === "account" && freeFixture === id;
 

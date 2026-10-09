@@ -6,7 +6,7 @@ import { localizePath, t } from "../i18n/locale";
 import { fmtDate } from "../site/data";
 
 /** Právní stránka z markdownu v content/legal/. `slug` je název souboru (česky, v obou jazycích stejný). */
-export function LegalPage({ slug }: { slug: "obchodni-podminky" | "ochrana-udaju" | "kontakt" }) {
+export function LegalPage({ slug }: { slug: "obchodni-podminky" | "ochrana-udaju" }) {
   const page = getLegal(slug);
   const navigate = useNavigate();
 

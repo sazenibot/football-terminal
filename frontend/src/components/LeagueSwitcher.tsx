@@ -1,12 +1,15 @@
 import { Link } from "../i18n/router";
 import type { DataIndex, LeagueMeta } from "../types";
-import { t } from "../i18n/locale";
+import { t, type Locale } from "../i18n/locale";
 import { countryName } from "./Flag";
 import { orderedLeagues } from "../lib/leagues";
 
 const LAST_LEAGUE_KEY = "ft-league";
+const CHANCE_LIGA = 262;
 
-export function rememberLeague(id: number) {
+export type LeaguePref = number | "all";
+
+export function rememberLeague(id: LeaguePref) {
   try {
     localStorage.setItem(LAST_LEAGUE_KEY, String(id));
   } catch {
@@ -14,13 +17,28 @@ export function rememberLeague(id: number) {
   }
 }
 
-export function lastLeagueId(): number | null {
+export function lastLeaguePref(): LeaguePref | null {
   try {
     const raw = localStorage.getItem(LAST_LEAGUE_KEY);
-    return raw ? Number(raw) : null;
+    if (raw === "all") return "all";
+    const n = Number(raw);
+    return raw && Number.isFinite(n) && n > 0 ? n : null;
   } catch {
     return null;
   }
+}
+
+export function lastLeagueId(): number | null {
+  const pref = lastLeaguePref();
+  return typeof pref === "number" ? pref : null;
+}
+
+/** První návštěva: česky Chance Liga, anglicky všechny ligy. Pak platí poslední volba. */
+export function defaultLeaguePath(locale: Locale): string {
+  const pref = lastLeaguePref();
+  if (pref === "all") return "/league/all";
+  if (typeof pref === "number") return `/league/${pref}`;
+  return locale === "en" ? "/league/all" : `/league/${CHANCE_LIGA}`;
 }
 
 function LeagueLogo({ league, active }: { league: LeagueMeta; active: boolean }) {

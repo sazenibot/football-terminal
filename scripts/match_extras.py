@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Kurzy (Chance.cz přes PulseScore) + AI analýza (OpenAI) + přepočet simulace.
+"""Kurzy (Chance.cz přes PulseScore) + AI analýza (OpenAI).
 
-Volá se z refresh_data po sestavení zápasu. Tokeny jen z env/.env — ne do frontendu.
+Kurzy se doplňují v refresh_data. Slovní shrnutí až po sim_live (--ai-only),
+ať model čte sim v2.2, ne starou simulate_from_facts. Tokeny jen z env/.env.
 """
 
 from __future__ import annotations
@@ -24,9 +25,10 @@ import certifi
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(Path(__file__).parent))
 
-from build_match_data import simulate_from_facts  # noqa: E402
-
 SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
+SIM_DIR = ROOT / "frontend" / "public" / "data" / "sim"
+PROMPT_VERSION = "2026-10-09-v2"
+MAIN_LIMIT = 300
 _PULSESCORE_DISABLED = False
 _PULSESCORE_LAST_CALL = 0.0
 _CHANCE_EVENTS: dict[str, list] = {}
@@ -442,97 +444,266 @@ def attach_odds(match: dict) -> dict:
     return apply_odds_board(match, board)
 
 
+def _stat_avg(block: dict | None, key: str) -> float | None:
+    if not block:
+        return None
+    node = block.get(key) or {}
+    if isinstance(node.get("average"), (int, float)):
+        return float(node["average"])
+    inner = node.get("all") or {}
+    if isinstance(inner.get("average"), (int, float)):
+        return float(inner["average"])
+    return None
+
+
+def _load_sim_v2(fixture_id: int) -> dict | None:
+    path = SIM_DIR / f"{fixture_id}.json"
+    if not path.exists():
+        return None
+    try:
+        return json.loads(path.read_text())
+    except json.JSONDecodeError:
+        return None
+
+
+def _ai_payload(match: dict, sim: dict) -> dict:
+    model = sim.get("model") or {}
+    market = sim.get("market") or {}
+    form_h = (match.get("form") or {}).get("home") or {}
+    form_a = (match.get("form") or {}).get("away") or {}
+    ref = match.get("referee") or {}
+    stats = ref.get("season_stats") or {}
+    lc = ref.get("league_context") or {}
+    h2h_lines = []
+    for m in (match.get("h2h") or [])[:5]:
+        h2h_lines.append(
+            f"{(m.get('date') or '')[:10]} {m.get('home', {}).get('name')} {m.get('home_score')}:{m.get('away_score')} {m.get('away', {}).get('name')}"
+        )
+    xg = model.get("expected_goals") or {}
+    shots = model.get("expected_shots") or {}
+    sot = model.get("expected_sot") or {}
+    corners = model.get("expected_corners") or {}
+    return {
+        "prompt_version": PROMPT_VERSION,
+        "zapas": f"{match['home']['name']} – {match['away']['name']}",
+        "soutez": match.get("league_name"),
+        "kickoff": match.get("starting_at"),
+        "stadion": match.get("venue"),
+        "rozhodci": {
+            "jmeno": ref.get("name"),
+            "fauly": _stat_avg(stats, "Fouls"),
+            "zlutych": _stat_avg(stats, "Yellowcards"),
+            "cervene": _stat_avg(stats, "Redcards"),
+            "liga_fauly": lc.get("fouls_per_match"),
+            "liga_zlutych": lc.get("yellow_per_match"),
+            "liga_cervene": lc.get("red_per_match"),
+        } if ref.get("name") else None,
+        "forma_domaci": {
+            "sekvence": form_h.get("results_sequence"),
+            "body": form_h.get("points"),
+            "zapasy": form_h.get("played"),
+            "gf": form_h.get("goals_for"),
+            "ga": form_h.get("goals_against"),
+        },
+        "forma_hoste": {
+            "sekvence": form_a.get("results_sequence"),
+            "body": form_a.get("points"),
+            "zapasy": form_a.get("played"),
+            "gf": form_a.get("goals_for"),
+            "ga": form_a.get("goals_against"),
+        },
+        "h2h": h2h_lines,
+        "model": {
+            "verze": sim.get("model_version") or "v2.2",
+            "1": model.get("home_win_pct"),
+            "X": model.get("draw_pct"),
+            "2": model.get("away_win_pct"),
+            "xg_domaci": xg.get("home"),
+            "xg_hoste": xg.get("away"),
+            "btts": model.get("btts_pct"),
+            "over15": model.get("over15_pct"),
+            "over25": model.get("over25_pct"),
+            "under25": model.get("under25_pct"),
+            "over35": model.get("over35_pct"),
+            "strely": shots.get("total"),
+            "strely_na_branku": sot.get("total"),
+            "rohy": corners.get("total"),
+            "nejcastejsi_skore": model.get("top_scorelines"),
+        },
+        "trh": {
+            "1": market.get("home_win_pct"),
+            "X": market.get("draw_pct"),
+            "2": market.get("away_win_pct"),
+            "over25": market.get("over25_pct"),
+            "under25": market.get("under25_pct"),
+            "over35": market.get("over35_pct"),
+        } if market.get("home_win_pct") is not None else None,
+    }
+
+
+def _clip_main(title: str, why: str, limit: int = MAIN_LIMIT) -> tuple[str, str]:
+    title = " ".join((title or "").split())
+    why = " ".join((why or "").split())
+    sep = ": "
+    used = len(title) + len(sep)
+    if used >= limit:
+        return title[: max(1, limit - 1)], ""
+    if used + len(why) <= limit:
+        return title, why
+    cut = why[: max(0, limit - used - 1)].rstrip(" ,;:.-")
+    return title, (cut + "…") if cut else why[:1]
+
+
+def _parse_ai_json(raw: str) -> dict | None:
+    raw = (raw or "").strip()
+    if raw.startswith("```"):
+        raw = re.sub(r"^```(?:json)?\s*", "", raw)
+        raw = re.sub(r"\s*```$", "", raw)
+    try:
+        data = json.loads(raw)
+    except json.JSONDecodeError:
+        return None
+    if not isinstance(data, dict):
+        return None
+    tips = data.get("tips") or []
+    if not isinstance(tips, list):
+        return None
+    clean = []
+    for tip in tips[:3]:
+        if not isinstance(tip, dict):
+            continue
+        title = str(tip.get("title") or "").strip()
+        why = str(tip.get("why") or "").strip()
+        if title and why:
+            clean.append({"title": title, "why": why})
+    main_title = str(data.get("main_title") or "").strip()
+    main_why = str(data.get("main_why") or "").strip()
+    if not main_title or not main_why or len(clean) != 3:
+        return None
+    main_title, main_why = _clip_main(main_title, main_why)
+    return {"main_title": main_title, "main_why": main_why, "tips": clean}
+
+
+def _format_ai(data: dict, *, lang: str) -> str:
+    if lang == "en":
+        head, more = "Highest confidence:", "Further analytical tips:"
+    else:
+        head, more = "Největší důvěra:", "Další analytické tipy:"
+    lines = [head, f"{data['main_title']}: {data['main_why']}", "", more]
+    for tip in data["tips"]:
+        lines.append(f"• {tip['title']}: {tip['why']}")
+    return "\n".join(lines)
+
+
+SYSTEM_CS = """Jsi zkušený fotbalový datový analytik. Tvojí úlohou je analyzovat poskytnutá data k fotbalovému zápasu (statistiky, xG, modelové pravděpodobnosti, formu, vzájemné zápasy, informace o rozhodčím) a vytvořit z nich predikci.
+
+DŮLEŽITÁ PRAVIDLA:
+
+Vyhni se prostému papouškování a vypisování surových dat. Uživatel data vidí. Tvojí přidanou hodnotou je syntéza dat do logického kontextu a odhad herního scénáře (dobývání, asymetrie trhu, taktické fauly atd.).
+
+Data používej pouze jako argumentační oporu pro své myšlenky.
+
+Striktně dodrž níže uvedenou strukturu výstupu.
+
+STRUKTURA VÝSTUPU:
+
+Největší důvěra:
+Vyber jeden absolutně nejsilnější tip na zápas, kterému podle dat věříš nejvíce. Své rozhodnutí vysvětli úderně na základě klíčových metrik (xG, pravděpodobnosti, forma). Tento odstavec (včetně názvu tipu) musí mít MAXIMÁLNĚ 300 znaků!
+
+Další analytické tipy:
+Napiš přesně 3 další zajímavé predikce/tipy formou odrážek.
+
+[Název tipu]: Následně v 1-2 větách vysvětli analytickou úvahu, která k němu vede (opři se například o očekávané držení míče, statistiky karet a rozhodčího, rozdíl mezi xG a reálnými góly, rohy atd.). Ukaž, jak z dat vyplývá herní obraz.
+
+Čísla 1X2, xG a trhy ber výhradně z pole model (srovnání s kurzem jen z pole trh). Nesmíš je měnit, zaokrouhlovat na jinou hodnotu ani vymýšlet jiná. Tip musí souhlasit s modelem: neprohlašuj za pravděpodobné trh, kterému model dává pod 50 %, a nehraj proti favoritovi z 1X2.
+
+Odpověz pouze JSON objektem:
+{"main_title":"název nejsilnějšího tipu","main_why":"vysvětlení","tips":[{"title":"tip 1","why":"proč"},{"title":"tip 2","why":"proč"},{"title":"tip 3","why":"proč"}]}
+main_title + ": " + main_why dohromady nejvýš 300 znaků. Přesně 3 položky v tips. Piš česky."""
+
+SYSTEM_EN = """You are an experienced football data analyst. Your job is to analyse the provided match data (statistics, xG, model probabilities, form, head-to-head, referee) and turn them into a prediction.
+
+IMPORTANT RULES:
+
+Do not parrot or list raw numbers. The user can already see the data. Your value is synthesis: a logical match scenario (territory, market asymmetry, tactical fouls, and so on).
+
+Use the data only as evidence for your reasoning.
+
+Follow the output structure strictly.
+
+OUTPUT STRUCTURE:
+
+Highest confidence:
+Pick the single strongest tip you trust most. Explain it punchily from the key metrics (xG, probabilities, form). This paragraph (including the tip title) must be AT MOST 300 characters.
+
+Further analytical tips:
+Write exactly 3 more tips as bullets.
+
+[Tip title]: Then in 1–2 sentences explain the analytical reasoning (expected territorial control, cards and the referee, xG vs actual goals, corners, etc.). Show the match picture that follows from the data.
+
+Take 1X2, xG and market figures only from the model field (compare with the bookmaker only via the trh field). Do not change, re-round or invent those numbers. A tip must agree with the model: do not call a market likely if the model gives it under 50%, and do not fade the 1X2 favourite.
+
+Reply with a JSON object only:
+{"main_title":"strongest tip title","main_why":"why","tips":[{"title":"tip 1","why":"why"},{"title":"tip 2","why":"why"},{"title":"tip 3","why":"why"}]}
+main_title + ": " + main_why must be at most 300 characters. Exactly 3 items in tips. Write in English."""
+
+
 def generate_ai_analysis(match: dict) -> dict | None:
     key = _env("OPENAI_API_KEY")
     if not key:
         return None
-    sim = match.get("simulation") or {}
-    form_h = (match.get("form") or {}).get("home") or {}
-    form_a = (match.get("form") or {}).get("away") or {}
-    h2h = match.get("h2h") or []
-    odds = match.get("odds") or {}
-    h2h_lines = []
-    for m in h2h[:5]:
-        h2h_lines.append(
-            f"{(m.get('date') or '')[:10]} {m.get('home', {}).get('name')} {m.get('home_score')}:{m.get('away_score')} {m.get('away', {}).get('name')}"
-        )
-    payload = {
-        "zapas": f"{match['home']['name']} – {match['away']['name']}",
-        "soutěž": match.get("league_name"),
-        "kickoff": match.get("starting_at"),
-        "stadion": match.get("venue"),
-        "rozhodčí": (match.get("referee") or {}).get("name"),
-        "forma_domaci": form_h.get("results_sequence"),
-        "forma_hoste": form_a.get("results_sequence"),
-        "h2h": h2h_lines,
-        "simulace": {
-            "xg": sim.get("expected_goals"),
-            "1": sim.get("home_win_pct"),
-            "X": sim.get("draw_pct"),
-            "2": sim.get("away_win_pct"),
-            "btts": sim.get("btts_pct"),
-            "over25": sim.get("over25_pct"),
-        },
-        "kurzy": odds,
-    }
-    # Stejný vstup = stejná analýza, OpenAI se nevolá znovu. Česky i anglicky ze stejných dat.
+    fid = match.get("fixture_id")
+    sim = _load_sim_v2(int(fid)) if fid else None
+    if not sim or not (sim.get("model") or {}).get("home_win_pct"):
+        return match.get("ai_analysis") or None
+    payload = _ai_payload(match, sim)
+    # Stejný vstup + stejné zadání = stejná analýza, OpenAI se nevolá znovu.
     input_hash = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
     prev = match.get("ai_analysis") or {}
-    same = prev.get("input_hash") == input_hash
-    text = prev.get("text") if same else None
-    text_en = prev.get("text_en") if same else None
-    if text and text_en:
+    if prev.get("input_hash") == input_hash and prev.get("text") and prev.get("text_en"):
         return prev
 
-    def ask(system: str, user: str) -> str:
+    def ask(system: str) -> dict | None:
         body = {
             "model": "gpt-4o-mini",
-            "temperature": 0.4,
+            "temperature": 0.3,
+            "response_format": {"type": "json_object"},
             "messages": [
                 {"role": "system", "content": system},
-                {"role": "user", "content": user + json.dumps(payload, ensure_ascii=False)},
+                {"role": "user", "content": json.dumps(payload, ensure_ascii=False)},
             ],
         }
         headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
         resp = _http_json("https://api.openai.com/v1/chat/completions", headers, payload=body)
         if not resp:
-            return ""
-        return (((resp.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
+            return None
+        raw = (((resp.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
+        return _parse_ai_json(raw)
 
-    if not text:
-        text = ask(
-            "Jsi fotbalový analytik. Píšeš česky, věcně, bez sázkových rad. 3 krátké odstavce.",
-            "Vytvoř ze zadaných dat analýzu zápasu, jak ho očekáváš, co je pravděpodobné, že nastane.\n\n",
-        )
-    if not text:
-        return None
-    if not text_en:
-        text_en = ask(
-            "You are a football analyst. Write in English, factual, no betting advice. 3 short paragraphs. "
-            "The input keys are in Czech: zapas = match, soutěž = competition, stadion = venue, rozhodčí = referee, "
-            "forma_domaci / forma_hoste = home / away recent form (V = win, R = draw, P = loss), kurzy = odds, simulace = simulation.",
-            "From the given data write an analysis of the match: how you expect it to go and what is likely to happen.\n\n",
-        )
+    data_cs = ask(SYSTEM_CS)
+    if not data_cs:
+        return prev or None
+    data_en = ask(SYSTEM_EN)
     out = {
-        "text": text,
+        "text": _format_ai(data_cs, lang="cs"),
         "model": "gpt-4o-mini",
+        "prompt_version": PROMPT_VERSION,
         "input_hash": input_hash,
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
     }
-    if text_en:
-        out["text_en"] = text_en
+    if data_en:
+        out["text_en"] = _format_ai(data_en, lang="en")
+    elif prev.get("text_en"):
+        out["text_en"] = prev["text_en"]
     return out
 
 
-def enrich_match(match: dict) -> dict:
-    home_facts = ((match.get("form") or {}).get("home") or {}).get("recent_all") or []
-    away_facts = ((match.get("form") or {}).get("away") or {}).get("recent_all") or []
-    if home_facts and away_facts:
-        match["simulation"] = simulate_from_facts(home_facts, away_facts, None, None)
+def enrich_match(match: dict, *, ai: bool = False) -> dict:
     match = attach_odds(match)
-    analysis = generate_ai_analysis(match)
-    if analysis:
-        match["ai_analysis"] = analysis
+    if ai:
+        analysis = generate_ai_analysis(match)
+        if analysis:
+            match["ai_analysis"] = analysis
     return match
 
 
@@ -541,6 +712,7 @@ def main() -> None:
     files = sorted(data_dir.glob("*.json"))
     args = sys.argv[1:]
     odds_only = "--odds-only" in args
+    ai_only = "--ai-only" in args
     league_only = None
     skip_idx = set()
     if "--league" in args:
@@ -557,8 +729,15 @@ def main() -> None:
         print(f"enrich {match.get('fixture_id')} {match['home']['name']} vs {match['away']['name']}")
         if odds_only:
             match = attach_odds(match)
+        elif ai_only:
+            prev_ai = match.get("ai_analysis")
+            analysis = generate_ai_analysis(match)
+            if analysis is None or analysis is prev_ai:
+                print("  beze změny")
+                continue
+            match["ai_analysis"] = analysis
         else:
-            match = enrich_match(match)
+            match = enrich_match(match, ai=True)
         tmp = path.with_suffix(".json.tmp")
         tmp.write_text(json.dumps(match, indent=2, ensure_ascii=False, default=str))
         tmp.replace(path)

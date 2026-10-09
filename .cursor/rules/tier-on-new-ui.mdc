@@ -1,0 +1,14 @@
+---
+description: Každá nová stránka, záložka nebo karta musí mít tarif.
+alwaysApply: true
+---
+
+# Tarif u nové UI
+
+Než se mergeuje nová **stránka**, **záložka** nebo **karta**, musí mít přiřazený minimální tarif.
+
+1. Zapsat ji do canvasu [Strom webu](/Users/vp501730/.cursor/projects/Users-vp501730-Documents-football-terminal/canvases/web-strom.canvas.tsx) (dropdown zdarma / s registrací / tier 1 pro / tier 2 unlimited).
+2. Přidat klíč do `frontend/src/access/locks.ts` a obsah zamknout přes `<Gate need={LOCK.…}>` nebo `useTabLock`.
+3. Bez řádku v `LOCK` a bez Gate se to nedělá „zatím volné“.
+
+Žebříček: `anon` < `account` < `pro` < `unlimited`. Unlimited je nejvyšší. Zdroj pravdy pro stávající zámky je canvas (sidecar `item-tiers`), ne odhad z copy.

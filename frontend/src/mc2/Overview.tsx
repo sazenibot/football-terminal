@@ -9,6 +9,8 @@ import { PlayerTrendsCard } from "./PlayerTrends";
 import { Card, FormDots, Info, ResBadge, Stat, TeamTitle, type Res } from "./kit";
 import { getLocale, intlTag, t } from "../i18n/locale";
 import { aiText } from "../components/AiAnalysis";
+import { Gate } from "../access/Gate";
+import { LOCK } from "../access/locks";
 
 const TONE = { pos: "var(--c-win)", neutral: "var(--c-faint)", warn: "var(--c-warn)" };
 
@@ -136,11 +138,32 @@ function formatAiNumbers(text: string): string {
   return out.replace(/(\d)\s?%/g, cs ? "$1\u00a0%" : "$1%");
 }
 
+type AiTip = { title: string; why: string };
+type AiParsed = { mainHead: string; main: string; tipsHead: string; tips: AiTip[] };
+
+function parseAiSummary(text: string): AiParsed | null {
+  const cs = /^(Největší důvěra:)\n([\s\S]+?)\n\n(Další analytické tipy:)\n([\s\S]+)$/;
+  const en = /^(Highest confidence:)\n([\s\S]+?)\n\n(Further analytical tips:)\n([\s\S]+)$/;
+  const m = text.match(cs) || text.match(en);
+  if (!m) return null;
+  const tips = m[4]
+    .split("\n")
+    .map((line) => line.replace(/^[•\-]\s*/, "").trim())
+    .filter(Boolean)
+    .map((line) => {
+      const i = line.indexOf(": ");
+      return i > 0 ? { title: line.slice(0, i), why: line.slice(i + 2) } : { title: line, why: "" };
+    });
+  if (!m[2].trim() || tips.length === 0) return null;
+  return { mainHead: m[1], main: m[2].trim(), tipsHead: m[3], tips };
+}
+
 export function AiCard({ m }: { m: MatchData }) {
   const [open, setOpen] = useState(false);
   const raw = aiText(m.ai_analysis);
   if (!raw) return null;
   const text = formatAiNumbers(raw);
+  const parsed = parseAiSummary(text);
   return (
     <Card
       title={
@@ -150,7 +173,29 @@ export function AiCard({ m }: { m: MatchData }) {
         </>
       }
     >
-      <div className={`whitespace-pre-line text-[14px] leading-relaxed text-(--c-muted) ${open ? "" : "clamp-4"}`}>{text}</div>
+      {parsed ? (
+        <div className="space-y-3 text-[14px] leading-relaxed text-(--c-muted)">
+          <div>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{parsed.mainHead.replace(/:$/, "")}</p>
+            <p className="mt-1 text-(--c-text)">{parsed.main}</p>
+          </div>
+          {open && (
+            <div>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{parsed.tipsHead.replace(/:$/, "")}</p>
+              <ul className="mt-2 space-y-2.5">
+                {parsed.tips.map((tip) => (
+                  <li key={tip.title}>
+                    <span className="font-semibold text-(--c-text)">{tip.title}</span>
+                    {tip.why ? <span>{`: ${tip.why}`}</span> : null}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className={`whitespace-pre-line text-[14px] leading-relaxed text-(--c-muted) ${open ? "" : "clamp-4"}`}>{text}</div>
+      )}
       <p className="mt-1 text-xs text-(--c-faint)">{t("mc.ov.ai.auto")}</p>
       <button type="button" onClick={() => setOpen((o) => !o)} className="mt-1 min-h-9 text-[13px] font-medium text-(--c-accent) hover:underline">
         {open ? t("mc.ov.ai.hide") : t("mc.ov.ai.more")}
@@ -171,16 +216,26 @@ export function OverviewTab({
   go: (tab: string) => void;
 }) {
   return (
-    <>
-      <PredictionSummary p={p} home={m.home} away={m.away} onMore={() => go("prediction")} />
-      <InsightsCard m={m} p={p} badges={badges} />
-      <PlayerTrendsCard m={m} />
-      <div className="grid gap-5 md:grid-cols-2">
+    <div className="grid items-start gap-5 md:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
+      <div className="space-y-5">
+        <Gate need={LOCK.mcOverviewPlus}>
+          <PredictionSummary p={p} home={m.home} away={m.away} onMore={() => go("prediction")} />
+        </Gate>
+        <Gate need={LOCK.mcOverviewPlus}>
+          <InsightsCard m={m} p={p} badges={badges} />
+        </Gate>
+        <Gate need={LOCK.mcOverviewPlus}>
+          <AiCard m={m} />
+        </Gate>
+      </div>
+      <div className="space-y-5">
+        <Gate need={LOCK.mcOverviewPlus}>
+          <PlayerTrendsCard m={m} stack />
+        </Gate>
         <FormMini m={m} onMore={() => go("form")} />
         <H2HMini m={m} onMore={() => go("form")} />
+        <RefereeMini m={m} onMore={() => go("referee")} />
       </div>
-      <RefereeMini m={m} onMore={() => go("referee")} />
-      <AiCard m={m} />
-    </>
+    </div>
   );
 }

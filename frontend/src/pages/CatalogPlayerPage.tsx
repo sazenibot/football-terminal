@@ -3,6 +3,7 @@ import { Link, useParams, useSearchParams } from "../i18n/router";
 import { PolarAngleAxis, PolarGrid, PolarRadiusAxis, Radar, RadarChart, ResponsiveContainer, Tooltip } from "recharts";
 import { useTabLock } from "../access/catalogGate";
 import { Gate } from "../access/Gate";
+import { LOCK } from "../access/locks";
 import { Avatar, Back, Crest, FilterBar, Frame, Hero, Loading, NotFound, Pill, RankCard, Select, StickyTabs, csMatches, fmtNum, rankColor } from "../cat/kit";
 import type { MatchRow, SeasonOpt } from "../components/PitchCards";
 import { KeeperCardV2, ShotMapCard } from "../cat/PitchViz";
@@ -329,8 +330,12 @@ export function CatalogPlayerPage() {
                 <Card title={t("ct.pl.fdrTitle")} lead={<>{t("ct.pl.fdrLead")} <Info>{t("ct.pl.fdrHint")}</Info></>}>
                   <div className="grid gap-3 md:grid-cols-3">
                     <FdrCard title={t("ct.pl.fdrHard")} color="var(--c-loss)" role={role} rows={buckets.hard} />
-                    <FdrCard title={t("ct.pl.fdrMid")} color="var(--c-warn)" role={role} rows={buckets.mid} />
-                    <FdrCard title={t("ct.pl.fdrEasy")} color="var(--c-win)" role={role} rows={buckets.easy} />
+                    <Gate need={LOCK.playerFdrExtra}>
+                      <FdrCard title={t("ct.pl.fdrMid")} color="var(--c-warn)" role={role} rows={buckets.mid} />
+                    </Gate>
+                    <Gate need={LOCK.playerFdrExtra}>
+                      <FdrCard title={t("ct.pl.fdrEasy")} color="var(--c-win)" role={role} rows={buckets.easy} />
+                    </Gate>
                   </div>
                 </Card>
               </>

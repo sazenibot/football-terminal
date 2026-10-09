@@ -22,6 +22,8 @@ import {
   type TdTrend,
 } from "../lib/trendDetector";
 import { t, type Key } from "../i18n/locale";
+import { Gate } from "../access/Gate";
+import { LOCK } from "../access/locks";
 
 const PAGE = 20;
 const RULE = "border-l border-(--c-line)";
@@ -215,6 +217,7 @@ export function TrendDetectorPage() {
         </div>
       ) : (
         <div className="mt-5">
+          <Gate need={LOCK.tdTable} title={t("td.gateTitle")} text={t("td.gateText")}>
           <div className="overflow-auto rounded-xl border border-(--c-line) bg-(--c-surface)">
             <table className="w-full text-left">
               <thead>
@@ -286,6 +289,7 @@ export function TrendDetectorPage() {
               </tbody>
             </table>
           </div>
+          </Gate>
           <p className="mt-2 text-xs text-(--c-faint) xl:hidden">{t("td.scroll")}</p>
           {pageCount > 1 && (
             <nav className="mt-3 flex flex-wrap justify-center gap-1.5 sm:justify-start" aria-label={t("td.pages")}>

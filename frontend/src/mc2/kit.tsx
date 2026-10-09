@@ -301,8 +301,8 @@ export function VenueTag({ home }: { home: boolean }) {
   );
 }
 
-/** Rozdíl modelu proti sázkové kanceláři v procentních bodech. Hranice 5 b. */
-export const VALUE_THRESHOLD = 5;
+/** Rozdíl modelu proti sázkové kanceláři v procentních bodech. Hranice 8 b. */
+export const VALUE_THRESHOLD = 8;
 
 export function ValueTag({ model, market, className = "" }: { model: number; market?: number | null; className?: string }) {
   if (market == null) return null;

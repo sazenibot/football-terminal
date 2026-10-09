@@ -36,6 +36,25 @@ export interface RoundFixture {
     /** domácí / remíza / hosté v % z nového modelu */
     probs?: [number, number, number];
   };
+  home_score?: number | null;
+  away_score?: number | null;
+}
+
+export interface McCalendarMatch {
+  fixture_id: number;
+  league_id: number;
+  starting_at: string;
+  day: string;
+  home: TeamBrief;
+  away: TeamBrief;
+  home_score: number | null;
+  away_score: number | null;
+}
+
+export interface McCalendarData {
+  generated_at: string;
+  season: string;
+  fixtures: McCalendarMatch[];
 }
 
 /** Zápas v souhrnu všech lig (`upcoming.json`, skládá ho scripts/round_signals.py). */

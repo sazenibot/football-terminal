@@ -3,14 +3,16 @@ import { Link, useSearchParams } from "../i18n/router";
 import { formatDateTime } from "../lib/format";
 import { isLiveLeague } from "../lib/pitchMatch";
 import { LeaguePicker } from "../components/LeaguePicker";
-import { isStale, useDataIndex, useLeagueRound, useTeamColors, useUpcoming } from "../lib/useData";
+import { isStale, useDataIndex, useLeagueRound, useMcCalendar, useTeamColors, useUpcoming } from "../lib/useData";
 import { rememberLeague } from "../components/LeagueSwitcher";
+import { MatchCalendar, archiveTitle, useArchiveDay } from "../components/MatchCalendar";
 import { kickoffLabel } from "../mc2/derive";
 import { Empty, ProbBar, Seg, TeamLogo } from "../mc2/kit";
-import type { LeagueMeta, RoundFixture, UpcomingFixture } from "../types";
+import type { LeagueMeta, McCalendarMatch, RoundFixture, UpcomingFixture } from "../types";
 import { t, type Key } from "../i18n/locale";
 import { fmtDayLong, fmtStamp, fmtTime, fmtWeekdayDate } from "../lib/format";
 import { orderedLeagues } from "../lib/leagues";
+import { useAccess } from "../access/AccessContext";
 
 /* ---------- ikonky u zápasů ---------- */
 
@@ -130,7 +132,8 @@ export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; ho
   const ready = f.has_full_data !== false;
   const time = fmtTime(f.starting_at);
   const live = kickoffLabel(f.starting_at).live;
-  const probs = f.signals?.probs;
+  const { can } = useAccess();
+  const probs = can("mc.list.probs") ? f.signals?.probs : undefined;
   const body = (
     <div className="min-w-0 flex-1">
       <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
@@ -192,6 +195,55 @@ export function MatchRow({ f, home, away, isNew, onOpen }: { f: RoundFixture; ho
 }
 
 const NEUTRAL = "#6b7280";
+type Fav = "home" | "away" | "none";
+
+/** Favorit modelu: strana s vyšší šancí na výhru, aspoň 45 %. Jinak vyrovnané. */
+function favourite(p?: [number, number, number]): Fav {
+  if (!p) return "none";
+  const [h, , a] = p;
+  if (h >= 45 && h >= a) return "home";
+  if (a >= 45 && a > h) return "away";
+  return "none";
+}
+
+function MatchLegend({ showProbs }: { showProbs: boolean }) {
+  return (
+    <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-1.5 rounded-2xl border border-(--c-line) bg-(--c-surface) px-4 py-2.5 text-[12px] text-(--c-muted)">
+      <span className="text-[11px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("list.legend")}</span>
+      {showProbs && (
+        <>
+          <span>
+            <b className="text-(--c-text)">{t("list.prob.home")}</b> {t("list.legend.homeWord")}
+          </span>
+          <span>
+            <b className="text-(--c-text)">{t("list.prob.draw")}</b> {t("list.legend.drawWord")}
+          </span>
+          <span>
+            <b className="text-(--c-text)">{t("list.prob.away")}</b> {t("list.legend.awayWord")}
+          </span>
+          <span>{t("list.legend.fav")}</span>
+        </>
+      )}
+      {SIGNALS.map((s) => (
+        <span key={s.id} className="inline-flex items-center gap-1.5">
+          <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-(--c-raised) text-(--c-muted)">{s.icon}</span>
+          {t(s.label)}
+        </span>
+      ))}
+      <span className="inline-flex items-center gap-1.5">
+        <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-(--c-warn)" />
+        {t("list.legend.new")}
+      </span>
+      <span className="inline-flex items-center gap-1.5">
+        <span aria-hidden className="flex h-4 w-4 justify-between rounded-sm border border-(--c-line)">
+          <span className="w-[3px] bg-rose-500" />
+          <span className="w-[3px] bg-sky-500" />
+        </span>
+        {t("list.legend.stripes")}
+      </span>
+    </div>
+  );
+}
 
 /** Karta zápasu: pruhy po stranách v primárních barvách týmů (domácí vlevo, hosté vpravo), čas vycentrovaný v pásu. */
 function MatchCard({
@@ -215,9 +267,18 @@ function MatchCard({
   const clock = fmtTime(f.starting_at);
   const time = withDate ? `${fmtWeekdayDate(f.starting_at)} ${clock}` : clock;
   const live = kickoffLabel(f.starting_at).live;
-  const probs = f.signals?.probs;
+  const { can } = useAccess();
+  const played = f.home_score != null && f.away_score != null;
+  const probs = !played && can("mc.list.probs") ? f.signals?.probs : undefined;
   const homeColor = colors[f.home.id] ?? NEUTRAL;
   const awayColor = colors[f.away.id] ?? NEUTRAL;
+  const fav = favourite(probs);
+  const nameCls = (side: "home" | "away") => {
+    if (fav === side) return "w-full truncate text-[14px] font-bold";
+    if (fav === "none") return "w-full truncate text-[14px] font-semibold";
+    return "w-full truncate text-[14px] font-medium text-(--c-muted)";
+  };
+  const pctCls = (side: Fav) => `tabular-nums ${fav === side ? "font-bold" : ""}`;
   const cls = "group relative block overflow-hidden rounded-2xl border border-(--c-line) bg-(--c-surface) shadow-sm";
   const body = (
     <>
@@ -244,25 +305,32 @@ function MatchCard({
         <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
           <div className="flex min-w-0 flex-col items-center gap-1.5 text-center">
             <TeamLogo team={f.home} size={32} />
-            <span className="w-full truncate text-[14px] font-semibold">{f.home.name}</span>
+            <span className={nameCls("home")}>{f.home.name}</span>
           </div>
-          <span aria-hidden className="text-xs font-semibold text-(--c-faint)">
-            vs
+          <span aria-hidden className={`text-xs font-semibold ${played ? "text-(--c-text) text-lg font-bold tabular-nums" : "text-(--c-faint)"}`}>
+            {played ? `${f.home_score}:${f.away_score}` : "vs"}
           </span>
           <div className="flex min-w-0 flex-col items-center gap-1.5 text-center">
             <TeamLogo team={f.away} size={32} />
-            <span className="w-full truncate text-[14px] font-semibold">{f.away.name}</span>
+            <span className={nameCls("away")}>{f.away.name}</span>
           </div>
         </div>
         {probs && (
           <div className="mt-3" title={t("list.probTitle")}>
             <ProbBar home={probs[0]} draw={probs[1]} away={probs[2]} height={6} />
-            <div className="mt-1 grid grid-cols-3 text-xs tabular-nums">
-              <span style={{ color: "var(--c-home)" }}>{t("fmt.pct", { n: probs[0] })}</span>
+            <div className="mt-1 grid grid-cols-3 text-xs">
+              <span className={pctCls("home")} style={{ color: "var(--c-home)" }}>
+                {t("fmt.pct", { n: probs[0] })}
+              </span>
               <span className="text-center text-(--c-faint)">{t("fmt.pct", { n: probs[1] })}</span>
-              <span className="text-right" style={{ color: "var(--c-away)" }}>
+              <span className={`text-right ${pctCls("away")}`} style={{ color: "var(--c-away)" }}>
                 {t("fmt.pct", { n: probs[2] })}
               </span>
+            </div>
+            <div className="mt-0.5 grid grid-cols-3 text-[11px] font-semibold uppercase tracking-wide text-(--c-faint)">
+              <span>{t("list.prob.home")}</span>
+              <span className="text-center">{t("list.prob.draw")}</span>
+              <span className="text-right">{t("list.prob.away")}</span>
             </div>
           </div>
         )}
@@ -278,15 +346,62 @@ function MatchCard({
   );
 }
 
+function asRound(f: McCalendarMatch): UpcomingFixture {
+  return {
+    fixture_id: f.fixture_id,
+    starting_at: f.starting_at,
+    venue: null,
+    home: f.home,
+    away: f.away,
+    league_id: f.league_id,
+    has_full_data: true,
+    home_score: f.home_score,
+    away_score: f.away_score,
+  };
+}
+
+function ArchiveDay({
+  day,
+  fixtures,
+  colors,
+  leagues,
+}: {
+  day: string;
+  fixtures: McCalendarMatch[];
+  colors: Record<string, string>;
+  leagues: LeagueMeta[];
+}) {
+  const byId = new Map(leagues.map((l) => [l.id, l]));
+  const rows = fixtures.filter((f) => f.day === day);
+  return (
+    <section className="mt-6">
+      <h2 className="mb-3 px-1 text-[15px] font-semibold">{archiveTitle(day)}</h2>
+      {rows.length === 0 ? (
+        <Empty>{t("list.cal.empty")}</Empty>
+      ) : (
+        <div className="grid gap-3 sm:grid-cols-2">
+          {rows.map((f) => (
+            <MatchCard key={f.fixture_id} f={asRound(f)} colors={colors} isNew={() => false} onOpen={() => undefined} league={byId.get(f.league_id)} />
+          ))}
+        </div>
+      )}
+    </section>
+  );
+}
+
 /* ---------- stránka ---------- */
 
 export function MatchListPage({ leagueId, base }: { leagueId: number; base: string }) {
   const { index, error: indexError } = useDataIndex();
   const { data, error } = useLeagueRound(leagueId);
+  const { data: cal } = useMcCalendar();
+  const [day, setDay] = useArchiveDay();
   const live = isLiveLeague(index?.leagues, leagueId);
   const fixtures = live ? data?.round : undefined;
   const { isNew, markSeen } = useSeen(fixtures);
   const colors = useTeamColors();
+  const { can } = useAccess();
+  const showProbs = can("mc.list.probs");
 
   useEffect(() => {
     document.title = t("list.title");
@@ -318,7 +433,16 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
       <div className="mt-5">
         {index && <LeaguePicker leagues={enabled} activeId={leagueId} base={base} />}
       </div>
+      {cal && (
+        <div className="mt-5">
+          <MatchCalendar fixtures={cal.fixtures} selected={day} onSelect={setDay} />
+        </div>
+      )}
 
+      {day ? (
+        <ArchiveDay day={day} fixtures={cal?.fixtures ?? []} colors={colors} leagues={enabled} />
+      ) : (
+      <>
       {(indexError || (error && live)) && (
         <p className="mt-6 rounded-2xl border border-(--c-line) bg-(--c-surface) p-6 text-center text-(--c-loss)">{t("list.error")}</p>
       )}
@@ -352,6 +476,12 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
             </div>
           )}
 
+          {groups.length > 0 && (
+            <div className="mt-6">
+              <MatchLegend showProbs={showProbs} />
+            </div>
+          )}
+
           <div className="mt-6 space-y-6">
             {groups.map((g) => {
               const d = dayLabel(g[0].starting_at);
@@ -374,36 +504,6 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
             })}
           </div>
 
-          {groups.length > 0 && (
-            <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 rounded-2xl border border-(--c-line) bg-(--c-surface) px-4 py-3 text-[12px] text-(--c-muted)">
-              <span className="font-semibold uppercase tracking-[0.14em] text-(--c-faint) text-[11px]">{t("list.legend")}</span>
-              {SIGNALS.map((s) => (
-                <span key={s.id} className="inline-flex items-center gap-1.5">
-                  <span className="inline-flex h-6 w-6 items-center justify-center rounded-md bg-(--c-raised) text-(--c-muted)">{s.icon}</span>
-                  {t(s.label)}
-                </span>
-              ))}
-              <span className="inline-flex items-center gap-1.5">
-                <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-(--c-warn)" />
-                {t("list.legend.new")}
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <span aria-hidden className="flex h-4 w-4 justify-between rounded-sm border border-(--c-line)">
-                  <span className="w-[3px] bg-rose-500" />
-                  <span className="w-[3px] bg-sky-500" />
-                </span>
-                {t("list.legend.stripes")}
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <span aria-hidden className="flex h-1.5 w-10 gap-px overflow-hidden rounded-full">
-                  <span className="w-1/2" style={{ background: "var(--c-home)" }} />
-                  <span className="w-1/4 opacity-60" style={{ background: "var(--c-draw)" }} />
-                  <span className="w-1/4" style={{ background: "var(--c-away)" }} />
-                </span>
-                {t("list.legend.probs")}
-              </span>
-            </div>
-          )}
         </>
       )}
 
@@ -411,6 +511,8 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
         <footer className="pt-10 text-center text-xs text-(--c-faint)">
           {t("list.updated", { when: formatDateTime(data.generated_at) })}
         </footer>
+      )}
+      </>
       )}
     </div>
   );
@@ -434,9 +536,14 @@ function sortFixtures<T extends RoundFixture>(list: T[], mode: SortMode): T[] {
 export function AllMatchesPage({ base }: { base: string }) {
   const { index, error: indexError } = useDataIndex();
   const { data, error } = useUpcoming();
+  const { data: cal } = useMcCalendar();
+  const [day, setDay] = useArchiveDay();
   const [sp, setSp] = useSearchParams();
-  const mode: SortMode = sp.get("sort") === "prob" ? "prob" : "time";
   const colors = useTeamColors();
+  const { can } = useAccess();
+  const showProbs = can("mc.list.probs");
+  const showSort = can("mc.list.sort");
+  const mode: SortMode = showSort && sp.get("sort") === "prob" ? "prob" : "time";
   const enabled = orderedLeagues((index?.leagues ?? []).filter((l) => l.enabled));
   const leagueById = useMemo(() => new Map((index?.leagues ?? []).map((l) => [l.id, l])), [index]);
 
@@ -474,30 +581,43 @@ export function AllMatchesPage({ base }: { base: string }) {
       </header>
 
       <div className="mt-5">{index && <LeaguePicker leagues={enabled} activeId="all" base={base} />}</div>
+      {cal && (
+        <div className="mt-5">
+          <MatchCalendar fixtures={cal.fixtures} selected={day} onSelect={setDay} />
+        </div>
+      )}
 
-      <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1.5">
-        <span className="text-[12px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("list.sort.label")}</span>
-        <Seg<SortMode>
-          label={t("list.sort.label")}
-          value={mode}
-          onChange={(v) =>
-            setSp(
-              (prev) => {
-                const next = new URLSearchParams(prev);
-                if (v === "time") next.delete("sort");
-                else next.set("sort", v);
-                return next;
-              },
-              { replace: true },
-            )
-          }
-          options={[
-            { id: "time", label: t("list.sort.time") },
-            { id: "prob", label: t("list.sort.prob") },
-          ]}
-        />
-      </div>
-      {mode === "prob" && <p className="mt-2 text-[12px] text-(--c-muted)">{t("list.sort.probNote")}</p>}
+      {day ? (
+        <ArchiveDay day={day} fixtures={cal?.fixtures ?? []} colors={colors} leagues={enabled} />
+      ) : (
+      <>
+      {showSort && (
+        <>
+          <div className="mt-5 flex flex-wrap items-center gap-x-3 gap-y-1.5">
+            <span className="text-[12px] font-semibold uppercase tracking-[0.14em] text-(--c-faint)">{t("list.sort.label")}</span>
+            <Seg<SortMode>
+              label={t("list.sort.label")}
+              value={mode}
+              onChange={(v) =>
+                setSp(
+                  (prev) => {
+                    const next = new URLSearchParams(prev);
+                    if (v === "time") next.delete("sort");
+                    else next.set("sort", v);
+                    return next;
+                  },
+                  { replace: true },
+                )
+              }
+              options={[
+                { id: "time", label: t("list.sort.time") },
+                { id: "prob", label: t("list.sort.prob") },
+              ]}
+            />
+          </div>
+          {mode === "prob" && <p className="mt-2 text-[12px] text-(--c-muted)">{t("list.sort.probNote")}</p>}
+        </>
+      )}
 
       {(indexError || error) && (
         <p className="mt-6 rounded-2xl border border-(--c-line) bg-(--c-surface) p-6 text-center text-(--c-loss)">{t("list.error")}</p>
@@ -513,6 +633,12 @@ export function AllMatchesPage({ base }: { base: string }) {
       {data && sorted.length === 0 && (
         <div className="mt-6">
           <Empty>{t("list.allEmpty", { n: days })}</Empty>
+        </div>
+      )}
+
+      {sorted.length > 0 && (
+        <div className="mt-6">
+          <MatchLegend showProbs={showProbs} />
         </div>
       )}
 
@@ -538,6 +664,8 @@ export function AllMatchesPage({ base }: { base: string }) {
 
       {data && (
         <footer className="pt-10 text-center text-xs text-(--c-faint)">{t("list.updated", { when: formatDateTime(data.generated_at) })}</footer>
+      )}
+      </>
       )}
     </div>
   );

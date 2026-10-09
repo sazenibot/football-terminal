@@ -8,8 +8,8 @@ import { Disclosure } from "../mc2/kit";
 const HIGHLIGHTS: Record<Tier, Key[]> = {
   anon: ["pricing.hl.anon.1", "pricing.hl.anon.2", "pricing.hl.anon.3", "pricing.hl.anon.4"],
   account: ["pricing.hl.account.1", "pricing.hl.account.2", "pricing.hl.account.3", "pricing.hl.account.4", "pricing.hl.account.5"],
-  unlimited: ["pricing.hl.unlimited.1", "pricing.hl.unlimited.2", "pricing.hl.unlimited.3", "pricing.hl.unlimited.4"],
-  pro: ["pricing.hl.pro.1", "pricing.hl.pro.2", "pricing.hl.pro.3", "pricing.hl.pro.4"],
+  unlimited: ["pricing.hl.unlimited.1", "pricing.hl.unlimited.2", "pricing.hl.unlimited.3"],
+  pro: ["pricing.hl.pro.1", "pricing.hl.pro.2", "pricing.hl.pro.3", "pricing.hl.pro.4", "pricing.hl.pro.5"],
 };
 
 const FAQ: [Key, Key][] = [

@@ -52,7 +52,7 @@ const enBySlug = new Map(readArticles(join(root, "content", "articles", "en")).f
 const byDate = (a, b) => String(b.date).localeCompare(String(a.date));
 /* Právní stránky: content/legal/*.md (cs) a content/legal/en/*.md. Údaje provozovatele z operator.json, prázdné = „Na vyžádání“. */
 const operator = JSON.parse(readFileSync(join(root, "content", "legal", "operator.json"), "utf8"));
-const LEGAL = ["obchodni-podminky", "ochrana-udaju", "kontakt"];
+const LEGAL = ["obchodni-podminky", "ochrana-udaju"];
 function legalFor(loc) {
   const gap = loc === "en" ? "On request" : "Na vyžádání";
   return LEGAL.map((slug) => {

@@ -78,4 +78,6 @@ export const enTd: Record<keyof typeof csTd, string> = {
   "td.trend.corners": "{p} corners ({n}m)",
   "td.trend.fouls": "{p} fouls ({n}m)",
   "td.trend.up": "Rising",
+  "td.gateTitle": "The table is on the Pro plan",
+  "td.gateText": "The filters stay open. The team table unlocks with Pro or Unlimited.",
 };

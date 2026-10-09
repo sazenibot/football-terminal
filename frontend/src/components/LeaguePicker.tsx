@@ -5,6 +5,9 @@ import type { LeagueMeta } from "../types";
 import { intlTag, t } from "../i18n/locale";
 import { Flag, countryName } from "./Flag";
 import { lastLeagueId, rememberLeague } from "./LeagueSwitcher";
+import { useAccess } from "../access/AccessContext";
+import { LOCK } from "../access/locks";
+import { allows } from "../access/tiers";
 
 /**
  * Přepínač soutěží, který vydrží i 30 lig:
@@ -45,6 +48,8 @@ const Soon = () => (
 );
 
 export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[]; activeId: number | "all"; base: string }) {
+  const { tier } = useAccess();
+  const canSwitch = allows(tier, LOCK.mcPicker);
   const [open, setOpen] = useState(false);
   const [q, setQ] = useState("");
   const [pins, setPins] = useState<number[]>(loadPins);
@@ -83,15 +88,25 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
   return (
     <nav aria-label={t("picker.aria")}>
       <div className="flex flex-wrap items-center gap-2">
-        <Link
-          to={`${base}/all`}
-          aria-current={activeId === "all" ? "page" : undefined}
-          className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
-            activeId === "all" ? "border-(--c-accent) bg-(--c-accent)/12 text-(--c-accent)" : "border-(--c-line) bg-(--c-surface) hover:border-(--c-faint)"
-          }`}
-        >
-          {t("list.all")}
-        </Link>
+        {canSwitch || activeId === "all" ? (
+          <Link
+            to={`${base}/all`}
+            onClick={() => rememberLeague("all")}
+            aria-current={activeId === "all" ? "page" : undefined}
+            className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+              activeId === "all" ? "border-(--c-accent) bg-(--c-accent)/12 text-(--c-accent)" : "border-(--c-line) bg-(--c-surface) hover:border-(--c-faint)"
+            }`}
+          >
+            {t("list.all")}
+          </Link>
+        ) : (
+          <span
+            title={t("gate.title", { tier: t("tier.account.name") })}
+            className="flex items-center gap-2 rounded-full border border-dashed border-(--c-line) px-4 py-2 text-sm font-semibold text-(--c-faint)"
+          >
+            {t("list.all")} <span aria-hidden>🔒</span>
+          </span>
+        )}
         {chips.map((l) => {
           const live = isLiveLeague(leagues, l.id);
           const active = l.id === activeId;
@@ -103,15 +118,16 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
               {!live && <Soon />}
             </>
           );
-          if (!live) {
+          if (!live || (!canSwitch && !active)) {
             return (
               <span
                 key={l.id}
                 aria-disabled
-                title={t("picker.soonTitle")}
+                title={!live ? t("picker.soonTitle") : t("gate.title", { tier: t("tier.account.name") })}
                 className="flex cursor-default items-center gap-2 rounded-full border border-dashed border-(--c-line) py-1.5 pl-1.5 pr-3 text-sm font-medium text-(--c-faint)"
               >
                 {inner}
+                {live && <span aria-hidden>🔒</span>}
               </span>
             );
           }
@@ -133,9 +149,11 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
         {showAll && (
           <button
             type="button"
-            onClick={() => setOpen((v) => !v)}
+            onClick={() => canSwitch && setOpen((v) => !v)}
             aria-expanded={open}
-            className="ml-auto flex items-center gap-2 rounded-full border border-(--c-line) bg-(--c-surface) px-4 py-2 text-sm font-medium hover:border-(--c-faint)"
+            disabled={!canSwitch}
+            title={canSwitch ? undefined : t("gate.title", { tier: t("tier.account.name") })}
+            className="ml-auto flex items-center gap-2 rounded-full border border-(--c-line) bg-(--c-surface) px-4 py-2 text-sm font-medium hover:border-(--c-faint) disabled:cursor-not-allowed disabled:opacity-50"
           >
             {t("picker.all")}
             <span className="rounded-md bg-(--c-raised) px-1.5 text-xs tabular-nums text-(--c-muted)">{leagues.length}</span>

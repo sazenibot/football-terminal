@@ -20,9 +20,8 @@ import { DEV_TOOLS, PRICING_OPEN } from "./lib/flags";
 import { SiteFooter, SiteNav, TopRight } from "./site/shell";
 import { Suspense, lazy, useEffect } from "react";
 import { Navigate as RawNavigate } from "react-router-dom";
-import { lastLeagueId } from "./components/LeagueSwitcher";
+import { defaultLeaguePath } from "./components/LeagueSwitcher";
 import { useDataIndex } from "./lib/useData";
-import { isLiveLeague } from "./lib/pitchMatch";
 import { LocaleProvider, seg, useLocale } from "./i18n";
 import { localizePath, t } from "./i18n/locale";
 
@@ -32,14 +31,14 @@ const LabRoutes = import.meta.env.DEV ? lazy(() => import("./pages/LabRoutes")) 
 function LeagueRoute() {
   const { leagueId } = useParams();
   const [sp] = useSearchParams();
+  const { locale } = useLocale();
   const { index } = useDataIndex();
   // ?classic=1 = nouzový návrat ke starému výpisu kola
   if (leagueId === "all") return <AllMatchesPage base="/league" />;
-  if (sp.get("classic") === "1" && leagueId) return <RoundPage leagueId={Number(leagueId)} />;
-  const saved = lastLeagueId();
-  const fallback = saved && isLiveLeague(index?.leagues, saved) ? saved : (index?.default_league_id ?? 262);
-  const id = Number(leagueId) || fallback;
-  if (index && leagueId && !index.leagues.some((l) => l.id === id)) return <NotFoundPage text={t("nf.league")} />;
+  if (!leagueId) return <Navigate to={defaultLeaguePath(locale)} replace />;
+  if (sp.get("classic") === "1") return <RoundPage leagueId={Number(leagueId)} />;
+  const id = Number(leagueId);
+  if (index && !index.leagues.some((l) => l.id === id)) return <NotFoundPage text={t("nf.league")} />;
   return <MatchListPage leagueId={id} base="/league" />;
 }
 
@@ -84,7 +83,7 @@ function AppRoutes() {
       <Route path={p("prihlaseni")} element={<LoginPage />} />
       <Route path={p("obchodni-podminky")} element={<LegalPage slug="obchodni-podminky" />} />
       <Route path={p("ochrana-udaju")} element={<LegalPage slug="ochrana-udaju" />} />
-      <Route path={p("kontakt")} element={<LegalPage slug="kontakt" />} />
+      <Route path={p("kontakt")} element={<Navigate to="/" replace />} />
       <Route path="/" element={<HomePage />} />
       <Route path="/league" element={<LeagueRoute />} />
       <Route path="/league/:leagueId" element={<LeagueRoute />} />

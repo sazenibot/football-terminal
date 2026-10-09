@@ -77,4 +77,6 @@ export const csTd = {
   "td.trend.corners": "{p} rohy ({n}z)",
   "td.trend.fouls": "{p} fauly ({n}z)",
   "td.trend.up": "Vzestup",
+  "td.gateTitle": "Tabulka je v tarifu Pro",
+  "td.gateText": "Filtry zůstávají volné. Samotná tabulka týmů se odemkne s Pro nebo Unlimited.",
 } as const;

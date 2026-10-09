@@ -110,6 +110,13 @@ jobs:
           PITCHAPI_API_KEY: ${{ secrets.PITCHAPI_API_KEY }}
         run: python scripts/pitch_daily.py
 
+      # Slovní shrnutí z nové simulace (sim v2.2). Až po pitch_daily, ať AI nečte stará čísla.
+      - name: Slovní shrnutí zápasu
+        continue-on-error: true
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/match_extras.py --ai-only
+
       # Signály pro rozcestník Match Center (ikonky, mini predikce). Čte jen uložené JSON, žádné API.
       - name: Signály pro výpis kola
         continue-on-error: true
@@ -140,6 +147,7 @@ jobs:
           python scripts/prediction_ledger.py
           python scripts/build_track_record.py
           python scripts/build_feed.py
+          python scripts/mc_calendar.py
 
       # Barvy týmů pro pruhy v Match Center. Přírůstkově: stahuje jen loga týmů, které ještě nemají barvu.
       - name: Barvy týmů z log

@@ -14,6 +14,10 @@ import { BetbuilderCard, TrendsCard } from "../mc2/Trends";
 import type { MatchData } from "../types";
 import { t, type Key } from "../i18n/locale";
 import { fmtStamp, fmtTime, fmtWeekdayDate } from "../lib/format";
+import { useAccess } from "../access/AccessContext";
+import { Gate } from "../access/Gate";
+import { LOCK } from "../access/locks";
+import { allows, type Tier } from "../access/tiers";
 
 const TABS: readonly { id: "overview" | "prediction" | "form" | "stats" | "people" | "referee"; label: Key }[] = [
   { id: "overview", label: "mc.tab.overview" },
@@ -24,6 +28,15 @@ const TABS: readonly { id: "overview" | "prediction" | "form" | "stats" | "peopl
   { id: "referee", label: "mc.tab.referee" },
 ];
 type TabId = (typeof TABS)[number]["id"];
+
+const TAB_MIN: Record<TabId, Tier | null> = {
+  overview: null,
+  prediction: LOCK.mcPrediction,
+  form: LOCK.mcForm,
+  stats: LOCK.mcStats,
+  people: null,
+  referee: LOCK.mcReferee,
+};
 
 /* ---------- hlavička ---------- */
 
@@ -106,7 +119,12 @@ export function MatchCenterPage() {
     return () => window.removeEventListener("scroll", on);
   }, []);
 
+  const { tier } = useAccess();
   const tab = (TABS.find((x) => x.id === params.get("tab"))?.id ?? "overview") as TabId;
+  const tabNeed = (id: TabId): Tier | null => {
+    const min = TAB_MIN[id];
+    return min && !allows(tier, min) ? min : null;
+  };
   const go = (id: string) => {
     setParams(id === "overview" ? {} : { tab: id }, { replace: true });
     requestAnimationFrame(() => {
@@ -153,7 +171,7 @@ export function MatchCenterPage() {
   const stale = checkedAt ? isStale(checkedAt, index?.stale_after_hours ?? 26) : false;
 
   return (
-    <div className="mc2 mx-auto max-w-4xl px-4 pb-16 pt-20">
+    <div className="mc2 mx-auto max-w-6xl px-4 pb-16 pt-20">
       {back}
       {stale && checkedAt && (
         <div className="mt-3 rounded-xl border border-(--c-warn)/40 bg-(--c-warn)/10 px-3 py-2 text-[13px] text-(--c-warn)">
@@ -192,6 +210,11 @@ export function MatchCenterPage() {
                 }`}
               >
                 {t(tb.label)}
+                {tabNeed(tb.id) ? (
+                  <span aria-label={t("gate.locked")} className="ml-1 text-[11px] opacity-70">
+                    🔒
+                  </span>
+                ) : null}
               </button>
             );
           })}
@@ -202,7 +225,8 @@ export function MatchCenterPage() {
         {tab === "overview" && <OverviewTab m={m} p={p} badges={badges} go={go} />}
 
         {tab === "prediction" && (
-          <>
+          <Gate need={LOCK.mcPrediction}>
+            <div className="space-y-5">
             <Card title={t("mc.pred.outcome.title")} lead={t("mc.pred.outcome.lead")}>
               <OutcomeBlock p={p} home={m.home} away={m.away} />
             </Card>
@@ -221,32 +245,43 @@ export function MatchCenterPage() {
             )}
             <BetbuilderCard m={m} />
             <TrendsCard m={m} />
-          </>
+            </div>
+          </Gate>
         )}
 
         {tab === "form" && (
-          <>
+          <Gate need={LOCK.mcForm}>
+            <div className="space-y-5">
             <FormCard m={m} />
             <H2HCard m={m} />
             <H2HStatsCard m={m} h2h={h2h} withXgot={pitchReady} />
-          </>
+            </div>
+          </Gate>
         )}
 
         {tab === "stats" && (
-          <>
+          <Gate need={LOCK.mcStats}>
+            <div className="space-y-5">
             <TeamCompareCard m={m} xgot={rx} />
             {pitchReady && <GoalsXgotCard m={m} homeFile={homePitch} awayFile={awayPitch} />}
-          </>
+            </div>
+          </Gate>
         )}
 
         {tab === "people" && (
           <>
-            <PlayersCard m={m} />
+            <Gate need={LOCK.mcPlayersTable}>
+              <PlayersCard m={m} />
+            </Gate>
             <AbsencesCard m={m} />
           </>
         )}
 
-        {tab === "referee" && <RefereeCard referee={m.referee} home={m.home} away={m.away} />}
+        {tab === "referee" && (
+          <Gate need={LOCK.mcReferee}>
+            <RefereeCard referee={m.referee} home={m.home} away={m.away} />
+          </Gate>
+        )}
       </div>
 
       <footer className="space-y-1 pt-8 text-center text-xs text-(--c-faint)">

@@ -5,8 +5,7 @@ import { Link } from "../i18n/router";
 import { useAccess } from "../access/AccessContext";
 import { tierName } from "../access/tiers";
 import { ThemeToggle } from "../components/ThemeToggle";
-import { lastLeagueId } from "../components/LeagueSwitcher";
-import { useDataIndex } from "../lib/useData";
+import { defaultLeaguePath } from "../components/LeagueSwitcher";
 import { DEV_TOOLS, PRICING_OPEN } from "../lib/flags";
 
 const PILL = "rounded-full border border-slate-700 bg-[#12161f] shadow-lg light:bg-white light:border-slate-300";
@@ -46,11 +45,10 @@ export function LangSwitch() {
 
 export function SiteNav() {
   const pathname = useBarePath();
-  const { index } = useDataIndex();
+  const { locale } = useLocale();
   const [more, setMore] = useState(false);
   const { tier } = useAccess();
-  const saved = lastLeagueId();
-  const center = `/league/${saved && Number.isFinite(saved) ? saved : (index?.default_league_id ?? 262)}`;
+  const center = defaultLeaguePath(locale);
   const is = (p: string) => pathname === p || pathname.startsWith(p + "/");
 
   const item = (to: string, label: ReactNode, active: boolean, extra = "") => (
@@ -116,7 +114,7 @@ export function TopRight() {
   const { tier } = useAccess();
   return (
     <div className="fixed top-3 right-3 z-50 hidden items-center gap-2 sm:flex">
-      {/* Štítek tarifu je jen pro vývoj, dokud nejsou účty (body 6–8). */}
+      {/* Štítek tarifu a Přihlásit jen ve vývoji. Na produkci host = anon, účty ještě nejsou. */}
       {DEV_TOOLS && (
         <Link
           to={tier === "anon" ? "/prihlaseni" : "/tarify"}
@@ -154,7 +152,6 @@ export function SiteFooter() {
         <FooterCol title={t("footer.legal")}>
           <Link className={link} to="/obchodni-podminky">{t("footer.terms")}</Link>
           <Link className={link} to="/ochrana-udaju">{t("footer.privacy")}</Link>
-          <Link className={link} to="/kontakt">{t("footer.contact")}</Link>
         </FooterCol>
       </div>
       <p className="mt-8 text-[12px] leading-relaxed text-(--c-faint)">

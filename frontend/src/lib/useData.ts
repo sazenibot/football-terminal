@@ -15,6 +15,7 @@ import type {
   LeagueRoundData,
   UpcomingData,
   MatchData,
+  McCalendarData,
 } from "../types";
 
 /** Katalog (týmy, hráči, rozhodčí, historie) leží v R2, ne v gitu. Adresu dává VITE_CATALOG_BASE
@@ -81,6 +82,19 @@ export function useUpcoming(enabled = true) {
       .then(setData)
       .catch((e) => setError(String(e)));
   }, [enabled]);
+
+  return { data, error };
+}
+
+export function useMcCalendar() {
+  const [data, setData] = useState<McCalendarData | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetchJson<McCalendarData>("/data/mc-calendar.json")
+      .then(setData)
+      .catch((e) => setError(String(e)));
+  }, []);
 
   return { data, error };
 }

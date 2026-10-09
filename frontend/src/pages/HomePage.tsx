@@ -7,7 +7,8 @@ import { t, type Key } from "../i18n/locale";
 import { Pill } from "../cat/kit";
 import { getArticles } from "../content/content";
 import { PRICING_OPEN } from "../lib/flags";
-import { lastLeagueId } from "../components/LeagueSwitcher";
+import { defaultLeaguePath } from "../components/LeagueSwitcher";
+import { useLocale } from "../i18n";
 import { useDataIndex, useLeagueRound } from "../lib/useData";
 import { ProbBar, TeamLogo } from "../mc2/kit";
 import type { RoundFixture } from "../types";
@@ -18,9 +19,9 @@ const eyebrow = "text-[11px] font-semibold uppercase tracking-[0.2em] text-(--c-
 export function HomePage() {
   const { index } = useDataIndex();
   const { tier } = useAccess();
+  const { locale } = useLocale();
   const defaultId = index?.default_league_id ?? 262;
-  const saved = lastLeagueId();
-  const league = saved && Number.isFinite(saved) ? saved : defaultId;
+  const centerTo = defaultLeaguePath(locale);
   const { data } = useLeagueRound(defaultId);
   const upcoming = useMemo(() => {
     const now = Date.now();
@@ -29,10 +30,10 @@ export function HomePage() {
 
   return (
     <div className="mc2 mx-auto max-w-6xl px-4 pb-12 pt-20">
-      <Hero leagueId={league} anon={tier === "anon"} next={upcoming[0]} leagueName={data?.league.name} />
+      <Hero centerTo={centerTo} anon={tier === "anon"} next={upcoming[0]} leagueName={data?.league.name} />
       <div className="mt-8 grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="min-w-0 space-y-4">
-          <MatchCenterCard leagueId={league} matches={upcoming.slice(0, 3)} />
+          <MatchCenterCard leagueTo={centerTo} matches={upcoming.slice(0, 3)} />
           <section className="rounded-3xl border border-(--c-line) bg-(--c-surface)/40 p-4 sm:p-5">
             <div className="mb-3 flex flex-wrap items-end justify-between gap-x-4 gap-y-1 px-1">
               <div>
@@ -74,7 +75,7 @@ export function HomePage() {
 
 /* ---------- úvod ---------- */
 
-function Hero({ leagueId, anon, next, leagueName }: { leagueId: number; anon: boolean; next?: RoundFixture; leagueName?: string }) {
+function Hero({ centerTo, anon, next, leagueName }: { centerTo: string; anon: boolean; next?: RoundFixture; leagueName?: string }) {
   return (
     <header className="relative overflow-hidden rounded-3xl border border-(--c-line) bg-(--c-surface)">
       <div
@@ -110,7 +111,7 @@ function Hero({ leagueId, anon, next, leagueName }: { leagueId: number; anon: bo
           </p>
           <div className="mt-7 flex flex-wrap items-center gap-2.5">
             <Link
-              to={`/league/${leagueId}`}
+              to={centerTo}
               className="inline-flex min-h-14 flex-col justify-center btn-accent rounded-xl px-6 py-2 shadow-lg shadow-(--c-accent)/20 transition-transform hover:-translate-y-0.5"
             >
               <span className="text-[15px] font-semibold leading-tight">{t("home.cta.mc")}</span>
@@ -147,7 +148,7 @@ function Hero({ leagueId, anon, next, leagueName }: { leagueId: number; anon: bo
 function HeroPreview({ next, leagueName }: { next?: RoundFixture; leagueName?: string }) {
   const { can } = useAccess();
   const p = next?.signals?.probs;
-  const open = can("mc.future.all");
+  const open = can("mc.list.probs");
   return (
     <div className="relative mx-auto w-full max-w-sm lg:ml-auto">
       <div aria-hidden className="absolute -inset-3 rounded-[2rem] bg-(--c-accent)/10 blur-2xl" />
@@ -194,7 +195,7 @@ function HeroPreview({ next, leagueName }: { next?: RoundFixture; leagueName?: s
 
 /* ---------- karty produktů ---------- */
 
-function MatchCenterCard({ leagueId, matches }: { leagueId: number; matches: RoundFixture[] }) {
+function MatchCenterCard({ leagueTo, matches }: { leagueTo: string; matches: RoundFixture[] }) {
   return (
     <section className="group relative overflow-hidden rounded-3xl border border-(--c-line) bg-(--c-surface) transition-colors hover:border-(--c-accent)/60">
       <div
@@ -212,7 +213,7 @@ function MatchCenterCard({ leagueId, matches }: { leagueId: number; matches: Rou
             {t("home.mc.text")}
           </p>
           <p className="mt-2 text-[12px] text-(--c-faint)">{t("home.mc.note")}</p>
-          <Link to={`/league/${leagueId}`} className="mt-auto inline-flex pt-5 text-[14px] font-semibold text-(--c-accent) after:absolute after:inset-0 after:content-[''] hover:underline">
+          <Link to={leagueTo} className="mt-auto inline-flex pt-5 text-[14px] font-semibold text-(--c-accent) after:absolute after:inset-0 after:content-[''] hover:underline">
             {t("home.mc.link")}
           </Link>
         </div>
