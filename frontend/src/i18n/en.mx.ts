@@ -159,7 +159,7 @@ export const enMx: Record<keyof typeof csMx, string> = {
   "mx.simv2.odds": "Chance 1X2 odds {home} / {draw} / {away}, {margin} margin removed.",
   "mx.simv2.hide": "Hide how the number was derived",
   "mx.simv2.show": "Show how the number was derived",
-  "mx.simv2.method": "Goals: Maher attack/defence ratings adjusted for opponent strength, {goalsFit} goals fit + {xgFit} xG fit. The prior is built from the two previous seasons (home advantage is also pulled towards the previous season), with defence pulled towards the prior more than attack. Scores are computed exactly from a Poisson grid 0–{maxGoals} with a slight boost for draws. Both teams to score and over are calibrated (raw values were overconfident). Shots, SOT and corners: team and opponent home/away rate pulled towards last season ({prev} matches with stats), promoted teams take the average of the bottom 3 teams. The Chance odds do not feed into the model.",
+  "mx.simv2.method": "Goals: Maher attack/defence ratings adjusted for opponent strength, {goalsFit} goals fit + {xgFit} xG fit. The prior is built from the two previous seasons (home advantage is also pulled towards the previous season), with defence pulled towards the prior more than attack. Scores are computed exactly from a Poisson grid 0–{maxGoals} with a slight boost for draws. Both teams to score and over are calibrated (raw values were overconfident). Shots, shots on target and corners: team and opponent home/away rate pulled towards last season ({prev} matches with stats), promoted teams take the average of the bottom 3 teams. The Chance odds do not feed into the model.",
   "mx.simv2.ratingAttDef": "Attack / defence (goals)",
   "mx.simv2.ratingLam": "λ goals → xG → final",
   "mx.simv2.rest": "Rest (days)",

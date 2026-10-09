@@ -5,10 +5,10 @@ alwaysApply: true
 
 # Odložené z UX/UI auditu (8. 10. 2026)
 
-**Před zahájením SEO (Worker pro boty, titulky, strukturovaná data) připomeň Petrovi a nezačínej SEO, dokud není hotové:**
+**SEO z UX auditu (8. 10.) je odblokované** — slovní shrnutí a štítky jsou hotové. Worker pro boty, titulky a strukturovaná data teď můžeš začít, až Petr řekne. `SITE_INDEXABLE=1` pořád až po celém kontrolním seznamu.
 
-1. **Přegenerovat slovní shrnutí zápasů.** Zadání (prompt `2026-10-09-v2`) je přepsané, čísla berou novou simulaci. Hromadné přegenerování Petr odložil — bez něj zůstanou stará shrnutí (ID 30, 31).
-2. **Copywriting štítků (bod 10).** Pravidla štítků Petr schválil 9. 10. (hodnota 8 pp místo 5). Sjednocení zkratek a tónu napříč podstránkami zůstává (ID 33, 44, 79).
+1. **Slovní shrnutí.** Prompt `2026-10-09-v2`, běh `--ai-only` 9. 10.: 47 zápasů s novým CS+EN textem. 16 má starý text a 12 žádný — chybí sim v2.2 (hlavně Národní Liga a část archivu). Denní job doplní nové, až bude sim.
+2. **Štítky.** Pravidla schválená 9. 10. (hodnota 8 pp). Sjednocené názvy: Štěstí / Smolaři, střely na bránu (ne SOT), přísnost rozhodčího stejnými slovy v katalogu i v přehledu (ID 33, 44, 79).
 
 **Hotovo (neměnit bez nového zadání):** body 6–8 / ID 27 a 73 — host na produkci je `anon`, výpis 1X2 jen Unlimited, „Zobrazit jako“ jen v DEV. Zámky obsahu bere canvas Strom webu + `LOCK` (9. 10.: Pro je tier 1, Unlimited nejvyšší). ID 10 a 26 jsou na webu.
 

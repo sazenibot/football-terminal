@@ -615,7 +615,7 @@ Napiš přesně 3 další zajímavé predikce/tipy formou odrážek.
 
 [Název tipu]: Následně v 1-2 větách vysvětli analytickou úvahu, která k němu vede (opři se například o očekávané držení míče, statistiky karet a rozhodčího, rozdíl mezi xG a reálnými góly, rohy atd.). Ukaž, jak z dat vyplývá herní obraz.
 
-Čísla 1X2, xG a trhy ber výhradně z pole model (srovnání s kurzem jen z pole trh). Nesmíš je měnit, zaokrouhlovat na jinou hodnotu ani vymýšlet jiná. Tip musí souhlasit s modelem: neprohlašuj za pravděpodobné trh, kterému model dává pod 50 %, a nehraj proti favoritovi z 1X2.
+Čísla 1X2, xG a trhy ber výhradně z pole model (srovnání s kurzem jen z pole trh). Nesmíš je měnit, zaokrouhlovat na jinou hodnotu ani vymýšlet jiná. Tip musí souhlasit s modelem: neprohlašuj za pravděpodobné trh, kterému model dává pod 50 %, a nehraj proti favoritovi z 1X2. main_title nesmí být remíza, pokud model.X je pod 50 — vezmi favorita 1X2 (vyšší z 1 a 2) nebo jiný trh s alespoň 50 %.
 
 Odpověz pouze JSON objektem:
 {"main_title":"název nejsilnějšího tipu","main_why":"vysvětlení","tips":[{"title":"tip 1","why":"proč"},{"title":"tip 2","why":"proč"},{"title":"tip 3","why":"proč"}]}
@@ -641,14 +641,34 @@ Write exactly 3 more tips as bullets.
 
 [Tip title]: Then in 1–2 sentences explain the analytical reasoning (expected territorial control, cards and the referee, xG vs actual goals, corners, etc.). Show the match picture that follows from the data.
 
-Take 1X2, xG and market figures only from the model field (compare with the bookmaker only via the trh field). Do not change, re-round or invent those numbers. A tip must agree with the model: do not call a market likely if the model gives it under 50%, and do not fade the 1X2 favourite.
+Take 1X2, xG and market figures only from the model field (compare with the bookmaker only via the trh field). Do not change, re-round or invent those numbers. A tip must agree with the model: do not call a market likely if the model gives it under 50%, and do not fade the 1X2 favourite. main_title must not be a draw if model.X is under 50 — pick the 1X2 favourite (higher of 1 and 2) or another market at 50% or more.
 
 Reply with a JSON object only:
 {"main_title":"strongest tip title","main_why":"why","tips":[{"title":"tip 1","why":"why"},{"title":"tip 2","why":"why"},{"title":"tip 3","why":"why"}]}
 main_title + ": " + main_why must be at most 300 characters. Exactly 3 items in tips. Write in English."""
 
 
-def generate_ai_analysis(match: dict) -> dict | None:
+def _ai_fights_model(data: dict, model: dict, home: str = "", away: str = "") -> bool:
+    """True, když nejsilnější tip jde proti 1X2 nebo hlásá trh pod 50 %."""
+    title = (data.get("main_title") or "").lower()
+    hw = float(model.get("home_win_pct") or 0)
+    dr = float(model.get("draw_pct") or 0)
+    aw = float(model.get("away_win_pct") or 0)
+    if any(w in title for w in ("remíz", "draw", "nerozh")) and dr < 50:
+        return True
+    fav_home = hw >= aw
+    hn, an = home.lower(), away.lower()
+    if hn and an:
+        picked_away = an in title and hn not in title
+        picked_home = hn in title and an not in title
+        if fav_home and picked_away:
+            return True
+        if (not fav_home) and picked_home:
+            return True
+    return False
+
+
+def generate_ai_analysis(match: dict, *, force: bool = False) -> dict | None:
     key = _env("OPENAI_API_KEY")
     if not key:
         return None
@@ -660,17 +680,20 @@ def generate_ai_analysis(match: dict) -> dict | None:
     # Stejný vstup + stejné zadání = stejná analýza, OpenAI se nevolá znovu.
     input_hash = hashlib.sha256(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
     prev = match.get("ai_analysis") or {}
-    if prev.get("input_hash") == input_hash and prev.get("text") and prev.get("text_en"):
+    if not force and prev.get("input_hash") == input_hash and prev.get("text") and prev.get("text_en"):
         return prev
 
-    def ask(system: str) -> dict | None:
+    def ask(system: str, extra: str = "") -> dict | None:
+        user = json.dumps(payload, ensure_ascii=False)
+        if extra:
+            user = extra + "\n\n" + user
         body = {
             "model": "gpt-4o-mini",
             "temperature": 0.3,
             "response_format": {"type": "json_object"},
             "messages": [
                 {"role": "system", "content": system},
-                {"role": "user", "content": json.dumps(payload, ensure_ascii=False)},
+                {"role": "user", "content": user},
             ],
         }
         headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
@@ -680,10 +703,21 @@ def generate_ai_analysis(match: dict) -> dict | None:
         raw = (((resp.get("choices") or [{}])[0].get("message") or {}).get("content") or "").strip()
         return _parse_ai_json(raw)
 
+    model = sim.get("model") or {}
+    home = (match.get("home") or {}).get("name") or ""
+    away = (match.get("away") or {}).get("name") or ""
+    nudge = (
+        "main_title must not be a draw/remíza unless model.X is at least 50. "
+        "Do not pick against the 1X2 favourite. Prefer a market the model gives 50% or more."
+    )
     data_cs = ask(SYSTEM_CS)
+    if data_cs and _ai_fights_model(data_cs, model, home, away):
+        data_cs = ask(SYSTEM_CS, nudge) or data_cs
     if not data_cs:
         return prev or None
     data_en = ask(SYSTEM_EN)
+    if data_en and _ai_fights_model(data_en, model, home, away):
+        data_en = ask(SYSTEM_EN, nudge) or data_en
     out = {
         "text": _format_ai(data_cs, lang="cs"),
         "model": "gpt-4o-mini",
@@ -713,6 +747,7 @@ def main() -> None:
     args = sys.argv[1:]
     odds_only = "--odds-only" in args
     ai_only = "--ai-only" in args
+    force = "--force" in args
     league_only = None
     skip_idx = set()
     if "--league" in args:
@@ -731,7 +766,7 @@ def main() -> None:
             match = attach_odds(match)
         elif ai_only:
             prev_ai = match.get("ai_analysis")
-            analysis = generate_ai_analysis(match)
+            analysis = generate_ai_analysis(match, force=force)
             if analysis is None or analysis is prev_ai:
                 print("  beze změny")
                 continue

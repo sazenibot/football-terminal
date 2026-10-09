@@ -70,7 +70,7 @@ export const csTd = {
   "td.page": "{from}–{to}",
   "td.pageAria": "Týmy {from} až {to}",
 
-  "td.badge.unlucky": "Smolař",
+  "td.badge.unlucky": "Smolaři",
   "td.badge.lucky": "Štěstí",
   "td.trend.shots": "{p} střely ({n}z)",
   "td.trend.sot": "{p} na bránu ({n}z)",

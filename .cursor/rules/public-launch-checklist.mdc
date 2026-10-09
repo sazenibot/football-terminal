@@ -14,7 +14,7 @@ Až Petr řekne, že chce web zveřejnit, zapnout indexaci (`SITE_INDEXABLE=1`),
 3. **SEO.** Dynamické titulky, popisky, `og:` a strukturovaná data pro zápasy, týmy, hráče a rozhodčí (Cloudflare Worker s HTML pro boty), kanonické adresy, `hreflang`, `sitemap.xml` včetně těchto stránek.
 4. **Zamčení tarifů.** Přepínač „Zobrazit jako“ (`ViewAsSwitcher`, tarif v `localStorage`) skrytý nebo zabezpečený. Prémiová data musí být chráněná na serveru (Worker + ověření tarifu), ne jen vizuálně. Statické `matches/*.json`, `sim/*` a katalog jsou jinak veřejně stažitelné.
 5. **Lab.** Lab jen ve vývoji (hotovo: `import.meta.env.DEV`, `data/lab/*` se při buildu maže kromě `xgot-efficiency.json`). Zkontrolovat, že se to nevrátilo.
-6. **Licence dat.** Ověřené podmínky SportMonks a PitchAPI pro komerční zobrazení dat a odvozených statistik. TheStatsAPI přístup skončil, kurzy z něj nezobrazovat.
+6. **Licence dat.** Hotovo: komerční zobrazení SportMonks a PitchAPI potvrzené. TheStatsAPI přístup skončil, kurzy z něj nezobrazovat.
 7. **Proměnné v Cloudflare Pages.** `SITE_URL=https://football-terminal.com`, `VITE_CATALOG_BASE=https://data.football-terminal.com/catalog`, `NODE_VERSION=22`.
 8. **Monitoring denního běhu.** Upozornění při selhání workflow „Refresh data“ a na webu viditelné „data aktualizována před X h“.
 9. **Analytika.** Cloudflare Web Analytics zapnuté. Při registraci/platbách přidat měření událostí (Plausible/Umami) a zmínit v zásadách ochrany údajů.

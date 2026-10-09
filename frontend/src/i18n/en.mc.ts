@@ -72,8 +72,8 @@ export const enMc: Record<keyof typeof csMc, string> = {
   "mc.ins.goalsMid": "Goals unclear: over 2.5 at {over} (expected {total} goals).",
   "mc.ins.lucky": "{team} have scored more goals in the last 5 matches than their shot quality suggests (the number may return to normal).",
   "mc.ins.unlucky": "{team} have scored fewer goals in the last 5 matches than their shot quality suggests (this may turn around).",
-  "mc.ins.refMore": "Referee {ref} shows more yellow cards than the league average ({a} vs {b} per match).",
-  "mc.ins.refLess": "Referee {ref} shows fewer yellow cards than the league average ({a} vs {b} per match).",
+  "mc.ins.refMore": "Referee {ref} is stricter than most ({a} yellows vs {b} league).",
+  "mc.ins.refLess": "Referee {ref} lets play go on ({a} yellows vs {b} league).",
 
   /* ---------- Overview ---------- */
   "mc.ov.insights.title": "Worth noting",
@@ -274,8 +274,8 @@ export const enMc: Record<keyof typeof csMc, string> = {
   "mc.fh.xgotNote": "We have xGOT for {n} of {total} matches; older seasons and cups don't have it.",
 
   /* ---------- lib/xgEfficiency, XgotBadge ---------- */
-  "mc.xg.badge.lucky": "Lucky scoring side",
-  "mc.xg.badge.unlucky": "Unlucky finishers",
+  "mc.xg.badge.lucky": "Lucky",
+  "mc.xg.badge.unlucky": "Unlucky",
   "mc.xg.tip.lucky.last5": "This team has scored {p} more goals in the last 5 matches than the quality of their shots on target (xGOT) suggests. They convert difficult chances or benefit from goalkeeper errors.",
   "mc.xg.tip.lucky.season": "This team has scored {p} more goals this season than the quality of their shots on target (xGOT) suggests. They convert difficult chances or benefit from goalkeeper errors.",
   "mc.xg.tip.unlucky.last5": "This team has scored {p} fewer goals in the last 5 matches than the quality of their shots on target (xGOT) suggests. They have been falling short of expectations for a long time.",
