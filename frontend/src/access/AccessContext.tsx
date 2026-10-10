@@ -1,29 +1,33 @@
-import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { DEV_TOOLS } from "../lib/flags";
 import { FEATURES, allows, type Feature, type Tier } from "./tiers";
+import { claimPick, fetchMe, logout as apiLogout, type Session } from "./api";
 
-/* Bez přihlášení: na produkci je každý host (anon). Přepínač „Zobrazit jako“ a localStorage
-   platí jen ve vývoji. Až bude účet, nahradí se zdroj `tier`, zbytek aplikace zůstane stejný. */
+/* Produkce: tarif z /api/me (cookie). Ve vývoji může ViewAs přebít session.
+   Jeden budoucí zápas je u přihlášeného v D1, jinak (DEV náhled) v localStorage. */
 
 const KEY = "ft.viewAs";
 const FREE_KEY = "ft.freeFixture";
 
 type Ctx = {
+  ready: boolean;
+  session: Session | null;
   tier: Tier;
   setTier: (t: Tier) => void;
   can: (f: Feature) => boolean;
-  /** Zápas, který účet bez předplatného otevřel jako svůj jeden budoucí. */
   freeFixture: number | null;
   claimFreeFixture: (id: number) => void;
   resetFreeFixture: () => void;
+  refresh: () => Promise<void>;
+  logout: () => Promise<void>;
 };
 
 const AccessCtx = createContext<Ctx | null>(null);
 
-function readTier(): Tier {
-  if (!DEV_TOOLS) return "anon";
+function readViewAs(): Tier | null {
+  if (!DEV_TOOLS) return null;
   const v = typeof localStorage !== "undefined" ? localStorage.getItem(KEY) : null;
-  return v === "anon" || v === "account" || v === "unlimited" || v === "pro" ? v : "unlimited";
+  return v === "anon" || v === "account" || v === "unlimited" || v === "pro" ? v : null;
 }
 
 function readFree(): number | null {
@@ -32,25 +36,75 @@ function readFree(): number | null {
 }
 
 export function AccessProvider({ children }: { children: ReactNode }) {
-  const [tier, setTierState] = useState<Tier>(readTier);
-  const [freeFixture, setFree] = useState<number | null>(readFree);
+  const [ready, setReady] = useState(false);
+  const [session, setSession] = useState<Session | null>(null);
+  const [viewAs, setViewAs] = useState<Tier | null>(readViewAs);
+  const [localFree, setLocalFree] = useState<number | null>(readFree);
+
+  const refresh = useCallback(async () => {
+    try {
+      setSession(await fetchMe());
+    } catch {
+      setSession(null);
+    } finally {
+      setReady(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    void refresh();
+  }, [refresh]);
 
   const setTier = useCallback((t: Tier) => {
     localStorage.setItem(KEY, t);
-    setTierState(t);
-  }, []);
-  const claimFreeFixture = useCallback((id: number) => {
-    localStorage.setItem(FREE_KEY, String(id));
-    setFree(id);
-  }, []);
-  const resetFreeFixture = useCallback(() => {
-    localStorage.removeItem(FREE_KEY);
-    setFree(null);
+    setViewAs(t);
   }, []);
 
+  const claimFreeFixture = useCallback(
+    (id: number) => {
+      if (session) {
+        setSession((s) => (s ? { ...s, free_fixture: s.free_fixture ?? id } : s));
+        void claimPick(id).catch(() => undefined);
+        return;
+      }
+      localStorage.setItem(FREE_KEY, String(id));
+      setLocalFree(id);
+    },
+    [session],
+  );
+
+  const resetFreeFixture = useCallback(() => {
+    localStorage.removeItem(FREE_KEY);
+    setLocalFree(null);
+  }, []);
+
+  const logout = useCallback(async () => {
+    try {
+      await apiLogout();
+    } catch {
+      /* cookie stejně zahodíme dalším /api/me */
+    }
+    setSession(null);
+  }, []);
+
+  const sessionTier: Tier = session?.tier ?? "anon";
+  const tier: Tier = DEV_TOOLS && viewAs ? viewAs : sessionTier;
+  const freeFixture = session ? session.free_fixture : localFree;
+
   const value = useMemo<Ctx>(
-    () => ({ tier, setTier, can: (f) => allows(tier, FEATURES[f].min), freeFixture, claimFreeFixture, resetFreeFixture }),
-    [tier, setTier, freeFixture, claimFreeFixture, resetFreeFixture],
+    () => ({
+      ready,
+      session,
+      tier,
+      setTier,
+      can: (f) => allows(tier, FEATURES[f].min),
+      freeFixture,
+      claimFreeFixture,
+      resetFreeFixture,
+      refresh,
+      logout,
+    }),
+    [ready, session, tier, setTier, freeFixture, claimFreeFixture, resetFreeFixture, refresh, logout],
   );
   return <AccessCtx.Provider value={value}>{children}</AccessCtx.Provider>;
 }

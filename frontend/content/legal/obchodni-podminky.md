@@ -25,7 +25,7 @@ Football Terminal je fotbalová analytika. Zobrazuje statistiky, modelové pravd
 
 ## 4. Účet
 
-- Účet vytvoříte zadáním e-mailu. Jste povinni uvádět pravdivé údaje a chránit přístup k účtu.
+- Účet vytvoříte zadáním e-mailu a hesla. Jste povinni uvádět pravdivé údaje a chránit přístup k účtu. E-mail potvrďte odkazem, který vám pošleme.
 - Účet můžete kdykoli zrušit e-mailem na adrese uvedené výše. Provozovatel může účet zablokovat, pokud porušíte tyto podmínky.
 
 ## 5. Placené tarify

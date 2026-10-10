@@ -14,4 +14,4 @@ alwaysApply: true
 
 **Petrova rozhodnutí (neměnit):** aktuality na homepage zatím beze změny (ID 21), karty „Value finder“ a „System picks“ ponechat (ID 22), sázkový jazyk v Predikci ponechat (ID 34), malý vzorek rozhodčího ponechat (ID 41, 80 jen sjednotit jmenovatele), statistiky na kartách lig ponechat (ID 53), malý vzorek hráče ponechat (ID 66), tipy ve Výsledcích ponechat (ID 87, 88).
 
-Serverový paywall JSON (checklist bod 4) je zvlášť — statické `matches/*.json`, `sim/*` a katalog jdou pořád stáhnout.
+Serverový paywall JSON (checklist bod 4): Worker teď filtruje `/data/matches`, `/data/sim`, `/data/upcoming.json` a `/data/leagues` podle session. Katalog na R2 a soubory v gitu pořád jdou stáhnout mimo Worker.

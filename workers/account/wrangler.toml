@@ -1,0 +1,19 @@
+name = "ft-account"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+
+# Produkce: route football-terminal.com/api/* a /data/matches/* /data/sim/*
+# /data/upcoming.json /data/leagues/*.json + D1 ft-account.
+# DATA_ORIGIN musí číst surová JSON mimo tyto route (jinak smyčka).
+# Lokálně stačí `npm run migrate` a `npm run dev`.
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ft-account"
+database_id = "00000000-0000-0000-0000-000000000001"
+
+[vars]
+ENVIRONMENT = "development"
+SITE_URL = "http://127.0.0.1:5173"
+DATA_ORIGIN = "http://127.0.0.1:5173"
+MAIL_FROM = "Football Terminal <noreply@football-terminal.com>"

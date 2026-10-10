@@ -7,6 +7,7 @@ scripts/.cache/
 .env
 .env.*
 node_modules/
+workers/account/.wrangler/
 frontend/dist/
 /package-lock.json
 

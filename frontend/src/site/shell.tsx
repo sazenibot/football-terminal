@@ -6,7 +6,7 @@ import { useAccess } from "../access/AccessContext";
 import { tierName } from "../access/tiers";
 import { ThemeToggle } from "../components/ThemeToggle";
 import { defaultLeaguePath } from "../components/LeagueSwitcher";
-import { DEV_TOOLS, PRICING_OPEN } from "../lib/flags";
+import { PRICING_OPEN } from "../lib/flags";
 
 const PILL = "rounded-full border border-slate-700 bg-[#12161f] shadow-lg light:bg-white light:border-slate-300";
 
@@ -98,7 +98,7 @@ export function SiteNav() {
       {more && (
         <div className={`absolute left-0 top-full mt-2 flex min-w-40 flex-col gap-0.5 p-1.5 lg:hidden ${PILL} rounded-2xl`}>
           {secondary.map((s) => item(s.to, s.label, s.on, "block"))}
-          {DEV_TOOLS && item(tier === "anon" ? "/prihlaseni" : "/tarify", tier === "anon" ? t("nav.login") : t("nav.account", { tier: tierName(tier) }), false, "block sm:hidden")}
+          {item(tier === "anon" ? "/prihlaseni" : "/prihlaseni", tier === "anon" ? t("nav.login") : t("nav.account", { tier: tierName(tier) }), false, "block sm:hidden")}
           {/* Na mobilu se pro jazyk a motiv nevejde místo vedle menu, proto jsou tady. */}
           <div className="mt-1 flex items-center justify-between gap-2 border-t border-slate-700 px-1 pt-2 sm:hidden light:border-slate-200">
             <LangSwitch />
@@ -114,15 +114,12 @@ export function TopRight() {
   const { tier } = useAccess();
   return (
     <div className="fixed top-3 right-3 z-50 hidden items-center gap-2 sm:flex">
-      {/* Štítek tarifu a Přihlásit jen ve vývoji. Na produkci host = anon, účty ještě nejsou. */}
-      {DEV_TOOLS && (
-        <Link
-          to={tier === "anon" ? "/prihlaseni" : "/tarify"}
-          className={`${PILL} px-3 py-1.5 text-xs font-medium text-slate-200 transition-colors hover:border-emerald-500 light:text-slate-700`}
-        >
-          {tier === "anon" ? t("nav.login") : <>{t("nav.account", { tier: "" })}<b className="text-emerald-400 light:text-emerald-700">{tierName(tier)}</b></>}
-        </Link>
-      )}
+      <Link
+        to="/prihlaseni"
+        className={`${PILL} px-3 py-1.5 text-xs font-medium text-slate-200 transition-colors hover:border-emerald-500 light:text-slate-700`}
+      >
+        {tier === "anon" ? t("nav.login") : <>{t("nav.account", { tier: "" })}<b className="text-emerald-400 light:text-emerald-700">{tierName(tier)}</b></>}
+      </Link>
       <LangSwitch />
       <ThemeToggle />
     </div>

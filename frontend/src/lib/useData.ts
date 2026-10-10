@@ -36,8 +36,25 @@ function isJsonResponse(r: Response): boolean {
   return (r.headers.get("content-type") || "").includes("json");
 }
 
+/** Ve vývoji pošle ViewAs, ať Worker filtruje stejně jako UI. Produkce bere jen cookie. */
+function dataHeaders(): HeadersInit {
+  if (!import.meta.env.DEV) return {};
+  try {
+    const v = localStorage.getItem("ft.viewAs");
+    if (v === "anon" || v === "account" || v === "pro" || v === "unlimited") {
+      const headers: Record<string, string> = { "X-FT-ViewAs": v };
+      const free = Number(localStorage.getItem("ft.freeFixture") || 0);
+      if (v === "account" && free > 0) headers["X-FT-Free-Fixture"] = String(free);
+      return headers;
+    }
+  } catch {
+    /* localStorage není */
+  }
+  return {};
+}
+
 async function fetchJson<T>(url: string): Promise<T> {
-  const r = await fetch(url);
+  const r = await fetch(url, { credentials: "include", headers: dataHeaders() });
   if (!r.ok || !isJsonResponse(r)) throw new DataMissingError(url);
   return r.json();
 }
@@ -109,7 +126,7 @@ export function useMatch(fixtureId: number | null) {
     setMatch(null);
     setError(null);
     setMissing(false);
-    fetch(`/data/matches/${fixtureId}.json`)
+    fetch(`/data/matches/${fixtureId}.json`, { credentials: "include", headers: dataHeaders() })
       .then((r) => {
         if (!r.ok || !isJsonResponse(r)) {
           setMissing(true);

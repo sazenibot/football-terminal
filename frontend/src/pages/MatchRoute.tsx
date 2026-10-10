@@ -24,10 +24,10 @@ export function MatchRoute() {
   const { match, error, missing } = useMatch(Number.isFinite(id) ? id : null);
   const { index, error: indexError } = useDataIndex();
 
-  if (params.get("classic") === "1") return <MatchPage />;
   if (error || missing) return <MatchPage />;
   if (!match || (!index && !indexError)) return <div className="flex min-h-[60vh] items-center justify-center text-slate-400 light:text-slate-500">{t("future.loading")}</div>;
-  const page = isLiveLeague(index?.leagues, match.league_id) ? <MatchCenterPage /> : <MatchPage />;
+  if (match.gated) return <FutureGuard match={match}>{null}</FutureGuard>;
+  const page = params.get("classic") === "1" || !isLiveLeague(index?.leagues, match.league_id) ? <MatchPage /> : <MatchCenterPage />;
   return <FutureGuard match={match}>{page}</FutureGuard>;
 }
 
@@ -44,7 +44,7 @@ function FutureGuard({ match, children }: { match: MatchData; children: ReactNod
     if (future && freeSlotOpen) claimFreeFixture(id);
   }, [future, freeSlotOpen, id, claimFreeFixture]);
 
-  if (!future || full || freeSlotOpen || mine) {
+  if (!match.gated && (!future || full || freeSlotOpen || mine)) {
     return (
       <>
         {children}

@@ -1,0 +1,14 @@
+{
+  "name": "ft-account",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8787 --ip 127.0.0.1",
+    "migrate": "wrangler d1 execute ft-account --local --file=schema.sql"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261006.1",
+    "typescript": "~5.9.3",
+    "wrangler": "^4.45.0"
+  }
+}

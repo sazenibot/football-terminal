@@ -25,7 +25,7 @@ Football Terminal is football analytics. It shows statistics, model probabilitie
 
 ## 4. Account
 
-- You create an account by entering your email. You must provide truthful information and protect access to your account.
+- You create an account with an email and a password. You must provide truthful information and protect access to your account. Confirm the email using the link we send you.
 - You can close your account at any time by email to the address above. The operator may block an account if you breach these terms.
 
 ## 5. Paid plans

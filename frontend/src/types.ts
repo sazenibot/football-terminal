@@ -304,6 +304,8 @@ export interface MatchData {
   simulation: SimulationResult;
   players: { home: PlayerBrief[]; away: PlayerBrief[] };
   ai_analysis?: AiAnalysis | null;
+  /** Worker vrátil jen hlavičku — budoucí zápas mimo tarif. */
+  gated?: boolean;
 }
 
 export interface AppData {
