@@ -53,8 +53,21 @@ function dataHeaders(): HeadersInit {
   return {};
 }
 
+/** Session cookie jen na vlastní origin (Worker paywall). Katalog na data.* cookies nechce
+ *  a bez Access-Control-Allow-Credentials je `credentials: include` v prohlížeči Failed to fetch. */
+function sameOrigin(url: string): boolean {
+  if (url.startsWith("/") && !url.startsWith("//")) return true;
+  if (typeof location === "undefined") return false;
+  try {
+    return new URL(url, location.href).origin === location.origin;
+  } catch {
+    return false;
+  }
+}
+
 async function fetchJson<T>(url: string): Promise<T> {
-  const r = await fetch(url, { credentials: "include", headers: dataHeaders() });
+  const local = sameOrigin(url);
+  const r = await fetch(url, { credentials: local ? "include" : "omit", headers: local ? dataHeaders() : {} });
   if (!r.ok || !isJsonResponse(r)) throw new DataMissingError(url);
   return r.json();
 }
@@ -299,7 +312,29 @@ export type CatalogSearchIndex = {
 };
 
 export function useCatalogDirectory() {
-  return useOptionalJson<{ leagues: CatalogDirectoryLeague[] }>(`${CATALOG}/directory.json`);
+  const [data, setData] = useState<{ leagues: CatalogDirectoryLeague[] } | null>(null);
+
+  useEffect(() => {
+    let live = true;
+    const bases = [...new Set([CATALOG, import.meta.env.DEV ? "/data/catalog" : ""])].filter(Boolean);
+    (async () => {
+      for (const base of bases) {
+        try {
+          const row = await fetchJson<{ leagues: CatalogDirectoryLeague[] }>(`${base}/directory.json`);
+          if (live) setData(row);
+          return;
+        } catch {
+          /* zkus další adresu */
+        }
+      }
+      if (live) setData({ leagues: [] });
+    })();
+    return () => {
+      live = false;
+    };
+  }, []);
+
+  return data;
 }
 
 /** Index pro fulltext přes všechny ligy. Stahuje se až když ho někdo potřebuje (první psaní do hledání). */
