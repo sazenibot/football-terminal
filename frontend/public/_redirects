@@ -1,4 +1,6 @@
 # Cloudflare Pages: 301 přesměrování (první shoda vyhrává).
+# Worker čte surová JSON mimo své route, jinak by vznikla smyčka.
+/__raw/data/*  /data/:splat  200
 # Dřívější anglická verze /en/… je teď v kořeni.
 /en            /          301
 /en/*          /:splat    301

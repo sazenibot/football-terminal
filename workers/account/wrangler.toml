@@ -2,18 +2,52 @@ name = "ft-account"
 main = "src/index.ts"
 compatibility_date = "2026-09-01"
 
-# Produkce: route football-terminal.com/api/* a /data/matches/* /data/sim/*
-# /data/upcoming.json /data/leagues/*.json + D1 ft-account.
-# DATA_ORIGIN musí číst surová JSON mimo tyto route (jinak smyčka).
-# Lokálně stačí `npm run migrate` a `npm run dev`.
+# Lokálně: `npm run migrate` a `npm run dev`.
+# Produkce: `npx wrangler deploy --env production`
+# DATA_ORIGIN musí číst surová JSON mimo Worker route (přes /__raw/data na Pages).
 
 [[d1_databases]]
 binding = "DB"
 database_name = "ft-account"
-database_id = "00000000-0000-0000-0000-000000000001"
+database_id = "950b2fec-aec4-4c34-99e2-2333bd3ce6e9"
 
 [vars]
 ENVIRONMENT = "development"
 SITE_URL = "http://127.0.0.1:5173"
 DATA_ORIGIN = "http://127.0.0.1:5173"
 MAIL_FROM = "Football Terminal <noreply@football-terminal.com>"
+
+[env.production]
+name = "ft-account"
+workers_dev = true
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "ft-account"
+database_id = "950b2fec-aec4-4c34-99e2-2333bd3ce6e9"
+
+[env.production.vars]
+ENVIRONMENT = "production"
+SITE_URL = "https://football-terminal.com"
+DATA_ORIGIN = "https://football-terminal.com"
+MAIL_FROM = "Football Terminal <noreply@football-terminal.com>"
+
+[[env.production.routes]]
+pattern = "football-terminal.com/api/*"
+zone_name = "football-terminal.com"
+
+[[env.production.routes]]
+pattern = "football-terminal.com/data/matches/*"
+zone_name = "football-terminal.com"
+
+[[env.production.routes]]
+pattern = "football-terminal.com/data/sim/*"
+zone_name = "football-terminal.com"
+
+[[env.production.routes]]
+pattern = "football-terminal.com/data/upcoming.json"
+zone_name = "football-terminal.com"
+
+[[env.production.routes]]
+pattern = "football-terminal.com/data/leagues/*"
+zone_name = "football-terminal.com"
