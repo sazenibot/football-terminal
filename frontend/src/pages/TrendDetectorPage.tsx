@@ -315,7 +315,6 @@ export function TrendDetectorPage() {
               })}
             </nav>
           )}
-          <p className="mt-3 text-xs text-(--c-faint)">{t("td.xgotOnly")}</p>
         </div>
       )}
     </div>

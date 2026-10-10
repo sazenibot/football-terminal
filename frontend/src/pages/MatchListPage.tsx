@@ -422,7 +422,7 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
   const stale = live && data && index ? isStale(data.generated_at, index.stale_after_hours) : false;
 
   return (
-    <div className="mc2 mx-auto max-w-4xl px-4 pb-16 pt-20">
+    <div className="mc2 mx-auto max-w-5xl px-4 pb-16 pt-20">
       <header className="pt-4">
         <h1 className="text-2xl font-bold sm:text-3xl">{t("list.title")}</h1>
         <p className="mt-1.5 text-[15px] text-(--c-muted)">
@@ -431,13 +431,15 @@ export function MatchListPage({ leagueId, base }: { leagueId: number; base: stri
       </header>
 
       <div className="mt-5">
-        {index && <LeaguePicker leagues={enabled} activeId={leagueId} base={base} />}
+        {index && (
+          <LeaguePicker
+            leagues={enabled}
+            activeId={leagueId}
+            base={base}
+            date={cal ? <MatchCalendar fixtures={cal.fixtures} selected={day} onSelect={setDay} /> : undefined}
+          />
+        )}
       </div>
-      {cal && (
-        <div className="mt-5">
-          <MatchCalendar fixtures={cal.fixtures} selected={day} onSelect={setDay} />
-        </div>
-      )}
 
       {day ? (
         <ArchiveDay day={day} fixtures={cal?.fixtures ?? []} colors={colors} leagues={enabled} />
@@ -574,18 +576,22 @@ export function AllMatchesPage({ base }: { base: string }) {
   );
 
   return (
-    <div className="mc2 mx-auto max-w-4xl px-4 pb-16 pt-20">
+    <div className="mc2 mx-auto max-w-5xl px-4 pb-16 pt-20">
       <header className="pt-4">
         <h1 className="text-2xl font-bold sm:text-3xl">{t("list.title")}</h1>
         <p className="mt-1.5 text-[15px] text-(--c-muted)">{t("list.allLead", { n: days })}</p>
       </header>
 
-      <div className="mt-5">{index && <LeaguePicker leagues={enabled} activeId="all" base={base} />}</div>
-      {cal && (
-        <div className="mt-5">
-          <MatchCalendar fixtures={cal.fixtures} selected={day} onSelect={setDay} />
-        </div>
-      )}
+      <div className="mt-5">
+        {index && (
+          <LeaguePicker
+            leagues={enabled}
+            activeId="all"
+            base={base}
+            date={cal ? <MatchCalendar fixtures={cal.fixtures} selected={day} onSelect={setDay} /> : undefined}
+          />
+        )}
+      </div>
 
       {day ? (
         <ArchiveDay day={day} fixtures={cal?.fixtures ?? []} colors={colors} leagues={enabled} />

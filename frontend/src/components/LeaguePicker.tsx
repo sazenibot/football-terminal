@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { Link } from "../i18n/router";
 import { isLiveLeague } from "../lib/pitchMatch";
 import type { LeagueMeta } from "../types";
@@ -47,7 +47,17 @@ const Soon = () => (
   <span className="rounded-md bg-(--c-raised) px-1.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-(--c-muted)">{t("common.soon")}</span>
 );
 
-export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[]; activeId: number | "all"; base: string }) {
+export function LeaguePicker({
+  leagues,
+  activeId,
+  base,
+  date,
+}: {
+  leagues: LeagueMeta[];
+  activeId: number | "all";
+  base: string;
+  date?: ReactNode;
+}) {
   const { tier } = useAccess();
   const canSwitch = allows(tier, LOCK.mcPicker);
   const [open, setOpen] = useState(false);
@@ -93,7 +103,7 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
             to={`${base}/all`}
             onClick={() => rememberLeague("all")}
             aria-current={activeId === "all" ? "page" : undefined}
-            className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition-colors ${
+            className={`flex h-10 items-center rounded-full border px-4 text-sm font-semibold transition-colors ${
               activeId === "all" ? "border-(--c-accent) bg-(--c-accent)/12 text-(--c-accent)" : "border-(--c-line) bg-(--c-surface) hover:border-(--c-faint)"
             }`}
           >
@@ -102,19 +112,21 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
         ) : (
           <span
             title={t("gate.title", { tier: t("tier.account.name") })}
-            className="flex items-center gap-2 rounded-full border border-dashed border-(--c-line) px-4 py-2 text-sm font-semibold text-(--c-faint)"
+            className="flex h-10 items-center rounded-full border border-dashed border-(--c-line) px-4 text-sm font-semibold text-(--c-faint)"
           >
             {t("list.all")} <span aria-hidden>🔒</span>
           </span>
         )}
+        {date}
+      </div>
+      <div className="mt-2 flex flex-nowrap items-center gap-2 overflow-x-auto pb-0.5">
         {chips.map((l) => {
           const live = isLiveLeague(leagues, l.id);
           const active = l.id === activeId;
           const inner = (
             <>
-              <Logo league={l} size={26} soon={!live} />
+              <Logo league={l} size={22} soon={!live} />
               <span className="whitespace-nowrap">{l.name}</span>
-              <Flag country={l.country} />
               {!live && <Soon />}
             </>
           );
@@ -124,7 +136,7 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
                 key={l.id}
                 aria-disabled
                 title={!live ? t("picker.soonTitle") : t("gate.title", { tier: t("tier.account.name") })}
-                className="flex cursor-default items-center gap-2 rounded-full border border-dashed border-(--c-line) py-1.5 pl-1.5 pr-3 text-sm font-medium text-(--c-faint)"
+                className="flex shrink-0 cursor-default items-center gap-1.5 rounded-full border border-dashed border-(--c-line) py-1 pl-1 pr-2.5 text-[13px] font-medium text-(--c-faint)"
               >
                 {inner}
                 {live && <span aria-hidden>🔒</span>}
@@ -137,7 +149,7 @@ export function LeaguePicker({ leagues, activeId, base }: { leagues: LeagueMeta[
               to={`${base}/${l.id}`}
               onClick={() => rememberLeague(l.id)}
               aria-current={active ? "page" : undefined}
-              className={`flex items-center gap-2 rounded-full border py-1.5 pl-1.5 pr-3 text-sm font-semibold transition-colors ${
+              className={`flex shrink-0 items-center gap-1.5 rounded-full border py-1 pl-1 pr-2.5 text-[13px] font-semibold transition-colors ${
                 active ? "border-(--c-accent) bg-(--c-accent)/12 text-(--c-accent)" : "border-(--c-line) bg-(--c-surface) hover:border-(--c-faint)"
               }`}
             >

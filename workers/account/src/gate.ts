@@ -21,11 +21,14 @@ export function canSeeListProbs(tier: Tier): boolean {
   return tier === "unlimited";
 }
 
-/** Odehrané zápasy jsou otevřené. Budoucí: Pro/Unlimited vše, účet jen svůj jeden. */
-export function canOpenMatch(access: Access, fixtureId: number, startingAt: string, nowMs = Date.now()): boolean {
-  if (!startingAt || !isFuture(startingAt, nowMs)) return true;
-  if (tierRank(access.tier) >= RANK.pro) return true;
-  return access.tier === "account" && access.freeFixture === fixtureId;
+/** Detail a Přehled jsou zdarma — JSON zápasu jde všem. */
+export function canOpenMatch(_access: Access, _fixtureId: number, _startingAt: string, _nowMs = Date.now()): boolean {
+  return true;
+}
+
+/** Simulace v2 je v záložce Predikce (od účtu). */
+export function canSeeSim(access: Access): boolean {
+  return tierRank(access.tier) >= RANK.account;
 }
 
 export function shouldAutoClaim(access: Access, startingAt: string, nowMs = Date.now()): boolean {

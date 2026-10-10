@@ -2,14 +2,14 @@ import { useMemo, useState, type ReactNode } from "react";
 import { Link } from "../i18n/router";
 import { useAccess } from "../access/AccessContext";
 import { TierBadge } from "../access/Gate";
-import { getTiers, tierName, type Tier } from "../access/tiers";
+import { planPrice, type PaidTier } from "../access/prices";
+import { getTiers, type Tier } from "../access/tiers";
 import { t, type Key } from "../i18n/locale";
 import { Pill } from "../cat/kit";
 import { getArticles } from "../content/content";
-import { PRICING_OPEN } from "../lib/flags";
 import { defaultLeaguePath } from "../components/LeagueSwitcher";
 import { useLocale } from "../i18n";
-import { useDataIndex, useLeagueRound } from "../lib/useData";
+import { useDataIndex, useLeagueRound, useMatch } from "../lib/useData";
 import { ProbBar, TeamLogo } from "../mc2/kit";
 import type { RoundFixture } from "../types";
 import { fmtDate, fmtDateTime, useFeed } from "../site/data";
@@ -146,9 +146,9 @@ function Hero({ centerTo, anon, next, leagueName }: { centerTo: string; anon: bo
 }
 
 function HeroPreview({ next, leagueName }: { next?: RoundFixture; leagueName?: string }) {
-  const { can } = useAccess();
-  const p = next?.signals?.probs;
-  const open = can("mc.list.probs");
+  const { match } = useMatch(next?.fixture_id ?? null);
+  const sim = match?.simulation;
+  const p = next?.signals?.probs ?? (sim ? [sim.home_win_pct, sim.draw_pct, sim.away_win_pct] : undefined);
   return (
     <div className="relative mx-auto w-full max-w-sm lg:ml-auto">
       <div aria-hidden className="absolute -inset-3 rounded-[2rem] bg-(--c-accent)/10 blur-2xl" />
@@ -173,15 +173,13 @@ function HeroPreview({ next, leagueName }: { next?: RoundFixture; leagueName?: s
             <p className="mt-3 text-center text-[12px] text-(--c-muted)">{fmtDateTime(next.starting_at)}</p>
             {p && (
               <div className="mt-4">
-                <div className={open ? "" : "blur-[5px]"} aria-hidden={!open}>
-                  <ProbBar home={p[0]} draw={p[1]} away={p[2]} height={10} />
-                  <div className="mt-1.5 flex justify-between text-xs tabular-nums text-(--c-muted)">
-                    <span>{t("fmt.pct", { n: Math.round(p[0]) })}</span>
-                    <span>{t("fmt.pct", { n: Math.round(p[1]) })}</span>
-                    <span>{t("fmt.pct", { n: Math.round(p[2]) })}</span>
-                  </div>
+                <ProbBar home={p[0]} draw={p[1]} away={p[2]} height={10} />
+                <div className="mt-1.5 flex justify-between text-xs tabular-nums text-(--c-muted)">
+                  <span>{t("fmt.pct", { n: Math.round(p[0]) })}</span>
+                  <span>{t("fmt.pct", { n: Math.round(p[1]) })}</span>
+                  <span>{t("fmt.pct", { n: Math.round(p[2]) })}</span>
                 </div>
-                <p className="mt-2 text-center text-[12px] text-(--c-muted)">{open ? t("home.preview.open") : t("home.preview.locked", { tier: tierName("unlimited") })}</p>
+                <p className="mt-2 text-center text-[12px] text-(--c-muted)">{t("home.preview.open")}</p>
               </div>
             )}
           </Link>
@@ -396,33 +394,35 @@ function PricingTeaser() {
     <section className="mt-12">
       <div className="flex items-baseline justify-between gap-3">
         <h2 className="text-2xl font-bold">{t("home.pricing.title")}</h2>
-        {PRICING_OPEN && (
-          <Link to="/tarify" className="text-[13px] text-(--c-accent) hover:underline">
-            {t("home.pricing.more")}
-          </Link>
-        )}
+        <Link to="/tarify" className="text-[13px] text-(--c-accent) hover:underline">
+          {t("home.pricing.more")}
+        </Link>
       </div>
-      {/* Tarify zatím nejsou veřejné: ukázka funkcí je zašedlá, bez cen a bez prokliku. */}
-      <div aria-disabled className={`mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 ${PRICING_OPEN ? "" : "pointer-events-none select-none opacity-60 grayscale"}`}>
-        {getTiers().map((x) => (
-          <article key={x.id} className={`flex flex-col rounded-2xl border bg-(--c-surface) p-5 ${x.featured ? "border-(--c-accent)" : "border-(--c-line)"} ${tier === x.id ? "ring-1 ring-(--c-accent)" : ""}`}>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-(--c-accent)">{x.name}</p>
-            {PRICING_OPEN && (
-              <>
-                <p className="mt-2 text-2xl font-bold">{x.price}</p>
-                <p className="text-[12px] text-(--c-faint)">{x.period}</p>
-              </>
-            )}
-            <ul className="mt-3 flex-1 space-y-1.5 text-[13px] text-(--c-muted)">
-              {POINTS[x.id].map((k) => (
-                <li key={k} className="flex gap-2">
-                  <span className="text-(--c-accent)">→</span>
-                  <span>{t(k)}</span>
-                </li>
-              ))}
-            </ul>
-          </article>
-        ))}
+      <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        {getTiers().map((x) => {
+          const paid = x.id === "pro" || x.id === "unlimited" ? (x.id as PaidTier) : null;
+          return (
+            <article key={x.id} className={`flex flex-col rounded-2xl border bg-(--c-surface) p-5 ${x.featured ? "border-(--c-accent)" : "border-(--c-line)"} ${tier === x.id ? "ring-1 ring-(--c-accent)" : ""}`}>
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-(--c-accent)">
+                  {paid ? x.name : t(x.id === "anon" ? "pricing.badge.anon" : "pricing.badge.account")}
+                </p>
+                {x.featured && <span className="rounded-full bg-(--c-accent)/15 px-2 py-0.5 text-xs font-semibold text-(--c-accent)">{t("pricing.recommended")}</span>}
+              </div>
+              <p className="mt-2 text-2xl font-bold">{paid ? planPrice(paid, "month") : t("pricing.free")}</p>
+              {paid && <p className="text-[12px] text-(--c-faint)">{t("pricing.perMonth")}</p>}
+              {paid && <p className="mt-1 text-[12px] text-(--c-muted)">{t("home.pricing.passFrom", { price: planPrice(paid, "year") })}</p>}
+              <ul className="mt-3 flex-1 space-y-1.5 text-[13px] text-(--c-muted)">
+                {POINTS[x.id].map((k) => (
+                  <li key={k} className="flex gap-2">
+                    <span className="text-(--c-accent)">→</span>
+                    <span>{t(k)}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          );
+        })}
       </div>
       <p className="mt-2 text-[12px] text-(--c-faint)">{t("home.pricing.note")}</p>
     </section>

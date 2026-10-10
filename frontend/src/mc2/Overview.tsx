@@ -9,8 +9,6 @@ import { PlayerTrendsCard } from "./PlayerTrends";
 import { Card, FormDots, Info, ResBadge, Stat, TeamTitle, type Res } from "./kit";
 import { getLocale, intlTag, t } from "../i18n/locale";
 import { aiText } from "../components/AiAnalysis";
-import { Gate } from "../access/Gate";
-import { LOCK } from "../access/locks";
 
 const TONE = { pos: "var(--c-win)", neutral: "var(--c-faint)", warn: "var(--c-warn)" };
 
@@ -218,20 +216,12 @@ export function OverviewTab({
   return (
     <div className="grid items-start gap-5 md:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
       <div className="space-y-5">
-        <Gate need={LOCK.mcOverviewPlus}>
-          <PredictionSummary p={p} home={m.home} away={m.away} onMore={() => go("prediction")} />
-        </Gate>
-        <Gate need={LOCK.mcOverviewPlus}>
-          <InsightsCard m={m} p={p} badges={badges} />
-        </Gate>
-        <Gate need={LOCK.mcOverviewPlus}>
-          <AiCard m={m} />
-        </Gate>
+        <PredictionSummary p={p} home={m.home} away={m.away} onMore={() => go("prediction")} />
+        <InsightsCard m={m} p={p} badges={badges} />
+        <AiCard m={m} />
       </div>
       <div className="space-y-5">
-        <Gate need={LOCK.mcOverviewPlus}>
-          <PlayerTrendsCard m={m} stack />
-        </Gate>
+        <PlayerTrendsCard m={m} stack />
         <FormMini m={m} onMore={() => go("form")} />
         <H2HMini m={m} onMore={() => go("form")} />
         <RefereeMini m={m} onMore={() => go("referee")} />

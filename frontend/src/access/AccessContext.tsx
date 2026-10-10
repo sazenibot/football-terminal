@@ -13,7 +13,8 @@ type Ctx = {
   ready: boolean;
   session: Session | null;
   tier: Tier;
-  setTier: (t: Tier) => void;
+  viewAs: Tier | null;
+  setTier: (t: Tier | null) => void;
   can: (f: Feature) => boolean;
   freeFixture: number | null;
   claimFreeFixture: (id: number) => void;
@@ -55,7 +56,12 @@ export function AccessProvider({ children }: { children: ReactNode }) {
     void refresh();
   }, [refresh]);
 
-  const setTier = useCallback((t: Tier) => {
+  const setTier = useCallback((t: Tier | null) => {
+    if (t == null) {
+      localStorage.removeItem(KEY);
+      setViewAs(null);
+      return;
+    }
     localStorage.setItem(KEY, t);
     setViewAs(t);
   }, []);
@@ -96,6 +102,7 @@ export function AccessProvider({ children }: { children: ReactNode }) {
       ready,
       session,
       tier,
+      viewAs,
       setTier,
       can: (f) => allows(tier, FEATURES[f].min),
       freeFixture,
@@ -104,7 +111,7 @@ export function AccessProvider({ children }: { children: ReactNode }) {
       refresh,
       logout,
     }),
-    [ready, session, tier, setTier, freeFixture, claimFreeFixture, resetFreeFixture, refresh, logout],
+    [ready, session, tier, viewAs, setTier, freeFixture, claimFreeFixture, resetFreeFixture, refresh, logout],
   );
   return <AccessCtx.Provider value={value}>{children}</AccessCtx.Provider>;
 }

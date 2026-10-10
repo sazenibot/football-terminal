@@ -7,7 +7,7 @@ export const enTd: Record<keyof typeof csTd, string> = {
   "td.docTitle": "Trend Detector",
   "td.eyebrow": "Data catalog",
   "td.title": "Trend Detector",
-  "td.lead": "One table of every team in every league. Sort each column on its own; the quick filters use the last three matches.",
+  "td.lead": "See who is on a run — shots, corners, fouls and goals versus expectation. One table, clear streaks you can use on the next match.",
   "td.loading": "Loading teams…",
   "td.empty": "Nobody is left in this selection. Try another quick filter.",
   "td.missing": "We do not have team statistics for the detector yet.",

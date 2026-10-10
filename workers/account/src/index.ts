@@ -1,4 +1,4 @@
-import { canOpenMatch, canSeeListProbs, isFuture, matchShell, shouldAutoClaim, stripListProbs, type Access, type Tier } from "./gate";
+import { canOpenMatch, canSeeListProbs, canSeeSim, isFuture, matchShell, shouldAutoClaim, stripListProbs, type Access, type Tier } from "./gate";
 
 type Env = {
   DB: D1Database;
@@ -58,6 +58,16 @@ function normEmail(raw: unknown): string | null {
   const e = raw.trim().toLowerCase();
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e) || e.length > 254) return null;
   return e;
+}
+
+/** Přihlášení bere e-mail, nebo lokální testovací jméno (`test` → test@local.test). */
+function normLogin(raw: unknown): string | null {
+  const email = normEmail(raw);
+  if (email) return email;
+  if (typeof raw !== "string") return null;
+  const u = raw.trim().toLowerCase();
+  if (!/^[a-z0-9._-]{2,40}$/.test(u)) return null;
+  return `${u}@local.test`;
 }
 
 function localeOf(raw: unknown): "cs" | "en" {
@@ -335,7 +345,7 @@ async function serveSim(env: Env, req: Request, fixtureId: number): Promise<Resp
   const match = await originJson(env, `/data/matches/${fixtureId}.json`);
   const startingAt = typeof match?.starting_at === "string" ? match.starting_at : "";
   const access = await maybeClaim(env, previewPick(await accessOf(env, req), fixtureId, startingAt), fixtureId, startingAt);
-  if (!match || !canOpenMatch(access, fixtureId, startingAt)) return dataJson({ error: "unauthorized" }, 401);
+  if (!match || !canSeeSim(access)) return dataJson({ error: "unauthorized" }, 401);
   const res = await originData(env, `/data/sim/${fixtureId}.json`);
   if (!res.ok) return dataJson({ error: "not_found" }, 404);
   const body = await res.text();
@@ -403,7 +413,7 @@ export default {
 
       if (method === "POST" && path === "/api/auth/login") {
         const body = await readJson(req);
-        const email = normEmail(body.email);
+        const email = normLogin(body.email);
         const password = typeof body.password === "string" ? body.password : "";
         const ip = clientIp(req);
         if (!email || !password) return json({ error: "invalid_credentials" }, 401);

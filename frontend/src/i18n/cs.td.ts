@@ -6,7 +6,7 @@ export const csTd = {
   "td.docTitle": "Detektor trendů",
   "td.eyebrow": "Datový katalog",
   "td.title": "Detektor trendů",
-  "td.lead": "Jedna tabulka všech týmů ze všech lig. Sloupce se řadí zvlášť, rychlé filtry berou poslední tři zápasy.",
+  "td.lead": "Tady vidíte, kdo má sérii — střely, rohy, fauly i góly proti očekávání. Jedna tabulka, jasné trendy, které můžete hned použít u příštího zápasu.",
   "td.loading": "Načítám týmy…",
   "td.empty": "V tomhle výběru nikdo nezbyl. Zkuste jiný rychlý filtr.",
   "td.missing": "Týmové statistiky pro detektor zatím nemáme.",

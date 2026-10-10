@@ -1,6 +1,6 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { useSearchParams } from "../i18n/router";
-import { intlTag, t } from "../i18n/locale";
+import { t } from "../i18n/locale";
 import { fmtDate } from "../lib/format";
 import type { McCalendarMatch } from "../types";
 
@@ -36,15 +36,7 @@ export function useArchiveDay() {
   return [day, setDay] as const;
 }
 
-function weekdayLabels(): string[] {
-  const fmt = new Intl.DateTimeFormat(intlTag(), { weekday: "short" });
-  return Array.from({ length: 7 }, (_, i) => {
-    const d = new Date(2026, 0, 5 + i); // pondělí 5. 1. 2026
-    const label = fmt.format(d);
-    return label.charAt(0).toUpperCase() + label.slice(1).replace(/\.$/, "");
-  });
-}
-
+/** Jednořádkový posun mezi dny, kdy máme rozbor. Živý výpis = prázdný výběr. */
 export function MatchCalendar({
   fixtures,
   selected,
@@ -55,95 +47,37 @@ export function MatchCalendar({
   onSelect: (day: string | null) => void;
 }) {
   const today = ymd(new Date());
-  const marked = useMemo(() => new Set(fixtures.map((f) => f.day)), [fixtures]);
-  const [cursor, setCursor] = useState(() => {
-    const base = selected && DAY_RE.test(selected) ? fromYmd(selected) : new Date();
-    return new Date(base.getFullYear(), base.getMonth(), 1);
-  });
-
-  const cells = useMemo(() => {
-    const first = new Date(cursor.getFullYear(), cursor.getMonth(), 1);
-    const startPad = (first.getDay() + 6) % 7; // pondělí = 0
-    const days = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 0).getDate();
-    const out: Array<{ key: string; day: number; ymd: string } | null> = [];
-    for (let i = 0; i < startPad; i++) out.push(null);
-    for (let d = 1; d <= days; d++) {
-      const date = new Date(cursor.getFullYear(), cursor.getMonth(), d);
-      out.push({ key: ymd(date), day: d, ymd: ymd(date) });
-    }
-    return out;
-  }, [cursor]);
-
-  const monthLabel = cursor.toLocaleDateString(intlTag(), { month: "long", year: "numeric" });
-  const weekdays = weekdayLabels();
-  const canPrev = fixtures.some((f) => f.day < ymd(cursor));
-  const monthEnd = ymd(new Date(cursor.getFullYear(), cursor.getMonth() + 1, 0));
-  const canNext = fixtures.some((f) => f.day > monthEnd) || cursor.getFullYear() < new Date().getFullYear() || cursor.getMonth() < new Date().getMonth();
+  const days = useMemo(() => [...new Set(fixtures.map((f) => f.day))].sort(), [fixtures]);
+  const past = days.filter((d) => d < today);
+  const live = !selected;
+  const prevDay = live ? past[past.length - 1] : days.filter((d) => d < selected).at(-1);
+  const nextDay = live ? undefined : days.find((d) => d > selected);
+  const goLive = Boolean(selected && (!nextDay || nextDay >= today));
 
   return (
-    <section className="rounded-2xl border border-(--c-line) bg-(--c-surface) p-4">
-      <div className="flex items-center justify-between gap-3">
-        <button
-          type="button"
-          aria-label={t("list.cal.prev")}
-          disabled={!canPrev}
-          onClick={() => setCursor(new Date(cursor.getFullYear(), cursor.getMonth() - 1, 1))}
-          className="flex h-9 w-9 items-center justify-center rounded-xl text-(--c-muted) hover:bg-(--c-raised) disabled:opacity-30"
-        >
-          ‹
-        </button>
-        <h2 className="text-[15px] font-semibold capitalize">{monthLabel}</h2>
-        <button
-          type="button"
-          aria-label={t("list.cal.next")}
-          disabled={!canNext}
-          onClick={() => setCursor(new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1))}
-          className="flex h-9 w-9 items-center justify-center rounded-xl text-(--c-muted) hover:bg-(--c-raised) disabled:opacity-30"
-        >
-          ›
-        </button>
-      </div>
-      <p className="mt-1 text-center text-[12px] text-(--c-muted)">{t("list.cal.lead")}</p>
-      <div role="grid" aria-label={t("list.cal.aria")} className="mt-3 grid grid-cols-7 gap-1">
-        {weekdays.map((w) => (
-          <div key={w} className="pb-1 text-center text-[11px] font-semibold uppercase tracking-wide text-(--c-faint)">
-            {w}
-          </div>
-        ))}
-        {cells.map((cell, i) => {
-          if (!cell) return <div key={`e-${i}`} />;
-          const has = marked.has(cell.ymd);
-          const on = selected === cell.ymd;
-          const isToday = cell.ymd === today;
-          const cls = on
-            ? "bg-(--c-accent) text-(--c-on-accent)"
-            : has
-              ? "text-(--c-text) hover:bg-(--c-raised)"
-              : "cursor-default text-(--c-faint)";
-          return (
-            <button
-              key={cell.key}
-              type="button"
-              disabled={!has}
-              aria-pressed={on}
-              aria-label={`${cell.day}${has ? `, ${t("list.cal.dot")}` : ""}`}
-              onClick={() => onSelect(on ? null : cell.ymd)}
-              className={`relative flex h-10 flex-col items-center justify-center rounded-xl text-[13px] font-medium ${cls} ${
-                isToday && !on ? "ring-1 ring-(--c-accent)/50" : ""
-              }`}
-            >
-              {cell.day}
-              {has && <span aria-hidden className={`absolute bottom-1 h-1 w-1 rounded-full ${on ? "bg-(--c-on-accent)" : "bg-(--c-accent)"}`} />}
-            </button>
-          );
-        })}
-      </div>
-      {selected && (
-        <button type="button" onClick={() => onSelect(null)} className="mt-3 w-full min-h-10 rounded-xl text-[13px] font-medium text-(--c-accent) hover:underline">
-          {t("list.cal.back")}
-        </button>
-      )}
-    </section>
+    <div className="inline-flex h-10 items-center rounded-full border border-(--c-line) bg-(--c-surface) pl-1 pr-1">
+      <button
+        type="button"
+        aria-label={t("list.cal.prev")}
+        disabled={!prevDay}
+        onClick={() => prevDay && onSelect(prevDay)}
+        className="flex h-8 w-8 items-center justify-center rounded-full text-(--c-muted) hover:bg-(--c-raised) disabled:opacity-30"
+      >
+        ‹
+      </button>
+      <span className="min-w-[8.5rem] px-1 text-center text-[13px] font-semibold tabular-nums">
+        {live ? t("list.cal.upcoming") : fmtDate(fromYmd(selected))}
+      </span>
+      <button
+        type="button"
+        aria-label={t("list.cal.next")}
+        disabled={live}
+        onClick={() => onSelect(goLive ? null : nextDay ?? null)}
+        className="flex h-8 w-8 items-center justify-center rounded-full text-(--c-muted) hover:bg-(--c-raised) disabled:opacity-30"
+      >
+        ›
+      </button>
+    </div>
   );
 }
 

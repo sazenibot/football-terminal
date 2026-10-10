@@ -175,8 +175,16 @@ export function LoginPage() {
         <form className="mt-4 space-y-3 rounded-2xl border border-(--c-line) bg-(--c-surface) p-5" onSubmit={(e) => void submit(e)}>
           {!resetTok && (
             <label className="block text-[13px]">
-              {t("login.email")}
-              <input type="email" required autoComplete="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t("login.emailPh")} className={input} />
+              {mode === "in" ? t("login.user") : t("login.email")}
+              <input
+                type={mode === "in" ? "text" : "email"}
+                required
+                autoComplete={mode === "in" ? "username" : "email"}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={mode === "in" ? t("login.userPh") : t("login.emailPh")}
+                className={input}
+              />
             </label>
           )}
           {mode !== "forgot" && (
@@ -185,7 +193,7 @@ export function LoginPage() {
               <input
                 type="password"
                 required
-                minLength={8}
+                minLength={mode === "in" ? 1 : 8}
                 autoComplete={mode === "up" || resetTok ? "new-password" : "current-password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}

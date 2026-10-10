@@ -6,7 +6,7 @@ import { getTiers } from "./tiers";
 /** Jen pro vývoj, dokud nemáme přihlášení: ukáže web očima anonyma, účtu, Unlimited a Pro.
     Před spuštěním se odstraní (nebo schová za příznak správce). */
 export function ViewAsSwitcher() {
-  const { tier, setTier, freeFixture, resetFreeFixture } = useAccess();
+  const { tier, viewAs, setTier, freeFixture, resetFreeFixture } = useAccess();
   const [open, setOpen] = useState(false);
   const tiers = getTiers();
   const current = tiers.find((x) => x.id === tier);
@@ -21,15 +21,26 @@ export function ViewAsSwitcher() {
             </button>
           </div>
           <div role="radiogroup" aria-label={t("view.label")} className="flex flex-wrap gap-1.5">
+            <button
+              type="button"
+              role="radio"
+              aria-checked={viewAs == null}
+              onClick={() => setTier(null)}
+              className={`min-h-8 rounded-full border px-3 text-xs font-medium transition-colors ${
+                viewAs == null ? "border-(--c-accent) bg-(--c-accent)/15 text-(--c-accent)" : "border-(--c-line) text-(--c-muted) hover:text-(--c-text)"
+              }`}
+            >
+              {t("view.session")}
+            </button>
             {tiers.map((x) => (
               <button
                 key={x.id}
                 type="button"
                 role="radio"
-                aria-checked={x.id === tier}
+                aria-checked={viewAs === x.id}
                 onClick={() => setTier(x.id)}
                 className={`min-h-8 rounded-full border px-3 text-xs font-medium transition-colors ${
-                  x.id === tier ? "border-(--c-accent) bg-(--c-accent)/15 text-(--c-accent)" : "border-(--c-line) text-(--c-muted) hover:text-(--c-text)"
+                  viewAs === x.id ? "border-(--c-accent) bg-(--c-accent)/15 text-(--c-accent)" : "border-(--c-line) text-(--c-muted) hover:text-(--c-text)"
                 }`}
               >
                 {x.id === "anon" ? t("view.anon") : x.name}
@@ -54,7 +65,8 @@ export function ViewAsSwitcher() {
           onClick={() => setOpen(true)}
           className="rounded-full border border-(--c-line) bg-(--c-surface) px-3 py-1.5 text-xs font-medium text-(--c-muted) shadow-lg hover:text-(--c-text)"
         >
-          {t("view.button")} <b className="text-(--c-accent)">{tier === "anon" ? t("view.anon") : current?.name}</b>
+          {t("view.button")}{" "}
+          <b className="text-(--c-accent)">{viewAs == null ? t("view.session") : tier === "anon" ? t("view.anon") : current?.name}</b>
         </button>
       )}
     </div>

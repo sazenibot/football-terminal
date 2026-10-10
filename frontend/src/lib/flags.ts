@@ -2,5 +2,5 @@
     Tarif na produkci bere /api/me. ViewAs nesmí běžet veřejně. */
 export const DEV_TOOLS: boolean = import.meta.env.DEV || import.meta.env.VITE_DEV_TOOLS === "1";
 
-/** Tarify a ceník zatím nejsou veřejné (platby nejsou spuštěné). Zapnout lze proměnnou VITE_PRICING=1. */
-export const PRICING_OPEN: boolean = import.meta.env.VITE_PRICING === "1";
+/** Ceník je vidět; platby ještě neběží, proto u placených tarifů zůstává „připravujeme“. */
+export const PRICING_OPEN = true;

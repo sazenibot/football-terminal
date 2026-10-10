@@ -25,8 +25,8 @@ export type TierInfo = {
 const TIER_META: Record<Tier, { mock?: boolean; featured?: boolean }> = {
   anon: {},
   account: {},
-  pro: { mock: true },
-  unlimited: { featured: true },
+  pro: { featured: true },
+  unlimited: {},
 };
 
 /** Texty tarifů se berou z překladů, takže seznam se skládá až při vykreslení (v aktuálním jazyce). */
@@ -49,7 +49,7 @@ export type FeatureDef = { group: FeatureGroup; min: Tier; note?: boolean };
 /** Popisek funkce je v překladech pod klíčem feat.<id>, poznámka pod feat.<id>.note. */
 export const FEATURES = {
   "mc.past": { group: "mc", min: "anon" },
-  "mc.future.one": { group: "mc", min: "account", note: true },
+  "mc.future.one": { group: "mc", min: "account" },
   "mc.future.all": { group: "mc", min: "pro" },
   "mc.list.probs": { group: "mc", min: "unlimited" },
   "mc.list.sort": { group: "mc", min: "pro" },
