@@ -1,4 +1,24 @@
 import { canOpenMatch, canSeeListProbs, canSeeSim, isFuture, matchShell, shouldAutoClaim, stripListProbs, type Access, type Tier } from "./gate";
+import {
+  createCheckout,
+  createPortal,
+  ensureCustomer,
+  isPaidSub,
+  lookupKey,
+  pauseMonthlySub,
+  paymentsOn,
+  periodEndIso,
+  periodOfSub,
+  priceIdOf,
+  resumeMonthlySub,
+  retrieveSub,
+  StripeError,
+  strId,
+  tierOfSub,
+  verifyStripeSignature,
+  type BillPeriod,
+  type PaidPlan,
+} from "./stripe";
 
 type Env = {
   DB: D1Database;
@@ -9,6 +29,8 @@ type Env = {
   MAIL_FROM?: string;
   RESEND_API_KEY?: string;
   COOKIE_DOMAIN?: string;
+  STRIPE_SECRET_KEY?: string;
+  STRIPE_WEBHOOK_SECRET?: string;
 };
 
 type UserRow = {
@@ -20,7 +42,14 @@ type UserRow = {
   email_verified_at: string | null;
 };
 
-type EntRow = { tier: string; period_end: string | null };
+type EntRow = {
+  tier: string;
+  status: string | null;
+  period_end: string | null;
+  stripe_customer_id: string | null;
+  stripe_sub_id: string | null;
+  billing_period: string | null;
+};
 
 const COOKIE = "ft_session";
 const SESSION_DAYS = 30;
@@ -173,7 +202,11 @@ async function createSession(env: Env, userId: string): Promise<string> {
 }
 
 async function mePayload(env: Env, user: UserRow) {
-  const ent = await env.DB.prepare("SELECT tier, period_end FROM entitlements WHERE user_id = ?").bind(user.id).first<EntRow>();
+  const ent = await env.DB.prepare(
+    "SELECT tier, status, period_end, stripe_customer_id, stripe_sub_id FROM entitlements WHERE user_id = ?",
+  )
+    .bind(user.id)
+    .first<EntRow>();
   const pick = await env.DB.prepare("SELECT fixture_id FROM free_picks WHERE user_id = ?").bind(user.id).first<{ fixture_id: number }>();
   const tier = ent?.tier === "pro" || ent?.tier === "unlimited" || ent?.tier === "account" ? ent.tier : "account";
   return {
@@ -184,7 +217,142 @@ async function mePayload(env: Env, user: UserRow) {
     email_verified: Boolean(user.email_verified_at),
     marketing_opt_in: Boolean(user.marketing_opt_in),
     locale: user.locale,
+    payments: paymentsOn(env),
+    has_billing: Boolean(ent?.stripe_customer_id),
   };
+}
+
+async function entOf(env: Env, userId: string): Promise<EntRow | null> {
+  return env.DB.prepare(
+    "SELECT tier, status, period_end, stripe_customer_id, stripe_sub_id FROM entitlements WHERE user_id = ?",
+  )
+    .bind(userId)
+    .first<EntRow>();
+}
+
+function asPlan(raw: unknown): PaidPlan | null {
+  return raw === "pro" || raw === "unlimited" ? raw : null;
+}
+
+function asPeriod(raw: unknown): BillPeriod | null {
+  return raw === "month" || raw === "year" ? raw : null;
+}
+
+function pricingPath(locale: "cs" | "en"): string {
+  return locale === "cs" ? "/cs/tarify" : "/pricing";
+}
+
+function liveSub(ent: EntRow | null): boolean {
+  if (!ent?.stripe_sub_id) return false;
+  const st = ent.status || "active";
+  return st === "active" || st === "trialing" || st === "past_due" || st === "paused";
+}
+
+async function applySub(env: Env, userId: string, sub: Record<string, unknown>, customerId?: string | null): Promise<void> {
+  const paid = isPaidSub(sub);
+  const plan = tierOfSub(sub);
+  const period = periodOfSub(sub);
+  const tier = paid && plan ? plan : "account";
+  const status = paid ? String(sub.status || "active") : "canceled";
+  const cust = customerId || strId(sub.customer);
+  const subId = strId(sub.id);
+  await env.DB.prepare(
+    `UPDATE entitlements
+     SET tier = ?, status = ?, period_end = ?, stripe_customer_id = COALESCE(?, stripe_customer_id), stripe_sub_id = ?
+     WHERE user_id = ?`,
+  )
+    .bind(tier, status, paid ? periodEndIso(sub) : null, cust, paid ? subId : null, userId)
+    .run();
+  if (period) {
+    try {
+      await env.DB.prepare("UPDATE entitlements SET billing_period = ? WHERE user_id = ?").bind(period, userId).run();
+    } catch {
+      /* starší D1 bez sloupce billing_period */
+    }
+  }
+}
+
+async function userIdFromStripe(env: Env, sub: Record<string, unknown>, fallbackCustomer?: string | null): Promise<string | null> {
+  const meta = sub.metadata && typeof sub.metadata === "object" ? (sub.metadata as Record<string, unknown>) : {};
+  if (typeof meta.user_id === "string" && meta.user_id) return meta.user_id;
+  const cust = fallbackCustomer || strId(sub.customer);
+  if (!cust) return null;
+  const row = await env.DB.prepare("SELECT user_id FROM entitlements WHERE stripe_customer_id = ?").bind(cust).first<{ user_id: string }>();
+  return row?.user_id ?? null;
+}
+
+async function handleWebhook(env: Env, req: Request): Promise<Response> {
+  const secret = env.STRIPE_WEBHOOK_SECRET;
+  if (!env.STRIPE_SECRET_KEY || !secret) return json({ error: "payments_off" }, 503);
+  const payload = await req.text();
+  const sig = req.headers.get("Stripe-Signature") || "";
+  if (!(await verifyStripeSignature(payload, sig, secret))) return json({ error: "bad_signature" }, 400);
+  let event: { type?: string; data?: { object?: Record<string, unknown> } };
+  try {
+    event = JSON.parse(payload) as { type?: string; data?: { object?: Record<string, unknown> } };
+  } catch {
+    return json({ error: "invalid" }, 400);
+  }
+  const obj = event.data?.object || {};
+  const type = event.type || "";
+
+  if (type === "checkout.session.completed") {
+    const userId = typeof obj.client_reference_id === "string" ? obj.client_reference_id : typeof (obj.metadata as Record<string, unknown> | undefined)?.user_id === "string" ? String((obj.metadata as Record<string, unknown>).user_id) : null;
+    const subId = strId(obj.subscription);
+    const cust = strId(obj.customer);
+    if (userId && cust) {
+      await env.DB.prepare("UPDATE entitlements SET stripe_customer_id = ? WHERE user_id = ?").bind(cust, userId).run();
+    }
+    if (userId && subId) {
+      const sub = await retrieveSub(env, subId);
+      await applySub(env, userId, sub, cust);
+    }
+    return json({ ok: true });
+  }
+
+  if (
+    type === "customer.subscription.created" ||
+    type === "customer.subscription.updated" ||
+    type === "customer.subscription.deleted" ||
+    type === "customer.subscription.paused" ||
+    type === "customer.subscription.resumed"
+  ) {
+    const userId = await userIdFromStripe(env, obj);
+    if (userId) await applySub(env, userId, obj);
+    return json({ ok: true });
+  }
+
+  if (type === "invoice.paid" || type === "invoice.payment_failed") {
+    const subId = strId(obj.subscription);
+    if (subId) {
+      const sub = await retrieveSub(env, subId);
+      const userId = await userIdFromStripe(env, sub, strId(obj.customer));
+      if (userId) await applySub(env, userId, sub);
+    }
+    return json({ ok: true });
+  }
+
+  return json({ ok: true });
+}
+
+async function runSummerJob(env: Env, when: Date): Promise<void> {
+  if (!paymentsOn(env)) return;
+  const month = when.getUTCMonth();
+  const pause = month === 5;
+  const resume = month === 7;
+  if (!pause && !resume) return;
+  const rows = await env.DB.prepare(
+    `SELECT user_id, stripe_sub_id FROM entitlements
+     WHERE stripe_sub_id IS NOT NULL AND billing_period = 'month' AND tier IN ('pro', 'unlimited')`,
+  ).all<{ user_id: string; stripe_sub_id: string }>();
+  for (const row of rows.results || []) {
+    try {
+      if (pause) await pauseMonthlySub(env, row.stripe_sub_id);
+      else await resumeMonthlySub(env, row.stripe_sub_id);
+    } catch (err) {
+      console.log(`summer ${row.stripe_sub_id} ${String(err)}`);
+    }
+  }
 }
 
 function siteUrl(env: Env): string {
@@ -356,6 +524,10 @@ async function serveSim(env: Env, req: Request, fixtureId: number): Promise<Resp
 }
 
 export default {
+  async scheduled(event: { scheduledTime: number }, env: Env): Promise<void> {
+    await runSummerJob(env, new Date(event.scheduledTime));
+  },
+
   async fetch(req: Request, env: Env): Promise<Response> {
     const url = new URL(req.url);
     const path = url.pathname.replace(/\/$/, "") || "/";
@@ -366,7 +538,7 @@ export default {
     try {
       if (method === "GET" && path === "/api/me") {
         const user = await userBySession(env, req);
-        if (!user) return json({ tier: "anon" });
+        if (!user) return json({ tier: "anon", payments: paymentsOn(env) });
         return json(await mePayload(env, user));
       }
 
@@ -489,6 +661,61 @@ export default {
         await env.DB.prepare("DELETE FROM sessions WHERE user_id = ?").bind(row.user_id).run();
         const sess = await createSession(env, row.user_id);
         return json({ ok: true }, 200, { "set-cookie": setCookie(env, sess, SESSION_DAYS * 86400) });
+      }
+
+      if (method === "POST" && path === "/api/billing/checkout") {
+        const user = await userBySession(env, req);
+        if (!user) return json({ error: "unauthorized" }, 401);
+        if (!user.email_verified_at) return json({ error: "need_verify" }, 403);
+        if (!paymentsOn(env)) return json({ error: "payments_off" }, 503);
+        const body = await readJson(req);
+        const plan = asPlan(body.plan);
+        const period = asPeriod(body.period);
+        const loc = localeOf(body.locale);
+        if (!plan || !period) return json({ error: "invalid" }, 400);
+        const ent = await entOf(env, user.id);
+        if (liveSub(ent)) return json({ error: "has_subscription" }, 409);
+        try {
+          const currency = loc === "cs" ? "czk" : "eur";
+          const customerId = await ensureCustomer(env, user.id, user.email, ent?.stripe_customer_id ?? null);
+          if (customerId !== ent?.stripe_customer_id) {
+            await env.DB.prepare("UPDATE entitlements SET stripe_customer_id = ? WHERE user_id = ?").bind(customerId, user.id).run();
+          }
+          const url = await createCheckout(env, {
+            customerId,
+            priceId: await priceIdOf(env, lookupKey(plan, period, currency)),
+            userId: user.id,
+            plan,
+            period,
+            locale: loc,
+            successUrl: `${siteUrl(env)}${pricingPath(loc)}?paid=1`,
+            cancelUrl: `${siteUrl(env)}${pricingPath(loc)}?canceled=1`,
+          });
+          return json({ url });
+        } catch (err) {
+          if (err instanceof StripeError) return json({ error: err.message }, err.status);
+          throw err;
+        }
+      }
+
+      if (method === "POST" && path === "/api/billing/portal") {
+        const user = await userBySession(env, req);
+        if (!user) return json({ error: "unauthorized" }, 401);
+        if (!paymentsOn(env)) return json({ error: "payments_off" }, 503);
+        const ent = await entOf(env, user.id);
+        if (!ent?.stripe_customer_id) return json({ error: "no_billing" }, 404);
+        try {
+          const loc = localeOf(user.locale);
+          const url = await createPortal(env, ent.stripe_customer_id, `${siteUrl(env)}${pricingPath(loc)}`);
+          return json({ url });
+        } catch (err) {
+          if (err instanceof StripeError) return json({ error: err.message }, err.status);
+          throw err;
+        }
+      }
+
+      if (method === "POST" && path === "/api/billing/webhook") {
+        return handleWebhook(env, req);
       }
 
       if (method === "POST" && path === "/api/auth/resend-verify") {

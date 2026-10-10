@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "dev": "wrangler dev --port 8787 --ip 127.0.0.1",
-    "migrate": "wrangler d1 execute ft-account --local --file=schema.sql"
+    "migrate": "wrangler d1 execute ft-account --local --file=schema.sql",
+    "migrate:billing": "wrangler d1 execute ft-account --local --file=migrate-billing.sql",
+    "stripe:setup": "node scripts/stripe-setup.mjs"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^5.20261006.1",

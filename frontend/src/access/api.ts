@@ -1,3 +1,4 @@
+import type { BillPeriod, PaidTier } from "./prices";
 import type { Tier } from "./tiers";
 
 export type Session = {
@@ -8,9 +9,21 @@ export type Session = {
   email_verified: boolean;
   marketing_opt_in: boolean;
   locale?: string;
+  payments?: boolean;
+  has_billing?: boolean;
 };
 
-type ErrBody = { error?: string; ok?: boolean; needs_verify?: boolean; dev_verify_url?: string; dev_reset_url?: string; free_fixture?: number };
+type ErrBody = {
+  error?: string;
+  ok?: boolean;
+  needs_verify?: boolean;
+  dev_verify_url?: string;
+  dev_reset_url?: string;
+  free_fixture?: number;
+  url?: string;
+  payments?: boolean;
+  tier?: string;
+};
 
 export class ApiError extends Error {
   code: string;
@@ -36,10 +49,11 @@ async function req<T>(path: string, init: RequestInit = {}): Promise<T> {
   return data as T;
 }
 
-export async function fetchMe(): Promise<Session | null> {
-  const data = await req<Session & { tier: string }>("/api/me");
-  if (!data.email || data.tier === "anon") return null;
-  return data;
+export async function fetchMe(): Promise<{ session: Session | null; payments: boolean }> {
+  const data = await req<Session & { tier: string; payments?: boolean }>("/api/me");
+  const payments = Boolean(data.payments);
+  if (!data.email || data.tier === "anon") return { session: null, payments };
+  return { session: data, payments };
 }
 
 export const register = (body: { email: string; password: string; locale: string; age18: boolean; marketing_opt_in: boolean }) =>
@@ -63,3 +77,8 @@ export const resendVerify = () => req<ErrBody>("/api/auth/resend-verify", { meth
 
 export const claimPick = (fixtureId: number) =>
   req<{ free_fixture: number }>("/api/me/free-fixture", { method: "POST", body: JSON.stringify({ fixture_id: fixtureId }) });
+
+export const startCheckout = (body: { plan: PaidTier; period: BillPeriod; locale: string }) =>
+  req<{ url: string }>("/api/billing/checkout", { method: "POST", body: JSON.stringify(body) });
+
+export const startPortal = () => req<{ url: string }>("/api/billing/portal", { method: "POST" });

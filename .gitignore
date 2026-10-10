@@ -8,6 +8,7 @@ scripts/.cache/
 .env.*
 node_modules/
 workers/account/.wrangler/
+workers/account/.dev.vars
 frontend/dist/
 /package-lock.json
 

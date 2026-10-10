@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 description: Which personal data Football Terminal processes, why, for how long and what rights you have.
-updated: 2026-10-08
+updated: 2026-10-11
 ---
 This policy explains how we handle personal data when you use Football Terminal (football-terminal.com). The controller is {{name}}, registered office {{address}}, Company ID {{ico}}. Contact: [{{email}}](mailto:{{email}}).
 
@@ -18,11 +18,11 @@ This policy explains how we handle personal data when you use Football Terminal 
 | Technical request data (IP address, browser, time) in infrastructure logs | Running and securing the service | Legitimate interest (Art. 6(1)(f) GDPR) |
 | Anonymous traffic statistics (Cloudflare Web Analytics) | Measuring traffic and site speed | Legitimate interest |
 | Email and account, plan and settings data | Creating an account and providing the service | Performance of a contract (Art. 6(1)(b)) |
-| Payment data (processed by the payment gateway provider) | Processing payments, tax and accounting duties | Contract, legal obligation (b, c) |
+| Payment data (processed by Stripe) | Processing payments, tax and accounting duties | Contract, legal obligation (b, c) |
 | Email for news | Sending news and commercial communications | Consent (a) |
 | Communication with us (email) | Answering your request | Legitimate interest, or contract |
 
-We do not store cards or payment details. The payment gateway provider processes them.
+We do not store cards or payment details. Stripe processes them.
 
 ## 3. Cookies and browser storage
 
@@ -34,7 +34,8 @@ We use carefully selected processors:
 
 - **Cloudflare, Inc.**: hosting, network and cookie-free traffic measurement.
 - **GitHub, Inc.**: source code management and automated data updates (visitors' personal data is not processed there).
-- **A payment gateway provider and an email provider**: only if you use paid plans or subscribe to news.
+- **Stripe Payments Europe, Limited**: payments and subscriptions if you buy a plan.
+- **Resend, Inc.**: transactional email (account confirmation, password reset).
 
 Some processors are based outside the EU (USA). Transfers rely on an adequacy decision (EU–US Data Privacy Framework) or standard contractual clauses.
 

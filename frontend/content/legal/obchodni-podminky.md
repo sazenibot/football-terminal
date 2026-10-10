@@ -1,7 +1,7 @@
 ---
 title: Obchodní podmínky
 description: Podmínky používání služby Football Terminal, registrace, placených tarifů a odpovědnosti.
-updated: 2026-10-08
+updated: 2026-10-11
 ---
 Tyto podmínky upravují používání služby Football Terminal na adrese football-terminal.com (dále jen „služba“). Provozovatelem je {{name}}, sídlo {{address}}, IČO {{ico}}, DIČ {{dic}}, {{register}} (dále jen „provozovatel“). Kontakt: [{{email}}](mailto:{{email}}).
 
@@ -30,10 +30,8 @@ Football Terminal je fotbalová analytika. Zobrazuje statistiky, modelové pravd
 
 ## 5. Placené tarify
 
-Platí od okamžiku, kdy jsou placené tarify v provozu.
-
 - **Cena a rozsah.** Aktuální ceny a obsah tarifů jsou uvedeny na stránce [Tarify](/tarify). Ceny jsou uvedeny včetně DPH, pokud je provozovatel plátcem.
-- **Platba.** Platby zajišťuje poskytovatel platební brány. Provozovatel nevidí ani neukládá údaje o vaší platební kartě.
+- **Platba.** Platby zajišťuje Stripe (Stripe Payments Europe, Limited). Provozovatel nevidí ani neukládá údaje o vaší platební kartě.
 - **Předplatné.** Tarif se prodlužuje automaticky na další období, dokud ho nezrušíte. Zrušit ho můžete kdykoli, platí do konce zaplaceného období a další období už se neúčtuje.
 - **Změna cen.** O změně ceny vás informujeme předem a nová cena se použije až od dalšího zúčtovacího období.
 - **Přístup.** Přístup k obsahu tarifu je zpřístupněn ihned po zaplacení.
@@ -62,4 +60,4 @@ S osobními údaji nakládáme podle [zásad ochrany osobních údajů](/ochrana
 
 - Vztahy se řídí právem České republiky. Spory rozhodují příslušné soudy České republiky, u spotřebitelů při zachování jejich zákonných práv.
 - Podmínky můžeme změnit. Novou verzi zveřejníme na této stránce s datem účinnosti a o podstatných změnách vás informujeme e-mailem, pokud máte účet.
-- Tyto podmínky jsou účinné od 8. října 2026.
+- Tyto podmínky jsou účinné od 11. října 2026.

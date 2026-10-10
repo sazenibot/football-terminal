@@ -5,6 +5,11 @@ compatibility_date = "2026-09-01"
 # Lokálně: `npm run migrate` a `npm run dev`.
 # Produkce: `npx wrangler deploy --env production`
 # DATA_ORIGIN musí číst surová JSON mimo Worker route (přes /__raw/data na Pages).
+# Stripe: secrets STRIPE_SECRET_KEY a STRIPE_WEBHOOK_SECRET (wrangler secret put).
+# Produkty: `npm run stripe:setup`. Na starší D1 bez sloupce: `npm run migrate:billing`.
+
+[triggers]
+crons = ["0 5 1 6 *", "0 5 1 8 *"]
 
 [[d1_databases]]
 binding = "DB"
@@ -25,6 +30,9 @@ workers_dev = true
 binding = "DB"
 database_name = "ft-account"
 database_id = "950b2fec-aec4-4c34-99e2-2333bd3ce6e9"
+
+[env.production.triggers]
+crons = ["0 5 1 6 *", "0 5 1 8 *"]
 
 [env.production.vars]
 ENVIRONMENT = "production"

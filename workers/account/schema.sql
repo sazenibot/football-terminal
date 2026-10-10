@@ -39,7 +39,8 @@ CREATE TABLE IF NOT EXISTS entitlements (
   status TEXT NOT NULL DEFAULT 'active',
   period_end TEXT,
   stripe_customer_id TEXT,
-  stripe_sub_id TEXT
+  stripe_sub_id TEXT,
+  billing_period TEXT
 );
 
 CREATE TABLE IF NOT EXISTS free_picks (

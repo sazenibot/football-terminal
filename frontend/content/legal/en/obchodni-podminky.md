@@ -1,7 +1,7 @@
 ---
 title: Terms and conditions
 description: Terms of use of Football Terminal, registration, paid plans and liability.
-updated: 2026-10-08
+updated: 2026-10-11
 ---
 These terms govern the use of the Football Terminal service at football-terminal.com (the "service"). The operator is {{name}}, registered office {{address}}, Company ID {{ico}}, VAT ID {{dic}}, {{register}} (the "operator"). Contact: [{{email}}](mailto:{{email}}).
 
@@ -30,10 +30,8 @@ Football Terminal is football analytics. It shows statistics, model probabilitie
 
 ## 5. Paid plans
 
-Applies from the moment paid plans are live.
-
 - **Price and scope.** Current prices and plan contents are on the [Pricing](/tarify) page. Prices include VAT if the operator is a VAT payer.
-- **Payment.** Payments are handled by a payment gateway provider. The operator does not see or store your card details.
+- **Payment.** Payments are handled by Stripe (Stripe Payments Europe, Limited). The operator does not see or store your card details.
 - **Subscription.** A plan renews automatically for the next period until you cancel it. You can cancel at any time. It stays valid until the end of the paid period and the next period is not charged.
 - **Price changes.** We tell you about a price change in advance and the new price applies only from the next billing period.
 - **Access.** Access to the content of a plan is granted immediately after payment.
@@ -62,4 +60,4 @@ We handle personal data according to the [privacy policy](/ochrana-udaju).
 
 - The law of the Czech Republic applies. Disputes are decided by the competent courts of the Czech Republic, preserving the statutory rights of consumers.
 - We may change these terms. We publish the new version on this page with its effective date and tell account holders about material changes by email.
-- These terms are effective from 8 October 2026.
+- These terms are effective from 11 October 2026.

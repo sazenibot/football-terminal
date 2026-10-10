@@ -13,6 +13,7 @@ type Ctx = {
   ready: boolean;
   session: Session | null;
   tier: Tier;
+  payments: boolean;
   viewAs: Tier | null;
   setTier: (t: Tier | null) => void;
   can: (f: Feature) => boolean;
@@ -39,14 +40,18 @@ function readFree(): number | null {
 export function AccessProvider({ children }: { children: ReactNode }) {
   const [ready, setReady] = useState(false);
   const [session, setSession] = useState<Session | null>(null);
+  const [payments, setPayments] = useState(false);
   const [viewAs, setViewAs] = useState<Tier | null>(readViewAs);
   const [localFree, setLocalFree] = useState<number | null>(readFree);
 
   const refresh = useCallback(async () => {
     try {
-      setSession(await fetchMe());
+      const me = await fetchMe();
+      setSession(me.session);
+      setPayments(me.payments);
     } catch {
       setSession(null);
+      setPayments(false);
     } finally {
       setReady(true);
     }
@@ -102,6 +107,7 @@ export function AccessProvider({ children }: { children: ReactNode }) {
       ready,
       session,
       tier,
+      payments,
       viewAs,
       setTier,
       can: (f) => allows(tier, FEATURES[f].min),
@@ -111,7 +117,7 @@ export function AccessProvider({ children }: { children: ReactNode }) {
       refresh,
       logout,
     }),
-    [ready, session, tier, viewAs, setTier, freeFixture, claimFreeFixture, resetFreeFixture, refresh, logout],
+    [ready, session, tier, payments, viewAs, setTier, freeFixture, claimFreeFixture, resetFreeFixture, refresh, logout],
   );
   return <AccessCtx.Provider value={value}>{children}</AccessCtx.Provider>;
 }

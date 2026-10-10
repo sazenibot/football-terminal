@@ -1,13 +1,19 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useSearchParams } from "../i18n/router";
 import { useAccess } from "../access/AccessContext";
-import { ApiError, forgotPassword, login, register, resendVerify, resetPassword, verifyEmail } from "../access/api";
+import { ApiError, forgotPassword, login, register, resendVerify, resetPassword, startPortal, verifyEmail } from "../access/api";
+import { tierName } from "../access/tiers";
 import { Frame } from "../cat/kit";
 import { t, useLocale, type Key } from "../i18n";
 import { DEV_TOOLS } from "../lib/flags";
 import { Seg } from "../mc2/kit";
 
 type Mode = "in" | "up" | "forgot";
+
+function safeNext(raw: string): string | null {
+  if (!raw.startsWith("/") || raw.startsWith("//") || raw.includes("://")) return null;
+  return raw;
+}
 
 function errText(code: string): string {
   const key = `login.err.${code}` as Key;
@@ -32,7 +38,10 @@ export function LoginPage() {
   const [sp, setSp] = useSearchParams();
   const resetTok = sp.get("reset") || "";
   const verifyTok = sp.get("verify") || "";
+  const nextTo = safeNext(sp.get("next") || "");
   const input = "mt-1 w-full rounded-xl border border-(--c-line) bg-(--c-page) px-3 py-2 text-sm outline-none focus:border-(--c-accent)";
+
+  const afterLogin = () => navigate(nextTo || "/");
 
   useEffect(() => {
     if (!verifyTok) return;
@@ -89,9 +98,9 @@ export function LoginPage() {
         if (out.dev_verify_url) setDevLink(out.dev_verify_url);
         return;
       }
-      await login({ email, password });
-      await refresh();
-      navigate("/");
+        await login({ email, password });
+        await refresh();
+        afterLogin();
     } catch (err) {
       setError(errText(err instanceof ApiError ? err.code : "server"));
     } finally {
@@ -134,13 +143,35 @@ export function LoginPage() {
             </p>
           )}
           {error && <p className="mt-3 text-[13px] text-red-500">{error}</p>}
-          <button
-            type="button"
-            onClick={() => void logout()}
-            className="mt-5 min-h-10 rounded-xl border border-(--c-line) px-4 text-sm font-medium hover:border-(--c-faint)"
-          >
-            {t("login.logout")}
-          </button>
+          <p className="mt-4 text-[13px] text-(--c-muted)">{t("login.plan", { tier: tierName(session.tier) })}</p>
+          {session.period_end && (
+            <p className="text-[13px] text-(--c-muted)">{t("login.until", { date: new Date(session.period_end).toLocaleDateString(locale === "cs" ? "cs-CZ" : "en-GB") })}</p>
+          )}
+          <div className="mt-5 flex flex-wrap gap-2">
+            {session.has_billing && (
+              <button
+                type="button"
+                className="min-h-10 rounded-xl btn-accent px-4 text-sm font-semibold hover:opacity-90"
+                onClick={() => {
+                  void startPortal()
+                    .then((out) => window.location.assign(out.url))
+                    .catch(() => setError(errText("server")));
+                }}
+              >
+                {t("login.billing")}
+              </button>
+            )}
+            <Link to="/tarify" className="inline-flex min-h-10 items-center rounded-xl border border-(--c-line) px-4 text-sm font-medium hover:border-(--c-faint)">
+              {t("gate.seePlans")}
+            </Link>
+            <button
+              type="button"
+              onClick={() => void logout()}
+              className="min-h-10 rounded-xl border border-(--c-line) px-4 text-sm font-medium hover:border-(--c-faint)"
+            >
+              {t("login.logout")}
+            </button>
+          </div>
         </div>
       </Frame>
     );
