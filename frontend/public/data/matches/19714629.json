@@ -171,20 +171,6 @@
   "sidelined": [
     {
       "side": "away",
-      "player_id": 37749130,
-      "player_name": "Elvis van der Laan",
-      "type_id": 587,
-      "type_name": "Unknown Injury",
-      "type_name_cs": "Neurčené zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-17",
-      "end_date": null,
-      "games_missed": 1,
-      "likely_available": false
-    },
-    {
-      "side": "away",
       "player_id": 38208413,
       "player_name": "Ryan Metu",
       "type_id": 587,
@@ -237,6 +223,20 @@
       "start_date": "2026-08-28",
       "end_date": "2027-07-01",
       "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37749130,
+      "player_name": "Elvis van der Laan",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-17",
+      "end_date": null,
+      "games_missed": 1,
       "likely_available": false
     },
     {
@@ -1669,7 +1669,8 @@
           "label": "Tým dostal 2+ žluté karty",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.11
         },
         {
           "key": "shots_over",
@@ -1725,21 +1726,24 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.93
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.9
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.78
         },
         {
           "key": "ht_leading",
@@ -1747,7 +1751,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.94
+          "odds": 2.95
         },
         {
           "key": "ht_draw",
@@ -1755,7 +1759,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.31
+          "odds": 2.3
         },
         {
           "key": "clean_sheet",
@@ -1763,7 +1767,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.31
+          "odds": 4.28
         },
         {
           "key": "ht_behind",
@@ -1771,7 +1775,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.96
+          "odds": 2.97
         },
         {
           "key": "scoreless",
@@ -1779,7 +1783,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.36
+          "odds": 4.34
         },
         {
           "key": "under25",
@@ -1787,7 +1791,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.52
+          "odds": 2.51
         },
         {
           "key": "yellow_5plus",
@@ -1801,7 +1805,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.8
         }
       ],
       "away": [
@@ -1905,21 +1910,24 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.78
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.93
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.25
         },
         {
           "key": "ht_leading",
@@ -1927,7 +1935,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.96
+          "odds": 2.97
         },
         {
           "key": "ht_behind",
@@ -1935,7 +1943,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.94
+          "odds": 2.95
         },
         {
           "key": "clean_sheet",
@@ -1943,7 +1951,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.36
+          "odds": 4.34
         },
         {
           "key": "under25",
@@ -1951,7 +1959,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.52
+          "odds": 2.51
         },
         {
           "key": "yellow_5plus",
@@ -1965,7 +1973,8 @@
           "label": "Tým dostal 2+ žluté karty",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.18
         },
         {
           "key": "ht_draw",
@@ -1973,7 +1982,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.31
+          "odds": 2.3
         },
         {
           "key": "scoreless",
@@ -1981,14 +1990,15 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.31
+          "odds": 4.28
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.8
         }
       ]
     },
@@ -2028,7 +2038,8 @@
           "label": "Střely na branku: méně než 9.5 v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.65
         },
         {
           "key": "fouls_over",
@@ -2078,7 +2089,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.78
         },
         {
           "key": "yellow_under5",
@@ -2108,7 +2120,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.52
+          "odds": 2.51
         },
         {
           "key": "scored2plus",
@@ -2122,7 +2134,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.93
         },
         {
           "key": "more_corners",
@@ -2143,7 +2156,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 4.8
         },
         {
           "key": "team_2plus_yellow",
@@ -2187,7 +2201,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.78
         },
         {
           "key": "ht_draw",
@@ -2266,7 +2281,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.52
+          "odds": 2.51
         },
         {
           "key": "yellow_under5",
@@ -2324,7 +2339,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.93
         },
         {
           "key": "more_corners",
@@ -2338,7 +2354,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.8
         },
         {
           "key": "ht_behind",
@@ -6785,37 +6802,44 @@
     ]
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nTip na vítězství FC Groningen: Model dává FC Groningen 28.5% šanci na výhru, což je blízko k 30%. Očekávané xG ukazuje na mírnou převahu domácích, ale forma obou týmů je vyrovnaná, což naznačuje, že hosté mohou překvapit.\n\nDalší analytické tipy:\n• Oba týmy dají gól: S pravděpodobností 59.1% je vysoká šance, že oba týmy skórují, což odpovídá jejich ofenzivnímu stylu a vzájemným zápasům.\n• Více než 2.5 gólu v zápase: Model odhaduje 56.8% pravděpodobnost, že padne více než 2.5 gólu, což odpovídá ofenzivním statistikám obou týmů.\n• FC Groningen vyhraje 2-1: Nejčastější skóre 2-1 má 9.1% pravděpodobnost a odpovídá vyrovnanému zápasu s mírnou převahou hostů.",
+    "text": "Největší důvěra:\nTip na výhru Excelsioru: Excelsior má mírně lepší xG (1.64 vs 1.26) a v posledních vzájemných zápasech se mu dařilo. Forma obou týmů je vyrovnaná, ale domácí výhoda a lepší útočná statistika dávají Excelsioru mírnou výhodu.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 59.3% pravděpodobnost, že oba týmy skórují, což odpovídá jejich ofenzivnímu potenciálu a vzájemným zápasům.\n• Více než 2.5 gólu: S pravděpodobností 57% na více než 2.5 gólu a s ohledem na ofenzivní sílu obou týmů se očekává otevřenější zápas.\n• Přes 9 rohů: Model ukazuje průměr 9.1 rohů, což naznačuje aktivní hru a časté útoky, což může vést k vyššímu počtu rohů.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "1702b2b5853bd2b8",
-    "generated_at": "2026-10-09T20:28:26Z",
-    "text_en": "Highest confidence:\nExcelsior to Win: Excelsior has a slight edge in xG (1.64 vs 1.25) and recent form, making them the likely victor. Their head-to-head record also shows competitiveness, but they have the upper hand in recent encounters.\n\nFurther analytical tips:\n• Both Teams to Score: With a BTTS probability of 59.1%, both teams have shown they can find the net, supported by their recent scoring patterns.\n• Over 2.5 Goals: The model indicates an 80.2% chance for over 1.5 goals, suggesting an open game with potential for multiple goals based on attacking stats.\n• Excelsior to Score First: Excelsior's attacking xG and recent form suggest they are likely to take the lead early, enhancing their chances of winning."
+    "input_hash": "6935d7ec8358e1cb",
+    "generated_at": "2026-10-10T03:54:26Z",
+    "text_en": "Highest confidence:\nExcelsior to win: With a model probability of 45.4% for Excelsior, they hold a slight edge over Groningen. Despite both teams' recent form being similar, Excelsior's xG of 1.64 suggests they create more quality chances, indicating a favorable match scenario.\n\nFurther analytical tips:\n• Both teams to score: The model shows a 59.3% likelihood for BTTS, supported by both teams' recent scoring trends and defensive vulnerabilities.\n• Over 2.5 goals: An 80.3% chance for over 1.5 goals indicates an attacking mindset from both sides, with Excelsior's xG suggesting they can exploit Groningen's defense.\n• Excelsior to score first: Given Excelsior's attacking xG and the historical trend of scoring early, they are likely to take the initiative in this match."
   },
-  "refreshed_at": "2026-10-08T23:23:14.257277Z",
+  "refreshed_at": "2026-10-10T03:47:10.051773Z",
   "odds": {
     "home": 2.52,
-    "draw": 3.7,
-    "away": 2.51,
-    "under15": 5.25,
+    "draw": 3.67,
+    "away": 2.53,
+    "under15": 5.21,
     "over15": 1.16,
-    "under25": 2.52,
+    "under25": 2.51,
     "over25": 1.52,
     "under35": 1.6,
-    "over35": 2.33,
+    "over35": 2.34,
     "btts": 1.45,
+    "corners_under95": 1.93,
+    "corners_over95": 1.78,
+    "red_card": 4.8,
     "source": "chance",
-    "home_scoreless": 4.36,
+    "home_scoreless": 4.34,
     "home_scored2plus": 1.94,
-    "home_clean_sheet": 4.31,
-    "home_ht_leading": 2.94,
-    "home_ht_draw": 2.31,
-    "home_ht_behind": 2.96,
-    "away_clean_sheet": 4.36,
-    "away_scoreless": 4.31,
+    "home_clean_sheet": 4.28,
+    "home_ht_leading": 2.95,
+    "home_ht_draw": 2.3,
+    "home_ht_behind": 2.97,
+    "home_more_corners": 1.9,
+    "home_team_2plus_yellow": 2.11,
+    "away_clean_sheet": 4.34,
+    "away_scoreless": 4.28,
     "away_scored2plus": 1.94,
-    "away_ht_behind": 2.94,
-    "away_ht_draw": 2.31,
-    "away_ht_leading": 2.96
+    "away_ht_behind": 2.95,
+    "away_ht_draw": 2.3,
+    "away_ht_leading": 2.97,
+    "away_more_corners": 2.25,
+    "away_team_2plus_yellow": 2.18
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T23:18:14Z",
+  "generated_at": "2026-10-10T03:30:11Z",
   "league": {
     "id": 8,
     "name": "Premier League",
@@ -248,10 +248,130 @@
           53
         ]
       }
+    },
+    {
+      "fixture_id": 19722140,
+      "starting_at": "2026-10-17T11:30:00Z",
+      "venue": "Hill Dickinson Stadium",
+      "home": {
+        "id": 13,
+        "name": "Everton",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/13/13.png"
+      },
+      "away": {
+        "id": 18,
+        "name": "Chelsea",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/18/18.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          36,
+          27,
+          37
+        ]
+      }
+    },
+    {
+      "fixture_id": 19722137,
+      "starting_at": "2026-10-17T14:00:00Z",
+      "venue": "Etihad Stadium",
+      "home": {
+        "id": 9,
+        "name": "Manchester City",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/9/9.png"
+      },
+      "away": {
+        "id": 116,
+        "name": "Ipswich Town",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/20/116.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          80,
+          13,
+          7
+        ]
+      }
+    },
+    {
+      "fixture_id": 19722139,
+      "starting_at": "2026-10-17T14:00:00Z",
+      "venue": "Craven Cottage",
+      "home": {
+        "id": 11,
+        "name": "Fulham",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/11/11.png"
+      },
+      "away": {
+        "id": 22,
+        "name": "Hull City",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/22/22.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          46,
+          28,
+          26
+        ]
+      }
+    },
+    {
+      "fixture_id": 19722142,
+      "starting_at": "2026-10-17T14:00:00Z",
+      "venue": "Gtech Community Stadium",
+      "home": {
+        "id": 236,
+        "name": "Brentford",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/236.png"
+      },
+      "away": {
+        "id": 8,
+        "name": "Liverpool",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/8/8.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          35,
+          26,
+          39
+        ]
+      }
+    },
+    {
+      "fixture_id": 19722136,
+      "starting_at": "2026-10-17T16:30:00Z",
+      "venue": "St. James' Park",
+      "home": {
+        "id": 20,
+        "name": "Newcastle United",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/20/20.png"
+      },
+      "away": {
+        "id": 15,
+        "name": "Aston Villa",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/15.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          48,
+          25,
+          27
+        ]
+      }
     }
   ],
   "stats": {
-    "created": 0,
+    "created": 5,
     "refreshed": 10,
     "errors": 0
   }

@@ -20,20 +20,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37683780,
-      "player_name": "Lars Simon Albin Eriksson",
-      "type_id": 798,
-      "type_name": "Tendonitis",
-      "type_name_cs": "Tendonitis",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-08",
-      "end_date": "2026-11-02",
-      "games_missed": 3,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 3219728,
       "player_name": "Andrés Martín García",
       "type_id": 536,
@@ -44,6 +30,20 @@
       "start_date": "2026-08-29",
       "end_date": "2026-10-12",
       "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37683780,
+      "player_name": "Lars Simon Albin Eriksson",
+      "type_id": 798,
+      "type_name": "Tendonitis",
+      "type_name_cs": "Tendonitis",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-08",
+      "end_date": "2026-11-02",
+      "games_missed": 3,
       "likely_available": false
     },
     {
@@ -62,17 +62,17 @@
     },
     {
       "side": "away",
-      "player_id": 96887,
-      "player_name": "Mouctar Diakhaby",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
+      "player_id": 37316483,
+      "player_name": "Diego López Noguerol",
+      "type_id": 1918,
+      "type_name": "Cruciate Ligament Tear",
+      "type_name_cs": "Přetržený zkřížený vaz",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-09-09",
-      "end_date": "2026-10-09",
-      "games_missed": 3,
-      "likely_available": true
+      "start_date": "2026-05-23",
+      "end_date": "2027-03-01",
+      "games_missed": 14,
+      "likely_available": false
     },
     {
       "side": "away",
@@ -86,20 +86,6 @@
       "start_date": "2026-09-05",
       "end_date": "2026-10-19",
       "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37316483,
-      "player_name": "Diego López Noguerol",
-      "type_id": 1918,
-      "type_name": "Cruciate Ligament Tear",
-      "type_name_cs": "Přetržený zkřížený vaz",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-05-23",
-      "end_date": "2027-03-01",
-      "games_missed": 14,
       "likely_available": false
     },
     {
@@ -1501,7 +1487,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.22
+          "odds": 1.21
         },
         {
           "key": "over25",
@@ -1509,7 +1495,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.69
+          "odds": 1.68
         },
         {
           "key": "team_2plus_yellow",
@@ -1524,7 +1510,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.55
+          "odds": 1.54
         },
         {
           "key": "scored2plus",
@@ -1618,7 +1604,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.29
+          "odds": 2.3
         },
         {
           "key": "ht_behind",
@@ -1626,7 +1612,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.42
+          "odds": 3.37
         },
         {
           "key": "scoreless",
@@ -1634,7 +1620,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.26
+          "odds": 4.25
         },
         {
           "key": "corners_under95",
@@ -1657,7 +1643,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.82
+          "odds": 2.83
         },
         {
           "key": "clean_sheet",
@@ -1665,7 +1651,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.47
+          "odds": 3.52
         },
         {
           "key": "under25",
@@ -1673,7 +1659,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.21
+          "odds": 2.22
         },
         {
           "key": "more_corners",
@@ -1747,7 +1733,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.22
+          "odds": 1.21
         },
         {
           "key": "over25",
@@ -1755,7 +1741,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.69
+          "odds": 1.68
         },
         {
           "key": "corners_over95",
@@ -1785,7 +1771,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.82
+          "odds": 2.83
         },
         {
           "key": "btts",
@@ -1793,7 +1779,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.55
+          "odds": 1.54
         },
         {
           "key": "scoreless",
@@ -1801,7 +1787,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.47
+          "odds": 3.52
         },
         {
           "key": "under25",
@@ -1809,7 +1795,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.21
+          "odds": 2.22
         },
         {
           "key": "corners_under95",
@@ -1847,7 +1833,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.29
+          "odds": 2.3
         },
         {
           "key": "clean_sheet",
@@ -1855,7 +1841,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.26
+          "odds": 4.25
         },
         {
           "key": "scored2plus",
@@ -1863,7 +1849,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.31
+          "odds": 2.29
         },
         {
           "key": "ht_leading",
@@ -1871,7 +1857,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.42
+          "odds": 3.37
         }
       ]
     },
@@ -1883,7 +1869,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.55
+          "odds": 1.54
         },
         {
           "key": "over15",
@@ -1891,7 +1877,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.22
+          "odds": 1.21
         },
         {
           "key": "yellow_under5",
@@ -1969,7 +1955,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.69
+          "odds": 1.68
         },
         {
           "key": "scored2plus",
@@ -1992,7 +1978,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.21
+          "odds": 2.22
         },
         {
           "key": "corners_over95",
@@ -2137,7 +2123,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.55
+          "odds": 1.54
         },
         {
           "key": "over15",
@@ -2145,7 +2131,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.22
+          "odds": 1.21
         },
         {
           "key": "under25",
@@ -2153,7 +2139,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.21
+          "odds": 2.22
         },
         {
           "key": "ht_leading",
@@ -2175,7 +2161,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.69
+          "odds": 1.68
         },
         {
           "key": "scored2plus",
@@ -6629,42 +6615,42 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T23:21:47.554166Z",
+  "refreshed_at": "2026-10-10T03:43:21.034946Z",
   "odds": {
-    "home": 2.31,
+    "home": 2.33,
     "draw": 3.67,
-    "away": 2.95,
-    "under15": 4.36,
-    "over15": 1.22,
-    "under25": 2.21,
-    "over25": 1.69,
+    "away": 2.91,
+    "under15": 4.39,
+    "over15": 1.21,
+    "under25": 2.22,
+    "over25": 1.68,
     "under35": 1.47,
-    "over35": 2.7,
-    "btts": 1.55,
+    "over35": 2.69,
+    "btts": 1.54,
     "corners_under95": 2.03,
     "corners_over95": 1.7,
     "source": "chance",
-    "home_scoreless": 4.26,
+    "home_scoreless": 4.25,
     "home_scored2plus": 1.98,
-    "home_clean_sheet": 3.47,
-    "home_ht_leading": 2.82,
-    "home_ht_draw": 2.29,
-    "home_ht_behind": 3.42,
+    "home_clean_sheet": 3.52,
+    "home_ht_leading": 2.83,
+    "home_ht_draw": 2.3,
+    "home_ht_behind": 3.37,
     "home_more_corners": 1.8,
-    "away_clean_sheet": 4.26,
-    "away_scoreless": 3.47,
-    "away_scored2plus": 2.31,
-    "away_ht_behind": 2.82,
-    "away_ht_draw": 2.29,
-    "away_ht_leading": 3.42,
+    "away_clean_sheet": 4.25,
+    "away_scoreless": 3.52,
+    "away_scored2plus": 2.29,
+    "away_ht_behind": 2.83,
+    "away_ht_draw": 2.3,
+    "away_ht_leading": 3.37,
     "away_more_corners": 2.37
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nRacing Santander vyhraje: Racing má vyšší xG (1.54) než Valencia (1.2) a lepší formu, přičemž Valencia má slabou obranu (13 obdržených gólů). Model dává Racingu 44% šanci na výhru, což je v souladu s trhem.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 57.3% pravděpodobnost, že oba týmy skórují, což odpovídá historickým vzorcům vzájemných zápasů.\n• Více než 2.5 gólu v zápase: S 54% pravděpodobností na over 2.5 gólů a slabou defenzivou obou týmů je tento tip atraktivní.\n• Racing Santander dá první gól: S ohledem na jejich vyšší xG a domácí výhodu je pravděpodobné, že Racing začne aktivně a otevře skóre.",
+    "text": "Největší důvěra:\nRacing Santander vyhraje: Racing má vyšší xG (1.54) než Valencia (1.2) a lepší formu. Valencia prohrála posledních 5 zápasů, což naznačuje jejich slabou výkonnost. Model dává Racingu 44% šanci na výhru, což je silný argument pro domácí.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model ukazuje 57.3% pravděpodobnost, že oba týmy skórují, což odpovídá jejich historickým vzorcům a aktuálním formám.\n• Více než 2.5 gólu: S 54% pravděpodobností na více než 2.5 gólu a vysokým počtem obdržených gólů obou týmů je tento tip opřen o jejich defenzivní slabiny.\n• Racing Santander dá 2 góly: S ohledem na xG a formu Racingu, která ukazuje na schopnost skórovat, je pravděpodobné, že domácí tým překoná hranici 2 gólů.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "57becef0119a51d5",
-    "generated_at": "2026-10-09T20:27:37Z",
-    "text_en": "Highest confidence:\nRacing Santander to Win: Racing Santander has a slight edge in xG (1.54 vs 1.2) and is playing at home, where they typically perform better despite recent form. Valencia's struggles are evident, making Santander a strong pick to secure the win.\n\nFurther analytical tips:\n• Both Teams to Score: Yes: With a BTTS probability of 57.3%, both teams are likely to find the net given their defensive vulnerabilities and attacking capabilities.\n• Over 1.5 Goals: The model suggests a high likelihood (78.4%) of over 1.5 goals, reflecting both teams' propensity to concede and the attacking nature of their recent matches.\n• Racing Santander to Score First: Given their home advantage and better xG, Santander is likely to take the initiative early, increasing the chances of them scoring first."
+    "input_hash": "8981463b9ac190da",
+    "generated_at": "2026-10-10T03:57:41Z",
+    "text_en": "Highest confidence:\nRacing Santander to Win: Racing Santander's home advantage and higher xG (1.54) compared to Valencia (1.2) suggest they can control the game better. Their recent form shows resilience, while Valencia's struggles continue, making Santander a strong pick.\n\nFurther analytical tips:\n• Both Teams to Score: With a BTTS probability of 57.3%, both teams are likely to find the net given their defensive vulnerabilities and attacking potential.\n• Over 1.5 Goals: The model indicates a high 78.3% chance for over 1.5 goals, reflecting both teams' recent scoring trends and defensive weaknesses.\n• Racing Santander to Score First: Given Santander's stronger home xG and Valencia's poor away form, they are likely to take the initiative and score first in this matchup."
   }
 }

@@ -1318,7 +1318,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.52
+          "odds": 1.53
         },
         {
           "key": "over15",
@@ -1342,7 +1342,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.54
+          "odds": 1.53
         },
         {
           "key": "shots_over",
@@ -1406,14 +1406,15 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.31
+          "odds": 1.33
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.66
         },
         {
           "key": "ht_leading",
@@ -1421,7 +1422,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.83
+          "odds": 1.84
         },
         {
           "key": "more_corners",
@@ -1429,21 +1430,23 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.25
+          "odds": 1.24
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.47
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.1
         },
         {
           "key": "ht_behind",
@@ -1451,7 +1454,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 5.62
+          "odds": 5.87
         },
         {
           "key": "clean_sheet",
@@ -1459,7 +1462,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.68
+          "odds": 2.72
         },
         {
           "key": "scoreless",
@@ -1467,7 +1470,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 8.46
+          "odds": 9.02
         },
         {
           "key": "under25",
@@ -1475,7 +1478,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.96
+          "odds": 3.05
         },
         {
           "key": "corners_under95",
@@ -1490,7 +1493,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.02
         },
         {
           "key": "ht_draw",
@@ -1498,7 +1502,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.82
+          "odds": 2.88
         }
       ],
       "away": [
@@ -1572,7 +1576,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.68
+          "odds": 2.72
         },
         {
           "key": "over25",
@@ -1595,7 +1599,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.66
         },
         {
           "key": "ht_behind",
@@ -1603,14 +1608,15 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.83
+          "odds": 1.84
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.39
         },
         {
           "key": "btts",
@@ -1618,7 +1624,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.52
+          "odds": 1.53
         },
         {
           "key": "under25",
@@ -1626,7 +1632,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.96
+          "odds": 3.05
         },
         {
           "key": "scored2plus",
@@ -1634,7 +1640,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.06
+          "odds": 3.18
         },
         {
           "key": "corners_over95",
@@ -1642,21 +1648,23 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.54
+          "odds": 1.53
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.1
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 5.02
         },
         {
           "key": "ht_leading",
@@ -1664,7 +1672,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 5.62
+          "odds": 5.87
         },
         {
           "key": "clean_sheet",
@@ -1672,7 +1680,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 8.46
+          "odds": 9.02
         },
         {
           "key": "more_corners",
@@ -1680,7 +1688,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 4.98
+          "odds": 5.03
         },
         {
           "key": "ht_draw",
@@ -1688,7 +1696,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.82
+          "odds": 2.88
         }
       ]
     },
@@ -1735,14 +1743,16 @@
           "label": "Střely na branku: 5.5+ v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.45
         },
         {
           "key": "sot_under",
           "label": "Střely na branku: méně než 6.5 v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.82
         },
         {
           "key": "fouls_over",
@@ -1778,7 +1788,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.52
+          "odds": 1.53
         },
         {
           "key": "over25",
@@ -1794,14 +1804,15 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.54
+          "odds": 1.53
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.66
         },
         {
           "key": "clean_sheet",
@@ -1816,7 +1827,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.96
+          "odds": 3.05
         },
         {
           "key": "corners_under95",
@@ -1838,7 +1849,8 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.1
         },
         {
           "key": "team_2plus_yellow",
@@ -1859,7 +1871,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.02
         },
         {
           "key": "ht_draw",
@@ -1890,7 +1903,8 @@
           "label": "Střely na branku: méně než 6.5 v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.82
         },
         {
           "key": "offsides_under",
@@ -1913,7 +1927,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.54
+          "odds": 1.53
         },
         {
           "key": "shots_over",
@@ -1934,7 +1948,8 @@
           "label": "Střely na branku: 3.5+ v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.06
         },
         {
           "key": "fouls_over",
@@ -1948,7 +1963,8 @@
           "label": "Fauly: méně než 22.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.97
         },
         {
           "key": "offsides_over",
@@ -1963,7 +1979,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.52
+          "odds": 1.53
         },
         {
           "key": "scored2plus",
@@ -1977,7 +1993,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.66
         },
         {
           "key": "team_2plus_yellow",
@@ -2005,7 +2022,8 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.1
         },
         {
           "key": "clean_sheet",
@@ -2027,7 +2045,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.96
+          "odds": 3.05
         },
         {
           "key": "corners_under95",
@@ -2056,7 +2074,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.02
         }
       ]
     }
@@ -6599,41 +6618,46 @@
     ]
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nTSG Hoffenheim vyhraje: Model dává Hoffenheimu 60.7 % na výhru, což odpovídá jejich silné formě a domácímu prostředí. Očekávané xG 2.23 vs. 1.15 pro Hamburg naznačuje jasnou převahu v ofenzivě.\n\nDalší analytické tipy:\n• Hoffenheim dá více než 1.5 gólu: S vysokým xG 2.23 a slabou defenzivou Hamburgu (ga 13) je pravděpodobné, že Hoffenheim překročí 1.5 gólu.\n• Oba týmy dají gól: S BTTS na 61.5 % a formou obou týmů, kde Hoffenheim skóruje pravidelně, je pravděpodobné, že oba týmy se prosadí.\n• Hoffenheim vyhraje 2-1: Nejčastější skóre 2-1 (9.5 %) odpovídá modelu a formě Hoffenheimu, což naznačuje vyrovnaný zápas s těsnou výhrou.",
+    "text": "Největší důvěra:\nTSG Hoffenheim vyhraje: Hoffenheim má silnější formu a vyšší xG (2.22 vs 1.15). Model dává domácím 60.6% šanci na vítězství, což je v souladu s trhem (67.8%). Historie vzájemných zápasů také podporuje domácí.\n\nDalší analytické tipy:\n• Hoffenheim dá více než 1.5 gólu: S xG 2.22 a slabou obranou HSV (13 gólů za 4 zápasy) je pravděpodobné, že Hoffenheim překročí 1.5 gólu. Model to potvrzuje s 85.1% na over 1.5.\n• Oba týmy dají gól: Model predikuje 61.4% na BTTS, což naznačuje, že i přes slabou ofenzivu HSV by mohli skórovat, zejména při slabé obraně Hoffenheimu.\n• Hoffenheim vyhraje 2-1: Nejčastější skóre je 2-1 (9.6%). Vzhledem k formě a xG je tento výsledek velmi pravděpodobný, což odpovídá i historickým zápasům.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "72d713f232f2838b",
-    "generated_at": "2026-10-09T20:24:42Z",
-    "text_en": "Highest confidence:\nTSG Hoffenheim to win: With a model probability of 60.7% for Hoffenheim's victory and a significantly higher xG of 2.23 compared to Hamburger SV's 1.15, Hoffenheim is expected to dominate the match, leveraging their recent form and head-to-head advantage.\n\nFurther analytical tips:\n• Over 2.5 goals: The model indicates a strong likelihood (64.8%) for over 2.5 goals, supported by Hoffenheim's attacking prowess and Hamburger SV's defensive vulnerabilities.\n• Both teams to score: With a 61.5% probability for both teams to score, the match is likely to see both sides finding the net, given their recent scoring trends.\n• Hoffenheim to score first: Considering Hoffenheim's superior xG and home advantage, they are likely to take the lead early, reflecting their attacking momentum."
+    "input_hash": "a4dc78981055d439",
+    "generated_at": "2026-10-10T03:59:08Z",
+    "text_en": "Highest confidence:\nHoffenheim to Win: With a model probability of 60.6% for Hoffenheim, their superior xG of 2.22 against Hamburg's 1.15 indicates strong attacking potential. Hoffenheim's recent form also suggests they can capitalize on their home advantage effectively.\n\nFurther analytical tips:\n• Over 2.5 Goals: The model shows a high likelihood of 64.7% for over 2.5 goals, supported by Hoffenheim's attacking prowess and Hamburg's defensive struggles, making a high-scoring game likely.\n• Both Teams to Score: With a 61.4% probability for both teams to score, the data indicates that while Hoffenheim is strong offensively, Hamburg may find opportunities against a leaky defense.\n• Hoffenheim to Score First: Given Hoffenheim's attacking strength and the model's predictions, they are likely to take the initiative early, increasing their chances of scoring first in the match."
   },
-  "refreshed_at": "2026-10-08T23:19:02.725581Z",
+  "refreshed_at": "2026-10-10T03:30:43.138113Z",
   "odds": {
     "home": 1.43,
-    "draw": 5.16,
-    "away": 6.52,
-    "under15": 6.28,
+    "draw": 5.34,
+    "away": 6.87,
+    "under15": 6.64,
     "over15": 1.12,
-    "under25": 2.96,
+    "under25": 3.05,
     "over25": 1.4,
-    "under35": 1.81,
+    "under35": 1.84,
     "over35": 2.03,
-    "btts": 1.52,
+    "btts": 1.53,
     "corners_under95": 2.33,
-    "corners_over95": 1.54,
+    "corners_over95": 1.53,
+    "yellow_under5": 1.66,
+    "yellow_5plus": 2.1,
+    "red_card": 5.02,
     "source": "chance",
-    "home_scoreless": 8.46,
-    "home_scored2plus": 1.31,
-    "home_clean_sheet": 2.68,
-    "home_ht_leading": 1.83,
-    "home_ht_draw": 2.82,
-    "home_ht_behind": 5.62,
-    "home_more_corners": 1.25,
-    "away_clean_sheet": 8.46,
-    "away_scoreless": 2.68,
-    "away_scored2plus": 3.06,
-    "away_ht_behind": 1.83,
-    "away_ht_draw": 2.82,
-    "away_ht_leading": 5.62,
-    "away_more_corners": 4.98
+    "home_scoreless": 9.02,
+    "home_scored2plus": 1.33,
+    "home_clean_sheet": 2.72,
+    "home_ht_leading": 1.84,
+    "home_ht_draw": 2.88,
+    "home_ht_behind": 5.87,
+    "home_more_corners": 1.24,
+    "home_team_2plus_yellow": 1.47,
+    "away_clean_sheet": 9.02,
+    "away_scoreless": 2.72,
+    "away_scored2plus": 3.18,
+    "away_ht_behind": 1.84,
+    "away_ht_draw": 2.88,
+    "away_ht_leading": 5.87,
+    "away_more_corners": 5.03,
+    "away_team_2plus_yellow": 1.39
   }
 }

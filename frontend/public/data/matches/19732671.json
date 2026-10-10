@@ -1431,7 +1431,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "shots_over",
@@ -1481,7 +1481,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.78
+          "odds": 1.8
         },
         {
           "key": "over15",
@@ -1497,7 +1497,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.08
+          "odds": 2.1
         },
         {
           "key": "yellow_under5",
@@ -1512,7 +1512,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.07
+          "odds": 2.04
         },
         {
           "key": "clean_sheet",
@@ -1520,7 +1520,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.27
+          "odds": 2.23
         },
         {
           "key": "over25",
@@ -1528,7 +1528,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.77
+          "odds": 1.75
         },
         {
           "key": "scored2plus",
@@ -1536,7 +1536,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.58
+          "odds": 1.55
         },
         {
           "key": "more_corners",
@@ -1559,7 +1559,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.37
+          "odds": 2.4
         },
         {
           "key": "corners_under95",
@@ -1567,7 +1567,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.91
+          "odds": 1.89
         },
         {
           "key": "red_card",
@@ -1589,7 +1589,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 5.91
+          "odds": 6.03
         },
         {
           "key": "ht_behind",
@@ -1597,7 +1597,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 5.62
+          "odds": 5.76
         }
       ],
       "away": [
@@ -1607,7 +1607,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.91
+          "odds": 1.89
         },
         {
           "key": "team_2plus_yellow",
@@ -1686,7 +1686,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.08
+          "odds": 2.1
         },
         {
           "key": "yellow_5plus",
@@ -1701,7 +1701,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.07
+          "odds": 2.04
         },
         {
           "key": "btts",
@@ -1709,7 +1709,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.78
+          "odds": 1.8
         },
         {
           "key": "scoreless",
@@ -1717,7 +1717,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.27
+          "odds": 2.23
         },
         {
           "key": "over25",
@@ -1725,7 +1725,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.77
+          "odds": 1.75
         },
         {
           "key": "yellow_under5",
@@ -1740,7 +1740,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 5.62
+          "odds": 5.76
         },
         {
           "key": "clean_sheet",
@@ -1748,7 +1748,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 5.91
+          "odds": 6.03
         },
         {
           "key": "scored2plus",
@@ -1756,7 +1756,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.91
+          "odds": 4.02
         },
         {
           "key": "corners_over95",
@@ -1764,7 +1764,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "more_corners",
@@ -1787,7 +1787,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.37
+          "odds": 2.4
         }
       ]
     },
@@ -1807,7 +1807,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 2.08
+          "odds": 2.1
         },
         {
           "key": "shots_over",
@@ -1871,7 +1871,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.78
+          "odds": 1.8
         },
         {
           "key": "corners_over95",
@@ -1879,7 +1879,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "yellow_5plus",
@@ -1922,7 +1922,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.91
+          "odds": 1.89
         },
         {
           "key": "yellow_under5",
@@ -1951,7 +1951,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.77
+          "odds": 1.75
         },
         {
           "key": "more_corners",
@@ -2004,7 +2004,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.08
+          "odds": 2.1
         },
         {
           "key": "corners_over95",
@@ -2012,7 +2012,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.8
+          "odds": 1.81
         },
         {
           "key": "shots_over",
@@ -2062,7 +2062,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.78
+          "odds": 1.8
         },
         {
           "key": "scored2plus",
@@ -2126,7 +2126,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.77
+          "odds": 1.75
         },
         {
           "key": "corners_under95",
@@ -2134,7 +2134,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.91
+          "odds": 1.89
         },
         {
           "key": "scoreless",
@@ -7570,42 +7570,42 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T23:21:37.965492Z",
+  "refreshed_at": "2026-10-10T03:43:17.594786Z",
   "odds": {
-    "home": 1.56,
-    "draw": 4.26,
-    "away": 5.94,
-    "under15": 4.03,
+    "home": 1.53,
+    "draw": 4.38,
+    "away": 6.14,
+    "under15": 4.09,
     "over15": 1.24,
-    "under25": 2.08,
-    "over25": 1.77,
-    "under35": 1.41,
-    "over35": 2.94,
-    "btts": 1.78,
-    "corners_under95": 1.91,
-    "corners_over95": 1.8,
+    "under25": 2.1,
+    "over25": 1.75,
+    "under35": 1.42,
+    "over35": 2.89,
+    "btts": 1.8,
+    "corners_under95": 1.89,
+    "corners_over95": 1.81,
     "source": "chance",
-    "home_scoreless": 5.91,
-    "home_scored2plus": 1.58,
-    "home_clean_sheet": 2.27,
-    "home_ht_leading": 2.07,
-    "home_ht_draw": 2.37,
-    "home_ht_behind": 5.62,
+    "home_scoreless": 6.03,
+    "home_scored2plus": 1.55,
+    "home_clean_sheet": 2.23,
+    "home_ht_leading": 2.04,
+    "home_ht_draw": 2.4,
+    "home_ht_behind": 5.76,
     "home_more_corners": 1.44,
-    "away_clean_sheet": 5.91,
-    "away_scoreless": 2.27,
-    "away_scored2plus": 3.91,
-    "away_ht_behind": 2.07,
-    "away_ht_draw": 2.37,
-    "away_ht_leading": 5.62,
+    "away_clean_sheet": 6.03,
+    "away_scoreless": 2.23,
+    "away_scored2plus": 4.02,
+    "away_ht_behind": 2.04,
+    "away_ht_draw": 2.4,
+    "away_ht_leading": 5.76,
     "away_more_corners": 3.41
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nVýhra Real Betis: Real Betis má silnou formu s 13 body z posledních 6 zápasů a xG 1.91, zatímco Osasuna se potýká s defenzivními problémy (xG 0.96). Model dává Betisu 58.2% šanci na výhru, což je v souladu s trhem.\n\nDalší analytické tipy:\n• Betis dá 2+ góly: Betis má průměr 1.33 gólů na zápas a proti slabé obraně Osasuny (13 gólů) by mohli snadno překonat tuto hranici.\n• Oba týmy skórují - NE: Osasuna má nízkou produktivitu (6 gólů v posledních 6 zápasech) a Betis je silný v obraně, což naznačuje, že Osasuna může mít problém skórovat.\n• Více než 2.5 góly: S vysokým xG Betisu a průměrným počtem gólů v zápasech Betisu (79.9% šance na over 1.5) se očekává, že zápas bude ofenzivně laděný.",
+    "text": "Největší důvěra:\nReal Betis vyhraje: Model dává Betisu 58.2% šanci na výhru, což potvrzuje i jejich forma (4 výhry z posledních 6 zápasů). Oproti tomu Osasuna má slabší formu a nižší xG (0.96), což naznačuje, že Betis by měl dominovat.\n\nDalší analytické tipy:\n• Betis dá 2 a více gólů: Betis má průměr xG 1.9 a Osasuna dostává 2.17 gólů na zápas, což naznačuje, že domácí mohou snadno překonat tuto hranici.\n• Oba týmy dají gól: Model ukazuje 55.7% pravděpodobnost, že oba týmy skórují, což je podpořeno ofenzivními statistikami Betisu a slabou obranou Osasuny.\n• Více než 2.5 gólu v zápase: S 79.9% pravděpodobností na více než 1.5 gólu a silným útokem Betisu je pravděpodobné, že zápas skončí s alespoň třemi góly.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "08789d7331d6eec6",
-    "generated_at": "2026-10-09T20:23:53Z",
-    "text_en": "Highest confidence:\nReal Betis to Win: With a model probability of 58.2% for a home win and a solid recent form, Betis is expected to dominate this match. Their xG of 1.91 compared to Osasuna's 0.96 indicates a significant offensive advantage, suggesting a likely victory.\n\nFurther analytical tips:\n• Bet on Over 1.5 Goals: The model shows a high likelihood (79.9%) of over 1.5 goals, supported by Betis's attacking prowess and Osasuna's defensive vulnerabilities.\n• Both Teams to Score (BTTS): With a BTTS probability of 55.7%, the match could see both teams finding the net, given their recent scoring trends.\n• Betis to Score First: Given Betis's strong home form and offensive xG, they are likely to take the lead early, increasing their chances of controlling the match."
+    "input_hash": "2e701fad49fb57c3",
+    "generated_at": "2026-10-10T03:58:06Z",
+    "text_en": "Highest confidence:\nReal Betis to Win: With a model probability of 58.2% for a Betis victory and a strong recent form, they are likely to dominate this match. Their xG of 1.9 compared to Osasuna's 0.96 indicates a significant offensive advantage, suggesting a clear path to victory.\n\nFurther analytical tips:\n• Bet on Over 1.5 Goals: The model suggests a high likelihood (79.9%) of over 1.5 goals, reflecting both teams' scoring capabilities and Betis's attacking strength.\n• Both Teams to Score (BTTS): With a BTTS probability of 55.7%, the data indicates that while Betis is favored, Osasuna may still find the net, especially given their recent form.\n• Betis to Score First: Considering Betis's attacking xG and their home advantage, they are likely to score first, which aligns with their recent goal-scoring trend."
   }
 }

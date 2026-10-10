@@ -2,8 +2,8 @@
   "fixture_id": 19732665,
   "league_id": 564,
   "league_name": "La Liga",
-  "built_at": "2026-10-03T10:14:38.489606Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-10T03:39:36.792389Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T12:00:00Z",
   "venue": "Estadio de Vallecas",
   "home": {
@@ -16,7 +16,188 @@
     "name": "Athletic Club",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 18771,
+    "name": "José María Sánchez Martínez",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 1,
+          "average": 0.33
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.33,
+          "percentage": 100
+        }
+      },
+      "Fouls": {
+        "count": 90,
+        "average": 30
+      },
+      "Redcards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 16,
+          "average": 5.33,
+          "on_bench": 1,
+          "for_coach": 1,
+          "on_pitch": 14
+        },
+        "home": {
+          "count": 7,
+          "average": 2.33,
+          "percentage": 43.75
+        },
+        "away": {
+          "count": 9,
+          "average": 3,
+          "percentage": 56.25
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 1,
+          "average": 0.33,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 1
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.33,
+          "percentage": 100
+        }
+      },
+      "Season Matches": {
+        "count": 3
+      },
+      "VAR Moments": {
+        "count": 1,
+        "average": 0.33
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 26.4,
+      "yellow_per_match": 4.4,
+      "red_per_match": 0.2,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 12,
+      "matches": 216,
+      "yellow_cards": 1141,
+      "red_cards": 21,
+      "avg_yellow_per_match": 5.28
+    },
+    "h2h_matches_officiated": [],
+    "home_team_matches_officiated": {
+      "matches": 1,
+      "avg_fouls_by_team": 22.0,
+      "avg_fouls_total": 41.0,
+      "avg_yellow_by_team": 8.0,
+      "avg_red_by_team": 1.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19439393,
+          "date": "2025-12-07T17:30:00Z",
+          "home_name": "Espanyol",
+          "away_name": "Rayo Vallecano",
+          "home_score": 1,
+          "away_score": 0,
+          "result": "P",
+          "total_fouls": 41
+        }
+      ]
+    },
+    "away_team_matches_officiated": {
+      "matches": 5,
+      "avg_fouls_by_team": 14.2,
+      "avg_fouls_total": 27.2,
+      "avg_yellow_by_team": 1.8,
+      "avg_red_by_team": 0.2,
+      "recent_matches": [
+        {
+          "fixture_id": 19439370,
+          "date": "2025-11-22T15:15:00Z",
+          "home_name": "FC Barcelona",
+          "away_name": "Athletic Club",
+          "home_score": 4,
+          "away_score": 0,
+          "result": "P",
+          "total_fouls": 18
+        },
+        {
+          "fixture_id": 19439280,
+          "date": "2025-09-13T16:30:00Z",
+          "home_name": "Athletic Club",
+          "away_name": "Deportivo Alavés",
+          "home_score": 0,
+          "away_score": 1,
+          "result": "P",
+          "total_fouls": 38
+        },
+        {
+          "fixture_id": 19135470,
+          "date": "2025-02-08T15:15:00Z",
+          "home_name": "Athletic Club",
+          "away_name": "Girona",
+          "home_score": 3,
+          "away_score": 0,
+          "result": "V",
+          "total_fouls": 19
+        },
+        {
+          "fixture_id": 19135413,
+          "date": "2024-12-15T15:15:00Z",
+          "home_name": "Deportivo Alavés",
+          "away_name": "Athletic Club",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 31
+        },
+        {
+          "fixture_id": 19135430,
+          "date": "2024-12-04T20:00:00Z",
+          "home_name": "Athletic Club",
+          "away_name": "Real Madrid",
+          "home_score": 2,
+          "away_score": 1,
+          "result": "V",
+          "total_fouls": 30
+        }
+      ]
+    }
+  },
   "sidelined": [
     {
       "side": "home",
@@ -58,20 +239,6 @@
       "start_date": "2026-01-07",
       "end_date": null,
       "games_missed": 39,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 190168,
-      "player_name": "Gorka Guruzeta Rodríguez",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-09",
-      "end_date": "2026-10-10",
-      "games_missed": 2,
       "likely_available": false
     },
     {
@@ -169,11 +336,6 @@
         "formation_field": "2:2"
       },
       {
-        "player_name": "Oihan Sancet",
-        "jersey_number": 8,
-        "formation_field": "4:2"
-      },
-      {
         "player_name": "Robert Navarro",
         "jersey_number": 23,
         "formation_field": "4:3"
@@ -202,6 +364,11 @@
         "player_name": "Álex Berenguer",
         "jersey_number": 7,
         "formation_field": "4:1"
+      },
+      {
+        "player_name": "Mikel Jauregizar",
+        "jersey_number": 18,
+        "formation_field": "4:2"
       }
     ]
   },
@@ -556,48 +723,12 @@
       "coach_home": "Andoni Iraola Sagarna",
       "coach_away": "Marcelino García Toral",
       "referee_id": 14051
-    },
-    {
-      "fixture_id": 18165659,
-      "date": "2021-09-21T20:00:00Z",
-      "home": {
-        "id": 13258,
-        "name": "Athletic Club",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/13258.png"
-      },
-      "away": {
-        "id": 377,
-        "name": "Rayo Vallecano",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/377.png"
-      },
-      "home_score": 1,
-      "away_score": 2,
-      "result_for_home_team": "V",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 8,
-        "sot": 3,
-        "corners": 1,
-        "fouls": 20,
-        "possession": 53,
-        "yellow": 3,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 8,
-        "sot": 2,
-        "corners": 2,
-        "fouls": 16,
-        "possession": 47,
-        "yellow": 3,
-        "red": 0
-      },
-      "coach_home": "Marcelino García Toral",
-      "coach_away": "Andoni Iraola Sagarna",
-      "referee_id": 17340
     }
   ],
-  "h2h_total_available": 22,
+  "h2h_total_available": 9,
+  "h2h_window_years": 5,
+  "h2h_excluded_older": 13,
+  "build_version": 2,
   "form": {
     "home": {
       "matches": [
@@ -2140,15 +2271,15 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 1.37,
-      "away": 1.59
+      "home": 1.26,
+      "away": 1.66
     },
-    "home_win_pct": 37.0,
-    "draw_pct": 26.1,
-    "away_win_pct": 36.9,
-    "btts_pct": 59.7,
-    "over25_pct": 56.9,
-    "under25_pct": 43.1,
+    "home_win_pct": 35.0,
+    "draw_pct": 25.5,
+    "away_win_pct": 39.5,
+    "btts_pct": 57.3,
+    "over25_pct": 56.0,
+    "under25_pct": 44.0,
     "top_scorelines": [
       {
         "score": "1-1",
@@ -2156,23 +2287,23 @@
       },
       {
         "score": "1-2",
-        "pct": 9.1
+        "pct": 9.7
       },
       {
         "score": "0-1",
-        "pct": 8.0
-      },
-      {
-        "score": "2-1",
-        "pct": 7.8
-      },
-      {
-        "score": "1-0",
-        "pct": 7.1
+        "pct": 8.8
       },
       {
         "score": "0-2",
-        "pct": 6.7
+        "pct": 7.6
+      },
+      {
+        "score": "2-1",
+        "pct": 7.1
+      },
+      {
+        "score": "1-0",
+        "pct": 6.5
       }
     ]
   },
@@ -2441,34 +2572,31 @@
           }
         },
         "h2h_stats": {
-          "appearances": 10,
+          "appearances": 9,
           "stats": {
             "Long Balls Won": 5.0,
-            "Key Passes": 6.0,
+            "Key Passes": 4.0,
             "Dribbled Past": 3.0,
-            "Fouls Drawn": 8.0,
+            "Fouls Drawn": 6.0,
             "Rating": 6.8,
-            "Passes": 239.0,
-            "Duels Lost": 15.0,
-            "Accurate Passes": 191.0,
-            "Interceptions": 5.0,
-            "Minutes Played": 450.0,
+            "Passes": 195.0,
+            "Duels Lost": 8.0,
+            "Accurate Passes": 159.0,
+            "Interceptions": 4.0,
+            "Minutes Played": 360.0,
             "Clearances": 5.0,
-            "Goals Conceded": 9.0,
-            "Accurate Passes Percentage": 79.6,
-            "Duels Won": 19.0,
-            "Tackles": 8.0,
-            "Total Duels": 35.0,
+            "Goals Conceded": 8.0,
+            "Accurate Passes Percentage": 81.2,
+            "Duels Won": 15.0,
+            "Tackles": 6.0,
+            "Total Duels": 24.0,
             "Long Balls": 12.0,
             "Shots Off Target": 1.0,
             "Shots Total": 1.0,
-            "Dribble Attempts": 3.0,
+            "Dribble Attempts": 2.0,
             "Aerials Won": 2.0,
-            "Total Crosses": 14.0,
-            "Successful Dribbles": 1.0,
-            "Fouls": 3.0,
-            "Accurate Crosses": 1.0,
-            "Dispossessed": 1.0
+            "Total Crosses": 10.0,
+            "Successful Dribbles": 1.0
           }
         }
       },
@@ -2611,38 +2739,36 @@
           }
         },
         "h2h_stats": {
-          "appearances": 8,
+          "appearances": 7,
           "stats": {
-            "Minutes Played": 121.0,
+            "Minutes Played": 90.0,
             "Touches": 23.0,
             "Ball Recovery": 1.0,
-            "Accurate Passes": 19.0,
+            "Accurate Passes": 13.0,
             "Backward Passes": 3.0,
             "Offsides": 4.0,
-            "Accurate Passes Percentage": 62.8,
-            "Passes": 34.0,
-            "Rating": 6.8,
+            "Accurate Passes Percentage": 65.3,
+            "Passes": 23.0,
+            "Rating": 6.9,
             "Cumulative Minutes Played": 11.0,
             "Aerials Lost": 3.0,
-            "Duels Lost": 8.0,
-            "Duels Won": 4.0,
+            "Duels Lost": 1.0,
+            "Duels Won": 3.0,
             "Aerials Won": 3.0,
-            "Total Duels": 22.0,
+            "Total Duels": 14.0,
             "Shots Off Target": 1.0,
             "Shots On Target": 1.0,
             "Goals": 1.0,
             "Shots Total": 3.0,
             "Dispossessed": 2.0,
-            "Fouls": 6.0,
+            "Fouls": 3.0,
             "Dribbled Past": 2.0,
             "Possession Lost": 9.0,
             "Aerials": 6.0,
             "Passes In Final Third": 3.0,
             "Aerials Won Percentage": 50.0,
             "Goals Conceded": 3.0,
-            "Key Passes": 1.0,
-            "Fouls Drawn": 1.0,
-            "Dribble Attempts": 1.0
+            "Key Passes": 1.0
           }
         }
       },
@@ -2704,57 +2830,56 @@
           "stats": {}
         },
         "h2h_stats": {
-          "appearances": 10,
+          "appearances": 9,
           "stats": {
-            "Goals Conceded": 10.0,
-            "Accurate Passes Percentage": 78.7,
+            "Goals Conceded": 9.0,
+            "Accurate Passes Percentage": 78.8,
             "Tacles Won Percentage": 83.5,
             "Tackles Won": 3.0,
-            "Total Duels": 107.0,
-            "Accurate Passes": 203.0,
+            "Total Duels": 91.0,
+            "Accurate Passes": 182.0,
             "Successful Dribbles": 6.0,
-            "Tackles": 9.0,
+            "Tackles": 7.0,
             "Ball Recovery": 19.0,
-            "Shots Total": 15.0,
+            "Shots Total": 13.0,
             "Captain": 2.0,
             "Possession Lost": 45.0,
-            "Fouls Drawn": 23.0,
+            "Fouls Drawn": 22.0,
             "Turn Over": 9.0,
             "Shots Off Target": 5.0,
-            "Duels Won": 47.0,
+            "Duels Won": 42.0,
             "Accurate Crosses": 11.0,
             "Total Crosses": 32.0,
-            "Rating": 6.8,
+            "Rating": 6.9,
             "Backward Passes": 27.0,
             "Offsides": 2.0,
             "Touches": 155.0,
             "Key Passes": 11.0,
-            "Fouls": 10.0,
+            "Fouls": 9.0,
             "Successful Crosses Percentage": 32.0,
-            "Dribble Attempts": 16.0,
-            "Duels Lost": 35.0,
+            "Dribble Attempts": 12.0,
+            "Duels Lost": 24.0,
             "Clearances": 6.0,
             "Yellowcards": 1.0,
-            "Minutes Played": 646.0,
-            "Passes": 254.0,
+            "Minutes Played": 567.0,
+            "Passes": 227.0,
             "Aerials Lost": 5.0,
             "Cumulative Minutes Played": 163.0,
             "Long Balls Won": 7.0,
             "Long Balls Won Percentage": 75.0,
             "Long Balls": 12.0,
-            "Dribbled Past": 12.0,
-            "Dispossessed": 9.0,
-            "Shots Blocked": 4.0,
+            "Dribbled Past": 9.0,
+            "Dispossessed": 7.0,
+            "Shots Blocked": 2.0,
             "Passes In Final Third": 13.0,
             "Aerials": 4.0,
-            "Aerials Won": 10.0,
+            "Aerials Won": 8.0,
             "Aerials Won Percentage": 50.0,
             "Duels Won Percentage": 29.0,
             "Shots On Target": 2.0,
-            "Interceptions": 7.0,
+            "Interceptions": 5.0,
             "Big Chances Created": 2.0,
-            "Hit Woodwork": 1.0,
-            "Blocked Shots": 1.0
+            "Hit Woodwork": 1.0
           }
         }
       },
@@ -3195,23 +3320,23 @@
           }
         },
         "h2h_stats": {
-          "appearances": 8,
+          "appearances": 7,
           "stats": {
-            "Passes": 132.0,
+            "Passes": 118.0,
             "Possession Lost": 15.0,
             "Shots Total": 2.0,
             "Touches": 76.0,
-            "Minutes Played": 350.0,
+            "Minutes Played": 319.0,
             "Successful Dribbles": 1.0,
-            "Accurate Passes": 103.0,
+            "Accurate Passes": 91.0,
             "Clearances": 2.0,
             "Long Balls": 19.0,
             "Passes In Final Third": 7.0,
-            "Duels Won": 29.0,
+            "Duels Won": 28.0,
             "Backward Passes": 7.0,
             "Dribble Attempts": 2.0,
-            "Accurate Passes Percentage": 78.0,
-            "Total Duels": 55.0,
+            "Accurate Passes Percentage": 76.7,
+            "Total Duels": 53.0,
             "Ball Recovery": 10.0,
             "Long Balls Won": 8.0,
             "Shots On Target": 1.0,
@@ -3219,10 +3344,10 @@
             "Aerials Won": 4.0,
             "Rating": 6.6,
             "Dribbled Past": 8.0,
-            "Duels Lost": 17.0,
+            "Duels Lost": 16.0,
             "Cumulative Minutes Played": 69.0,
             "Tackles": 17.0,
-            "Fouls Drawn": 6.0,
+            "Fouls Drawn": 5.0,
             "Tackles Won": 3.0,
             "Tacles Won Percentage": 83.5,
             "Goals Conceded": 7.0,
@@ -3230,7 +3355,7 @@
             "Dispossessed": 3.0,
             "Captain": 2.0,
             "Aerials Lost": 1.0,
-            "Interceptions": 3.0,
+            "Interceptions": 2.0,
             "Fouls": 9.0,
             "Key Passes": 2.0,
             "Chances Created": 2.0,
@@ -3468,50 +3593,49 @@
           }
         },
         "h2h_stats": {
-          "appearances": 9,
+          "appearances": 8,
           "stats": {
             "Possession Lost": 19.0,
-            "Dribble Attempts": 11.0,
+            "Dribble Attempts": 7.0,
             "Long Balls Won Percentage": 44.3,
             "Successful Crosses Percentage": 100.0,
             "Accurate Crosses": 5.0,
-            "Duels Won": 30.0,
+            "Duels Won": 18.0,
             "Ball Recovery": 9.0,
             "Long Balls": 21.0,
             "Backward Passes": 14.0,
             "Touches": 112.0,
             "Passes In Final Third": 20.0,
             "Long Balls Won": 10.0,
-            "Passes": 283.0,
-            "Total Duels": 54.0,
-            "Total Crosses": 21.0,
-            "Minutes Played": 365.0,
-            "Accurate Passes": 250.0,
+            "Passes": 231.0,
+            "Total Duels": 38.0,
+            "Total Crosses": 18.0,
+            "Minutes Played": 289.0,
+            "Accurate Passes": 203.0,
             "Aerials Lost": 2.0,
-            "Fouls Drawn": 8.0,
-            "Accurate Passes Percentage": 88.7,
+            "Fouls Drawn": 4.0,
+            "Accurate Passes Percentage": 88.5,
             "Fouls": 5.0,
             "Rating": 6.8,
-            "Duels Lost": 20.0,
+            "Duels Lost": 16.0,
             "Cumulative Minutes Played": 125.0,
-            "Interceptions": 5.0,
+            "Interceptions": 4.0,
             "Tackles Won": 3.0,
-            "Tackles": 11.0,
+            "Tackles": 9.0,
             "Tacles Won Percentage": 75.0,
             "Clearances": 2.0,
             "Yellowcards": 3.0,
             "Shots Total": 6.0,
             "Shots Blocked": 3.0,
-            "Dribbled Past": 5.0,
-            "Dispossessed": 5.0,
-            "Aerials Won": 5.0,
-            "Successful Dribbles": 5.0,
-            "Key Passes": 7.0,
+            "Dribbled Past": 3.0,
+            "Dispossessed": 4.0,
+            "Aerials Won": 2.0,
+            "Successful Dribbles": 2.0,
+            "Key Passes": 6.0,
             "Chances Created": 1.0,
-            "Goals Conceded": 6.0,
+            "Goals Conceded": 5.0,
             "Shots Off Target": 2.0,
-            "Through Balls": 1.0,
-            "Offsides": 1.0
+            "Through Balls": 1.0
           }
         }
       },
@@ -4686,48 +4810,48 @@
           }
         },
         "h2h_stats": {
-          "appearances": 10,
+          "appearances": 9,
           "stats": {
             "Touches": 163.0,
-            "Accurate Passes Percentage": 70.8,
+            "Accurate Passes Percentage": 73.7,
             "Dispossessed": 6.0,
             "Long Balls Won": 5.0,
-            "Dribble Attempts": 16.0,
-            "Accurate Passes": 202.0,
+            "Dribble Attempts": 15.0,
+            "Accurate Passes": 197.0,
             "Turn Over": 5.0,
             "Tackles": 14.0,
-            "Shots Total": 18.0,
+            "Shots Total": 15.0,
             "Long Balls Won Percentage": 46.5,
             "Backward Passes": 29.0,
             "Big Chances Missed": 3.0,
-            "Shots On Target": 8.0,
+            "Shots On Target": 6.0,
             "Long Balls": 22.0,
-            "Minutes Played": 860.0,
-            "Total Crosses": 39.0,
-            "Duels Won": 32.0,
+            "Minutes Played": 781.0,
+            "Total Crosses": 37.0,
+            "Duels Won": 31.0,
             "Shots Off Target": 6.0,
             "Aerials Lost": 6.0,
-            "Dribbled Past": 10.0,
-            "Passes": 275.0,
-            "Goals Conceded": 15.0,
+            "Dribbled Past": 9.0,
+            "Passes": 264.0,
+            "Goals Conceded": 14.0,
             "Ball Recovery": 15.0,
-            "Duels Lost": 20.0,
+            "Duels Lost": 15.0,
             "Possession Lost": 55.0,
             "Key Passes": 11.0,
-            "Total Duels": 71.0,
-            "Interceptions": 6.0,
+            "Total Duels": 65.0,
+            "Interceptions": 5.0,
             "Successful Dribbles": 8.0,
             "Passes In Final Third": 13.0,
-            "Rating": 6.9,
+            "Rating": 6.8,
             "Cumulative Minutes Played": 255.0,
             "Offsides": 10.0,
-            "Fouls Drawn": 8.0,
+            "Fouls Drawn": 7.0,
             "Tacles Won Percentage": 89.0,
             "Tackles Won": 5.0,
-            "Blocked Shots": 3.0,
+            "Blocked Shots": 2.0,
             "Yellowcards": 2.0,
             "Clearances": 4.0,
-            "Fouls": 5.0,
+            "Fouls": 4.0,
             "Captain": 1.0,
             "Aerials": 3.0,
             "Aerials Won Percentage": 33.0,
@@ -4737,10 +4861,9 @@
             "Accurate Crosses": 4.0,
             "Successful Crosses Percentage": 100.0,
             "Chances Created": 2.0,
-            "Shots Blocked": 3.0,
+            "Shots Blocked": 2.0,
             "Big Chances Created": 2.0,
-            "Hit Woodwork": 1.0,
-            "Goals": 1.0
+            "Hit Woodwork": 1.0
           }
         }
       },
@@ -4837,11 +4960,11 @@
           }
         },
         "h2h_stats": {
-          "appearances": 10,
+          "appearances": 9,
           "stats": {
-            "Accurate Passes": 305.0,
-            "Tackles": 17.0,
-            "Total Duels": 87.0,
+            "Accurate Passes": 284.0,
+            "Tackles": 16.0,
+            "Total Duels": 81.0,
             "Shots Off Target": 3.0,
             "Possession Lost": 33.0,
             "Long Balls Won Percentage": 79.2,
@@ -4855,37 +4978,36 @@
             "Key Passes": 8.0,
             "Aerials": 8.0,
             "Blocked Shots": 3.0,
-            "Minutes Played": 691.0,
+            "Minutes Played": 632.0,
             "Offsides": 1.0,
-            "Goals Conceded": 11.0,
+            "Goals Conceded": 10.0,
             "Rating": 7.0,
-            "Passes": 366.0,
+            "Passes": 341.0,
             "Long Balls Won": 13.0,
-            "Fouls": 10.0,
+            "Fouls": 8.0,
             "Aerials Won": 18.0,
             "Duels Won Percentage": 62.5,
-            "Shots Total": 7.0,
-            "Interceptions": 18.0,
-            "Duels Lost": 24.0,
-            "Duels Won": 46.0,
+            "Shots Total": 6.0,
+            "Interceptions": 17.0,
+            "Duels Lost": 20.0,
+            "Duels Won": 44.0,
             "Aerials Won Percentage": 58.5,
             "Aerials Lost": 3.0,
-            "Accurate Passes Percentage": 82.5,
+            "Accurate Passes Percentage": 82.3,
             "Tackles Won": 3.0,
             "Cumulative Minutes Played": 276.0,
             "Fouls Drawn": 5.0,
-            "Dribbled Past": 7.0,
+            "Dribbled Past": 6.0,
             "Dispossessed": 9.0,
             "Turn Over": 2.0,
             "Chances Created": 4.0,
             "Goals": 1.0,
             "Shots On Target": 1.0,
             "Total Crosses": 1.0,
-            "Dribble Attempts": 8.0,
-            "Successful Dribbles": 6.0,
+            "Dribble Attempts": 6.0,
+            "Successful Dribbles": 5.0,
             "Yellowcards": 2.0,
-            "Big Chances Created": 2.0,
-            "Own Goals": 1.0
+            "Big Chances Created": 2.0
           }
         }
       }
@@ -4987,33 +5109,33 @@
           }
         },
         "h2h_stats": {
-          "appearances": 9,
+          "appearances": 8,
           "stats": {
-            "Total Duels": 104.0,
-            "Passes": 163.0,
+            "Total Duels": 91.0,
+            "Passes": 147.0,
             "Touches": 111.0,
             "Possession Lost": 44.0,
-            "Dispossessed": 14.0,
+            "Dispossessed": 13.0,
             "Successful Dribbles": 21.0,
-            "Dribble Attempts": 38.0,
+            "Dribble Attempts": 36.0,
             "Long Balls Won Percentage": 41.5,
             "Long Balls": 12.0,
             "Turn Over": 6.0,
             "Shots On Target": 8.0,
-            "Accurate Passes Percentage": 70.3,
+            "Accurate Passes Percentage": 70.5,
             "Long Balls Won": 6.0,
-            "Accurate Passes": 121.0,
+            "Accurate Passes": 110.0,
             "Successful Crosses Percentage": 54.7,
             "Accurate Crosses": 9.0,
-            "Duels Lost": 37.0,
+            "Duels Lost": 27.0,
             "Passes In Final Third": 4.0,
             "Backward Passes": 9.0,
-            "Duels Won": 51.0,
-            "Shots Total": 20.0,
+            "Duels Won": 48.0,
+            "Shots Total": 18.0,
             "Fouls Drawn": 8.0,
             "Ball Recovery": 12.0,
-            "Total Crosses": 30.0,
-            "Tackles": 16.0,
+            "Total Crosses": 27.0,
+            "Tackles": 14.0,
             "Big Chances Created": 2.0,
             "Through Balls": 1.0,
             "Through Balls Won": 1.0,
@@ -5022,22 +5144,22 @@
             "Tackles Won": 3.0,
             "Tacles Won Percentage": 75.0,
             "Chances Created": 4.0,
-            "Rating": 7.4,
-            "Minutes Played": 634.0,
+            "Rating": 7.6,
+            "Minutes Played": 559.0,
             "Cumulative Minutes Played": 114.0,
             "Goals": 4.0,
-            "Dribbled Past": 12.0,
+            "Dribbled Past": 9.0,
             "Offsides": 4.0,
             "Aerials Lost": 1.0,
-            "Aerials Won": 6.0,
+            "Aerials Won": 5.0,
             "Assists": 1.0,
-            "Shots Blocked": 5.0,
-            "Fouls": 9.0,
+            "Shots Blocked": 4.0,
+            "Fouls": 5.0,
             "Interceptions": 3.0,
             "Hit Woodwork": 1.0,
             "Big Chances Missed": 1.0,
-            "Goals Conceded": 2.0,
-            "Clearances": 2.0,
+            "Goals Conceded": 1.0,
+            "Clearances": 1.0,
             "Yellowcards": 1.0
           }
         }
@@ -5492,7 +5614,7 @@
           }
         },
         "h2h_stats": {
-          "appearances": 5,
+          "appearances": 4,
           "stats": {
             "Dispossessed": 1.0,
             "Offsides": 1.0,
@@ -5511,8 +5633,7 @@
             "Minutes Played": 62.0,
             "Total Duels": 8.0,
             "Accurate Passes Percentage": 50.0,
-            "Shots Blocked": 1.0,
-            "Goals Conceded": 2.0
+            "Shots Blocked": 1.0
           }
         }
       },
@@ -5581,25 +5702,25 @@
           }
         },
         "h2h_stats": {
-          "appearances": 9,
+          "appearances": 8,
           "stats": {
             "Ball Recovery": 36.0,
             "Long Balls": 113.0,
             "Long Balls Won Percentage": 35.0,
-            "Accurate Passes": 131.0,
+            "Accurate Passes": 117.0,
             "Touches": 127.0,
-            "Goalkeeper Goals Conceded": 6.0,
+            "Goalkeeper Goals Conceded": 4.0,
             "Long Balls Won": 36.0,
-            "Goals Conceded": 6.0,
+            "Goals Conceded": 4.0,
             "Good High Claim": 2.0,
             "Possession Lost": 46.0,
-            "Rating": 7.0,
-            "Accurate Passes Percentage": 58.6,
+            "Rating": 7.1,
+            "Accurate Passes Percentage": 55.3,
             "Passes In Final Third": 42.0,
-            "Saves Insidebox": 12.0,
-            "Saves": 19.0,
-            "Minutes Played": 692.0,
-            "Passes": 234.0,
+            "Saves Insidebox": 11.0,
+            "Saves": 18.0,
+            "Minutes Played": 602.0,
+            "Passes": 217.0,
             "Cumulative Minutes Played": 289.0,
             "Total Duels": 1.0,
             "Aerials Won": 1.0,
@@ -5709,33 +5830,33 @@
           }
         },
         "h2h_stats": {
-          "appearances": 10,
+          "appearances": 9,
           "stats": {
             "Long Balls": 5.0,
-            "Accurate Passes Percentage": 68.5,
+            "Accurate Passes Percentage": 71.2,
             "Duels Lost": 33.0,
             "Turn Over": 3.0,
             "Accurate Crosses": 10.0,
-            "Accurate Passes": 145.0,
-            "Minutes Played": 667.0,
+            "Accurate Passes": 138.0,
+            "Minutes Played": 646.0,
             "Shots On Target": 3.0,
             "Aerials Lost": 5.0,
             "Dispossessed": 13.0,
             "Passes In Final Third": 10.0,
-            "Total Duels": 98.0,
+            "Total Duels": 93.0,
             "Clearances": 10.0,
             "Rating": 7.0,
             "Possession Lost": 55.0,
             "Key Passes": 11.0,
-            "Shots Total": 11.0,
-            "Passes": 200.0,
+            "Shots Total": 10.0,
+            "Passes": 184.0,
             "Touches": 168.0,
             "Aerials": 5.0,
             "Successful Crosses Percentage": 32.7,
             "Assists": 3.0,
-            "Aerials Won": 13.0,
+            "Aerials Won": 9.0,
             "Ball Recovery": 9.0,
-            "Duels Won": 42.0,
+            "Duels Won": 37.0,
             "Total Crosses": 39.0,
             "Aerials Won Percentage": 58.5,
             "Backward Passes": 31.0,
@@ -5744,12 +5865,12 @@
             "Tackles Won": 2.0,
             "Tacles Won Percentage": 75.0,
             "Shots Blocked": 5.0,
-            "Tackles": 14.0,
+            "Tackles": 13.0,
             "Successful Dribbles": 8.0,
             "Dribble Attempts": 16.0,
             "Dribbled Past": 7.0,
             "Fouls Drawn": 7.0,
-            "Goals Conceded": 4.0,
+            "Goals Conceded": 3.0,
             "Interceptions": 7.0,
             "Duels Won Percentage": 55.0,
             "Chances Created": 2.0,
@@ -6073,11 +6194,11 @@
           }
         },
         "h2h_stats": {
-          "appearances": 9,
+          "appearances": 8,
           "stats": {
-            "Dribbled Past": 3.0,
+            "Dribbled Past": 2.0,
             "Dispossessed": 8.0,
-            "Passes": 128.0,
+            "Passes": 124.0,
             "Successful Dribbles": 7.0,
             "Backward Passes": 12.0,
             "Aerials": 6.0,
@@ -6097,34 +6218,33 @@
             "Rating": 7.1,
             "Offsides Provoked": 1.0,
             "Passes In Final Third": 6.0,
-            "Total Duels": 55.0,
-            "Minutes Played": 570.0,
+            "Total Duels": 53.0,
+            "Minutes Played": 543.0,
             "Dribble Attempts": 13.0,
             "Duels Won Percentage": 31.0,
-            "Aerials Won": 9.0,
+            "Aerials Won": 8.0,
             "Ball Recovery": 11.0,
-            "Duels Won": 25.0,
-            "Total Crosses": 15.0,
-            "Accurate Passes Percentage": 66.1,
-            "Accurate Passes": 84.0,
+            "Duels Won": 24.0,
+            "Total Crosses": 14.0,
+            "Accurate Passes Percentage": 68.1,
+            "Accurate Passes": 82.0,
             "Long Balls": 4.0,
-            "Goals Conceded": 4.0,
+            "Goals Conceded": 3.0,
             "Tackles Won": 2.0,
             "Touches": 88.0,
             "Aerials Lost": 3.0,
-            "Duels Lost": 10.0,
+            "Duels Lost": 9.0,
             "Cumulative Minutes Played": 215.0,
             "Big Chances Missed": 2.0,
             "Shots Off Target": 3.0,
             "Chances Created": 1.0,
-            "Key Passes": 6.0,
+            "Key Passes": 5.0,
             "Yellowcards": 2.0,
             "Interceptions": 3.0,
             "Offsides": 3.0,
             "Through Balls": 1.0,
             "Long Balls Won": 1.0,
-            "Big Chances Created": 2.0,
-            "Accurate Crosses": 1.0
+            "Big Chances Created": 1.0
           }
         }
       },
@@ -6690,7 +6810,7 @@
           "stats": {}
         },
         "h2h_stats": {
-          "appearances": 9,
+          "appearances": 8,
           "stats": {
             "Aerials Lost": 3.0,
             "Fouls Drawn": 3.0,
@@ -6701,7 +6821,7 @@
             "Backward Passes": 14.0,
             "Long Balls": 56.0,
             "Accurate Passes": 180.0,
-            "Goals Conceded": 4.0,
+            "Goals Conceded": 2.0,
             "Tackles Won": 3.0,
             "Tackles": 9.0,
             "Shots Total": 2.0,
@@ -7635,13 +7755,12 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T23:20:51.509595Z",
   "ai_analysis": {
-    "text": "Největší důvěra:\nAthletic Club vyhraje: Model dává Athletic Club 37.6 % šanci na výhru, zatímco Rayo Vallecano pouze 32.4 %. Athletic má lepší formu a xG (1.22) oproti domácím (1.11), což naznačuje jejich ofenzivní sílu.\n\nDalší analytické tipy:\n• Oba týmy dají gól: S 52 % pravděpodobností na BTTS a historickými zápasy, kde se často střídaly góly, je tento tip silný.\n• Více než 2,5 gólu: S 45.8 % na over 2.5 a vysokým počtem střel na branku (26.3), zápas by mohl být ofenzivně laděný.\n• Rayo Vallecano nedá více než 1 gól: S xG 1.11 a slabší ofenzivou v posledních zápasech je pravděpodobné, že se jim nepodaří překonat tuto hranici.",
+    "text": "Největší důvěra:\nAthletic Club vyhraje: Athletic Club má vyšší modelovou pravděpodobnost (37.6%) a lepší formu v posledních zápasech. Rayo Vallecano trpí slabou obranou, což se odráží v jejich xG (1.11) oproti hostům (1.22).\n\nDalší analytické tipy:\n• Oba týmy dají gól: S pravděpodobností 52% a historickými vzájemnými zápasy, kde oba týmy často skórují, je tento tip velmi pravděpodobný.\n• Více než 1,5 gólu: Model ukazuje 72.4% pravděpodobnost, že padnou alespoň 2 góly, což odpovídá ofenzivním statistikám obou týmů.\n• Rayo Vallecano dostane více než 2,5 rohu: S průměrem 11.3 rohů na zápas a slabou obranou Athletic Clubu se očekává, že domácí tým bude častěji útočit a získá více rohů.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "a5b8a2a71ba338b3",
-    "generated_at": "2026-10-09T20:27:30Z",
-    "text_en": "Highest confidence:\nAthletic Club to Win: With a model probability of 37.6% for Athletic Club and a slight xG advantage (1.22 vs 1.11), they are positioned to capitalize on Rayo Vallecano's defensive vulnerabilities, especially given their recent form and head-to-head success.\n\nFurther analytical tips:\n• Both Teams to Score: The model indicates a 52% likelihood for both teams to score, reflecting the attacking potential of both sides despite their recent struggles, suggesting an open match.\n• Over 1.5 Goals: With a 72.4% probability for over 1.5 goals, the attacking stats and defensive records of both teams indicate a high chance of multiple goals in the match.\n• Rayo Vallecano Under 1.5 Goals: Rayo's xG of 1.11 suggests they may struggle to find the net against Athletic's solid defense, making it likely they won't score more than once."
+    "input_hash": "876dc5c541eb8ffc",
+    "generated_at": "2026-10-10T03:57:37Z",
+    "text_en": "Highest confidence:\nAthletic Club to Win: With a model probability of 37.6% for Athletic Club and a slight xG advantage (1.22 vs 1.11), they are positioned to capitalize on Rayo's defensive vulnerabilities. Recent head-to-head results favor Athletic, reinforcing their edge.\n\nFurther analytical tips:\n• Both Teams to Score: The model suggests a 52% likelihood for both teams to score, supported by Rayo's inconsistent defense and Athletic's recent form. Expect an open game with chances at both ends.\n• Over 1.5 Goals: With a 72.4% probability for over 1.5 goals, the attacking capabilities of both teams and their recent scoring patterns indicate a high-scoring affair is likely.\n• Athletic Club to Score First: Given Athletic's stronger recent form and xG metrics, they are likely to take the lead early, capitalizing on Rayo's defensive lapses."
   }
 }

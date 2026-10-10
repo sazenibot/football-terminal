@@ -221,34 +221,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37653289,
-      "player_name": "Marco Palestra",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-20",
-      "end_date": "2026-10-09",
-      "games_missed": 7,
-      "likely_available": true
-    },
-    {
-      "side": "home",
-      "player_id": 37261500,
-      "player_name": "Moisés Isaac Caicedo Corozo",
-      "type_id": 532,
-      "type_name": "Calf Injury",
-      "type_name_cs": "Zranění lýtka",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-31",
-      "end_date": "2026-10-09",
-      "games_missed": 4,
-      "likely_available": true
-    },
-    {
-      "side": "home",
       "player_id": 28931574,
       "player_name": "João Pedro Junqueira de Jesus",
       "type_id": 687,
@@ -260,20 +232,6 @@
       "end_date": "2026-10-16",
       "games_missed": 1,
       "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 581220,
-      "player_name": "Reece James",
-      "type_id": 533,
-      "type_name": "Thigh Problems",
-      "type_name_cs": "Problémy se stehnem",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-14",
-      "end_date": "2026-10-09",
-      "games_missed": 1,
-      "likely_available": true
     },
     {
       "side": "away",
@@ -1574,7 +1532,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.49
+          "odds": 1.51
         },
         {
           "key": "shots_over",
@@ -1657,7 +1615,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.5
+          "odds": 1.54
         },
         {
           "key": "yellow_5plus",
@@ -1673,7 +1631,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.49
+          "odds": 1.51
         },
         {
           "key": "yellow_under5",
@@ -1697,7 +1655,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.17
+          "odds": 2.22
         },
         {
           "key": "ht_draw",
@@ -1705,7 +1663,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.53
+          "odds": 2.56
         },
         {
           "key": "scoreless",
@@ -1713,7 +1671,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 6.39
+          "odds": 6.56
         },
         {
           "key": "corners_under95",
@@ -1721,7 +1679,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.39
+          "odds": 2.38
         },
         {
           "key": "ht_behind",
@@ -1729,7 +1687,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.47
+          "odds": 4.55
         },
         {
           "key": "clean_sheet",
@@ -1737,7 +1695,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.09
+          "odds": 3.17
         },
         {
           "key": "under25",
@@ -1745,7 +1703,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.64
+          "odds": 2.67
         },
         {
           "key": "red_card",
@@ -1843,7 +1801,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.49
+          "odds": 1.51
         },
         {
           "key": "corners_under95",
@@ -1851,7 +1809,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.39
+          "odds": 2.38
         },
         {
           "key": "yellow_5plus",
@@ -1867,7 +1825,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 4.47
+          "odds": 4.55
         },
         {
           "key": "under25",
@@ -1875,7 +1833,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.64
+          "odds": 2.67
         },
         {
           "key": "scored2plus",
@@ -1883,7 +1841,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.6
+          "odds": 2.67
         },
         {
           "key": "corners_over95",
@@ -1899,7 +1857,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.11
+          "odds": 3.03
         },
         {
           "key": "yellow_under5",
@@ -1915,7 +1873,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.53
+          "odds": 2.56
         },
         {
           "key": "scoreless",
@@ -1923,7 +1881,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.09
+          "odds": 3.17
         },
         {
           "key": "clean_sheet",
@@ -1931,7 +1889,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 6.39
+          "odds": 6.56
         },
         {
           "key": "red_card",
@@ -1947,7 +1905,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.17
+          "odds": 2.22
         }
       ]
     },
@@ -2033,7 +1991,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.49
+          "odds": 1.51
         },
         {
           "key": "scored2plus",
@@ -2099,7 +2057,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.64
+          "odds": 2.67
         },
         {
           "key": "corners_under95",
@@ -2107,7 +2065,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.39
+          "odds": 2.38
         },
         {
           "key": "yellow_5plus",
@@ -2228,7 +2186,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.49
+          "odds": 1.51
         },
         {
           "key": "scored2plus",
@@ -2280,7 +2238,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.64
+          "odds": 2.67
         },
         {
           "key": "corners_under95",
@@ -2288,7 +2246,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.39
+          "odds": 2.38
         },
         {
           "key": "yellow_under5",
@@ -7057,46 +7015,46 @@
     ]
   },
   "odds": {
-    "home": 1.71,
-    "draw": 4.26,
-    "away": 4.5,
-    "under15": 5.55,
+    "home": 1.73,
+    "draw": 4.32,
+    "away": 4.55,
+    "under15": 5.67,
     "over15": 1.15,
-    "under25": 2.64,
-    "over25": 1.49,
+    "under25": 2.67,
+    "over25": 1.51,
     "under35": 1.66,
-    "over35": 2.26,
+    "over35": 2.3,
     "btts": 1.48,
-    "corners_under95": 2.39,
+    "corners_under95": 2.38,
     "corners_over95": 1.51,
     "yellow_under5": 1.39,
     "yellow_5plus": 2.78,
     "red_card": 5.02,
     "source": "chance",
-    "home_scoreless": 6.39,
-    "home_scored2plus": 1.5,
-    "home_clean_sheet": 3.09,
-    "home_ht_leading": 2.17,
-    "home_ht_draw": 2.53,
-    "home_ht_behind": 4.47,
-    "home_more_corners": 1.49,
+    "home_scoreless": 6.56,
+    "home_scored2plus": 1.54,
+    "home_clean_sheet": 3.17,
+    "home_ht_leading": 2.22,
+    "home_ht_draw": 2.56,
+    "home_ht_behind": 4.55,
+    "home_more_corners": 1.51,
     "home_team_2plus_yellow": 1.88,
-    "away_clean_sheet": 6.39,
-    "away_scoreless": 3.09,
-    "away_scored2plus": 2.6,
-    "away_ht_behind": 2.17,
-    "away_ht_draw": 2.53,
-    "away_ht_leading": 4.47,
-    "away_more_corners": 3.11,
+    "away_clean_sheet": 6.56,
+    "away_scoreless": 3.17,
+    "away_scored2plus": 2.67,
+    "away_ht_behind": 2.22,
+    "away_ht_draw": 2.56,
+    "away_ht_leading": 4.55,
+    "away_more_corners": 3.03,
     "away_team_2plus_yellow": 1.45
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nChelsea vyhraje: Chelsea má 42.4% šanci na výhru podle modelu, což je v souladu s trhem (56.1%). Jejich xG (1.83) naznačuje silnější ofenzivu než Bournemouth (1.62), což podporuje očekávání domácího vítězství.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 66% pravděpodobnost, že oba týmy skórují, což odpovídá jejich posledním vzájemným zápasům, kde často padaly góly.\n• Více než 2.5 gólu: S 65.9% pravděpodobností na více než 2.5 gólu a vysokým xG obou týmů se očekává ofenzivní zápas.\n• Chelsea vstřelí 2+ góly: Chelsea má průměr 2 góly na zápas v posledních utkáních a jejich xG naznačuje, že by mohli opět překonat tuto hranici.",
+    "text": "Největší důvěra:\nChelsea vyhraje: Chelsea má 42.4% šanci na výhru podle modelu, což je podpořeno jejich lepší formou a očekávaným xG 1.83 oproti 1.62 Bournemouthu. Historie vzájemných zápasů také naznačuje mírnou převahu Chelsea.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 66% pravděpodobnost, že oba týmy skórují, což je podpořeno jejich ofenzivními statistikami a historickými zápasy, kde se často objevily remízy s góly.\n• Více než 2.5 gólu: S 65.9% pravděpodobností na více než 2.5 gólu a očekávanými xG, které naznačují aktivní ofenzivu, je tento tip silný. Chelsea i Bournemouth mají tendenci hrát ofenzivně.\n• Chelsea dá 2 góly: Model ukazuje, že nejčastější skóre pro Chelsea je 2-1 nebo 2-2, což naznačuje, že by mohli vstřelit minimálně 2 góly, zejména při domácím zápase.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "a5cad2b435c4b843",
-    "generated_at": "2026-10-09T20:22:10Z",
-    "text_en": "Highest confidence:\nChelsea to Win: Chelsea's model probability of 42.4% for a win aligns with their recent home form and higher xG of 1.83 compared to Bournemouth's 1.62. This suggests they will dominate territory and create more scoring chances.\n\nFurther analytical tips:\n• Both Teams to Score: With a BTTS probability of 66.0%, both teams are likely to find the net given their recent scoring patterns and defensive vulnerabilities.\n• Over 2.5 Goals: The model indicates a 65.9% chance for over 2.5 goals, supported by Chelsea's attacking strength and Bournemouth's tendency to concede.\n• Chelsea to Have More Corners: Chelsea's expected corners of 11.5 suggest they will apply pressure, likely leading to more set pieces as they dominate possession."
+    "input_hash": "5cc7e6328085eb1f",
+    "generated_at": "2026-10-10T03:55:56Z",
+    "text_en": "Highest confidence:\nChelsea to win: Chelsea shows a stronger model probability (42.4%) compared to Bournemouth (33.6%), and with a higher xG (1.83 vs 1.62), they are likely to convert more chances at home. Their recent form also suggests a bounce-back after a few draws.\n\nFurther analytical tips:\n• Both teams to score: With a BTTS probability of 66.0%, both teams are expected to find the net, supported by their recent scoring trends and defensive vulnerabilities.\n• Over 2.5 goals: The model indicates a high likelihood (65.9%) for over 2.5 goals, reflecting both teams' attacking capabilities and the tendency for high-scoring matches in their recent encounters.\n• Chelsea to have more corners: With an average of 11.5 corners projected, Chelsea's attacking style and home advantage suggest they will dominate possession and create more corner opportunities."
   },
-  "refreshed_at": "2026-10-08T23:17:18.156173Z"
+  "refreshed_at": "2026-10-10T03:24:26.630787Z"
 }

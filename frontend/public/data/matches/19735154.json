@@ -278,39 +278,9 @@
     ],
     "away": [
       {
-        "player_name": "Hugo Bolin",
-        "jersey_number": 38,
-        "formation_field": "4:1"
-      },
-      {
-        "player_name": "Franck Honorat",
-        "jersey_number": 9,
-        "formation_field": "4:3"
-      },
-      {
-        "player_name": "Jan Leszczyński",
-        "jersey_number": 5,
-        "formation_field": "2:2"
-      },
-      {
-        "player_name": "Kevin Diks",
-        "jersey_number": 4,
-        "formation_field": "2:4"
-      },
-      {
         "player_name": "Moritz Nicolas",
         "jersey_number": 1,
         "formation_field": "1:1"
-      },
-      {
-        "player_name": "Philipp Sander",
-        "jersey_number": 16,
-        "formation_field": "3:1"
-      },
-      {
-        "player_name": "Zento Uno",
-        "jersey_number": 47,
-        "formation_field": "3:2"
       },
       {
         "player_name": "Isac Lidberg",
@@ -318,19 +288,49 @@
         "formation_field": "5:1"
       },
       {
-        "player_name": "Florian Neuhaus",
-        "jersey_number": 10,
-        "formation_field": "4:2"
+        "player_name": "Joe Scally",
+        "jersey_number": 29,
+        "formation_field": "3:4"
       },
       {
-        "player_name": "Lukas Ullrich",
-        "jersey_number": 26,
+        "player_name": "Hugo Bolin",
+        "jersey_number": 38,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Jan Leszczyński",
+        "jersey_number": 5,
         "formation_field": "2:1"
       },
       {
         "player_name": "Ko Itakura",
         "jersey_number": 6,
         "formation_field": "2:3"
+      },
+      {
+        "player_name": "Florian Neuhaus",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Philipp Sander",
+        "jersey_number": 16,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Zento Uno",
+        "jersey_number": 47,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Kevin Diks",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Lukas Ullrich",
+        "jersey_number": 26,
+        "formation_field": "3:1"
       }
     ]
   },
@@ -1416,7 +1416,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 3.52
+          "odds": 3.54
         },
         {
           "key": "more_corners",
@@ -1463,7 +1463,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.52
+          "odds": 2.53
         },
         {
           "key": "clean_sheet",
@@ -1471,7 +1471,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.73
+          "odds": 3.72
         },
         {
           "key": "scoreless",
@@ -1494,7 +1494,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.48
+          "odds": 2.46
         }
       ],
       "away": [
@@ -1591,7 +1591,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.52
+          "odds": 2.53
         },
         {
           "key": "btts",
@@ -1607,7 +1607,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 3.73
+          "odds": 3.72
         },
         {
           "key": "scored2plus",
@@ -1615,7 +1615,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.18
+          "odds": 2.19
         },
         {
           "key": "more_corners",
@@ -1623,7 +1623,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.57
+          "odds": 2.59
         },
         {
           "key": "yellow_under5",
@@ -1660,7 +1660,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.52
+          "odds": 3.54
         },
         {
           "key": "clean_sheet",
@@ -1684,7 +1684,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.48
+          "odds": 2.46
         }
       ]
     },
@@ -6615,40 +6615,40 @@
   },
   "odds": {
     "home": 2.07,
-    "draw": 4.01,
-    "away": 3.2,
-    "under15": 5.47,
+    "draw": 3.98,
+    "away": 3.22,
+    "under15": 5.46,
     "over15": 1.15,
     "under25": 2.6,
     "over25": 1.5,
     "under35": 1.64,
-    "over35": 2.29,
+    "over35": 2.28,
     "btts": 1.44,
     "corners_under95": 2.12,
     "corners_over95": 1.64,
     "source": "chance",
     "home_scoreless": 5.39,
     "home_scored2plus": 1.68,
-    "home_clean_sheet": 3.73,
-    "home_ht_leading": 2.52,
-    "home_ht_draw": 2.48,
-    "home_ht_behind": 3.52,
+    "home_clean_sheet": 3.72,
+    "home_ht_leading": 2.53,
+    "home_ht_draw": 2.46,
+    "home_ht_behind": 3.54,
     "home_more_corners": 1.68,
     "away_clean_sheet": 5.39,
-    "away_scoreless": 3.73,
-    "away_scored2plus": 2.18,
-    "away_ht_behind": 2.52,
-    "away_ht_draw": 2.48,
-    "away_ht_leading": 3.52,
-    "away_more_corners": 2.57
+    "away_scoreless": 3.72,
+    "away_scored2plus": 2.19,
+    "away_ht_behind": 2.53,
+    "away_ht_draw": 2.46,
+    "away_ht_leading": 3.54,
+    "away_more_corners": 2.59
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nFC Köln vyhraje: Model dává FC Köln 54.6% šanci na výhru, zatímco Borussia Mönchengladbach je v krizi s 0 body z posledních 4 zápasů. Očekávané xG 2.39 vs 1.58 naznačuje, že domácí budou dominantní.\n\nDalší analytické tipy:\n• Oba týmy dají gól: S 69.5% pravděpodobností na BTTS a historickými zápasy, kde se často skóruje, je to velmi pravděpodobné.\n• Více než 2.5 gólu: Model predikuje 73% šanci na více než 2.5 gólu, což odpovídá ofenzivnímu stylu obou týmů a jejich slabé obraně.\n• FC Köln dá 2+ góly: S xG 2.39 a slabou obranou hostů, kteří inkasovali 16 gólů v posledních 4 zápasech, je pravděpodobné, že Köln překročí 2 góly.",
+    "text": "Největší důvěra:\nFC Köln vyhraje: FC Köln má 54.6% šanci na výhru podle modelu, zatímco Borussia Mönchengladbach se nachází v krizi s 0 body z posledních 4 zápasů. Očekávané xG 2.39 vs 1.58 naznačuje jasnou převahu domácích.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 69.4% pravděpodobnost, že oba týmy skórují, což je podpořeno historickými výsledky s mnoha góly.\n• Více než 2.5 gólu: S 72.9% pravděpodobností na více než 2.5 gólu a vysokým xG domácích je pravděpodobné, že zápas bude gólově bohatý.\n• FC Köln dá 2+ góly: Domácí tým má průměrné xG 2.39, což naznačuje, že mohou skórovat minimálně dvakrát proti slabé obraně hostů.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "2586239c2e12f775",
-    "generated_at": "2026-10-09T20:24:12Z",
-    "text_en": "Highest confidence:\nFC Köln to win: With a model probability of 54.6% for a home win and superior xG (2.39 vs 1.58), Köln is in better form and has a strong attacking edge. Mönchengladbach's defensive struggles (16 goals conceded in 4 matches) further bolster Köln's chances.\n\nFurther analytical tips:\n• Both teams to score: Given the high BTTS probability of 69.5% and both teams' recent scoring patterns, expect goals from both sides despite their differing forms.\n• Over 2.5 goals: With an over 2.5 goals probability of 73.0% and Köln's attacking prowess, this match is likely to see multiple goals, especially against a leaky Mönchengladbach defense.\n• Köln to score first: Köln's strong xG indicates they will likely dominate early, and with Mönchengladbach's recent struggles, they may concede first, setting the tone for the match."
+    "input_hash": "2baa10b3f839f472",
+    "generated_at": "2026-10-10T03:58:47Z",
+    "text_en": "Highest confidence:\nFC Köln to win: With a 54.6% model probability, FC Köln is favored to win against a struggling Borussia Mönchengladbach, who have lost their last four matches and conceded 16 goals. Köln's strong xG of 2.39 suggests they can capitalize on their home advantage effectively.\n\nFurther analytical tips:\n• Both teams to score: The model indicates a 69.4% chance for both teams to score, supported by their recent high-scoring encounters and Köln's defensive vulnerabilities.\n• Over 2.5 goals: With a 72.9% probability for over 2.5 goals, both teams' attacking capabilities and defensive frailties suggest a high-scoring match is likely.\n• Köln to score first: Given their home advantage and higher xG, Köln is likely to take the initiative early, increasing the chances of them scoring first."
   },
-  "refreshed_at": "2026-10-08T23:19:19.616925Z"
+  "refreshed_at": "2026-10-10T03:30:49.555950Z"
 }

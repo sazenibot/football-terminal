@@ -121,6 +121,20 @@
   "sidelined": [
     {
       "side": "home",
+      "player_id": 14350739,
+      "player_name": "Silla Wamangituka",
+      "type_id": 815,
+      "type_name": "Tibia And Fibula Fracture",
+      "type_name_cs": "Tibia And Fibula Fracture",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-03-13",
+      "end_date": null,
+      "games_missed": 25,
+      "likely_available": false
+    },
+    {
+      "side": "home",
       "player_id": 129609,
       "player_name": "Silvan Widmer",
       "type_id": 2029,
@@ -163,20 +177,6 @@
     },
     {
       "side": "home",
-      "player_id": 14350739,
-      "player_name": "Silla Wamangituka",
-      "type_id": 815,
-      "type_name": "Tibia And Fibula Fracture",
-      "type_name_cs": "Tibia And Fibula Fracture",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-03-13",
-      "end_date": null,
-      "games_missed": 25,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 32338,
       "player_name": "Robin Zentner",
       "type_id": 664,
@@ -201,20 +201,6 @@
       "start_date": "2026-08-06",
       "end_date": null,
       "games_missed": 8,
-      "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 37748959,
-      "player_name": "Kennet Eichhorn",
-      "type_id": 1612,
-      "type_name": "No Eligibility",
-      "type_name_cs": "Nezpůsobilost k nasazení",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-09-04",
-      "end_date": "2027-01-29",
-      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -261,6 +247,20 @@
     },
     {
       "side": "away",
+      "player_id": 37748959,
+      "player_name": "Kennet Eichhorn",
+      "type_id": 1612,
+      "type_name": "No Eligibility",
+      "type_name_cs": "Nezpůsobilost k nasazení",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-09-04",
+      "end_date": "2027-01-29",
+      "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "away",
       "player_id": 37706060,
       "player_name": "Montrell Amare Culbreath",
       "type_id": 549,
@@ -291,51 +291,6 @@
   "predicted_lineups": {
     "home": [
       {
-        "player_name": "Phillip Tietz",
-        "jersey_number": 9,
-        "formation_field": "4:2"
-      },
-      {
-        "player_name": "Sheraldo Becker",
-        "jersey_number": 23,
-        "formation_field": "4:1"
-      },
-      {
-        "player_name": "Fabio Gruber",
-        "jersey_number": 3,
-        "formation_field": "2:2"
-      },
-      {
-        "player_name": "Nadiem Amiri",
-        "jersey_number": 10,
-        "formation_field": "3:5"
-      },
-      {
-        "player_name": "Jae-sung Lee",
-        "jersey_number": 7,
-        "formation_field": "3:4"
-      },
-      {
-        "player_name": "Kaishu Sano",
-        "jersey_number": 6,
-        "formation_field": "3:2"
-      },
-      {
-        "player_name": "Otto Ruoppi",
-        "jersey_number": 20,
-        "formation_field": "3:3"
-      },
-      {
-        "player_name": "Anthony Caci",
-        "jersey_number": 19,
-        "formation_field": "3:1"
-      },
-      {
-        "player_name": "Phillipp Mwene",
-        "jersey_number": 2,
-        "formation_field": "2:3"
-      },
-      {
         "player_name": "Stefan Posch",
         "jersey_number": 4,
         "formation_field": "2:1"
@@ -344,6 +299,51 @@
         "player_name": "Alexander Schwolow",
         "jersey_number": 1,
         "formation_field": "1:1"
+      },
+      {
+        "player_name": "Phillip Tietz",
+        "jersey_number": 9,
+        "formation_field": "5:2"
+      },
+      {
+        "player_name": "Fabio Gruber",
+        "jersey_number": 3,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Kaishu Sano",
+        "jersey_number": 6,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Jae-sung Lee",
+        "jersey_number": 7,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Nadiem Amiri",
+        "jersey_number": 10,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Anthony Caci",
+        "jersey_number": 19,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Danny da Costa",
+        "jersey_number": 21,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Sheraldo Becker",
+        "jersey_number": 23,
+        "formation_field": "4:4"
+      },
+      {
+        "player_name": "Alynho Haidara",
+        "jersey_number": 39,
+        "formation_field": "5:1"
       }
     ],
     "away": [
@@ -1440,7 +1440,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.13
+          "odds": 1.14
         },
         {
           "key": "over25",
@@ -1455,7 +1455,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.5
         },
         {
           "key": "btts",
@@ -1463,7 +1464,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.4
+          "odds": 1.36
         },
         {
           "key": "clean_sheet",
@@ -1471,7 +1472,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 5.37
+          "odds": 5.63
         },
         {
           "key": "scored2plus",
@@ -1487,7 +1488,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.7
+          "odds": 1.69
         },
         {
           "key": "corners_under95",
@@ -1495,7 +1496,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.04
+          "odds": 2.05
         },
         {
           "key": "more_corners",
@@ -1503,14 +1504,15 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.09
+          "odds": 2.1
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.49
         },
         {
           "key": "ht_leading",
@@ -1518,7 +1520,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 3.27
+          "odds": 3.39
         },
         {
           "key": "scoreless",
@@ -1526,7 +1528,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 4.15
+          "odds": 4.48
         },
         {
           "key": "under25",
@@ -1534,14 +1536,15 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.78
+          "odds": 2.88
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.43
         },
         {
           "key": "ht_draw",
@@ -1549,7 +1552,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.55
+          "odds": 2.54
         },
         {
           "key": "ht_behind",
@@ -1557,14 +1560,15 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.58
+          "odds": 2.66
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.47
         }
       ],
       "away": [
@@ -1574,7 +1578,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.13
+          "odds": 1.14
         },
         {
           "key": "scored2plus",
@@ -1582,7 +1586,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 1.67
+          "odds": 1.69
         },
         {
           "key": "shots_over",
@@ -1654,7 +1658,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.7
+          "odds": 1.69
         },
         {
           "key": "more_corners",
@@ -1662,14 +1666,15 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.02
+          "odds": 2.0
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 3,
           "total": 4,
-          "pct": 75.0
+          "pct": 75.0,
+          "odds": 1.56
         },
         {
           "key": "ht_leading",
@@ -1677,7 +1682,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.58
+          "odds": 2.66
         },
         {
           "key": "btts",
@@ -1685,7 +1690,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.4
+          "odds": 1.36
         },
         {
           "key": "clean_sheet",
@@ -1693,21 +1698,23 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 4.15
+          "odds": 4.48
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 1.5
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 4,
-          "pct": 50.0
+          "pct": 50.0,
+          "odds": 2.43
         },
         {
           "key": "under25",
@@ -1715,7 +1722,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.78
+          "odds": 2.88
         },
         {
           "key": "corners_under95",
@@ -1723,7 +1730,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.04
+          "odds": 2.05
         },
         {
           "key": "ht_behind",
@@ -1731,7 +1738,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.27
+          "odds": 3.39
         },
         {
           "key": "scoreless",
@@ -1739,14 +1746,15 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.37
+          "odds": 5.63
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.47
         },
         {
           "key": "ht_draw",
@@ -1754,7 +1762,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.55
+          "odds": 2.54
         }
       ]
     },
@@ -1766,7 +1774,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.4
+          "odds": 1.36
         },
         {
           "key": "over15",
@@ -1774,7 +1782,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.13
+          "odds": 1.14
         },
         {
           "key": "team_2plus_yellow",
@@ -1802,7 +1810,8 @@
           "label": "Střely na branku: 3.5+ v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.31
         },
         {
           "key": "sot_under",
@@ -1816,7 +1825,8 @@
           "label": "Fauly: 12.5+ v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 2.07
         },
         {
           "key": "fouls_under",
@@ -1860,14 +1870,15 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.04
+          "odds": 2.05
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.43
         },
         {
           "key": "under25",
@@ -1875,7 +1886,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.78
+          "odds": 2.88
         },
         {
           "key": "corners_over95",
@@ -1883,7 +1894,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.7
+          "odds": 1.69
         },
         {
           "key": "more_corners",
@@ -1897,7 +1908,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.5
         },
         {
           "key": "ht_leading",
@@ -1939,7 +1951,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.47
         }
       ],
       "last5": [
@@ -1955,7 +1968,8 @@
           "label": "Střely na branku: 3.5+ v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.31
         },
         {
           "key": "btts",
@@ -1963,7 +1977,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.4
+          "odds": 1.36
         },
         {
           "key": "over15",
@@ -1971,14 +1985,15 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.13
+          "odds": 1.14
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.43
         },
         {
           "key": "shots_over",
@@ -1999,7 +2014,8 @@
           "label": "Střely na branku: méně než 5.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.48
         },
         {
           "key": "fouls_over",
@@ -2043,7 +2059,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.7
+          "odds": 1.69
         },
         {
           "key": "ht_draw",
@@ -2058,7 +2074,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.78
+          "odds": 2.88
         },
         {
           "key": "scored2plus",
@@ -2073,7 +2089,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.04
+          "odds": 2.05
         },
         {
           "key": "scoreless",
@@ -2094,14 +2110,16 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.5
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 5.47
         },
         {
           "key": "ht_leading",
@@ -7079,41 +7097,46 @@
     ]
   },
   "odds": {
-    "home": 2.98,
-    "draw": 4.08,
-    "away": 2.15,
-    "under15": 5.85,
-    "over15": 1.13,
-    "under25": 2.78,
+    "home": 3.07,
+    "draw": 4.0,
+    "away": 2.21,
+    "under15": 5.92,
+    "over15": 1.14,
+    "under25": 2.88,
     "over25": 1.45,
-    "under35": 1.73,
-    "over35": 2.14,
-    "btts": 1.4,
-    "corners_under95": 2.04,
-    "corners_over95": 1.7,
+    "under35": 1.79,
+    "over35": 2.09,
+    "btts": 1.36,
+    "corners_under95": 2.05,
+    "corners_over95": 1.69,
+    "yellow_under5": 1.5,
+    "yellow_5plus": 2.43,
+    "red_card": 5.47,
     "source": "chance",
-    "home_scoreless": 4.15,
+    "home_scoreless": 4.48,
     "home_scored2plus": 2.01,
-    "home_clean_sheet": 5.37,
-    "home_ht_leading": 3.27,
-    "home_ht_draw": 2.55,
-    "home_ht_behind": 2.58,
-    "home_more_corners": 2.09,
-    "away_clean_sheet": 4.15,
-    "away_scoreless": 5.37,
-    "away_scored2plus": 1.67,
-    "away_ht_behind": 3.27,
-    "away_ht_draw": 2.55,
-    "away_ht_leading": 2.58,
-    "away_more_corners": 2.02
+    "home_clean_sheet": 5.63,
+    "home_ht_leading": 3.39,
+    "home_ht_draw": 2.54,
+    "home_ht_behind": 2.66,
+    "home_more_corners": 2.1,
+    "home_team_2plus_yellow": 1.49,
+    "away_clean_sheet": 4.48,
+    "away_scoreless": 5.63,
+    "away_scored2plus": 1.69,
+    "away_ht_behind": 3.39,
+    "away_ht_draw": 2.54,
+    "away_ht_leading": 2.66,
+    "away_more_corners": 2.0,
+    "away_team_2plus_yellow": 1.56
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nBayer 04 Leverkusen vyhraje: Model dává Leverkusenu 44.6% šanci na výhru a xG 1.81, což naznačuje jejich ofenzivní sílu. Mainz má sice dobrou formu, ale jejich xG 1.48 a slabší defenziva naznačují, že Leverkusen by měl dominovat.\n\nDalší analytické tipy:\n• Oba týmy dají gól: S pravděpodobností 64% podle modelu a vzájemnými zápasy, kde padlo mnoho gólů, je tento tip silný. Oba týmy mají schopnost skórovat, což potvrzuje i jejich forma.\n• Více než 2.5 gólu: Model ukazuje 63.4% pravděpodobnost, že padne více než 2.5 gólu. Historie vzájemných zápasů a ofenzivní statistiky obou týmů naznačují, že zápas bude otevřený.\n• Leverkusen dá 2+ góly: S xG 1.81 a tendencí Leverkusenu skórovat více než 2 góly v posledních zápasech, je tento tip opřen o jejich ofenzivní potenciál a slabší obranu Mainzu.",
+    "text": "Největší důvěra:\nBayer 04 Leverkusen vyhraje: Model dává Leverkusenu 44.6 % na výhru a xG 1.81, což naznačuje silnější ofenzivu. Mainz má sice dobrou formu, ale jejich xG 1.48 a vzájemné zápasy ukazují, že Leverkusen je v těchto soubojích silnější.\n\nDalší analytické tipy:\n• Oba týmy dají gól: S 64 % pravděpodobností na BTTS a oběma týmům se daří skórovat, očekávám otevřený zápas.\n• Více než 2.5 gólu: Model predikuje 63.4 % na over 2.5, což odpovídá ofenzivnímu stylu obou týmů a jejich schopnosti vytvářet šance.\n• Leverkusen dá více než 1.5 gólu: S xG 1.81 a historickými výsledky, kde Leverkusen často skóroval více než jednou, je tento tip velmi pravděpodobný.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "5bde604664c97399",
-    "generated_at": "2026-10-09T20:24:25Z",
-    "text_en": "Highest confidence:\nBayer 04 Leverkusen to Win: Leverkusen's model probability of 44.6% for a win, combined with a higher xG of 1.81 compared to Mainz's 1.48, suggests they will control the match better. Both teams are in similar form, but Leverkusen has the edge in attack.\n\nFurther analytical tips:\n• Both Teams to Score: With a BTTS probability of 64%, both teams have shown offensive capabilities, and recent head-to-heads indicate high-scoring encounters.\n• Over 2.5 Goals: The model suggests a 63.4% chance for over 2.5 goals, reflecting both teams' attacking strengths and defensive vulnerabilities.\n• Leverkusen to Score First: Given Leverkusen's attacking xG and recent form, they are likely to take the initiative early, increasing their chances of scoring first."
+    "input_hash": "03c43fa259755fd9",
+    "generated_at": "2026-10-10T03:58:55Z",
+    "text_en": "Highest confidence:\nBayer 04 Leverkusen to Win: Leverkusen's model probability at 44.6% suggests a strong likelihood of victory, supported by their superior xG of 1.81 compared to Mainz's 1.48. Recent form is equal, but Leverkusen's attacking edge should secure the win.\n\nFurther analytical tips:\n• Both Teams to Score: With a BTTS probability of 64%, both teams are likely to find the net given their recent scoring patterns and the defensive vulnerabilities observed in their last matches.\n• Over 2.5 Goals: The model indicates a 63.4% chance for over 2.5 goals, reflecting both teams' attacking capabilities and their tendency to engage in high-scoring affairs in recent encounters.\n• Leverkusen to Score First: Given Leverkusen's attacking strength and Mainz's defensive inconsistencies, the likelihood of Leverkusen striking first is high, enhancing their chances of controlling the match."
   },
-  "refreshed_at": "2026-10-08T23:18:44.148275Z"
+  "refreshed_at": "2026-10-10T03:30:33.425737Z"
 }

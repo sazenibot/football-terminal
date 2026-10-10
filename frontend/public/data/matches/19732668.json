@@ -76,8 +76,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Manu Sánchez",
+        "jersey_number": 23,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Iván Romero",
+        "jersey_number": 9,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Jeremy Toljan",
+        "jersey_number": 22,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Mathew Ryan",
+        "jersey_number": 13,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Oriol Rey",
+        "jersey_number": 20,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Thiago Fernández",
+        "jersey_number": 24,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Roger Brugué",
+        "jersey_number": 7,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Jon Ander Olasagasti",
+        "jersey_number": 8,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Aïssa Mandi",
+        "jersey_number": 2,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Adrián Dela",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Enzo Bardeli",
+        "jersey_number": 18,
+        "formation_field": "3:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Isaac Romero",
+        "jersey_number": 16,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Juan Iglesias",
+        "jersey_number": 2,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Odysseas Vlachodimos",
+        "jersey_number": 1,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Andrés Castrín",
+        "jersey_number": 5,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Jon Guridi",
+        "jersey_number": 18,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Miguel Ángel Sierra Ortega",
+        "jersey_number": 30,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Youssouf Fofana",
+        "jersey_number": 24,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Julio Díaz",
+        "jersey_number": 3,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Peque Fernández",
+        "jersey_number": 10,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Lucien Agoumé",
+        "jersey_number": 6,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Gabriel Suazo",
+        "jersey_number": 17,
+        "formation_field": "2:2"
+      }
+    ]
   },
   "h2h": [
     {
@@ -1327,7 +1439,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.1
+          "odds": 2.09
         },
         {
           "key": "shots_over",
@@ -1377,7 +1489,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.72
+          "odds": 1.74
         },
         {
           "key": "over15",
@@ -1385,7 +1497,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.33
+          "odds": 1.34
         },
         {
           "key": "over25",
@@ -1393,7 +1505,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.02
+          "odds": 2.04
         },
         {
           "key": "corners_over95",
@@ -1409,7 +1521,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.31
+          "odds": 3.24
         },
         {
           "key": "scoreless",
@@ -1417,7 +1529,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.17
+          "odds": 3.18
         },
         {
           "key": "under25",
@@ -1425,7 +1537,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.82
+          "odds": 1.8
         },
         {
           "key": "scored2plus",
@@ -1463,7 +1575,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.23
+          "odds": 3.28
         },
         {
           "key": "more_corners",
@@ -1486,7 +1598,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.39
+          "odds": 3.35
         }
       ],
       "away": [
@@ -1511,7 +1623,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.1
+          "odds": 2.09
         },
         {
           "key": "shots_over",
@@ -1568,7 +1680,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.72
+          "odds": 1.74
         },
         {
           "key": "over15",
@@ -1576,7 +1688,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.33
+          "odds": 1.34
         },
         {
           "key": "under25",
@@ -1584,7 +1696,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.82
+          "odds": 1.8
         },
         {
           "key": "more_corners",
@@ -1614,7 +1726,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.17
+          "odds": 3.18
         },
         {
           "key": "over25",
@@ -1622,7 +1734,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.02
+          "odds": 2.04
         },
         {
           "key": "yellow_5plus",
@@ -1652,7 +1764,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.39
+          "odds": 3.35
         },
         {
           "key": "scoreless",
@@ -1660,7 +1772,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.31
+          "odds": 3.24
         },
         {
           "key": "scored2plus",
@@ -1668,7 +1780,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.44
+          "odds": 2.49
         },
         {
           "key": "ht_leading",
@@ -1676,7 +1788,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.23
+          "odds": 3.28
         }
       ]
     },
@@ -1688,7 +1800,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.33
+          "odds": 1.34
         },
         {
           "key": "scored2plus",
@@ -1773,7 +1885,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.02
+          "odds": 2.04
         },
         {
           "key": "corners_under95",
@@ -1803,7 +1915,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.72
+          "odds": 1.74
         },
         {
           "key": "under25",
@@ -1811,7 +1923,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.82
+          "odds": 1.8
         },
         {
           "key": "corners_over95",
@@ -1885,7 +1997,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.33
+          "odds": 1.34
         },
         {
           "key": "scored2plus",
@@ -1956,7 +2068,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.02
+          "odds": 2.04
         },
         {
           "key": "corners_under95",
@@ -1972,7 +2084,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.72
+          "odds": 1.74
         },
         {
           "key": "clean_sheet",
@@ -1987,7 +2099,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.82
+          "odds": 1.8
         },
         {
           "key": "corners_over95",
@@ -6684,42 +6796,42 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T23:21:55.752235Z",
+  "refreshed_at": "2026-10-10T03:43:23.274230Z",
   "odds": {
-    "home": 2.8,
-    "draw": 3.27,
-    "away": 2.61,
-    "under15": 3.32,
-    "over15": 1.33,
-    "under25": 1.82,
-    "over25": 2.02,
-    "under35": 1.3,
-    "over35": 3.53,
-    "btts": 1.72,
+    "home": 2.75,
+    "draw": 3.26,
+    "away": 2.66,
+    "under15": 3.28,
+    "over15": 1.34,
+    "under25": 1.8,
+    "over25": 2.04,
+    "under35": 1.29,
+    "over35": 3.58,
+    "btts": 1.74,
     "corners_under95": 1.71,
     "corners_over95": 2.02,
     "source": "chance",
-    "home_scoreless": 3.17,
+    "home_scoreless": 3.18,
     "home_scored2plus": 2.56,
-    "home_clean_sheet": 3.31,
-    "home_ht_leading": 3.39,
-    "home_ht_draw": 2.1,
-    "home_ht_behind": 3.23,
+    "home_clean_sheet": 3.24,
+    "home_ht_leading": 3.35,
+    "home_ht_draw": 2.09,
+    "home_ht_behind": 3.28,
     "home_more_corners": 1.9,
-    "away_clean_sheet": 3.17,
-    "away_scoreless": 3.31,
-    "away_scored2plus": 2.44,
-    "away_ht_behind": 3.39,
-    "away_ht_draw": 2.1,
-    "away_ht_leading": 3.23,
+    "away_clean_sheet": 3.18,
+    "away_scoreless": 3.24,
+    "away_scored2plus": 2.49,
+    "away_ht_behind": 3.35,
+    "away_ht_draw": 2.09,
+    "away_ht_leading": 3.28,
     "away_more_corners": 2.26
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nSevilla vyhraje: Sevilla má lepší formu a model jí dává 29.6 % na výhru, což je blízko k 30 %. Levante má slabší defenzivu a Sevilla v minulých vzájemných zápasech dominovala. Očekávám, že Sevilla využije své ofenzivní schopnosti.\n\nDalší analytické tipy:\n• Sevilla dá gól v obou poločasech: Sevilla má silnou ofenzivu a Levante často inkasuje. Model ukazuje vysokou pravděpodobnost gólů, což naznačuje, že Sevilla by mohla skórovat v obou poločasech.\n• Více než 2.5 gólu v zápase: Obě týmy mají tendenci k vysokému počtu gólů, Levante inkasuje průměrně více než 2 góly na zápas. Model podporuje over 2.5 s 55.1 % pravděpodobností.\n• Oba týmy dají gól: Model ukazuje 58.2 % pravděpodobnost, že oba týmy dají gól. Levante doma obvykle skóruje, zatímco Sevilla má silnou ofenzivu.",
+    "text": "Největší důvěra:\nSevilla vyhraje: Sevilla má lepší formu a model jí dává 29.7 % šanci na výhru, což je v kontextu zápasu proti Levante, které má slabší obranu (xG 1.56), silný argument pro tip na hosty.\n\nDalší analytické tipy:\n• Oba týmy dají gól: S 58.2 % pravděpodobností na BTTS a slabšími obranami obou týmů je pravděpodobné, že oba týmy skórují.\n• Více než 2.5 gólu: Model ukazuje 55.2 % na over 2.5, což odpovídá ofenzivnímu stylu obou týmů a jejich schopnosti vytvářet šance.\n• Levante dá gól: S xG 1.56 a historickými výkony proti Seville je pravděpodobné, že Levante alespoň jednou skóruje.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "555e63eb6701dc2e",
-    "generated_at": "2026-10-09T20:28:48Z",
-    "text_en": "Highest confidence:\nSevilla to Win: Sevilla's recent form shows a stronger offensive capability compared to Levante, with a higher xG and better overall results. The model gives Sevilla a 29.6% win probability, indicating they are the favorites despite recent inconsistencies.\n\nFurther analytical tips:\n• Both Teams to Score: With a BTTS probability of 58.2%, both teams are likely to find the net given their attacking styles and recent scoring patterns.\n• Over 1.5 Goals: The model indicates a 79.1% chance for over 1.5 goals, reflecting both teams' tendencies to engage in high-scoring matches.\n• Levante to Score: Levante's xG of 1.56 suggests they will likely score at least once, especially at home, despite their recent struggles."
+    "input_hash": "ce52b5eec3830104",
+    "generated_at": "2026-10-10T03:57:49Z",
+    "text_en": "Highest confidence:\nSevilla to win: Sevilla's recent form is stronger, with 10 points in their last 6 matches compared to Levante's 5. The model gives Sevilla a 29.7% chance to win, but their overall performance suggests they can edge this match despite Levante's home advantage.\n\nFurther analytical tips:\n• Both teams to score: With a BTTS probability of 58.2%, both teams are likely to find the net given their recent scoring trends and defensive vulnerabilities.\n• Over 1.5 goals: The model indicates a high likelihood of over 1.5 goals at 79.2%, reflecting both teams' attacking capabilities and defensive weaknesses.\n• Levante to receive more cards: Considering the referee's tendency to issue cards and Levante's aggressive playstyle, they may accumulate more bookings during the match."
   }
 }

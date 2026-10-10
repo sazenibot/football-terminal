@@ -221,34 +221,6 @@
     },
     {
       "side": "home",
-      "player_id": 12647,
-      "player_name": "Dean Henderson",
-      "type_id": 672,
-      "type_name": "Ankle Problems",
-      "type_name_cs": "Problémy s kotníkem",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-07",
-      "end_date": "2026-10-09",
-      "games_missed": 5,
-      "likely_available": true
-    },
-    {
-      "side": "home",
-      "player_id": 96950,
-      "player_name": "Jean-Philippe Mateta",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-26",
-      "end_date": "2026-10-09",
-      "games_missed": 7,
-      "likely_available": true
-    },
-    {
-      "side": "home",
       "player_id": 37537937,
       "player_name": "Chadi Riad",
       "type_id": 536,
@@ -279,19 +251,9 @@
   "predicted_lineups": {
     "home": [
       {
-        "player_name": "Adam Wharton",
-        "jersey_number": 20,
-        "formation_field": "3:1"
-      },
-      {
         "player_name": "Honest Ahanor",
         "jersey_number": 21,
         "formation_field": "2:3"
-      },
-      {
-        "player_name": "Jørgen Strand Larsen",
-        "jersey_number": 22,
-        "formation_field": "4:2"
       },
       {
         "player_name": "Tyrick Mitchell",
@@ -302,11 +264,6 @@
         "player_name": "Quinten Timber",
         "jersey_number": 23,
         "formation_field": "3:3"
-      },
-      {
-        "player_name": "Daichi Kamada",
-        "jersey_number": 18,
-        "formation_field": "3:2"
       },
       {
         "player_name": "Jaydee Bruce Hamady Canvot",
@@ -326,12 +283,27 @@
       {
         "player_name": "Yéremy Pino",
         "jersey_number": 10,
-        "formation_field": "4:3"
+        "formation_field": "4:2"
       },
       {
-        "player_name": "Darío Osorio",
-        "jersey_number": 24,
+        "player_name": "Daichi Kamada",
+        "jersey_number": 18,
         "formation_field": "4:1"
+      },
+      {
+        "player_name": "Adam Wharton",
+        "jersey_number": 20,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Jørgen Strand Larsen",
+        "jersey_number": 22,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Anan Khalaili",
+        "jersey_number": 25,
+        "formation_field": "3:1"
       }
     ],
     "away": [
@@ -1419,7 +1391,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.29
+          "odds": 1.28
         },
         {
           "key": "yellow_under5",
@@ -1435,7 +1407,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 3.21
+          "odds": 3.13
         },
         {
           "key": "shots_over",
@@ -1503,7 +1475,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.89
+          "odds": 1.88
         },
         {
           "key": "scoreless",
@@ -1511,7 +1483,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.41
+          "odds": 3.35
         },
         {
           "key": "under25",
@@ -1519,7 +1491,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.94
+          "odds": 1.95
         },
         {
           "key": "scored2plus",
@@ -1527,7 +1499,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.37
+          "odds": 2.42
         },
         {
           "key": "clean_sheet",
@@ -1535,7 +1507,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.39
+          "odds": 3.51
         },
         {
           "key": "more_corners",
@@ -1591,7 +1563,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.2
+          "odds": 3.28
         }
       ],
       "away": [
@@ -1681,7 +1653,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.39
+          "odds": 3.51
         },
         {
           "key": "under25",
@@ -1689,7 +1661,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.94
+          "odds": 1.95
         },
         {
           "key": "more_corners",
@@ -1721,7 +1693,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.29
+          "odds": 1.28
         },
         {
           "key": "over25",
@@ -1729,7 +1701,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.89
+          "odds": 1.88
         },
         {
           "key": "scored2plus",
@@ -1737,7 +1709,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.36
+          "odds": 2.3
         },
         {
           "key": "yellow_5plus",
@@ -1753,7 +1725,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.41
+          "odds": 3.35
         },
         {
           "key": "corners_over95",
@@ -1769,7 +1741,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.21
+          "odds": 3.13
         },
         {
           "key": "red_card",
@@ -1785,7 +1757,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.2
+          "odds": 3.28
         }
       ]
     },
@@ -1805,7 +1777,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.29
+          "odds": 1.28
         },
         {
           "key": "under25",
@@ -1813,7 +1785,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.94
+          "odds": 1.95
         },
         {
           "key": "team_2plus_yellow",
@@ -1962,7 +1934,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.89
+          "odds": 1.88
         },
         {
           "key": "scored2plus",
@@ -1986,7 +1958,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.94
+          "odds": 1.95
         },
         {
           "key": "shots_under",
@@ -2039,7 +2011,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.29
+          "odds": 1.28
         },
         {
           "key": "corners_over95",
@@ -2152,7 +2124,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 1.89
+          "odds": 1.88
         },
         {
           "key": "scored2plus",
@@ -7204,15 +7176,15 @@
     ]
   },
   "odds": {
-    "home": 2.67,
+    "home": 2.76,
     "draw": 3.39,
-    "away": 2.66,
-    "under15": 3.64,
-    "over15": 1.29,
-    "under25": 1.94,
-    "over25": 1.89,
-    "under35": 1.35,
-    "over35": 3.18,
+    "away": 2.57,
+    "under15": 3.65,
+    "over15": 1.28,
+    "under25": 1.95,
+    "over25": 1.88,
+    "under35": 1.36,
+    "over35": 3.17,
     "btts": 1.66,
     "corners_under95": 1.76,
     "corners_over95": 1.95,
@@ -7220,30 +7192,30 @@
     "yellow_5plus": 2.32,
     "red_card": 4.14,
     "source": "chance",
-    "home_scoreless": 3.41,
-    "home_scored2plus": 2.37,
-    "home_clean_sheet": 3.39,
-    "home_ht_leading": 3.2,
+    "home_scoreless": 3.35,
+    "home_scored2plus": 2.42,
+    "home_clean_sheet": 3.51,
+    "home_ht_leading": 3.28,
     "home_ht_draw": 2.18,
-    "home_ht_behind": 3.21,
+    "home_ht_behind": 3.13,
     "home_more_corners": 1.92,
     "home_team_2plus_yellow": 1.59,
-    "away_clean_sheet": 3.41,
-    "away_scoreless": 3.39,
-    "away_scored2plus": 2.36,
-    "away_ht_behind": 3.2,
+    "away_clean_sheet": 3.35,
+    "away_scoreless": 3.51,
+    "away_scored2plus": 2.3,
+    "away_ht_behind": 3.28,
     "away_ht_draw": 2.18,
-    "away_ht_leading": 3.21,
+    "away_ht_leading": 3.13,
     "away_more_corners": 2.23,
     "away_team_2plus_yellow": 1.41
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nTip na vítězství Nottinghamu Forest: Nottingham má mírně vyšší pravděpodobnost výhry (36.0 %) a lepší formu než Crystal Palace, který v posledních zápasech trpí na defenzivní problémy (11 gólů obdržených). Očekávané xG jsou vyrovnané, ale Nottingham má lepší výchozí pozici.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 55.9 % pravděpodobnost, že oba týmy skórují, což odpovídá historickým vzorcům vzájemných zápasů, kde často končí remízou 1-1.\n• Více než 1.5 gólu v zápase: S pravděpodobností 76.3 % na více než 1.5 gólu v zápase je pravděpodobné, že oba týmy budou aktivní v útoku, zejména vzhledem k defenzivním slabinám Palace.\n• Nottingham vyhraje 1-0: Nejčastější skóre 1-0 pro Nottingham (9.4 %) naznačuje, že pokud vyhrají, může to být těsný zápas, což odpovídá jejich defenzivní stabilitě.",
+    "text": "Největší důvěra:\nNottingham Forest vyhraje: Model dává Nottinghamu 36% šanci na výhru a xG ukazuje vyrovnané šance (1.3 vs 1.29). Forma hostů je lepší a rozhodčí je přísnější na fauly, což může ovlivnit hru.\n\nDalší analytické tipy:\n• Oba týmy dají gól: S 55.9% pravděpodobností na BTTS a vzájemnými zápasy, kde často padaly góly, je tento tip silný.\n• Více než 2.5 gólu: Model predikuje 51.2% šanci na více než 2.5 gólu, což odpovídá ofenzivnímu stylu obou týmů.\n• Remíza 1-1: Nejčastější skóre je 1-1 s 13.5% pravděpodobností, což reflektuje vyrovnanost obou týmů v posledních zápasech.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "6d338a5542c25a0e",
-    "generated_at": "2026-10-09T20:27:15Z",
-    "text_en": "Highest confidence:\nNottingham Forest to Win: With a model probability of 36% for Nottingham Forest, slightly edging Crystal Palace, and both teams showing similar xG, Forest's recent form gives them a slight advantage. The match could be tightly contested, but Forest's resilience may tip the scale.\n\nFurther analytical tips:\n• Both Teams to Score: The model indicates a 55.9% chance for both teams to score, supported by their recent scoring records and defensive vulnerabilities. Expect an open game with chances for both sides.\n• Over 1.5 Goals: With a 76.3% probability for over 1.5 goals, the attacking play from both teams suggests a lively match. Their xG figures further support this expectation of multiple goals.\n• Draw No Bet on Nottingham Forest: Given the close probabilities and head-to-head history, a draw no bet on Nottingham Forest provides insurance against a stalemate while capitalizing on their slight edge in form."
+    "input_hash": "eb83ee4b9c5f160c",
+    "generated_at": "2026-10-10T03:55:48Z",
+    "text_en": "Highest confidence:\nNottingham Forest to win: With a model probability of 36.0% for Nottingham Forest and recent form showing a slight edge, they are likely to capitalize on Crystal Palace's defensive struggles, reflected in their xG of 1.3 compared to Palace's 1.29.\n\nFurther analytical tips:\n• Both teams to score: Both teams have a solid chance of scoring, with a BTTS probability of 55.9% indicating an open game, especially given their recent head-to-head history of draws.\n• Over 1.5 goals: The model suggests a high likelihood of over 1.5 goals at 76.3%, supported by both teams' recent scoring patterns and the referee's tendency to allow fouls.\n• Nottingham Forest to score first: Given Nottingham's recent form and xG, they are likely to take the initiative early, which aligns with their scoring trends in previous matches."
   },
-  "refreshed_at": "2026-10-08T23:17:51.221447Z"
+  "refreshed_at": "2026-10-10T03:24:40.356186Z"
 }

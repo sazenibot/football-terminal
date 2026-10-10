@@ -349,9 +349,9 @@
       "side": "home",
       "player_id": 37688208,
       "player_name": "Shaqueel van Persie",
-      "type_id": 677,
-      "type_name": "Minor Knock",
-      "type_name_cs": "Drobné zranění",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-19",
@@ -1786,7 +1786,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.11
+          "odds": 1.12
         },
         {
           "key": "over25",
@@ -1794,7 +1794,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.4
+          "odds": 1.41
         },
         {
           "key": "scored2plus",
@@ -1802,7 +1802,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.48
+          "odds": 1.47
         },
         {
           "key": "yellow_under5",
@@ -1873,21 +1873,23 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.4
+          "odds": 1.39
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.25
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.69
         },
         {
           "key": "ht_leading",
@@ -1895,7 +1897,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.19
+          "odds": 2.23
         },
         {
           "key": "clean_sheet",
@@ -1903,21 +1905,23 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.54
+          "odds": 3.56
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.58
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.09
         },
         {
           "key": "ht_draw",
@@ -1925,7 +1929,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.51
+          "odds": 2.58
         },
         {
           "key": "ht_behind",
@@ -1933,7 +1937,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.94
+          "odds": 4.07
         },
         {
           "key": "scoreless",
@@ -1941,7 +1945,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 6.49
+          "odds": 6.58
         },
         {
           "key": "under25",
@@ -1949,7 +1953,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.9
+          "odds": 2.93
         },
         {
           "key": "yellow_5plus",
@@ -1963,7 +1967,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.5
         }
       ],
       "away": [
@@ -1980,14 +1985,15 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.11
+          "odds": 1.12
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.54
         },
         {
           "key": "shots_over",
@@ -2051,7 +2057,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.4
+          "odds": 1.39
         },
         {
           "key": "under25",
@@ -2059,7 +2065,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.9
+          "odds": 2.93
         },
         {
           "key": "scored2plus",
@@ -2074,7 +2080,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.58
         },
         {
           "key": "ht_leading",
@@ -2082,7 +2089,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.94
+          "odds": 4.07
         },
         {
           "key": "clean_sheet",
@@ -2090,7 +2097,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 6.49
+          "odds": 6.58
         },
         {
           "key": "over25",
@@ -2098,28 +2105,31 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.4
+          "odds": 1.41
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.25
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.5
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.76
         },
         {
           "key": "ht_draw",
@@ -2127,7 +2137,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.51
+          "odds": 2.58
         },
         {
           "key": "ht_behind",
@@ -2135,7 +2145,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.19
+          "odds": 2.23
         },
         {
           "key": "scoreless",
@@ -2143,7 +2153,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.54
+          "odds": 3.56
         },
         {
           "key": "yellow_5plus",
@@ -2218,7 +2228,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.4
+          "odds": 1.39
         },
         {
           "key": "over15",
@@ -2226,7 +2236,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.11
+          "odds": 1.12
         },
         {
           "key": "under25",
@@ -2234,14 +2244,15 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.9
+          "odds": 2.93
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.58
         },
         {
           "key": "more_corners",
@@ -2277,7 +2288,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.4
+          "odds": 1.41
         },
         {
           "key": "scored2plus",
@@ -2291,7 +2302,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 2.25
         },
         {
           "key": "yellow_under5",
@@ -2305,7 +2317,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 4.5
         },
         {
           "key": "ht_leading",
@@ -2399,7 +2412,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.4
+          "odds": 1.39
         },
         {
           "key": "over15",
@@ -2407,7 +2420,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.11
+          "odds": 1.12
         },
         {
           "key": "under25",
@@ -2415,14 +2428,15 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.9
+          "odds": 2.93
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.58
         },
         {
           "key": "more_corners",
@@ -2451,7 +2465,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.4
+          "odds": 1.41
         },
         {
           "key": "scored2plus",
@@ -2465,7 +2479,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.25
         },
         {
           "key": "yellow_5plus",
@@ -2500,7 +2515,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.5
         },
         {
           "key": "ht_draw",
@@ -7809,37 +7825,44 @@
     ]
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nFeyenoord vítězí: Feyenoord má silnou formu s 14 body z posledních 6 zápasů a xG 1.89, což naznačuje jejich ofenzivní sílu. Vzájemné zápasy ukazují, že doma jsou silní, což podporuje modelovou pravděpodobnost 52.6 % na výhru.\n\nDalší analytické tipy:\n• Feyenoord - více než 1.5 gólu: S vysokým xG 1.89 a průměrnými 4.0 góly na zápas v posledních 6 zápasech je pravděpodobnost, že padnou minimálně 2 góly, velmi vysoká.\n• Oba týmy dají gól: Model uvádí 60 % pravděpodobnost pro BTTS, což je podpořeno formou obou týmů, kteří pravidelně skórují.\n• Feyenoord - AZ Alkmaar - remíza 1:1: Historie vzájemných zápasů ukazuje, že remíza 1:1 je častá, což odpovídá i modelovým predikcím s 11.2 % pravděpodobností.",
+    "text": "Největší důvěra:\nFeyenoord vyhraje: Feyenoord má silnou formu s 14 body z posledních 6 zápasů a xG 1.88, zatímco AZ má xG pouze 1.19. Model dává Feyenoordu 52.4 % šanci na výhru, což potvrzuje i trh s kurzem 53.6 %.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 60.1 % pravděpodobnost, že oba týmy skórují, což odpovídá jejich ofenzivnímu potenciálu a vzájemným zápasům, kde často padaly góly.\n• Více než 2.5 gólu: S pravděpodobností 60.0 % na více než 2.5 gólu a vysokým xG Feyenoordu, zápas pravděpodobně nabídne otevřenou hru s mnoha šancemi.\n• Feyenoord dá 2+ góly: Feyenoord v posledních zápasech pravidelně skóruje, s 24 góly v 6 zápasech, což naznačuje, že mohou překonat hranici 2 gólů i proti AZ.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "b1ed4da282f7a320",
-    "generated_at": "2026-10-09T20:21:21Z",
-    "text_en": "Highest confidence:\nFeyenoord to win: Feyenoord's strong home form (14 points from 6 matches) and superior xG (1.89 vs 1.18) suggest they will control the game. AZ's recent form is good, but Feyenoord's attacking prowess gives them the edge.\n\nFurther analytical tips:\n• Both teams to score: With a 60% probability for BTTS and both teams showing offensive capabilities, expect goals from both sides.\n• Over 2.5 goals: The model indicates a high likelihood (59.9%) for over 2.5 goals, supported by both teams' scoring trends and attacking stats.\n• Feyenoord to score first: Given Feyenoord's home advantage and offensive xG, they are likely to take the lead early in the match."
+    "input_hash": "ecd51f403fb05715",
+    "generated_at": "2026-10-10T03:54:57Z",
+    "text_en": "Highest confidence:\nFeyenoord to win: Feyenoord's strong home form (14 points from 6 games) and superior xG (1.88) against AZ's lower xG (1.19) indicate they will dominate this match. The model gives them a 52.4% win probability, making them the clear favorites.\n\nFurther analytical tips:\n• Both teams to score: With a 60.1% probability for BTTS and recent high-scoring encounters (3-3, 1-1), expect both teams to find the net.\n• Over 2.5 goals: The model suggests an 82.2% chance for over 1.5 goals, supported by Feyenoord's attacking prowess and AZ's recent goal-scoring form.\n• Feyenoord to score first: Given Feyenoord's attacking strength and AZ's defensive vulnerabilities, they are likely to take the lead early in the match."
   },
-  "refreshed_at": "2026-10-08T23:22:22.659193Z",
+  "refreshed_at": "2026-10-10T03:46:54.103521Z",
   "odds": {
     "home": 1.79,
-    "draw": 4.17,
-    "away": 3.81,
-    "under15": 6.03,
-    "over15": 1.11,
-    "under25": 2.9,
-    "over25": 1.4,
-    "under35": 1.76,
-    "over35": 2.06,
-    "btts": 1.4,
+    "draw": 4.28,
+    "away": 4.01,
+    "under15": 6.2,
+    "over15": 1.12,
+    "under25": 2.93,
+    "over25": 1.41,
+    "under35": 1.79,
+    "over35": 2.05,
+    "btts": 1.39,
+    "corners_under95": 2.25,
+    "corners_over95": 1.58,
+    "red_card": 4.5,
     "source": "chance",
-    "home_scoreless": 6.49,
-    "home_scored2plus": 1.48,
-    "home_clean_sheet": 3.54,
-    "home_ht_leading": 2.19,
-    "home_ht_draw": 2.51,
-    "home_ht_behind": 3.94,
-    "away_clean_sheet": 6.49,
-    "away_scoreless": 3.54,
+    "home_scoreless": 6.58,
+    "home_scored2plus": 1.47,
+    "home_clean_sheet": 3.56,
+    "home_ht_leading": 2.23,
+    "home_ht_draw": 2.58,
+    "home_ht_behind": 4.07,
+    "home_more_corners": 1.69,
+    "home_team_2plus_yellow": 2.09,
+    "away_clean_sheet": 6.58,
+    "away_scoreless": 3.56,
     "away_scored2plus": 2.29,
-    "away_ht_behind": 2.19,
-    "away_ht_draw": 2.51,
-    "away_ht_leading": 3.94
+    "away_ht_behind": 2.23,
+    "away_ht_draw": 2.58,
+    "away_ht_leading": 4.07,
+    "away_more_corners": 2.54,
+    "away_team_2plus_yellow": 1.76
   }
 }

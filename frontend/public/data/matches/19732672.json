@@ -2,8 +2,8 @@
   "fixture_id": 19732672,
   "league_id": 564,
   "league_name": "La Liga",
-  "built_at": "2026-10-03T10:16:03.251196Z",
-  "build_mode": "refresh",
+  "built_at": "2026-10-10T03:40:45.740737Z",
+  "build_mode": "full",
   "starting_at": "2026-10-10T14:15:00Z",
   "venue": "Estadio de Mendizorroza",
   "home": {
@@ -16,7 +16,160 @@
     "name": "Atlético de Madrid",
     "image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png"
   },
-  "referee": null,
+  "referee": {
+    "id": 50680,
+    "name": "Alejandro Quintero González",
+    "season_stats": {
+      "Penalties": {
+        "all": {
+          "count": 1,
+          "average": 0.5
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 1,
+          "average": 0.5,
+          "percentage": 100
+        }
+      },
+      "Fouls": {
+        "count": 45,
+        "average": 22.5
+      },
+      "Redcards": {
+        "all": {
+          "count": 2,
+          "average": 1,
+          "on_bench": 1,
+          "for_coach": 0,
+          "on_pitch": 1
+        },
+        "home": {
+          "count": 2,
+          "average": 1,
+          "percentage": 100
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Yellowcards": {
+        "all": {
+          "count": 6,
+          "average": 3,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 6
+        },
+        "home": {
+          "count": 4,
+          "average": 2,
+          "percentage": 66.67
+        },
+        "away": {
+          "count": 2,
+          "average": 1,
+          "percentage": 33.33
+        }
+      },
+      "Yellowred Cards": {
+        "all": {
+          "count": 0,
+          "average": 0,
+          "on_bench": 0,
+          "for_coach": 0,
+          "on_pitch": 0
+        },
+        "home": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        },
+        "away": {
+          "count": 0,
+          "average": 0,
+          "percentage": 0
+        }
+      },
+      "Season Matches": {
+        "count": 2
+      },
+      "VAR Moments": {
+        "count": 1,
+        "average": 0.5
+      }
+    },
+    "league_context": {
+      "fouls_per_match": 26.4,
+      "yellow_per_match": 4.4,
+      "red_per_match": 0.2,
+      "matches_sampled": 25
+    },
+    "career_stats": {
+      "total_seasons_tracked": 3,
+      "matches": 40,
+      "yellow_cards": 194,
+      "red_cards": 15,
+      "avg_yellow_per_match": 4.85
+    },
+    "h2h_matches_officiated": [],
+    "home_team_matches_officiated": {
+      "matches": 4,
+      "avg_fouls_by_team": 17.0,
+      "avg_fouls_total": 30.8,
+      "avg_yellow_by_team": 3.5,
+      "avg_red_by_team": 0.0,
+      "recent_matches": [
+        {
+          "fixture_id": 19439581,
+          "date": "2026-05-02T16:30:00Z",
+          "home_name": "Deportivo Alavés",
+          "away_name": "Athletic Club",
+          "home_score": 2,
+          "away_score": 4,
+          "result": "P",
+          "total_fouls": 21
+        },
+        {
+          "fixture_id": 19439522,
+          "date": "2026-03-13T20:00:00Z",
+          "home_name": "Deportivo Alavés",
+          "away_name": "Villarreal",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 30
+        },
+        {
+          "fixture_id": 19439304,
+          "date": "2025-09-24T17:00:00Z",
+          "home_name": "Getafe",
+          "away_name": "Deportivo Alavés",
+          "home_score": 1,
+          "away_score": 1,
+          "result": "R",
+          "total_fouls": 34
+        },
+        {
+          "fixture_id": 19135379,
+          "date": "2024-11-09T15:15:00Z",
+          "home_name": "Villarreal",
+          "away_name": "Deportivo Alavés",
+          "home_score": 3,
+          "away_score": 0,
+          "result": "P",
+          "total_fouls": 38
+        }
+      ]
+    },
+    "away_team_matches_officiated": null
+  },
   "sidelined": [
     {
       "side": "home",
@@ -36,20 +189,6 @@
       "side": "home",
       "player_id": 522619,
       "player_name": "Facundo Tomás Garcés",
-      "type_id": 1615,
-      "type_name": "Suspension Through Sports Court",
-      "type_name_cs": "Trest od disciplinární komise",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-03-05",
-      "end_date": "2026-11-02",
-      "games_missed": 24,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 522619,
-      "player_name": "Facundo Tomás Garcés",
       "type_id": 1918,
       "type_name": "Cruciate Ligament Tear",
       "type_name_cs": "Přetržený zkřížený vaz",
@@ -61,18 +200,18 @@
       "likely_available": false
     },
     {
-      "side": "away",
-      "player_id": 37423008,
-      "player_name": "Pablo Barrios Rivas",
-      "type_id": 554,
-      "type_name": "Muscle Injury",
-      "type_name_cs": "Svalové zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-09",
-      "end_date": "2026-10-09",
-      "games_missed": 4,
-      "likely_available": true
+      "side": "home",
+      "player_id": 522619,
+      "player_name": "Facundo Tomás Garcés",
+      "type_id": 1615,
+      "type_name": "Suspension Through Sports Court",
+      "type_name_cs": "Trest od disciplinární komise",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-03-05",
+      "end_date": "2026-11-02",
+      "games_missed": 24,
+      "likely_available": false
     }
   ],
   "predicted_lineups": {
@@ -464,126 +603,12 @@
       "coach_home": "Diego Pablo Simeone",
       "coach_away": "José Luis Mendilibar Etxebarria",
       "referee_id": 15906
-    },
-    {
-      "fixture_id": 18165668,
-      "date": "2021-09-25T12:00:00Z",
-      "home": {
-        "id": 2975,
-        "name": "Deportivo Alavés",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png"
-      },
-      "away": {
-        "id": 7980,
-        "name": "Atlético de Madrid",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png"
-      },
-      "home_score": 1,
-      "away_score": 0,
-      "result_for_home_team": "V",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 7,
-        "sot": 1,
-        "corners": 3,
-        "fouls": 18,
-        "possession": 29,
-        "yellow": 2,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 13,
-        "sot": 1,
-        "corners": 8,
-        "fouls": 11,
-        "possession": 71,
-        "yellow": 3,
-        "red": 0
-      },
-      "coach_home": "Javier Calleja Revilla",
-      "coach_away": "Diego Pablo Simeone",
-      "referee_id": 11710
-    },
-    {
-      "fixture_id": 17055622,
-      "date": "2021-03-21T17:30:00Z",
-      "home": {
-        "id": 7980,
-        "name": "Atlético de Madrid",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png"
-      },
-      "away": {
-        "id": 2975,
-        "name": "Deportivo Alavés",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png"
-      },
-      "home_score": 1,
-      "away_score": 0,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": false,
-      "team_home_stats": {
-        "shots": 9,
-        "sot": 3,
-        "corners": 5,
-        "fouls": 12,
-        "possession": 38,
-        "yellow": 3,
-        "red": 0
-      },
-      "team_away_stats": {
-        "shots": 8,
-        "sot": 4,
-        "corners": 5,
-        "fouls": 17,
-        "possession": 62,
-        "yellow": 3,
-        "red": 0
-      },
-      "coach_home": "Diego Pablo Simeone",
-      "coach_away": "Abelardo Fernández Antuña",
-      "referee_id": 15712
-    },
-    {
-      "fixture_id": 17055511,
-      "date": "2021-01-03T15:15:00Z",
-      "home": {
-        "id": 2975,
-        "name": "Deportivo Alavés",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/31/2975.png"
-      },
-      "away": {
-        "id": 7980,
-        "name": "Atlético de Madrid",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/12/7980.png"
-      },
-      "home_score": 1,
-      "away_score": 2,
-      "result_for_home_team": "P",
-      "is_home_team_at_home": true,
-      "team_home_stats": {
-        "shots": 4,
-        "sot": 1,
-        "corners": 1,
-        "fouls": 14,
-        "possession": 47,
-        "yellow": 0,
-        "red": 1
-      },
-      "team_away_stats": {
-        "shots": 8,
-        "sot": 4,
-        "corners": 5,
-        "fouls": 12,
-        "possession": 53,
-        "yellow": 2,
-        "red": 0
-      },
-      "coach_home": "Pablo Javier Machín Díez",
-      "coach_away": "Diego Pablo Simeone",
-      "referee_id": 15712
     }
   ],
-  "h2h_total_available": 20,
+  "h2h_total_available": 7,
+  "h2h_window_years": 5,
+  "h2h_excluded_older": 13,
+  "build_version": 2,
   "form": {
     "home": {
       "matches": [
@@ -1501,7 +1526,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.97
+          "odds": 1.99
         },
         {
           "key": "corners_under95",
@@ -1509,14 +1534,15 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.96
+          "odds": 1.98
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.57
         },
         {
           "key": "ht_draw",
@@ -1524,7 +1550,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.25
+          "odds": 2.3
         },
         {
           "key": "btts",
@@ -1540,7 +1566,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.84
+          "odds": 5.03
         },
         {
           "key": "scoreless",
@@ -1548,7 +1574,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.57
+          "odds": 2.62
         },
         {
           "key": "over15",
@@ -1564,7 +1590,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.86
+          "odds": 1.87
         },
         {
           "key": "corners_over95",
@@ -1572,7 +1598,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.76
+          "odds": 1.74
         },
         {
           "key": "more_corners",
@@ -1580,21 +1606,23 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.18
+          "odds": 2.21
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.27
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.43
         },
         {
           "key": "ht_leading",
@@ -1602,7 +1630,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.54
+          "odds": 4.68
         },
         {
           "key": "scored2plus",
@@ -1610,14 +1638,15 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.25
+          "odds": 3.35
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.0
         },
         {
           "key": "ht_behind",
@@ -1625,7 +1654,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.4
+          "odds": 2.42
         }
       ],
       "away": [
@@ -1643,14 +1672,15 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.86
+          "odds": 1.87
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.57
         },
         {
           "key": "sot_over",
@@ -1679,7 +1709,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.83
+          "odds": 1.86
         },
         {
           "key": "shots_over",
@@ -1722,7 +1752,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.96
+          "odds": 1.98
         },
         {
           "key": "more_corners",
@@ -1730,7 +1760,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.94
+          "odds": 1.92
         },
         {
           "key": "ht_draw",
@@ -1738,7 +1768,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.25
+          "odds": 2.3
         },
         {
           "key": "btts",
@@ -1754,7 +1784,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.57
+          "odds": 2.62
         },
         {
           "key": "corners_over95",
@@ -1762,14 +1792,15 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.76
+          "odds": 1.74
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.52
         },
         {
           "key": "ht_leading",
@@ -1777,7 +1808,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.4
+          "odds": 2.42
         },
         {
           "key": "scoreless",
@@ -1785,14 +1816,15 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.84
+          "odds": 5.03
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.0
         },
         {
           "key": "under25",
@@ -1800,14 +1832,15 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 1.97
+          "odds": 1.99
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 2.27
         },
         {
           "key": "ht_behind",
@@ -1815,7 +1848,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.54
+          "odds": 4.68
         }
       ]
     },
@@ -1827,7 +1860,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.97
+          "odds": 1.99
         },
         {
           "key": "ht_draw",
@@ -1905,14 +1938,15 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.96
+          "odds": 1.98
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.27
         },
         {
           "key": "team_2plus_yellow",
@@ -1950,14 +1984,15 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.76
+          "odds": 1.74
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.57
         },
         {
           "key": "over25",
@@ -1965,7 +2000,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.86
+          "odds": 1.87
         },
         {
           "key": "scored2plus",
@@ -1986,7 +2021,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.0
         },
         {
           "key": "ht_leading",
@@ -2024,14 +2060,15 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.97
+          "odds": 1.99
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.27
         },
         {
           "key": "team_2plus_yellow",
@@ -2096,7 +2133,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.96
+          "odds": 1.98
         },
         {
           "key": "ht_draw",
@@ -2133,7 +2170,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.76
+          "odds": 1.74
         },
         {
           "key": "ht_leading",
@@ -2148,7 +2185,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.86
+          "odds": 1.87
         },
         {
           "key": "scored2plus",
@@ -2162,7 +2199,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.57
         },
         {
           "key": "more_corners",
@@ -2176,7 +2214,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.0
         },
         {
           "key": "ht_behind",
@@ -2191,39 +2230,39 @@
   "simulation": {
     "n": 10000,
     "expected_goals": {
-      "home": 1.37,
-      "away": 1.4
+      "home": 1.2,
+      "away": 1.3
     },
-    "home_win_pct": 39.0,
-    "draw_pct": 26.7,
-    "away_win_pct": 34.3,
-    "btts_pct": 56.2,
-    "over25_pct": 52.0,
-    "under25_pct": 48.0,
+    "home_win_pct": 38.0,
+    "draw_pct": 27.4,
+    "away_win_pct": 34.7,
+    "btts_pct": 50.9,
+    "over25_pct": 46.0,
+    "under25_pct": 54.0,
     "top_scorelines": [
       {
         "score": "1-1",
-        "pct": 12.6
+        "pct": 12.8
       },
       {
         "score": "0-1",
-        "pct": 8.6
+        "pct": 10.5
       },
       {
         "score": "1-0",
-        "pct": 8.6
+        "pct": 10.1
       },
       {
         "score": "1-2",
-        "pct": 8.5
-      },
-      {
-        "score": "2-1",
         "pct": 8.2
       },
       {
-        "score": "0-2",
-        "pct": 6.3
+        "score": "2-1",
+        "pct": 8.1
+      },
+      {
+        "score": "0-0",
+        "pct": 7.9
       }
     ]
   },
@@ -3095,7 +3134,7 @@
           }
         },
         "h2h_stats": {
-          "appearances": 10,
+          "appearances": 7,
           "stats": {
             "Possession Lost": 68.0,
             "Accurate Passes": 93.0,
@@ -3114,7 +3153,7 @@
             "Clearances": 13.0,
             "Punches": 5.0,
             "Goalkeeper Goals Conceded": 6.0,
-            "Goals Conceded": 11.0,
+            "Goals Conceded": 8.0,
             "Good High Claim": 4.0,
             "Cumulative Minutes Played": 387.0,
             "Aerials Won": 1.0,
@@ -4796,29 +4835,28 @@
           }
         },
         "h2h_stats": {
-          "appearances": 9,
+          "appearances": 6,
           "stats": {
             "Shots Total": 3.0,
             "Shots Off Target": 2.0,
-            "Blocked Shots": 3.0,
-            "Duels Lost": 12.0,
-            "Accurate Passes": 197.0,
-            "Accurate Passes Percentage": 84.2,
-            "Passes": 238.0,
-            "Minutes Played": 365.0,
+            "Blocked Shots": 1.0,
+            "Duels Lost": 3.0,
+            "Accurate Passes": 95.0,
+            "Accurate Passes Percentage": 85.0,
+            "Passes": 113.0,
+            "Minutes Played": 185.0,
             "Long Balls": 9.0,
-            "Goals Conceded": 6.0,
-            "Duels Won": 14.0,
-            "Aerials Won": 10.0,
-            "Rating": 6.9,
-            "Clearances": 13.0,
-            "Total Duels": 28.0,
+            "Goals Conceded": 4.0,
+            "Duels Won": 4.0,
+            "Aerials Won": 3.0,
+            "Rating": 6.8,
+            "Clearances": 7.0,
+            "Total Duels": 9.0,
             "Long Balls Won": 4.0,
-            "Interceptions": 5.0,
-            "Fouls": 5.0,
-            "Fouls Drawn": 4.0,
-            "Shots Blocked": 3.0,
-            "Dribbled Past": 1.0
+            "Interceptions": 3.0,
+            "Fouls": 1.0,
+            "Fouls Drawn": 1.0,
+            "Shots Blocked": 1.0
           }
         }
       },
@@ -5300,33 +5338,32 @@
           }
         },
         "h2h_stats": {
-          "appearances": 10,
+          "appearances": 7,
           "stats": {
-            "Captain": 5.0,
+            "Captain": 4.0,
             "Long Balls Won": 32.0,
-            "Rating": 6.8,
-            "Accurate Passes": 177.0,
-            "Passes": 244.0,
+            "Rating": 6.6,
+            "Accurate Passes": 133.0,
+            "Passes": 175.0,
             "Long Balls": 57.0,
             "Possession Lost": 17.0,
             "Touches": 124.0,
-            "Accurate Passes Percentage": 74.4,
+            "Accurate Passes Percentage": 78.6,
             "Ball Recovery": 31.0,
             "Long Balls Won Percentage": 56.8,
-            "Minutes Played": 900.0,
+            "Minutes Played": 630.0,
             "Cumulative Minutes Played": 387.0,
-            "Goalkeeper Goals Conceded": 8.0,
+            "Goalkeeper Goals Conceded": 6.0,
             "Passes In Final Third": 1.0,
             "Good High Claim": 2.0,
-            "Goals Conceded": 7.0,
-            "Saves": 8.0,
-            "Aerials Won": 2.0,
-            "Duels Won": 2.0,
-            "Total Duels": 2.0,
-            "Saves Insidebox": 6.0,
+            "Goals Conceded": 5.0,
+            "Saves": 4.0,
+            "Aerials Won": 1.0,
+            "Duels Won": 1.0,
+            "Total Duels": 1.0,
+            "Saves Insidebox": 2.0,
             "Clearances": 3.0,
-            "Yellowcards": 1.0,
-            "Penalties Saved": 1.0
+            "Yellowcards": 1.0
           }
         }
       },
@@ -5611,52 +5648,49 @@
           }
         },
         "h2h_stats": {
-          "appearances": 9,
+          "appearances": 6,
           "stats": {
             "Chances Created": 3.0,
             "Possession Lost": 51.0,
             "Long Balls": 10.0,
-            "Rating": 7.1,
-            "Shots Total": 12.0,
-            "Accurate Passes Percentage": 84.3,
-            "Key Passes": 4.0,
-            "Passes": 393.0,
-            "Accurate Passes": 336.0,
+            "Rating": 7.0,
+            "Shots Total": 7.0,
+            "Accurate Passes Percentage": 82.7,
+            "Key Passes": 3.0,
+            "Passes": 256.0,
+            "Accurate Passes": 216.0,
             "Turn Over": 3.0,
-            "Duels Won": 27.0,
+            "Duels Won": 15.0,
             "Tackles Won": 6.0,
-            "Shots Blocked": 2.0,
-            "Total Duels": 54.0,
-            "Tackles": 11.0,
+            "Shots Blocked": 1.0,
+            "Total Duels": 27.0,
+            "Tackles": 7.0,
             "Ball Recovery": 11.0,
             "Passes In Final Third": 21.0,
             "Tacles Won Percentage": 83.5,
             "Backward Passes": 37.0,
-            "Clearances": 10.0,
+            "Clearances": 9.0,
             "Touches": 289.0,
-            "Minutes Played": 673.0,
-            "Fouls": 12.0,
-            "Interceptions": 7.0,
+            "Minutes Played": 419.0,
+            "Fouls": 6.0,
+            "Interceptions": 4.0,
             "Long Balls Won Percentage": 50.0,
-            "Duels Lost": 23.0,
+            "Duels Lost": 8.0,
             "Long Balls Won": 3.0,
             "Shots Off Target": 2.0,
-            "Dribbled Past": 7.0,
-            "Dribble Attempts": 9.0,
-            "Total Crosses": 14.0,
+            "Dribbled Past": 3.0,
+            "Dribble Attempts": 5.0,
+            "Total Crosses": 11.0,
             "Cumulative Minutes Played": 337.0,
-            "Shots On Target": 5.0,
-            "Goals Conceded": 6.0,
-            "Fouls Drawn": 8.0,
-            "Successful Dribbles": 6.0,
-            "Aerials Won": 3.0,
+            "Shots On Target": 3.0,
+            "Goals Conceded": 4.0,
+            "Fouls Drawn": 4.0,
+            "Successful Dribbles": 3.0,
+            "Aerials Won": 1.0,
             "Accurate Crosses": 1.0,
             "Successful Crosses Percentage": 20.0,
-            "Offsides": 3.0,
-            "Yellowcards": 2.0,
-            "Dispossessed": 1.0,
-            "Hit Woodwork": 1.0,
-            "Goals": 1.0
+            "Offsides": 1.0,
+            "Yellowcards": 2.0
           }
         }
       },
@@ -6263,48 +6297,48 @@
           }
         },
         "h2h_stats": {
-          "appearances": 9,
+          "appearances": 6,
           "stats": {
-            "Rating": 7.2,
-            "Passes": 531.0,
-            "Accurate Passes": 484.0,
+            "Rating": 7.1,
+            "Passes": 344.0,
+            "Accurate Passes": 316.0,
             "Touches": 163.0,
-            "Duels Lost": 18.0,
-            "Clearances": 8.0,
-            "Minutes Played": 483.0,
+            "Duels Lost": 9.0,
+            "Clearances": 5.0,
+            "Minutes Played": 303.0,
             "Backward Passes": 15.0,
-            "Accurate Passes Percentage": 90.9,
-            "Dispossessed": 3.0,
+            "Accurate Passes Percentage": 91.2,
+            "Dispossessed": 2.0,
             "Possession Lost": 22.0,
-            "Duels Won": 31.0,
+            "Duels Won": 15.0,
             "Long Balls": 24.0,
             "Turn Over": 1.0,
             "Passes In Final Third": 26.0,
             "Long Balls Won": 14.0,
             "Ball Recovery": 6.0,
             "Long Balls Won Percentage": 62.5,
-            "Dribble Attempts": 8.0,
-            "Tackles": 13.0,
-            "Total Duels": 49.0,
-            "Fouls": 8.0,
-            "Interceptions": 4.0,
+            "Dribble Attempts": 6.0,
+            "Tackles": 5.0,
+            "Total Duels": 24.0,
+            "Fouls": 5.0,
+            "Interceptions": 1.0,
             "Cumulative Minutes Played": 134.0,
             "Chances Created": 2.0,
             "Yellowcards": 1.0,
             "Key Passes": 5.0,
             "Total Crosses": 4.0,
             "Accurate Crosses": 1.0,
-            "Fouls Drawn": 9.0,
+            "Fouls Drawn": 8.0,
             "Successful Crosses Percentage": 50.0,
-            "Shots Total": 4.0,
+            "Shots Total": 3.0,
             "Shots Off Target": 1.0,
-            "Successful Dribbles": 5.0,
-            "Aerials Won": 7.0,
-            "Captain": 5.0,
-            "Shots On Target": 2.0,
-            "Goals Conceded": 6.0,
+            "Successful Dribbles": 3.0,
+            "Aerials Won": 2.0,
+            "Captain": 3.0,
+            "Shots On Target": 1.0,
+            "Goals Conceded": 4.0,
             "Shots Blocked": 1.0,
-            "Dribbled Past": 6.0,
+            "Dribbled Past": 1.0,
             "Assists": 1.0,
             "Through Balls": 1.0,
             "Through Balls Won": 1.0,
@@ -7191,42 +7225,46 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T23:20:53.781794Z",
   "odds": {
-    "home": 4.32,
-    "draw": 3.74,
-    "away": 1.84,
-    "under15": 3.71,
+    "home": 4.48,
+    "draw": 3.84,
+    "away": 1.83,
+    "under15": 3.81,
     "over15": 1.28,
-    "under25": 1.97,
-    "over25": 1.86,
-    "under35": 1.36,
-    "over35": 3.16,
+    "under25": 1.99,
+    "over25": 1.87,
+    "under35": 1.37,
+    "over35": 3.22,
     "btts": 1.73,
-    "corners_under95": 1.96,
-    "corners_over95": 1.76,
+    "corners_under95": 1.98,
+    "corners_over95": 1.74,
+    "yellow_under5": 1.57,
+    "yellow_5plus": 2.27,
+    "red_card": 4.0,
     "source": "chance",
-    "home_scoreless": 2.57,
-    "home_scored2plus": 3.25,
-    "home_clean_sheet": 4.84,
-    "home_ht_leading": 4.54,
-    "home_ht_draw": 2.25,
-    "home_ht_behind": 2.4,
-    "home_more_corners": 2.18,
-    "away_clean_sheet": 2.57,
-    "away_scoreless": 4.84,
-    "away_scored2plus": 1.83,
-    "away_ht_behind": 4.54,
-    "away_ht_draw": 2.25,
-    "away_ht_leading": 2.4,
-    "away_more_corners": 1.94
+    "home_scoreless": 2.62,
+    "home_scored2plus": 3.35,
+    "home_clean_sheet": 5.03,
+    "home_ht_leading": 4.68,
+    "home_ht_draw": 2.3,
+    "home_ht_behind": 2.42,
+    "home_more_corners": 2.21,
+    "home_team_2plus_yellow": 1.43,
+    "away_clean_sheet": 2.62,
+    "away_scoreless": 5.03,
+    "away_scored2plus": 1.86,
+    "away_ht_behind": 4.68,
+    "away_ht_draw": 2.3,
+    "away_ht_leading": 2.42,
+    "away_more_corners": 1.92,
+    "away_team_2plus_yellow": 1.52
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nAtlético de Madrid vyhraje: Atlético má vyšší xG (1.42 vs 1.08) a lepší formu (13 bodů z posledních 6 zápasů). Model dává hostům 43.6% šanci na vítězství, což potvrzuje jejich dominanci v posledních vzájemných zápasech.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 53.9% pravděpodobnost, že oba týmy skórují, což odpovídá jejich ofenzivním statistikám a vzájemným zápasům.\n• Více než 2.5 gólu: S 49.2% pravděpodobností na více než 2.5 gólu a vysokým počtem střel na branku (24.4) se očekává otevřený zápas.\n• Atlético vyhraje 1-0: Nejčastější skóre 0-1 (11.4%) naznačuje, že Atlético může vyhrát těsným rozdílem, což odpovídá jejich defenzivní síle.",
+    "text": "Největší důvěra:\nAtlético de Madrid vyhraje: Atlético má 43.6% šanci na výhru podle modelu a v posledních zápasech prokázali lepší formu (13 bodů z 18). Očekávané xG 1.42 oproti 1.08 Alavésu naznačuje, že hosté budou efektivnější v útoku.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 53.9% pravděpodobnost, že oba týmy skórují, což odpovídá jejich ofenzivním statistikám a slabší obraně Alavésu.\n• Více než 2.5 gólu: S pravděpodobností 49.2% na více než 2.5 gólu a s formou obou týmů, která naznačuje ofenzivní potenciál, je tento tip atraktivní.\n• Atlético dá první gól: S ohledem na formu a statistiky je pravděpodobné, že Atlético začne aktivně a využije slabší obranu Alavésu, což zvyšuje šanci na první gól.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "11ddc22fc962762b",
-    "generated_at": "2026-10-09T20:23:58Z",
-    "text_en": "Highest confidence:\nAtlético de Madrid to Win: With a model probability of 43.6% for an away win and superior recent form, Atlético Madrid is poised to dominate. Their xG of 1.42 suggests they can convert chances effectively against Alavés, who struggle defensively.\n\nFurther analytical tips:\n• Both Teams to Score: Yes: The model indicates a 53.9% chance of both teams scoring, supported by Alavés' recent scoring form and Atlético's vulnerability at times.\n• Over 1.5 Goals: With a high likelihood of 74.9% for over 1.5 goals, expect an open game as both teams have shown attacking intent and defensive lapses.\n• Draw No Bet on Atlético Madrid: Given the model's probabilities and Atlético's strong away form, a draw no bet on Atlético offers a safety net while capitalizing on their winning potential."
+    "input_hash": "07db5f5b84b2b1ff",
+    "generated_at": "2026-10-10T03:58:10Z",
+    "text_en": "Highest confidence:\nAtlético de Madrid to Win: With a model probability of 43.6% for an Atlético win and strong recent form (13 points in 6 matches), they are likely to dominate possession and create more chances, reflected in their higher xG of 1.42 compared to Alavés' 1.08.\n\nFurther analytical tips:\n• Both Teams to Score: Yes: With a BTTS probability of 53.9%, both teams have shown attacking potential, suggesting a competitive match with chances at both ends.\n• Over 1.5 Goals: The model indicates a 74.9% chance for over 1.5 goals, supported by both teams' recent scoring trends and xG figures.\n• Atlético to Score First: Given Atlético's strong form and higher xG, they are likely to take an early lead, which aligns with their historical head-to-head advantage."
   }
 }

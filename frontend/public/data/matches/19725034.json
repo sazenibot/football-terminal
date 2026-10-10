@@ -201,20 +201,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37600322,
-      "player_name": "Martin Ryzek",
-      "type_id": 1608,
-      "type_name": "Red Card Suspension",
-      "type_name_cs": "Trest za červenou kartu",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-05-28",
-      "end_date": null,
-      "games_missed": 16,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 17168903,
       "player_name": "Raimonds Krollis",
       "type_id": 1918,
@@ -225,6 +211,20 @@
       "start_date": "2026-08-27",
       "end_date": "2027-06-30",
       "games_missed": 6,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37600322,
+      "player_name": "Martin Ryzek",
+      "type_id": 1608,
+      "type_name": "Red Card Suspension",
+      "type_name_cs": "Trest za červenou kartu",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-05-28",
+      "end_date": null,
+      "games_missed": 16,
       "likely_available": false
     }
   ],
@@ -1669,14 +1669,16 @@
           "label": "Fauly: 14.5+ v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.44
         },
         {
           "key": "offsides_under",
           "label": "Ofsajdy: méně než 2.5 v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 2.08
         },
         {
           "key": "clean_sheet",
@@ -1684,7 +1686,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.93
+          "odds": 1.95
         },
         {
           "key": "shots_over",
@@ -1712,14 +1714,16 @@
           "label": "Střely na branku: méně než 6.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.44
         },
         {
           "key": "fouls_under",
           "label": "Fauly: méně než 16.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.72
         },
         {
           "key": "offsides_over",
@@ -1750,35 +1754,39 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.59
+          "odds": 1.6
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.9
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.32
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.27
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.59
         },
         {
           "key": "ht_draw",
@@ -1801,14 +1809,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.81
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.57
         },
         {
           "key": "ht_leading",
@@ -1816,7 +1826,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.99
+          "odds": 2.01
         },
         {
           "key": "btts",
@@ -1832,14 +1842,15 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 5.92
+          "odds": 5.78
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.6
         },
         {
           "key": "ht_behind",
@@ -1847,7 +1858,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 6.74
+          "odds": 6.48
         }
       ],
       "away": [
@@ -1864,14 +1875,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.81
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.57
         },
         {
           "key": "shots_over",
@@ -1899,7 +1912,8 @@
           "label": "Střely na branku: méně než 3.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.41
         },
         {
           "key": "fouls_over",
@@ -1950,7 +1964,8 @@
           "label": "Tým dostal 2+ žluté karty",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.38
         },
         {
           "key": "ht_behind",
@@ -1958,7 +1973,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.99
+          "odds": 2.01
         },
         {
           "key": "scoreless",
@@ -1966,7 +1981,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.93
+          "odds": 1.95
         },
         {
           "key": "over25",
@@ -1981,14 +1996,16 @@
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 4.26
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 3.6
         },
         {
           "key": "ht_draw",
@@ -2004,7 +2021,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 5.92
+          "odds": 5.78
         },
         {
           "key": "scored2plus",
@@ -2012,21 +2029,23 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 5.19
+          "odds": 5.07
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.9
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.27
         },
         {
           "key": "ht_leading",
@@ -2034,7 +2053,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 6.74
+          "odds": 6.48
         }
       ]
     },
@@ -2096,7 +2115,8 @@
           "label": "Střely na branku: méně než 8.5 v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.85
         },
         {
           "key": "fouls_over",
@@ -2138,14 +2158,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.81
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.27
         },
         {
           "key": "ht_leading",
@@ -2167,7 +2189,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.9
         },
         {
           "key": "more_corners",
@@ -2181,7 +2204,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.57
         },
         {
           "key": "ht_draw",
@@ -2210,7 +2234,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 3.6
         },
         {
           "key": "ht_behind",
@@ -2277,7 +2302,8 @@
           "label": "Střely na branku: méně než 7.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.51
         },
         {
           "key": "fouls_over",
@@ -2319,7 +2345,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.81
         },
         {
           "key": "more_corners",
@@ -2333,7 +2360,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.57
         },
         {
           "key": "team_2plus_yellow",
@@ -2355,21 +2383,24 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.9
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.27
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 3.6
         },
         {
           "key": "ht_draw",
@@ -7410,37 +7441,46 @@
     ]
   },
   "odds": {
-    "home": 1.46,
-    "draw": 4.38,
-    "away": 7.52,
+    "home": 1.48,
+    "draw": 4.39,
+    "away": 7.02,
     "under15": 3.58,
     "over15": 1.29,
     "under25": 1.91,
     "over25": 1.91,
     "under35": 1.33,
-    "over35": 3.31,
+    "over35": 3.3,
     "btts": 2.02,
+    "corners_under95": 1.81,
+    "corners_over95": 1.9,
+    "yellow_under5": 1.57,
+    "yellow_5plus": 2.27,
+    "red_card": 3.6,
     "source": "chance",
-    "home_scoreless": 5.92,
-    "home_scored2plus": 1.59,
-    "home_clean_sheet": 1.93,
-    "home_ht_leading": 1.99,
+    "home_scoreless": 5.78,
+    "home_scored2plus": 1.6,
+    "home_clean_sheet": 1.95,
+    "home_ht_leading": 2.01,
     "home_ht_draw": 2.33,
-    "home_ht_behind": 6.74,
-    "away_clean_sheet": 5.92,
-    "away_scoreless": 1.93,
-    "away_scored2plus": 5.19,
-    "away_ht_behind": 1.99,
+    "home_ht_behind": 6.48,
+    "home_more_corners": 1.32,
+    "home_team_2plus_yellow": 1.59,
+    "away_clean_sheet": 5.78,
+    "away_scoreless": 1.95,
+    "away_scored2plus": 5.07,
+    "away_ht_behind": 2.01,
     "away_ht_draw": 2.33,
-    "away_ht_leading": 6.74
+    "away_ht_leading": 6.48,
+    "away_more_corners": 4.26,
+    "away_team_2plus_yellow": 1.38
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nSlovan Liberec vyhraje: Liberec má silnou formu (14 bodů z 18) a vysoké xG (1.98) oproti Slovácku (0.58). Historie vzájemných zápasů ukazuje dominanci domácích, což posiluje důvěru v jejich vítězství.\n\nDalší analytické tipy:\n• Liberec dá 2 a více gólů: S vysokým xG a slabou obranou Slovácka (ga 9) je pravděpodobné, že Liberec vstřelí minimálně 2 góly.\n• Oba týmy nedají gól: Slovácko má nízké xG (0.58) a slabou formu, což naznačuje, že by mohli zůstat bez gólu.\n• Více než 2.5 gólu v zápase: S Libercem, který má tendenci skórovat, a s vysokým počtem střel (25.1), je pravděpodobné, že zápas bude gólově bohatý.",
+    "text": "Největší důvěra:\nSlovan Liberec vyhraje: Liberec má skvělou formu s 14 body z posledních 6 zápasů a výrazně lepší xG (1.99 vs 0.58). Historie vzájemných zápasů ukazuje dominanci domácích, což potvrzuje i model s 69.5% pravděpodobností výhry.\n\nDalší analytické tipy:\n• Liberec dá 2+ góly: Model predikuje vysoké xG pro Liberec (1.99) a slabou obranu Slovácka, což naznačuje, že domácí mohou snadno překonat 2 góly.\n• Oba týmy nedají gól: S 45.3% šancí na BTTS a slabou ofenzivou Slovácka se očekává, že domácí obrana udrží čisté konto.\n• Více než 2.5 gólu: S 75.8% pravděpodobností na over 1.5 a silnou ofenzivou Liberec, je pravděpodobné, že zápas skončí s více než 2.5 góly.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "c0bad92197fdf03f",
-    "generated_at": "2026-10-09T20:22:44Z",
-    "text_en": "Highest confidence:\nSlovan Liberec to Win: With a model probability of 69.3% for a home win and a strong recent form (14 points from 6 games), Slovan Liberec is expected to dominate against a struggling Slovácko side, who have only 3 points in their last 6 matches.\n\nFurther analytical tips:\n• Under 2.5 Goals: The model suggests a low xG for Slovácko (0.58) and a tendency for Slovan Liberec to keep clean sheets, indicating a likely tight match with fewer goals.\n• Slovan Liberec to Score First: Given their strong offensive metrics (1.98 xG) and Slovácko's defensive vulnerabilities, Slovan Liberec is likely to take the lead early in the match.\n• More than 9 Corners: With an average of 9.5 corners predicted for Slovan Liberec, their attacking play is expected to generate multiple corner opportunities throughout the match."
+    "input_hash": "9cb84a2bba1aaa19",
+    "generated_at": "2026-10-10T03:56:41Z",
+    "text_en": "Highest confidence:\nSlovan Liberec to Win: With a model probability of 69.5% for a home win and strong recent form (4 wins in 5), Slovan Liberec is well-positioned against a struggling Slovácko side that has only 3 points in their last 6 matches. Expect territorial dominance and a solid defensive display.\n\nFurther analytical tips:\n• Over 1.5 Goals: The model suggests a high likelihood (75.8%) of over 1.5 goals, reflecting Slovan's attacking strength (1.99 xG) against a leaky Slovácko defense (0.58 xG).\n• Slovan Liberec to Score First: Given Slovan's strong home form and head-to-head dominance, they are likely to take the initiative early, supported by a high xG and recent scoring trends.\n• More than 9 Corners: With an average of 9.5 corners predicted and Slovan's attacking style, expect a game with plenty of corner opportunities as they press forward."
   },
-  "refreshed_at": "2026-10-08T23:16:24.015290Z"
+  "refreshed_at": "2026-10-10T03:18:01.707213Z"
 }

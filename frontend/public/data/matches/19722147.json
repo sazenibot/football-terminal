@@ -1105,7 +1105,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.24
+          "odds": 1.25
         },
         {
           "key": "corners_under95",
@@ -1113,7 +1113,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.96
+          "odds": 1.91
         },
         {
           "key": "yellow_under5",
@@ -1193,7 +1193,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.75
+          "odds": 1.77
         },
         {
           "key": "scored2plus",
@@ -1201,7 +1201,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.33
+          "odds": 2.36
         },
         {
           "key": "team_2plus_yellow",
@@ -1217,7 +1217,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.47
+          "odds": 3.61
         },
         {
           "key": "under25",
@@ -1225,7 +1225,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.1
+          "odds": 2.12
         },
         {
           "key": "red_card",
@@ -1241,7 +1241,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.24
+          "odds": 2.27
         },
         {
           "key": "ht_behind",
@@ -1249,7 +1249,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.99
+          "odds": 3.1
         },
         {
           "key": "corners_over95",
@@ -1257,7 +1257,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.75
+          "odds": 1.8
         },
         {
           "key": "more_corners",
@@ -1265,7 +1265,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.94
+          "odds": 1.91
         },
         {
           "key": "yellow_5plus",
@@ -1281,7 +1281,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.3
+          "odds": 3.32
         },
         {
           "key": "clean_sheet",
@@ -1289,7 +1289,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.85
+          "odds": 3.87
         }
       ],
       "away": [
@@ -1313,7 +1313,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.19
+          "odds": 2.23
         },
         {
           "key": "yellow_under5",
@@ -1381,7 +1381,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.24
+          "odds": 1.25
         },
         {
           "key": "under25",
@@ -1389,7 +1389,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.1
+          "odds": 2.12
         },
         {
           "key": "corners_over95",
@@ -1397,7 +1397,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.75
+          "odds": 1.8
         },
         {
           "key": "team_2plus_yellow",
@@ -1413,7 +1413,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.24
+          "odds": 2.27
         },
         {
           "key": "scoreless",
@@ -1421,7 +1421,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.85
+          "odds": 3.87
         },
         {
           "key": "over25",
@@ -1429,7 +1429,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.75
+          "odds": 1.77
         },
         {
           "key": "scored2plus",
@@ -1437,7 +1437,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.11
+          "odds": 2.2
         },
         {
           "key": "corners_under95",
@@ -1445,7 +1445,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.96
+          "odds": 1.91
         },
         {
           "key": "clean_sheet",
@@ -1453,7 +1453,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.47
+          "odds": 3.61
         },
         {
           "key": "yellow_5plus",
@@ -1469,7 +1469,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.99
+          "odds": 3.1
         },
         {
           "key": "ht_behind",
@@ -1477,7 +1477,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.3
+          "odds": 3.32
         },
         {
           "key": "red_card",
@@ -1563,7 +1563,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.24
+          "odds": 1.25
         },
         {
           "key": "under25",
@@ -1571,7 +1571,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.1
+          "odds": 2.12
         },
         {
           "key": "corners_over95",
@@ -1579,7 +1579,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.75
+          "odds": 1.8
         },
         {
           "key": "yellow_5plus",
@@ -1623,7 +1623,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.75
+          "odds": 1.77
         },
         {
           "key": "scored2plus",
@@ -1638,7 +1638,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.96
+          "odds": 1.91
         },
         {
           "key": "more_corners",
@@ -1751,7 +1751,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.24
+          "odds": 1.25
         },
         {
           "key": "under25",
@@ -1759,7 +1759,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.1
+          "odds": 2.12
         },
         {
           "key": "corners_over95",
@@ -1767,7 +1767,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.75
+          "odds": 1.8
         },
         {
           "key": "corners_under95",
@@ -1775,7 +1775,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.96
+          "odds": 1.91
         },
         {
           "key": "yellow_under5",
@@ -1827,7 +1827,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.75
+          "odds": 1.77
         },
         {
           "key": "scored2plus",
@@ -6055,45 +6055,45 @@
   },
   "odds": {
     "home": 2.81,
-    "draw": 3.58,
-    "away": 2.44,
-    "under15": 4.07,
-    "over15": 1.24,
-    "under25": 2.1,
-    "over25": 1.75,
-    "under35": 1.42,
-    "over35": 2.86,
+    "draw": 3.63,
+    "away": 2.53,
+    "under15": 4.15,
+    "over15": 1.25,
+    "under25": 2.12,
+    "over25": 1.77,
+    "under35": 1.43,
+    "over35": 2.93,
     "btts": 1.59,
-    "corners_under95": 1.96,
-    "corners_over95": 1.75,
+    "corners_under95": 1.91,
+    "corners_over95": 1.8,
     "yellow_under5": 1.54,
     "yellow_5plus": 2.32,
     "red_card": 4.61,
     "source": "chance",
-    "home_scoreless": 3.47,
-    "home_scored2plus": 2.33,
-    "home_clean_sheet": 3.85,
-    "home_ht_leading": 3.3,
-    "home_ht_draw": 2.24,
-    "home_ht_behind": 2.99,
-    "home_more_corners": 1.94,
+    "home_scoreless": 3.61,
+    "home_scored2plus": 2.36,
+    "home_clean_sheet": 3.87,
+    "home_ht_leading": 3.32,
+    "home_ht_draw": 2.27,
+    "home_ht_behind": 3.1,
+    "home_more_corners": 1.91,
     "home_team_2plus_yellow": 1.54,
-    "away_clean_sheet": 3.47,
-    "away_scoreless": 3.85,
-    "away_scored2plus": 2.11,
-    "away_ht_behind": 3.3,
-    "away_ht_draw": 2.24,
-    "away_ht_leading": 2.99,
-    "away_more_corners": 2.19,
+    "away_clean_sheet": 3.61,
+    "away_scoreless": 3.87,
+    "away_scored2plus": 2.2,
+    "away_ht_behind": 3.32,
+    "away_ht_draw": 2.27,
+    "away_ht_leading": 3.1,
+    "away_more_corners": 2.23,
     "away_team_2plus_yellow": 1.44
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nFulham vyhraje: Fulham má 49.4% šanci na výhru podle modelu, což je podpořeno jejich lepší formou a vyšším xG (1.75) oproti Ipswichu (1.19). Domácí mají problémy v obraně, což může hrát ve prospěch hostů.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 59.1% pravděpodobnost, že oba týmy skórují, což odpovídá jejich ofenzivním statistikám a slabší obraně Ipswichu.\n• Více než 2.5 gólu: S 57.7% pravděpodobností na více než 2.5 gólu se očekává otevřený zápas, zejména vzhledem k defenzivním slabinám obou týmů.\n• Fulham dá 2 a více gólů: Fulham má průměrné xG 1.75, což naznačuje, že by mohli skórovat minimálně dvakrát, zejména proti zranitelné obraně Ipswichu.",
+    "text": "Největší důvěra:\nTip na vítězství Fulhamu: Fulham má 49.4% pravděpodobnost výhry podle modelu, zatímco Ipswich má slabou formu s 6 body z posledních 5 zápasů. Očekávané xG Fulhamu (1.75) naznačuje jejich ofenzivní sílu, což by mohlo rozhodnout zápas.\n\nDalší analytické tipy:\n• Tip na více než 2.5 gólu: Model ukazuje 57.7% pravděpodobnost, že padne více než 2.5 gólu, což odpovídá ofenzivní hře obou týmů a jejich slabé defenzivě.\n• Tip na oba týmy dají gól (BTTS): S pravděpodobností 59.1% na BTTS a historickými výsledky, kde oba týmy často skórovaly, je tento tip silný.\n• Tip na remízu 1-1: Model uvádí, že nejčastější skóre je 1-1 s 11.8% pravděpodobností, což odráží vyrovnanou hru a formu obou týmů.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "01ba765516f4d588",
-    "generated_at": "2026-10-09T20:27:09Z",
-    "text_en": "Highest confidence:\nFulham to win: Fulham has a strong probability of 49.4% to win, backed by superior xG of 1.75 compared to Ipswich's 1.19. Their recent form shows resilience, while Ipswich struggles defensively, suggesting Fulham can capitalize on scoring opportunities.\n\nFurther analytical tips:\n• Both teams to score: With a 59.1% probability for BTTS, both teams have shown vulnerabilities in defense, making it likely they will each find the net.\n• Over 2.5 goals: The model indicates an 57.7% chance for over 2.5 goals, reflecting both teams' attacking potential and defensive frailties.\n• Fulham to score first: Given Fulham's higher xG and Ipswich's defensive issues, it's probable Fulham will take the lead early in the match."
+    "input_hash": "e63fb9e7dcf0b055",
+    "generated_at": "2026-10-10T03:55:38Z",
+    "text_en": "Highest confidence:\nFulham to Win: Fulham's model probability at 49.4% suggests they are the favorites, supported by their superior xG of 1.75 compared to Ipswich's 1.19. Ipswich's recent form shows inconsistency, while Fulham's is slightly better, indicating a likely away victory.\n\nFurther analytical tips:\n• Both Teams to Score: With a BTTS probability of 59.1%, both teams are likely to find the net, given their recent scoring patterns and defensive vulnerabilities.\n• Over 2.5 Goals: The model indicates an 80.8% chance of over 1.5 goals, suggesting an open game with multiple scoring opportunities, especially with both teams' attacking styles.\n• Fulham to Score First: Fulham's higher xG and better form suggest they are more likely to take the lead early, which aligns with their attacking capabilities against Ipswich's shaky defense."
   },
-  "refreshed_at": "2026-10-08T23:17:10.179225Z"
+  "refreshed_at": "2026-10-10T03:24:21.541033Z"
 }

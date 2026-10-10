@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T23:23:20Z",
+  "generated_at": "2026-10-10T03:51:29Z",
   "league": {
     "id": 72,
     "name": "Eredivisie",
@@ -9,30 +9,6 @@
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/72.png"
   },
   "round": [
-    {
-      "fixture_id": 19714637,
-      "starting_at": "2026-10-09T18:00:00Z",
-      "venue": "Philips Stadion",
-      "home": {
-        "id": 682,
-        "name": "PSV",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/682.png"
-      },
-      "away": {
-        "id": 1053,
-        "name": "SC Heerenveen",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/29/1053.png"
-      },
-      "has_full_data": true,
-      "signals": {
-        "referee": true,
-        "probs": [
-          76,
-          14,
-          10
-        ]
-      }
-    },
     {
       "fixture_id": 19714635,
       "starting_at": "2026-10-10T14:30:00Z",
@@ -75,7 +51,7 @@
       "signals": {
         "referee": true,
         "probs": [
-          53,
+          52,
           24,
           23
         ]
@@ -101,7 +77,7 @@
         "probs": [
           21,
           24,
-          55
+          56
         ]
       }
     },
@@ -123,7 +99,7 @@
       "signals": {
         "referee": true,
         "probs": [
-          67,
+          66,
           19,
           15
         ]
@@ -221,14 +197,110 @@
         "probs": [
           45,
           26,
-          28
+          29
+        ]
+      }
+    },
+    {
+      "fixture_id": 19714628,
+      "starting_at": "2026-10-16T18:00:00Z",
+      "venue": "Abe Lenstra Stadion",
+      "home": {
+        "id": 1053,
+        "name": "SC Heerenveen",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/29/1053.png"
+      },
+      "away": {
+        "id": 1652,
+        "name": "Excelsior",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/20/1652.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          43,
+          27,
+          30
+        ]
+      }
+    },
+    {
+      "fixture_id": 19714627,
+      "starting_at": "2026-10-17T14:30:00Z",
+      "venue": "WerkTalent Stadion",
+      "home": {
+        "id": 1128,
+        "name": "ADO Den Haag",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/8/1128.png"
+      },
+      "away": {
+        "id": 682,
+        "name": "PSV",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/10/682.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          9,
+          14,
+          77
+        ]
+      }
+    },
+    {
+      "fixture_id": 19714625,
+      "starting_at": "2026-10-17T18:00:00Z",
+      "venue": "BUKO Stadion",
+      "home": {
+        "id": 1550,
+        "name": "Telstar",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/14/1550.png"
+      },
+      "away": {
+        "id": 73,
+        "name": "Feyenoord",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/9/73.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          15,
+          21,
+          64
+        ]
+      }
+    },
+    {
+      "fixture_id": 19714624,
+      "starting_at": "2026-10-17T19:00:00Z",
+      "venue": "Sparta-Stadion Het Kasteel",
+      "home": {
+        "id": 919,
+        "name": "Sparta Rotterdam",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/23/919.png"
+      },
+      "away": {
+        "id": 669,
+        "name": "Willem II",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/29/669.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          58,
+          24,
+          18
         ]
       }
     }
   ],
   "stats": {
-    "created": 0,
-    "refreshed": 9,
+    "created": 4,
+    "refreshed": 8,
     "errors": 0
   }
 }

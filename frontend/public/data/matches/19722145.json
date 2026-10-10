@@ -231,34 +231,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37317015,
-      "player_name": "Amad Diallo Traoré",
-      "type_id": 531,
-      "type_name": "Knock",
-      "type_name_cs": "Menší zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-20",
-      "end_date": "2026-10-10",
-      "games_missed": 7,
-      "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 26768,
-      "player_name": "Matthijs de Ligt",
-      "type_id": 595,
-      "type_name": "Back Injury",
-      "type_name_cs": "Zranění zad",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-15",
-      "end_date": "2026-10-10",
-      "games_missed": 2,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 893705,
       "player_name": "Manuel Ugarte Ribeiro",
       "type_id": 1918,
@@ -1527,7 +1499,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.15
+          "odds": 1.16
         },
         {
           "key": "yellow_under5",
@@ -1543,7 +1515,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.55
+          "odds": 2.56
         },
         {
           "key": "shots_over",
@@ -1603,7 +1575,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.49
+          "odds": 1.48
         },
         {
           "key": "under25",
@@ -1611,7 +1583,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.63
+          "odds": 2.66
         },
         {
           "key": "corners_over95",
@@ -1619,7 +1591,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.53
+          "odds": 1.51
         },
         {
           "key": "more_corners",
@@ -1627,7 +1599,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.63
+          "odds": 1.65
         },
         {
           "key": "scoreless",
@@ -1635,7 +1607,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 6.37
+          "odds": 6.44
         },
         {
           "key": "over25",
@@ -1643,7 +1615,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.49
+          "odds": 1.51
         },
         {
           "key": "scored2plus",
@@ -1651,7 +1623,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.49
+          "odds": 1.55
         },
         {
           "key": "corners_under95",
@@ -1659,7 +1631,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.34
+          "odds": 2.39
         },
         {
           "key": "yellow_5plus",
@@ -1691,7 +1663,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.45
+          "odds": 4.51
         },
         {
           "key": "clean_sheet",
@@ -1699,7 +1671,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.06
+          "odds": 3.19
         },
         {
           "key": "ht_leading",
@@ -1707,7 +1679,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.16
+          "odds": 2.23
         }
       ],
       "away": [
@@ -1717,7 +1689,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.53
+          "odds": 1.51
         },
         {
           "key": "yellow_under5",
@@ -1733,7 +1705,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 3.06
+          "odds": 3.19
         },
         {
           "key": "shots_over",
@@ -1797,7 +1769,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.15
+          "odds": 1.16
         },
         {
           "key": "under25",
@@ -1805,7 +1777,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.63
+          "odds": 2.66
         },
         {
           "key": "more_corners",
@@ -1813,7 +1785,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.68
+          "odds": 2.62
         },
         {
           "key": "ht_draw",
@@ -1821,7 +1793,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.55
+          "odds": 2.56
         },
         {
           "key": "clean_sheet",
@@ -1829,7 +1801,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 6.37
+          "odds": 6.44
         },
         {
           "key": "over25",
@@ -1837,7 +1809,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.49
+          "odds": 1.51
         },
         {
           "key": "ht_behind",
@@ -1845,7 +1817,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.16
+          "odds": 2.23
         },
         {
           "key": "btts",
@@ -1853,7 +1825,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.49
+          "odds": 1.48
         },
         {
           "key": "scored2plus",
@@ -1861,7 +1833,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.62
+          "odds": 2.65
         },
         {
           "key": "team_2plus_yellow",
@@ -1876,7 +1848,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.34
+          "odds": 2.39
         },
         {
           "key": "yellow_5plus",
@@ -1900,7 +1872,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.45
+          "odds": 4.51
         }
       ]
     },
@@ -1970,7 +1942,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.15
+          "odds": 1.16
         },
         {
           "key": "under25",
@@ -1978,7 +1950,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.63
+          "odds": 2.66
         },
         {
           "key": "scored2plus",
@@ -1993,7 +1965,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.34
+          "odds": 2.39
         },
         {
           "key": "yellow_under5",
@@ -2016,7 +1988,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.49
+          "odds": 1.48
         },
         {
           "key": "clean_sheet",
@@ -2038,7 +2010,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.49
+          "odds": 1.51
         },
         {
           "key": "corners_over95",
@@ -2046,7 +2018,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.53
+          "odds": 1.51
         },
         {
           "key": "more_corners",
@@ -2114,7 +2086,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.15
+          "odds": 1.16
         },
         {
           "key": "shots_over",
@@ -2166,7 +2138,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.49
+          "odds": 1.51
         },
         {
           "key": "scored2plus",
@@ -2181,7 +2153,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.34
+          "odds": 2.39
         },
         {
           "key": "yellow_under5",
@@ -2211,7 +2183,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.49
+          "odds": 1.48
         },
         {
           "key": "scoreless",
@@ -2226,7 +2198,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.63
+          "odds": 2.66
         },
         {
           "key": "corners_over95",
@@ -2234,7 +2206,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.53
+          "odds": 1.51
         },
         {
           "key": "more_corners",
@@ -7547,45 +7519,45 @@
     ]
   },
   "odds": {
-    "home": 1.7,
-    "draw": 4.35,
-    "away": 4.47,
-    "under15": 5.53,
-    "over15": 1.15,
-    "under25": 2.63,
-    "over25": 1.49,
-    "under35": 1.65,
+    "home": 1.74,
+    "draw": 4.4,
+    "away": 4.43,
+    "under15": 5.58,
+    "over15": 1.16,
+    "under25": 2.66,
+    "over25": 1.51,
+    "under35": 1.68,
     "over35": 2.27,
-    "btts": 1.49,
-    "corners_under95": 2.34,
-    "corners_over95": 1.53,
+    "btts": 1.48,
+    "corners_under95": 2.39,
+    "corners_over95": 1.51,
     "yellow_under5": 2.03,
     "yellow_5plus": 1.7,
     "red_card": 4.61,
     "source": "chance",
-    "home_scoreless": 6.37,
-    "home_scored2plus": 1.49,
-    "home_clean_sheet": 3.06,
-    "home_ht_leading": 2.16,
-    "home_ht_draw": 2.55,
-    "home_ht_behind": 4.45,
-    "home_more_corners": 1.63,
+    "home_scoreless": 6.44,
+    "home_scored2plus": 1.55,
+    "home_clean_sheet": 3.19,
+    "home_ht_leading": 2.23,
+    "home_ht_draw": 2.56,
+    "home_ht_behind": 4.51,
+    "home_more_corners": 1.65,
     "home_team_2plus_yellow": 1.42,
-    "away_clean_sheet": 6.37,
-    "away_scoreless": 3.06,
-    "away_scored2plus": 2.62,
-    "away_ht_behind": 2.16,
-    "away_ht_draw": 2.55,
-    "away_ht_leading": 4.45,
-    "away_more_corners": 2.68
+    "away_clean_sheet": 6.44,
+    "away_scoreless": 3.19,
+    "away_scored2plus": 2.65,
+    "away_ht_behind": 2.23,
+    "away_ht_draw": 2.56,
+    "away_ht_leading": 4.51,
+    "away_more_corners": 2.62
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nManchester United vyhraje: Model dává domácím 53.8 % šanci na výhru, což je podpořeno jejich lepší formou a xG 1.94 oproti 1.18 hostů. Rozhodčí Stuart Attwell má tendenci pískat více faulů, což může ovlivnit hru ve prospěch domácích.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model ukazuje 60.4 % pravděpodobnost, že oba týmy skórují, což odpovídá jejich ofenzivním statistikám a slabší defenzivě Tottenhamu.\n• Více než 2.5 gólu: S 60.7 % pravděpodobností na over 2.5 gólu a očekávanými xG, které naznačují ofenzivní hru, je tento tip atraktivní.\n• Manchester United dá 2 góly: Nejčastější skóre 2-1 a 2-0 naznačuje, že domácí by mohli skórovat dvakrát, zejména proti slabé obraně Tottenhamu.",
+    "text": "Největší důvěra:\nManchester United vyhraje: Model dává Manchesteru United 53.8% šanci na výhru, což je podpořeno jejich lepší formou a vyšším xG (1.94 vs 1.18). Tottenham má problémy v útoku, což zvyšuje šance domácích na úspěch.\n\nDalší analytické tipy:\n• Oba týmy dají gól: S pravděpodobností 60.4% a vzhledem k tomu, že oba týmy mají schopnost skórovat, i přes formu hostů, je tento tip zajímavý.\n• Více než 2.5 gólu: Model predikuje 60.7% pravděpodobnost, že padne více než 2.5 gólu, což odpovídá ofenzivnímu stylu obou týmů a jejich schopnosti vytvářet šance.\n• Manchester United dá 2 góly: Nejčastější skóre 2-1 a 2-0 naznačuje, že Manchester United by mohl být schopen vstřelit alespoň 2 góly, což odpovídá jejich xG a formě.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "7ed31fa1dbea3482",
-    "generated_at": "2026-10-09T20:21:38Z",
-    "text_en": "Highest confidence:\nManchester United to win: With a model probability of 53.8% for a home win and a solid xG of 1.94 compared to Tottenham's 1.18, United's offensive edge at Old Trafford is clear. Their recent form also suggests they can capitalize on Spurs' struggles.\n\nFurther analytical tips:\n• Both teams to score: Yes: The model indicates a 60.4% chance of both teams scoring, supported by Tottenham's recent ability to find the net despite poor form. United's defensive vulnerabilities could also allow Spurs to score.\n• Over 2.5 goals: With an 82.8% probability for over 1.5 goals and a 60.7% chance for over 2.5, the attacking potential from both sides suggests a high-scoring affair, especially given their recent head-to-heads.\n• Manchester United to score first: Given United's strong home advantage and higher xG, they are likely to take the initiative early. The model supports a favorable scenario for them to score first in this matchup."
+    "input_hash": "7f1e607ba74edd90",
+    "generated_at": "2026-10-10T03:55:26Z",
+    "text_en": "Highest confidence:\nManchester United to Win: With a model probability of 53.8% for a home victory, United's recent form shows they can score effectively (xG 1.94) against a struggling Spurs side (xG 1.18). This suggests a strong likelihood of United controlling the game and securing the win.\n\nFurther analytical tips:\n• Over 2.5 Goals: The model indicates a high probability (82.8%) for over 1.5 goals, supported by both teams' defensive vulnerabilities and attacking capabilities, suggesting an open match with multiple goals.\n• Both Teams to Score: With a 60.4% chance for both teams to score, the data reflects both teams' recent performances where they have shown the ability to find the net despite defensive issues.\n• Manchester United to Score First: Given United's home advantage and higher xG, they are likely to take the initiative early, increasing the chances of scoring first in this matchup."
   },
-  "refreshed_at": "2026-10-08T23:17:34.739583Z"
+  "refreshed_at": "2026-10-10T03:24:32.512448Z"
 }

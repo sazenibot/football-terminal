@@ -167,34 +167,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 3259,
-      "player_name": "Ben White",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-18",
-      "end_date": "2026-10-09",
-      "games_missed": 1,
-      "likely_available": true
-    },
-    {
-      "side": "home",
-      "player_id": 37592228,
-      "player_name": "Cristhian Andrey Mosquera Ibarguen",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-31",
-      "end_date": "2026-10-09",
-      "games_missed": 6,
-      "likely_available": true
-    },
-    {
-      "side": "home",
       "player_id": 17544737,
       "player_name": "William Saliba",
       "type_id": 595,
@@ -1456,7 +1428,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.28
+          "odds": 1.27
         },
         {
           "key": "more_corners",
@@ -1494,7 +1466,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.54
+          "odds": 1.57
         },
         {
           "key": "fouls_under",
@@ -1502,7 +1474,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.47
+          "odds": 1.45
         },
         {
           "key": "offsides_under",
@@ -1517,7 +1489,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.83
+          "odds": 1.97
         },
         {
           "key": "over25",
@@ -1525,7 +1497,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.87
+          "odds": 1.86
         },
         {
           "key": "scored2plus",
@@ -1533,7 +1505,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.52
+          "odds": 1.56
         },
         {
           "key": "corners_under95",
@@ -1549,7 +1521,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.03
+          "odds": 3.69
         },
         {
           "key": "ht_draw",
@@ -1557,7 +1529,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.46
+          "odds": 2.48
         },
         {
           "key": "under25",
@@ -1565,7 +1537,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.96
+          "odds": 2.01
         },
         {
           "key": "corners_over95",
@@ -1581,7 +1553,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.33
+          "odds": 1.24
         },
         {
           "key": "team_2plus_yellow",
@@ -1589,7 +1561,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.1
+          "odds": 2.37
         },
         {
           "key": "btts",
@@ -1597,7 +1569,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.1
+          "odds": 2.01
         },
         {
           "key": "scoreless",
@@ -1605,7 +1577,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 6.31
+          "odds": 6.53
         },
         {
           "key": "red_card",
@@ -1621,7 +1593,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.86
+          "odds": 1.93
         },
         {
           "key": "ht_behind",
@@ -1629,7 +1601,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 7.35
+          "odds": 7.22
         }
       ],
       "away": [
@@ -1653,7 +1625,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.96
+          "odds": 2.01
         },
         {
           "key": "shots_over",
@@ -1703,7 +1675,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.1
+          "odds": 2.01
         },
         {
           "key": "over15",
@@ -1711,7 +1683,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.28
+          "odds": 1.27
         },
         {
           "key": "corners_over95",
@@ -1727,7 +1699,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.33
+          "odds": 1.24
         },
         {
           "key": "clean_sheet",
@@ -1735,7 +1707,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 6.31
+          "odds": 6.53
         },
         {
           "key": "corners_under95",
@@ -1751,7 +1723,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.03
+          "odds": 3.69
         },
         {
           "key": "team_2plus_yellow",
@@ -1759,7 +1731,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.45
+          "odds": 1.55
         },
         {
           "key": "ht_leading",
@@ -1767,7 +1739,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 7.35
+          "odds": 7.22
         },
         {
           "key": "ht_draw",
@@ -1775,7 +1747,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.46
+          "odds": 2.48
         },
         {
           "key": "scoreless",
@@ -1783,7 +1755,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.83
+          "odds": 1.97
         },
         {
           "key": "over25",
@@ -1791,7 +1763,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.87
+          "odds": 1.86
         },
         {
           "key": "scored2plus",
@@ -1799,7 +1771,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 5.55
+          "odds": 5.37
         },
         {
           "key": "more_corners",
@@ -1815,7 +1787,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.86
+          "odds": 1.93
         },
         {
           "key": "red_card",
@@ -1835,7 +1807,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.28
+          "odds": 1.27
         },
         {
           "key": "over25",
@@ -1843,7 +1815,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.87
+          "odds": 1.86
         },
         {
           "key": "scored2plus",
@@ -1858,7 +1830,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.33
+          "odds": 1.24
         },
         {
           "key": "ht_leading",
@@ -1909,7 +1881,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 2.1
+          "odds": 2.05
         },
         {
           "key": "offsides_over",
@@ -1953,7 +1925,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.1
+          "odds": 2.01
         },
         {
           "key": "corners_over95",
@@ -1976,7 +1948,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.96
+          "odds": 2.01
         },
         {
           "key": "yellow_5plus",
@@ -1984,7 +1956,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 3.03
+          "odds": 3.69
         },
         {
           "key": "red_card",
@@ -2023,7 +1995,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.33
+          "odds": 1.24
         },
         {
           "key": "ht_leading",
@@ -2053,7 +2025,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.28
+          "odds": 1.27
         },
         {
           "key": "over25",
@@ -2061,7 +2033,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.87
+          "odds": 1.86
         },
         {
           "key": "scored2plus",
@@ -2104,7 +2076,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.1
+          "odds": 2.05
         },
         {
           "key": "offsides_under",
@@ -2141,7 +2113,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.1
+          "odds": 2.01
         },
         {
           "key": "corners_over95",
@@ -2164,7 +2136,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.96
+          "odds": 2.01
         },
         {
           "key": "red_card",
@@ -2187,7 +2159,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.03
+          "odds": 3.69
         },
         {
           "key": "ht_draw",
@@ -6823,46 +6795,46 @@
     ]
   },
   "odds": {
-    "home": 1.39,
-    "draw": 4.75,
-    "away": 8.62,
-    "under15": 3.71,
-    "over15": 1.28,
-    "under25": 1.96,
-    "over25": 1.87,
-    "under35": 1.35,
+    "home": 1.43,
+    "draw": 4.74,
+    "away": 8.32,
+    "under15": 3.88,
+    "over15": 1.27,
+    "under25": 2.01,
+    "over25": 1.86,
+    "under35": 1.37,
     "over35": 3.19,
-    "btts": 2.1,
+    "btts": 2.01,
     "corners_under95": 1.91,
     "corners_over95": 1.8,
-    "yellow_under5": 1.33,
-    "yellow_5plus": 3.03,
+    "yellow_under5": 1.24,
+    "yellow_5plus": 3.69,
     "red_card": 5.02,
     "source": "chance",
-    "home_scoreless": 6.31,
-    "home_scored2plus": 1.52,
-    "home_clean_sheet": 1.83,
-    "home_ht_leading": 1.86,
-    "home_ht_draw": 2.46,
-    "home_ht_behind": 7.35,
+    "home_scoreless": 6.53,
+    "home_scored2plus": 1.56,
+    "home_clean_sheet": 1.97,
+    "home_ht_leading": 1.93,
+    "home_ht_draw": 2.48,
+    "home_ht_behind": 7.22,
     "home_more_corners": 1.19,
-    "home_team_2plus_yellow": 2.1,
-    "away_clean_sheet": 6.31,
-    "away_scoreless": 1.83,
-    "away_scored2plus": 5.55,
-    "away_ht_behind": 1.86,
-    "away_ht_draw": 2.46,
-    "away_ht_leading": 7.35,
+    "home_team_2plus_yellow": 2.37,
+    "away_clean_sheet": 6.53,
+    "away_scoreless": 1.97,
+    "away_scored2plus": 5.37,
+    "away_ht_behind": 1.93,
+    "away_ht_draw": 2.48,
+    "away_ht_leading": 7.22,
     "away_more_corners": 6.05,
-    "away_team_2plus_yellow": 1.45
+    "away_team_2plus_yellow": 1.55
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nArsenal vyhraje: Arsenal má silnou formu (4 výhry v řadě) a vysoké xG (1.58) oproti Leedsu (0.77). Historie vzájemných zápasů ukazuje dominanci Arsenalu, což potvrzuje i model s pravděpodobností 55.3 % na výhru domácích.\n\nDalší analytické tipy:\n• Arsenal dá více než 1.5 gólu: S průměrem 8 gólů za posledních 5 zápasů a vysokým xG je pravděpodobné, že Arsenal překoná 1.5 gólu, zejména proti slabší obraně Leedsu.\n• Leeds United nedá gól: S xG 0.77 a slabou formou hostů je pravděpodobné, že Leeds se proti silné obraně Arsenalu nedokáže prosadit.\n• Více než 9 rohů v zápase: Arsenal má průměr 9 rohů na zápas a s jejich ofenzivním stylem se očekává, že tento průměr překročí, zvlášť proti Leedsu.",
+    "text": "Největší důvěra:\nArsenal vyhraje: Arsenal má silnou formu (4 výhry v řadě) a vysoké xG (1.58), zatímco Leeds má slabé xG (0.77) a horší výkony. Model dává Arsenalu 55.3 % šanci na výhru, což odpovídá i tržním kurzům (67.9 %).\n\nDalší analytické tipy:\n• Arsenal dá 2 a více gólů: S ohledem na formu Arsenalu a jejich průměr 1.6 gólů na zápas, je pravděpodobné, že překonají 2 góly. Model ukazuje 72.7 % na over 1.5 gólů.\n• Leeds nedá gól: S xG 0.77 a slabou ofenzivou Leedsu je pravděpodobné, že nebudou schopni skórovat. Model dává 53.7 % na under 2.5 gólů.\n• Arsenal vyhraje 2-0: Nejčastější skóre je 1-0 a 2-0 pro Arsenal. S ohledem na formu a vzájemné zápasy je 2-0 realistické, což model podporuje.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "a60456b23f1ddeb9",
-    "generated_at": "2026-10-09T20:22:21Z",
-    "text_en": "Highest confidence:\nArsenal to Win: With a model probability of 55.3% for Arsenal's victory and strong recent form (4 wins in 5), they are likely to dominate possession and create more chances (xG 1.58 vs 0.77). Leeds' struggles against them in recent head-to-heads further support this outcome.\n\nFurther analytical tips:\n• Over 1.5 Goals: The model indicates a 72.7% chance for over 1.5 goals, reflecting Arsenal's attacking prowess and Leeds' defensive vulnerabilities, suggesting a high-scoring match is likely.\n• Arsenal to Score First: Given Arsenal's strong start in recent matches and their ability to control the game, they are likely to score first, which aligns with their historical dominance over Leeds.\n• Under 2.5 Goals for Leeds: Leeds has struggled to score against Arsenal, with an xG of only 0.77. This trend suggests they may not find the net, supporting the under 2.5 goals for their side."
+    "input_hash": "753054dc122e5283",
+    "generated_at": "2026-10-10T03:56:04Z",
+    "text_en": "Highest confidence:\nArsenal to Win: Arsenal's strong form (4 wins in 5) and superior xG (1.58 vs 0.77) indicate they will dominate the match. The model gives them a 55.3% win probability, aligning with market expectations, making them the clear favorites.\n\nFurther analytical tips:\n• Over 2.5 Goals: With Arsenal scoring 8 goals in their last 5 matches and a high xG, the likelihood of multiple goals is strong, supported by a 72.7% model probability for over 1.5 goals.\n• Arsenal to Score First: Given Arsenal's attacking prowess and Leeds' defensive vulnerabilities, they are likely to take the lead early, as indicated by their consistent scoring in recent matches.\n• Leeds to Receive Cards: Referee Paul Tierney's tendency to issue fouls (22.0 average) suggests Leeds may face disciplinary issues, especially under pressure from Arsenal's attacking play."
   },
-  "refreshed_at": "2026-10-08T23:16:50.819342Z"
+  "refreshed_at": "2026-10-10T03:24:13.009725Z"
 }

@@ -149,20 +149,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 3862097,
-      "player_name": "Patrick Osterhage",
-      "type_id": 598,
-      "type_name": "Muscular problems",
-      "type_name_cs": "Svalové problémy",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-27",
-      "end_date": null,
-      "games_missed": 6,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 741531,
       "player_name": "Florent Muslija",
       "type_id": 1612,
@@ -173,6 +159,20 @@
       "start_date": "2026-09-04",
       "end_date": "2026-12-18",
       "games_missed": 4,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 37650771,
+      "player_name": "Johannes Simon Siebeking",
+      "type_id": 1979,
+      "type_name": "Injury To Abdominal Muscles",
+      "type_name_cs": "Injury To Abdominal Muscles",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-09-15",
+      "end_date": null,
+      "games_missed": 3,
       "likely_available": false
     },
     {
@@ -1356,7 +1356,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.18
+          "odds": 1.2
         },
         {
           "key": "over25",
@@ -1364,7 +1364,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.59
+          "odds": 1.63
         },
         {
           "key": "scored2plus",
@@ -1372,7 +1372,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.53
+          "odds": 1.54
         },
         {
           "key": "corners_under95",
@@ -1388,7 +1388,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.45
+          "odds": 1.41
         },
         {
           "key": "ht_leading",
@@ -1404,7 +1404,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.58
+          "odds": 1.61
         },
         {
           "key": "clean_sheet",
@@ -1412,7 +1412,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.68
+          "odds": 2.61
         },
         {
           "key": "yellow_under5",
@@ -1441,7 +1441,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.38
+          "odds": 2.31
         },
         {
           "key": "corners_over95",
@@ -1449,7 +1449,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.14
+          "odds": 2.13
         },
         {
           "key": "red_card",
@@ -1464,7 +1464,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 4.96
+          "odds": 5.05
         },
         {
           "key": "scoreless",
@@ -1472,7 +1472,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 6.22
+          "odds": 6.11
         },
         {
           "key": "ht_draw",
@@ -1480,7 +1480,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.45
+          "odds": 2.43
         }
       ],
       "away": [
@@ -1553,7 +1553,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 2.68
+          "odds": 2.61
         },
         {
           "key": "clean_sheet",
@@ -1561,7 +1561,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 6.22
+          "odds": 6.11
         },
         {
           "key": "over15",
@@ -1569,7 +1569,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.18
+          "odds": 1.2
         },
         {
           "key": "over25",
@@ -1577,7 +1577,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 1.59
+          "odds": 1.63
         },
         {
           "key": "under25",
@@ -1585,7 +1585,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.38
+          "odds": 2.31
         },
         {
           "key": "corners_over95",
@@ -1593,7 +1593,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.14
+          "odds": 2.13
         },
         {
           "key": "corners_under95",
@@ -1609,7 +1609,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.45
+          "odds": 2.43
         },
         {
           "key": "btts",
@@ -1617,7 +1617,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 1.58
+          "odds": 1.61
         },
         {
           "key": "scored2plus",
@@ -1625,7 +1625,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.06
+          "odds": 3.18
         },
         {
           "key": "more_corners",
@@ -1633,7 +1633,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.4
+          "odds": 3.64
         },
         {
           "key": "red_card",
@@ -1655,7 +1655,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 4.96
+          "odds": 5.05
         },
         {
           "key": "ht_behind",
@@ -1689,7 +1689,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.18
+          "odds": 1.2
         },
         {
           "key": "scored2plus",
@@ -1767,7 +1767,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.59
+          "odds": 1.63
         },
         {
           "key": "corners_over95",
@@ -1775,7 +1775,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 2.14
+          "odds": 2.13
         },
         {
           "key": "more_corners",
@@ -1804,7 +1804,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.38
+          "odds": 2.31
         },
         {
           "key": "corners_under95",
@@ -1827,7 +1827,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.58
+          "odds": 1.61
         },
         {
           "key": "scoreless",
@@ -1872,7 +1872,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.18
+          "odds": 1.2
         },
         {
           "key": "scored2plus",
@@ -1957,7 +1957,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.59
+          "odds": 1.63
         },
         {
           "key": "corners_under95",
@@ -1980,7 +1980,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.38
+          "odds": 2.31
         },
         {
           "key": "corners_over95",
@@ -1988,7 +1988,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.14
+          "odds": 2.13
         },
         {
           "key": "team_2plus_yellow",
@@ -2017,7 +2017,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 1.58
+          "odds": 1.61
         },
         {
           "key": "scoreless",
@@ -5740,41 +5740,41 @@
     ]
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nSC Freiburg vyhraje: Freiburg má skvělou formu (10 bodů z 12) a výrazně lepší xG (1.86 vs 0.87). Historie vzájemných zápasů ukazuje dominanci Freiburgu, což posiluje důvěru v jejich vítězství.\n\nDalší analytické tipy:\n• Freiburg dá 2+ góly: Freiburg má průměr 3 góly na zápas v posledních čtyřech duelech a Schalke dostává více než 1 gól na zápas, což naznačuje vysokou pravděpodobnost dalšího úspěchu v útoku.\n• Oba týmy dají gól: Model predikuje 53.2% šanci na BTTS, což naznačuje, že i Schalke by mohlo skórovat, zejména vzhledem k jejich potřebě bodů a ofenzivnímu potenciálu.\n• Více než 2.5 góly: S 78.1% pravděpodobností na over 1.5 a historií zápasů, kde Freiburg často skóruje, je pravděpodobné, že zápas bude gólově bohatý.",
+    "text": "Největší důvěra:\nSC Freiburg vyhraje: Freiburg má skvělou formu (10 bodů z 12) a vysoké xG 1.86, zatímco Schalke se trápí s 0.86 xG. Historie vzájemných zápasů (4 výhry Freiburgu v posledních 4) potvrzuje dominanci domácích.\n\nDalší analytické tipy:\n• Freiburg dá 2+ góly: Freiburg v posledních 4 zápasech dal 12 gólů a model ukazuje vysokou pravděpodobnost (78.1%) pro over 1.5 gólů.\n• Schalke nedá gól: S xG 0.86 a slabou formou (3 góly v 4 zápasech) je pravděpodobnost, že Schalke nedá gól, vysoká, zejména proti silné obraně Freiburgu.\n• Více než 3 rohy pro Freiburg: Freiburg má průměr 9 rohů na zápas a s vysokým držení míče by měli získat více rohů, což je v souladu s modelem.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "1deafba01a0eaffe",
-    "generated_at": "2026-10-09T20:24:37Z",
-    "text_en": "Highest confidence:\nFreiburg to Win: Freiburg's strong form (10 points from 4 matches) and superior xG (1.86 vs 0.87) against a struggling Schalke (5 points) suggest a dominant home performance. Historical head-to-heads further reinforce Freiburg's advantage.\n\nFurther analytical tips:\n• Freiburg Over 1.5 Goals: With an average of 3 goals scored in their last 4 matches and a high xG, Freiburg is likely to find the net multiple times against a Schalke side conceding more than they score.\n• Both Teams to Score: No: Given Freiburg's solid defense (only 3 goals conceded) and Schalke's low scoring rate (3 goals in 4 matches), it's likely that only Freiburg will score.\n• Over 9.5 Corners: Freiburg averages 9 corners per match and with their attacking style, they are expected to earn a significant number of corners against Schalke's defense."
+    "input_hash": "09d1bb091a72edec",
+    "generated_at": "2026-10-10T03:59:03Z",
+    "text_en": "Highest confidence:\nFreiburg to Win: Freiburg's strong form (10 points from 4 games) and a significant xG advantage (1.86 vs 0.86) suggest they will dominate. Historical head-to-heads reinforce their superiority over Schalke, making them the clear favorites.\n\nFurther analytical tips:\n• Freiburg Over 1.5 Goals: With an xG of 1.86 and a solid scoring record, Freiburg is likely to score multiple goals against a struggling Schalke defense.\n• Both Teams to Score: No: Given Freiburg's strong defensive record (only 3 goals conceded in 4 matches) and Schalke's low scoring form, it's unlikely both teams will find the net.\n• Freiburg to Win 2-0: The most common scorelines indicate a strong likelihood of a 2-0 win for Freiburg, aligning with their attacking prowess and Schalke's defensive vulnerabilities."
   },
-  "refreshed_at": "2026-10-08T23:19:28.012829Z",
+  "refreshed_at": "2026-10-10T03:30:52.336470Z",
   "odds": {
     "home": 1.63,
-    "draw": 4.21,
-    "away": 5.13,
-    "under15": 4.86,
-    "over15": 1.18,
-    "under25": 2.38,
-    "over25": 1.59,
-    "under35": 1.54,
-    "over35": 2.51,
-    "btts": 1.58,
+    "draw": 4.18,
+    "away": 5.22,
+    "under15": 4.67,
+    "over15": 1.2,
+    "under25": 2.31,
+    "over25": 1.63,
+    "under35": 1.51,
+    "over35": 2.59,
+    "btts": 1.61,
     "corners_under95": 1.64,
-    "corners_over95": 2.14,
+    "corners_over95": 2.13,
     "source": "chance",
-    "home_scoreless": 6.22,
-    "home_scored2plus": 1.53,
-    "home_clean_sheet": 2.68,
+    "home_scoreless": 6.11,
+    "home_scored2plus": 1.54,
+    "home_clean_sheet": 2.61,
     "home_ht_leading": 2.12,
-    "home_ht_draw": 2.45,
-    "home_ht_behind": 4.96,
-    "home_more_corners": 1.45,
-    "away_clean_sheet": 6.22,
-    "away_scoreless": 2.68,
-    "away_scored2plus": 3.06,
+    "home_ht_draw": 2.43,
+    "home_ht_behind": 5.05,
+    "home_more_corners": 1.41,
+    "away_clean_sheet": 6.11,
+    "away_scoreless": 2.61,
+    "away_scored2plus": 3.18,
     "away_ht_behind": 2.12,
-    "away_ht_draw": 2.45,
-    "away_ht_leading": 4.96,
-    "away_more_corners": 3.4
+    "away_ht_draw": 2.43,
+    "away_ht_leading": 5.05,
+    "away_more_corners": 3.64
   }
 }

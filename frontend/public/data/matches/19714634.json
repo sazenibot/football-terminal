@@ -325,9 +325,9 @@
       "side": "home",
       "player_id": 4230,
       "player_name": "Steven Berghuis",
-      "type_id": 677,
-      "type_name": "Minor Knock",
-      "type_name_cs": "Drobné zranění",
+      "type_id": 587,
+      "type_name": "Unknown Injury",
+      "type_name_cs": "Neurčené zranění",
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-09-18",
@@ -1784,7 +1784,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.28
+          "odds": 1.27
         },
         {
           "key": "shots_under",
@@ -1820,7 +1820,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.47
+          "odds": 1.46
         },
         {
           "key": "scored2plus",
@@ -1863,14 +1863,16 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.89
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.33
         },
         {
           "key": "yellow_under5",
@@ -1885,14 +1887,15 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.64
+          "odds": 1.66
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.81
         },
         {
           "key": "yellow_5plus",
@@ -1906,7 +1909,8 @@
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.58
         },
         {
           "key": "clean_sheet",
@@ -1914,7 +1918,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.71
+          "odds": 2.73
         },
         {
           "key": "ht_draw",
@@ -1922,7 +1926,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.96
+          "odds": 3.08
         },
         {
           "key": "ht_behind",
@@ -1930,7 +1934,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 6.38
+          "odds": 6.63
         },
         {
           "key": "scoreless",
@@ -1938,7 +1942,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 10.6
+          "odds": 10.8
         },
         {
           "key": "under25",
@@ -1946,14 +1950,15 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.62
+          "odds": 3.77
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.5
         }
       ],
       "away": [
@@ -1978,7 +1983,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.47
+          "odds": 1.46
         },
         {
           "key": "over25",
@@ -1986,7 +1991,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.28
+          "odds": 1.27
         },
         {
           "key": "yellow_under5",
@@ -2049,7 +2054,8 @@
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.89
         },
         {
           "key": "ht_draw",
@@ -2057,7 +2063,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.96
+          "odds": 3.08
         },
         {
           "key": "scored2plus",
@@ -2065,28 +2071,31 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.05
+          "odds": 3.02
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.81
         },
         {
           "key": "more_corners",
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 4.12
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.79
         },
         {
           "key": "scoreless",
@@ -2094,7 +2103,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.71
+          "odds": 2.73
         },
         {
           "key": "under25",
@@ -2102,7 +2111,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.62
+          "odds": 3.77
         },
         {
           "key": "yellow_5plus",
@@ -2117,7 +2126,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 6.38
+          "odds": 6.63
         },
         {
           "key": "ht_behind",
@@ -2125,7 +2134,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.64
+          "odds": 1.66
         },
         {
           "key": "clean_sheet",
@@ -2133,14 +2142,15 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 10.6
+          "odds": 10.8
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.5
         }
       ]
     },
@@ -2216,7 +2226,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.47
+          "odds": 1.46
         },
         {
           "key": "over25",
@@ -2224,14 +2234,15 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.28
+          "odds": 1.27
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 1.89
         },
         {
           "key": "more_corners",
@@ -2274,7 +2285,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 3.62
+          "odds": 3.77
         },
         {
           "key": "scored2plus",
@@ -2288,7 +2299,8 @@
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.81
         },
         {
           "key": "yellow_under5",
@@ -2302,7 +2314,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 4.5
         },
         {
           "key": "ht_draw",
@@ -2362,7 +2375,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.47
+          "odds": 1.46
         },
         {
           "key": "over25",
@@ -2370,14 +2383,15 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.28
+          "odds": 1.27
         },
         {
           "key": "corners_under95",
           "label": "Under 9.5 rohů v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.89
         },
         {
           "key": "team_2plus_yellow",
@@ -2476,21 +2490,23 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.62
+          "odds": 3.77
         },
         {
           "key": "corners_over95",
           "label": "Over 9.5 rohů v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 1.81
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.5
         },
         {
           "key": "clean_sheet",
@@ -8130,37 +8146,44 @@
     ]
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nAjax vyhraje: Model dává Ajaxu 66.6 % šanci na výhru, což je podpořeno jejich silnou formou (11 bodů z posledních 6 zápasů) a vysokým xG 2.53 oproti 1.13 hostů. Očekávané držení míče a útočná síla naznačují jasnou převahu domácích.\n\nDalší analytické tipy:\n• Over 2.5 gólu: S modelem na 68.9 % pro over 2.5 a vysokým průměrem gólů Ajaxu je pravděpodobné, že zápas bude ofenzivní. Ajax má silnou útočnou hru a NEC Nijmegen se snaží hrát otevřeně.\n• Oba týmy dají gól: Model ukazuje 62.5 % na BTTS, což naznačuje, že NEC Nijmegen může skórovat, zejména vzhledem k jejich posledním vzájemným zápasům, kde se často obě strany prosadily.\n• Ajax dá 2 a více gólů: S xG 2.53 a průměrným skóre 2.0 gólů na zápas v posledních utkáních je pravděpodobné, že Ajax překročí hranici 2 gólů, zejména proti slabší obraně NEC.",
+    "text": "Největší důvěra:\nAjax vyhraje: Ajax má vysokou pravděpodobnost výhry 66.5 % a silné xG 2.53, což naznačuje dominanci v ofenzivě. Navíc forma domácích je lepší než hostů, což posiluje jejich šance na vítězství.\n\nDalší analytické tipy:\n• Ajax dá 2+ góly: Model ukazuje, že Ajax má vysoké xG a očekává se, že vstřelí minimálně 2 góly, což odpovídá i trendu v domácích zápasech.\n• Oba týmy dají gól: S pravděpodobností 62.6 % na BTTS a vzhledem k formě hostů, kteří dokázali skórovat v posledních zápasech, je tento tip atraktivní.\n• Více než 2.5 gólu: S vysokou pravděpodobností 69.1 % na over 2.5 a ofenzivní silou Ajaxu, je pravděpodobné, že zápas bude gólově bohatý.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "f72ace8990a9ec30",
-    "generated_at": "2026-10-09T20:21:11Z",
-    "text_en": "Highest confidence:\nAjax to Win: Ajax's model probability at 66.6% reflects their strong form and superior xG of 2.53 compared to NEC's 1.13. The historical head-to-head also favors Ajax, indicating they can dominate the match at home.\n\nFurther analytical tips:\n• Over 2.5 Goals: With an 87.6% probability for over 1.5 goals and Ajax's attacking prowess, expect a high-scoring game. The model suggests Ajax will create numerous chances, likely leading to multiple goals.\n• Both Teams to Score: The model indicates a 62.5% chance for both teams to score. Given NEC's recent form and Ajax's defensive vulnerabilities, it's plausible they will find the net.\n• Ajax to Score First: Ajax's attacking strength and the model's xG suggest they will likely take the lead early. Their home advantage and NEC's struggles in defense support this prediction."
+    "input_hash": "d85e0951b1f40110",
+    "generated_at": "2026-10-10T03:54:47Z",
+    "text_en": "Highest confidence:\nAjax to Win: Ajax's model probability of 66.5% reflects their strong home form and superior xG of 2.53 compared to NEC's 1.14. With a solid attack and defensive stability, they are likely to secure a victory against NEC.\n\nFurther analytical tips:\n• Over 2.5 Goals: With an 87.7% model probability for over 1.5 goals and Ajax's high scoring potential, expect a match with multiple goals.\n• Both Teams to Score: The model indicates a 62.6% chance for both teams to score, supported by NEC's recent form and Ajax's attacking prowess.\n• Ajax to Score First: Given Ajax's strong attacking stats and home advantage, they are likely to take an early lead in this match."
   },
-  "refreshed_at": "2026-10-08T23:22:38.580047Z",
+  "refreshed_at": "2026-10-10T03:46:59.938458Z",
   "odds": {
     "home": 1.3,
-    "draw": 5.79,
-    "away": 8.04,
-    "under15": 7.6,
+    "draw": 6.11,
+    "away": 8.87,
+    "under15": 8.16,
     "over15": 1.07,
-    "under25": 3.62,
-    "over25": 1.28,
-    "under35": 2.08,
-    "over35": 1.75,
-    "btts": 1.47,
+    "under25": 3.77,
+    "over25": 1.27,
+    "under35": 2.15,
+    "over35": 1.72,
+    "btts": 1.46,
+    "corners_under95": 1.89,
+    "corners_over95": 1.81,
+    "red_card": 4.5,
     "source": "chance",
-    "home_scoreless": 10.6,
+    "home_scoreless": 10.8,
     "home_scored2plus": 1.18,
-    "home_clean_sheet": 2.71,
-    "home_ht_leading": 1.64,
-    "home_ht_draw": 2.96,
-    "home_ht_behind": 6.38,
-    "away_clean_sheet": 10.6,
-    "away_scoreless": 2.71,
-    "away_scored2plus": 3.05,
-    "away_ht_behind": 1.64,
-    "away_ht_draw": 2.96,
-    "away_ht_leading": 6.38
+    "home_clean_sheet": 2.73,
+    "home_ht_leading": 1.66,
+    "home_ht_draw": 3.08,
+    "home_ht_behind": 6.63,
+    "home_more_corners": 1.33,
+    "home_team_2plus_yellow": 2.58,
+    "away_clean_sheet": 10.8,
+    "away_scoreless": 2.73,
+    "away_scored2plus": 3.02,
+    "away_ht_behind": 1.66,
+    "away_ht_draw": 3.08,
+    "away_ht_leading": 6.63,
+    "away_more_corners": 4.12,
+    "away_team_2plus_yellow": 1.79
   }
 }

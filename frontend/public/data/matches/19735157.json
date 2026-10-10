@@ -230,20 +230,6 @@
       "end_date": null,
       "games_missed": 4,
       "likely_available": false
-    },
-    {
-      "side": "home",
-      "player_id": 37703671,
-      "player_name": "Faik Sakar",
-      "type_id": 672,
-      "type_name": "Ankle Problems",
-      "type_name_cs": "Problémy s kotníkem",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-10",
-      "end_date": null,
-      "games_missed": 3,
-      "likely_available": false
     }
   ],
   "predicted_lineups": {
@@ -1358,7 +1344,7 @@
           "hits": 4,
           "total": 4,
           "pct": 100.0,
-          "odds": 2.99
+          "odds": 3.11
         },
         {
           "key": "yellow_under5",
@@ -1386,7 +1372,8 @@
           "label": "Střely na branku: 3.5+ v zápase",
           "hits": 4,
           "total": 4,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.83
         },
         {
           "key": "sot_under",
@@ -1445,7 +1432,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 7.58
+          "odds": 8.15
         },
         {
           "key": "ht_behind",
@@ -1461,7 +1448,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 12.8
+          "odds": 18.2
         },
         {
           "key": "corners_under95",
@@ -1469,7 +1456,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 2.35
+          "odds": 2.34
         },
         {
           "key": "more_corners",
@@ -1477,21 +1464,23 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 5.56
+          "odds": 5.54
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 6.02
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 1.9
         },
         {
           "key": "scoreless",
@@ -1499,7 +1488,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.72
+          "odds": 2.75
         },
         {
           "key": "under25",
@@ -1507,7 +1496,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 5.53
+          "odds": 5.88
         },
         {
           "key": "yellow_5plus",
@@ -1522,7 +1511,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 3.75
+          "odds": 3.87
         }
       ],
       "away": [
@@ -1627,7 +1616,7 @@
           "hits": 3,
           "total": 4,
           "pct": 75.0,
-          "odds": 1.09
+          "odds": 1.1
         },
         {
           "key": "ht_leading",
@@ -1651,7 +1640,7 @@
           "hits": 2,
           "total": 4,
           "pct": 50.0,
-          "odds": 2.72
+          "odds": 2.75
         },
         {
           "key": "scoreless",
@@ -1659,7 +1648,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 12.8
+          "odds": 18.2
         },
         {
           "key": "under25",
@@ -1667,14 +1656,15 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 5.53
+          "odds": 5.88
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 1,
           "total": 4,
-          "pct": 25.0
+          "pct": 25.0,
+          "odds": 2.51
         },
         {
           "key": "ht_draw",
@@ -1682,7 +1672,7 @@
           "hits": 1,
           "total": 4,
           "pct": 25.0,
-          "odds": 3.75
+          "odds": 3.87
         },
         {
           "key": "corners_under95",
@@ -1690,7 +1680,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 2.35
+          "odds": 2.34
         },
         {
           "key": "yellow_5plus",
@@ -1704,7 +1694,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 4,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 6.02
         },
         {
           "key": "ht_behind",
@@ -1712,7 +1703,7 @@
           "hits": 0,
           "total": 4,
           "pct": 0.0,
-          "odds": 7.58
+          "odds": 8.15
         }
       ]
     },
@@ -1840,7 +1831,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.35
+          "odds": 2.34
         },
         {
           "key": "more_corners",
@@ -1861,7 +1852,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 6.02
         },
         {
           "key": "ht_draw",
@@ -1890,7 +1882,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 5.53
+          "odds": 5.88
         },
         {
           "key": "ht_leading",
@@ -2001,7 +1993,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.35
+          "odds": 2.34
         },
         {
           "key": "yellow_under5",
@@ -2037,7 +2029,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 6.02
         },
         {
           "key": "ht_draw",
@@ -2073,7 +2066,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 5.53
+          "odds": 5.88
         },
         {
           "key": "ht_leading",
@@ -6787,41 +6780,44 @@
     ]
   },
   "odds": {
-    "home": 11.3,
-    "draw": 8.65,
-    "away": 1.19,
-    "under15": 11.9,
+    "home": 13.4,
+    "draw": 9.28,
+    "away": 1.18,
+    "under15": 13.9,
     "over15": 1.03,
-    "under25": 5.53,
+    "under25": 5.88,
     "over25": 1.15,
-    "under35": 2.9,
-    "over35": 1.41,
+    "under35": 3.05,
+    "over35": 1.4,
     "btts": 1.44,
-    "corners_under95": 2.35,
+    "corners_under95": 2.34,
     "corners_over95": 1.53,
+    "red_card": 6.02,
     "source": "chance",
-    "home_scoreless": 2.72,
-    "home_scored2plus": 2.99,
-    "home_clean_sheet": 12.8,
-    "home_ht_leading": 7.58,
-    "home_ht_draw": 3.75,
+    "home_scoreless": 2.75,
+    "home_scored2plus": 3.11,
+    "home_clean_sheet": 18.2,
+    "home_ht_leading": 8.15,
+    "home_ht_draw": 3.87,
     "home_ht_behind": 1.48,
-    "home_more_corners": 5.56,
-    "away_clean_sheet": 2.72,
-    "away_scoreless": 12.8,
-    "away_scored2plus": 1.09,
-    "away_ht_behind": 7.58,
-    "away_ht_draw": 3.75,
+    "home_more_corners": 5.54,
+    "home_team_2plus_yellow": 1.9,
+    "away_clean_sheet": 2.75,
+    "away_scoreless": 18.2,
+    "away_scored2plus": 1.1,
+    "away_ht_behind": 8.15,
+    "away_ht_draw": 3.87,
     "away_ht_leading": 1.48,
-    "away_more_corners": 1.21
+    "away_more_corners": 1.21,
+    "away_team_2plus_yellow": 2.51
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nFC Bayern München vyhraje: Bayern má vysokou pravděpodobnost vítězství 74.8% a výrazně lepší xG 2.83 oproti 0.97 Augsburg. Forma hostů je silná, poslední 4 zápasy 10 bodů, 14 gólů. Augsburg má slabší obranu, což naznačuje jasnou převahu Bayernu.\n\nDalší analytické tipy:\n• Bayern dá 2+ góly: S vysokým xG 2.83 a formou, kdy Bayern v posledních zápasech střílí průměrně 3.5 gólu, je pravděpodobné, že překročí 2 góly. Augsburg dostává průměrně 1.5 gólu na zápas.\n• Oba týmy dají gól: S pravděpodobností 59.6% na BTTS a Augsburg, který v posledních zápasech dokáže skórovat, je tento tip atraktivní. Bayern však většinou inkasuje, což zvyšuje šance na gól od domácích.\n• Více než 2.5 gólu: Model ukazuje 70.8% na over 2.5, což je podpořeno ofenzivní silou Bayernu a slabší obranou Augsburgu. Historie vzájemných zápasů také naznačuje vysoký počet gólů.",
+    "text": "Největší důvěra:\nFC Bayern München vyhraje: Bayern má vysokou pravděpodobnost výhry 74.7% a výrazně lepší xG (2.82 vs 0.97). Forma hostů je silná, zatímco Augsburg má problémy v obraně, což naznačuje, že Bayern by měl dominovat.\n\nDalší analytické tipy:\n• Bayern dá více než 2.5 gólu: S vysokým xG a formou, kdy Bayern v posledních zápasech skóroval průměrně 3.5 gólu, je pravděpodobné, že překročí 2.5 gólu.\n• Oba týmy dají gól: S pravděpodobností 59.5% na BTTS a Augsburg, který doma dokáže skórovat, je tento tip zajímavý.\n• Bayern vyhraje s handicapem -1: Bayern má silnou ofenzivu a Augsburg se potýká s obranou, což zvyšuje šance na výhru o více než 1 gól.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "ed8c02c5224fd586",
-    "generated_at": "2026-10-09T20:24:31Z",
-    "text_en": "Highest confidence:\nBayern München to Win: With a model probability of 74.8% for Bayern's victory and an xG of 2.83 compared to Augsburg's 0.97, Bayern's attacking strength and recent form suggest a dominant performance. Augsburg's defense will struggle against Bayern's firepower.\n\nFurther analytical tips:\n• Bayern to Score Over 2.5 Goals: Bayern's high xG indicates they are likely to convert chances into goals, especially against a weaker Augsburg defense. The model suggests an 88.6% chance of over 1.5 goals, reinforcing this expectation.\n• Both Teams to Score (BTTS): With a BTTS probability of 59.6%, Augsburg's recent form shows they can find the net, especially at home. This aligns with their previous encounters where they managed to score against Bayern.\n• Over 3.5 Total Goals: Given the attacking capabilities of Bayern and Augsburg's tendency to concede, the model's 50% likelihood for over 3.5 goals reflects a match likely to see multiple goals, enhancing the entertainment value."
+    "input_hash": "f5a3f5b5d8458819",
+    "generated_at": "2026-10-10T03:58:59Z",
+    "text_en": "Highest confidence:\nBayern Munich to Win: Bayern Munich's strong form and xG of 2.82 against Augsburg's 0.97 indicate a dominant performance is likely. With a model probability of 74.7% for their victory, they are well-positioned to secure three points away.\n\nFurther analytical tips:\n• Bayern to Score Over 2.5 Goals: Given Bayern's attacking prowess reflected in their xG and previous encounters, they are likely to score multiple goals against Augsburg's defense.\n• Both Teams to Score: With a BTTS probability of 59.5%, Augsburg's recent scoring form suggests they can find the net, especially at home.\n• Over 2.5 Total Goals: The model shows a high probability (70.6%) for over 2.5 goals, aligning with both teams' attacking capabilities and historical match outcomes."
   },
-  "refreshed_at": "2026-10-08T23:18:52.378943Z"
+  "refreshed_at": "2026-10-10T03:30:40.129843Z"
 }

@@ -207,20 +207,6 @@
   "sidelined": [
     {
       "side": "home",
-      "player_id": 37315658,
-      "player_name": "Kevin Paredes",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-23",
-      "end_date": null,
-      "games_missed": 4,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37459062,
       "player_name": "Alonzo Engwanda",
       "type_id": 535,
@@ -245,6 +231,20 @@
       "start_date": "2026-01-18",
       "end_date": "2026-10-15",
       "games_missed": 34,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 37315658,
+      "player_name": "Kevin Paredes",
+      "type_id": 536,
+      "type_name": "Knee Injury",
+      "type_name_cs": "Zranění kolena",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-23",
+      "end_date": null,
+      "games_missed": 4,
       "likely_available": false
     },
     {
@@ -1716,7 +1716,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.12
+          "odds": 1.13
         },
         {
           "key": "over25",
@@ -1817,7 +1817,8 @@
           "label": "Tým dostal 2+ žluté karty",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 2.44
         },
         {
           "key": "ht_behind",
@@ -1825,7 +1826,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 5.26
+          "odds": 5.2
         },
         {
           "key": "corners_under95",
@@ -1847,7 +1848,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 7.84
+          "odds": 7.73
         },
         {
           "key": "yellow_5plus",
@@ -1862,7 +1863,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.88
+          "odds": 1.89
         },
         {
           "key": "ht_draw",
@@ -1870,7 +1871,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.6
+          "odds": 2.59
         },
         {
           "key": "clean_sheet",
@@ -1878,7 +1879,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.73
+          "odds": 2.75
         },
         {
           "key": "under25",
@@ -1886,14 +1887,15 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.79
+          "odds": 2.78
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.3
         }
       ],
       "away": [
@@ -1917,7 +1919,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.12
+          "odds": 1.13
         },
         {
           "key": "corners_over95",
@@ -2004,7 +2006,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.88
+          "odds": 1.89
         },
         {
           "key": "scoreless",
@@ -2012,7 +2014,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.73
+          "odds": 2.75
         },
         {
           "key": "under25",
@@ -2020,14 +2022,15 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.79
+          "odds": 2.78
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 1.91
         },
         {
           "key": "ht_draw",
@@ -2035,7 +2038,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.6
+          "odds": 2.59
         },
         {
           "key": "scored2plus",
@@ -2043,7 +2046,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.0
+          "odds": 2.98
         },
         {
           "key": "corners_under95",
@@ -2058,7 +2061,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 7.84
+          "odds": 7.73
         },
         {
           "key": "yellow_5plus",
@@ -2072,7 +2075,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.3
         },
         {
           "key": "ht_leading",
@@ -2080,7 +2084,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 5.26
+          "odds": 5.2
         }
       ]
     },
@@ -2092,7 +2096,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.12
+          "odds": 1.13
         },
         {
           "key": "over25",
@@ -2249,14 +2253,15 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 2.79
+          "odds": 2.78
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 3,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.3
         },
         {
           "key": "ht_leading",
@@ -2273,7 +2278,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.12
+          "odds": 1.13
         },
         {
           "key": "over25",
@@ -2437,14 +2442,15 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.79
+          "odds": 2.78
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 5.3
         }
       ]
     }
@@ -6915,37 +6921,40 @@
     ]
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nFC Utrecht vyhraje: Model dává FC Utrecht 66.1% šanci na výhru, což je podpořeno jejich silnějším xG (2.29) oproti Willem II (0.95). Forma domácích a historické vzájemné zápasy naznačují dominanci Utrechtu.\n\nDalší analytické tipy:\n• Utrecht dá 2+ góly: S xG 2.29 a slabou obranou Willem II (16 gólů v 6 zápasech) je pravděpodobné, že Utrecht překročí 2 góly.\n• Oba týmy dají gól: S BTTS na 57.5% a Utrechtovou slabou obranou (22 gólů) je pravděpodobné, že oba týmy skórují.\n• Více než 2.5 gólu: Model ukazuje 62.7% šanci na více než 2.5 gólu, což odpovídá ofenzivnímu stylu Utrechtu a slabé defenzivě Willem II.",
+    "text": "Největší důvěra:\nFC Utrecht vyhraje: Model dává domácím 66% šanci na výhru, což se shoduje s jejich silnější formou a vyšším xG (2.29 vs. 0.96). Willem II má slabou obranu a Utrecht má výhodu na domácím hřišti.\n\nDalší analytické tipy:\n• Utrecht dá 2 a více gólů: S xG 2.29 a historickými výsledky proti Willem II je pravděpodobné, že Utrecht využije slabou obranu hostů a vstřelí minimálně 2 góly.\n• Obě týmy dají gól (BTTS): S pravděpodobností 57.6% na BTTS a Utrechtovou defenzivou, která inkasovala 22 gólů v posledních 6 zápasech, je tento tip atraktivní.\n• Utrecht vyhraje s handicapem -1: Utrecht má silnou ofenzivu a historicky dominoval v těchto vzájemných zápasech, což naznačuje, že mohou vyhrát o více než 1 gól.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "0db638298c516ee8",
-    "generated_at": "2026-10-09T20:21:00Z",
-    "text_en": "Highest confidence:\nFC Utrecht to Win: With a model probability of 66.1% for a home win and an xG of 2.29 compared to Willem II's 0.95, Utrecht is expected to dominate the match. Their recent form shows a stronger attack, while Willem II struggles defensively, indicating a likely victory for the hosts.\n\nFurther analytical tips:\n• Over 2.5 Goals: The model suggests a high likelihood of over 2.5 goals (62.7%), supported by Utrecht's attacking prowess and Willem II's defensive vulnerabilities, making a high-scoring game probable.\n• Both Teams to Score: With a 57.5% chance for both teams to score, Utrecht's offensive strength and Willem II's need to push forward could lead to goals from both sides.\n• Utrecht to Score First: Given Utrecht's strong home advantage and attacking metrics, they are likely to score first, setting the tone for the match and capitalizing on their territorial control."
+    "input_hash": "9d328c04d12b34b3",
+    "generated_at": "2026-10-10T03:54:38Z",
+    "text_en": "Highest confidence:\nFC Utrecht to Win: With a model probability of 66% for a home win and a significant xG advantage (2.29 vs 0.96), FC Utrecht is expected to dominate the match. Their recent form also suggests they can exploit Willem II's defensive vulnerabilities effectively.\n\nFurther analytical tips:\n• Over 2.5 Goals: Given the high xG for Utrecht and their scoring ability, coupled with a 62.7% model probability for over 2.5 goals, expect a high-scoring affair.\n• Both Teams to Score (BTTS): With a BTTS probability of 57.6%, despite Utrecht's strong defense, Willem II's recent form indicates they could find the net.\n• Utrecht to Score First: Utrecht's attacking prowess and the model's prediction of a strong home performance suggest they are likely to take the lead early."
   },
-  "refreshed_at": "2026-10-08T23:22:47.861334Z",
+  "refreshed_at": "2026-10-10T03:47:02.577952Z",
   "odds": {
-    "home": 1.48,
-    "draw": 4.7,
-    "away": 5.71,
-    "under15": 5.83,
-    "over15": 1.12,
-    "under25": 2.79,
+    "home": 1.49,
+    "draw": 4.67,
+    "away": 5.61,
+    "under15": 5.8,
+    "over15": 1.13,
+    "under25": 2.78,
     "over25": 1.43,
     "under35": 1.7,
-    "over35": 2.15,
+    "over35": 2.16,
     "btts": 1.51,
+    "red_card": 5.3,
     "source": "chance",
-    "home_scoreless": 7.84,
+    "home_scoreless": 7.73,
     "home_scored2plus": 1.36,
-    "home_clean_sheet": 2.73,
-    "home_ht_leading": 1.88,
-    "home_ht_draw": 2.6,
-    "home_ht_behind": 5.26,
-    "away_clean_sheet": 7.84,
-    "away_scoreless": 2.73,
-    "away_scored2plus": 3.0,
-    "away_ht_behind": 1.88,
-    "away_ht_draw": 2.6,
-    "away_ht_leading": 5.26
+    "home_clean_sheet": 2.75,
+    "home_ht_leading": 1.89,
+    "home_ht_draw": 2.59,
+    "home_ht_behind": 5.2,
+    "home_team_2plus_yellow": 2.44,
+    "away_clean_sheet": 7.73,
+    "away_scoreless": 2.75,
+    "away_scored2plus": 2.98,
+    "away_ht_behind": 1.89,
+    "away_ht_draw": 2.59,
+    "away_ht_leading": 5.2,
+    "away_team_2plus_yellow": 1.91
   }
 }

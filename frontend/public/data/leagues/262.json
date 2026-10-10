@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T23:16:47Z",
+  "generated_at": "2026-10-10T03:24:07Z",
   "league": {
     "id": 262,
     "name": "Chance Liga",
@@ -9,30 +9,6 @@
     "logo": "https://cdn.sportmonks.com/images/soccer/leagues/6/262.png"
   },
   "round": [
-    {
-      "fixture_id": 19725030,
-      "starting_at": "2026-10-09T16:00:00Z",
-      "venue": "Stadion Letná",
-      "home": {
-        "id": 1745,
-        "name": "Zlín",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png"
-      },
-      "away": {
-        "id": 216,
-        "name": "Slavia Praha",
-        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
-      },
-      "has_full_data": true,
-      "signals": {
-        "referee": true,
-        "probs": [
-          7,
-          14,
-          79
-        ]
-      }
-    },
     {
       "fixture_id": 19725031,
       "starting_at": "2026-10-10T13:00:00Z",
@@ -123,7 +99,7 @@
       "signals": {
         "referee": true,
         "probs": [
-          49,
+          50,
           26,
           25
         ]
@@ -147,7 +123,7 @@
       "signals": {
         "referee": true,
         "probs": [
-          69,
+          70,
           21,
           10
         ]
@@ -224,11 +200,131 @@
           30
         ]
       }
+    },
+    {
+      "fixture_id": 19725023,
+      "starting_at": "2026-10-17T13:00:00Z",
+      "venue": "Ohrazenice UMT",
+      "home": {
+        "id": 4484,
+        "name": "Pardubice",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/4/4484.png"
+      },
+      "away": {
+        "id": 1745,
+        "name": "Zlín",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/17/1745.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          46,
+          28,
+          27
+        ]
+      }
+    },
+    {
+      "fixture_id": 19725024,
+      "starting_at": "2026-10-17T13:00:00Z",
+      "venue": "Fortuna Arena",
+      "home": {
+        "id": 216,
+        "name": "Slavia Praha",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/216.png"
+      },
+      "away": {
+        "id": 3552,
+        "name": "Hradec Králové",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/0/3552.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          74,
+          18,
+          8
+        ]
+      }
+    },
+    {
+      "fixture_id": 19725025,
+      "starting_at": "2026-10-17T13:00:00Z",
+      "venue": "Stadion SK Lísen",
+      "home": {
+        "id": 22031,
+        "name": "SK Artis Brno",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/22031.png"
+      },
+      "away": {
+        "id": 2488,
+        "name": "Bohemians 1905",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/24/2488.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          30,
+          28,
+          41
+        ]
+      }
+    },
+    {
+      "fixture_id": 19725027,
+      "starting_at": "2026-10-17T13:00:00Z",
+      "venue": "Lokotrans Aréna (Mladá Boleslav)",
+      "home": {
+        "id": 187,
+        "name": "Mladá Boleslav",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/27/187.png"
+      },
+      "away": {
+        "id": 1351,
+        "name": "Teplice",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/7/1351.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          40,
+          25,
+          35
+        ]
+      }
+    },
+    {
+      "fixture_id": 19725028,
+      "starting_at": "2026-10-17T16:00:00Z",
+      "venue": "Andrův stadion",
+      "home": {
+        "id": 3097,
+        "name": "Sigma Olomouc",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/25/3097.png"
+      },
+      "away": {
+        "id": 463,
+        "name": "Slovan Liberec",
+        "image": "https://cdn.sportmonks.com/images/soccer/teams/15/463.png"
+      },
+      "has_full_data": true,
+      "signals": {
+        "referee": false,
+        "probs": [
+          29,
+          29,
+          42
+        ]
+      }
     }
   ],
   "stats": {
-    "created": 0,
-    "refreshed": 9,
+    "created": 5,
+    "refreshed": 8,
     "errors": 0
   }
 }

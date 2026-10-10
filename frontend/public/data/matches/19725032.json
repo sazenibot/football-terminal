@@ -285,20 +285,6 @@
     },
     {
       "side": "home",
-      "player_id": 458507,
-      "player_name": "Magnus Andersen",
-      "type_id": 1612,
-      "type_name": "No Eligibility",
-      "type_name_cs": "Nezpůsobilost k nasazení",
-      "category": "suspended",
-      "category_cs": "Trest/disciplinární",
-      "start_date": "2026-09-03",
-      "end_date": "2027-01-29",
-      "games_missed": 6,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 20315934,
       "player_name": "Jakub Martinec",
       "type_id": 587,
@@ -309,6 +295,20 @@
       "start_date": "2026-07-01",
       "end_date": null,
       "games_missed": 18,
+      "likely_available": false
+    },
+    {
+      "side": "home",
+      "player_id": 458507,
+      "player_name": "Magnus Andersen",
+      "type_id": 1612,
+      "type_name": "No Eligibility",
+      "type_name_cs": "Nezpůsobilost k nasazení",
+      "category": "suspended",
+      "category_cs": "Trest/disciplinární",
+      "start_date": "2026-09-03",
+      "end_date": "2027-01-29",
+      "games_missed": 6,
       "likely_available": false
     },
     {
@@ -1868,21 +1868,24 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.45
         },
         {
           "key": "sot_under",
           "label": "Střely na branku: méně než 7.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.44
         },
         {
           "key": "fouls_over",
           "label": "Fauly: 10.5+ v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.89
         },
         {
           "key": "fouls_under",
@@ -1919,14 +1922,16 @@
           "label": "Tým měl víc rohů než soupeř",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.21
         },
         {
           "key": "team_2plus_yellow",
           "label": "Tým dostal 2+ žluté karty",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.98
         },
         {
           "key": "ht_leading",
@@ -1980,14 +1985,16 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 2.54
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 0,
           "total": 5,
-          "pct": 0.0
+          "pct": 0.0,
+          "odds": 4.0
         },
         {
           "key": "ht_draw",
@@ -2011,7 +2018,8 @@
           "label": "Ofsajdy: méně než 2.5 v zápase",
           "hits": 5,
           "total": 5,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 2.01
         },
         {
           "key": "btts",
@@ -2070,7 +2078,8 @@
           "label": "Střely na branku: 3.5+ v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.2
         },
         {
           "key": "sot_under",
@@ -2091,14 +2100,16 @@
           "label": "Fauly: méně než 15.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 1.54
         },
         {
           "key": "yellow_under5",
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.45
         },
         {
           "key": "scored2plus",
@@ -2113,21 +2124,24 @@
           "label": "Tým měl víc rohů než soupeř",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 5.56
         },
         {
           "key": "yellow_5plus",
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.54
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 4.0
         },
         {
           "key": "ht_leading",
@@ -2252,7 +2266,8 @@
           "label": "Střely na branku: méně než 10.5 v zápase",
           "hits": 3,
           "total": 3,
-          "pct": 100.0
+          "pct": 100.0,
+          "odds": 1.58
         },
         {
           "key": "fouls_over",
@@ -2301,7 +2316,8 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 3,
-          "pct": 66.7
+          "pct": 66.7,
+          "odds": 2.54
         },
         {
           "key": "ht_leading",
@@ -2322,14 +2338,16 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 1.45
         },
         {
           "key": "red_card",
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 3,
-          "pct": 33.3
+          "pct": 33.3,
+          "odds": 4.0
         },
         {
           "key": "ht_behind",
@@ -2433,7 +2451,8 @@
           "label": "Střely na branku: méně než 9.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.01
         },
         {
           "key": "fouls_over",
@@ -2461,7 +2480,8 @@
           "label": "Ofsajdy: méně než 2.5 v zápase",
           "hits": 4,
           "total": 5,
-          "pct": 80.0
+          "pct": 80.0,
+          "odds": 2.01
         },
         {
           "key": "corners_over95",
@@ -2482,7 +2502,8 @@
           "label": "Méně než 5 žlutých karet v zápase (celkem)",
           "hits": 3,
           "total": 5,
-          "pct": 60.0
+          "pct": 60.0,
+          "odds": 1.45
         },
         {
           "key": "corners_under95",
@@ -2496,7 +2517,8 @@
           "label": "5+ žlutých karet v zápase (celkem)",
           "hits": 2,
           "total": 5,
-          "pct": 40.0
+          "pct": 40.0,
+          "odds": 2.54
         },
         {
           "key": "ht_leading",
@@ -2517,7 +2539,8 @@
           "label": "Padla červená karta (kterýkoli tým)",
           "hits": 1,
           "total": 5,
-          "pct": 20.0
+          "pct": 20.0,
+          "odds": 4.0
         },
         {
           "key": "ht_behind",
@@ -7975,14 +7998,14 @@
     ]
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nSparta Praha vyhraje: Sparta má vysokou pravděpodobnost vítězství 67,7 % a výrazně lepší formu s 14 vstřelenými góly v posledních 6 zápasech. Očekávané xG 2,3 naznačuje, že by měli dominovat v ofenzivě.\n\nDalší analytické tipy:\n• Sparta Praha dá 2 a více gólů: Model ukazuje vysoké xG 2,3 a formu domácích, což naznačuje, že budou schopni překonat obranu Pardubic, která má slabší defenzivu.\n• Oba týmy dají gól: Pravděpodobnost 56,1 % pro BTTS ukazuje, že Pardubice mohou skórovat, i když jejich xG je nízké, což může naznačovat slabší obranu Sparty.\n• Sparta Praha vyhraje 2-0: Nejčastější skóre 2-0 (10,7 %) odpovídá očekávanému výkonu Sparty, která by měla dominovat, ale zároveň udržet čisté konto.",
+    "text": "Největší důvěra:\nSparta Praha vyhraje: Model dává Spartě 67.9 % šanci na vítězství, což je podpořeno jejich silnou formou (12 bodů z 18) a vysokým xG 2.32. Pardubice mají slabší xG 0.9 a horší formu, což naznačuje, že Sparta by měla dominovat.\n\nDalší analytické tipy:\n• Sparta Praha dá 2 a více gólů: S vysokým xG 2.32 a průměrnými góly 14 v posledních 6 zápasech je pravděpodobné, že Sparta překročí 2 góly, zejména proti slabší obraně Pardubic.\n• Oba týmy dají gól: S pravděpodobností 56.3 % pro BTTS a Pardubicemi, které v posledních zápasech dokázaly skórovat, je tento tip zajímavý, i když Sparta by měla dominovat.\n• Pardubice dostanou více než 2.5 karty: S rozhodčím, který uděluje průměrně 5 žlutých karet na zápas, a s Pardubicemi, které mají tendenci faulovat, je pravděpodobné, že dostanou více než 2.5 karty.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "c9a91a207462e6aa",
-    "generated_at": "2026-10-09T20:22:33Z",
-    "text_en": "Highest confidence:\nSparta Praha to Win: With a model probability of 67.7% for a home win and a solid xG of 2.3 against Pardubice's 0.89, Sparta Praha is expected to dominate the match. Their recent form also supports this, making them strong favorites.\n\nFurther analytical tips:\n• Over 2.5 Goals: The model suggests a high likelihood of over 2.5 goals at 61.9%, supported by Sparta's attacking prowess and Pardubice's defensive vulnerabilities.\n• Both Teams to Score: With a 56.1% probability for both teams to score, the match is likely to see both sides finding the net given their recent scoring trends.\n• Sparta to Score First: Considering Sparta's strong home form and higher xG, they are likely to take the lead early, enhancing their chances of winning."
+    "input_hash": "682a59857dbee5b0",
+    "generated_at": "2026-10-10T03:56:33Z",
+    "text_en": "Highest confidence:\nSparta Praha to win: With a model probability of 67.9% and solid recent form (12 points from 6 matches), Sparta Praha is expected to dominate this match against Pardubice, who have struggled defensively (xG of 0.9).\n\nFurther analytical tips:\n• Over 2.5 goals: The model suggests a high likelihood (62.3%) of over 2.5 goals, supported by Sparta's attacking strength (xG of 2.32) and Pardubice's defensive vulnerabilities.\n• Both teams to score: With a BTTS probability of 56.3%, there's a reasonable chance Pardubice could find the net, given their recent scoring form, despite their overall struggles.\n• Sparta Praha to score first: Considering Sparta's attacking prowess and the model's xG figures, they are likely to take the lead early, which aligns with their strong home form."
   },
-  "refreshed_at": "2026-10-08T23:16:40.728546Z",
+  "refreshed_at": "2026-10-10T03:18:09.947032Z",
   "odds": {
     "home": 1.27,
     "draw": 5.94,
@@ -7994,6 +8017,9 @@
     "under35": 1.62,
     "over35": 2.33,
     "btts": 1.86,
+    "yellow_under5": 1.45,
+    "yellow_5plus": 2.54,
+    "red_card": 4.0,
     "source": "chance",
     "home_scoreless": 9.01,
     "home_scored2plus": 1.29,
@@ -8001,11 +8027,14 @@
     "home_ht_leading": 1.67,
     "home_ht_draw": 2.8,
     "home_ht_behind": 8.25,
+    "home_more_corners": 1.21,
+    "home_team_2plus_yellow": 1.98,
     "away_clean_sheet": 9.01,
     "away_scoreless": 1.97,
     "away_scored2plus": 5.03,
     "away_ht_behind": 1.67,
     "away_ht_draw": 2.8,
-    "away_ht_leading": 8.25
+    "away_ht_leading": 8.25,
+    "away_more_corners": 5.56
   }
 }

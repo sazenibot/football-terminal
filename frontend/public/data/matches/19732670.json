@@ -107,39 +107,9 @@
     ],
     "away": [
       {
-        "player_name": "Pablo Durán",
-        "jersey_number": 11,
-        "formation_field": "4:2"
-      },
-      {
-        "player_name": "Ferran Jutglà",
-        "jersey_number": 9,
-        "formation_field": "4:3"
-      },
-      {
-        "player_name": "Hugo Álvarez",
-        "jersey_number": 23,
-        "formation_field": "3:1"
-      },
-      {
-        "player_name": "Sergio Carreira",
-        "jersey_number": 5,
-        "formation_field": "3:2"
-      },
-      {
-        "player_name": "Ilaix Moriba",
-        "jersey_number": 6,
-        "formation_field": "3:3"
-      },
-      {
         "player_name": "Ionuț Radu",
         "jersey_number": 13,
         "formation_field": "1:1"
-      },
-      {
-        "player_name": "Hugo González",
-        "jersey_number": 16,
-        "formation_field": "4:1"
       },
       {
         "player_name": "Álvaro Núñez",
@@ -154,12 +124,42 @@
       {
         "player_name": "Yoel Lago",
         "jersey_number": 18,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Sergio Carreira",
+        "jersey_number": 5,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Ilaix Moriba",
+        "jersey_number": 6,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Ferran Jutglà",
+        "jersey_number": 9,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Aleix Febas",
+        "jersey_number": 14,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Hugo González",
+        "jersey_number": 16,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Sebastián Cáceres",
+        "jersey_number": 21,
         "formation_field": "2:2"
       },
       {
-        "player_name": "Carl Starfelt",
-        "jersey_number": 2,
-        "formation_field": "2:3"
+        "player_name": "Hugo Álvarez",
+        "jersey_number": 23,
+        "formation_field": "4:1"
       }
     ]
   },
@@ -1462,7 +1462,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.54
+          "odds": 2.52
         },
         {
           "key": "team_2plus_yellow",
@@ -1527,7 +1527,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 3.19
+          "odds": 3.22
         },
         {
           "key": "corners_over95",
@@ -1573,7 +1573,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.37
+          "odds": 3.34
         },
         {
           "key": "ht_draw",
@@ -1589,7 +1589,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.36
+          "odds": 3.33
         },
         {
           "key": "scoreless",
@@ -1597,7 +1597,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.2
+          "odds": 3.22
         }
       ],
       "away": [
@@ -1709,7 +1709,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.2
+          "odds": 3.22
         },
         {
           "key": "scoreless",
@@ -1717,7 +1717,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.36
+          "odds": 3.33
         },
         {
           "key": "corners_over95",
@@ -1740,7 +1740,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.19
+          "odds": 3.22
         },
         {
           "key": "ht_behind",
@@ -1748,7 +1748,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.37
+          "odds": 3.34
         },
         {
           "key": "over25",
@@ -1764,7 +1764,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.4
+          "odds": 2.42
         },
         {
           "key": "more_corners",
@@ -7410,11 +7410,11 @@
       }
     ]
   },
-  "refreshed_at": "2026-10-08T23:21:20.747859Z",
+  "refreshed_at": "2026-10-10T03:43:12.032425Z",
   "odds": {
-    "home": 2.81,
-    "draw": 3.29,
-    "away": 2.59,
+    "home": 2.78,
+    "draw": 3.28,
+    "away": 2.62,
     "under15": 3.39,
     "over15": 1.32,
     "under25": 1.84,
@@ -7425,27 +7425,27 @@
     "corners_under95": 1.52,
     "corners_over95": 2.36,
     "source": "chance",
-    "home_scoreless": 3.2,
-    "home_scored2plus": 2.54,
-    "home_clean_sheet": 3.36,
-    "home_ht_leading": 3.37,
+    "home_scoreless": 3.22,
+    "home_scored2plus": 2.52,
+    "home_clean_sheet": 3.33,
+    "home_ht_leading": 3.34,
     "home_ht_draw": 2.12,
-    "home_ht_behind": 3.19,
+    "home_ht_behind": 3.22,
     "home_more_corners": 1.78,
-    "away_clean_sheet": 3.2,
-    "away_scoreless": 3.36,
-    "away_scored2plus": 2.4,
-    "away_ht_behind": 3.37,
+    "away_clean_sheet": 3.22,
+    "away_scoreless": 3.33,
+    "away_scored2plus": 2.42,
+    "away_ht_behind": 3.34,
     "away_ht_draw": 2.12,
-    "away_ht_leading": 3.19,
+    "away_ht_leading": 3.22,
     "away_more_corners": 2.46
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nCelta de Vigo vyhraje: Celta má lepší formu a historicky dominovala v posledních vzájemných zápasech. Model dává Celta 34.5 % šanci na výhru, což je v souladu s trhem. Očekávané xG naznačuje vyrovnaný zápas, ale Celta má mírnou výhodu.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model ukazuje 59.5 % pravděpodobnost, že oba týmy skórují. S ohledem na defenzivní slabiny Elche a ofenzivní potenciál Celta je tento tip velmi pravděpodobný.\n• Více než 2.5 gólu: Pravděpodobnost 56.5 % pro více než 2.5 gólu naznačuje, že zápas bude ofenzivně laděný. Historie vzájemných zápasů podporuje tento scénář.\n• Celta vyhraje 2-1: Nejčastější skóre 2-1 má 8.5 % pravděpodobnost. S ohledem na formu a xG je to realistický výsledek, který odráží očekávanou vyrovnanost zápasu.",
+    "text": "Největší důvěra:\nCelta de Vigo vyhraje: Celta má lepší formu a historicky dominovala nad Elche, což se odráží v modelových pravděpodobnostech (34.5 % na výhru). Očekávané xG ukazuje vyrovnanost, ale Celta má výhodu v defenzivě.\n\nDalší analytické tipy:\n• Celta de Vigo dá gól: S 59.5 % pravděpodobností na BTTS a s formou Elche, která inkasuje více než dává, je pravděpodobné, že Celta skóruje.\n• Více než 2.5 gólu: Model predikuje 56.5 % šanci na více než 2.5 gólu, což odpovídá ofenzivnímu stylu obou týmů.\n• Celta de Vigo vyhraje 2-1: Nejčastější skóre 2-1 (8.4 %) naznačuje, že Celta může vyhrát těsně, což odpovídá jejich ofenzivnímu potenciálu.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "bbf32f38efbcad13",
-    "generated_at": "2026-10-09T20:28:58Z",
-    "text_en": "Highest confidence:\nCelta de Vigo to Win: Celta de Vigo shows stronger recent form and has a higher model probability of winning (34.5%). With Elche's poor defensive record (16 goals conceded), Celta's attacking potential (1.39 xG) suggests they can capitalize on this weakness effectively.\n\nFurther analytical tips:\n• Both Teams to Score: With a 59.5% probability for BTTS, both teams have shown the ability to score, and given their recent form, a high-scoring match is likely.\n• Over 2.5 Goals: The model indicates a 56.5% chance for over 2.5 goals, supported by both teams' recent scoring trends and defensive vulnerabilities.\n• Celta to Score First: Celta's attacking play and Elche's defensive issues suggest a strong likelihood for Celta to find the net first, enhancing their chances of winning."
+    "input_hash": "d10f991bc38bbbf3",
+    "generated_at": "2026-10-10T03:58:02Z",
+    "text_en": "Highest confidence:\nCelta de Vigo to win: Celta de Vigo's recent form and head-to-head advantage suggest they will secure a victory against Elche. The model gives them a 34.5% chance, but considering Elche's struggles, Celta's win is plausible.\n\nFurther analytical tips:\n• Both Teams to Score: With a 59.5% likelihood of both teams scoring, the match is expected to be competitive, indicating that both sides may find the net given their attacking metrics.\n• Over 1.5 Goals: The model indicates an 80.1% chance of over 1.5 goals, suggesting a high-scoring affair based on both teams' recent goal-scoring trends.\n• Celta de Vigo to score first: Celta's offensive metrics and Elche's defensive vulnerabilities hint at a strong possibility for Celta to take an early lead."
   }
 }

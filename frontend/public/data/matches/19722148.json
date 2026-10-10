@@ -212,34 +212,6 @@
       "end_date": "2026-11-30",
       "games_missed": 17,
       "likely_available": false
-    },
-    {
-      "side": "away",
-      "player_id": 31609,
-      "player_name": "Christian Nørgaard",
-      "type_id": 339,
-      "type_name": "Groin Injury",
-      "type_name_cs": "Zranění třísla",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-20",
-      "end_date": "2026-10-09",
-      "games_missed": 7,
-      "likely_available": true
-    },
-    {
-      "side": "away",
-      "player_id": 37266009,
-      "player_name": "Merlin Röhl",
-      "type_id": 531,
-      "type_name": "Knock",
-      "type_name_cs": "Menší zranění",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-07",
-      "end_date": "2026-10-09",
-      "games_missed": 3,
-      "likely_available": true
     }
   ],
   "predicted_lineups": {
@@ -1512,7 +1484,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 4.18
+          "odds": 4.0
         },
         {
           "key": "over15",
@@ -1520,7 +1492,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.31
+          "odds": 1.32
         },
         {
           "key": "under25",
@@ -1528,7 +1500,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.87
+          "odds": 1.85
         },
         {
           "key": "corners_under95",
@@ -1536,7 +1508,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.95
+          "odds": 1.9
         },
         {
           "key": "yellow_5plus",
@@ -1560,7 +1532,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.95
+          "odds": 1.98
         },
         {
           "key": "scored2plus",
@@ -1568,7 +1540,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.06
+          "odds": 2.99
         },
         {
           "key": "corners_over95",
@@ -1576,7 +1548,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.77
+          "odds": 1.81
         },
         {
           "key": "yellow_under5",
@@ -1592,7 +1564,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.16
+          "odds": 4.05
         },
         {
           "key": "ht_draw",
@@ -1600,7 +1572,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.16
+          "odds": 2.13
         },
         {
           "key": "scoreless",
@@ -1608,7 +1580,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.7
+          "odds": 2.76
         },
         {
           "key": "more_corners",
@@ -1616,7 +1588,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.38
+          "odds": 2.39
         },
         {
           "key": "ht_behind",
@@ -1624,7 +1596,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.65
+          "odds": 2.74
         },
         {
           "key": "red_card",
@@ -1649,7 +1621,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.87
+          "odds": 1.85
         },
         {
           "key": "team_2plus_yellow",
@@ -1716,7 +1688,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.7
+          "odds": 2.76
         },
         {
           "key": "over15",
@@ -1724,7 +1696,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.31
+          "odds": 1.32
         },
         {
           "key": "corners_under95",
@@ -1732,7 +1704,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.95
+          "odds": 1.9
         },
         {
           "key": "more_corners",
@@ -1740,7 +1712,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.8
+          "odds": 1.79
         },
         {
           "key": "yellow_5plus",
@@ -1764,7 +1736,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.02
+          "odds": 2.09
         },
         {
           "key": "corners_over95",
@@ -1772,7 +1744,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.77
+          "odds": 1.81
         },
         {
           "key": "yellow_under5",
@@ -1788,7 +1760,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.65
+          "odds": 2.74
         },
         {
           "key": "ht_draw",
@@ -1796,7 +1768,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.16
+          "odds": 2.13
         },
         {
           "key": "scoreless",
@@ -1804,7 +1776,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.18
+          "odds": 4.0
         },
         {
           "key": "over25",
@@ -1812,7 +1784,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.95
+          "odds": 1.98
         },
         {
           "key": "red_card",
@@ -1828,7 +1800,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.16
+          "odds": 4.05
         }
       ]
     },
@@ -1840,7 +1812,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.31
+          "odds": 1.32
         },
         {
           "key": "corners_over95",
@@ -1848,7 +1820,7 @@
           "hits": 3,
           "total": 3,
           "pct": 100.0,
-          "odds": 1.77
+          "odds": 1.81
         },
         {
           "key": "shots_over",
@@ -1912,7 +1884,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.95
+          "odds": 1.98
         },
         {
           "key": "scored2plus",
@@ -1972,7 +1944,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.87
+          "odds": 1.85
         },
         {
           "key": "more_corners",
@@ -2016,7 +1988,7 @@
           "hits": 0,
           "total": 3,
           "pct": 0.0,
-          "odds": 1.95
+          "odds": 1.9
         }
       ],
       "last5": [
@@ -2026,7 +1998,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.31
+          "odds": 1.32
         },
         {
           "key": "corners_over95",
@@ -2034,7 +2006,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.77
+          "odds": 1.81
         },
         {
           "key": "shots_over",
@@ -2108,7 +2080,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.87
+          "odds": 1.85
         },
         {
           "key": "ht_behind",
@@ -2138,7 +2110,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.95
+          "odds": 1.98
         },
         {
           "key": "scored2plus",
@@ -2204,7 +2176,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 1.95
+          "odds": 1.9
         }
       ]
     }
@@ -6000,46 +5972,46 @@
     ]
   },
   "odds": {
-    "home": 3.73,
-    "draw": 3.5,
-    "away": 2.04,
-    "under15": 3.46,
-    "over15": 1.31,
-    "under25": 1.87,
-    "over25": 1.95,
-    "under35": 1.32,
-    "over35": 3.4,
+    "home": 3.57,
+    "draw": 3.43,
+    "away": 2.12,
+    "under15": 3.4,
+    "over15": 1.32,
+    "under25": 1.85,
+    "over25": 1.98,
+    "under35": 1.31,
+    "over35": 3.45,
     "btts": 1.74,
-    "corners_under95": 1.95,
-    "corners_over95": 1.77,
+    "corners_under95": 1.9,
+    "corners_over95": 1.81,
     "yellow_under5": 1.5,
     "yellow_5plus": 2.42,
     "red_card": 4.14,
     "source": "chance",
-    "home_scoreless": 2.7,
-    "home_scored2plus": 3.06,
-    "home_clean_sheet": 4.18,
-    "home_ht_leading": 4.16,
-    "home_ht_draw": 2.16,
-    "home_ht_behind": 2.65,
-    "home_more_corners": 2.38,
+    "home_scoreless": 2.76,
+    "home_scored2plus": 2.99,
+    "home_clean_sheet": 4.0,
+    "home_ht_leading": 4.05,
+    "home_ht_draw": 2.13,
+    "home_ht_behind": 2.74,
+    "home_more_corners": 2.39,
     "home_team_2plus_yellow": 1.42,
-    "away_clean_sheet": 2.7,
-    "away_scoreless": 4.18,
-    "away_scored2plus": 2.02,
-    "away_ht_behind": 4.16,
-    "away_ht_draw": 2.16,
-    "away_ht_leading": 2.65,
-    "away_more_corners": 1.8,
+    "away_clean_sheet": 2.76,
+    "away_scoreless": 4.0,
+    "away_scored2plus": 2.09,
+    "away_ht_behind": 4.05,
+    "away_ht_draw": 2.13,
+    "away_ht_leading": 2.74,
+    "away_more_corners": 1.79,
     "away_team_2plus_yellow": 1.64
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nTip na vítězství Evertonu: Everton má 38.1% šanci na výhru podle modelu, což odpovídá i tržnímu kurzu 47.0%. Forma hostů je silná, s 9 body z posledních 5 zápasů a lepším xG (1.16) než Hull (1.01).\n\nDalší analytické tipy:\n• Tip na remízu: Model dává remíze 31.3% šanci, což je v souladu s tržním kurzem 27.4%. Historické vzájemné zápasy ukazují na vyrovnanost, což může naznačovat opatrný herní styl.\n• Tip na méně než 2.5 gólu: Model predikuje 57.7% pravděpodobnost na under 2.5 gólu, což odpovídá i tržnímu kurzu 51.0%. Oba týmy mají nízké xG a tendenci hrát defenzivně.\n• Tip na oba týmy skórují (BTTS): Model dává BTTS 49.4% šanci, což naznačuje, že zápas může být vyrovnaný. Historie vzájemných zápasů ukazuje na možnost gólů na obou stranách.",
+    "text": "Největší důvěra:\nEverton vyhraje: Everton má 38.1% šanci na výhru podle modelu, což je podpořeno jejich lepší formou a mírně vyšším xG (1.16) oproti Hull City (1.01). Vzájemné zápasy také favorizují Everton.\n\nDalší analytické tipy:\n• Tip na góly: Over 1.5: Model ukazuje 69.5% pravděpodobnost, že padnou alespoň 2 góly. Obě týmy mají schopnost skórovat, což naznačuje i jejich poslední výkony.\n• Tip na BTTS: Ano: S pravděpodobností 49.4% na oba týmy skórují, je to atraktivní sázka, zejména vzhledem k ofenzivním statistikám obou týmů.\n• Tip na žluté karty: Pod 2.5: Rozhodčí Michael Salisbury má průměr 2.5 žlutých karet na zápas, což je v souladu s nižšími očekáváními na fauly v tomto utkání.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "a2e20394dd1cd631",
-    "generated_at": "2026-10-09T20:21:56Z",
-    "text_en": "Highest confidence:\nEverton to Win: With a model probability of 38.1% for Everton's victory and solid recent form, they are likely to control the match. Hull's xG of 1.01 suggests limited attacking threat, while Everton's defensive record (3 goals conceded) supports their chances for a win.\n\nFurther analytical tips:\n• Under 2.5 Goals: Both teams have low xG figures, indicating a likely tight match with fewer goals. Hull's recent form shows struggles in scoring, aligning with the model's 57.7% probability for under 2.5 goals.\n• Draw No Bet on Everton: Given Everton's stronger recent form and head-to-head advantage, a draw no bet on them provides a safety net against Hull's home advantage, especially with a model probability favoring Everton.\n• Both Teams to Score - No: With a 49.4% probability for BTTS and Hull's low scoring xG, the match is expected to see limited goal action, making 'No' a reasonable bet."
+    "input_hash": "b5ddb473aada9c3c",
+    "generated_at": "2026-10-10T03:55:42Z",
+    "text_en": "Highest confidence:\nEverton to win: With a model probability of 38.1% for Everton's victory and a strong recent form, they are likely to control the match. Hull's xG is lower than Everton's, indicating they may struggle to score, while Everton's defense has been solid, conceding only 3 goals in their last 5 matches.\n\nFurther analytical tips:\n• Under 2.5 goals: Both teams have low xG figures and a tendency to keep matches tight, suggesting a low-scoring affair is likely.\n• Both teams to score: No: Given the defensive solidity of Everton and Hull's struggles in front of goal, the model indicates a high chance that at least one team won't score.\n• Everton to win by 1 goal: The most common scorelines suggest a narrow victory for Everton, aligning with their recent form and Hull's defensive vulnerabilities."
   },
-  "refreshed_at": "2026-10-08T23:17:43.339068Z"
+  "refreshed_at": "2026-10-10T03:24:37.487067Z"
 }

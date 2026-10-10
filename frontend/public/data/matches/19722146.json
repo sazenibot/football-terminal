@@ -1611,7 +1611,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 2.1
+          "odds": 2.11
         },
         {
           "key": "team_2plus_yellow",
@@ -1664,7 +1664,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 4.34
+          "odds": 4.58
         },
         {
           "key": "over15",
@@ -1680,7 +1680,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.44
+          "odds": 2.41
         },
         {
           "key": "scored2plus",
@@ -1688,7 +1688,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.03
+          "odds": 2.16
         },
         {
           "key": "yellow_under5",
@@ -1704,7 +1704,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.47
+          "odds": 1.48
         },
         {
           "key": "over25",
@@ -1712,7 +1712,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.56
+          "odds": 1.58
         },
         {
           "key": "yellow_5plus",
@@ -1728,7 +1728,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.39
+          "odds": 2.4
         },
         {
           "key": "ht_behind",
@@ -1736,7 +1736,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.92
+          "odds": 2.76
         },
         {
           "key": "scoreless",
@@ -1744,7 +1744,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.1
+          "odds": 3.8
         },
         {
           "key": "corners_over95",
@@ -1752,7 +1752,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 1.66
+          "odds": 1.65
         },
         {
           "key": "more_corners",
@@ -1760,7 +1760,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.13
+          "odds": 2.16
         },
         {
           "key": "ht_leading",
@@ -1768,7 +1768,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.08
+          "odds": 3.27
         },
         {
           "key": "red_card",
@@ -1794,7 +1794,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.97
+          "odds": 1.95
         },
         {
           "key": "shots_over",
@@ -1861,7 +1861,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.47
+          "odds": 1.48
         },
         {
           "key": "over15",
@@ -1877,7 +1877,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.56
+          "odds": 1.58
         },
         {
           "key": "scored2plus",
@@ -1885,7 +1885,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.93
+          "odds": 1.86
         },
         {
           "key": "corners_over95",
@@ -1893,7 +1893,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 1.66
+          "odds": 1.65
         },
         {
           "key": "ht_leading",
@@ -1901,7 +1901,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.92
+          "odds": 2.76
         },
         {
           "key": "clean_sheet",
@@ -1909,7 +1909,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 4.1
+          "odds": 3.8
         },
         {
           "key": "under25",
@@ -1917,7 +1917,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.44
+          "odds": 2.41
         },
         {
           "key": "corners_under95",
@@ -1925,7 +1925,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.1
+          "odds": 2.11
         },
         {
           "key": "team_2plus_yellow",
@@ -1949,7 +1949,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.39
+          "odds": 2.4
         },
         {
           "key": "ht_behind",
@@ -1957,7 +1957,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.08
+          "odds": 3.27
         },
         {
           "key": "scoreless",
@@ -1965,7 +1965,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.34
+          "odds": 4.58
         },
         {
           "key": "yellow_5plus",
@@ -2049,7 +2049,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.56
+          "odds": 1.58
         },
         {
           "key": "corners_over95",
@@ -2057,7 +2057,7 @@
           "hits": 2,
           "total": 3,
           "pct": 66.7,
-          "odds": 1.66
+          "odds": 1.65
         },
         {
           "key": "yellow_5plus",
@@ -2080,7 +2080,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 1.47
+          "odds": 1.48
         },
         {
           "key": "clean_sheet",
@@ -2102,7 +2102,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.44
+          "odds": 2.41
         },
         {
           "key": "scored2plus",
@@ -2117,7 +2117,7 @@
           "hits": 1,
           "total": 3,
           "pct": 33.3,
-          "odds": 2.1
+          "odds": 2.11
         },
         {
           "key": "more_corners",
@@ -2186,7 +2186,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.66
+          "odds": 1.65
         },
         {
           "key": "shots_over",
@@ -2243,7 +2243,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.44
+          "odds": 2.41
         },
         {
           "key": "more_corners",
@@ -2266,7 +2266,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.47
+          "odds": 1.48
         },
         {
           "key": "clean_sheet",
@@ -2281,7 +2281,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.56
+          "odds": 1.58
         },
         {
           "key": "scored2plus",
@@ -2332,7 +2332,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.1
+          "odds": 2.11
         },
         {
           "key": "red_card",
@@ -7191,46 +7191,46 @@
     ]
   },
   "odds": {
-    "home": 2.66,
-    "draw": 3.79,
-    "away": 2.46,
-    "under15": 5.05,
+    "home": 2.88,
+    "draw": 3.84,
+    "away": 2.28,
+    "under15": 4.94,
     "over15": 1.18,
-    "under25": 2.44,
-    "over25": 1.56,
-    "under35": 1.58,
-    "over35": 2.41,
-    "btts": 1.47,
-    "corners_under95": 2.1,
-    "corners_over95": 1.66,
+    "under25": 2.41,
+    "over25": 1.58,
+    "under35": 1.56,
+    "over35": 2.46,
+    "btts": 1.48,
+    "corners_under95": 2.11,
+    "corners_over95": 1.65,
     "yellow_under5": 2.03,
     "yellow_5plus": 1.7,
     "red_card": 4.61,
     "source": "chance",
-    "home_scoreless": 4.1,
-    "home_scored2plus": 2.03,
-    "home_clean_sheet": 4.34,
-    "home_ht_leading": 3.08,
-    "home_ht_draw": 2.39,
-    "home_ht_behind": 2.92,
-    "home_more_corners": 2.13,
+    "home_scoreless": 3.8,
+    "home_scored2plus": 2.16,
+    "home_clean_sheet": 4.58,
+    "home_ht_leading": 3.27,
+    "home_ht_draw": 2.4,
+    "home_ht_behind": 2.76,
+    "home_more_corners": 2.16,
     "home_team_2plus_yellow": 1.31,
-    "away_clean_sheet": 4.1,
-    "away_scoreless": 4.34,
-    "away_scored2plus": 1.93,
-    "away_ht_behind": 3.08,
-    "away_ht_draw": 2.39,
-    "away_ht_leading": 2.92,
-    "away_more_corners": 1.97,
+    "away_clean_sheet": 3.8,
+    "away_scoreless": 4.58,
+    "away_scored2plus": 1.86,
+    "away_ht_behind": 3.27,
+    "away_ht_draw": 2.4,
+    "away_ht_leading": 2.76,
+    "away_more_corners": 1.95,
     "away_team_2plus_yellow": 1.28
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nLiverpool vyhraje: Liverpool má doma silnou formu (9 bodů z 15) a model mu dává 39.9% šanci na výhru, což je v souladu s trhem. Manchester City, ač v dobré formě, má nižší xG (1.51) než Liverpool (1.63), což naznačuje vyrovnaný zápas.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model predikuje 62.8% pravděpodobnost, že oba týmy skórují. Historie vzájemných zápasů ukazuje na vyrovnané souboje s častými góly na obou stranách.\n• Více než 2.5 gólu: S pravděpodobností 61.1% na více než 2.5 gólu a vysokým počtem střel (27.0) se očekává ofenzivní zápas, což podporuje i forma obou týmů.\n• Remíza 1-1: Nejčastější skóre je 1-1 s 11.4% pravděpodobností. S vyrovnanými xG a formou obou týmů je remíza reálným scénářem.",
+    "text": "Největší důvěra:\nManchester City vyhraje: Manchester City má silnou formu s 5 výhrami v řadě a model mu dává 34.8 % šanci na vítězství. Vzájemné zápasy ukazují, že City má navrch, navíc očekávané góly (xG) jsou vyrovnané, což naznačuje, že City může těžit z efektivity.\n\nDalší analytické tipy:\n• Manchester City dá gól: S pravděpodobností 62.8 % pro BTTS a formou City, která zahrnuje 13 gólů v posledních 5 zápasech, je pravděpodobné, že skórují.\n• Více než 2.5 gólu v zápase: Model predikuje 61.1 % šanci na více než 2.5 gólu, což odpovídá ofenzivní síle obou týmů a jejich tendenci k vysokému počtu střel.\n• Více než 10 rohů v zápase: S průměrem 10.9 rohů pro Liverpool a 27 střel celkem, zápas by mohl generovat vysoký počet rohů, což podporuje tip na více než 10 rohů.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "e1a1fee56aa8c90c",
-    "generated_at": "2026-10-09T20:21:46Z",
-    "text_en": "Highest confidence:\nBoth Teams to Score: With a BTTS probability of 62.8%, both teams are likely to find the net. Liverpool's recent form shows a solid attack, while City has been prolific, suggesting a high-scoring encounter at Anfield.\n\nFurther analytical tips:\n• Manchester City to Win: City's strong recent form (5 wins) and a model probability of 34.8% for victory indicate they are well-positioned to secure points, despite Liverpool's home advantage.\n• Over 2.5 Goals: The model suggests a 61.1% chance for over 2.5 goals, supported by both teams' attacking prowess and Liverpool's tendency to concede.\n• Draw No Bet on Liverpool: Given Liverpool's home advantage and a recent head-to-head record, a draw no bet on Liverpool offers a safety net against City's strong form."
+    "input_hash": "2bbe0c4d3981c101",
+    "generated_at": "2026-10-10T03:55:35Z",
+    "text_en": "Highest confidence:\nManchester City to win: With a strong recent form (5 wins in 5) and a model probability of 34.8% for victory, City is positioned to capitalize on Liverpool's inconsistent results. The xG metrics suggest a closely contested match, but City's edge in form and head-to-head history favors them.\n\nFurther analytical tips:\n• Both teams to score: The model indicates a 62.8% chance for both teams to score, supported by both sides' attacking capabilities and Liverpool's recent defensive vulnerabilities.\n• Over 2.5 goals: Given the high xG values (1.63 for Liverpool, 1.51 for City) and the attacking prowess of both teams, an over 2.5 goals market aligns well with the match dynamics.\n• Manchester City to score first: City's attacking momentum and Liverpool's shaky defense suggest a strong likelihood for City to take the lead early, enhancing their chances of securing the win."
   },
-  "refreshed_at": "2026-10-08T23:17:59.693025Z"
+  "refreshed_at": "2026-10-10T03:24:43.307802Z"
 }

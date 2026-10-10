@@ -173,20 +173,6 @@
     },
     {
       "side": "home",
-      "player_id": 263186,
-      "player_name": "Haji Wright",
-      "type_id": 535,
-      "type_name": "Hamstring Injury",
-      "type_name_cs": "Zranění hamstringu",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-12",
-      "end_date": "2026-10-30",
-      "games_missed": 8,
-      "likely_available": false
-    },
-    {
-      "side": "home",
       "player_id": 37328095,
       "player_name": "Aurele Amenda",
       "type_id": 532,
@@ -201,72 +187,16 @@
     },
     {
       "side": "home",
-      "player_id": 28912779,
-      "player_name": "Kaine Kessler",
+      "player_id": 263186,
+      "player_name": "Haji Wright",
       "type_id": 535,
       "type_name": "Hamstring Injury",
       "type_name_cs": "Zranění hamstringu",
       "category": "injury",
       "category_cs": "Zranění",
-      "start_date": "2026-08-17",
-      "end_date": "2026-10-09",
-      "games_missed": 7,
-      "likely_available": true
-    },
-    {
-      "side": "home",
-      "player_id": 23223363,
-      "player_name": "Josh Eccles",
-      "type_id": 532,
-      "type_name": "Calf Injury",
-      "type_name_cs": "Zranění lýtka",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-26",
-      "end_date": "2026-10-09",
-      "games_missed": 5,
-      "likely_available": true
-    },
-    {
-      "side": "home",
-      "player_id": 17177173,
-      "player_name": "Milan van Ewijk",
-      "type_id": 533,
-      "type_name": "Thigh Problems",
-      "type_name_cs": "Problémy se stehnem",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-09-14",
-      "end_date": "2026-10-09",
-      "games_missed": 2,
-      "likely_available": true
-    },
-    {
-      "side": "home",
-      "player_id": 2816063,
-      "player_name": "Luke Woolfenden",
-      "type_id": 536,
-      "type_name": "Knee Injury",
-      "type_name_cs": "Zranění kolena",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-01",
-      "end_date": "2026-10-09",
-      "games_missed": 9,
-      "likely_available": true
-    },
-    {
-      "side": "away",
-      "player_id": 2815,
-      "player_name": "Dan Burn",
-      "type_id": 537,
-      "type_name": "Ankle Injury",
-      "type_name_cs": "Zranění kotníku",
-      "category": "injury",
-      "category_cs": "Zranění",
-      "start_date": "2026-08-22",
-      "end_date": null,
-      "games_missed": 7,
+      "start_date": "2026-08-12",
+      "end_date": "2026-10-30",
+      "games_missed": 8,
       "likely_available": false
     },
     {
@@ -279,6 +209,20 @@
       "category": "injury",
       "category_cs": "Zranění",
       "start_date": "2026-08-23",
+      "end_date": null,
+      "games_missed": 7,
+      "likely_available": false
+    },
+    {
+      "side": "away",
+      "player_id": 2815,
+      "player_name": "Dan Burn",
+      "type_id": 537,
+      "type_name": "Ankle Injury",
+      "type_name_cs": "Zranění kotníku",
+      "category": "injury",
+      "category_cs": "Zranění",
+      "start_date": "2026-08-22",
       "end_date": null,
       "games_missed": 7,
       "likely_available": false
@@ -313,8 +257,120 @@
     }
   ],
   "predicted_lineups": {
-    "home": [],
-    "away": []
+    "home": [
+      {
+        "player_name": "Ephron Mason-Clark",
+        "jersey_number": 10,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Victor Torp",
+        "jersey_number": 29,
+        "formation_field": "3:4"
+      },
+      {
+        "player_name": "Jack Rudoni",
+        "jersey_number": 5,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Caleb Yirenkyi",
+        "jersey_number": 8,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Brandon Thomas-Asante",
+        "jersey_number": 23,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Matt Grimes",
+        "jersey_number": 6,
+        "formation_field": "3:3"
+      },
+      {
+        "player_name": "Frank Onyeka",
+        "jersey_number": 16,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Ethan Pinnock",
+        "jersey_number": 2,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Bobby Thomas",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      },
+      {
+        "player_name": "Joel Latibeaudiere",
+        "jersey_number": 22,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Carl Rushworth",
+        "jersey_number": 19,
+        "formation_field": "1:1"
+      }
+    ],
+    "away": [
+      {
+        "player_name": "Yoane Wissa",
+        "jersey_number": 9,
+        "formation_field": "5:1"
+      },
+      {
+        "player_name": "Harvey Barnes",
+        "jersey_number": 11,
+        "formation_field": "4:1"
+      },
+      {
+        "player_name": "Amar Dedic",
+        "jersey_number": 37,
+        "formation_field": "2:4"
+      },
+      {
+        "player_name": "Lukas Hornicek",
+        "jersey_number": 21,
+        "formation_field": "1:1"
+      },
+      {
+        "player_name": "Jacob Ramsey",
+        "jersey_number": 41,
+        "formation_field": "3:1"
+      },
+      {
+        "player_name": "Malick Thiaw",
+        "jersey_number": 12,
+        "formation_field": "2:3"
+      },
+      {
+        "player_name": "Joe Willock",
+        "jersey_number": 28,
+        "formation_field": "4:2"
+      },
+      {
+        "player_name": "Jacob Murphy",
+        "jersey_number": 23,
+        "formation_field": "4:3"
+      },
+      {
+        "player_name": "Lewis Miley",
+        "jersey_number": 67,
+        "formation_field": "3:2"
+      },
+      {
+        "player_name": "Lewis Hall",
+        "jersey_number": 3,
+        "formation_field": "2:1"
+      },
+      {
+        "player_name": "Sven Botman",
+        "jersey_number": 4,
+        "formation_field": "2:2"
+      }
+    ]
   },
   "h2h": [],
   "h2h_total_available": 0,
@@ -978,7 +1034,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 3.33
+          "odds": 3.36
         },
         {
           "key": "corners_under95",
@@ -1057,7 +1113,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.25
+          "odds": 2.22
         },
         {
           "key": "more_corners",
@@ -1072,7 +1128,7 @@
           "hits": 3,
           "total": 5,
           "pct": 60.0,
-          "odds": 2.57
+          "odds": 2.63
         },
         {
           "key": "over15",
@@ -1080,7 +1136,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.22
+          "odds": 1.23
         },
         {
           "key": "over25",
@@ -1088,7 +1144,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 1.66
+          "odds": 1.68
         },
         {
           "key": "ht_draw",
@@ -1096,7 +1152,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.34
+          "odds": 2.31
         },
         {
           "key": "clean_sheet",
@@ -1104,7 +1160,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 4.88
+          "odds": 4.69
         },
         {
           "key": "corners_over95",
@@ -1143,7 +1199,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 1.51
+          "odds": 1.52
         },
         {
           "key": "scored2plus",
@@ -1151,7 +1207,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 2.45
+          "odds": 2.43
         },
         {
           "key": "ht_leading",
@@ -1159,7 +1215,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 3.76
+          "odds": 3.69
         }
       ],
       "away": [
@@ -1169,7 +1225,7 @@
           "hits": 5,
           "total": 5,
           "pct": 100.0,
-          "odds": 1.22
+          "odds": 1.23
         },
         {
           "key": "sot_over",
@@ -1198,7 +1254,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.51
+          "odds": 1.52
         },
         {
           "key": "over25",
@@ -1206,7 +1262,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.66
+          "odds": 1.68
         },
         {
           "key": "scored2plus",
@@ -1214,7 +1270,7 @@
           "hits": 4,
           "total": 5,
           "pct": 80.0,
-          "odds": 1.82
+          "odds": 1.86
         },
         {
           "key": "team_2plus_yellow",
@@ -1295,7 +1351,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 2.57
+          "odds": 2.63
         },
         {
           "key": "ht_behind",
@@ -1303,7 +1359,7 @@
           "hits": 2,
           "total": 5,
           "pct": 40.0,
-          "odds": 3.76
+          "odds": 3.69
         },
         {
           "key": "clean_sheet",
@@ -1311,7 +1367,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 3.33
+          "odds": 3.36
         },
         {
           "key": "under25",
@@ -1319,7 +1375,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.25
+          "odds": 2.22
         },
         {
           "key": "more_corners",
@@ -1334,7 +1390,7 @@
           "hits": 1,
           "total": 5,
           "pct": 20.0,
-          "odds": 2.34
+          "odds": 2.31
         },
         {
           "key": "scoreless",
@@ -1342,7 +1398,7 @@
           "hits": 0,
           "total": 5,
           "pct": 0.0,
-          "odds": 4.88
+          "odds": 4.69
         },
         {
           "key": "red_card",
@@ -5108,42 +5164,42 @@
     ]
   },
   "odds": {
-    "home": 3.43,
-    "draw": 3.65,
-    "away": 2.09,
-    "under15": 4.3,
-    "over15": 1.22,
-    "under25": 2.25,
-    "over25": 1.66,
-    "under35": 1.5,
-    "over35": 2.6,
-    "btts": 1.51,
+    "home": 3.32,
+    "draw": 3.62,
+    "away": 2.14,
+    "under15": 4.22,
+    "over15": 1.23,
+    "under25": 2.22,
+    "over25": 1.68,
+    "under35": 1.49,
+    "over35": 2.64,
+    "btts": 1.52,
     "yellow_under5": 1.47,
     "yellow_5plus": 2.48,
     "red_card": 4.14,
     "source": "chance",
-    "home_scoreless": 3.33,
-    "home_scored2plus": 2.45,
-    "home_clean_sheet": 4.88,
-    "home_ht_leading": 3.76,
-    "home_ht_draw": 2.34,
-    "home_ht_behind": 2.57,
+    "home_scoreless": 3.36,
+    "home_scored2plus": 2.43,
+    "home_clean_sheet": 4.69,
+    "home_ht_leading": 3.69,
+    "home_ht_draw": 2.31,
+    "home_ht_behind": 2.63,
     "home_team_2plus_yellow": 1.64,
-    "away_clean_sheet": 3.33,
-    "away_scoreless": 4.88,
-    "away_scored2plus": 1.82,
-    "away_ht_behind": 3.76,
-    "away_ht_draw": 2.34,
-    "away_ht_leading": 2.57,
+    "away_clean_sheet": 3.36,
+    "away_scoreless": 4.69,
+    "away_scored2plus": 1.86,
+    "away_ht_behind": 3.69,
+    "away_ht_draw": 2.31,
+    "away_ht_leading": 2.63,
     "away_team_2plus_yellow": 1.45
   },
   "ai_analysis": {
-    "text": "Největší důvěra:\nNewcastle United vyhraje: Newcastle má 52.6% pravděpodobnost výhry podle modelu a silnější formu s 8 body z posledních 5 zápasů. Coventry je v krizi, s 1 gólem a 10 inkasovanými v posledních 5 zápasech.\n\nDalší analytické tipy:\n• Oba týmy dají gól: Model ukazuje 58.6% pravděpodobnost, což naznačuje, že obě strany by mohly skórovat, zejména vzhledem k obranným slabinám Coventry.\n• Více než 2.5 gólu v zápase: S 57.9% pravděpodobností na over 2.5 gólů a Newcastle's ofenzivou, která dokáže skórovat, je to pravděpodobný scénář.\n• Newcastle dá 2 a více gólů: S xG 1.83 pro Newcastle a slabou obranou Coventry, je pravděpodobné, že hosté překročí 2 góly.",
+    "text": "Největší důvěra:\nNewcastle United vyhraje: Model dává Newcastle 52.6 % šanci na výhru, což je podpořeno jejich lepší formou a xG 1.83 oproti 1.13 Coventry. Očekávané držení míče a ofenzivní síla hostů naznačují, že zápas bude dominován jejich hrou.\n\nDalší analytické tipy:\n• Oba týmy dají gól: S pravděpodobností 58.6 % na BTTS a slabou obranou Coventry (10 gólů za 5 zápasů) je pravděpodobné, že oba týmy skórují.\n• Více než 2.5 gólu: Model ukazuje 57.9 % na over 2.5, což odpovídá ofenzivnímu potenciálu Newcastle a slabší obraně domácích.\n• Newcastle dá 2+ góly: S průměrným xG 1.83 a formou, která zahrnuje 9 gólů za 5 zápasů, je pravděpodobné, že Newcastle překoná 2 góly.",
     "model": "gpt-4o-mini",
     "prompt_version": "2026-10-09-v2",
-    "input_hash": "fc357913f413224a",
-    "generated_at": "2026-10-09T20:22:06Z",
-    "text_en": "Highest confidence:\nNewcastle United to Win: Newcastle's model win probability at 52.6% reflects their superior form and xG of 1.83 compared to Coventry's 1.13. With Coventry struggling defensively, Newcastle's attacking prowess should secure them the victory.\n\nFurther analytical tips:\n• Both Teams to Score: Yes: With a BTTS probability of 58.6%, both teams are likely to find the net given their recent scoring trends and defensive vulnerabilities.\n• Over 2.5 Goals: The model suggests an 57.9% chance for over 2.5 goals, supported by Newcastle's attacking strength and Coventry's defensive issues, indicating a high-scoring affair.\n• Newcastle to Score First: Given Newcastle's offensive capabilities and Coventry's shaky defense, the likelihood of Newcastle taking an early lead is high, aligning with their attacking metrics."
+    "input_hash": "bddea2345a020285",
+    "generated_at": "2026-10-10T03:55:52Z",
+    "text_en": "Highest confidence:\nNewcastle United to win: With a model probability of 52.6% for a Newcastle victory and a significantly higher xG (1.83 vs 1.13), they are expected to dominate in terms of chances created, despite Coventry's home advantage.\n\nFurther analytical tips:\n• Both teams to score: The model suggests a 58.6% likelihood for BTTS, indicating that both teams are likely to find the net given their recent scoring patterns.\n• Over 2.5 goals: With an 80.9% probability for over 1.5 goals, the match is expected to be open, reflecting both teams' recent defensive vulnerabilities.\n• Newcastle to have more corners: Newcastle's attacking style is likely to generate more corner opportunities, supported by an average of 10.1 corners predicted in the model."
   },
-  "refreshed_at": "2026-10-08T23:18:07.334418Z"
+  "refreshed_at": "2026-10-10T03:24:45.424804Z"
 }
